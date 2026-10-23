@@ -1092,6 +1092,22 @@
      Укажите два звука и нажмите «Найти пути».
     </div>
    </section>
+   <section class="panel" id="chain-atlas">
+    <h2>Атлас цепочек</h2>
+    <p class="muted">139 оценённых цепочек (101 исходная и 38 дополнительных). Оценка относится к целой цепочке, а не к отдельной стрелке. «Не оценена» — не категория U.</p>
+    <div class="row">
+     <button type="button" id="all-chains">Все цепочки</button>
+     <button type="button" class="secondary-action" id="develop-from">Развитие исходного звука</button>
+     <button type="button" class="secondary-action" id="origins-to">Происхождение конечного звука</button>
+    </div>
+    <div class="controls atlas-filters">
+     <label>Степень обоснованности<select id="atlas-grade"><option value="all">Все категории</option><option value="A">A — непосредственно подтверждена</option><option value="B">B — хорошо обоснована</option><option value="C">C — частично обоснована</option><option value="D">D — формально возможна</option><option value="U">U — недостаточно данных</option><option value="X">X — противоречива</option></select></label>
+     <label>Поиск по цепочке<input id="atlas-query" placeholder="Например pʰ, ɸ или pt" /></label>
+    </div>
+    <div class="row"><label><input id="atlas-period" type="checkbox" checked /> Учитывать выбранный период</label><label><input id="atlas-stage" type="checkbox" checked /> Соблюдать порядок языковых ступеней для деревьев</label></div>
+    <div class="stats" id="atlas-count"></div>
+    <div id="atlas-results" aria-live="polite"></div>
+   </section>
    <section class="panel">
     <h2>
      О достоверности
@@ -1113,6 +1129,7 @@
   </main>
   <script defer="" src="data.js">
   </script>
+  <script defer="" src="chains.js"></script>
   <script defer="" src="app.js">
   </script>
  </body>

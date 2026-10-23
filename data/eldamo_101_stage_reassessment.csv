@@ -1,0 +1,102 @@
+id,path,era,previous_grade,stage_consistent_rule_combinations,verdict,limitations
+1,pʰt → ptʰ → pt → ɸt,late,D,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+2,pʰtʰ → ptʰ → pt → ɸt,late,D,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+3,ŋ- → ŋg- → ŋ- → ø-,late,U,4,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+4,kʰt → ktʰ → kt → xt,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+5,pʰt → ptʰ → pt → ps,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+6,pʰt → ptʰ → pt → xt,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+7,sb → zb → sp → ps,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+8,sg → zg → sk → ks,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+9,ŋ → g → ɣ → ø,middle,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+10,ŋ → g → ɣ → ø,middle,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+11,ɣ → g → ɣ → ø,middle,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+12,ɣ → g → ɣ → ø,middle,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+13,ae → ā → ō,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+14,ao → ā → ō,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+15,b → β → v,late,B,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+16,bd → pt → ɸt,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+17,bm → mm → m,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+18,bm → mb → mm,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+19,d → ð → z,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+20,g → ɣ → ø,late,B,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+21,gd → kt → xt,late,C,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+22,gj → dj → dʒ,late,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+23,gj → dj → dʒ,late,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+24,gj → dj → lj,late,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+25,gt → kt → xt,late,C,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+26,kj → tj → tʃ,late,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+27,kn → kt → xt,late,C,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+28,ktʰ → kt → xt,late,C,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+29,kʰ → x → h,late,B,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+30,mm → mb → mm,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+31,nn → nd → nn,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+32,pm → pw → pp,late,B,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+33,pn → pt → ɸt,late,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+34,ptʰ → pt → ɸt,late,D,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+35,pʰ → ɸ → f,late,B,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+36,pʰt → ptʰ → pt,late,D,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+37,pʰtʰ → ptʰ → pt,late,D,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+38,pʰw → ppʰ → pp,late,D,3,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+39,sd → zd → st,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+40,sg → zg → ðɣ,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+41,sj → zj → ʒ,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+42,tk → sk → ks,late,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+43,tk → kt → xt,late,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+44,tʰ → θ → s,late,B,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+45,tʰt → ttʰ → tt,late,D,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+46,tʰt → ttʰ → θθ,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+47,tʰtʰ → ttʰ → tt,late,D,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+48,tʰtʰ → ttʰ → θθ,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+49,zm → mm → m,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+50,ā → ǭ → ā,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+51,ā → ǭ → ō,late,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+52,ā → ǭ → ō,late,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+53,ŋ- → ŋg- → g-,late,U,3,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+54,ŋ- → ŋg- → g-,late,U,3,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+55,ŋ- → ŋg- → g-,late,U,3,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+56,ŋ- → ŋg- → ŋ-,late,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+57,ŋg- → ŋ- → g-,late,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+58,ŋg- → ŋ- → ø-,late,U,4,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+59,ŋg- → ŋ- → ø-,late,U,4,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+60,ŋg- → ŋ- → ø-,late,U,4,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+61,ŋgj → ndj → nj,late,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+62,ŋgw → mb → mm,late,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+63,ŋs → ns → ss,late,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+64,Vp → Vb → Vv,middle,U,0,not resolved by atomic graph (NOT refuted),Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+65,Vp → Vb → Vv,middle,U,0,not resolved by atomic graph (NOT refuted),Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+66,Vt → Vd → Vð,middle,U,0,not resolved by atomic graph (NOT refuted),Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+67,bd → pt → ps,middle,C,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+68,bd → pt → xt,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+69,bt → pt → ps,middle,C,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+70,bt → pt → xt,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+71,dm → nm → nw,middle,C,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+72,g → ɣ → ø,middle,C,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+73,g → ɣ → ø,middle,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+74,gm → ŋm → ŋgw,middle,C,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+75,gt → kt → xt,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+76,kd → kt → xt,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+77,ktʰ → kt → xt,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+78,kʰ → x → h,middle,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+79,kʰn → kt → xt,middle,C,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+80,kʰt → ktʰ → kt,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+81,nd- → d- → l-,middle,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+82,nd- → d- → l-,middle,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+83,ptʰ → pt → ps,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+84,ptʰ → pt → xt,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+85,pʰ → ɸ → f,middle,C,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+86,pʰ → ɸ → f,middle,U,2,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+87,pʰm → mpʰ → ppʰ,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+88,pʰt → ptʰ → pt,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+89,sb → zb → sp,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+90,sd → zd → st,middle,C,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+91,sg → zg → sk,middle,C,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+92,skʰ → sk → ks,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+93,tʰ → θ → s,middle,C,4,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+94,tʰ → θ → s,middle,U,4,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+95,tʰ → θ → s,middle,U,4,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+96,tʰ → θ → s,middle,U,4,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+97,zb → sp → ps,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+98,zg → sk → ks,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+99,ŋ → g → ɣ,middle,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+100,ŋgj → ndj → nj,middle,D,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced
+101,ɣ → g → ɣ,middle,U,1,structurally possible using atomic rule variants,Rule-local examples do not prove sequential word history; prose chronology and context not automatically enforced

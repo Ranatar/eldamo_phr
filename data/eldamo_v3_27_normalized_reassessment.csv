@@ -1,0 +1,28 @@
+id,states,markers,identified_steps,total_steps,fully_identified,steps_with_matching_page_examples,every_step_has_page_example,evidence_rule_urls,status
+1,mpʰ → ppʰ → pp,AQ. → Q.,2,2,True,1,False,https://eldamo.org/content/words/word-3474357431.html || ,structural only; no full form chain attested here
+2,zb → sp → ps,AQ. → Q.,2,2,True,2,True,https://eldamo.org/content/words/word-3279729471.html || https://eldamo.org/content/words/word-2094898289.html,structural only; no full form chain attested here
+3,zg → sk → ks,AQ. → Q.,2,2,True,2,True,https://eldamo.org/content/words/word-3279729471.html || https://eldamo.org/content/words/word-2094898289.html,structural only; no full form chain attested here
+4,xw → w̥ → f,AQ. → Q.,1,2,False,0,False, || https://eldamo.org/content/words/word-3605637247.html,structural only; no full form chain attested here
+5,bt → pt → ɸt,✶ → Q.,2,2,True,1,False, || https://eldamo.org/content/words/word-2265073101.html,structural only; no full form chain attested here
+6,bʰ → pʰ → ɸ,✶ → AQ.,1,2,False,1,False, || https://eldamo.org/content/words/word-3262991621.html,structural only; no full form chain attested here
+7,bʰ → pʰ → ɸ → f,✶ → AQ. → Q.,2,3,False,2,False, || https://eldamo.org/content/words/word-3262991621.html || https://eldamo.org/content/words/word-14484545.html,structural only; no full form chain attested here
+8,pp → ppʰ → pp,✶ → Q.,2,2,True,0,False, || ,structural only; no full form chain attested here
+9,pp → ppʰ → pp,✶ → AQ.,2,2,True,1,False, || https://eldamo.org/content/words/word-2190887743.html,structural only; no full form chain attested here
+10,tp → tpʰ → tp,✶ → Q.,2,2,True,0,False, || ,structural only; no full form chain attested here
+11,kp → kpʰ → kp,✶ → Q.,2,2,True,0,False, || ,structural only; no full form chain attested here
+12,mp → mpʰ → ppʰ,✶ → AQ.,2,2,True,1,False, || https://eldamo.org/content/words/word-3474357431.html,structural only; no full form chain attested here
+13,mp → mpʰ → ppʰ → pp,✶ → AQ. → Q.,3,3,True,1,False, || https://eldamo.org/content/words/word-3474357431.html || ,structural only; no full form chain attested here
+14,pd → pt → ɸt,AQ. → Q.,2,2,True,1,False, || https://eldamo.org/content/words/word-2265073101.html,structural only; no full form chain attested here
+15,kd → kt → xt,AQ. → Q.,2,2,True,1,False, || https://eldamo.org/content/words/word-2265073101.html,structural only; no full form chain attested here
+16,dʰ → tʰ → θ,✶ → AQ.,1,2,False,1,False, || https://eldamo.org/content/words/word-3262991621.html,structural only; no full form chain attested here
+17,dʰ → tʰ → θ → s,✶ → AQ. → Q.,2,3,False,2,False, || https://eldamo.org/content/words/word-3262991621.html || https://eldamo.org/content/words/word-3491983963.html,structural only; no full form chain attested here
+18,pd → pt → ɸt,✶ → Q.,2,2,True,1,False, || https://eldamo.org/content/words/word-2265073101.html,structural only; no full form chain attested here
+19,kd → kt → xt,✶ → Q.,2,2,True,1,False, || https://eldamo.org/content/words/word-2265073101.html,structural only; no full form chain attested here
+20,ptʰ → pt → ɸt,✶ → Q.,2,2,True,1,False,https://eldamo.org/content/words/word-2789676367.html || https://eldamo.org/content/words/word-2265073101.html,structural only; no full form chain attested here
+21,ktʰ → kt → xt,✶ → Q.,2,2,True,1,False,https://eldamo.org/content/words/word-2789676367.html || https://eldamo.org/content/words/word-2265073101.html,structural only; no full form chain attested here
+22,pʰw → ppʰ → pp,✶ → Q.,2,2,True,0,False,https://eldamo.org/content/words/word-2859678213.html || ,structural only; no full form chain attested here
+23,bt → pt → ɸt,AQ. → Q.,2,2,True,1,False, || https://eldamo.org/content/words/word-2265073101.html,structural only; no full form chain attested here
+24,sb → zb → sp,✶ → AQ.,2,2,True,1,False,https://eldamo.org/content/words/word-882174441.html || https://eldamo.org/content/words/word-3279729471.html,structural only; no full form chain attested here
+25,sb → zb → sp → ps,✶ → AQ. → Q.,3,3,True,2,False,https://eldamo.org/content/words/word-882174441.html || https://eldamo.org/content/words/word-3279729471.html || https://eldamo.org/content/words/word-2094898289.html,structural only; no full form chain attested here
+26,sg → zg → sk,✶ → AQ.,2,2,True,2,True,https://eldamo.org/content/words/word-882174441.html || https://eldamo.org/content/words/word-3279729471.html,structural only; no full form chain attested here
+27,sg → zg → sk → ks,✶ → AQ. → Q.,3,3,True,3,True,https://eldamo.org/content/words/word-882174441.html || https://eldamo.org/content/words/word-3279729471.html || https://eldamo.org/content/words/word-2094898289.html,structural only; no full form chain attested here

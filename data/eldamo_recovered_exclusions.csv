@@ -1,0 +1,156 @@
+marker,source,result,status,rule,url,language_cards
+Q.,{ptk}pʰ,{ptk}p,supported expanded,[без названия],,q
+Q.,{rl}θ,{rl}t,supported expanded,[без названия],,q
+Q.,-{nŋlr}ŋ-,-{nŋlr}g-,supported expanded,"medial [ŋ] after a [n], [ŋ], [l], [r] became [g]",https://eldamo.org/content/words/word-447633467.html,q
+✶,t+t,st,supported,"[t+t], [d+d] from suffixion became [st], [zd]",https://eldamo.org/content/words/word-2479050823.html,p;q
+✶,d+d,zd,supported,"[t+t], [d+d] from suffixion became [st], [zd]",https://eldamo.org/content/words/word-2479050823.html,p;q
+Q.,w-|VwV,β-|VβV,complex_variable_or_alternation,[без названия],,q
+Q.,w-|VwV,v-|VvV,complex_variable_or_alternation,[без названия],,q
+Q.,m̥-,m-,supported,initial voiceless nasals and liquids were voiced,https://eldamo.org/content/words/word-3012528347.html,q
+ᴹAQ.,sm-,m̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-476591497.html,mq;q
+Q.,n̥-,n-,supported,initial voiceless nasals and liquids were voiced,https://eldamo.org/content/words/word-3012528347.html,q
+ᴹAQ.,sn-,n̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-476591497.html,mq;q
+AQ.,ŋ̣g-,iŋg-,supported,syllabic nasals developed a preceding vowel of similar quality,https://eldamo.org/content/words/word-4294735057.html,q
+AQ.,ŋ̣gj-,iŋgj-,supported,syllabic nasals developed a preceding vowel of similar quality,https://eldamo.org/content/words/word-4294735057.html,q
+Q.,w-|VwV,β-|VβV,complex_variable_or_alternation,[без названия],,q
+Q.,w-|VwV,v-|VvV,complex_variable_or_alternation,[без названия],,q
+AQ.,sl-,l̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-1556924193.html,aq;q
+ᴹQ.,lx,l̥l̥,supported,[x] became [h] except before [t],https://eldamo.org/content/words/word-2800366809.html,mq;q
+ᴹAQ.,sl-,l̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-476591497.html,mq;q
+AQ.,sr-,r̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-1556924193.html,aq;q
+ᴹQ.,rx,r̥r̥,supported,[x] became [h] except before [t],https://eldamo.org/content/words/word-2800366809.html,mq;q
+ᴹAQ.,sr-,r̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-476591497.html,mq;q
+AQ.,sj-,j̊-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-1556924193.html,aq;q
+AQ.,xj,j̊,supported,"[x] unvoiced following [j], [w]",https://eldamo.org/content/words/word-2963647241.html,aq;q
+ᴹAQ.,sj-,j̊-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-476591497.html,mq;q
+ᴹAQ.,xj,j̊,supported,"[x], [s] unvoiced following [j], [w]",https://eldamo.org/content/words/word-3260572145.html,aq;maq;mq;q
+ᴹAQ.,sj,j̊,supported,"[x], [s] unvoiced following [j], [w]",https://eldamo.org/content/words/word-3260572145.html,aq;maq;mq;q
+AQ.,sw-,w̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-1556924193.html,aq;q
+AQ.,w̥,f,supported,approximants produced various spirants,https://eldamo.org/content/words/word-3605637247.html,q
+ᴹAQ.,sw-,w̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-476591497.html,mq;q
+ᴹAQ.,xw,w̥,supported,"[x], [s] unvoiced following [j], [w]",https://eldamo.org/content/words/word-3260572145.html,aq;maq;mq;q
+ᴹAQ.,sw,w̥,supported,"[x], [s] unvoiced following [j], [w]",https://eldamo.org/content/words/word-3260572145.html,aq;maq;mq;q
+ᴹQ.,éi,ai,supported,"[ei], [ou] generally became [ī], [ū]",https://eldamo.org/content/words/word-1123007057.html,mq;q
+AQ.,ŋ̣gw-,uŋgw-,supported,syllabic nasals developed a preceding vowel of similar quality,https://eldamo.org/content/words/word-4294735057.html,q
+ᴹQ.,óu,au,supported,"[ei], [ou] generally became [ī], [ū]",https://eldamo.org/content/words/word-1123007057.html,mq;q
+AQ.,w-|VwV,β-|VβV,complex_variable_or_alternation,[без названия],,aq
+Q.,{rl}β,{rl}b,supported expanded,"[β], [ɣ] after [r], [l] usually became stops",https://eldamo.org/content/words/word-3388104565.html,aq
+Q.,{rl}ɣ,{rl}g,supported expanded,"[β], [ɣ] after [r], [l] usually became stops",https://eldamo.org/content/words/word-3388104565.html,aq
+Q.,{rl}ɣw,{rl}øw,supported expanded,"[β], [ɣ] after [r], [l] usually became stops",https://eldamo.org/content/words/word-3388104565.html,aq
+AQ.,z{bdg},s{ptk},supported expanded,[z] plus voiced stop became unvoiced,https://eldamo.org/content/words/word-3279729471.html,aq
+AQ.,{rl}θ,{rl}t,supported expanded,[без названия],,aq
+AQ.,xj,j̊,supported,"[x] unvoiced following [j], [w]",https://eldamo.org/content/words/word-2963647241.html,aq;p
+AQ.,xw,w̥,supported,"[x] unvoiced following [j], [w]",https://eldamo.org/content/words/word-2963647241.html,aq
+ᴹAQ.,xj,j̊,supported,"[x], [s] unvoiced following [j], [w]",https://eldamo.org/content/words/word-3260572145.html,aq;maq;mp;p
+ᴹAQ.,xw,w̥,supported,"[x], [s] unvoiced following [j], [w]",https://eldamo.org/content/words/word-3260572145.html,aq;maq;mp;p
+ᴹQ.,lx,l̥l̥,supported,[x] became [h] except before [t],https://eldamo.org/content/words/word-2800366809.html,aq;maq
+ᴹQ.,rx,r̥r̥,supported,[x] became [h] except before [t],https://eldamo.org/content/words/word-2800366809.html,aq;maq
+AQ.,sm-,m̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-1556924193.html,aq
+Q.,m̥-,m-,supported,initial voiceless nasals and liquids were voiced,https://eldamo.org/content/words/word-3012528347.html,aq
+AQ.,sn-,n̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-1556924193.html,aq
+Q.,n̥-,n-,supported,initial voiceless nasals and liquids were voiced,https://eldamo.org/content/words/word-3012528347.html,aq
+AQ.,w-|VwV,β-|VβV,complex_variable_or_alternation,[без названия],,aq;p
+AQ.,rl|lr,ll|ll,complex_variable_or_alternation,[без названия],,aq
+AQ.,xw,w̥,supported,"[x] unvoiced following [j], [w]",https://eldamo.org/content/words/word-2963647241.html,aq
+Q.,w̥,f,supported,approximants produced various spirants,https://eldamo.org/content/words/word-3605637247.html,aq
+Q.,-hw-,-ff-,supported,approximants produced various spirants,https://eldamo.org/content/words/word-3605637247.html,aq
+AQ.,j̊,ʃ,supported,approximants produced various spirants,https://eldamo.org/content/words/word-3605637247.html,aq
+✶,-Sĭ,-Se,syllable metacharacter,"short final [i], [u] became [e], [o]",https://eldamo.org/content/words/word-3064357955.html,aq
+✶,-Sŭ,-So,syllable metacharacter,"short final [i], [u] became [e], [o]",https://eldamo.org/content/words/word-3064357955.html,aq
+✶,b{ptkpʰtʰkʰs},p{ptkpʰtʰkʰs},supported expanded,[без названия],,p
+✶,{ptkmnŋlr}p,{ptkmnŋlr}pʰ,supported expanded,[без названия],,p
+AQ.,{pʰtʰkʰptk}d,{pʰtʰkʰptk}t,supported expanded,[без названия],,p
+AQ.,d{pʰtʰkʰptk},t{pʰtʰkʰptk},supported expanded,[без названия],,p
+✶,d{ptkpʰtʰkʰs},t{ptkpʰtʰkʰs},supported expanded,[без названия],,p
+✶,{pʰtʰkʰptk}d,{pʰtʰkʰptk}t,supported expanded,[без названия],,p
+✶,t+t,st,supported,"[t+t], [d+d] from suffixion became [st], [zd]",https://eldamo.org/content/words/word-2479050823.html,p
+✶,{ptk}tʰ,{ptk}t,supported expanded,aspirates became voiceless stops after voiceless stops,https://eldamo.org/content/words/word-2789676367.html,p
+ᴹ✶,t+t,st,supported,"[t+t], [d+d] from suffixion became [st], [zd]",https://eldamo.org/content/words/word-2630259491.html,mp;p
+ᴹ✶,-kw-,-k-,supported,[w] vanished after medial velars in Ossiriandic,https://eldamo.org/content/words/word-78414621.html,mp;p
+✶,{ptk}pʰ,{ptk}p,supported expanded,[без названия],,p
+ᴹAQ.,-Vf-,-Vv-,supported,medial voiceless spirants voiced after vowels,https://eldamo.org/content/words/word-3083451453.html,mp;p
+ᴹAQ.,-Vf-,-Vv-,supported,medial voiceless spirants voiced after vowels,https://eldamo.org/content/words/word-4105744097.html,mp;p
+AQ.,{pʰtʰkʰptk}d,{pʰtʰkʰptk}t,supported expanded,[без названия],,p
+ᴹAQ.,-Vθ-,-Vð-,supported,medial voiceless spirants voiced after vowels,https://eldamo.org/content/words/word-3083451453.html,mp;p
+ᴹAQ.,-Vθ-,-Vð-,supported,medial voiceless spirants voiced after vowels,https://eldamo.org/content/words/word-4105744097.html,mp;p
+ᴹAQ.,-x-,-ø-,supported,medial [x] vanished between vowels,https://eldamo.org/content/words/word-4185900741.html,mp;p
+AQ.,{lr}xʷ,{lr}w,supported expanded,[без названия],,mp;p
+AQ.,b{ptkpʰtʰkʰs},p{ptkpʰtʰkʰs},supported expanded,[без названия],,p
+AQ.,d{pʰtʰkʰptk},t{pʰtʰkʰptk},supported expanded,[без названия],,p
+AQ.,d{ptkpʰtʰkʰs},t{ptkpʰtʰkʰs},supported expanded,[без названия],,p
+✶,d+d,zd,supported,"[t+t], [d+d] from suffixion became [st], [zd]",https://eldamo.org/content/words/word-2479050823.html,p
+ᴹ✶,d+d,zd,supported,"[t+t], [d+d] from suffixion became [st], [zd]",https://eldamo.org/content/words/word-2630259491.html,mp;p
+✶,-ŋj-,-ŋgj-,supported,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",https://eldamo.org/content/words/word-2233951333.html,p
+✶,-ŋw-,-ŋgw-,supported,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",https://eldamo.org/content/words/word-2233951333.html,p
+ᴹ✶,-ŋj-,-ŋgj-,supported,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",https://eldamo.org/content/words/word-1270135967.html,mp;p
+ᴹ✶,-ŋw-,-ŋgw-,supported,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",https://eldamo.org/content/words/word-1270135967.html,mp;p
+ᴹ✶,-gw-,-g-,supported,[w] vanished after medial velars in Ossiriandic,https://eldamo.org/content/words/word-78414621.html,mp;p
+ᴹ✶,-ŋw-,-ŋgw-,supported,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",https://eldamo.org/content/words/word-1270135967.html,mp;p
+✶,-Cmb-,-Cm-,supported,medial nasal plus stop after another consonant became simple nasal,https://eldamo.org/content/words/word-4126101193.html,p
+✶,-Cmb-,-Cm-,supported,medial nasal plus stop after another consonant became simple nasal,https://eldamo.org/content/words/word-4126101193.html,p
+✶,-m,-n,supported,final [m] became [n],https://eldamo.org/content/words/word-760163573.html,p
+Q.,-Vm,-Vø,supported,final nasals vanished after vowels,https://eldamo.org/content/words/word-876455981.html,p
+ᴹ✶,sm-,m̥-,supported,"initial [s] unvoiced following [m], [n], [j], [w]",https://eldamo.org/content/words/word-3693878703.html,mp;p
+✶,-Cnd-,-Cn-,supported,medial nasal plus stop after another consonant became simple nasal,https://eldamo.org/content/words/word-4126101193.html,p
+✶,-m,-n,supported,final [m] became [n],https://eldamo.org/content/words/word-760163573.html,p
+✶,-Cnd-,-Cn-,supported,medial nasal plus stop after another consonant became simple nasal,https://eldamo.org/content/words/word-4126101193.html,p
+ᴹ✶,sn-,n̥-,supported,"initial [s] unvoiced following [m], [n], [j], [w]",https://eldamo.org/content/words/word-3693878703.html,mp;p
+✶,-Cŋg-,-Cŋ-,supported,medial nasal plus stop after another consonant became simple nasal,https://eldamo.org/content/words/word-4126101193.html,p
+✶,V̄ŋ{rlmn},V̄{rlmn},complex_variable_or_alternation,[без названия],,p
+AQ.,ŋ̣g-,iŋg-,supported,syllabic nasals developed a preceding vowel of similar quality,https://eldamo.org/content/words/word-4294735057.html,p
+AQ.,ŋ̣gj-,iŋgj-,supported,syllabic nasals developed a preceding vowel of similar quality,https://eldamo.org/content/words/word-4294735057.html,p
+AQ.,ŋ̣gw-,uŋgw-,supported,syllabic nasals developed a preceding vowel of similar quality,https://eldamo.org/content/words/word-4294735057.html,p
+AQ.,ŋ̣-,aŋ-,supported,"initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",https://eldamo.org/content/words/word-1024355367.html,p
+✶,-ŋj-,-ŋgj-,supported,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",https://eldamo.org/content/words/word-2233951333.html,p
+✶,-ŋw-,-ŋgw-,supported,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",https://eldamo.org/content/words/word-2233951333.html,p
+✶,-Cŋg-,-Cŋ-,supported,medial nasal plus stop after another consonant became simple nasal,https://eldamo.org/content/words/word-4126101193.html,p
+Q.,-{nŋlr}ŋ-,-{nŋlr}g-,supported expanded,"medial [ŋ] after a [n], [ŋ], [l], [r] became [g]",https://eldamo.org/content/words/word-447633467.html,p
+ᴹ✶,-ŋj-,-ŋgj-,supported,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",https://eldamo.org/content/words/word-1270135967.html,mp;p
+AQ.,w-|VwV,v-|VvV,complex_variable_or_alternation,[без названия],,p
+AQ.,sw-,w̥-,supported,"initial [s] unvoiced following [l], [r], [w]",https://eldamo.org/content/words/word-165461035.html,p
+✶,-w,-u,supported,"final [j], [w] became [i], [u]",https://eldamo.org/content/words/word-2641132585.html,p
+AQ.,sl-,l̥-,supported,"initial [s] unvoiced following [l], [r], [w]",https://eldamo.org/content/words/word-165461035.html,p
+AQ.,rl|lr,ll|ll,complex_variable_or_alternation,[без названия],,p
+AQ.,sr-,r̥-,supported,"initial [s] unvoiced following [l], [r], [w]",https://eldamo.org/content/words/word-165461035.html,p
+✶,-ɣ-,-ø-,supported,medial [ɣ]/[h] vanished except before [t],https://eldamo.org/content/words/word-2690267141.html,p
+✶,-j,-i,supported,"final [j], [w] became [i], [u]",https://eldamo.org/content/words/word-2641132585.html,p
+AQ.,-j-,-i-,supported,medial [j] became [i],https://eldamo.org/content/words/word-1471734033.html,mp;p
+AQ.,sj-,j̊-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-1556924193.html,p
+AQ.,sl-,l̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-1556924193.html,p
+AQ.,sm-,m̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-1556924193.html,p
+AQ.,sn-,n̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-1556924193.html,p
+AQ.,sr-,r̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-1556924193.html,p
+AQ.,sw-,w̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-1556924193.html,p
+AQ.,sl-,l̥-,supported,initial [s] unvoiced following consonants,https://eldamo.org/content/words/word-3923357111.html,p
+AQ.,sm-,m̥-,supported,initial [s] unvoiced following consonants,https://eldamo.org/content/words/word-3923357111.html,p
+AQ.,sn-,n̥-,supported,initial [s] unvoiced following consonants,https://eldamo.org/content/words/word-3923357111.html,p
+AQ.,sr-,r̥-,supported,initial [s] unvoiced following consonants,https://eldamo.org/content/words/word-3923357111.html,p
+ᴹ✶,t+t,st,supported,"[t+t], [d+d] from suffixion became [st], [zd]",https://eldamo.org/content/words/word-2630259491.html,mp;p
+ᴹ✶,sl-,l̥-,supported,"initial [s] unvoiced following [l], [r], [w]",https://eldamo.org/content/words/word-165461035.html,mp;p
+ᴹ✶,sr-,r̥-,supported,"initial [s] unvoiced following [l], [r], [w]",https://eldamo.org/content/words/word-165461035.html,mp;p
+ᴹ✶,sw-,w̥-,supported,"initial [s] unvoiced following [l], [r], [w]",https://eldamo.org/content/words/word-165461035.html,mp;p
+ᴹAQ.,sj-,j̊-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-476591497.html,mp;p
+ᴹAQ.,sl-,l̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-476591497.html,mp;p
+ᴹAQ.,sm-,m̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-476591497.html,mp;p
+ᴹAQ.,sn-,n̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-476591497.html,mp;p
+ᴹAQ.,sr-,r̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-476591497.html,mp;p
+ᴹAQ.,sw-,w̥-,supported,initial [s] unvoiced following continuant,https://eldamo.org/content/words/word-476591497.html,mp;p
+ᴹAQ.,sj,j̊,supported,"[x], [s] unvoiced following [j], [w]",https://eldamo.org/content/words/word-3260572145.html,mp;p
+ᴹAQ.,sw,w̥,supported,"[x], [s] unvoiced following [j], [w]",https://eldamo.org/content/words/word-3260572145.html,mp;p
+ᴹQ.,sj-,j̊-,supported,"initial [s] unvoiced following [m], [n], [j], [w]",https://eldamo.org/content/words/word-3693878703.html,mp;p
+ᴹQ.,sw-,w̥-,supported,"initial [s] unvoiced following [m], [n], [j], [w]",https://eldamo.org/content/words/word-3693878703.html,mp;p
+AQ.,z{bdg},s{ptk},supported expanded,[z] plus voiced stop became unvoiced,https://eldamo.org/content/words/word-3279729471.html,p
+ᴹ✶,d+d,zd,supported,"[t+t], [d+d] from suffixion became [st], [zd]",https://eldamo.org/content/words/word-2630259491.html,mp;p
+✶,-h-,-ø-,supported,medial [ɣ]/[h] vanished except before [t],https://eldamo.org/content/words/word-2690267141.html,p
+✶,-j,-i,supported,"final [j], [w] became [i], [u]",https://eldamo.org/content/words/word-2641132585.html,p
+✶,-Sĭ,-Se,syllable metacharacter,"short final [i], [u] became [e], [o]",https://eldamo.org/content/words/word-3064357955.html,p
+ᴹQ.,éi,ai,supported,"[ei], [ou] generally became [ī], [ū]",https://eldamo.org/content/words/word-1123007057.html,mp;p
+ᴹ✶,wŏ́,wa,supported,stressed [wŏ] became [wa],https://eldamo.org/content/words/word-1415948757.html,mp;p
+✶,-Sŭ,-So,syllable metacharacter,"short final [i], [u] became [e], [o]",https://eldamo.org/content/words/word-3064357955.html,p
+ᴹ✶,wŏ́,wa,supported,stressed [wŏ] became [wa],https://eldamo.org/content/words/word-1415948757.html,mp;p
+✶,-w,-u,supported,"final [j], [w] became [i], [u]",https://eldamo.org/content/words/word-2641132585.html,p
+AQ.,ŏ,a,supported,short [ŏ] became [a] in Primitive Danian,https://eldamo.org/content/words/word-562246463.html,mp;p
+AQ.,ˌau,o,supported,"[au], [ae] became [o], [e] in polysyllables",https://eldamo.org/content/words/word-567222053.html,p
+ᴹQ.,óu,au,supported,"[ei], [ou] generally became [ī], [ū]",https://eldamo.org/content/words/word-1123007057.html,mp;p
+✶,-h-,-ø-,supported,medial [ɣ]/[h] vanished except before [t],https://eldamo.org/content/words/word-2690267141.html,p
+✶,-ɣ-,-ø-,supported,medial [ɣ]/[h] vanished except before [t],https://eldamo.org/content/words/word-2690267141.html,p

@@ -1,0 +1,102 @@
+id,states,grade_prior,example_sequences_tested,example_sequences_reproduced,step_matches,step_no_match,step_unsupported,note
+1,pʰt → ptʰ → pt → ɸt,D,0,0,0,0,0,word-level executable check; not historical authentication
+2,pʰtʰ → ptʰ → pt → ɸt,D,0,0,0,0,0,word-level executable check; not historical authentication
+3,ŋ- → ŋg- → ŋ- → ø-,U,0,0,0,0,0,word-level executable check; not historical authentication
+4,kʰt → ktʰ → kt → xt,D,0,0,0,0,0,word-level executable check; not historical authentication
+5,pʰt → ptʰ → pt → ps,D,0,0,0,0,0,word-level executable check; not historical authentication
+6,pʰt → ptʰ → pt → xt,D,0,0,0,0,0,word-level executable check; not historical authentication
+7,sb → zb → sp → ps,D,0,0,0,0,0,word-level executable check; not historical authentication
+8,sg → zg → sk → ks,D,0,0,0,0,0,word-level executable check; not historical authentication
+9,ŋ → g → ɣ → ø,U,0,0,0,0,0,word-level executable check; not historical authentication
+10,ŋ → g → ɣ → ø,U,0,0,0,0,0,word-level executable check; not historical authentication
+11,ɣ → g → ɣ → ø,U,0,0,0,0,0,word-level executable check; not historical authentication
+12,ɣ → g → ɣ → ø,U,0,0,0,0,0,word-level executable check; not historical authentication
+13,ae → ā → ō,U,0,0,0,0,0,word-level executable check; not historical authentication
+14,ao → ā → ō,U,0,0,0,0,0,word-level executable check; not historical authentication
+15,b → β → v,B,10,10,20,0,0,word-level executable check; not historical authentication
+16,bd → pt → ɸt,U,1,1,2,0,0,word-level executable check; not historical authentication
+17,bm → mm → m,U,0,0,0,0,0,word-level executable check; not historical authentication
+18,bm → mb → mm,U,0,0,0,0,0,word-level executable check; not historical authentication
+19,d → ð → z,U,0,0,0,0,0,word-level executable check; not historical authentication
+20,g → ɣ → ø,B,10,10,20,0,0,word-level executable check; not historical authentication
+21,gd → kt → xt,C,1,1,2,0,0,word-level executable check; not historical authentication
+22,gj → dj → dʒ,U,0,0,0,0,0,word-level executable check; not historical authentication
+23,gj → dj → dʒ,U,0,0,0,0,0,word-level executable check; not historical authentication
+24,gj → dj → lj,U,0,0,0,0,0,word-level executable check; not historical authentication
+25,gt → kt → xt,C,5,5,10,0,0,word-level executable check; not historical authentication
+26,kj → tj → tʃ,U,0,0,0,0,0,word-level executable check; not historical authentication
+27,kn → kt → xt,C,1,1,2,0,0,word-level executable check; not historical authentication
+28,ktʰ → kt → xt,C,1,1,2,0,0,word-level executable check; not historical authentication
+29,kʰ → x → h,B,10,9,19,0,0,word-level executable check; not historical authentication
+30,mm → mb → mm,U,0,0,0,0,0,word-level executable check; not historical authentication
+31,nn → nd → nn,U,0,0,0,0,0,word-level executable check; not historical authentication
+32,pm → pw → pp,B,1,1,2,0,0,word-level executable check; not historical authentication
+33,pn → pt → ɸt,D,0,0,0,0,0,word-level executable check; not historical authentication
+34,ptʰ → pt → ɸt,D,0,0,0,0,0,word-level executable check; not historical authentication
+35,pʰ → ɸ → f,B,10,10,20,0,0,word-level executable check; not historical authentication
+36,pʰt → ptʰ → pt,D,0,0,0,0,0,word-level executable check; not historical authentication
+37,pʰtʰ → ptʰ → pt,D,0,0,0,0,0,word-level executable check; not historical authentication
+38,pʰw → ppʰ → pp,D,0,0,0,0,0,word-level executable check; not historical authentication
+39,sd → zd → st,U,1,0,1,0,0,word-level executable check; not historical authentication
+40,sg → zg → ðɣ,U,0,0,0,0,0,word-level executable check; not historical authentication
+41,sj → zj → ʒ,U,0,0,0,0,0,word-level executable check; not historical authentication
+42,tk → sk → ks,D,0,0,0,0,0,word-level executable check; not historical authentication
+43,tk → kt → xt,D,0,0,0,0,0,word-level executable check; not historical authentication
+44,tʰ → θ → s,B,10,10,20,0,0,word-level executable check; not historical authentication
+45,tʰt → ttʰ → tt,D,0,0,0,0,0,word-level executable check; not historical authentication
+46,tʰt → ttʰ → θθ,U,0,0,0,0,0,word-level executable check; not historical authentication
+47,tʰtʰ → ttʰ → tt,D,0,0,0,0,0,word-level executable check; not historical authentication
+48,tʰtʰ → ttʰ → θθ,U,0,0,0,0,0,word-level executable check; not historical authentication
+49,zm → mm → m,U,0,0,0,0,0,word-level executable check; not historical authentication
+50,ā → ǭ → ā,U,0,0,0,0,0,word-level executable check; not historical authentication
+51,ā → ǭ → ō,U,0,0,0,0,0,word-level executable check; not historical authentication
+52,ā → ǭ → ō,U,0,0,0,0,0,word-level executable check; not historical authentication
+53,ŋ- → ŋg- → g-,U,0,0,0,0,0,word-level executable check; not historical authentication
+54,ŋ- → ŋg- → g-,U,0,0,0,0,0,word-level executable check; not historical authentication
+55,ŋ- → ŋg- → g-,U,0,0,0,0,0,word-level executable check; not historical authentication
+56,ŋ- → ŋg- → ŋ-,U,0,0,0,0,0,word-level executable check; not historical authentication
+57,ŋg- → ŋ- → g-,U,0,0,0,0,0,word-level executable check; not historical authentication
+58,ŋg- → ŋ- → ø-,U,0,0,0,0,0,word-level executable check; not historical authentication
+59,ŋg- → ŋ- → ø-,U,0,0,0,0,0,word-level executable check; not historical authentication
+60,ŋg- → ŋ- → ø-,U,0,0,0,0,0,word-level executable check; not historical authentication
+61,ŋgj → ndj → nj,D,0,0,0,0,0,word-level executable check; not historical authentication
+62,ŋgw → mb → mm,U,0,0,0,0,0,word-level executable check; not historical authentication
+63,ŋs → ns → ss,D,0,0,0,0,0,word-level executable check; not historical authentication
+64,Vp → Vb → Vv,U,0,0,0,0,0,word-level executable check; not historical authentication
+65,Vp → Vb → Vv,U,0,0,0,0,0,word-level executable check; not historical authentication
+66,Vt → Vd → Vð,U,0,0,0,0,0,word-level executable check; not historical authentication
+67,bd → pt → ps,C,2,2,4,0,0,word-level executable check; not historical authentication
+68,bd → pt → xt,D,0,0,0,0,0,word-level executable check; not historical authentication
+69,bt → pt → ps,C,2,2,4,0,0,word-level executable check; not historical authentication
+70,bt → pt → xt,D,0,0,0,0,0,word-level executable check; not historical authentication
+71,dm → nm → nw,C,1,1,2,0,0,word-level executable check; not historical authentication
+72,g → ɣ → ø,C,10,10,20,0,0,word-level executable check; not historical authentication
+73,g → ɣ → ø,U,0,0,0,0,0,word-level executable check; not historical authentication
+74,gm → ŋm → ŋgw,C,10,10,20,0,0,word-level executable check; not historical authentication
+75,gt → kt → xt,D,0,0,0,0,0,word-level executable check; not historical authentication
+76,kd → kt → xt,D,0,0,0,0,0,word-level executable check; not historical authentication
+77,ktʰ → kt → xt,D,0,0,0,0,0,word-level executable check; not historical authentication
+78,kʰ → x → h,U,10,8,17,1,0,word-level executable check; not historical authentication
+79,kʰn → kt → xt,C,1,1,2,0,0,word-level executable check; not historical authentication
+80,kʰt → ktʰ → kt,D,0,0,0,0,0,word-level executable check; not historical authentication
+81,nd- → d- → l-,U,0,0,0,0,0,word-level executable check; not historical authentication
+82,nd- → d- → l-,U,0,0,0,0,0,word-level executable check; not historical authentication
+83,ptʰ → pt → ps,D,0,0,0,0,0,word-level executable check; not historical authentication
+84,ptʰ → pt → xt,D,0,0,0,0,0,word-level executable check; not historical authentication
+85,pʰ → ɸ → f,C,10,10,20,0,0,word-level executable check; not historical authentication
+86,pʰ → ɸ → f,U,9,9,18,0,0,word-level executable check; not historical authentication
+87,pʰm → mpʰ → ppʰ,D,0,0,0,0,0,word-level executable check; not historical authentication
+88,pʰt → ptʰ → pt,D,0,0,0,0,0,word-level executable check; not historical authentication
+89,sb → zb → sp,D,0,0,0,0,0,word-level executable check; not historical authentication
+90,sd → zd → st,C,0,0,0,0,0,word-level executable check; not historical authentication
+91,sg → zg → sk,C,7,7,14,0,0,word-level executable check; not historical authentication
+92,skʰ → sk → ks,D,0,0,0,0,0,word-level executable check; not historical authentication
+93,tʰ → θ → s,C,10,10,20,0,0,word-level executable check; not historical authentication
+94,tʰ → θ → s,U,0,0,0,0,0,word-level executable check; not historical authentication
+95,tʰ → θ → s,U,1,1,2,0,0,word-level executable check; not historical authentication
+96,tʰ → θ → s,U,6,6,12,0,0,word-level executable check; not historical authentication
+97,zb → sp → ps,D,0,0,0,0,0,word-level executable check; not historical authentication
+98,zg → sk → ks,D,0,0,0,0,0,word-level executable check; not historical authentication
+99,ŋ → g → ɣ,U,0,0,0,0,0,word-level executable check; not historical authentication
+100,ŋgj → ndj → nj,D,0,0,0,0,0,word-level executable check; not historical authentication
+101,ɣ → g → ɣ,U,0,0,0,0,0,word-level executable check; not historical authentication

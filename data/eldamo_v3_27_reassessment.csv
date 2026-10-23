@@ -1,0 +1,28 @@
+id,states,markers,literal_inventory_edge_counts,every_edge_found,word_level_verified,status
+1,mpʰ → ppʰ → pp,AQ. → Q.,2;0,False,False,structural; inspect rule examples and context
+2,zb → sp → ps,AQ. → Q.,0;2,False,False,structural; inspect rule examples and context
+3,zg → sk → ks,AQ. → Q.,0;2,False,False,structural; inspect rule examples and context
+4,xw → w̥ → f,AQ. → Q.,2;1,True,False,structural; inspect rule examples and context
+5,bt → pt → ɸt,✶ → Q.,0;2,False,False,structural; inspect rule examples and context
+6,bʰ → pʰ → ɸ,✶ → AQ.,0;2,False,False,structural; inspect rule examples and context
+7,bʰ → pʰ → ɸ → f,✶ → AQ. → Q.,0;2;2,False,False,structural; inspect rule examples and context
+8,pp → ppʰ → pp,✶ → Q.,0;0,False,False,structural; inspect rule examples and context
+9,pp → ppʰ → pp,✶ → AQ.,0;2,False,False,structural; inspect rule examples and context
+10,tp → tpʰ → tp,✶ → Q.,0;0,False,False,structural; inspect rule examples and context
+11,kp → kpʰ → kp,✶ → Q.,0;0,False,False,structural; inspect rule examples and context
+12,mp → mpʰ → ppʰ,✶ → AQ.,0;2,False,False,structural; inspect rule examples and context
+13,mp → mpʰ → ppʰ → pp,✶ → AQ. → Q.,0;2;0,False,False,structural; inspect rule examples and context
+14,pd → pt → ɸt,AQ. → Q.,0;2,False,False,structural; inspect rule examples and context
+15,kd → kt → xt,AQ. → Q.,0;2,False,False,structural; inspect rule examples and context
+16,dʰ → tʰ → θ,✶ → AQ.,0;2,False,False,structural; inspect rule examples and context
+17,dʰ → tʰ → θ → s,✶ → AQ. → Q.,0;2;2,False,False,structural; inspect rule examples and context
+18,pd → pt → ɸt,✶ → Q.,0;2,False,False,structural; inspect rule examples and context
+19,kd → kt → xt,✶ → Q.,0;2,False,False,structural; inspect rule examples and context
+20,ptʰ → pt → ɸt,✶ → Q.,0;2,False,False,structural; inspect rule examples and context
+21,ktʰ → kt → xt,✶ → Q.,0;2,False,False,structural; inspect rule examples and context
+22,pʰw → ppʰ → pp,✶ → Q.,2;0,False,False,structural; inspect rule examples and context
+23,bt → pt → ɸt,AQ. → Q.,0;2,False,False,structural; inspect rule examples and context
+24,sb → zb → sp,✶ → AQ.,2;0,False,False,structural; inspect rule examples and context
+25,sb → zb → sp → ps,✶ → AQ. → Q.,2;0;2,False,False,structural; inspect rule examples and context
+26,sg → zg → sk,✶ → AQ.,2;0,False,False,structural; inspect rule examples and context
+27,sg → zg → sk → ks,✶ → AQ. → Q.,2;0;2,False,False,structural; inspect rule examples and context

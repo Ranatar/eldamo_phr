@@ -1,0 +1,30739 @@
+window.ELDAMO_EDGES = [
+  {
+    "a": "ppʰ",
+    "b": "pp",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tpʰ",
+    "b": "tp",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kpʰ",
+    "b": "kp",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pt",
+    "b": "ɸt",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[pt], [kt] became [ɸt], [xt]",
+    "url": "https://eldamo.org/content/words/word-2265073101.html",
+    "cards": "q",
+    "tested": 4,
+    "exact": 4,
+    "cautions": "after, alternate, before, earlier, except, later, only, perhaps, possibly, probably, revised, sometimes, usually",
+    "comment": "In Quenya words with distinct pairs of voiceless stops, the first of the pair became spirantal. In particular, pt, kt > ꝑt, ht [ɸt, xt], and possibly even tk > þk [θk]. To fully understand these sound changes, you need to examine the contexts in whic"
+  },
+  {
+    "a": "pw",
+    "b": "pp",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[pw] became [pp]",
+    "url": "https://eldamo.org/content/words/word-182545135.html",
+    "cards": "q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after",
+    "comment": "The combination pw that arose from pm further developed into pp , much how this combination changed in Primitive Elvish . This is because after p , the m it did not fully develop to voiced w , passing instead through: pm > pƕ [pʍ] > pp . See the disc"
+  },
+  {
+    "a": "sp",
+    "b": "ps",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[sp], [sk] became [ps], [ks]",
+    "url": "https://eldamo.org/content/words/word-2094898289.html",
+    "cards": "q",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "after, initial, later, medial, only, perhaps, probably, uncertain",
+    "comment": "In Quenya the combinations sp, sk were frequently transposed to ps, ks : universally in the case of medial ps , sporadically in other cases. This sound change happened both initially and medially, and the initial transpositions introduced\n           "
+  },
+  {
+    "a": "mp-",
+    "b": "p-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial nasals plus stops reduced to nasals",
+    "url": "https://eldamo.org/content/words/word-2123493145.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, initial, medial, only",
+    "comment": "In all versions of Quenya from the 1910s through the 1960s, any initial nasal + stop clusters (excluding only those that became syllabic ) reduced to simple nasals. Tolkien described this change all the way back in the Qenya Phonology written in the "
+  },
+  {
+    "a": "mpʰ",
+    "b": "ppʰ",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "nasals became voiceless stops before aspirates",
+    "url": "https://eldamo.org/content/words/word-2847294287.html",
+    "cards": "mq;q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ppʰ",
+    "b": "pp",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "aspirates became voiceless stops after voiceless stops",
+    "url": "https://eldamo.org/content/words/word-2769500867.html",
+    "cards": "aq;maq;mq;q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sp",
+    "b": "ps",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[sp], [sk] became [ps], [ks]",
+    "url": "https://eldamo.org/content/words/word-3499874945.html",
+    "cards": "mq;q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ps-",
+    "b": "s-",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "initial [ps], [ks] became [s]",
+    "url": "https://eldamo.org/content/words/word-93837315.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rθ",
+    "b": "rt",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "lθ",
+    "b": "lt",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ttʰ",
+    "b": "tt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "aspirates became voiceless stops after voiceless stops",
+    "url": "https://eldamo.org/content/words/word-2190887743.html",
+    "cards": "aq;q",
+    "tested": 6,
+    "exact": 6,
+    "cautions": "after, before, earlier, later, only",
+    "comment": "In Ancient Quenya, any aspirates that followed a voiceless stop lost (most of) its aspiration, so that the result was a pair\n               of voiceless stops. This must have happened before aspirates became voiceless spirants . Already in Primitive "
+  },
+  {
+    "a": "stʰ",
+    "b": "st",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspirates became voiceless stops after [s], [h]",
+    "url": "https://eldamo.org/content/words/word-2699949575.html",
+    "cards": "aq;maq;mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tʰn",
+    "b": "tt",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[n], [m] became [t], [w] after aspirates",
+    "url": "https://eldamo.org/content/words/word-372953021.html",
+    "cards": "mq;q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ntʰ",
+    "b": "ttʰ",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "nasals became voiceless stops before aspirates",
+    "url": "https://eldamo.org/content/words/word-2847294287.html",
+    "cards": "mq;q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ttʰ",
+    "b": "tt",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "aspirates became voiceless stops after voiceless stops",
+    "url": "https://eldamo.org/content/words/word-2769500867.html",
+    "cards": "mq;q",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kj",
+    "b": "tj",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "velars were dentalized before [j]",
+    "url": "https://eldamo.org/content/words/word-3291729015.html",
+    "cards": "aq;maq;mq;q",
+    "tested": 17,
+    "exact": 17,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ts-",
+    "b": "s-",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "initial [ps], [ks] became [s]",
+    "url": "https://eldamo.org/content/words/word-93837315.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kj",
+    "b": "tj",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "velars were dentalized before [j]",
+    "url": "https://eldamo.org/content/words/word-3703720537.html",
+    "cards": "aq;q",
+    "tested": 19,
+    "exact": 19,
+    "cautions": "after, before, earlier, except, initial, later, medial, only",
+    "comment": "One of the more characteristic phonetic developments of Quenya is that the palatalized velars ñy, ky, gy changed into dental ny, ty, dy . There was a similar change in Telerin , but since Sindarin shows a different development ( [j] was lost after in"
+  },
+  {
+    "a": "ŋk-",
+    "b": "k-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial nasals plus stops reduced to nasals",
+    "url": "https://eldamo.org/content/words/word-2830500177.html",
+    "cards": "aq;maq;mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tk",
+    "b": "kt",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[tk] became [kk] or [kt] or [sk]",
+    "url": "https://eldamo.org/content/words/word-700934409.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "possibly",
+    "comment": "@@@ Q examples: (ek)koiru- and ekkes-, as well as possibly ekkaira and ekkoita- From Lokyt: P < PP: S. ephed-, ephel, aphed- TK < KK: Q. accar, aquet-; T. okko; S. achar, echad-, echor, echuir, echui(w), ochui, Aracchír TK < KT: Q. ehtele, ehtelu-, a"
+  },
+  {
+    "a": "sk",
+    "b": "ks",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[sp], [sk] became [ps], [ks]",
+    "url": "https://eldamo.org/content/words/word-2094898289.html",
+    "cards": "q",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "after, initial, later, medial, only, perhaps, probably, uncertain",
+    "comment": "In Quenya the combinations sp, sk were frequently transposed to ps, ks : universally in the case of medial ps , sporadically in other cases. This sound change happened both initially and medially, and the initial transpositions introduced\n           "
+  },
+  {
+    "a": "ŋk-",
+    "b": "k-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial nasals plus stops reduced to nasals",
+    "url": "https://eldamo.org/content/words/word-2123493145.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, initial, medial, only",
+    "comment": "In all versions of Quenya from the 1910s through the 1960s, any initial nasal + stop clusters (excluding only those that became syllabic ) reduced to simple nasals. Tolkien described this change all the way back in the Qenya Phonology written in the "
+  },
+  {
+    "a": "ŋkʰ",
+    "b": "kkʰ",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "nasals became voiceless stops before aspirates",
+    "url": "https://eldamo.org/content/words/word-2847294287.html",
+    "cards": "mq;q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kkʰ",
+    "b": "kk",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "aspirates became voiceless stops after voiceless stops",
+    "url": "https://eldamo.org/content/words/word-2769500867.html",
+    "cards": "mq;q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sk",
+    "b": "ks",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[sp], [sk] became [ps], [ks]",
+    "url": "https://eldamo.org/content/words/word-3499874945.html",
+    "cards": "mq;q",
+    "tested": 7,
+    "exact": 7,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ks-",
+    "b": "s-",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "initial [ps], [ks] became [s]",
+    "url": "https://eldamo.org/content/words/word-93837315.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-nŋ-",
+    "b": "-ng-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "medial [ŋ] after a [n], [ŋ], [l], [r] became [g]",
+    "url": "https://eldamo.org/content/words/word-447633467.html",
+    "cards": "q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-ŋŋ-",
+    "b": "-ŋg-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "medial [ŋ] after a [n], [ŋ], [l], [r] became [g]",
+    "url": "https://eldamo.org/content/words/word-447633467.html",
+    "cards": "q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-lŋ-",
+    "b": "-lg-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "medial [ŋ] after a [n], [ŋ], [l], [r] became [g]",
+    "url": "https://eldamo.org/content/words/word-447633467.html",
+    "cards": "q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-rŋ-",
+    "b": "-rg-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "medial [ŋ] after a [n], [ŋ], [l], [r] became [g]",
+    "url": "https://eldamo.org/content/words/word-447633467.html",
+    "cards": "q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ɸ",
+    "b": "f",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ɸ], [β] became [f], [v]",
+    "url": "https://eldamo.org/content/words/word-14484545.html",
+    "cards": "q",
+    "tested": 73,
+    "exact": 73,
+    "cautions": "after, before, dialect, earlier, except, later, only, probably",
+    "comment": "In Quenya the bilabial spirants ꝑ, ƀ [ɸ, β] (as derived from primitive ph, b ) both became labio-dental f, v . These sound changes were mentioned in both the Outline of Phonetic Development (OP1) from the 1940s and the Outline of Phonology (OP2) from"
+  },
+  {
+    "a": "pʰ",
+    "b": "ɸ",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "aspirates became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-3537093625.html",
+    "cards": "aq;maq;mq;q",
+    "tested": 42,
+    "exact": 42,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sp-",
+    "b": "ɸ-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [s] plus voiceless stops became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-3333849997.html",
+    "cards": "mq;q",
+    "tested": 11,
+    "exact": 11,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ɸ",
+    "b": "f",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[ɸ], [β] became [f], [v]",
+    "url": "https://eldamo.org/content/words/word-2661449019.html",
+    "cards": "mq;q",
+    "tested": 49,
+    "exact": 49,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sf",
+    "b": "f",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[sf] became [f]",
+    "url": "https://eldamo.org/content/words/word-1165599019.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "zd",
+    "b": "st",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[z] plus voiced stop became unvoiced",
+    "url": "https://eldamo.org/content/words/word-3279729471.html",
+    "cards": "aq;q",
+    "tested": 12,
+    "exact": 12,
+    "cautions": "after, before, later, only, usually",
+    "comment": "In Primitive Elvish, [s] became [z] before voiced stops . In Quenya, this sound change was reversed, with [s] as well as the following stop being unvoiced. This change was parallel\n               to, and around the same time as, combinations of voice"
+  },
+  {
+    "a": "ṣ-",
+    "b": "is-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "syllabic initial [s] became [is]",
+    "url": "https://eldamo.org/content/words/word-785281061.html",
+    "cards": "q",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "θ",
+    "b": "s",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[θ] became [s]",
+    "url": "https://eldamo.org/content/words/word-3491983963.html",
+    "cards": "q",
+    "tested": 68,
+    "exact": 68,
+    "cautions": "after, before, dialect, except, later, medial, only, probably, usually",
+    "comment": "In the Ñoldorin dialect, the voiceless dental spirant þ [θ] that had developed from the primitive aspirate th [tʰ] further developed into s . This sound change did not, however, occur in the Vanyarin dialect, and represents one of the most distinctiv"
+  },
+  {
+    "a": "rs",
+    "b": "ss",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[rs] became [ss]",
+    "url": "https://eldamo.org/content/words/word-1326730955.html",
+    "cards": "q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ns",
+    "b": "ss",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[ns] became [ss] or [nz]",
+    "url": "https://eldamo.org/content/words/word-1082153437.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sr",
+    "b": "ss",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[sr] became [ss]",
+    "url": "https://eldamo.org/content/words/word-3069824903.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pr",
+    "b": "ps",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[r] became [s] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-1238072385.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pʰr",
+    "b": "ps",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[r] became [s] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-1238072385.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tr",
+    "b": "ts",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[r] became [s] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-1238072385.html",
+    "cards": "mq;q",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tʰr",
+    "b": "ts",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[r] became [s] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-1238072385.html",
+    "cards": "mq;q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kr",
+    "b": "ks",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[r] became [s] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-1238072385.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kʰr",
+    "b": "ks",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[r] became [s] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-1238072385.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ntr",
+    "b": "ns",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[r] became [s] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-1238072385.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pt",
+    "b": "ps",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[pt], [kt] became [ps], [xt]",
+    "url": "https://eldamo.org/content/words/word-2701010297.html",
+    "cards": "mq;q",
+    "tested": 9,
+    "exact": 9,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "θ",
+    "b": "s",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[θ] became [s]",
+    "url": "https://eldamo.org/content/words/word-3006504693.html",
+    "cards": "aq;maq;mq;q",
+    "tested": 45,
+    "exact": 45,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rs",
+    "b": "ss",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[rs] became [ss]",
+    "url": "https://eldamo.org/content/words/word-2756914109.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tʰ",
+    "b": "θ",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "aspirates became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-3537093625.html",
+    "cards": "aq;maq;mq;q",
+    "tested": 27,
+    "exact": 27,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "st-",
+    "b": "θ-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [s] plus voiceless stops became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-3333849997.html",
+    "cards": "mq;q",
+    "tested": 9,
+    "exact": 9,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ɸu",
+    "b": "hu",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ɸu] became [hu]",
+    "url": "https://eldamo.org/content/words/word-1102872571.html",
+    "cards": "q",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "x",
+    "b": "h",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[x] became [h] except before [t]",
+    "url": "https://eldamo.org/content/words/word-2071843593.html",
+    "cards": "q",
+    "tested": 49,
+    "exact": 49,
+    "cautions": "after, before, dialect, except, initial, intervocalic, later, medial, often, only, perhaps, probably, revised, sometimes, usually",
+    "comment": "In Quenya the voiceless velar spirant χ [x] weakened to a simple “breath h ”. This weakening happened first at the beginning of words, in the Parmaquesta [PQ] period. It happened later medially, in\n               the Tarquesta [TQ] period. The only c"
+  },
+  {
+    "a": "x",
+    "b": "h",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[x] became [h] except before [t]",
+    "url": "https://eldamo.org/content/words/word-2800366809.html",
+    "cards": "mq;q",
+    "tested": 68,
+    "exact": 68,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kt",
+    "b": "xt",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[pt], [kt] became [ɸt], [xt]",
+    "url": "https://eldamo.org/content/words/word-2265073101.html",
+    "cards": "q",
+    "tested": 35,
+    "exact": 35,
+    "cautions": "after, alternate, before, earlier, except, later, only, perhaps, possibly, probably, revised, sometimes, usually",
+    "comment": "In Quenya words with distinct pairs of voiceless stops, the first of the pair became spirantal. In particular, pt, kt > ꝑt, ht [ɸt, xt], and possibly even tk > þk [θk]. To fully understand these sound changes, you need to examine the contexts in whic"
+  },
+  {
+    "a": "kt",
+    "b": "xt",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[pt], [kt] became [ps], [xt]",
+    "url": "https://eldamo.org/content/words/word-2701010297.html",
+    "cards": "mq;q",
+    "tested": 27,
+    "exact": 27,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pt",
+    "b": "xt",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[pt], [kt] became [ps], [xt]",
+    "url": "https://eldamo.org/content/words/word-2701010297.html",
+    "cards": "mq;q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "b",
+    "b": "β",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiced stops became spirants except after nasals",
+    "url": "https://eldamo.org/content/words/word-1141570065.html",
+    "cards": "aq;q",
+    "tested": 77,
+    "exact": 77,
+    "cautions": "after, before, earlier, except, initial, intervocalic, later, medial, only, probably, revised, sometimes, usually",
+    "comment": "In Ancient Quenya, any surviving medial voiced stops usually became voiced spirants, the most notable exception being those\n               appearing after nasals. This sound change also excludes voiced stops that underwent other earlier changes, such"
+  },
+  {
+    "a": "β",
+    "b": "v",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ɸ], [β] became [f], [v]",
+    "url": "https://eldamo.org/content/words/word-14484545.html",
+    "cards": "q",
+    "tested": 129,
+    "exact": 129,
+    "cautions": "after, before, dialect, earlier, except, later, only, probably",
+    "comment": "In Quenya the bilabial spirants ꝑ, ƀ [ɸ, β] (as derived from primitive ph, b ) both became labio-dental f, v . These sound changes were mentioned in both the Outline of Phonetic Development (OP1) from the 1940s and the Outline of Phonology (OP2) from"
+  },
+  {
+    "a": "b",
+    "b": "β",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiced stops became spirants except after nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-2772726195.html",
+    "cards": "mq;q",
+    "tested": 58,
+    "exact": 58,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "m̥-",
+    "b": "m-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial voiceless nasals and liquids were voiced",
+    "url": "https://eldamo.org/content/words/word-3012528347.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ṃb-",
+    "b": "umb-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "syllabic nasals developed a preceding vowel of similar quality",
+    "url": "https://eldamo.org/content/words/word-4294735057.html",
+    "cards": "q",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "mb-",
+    "b": "m-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial nasals plus stops reduced to nasals",
+    "url": "https://eldamo.org/content/words/word-2123493145.html",
+    "cards": "aq;q",
+    "tested": 27,
+    "exact": 27,
+    "cautions": "after, initial, medial, only",
+    "comment": "In all versions of Quenya from the 1910s through the 1960s, any initial nasal + stop clusters (excluding only those that became syllabic ) reduced to simple nasals. Tolkien described this change all the way back in the Qenya Phonology written in the "
+  },
+  {
+    "a": "zm",
+    "b": "mm",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[z] assimilated to following [m], [n]",
+    "url": "https://eldamo.org/content/words/word-10156157.html",
+    "cards": "q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after, alternation, before, dialect, later, medial, possibly, probably, sometimes, usually",
+    "comment": "After the voicing of s to z , the combinations zn, zm became nn, mm . This change is mentioned in both the Outline of Phonetic Development (OP1) from the 1940s and the Outline of Phonology (OP2) from the 1950s: The earliest of these voicings, possibl"
+  },
+  {
+    "a": "mm",
+    "b": "mb",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[mm], [nn] became [mb], [nd]",
+    "url": "https://eldamo.org/content/words/word-4145612709.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sm-",
+    "b": "m̥-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [s] unvoiced following continuant",
+    "url": "https://eldamo.org/content/words/word-476591497.html",
+    "cards": "mq;q",
+    "tested": 4,
+    "exact": 4,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "mb-",
+    "b": "m-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial nasals plus stops reduced to nasals",
+    "url": "https://eldamo.org/content/words/word-2830500177.html",
+    "cards": "mq;q",
+    "tested": 26,
+    "exact": 26,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "zm",
+    "b": "mm",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[z] assimilated to following [m], [n]",
+    "url": "https://eldamo.org/content/words/word-927570507.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "n̥-",
+    "b": "n-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial voiceless nasals and liquids were voiced",
+    "url": "https://eldamo.org/content/words/word-3012528347.html",
+    "cards": "q",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ṇd-",
+    "b": "and-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "syllabic nasals developed a preceding vowel of similar quality",
+    "url": "https://eldamo.org/content/words/word-4294735057.html",
+    "cards": "q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "eŋn",
+    "b": "enn",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ŋ] assimilated to following [n] after [e], [a], [o]",
+    "url": "https://eldamo.org/content/words/word-368875839.html",
+    "cards": "q",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "aŋn",
+    "b": "ann",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ŋ] assimilated to following [n] after [e], [a], [o]",
+    "url": "https://eldamo.org/content/words/word-368875839.html",
+    "cards": "q",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "oŋn",
+    "b": "onn",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ŋ] assimilated to following [n] after [e], [a], [o]",
+    "url": "https://eldamo.org/content/words/word-368875839.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋj",
+    "b": "nj",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "velars were dentalized before [j]",
+    "url": "https://eldamo.org/content/words/word-3703720537.html",
+    "cards": "aq;q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after, before, earlier, except, initial, later, medial, only",
+    "comment": "One of the more characteristic phonetic developments of Quenya is that the palatalized velars ñy, ky, gy changed into dental ny, ty, dy . There was a similar change in Telerin , but since Sindarin shows a different development ( [j] was lost after in"
+  },
+  {
+    "a": "ŋgj",
+    "b": "ndj",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "velars were dentalized before [j]",
+    "url": "https://eldamo.org/content/words/word-3703720537.html",
+    "cards": "aq;q",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "after, before, earlier, except, initial, later, medial, only",
+    "comment": "One of the more characteristic phonetic developments of Quenya is that the palatalized velars ñy, ky, gy changed into dental ny, ty, dy . There was a similar change in Telerin , but since Sindarin shows a different development ( [j] was lost after in"
+  },
+  {
+    "a": "zn",
+    "b": "nn",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[z] assimilated to following [m], [n]",
+    "url": "https://eldamo.org/content/words/word-10156157.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, alternation, before, dialect, later, medial, possibly, probably, sometimes, usually",
+    "comment": "After the voicing of s to z , the combinations zn, zm became nn, mm . This change is mentioned in both the Outline of Phonetic Development (OP1) from the 1940s and the Outline of Phonology (OP2) from the 1950s: The earliest of these voicings, possibl"
+  },
+  {
+    "a": "nn",
+    "b": "nd",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[mm], [nn] became [mb], [nd]",
+    "url": "https://eldamo.org/content/words/word-4145612709.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sn-",
+    "b": "n̥-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [s] unvoiced following continuant",
+    "url": "https://eldamo.org/content/words/word-476591497.html",
+    "cards": "mq;q",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "aŋn",
+    "b": "ann",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[ŋn] assimilated to following [n] after [e], [a], [o]",
+    "url": "https://eldamo.org/content/words/word-4209459411.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋkj",
+    "b": "ntj",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "velars were dentalized before [j]",
+    "url": "https://eldamo.org/content/words/word-3291729015.html",
+    "cards": "mq;q",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋgj",
+    "b": "ndj",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "velars were dentalized before [j]",
+    "url": "https://eldamo.org/content/words/word-3291729015.html",
+    "cards": "mq;q",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "nd-",
+    "b": "n-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial nasals plus stops reduced to nasals",
+    "url": "https://eldamo.org/content/words/word-2830500177.html",
+    "cards": "mq;q",
+    "tested": 33,
+    "exact": 33,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "zn",
+    "b": "nn",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[z] assimilated to following [m], [n]",
+    "url": "https://eldamo.org/content/words/word-927570507.html",
+    "cards": "mq;q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋj",
+    "b": "nj",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "velars were dentalized before [j]",
+    "url": "https://eldamo.org/content/words/word-3291729015.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋŋ",
+    "b": "ŋg",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[ŋŋ], [ŋɣ] became [ŋg]",
+    "url": "https://eldamo.org/content/words/word-3404492995.html",
+    "cards": "p;q",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋ̣g-",
+    "b": "iŋg-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "syllabic nasals developed a preceding vowel of similar quality",
+    "url": "https://eldamo.org/content/words/word-4294735057.html",
+    "cards": "q",
+    "tested": 4,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋ̣gj-",
+    "b": "iŋgj-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "syllabic nasals developed a preceding vowel of similar quality",
+    "url": "https://eldamo.org/content/words/word-4294735057.html",
+    "cards": "q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋg-",
+    "b": "ŋ-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial nasals plus stops reduced to nasals",
+    "url": "https://eldamo.org/content/words/word-2123493145.html",
+    "cards": "aq;q",
+    "tested": 32,
+    "exact": 32,
+    "cautions": "after, initial, medial, only",
+    "comment": "In all versions of Quenya from the 1910s through the 1960s, any initial nasal + stop clusters (excluding only those that became syllabic ) reduced to simple nasals. Tolkien described this change all the way back in the Qenya Phonology written in the "
+  },
+  {
+    "a": "ŋm",
+    "b": "ŋgw",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[nm], [ŋm] became [nw], [ŋgw]",
+    "url": "https://eldamo.org/content/words/word-2886094609.html",
+    "cards": "mq;q",
+    "tested": 13,
+    "exact": 13,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋg-",
+    "b": "ŋ-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial nasals plus stops reduced to nasals",
+    "url": "https://eldamo.org/content/words/word-2830500177.html",
+    "cards": "mq;q",
+    "tested": 22,
+    "exact": 22,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ɣw",
+    "b": "ww",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "nm",
+    "b": "nw",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[nm], [ŋm] became [nw], [ŋgw]",
+    "url": "https://eldamo.org/content/words/word-1197128543.html",
+    "cards": "q",
+    "tested": 11,
+    "exact": 11,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋm",
+    "b": "ŋgw",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[nm], [ŋm] became [nw], [ŋgw]",
+    "url": "https://eldamo.org/content/words/word-1197128543.html",
+    "cards": "q",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ɣ",
+    "b": "ø",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ɣ] from [g] vanished",
+    "url": "https://eldamo.org/content/words/word-1833409085.html",
+    "cards": "q",
+    "tested": 83,
+    "exact": 83,
+    "cautions": "alternate, except, initial, medial, often, only, probably",
+    "comment": "In Quenya when the voiced stop g became spirantal ʒ [ɣ] , the resulting spirant generally vanished. This sound change is distinct from the much more ancient vanishing or ʒ (or h ) in Primitive Elvish. Tolkien gave essentially the same description of "
+  },
+  {
+    "a": "ɣ",
+    "b": "ø",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[ɣ] from [g] vanished",
+    "url": "https://eldamo.org/content/words/word-3266317297.html",
+    "cards": "mq;q",
+    "tested": 97,
+    "exact": 97,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "g",
+    "b": "ɣ",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiced stops became spirants except after nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-2772726195.html",
+    "cards": "aq;maq;mq;q",
+    "tested": 114,
+    "exact": 114,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋw-",
+    "b": "w-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [ŋ] vanished",
+    "url": "https://eldamo.org/content/words/word-923465271.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dj",
+    "b": "lj",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[dj] became [lj]",
+    "url": "https://eldamo.org/content/words/word-1574644731.html",
+    "cards": "q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after, before, earlier, initial, later, medial, often, only, probably",
+    "comment": "In Ancient Quenya of the 1950s and 1960s, the combination dy became ly both initially and medially. Tolkien described this change in several places, included the Outline of Phonology (OP2) from the 1950s: In Q * del- seems to have become * led , by d"
+  },
+  {
+    "a": "d-",
+    "b": "l-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [d] became [l]",
+    "url": "https://eldamo.org/content/words/word-3325625207.html",
+    "cards": "aq;q",
+    "tested": 22,
+    "exact": 22,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "lɣ",
+    "b": "ll",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[lɣ], [rɣ] became [ll], [rr]",
+    "url": "https://eldamo.org/content/words/word-2837004771.html",
+    "cards": "q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ðl",
+    "b": "ll",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[z] and [ð] assimilated to following [r], [l]",
+    "url": "https://eldamo.org/content/words/word-1472480589.html",
+    "cards": "aq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "nl",
+    "b": "ll",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[nl], [nr] became [ll], [rr]",
+    "url": "https://eldamo.org/content/words/word-3167171353.html",
+    "cards": "mq;q",
+    "tested": 4,
+    "exact": 4,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rl",
+    "b": "ll",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[rl] and [lr] became [ll]",
+    "url": "https://eldamo.org/content/words/word-3234141583.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "lr",
+    "b": "ll",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[rl] and [lr] became [ll]",
+    "url": "https://eldamo.org/content/words/word-3234141583.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dl-",
+    "b": "l-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [dr-], [dl-] became [r-], [l-]",
+    "url": "https://eldamo.org/content/words/word-1126123145.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "d-",
+    "b": "l-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [d] became [l]",
+    "url": "https://eldamo.org/content/words/word-31048751.html",
+    "cards": "mq;q",
+    "tested": 27,
+    "exact": 27,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "zl",
+    "b": "ll",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[z] and [ð] assimilated to following [r], [l]",
+    "url": "https://eldamo.org/content/words/word-98897835.html",
+    "cards": "mq;q",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rɣ",
+    "b": "rr",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[lɣ], [rɣ] became [ll], [rr]",
+    "url": "https://eldamo.org/content/words/word-2837004771.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "z",
+    "b": "r",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[z] became [r]",
+    "url": "https://eldamo.org/content/words/word-3534004155.html",
+    "cards": "q",
+    "tested": 34,
+    "exact": 34,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ð",
+    "b": "z",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ð] became [z]",
+    "url": "https://eldamo.org/content/words/word-767593015.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dr-",
+    "b": "r-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [dr-], [dl-] became [r-], [l-]",
+    "url": "https://eldamo.org/content/words/word-1126123145.html",
+    "cards": "mq;q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rb",
+    "b": "rv",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[rb] became [rv]",
+    "url": "https://eldamo.org/content/words/word-1110299815.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rɣe",
+    "b": "rje",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ɣ] became [j] between liquids and [e], [a]",
+    "url": "https://eldamo.org/content/words/word-2619518313.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "lɣe",
+    "b": "lje",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ɣ] became [j] between liquids and [e], [a]",
+    "url": "https://eldamo.org/content/words/word-2619518313.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "eje",
+    "b": "ie",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j], [w] often reduced between vowels",
+    "url": "https://eldamo.org/content/words/word-3978101829.html",
+    "cards": "q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sl-",
+    "b": "l̥-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] unvoiced following continuant",
+    "url": "https://eldamo.org/content/words/word-1556924193.html",
+    "cards": "aq;q",
+    "tested": 14,
+    "exact": 14,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "lx",
+    "b": "l̥l̥",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[x] became [h] except before [t]",
+    "url": "https://eldamo.org/content/words/word-2800366809.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sl-",
+    "b": "l̥-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [s] unvoiced following continuant",
+    "url": "https://eldamo.org/content/words/word-476591497.html",
+    "cards": "mq;q",
+    "tested": 11,
+    "exact": 11,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sr-",
+    "b": "r̥-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] unvoiced following continuant",
+    "url": "https://eldamo.org/content/words/word-1556924193.html",
+    "cards": "aq;q",
+    "tested": 26,
+    "exact": 26,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rx",
+    "b": "r̥r̥",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[x] became [h] except before [t]",
+    "url": "https://eldamo.org/content/words/word-2800366809.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sr-",
+    "b": "r̥-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [s] unvoiced following continuant",
+    "url": "https://eldamo.org/content/words/word-476591497.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sj-",
+    "b": "j̊-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] unvoiced following continuant",
+    "url": "https://eldamo.org/content/words/word-1556924193.html",
+    "cards": "aq;q",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "xj",
+    "b": "j̊",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[x] unvoiced following [j], [w]",
+    "url": "https://eldamo.org/content/words/word-2963647241.html",
+    "cards": "aq;q",
+    "tested": 4,
+    "exact": 4,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sk-",
+    "b": "x-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [s] plus voiceless stops became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-3333849997.html",
+    "cards": "aq;maq;mq;q",
+    "tested": 16,
+    "exact": 16,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sj-",
+    "b": "j̊-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [s] unvoiced following continuant",
+    "url": "https://eldamo.org/content/words/word-476591497.html",
+    "cards": "mq;q",
+    "tested": 8,
+    "exact": 8,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "xj",
+    "b": "j̊",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[x], [s] unvoiced following [j], [w]",
+    "url": "https://eldamo.org/content/words/word-3260572145.html",
+    "cards": "aq;maq;mq;q",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sj",
+    "b": "j̊",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[x], [s] unvoiced following [j], [w]",
+    "url": "https://eldamo.org/content/words/word-3260572145.html",
+    "cards": "aq;maq;mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sw-",
+    "b": "w̥-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] unvoiced following continuant",
+    "url": "https://eldamo.org/content/words/word-1556924193.html",
+    "cards": "aq;q",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "w̥",
+    "b": "f",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "approximants produced various spirants",
+    "url": "https://eldamo.org/content/words/word-3605637247.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, dialect, later, often, rejected",
+    "comment": "In Vanyarin the voiced and voiceless forms of the approximants [w] and [j] often developed into spirantal forms [f], [ʃ] and\n               [ʒ] (IPA “ezh”, not “yogh” = [ɣ] as it was often used by Tolkien). These sometime assimilated other nearby sou"
+  },
+  {
+    "a": "sw-",
+    "b": "w̥-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [s] unvoiced following continuant",
+    "url": "https://eldamo.org/content/words/word-476591497.html",
+    "cards": "mq;q",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "xw",
+    "b": "w̥",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[x], [s] unvoiced following [j], [w]",
+    "url": "https://eldamo.org/content/words/word-3260572145.html",
+    "cards": "aq;maq;mq;q",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sw",
+    "b": "w̥",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[x], [s] unvoiced following [j], [w]",
+    "url": "https://eldamo.org/content/words/word-3260572145.html",
+    "cards": "aq;maq;mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "jj",
+    "b": "ij",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "éi",
+    "b": "ai",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[ei], [ou] generally became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-1123007057.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "awa",
+    "b": "oa",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j], [w] often reduced between vowels",
+    "url": "https://eldamo.org/content/words/word-3978101829.html",
+    "cards": "q",
+    "tested": 16,
+    "exact": 16,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ml",
+    "b": "mul",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "nasals and liquids often became syllabic after a consonant",
+    "url": "https://eldamo.org/content/words/word-613618983.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋ̣gw-",
+    "b": "uŋgw-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "syllabic nasals developed a preceding vowel of similar quality",
+    "url": "https://eldamo.org/content/words/word-4294735057.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "owo",
+    "b": "uo",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j], [w] often reduced between vowels",
+    "url": "https://eldamo.org/content/words/word-3978101829.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ei",
+    "b": "ī",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ei], [ou] generally became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-2315722009.html",
+    "cards": "q",
+    "tested": 7,
+    "exact": 7,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ei",
+    "b": "ī",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[ei], [ou] generally became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-1123007057.html",
+    "cards": "mq;q",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ðʲi",
+    "b": "ī",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ę̄",
+    "b": "ē",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ę̄], [ǭ] became [ē], [ō]",
+    "url": "https://eldamo.org/content/words/word-1363608031.html",
+    "cards": "q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "before, except, medial",
+    "comment": "The Primitive Elvish a-fortified long vowels ę̄ and ǭ became ē and ō in the Quenya of the 1950s. Tolkien mentioned this development in both the second version the Tengwesta Qenderinwa (TQ2: PE18/96) and the Outline of Phonology (OP2) from the 1950s ("
+  },
+  {
+    "a": "jei",
+    "b": "jē",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[jei], [wou] became [jē], [wō]",
+    "url": "https://eldamo.org/content/words/word-1657301905.html",
+    "cards": "q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ǭ",
+    "b": "ō",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ę̄], [ǭ] became [ē], [ō]",
+    "url": "https://eldamo.org/content/words/word-1363608031.html",
+    "cards": "q",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "before, except, medial",
+    "comment": "The Primitive Elvish a-fortified long vowels ę̄ and ǭ became ē and ō in the Quenya of the 1950s. Tolkien mentioned this development in both the second version the Tengwesta Qenderinwa (TQ2: PE18/96) and the Outline of Phonology (OP2) from the 1950s ("
+  },
+  {
+    "a": "wou",
+    "b": "wō",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[jei], [wou] became [jē], [wō]",
+    "url": "https://eldamo.org/content/words/word-1657301905.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ao",
+    "b": "ō",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ou",
+    "b": "ū",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ei], [ou] generally became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-2315722009.html",
+    "cards": "q",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ou",
+    "b": "ū",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[ei], [ou] generally became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-1123007057.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ɣʷu",
+    "b": "ū",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "óu",
+    "b": "au",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[ei], [ou] generally became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-1123007057.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "iŋm",
+    "b": "īm",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+    "url": "https://eldamo.org/content/words/word-2035963219.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "uŋm",
+    "b": "ūm",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+    "url": "https://eldamo.org/content/words/word-2035963219.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "eŋm",
+    "b": "ēm",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+    "url": "https://eldamo.org/content/words/word-2035963219.html",
+    "cards": "q",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "aŋm",
+    "b": "ām",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+    "url": "https://eldamo.org/content/words/word-2035963219.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "oŋm",
+    "b": "ōm",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+    "url": "https://eldamo.org/content/words/word-2035963219.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "iŋn",
+    "b": "īn",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+    "url": "https://eldamo.org/content/words/word-2035963219.html",
+    "cards": "q",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "uŋn",
+    "b": "ūn",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+    "url": "https://eldamo.org/content/words/word-2035963219.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "wo-",
+    "b": "o-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[wo] became [o]",
+    "url": "https://eldamo.org/content/words/word-1082322649.html",
+    "cards": "q",
+    "tested": 4,
+    "exact": 4,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rdj",
+    "b": "rj",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[d] vanished between [n], [r], [l] and [j]",
+    "url": "https://eldamo.org/content/words/word-297797679.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "before, dialect, often, only, usually",
+    "comment": "In Ñoldorin Tarquesta [TQ], the d vanished in the combinations ndy, ldy, rdy , resulting in ny, ly, ry in that dialect. When Tolkien first mentioned these combinations in the Outline of Phonetic Development (OP1) from the 1940s, he described only the"
+  },
+  {
+    "a": "ldj",
+    "b": "lj",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[d] vanished between [n], [r], [l] and [j]",
+    "url": "https://eldamo.org/content/words/word-297797679.html",
+    "cards": "q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "before, dialect, often, only, usually",
+    "comment": "In Ñoldorin Tarquesta [TQ], the d vanished in the combinations ndy, ldy, rdy , resulting in ny, ly, ry in that dialect. When Tolkien first mentioned these combinations in the Outline of Phonetic Development (OP1) from the 1940s, he described only the"
+  },
+  {
+    "a": "ndj",
+    "b": "nj",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[d] vanished between [n], [r], [l] and [j]",
+    "url": "https://eldamo.org/content/words/word-297797679.html",
+    "cards": "q",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "before, dialect, often, only, usually",
+    "comment": "In Ñoldorin Tarquesta [TQ], the d vanished in the combinations ndy, ldy, rdy , resulting in ny, ly, ry in that dialect. When Tolkien first mentioned these combinations in the Outline of Phonetic Development (OP1) from the 1940s, he described only the"
+  },
+  {
+    "a": "ndj",
+    "b": "nj",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[d] vanished between [n], [r], [l] and [j]",
+    "url": "https://eldamo.org/content/words/word-2488350997.html",
+    "cards": "mq;q",
+    "tested": 4,
+    "exact": 4,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ldj",
+    "b": "lj",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[d] vanished between [n], [r], [l] and [j]",
+    "url": "https://eldamo.org/content/words/word-2488350997.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rdj",
+    "b": "rj",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[d] vanished between [n], [r], [l] and [j]",
+    "url": "https://eldamo.org/content/words/word-2488350997.html",
+    "cards": "mq;q",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ðʲi",
+    "b": "ī",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "mq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ao",
+    "b": "ō",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "mq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ɣʷu",
+    "b": "ū",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "mq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pʰs",
+    "b": "ps",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspirate became voiceless stop before [s]",
+    "url": "https://eldamo.org/content/words/word-2225058767.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rɸ",
+    "b": "rp",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "spirants became stops after [r], [l]",
+    "url": "https://eldamo.org/content/words/word-3516399115.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "lɸ",
+    "b": "lp",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "spirants became stops after [r], [l]",
+    "url": "https://eldamo.org/content/words/word-3516399115.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bb",
+    "b": "pp",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "combinations of voiced stops were unvoiced",
+    "url": "https://eldamo.org/content/words/word-1625077395.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after, before, later, only, probably, rarely, revised, sometimes, usually",
+    "comment": "Quenya only preserved voiced stops after nasals and (sometimes) liquids, and in all other combinations these sounds changed.\n               Probably the earliest such change was that pairs of voiced stops were unvoiced and ultimately became voiceless"
+  },
+  {
+    "a": "bd",
+    "b": "pt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "combinations of voiced stops were unvoiced",
+    "url": "https://eldamo.org/content/words/word-1625077395.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after, before, later, only, probably, rarely, revised, sometimes, usually",
+    "comment": "Quenya only preserved voiced stops after nasals and (sometimes) liquids, and in all other combinations these sounds changed.\n               Probably the earliest such change was that pairs of voiced stops were unvoiced and ultimately became voiceless"
+  },
+  {
+    "a": "mpʰ",
+    "b": "ppʰ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "nasals became voiceless stops before aspirates",
+    "url": "https://eldamo.org/content/words/word-3474357431.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ppʰ",
+    "b": "pp",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "aspirates became voiceless stops after voiceless stops",
+    "url": "https://eldamo.org/content/words/word-2190887743.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after, before, earlier, later, only",
+    "comment": "In Ancient Quenya, any aspirates that followed a voiceless stop lost (most of) its aspiration, so that the result was a pair\n               of voiceless stops. This must have happened before aspirates became voiceless spirants . Already in Primitive "
+  },
+  {
+    "a": "ptʰ",
+    "b": "pt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "aspirates became voiceless stops after voiceless stops",
+    "url": "https://eldamo.org/content/words/word-2190887743.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, earlier, later, only",
+    "comment": "In Ancient Quenya, any aspirates that followed a voiceless stop lost (most of) its aspiration, so that the result was a pair\n               of voiceless stops. This must have happened before aspirates became voiceless spirants . Already in Primitive "
+  },
+  {
+    "a": "bd",
+    "b": "pt",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "combinations of voiced stops were unvoiced",
+    "url": "https://eldamo.org/content/words/word-654861237.html",
+    "cards": "aq;maq",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "mp-",
+    "b": "p-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial nasals plus stops reduced to nasals",
+    "url": "https://eldamo.org/content/words/word-2830500177.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tʰs",
+    "b": "ts",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspirate became voiceless stop before [s]",
+    "url": "https://eldamo.org/content/words/word-2225058767.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "stʰ",
+    "b": "st",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspirates became voiceless stops after [s], [h]",
+    "url": "https://eldamo.org/content/words/word-3915424757.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rθ",
+    "b": "rt",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "spirants became stops after [r], [l]",
+    "url": "https://eldamo.org/content/words/word-3516399115.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "lθ",
+    "b": "lt",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "spirants became stops after [r], [l]",
+    "url": "https://eldamo.org/content/words/word-3516399115.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dd",
+    "b": "tt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "combinations of voiced stops were unvoiced",
+    "url": "https://eldamo.org/content/words/word-1625077395.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, later, only, probably, rarely, revised, sometimes, usually",
+    "comment": "Quenya only preserved voiced stops after nasals and (sometimes) liquids, and in all other combinations these sounds changed.\n               Probably the earliest such change was that pairs of voiced stops were unvoiced and ultimately became voiceless"
+  },
+  {
+    "a": "pn",
+    "b": "pt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-3418086257.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, alternate, before, later, medial, often, only, perhaps, probably, rejected, revised",
+    "comment": "In Ancient Quenya, wherever a nasal n or m appeared after a voiceless stop or aspirate, that nasal was unvoiced with the ultimate result of t (from n ) and w (from m ). If the preceding sound was an aspirate, it simplified to an ordinary voiceless st"
+  },
+  {
+    "a": "tn",
+    "b": "tt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-3418086257.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after, alternate, before, later, medial, often, only, perhaps, probably, rejected, revised",
+    "comment": "In Ancient Quenya, wherever a nasal n or m appeared after a voiceless stop or aspirate, that nasal was unvoiced with the ultimate result of t (from n ) and w (from m ). If the preceding sound was an aspirate, it simplified to an ordinary voiceless st"
+  },
+  {
+    "a": "kn",
+    "b": "kt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-3418086257.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after, alternate, before, later, medial, often, only, perhaps, probably, rejected, revised",
+    "comment": "In Ancient Quenya, wherever a nasal n or m appeared after a voiceless stop or aspirate, that nasal was unvoiced with the ultimate result of t (from n ) and w (from m ). If the preceding sound was an aspirate, it simplified to an ordinary voiceless st"
+  },
+  {
+    "a": "ntʰ",
+    "b": "ttʰ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "nasals became voiceless stops before aspirates",
+    "url": "https://eldamo.org/content/words/word-3474357431.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ktʰ",
+    "b": "kt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "aspirates became voiceless stops after voiceless stops",
+    "url": "https://eldamo.org/content/words/word-2190887743.html",
+    "cards": "aq",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "after, before, earlier, later, only",
+    "comment": "In Ancient Quenya, any aspirates that followed a voiceless stop lost (most of) its aspiration, so that the result was a pair\n               of voiceless stops. This must have happened before aspirates became voiceless spirants . Already in Primitive "
+  },
+  {
+    "a": "ŋkj",
+    "b": "ntj",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "velars were dentalized before [j]",
+    "url": "https://eldamo.org/content/words/word-3703720537.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, earlier, except, initial, later, medial, only",
+    "comment": "One of the more characteristic phonetic developments of Quenya is that the palatalized velars ñy, ky, gy changed into dental ny, ty, dy . There was a similar change in Telerin , but since Sindarin shows a different development ( [j] was lost after in"
+  },
+  {
+    "a": "tj",
+    "b": "tʃ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "approximants produced various spirants",
+    "url": "https://eldamo.org/content/words/word-3605637247.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, dialect, later, often, rejected",
+    "comment": "In Vanyarin the voiced and voiceless forms of the approximants [w] and [j] often developed into spirantal forms [f], [ʃ] and\n               [ʒ] (IPA “ezh”, not “yogh” = [ɣ] as it was often used by Tolkien). These sometime assimilated other nearby sou"
+  },
+  {
+    "a": "kʰn",
+    "b": "kt",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[n], [m] became [t], [w] after aspirates",
+    "url": "https://eldamo.org/content/words/word-372953021.html",
+    "cards": "aq;maq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ptʰ",
+    "b": "pt",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "aspirates became voiceless stops after voiceless stops",
+    "url": "https://eldamo.org/content/words/word-2769500867.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ktʰ",
+    "b": "kt",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "aspirates became voiceless stops after voiceless stops",
+    "url": "https://eldamo.org/content/words/word-2769500867.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kʰj",
+    "b": "tʰj",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "velars were dentalized before [j]",
+    "url": "https://eldamo.org/content/words/word-3291729015.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "nt-",
+    "b": "t-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial nasals plus stops reduced to nasals",
+    "url": "https://eldamo.org/content/words/word-2830500177.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kʰs",
+    "b": "ks",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspirate became voiceless stop before [s]",
+    "url": "https://eldamo.org/content/words/word-2225058767.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rx",
+    "b": "rk",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "spirants became stops after [r], [l]",
+    "url": "https://eldamo.org/content/words/word-3516399115.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "lx",
+    "b": "lk",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "spirants became stops after [r], [l]",
+    "url": "https://eldamo.org/content/words/word-3516399115.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gg",
+    "b": "kk",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "combinations of voiced stops were unvoiced",
+    "url": "https://eldamo.org/content/words/word-1625077395.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, later, only, probably, rarely, revised, sometimes, usually",
+    "comment": "Quenya only preserved voiced stops after nasals and (sometimes) liquids, and in all other combinations these sounds changed.\n               Probably the earliest such change was that pairs of voiced stops were unvoiced and ultimately became voiceless"
+  },
+  {
+    "a": "gd",
+    "b": "kt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "combinations of voiced stops were unvoiced",
+    "url": "https://eldamo.org/content/words/word-1625077395.html",
+    "cards": "aq",
+    "tested": 4,
+    "exact": 4,
+    "cautions": "after, before, later, only, probably, rarely, revised, sometimes, usually",
+    "comment": "Quenya only preserved voiced stops after nasals and (sometimes) liquids, and in all other combinations these sounds changed.\n               Probably the earliest such change was that pairs of voiced stops were unvoiced and ultimately became voiceless"
+  },
+  {
+    "a": "ŋkʰ",
+    "b": "kkʰ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "nasals became voiceless stops before aspirates",
+    "url": "https://eldamo.org/content/words/word-3474357431.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kkʰ",
+    "b": "kk",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "aspirates became voiceless stops after voiceless stops",
+    "url": "https://eldamo.org/content/words/word-2190887743.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after, before, earlier, later, only",
+    "comment": "In Ancient Quenya, any aspirates that followed a voiceless stop lost (most of) its aspiration, so that the result was a pair\n               of voiceless stops. This must have happened before aspirates became voiceless spirants . Already in Primitive "
+  },
+  {
+    "a": "skʰ",
+    "b": "sk",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspirates became voiceless stops after [s], [h]",
+    "url": "https://eldamo.org/content/words/word-2699949575.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "zg",
+    "b": "sk",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[z] plus voiced stop became unvoiced",
+    "url": "https://eldamo.org/content/words/word-4145487633.html",
+    "cards": "aq;maq",
+    "tested": 8,
+    "exact": 8,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rð",
+    "b": "rd",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "spirants became stops after [r], [l]",
+    "url": "https://eldamo.org/content/words/word-3516399115.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "lð",
+    "b": "ld",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "spirants became stops after [r], [l]",
+    "url": "https://eldamo.org/content/words/word-3516399115.html",
+    "cards": "aq",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gj",
+    "b": "dj",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "velars were dentalized before [j]",
+    "url": "https://eldamo.org/content/words/word-3703720537.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, earlier, except, initial, later, medial, only",
+    "comment": "One of the more characteristic phonetic developments of Quenya is that the palatalized velars ñy, ky, gy changed into dental ny, ty, dy . There was a similar change in Telerin , but since Sindarin shows a different development ( [j] was lost after in"
+  },
+  {
+    "a": "ln",
+    "b": "ld",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ln] became [ld]",
+    "url": "https://eldamo.org/content/words/word-1011702125.html",
+    "cards": "aq",
+    "tested": 11,
+    "exact": 11,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dj",
+    "b": "dʒ",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "approximants produced various spirants",
+    "url": "https://eldamo.org/content/words/word-3605637247.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, dialect, later, often, rejected",
+    "comment": "In Vanyarin the voiced and voiceless forms of the approximants [w] and [j] often developed into spirantal forms [f], [ʃ] and\n               [ʒ] (IPA “ezh”, not “yogh” = [ɣ] as it was often used by Tolkien). These sometime assimilated other nearby sou"
+  },
+  {
+    "a": "dl",
+    "b": "ld",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dr",
+    "b": "rd",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gj",
+    "b": "dj",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "velars were dentalized before [j]",
+    "url": "https://eldamo.org/content/words/word-3291729015.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ln",
+    "b": "ld",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[ln] became [ld]",
+    "url": "https://eldamo.org/content/words/word-1937075927.html",
+    "cards": "aq;maq",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "km",
+    "b": "gm",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "url": "https://eldamo.org/content/words/word-1324444289.html",
+    "cards": "aq;maq",
+    "tested": 12,
+    "exact": 12,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gm",
+    "b": "ŋm",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiced stops became nasals before nasals",
+    "url": "https://eldamo.org/content/words/word-1312520143.html",
+    "cards": "aq;maq",
+    "tested": 13,
+    "exact": 13,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rβ",
+    "b": "rb",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[β], [ɣ] after [r], [l] usually became stops",
+    "url": "https://eldamo.org/content/words/word-3388104565.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "lβ",
+    "b": "lb",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[β], [ɣ] after [r], [l] usually became stops",
+    "url": "https://eldamo.org/content/words/word-3388104565.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "d",
+    "b": "ð",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiced stops became spirants except after nasals",
+    "url": "https://eldamo.org/content/words/word-1141570065.html",
+    "cards": "aq",
+    "tested": 34,
+    "exact": 34,
+    "cautions": "after, before, earlier, except, initial, intervocalic, later, medial, only, probably, revised, sometimes, usually",
+    "comment": "In Ancient Quenya, any surviving medial voiced stops usually became voiced spirants, the most notable exception being those\n               appearing after nasals. This sound change also excludes voiced stops that underwent other earlier changes, such"
+  },
+  {
+    "a": "ðr",
+    "b": "rr",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[z] and [ð] assimilated to following [r], [l]",
+    "url": "https://eldamo.org/content/words/word-1472480589.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sm",
+    "b": "zm",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "medial [s] often became [z]",
+    "url": "https://eldamo.org/content/words/word-127393503.html",
+    "cards": "aq",
+    "tested": 4,
+    "exact": 4,
+    "cautions": "after, before, dialect, earlier, except, final, initial, intervocalic, later, medial, often, only, possibly, revised, stress",
+    "comment": "In Ancient Quenya, an s was voiced to z between vowels and before voiced consonants, a change described in both the Outline of Phonetic Development (OP1) from the 1940s and the Outline of Phonology (OP2) from the 1950s. The sound changes in the 1930s"
+  },
+  {
+    "a": "sn",
+    "b": "zn",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "medial [s] often became [z]",
+    "url": "https://eldamo.org/content/words/word-127393503.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, dialect, earlier, except, final, initial, intervocalic, later, medial, often, only, possibly, revised, stress",
+    "comment": "In Ancient Quenya, an s was voiced to z between vowels and before voiced consonants, a change described in both the Outline of Phonetic Development (OP1) from the 1940s and the Outline of Phonology (OP2) from the 1950s. The sound changes in the 1930s"
+  },
+  {
+    "a": "sr",
+    "b": "zr",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "medial [s] often became [z]",
+    "url": "https://eldamo.org/content/words/word-127393503.html",
+    "cards": "aq",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "after, before, dialect, earlier, except, final, initial, intervocalic, later, medial, often, only, possibly, revised, stress",
+    "comment": "In Ancient Quenya, an s was voiced to z between vowels and before voiced consonants, a change described in both the Outline of Phonetic Development (OP1) from the 1940s and the Outline of Phonology (OP2) from the 1950s. The sound changes in the 1930s"
+  },
+  {
+    "a": "sl",
+    "b": "zl",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "medial [s] often became [z]",
+    "url": "https://eldamo.org/content/words/word-127393503.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after, before, dialect, earlier, except, final, initial, intervocalic, later, medial, often, only, possibly, revised, stress",
+    "comment": "In Ancient Quenya, an s was voiced to z between vowels and before voiced consonants, a change described in both the Outline of Phonetic Development (OP1) from the 1940s and the Outline of Phonology (OP2) from the 1950s. The sound changes in the 1930s"
+  },
+  {
+    "a": "sj",
+    "b": "zj",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "medial [s] often became [z]",
+    "url": "https://eldamo.org/content/words/word-127393503.html",
+    "cards": "aq",
+    "tested": 9,
+    "exact": 9,
+    "cautions": "after, before, dialect, earlier, except, final, initial, intervocalic, later, medial, often, only, possibly, revised, stress",
+    "comment": "In Ancient Quenya, an s was voiced to z between vowels and before voiced consonants, a change described in both the Outline of Phonetic Development (OP1) from the 1940s and the Outline of Phonology (OP2) from the 1950s. The sound changes in the 1930s"
+  },
+  {
+    "a": "sw",
+    "b": "zw",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "medial [s] often became [z]",
+    "url": "https://eldamo.org/content/words/word-127393503.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after, before, dialect, earlier, except, final, initial, intervocalic, later, medial, often, only, possibly, revised, stress",
+    "comment": "In Ancient Quenya, an s was voiced to z between vowels and before voiced consonants, a change described in both the Outline of Phonetic Development (OP1) from the 1940s and the Outline of Phonology (OP2) from the 1950s. The sound changes in the 1930s"
+  },
+  {
+    "a": "zl",
+    "b": "ll",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[z] and [ð] assimilated to following [r], [l]",
+    "url": "https://eldamo.org/content/words/word-1472480589.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "zr",
+    "b": "rr",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[z] and [ð] assimilated to following [r], [l]",
+    "url": "https://eldamo.org/content/words/word-1472480589.html",
+    "cards": "aq",
+    "tested": 4,
+    "exact": 4,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "zj",
+    "b": "ʒ",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "approximants produced various spirants",
+    "url": "https://eldamo.org/content/words/word-3605637247.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, dialect, later, often, rejected",
+    "comment": "In Vanyarin the voiced and voiceless forms of the approximants [w] and [j] often developed into spirantal forms [f], [ʃ] and\n               [ʒ] (IPA “ezh”, not “yogh” = [ɣ] as it was often used by Tolkien). These sometime assimilated other nearby sou"
+  },
+  {
+    "a": "sm",
+    "b": "zm",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "medial [s] often became [z]",
+    "url": "https://eldamo.org/content/words/word-2951986869.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sn",
+    "b": "zn",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "medial [s] often became [z]",
+    "url": "https://eldamo.org/content/words/word-2951986869.html",
+    "cards": "aq;maq",
+    "tested": 4,
+    "exact": 4,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sl",
+    "b": "zl",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "medial [s] often became [z]",
+    "url": "https://eldamo.org/content/words/word-2951986869.html",
+    "cards": "aq;maq",
+    "tested": 2,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "g",
+    "b": "ɣ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiced stops became spirants except after nasals",
+    "url": "https://eldamo.org/content/words/word-1141570065.html",
+    "cards": "aq",
+    "tested": 110,
+    "exact": 110,
+    "cautions": "after, before, earlier, except, initial, intervocalic, later, medial, only, probably, revised, sometimes, usually",
+    "comment": "In Ancient Quenya, any surviving medial voiced stops usually became voiced spirants, the most notable exception being those\n               appearing after nasals. This sound change also excludes voiced stops that underwent other earlier changes, such"
+  },
+  {
+    "a": "rɣ",
+    "b": "rg",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[β], [ɣ] after [r], [l] usually became stops",
+    "url": "https://eldamo.org/content/words/word-3388104565.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "lɣ",
+    "b": "lg",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[β], [ɣ] after [r], [l] usually became stops",
+    "url": "https://eldamo.org/content/words/word-3388104565.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rɣw",
+    "b": "røw",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[β], [ɣ] after [r], [l] usually became stops",
+    "url": "https://eldamo.org/content/words/word-3388104565.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "lɣw",
+    "b": "løw",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[β], [ɣ] after [r], [l] usually became stops",
+    "url": "https://eldamo.org/content/words/word-3388104565.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pʰ",
+    "b": "ɸ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "aspirates became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-3262991621.html",
+    "cards": "aq",
+    "tested": 69,
+    "exact": 69,
+    "cautions": "after, before, initial, later, only, probably",
+    "comment": "Any aspirates that survived other changes became voiceless spirants in Ancient Quenya. Examples of this phonetic development\n               are extremely numerous. Tolkien gave essentially identical descriptions of this sound change in both the Outli"
+  },
+  {
+    "a": "sp-",
+    "b": "ɸ-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] plus voiceless stops became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-1605344503.html",
+    "cards": "aq",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tʰr",
+    "b": "tʰs",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ns",
+    "b": "ss",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ns] became [ss]",
+    "url": "https://eldamo.org/content/words/word-2591378297.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, earlier, intervocalic, later, medial, often, only, perhaps, probably, sometimes",
+    "comment": "In Ancient Quenya [AQ], the combination ns became ss . Since primitive nasals assimilated to n before s , this was the ultimate result of all primitive nasals + s . This sound change was mentioned in both the Outline of Phonetic Development from the "
+  },
+  {
+    "a": "sr",
+    "b": "ss",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[sr] became [ss]",
+    "url": "https://eldamo.org/content/words/word-1606156545.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tr",
+    "b": "ts",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[r] became [s] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-1071202939.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pr",
+    "b": "ps",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[r] became [s] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-1071202939.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kr",
+    "b": "ks",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[r] became [s] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-1071202939.html",
+    "cards": "aq",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pʰr",
+    "b": "ps",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[r] became [s] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-1071202939.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tʰr",
+    "b": "ts",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[r] became [s] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-1071202939.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kʰr",
+    "b": "ks",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[r] became [s] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-1071202939.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "zb",
+    "b": "sp",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[z] plus voiced stop became unvoiced",
+    "url": "https://eldamo.org/content/words/word-3279729471.html",
+    "cards": "aq",
+    "tested": 16,
+    "exact": 0,
+    "cautions": "after, before, later, only, usually",
+    "comment": "In Primitive Elvish, [s] became [z] before voiced stops . In Quenya, this sound change was reversed, with [s] as well as the following stop being unvoiced. This change was parallel\n               to, and around the same time as, combinations of voice"
+  },
+  {
+    "a": "zg",
+    "b": "sk",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[z] plus voiced stop became unvoiced",
+    "url": "https://eldamo.org/content/words/word-3279729471.html",
+    "cards": "aq",
+    "tested": 16,
+    "exact": 0,
+    "cautions": "after, before, later, only, usually",
+    "comment": "In Primitive Elvish, [s] became [z] before voiced stops . In Quenya, this sound change was reversed, with [s] as well as the following stop being unvoiced. This change was parallel\n               to, and around the same time as, combinations of voice"
+  },
+  {
+    "a": "stj",
+    "b": "ʃtʃ",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "approximants produced various spirants",
+    "url": "https://eldamo.org/content/words/word-3605637247.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, dialect, later, often, rejected",
+    "comment": "In Vanyarin the voiced and voiceless forms of the approximants [w] and [j] often developed into spirantal forms [f], [ʃ] and\n               [ʒ] (IPA “ezh”, not “yogh” = [ɣ] as it was often used by Tolkien). These sometime assimilated other nearby sou"
+  },
+  {
+    "a": "zb",
+    "b": "sp",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[z] plus voiced stop became unvoiced",
+    "url": "https://eldamo.org/content/words/word-4145487633.html",
+    "cards": "aq;maq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "zd",
+    "b": "st",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[z] plus voiced stop became unvoiced",
+    "url": "https://eldamo.org/content/words/word-4145487633.html",
+    "cards": "aq;maq",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tʰ",
+    "b": "θ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "aspirates became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-3262991621.html",
+    "cards": "aq",
+    "tested": 56,
+    "exact": 56,
+    "cautions": "after, before, initial, later, only, probably",
+    "comment": "Any aspirates that survived other changes became voiceless spirants in Ancient Quenya. Examples of this phonetic development\n               are extremely numerous. Tolkien gave essentially identical descriptions of this sound change in both the Outli"
+  },
+  {
+    "a": "st-",
+    "b": "θ-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] plus voiceless stops became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-1605344503.html",
+    "cards": "aq",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rθ",
+    "b": "rt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "lθ",
+    "b": "lt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kʰ",
+    "b": "x",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "aspirates became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-3262991621.html",
+    "cards": "aq",
+    "tested": 48,
+    "exact": 48,
+    "cautions": "after, before, initial, later, only, probably",
+    "comment": "Any aspirates that survived other changes became voiceless spirants in Ancient Quenya. Examples of this phonetic development\n               are extremely numerous. Tolkien gave essentially identical descriptions of this sound change in both the Outli"
+  },
+  {
+    "a": "sk-",
+    "b": "x-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] plus voiceless stops became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-1605344503.html",
+    "cards": "aq",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "xw",
+    "b": "w̥",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[x] unvoiced following [j], [w]",
+    "url": "https://eldamo.org/content/words/word-2963647241.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "xtj",
+    "b": "ʃtʃ",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "approximants produced various spirants",
+    "url": "https://eldamo.org/content/words/word-3605637247.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, dialect, later, often, rejected",
+    "comment": "In Vanyarin the voiced and voiceless forms of the approximants [w] and [j] often developed into spirantal forms [f], [ʃ] and\n               [ʒ] (IPA “ezh”, not “yogh” = [ɣ] as it was often used by Tolkien). These sometime assimilated other nearby sou"
+  },
+  {
+    "a": "kʰ",
+    "b": "x",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "aspirates became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-3537093625.html",
+    "cards": "aq;maq",
+    "tested": 63,
+    "exact": 63,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "nm",
+    "b": "mm",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[nm], [ŋm] became [nw], [ŋgw]",
+    "url": "https://eldamo.org/content/words/word-1197128543.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bm",
+    "b": "mm",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiced stops became nasals before nasals",
+    "url": "https://eldamo.org/content/words/word-2830908887.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, intervocalic, later, medial, only, sometimes",
+    "comment": "In Ancient Quenya, voiced stops became nasals before nasals, a sound change Tolkien described in both the Outline of Phonetic Development (OP1) from the 1940s and the Outline of Phonology (OP2) from the 1950s: Before nasals: b, d, g were nasalized to"
+  },
+  {
+    "a": "bm",
+    "b": "mm",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiced stops became nasals before nasals",
+    "url": "https://eldamo.org/content/words/word-1312520143.html",
+    "cards": "aq;maq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bn",
+    "b": "mn",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiced stops became nasals before nasals",
+    "url": "https://eldamo.org/content/words/word-1312520143.html",
+    "cards": "aq;maq",
+    "tested": 12,
+    "exact": 12,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sm-",
+    "b": "m̥-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] unvoiced following continuant",
+    "url": "https://eldamo.org/content/words/word-1556924193.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "mt",
+    "b": "nt",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "nasals assimilated to following stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-2143444883.html",
+    "cards": "aq",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ms",
+    "b": "ns",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ms] became [ns]",
+    "url": "https://eldamo.org/content/words/word-1399041717.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dn",
+    "b": "nn",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiced stops became nasals before nasals",
+    "url": "https://eldamo.org/content/words/word-2830908887.html",
+    "cards": "aq",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "after, before, intervocalic, later, medial, only, sometimes",
+    "comment": "In Ancient Quenya, voiced stops became nasals before nasals, a sound change Tolkien described in both the Outline of Phonetic Development (OP1) from the 1940s and the Outline of Phonology (OP2) from the 1950s: Before nasals: b, d, g were nasalized to"
+  },
+  {
+    "a": "mw",
+    "b": "nw",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[mw] became [nw]",
+    "url": "https://eldamo.org/content/words/word-3475705035.html",
+    "cards": "aq",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "nd-",
+    "b": "n-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial nasals plus stops reduced to nasals",
+    "url": "https://eldamo.org/content/words/word-2123493145.html",
+    "cards": "aq",
+    "tested": 37,
+    "exact": 37,
+    "cautions": "after, initial, medial, only",
+    "comment": "In all versions of Quenya from the 1910s through the 1960s, any initial nasal + stop clusters (excluding only those that became syllabic ) reduced to simple nasals. Tolkien described this change all the way back in the Qenya Phonology written in the "
+  },
+  {
+    "a": "dn",
+    "b": "nn",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiced stops became nasals before nasals",
+    "url": "https://eldamo.org/content/words/word-1312520143.html",
+    "cards": "aq;maq",
+    "tested": 6,
+    "exact": 6,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dm",
+    "b": "nm",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiced stops became nasals before nasals",
+    "url": "https://eldamo.org/content/words/word-1312520143.html",
+    "cards": "aq;maq",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "nm",
+    "b": "nw",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[nm], [ŋm] became [nw], [ŋgw]",
+    "url": "https://eldamo.org/content/words/word-2886094609.html",
+    "cards": "aq;maq",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sn-",
+    "b": "n̥-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] unvoiced following continuant",
+    "url": "https://eldamo.org/content/words/word-1556924193.html",
+    "cards": "aq",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "mk",
+    "b": "ŋk",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "nasals assimilated to following stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-2143444883.html",
+    "cards": "aq;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gŋ",
+    "b": "ŋŋ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiced stops became nasals before nasals",
+    "url": "https://eldamo.org/content/words/word-2830908887.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, intervocalic, later, medial, only, sometimes",
+    "comment": "In Ancient Quenya, voiced stops became nasals before nasals, a sound change Tolkien described in both the Outline of Phonetic Development (OP1) from the 1940s and the Outline of Phonology (OP2) from the 1950s: Before nasals: b, d, g were nasalized to"
+  },
+  {
+    "a": "tm",
+    "b": "tw",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-3418086257.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, alternate, before, later, medial, often, only, perhaps, probably, rejected, revised",
+    "comment": "In Ancient Quenya, wherever a nasal n or m appeared after a voiceless stop or aspirate, that nasal was unvoiced with the ultimate result of t (from n ) and w (from m ). If the preceding sound was an aspirate, it simplified to an ordinary voiceless st"
+  },
+  {
+    "a": "km",
+    "b": "kw",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-3418086257.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after, alternate, before, later, medial, often, only, perhaps, probably, rejected, revised",
+    "comment": "In Ancient Quenya, wherever a nasal n or m appeared after a voiceless stop or aspirate, that nasal was unvoiced with the ultimate result of t (from n ) and w (from m ). If the preceding sound was an aspirate, it simplified to an ordinary voiceless st"
+  },
+  {
+    "a": "nl",
+    "b": "ll",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[nl], [nr] became [ll], [rr]",
+    "url": "https://eldamo.org/content/words/word-1625553255.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pl",
+    "b": "lp",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tl",
+    "b": "lt",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kl",
+    "b": "lk",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bl",
+    "b": "lb",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gl",
+    "b": "lg",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ml",
+    "b": "lm",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "nr",
+    "b": "rr",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[nl], [nr] became [ll], [rr]",
+    "url": "https://eldamo.org/content/words/word-1625553255.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pr",
+    "b": "rp",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tr",
+    "b": "rt",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "aq;maq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kr",
+    "b": "rk",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "aq;maq",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "br",
+    "b": "rb",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gr",
+    "b": "rg",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "mr",
+    "b": "rm",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "nr",
+    "b": "rn",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "aq;maq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "jj",
+    "b": "ij",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pj",
+    "b": "pʃ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "approximants produced various spirants",
+    "url": "https://eldamo.org/content/words/word-3605637247.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, dialect, later, often, rejected",
+    "comment": "In Vanyarin the voiced and voiceless forms of the approximants [w] and [j] often developed into spirantal forms [f], [ʃ] and\n               [ʒ] (IPA “ezh”, not “yogh” = [ɣ] as it was often used by Tolkien). These sometime assimilated other nearby sou"
+  },
+  {
+    "a": "pm",
+    "b": "pw",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-3418086257.html",
+    "cards": "aq",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after, alternate, before, later, medial, often, only, perhaps, probably, rejected, revised",
+    "comment": "In Ancient Quenya, wherever a nasal n or m appeared after a voiceless stop or aspirate, that nasal was unvoiced with the ultimate result of t (from n ) and w (from m ). If the preceding sound was an aspirate, it simplified to an ordinary voiceless st"
+  },
+  {
+    "a": "w̥",
+    "b": "f",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "approximants produced various spirants",
+    "url": "https://eldamo.org/content/words/word-3605637247.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, dialect, later, often, rejected",
+    "comment": "In Vanyarin the voiced and voiceless forms of the approximants [w] and [j] often developed into spirantal forms [f], [ʃ] and\n               [ʒ] (IPA “ezh”, not “yogh” = [ɣ] as it was often used by Tolkien). These sometime assimilated other nearby sou"
+  },
+  {
+    "a": "-hw-",
+    "b": "-ff-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "approximants produced various spirants",
+    "url": "https://eldamo.org/content/words/word-3605637247.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, dialect, later, often, rejected",
+    "comment": "In Vanyarin the voiced and voiceless forms of the approximants [w] and [j] often developed into spirantal forms [f], [ʃ] and\n               [ʒ] (IPA “ezh”, not “yogh” = [ɣ] as it was often used by Tolkien). These sometime assimilated other nearby sou"
+  },
+  {
+    "a": "j̊",
+    "b": "ʃ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "approximants produced various spirants",
+    "url": "https://eldamo.org/content/words/word-3605637247.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, dialect, later, often, rejected",
+    "comment": "In Vanyarin the voiced and voiceless forms of the approximants [w] and [j] often developed into spirantal forms [f], [ʃ] and\n               [ʒ] (IPA “ezh”, not “yogh” = [ɣ] as it was often used by Tolkien). These sometime assimilated other nearby sou"
+  },
+  {
+    "a": "dr-",
+    "b": "r-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [dr-], [dl-] became [r-], [l-]",
+    "url": "https://eldamo.org/content/words/word-3688462237.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dl-",
+    "b": "l-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [dr-], [dl-] became [r-], [l-]",
+    "url": "https://eldamo.org/content/words/word-3688462237.html",
+    "cards": "aq",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pw",
+    "b": "pp",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[pw], [pʰw] became [pp], [pʰp]",
+    "url": "https://eldamo.org/content/words/word-2859678213.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pʰt",
+    "b": "ptʰ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspiration moved to end of group of stops",
+    "url": "https://eldamo.org/content/words/word-3183451073.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pʰtʰ",
+    "b": "ptʰ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspiration moved to end of group of stops",
+    "url": "https://eldamo.org/content/words/word-3183451073.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bp",
+    "b": "pp",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bt",
+    "b": "pt",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bk",
+    "b": "pk",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bʰ",
+    "b": "pʰ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bs",
+    "b": "ps",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pp",
+    "b": "ppʰ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tp",
+    "b": "tpʰ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kp",
+    "b": "kpʰ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "mp",
+    "b": "mpʰ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "np",
+    "b": "npʰ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋp",
+    "b": "ŋpʰ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "lp",
+    "b": "lpʰ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rp",
+    "b": "rpʰ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pm",
+    "b": "bm",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "url": "https://eldamo.org/content/words/word-3463937975.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pn",
+    "b": "bn",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "url": "https://eldamo.org/content/words/word-3463937975.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bs",
+    "b": "ps",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "voiced stops unvoiced before voiceless consonants",
+    "url": "https://eldamo.org/content/words/word-2905876955.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bt",
+    "b": "pt",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "voiced stops unvoiced before voiceless consonants",
+    "url": "https://eldamo.org/content/words/word-2905876955.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pʰs",
+    "b": "ps",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspirate became voiceless stop before [s]",
+    "url": "https://eldamo.org/content/words/word-2678342679.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pʰt",
+    "b": "ptʰ",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspiration moved to end of group of stops",
+    "url": "https://eldamo.org/content/words/word-798737509.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "p-",
+    "b": "pʰ-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial [p] became [pʰ]",
+    "url": "https://eldamo.org/content/words/word-2684793511.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sp-",
+    "b": "f-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial [s] spirantalized following voiceless stops",
+    "url": "https://eldamo.org/content/words/word-570537175.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pʰl",
+    "b": "lpʰ",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pʰr",
+    "b": "rpʰ",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pm",
+    "b": "bm",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "url": "https://eldamo.org/content/words/word-1324444289.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pn",
+    "b": "bn",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "url": "https://eldamo.org/content/words/word-1324444289.html",
+    "cards": "mp;p",
+    "tested": 4,
+    "exact": 4,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sp-",
+    "b": "sɸ-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiceless stops became spirants after initial [s]",
+    "url": "https://eldamo.org/content/words/word-948882833.html",
+    "cards": "mp;p",
+    "tested": 11,
+    "exact": 11,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pd",
+    "b": "pt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ʰd",
+    "b": "ʰt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "td",
+    "b": "tt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kd",
+    "b": "kt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dp",
+    "b": "tp",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dʰ",
+    "b": "tʰ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dt",
+    "b": "tt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dk",
+    "b": "tk",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tʰt",
+    "b": "ttʰ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspiration moved to end of group of stops",
+    "url": "https://eldamo.org/content/words/word-3183451073.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tʰtʰ",
+    "b": "ttʰ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspiration moved to end of group of stops",
+    "url": "https://eldamo.org/content/words/word-3183451073.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dp",
+    "b": "tp",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dt",
+    "b": "tt",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dk",
+    "b": "tk",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dʰ",
+    "b": "tʰ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ds",
+    "b": "ts",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pd",
+    "b": "pt",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ʰd",
+    "b": "ʰt",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "td",
+    "b": "tt",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kd",
+    "b": "kt",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tn",
+    "b": "dn",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "url": "https://eldamo.org/content/words/word-3463937975.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tm",
+    "b": "dm",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "url": "https://eldamo.org/content/words/word-3463937975.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ttʰ",
+    "b": "θθ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "aspirates became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-883570327.html",
+    "cards": "p",
+    "tested": 18,
+    "exact": 18,
+    "cautions": "after, before, earlier, initial, later, probably",
+    "comment": "In both (Old) Sindarin and (Old) Noldorin, aspirates [pʰ, tʰ, kʰ] became spirants, probably [ɸ, θ, x] as suggested by David\n               Salo (GS/§4.80). Later [ɸ] became [f] and initial [x-] became [h-] , partially obscuring the earlier sound chan"
+  },
+  {
+    "a": "tk",
+    "b": "kk",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[tk] became [kk] or [kt] or [sk]",
+    "url": "https://eldamo.org/content/words/word-700934409.html",
+    "cards": "p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "possibly",
+    "comment": "@@@ Q examples: (ek)koiru- and ekkes-, as well as possibly ekkaira and ekkoita- From Lokyt: P < PP: S. ephed-, ephel, aphed- TK < KK: Q. accar, aquet-; T. okko; S. achar, echad-, echor, echuir, echui(w), ochui, Aracchír TK < KT: Q. ehtele, ehtelu-, a"
+  },
+  {
+    "a": "tk",
+    "b": "sk",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[tk] became [kk] or [kt] or [sk]",
+    "url": "https://eldamo.org/content/words/word-700934409.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "possibly",
+    "comment": "@@@ Q examples: (ek)koiru- and ekkes-, as well as possibly ekkaira and ekkoita- From Lokyt: P < PP: S. ephed-, ephel, aphed- TK < KK: Q. accar, aquet-; T. okko; S. achar, echad-, echor, echuir, echui(w), ochui, Aracchír TK < KT: Q. ehtele, ehtelu-, a"
+  },
+  {
+    "a": "ptʰ",
+    "b": "pt",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspirates became voiceless stops after voiceless stops",
+    "url": "https://eldamo.org/content/words/word-2789676367.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ttʰ",
+    "b": "tt",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspirates became voiceless stops after voiceless stops",
+    "url": "https://eldamo.org/content/words/word-2789676367.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ktʰ",
+    "b": "kt",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspirates became voiceless stops after voiceless stops",
+    "url": "https://eldamo.org/content/words/word-2789676367.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kd",
+    "b": "kt",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "voiced stops unvoiced after voiceless stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-3661438765.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ds",
+    "b": "ts",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "voiced stops unvoiced before voiceless consonants",
+    "url": "https://eldamo.org/content/words/word-2905876955.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tʰs",
+    "b": "ts",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspirate became voiceless stop before [s]",
+    "url": "https://eldamo.org/content/words/word-2678342679.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "st-",
+    "b": "θ-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial [s] spirantalized following voiceless stops",
+    "url": "https://eldamo.org/content/words/word-570537175.html",
+    "cards": "mp;p",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tn",
+    "b": "dn",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "url": "https://eldamo.org/content/words/word-1324444289.html",
+    "cards": "mp;p",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tm",
+    "b": "dm",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "url": "https://eldamo.org/content/words/word-1324444289.html",
+    "cards": "mp;p",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "st-",
+    "b": "sθ-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "voiceless stops became spirants after initial [s]",
+    "url": "https://eldamo.org/content/words/word-948882833.html",
+    "cards": "mp;p",
+    "tested": 14,
+    "exact": 14,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gt",
+    "b": "kt",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "voiced stops unvoiced before voiceless consonants",
+    "url": "https://eldamo.org/content/words/word-1944249607.html",
+    "cards": "p",
+    "tested": 9,
+    "exact": 9,
+    "cautions": "after, before, intervocalic, medial, often, only",
+    "comment": "In Primitive Elvish, voiced stops were unvoiced where they appeared before a voiceless stop, aspirate or [s]. Tolkien described\n               this change in both versions of the Tengwesta Qenderinwa , from the 1930s (TQ1) and the 1950s (TQ2): The vo"
+  },
+  {
+    "a": "gs",
+    "b": "ks",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "voiced stops unvoiced before voiceless consonants",
+    "url": "https://eldamo.org/content/words/word-1944249607.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, before, intervocalic, medial, often, only",
+    "comment": "In Primitive Elvish, voiced stops were unvoiced where they appeared before a voiceless stop, aspirate or [s]. Tolkien described\n               this change in both versions of the Tengwesta Qenderinwa , from the 1930s (TQ1) and the 1950s (TQ2): The vo"
+  },
+  {
+    "a": "kj",
+    "b": "tj",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kw",
+    "b": "p",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "labialized velars became labials",
+    "url": "https://eldamo.org/content/words/word-171120983.html",
+    "cards": "p",
+    "tested": 26,
+    "exact": 26,
+    "cautions": "before, except, final, initial, later, medial, only, perhaps, probably",
+    "comment": "The ancient change of labialized velars to labials in Telerin is extremely well documented (PE18/104; VT41/8; WJ/374-375),\n               and it is characteristic of the Telerin branch of the Eldarin languages. For example, in a note associated with "
+  },
+  {
+    "a": "kn",
+    "b": "gn",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "url": "https://eldamo.org/content/words/word-3463937975.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "km",
+    "b": "gm",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "url": "https://eldamo.org/content/words/word-3463937975.html",
+    "cards": "p",
+    "tested": 6,
+    "exact": 6,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gs",
+    "b": "ks",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "voiced stops unvoiced before voiceless consonants",
+    "url": "https://eldamo.org/content/words/word-2905876955.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gt",
+    "b": "kt",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "voiced stops unvoiced before voiceless consonants",
+    "url": "https://eldamo.org/content/words/word-2905876955.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kʰs",
+    "b": "ks",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspirate became voiceless stop before [s]",
+    "url": "https://eldamo.org/content/words/word-2678342679.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kʰt",
+    "b": "ktʰ",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspiration moved to end of group of stops",
+    "url": "https://eldamo.org/content/words/word-798737509.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "skw-",
+    "b": "sw-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial [skw] became [sw]",
+    "url": "https://eldamo.org/content/words/word-1872897535.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-kw-",
+    "b": "-k-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[w] vanished after medial velars in Ossiriandic",
+    "url": "https://eldamo.org/content/words/word-78414621.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "j",
+    "b": "i",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[j] became [i] in Ossiriandic",
+    "url": "https://eldamo.org/content/words/word-2818409497.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "Xw",
+    "b": "Xv",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "non-initial [w] became [v] in East Danian",
+    "url": "https://eldamo.org/content/words/word-1848454147.html",
+    "cards": "mp;p",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kw",
+    "b": "p",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "labialized velars became labials",
+    "url": "https://eldamo.org/content/words/word-3214863235.html",
+    "cards": "mp;p",
+    "tested": 27,
+    "exact": 27,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sk-",
+    "b": "sx-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiceless stops became spirants after initial [s]",
+    "url": "https://eldamo.org/content/words/word-948882833.html",
+    "cards": "mp;p",
+    "tested": 15,
+    "exact": 15,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pʰw",
+    "b": "ppʰ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[pw], [pʰw] became [pp], [pʰp]",
+    "url": "https://eldamo.org/content/words/word-2859678213.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ppʰ",
+    "b": "pp",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tpʰ",
+    "b": "tp",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kpʰ",
+    "b": "kp",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pʰ",
+    "b": "f",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "aspirates became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-3124926163.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "only",
+    "comment": "Primitive aspirates became voiceless spirants in Danian as they did in all the Eldarin languages (PE19/27), a change that\n            is well documented in the Comparative Tables but supported only by Dan. hrassa < ᴹ✶ khrassē in The Etymologies (Ety/"
+  },
+  {
+    "a": "pʰ",
+    "b": "f",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "aspirates became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-4030743197.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "after, initial, later, medial",
+    "comment": "These developments are similar to those of Old Noldorin . This change for initial or medial aspirates is documented in the Comparative Tables (PE19/18, 21), though the medial developments are obscured because later medial voiceless spirants voiced af"
+  },
+  {
+    "a": "pʰm",
+    "b": "mpʰ",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "metathesis",
+    "url": "https://eldamo.org/content/words/word-1396728225.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "pʰ",
+    "b": "ɸ",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspirates became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-1770347191.html",
+    "cards": "mp;p",
+    "tested": 53,
+    "exact": 53,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tʰl",
+    "b": "ltʰ",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tʰr",
+    "b": "rtʰ",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tʰ",
+    "b": "θ",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "aspirates became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-3124926163.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "only",
+    "comment": "Primitive aspirates became voiceless spirants in Danian as they did in all the Eldarin languages (PE19/27), a change that\n            is well documented in the Comparative Tables but supported only by Dan. hrassa < ᴹ✶ khrassē in The Etymologies (Ety/"
+  },
+  {
+    "a": "θl-",
+    "b": "fl-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [θl] became [fl]",
+    "url": "https://eldamo.org/content/words/word-119585643.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "tʰ",
+    "b": "θ",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "aspirates became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-4030743197.html",
+    "cards": "mp;p",
+    "tested": 9,
+    "exact": 9,
+    "cautions": "after, initial, later, medial",
+    "comment": "These developments are similar to those of Old Noldorin . This change for initial or medial aspirates is documented in the Comparative Tables (PE19/18, 21), though the medial developments are obscured because later medial voiceless spirants voiced af"
+  },
+  {
+    "a": "tʰ",
+    "b": "θ",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspirates became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-1770347191.html",
+    "cards": "mp;p",
+    "tested": 115,
+    "exact": 115,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kʰl",
+    "b": "lkʰ",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-716992289.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-x-",
+    "b": "-ø-",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "medial [x] vanished between vowels",
+    "url": "https://eldamo.org/content/words/word-4185900741.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kʰw-",
+    "b": "pʰ-",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "labialized velars became labials",
+    "url": "https://eldamo.org/content/words/word-3214863235.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kʰ",
+    "b": "x",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "aspirates became voiceless spirants",
+    "url": "https://eldamo.org/content/words/word-1770347191.html",
+    "cards": "mp;p",
+    "tested": 98,
+    "exact": 98,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "lxʷ",
+    "b": "lw",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "rxʷ",
+    "b": "rw",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bp",
+    "b": "pp",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bt",
+    "b": "pt",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bk",
+    "b": "pk",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bʰ",
+    "b": "pʰ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bs",
+    "b": "ps",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "bm",
+    "b": "mb",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[bm], [dn] became [mb], [nd]",
+    "url": "https://eldamo.org/content/words/word-3882201769.html",
+    "cards": "p",
+    "tested": 6,
+    "exact": 6,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ds",
+    "b": "ts",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "dl",
+    "b": "gl",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[dl] became [gl]",
+    "url": "https://eldamo.org/content/words/word-3584827489.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋɣ",
+    "b": "ŋg",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[ŋŋ], [ŋɣ] became [ŋg]",
+    "url": "https://eldamo.org/content/words/word-3404492995.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-ŋj-",
+    "b": "-ŋgj-",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+    "url": "https://eldamo.org/content/words/word-2233951333.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-ŋw-",
+    "b": "-ŋgw-",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+    "url": "https://eldamo.org/content/words/word-2233951333.html",
+    "cards": "p",
+    "tested": 7,
+    "exact": 7,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ɣw",
+    "b": "ww",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gj",
+    "b": "dj",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gw",
+    "b": "b",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "labialized velars became labials",
+    "url": "https://eldamo.org/content/words/word-171120983.html",
+    "cards": "p",
+    "tested": 4,
+    "exact": 4,
+    "cautions": "before, except, final, initial, later, medial, only, perhaps, probably",
+    "comment": "The ancient change of labialized velars to labials in Telerin is extremely well documented (PE18/104; VT41/8; WJ/374-375),\n               and it is characteristic of the Telerin branch of the Eldarin languages. For example, in a note associated with "
+  },
+  {
+    "a": "gj-",
+    "b": "g-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars and dentals",
+    "url": "https://eldamo.org/content/words/word-1120953457.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gj-",
+    "b": "g-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars",
+    "url": "https://eldamo.org/content/words/word-345959193.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gj-",
+    "b": "d-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "palatalized velars became dentals",
+    "url": "https://eldamo.org/content/words/word-745600013.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-ŋj-",
+    "b": "-ŋgj-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+    "url": "https://eldamo.org/content/words/word-1270135967.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-ŋw-",
+    "b": "-ŋgw-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+    "url": "https://eldamo.org/content/words/word-1270135967.html",
+    "cards": "mp;p",
+    "tested": 12,
+    "exact": 12,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋɣ",
+    "b": "ŋg",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[ŋŋ], [ŋɣ] became [ŋg]",
+    "url": "https://eldamo.org/content/words/word-2849203249.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋŋ",
+    "b": "ŋg",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[ŋŋ], [ŋɣ] became [ŋg]",
+    "url": "https://eldamo.org/content/words/word-2849203249.html",
+    "cards": "mp;p",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-gw-",
+    "b": "-g-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[w] vanished after medial velars in Ossiriandic",
+    "url": "https://eldamo.org/content/words/word-78414621.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gw-",
+    "b": "w-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial [g] was lost before [w]",
+    "url": "https://eldamo.org/content/words/word-88234997.html",
+    "cards": "mp;p",
+    "tested": 4,
+    "exact": 4,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gw",
+    "b": "b",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "labialized velars became labials",
+    "url": "https://eldamo.org/content/words/word-3214863235.html",
+    "cards": "mp;p",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋp",
+    "b": "mp",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "nasals assimilated to following stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-2143444883.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "np",
+    "b": "mp",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "nasals assimilated to following stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-2143444883.html",
+    "cards": "p",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "mb-",
+    "b": "m-",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "mb-",
+    "b": "b-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial nasals usually vanished before stops",
+    "url": "https://eldamo.org/content/words/word-1688730459.html",
+    "cards": "p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "alternate, before, dialect, initial, perhaps",
+    "comment": "The Comparative Tables indicate that primitive initial combinations of nasals and voiced stops generally lost their nasal sound (PE19/20). The same\n               rule applied to “Beleriandic” development in Tolkien’s linguistic notes from around 195"
+  },
+  {
+    "a": "ṃ-",
+    "b": "am-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",
+    "url": "https://eldamo.org/content/words/word-1024355367.html",
+    "cards": "p",
+    "tested": 6,
+    "exact": 6,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-m",
+    "b": "-n",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "final [m] became [n]",
+    "url": "https://eldamo.org/content/words/word-760163573.html",
+    "cards": "p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "mb-",
+    "b": "b-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial nasals vanished before stops",
+    "url": "https://eldamo.org/content/words/word-3057844573.html",
+    "cards": "p",
+    "tested": 17,
+    "exact": 17,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "mf-",
+    "b": "f-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial nasals vanished before stops",
+    "url": "https://eldamo.org/content/words/word-3057844573.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "nm",
+    "b": "nw",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[nm], [ŋm] became [nw], [ŋw]",
+    "url": "https://eldamo.org/content/words/word-3258926163.html",
+    "cards": "p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋm",
+    "b": "ŋw",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[nm], [ŋm] became [nw], [ŋw]",
+    "url": "https://eldamo.org/content/words/word-3258926163.html",
+    "cards": "p",
+    "tested": 6,
+    "exact": 6,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "mb",
+    "b": "mm",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[mb], [nd] became [mm], [nn]",
+    "url": "https://eldamo.org/content/words/word-868023175.html",
+    "cards": "p",
+    "tested": 28,
+    "exact": 28,
+    "cautions": "after, before, earlier, except, final, initial, later, medial, often, only, perhaps, possibly, probably, revised, sometimes, stress, usually",
+    "comment": "In Sindarin and Noldorin, the combinations [mb] and [nd] became [mm] and [nn] medially and (usually) finally, whereas [ŋg]\n               remained medially but became [ŋ] finally . Tolkien described these sound changes in some detail in The Lord of t"
+  },
+  {
+    "a": "mm",
+    "b": "m",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[mm] shortened",
+    "url": "https://eldamo.org/content/words/word-3689144303.html",
+    "cards": "p",
+    "tested": 29,
+    "exact": 29,
+    "cautions": "after, before, earlier, except, final, later, medial, only, probably, rarely, sometimes, stress, unless, usually",
+    "comment": "In Sindarin and Noldorin, where combinations of [m] and labials had simplified to long [mm], this long [mm] further reduced\n               to [m]; this sound change occurred both medially and finally. This long [mm] could be derived from a variety of"
+  },
+  {
+    "a": "mb-",
+    "b": "b-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial nasalized voiced stops became stops",
+    "url": "https://eldamo.org/content/words/word-493039001.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "mb-",
+    "b": "b-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial nasals vanished before stops",
+    "url": "https://eldamo.org/content/words/word-3944232895.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "before, initial, later, probably",
+    "comment": "According to the Comparative Tables , initial combinations of nasals with voiced stops reduced to simple voiced stops (PE19/20). There are two examples of this\n               development in The Etymologies : Dan. golda < ᴹ√ ÑGOLOD (Ety/ÑGOLOD) and Os"
+  },
+  {
+    "a": "mb-",
+    "b": "b-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial nasals usually vanished before stops",
+    "url": "https://eldamo.org/content/words/word-1688730459.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "alternate, before, dialect, initial, perhaps",
+    "comment": "The Comparative Tables indicate that primitive initial combinations of nasals and voiced stops generally lost their nasal sound (PE19/20). The same\n               rule applied to “Beleriandic” development in Tolkien’s linguistic notes from around 195"
+  },
+  {
+    "a": "mk",
+    "b": "ŋk",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "nasals assimilated to following stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-2390772785.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sm-",
+    "b": "m̥-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial [s] unvoiced following [m], [n], [j], [w]",
+    "url": "https://eldamo.org/content/words/word-3693878703.html",
+    "cards": "mp;p",
+    "tested": 9,
+    "exact": 9,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋt",
+    "b": "nt",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "nasals assimilated to following stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-2143444883.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋs",
+    "b": "ns",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[ŋs] became [ns]",
+    "url": "https://eldamo.org/content/words/word-484908271.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ln",
+    "b": "ll",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ln] became [ll]",
+    "url": "https://eldamo.org/content/words/word-1062284643.html",
+    "cards": "p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ṇ-",
+    "b": "an-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",
+    "url": "https://eldamo.org/content/words/word-1024355367.html",
+    "cards": "p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "nk",
+    "b": "ŋk",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "nasals assimilated to following stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-2143444883.html",
+    "cards": "p",
+    "tested": 4,
+    "exact": 4,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "nθ-",
+    "b": "θ-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial nasals vanished before stops",
+    "url": "https://eldamo.org/content/words/word-3057844573.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "nd",
+    "b": "nn",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[mb], [nd] became [mm], [nn]",
+    "url": "https://eldamo.org/content/words/word-868023175.html",
+    "cards": "p",
+    "tested": 64,
+    "exact": 64,
+    "cautions": "after, before, earlier, except, final, initial, later, medial, often, only, perhaps, possibly, probably, revised, sometimes, stress, usually",
+    "comment": "In Sindarin and Noldorin, the combinations [mb] and [nd] became [mm] and [nn] medially and (usually) finally, whereas [ŋg]\n               remained medially but became [ŋ] finally . Tolkien described these sound changes in some detail in The Lord of t"
+  },
+  {
+    "a": "nd-",
+    "b": "d-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial nasalized voiced stops became stops",
+    "url": "https://eldamo.org/content/words/word-493039001.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋt",
+    "b": "nt",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "nasals assimilated to following stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-2390772785.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "nd-",
+    "b": "d-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial nasals vanished before stops",
+    "url": "https://eldamo.org/content/words/word-3944232895.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "before, initial, later, probably",
+    "comment": "According to the Comparative Tables , initial combinations of nasals with voiced stops reduced to simple voiced stops (PE19/20). There are two examples of this\n               development in The Etymologies : Dan. golda < ᴹ√ ÑGOLOD (Ety/ÑGOLOD) and Os"
+  },
+  {
+    "a": "nd-",
+    "b": "d-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial nasals usually vanished before stops",
+    "url": "https://eldamo.org/content/words/word-1688730459.html",
+    "cards": "mp;p",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "alternate, before, dialect, initial, perhaps",
+    "comment": "The Comparative Tables indicate that primitive initial combinations of nasals and voiced stops generally lost their nasal sound (PE19/20). The same\n               rule applied to “Beleriandic” development in Tolkien’s linguistic notes from around 195"
+  },
+  {
+    "a": "sn-",
+    "b": "n̥-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial [s] unvoiced following [m], [n], [j], [w]",
+    "url": "https://eldamo.org/content/words/word-3693878703.html",
+    "cards": "mp;p",
+    "tested": 6,
+    "exact": 6,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋ-",
+    "b": "ŋg-",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋw-",
+    "b": "m-",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋgw-",
+    "b": "m-",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋgj-",
+    "b": "n-",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋg-",
+    "b": "ŋ-",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋgw",
+    "b": "mb",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "labialized velars became labials",
+    "url": "https://eldamo.org/content/words/word-171120983.html",
+    "cards": "p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "before, except, final, initial, later, medial, only, perhaps, probably",
+    "comment": "The ancient change of labialized velars to labials in Telerin is extremely well documented (PE18/104; VT41/8; WJ/374-375),\n               and it is characteristic of the Telerin branch of the Eldarin languages. For example, in a note associated with "
+  },
+  {
+    "a": "ŋw-",
+    "b": "m-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "labialized velars became labials",
+    "url": "https://eldamo.org/content/words/word-171120983.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "before, except, final, initial, later, medial, only, perhaps, probably",
+    "comment": "The ancient change of labialized velars to labials in Telerin is extremely well documented (PE18/104; VT41/8; WJ/374-375),\n               and it is characteristic of the Telerin branch of the Eldarin languages. For example, in a note associated with "
+  },
+  {
+    "a": "ŋ-",
+    "b": "g-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [ŋ], [ɣ] became [g]",
+    "url": "https://eldamo.org/content/words/word-1228875561.html",
+    "cards": "p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after, initial, later, revised",
+    "comment": "These developments are clearly described on the Comparative Tables (PE19/19). In The Etymologies , there are no examples [ŋ-], but the examples for [ɣ-] are numerous (see below). Conceptual Development: In later notes on the development of Beleriandi"
+  },
+  {
+    "a": "ŋg-",
+    "b": "g-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial nasals usually vanished before stops",
+    "url": "https://eldamo.org/content/words/word-1688730459.html",
+    "cards": "p",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "alternate, before, dialect, initial, perhaps",
+    "comment": "The Comparative Tables indicate that primitive initial combinations of nasals and voiced stops generally lost their nasal sound (PE19/20). The same\n               rule applied to “Beleriandic” development in Tolkien’s linguistic notes from around 195"
+  },
+  {
+    "a": "ŋ-",
+    "b": "ø-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial and intervocalic [ŋ] vanished",
+    "url": "https://eldamo.org/content/words/word-552653835.html",
+    "cards": "p",
+    "tested": 6,
+    "exact": 6,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋgj",
+    "b": "ŋg",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars",
+    "url": "https://eldamo.org/content/words/word-345959193.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋ̣-",
+    "b": "aŋ-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",
+    "url": "https://eldamo.org/content/words/word-1024355367.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋg-",
+    "b": "g-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial nasals vanished before stops",
+    "url": "https://eldamo.org/content/words/word-3057844573.html",
+    "cards": "p",
+    "tested": 24,
+    "exact": 24,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋx-",
+    "b": "x-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial nasals vanished before stops",
+    "url": "https://eldamo.org/content/words/word-3057844573.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋg-",
+    "b": "g-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial nasalized voiced stops became stops",
+    "url": "https://eldamo.org/content/words/word-493039001.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋj-",
+    "b": "n-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "palatalized velars became dentals",
+    "url": "https://eldamo.org/content/words/word-745600013.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋgj-",
+    "b": "nd-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "palatalized velars became dentals",
+    "url": "https://eldamo.org/content/words/word-745600013.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋ-",
+    "b": "ø-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial [ŋ] vanishes",
+    "url": "https://eldamo.org/content/words/word-4225848175.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋ",
+    "b": "g",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[ŋ], [ɣ] became [g]",
+    "url": "https://eldamo.org/content/words/word-44379183.html",
+    "cards": "mp;p",
+    "tested": 7,
+    "exact": 7,
+    "cautions": "before, medial",
+    "comment": "As indicated in the Comparative Tables , both the velar nasal [ŋ] and the voiced velar spirant [ɣ] generally became [g] in Danian, either initially or medially (PE19/19,\n            23). The developments were more complex in some combinations, notabl"
+  },
+  {
+    "a": "ŋg-",
+    "b": "g-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial nasals vanished before stops",
+    "url": "https://eldamo.org/content/words/word-3944232895.html",
+    "cards": "mp;p",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "before, initial, later, probably",
+    "comment": "According to the Comparative Tables , initial combinations of nasals with voiced stops reduced to simple voiced stops (PE19/20). There are two examples of this\n               development in The Etymologies : Dan. golda < ᴹ√ ÑGOLOD (Ety/ÑGOLOD) and Os"
+  },
+  {
+    "a": "ŋ-",
+    "b": "g-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial [ŋ], [ɣ] became [g]",
+    "url": "https://eldamo.org/content/words/word-1228875561.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "after, initial, later, revised",
+    "comment": "These developments are clearly described on the Comparative Tables (PE19/19). In The Etymologies , there are no examples [ŋ-], but the examples for [ɣ-] are numerous (see below). Conceptual Development: In later notes on the development of Beleriandi"
+  },
+  {
+    "a": "ŋg-",
+    "b": "g-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial nasals usually vanished before stops",
+    "url": "https://eldamo.org/content/words/word-1688730459.html",
+    "cards": "mp;p",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "alternate, before, dialect, initial, perhaps",
+    "comment": "The Comparative Tables indicate that primitive initial combinations of nasals and voiced stops generally lost their nasal sound (PE19/20). The same\n               rule applied to “Beleriandic” development in Tolkien’s linguistic notes from around 195"
+  },
+  {
+    "a": "ŋr",
+    "b": "ɣr",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "https://eldamo.org/content/words/word-3915121695.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋl",
+    "b": "ɣl",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "https://eldamo.org/content/words/word-3915121695.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋs",
+    "b": "ɣs",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "https://eldamo.org/content/words/word-3915121695.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋgw",
+    "b": "mb",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "labialized velars became labials",
+    "url": "https://eldamo.org/content/words/word-3214863235.html",
+    "cards": "mp;p",
+    "tested": 11,
+    "exact": 11,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋ-",
+    "b": "ø-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial and intervocalic [ŋ] vanished",
+    "url": "https://eldamo.org/content/words/word-552653835.html",
+    "cards": "mp;p",
+    "tested": 6,
+    "exact": 6,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sw-",
+    "b": "w̥-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] unvoiced following [l], [r], [w]",
+    "url": "https://eldamo.org/content/words/word-165461035.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-w",
+    "b": "-u",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "final [j], [w] became [i], [u]",
+    "url": "https://eldamo.org/content/words/word-2641132585.html",
+    "cards": "p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "w-",
+    "b": "gw-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial [w] became [gw]",
+    "url": "https://eldamo.org/content/words/word-2002760597.html",
+    "cards": "p",
+    "tested": 36,
+    "exact": 36,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "w-",
+    "b": "v-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial [w] became [v]",
+    "url": "https://eldamo.org/content/words/word-1192708475.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "Xw",
+    "b": "Xv",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "non-initial [w] became [v] in East Danian",
+    "url": "https://eldamo.org/content/words/word-1848454147.html",
+    "cards": "mp;p",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "w-",
+    "b": "gw-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [w] became [gw]",
+    "url": "https://eldamo.org/content/words/word-965501987.html",
+    "cards": "mp;p",
+    "tested": 13,
+    "exact": 13,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "uw",
+    "b": "ū",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[w] became [u] after a vowel",
+    "url": "https://eldamo.org/content/words/word-592723565.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sl-",
+    "b": "l̥-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] unvoiced following [l], [r], [w]",
+    "url": "https://eldamo.org/content/words/word-165461035.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sr-",
+    "b": "r̥-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] unvoiced following [l], [r], [w]",
+    "url": "https://eldamo.org/content/words/word-165461035.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ɣ-",
+    "b": "g-",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "initial [ŋ], [ɣ] became [g]",
+    "url": "https://eldamo.org/content/words/word-1228875561.html",
+    "cards": "p",
+    "tested": 8,
+    "exact": 8,
+    "cautions": "after, initial, later, revised",
+    "comment": "These developments are clearly described on the Comparative Tables (PE19/19). In The Etymologies , there are no examples [ŋ-], but the examples for [ɣ-] are numerous (see below). Conceptual Development: In later notes on the development of Beleriandi"
+  },
+  {
+    "a": "ɣ-",
+    "b": "ø-",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "initial [ɣ]/[h] vanished",
+    "url": "https://eldamo.org/content/words/word-1117448055.html",
+    "cards": "p",
+    "tested": 8,
+    "exact": 8,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-ɣ-",
+    "b": "-ø-",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "cards": "p",
+    "tested": 9,
+    "exact": 9,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "hs",
+    "b": "ss",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[hs] became [ss]",
+    "url": "https://eldamo.org/content/words/word-2177009433.html",
+    "cards": "p",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ɣ-",
+    "b": "h-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial [ɣ] became [h]",
+    "url": "https://eldamo.org/content/words/word-3274491131.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ɣ",
+    "b": "g",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[ŋ], [ɣ] became [g]",
+    "url": "https://eldamo.org/content/words/word-44379183.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "before, medial",
+    "comment": "As indicated in the Comparative Tables , both the velar nasal [ŋ] and the voiced velar spirant [ɣ] generally became [g] in Danian, either initially or medially (PE19/19,\n            23). The developments were more complex in some combinations, notabl"
+  },
+  {
+    "a": "ɣ-",
+    "b": "g-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial [ŋ], [ɣ] became [g]",
+    "url": "https://eldamo.org/content/words/word-1228875561.html",
+    "cards": "mp;p",
+    "tested": 8,
+    "exact": 8,
+    "cautions": "after, initial, later, revised",
+    "comment": "These developments are clearly described on the Comparative Tables (PE19/19). In The Etymologies , there are no examples [ŋ-], but the examples for [ɣ-] are numerous (see below). Conceptual Development: In later notes on the development of Beleriandi"
+  },
+  {
+    "a": "ɣ",
+    "b": "ø",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[ɣ] vanished",
+    "url": "https://eldamo.org/content/words/word-1476955021.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ɣs",
+    "b": "hs",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "url": "https://eldamo.org/content/words/word-2810726977.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ɣt",
+    "b": "xt",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "url": "https://eldamo.org/content/words/word-2810726977.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ɣ-",
+    "b": "ø-",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[ɣ] vanished",
+    "url": "https://eldamo.org/content/words/word-3657372981.html",
+    "cards": "mp;p",
+    "tested": 10,
+    "exact": 10,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ɣ",
+    "b": "ø",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[ɣ] vanished",
+    "url": "https://eldamo.org/content/words/word-3657372981.html",
+    "cards": "mp;p",
+    "tested": 16,
+    "exact": 6,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-j",
+    "b": "-i",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "final [j], [w] became [i], [u]",
+    "url": "https://eldamo.org/content/words/word-2641132585.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gj-",
+    "b": "g-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars",
+    "url": "https://eldamo.org/content/words/word-4118572109.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kj-",
+    "b": "k-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars",
+    "url": "https://eldamo.org/content/words/word-4118572109.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "skj-",
+    "b": "sk-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars",
+    "url": "https://eldamo.org/content/words/word-4118572109.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "j",
+    "b": "i",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] became [i] in Ossiriandic",
+    "url": "https://eldamo.org/content/words/word-2818409497.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "j-",
+    "b": "ø-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [j] vanished in East Danian",
+    "url": "https://eldamo.org/content/words/word-1803976769.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kj-",
+    "b": "k-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars and dentals",
+    "url": "https://eldamo.org/content/words/word-1120953457.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-j-",
+    "b": "-i-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "medial [j] became [i]",
+    "url": "https://eldamo.org/content/words/word-1471734033.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "j-",
+    "b": "ø-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [j] vanished",
+    "url": "https://eldamo.org/content/words/word-1112487071.html",
+    "cards": "mp;p",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kj-",
+    "b": "k-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars",
+    "url": "https://eldamo.org/content/words/word-4025342543.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "kʰj-",
+    "b": "kʰ-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars",
+    "url": "https://eldamo.org/content/words/word-4025342543.html",
+    "cards": "mp;p",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "gj-",
+    "b": "g-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars",
+    "url": "https://eldamo.org/content/words/word-4025342543.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŋgj",
+    "b": "ŋg",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars",
+    "url": "https://eldamo.org/content/words/word-4025342543.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "skj-",
+    "b": "sk-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars",
+    "url": "https://eldamo.org/content/words/word-4025342543.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ji",
+    "b": "i",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] vanished before [i], [ui]",
+    "url": "https://eldamo.org/content/words/word-4029245039.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ij",
+    "b": "ī",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] became [i] after a vowel",
+    "url": "https://eldamo.org/content/words/word-3125122253.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sl-",
+    "b": "l̥-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] unvoiced following consonants",
+    "url": "https://eldamo.org/content/words/word-3923357111.html",
+    "cards": "p",
+    "tested": 8,
+    "exact": 8,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sm-",
+    "b": "m̥-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] unvoiced following consonants",
+    "url": "https://eldamo.org/content/words/word-3923357111.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sn-",
+    "b": "n̥-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] unvoiced following consonants",
+    "url": "https://eldamo.org/content/words/word-3923357111.html",
+    "cards": "p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sr-",
+    "b": "r̥-",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] unvoiced following consonants",
+    "url": "https://eldamo.org/content/words/word-3923357111.html",
+    "cards": "p",
+    "tested": 11,
+    "exact": 11,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sd",
+    "b": "zd",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[s] became [z] before voiced stops",
+    "url": "https://eldamo.org/content/words/word-882174441.html",
+    "cards": "p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sb",
+    "b": "zb",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[s] became [z] before voiced stops",
+    "url": "https://eldamo.org/content/words/word-882174441.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sg",
+    "b": "zg",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[s] became [z] before voiced stops",
+    "url": "https://eldamo.org/content/words/word-882174441.html",
+    "cards": "p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sm-",
+    "b": "m-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial [sm], [sn] became nasals [m], [n]",
+    "url": "https://eldamo.org/content/words/word-4226922765.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sn-",
+    "b": "n-",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial [sm], [sn] became nasals [m], [n]",
+    "url": "https://eldamo.org/content/words/word-4226922765.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "hs",
+    "b": "ss",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[hs] became [ss]",
+    "url": "https://eldamo.org/content/words/word-178282823.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sj-",
+    "b": "s-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[j] was lost after initial dentals and [s]",
+    "url": "https://eldamo.org/content/words/word-217666031.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sr-",
+    "b": "str-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial [sr] became [str]",
+    "url": "https://eldamo.org/content/words/word-1674031447.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sj-",
+    "b": "s-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[j] was lost after initial [s]",
+    "url": "https://eldamo.org/content/words/word-1659657875.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sl-",
+    "b": "l̥-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial [s] unvoiced following [l], [r], [w]",
+    "url": "https://eldamo.org/content/words/word-165461035.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sr-",
+    "b": "r̥-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial [s] unvoiced following [l], [r], [w]",
+    "url": "https://eldamo.org/content/words/word-165461035.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sw-",
+    "b": "w̥-",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial [s] unvoiced following [l], [r], [w]",
+    "url": "https://eldamo.org/content/words/word-165461035.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sb",
+    "b": "zb",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[s] became [z] before voiced stops",
+    "url": "https://eldamo.org/content/words/word-2884507077.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sd",
+    "b": "zd",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[s] became [z] before voiced stops",
+    "url": "https://eldamo.org/content/words/word-2884507077.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sg",
+    "b": "zg",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[s] became [z] before voiced stops",
+    "url": "https://eldamo.org/content/words/word-2884507077.html",
+    "cards": "mp;p",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sj-",
+    "b": "j̊-",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "initial [s] unvoiced following [m], [n], [j], [w]",
+    "url": "https://eldamo.org/content/words/word-3693878703.html",
+    "cards": "mp;p",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sw-",
+    "b": "w̥-",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "initial [s] unvoiced following [m], [n], [j], [w]",
+    "url": "https://eldamo.org/content/words/word-3693878703.html",
+    "cards": "mp;p",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sl-",
+    "b": "θl-",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "initial [s] became [θ] before [l], [r]",
+    "url": "https://eldamo.org/content/words/word-2075290201.html",
+    "cards": "mp;p",
+    "tested": 8,
+    "exact": 8,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "sr-",
+    "b": "θr-",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "initial [s] became [θ] before [l], [r]",
+    "url": "https://eldamo.org/content/words/word-2075290201.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "zg",
+    "b": "ðɣ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[zb], [zg] became [ðβ], [ðɣ]",
+    "url": "https://eldamo.org/content/words/word-1951748921.html",
+    "cards": "p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "after, before, earlier, final, medial, perhaps",
+    "comment": "In Sindarin a [z] became [ð] before the voiced stops [b] and [g], which themselves became voiced spirants [β] and [ɣ]. This\n               sound change is distinct from the development of [z] before [d], where the [z] vanished while lengthening prece"
+  },
+  {
+    "a": "z",
+    "b": "r",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[z] became [r]",
+    "url": "https://eldamo.org/content/words/word-982618329.html",
+    "cards": "mp;p",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "h-",
+    "b": "ø-",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[без названия]",
+    "url": "",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "-h-",
+    "b": "-ø-",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ae",
+    "b": "ā",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[ae], [ao] became [ā]",
+    "url": "https://eldamo.org/content/words/word-1056240093.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ao",
+    "b": "ā",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[ae], [ao] became [ā]",
+    "url": "https://eldamo.org/content/words/word-1056240093.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "wŏ́",
+    "b": "wa",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "stressed [wŏ] became [wa]",
+    "url": "https://eldamo.org/content/words/word-1415948757.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ae",
+    "b": "ā",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[ae], [ao] became [ā]",
+    "url": "https://eldamo.org/content/words/word-2229536775.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ao",
+    "b": "ā",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[ae], [ao] became [ā]",
+    "url": "https://eldamo.org/content/words/word-2229536775.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ē",
+    "b": "ī",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ē], [ō] became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-3889365613.html",
+    "cards": "p",
+    "tested": 17,
+    "exact": 17,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ē",
+    "b": "ī",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ē], [ō] became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-390078853.html",
+    "cards": "mp;p",
+    "tested": 28,
+    "exact": 28,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ē",
+    "b": "ī",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ē], [ō] became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-1277969137.html",
+    "cards": "mp;p",
+    "tested": 7,
+    "exact": 7,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ǣ",
+    "b": "ē",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ǣ] became [ē]",
+    "url": "https://eldamo.org/content/words/word-692160099.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ę̄",
+    "b": "ā",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ę̄], [ǭ] became [ā]",
+    "url": "https://eldamo.org/content/words/word-1446209733.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ǣ",
+    "b": "ę̄",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ǣ], [ai] became [ę̄]",
+    "url": "https://eldamo.org/content/words/word-3619603651.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ā",
+    "b": "ǭ",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[ā], [au] became [ǭ]",
+    "url": "https://eldamo.org/content/words/word-2858643115.html",
+    "cards": "p",
+    "tested": 77,
+    "exact": 77,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ā",
+    "b": "ǭ",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[ā] became [ǭ] in Primitive Danian",
+    "url": "https://eldamo.org/content/words/word-2277851021.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ā",
+    "b": "ō",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[ā], [ǭ] became [ō]",
+    "url": "https://eldamo.org/content/words/word-1909322629.html",
+    "cards": "mp;p",
+    "tested": 16,
+    "exact": 16,
+    "cautions": "later, only",
+    "comment": "These developments were described in the Comparative Tables (PE19/25). The same rule applied to [ǭ] in “Sindarin” [Beleriandic] development in some of Tolkien’s linguistic notes from\n               around 1950 (PE18/96). There are numerous examples o"
+  },
+  {
+    "a": "ā",
+    "b": "ǭ",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[ā], [au] became [ǭ]",
+    "url": "https://eldamo.org/content/words/word-2790556075.html",
+    "cards": "mp;p",
+    "tested": 62,
+    "exact": 61,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ā",
+    "b": "ō",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ā] became [ō]",
+    "url": "https://eldamo.org/content/words/word-3140771935.html",
+    "cards": "mp;p",
+    "tested": 9,
+    "exact": 9,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ō",
+    "b": "ū",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ē], [ō] became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-3889365613.html",
+    "cards": "p",
+    "tested": 15,
+    "exact": 15,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ō",
+    "b": "ū",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ē], [ō] became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-390078853.html",
+    "cards": "mp;p",
+    "tested": 35,
+    "exact": 35,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ō",
+    "b": "ū",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ē], [ō] became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-1277969137.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ǭ",
+    "b": "ō",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ā], [ǭ] became [ō]",
+    "url": "https://eldamo.org/content/words/word-1909322629.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "later, only",
+    "comment": "These developments were described in the Comparative Tables (PE19/25). The same rule applied to [ǭ] in “Sindarin” [Beleriandic] development in some of Tolkien’s linguistic notes from\n               around 1950 (PE18/96). There are numerous examples o"
+  },
+  {
+    "a": "ǭ",
+    "b": "ā",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ę̄], [ǭ] became [ā]",
+    "url": "https://eldamo.org/content/words/word-1446209733.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ū",
+    "b": "au",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ī], [ū] became [ai], [au]",
+    "url": "https://eldamo.org/content/words/word-1815156341.html",
+    "cards": "mp;p",
+    "tested": 5,
+    "exact": 5,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ai",
+    "b": "ae",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ai], [oi] became [ae], [oe]",
+    "url": "https://eldamo.org/content/words/word-941153689.html",
+    "cards": "p",
+    "tested": 59,
+    "exact": 59,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ai",
+    "b": "ę̄",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ǣ], [ai] became [ę̄]",
+    "url": "https://eldamo.org/content/words/word-3619603651.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ei",
+    "b": "ī",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ei], [ou] became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-1942848653.html",
+    "cards": "p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ei",
+    "b": "ī",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ei], [ui] became [ī], [ū] in Primitive Danian",
+    "url": "https://eldamo.org/content/words/word-3695192375.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ei",
+    "b": "ī",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ei], [ou] became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-4217992645.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ei",
+    "b": "oi",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[ei], [ou] became [oi], [ū]",
+    "url": "https://eldamo.org/content/words/word-1880600739.html",
+    "cards": "mp;p",
+    "tested": 6,
+    "exact": 6,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ei",
+    "b": "ai",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ei] became [ai] or [ui]",
+    "url": "https://eldamo.org/content/words/word-338579369.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ei",
+    "b": "ē",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ei], [ou] became [ē], [ō]",
+    "url": "https://eldamo.org/content/words/word-1053983129.html",
+    "cards": "mp;p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "oi",
+    "b": "ui",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[oi], [ǭi] became [ui], [oi]",
+    "url": "https://eldamo.org/content/words/word-2010669085.html",
+    "cards": "p",
+    "tested": 4,
+    "exact": 4,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ŏ",
+    "b": "a",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "short [ŏ] became [a] in Primitive Danian",
+    "url": "https://eldamo.org/content/words/word-562246463.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "oi",
+    "b": "ui",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[oi] became [ui]",
+    "url": "https://eldamo.org/content/words/word-2264199397.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "oi",
+    "b": "ui",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[oi] became [ui]",
+    "url": "https://eldamo.org/content/words/word-2638900527.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "oi",
+    "b": "ui",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[oi] became [ui]",
+    "url": "https://eldamo.org/content/words/word-1684892745.html",
+    "cards": "mp;p",
+    "tested": 9,
+    "exact": 9,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ui",
+    "b": "ū",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ei], [ui] became [ī], [ū] in Primitive Danian",
+    "url": "https://eldamo.org/content/words/word-3695192375.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ˌau",
+    "b": "o",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[au], [ae] became [o], [e] in polysyllables",
+    "url": "https://eldamo.org/content/words/word-567222053.html",
+    "cards": "p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "au",
+    "b": "ǭ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ā], [au] became [ǭ]",
+    "url": "https://eldamo.org/content/words/word-2790556075.html",
+    "cards": "mp;p",
+    "tested": 24,
+    "exact": 23,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "eu",
+    "b": "iu",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[eu] became [iu]",
+    "url": "https://eldamo.org/content/words/word-2662025405.html",
+    "cards": "p",
+    "tested": 8,
+    "exact": 8,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "iu",
+    "b": "ȳ",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[iu] and [ju] became [ȳ]",
+    "url": "https://eldamo.org/content/words/word-659168127.html",
+    "cards": "p",
+    "tested": 8,
+    "exact": 8,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "eu",
+    "b": "io",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[eu], [iu] became [io]",
+    "url": "https://eldamo.org/content/words/word-3538583603.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "eu",
+    "b": "ū",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[eu], [iu] became [ū]",
+    "url": "https://eldamo.org/content/words/word-1713708009.html",
+    "cards": "mp;p",
+    "tested": 3,
+    "exact": 3,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "eu",
+    "b": "io",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[eu], [iu] became [io]",
+    "url": "https://eldamo.org/content/words/word-2838612897.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "eu",
+    "b": "iu",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[eu], [iu] became [io] or [iu]",
+    "url": "https://eldamo.org/content/words/word-1598541361.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "iu",
+    "b": "io",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[eu], [iu] became [io]",
+    "url": "https://eldamo.org/content/words/word-3538583603.html",
+    "cards": "mp;p",
+    "tested": 1,
+    "exact": 1,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "iu",
+    "b": "ū",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[eu], [iu] became [ū]",
+    "url": "https://eldamo.org/content/words/word-1713708009.html",
+    "cards": "mp;p",
+    "tested": 6,
+    "exact": 6,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "iu",
+    "b": "io",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[eu], [iu] became [io]",
+    "url": "https://eldamo.org/content/words/word-2838612897.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ou",
+    "b": "ū",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ei], [ou] became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-1942848653.html",
+    "cards": "p",
+    "tested": 2,
+    "exact": 2,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ou",
+    "b": "ū",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ei], [ou] became [ī], [ū]",
+    "url": "https://eldamo.org/content/words/word-4217992645.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ou",
+    "b": "ū",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[ei], [ou] became [oi], [ū]",
+    "url": "https://eldamo.org/content/words/word-1880600739.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ou",
+    "b": "au",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ou] became [au]",
+    "url": "https://eldamo.org/content/words/word-1155192707.html",
+    "cards": "mp;p",
+    "tested": 0,
+    "exact": 0,
+    "cautions": "",
+    "comment": ""
+  },
+  {
+    "a": "ou",
+    "b": "ō",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ei], [ou] became [ē], [ō]",
+    "url": "https://eldamo.org/content/words/word-1053983129.html",
+    "cards": "mp;p",
+    "tested": 11,
+    "exact": 11,
+    "cautions": "",
+    "comment": ""
+  }
+];
+window.ELDAMO_RULES = {
+  "p": [
+    {
+      "marker": "Q.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "p ← p",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/69",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/069.3105-1"
+        ]
+      ],
+      "linked": [
+        "p"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[pt], [kt] became [ɸt], [xt]",
+      "url": "https://eldamo.org/content/words/word-2265073101.html",
+      "formula": "pt → ɸt",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0202"
+        ],
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.2709"
+        ],
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1504"
+        ],
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.2713"
+        ]
+      ],
+      "linked": [
+        "p",
+        "k",
+        "x"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[pt], [kt] became [ɸt], [xt]",
+      "url": "https://eldamo.org/content/words/word-2265073101.html",
+      "formula": "ɸt ← pt",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0202"
+        ],
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.2709"
+        ],
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1504"
+        ],
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.2713"
+        ]
+      ],
+      "linked": [
+        "p",
+        "k",
+        "x"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[pw] became [pp]",
+      "url": "https://eldamo.org/content/words/word-182545135.html",
+      "formula": "pp ← pw",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1604"
+        ]
+      ],
+      "linked": [
+        "p",
+        "w̥"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[sp], [sk] became [ps], [ks]",
+      "url": "https://eldamo.org/content/words/word-2094898289.html",
+      "formula": "ps ← sp",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE18/94",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/094.2209"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3513"
+        ],
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0507"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.1210"
+        ],
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.0514"
+        ]
+      ],
+      "linked": [
+        "p",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "{ptk}p ← {ptk}pʰ",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE18/91",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/091.0716"
+        ]
+      ],
+      "linked": [
+        "p"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "lp ← lɸ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.1806"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "rp ← rɸ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.1805"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "p ← p",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.2701"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0201"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0301"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0401"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0501"
+        ]
+      ],
+      "linked": [
+        "p"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[sp], [sk] became [ps], [ks]",
+      "url": "https://eldamo.org/content/words/word-3499874945.html",
+      "formula": "ps ← sp",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3115"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1401"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0401-4"
+        ]
+      ],
+      "linked": [
+        "p",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "initial [ps], [ks] became [s]",
+      "url": "https://eldamo.org/content/words/word-93837315.html",
+      "formula": "ps- → s-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3107-1"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2190887743.html",
+      "formula": "pp ← ppʰ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0112"
+        ],
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.2206"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2190887743.html",
+      "formula": "pt ← ptʰ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0201"
+        ],
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.02011"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "combinations of voiced stops were unvoiced",
+      "url": "https://eldamo.org/content/words/word-1625077395.html",
+      "formula": "pp ← bb",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3404"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "combinations of voiced stops were unvoiced",
+      "url": "https://eldamo.org/content/words/word-1625077395.html",
+      "formula": "pt ← bd",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/91",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/091.0503"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] plus voiceless stops became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-1605344503.html",
+      "formula": "sp- → ɸ-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/78",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/078.1611"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "ɸ",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2123493145.html",
+      "formula": "p- ← mp-",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE18/92",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/092.1205"
+        ],
+        [
+          "PE18/92",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/092.1103"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "nasals became voiceless stops before aspirates",
+      "url": "https://eldamo.org/content/words/word-3474357431.html",
+      "formula": "ppʰ ← mpʰ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.0303"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-3463937975.html",
+      "formula": "pm → bm",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT42/26",
+          "https://eldamo.org/content/references/ref-VT42.html#VT42/26.0502"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-3463937975.html",
+      "formula": "pn → bn",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT42/26",
+          "https://eldamo.org/content/references/ref-VT42.html#VT42/26.0602"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2769500867.html",
+      "formula": "pp ← ppʰ",
+      "langs": "Quenya, Middle Quenya, Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0301-2"
+        ],
+        [
+          "PE19/40",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/040.2808"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2769500867.html",
+      "formula": "ptʰ → pt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0509"
+        ],
+        [
+          "PE19/40",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/040.2811"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0412"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "combinations of voiced stops were unvoiced",
+      "url": "https://eldamo.org/content/words/word-654861237.html",
+      "formula": "pt ← bd",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0412-3"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2830500177.html",
+      "formula": "p- ← mp-",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.2701-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʷ",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "nasals became voiceless stops before aspirates",
+      "url": "https://eldamo.org/content/words/word-2847294287.html",
+      "formula": "ppʰ ← mpʰ",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0301-3"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "pl → lp",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0502"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "pr → rp",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2602"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "pʰl → lpʰ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0603"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "pʰr → rpʰ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2606"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiceless stops became spirants after initial [s]",
+      "url": "https://eldamo.org/content/words/word-948882833.html",
+      "formula": "sp- → sɸ-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.1805"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-1324444289.html",
+      "formula": "pm → bm",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2504"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-1324444289.html",
+      "formula": "pn → bn",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2904"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[pw], [pʰw] became [pp], [pʰp]",
+      "url": "https://eldamo.org/content/words/word-2859678213.html",
+      "formula": "pp ← pw",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.0306"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "w"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "p{ptkpʰtʰkʰs} ← b{ptkpʰtʰkʰs}",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/90",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/090.0810"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.1709"
+        ]
+      ],
+      "linked": [
+        "p"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "{ptkmnŋlr}p → {ptkmnŋlr}pʰ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/91",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/091.0805"
+        ],
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.2612"
+        ]
+      ],
+      "linked": [
+        "p"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspirate became voiceless stop before [s]",
+      "url": "https://eldamo.org/content/words/word-2225058767.html",
+      "formula": "ps ← pʰs",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.4011"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspiration moved to end of group of stops",
+      "url": "https://eldamo.org/content/words/word-3183451073.html",
+      "formula": "ptʰ ← pʰt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.2510-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspiration moved to end of group of stops",
+      "url": "https://eldamo.org/content/words/word-3183451073.html",
+      "formula": "ptʰ ← pʰtʰ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.2510-3"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspirate became voiceless stop before [s]",
+      "url": "https://eldamo.org/content/words/word-2678342679.html",
+      "formula": "ps ← pʰs",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0402"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspiration moved to end of group of stops",
+      "url": "https://eldamo.org/content/words/word-798737509.html",
+      "formula": "ptʰ ← pʰt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0412-2"
+        ],
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0514"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial [p] became [pʰ]",
+      "url": "https://eldamo.org/content/words/word-2684793511.html",
+      "formula": "p- → pʰ-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.1708"
+        ],
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.1709"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.1107"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.1108"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.2107"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.2108"
+        ]
+      ],
+      "linked": [
+        "p"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial [s] spirantalized following voiceless stops",
+      "url": "https://eldamo.org/content/words/word-570537175.html",
+      "formula": "sp- → f-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.1813"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiced stops unvoiced before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-2905876955.html",
+      "formula": "ps ← bs",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0402-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiced stops unvoiced before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-2905876955.html",
+      "formula": "pt ← bt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0509-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiceless stops voiced after vowels",
+      "url": "https://eldamo.org/content/words/word-2421096703.html",
+      "formula": "Vp → Vb",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.0307"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k"
+      ]
+    }
+  ],
+  "b": [
+    {
+      "marker": "Q.",
+      "title": "[ɸ], [β] became [f], [v]",
+      "url": "https://eldamo.org/content/words/word-14484545.html",
+      "formula": "β → v",
+      "langs": "Ancient Quenya, Primitive Elvish",
+      "sources": [
+        [
+          "PE19/69",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/069.3412"
+        ],
+        [
+          "PE19/72",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/072.2503"
+        ],
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.2415"
+        ],
+        [
+          "PM/402",
+          "https://eldamo.org/content/references/ref-PM.html#PM/402.0401"
+        ]
+      ],
+      "linked": [
+        "b",
+        "pʰ",
+        "ɸ",
+        "β",
+        "f",
+        "v"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "b{ptkpʰtʰkʰs} → p{ptkpʰtʰkʰs}",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/90",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/090.0810"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.1709"
+        ]
+      ],
+      "linked": [
+        "b"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "combinations of voiced stops were unvoiced",
+      "url": "https://eldamo.org/content/words/word-1625077395.html",
+      "formula": "bb → pp",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3404"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "combinations of voiced stops were unvoiced",
+      "url": "https://eldamo.org/content/words/word-1625077395.html",
+      "formula": "bd → pt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/91",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/091.0503"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2123493145.html",
+      "formula": "mb- → m-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.1703"
+        ],
+        [
+          "PE17/104",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/104.1511"
+        ],
+        [
+          "PE17/124",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/124.0205"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1502"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-2830908887.html",
+      "formula": "bm → mm",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.0903"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiced stops became spirants except after nasals",
+      "url": "https://eldamo.org/content/words/word-1141570065.html",
+      "formula": "b → β",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/153",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/153.0503"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1402"
+        ],
+        [
+          "PE19/69",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/069.3405"
+        ],
+        [
+          "PE19/90",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/090.2003"
+        ],
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.2311"
+        ],
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.1503"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "β",
+        "v",
+        "ð",
+        "ɣ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "combinations of voiced stops were unvoiced",
+      "url": "https://eldamo.org/content/words/word-654861237.html",
+      "formula": "bd → pt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0412-3"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2830500177.html",
+      "formula": "mb- → m-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0301-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʷ",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "medial [b] became [v]",
+      "url": "https://eldamo.org/content/words/word-3689929017.html",
+      "formula": "Vb → Vv",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1508"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1509"
+        ]
+      ],
+      "linked": [
+        "b"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-2951986869.html",
+      "formula": "VsV → VzV",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3705"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2302"
+        ]
+      ],
+      "linked": [
+        "b",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "bl → lb",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1602"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "br → rb",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2902"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-1312520143.html",
+      "formula": "bm → mm",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2502"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-1312520143.html",
+      "formula": "bn → mn",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2902"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops became spirants except after nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-2772726195.html",
+      "formula": "b → β",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0601"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2201"
+        ]
+      ],
+      "linked": [
+        "b",
+        "g",
+        "v",
+        "ɣ",
+        "l",
+        "r",
+        "w",
+        "ø"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops spirantalized after vowels",
+      "url": "https://eldamo.org/content/words/word-501836955.html",
+      "formula": "Vb → Vv",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1507"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-1324444289.html",
+      "formula": "bm ← pm",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2504"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-1324444289.html",
+      "formula": "bn ← pn",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2904"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[bm], [dn] became [mb], [nd]",
+      "url": "https://eldamo.org/content/words/word-3882201769.html",
+      "formula": "bm → mb",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/12",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/12.4110"
+        ],
+        [
+          "WJ/416",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/416.0805"
+        ]
+      ],
+      "linked": [
+        "b",
+        "m"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiced stops unvoiced before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-2905876955.html",
+      "formula": "bs → ps",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0402-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiced stops unvoiced before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-2905876955.html",
+      "formula": "bt → pt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0509-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    }
+  ],
+  "pʰ": [
+    {
+      "marker": "Q.",
+      "title": "[ɸ], [β] became [f], [v]",
+      "url": "https://eldamo.org/content/words/word-14484545.html",
+      "formula": "ɸ → f",
+      "langs": "Ancient Quenya, Primitive Elvish",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.0415"
+        ],
+        [
+          "PE17/92",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/092.3215"
+        ]
+      ],
+      "linked": [
+        "b",
+        "pʰ",
+        "ɸ",
+        "β",
+        "f",
+        "v"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3262991621.html",
+      "formula": "pʰ → ɸ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.0407"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ",
+        "kʰ",
+        "ɸ",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2190887743.html",
+      "formula": "ppʰ → pp",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0112"
+        ],
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.2206"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2190887743.html",
+      "formula": "ptʰ → pt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0201"
+        ],
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.02011"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1238072385.html",
+      "formula": "pʰr → ps",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0401-3"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "t",
+        "tʰ",
+        "kʰ",
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3124926163.html",
+      "formula": "pʰ → f",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2208"
+        ],
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2209"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.1207"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.1208"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.2207"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.2208"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-4030743197.html",
+      "formula": "pʰ → f",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2205"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.1213"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.2213"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3537093625.html",
+      "formula": "pʰ → ɸ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3001"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1501"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1601"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0601"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2604"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ",
+        "kʰ",
+        "ɸ",
+        "f",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2769500867.html",
+      "formula": "ppʰ → pp",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/40",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/040.2808"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0301-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "medial voiceless spirants voiced after vowels",
+      "url": "https://eldamo.org/content/words/word-3083451453.html",
+      "formula": "-Vf- → -Vv-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1008"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1009"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "medial voiceless spirants voiced after vowels",
+      "url": "https://eldamo.org/content/words/word-4105744097.html",
+      "formula": "-Vf- → -Vv-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1007"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "lpʰ ← pʰl",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0603"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "rpʰ ← pʰr",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2606"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[pw], [pʰw] became [pp], [pʰp]",
+      "url": "https://eldamo.org/content/words/word-2859678213.html",
+      "formula": "ppʰ ← pʰw",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/88",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/088.1512"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "w"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "{ptk}pʰ → {ptk}p",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/91",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/091.0716"
+        ]
+      ],
+      "linked": [
+        "pʰ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspirate became voiceless stop before [s]",
+      "url": "https://eldamo.org/content/words/word-2225058767.html",
+      "formula": "pʰs → ps",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.4011"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspiration moved to end of group of stops",
+      "url": "https://eldamo.org/content/words/word-3183451073.html",
+      "formula": "pʰt → ptʰ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.2510-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspiration moved to end of group of stops",
+      "url": "https://eldamo.org/content/words/word-3183451073.html",
+      "formula": "pʰtʰ → ptʰ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.2510-3"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspirate became voiceless stop before [s]",
+      "url": "https://eldamo.org/content/words/word-2678342679.html",
+      "formula": "pʰs → ps",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0402"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-1770347191.html",
+      "formula": "pʰ → ɸ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2206"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.1205"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.2205"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1005"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspiration moved to end of group of stops",
+      "url": "https://eldamo.org/content/words/word-798737509.html",
+      "formula": "pʰt → ptʰ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0412-2"
+        ],
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0514"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "metathesis",
+      "url": "https://eldamo.org/content/words/word-1396728225.html",
+      "formula": "pʰm → mpʰ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0304"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "m"
+      ]
+    }
+  ],
+  "t": [
+    {
+      "marker": "Q.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "t ← t",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/69",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/069.3106-1"
+        ]
+      ],
+      "linked": [
+        "t"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "{rl}t ← {rl}θ",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0405"
+        ],
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0411"
+        ]
+      ],
+      "linked": [
+        "t"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "lt ← lθ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.1808"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "rt ← rθ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.1807"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "t ← t",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.2801"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0601"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0701"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0801"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0901"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1001"
+        ]
+      ],
+      "linked": [
+        "t"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[pt], [kt] became [ps], [xt]",
+      "url": "https://eldamo.org/content/words/word-2701010297.html",
+      "formula": "kt → xt",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0501"
+        ]
+      ],
+      "linked": [
+        "t",
+        "s",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[pt], [kt] became [ps], [xt]",
+      "url": "https://eldamo.org/content/words/word-2701010297.html",
+      "formula": "pt → ps",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0401-5"
+        ]
+      ],
+      "linked": [
+        "t",
+        "s",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[pt], [kt] became [ps], [xt]",
+      "url": "https://eldamo.org/content/words/word-2701010297.html",
+      "formula": "pt → xt",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0501-2"
+        ]
+      ],
+      "linked": [
+        "t",
+        "s",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "initial [ps], [ks] became [s]",
+      "url": "https://eldamo.org/content/words/word-93837315.html",
+      "formula": "ts- → s-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3107-3"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-3418086257.html",
+      "formula": "kt ← kn",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1503"
+        ]
+      ],
+      "linked": [
+        "t",
+        "m",
+        "n",
+        "w",
+        "w̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-3418086257.html",
+      "formula": "pt ← pn",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1501"
+        ]
+      ],
+      "linked": [
+        "t",
+        "m",
+        "n",
+        "w",
+        "w̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-3418086257.html",
+      "formula": "tt ← tn",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1502"
+        ]
+      ],
+      "linked": [
+        "t",
+        "m",
+        "n",
+        "w",
+        "w̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "t{pʰtʰkʰptk} ← d{pʰtʰkʰptk}",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2205-2"
+        ],
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2210-3"
+        ]
+      ],
+      "linked": [
+        "t"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "{pʰtʰkʰptk}t ← {pʰtʰkʰptk}d",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/101",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/101.3306"
+        ],
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2205"
+        ],
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2210-2"
+        ]
+      ],
+      "linked": [
+        "t"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "approximants produced various spirants",
+      "url": "https://eldamo.org/content/words/word-3605637247.html",
+      "formula": "tj → tʃ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.2310"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.1715"
+        ],
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.0703"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z",
+        "x",
+        "w̥",
+        "j",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-883570327.html",
+      "formula": "ttʰ → θθ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/14",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/14.2406"
+        ],
+        [
+          "VT47/16",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/16.3911"
+        ]
+      ],
+      "linked": [
+        "t"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2190887743.html",
+      "formula": "kt ← ktʰ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.02051"
+        ],
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0205"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2190887743.html",
+      "formula": "tt ← ttʰ",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "VT47/14",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/14.2313"
+        ],
+        [
+          "VT47/16",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/16.3907"
+        ],
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.2207"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2190887743.html",
+      "formula": "ttʰ → tt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/14",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/14.2313"
+        ],
+        [
+          "VT47/16",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/16.3907"
+        ],
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.2207"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "combinations of voiced stops were unvoiced",
+      "url": "https://eldamo.org/content/words/word-1625077395.html",
+      "formula": "tt ← dd",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE18/91",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/091.2110"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3403"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] plus voiceless stops became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-1605344503.html",
+      "formula": "st- → θ-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/78",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/078.1612"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "ɸ",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2123493145.html",
+      "formula": "ŋk- → k-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/92",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/092.1203"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "nasals became voiceless stops before aspirates",
+      "url": "https://eldamo.org/content/words/word-3474357431.html",
+      "formula": "ttʰ ← ntʰ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.0304"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3703720537.html",
+      "formula": "ntj ← ŋkj",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.0415"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3703720537.html",
+      "formula": "tj ← kj",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "PE18/94",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/094.2207"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.1502"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.2506"
+        ],
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.0406"
+        ],
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.1701"
+        ],
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.1710"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-3463937975.html",
+      "formula": "tm → dm",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT42/26",
+          "https://eldamo.org/content/references/ref-VT42.html#VT42/26.0605"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-3463937975.html",
+      "formula": "tn → dn",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT42/26",
+          "https://eldamo.org/content/references/ref-VT42.html#VT42/26.0411"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[n], [m] became [t], [w] after aspirates",
+      "url": "https://eldamo.org/content/words/word-372953021.html",
+      "formula": "kt ← kʰn",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0502-4"
+        ]
+      ],
+      "linked": [
+        "t",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[n], [m] became [t], [w] after aspirates",
+      "url": "https://eldamo.org/content/words/word-372953021.html",
+      "formula": "tt ← tʰn",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0701-4"
+        ]
+      ],
+      "linked": [
+        "t",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1238072385.html",
+      "formula": "ntr → ns",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3801"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "t",
+        "tʰ",
+        "kʰ",
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2769500867.html",
+      "formula": "kt ← ktʰ",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0502"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2769500867.html",
+      "formula": "pt ← ptʰ",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/40",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/040.2811"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0412"
+        ],
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0509"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2769500867.html",
+      "formula": "tt ← ttʰ",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0701-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2830500177.html",
+      "formula": "t- ← nt-",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.2801-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʷ",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "nasals became voiceless stops before aspirates",
+      "url": "https://eldamo.org/content/words/word-2847294287.html",
+      "formula": "ttʰ ← ntʰ",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0701-3"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "tl → lt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0702"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "tr → rt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2702"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3291729015.html",
+      "formula": "tj ← kj",
+      "langs": "Quenya, Middle Quenya, Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0901-2"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1601"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0802"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2705"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.4002"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʰ",
+        "n",
+        "nʲ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3291729015.html",
+      "formula": "tʰj ← kʰj",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.4002-2"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʰ",
+        "n",
+        "nʲ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-1324444289.html",
+      "formula": "tm → dm",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3705"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-1324444289.html",
+      "formula": "tn → dn",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3104"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[t+t], [d+d] from suffixion became [st], [zd]",
+      "url": "https://eldamo.org/content/words/word-2479050823.html",
+      "formula": "t+t → st",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2515"
+        ],
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.2404"
+        ],
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.2010"
+        ],
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.0408"
+        ],
+        [
+          "PE18/91",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/091.2116-1"
+        ],
+        [
+          "VT42/18",
+          "https://eldamo.org/content/references/ref-VT42.html#VT42/18.3006"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[tk] became [kk] or [kt] or [sk]",
+      "url": "https://eldamo.org/content/words/word-700934409.html",
+      "formula": "tk → kk",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.0706"
+        ]
+      ],
+      "linked": [
+        "t",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[tk] became [kk] or [kt] or [sk]",
+      "url": "https://eldamo.org/content/words/word-700934409.html",
+      "formula": "tk → kt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/166",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/166.2001"
+        ]
+      ],
+      "linked": [
+        "t",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[tk] became [kk] or [kt] or [sk]",
+      "url": "https://eldamo.org/content/words/word-700934409.html",
+      "formula": "tk → sk",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/42",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/42.2208"
+        ]
+      ],
+      "linked": [
+        "t",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "t{ptkpʰtʰkʰs} ← d{ptkpʰtʰkʰs}",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/90",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/090.0811"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.1710"
+        ]
+      ],
+      "linked": [
+        "t"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "{pʰtʰkʰptk}d → {pʰtʰkʰptk}t",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2205"
+        ]
+      ],
+      "linked": [
+        "t"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspirate became voiceless stop before [s]",
+      "url": "https://eldamo.org/content/words/word-2225058767.html",
+      "formula": "ts ← tʰs",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.4012"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspirates became voiceless stops after [s], [h]",
+      "url": "https://eldamo.org/content/words/word-3915424757.html",
+      "formula": "st ← stʰ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0108"
+        ]
+      ],
+      "linked": [
+        "t",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2789676367.html",
+      "formula": "{ptk}tʰ → {ptk}t",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/14",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/14.2314"
+        ],
+        [
+          "VT47/16",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/16.3908"
+        ]
+      ],
+      "linked": [
+        "t"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspiration moved to end of group of stops",
+      "url": "https://eldamo.org/content/words/word-3183451073.html",
+      "formula": "ttʰ ← tʰt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2210"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspiration moved to end of group of stops",
+      "url": "https://eldamo.org/content/words/word-3183451073.html",
+      "formula": "ttʰ ← tʰtʰ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2210-1"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[t+t], [d+d] from suffixion became [st], [zd]",
+      "url": "https://eldamo.org/content/words/word-2630259491.html",
+      "formula": "t+t → st",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3904"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspirate became voiceless stop before [s]",
+      "url": "https://eldamo.org/content/words/word-2678342679.html",
+      "formula": "ts ← tʰs",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0802"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspirates became voiceless stops after [s], [h]",
+      "url": "https://eldamo.org/content/words/word-2699949575.html",
+      "formula": "st ← stʰ",
+      "langs": "Quenya, Middle Quenya, Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3901-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.4002-3"
+        ]
+      ],
+      "linked": [
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial [s] spirantalized following voiceless stops",
+      "url": "https://eldamo.org/content/words/word-570537175.html",
+      "formula": "st- → θ-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.1913"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiced stops unvoiced after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-3661438765.html",
+      "formula": "kt ← kd",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0502-2"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiced stops unvoiced before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-2905876955.html",
+      "formula": "ts ← ds",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0802-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiceless stops became spirants after initial [s]",
+      "url": "https://eldamo.org/content/words/word-948882833.html",
+      "formula": "st- → sθ-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.1905"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiceless stops voiced after vowels",
+      "url": "https://eldamo.org/content/words/word-2421096703.html",
+      "formula": "Vt → Vd",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.0407"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k"
+      ]
+    }
+  ],
+  "d": [
+    {
+      "marker": "Q.",
+      "title": "[d] vanished between [n], [r], [l] and [j]",
+      "url": "https://eldamo.org/content/words/word-297797679.html",
+      "formula": "ldj → lj",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.2703"
+        ],
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0502"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ð",
+        "n",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[d] vanished between [n], [r], [l] and [j]",
+      "url": "https://eldamo.org/content/words/word-297797679.html",
+      "formula": "rdj → rj",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.2704"
+        ],
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.2110"
+        ],
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0501"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ð",
+        "n",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "approximants produced various spirants",
+      "url": "https://eldamo.org/content/words/word-3605637247.html",
+      "formula": "dj → dʒ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.2401"
+        ],
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.2013"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z",
+        "x",
+        "w̥",
+        "j",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "ld ← lð",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0417"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "rd ← rð",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0416"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[d] vanished between [n], [r], [l] and [j]",
+      "url": "https://eldamo.org/content/words/word-2488350997.html",
+      "formula": "ldj → lj",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1805"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2201-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ø"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[d] vanished between [n], [r], [l] and [j]",
+      "url": "https://eldamo.org/content/words/word-2488350997.html",
+      "formula": "ndj → nj",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3601-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ø"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[d] vanished between [n], [r], [l] and [j]",
+      "url": "https://eldamo.org/content/words/word-2488350997.html",
+      "formula": "rdj → rj",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3501-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ø"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "d ← d",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3004"
+        ]
+      ],
+      "linked": [
+        "d"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "intervocalic [ð] became [r]",
+      "url": "https://eldamo.org/content/words/word-3914129125.html",
+      "formula": "VðV → VrV",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2501-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "medial [ð] dissimilated to [l] after [r]",
+      "url": "https://eldamo.org/content/words/word-687907123.html",
+      "formula": "rVð → rVl",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0401-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "l"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[dj] became [lj]",
+      "url": "https://eldamo.org/content/words/word-1574644731.html",
+      "formula": "dj → lj",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/70",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/070.1308"
+        ],
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.2114"
+        ],
+        [
+          "WJ/363",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/363.2107"
+        ]
+      ],
+      "linked": [
+        "d",
+        "l"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ln] became [ld]",
+      "url": "https://eldamo.org/content/words/word-1011702125.html",
+      "formula": "ld ← ln",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/100",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/100.0414"
+        ]
+      ],
+      "linked": [
+        "d",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "d{ptkpʰtʰkʰs} → t{ptkpʰtʰkʰs}",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/90",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/090.0811"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.1710"
+        ]
+      ],
+      "linked": [
+        "d"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "d{pʰtʰkʰptk} → t{pʰtʰkʰptk}",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2205-2"
+        ],
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2210-3"
+        ]
+      ],
+      "linked": [
+        "d"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "{pʰtʰkʰptk}d → {pʰtʰkʰptk}t",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2210-2"
+        ],
+        [
+          "PE18/101",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/101.3306"
+        ]
+      ],
+      "linked": [
+        "d",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "combinations of voiced stops were unvoiced",
+      "url": "https://eldamo.org/content/words/word-1625077395.html",
+      "formula": "dd → tt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/91",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/091.2110"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3403"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [d] assimilated to following nasal",
+      "url": "https://eldamo.org/content/words/word-2885687903.html",
+      "formula": "dVXn- → nVXn-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT48/30",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/30.0710"
+        ],
+        [
+          "WJ/414",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/414.0111"
+        ]
+      ],
+      "linked": [
+        "d",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [d] became [l]",
+      "url": "https://eldamo.org/content/words/word-3325625207.html",
+      "formula": "d- → l-",
+      "langs": "Ancient Quenya, Primitive Elvish",
+      "sources": [
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.0808"
+        ],
+        [
+          "PE19/69",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/069.3604"
+        ],
+        [
+          "VT48/30",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/30.0503"
+        ],
+        [
+          "WJ/363",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/363.1303"
+        ],
+        [
+          "PE17/153",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/153.0505"
+        ]
+      ],
+      "linked": [
+        "d",
+        "l"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [dr-], [dl-] became [r-], [l-]",
+      "url": "https://eldamo.org/content/words/word-3688462237.html",
+      "formula": "dl- → l-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.3619"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ø"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [dr-], [dl-] became [r-], [l-]",
+      "url": "https://eldamo.org/content/words/word-3688462237.html",
+      "formula": "dr- → r-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.3618"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ø"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2123493145.html",
+      "formula": "nd- → n-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.1802"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3703720537.html",
+      "formula": "dj ← gj",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.0803"
+        ],
+        [
+          "PE19/77",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/077.1605"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.2507"
+        ],
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.1618"
+        ],
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.2711"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3703720537.html",
+      "formula": "ndj ← ŋgj",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1202"
+        ],
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.2806"
+        ],
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.1801"
+        ],
+        [
+          "PE19/97",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/097.1713"
+        ],
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.0416"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-2830908887.html",
+      "formula": "dn → nn",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.0904"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiced stops became spirants except after nasals",
+      "url": "https://eldamo.org/content/words/word-1141570065.html",
+      "formula": "d → ð",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/69",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/069.3712"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "β",
+        "v",
+        "ð",
+        "ɣ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[dl] became [gl]",
+      "url": "https://eldamo.org/content/words/word-3584827489.html",
+      "formula": "dl → gl",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.2713"
+        ]
+      ],
+      "linked": [
+        "d"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[ln] became [ld]",
+      "url": "https://eldamo.org/content/words/word-1937075927.html",
+      "formula": "ld ← ln",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1702-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1801-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [d] became [l]",
+      "url": "https://eldamo.org/content/words/word-31048751.html",
+      "formula": "d- → l-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0901-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "l"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [dr-], [dl-] became [r-], [l-]",
+      "url": "https://eldamo.org/content/words/word-1126123145.html",
+      "formula": "dl- → l-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0901-3"
+        ]
+      ],
+      "linked": [
+        "d",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [dr-], [dl-] became [r-], [l-]",
+      "url": "https://eldamo.org/content/words/word-1126123145.html",
+      "formula": "dr- → r-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1001-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2830500177.html",
+      "formula": "nd- → n-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0401-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʷ",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "ld ← dl",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1702"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "rd ← dr",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3002"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3291729015.html",
+      "formula": "dj ← gj",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1801"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3005"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʰ",
+        "n",
+        "nʲ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-1312520143.html",
+      "formula": "dm → nm",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3703"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-1312520143.html",
+      "formula": "dn → nn",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3102"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops spirantalized after vowels",
+      "url": "https://eldamo.org/content/words/word-501836955.html",
+      "formula": "Vd → Vð",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1607"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-1324444289.html",
+      "formula": "dm ← tm",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3705"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-1324444289.html",
+      "formula": "dn ← tn",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3104"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[t+t], [d+d] from suffixion became [st], [zd]",
+      "url": "https://eldamo.org/content/words/word-2479050823.html",
+      "formula": "d+d → zd",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2516"
+        ],
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.2405"
+        ],
+        [
+          "PE19/90",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/090.3016"
+        ],
+        [
+          "PE18/91",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/091.2116-2"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "voiced stops became spirants after vowels",
+      "url": "https://eldamo.org/content/words/word-1726791627.html",
+      "formula": "Vd → Vð",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "LotR/1113",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1113.2514"
+        ]
+      ],
+      "linked": [
+        "d"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[t+t], [d+d] from suffixion became [st], [zd]",
+      "url": "https://eldamo.org/content/words/word-2630259491.html",
+      "formula": "d+d → zd",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3908"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiced stops unvoiced after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-3661438765.html",
+      "formula": "kd → kt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0502-2"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiced stops unvoiced before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-2905876955.html",
+      "formula": "ds → ts",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0802-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    }
+  ],
+  "tʰ": [
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3262991621.html",
+      "formula": "tʰ → θ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.0707"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ",
+        "kʰ",
+        "ɸ",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2190887743.html",
+      "formula": "ktʰ → kt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.02051"
+        ],
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0205"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1238072385.html",
+      "formula": "tʰr → ts",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0801-3"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "t",
+        "tʰ",
+        "kʰ",
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3124926163.html",
+      "formula": "tʰ → θ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2308"
+        ],
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2309"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.1607"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.1608"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-4030743197.html",
+      "formula": "tʰ → θ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2305"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.1613"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.2613"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3537093625.html",
+      "formula": "tʰ → θ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3101"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1002"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1701"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1801"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1803"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0901"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2707"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2711"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ",
+        "kʰ",
+        "ɸ",
+        "f",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2769500867.html",
+      "formula": "ttʰ → tt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0701-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [θl] became [fl]",
+      "url": "https://eldamo.org/content/words/word-119585643.html",
+      "formula": "θl- → fl-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.2607"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.2608"
+        ]
+      ],
+      "linked": [
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "medial voiceless spirants voiced after vowels",
+      "url": "https://eldamo.org/content/words/word-3083451453.html",
+      "formula": "-Vθ- → -Vð-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1108"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1109"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "medial voiceless spirants voiced after vowels",
+      "url": "https://eldamo.org/content/words/word-4105744097.html",
+      "formula": "-Vθ- → -Vð-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1107"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "ltʰ ← tʰl",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0903"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "rtʰ ← tʰr",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2709"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspirate became voiceless stop before [s]",
+      "url": "https://eldamo.org/content/words/word-2225058767.html",
+      "formula": "tʰs → ts",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.4012"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspirates became voiceless stops after [s], [h]",
+      "url": "https://eldamo.org/content/words/word-3915424757.html",
+      "formula": "stʰ → st",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0108"
+        ]
+      ],
+      "linked": [
+        "t",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspiration moved to end of group of stops",
+      "url": "https://eldamo.org/content/words/word-3183451073.html",
+      "formula": "tʰt → ttʰ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2210"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspiration moved to end of group of stops",
+      "url": "https://eldamo.org/content/words/word-3183451073.html",
+      "formula": "tʰtʰ → ttʰ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2210-1"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspirate became voiceless stop before [s]",
+      "url": "https://eldamo.org/content/words/word-2678342679.html",
+      "formula": "tʰs → ts",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0802"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-1770347191.html",
+      "formula": "tʰ → θ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2306"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.1605"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.2605"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1105"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspirates became voiceless stops after [s], [h]",
+      "url": "https://eldamo.org/content/words/word-2699949575.html",
+      "formula": "stʰ → st",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.4002-3"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3901-2"
+        ]
+      ],
+      "linked": [
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    }
+  ],
+  "tʲ": [
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2830500177.html",
+      "formula": "k- ← ŋk-",
+      "langs": "Quenya, Middle Quenya, Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1601-2"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1801-2"
+        ],
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.2901-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʷ",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    }
+  ],
+  "dʲ": [],
+  "k": [
+    {
+      "marker": "Q.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "k ← k",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/69",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/069.3107-1"
+        ]
+      ],
+      "linked": [
+        "k"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[pt], [kt] became [ɸt], [xt]",
+      "url": "https://eldamo.org/content/words/word-2265073101.html",
+      "formula": "kt → xt",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0207"
+        ],
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.2112"
+        ],
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1506"
+        ],
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.2804"
+        ]
+      ],
+      "linked": [
+        "p",
+        "k",
+        "x"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[sp], [sk] became [ps], [ks]",
+      "url": "https://eldamo.org/content/words/word-2094898289.html",
+      "formula": "ks ← sk",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE18/94",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/094.2210"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3515"
+        ],
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0508"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.1212"
+        ],
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.0513"
+        ]
+      ],
+      "linked": [
+        "p",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "lk ← lx",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.1810"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "rk ← rx",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.1809"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "k ← k",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.2901"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1101"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1201"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1301"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1401"
+        ]
+      ],
+      "linked": [
+        "k"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[sp], [sk] became [ps], [ks]",
+      "url": "https://eldamo.org/content/words/word-3499874945.html",
+      "formula": "ks ← sk",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3116"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1501"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1301-4"
+        ]
+      ],
+      "linked": [
+        "p",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[sp], [sk] became [ps], [ks]",
+      "url": "https://eldamo.org/content/words/word-3499874945.html",
+      "formula": "sk → ks",
+      "langs": "Ancient Quenya, Middle Ancient Quenya, Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1301-4"
+        ],
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3116"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1501"
+        ]
+      ],
+      "linked": [
+        "p",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "initial [ps], [ks] became [s]",
+      "url": "https://eldamo.org/content/words/word-93837315.html",
+      "formula": "ks- → s-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3107-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2190887743.html",
+      "formula": "kk ← kkʰ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.2208"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "combinations of voiced stops were unvoiced",
+      "url": "https://eldamo.org/content/words/word-1625077395.html",
+      "formula": "kk ← gg",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3405"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "combinations of voiced stops were unvoiced",
+      "url": "https://eldamo.org/content/words/word-1625077395.html",
+      "formula": "kt ← gd",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/91",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/091.0502"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] plus voiceless stops became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-1605344503.html",
+      "formula": "sk- → x-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/78",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/078.1613"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "ɸ",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2123493145.html",
+      "formula": "k- ← ŋk-",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE18/92",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/092.1203"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "labialized velars became labials",
+      "url": "https://eldamo.org/content/words/word-171120983.html",
+      "formula": "kw → p",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT42/7",
+          "https://eldamo.org/content/references/ref-VT42.html#VT42/07.1203"
+        ],
+        [
+          "UT/265",
+          "https://eldamo.org/content/references/ref-UT.html#UT/265.4010"
+        ],
+        [
+          "WJ/374",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/374.0407"
+        ],
+        [
+          "WJ/375",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/375.0610"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "nasals became voiceless stops before aspirates",
+      "url": "https://eldamo.org/content/words/word-3474357431.html",
+      "formula": "kkʰ ← ŋkʰ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.0305"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3703720537.html",
+      "formula": "kj → tj",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.1502"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.2506"
+        ],
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.0406"
+        ],
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.1701"
+        ],
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.1710"
+        ],
+        [
+          "PE18/94",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/094.2207"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3703720537.html",
+      "formula": "ŋkj → ntj",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.0415"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-3463937975.html",
+      "formula": "km → gm",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT42/26",
+          "https://eldamo.org/content/references/ref-VT42.html#VT42/26.0615"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-3463937975.html",
+      "formula": "kn → gn",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT42/26",
+          "https://eldamo.org/content/references/ref-VT42.html#VT42/26.0611"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[z] plus voiced stop became unvoiced",
+      "url": "https://eldamo.org/content/words/word-4145487633.html",
+      "formula": "sk ← zg",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1309"
+        ]
+      ],
+      "linked": [
+        "k",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2769500867.html",
+      "formula": "kk ← kkʰ",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1201-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2769500867.html",
+      "formula": "ktʰ → kt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0502"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "labialized velars became labials",
+      "url": "https://eldamo.org/content/words/word-3214863235.html",
+      "formula": "kw → p",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2106"
+        ],
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.2205"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.0705"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g",
+        "kʰ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "nasals became voiceless stops before aspirates",
+      "url": "https://eldamo.org/content/words/word-2847294287.html",
+      "formula": "kkʰ ← ŋkʰ",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1201-3"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "kl → lk",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1102"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "kr → rk",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2802"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3291729015.html",
+      "formula": "kj → tj",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.4002"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0901-2"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1601"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0802"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2705"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʰ",
+        "n",
+        "nʲ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiceless stops became spirants after initial [s]",
+      "url": "https://eldamo.org/content/words/word-948882833.html",
+      "formula": "sk- → sx-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.2105"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-1324444289.html",
+      "formula": "km → gm",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.4206"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[tk] became [kk] or [kt] or [sk]",
+      "url": "https://eldamo.org/content/words/word-700934409.html",
+      "formula": "kk ← tk",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.0706"
+        ]
+      ],
+      "linked": [
+        "t",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[tk] became [kk] or [kt] or [sk]",
+      "url": "https://eldamo.org/content/words/word-700934409.html",
+      "formula": "kt ← tk",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE17/166",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/166.2001"
+        ]
+      ],
+      "linked": [
+        "t",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "kj → tj",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.10115"
+        ]
+      ],
+      "linked": [
+        "k"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspirate became voiceless stop before [s]",
+      "url": "https://eldamo.org/content/words/word-2225058767.html",
+      "formula": "ks ← kʰs",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.4013"
+        ],
+        [
+          "PE19/100",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/100.4706"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "voiced stops unvoiced before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-1944249607.html",
+      "formula": "ks ← gs",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.1711"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "voiced stops unvoiced before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-1944249607.html",
+      "formula": "kt ← gt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/90",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/090.0812"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[j] became [i] in Ossiriandic",
+      "url": "https://eldamo.org/content/words/word-2818409497.html",
+      "formula": "j → i",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.0508"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1708"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g",
+        "j"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[w] vanished after medial velars in Ossiriandic",
+      "url": "https://eldamo.org/content/words/word-78414621.html",
+      "formula": "-kw- → -k-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.0708"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspirate became voiceless stop before [s]",
+      "url": "https://eldamo.org/content/words/word-2678342679.html",
+      "formula": "ks ← kʰs",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1302"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspirates became voiceless stops after [s], [h]",
+      "url": "https://eldamo.org/content/words/word-2699949575.html",
+      "formula": "sk ← skʰ",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.4102"
+        ]
+      ],
+      "linked": [
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspiration moved to end of group of stops",
+      "url": "https://eldamo.org/content/words/word-798737509.html",
+      "formula": "ktʰ ← kʰt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0506"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial [skw] became [sw]",
+      "url": "https://eldamo.org/content/words/word-1872897535.html",
+      "formula": "skw- → sw-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.2207"
+        ]
+      ],
+      "linked": [
+        "k"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "non-initial [w] became [v] in East Danian",
+      "url": "https://eldamo.org/content/words/word-1848454147.html",
+      "formula": "Xw → Xv",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2109"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.0709"
+        ]
+      ],
+      "linked": [
+        "k",
+        "w"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiced stops unvoiced before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-2905876955.html",
+      "formula": "ks ← gs",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1302-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiced stops unvoiced before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-2905876955.html",
+      "formula": "kt ← gt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0502-3"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiceless stops voiced after vowels",
+      "url": "https://eldamo.org/content/words/word-2421096703.html",
+      "formula": "Vk → Vg",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.0607"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k"
+      ]
+    }
+  ],
+  "g": [
+    {
+      "marker": "Q.",
+      "title": "[ɣ] from [g] vanished",
+      "url": "https://eldamo.org/content/words/word-1833409085.html",
+      "formula": "ɣ → ø",
+      "langs": "Ancient Quenya, Primitive Elvish",
+      "sources": [
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.3311"
+        ],
+        [
+          "PE17/153",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/153.0508"
+        ],
+        [
+          "PE19/70",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/070.1712"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0702"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0802"
+        ],
+        [
+          "PE19/72",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/072.2812"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0602"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0202"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "w",
+        "j",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "medial [ŋ] after a [n], [ŋ], [l], [r] became [g]",
+      "url": "https://eldamo.org/content/words/word-447633467.html",
+      "formula": "-{nŋlr}g- ← -{nŋlr}ŋ-",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/81",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/081.2413"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "palatalized velars became dentals",
+      "url": "https://eldamo.org/content/words/word-745600013.html",
+      "formula": "gj- → d-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0704"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ɣ] from [g] vanished",
+      "url": "https://eldamo.org/content/words/word-3266317297.html",
+      "formula": "ɣ → ø",
+      "langs": "Ancient Quenya, Middle Ancient Quenya, Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2301-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3601-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0301-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0201-3"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0801-2"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0701-3"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1301"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "w",
+        "ø"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "labialized velars became labials",
+      "url": "https://eldamo.org/content/words/word-3214863235.html",
+      "formula": "gw → b",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.3106"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1905"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g",
+        "kʰ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j] was lost after initial velars",
+      "url": "https://eldamo.org/content/words/word-345959193.html",
+      "formula": "gj- → g-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0703"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j] was lost after initial velars and dentals",
+      "url": "https://eldamo.org/content/words/word-1120953457.html",
+      "formula": "gj- → g-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0705"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0405"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1205"
+        ],
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2905"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ",
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ɣ] became [j] between [i], [e] and a vowel",
+      "url": "https://eldamo.org/content/words/word-1700576467.html",
+      "formula": "eɣV → ejV",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.0105"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "combinations of voiced stops were unvoiced",
+      "url": "https://eldamo.org/content/words/word-1625077395.html",
+      "formula": "gd → kt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/91",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/091.0502"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "combinations of voiced stops were unvoiced",
+      "url": "https://eldamo.org/content/words/word-1625077395.html",
+      "formula": "gg → kk",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3405"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "labialized velars became labials",
+      "url": "https://eldamo.org/content/words/word-171120983.html",
+      "formula": "gw → b",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0804"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0803"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3703720537.html",
+      "formula": "gj → dj",
+      "langs": "Ancient Quenya, Primitive Elvish",
+      "sources": [
+        [
+          "PE19/77",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/077.1605"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.0803"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.2507"
+        ],
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.1618"
+        ],
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.2711"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3703720537.html",
+      "formula": "ŋgj → ndj",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.2806"
+        ],
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.1801"
+        ],
+        [
+          "PE19/97",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/097.1713"
+        ],
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.0416"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1202"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-2830908887.html",
+      "formula": "gŋ → ŋŋ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.0905"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.3110"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiced stops became spirants except after nasals",
+      "url": "https://eldamo.org/content/words/word-1141570065.html",
+      "formula": "g → ɣ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/153",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/153.0507"
+        ],
+        [
+          "PE19/70",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/070.1509"
+        ],
+        [
+          "PE19/70",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/070.2717"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.1305"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.3304"
+        ],
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.3816"
+        ],
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.3817"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3104"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "β",
+        "v",
+        "ð",
+        "ɣ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[ɣ] between a vowel and [e] and became [j]",
+      "url": "https://eldamo.org/content/words/word-2632900125.html",
+      "formula": "Vɣe → Vje",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0201-2"
+        ]
+      ],
+      "linked": [
+        "g",
+        "j"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2830500177.html",
+      "formula": "ŋg- → ŋ-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0501"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1901"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʷ",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "gl → lg",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1902"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "gr → rg",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3102"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3291729015.html",
+      "formula": "gj → dj",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1801"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3005"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʰ",
+        "n",
+        "nʲ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3291729015.html",
+      "formula": "ŋgj → ndj",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3501-1"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1701-2"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʰ",
+        "n",
+        "nʲ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-1312520143.html",
+      "formula": "gm → ŋm",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.4204"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops became spirants except after nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-2772726195.html",
+      "formula": "g → ɣ",
+      "langs": "Ancient Quenya, Middle Ancient Quenya, Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0206"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0303"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0901-4"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1001-3"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0701-2"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1301-3"
+        ]
+      ],
+      "linked": [
+        "b",
+        "g",
+        "v",
+        "ɣ",
+        "l",
+        "r",
+        "w",
+        "ø"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiceless stops were voiced before nasals",
+      "url": "https://eldamo.org/content/words/word-1324444289.html",
+      "formula": "gm ← km",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.4206"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[ŋŋ], [ŋɣ] became [ŋg]",
+      "url": "https://eldamo.org/content/words/word-3404492995.html",
+      "formula": "ŋg ← ŋŋ",
+      "langs": "Quenya, Primitive Elvish",
+      "sources": [
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.1803"
+        ],
+        [
+          "PE18/91",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/091.1711"
+        ],
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.1003"
+        ],
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.1903"
+        ],
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.2102"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[ŋŋ], [ŋɣ] became [ŋg]",
+      "url": "https://eldamo.org/content/words/word-3404492995.html",
+      "formula": "ŋg ← ŋɣ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2606"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "gj → dj",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.08031"
+        ]
+      ],
+      "linked": [
+        "g"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ɣw → ww",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.0117"
+        ]
+      ],
+      "linked": [
+        "g"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-2233951333.html",
+      "formula": "-ŋgj- ← -ŋj-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.2804"
+        ],
+        [
+          "PE19/97",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/097.1707"
+        ],
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1301"
+        ],
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.1009"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-2233951333.html",
+      "formula": "-ŋgw- ← -ŋw-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.2810"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.2903"
+        ],
+        [
+          "PE19/97",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/097.1708"
+        ],
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1309"
+        ],
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.1010"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "voiced stops unvoiced before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-1944249607.html",
+      "formula": "gs → ks",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.1711"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "voiced stops unvoiced before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-1944249607.html",
+      "formula": "gt → kt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/90",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/090.0812"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[w] vanished after medial velars in Ossiriandic",
+      "url": "https://eldamo.org/content/words/word-78414621.html",
+      "formula": "-gw- → -g-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1908"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1909"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ŋŋ], [ŋɣ] became [ŋg]",
+      "url": "https://eldamo.org/content/words/word-2849203249.html",
+      "formula": "ŋg ← ŋŋ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.4003-2"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ŋŋ], [ŋɣ] became [ŋg]",
+      "url": "https://eldamo.org/content/words/word-2849203249.html",
+      "formula": "ŋg ← ŋɣ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.4003"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial [g] was lost before [w]",
+      "url": "https://eldamo.org/content/words/word-88234997.html",
+      "formula": "gw- → w-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.3108"
+        ],
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.3109"
+        ]
+      ],
+      "linked": [
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-1270135967.html",
+      "formula": "-ŋgj- ← -ŋj-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0702"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3503"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-1270135967.html",
+      "formula": "-ŋgw- ← -ŋw-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0703"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.4202"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-1270135967.html",
+      "formula": "-ŋw- → -ŋgw-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.4202"
+        ],
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0703"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiced stops unvoiced before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-2905876955.html",
+      "formula": "gs → ks",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1302-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "voiced stops unvoiced before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-2905876955.html",
+      "formula": "gt → kt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0502-3"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "g"
+      ]
+    }
+  ],
+  "kʰ": [
+    {
+      "marker": "Q.",
+      "title": "[x] became [h] except before [t]",
+      "url": "https://eldamo.org/content/words/word-2071843593.html",
+      "formula": "x → h",
+      "langs": "Ancient Quenya, Primitive Elvish",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.1112"
+        ],
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.2713"
+        ],
+        [
+          "PE17/92",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/092.3202"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "x",
+        "h"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[x] became [h] except before [t]",
+      "url": "https://eldamo.org/content/words/word-2800366809.html",
+      "formula": "x → h",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3201"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1901"
+        ],
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0201"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "x",
+        "h",
+        "l̥",
+        "r̥"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-1770347191.html",
+      "formula": "kʰ → x",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2506"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.1905"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.2905"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1205"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1305"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1405"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "labialized velars became labials",
+      "url": "https://eldamo.org/content/words/word-3214863235.html",
+      "formula": "kʰw- → pʰ-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2606"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g",
+        "kʰ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[x] unvoiced following [j], [w]",
+      "url": "https://eldamo.org/content/words/word-2963647241.html",
+      "formula": "xj → j̊",
+      "langs": "Ancient Quenya, Primitive Elvish",
+      "sources": [
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.0215"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3109"
+        ],
+        [
+          "LotR/1115",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1115.0405-1"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "{lr}xʷ → {lr}w",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE12/17",
+          "https://eldamo.org/content/references/ref-PE12.html#PE12/017.3310"
+        ]
+      ],
+      "linked": [
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3262991621.html",
+      "formula": "kʰ → x",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.0907"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.0105"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.2705"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3108"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ",
+        "kʰ",
+        "ɸ",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2190887743.html",
+      "formula": "kkʰ → kk",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.2208"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1238072385.html",
+      "formula": "kʰr → ks",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1301-3"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "t",
+        "tʰ",
+        "kʰ",
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[x], [s] unvoiced following [j], [w]",
+      "url": "https://eldamo.org/content/words/word-3260572145.html",
+      "formula": "xj → j̊",
+      "langs": "Ancient Quenya, Middle Ancient Quenya, Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1402"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2810"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2001"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0101"
+        ],
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0301"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "s",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[x], [s] unvoiced following [j], [w]",
+      "url": "https://eldamo.org/content/words/word-3260572145.html",
+      "formula": "xw → w̥",
+      "langs": "Ancient Quenya, Middle Ancient Quenya, Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1502"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2808"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2101"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0201"
+        ],
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0401"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "s",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3537093625.html",
+      "formula": "kʰ → x",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1302-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1403-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1503-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2807-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2809-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2812-2"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ",
+        "kʰ",
+        "ɸ",
+        "f",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless stops after voiceless stops",
+      "url": "https://eldamo.org/content/words/word-2769500867.html",
+      "formula": "kkʰ → kk",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1201-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "medial [x] vanished between vowels",
+      "url": "https://eldamo.org/content/words/word-4185900741.html",
+      "formula": "-x- → -ø-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1209"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1308"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.1309"
+        ]
+      ],
+      "linked": [
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "lkʰ ← kʰl",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1302"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3291729015.html",
+      "formula": "kʰj → tʰj",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.4002-2"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʰ",
+        "n",
+        "nʲ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "aspirate became voiceless stop before [s]",
+      "url": "https://eldamo.org/content/words/word-2225058767.html",
+      "formula": "kʰs → ks",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.4013"
+        ],
+        [
+          "PE19/100",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/100.4706"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspirate became voiceless stop before [s]",
+      "url": "https://eldamo.org/content/words/word-2678342679.html",
+      "formula": "kʰs → ks",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1302"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspirates became voiceless stops after [s], [h]",
+      "url": "https://eldamo.org/content/words/word-2699949575.html",
+      "formula": "skʰ → sk",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.4102"
+        ]
+      ],
+      "linked": [
+        "t",
+        "tʰ",
+        "k",
+        "kʰ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "aspiration moved to end of group of stops",
+      "url": "https://eldamo.org/content/words/word-798737509.html",
+      "formula": "kʰt → ktʰ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0506"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "k",
+        "kʰ"
+      ]
+    }
+  ],
+  "kʷ": [
+    {
+      "marker": "Q.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "kʷ ← kʷ",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.0602"
+        ]
+      ],
+      "linked": [
+        "kʷ"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "kʷ ← kʷ",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1801"
+        ]
+      ],
+      "linked": [
+        "kʷ"
+      ]
+    }
+  ],
+  "gʷ": [],
+  "ɸ": [
+    {
+      "marker": "Q.",
+      "title": "[ɸu] became [hu]",
+      "url": "https://eldamo.org/content/words/word-1102872571.html",
+      "formula": "ɸu → hu",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.0510"
+        ]
+      ],
+      "linked": [
+        "ɸ",
+        "h"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "lɸ → lp",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.1806"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "rɸ → rp",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.1805"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ɸ], [β] became [f], [v]",
+      "url": "https://eldamo.org/content/words/word-2661449019.html",
+      "formula": "ɸ → f",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1502"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1602"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0602"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2605"
+        ]
+      ],
+      "linked": [
+        "ɸ",
+        "f"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3262991621.html",
+      "formula": "ɸ ← pʰ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.0407"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ",
+        "kʰ",
+        "ɸ",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] plus voiceless stops became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-1605344503.html",
+      "formula": "ɸ- ← sp-",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/78",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/078.1611"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "ɸ",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3537093625.html",
+      "formula": "ɸ ← pʰ",
+      "langs": "Quenya, Middle Quenya, Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3001"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1501"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1601"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0601"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2604"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ",
+        "kʰ",
+        "ɸ",
+        "f",
+        "θ",
+        "x"
+      ]
+    }
+  ],
+  "β": [
+    {
+      "marker": "Q.",
+      "title": "[β], [ɣ] after [r], [l] usually became stops",
+      "url": "https://eldamo.org/content/words/word-3388104565.html",
+      "formula": "{rl}β → {rl}b",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.2408"
+        ]
+      ],
+      "linked": [
+        "β",
+        "ɣ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[β], [ɣ] vocalized before voiced consonants",
+      "url": "https://eldamo.org/content/words/word-1104502097.html",
+      "formula": "VβC → VuC",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/90",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/090.2004"
+        ],
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.1514"
+        ]
+      ],
+      "linked": [
+        "β",
+        "ɣ",
+        "j",
+        "i",
+        "ø",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiced stops became spirants except after nasals",
+      "url": "https://eldamo.org/content/words/word-1141570065.html",
+      "formula": "β ← b",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "PE17/153",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/153.0503"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1402"
+        ],
+        [
+          "PE19/69",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/069.3405"
+        ],
+        [
+          "PE19/90",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/090.2003"
+        ],
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.2311"
+        ],
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.1503"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "β",
+        "v",
+        "ð",
+        "ɣ"
+      ]
+    }
+  ],
+  "f": [
+    {
+      "marker": "Q.",
+      "title": "[ɸ], [β] became [f], [v]",
+      "url": "https://eldamo.org/content/words/word-14484545.html",
+      "formula": "f ← ɸ",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE17/92",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/092.3215"
+        ],
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.0415"
+        ]
+      ],
+      "linked": [
+        "b",
+        "pʰ",
+        "ɸ",
+        "β",
+        "f",
+        "v"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[sf] became [f]",
+      "url": "https://eldamo.org/content/words/word-1165599019.html",
+      "formula": "f ← sf",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "Ety/ÓLOS",
+          "https://eldamo.org/content/references/ref-Ety.html#Ety/%C3%93LOS.008"
+        ]
+      ],
+      "linked": [
+        "f",
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ɸ], [β] became [f], [v]",
+      "url": "https://eldamo.org/content/words/word-2661449019.html",
+      "formula": "f ← ɸ",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1502"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1602"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0602"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2605"
+        ]
+      ],
+      "linked": [
+        "ɸ",
+        "f"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] plus voiceless stops became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3333849997.html",
+      "formula": "ɸ- ← sp-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3001-2"
+        ]
+      ],
+      "linked": [
+        "f",
+        "θ",
+        "s",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    }
+  ],
+  "v": [
+    {
+      "marker": "Q.",
+      "title": "[ɸ], [β] became [f], [v]",
+      "url": "https://eldamo.org/content/words/word-14484545.html",
+      "formula": "v ← β",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/69",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/069.3412"
+        ],
+        [
+          "PE19/72",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/072.2503"
+        ],
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.2415"
+        ],
+        [
+          "PM/402",
+          "https://eldamo.org/content/references/ref-PM.html#PM/402.0401"
+        ]
+      ],
+      "linked": [
+        "b",
+        "pʰ",
+        "ɸ",
+        "β",
+        "f",
+        "v"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops became spirants except after nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-2772726195.html",
+      "formula": "β ← b",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0601"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2201"
+        ]
+      ],
+      "linked": [
+        "b",
+        "g",
+        "v",
+        "ɣ",
+        "l",
+        "r",
+        "w",
+        "ø"
+      ]
+    }
+  ],
+  "θ": [
+    {
+      "marker": "Q.",
+      "title": "[θ] became [s]",
+      "url": "https://eldamo.org/content/words/word-3491983963.html",
+      "formula": "θ → s",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "Let/425",
+          "https://eldamo.org/content/references/ref-Let.html#Let/425.4217"
+        ],
+        [
+          "LotR/1114",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1114.3314"
+        ],
+        [
+          "PE17/76",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/076.1907"
+        ],
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.1710"
+        ],
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.1102"
+        ],
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.1103"
+        ]
+      ],
+      "linked": [
+        "θ",
+        "s"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "lθ → lt",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.1808"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "rθ → rt",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.1807"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[θ] became [s]",
+      "url": "https://eldamo.org/content/words/word-3006504693.html",
+      "formula": "θ → s",
+      "langs": "Quenya, Middle Quenya, Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3801-2"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1702"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1802"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1804"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0902"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2101-1"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2708"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2712"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3402"
+        ]
+      ],
+      "linked": [
+        "θ",
+        "s"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "{rl}θ → {rl}t",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0405"
+        ],
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0411"
+        ]
+      ],
+      "linked": [
+        "θ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3262991621.html",
+      "formula": "θ ← tʰ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.0707"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ",
+        "kʰ",
+        "ɸ",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] plus voiceless stops became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-1605344503.html",
+      "formula": "θ- ← st-",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/78",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/078.1612"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "ɸ",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3537093625.html",
+      "formula": "θ ← tʰ",
+      "langs": "Quenya, Middle Quenya, Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3101"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1002"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1701"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1801"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1803"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0901"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2707"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2711"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ",
+        "kʰ",
+        "ɸ",
+        "f",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] plus voiceless stops became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3333849997.html",
+      "formula": "θ- ← st-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3101-2"
+        ]
+      ],
+      "linked": [
+        "f",
+        "θ",
+        "s",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    }
+  ],
+  "ð": [
+    {
+      "marker": "Q.",
+      "title": "intervocalic [ð] became [r]",
+      "url": "https://eldamo.org/content/words/word-2793529037.html",
+      "formula": "VðV → VrV",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/69",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/069.3710"
+        ]
+      ],
+      "linked": [
+        "ð",
+        "r"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "lð → ld",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0417"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "rð → rd",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0416"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] and [ð] assimilated to following [r], [l]",
+      "url": "https://eldamo.org/content/words/word-1472480589.html",
+      "formula": "ðl → ll",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "PE17/71",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/071.4407"
+        ],
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.2013"
+        ]
+      ],
+      "linked": [
+        "ð",
+        "z",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] and [ð] assimilated to following [r], [l]",
+      "url": "https://eldamo.org/content/words/word-1472480589.html",
+      "formula": "ðr → rr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.2012"
+        ]
+      ],
+      "linked": [
+        "ð",
+        "z",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiced stops became spirants except after nasals",
+      "url": "https://eldamo.org/content/words/word-1141570065.html",
+      "formula": "ð ← d",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/69",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/069.3712"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "β",
+        "v",
+        "ð",
+        "ɣ"
+      ]
+    }
+  ],
+  "s": [
+    {
+      "marker": "Q.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "s ← s",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/73",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/073.0202-1"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[rs] became [ss]",
+      "url": "https://eldamo.org/content/words/word-1326730955.html",
+      "formula": "ss ← rs",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE17/71",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/071.4516"
+        ],
+        [
+          "PE19/99",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/099.3509"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[s] medially between vowels became [z]",
+      "url": "https://eldamo.org/content/words/word-1546616217.html",
+      "formula": "VsV → VzV",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/73",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/073.0413-1"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[sp], [sk] became [ps], [ks]",
+      "url": "https://eldamo.org/content/words/word-2094898289.html",
+      "formula": "sk → ks",
+      "langs": "Ancient Quenya, Primitive Elvish",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3515"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.1212"
+        ],
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.0513"
+        ],
+        [
+          "PE18/94",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/094.2210"
+        ],
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0508"
+        ]
+      ],
+      "linked": [
+        "p",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[sp], [sk] became [ps], [ks]",
+      "url": "https://eldamo.org/content/words/word-2094898289.html",
+      "formula": "sp → ps",
+      "langs": "Ancient Quenya, Primitive Elvish",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3513"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.1210"
+        ],
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.0514"
+        ],
+        [
+          "PE18/94",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/094.2209"
+        ],
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0507"
+        ]
+      ],
+      "linked": [
+        "p",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[θ] became [s]",
+      "url": "https://eldamo.org/content/words/word-3491983963.html",
+      "formula": "s ← θ",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "Let/425",
+          "https://eldamo.org/content/references/ref-Let.html#Let/425.4217"
+        ],
+        [
+          "LotR/1114",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1114.3314"
+        ],
+        [
+          "PE17/76",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/076.1907"
+        ],
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.1710"
+        ],
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.1102"
+        ],
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.1103"
+        ]
+      ],
+      "linked": [
+        "θ",
+        "s"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "approximants produced various spirants",
+      "url": "https://eldamo.org/content/words/word-3605637247.html",
+      "formula": "stj → ʃtʃ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.0908"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z",
+        "x",
+        "w̥",
+        "j",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial [sm], [sn] became nasals [m], [n]",
+      "url": "https://eldamo.org/content/words/word-4226922765.html",
+      "formula": "sm- → m-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.17032"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial [sm], [sn] became nasals [m], [n]",
+      "url": "https://eldamo.org/content/words/word-4226922765.html",
+      "formula": "sn- → n-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.17034"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "s ← s",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3107"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2101"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3801"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3901"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.4001"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.4101"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[pt], [kt] became [ps], [xt]",
+      "url": "https://eldamo.org/content/words/word-2701010297.html",
+      "formula": "ps ← pt",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0401-5"
+        ]
+      ],
+      "linked": [
+        "t",
+        "s",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[rs] became [ss]",
+      "url": "https://eldamo.org/content/words/word-2756914109.html",
+      "formula": "rs → ss",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3401"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[rs] became [ss]",
+      "url": "https://eldamo.org/content/words/word-2756914109.html",
+      "formula": "ss ← rs",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3401"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[sf] became [f]",
+      "url": "https://eldamo.org/content/words/word-1165599019.html",
+      "formula": "sf → f",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "Ety/ÓLOS",
+          "https://eldamo.org/content/references/ref-Ety.html#Ety/%C3%93LOS.008"
+        ]
+      ],
+      "linked": [
+        "f",
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[sp], [sk] became [ps], [ks]",
+      "url": "https://eldamo.org/content/words/word-3499874945.html",
+      "formula": "sp → ps",
+      "langs": "Ancient Quenya, Middle Ancient Quenya, Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3115"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0401-4"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1401"
+        ]
+      ],
+      "linked": [
+        "p",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[θ] became [s]",
+      "url": "https://eldamo.org/content/words/word-3006504693.html",
+      "formula": "s ← θ",
+      "langs": "Quenya, Middle Quenya, Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1702"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1802"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1804"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3801-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0902"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2101-1"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2708"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2712"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3402"
+        ]
+      ],
+      "linked": [
+        "θ",
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "initial [ps], [ks] became [s]",
+      "url": "https://eldamo.org/content/words/word-93837315.html",
+      "formula": "s- ← ks-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3107-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "initial [ps], [ks] became [s]",
+      "url": "https://eldamo.org/content/words/word-93837315.html",
+      "formula": "s- ← ps-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3107-1"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "initial [ps], [ks] became [s]",
+      "url": "https://eldamo.org/content/words/word-93837315.html",
+      "formula": "s- ← ts-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3107-3"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "initial [s] became [θ] before [l], [r]",
+      "url": "https://eldamo.org/content/words/word-2075290201.html",
+      "formula": "sl- → θl-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.3203"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "initial [s] became [θ] before [l], [r]",
+      "url": "https://eldamo.org/content/words/word-2075290201.html",
+      "formula": "sr- → θr-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.3217"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "initial [s] unvoiced following [m], [n], [j], [w]",
+      "url": "https://eldamo.org/content/words/word-3693878703.html",
+      "formula": "sj- → j̊-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.0605"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "initial [s] unvoiced following [m], [n], [j], [w]",
+      "url": "https://eldamo.org/content/words/word-3693878703.html",
+      "formula": "sw- → w̥-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.0705"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "intervocalic [s] became [h]",
+      "url": "https://eldamo.org/content/words/word-4036446677.html",
+      "formula": "VsV → VhV",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.2605"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ns] became [ss]",
+      "url": "https://eldamo.org/content/words/word-2591378297.html",
+      "formula": "ss ← ns",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.1010"
+        ],
+        [
+          "PE19/99",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/099.0412"
+        ]
+      ],
+      "linked": [
+        "s",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1071202939.html",
+      "formula": "ks ← kr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.1106"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1071202939.html",
+      "formula": "ks ← kʰr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/88",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/088.0314"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1071202939.html",
+      "formula": "ps ← pr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.1104"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1071202939.html",
+      "formula": "ps ← pʰr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/88",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/088.0310"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1071202939.html",
+      "formula": "ts ← tr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.1314"
+        ],
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.1105"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1071202939.html",
+      "formula": "ts ← tʰr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/88",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/088.0313"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[sr] became [ss]",
+      "url": "https://eldamo.org/content/words/word-1606156545.html",
+      "formula": "ss ← sr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0207"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] plus voiced stop became unvoiced",
+      "url": "https://eldamo.org/content/words/word-3279729471.html",
+      "formula": "st ← zd",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "PE17/52",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/052.1009"
+        ],
+        [
+          "PE19/91",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/091.0504"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] plus voiced stop became unvoiced",
+      "url": "https://eldamo.org/content/words/word-3279729471.html",
+      "formula": "s{ptk} ← z{bdg}",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3511"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.1204"
+        ],
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.0504"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "tʰs ← tʰr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.1311"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following [l], [r], [w]",
+      "url": "https://eldamo.org/content/words/word-165461035.html",
+      "formula": "sr- → r̥-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1705"
+        ],
+        [
+          "PE18/94",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/094.2107"
+        ]
+      ],
+      "linked": [
+        "s",
+        "l",
+        "r",
+        "w",
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following consonants",
+      "url": "https://eldamo.org/content/words/word-3923357111.html",
+      "formula": "sl- → l̥-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "LotR/1114",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1114.1006"
+        ],
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.2710"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following consonants",
+      "url": "https://eldamo.org/content/words/word-3923357111.html",
+      "formula": "sm- → m̥-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.17033"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following consonants",
+      "url": "https://eldamo.org/content/words/word-3923357111.html",
+      "formula": "sn- → n̥-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.17035"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following consonants",
+      "url": "https://eldamo.org/content/words/word-3923357111.html",
+      "formula": "sr- → r̥-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "LotR/1114",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1114.2802"
+        ],
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.2709"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-1556924193.html",
+      "formula": "sj- → j̊-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.3214"
+        ],
+        [
+          "LotR/1115",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1115.0405-2"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m̥",
+        "n̥",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-1556924193.html",
+      "formula": "sl- → l̥-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "LotR/1114",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1114.1111"
+        ],
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.2405"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m̥",
+        "n̥",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-1556924193.html",
+      "formula": "sm- → m̥-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.1402"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m̥",
+        "n̥",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-1556924193.html",
+      "formula": "sn- → n̥-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.1403"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m̥",
+        "n̥",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-1556924193.html",
+      "formula": "sr- → r̥-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "LotR/1114",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1114.2904"
+        ],
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.2404"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m̥",
+        "n̥",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-1556924193.html",
+      "formula": "sw- → w̥-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.3215"
+        ],
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.1406"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m̥",
+        "n̥",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-127393503.html",
+      "formula": "VsV → VzV",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/76",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/076.2002"
+        ],
+        [
+          "PE19/73",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/073.0413"
+        ],
+        [
+          "WJ/413",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/413.2108"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-127393503.html",
+      "formula": "sj → zj",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0811"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-127393503.html",
+      "formula": "sl → zl",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0608"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-127393503.html",
+      "formula": "sm → zm",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.2106"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-127393503.html",
+      "formula": "sn → zn",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.2107"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-127393503.html",
+      "formula": "sr → zr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0401"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-127393503.html",
+      "formula": "sw → zw",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0812"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "syllabic initial [s] became [is]",
+      "url": "https://eldamo.org/content/words/word-785281061.html",
+      "formula": "is- ← ṣ-",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.0207"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "syllabic initial [s] became [is]",
+      "url": "https://eldamo.org/content/words/word-785281061.html",
+      "formula": "ṣ- → is-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.0207"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[ns] became [ss] or [nz]",
+      "url": "https://eldamo.org/content/words/word-1082153437.html",
+      "formula": "ss ← ns",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3801-2"
+        ]
+      ],
+      "linked": [
+        "s",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1238072385.html",
+      "formula": "ks ← kr",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1301-2"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "t",
+        "tʰ",
+        "kʰ",
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1238072385.html",
+      "formula": "ks ← kʰr",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1301-3"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "t",
+        "tʰ",
+        "kʰ",
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1238072385.html",
+      "formula": "ns ← ntr",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3801"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "t",
+        "tʰ",
+        "kʰ",
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1238072385.html",
+      "formula": "ps ← pr",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0401-2"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "t",
+        "tʰ",
+        "kʰ",
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1238072385.html",
+      "formula": "ps ← pʰr",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0401-3"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "t",
+        "tʰ",
+        "kʰ",
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1238072385.html",
+      "formula": "ts ← tr",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0801-2"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "t",
+        "tʰ",
+        "kʰ",
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1238072385.html",
+      "formula": "ts ← tʰr",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0801-3"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "t",
+        "tʰ",
+        "kʰ",
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[sr] became [ss]",
+      "url": "https://eldamo.org/content/words/word-3069824903.html",
+      "formula": "sr → ss",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3801-3"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3401-2"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[sr] became [ss]",
+      "url": "https://eldamo.org/content/words/word-3069824903.html",
+      "formula": "ss ← sr",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3401-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3801-3"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[x], [s] unvoiced following [j], [w]",
+      "url": "https://eldamo.org/content/words/word-3260572145.html",
+      "formula": "sj → j̊",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2001-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1402-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2810-2"
+        ],
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0301-2"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "s",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[x], [s] unvoiced following [j], [w]",
+      "url": "https://eldamo.org/content/words/word-3260572145.html",
+      "formula": "sw → w̥",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2101-2"
+        ],
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0401-2"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "s",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[z] plus voiced stop became unvoiced",
+      "url": "https://eldamo.org/content/words/word-4145487633.html",
+      "formula": "sp ← zb",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0410"
+        ]
+      ],
+      "linked": [
+        "k",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[z] plus voiced stop became unvoiced",
+      "url": "https://eldamo.org/content/words/word-4145487633.html",
+      "formula": "st ← zd",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3902-2"
+        ]
+      ],
+      "linked": [
+        "k",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] plus voiceless stops became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3333849997.html",
+      "formula": "sk- → x-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0101-3"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0201-3"
+        ],
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3201-2"
+        ]
+      ],
+      "linked": [
+        "f",
+        "θ",
+        "s",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] plus voiceless stops became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3333849997.html",
+      "formula": "sp- → ɸ-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3001-2"
+        ]
+      ],
+      "linked": [
+        "f",
+        "θ",
+        "s",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] plus voiceless stops became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3333849997.html",
+      "formula": "st- → θ-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3101-2"
+        ]
+      ],
+      "linked": [
+        "f",
+        "θ",
+        "s",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-476591497.html",
+      "formula": "sj- → j̊-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0101-2"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-476591497.html",
+      "formula": "sl- → l̥-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1101"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-476591497.html",
+      "formula": "sm- → m̥-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0301-3"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-476591497.html",
+      "formula": "sn- → n̥-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0401-3"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-476591497.html",
+      "formula": "sr- → r̥-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1201"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-476591497.html",
+      "formula": "sw- → w̥-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0201-2"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-2951986869.html",
+      "formula": "sl → zl",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2407"
+        ]
+      ],
+      "linked": [
+        "b",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-2951986869.html",
+      "formula": "sm → zm",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2506"
+        ]
+      ],
+      "linked": [
+        "b",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-2951986869.html",
+      "formula": "sn → zn",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3106"
+        ]
+      ],
+      "linked": [
+        "b",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[hs] became [ss]",
+      "url": "https://eldamo.org/content/words/word-2177009433.html",
+      "formula": "ss ← hs",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.1906"
+        ]
+      ],
+      "linked": [
+        "s",
+        "ɣ",
+        "h"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[s] became [z] before voiced stops",
+      "url": "https://eldamo.org/content/words/word-882174441.html",
+      "formula": "sb → zb",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/69",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/069.1808"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[s] became [z] before voiced stops",
+      "url": "https://eldamo.org/content/words/word-882174441.html",
+      "formula": "sd → zd",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/82",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/082.1901"
+        ],
+        [
+          "PE19/91",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/091.0106"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[s] became [z] before voiced stops",
+      "url": "https://eldamo.org/content/words/word-882174441.html",
+      "formula": "sg → zg",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.0202"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[t+t], [d+d] from suffixion became [st], [zd]",
+      "url": "https://eldamo.org/content/words/word-2479050823.html",
+      "formula": "st ← t+t",
+      "langs": "Quenya, Primitive Elvish",
+      "sources": [
+        [
+          "PE18/91",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/091.2116-1"
+        ],
+        [
+          "VT42/18",
+          "https://eldamo.org/content/references/ref-VT42.html#VT42/18.3006"
+        ],
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2515"
+        ],
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.2404"
+        ],
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.2010"
+        ],
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.0408"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[t+t], [d+d] from suffixion became [st], [zd]",
+      "url": "https://eldamo.org/content/words/word-2479050823.html",
+      "formula": "zd ← d+d",
+      "langs": "Quenya, Primitive Elvish",
+      "sources": [
+        [
+          "PE18/91",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/091.2116-2"
+        ],
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2516"
+        ],
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.2405"
+        ],
+        [
+          "PE19/90",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/090.3016"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[tk] became [kk] or [kt] or [sk]",
+      "url": "https://eldamo.org/content/words/word-700934409.html",
+      "formula": "sk ← tk",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/42",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/42.2208"
+        ]
+      ],
+      "linked": [
+        "t",
+        "k",
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[hs] became [ss]",
+      "url": "https://eldamo.org/content/words/word-178282823.html",
+      "formula": "ss ← hs",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0802"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3802"
+        ]
+      ],
+      "linked": [
+        "s",
+        "h"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[j] was lost after initial [s]",
+      "url": "https://eldamo.org/content/words/word-1659657875.html",
+      "formula": "sj- → s-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.0613"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[j] was lost after initial dentals and [s]",
+      "url": "https://eldamo.org/content/words/word-217666031.html",
+      "formula": "sj- → s-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.0607"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.0608"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[s] became [z] before voiced stops",
+      "url": "https://eldamo.org/content/words/word-2884507077.html",
+      "formula": "sb → zb",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0212"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[s] became [z] before voiced stops",
+      "url": "https://eldamo.org/content/words/word-2884507077.html",
+      "formula": "sd → zd",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0213"
+        ],
+        [
+          "PE18/59",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/059.1408"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[s] became [z] before voiced stops",
+      "url": "https://eldamo.org/content/words/word-2884507077.html",
+      "formula": "sg → zg",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0214"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[t+t], [d+d] from suffixion became [st], [zd]",
+      "url": "https://eldamo.org/content/words/word-2630259491.html",
+      "formula": "st ← t+t",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3904"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial [s] unvoiced following [l], [r], [w]",
+      "url": "https://eldamo.org/content/words/word-165461035.html",
+      "formula": "sl- → l̥-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.0413"
+        ]
+      ],
+      "linked": [
+        "s",
+        "l",
+        "r",
+        "w",
+        "j"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial [s] unvoiced following [l], [r], [w]",
+      "url": "https://eldamo.org/content/words/word-165461035.html",
+      "formula": "sr- → r̥-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.0513"
+        ]
+      ],
+      "linked": [
+        "s",
+        "l",
+        "r",
+        "w",
+        "j"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial [s] unvoiced following [l], [r], [w]",
+      "url": "https://eldamo.org/content/words/word-165461035.html",
+      "formula": "sw- → w̥-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.0713"
+        ]
+      ],
+      "linked": [
+        "s",
+        "l",
+        "r",
+        "w",
+        "j"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial [sr] became [str]",
+      "url": "https://eldamo.org/content/words/word-1674031447.html",
+      "formula": "sr- → str-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.0507"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.0508"
+        ]
+      ],
+      "linked": [
+        "s"
+      ]
+    }
+  ],
+  "z": [
+    {
+      "marker": "Q.",
+      "title": "[z] became [r]",
+      "url": "https://eldamo.org/content/words/word-3534004155.html",
+      "formula": "z → r",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE17/76",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/076.2003"
+        ],
+        [
+          "PE19/70",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/070.0518"
+        ],
+        [
+          "PE19/73",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/073.0911"
+        ],
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0903"
+        ],
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0904"
+        ],
+        [
+          "WJ/413",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/413.2202"
+        ]
+      ],
+      "linked": [
+        "z",
+        "r"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "approximants produced various spirants",
+      "url": "https://eldamo.org/content/words/word-3605637247.html",
+      "formula": "zj → ʒ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0908"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z",
+        "x",
+        "w̥",
+        "j",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] and [ð] assimilated to following [r], [l]",
+      "url": "https://eldamo.org/content/words/word-1472480589.html",
+      "formula": "zl → ll",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.2305"
+        ],
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0609"
+        ]
+      ],
+      "linked": [
+        "ð",
+        "z",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] and [ð] assimilated to following [r], [l]",
+      "url": "https://eldamo.org/content/words/word-1472480589.html",
+      "formula": "zr → rr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.2304"
+        ],
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0402"
+        ]
+      ],
+      "linked": [
+        "ð",
+        "z",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] assimilated to following [m], [n]",
+      "url": "https://eldamo.org/content/words/word-10156157.html",
+      "formula": "zm → mm",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0603"
+        ],
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.2116"
+        ]
+      ],
+      "linked": [
+        "z",
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] assimilated to following [m], [n]",
+      "url": "https://eldamo.org/content/words/word-10156157.html",
+      "formula": "zn → nn",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0604"
+        ],
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.2201"
+        ]
+      ],
+      "linked": [
+        "z",
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] plus voiced stop became unvoiced",
+      "url": "https://eldamo.org/content/words/word-3279729471.html",
+      "formula": "zd → st",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/52",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/052.1009"
+        ],
+        [
+          "PE19/91",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/091.0504"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] plus voiced stop became unvoiced",
+      "url": "https://eldamo.org/content/words/word-3279729471.html",
+      "formula": "z{bdg} → s{ptk}",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3511"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.1204"
+        ],
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.0504"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] vanished before [d] lengthening preceding vowel",
+      "url": "https://eldamo.org/content/words/word-1249932447.html",
+      "formula": "Vzd → V̄d",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/91",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/091.0608"
+        ],
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.1503"
+        ]
+      ],
+      "linked": [
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[zb], [zg] became [ðβ], [ðɣ]",
+      "url": "https://eldamo.org/content/words/word-1951748921.html",
+      "formula": "zg → ðɣ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.1508"
+        ]
+      ],
+      "linked": [
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ðʲi → ī",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE12/12",
+          "https://eldamo.org/content/references/ref-PE12.html#PE12/012.0202"
+        ]
+      ],
+      "linked": [
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-127393503.html",
+      "formula": "VzV ← VsV",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE17/76",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/076.2002"
+        ],
+        [
+          "PE19/73",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/073.0413"
+        ],
+        [
+          "WJ/413",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/413.2108"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-127393503.html",
+      "formula": "zj ← sj",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0811"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-127393503.html",
+      "formula": "zl ← sl",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0608"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-127393503.html",
+      "formula": "zm ← sm",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.2106"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-127393503.html",
+      "formula": "zn ← sn",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.2107"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-127393503.html",
+      "formula": "zr ← sr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0401"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-127393503.html",
+      "formula": "zw ← sw",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0812"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[z] and [ð] assimilated to following [r], [l]",
+      "url": "https://eldamo.org/content/words/word-98897835.html",
+      "formula": "zl → ll",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2401-5"
+        ]
+      ],
+      "linked": [
+        "z",
+        "l"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[z] assimilated to following [m], [n]",
+      "url": "https://eldamo.org/content/words/word-927570507.html",
+      "formula": "zm → mm",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2501-1"
+        ]
+      ],
+      "linked": [
+        "z",
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[z] assimilated to following [m], [n]",
+      "url": "https://eldamo.org/content/words/word-927570507.html",
+      "formula": "zn → nn",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3101-1"
+        ]
+      ],
+      "linked": [
+        "z",
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[z] plus voiced stop became unvoiced",
+      "url": "https://eldamo.org/content/words/word-4145487633.html",
+      "formula": "zb → sp",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0410"
+        ]
+      ],
+      "linked": [
+        "k",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[z] plus voiced stop became unvoiced",
+      "url": "https://eldamo.org/content/words/word-4145487633.html",
+      "formula": "zd → st",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3902-2"
+        ]
+      ],
+      "linked": [
+        "k",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[z] plus voiced stop became unvoiced",
+      "url": "https://eldamo.org/content/words/word-4145487633.html",
+      "formula": "zg → sk",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1309"
+        ]
+      ],
+      "linked": [
+        "k",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-2951986869.html",
+      "formula": "VzV ← VsV",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2302"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3705"
+        ]
+      ],
+      "linked": [
+        "b",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-2951986869.html",
+      "formula": "zl ← sl",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2407"
+        ]
+      ],
+      "linked": [
+        "b",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-2951986869.html",
+      "formula": "zm ← sm",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2506"
+        ]
+      ],
+      "linked": [
+        "b",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "medial [s] often became [z]",
+      "url": "https://eldamo.org/content/words/word-2951986869.html",
+      "formula": "zn ← sn",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3106"
+        ]
+      ],
+      "linked": [
+        "b",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[s] became [z] before voiced stops",
+      "url": "https://eldamo.org/content/words/word-882174441.html",
+      "formula": "zb ← sb",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/69",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/069.1808"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[s] became [z] before voiced stops",
+      "url": "https://eldamo.org/content/words/word-882174441.html",
+      "formula": "zd ← sd",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/82",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/082.1901"
+        ],
+        [
+          "PE19/91",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/091.0106"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[s] became [z] before voiced stops",
+      "url": "https://eldamo.org/content/words/word-882174441.html",
+      "formula": "zg ← sg",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.0202"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[s] became [z] before voiced stops",
+      "url": "https://eldamo.org/content/words/word-2884507077.html",
+      "formula": "zb ← sb",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0212"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[s] became [z] before voiced stops",
+      "url": "https://eldamo.org/content/words/word-2884507077.html",
+      "formula": "zd ← sd",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0213"
+        ],
+        [
+          "PE18/59",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/059.1408"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[s] became [z] before voiced stops",
+      "url": "https://eldamo.org/content/words/word-2884507077.html",
+      "formula": "zg ← sg",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0214"
+        ]
+      ],
+      "linked": [
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[t+t], [d+d] from suffixion became [st], [zd]",
+      "url": "https://eldamo.org/content/words/word-2630259491.html",
+      "formula": "zd ← d+d",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3908"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[z] became [r]",
+      "url": "https://eldamo.org/content/words/word-982618329.html",
+      "formula": "z → r",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/28",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/028.2201"
+        ]
+      ],
+      "linked": [
+        "z"
+      ]
+    }
+  ],
+  "x": [
+    {
+      "marker": "Q.",
+      "title": "[pt], [kt] became [ɸt], [xt]",
+      "url": "https://eldamo.org/content/words/word-2265073101.html",
+      "formula": "xt ← kt",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.0207"
+        ],
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.2112"
+        ],
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1506"
+        ],
+        [
+          "PE19/87",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/087.2804"
+        ]
+      ],
+      "linked": [
+        "p",
+        "k",
+        "x"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "approximants produced various spirants",
+      "url": "https://eldamo.org/content/words/word-3605637247.html",
+      "formula": "xtj → ʃtʃ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/84",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/084.2607"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z",
+        "x",
+        "w̥",
+        "j",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "lx → lk",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.1810"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "spirants became stops after [r], [l]",
+      "url": "https://eldamo.org/content/words/word-3516399115.html",
+      "formula": "rx → rk",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.1809"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "d",
+        "k",
+        "ɸ",
+        "θ",
+        "ð",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[pt], [kt] became [ps], [xt]",
+      "url": "https://eldamo.org/content/words/word-2701010297.html",
+      "formula": "xt ← kt",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0501"
+        ]
+      ],
+      "linked": [
+        "t",
+        "s",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[pt], [kt] became [ps], [xt]",
+      "url": "https://eldamo.org/content/words/word-2701010297.html",
+      "formula": "xt ← pt",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0501-2"
+        ]
+      ],
+      "linked": [
+        "t",
+        "s",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[x] became [h] except before [t]",
+      "url": "https://eldamo.org/content/words/word-2800366809.html",
+      "formula": "lx → l̥l̥",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1301"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "x",
+        "h",
+        "l̥",
+        "r̥"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[x] became [h] except before [t]",
+      "url": "https://eldamo.org/content/words/word-2800366809.html",
+      "formula": "rx → r̥r̥",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2806"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "x",
+        "h",
+        "l̥",
+        "r̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[x] unvoiced following [j], [w]",
+      "url": "https://eldamo.org/content/words/word-2963647241.html",
+      "formula": "xw → w̥",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.3010"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3262991621.html",
+      "formula": "x ← kʰ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.0907"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.0105"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.2705"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3108"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ",
+        "kʰ",
+        "ɸ",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] plus voiceless stops became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-1605344503.html",
+      "formula": "x- ← sk-",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/78",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/078.1613"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "ɸ",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "aspirates became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3537093625.html",
+      "formula": "x ← kʰ",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1302-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1403-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1503-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2807-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2809-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2812-2"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "tʰ",
+        "kʰ",
+        "ɸ",
+        "f",
+        "θ",
+        "x"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] plus voiceless stops became voiceless spirants",
+      "url": "https://eldamo.org/content/words/word-3333849997.html",
+      "formula": "x- ← sk-",
+      "langs": "Quenya, Middle Quenya, Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0101-3"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0201-3"
+        ],
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3201-2"
+        ]
+      ],
+      "linked": [
+        "f",
+        "θ",
+        "s",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    }
+  ],
+  "ɣ": [
+    {
+      "marker": "Q.",
+      "title": "[lɣ], [rɣ] became [ll], [rr]",
+      "url": "https://eldamo.org/content/words/word-2837004771.html",
+      "formula": "lɣ → ll",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.3003"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[lɣ], [rɣ] became [ll], [rr]",
+      "url": "https://eldamo.org/content/words/word-2837004771.html",
+      "formula": "rɣ → rr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.3002"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[β], [ɣ] after [r], [l] usually became stops",
+      "url": "https://eldamo.org/content/words/word-3388104565.html",
+      "formula": "{rl}ɣ → {rl}g",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.0804"
+        ]
+      ],
+      "linked": [
+        "β",
+        "ɣ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[β], [ɣ] after [r], [l] usually became stops",
+      "url": "https://eldamo.org/content/words/word-3388104565.html",
+      "formula": "{rl}ɣw → {rl}øw",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.3015"
+        ]
+      ],
+      "linked": [
+        "β",
+        "ɣ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial [ɣ] became [h]",
+      "url": "https://eldamo.org/content/words/word-3274491131.html",
+      "formula": "ɣ- → h-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/103",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/103.2908"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0204"
+        ]
+      ],
+      "linked": [
+        "ɣ"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ɣ] vanished",
+      "url": "https://eldamo.org/content/words/word-3657372981.html",
+      "formula": "ɣ → ø",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.2905"
+        ]
+      ],
+      "linked": [
+        "ɣ"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ɣ] vanished",
+      "url": "https://eldamo.org/content/words/word-3657372981.html",
+      "formula": "ɣ- → ø-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.1105"
+        ]
+      ],
+      "linked": [
+        "ɣ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ɣ] became [j] between [i], [e] and a vowel",
+      "url": "https://eldamo.org/content/words/word-1700576467.html",
+      "formula": "iɣV → ijV",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/70",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/070.2801"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ɣ] became [j] between liquids and [e], [a]",
+      "url": "https://eldamo.org/content/words/word-2619518313.html",
+      "formula": "lɣe → lje",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.3008"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ɣ] became [j] between liquids and [e], [a]",
+      "url": "https://eldamo.org/content/words/word-2619518313.html",
+      "formula": "rɣe → rje",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.3007"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[β], [ɣ] vocalized before voiced consonants",
+      "url": "https://eldamo.org/content/words/word-1104502097.html",
+      "formula": "Vɣj → Vij",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.3205"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.1306"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3105"
+        ]
+      ],
+      "linked": [
+        "β",
+        "ɣ",
+        "j",
+        "i",
+        "ø",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[β], [ɣ] vocalized before voiced consonants",
+      "url": "https://eldamo.org/content/words/word-1104502097.html",
+      "formula": "Vɣw → Vuw",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.3305"
+        ]
+      ],
+      "linked": [
+        "β",
+        "ɣ",
+        "j",
+        "i",
+        "ø",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[β], [ɣ] vocalized before voiced consonants",
+      "url": "https://eldamo.org/content/words/word-1104502097.html",
+      "formula": "aɣC → āC",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.0115"
+        ]
+      ],
+      "linked": [
+        "β",
+        "ɣ",
+        "j",
+        "i",
+        "ø",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ɣʷu → ū",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE12/12",
+          "https://eldamo.org/content/references/ref-PE12.html#PE12/012.0204"
+        ]
+      ],
+      "linked": [
+        "ɣ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiced stops became spirants except after nasals",
+      "url": "https://eldamo.org/content/words/word-1141570065.html",
+      "formula": "ɣ ← g",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE17/153",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/153.0507"
+        ],
+        [
+          "PE19/70",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/070.1509"
+        ],
+        [
+          "PE19/70",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/070.2717"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.1305"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.3304"
+        ],
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.3816"
+        ],
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.3817"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3104"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "β",
+        "v",
+        "ð",
+        "ɣ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops became spirants except after nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-2772726195.html",
+      "formula": "ɣ ← g",
+      "langs": "Quenya, Middle Quenya, Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0701-2"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0901-4"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1001-3"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1301-3"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0206"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0303"
+        ]
+      ],
+      "linked": [
+        "b",
+        "g",
+        "v",
+        "ɣ",
+        "l",
+        "r",
+        "w",
+        "ø"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[hs] became [ss]",
+      "url": "https://eldamo.org/content/words/word-2177009433.html",
+      "formula": "hs → ss",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.1204"
+        ],
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.1906"
+        ]
+      ],
+      "linked": [
+        "s",
+        "ɣ",
+        "h"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[ŋŋ], [ŋɣ] became [ŋg]",
+      "url": "https://eldamo.org/content/words/word-3404492995.html",
+      "formula": "ŋɣ → ŋg",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2606"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[ɣ] became [h] before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-794129503.html",
+      "formula": "xtʰ → xtʰ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/82",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/082.1713"
+        ],
+        [
+          "PE18/89",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/089.1612"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "xs → xs",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/12",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/12.2503"
+        ]
+      ],
+      "linked": [
+        "ɣ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "initial [ŋ], [ɣ] became [g]",
+      "url": "https://eldamo.org/content/words/word-1228875561.html",
+      "formula": "ɣ- → g-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0205"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "initial [ɣ]/[h] vanished",
+      "url": "https://eldamo.org/content/words/word-1117448055.html",
+      "formula": "ɣ- → ø-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0203"
+        ],
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.0504"
+        ],
+        [
+          "VT48/26",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/26.1012"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ŋ] usually became [ɣ]",
+      "url": "https://eldamo.org/content/words/word-768986721.html",
+      "formula": "VɣV ← VŋV",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2011"
+        ],
+        [
+          "PE19/72",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/072.0410"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.2717"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ɣ]/[h] vanished except before [t]",
+      "url": "https://eldamo.org/content/words/word-2690267141.html",
+      "formula": "-ɣ- → -ø-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/6",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/06.1506"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h",
+        "i",
+        "ī",
+        "ø",
+        "u",
+        "ū"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ɣ]/[h] vanished except before [t]",
+      "url": "https://eldamo.org/content/words/word-2690267141.html",
+      "formula": "aɣC → āC",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/12",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/12.2506"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h",
+        "i",
+        "ī",
+        "ø",
+        "u",
+        "ū"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[h] vanished before consonants lengthening the preceding vowel",
+      "url": "https://eldamo.org/content/words/word-3116721073.html",
+      "formula": "Vht → V̄t",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.2511"
+        ]
+      ],
+      "linked": [
+        "ɣ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ŋ], [ɣ] became [g]",
+      "url": "https://eldamo.org/content/words/word-44379183.html",
+      "formula": "ɣ → g",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.1107"
+        ],
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.1108"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.2908"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.2909"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ŋŋ], [ŋɣ] became [ŋg]",
+      "url": "https://eldamo.org/content/words/word-2849203249.html",
+      "formula": "ŋɣ → ŋg",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.4003"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ɣ] became [h] before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-2810726977.html",
+      "formula": "ɣs → hs",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0715"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3805"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ɣ] became [h] before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-2810726977.html",
+      "formula": "ɣt → xt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/59",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/059.1315"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ɣ] vanished",
+      "url": "https://eldamo.org/content/words/word-1476955021.html",
+      "formula": "ɣ → ø",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.2907"
+        ]
+      ],
+      "linked": [
+        "ɣ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial [ŋ], [ɣ] became [g]",
+      "url": "https://eldamo.org/content/words/word-1228875561.html",
+      "formula": "ɣ- → g-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.1113"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "medial [ŋ] usually became [ɣ]",
+      "url": "https://eldamo.org/content/words/word-3915121695.html",
+      "formula": "VɣV ← VŋV",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0510"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "medial [ŋ] usually became [ɣ]",
+      "url": "https://eldamo.org/content/words/word-3915121695.html",
+      "formula": "ɣl ← ŋl",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0709"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "medial [ŋ] usually became [ɣ]",
+      "url": "https://eldamo.org/content/words/word-3915121695.html",
+      "formula": "ɣr ← ŋr",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0708"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "medial [ŋ] usually became [ɣ]",
+      "url": "https://eldamo.org/content/words/word-3915121695.html",
+      "formula": "ɣs ← ŋs",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0710"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    }
+  ],
+  "h": [
+    {
+      "marker": "Q.",
+      "title": "[x] became [h] except before [t]",
+      "url": "https://eldamo.org/content/words/word-2071843593.html",
+      "formula": "h ← x",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE17/92",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/092.3202"
+        ],
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.1112"
+        ],
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.2713"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "x",
+        "h"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ɸu] became [hu]",
+      "url": "https://eldamo.org/content/words/word-1102872571.html",
+      "formula": "hu ← ɸu",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.0510"
+        ]
+      ],
+      "linked": [
+        "ɸ",
+        "h"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[x] became [h] except before [t]",
+      "url": "https://eldamo.org/content/words/word-2800366809.html",
+      "formula": "h ← x",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.3201"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1901"
+        ],
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0201"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "x",
+        "h",
+        "l̥",
+        "r̥"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[ɣ] became [h] before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-794129503.html",
+      "formula": "xtʰ ← xtʰ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/82",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/082.1713"
+        ],
+        [
+          "PE18/89",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/089.1612"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "h- → ø-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.1711"
+        ],
+        [
+          "WJ/365",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/365.1801"
+        ],
+        [
+          "WJ/369",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/369.4007"
+        ]
+      ],
+      "linked": [
+        "h"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "xs ← xs",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/12",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/12.2503"
+        ]
+      ],
+      "linked": [
+        "h"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ɣ]/[h] vanished except before [t]",
+      "url": "https://eldamo.org/content/words/word-2690267141.html",
+      "formula": "-h- → -ø-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.1807"
+        ],
+        [
+          "WJ/368",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/368.2502"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h",
+        "i",
+        "ī",
+        "ø",
+        "u",
+        "ū"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[hs] became [ss]",
+      "url": "https://eldamo.org/content/words/word-178282823.html",
+      "formula": "hs → ss",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0802"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3802"
+        ]
+      ],
+      "linked": [
+        "s",
+        "h"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ɣ] became [h] before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-2810726977.html",
+      "formula": "hs ← ɣs",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0715"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3805"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ɣ] became [h] before voiceless consonants",
+      "url": "https://eldamo.org/content/words/word-2810726977.html",
+      "formula": "xt ← ɣt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/59",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/059.1315"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h"
+      ]
+    }
+  ],
+  "m": [
+    {
+      "marker": "Q.",
+      "title": "[mb], [nd] became [mm], [nn]",
+      "url": "https://eldamo.org/content/words/word-868023175.html",
+      "formula": "mb → mm",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "LotR/1115",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1115.1201"
+        ],
+        [
+          "PE17/104",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/104.1710"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[mm] shortened",
+      "url": "https://eldamo.org/content/words/word-3689144303.html",
+      "formula": "mm → m",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.3203"
+        ]
+      ],
+      "linked": [
+        "m"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[nm], [ŋm] became [nw], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-1197128543.html",
+      "formula": "mm ← nm",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.2806"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.2914"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "w"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[nm], [ŋm] became [nw], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-1197128543.html",
+      "formula": "nm → nw",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.1604"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "w"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[nm], [ŋm] became [nw], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-1197128543.html",
+      "formula": "ŋm → ŋgw",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.1903"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "w"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[nm], [ŋm] became [nw], [ŋw]",
+      "url": "https://eldamo.org/content/words/word-3258926163.html",
+      "formula": "nm → nw",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.2503"
+        ]
+      ],
+      "linked": [
+        "m"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[nm], [ŋm] became [nw], [ŋw]",
+      "url": "https://eldamo.org/content/words/word-3258926163.html",
+      "formula": "ŋm → ŋw",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.2902"
+        ]
+      ],
+      "linked": [
+        "m"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "m ← m",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.3402-1"
+        ],
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.2202"
+        ],
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.2302"
+        ]
+      ],
+      "linked": [
+        "m"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "final nasals vanished after vowels",
+      "url": "https://eldamo.org/content/words/word-876455981.html",
+      "formula": "-Vm → -Vø",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/10",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/10.1513"
+        ]
+      ],
+      "linked": [
+        "m"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial nasalized voiced stops became stops",
+      "url": "https://eldamo.org/content/words/word-493039001.html",
+      "formula": "mb- → b-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.1603"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial nasals vanished before stops",
+      "url": "https://eldamo.org/content/words/word-3057844573.html",
+      "formula": "mb- → b-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/104",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/104.1610"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1503"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial nasals vanished before stops",
+      "url": "https://eldamo.org/content/words/word-3057844573.html",
+      "formula": "mf- → f-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/92",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/092.1206"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial voiceless nasals and liquids were voiced",
+      "url": "https://eldamo.org/content/words/word-3012528347.html",
+      "formula": "m- ← m̥-",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.1505"
+        ]
+      ],
+      "linked": [
+        "m",
+        "m̥",
+        "n",
+        "n̥"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "non-initial [m] usually became [v]",
+      "url": "https://eldamo.org/content/words/word-1951379117.html",
+      "formula": "Vm → Vv",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/133",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/133.1707"
+        ],
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.3103"
+        ]
+      ],
+      "linked": [
+        "m"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "m ← m",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0301"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2401"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2501"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2601"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2701"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2801"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2901"
+        ]
+      ],
+      "linked": [
+        "m"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[mm], [nn] became [mb], [nd]",
+      "url": "https://eldamo.org/content/words/word-4145612709.html",
+      "formula": "mm → mb",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.2205"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ms] became [ns]",
+      "url": "https://eldamo.org/content/words/word-1399041717.html",
+      "formula": "ms → ns",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.1001"
+        ],
+        [
+          "PE19/99",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/099.0306"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[mw] became [nw]",
+      "url": "https://eldamo.org/content/words/word-3475705035.html",
+      "formula": "mw → nw",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/97",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/097.1404"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-3418086257.html",
+      "formula": "km → kw",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1606"
+        ]
+      ],
+      "linked": [
+        "t",
+        "m",
+        "n",
+        "w",
+        "w̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-3418086257.html",
+      "formula": "pm → pw",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1601"
+        ]
+      ],
+      "linked": [
+        "t",
+        "m",
+        "n",
+        "w",
+        "w̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-3418086257.html",
+      "formula": "tm → tw",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1605"
+        ]
+      ],
+      "linked": [
+        "t",
+        "m",
+        "n",
+        "w",
+        "w̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] assimilated to following [m], [n]",
+      "url": "https://eldamo.org/content/words/word-10156157.html",
+      "formula": "mm ← zm",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0603"
+        ],
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.2116"
+        ]
+      ],
+      "linked": [
+        "z",
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2123493145.html",
+      "formula": "m- ← mb-",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "PE17/104",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/104.1511"
+        ],
+        [
+          "PE17/124",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/124.0205"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1502"
+        ],
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.1703"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2123493145.html",
+      "formula": "mp- → p-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/92",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/092.1205"
+        ],
+        [
+          "PE18/92",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/092.1103"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial nasals usually vanished before stops",
+      "url": "https://eldamo.org/content/words/word-1688730459.html",
+      "formula": "mb- → b-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1505"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",
+      "url": "https://eldamo.org/content/words/word-1024355367.html",
+      "formula": "ṃ- → am-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/124",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/124.0613"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "nasals became voiceless stops before aspirates",
+      "url": "https://eldamo.org/content/words/word-3474357431.html",
+      "formula": "mpʰ → ppʰ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.0303"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "syllabic nasals developed a preceding vowel of similar quality",
+      "url": "https://eldamo.org/content/words/word-4294735057.html",
+      "formula": "umb- ← ṃb-",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/77",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/077.1407"
+        ],
+        [
+          "PE17/124",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/124.0312"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ",
+        "i",
+        "a",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "syllabic nasals developed a preceding vowel of similar quality",
+      "url": "https://eldamo.org/content/words/word-4294735057.html",
+      "formula": "ṃb- → umb-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/77",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/077.1407"
+        ],
+        [
+          "PE17/124",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/124.0312"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ",
+        "i",
+        "a",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-2830908887.html",
+      "formula": "mm ← bm",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.0903"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[z] assimilated to following [m], [n]",
+      "url": "https://eldamo.org/content/words/word-927570507.html",
+      "formula": "mm ← zm",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2501-1"
+        ]
+      ],
+      "linked": [
+        "z",
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-476591497.html",
+      "formula": "m̥- ← sm-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0301-3"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2830500177.html",
+      "formula": "m- ← mb-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0301-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʷ",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2830500177.html",
+      "formula": "mp- → p-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.2701-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʷ",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "nasals became voiceless stops before aspirates",
+      "url": "https://eldamo.org/content/words/word-2847294287.html",
+      "formula": "mpʰ → ppʰ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0301-3"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "ml → lm",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2002"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "mr → rm",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3202"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-1312520143.html",
+      "formula": "mm ← bm",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2502"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-1312520143.html",
+      "formula": "mn ← bn",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2902"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[bm], [dn] became [mb], [nd]",
+      "url": "https://eldamo.org/content/words/word-3882201769.html",
+      "formula": "mb ← bm",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/12",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/12.4110"
+        ],
+        [
+          "WJ/416",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/416.0805"
+        ]
+      ],
+      "linked": [
+        "b",
+        "m"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "mb- → m-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1504"
+        ]
+      ],
+      "linked": [
+        "m"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "final [m] became [n]",
+      "url": "https://eldamo.org/content/words/word-760163573.html",
+      "formula": "-m → -n",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/24",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/24.3310"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial nasal plus stop after another consonant became simple nasal",
+      "url": "https://eldamo.org/content/words/word-4126101193.html",
+      "formula": "-Cm- ← -Cmb-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/81",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/081.2205"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial nasal plus stop after another consonant became simple nasal",
+      "url": "https://eldamo.org/content/words/word-4126101193.html",
+      "formula": "-Cmb- → -Cm-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/81",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/081.2205"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2143444883.html",
+      "formula": "mk → ŋk",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1903"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.2413"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2143444883.html",
+      "formula": "mp ← np",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1607"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.1706"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2143444883.html",
+      "formula": "mp ← ŋp",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1111"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.1602"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2143444883.html",
+      "formula": "mt → nt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/99",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/099.0309"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial [s] unvoiced following [m], [n], [j], [w]",
+      "url": "https://eldamo.org/content/words/word-3693878703.html",
+      "formula": "sm- → m̥-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.0205"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial [s] was lost before consonants",
+      "url": "https://eldamo.org/content/words/word-3538536723.html",
+      "formula": "sC- → øC-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.0213"
+        ],
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.0313"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial nasals usually vanished before stops",
+      "url": "https://eldamo.org/content/words/word-1688730459.html",
+      "formula": "mb- → b-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.0313"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial nasals vanished before stops",
+      "url": "https://eldamo.org/content/words/word-3944232895.html",
+      "formula": "mb- → b-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.0307"
+        ],
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.0308"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "metathesis",
+      "url": "https://eldamo.org/content/words/word-1396728225.html",
+      "formula": "mpʰ ← pʰm",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0304"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "m"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2390772785.html",
+      "formula": "mk → ŋk",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3902"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3902-2"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    }
+  ],
+  "m̥": [
+    {
+      "marker": "Q.",
+      "title": "initial voiceless nasals and liquids were voiced",
+      "url": "https://eldamo.org/content/words/word-3012528347.html",
+      "formula": "m̥- → m-",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.1505"
+        ]
+      ],
+      "linked": [
+        "m",
+        "m̥",
+        "n",
+        "n̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-1556924193.html",
+      "formula": "m̥- ← sm-",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.1402"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m̥",
+        "n̥",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    }
+  ],
+  "n": [
+    {
+      "marker": "Q.",
+      "title": "[d] vanished between [n], [r], [l] and [j]",
+      "url": "https://eldamo.org/content/words/word-297797679.html",
+      "formula": "ndj → nj",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.2505"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ð",
+        "n",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[mb], [nd] became [mm], [nn]",
+      "url": "https://eldamo.org/content/words/word-868023175.html",
+      "formula": "nd → nn",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "LotR/1115",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1115.1510"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[nm], [ŋm] became [nw], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-1197128543.html",
+      "formula": "nm → mm",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.2806"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.2914"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "w"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "n ← n",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.3403-1"
+        ],
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.1702"
+        ]
+      ],
+      "linked": [
+        "n"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] assimilated to following [n] after [e], [a], [o]",
+      "url": "https://eldamo.org/content/words/word-368875839.html",
+      "formula": "ann ← aŋn",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.3915"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.2908"
+        ],
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.2003"
+        ]
+      ],
+      "linked": [
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] assimilated to following [n] after [e], [a], [o]",
+      "url": "https://eldamo.org/content/words/word-368875839.html",
+      "formula": "enn ← eŋn",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.3914"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.2907"
+        ]
+      ],
+      "linked": [
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] assimilated to following [n] after [e], [a], [o]",
+      "url": "https://eldamo.org/content/words/word-368875839.html",
+      "formula": "onn ← oŋn",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.3916"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.2909"
+        ]
+      ],
+      "linked": [
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial nasalized voiced stops became stops",
+      "url": "https://eldamo.org/content/words/word-493039001.html",
+      "formula": "nd- → d-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.1604"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial nasals vanished before stops",
+      "url": "https://eldamo.org/content/words/word-3057844573.html",
+      "formula": "nθ- → θ-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/92",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/092.1105"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial voiceless nasals and liquids were voiced",
+      "url": "https://eldamo.org/content/words/word-3012528347.html",
+      "formula": "n- ← n̥-",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.1506"
+        ]
+      ],
+      "linked": [
+        "m",
+        "m̥",
+        "n",
+        "n̥"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[nm], [ŋm] became [nw], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-2886094609.html",
+      "formula": "nm → nw",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3702"
+        ]
+      ],
+      "linked": [
+        "n",
+        "ŋ",
+        "w"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "n ← n",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0401"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3001"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3101"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3201"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3301"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3401"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3501"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3601"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3701"
+        ]
+      ],
+      "linked": [
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ŋn] assimilated to following [n] after [e], [a], [o]",
+      "url": "https://eldamo.org/content/words/word-4209459411.html",
+      "formula": "ann ← aŋn",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3101-2"
+        ]
+      ],
+      "linked": [
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ln] became [ld]",
+      "url": "https://eldamo.org/content/words/word-1011702125.html",
+      "formula": "ln → ld",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/100",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/100.0414"
+        ]
+      ],
+      "linked": [
+        "d",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ln] became [ll]",
+      "url": "https://eldamo.org/content/words/word-1062284643.html",
+      "formula": "ln → ll",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/100",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/100.0416"
+        ]
+      ],
+      "linked": [
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[mm], [nn] became [mb], [nd]",
+      "url": "https://eldamo.org/content/words/word-4145612709.html",
+      "formula": "nn → nd",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.2206"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ms] became [ns]",
+      "url": "https://eldamo.org/content/words/word-1399041717.html",
+      "formula": "ns ← ms",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.1001"
+        ],
+        [
+          "PE19/99",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/099.0306"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[mw] became [nw]",
+      "url": "https://eldamo.org/content/words/word-3475705035.html",
+      "formula": "nw ← mw",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/97",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/097.1404"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-3418086257.html",
+      "formula": "kn → kt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1503"
+        ]
+      ],
+      "linked": [
+        "t",
+        "m",
+        "n",
+        "w",
+        "w̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-3418086257.html",
+      "formula": "pn → pt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1501"
+        ]
+      ],
+      "linked": [
+        "t",
+        "m",
+        "n",
+        "w",
+        "w̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-3418086257.html",
+      "formula": "tn → tt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1502"
+        ]
+      ],
+      "linked": [
+        "t",
+        "m",
+        "n",
+        "w",
+        "w̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[nl], [nr] became [ll], [rr]",
+      "url": "https://eldamo.org/content/words/word-1625553255.html",
+      "formula": "nl → ll",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.0602"
+        ]
+      ],
+      "linked": [
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[nl], [nr] became [ll], [rr]",
+      "url": "https://eldamo.org/content/words/word-1625553255.html",
+      "formula": "nr → rr",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.0604"
+        ]
+      ],
+      "linked": [
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ns] became [ss]",
+      "url": "https://eldamo.org/content/words/word-2591378297.html",
+      "formula": "ns → ss",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.1010"
+        ],
+        [
+          "PE19/99",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/099.0412"
+        ]
+      ],
+      "linked": [
+        "s",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] assimilated to following [m], [n]",
+      "url": "https://eldamo.org/content/words/word-10156157.html",
+      "formula": "nn ← zn",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0604"
+        ],
+        [
+          "PE19/101",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/101.2201"
+        ]
+      ],
+      "linked": [
+        "z",
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [d] assimilated to following nasal",
+      "url": "https://eldamo.org/content/words/word-2885687903.html",
+      "formula": "nVXn- ← dVXn-",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "VT48/30",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/30.0710"
+        ],
+        [
+          "WJ/414",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/414.0111"
+        ]
+      ],
+      "linked": [
+        "d",
+        "n"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2123493145.html",
+      "formula": "n- ← nd-",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.1802"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",
+      "url": "https://eldamo.org/content/words/word-1024355367.html",
+      "formula": "ṇ- → an-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/124",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/124.0614"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "nasals became voiceless stops before aspirates",
+      "url": "https://eldamo.org/content/words/word-3474357431.html",
+      "formula": "ntʰ → ttʰ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.0304"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "syllabic nasals developed a preceding vowel of similar quality",
+      "url": "https://eldamo.org/content/words/word-4294735057.html",
+      "formula": "and- ← ṇd-",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/77",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/077.1506"
+        ],
+        [
+          "PE17/124",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/124.0401"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ",
+        "i",
+        "a",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "syllabic nasals developed a preceding vowel of similar quality",
+      "url": "https://eldamo.org/content/words/word-4294735057.html",
+      "formula": "ṇd- → and-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/124",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/124.0401"
+        ],
+        [
+          "PE19/77",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/077.1506"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ",
+        "i",
+        "a",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3703720537.html",
+      "formula": "nj ← ŋj",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "PE18/94",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/094.2208"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0402"
+        ],
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.2601"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-2830908887.html",
+      "formula": "nn ← dn",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.0904"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[ln] became [ld]",
+      "url": "https://eldamo.org/content/words/word-1937075927.html",
+      "formula": "ln → ld",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1702-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1801-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[n], [m] became [t], [w] after aspirates",
+      "url": "https://eldamo.org/content/words/word-372953021.html",
+      "formula": "kʰn → kt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0502-4"
+        ]
+      ],
+      "linked": [
+        "t",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[n], [m] became [t], [w] after aspirates",
+      "url": "https://eldamo.org/content/words/word-372953021.html",
+      "formula": "tʰn → tt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0701-4"
+        ]
+      ],
+      "linked": [
+        "t",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[nl], [nr] became [ll], [rr]",
+      "url": "https://eldamo.org/content/words/word-3167171353.html",
+      "formula": "nl → ll",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2401-4"
+        ]
+      ],
+      "linked": [
+        "n",
+        "l"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[ns] became [ss] or [nz]",
+      "url": "https://eldamo.org/content/words/word-1082153437.html",
+      "formula": "ns → ss",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3801-2"
+        ]
+      ],
+      "linked": [
+        "s",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[z] assimilated to following [m], [n]",
+      "url": "https://eldamo.org/content/words/word-927570507.html",
+      "formula": "nn ← zn",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3101-1"
+        ]
+      ],
+      "linked": [
+        "z",
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-476591497.html",
+      "formula": "n̥- ← sn-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0401-3"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2830500177.html",
+      "formula": "n- ← nd-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0401-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʷ",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2830500177.html",
+      "formula": "nt- → t-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.2801-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʷ",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "nasals became voiceless stops before aspirates",
+      "url": "https://eldamo.org/content/words/word-2847294287.html",
+      "formula": "ntʰ → ttʰ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0701-3"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "nr → rn",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3205"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3291729015.html",
+      "formula": "ndj ← ŋgj",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3501-1"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1701-2"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʰ",
+        "n",
+        "nʲ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3291729015.html",
+      "formula": "ntj ← ŋkj",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3301-1"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʰ",
+        "n",
+        "nʲ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-1312520143.html",
+      "formula": "nm ← dm",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3703"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-1312520143.html",
+      "formula": "nn ← dn",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3102"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[ŋs] became [ns]",
+      "url": "https://eldamo.org/content/words/word-484908271.html",
+      "formula": "ns ← ŋs",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1105-2"
+        ],
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.1001-2"
+        ],
+        [
+          "PE19/99",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/099.0201"
+        ]
+      ],
+      "linked": [
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[ŋŋ], [ŋɣ] became [ŋg]",
+      "url": "https://eldamo.org/content/words/word-3404492995.html",
+      "formula": "ŋŋ → ŋg",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.1803"
+        ],
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.2702"
+        ],
+        [
+          "PE18/91",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/091.1711"
+        ],
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.1003"
+        ],
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.1903"
+        ],
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.2102"
+        ],
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.3002"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "Vnr → V̄ør",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/162",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/162.3602"
+        ]
+      ],
+      "linked": [
+        "n"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "final [m] became [n]",
+      "url": "https://eldamo.org/content/words/word-760163573.html",
+      "formula": "-n ← -m",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/24",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/24.3310"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial nasal plus stop after another consonant became simple nasal",
+      "url": "https://eldamo.org/content/words/word-4126101193.html",
+      "formula": "-Cn- ← -Cnd-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/81",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/081.2206"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial nasal plus stop after another consonant became simple nasal",
+      "url": "https://eldamo.org/content/words/word-4126101193.html",
+      "formula": "-Cnd- → -Cn-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/81",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/081.2206"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2143444883.html",
+      "formula": "nk → ŋk",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1405"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.1710"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2143444883.html",
+      "formula": "np → mp",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1607"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.1706"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2143444883.html",
+      "formula": "nt ← mt",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/99",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/099.0309"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2143444883.html",
+      "formula": "nt ← ŋt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1105"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.1604"
+        ],
+        [
+          "PE19/99",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/099.0115"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial [s] unvoiced following [m], [n], [j], [w]",
+      "url": "https://eldamo.org/content/words/word-3693878703.html",
+      "formula": "sn- → n̥-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/21",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/021.0305"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial nasals usually vanished before stops",
+      "url": "https://eldamo.org/content/words/word-1688730459.html",
+      "formula": "nd- → d-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.0613"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial nasals vanished before stops",
+      "url": "https://eldamo.org/content/words/word-3944232895.html",
+      "formula": "nd- → d-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.0607"
+        ],
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.0608"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2390772785.html",
+      "formula": "nt ← ŋt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0612"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    }
+  ],
+  "n̥": [
+    {
+      "marker": "Q.",
+      "title": "initial voiceless nasals and liquids were voiced",
+      "url": "https://eldamo.org/content/words/word-3012528347.html",
+      "formula": "n̥- → n-",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.1506"
+        ]
+      ],
+      "linked": [
+        "m",
+        "m̥",
+        "n",
+        "n̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-1556924193.html",
+      "formula": "n̥- ← sn-",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.1403"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m̥",
+        "n̥",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    }
+  ],
+  "nʲ": [
+    {
+      "marker": "ᴹAQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3291729015.html",
+      "formula": "nj ← ŋj",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1701"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʰ",
+        "n",
+        "nʲ",
+        "ŋ"
+      ]
+    }
+  ],
+  "ŋ": [
+    {
+      "marker": "Q.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "ŋ ← ŋ",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE17/60",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/060.1309"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0302"
+        ],
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.3502-1"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] assimilated to following [n] after [e], [a], [o]",
+      "url": "https://eldamo.org/content/words/word-368875839.html",
+      "formula": "aŋn → ann",
+      "langs": "Ancient Quenya, Primitive Elvish",
+      "sources": [
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.3915"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.2908"
+        ],
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.2003"
+        ]
+      ],
+      "linked": [
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] assimilated to following [n] after [e], [a], [o]",
+      "url": "https://eldamo.org/content/words/word-368875839.html",
+      "formula": "eŋn → enn",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.3914"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.2907"
+        ]
+      ],
+      "linked": [
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] assimilated to following [n] after [e], [a], [o]",
+      "url": "https://eldamo.org/content/words/word-368875839.html",
+      "formula": "oŋn → onn",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.3916"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.2909"
+        ]
+      ],
+      "linked": [
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-2035963219.html",
+      "formula": "aŋm → ām",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/97",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/097.0113"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-2035963219.html",
+      "formula": "eŋm → ēm",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/97",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/097.0112"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-2035963219.html",
+      "formula": "iŋm → īm",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.3811"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-2035963219.html",
+      "formula": "iŋn → īn",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.2801"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-2035963219.html",
+      "formula": "oŋm → ōm",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/97",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/097.0114"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-2035963219.html",
+      "formula": "uŋm → ūm",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.3812"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-2035963219.html",
+      "formula": "uŋn → ūn",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.2802"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-3707785609.html",
+      "formula": "Vŋn → V̄n",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.2803"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-3707785609.html",
+      "formula": "Vŋw → V̄w",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/44",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/044.4303"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial [ŋ] vanishes",
+      "url": "https://eldamo.org/content/words/word-4225848175.html",
+      "formula": "ŋ- → ø-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/60",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/060.1401"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial nasalized voiced stops became stops",
+      "url": "https://eldamo.org/content/words/word-493039001.html",
+      "formula": "ŋg- → g-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.1605"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial nasals vanished before stops",
+      "url": "https://eldamo.org/content/words/word-3057844573.html",
+      "formula": "ŋg- → g-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/169",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/169.1310"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1103"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial nasals vanished before stops",
+      "url": "https://eldamo.org/content/words/word-3057844573.html",
+      "formula": "ŋx- → x-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/92",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/092.1204"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "medial [ŋ] after a [n], [ŋ], [l], [r] became [g]",
+      "url": "https://eldamo.org/content/words/word-447633467.html",
+      "formula": "-{nŋlr}ŋ- → -{nŋlr}g-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/81",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/081.2413"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "palatalized velars became dentals",
+      "url": "https://eldamo.org/content/words/word-745600013.html",
+      "formula": "ŋgj- → nd-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.0112"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "palatalized velars became dentals",
+      "url": "https://eldamo.org/content/words/word-745600013.html",
+      "formula": "ŋj- → n-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/103",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/103.3508"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0404"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[nm], [ŋm] became [nw], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-2886094609.html",
+      "formula": "ŋgw ← ŋm",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.4201-2"
+        ]
+      ],
+      "linked": [
+        "n",
+        "ŋ",
+        "w"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[nm], [ŋm] became [nw], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-2886094609.html",
+      "formula": "ŋm → ŋgw",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.4201-2"
+        ]
+      ],
+      "linked": [
+        "n",
+        "ŋ",
+        "w"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "ŋ ← ŋ",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3901"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.4001"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.4101"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.4201"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ŋn] assimilated to following [n] after [e], [a], [o]",
+      "url": "https://eldamo.org/content/words/word-4209459411.html",
+      "formula": "aŋn → ann",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3101-2"
+        ]
+      ],
+      "linked": [
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j] was lost after initial velars",
+      "url": "https://eldamo.org/content/words/word-345959193.html",
+      "formula": "ŋgj → ŋg",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1203"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "ŋ ← ŋ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.2002"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [ŋ], [ɣ] became [g]",
+      "url": "https://eldamo.org/content/words/word-1228875561.html",
+      "formula": "ŋ- → g-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0305"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0505"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial and intervocalic [ŋ] vanished",
+      "url": "https://eldamo.org/content/words/word-552653835.html",
+      "formula": "ŋ- → ø-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0303"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0403"
+        ],
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.0614"
+        ],
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.0612"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2123493145.html",
+      "formula": "ŋ- ← ŋg-",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1102"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1302"
+        ],
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.1902"
+        ],
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.2002"
+        ],
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.2102"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2123493145.html",
+      "formula": "ŋg- → ŋ-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.1902"
+        ],
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.2002"
+        ],
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.2102"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1102"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1302"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "k",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial nasals usually vanished before stops",
+      "url": "https://eldamo.org/content/words/word-1688730459.html",
+      "formula": "ŋg- → g-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1105"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1305"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",
+      "url": "https://eldamo.org/content/words/word-1024355367.html",
+      "formula": "ŋ̣- → aŋ-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/124",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/124.0615"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "labialized velars became labials",
+      "url": "https://eldamo.org/content/words/word-171120983.html",
+      "formula": "ŋgw → mb",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1303"
+        ],
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.1011"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "labialized velars became labials",
+      "url": "https://eldamo.org/content/words/word-171120983.html",
+      "formula": "ŋw- → m-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.0607"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0503"
+        ],
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.0206"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "nasals became voiceless stops before aspirates",
+      "url": "https://eldamo.org/content/words/word-3474357431.html",
+      "formula": "ŋkʰ → kkʰ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/89",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/089.0305"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "syllabic nasals developed a preceding vowel of similar quality",
+      "url": "https://eldamo.org/content/words/word-4294735057.html",
+      "formula": "iŋg- ← ŋ̣g-",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/77",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/077.1608"
+        ],
+        [
+          "PE17/124",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/124.0404"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ",
+        "i",
+        "a",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "syllabic nasals developed a preceding vowel of similar quality",
+      "url": "https://eldamo.org/content/words/word-4294735057.html",
+      "formula": "iŋgj- ← ŋ̣gj-",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/77",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/077.1608-1"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ",
+        "i",
+        "a",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "syllabic nasals developed a preceding vowel of similar quality",
+      "url": "https://eldamo.org/content/words/word-4294735057.html",
+      "formula": "ŋ̣g- → iŋg-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/124",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/124.0404"
+        ],
+        [
+          "PE19/77",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/077.1608"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ",
+        "i",
+        "a",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "syllabic nasals developed a preceding vowel of similar quality",
+      "url": "https://eldamo.org/content/words/word-4294735057.html",
+      "formula": "ŋ̣gj- → iŋgj-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/77",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/077.1608-1"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ",
+        "i",
+        "a",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "syllabic nasals developed a preceding vowel of similar quality",
+      "url": "https://eldamo.org/content/words/word-4294735057.html",
+      "formula": "ŋ̣gw- → uŋgw-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/124",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/124.0410"
+        ],
+        [
+          "PE19/77",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/077.1407-1"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ",
+        "i",
+        "a",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3703720537.html",
+      "formula": "ŋj → nj",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.2601"
+        ],
+        [
+          "PE18/94",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/094.2208"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0402"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-2830908887.html",
+      "formula": "ŋŋ ← gŋ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.0905"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.3110"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [ŋ] vanished",
+      "url": "https://eldamo.org/content/words/word-923465271.html",
+      "formula": "ŋV- → øV-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1301-2"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "w",
+        "ø"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [ŋ] vanished",
+      "url": "https://eldamo.org/content/words/word-923465271.html",
+      "formula": "ŋw- → w-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0701-4"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "w",
+        "ø"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2830500177.html",
+      "formula": "ŋ- ← ŋg-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0501"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1901"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʷ",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial nasals plus stops reduced to nasals",
+      "url": "https://eldamo.org/content/words/word-2830500177.html",
+      "formula": "ŋk- → k-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/37",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/037.2901-2"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1801-2"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1601-2"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʷ",
+        "m",
+        "n",
+        "ŋ",
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "nasals became voiceless stops before aspirates",
+      "url": "https://eldamo.org/content/words/word-2847294287.html",
+      "formula": "ŋkʰ → kkʰ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1201-3"
+        ]
+      ],
+      "linked": [
+        "p",
+        "t",
+        "k",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3291729015.html",
+      "formula": "ŋj → nj",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1701"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʰ",
+        "n",
+        "nʲ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "velars were dentalized before [j]",
+      "url": "https://eldamo.org/content/words/word-3291729015.html",
+      "formula": "ŋkj → ntj",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3301-1"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "tʲ",
+        "k",
+        "g",
+        "kʰ",
+        "n",
+        "nʲ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "voiced stops became nasals before nasals",
+      "url": "https://eldamo.org/content/words/word-1312520143.html",
+      "formula": "ŋm ← gm",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.4204"
+        ]
+      ],
+      "linked": [
+        "b",
+        "d",
+        "g",
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[ŋs] became [ns]",
+      "url": "https://eldamo.org/content/words/word-484908271.html",
+      "formula": "ŋs → ns",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1105-2"
+        ],
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.1001-2"
+        ],
+        [
+          "PE19/99",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/099.0201"
+        ],
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.1202"
+        ]
+      ],
+      "linked": [
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "V̄ŋ{rlmn} → V̄{rlmn}",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/103",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/103.3301"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ŋ- → ŋg-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/60",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/060.1312"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ŋg- → ŋ-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.0109"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1104"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ŋgj- → n-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1204"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ŋgw- → m-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1304"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ŋw- → m-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0504"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ŋ] usually became [ɣ]",
+      "url": "https://eldamo.org/content/words/word-768986721.html",
+      "formula": "VŋV → VɣV",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.2011"
+        ],
+        [
+          "PE19/72",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/072.0410"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.2717"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-2233951333.html",
+      "formula": "-ŋj- → -ŋgj-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1301"
+        ],
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.1009"
+        ],
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.2804"
+        ],
+        [
+          "PE19/97",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/097.1707"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-2233951333.html",
+      "formula": "-ŋw- → -ŋgw-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1309"
+        ],
+        [
+          "PE18/104",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/104.1010"
+        ],
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.2810"
+        ],
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.2903"
+        ],
+        [
+          "PE19/97",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/097.1708"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial nasal plus stop after another consonant became simple nasal",
+      "url": "https://eldamo.org/content/words/word-4126101193.html",
+      "formula": "-Cŋ- ← -Cŋg-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/81",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/081.2211"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial nasal plus stop after another consonant became simple nasal",
+      "url": "https://eldamo.org/content/words/word-4126101193.html",
+      "formula": "-Cŋg- → -Cŋ-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/81",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/081.2211"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2143444883.html",
+      "formula": "ŋk ← mk",
+      "langs": "Ancient Quenya, Primitive Elvish",
+      "sources": [
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.2413"
+        ],
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1903"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2143444883.html",
+      "formula": "ŋk ← nk",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1405"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.1710"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2143444883.html",
+      "formula": "ŋp → mp",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1111"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.1602"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2143444883.html",
+      "formula": "ŋt → nt",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/102",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/102.1105"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.1604"
+        ],
+        [
+          "PE19/99",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/099.0115"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ŋ] became [ɣ] between vowels and before [l], [r]",
+      "url": "https://eldamo.org/content/words/word-1844604693.html",
+      "formula": "VŋV → VɣV",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.2307"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ŋ], [ɣ] became [g]",
+      "url": "https://eldamo.org/content/words/word-44379183.html",
+      "formula": "ŋ → g",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.0507"
+        ],
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.0508"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.2308"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.2309"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ŋŋ], [ŋɣ] became [ŋg]",
+      "url": "https://eldamo.org/content/words/word-2849203249.html",
+      "formula": "ŋŋ → ŋg",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.4003-2"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial [ŋ], [ɣ] became [g]",
+      "url": "https://eldamo.org/content/words/word-1228875561.html",
+      "formula": "ŋ- → g-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.0513"
+        ],
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.0613"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial and intervocalic [ŋ] vanished",
+      "url": "https://eldamo.org/content/words/word-552653835.html",
+      "formula": "VŋV → VøV",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.2305"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial and intervocalic [ŋ] vanished",
+      "url": "https://eldamo.org/content/words/word-552653835.html",
+      "formula": "ŋ- → ø-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.0405"
+        ],
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.0505"
+        ],
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.0605"
+        ]
+      ],
+      "linked": [
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial nasals usually vanished before stops",
+      "url": "https://eldamo.org/content/words/word-1688730459.html",
+      "formula": "ŋg- → g-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.1213"
+        ],
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.1513"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "initial nasals vanished before stops",
+      "url": "https://eldamo.org/content/words/word-3944232895.html",
+      "formula": "ŋg- → g-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.1207"
+        ],
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.1208"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "labialized velars became labials",
+      "url": "https://eldamo.org/content/words/word-3214863235.html",
+      "formula": "ŋgw → mb",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "Ety/ING",
+          "https://eldamo.org/content/references/ref-Ety.html#Ety/ING.029"
+        ],
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.1505"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g",
+        "kʰ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "medial [ŋ] usually became [ɣ]",
+      "url": "https://eldamo.org/content/words/word-3915121695.html",
+      "formula": "VŋV → VɣV",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0510"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "medial [ŋ] usually became [ɣ]",
+      "url": "https://eldamo.org/content/words/word-3915121695.html",
+      "formula": "ŋl → ɣl",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0709"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "medial [ŋ] usually became [ɣ]",
+      "url": "https://eldamo.org/content/words/word-3915121695.html",
+      "formula": "ŋr → ɣr",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0708"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "medial [ŋ] usually became [ɣ]",
+      "url": "https://eldamo.org/content/words/word-3915121695.html",
+      "formula": "ŋs → ɣs",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0710"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-1270135967.html",
+      "formula": "-ŋj- → -ŋgj-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0702"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3503"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2390772785.html",
+      "formula": "ŋk ← mk",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3902"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3902-2"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "nasals assimilated to following stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-2390772785.html",
+      "formula": "ŋt → nt",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/54",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/054.0612"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ"
+      ]
+    }
+  ],
+  "ŋʷ": [
+    {
+      "marker": "Q.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "ŋʷ ← ŋʷ",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0502"
+        ],
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.2811"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.2211"
+        ]
+      ],
+      "linked": [
+        "ŋʷ"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "ŋʷ ← ŋʷ",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1901-2"
+        ]
+      ],
+      "linked": [
+        "ŋʷ"
+      ]
+    }
+  ],
+  "l": [
+    {
+      "marker": "Q.",
+      "title": "[lɣ], [rɣ] became [ll], [rr]",
+      "url": "https://eldamo.org/content/words/word-2837004771.html",
+      "formula": "ll ← lɣ",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.3003"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "l ← l",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1602"
+        ],
+        [
+          "PE19/72",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/072.1002-1"
+        ]
+      ],
+      "linked": [
+        "l"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "l ← l",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0901"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0401"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0501"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0701"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0801"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1101"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1201"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1601"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1701"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1901"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2001"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2201"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2301"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2401"
+        ]
+      ],
+      "linked": [
+        "l"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "medial [ð] dissimilated to [l] after [r]",
+      "url": "https://eldamo.org/content/words/word-687907123.html",
+      "formula": "rVl ← rVð",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0401-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "l"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[dj] became [lj]",
+      "url": "https://eldamo.org/content/words/word-1574644731.html",
+      "formula": "lj ← dj",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/70",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/070.1308"
+        ],
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.2114"
+        ],
+        [
+          "WJ/363",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/363.2107"
+        ]
+      ],
+      "linked": [
+        "d",
+        "l"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[nl], [nr] became [ll], [rr]",
+      "url": "https://eldamo.org/content/words/word-1625553255.html",
+      "formula": "ll ← nl",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.0602"
+        ]
+      ],
+      "linked": [
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] and [ð] assimilated to following [r], [l]",
+      "url": "https://eldamo.org/content/words/word-1472480589.html",
+      "formula": "ll ← zl",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.2305"
+        ],
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0609"
+        ]
+      ],
+      "linked": [
+        "ð",
+        "z",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] and [ð] assimilated to following [r], [l]",
+      "url": "https://eldamo.org/content/words/word-1472480589.html",
+      "formula": "ll ← ðl",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "PE17/71",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/071.4407"
+        ],
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.2013"
+        ]
+      ],
+      "linked": [
+        "ð",
+        "z",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [d] became [l]",
+      "url": "https://eldamo.org/content/words/word-3325625207.html",
+      "formula": "l- ← d-",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "PE17/153",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/153.0505"
+        ],
+        [
+          "PE19/69",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/069.3604"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.0808"
+        ],
+        [
+          "VT48/30",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/30.0503"
+        ],
+        [
+          "WJ/363",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/363.1303"
+        ]
+      ],
+      "linked": [
+        "d",
+        "l"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following [l], [r], [w]",
+      "url": "https://eldamo.org/content/words/word-165461035.html",
+      "formula": "sl- → l̥-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1605"
+        ]
+      ],
+      "linked": [
+        "s",
+        "l",
+        "r",
+        "w",
+        "j"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[nl], [nr] became [ll], [rr]",
+      "url": "https://eldamo.org/content/words/word-3167171353.html",
+      "formula": "ll ← nl",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2401-4"
+        ]
+      ],
+      "linked": [
+        "n",
+        "l"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[rl] and [lr] became [ll]",
+      "url": "https://eldamo.org/content/words/word-3234141583.html",
+      "formula": "ll ← lr",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2401-3"
+        ]
+      ],
+      "linked": [
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[rl] and [lr] became [ll]",
+      "url": "https://eldamo.org/content/words/word-3234141583.html",
+      "formula": "ll ← rl",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2401-2"
+        ]
+      ],
+      "linked": [
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[z] and [ð] assimilated to following [r], [l]",
+      "url": "https://eldamo.org/content/words/word-98897835.html",
+      "formula": "ll ← zl",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2401-5"
+        ]
+      ],
+      "linked": [
+        "z",
+        "l"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [d] became [l]",
+      "url": "https://eldamo.org/content/words/word-31048751.html",
+      "formula": "l- ← d-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0901-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "l"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [dr-], [dl-] became [r-], [l-]",
+      "url": "https://eldamo.org/content/words/word-1126123145.html",
+      "formula": "l- ← dl-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0901-3"
+        ]
+      ],
+      "linked": [
+        "d",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "dl → ld",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1702"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "kʰl → lkʰ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1302"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "lb ← bl",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1602"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "lg ← gl",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1902"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "lk ← kl",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1102"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "lm ← ml",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2002"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "lp ← pl",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0502"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "lt ← tl",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0702"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "tʰl → ltʰ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0903"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    }
+  ],
+  "l̥": [
+    {
+      "marker": "ᴹQ.",
+      "title": "[x] became [h] except before [t]",
+      "url": "https://eldamo.org/content/words/word-2800366809.html",
+      "formula": "l̥l̥ ← lx",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1301"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "x",
+        "h",
+        "l̥",
+        "r̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-1556924193.html",
+      "formula": "l̥- ← sl-",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "LotR/1114",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1114.1111"
+        ],
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.2405"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m̥",
+        "n̥",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-476591497.html",
+      "formula": "l̥- ← sl-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1101"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    }
+  ],
+  "r": [
+    {
+      "marker": "Q.",
+      "title": "[lɣ], [rɣ] became [ll], [rr]",
+      "url": "https://eldamo.org/content/words/word-2837004771.html",
+      "formula": "rr ← rɣ",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.3002"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "r ← r",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1702"
+        ],
+        [
+          "PE19/72",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/072.1003-1"
+        ]
+      ],
+      "linked": [
+        "r"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[rs] became [ss]",
+      "url": "https://eldamo.org/content/words/word-1326730955.html",
+      "formula": "rs → ss",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE17/71",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/071.4516"
+        ],
+        [
+          "PE19/99",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/099.3509"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[z] became [r]",
+      "url": "https://eldamo.org/content/words/word-3534004155.html",
+      "formula": "r ← z",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE17/76",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/076.2003"
+        ],
+        [
+          "PE19/70",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/070.0518"
+        ],
+        [
+          "PE19/73",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/073.0911"
+        ],
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0903"
+        ],
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0904"
+        ],
+        [
+          "WJ/413",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/413.2202"
+        ]
+      ],
+      "linked": [
+        "z",
+        "r"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ð] became [z]",
+      "url": "https://eldamo.org/content/words/word-767593015.html",
+      "formula": "ð → z",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/70",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/070.0507"
+        ]
+      ],
+      "linked": [
+        "r"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "V̄ør ← Vnr",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE17/162",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/162.3602"
+        ]
+      ],
+      "linked": [
+        "r"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "intervocalic [ð] became [r]",
+      "url": "https://eldamo.org/content/words/word-2793529037.html",
+      "formula": "VrV ← VðV",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/69",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/069.3710"
+        ]
+      ],
+      "linked": [
+        "ð",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "r ← r",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1001"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2501"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2601"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2701"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2704"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2801"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2804"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2901"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3001"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3101"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3201"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3204"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3301"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3501"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3601"
+        ]
+      ],
+      "linked": [
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "intervocalic [ð] became [r]",
+      "url": "https://eldamo.org/content/words/word-3914129125.html",
+      "formula": "VrV ← VðV",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2501-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[nl], [nr] became [ll], [rr]",
+      "url": "https://eldamo.org/content/words/word-1625553255.html",
+      "formula": "rr ← nr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.0604"
+        ]
+      ],
+      "linked": [
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1071202939.html",
+      "formula": "kr → ks",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.1106"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1071202939.html",
+      "formula": "kʰr → ks",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/88",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/088.0314"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1071202939.html",
+      "formula": "pr → ps",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.1104"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1071202939.html",
+      "formula": "pʰr → ps",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/88",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/088.0310"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1071202939.html",
+      "formula": "tr → ts",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.1314"
+        ],
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.1105"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1071202939.html",
+      "formula": "tʰr → ts",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/88",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/088.0313"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[sr] became [ss]",
+      "url": "https://eldamo.org/content/words/word-1606156545.html",
+      "formula": "sr → ss",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0207"
+        ]
+      ],
+      "linked": [
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] and [ð] assimilated to following [r], [l]",
+      "url": "https://eldamo.org/content/words/word-1472480589.html",
+      "formula": "rr ← zr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.2304"
+        ],
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0402"
+        ]
+      ],
+      "linked": [
+        "ð",
+        "z",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[z] and [ð] assimilated to following [r], [l]",
+      "url": "https://eldamo.org/content/words/word-1472480589.html",
+      "formula": "rr ← ðr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.2012"
+        ]
+      ],
+      "linked": [
+        "ð",
+        "z",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "tʰr → tʰs",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.1311"
+        ]
+      ],
+      "linked": [
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1238072385.html",
+      "formula": "kr → ks",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.1301-2"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "t",
+        "tʰ",
+        "kʰ",
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1238072385.html",
+      "formula": "pr → ps",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0401-2"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "t",
+        "tʰ",
+        "kʰ",
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[r] became [s] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-1238072385.html",
+      "formula": "tr → ts",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.0801-2"
+        ]
+      ],
+      "linked": [
+        "pʰ",
+        "t",
+        "tʰ",
+        "kʰ",
+        "s",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[rb] became [rv]",
+      "url": "https://eldamo.org/content/words/word-1110299815.html",
+      "formula": "rb → rv",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.4605"
+        ]
+      ],
+      "linked": [
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[rl] and [lr] became [ll]",
+      "url": "https://eldamo.org/content/words/word-3234141583.html",
+      "formula": "lr → ll",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2401-3"
+        ]
+      ],
+      "linked": [
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[rl] and [lr] became [ll]",
+      "url": "https://eldamo.org/content/words/word-3234141583.html",
+      "formula": "rl → ll",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2401-2"
+        ]
+      ],
+      "linked": [
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [dr-], [dl-] became [r-], [l-]",
+      "url": "https://eldamo.org/content/words/word-1126123145.html",
+      "formula": "r- ← dr-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1001-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "dr → rd",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3002"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "rb ← br",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2902"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "rg ← gr",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3102"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "rk ← kr",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2802"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "rm ← mr",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3202"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "rn ← nr",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3205"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "rp ← pr",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2602"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "rt ← tr",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2702"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "stops frequently underwent metathesis with nasals and liquids",
+      "url": "https://eldamo.org/content/words/word-716992289.html",
+      "formula": "tʰr → rtʰ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2709"
+        ]
+      ],
+      "linked": [
+        "p",
+        "b",
+        "pʰ",
+        "t",
+        "d",
+        "tʰ",
+        "k",
+        "g",
+        "kʰ",
+        "m",
+        "n",
+        "l",
+        "r"
+      ]
+    }
+  ],
+  "r̥": [
+    {
+      "marker": "ᴹQ.",
+      "title": "[x] became [h] except before [t]",
+      "url": "https://eldamo.org/content/words/word-2800366809.html",
+      "formula": "r̥r̥ ← rx",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2806"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "x",
+        "h",
+        "l̥",
+        "r̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-1556924193.html",
+      "formula": "r̥- ← sr-",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "LotR/1114",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1114.2904"
+        ],
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.2404"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m̥",
+        "n̥",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-476591497.html",
+      "formula": "r̥- ← sr-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1201"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    }
+  ],
+  "w": [
+    {
+      "marker": "Q.",
+      "title": "[nm], [ŋm] became [nw], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-1197128543.html",
+      "formula": "nw ← nm",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.1604"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "w"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[nm], [ŋm] became [nw], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-1197128543.html",
+      "formula": "ŋgw ← ŋm",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE22/149",
+          "https://eldamo.org/content/references/ref-PE22.html#PE22/149.1903"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "w"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "w ← w",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1002"
+        ],
+        [
+          "PE19/72",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/072.1802-1"
+        ]
+      ],
+      "linked": [
+        "w"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[wo] became [o]",
+      "url": "https://eldamo.org/content/words/word-1082322649.html",
+      "formula": "wo- → o-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PM/357",
+          "https://eldamo.org/content/references/ref-PM.html#PM/357.4608"
+        ],
+        [
+          "WJ/367",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/367.3205"
+        ]
+      ],
+      "linked": [
+        "w",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ɣ] from [g] vanished",
+      "url": "https://eldamo.org/content/words/word-1833409085.html",
+      "formula": "ø ← ɣ",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0802"
+        ],
+        [
+          "PE19/72",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/072.2812"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.3311"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0702"
+        ],
+        [
+          "PE17/153",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/153.0508"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0202"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0602"
+        ],
+        [
+          "PE19/70",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/070.1712"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "w",
+        "j",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ww ← ɣw",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/76",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/076.0117"
+        ]
+      ],
+      "linked": [
+        "w"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial [w] became [gw]",
+      "url": "https://eldamo.org/content/words/word-2002760597.html",
+      "formula": "w- → gw-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/41",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/041.1007"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1003"
+        ]
+      ],
+      "linked": [
+        "w"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "initial [w] became [v]",
+      "url": "https://eldamo.org/content/words/word-1192708475.html",
+      "formula": "w- → v-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1004"
+        ],
+        [
+          "WJ/367",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/367.3207"
+        ]
+      ],
+      "linked": [
+        "w"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[nm], [ŋm] became [nw], [ŋgw]",
+      "url": "https://eldamo.org/content/words/word-2886094609.html",
+      "formula": "nw ← nm",
+      "langs": "Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3702"
+        ]
+      ],
+      "linked": [
+        "n",
+        "ŋ",
+        "w"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "w ← w",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0701"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0301"
+        ]
+      ],
+      "linked": [
+        "w"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ɣ] from [g] vanished",
+      "url": "https://eldamo.org/content/words/word-3266317297.html",
+      "formula": "ø ← ɣ",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0701-3"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0301-2"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0801-2"
+        ],
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1301"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0201-3"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2301-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3601-2"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "w",
+        "ø"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-3418086257.html",
+      "formula": "kw ← km",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1606"
+        ]
+      ],
+      "linked": [
+        "t",
+        "m",
+        "n",
+        "w",
+        "w̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-3418086257.html",
+      "formula": "tw ← tm",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1605"
+        ]
+      ],
+      "linked": [
+        "t",
+        "m",
+        "n",
+        "w",
+        "w̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[w] became [u] after a vowel",
+      "url": "https://eldamo.org/content/words/word-592723565.html",
+      "formula": "uw → ū",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE15/64",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/64.2202"
+        ]
+      ],
+      "linked": [
+        "w"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following [l], [r], [w]",
+      "url": "https://eldamo.org/content/words/word-165461035.html",
+      "formula": "sw- → w̥-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.1005"
+        ],
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0905"
+        ]
+      ],
+      "linked": [
+        "s",
+        "l",
+        "r",
+        "w",
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [w] became [gw]",
+      "url": "https://eldamo.org/content/words/word-965501987.html",
+      "formula": "w- → gw-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.0913"
+        ]
+      ],
+      "linked": [
+        "w"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "non-initial [w] became [v] in East Danian",
+      "url": "https://eldamo.org/content/words/word-1848454147.html",
+      "formula": "Xw → Xv",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.2709"
+        ]
+      ],
+      "linked": [
+        "k",
+        "w"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [ŋ] vanished",
+      "url": "https://eldamo.org/content/words/word-923465271.html",
+      "formula": "w- ← ŋw-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0701-4"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "w",
+        "ø"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[pw], [pʰw] became [pp], [pʰp]",
+      "url": "https://eldamo.org/content/words/word-2859678213.html",
+      "formula": "pw → pp",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.0306"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "w"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[pw], [pʰw] became [pp], [pʰp]",
+      "url": "https://eldamo.org/content/words/word-2859678213.html",
+      "formula": "pʰw → ppʰ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/88",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/088.1512"
+        ]
+      ],
+      "linked": [
+        "p",
+        "pʰ",
+        "w"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "final [j], [w] became [i], [u]",
+      "url": "https://eldamo.org/content/words/word-2641132585.html",
+      "formula": "-w → -u",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/103",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/103.1006"
+        ]
+      ],
+      "linked": [
+        "w",
+        "j",
+        "i",
+        "u"
+      ]
+    }
+  ],
+  "w̥": [
+    {
+      "marker": "Q.",
+      "title": "[pw] became [pp]",
+      "url": "https://eldamo.org/content/words/word-182545135.html",
+      "formula": "pw → pp",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1604"
+        ]
+      ],
+      "linked": [
+        "p",
+        "w̥"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "approximants produced various spirants",
+      "url": "https://eldamo.org/content/words/word-3605637247.html",
+      "formula": "-hw- → -ff-",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/88",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/088.2707"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z",
+        "x",
+        "w̥",
+        "j",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "approximants produced various spirants",
+      "url": "https://eldamo.org/content/words/word-3605637247.html",
+      "formula": "w̥ → f",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.3109"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z",
+        "x",
+        "w̥",
+        "j",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+      "url": "https://eldamo.org/content/words/word-3418086257.html",
+      "formula": "pw ← pm",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/85",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/085.1601"
+        ]
+      ],
+      "linked": [
+        "t",
+        "m",
+        "n",
+        "w",
+        "w̥"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[x] unvoiced following [j], [w]",
+      "url": "https://eldamo.org/content/words/word-2963647241.html",
+      "formula": "w̥ ← xw",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.3010"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "approximants produced various spirants",
+      "url": "https://eldamo.org/content/words/word-3605637247.html",
+      "formula": "w̥ → f",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.3407"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z",
+        "x",
+        "w̥",
+        "j",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-1556924193.html",
+      "formula": "w̥- ← sw-",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.1406"
+        ],
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.3215"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m̥",
+        "n̥",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[x], [s] unvoiced following [j], [w]",
+      "url": "https://eldamo.org/content/words/word-3260572145.html",
+      "formula": "w̥ ← sw",
+      "langs": "Quenya, Middle Quenya, Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0401-2"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2101-2"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "s",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[x], [s] unvoiced following [j], [w]",
+      "url": "https://eldamo.org/content/words/word-3260572145.html",
+      "formula": "w̥ ← xw",
+      "langs": "Quenya, Middle Quenya, Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0201"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1502"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2808"
+        ],
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0401"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2101"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "s",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-476591497.html",
+      "formula": "w̥- ← sw-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0201-2"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    }
+  ],
+  "j": [
+    {
+      "marker": "Q.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "j ← j",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE18/105",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/105.0902"
+        ],
+        [
+          "PE19/72",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/072.1602-1"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[no change]",
+      "url": "",
+      "formula": "j ← j",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0801"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0201"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j] became [i] after a vowel",
+      "url": "https://eldamo.org/content/words/word-3125122253.html",
+      "formula": "ij → ī",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE15/64",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/64.1202"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j] became [i] in Ossiriandic",
+      "url": "https://eldamo.org/content/words/word-2818409497.html",
+      "formula": "j → i",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.1007"
+        ],
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.2808"
+        ]
+      ],
+      "linked": [
+        "k",
+        "g",
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j] vanished before [i], [ui]",
+      "url": "https://eldamo.org/content/words/word-4029245039.html",
+      "formula": "ji → i",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.10055"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j] was lost after initial velars",
+      "url": "https://eldamo.org/content/words/word-4118572109.html",
+      "formula": "gj- → g-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2908"
+        ],
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2909"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j] was lost after initial velars",
+      "url": "https://eldamo.org/content/words/word-4025342543.html",
+      "formula": "gj- → g-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2906"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j] was lost after initial velars",
+      "url": "https://eldamo.org/content/words/word-4118572109.html",
+      "formula": "kj- → k-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.1908"
+        ],
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.1909"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j] was lost after initial velars",
+      "url": "https://eldamo.org/content/words/word-4025342543.html",
+      "formula": "kj- → k-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.1906"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j] was lost after initial velars",
+      "url": "https://eldamo.org/content/words/word-4025342543.html",
+      "formula": "kʰj- → kʰ-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.2406"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j] was lost after initial velars",
+      "url": "https://eldamo.org/content/words/word-4118572109.html",
+      "formula": "skj- → sk-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.2007"
+        ],
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.2008"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j] was lost after initial velars",
+      "url": "https://eldamo.org/content/words/word-4025342543.html",
+      "formula": "skj- → sk-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.2005"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j] was lost after initial velars",
+      "url": "https://eldamo.org/content/words/word-4025342543.html",
+      "formula": "ŋgj → ŋg",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/20",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/020.0905"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j] was lost after initial velars and dentals",
+      "url": "https://eldamo.org/content/words/word-1120953457.html",
+      "formula": "kj- → k-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/18",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/018.1905"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ŋ",
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j], [w] often reduced between vowels",
+      "url": "https://eldamo.org/content/words/word-3978101829.html",
+      "formula": "eje → ie",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.0106"
+        ]
+      ],
+      "linked": [
+        "j",
+        "i",
+        "a",
+        "o",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ɣ] became [j] between [i], [e] and a vowel",
+      "url": "https://eldamo.org/content/words/word-1700576467.html",
+      "formula": "ejV ← eɣV",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.0105"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ɣ] became [j] between [i], [e] and a vowel",
+      "url": "https://eldamo.org/content/words/word-1700576467.html",
+      "formula": "ijV ← iɣV",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/70",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/070.2801"
+        ]
+      ],
+      "linked": [
+        "g",
+        "ɣ",
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ɣ] became [j] between liquids and [e], [a]",
+      "url": "https://eldamo.org/content/words/word-2619518313.html",
+      "formula": "lje ← lɣe",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.3008"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ɣ] became [j] between liquids and [e], [a]",
+      "url": "https://eldamo.org/content/words/word-2619518313.html",
+      "formula": "rje ← rɣe",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.3007"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[β], [ɣ] vocalized before voiced consonants",
+      "url": "https://eldamo.org/content/words/word-1104502097.html",
+      "formula": "Vij ← Vɣj",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.3205"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.1306"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3105"
+        ]
+      ],
+      "linked": [
+        "β",
+        "ɣ",
+        "j",
+        "i",
+        "ø",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "jj → ij",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3106"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "approximants produced various spirants",
+      "url": "https://eldamo.org/content/words/word-3605637247.html",
+      "formula": "pj → pʃ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.0603"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z",
+        "x",
+        "w̥",
+        "j",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [j] vanished",
+      "url": "https://eldamo.org/content/words/word-1112487071.html",
+      "formula": "j- → ø-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.1013"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [j] vanished in East Danian",
+      "url": "https://eldamo.org/content/words/word-1803976769.html",
+      "formula": "j- → ø-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/19",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/019.1008"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "medial [j] became [i]",
+      "url": "https://eldamo.org/content/words/word-1471734033.html",
+      "formula": "-j- → -i-",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/23",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/023.2807"
+        ]
+      ],
+      "linked": [
+        "j"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[ɣ] between a vowel and [e] and became [j]",
+      "url": "https://eldamo.org/content/words/word-2632900125.html",
+      "formula": "Vje ← Vɣe",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.0201-2"
+        ]
+      ],
+      "linked": [
+        "g",
+        "j"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "final [j], [w] became [i], [u]",
+      "url": "https://eldamo.org/content/words/word-2641132585.html",
+      "formula": "-j → -i",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/103",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/103.1005"
+        ]
+      ],
+      "linked": [
+        "w",
+        "j",
+        "i",
+        "u"
+      ]
+    }
+  ],
+  "j̊": [
+    {
+      "marker": "AQ.",
+      "title": "[x] unvoiced following [j], [w]",
+      "url": "https://eldamo.org/content/words/word-2963647241.html",
+      "formula": "j̊ ← xj",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "LotR/1115",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1115.0405-1"
+        ],
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3109"
+        ],
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.0215"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "approximants produced various spirants",
+      "url": "https://eldamo.org/content/words/word-3605637247.html",
+      "formula": "j̊ → ʃ",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/75",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/075.0407"
+        ]
+      ],
+      "linked": [
+        "t",
+        "d",
+        "s",
+        "z",
+        "x",
+        "w̥",
+        "j",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-1556924193.html",
+      "formula": "j̊- ← sj-",
+      "langs": "Quenya, Ancient Quenya",
+      "sources": [
+        [
+          "LotR/1115",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1115.0405-2"
+        ],
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.3214"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m̥",
+        "n̥",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[x], [s] unvoiced following [j], [w]",
+      "url": "https://eldamo.org/content/words/word-3260572145.html",
+      "formula": "j̊ ← sj",
+      "langs": "Quenya, Middle Quenya, Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1402-2"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2810-2"
+        ],
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0301-2"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2001-2"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "s",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "[x], [s] unvoiced following [j], [w]",
+      "url": "https://eldamo.org/content/words/word-3260572145.html",
+      "formula": "j̊ ← xj",
+      "langs": "Quenya, Middle Quenya, Ancient Quenya, Middle Ancient Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0101"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1402"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2810"
+        ],
+        [
+          "PE19/52",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/052.0301"
+        ],
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.2001"
+        ]
+      ],
+      "linked": [
+        "kʰ",
+        "s",
+        "x",
+        "w̥",
+        "j̊"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [s] unvoiced following continuant",
+      "url": "https://eldamo.org/content/words/word-476591497.html",
+      "formula": "j̊- ← sj-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.0101-2"
+        ]
+      ],
+      "linked": [
+        "s",
+        "m",
+        "n",
+        "l̥",
+        "r̥",
+        "w̥",
+        "j̊"
+      ]
+    }
+  ],
+  "i": [
+    {
+      "marker": "Q.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ij ← jj",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.3106"
+        ]
+      ],
+      "linked": [
+        "i"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j], [w] often reduced between vowels",
+      "url": "https://eldamo.org/content/words/word-3978101829.html",
+      "formula": "ie ← eje",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/71",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/071.0106"
+        ]
+      ],
+      "linked": [
+        "j",
+        "i",
+        "a",
+        "o",
+        "u"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "final [j], [w] became [i], [u]",
+      "url": "https://eldamo.org/content/words/word-2641132585.html",
+      "formula": "-i ← -j",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/103",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/103.1005"
+        ]
+      ],
+      "linked": [
+        "w",
+        "j",
+        "i",
+        "u"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ɣ]/[h] vanished except before [t]",
+      "url": "https://eldamo.org/content/words/word-2690267141.html",
+      "formula": "iɣC → īC",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/98",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/098.2703"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h",
+        "i",
+        "ī",
+        "ø",
+        "u",
+        "ū"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "short final [i], [u] became [e], [o]",
+      "url": "https://eldamo.org/content/words/word-3064357955.html",
+      "formula": "-Sĭ → -Se",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/100",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/100.2203"
+        ]
+      ],
+      "linked": [
+        "i",
+        "e",
+        "o",
+        "u"
+      ]
+    }
+  ],
+  "ī": [
+    {
+      "marker": "Q.",
+      "title": "[ei], [ou] generally became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-2315722009.html",
+      "formula": "ī ← ei",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "VT48/7",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/07.3607"
+        ]
+      ],
+      "linked": [
+        "ī",
+        "ū",
+        "ei",
+        "ou"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ī ← ðʲi",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE12/12",
+          "https://eldamo.org/content/references/ref-PE12.html#PE12/012.0202"
+        ]
+      ],
+      "linked": [
+        "ī"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ei], [ou] generally became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-1123007057.html",
+      "formula": "ī ← ei",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.0508"
+        ]
+      ],
+      "linked": [
+        "ī",
+        "e",
+        "a",
+        "ū",
+        "ai",
+        "ei",
+        "au",
+        "ou"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ī ← ðʲi",
+      "langs": "Middle Quenya",
+      "sources": [
+        [
+          "PE12/12",
+          "https://eldamo.org/content/references/ref-PE12.html#PE12/012.0202"
+        ]
+      ],
+      "linked": [
+        "ī"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ɣ]/[h] vanished except before [t]",
+      "url": "https://eldamo.org/content/words/word-2690267141.html",
+      "formula": "īC ← iɣC",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/98",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/098.2703"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h",
+        "i",
+        "ī",
+        "ø",
+        "u",
+        "ū"
+      ]
+    }
+  ],
+  "e": [
+    {
+      "marker": "ᴹQ.",
+      "title": "[ei], [ou] generally became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-1123007057.html",
+      "formula": "éi → ai",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE21/6",
+          "https://eldamo.org/content/references/ref-PE21.html#PE21/06.2701"
+        ],
+        [
+          "Ety/WEY",
+          "https://eldamo.org/content/references/ref-Ety.html#Ety/WEY.009"
+        ],
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.05085"
+        ]
+      ],
+      "linked": [
+        "ī",
+        "e",
+        "a",
+        "ū",
+        "ai",
+        "ei",
+        "au",
+        "ou"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "short final [i], [u] became [e], [o]",
+      "url": "https://eldamo.org/content/words/word-3064357955.html",
+      "formula": "-Se ← -Sĭ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/100",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/100.2203"
+        ]
+      ],
+      "linked": [
+        "i",
+        "e",
+        "o",
+        "u"
+      ]
+    }
+  ],
+  "ē": [
+    {
+      "marker": "AQ.",
+      "title": "[jei], [wou] became [jē], [wō]",
+      "url": "https://eldamo.org/content/words/word-1657301905.html",
+      "formula": "jē ← jei",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "VT48/7",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/07.3608"
+        ]
+      ],
+      "linked": [
+        "ē",
+        "ō",
+        "ei",
+        "ou"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ē], [ō] became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-3889365613.html",
+      "formula": "ē → ī",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/96",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/096.2210"
+        ],
+        [
+          "PE19/91",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/091.0807-1"
+        ]
+      ],
+      "linked": [
+        "ē",
+        "ō"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ē], [ō] became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-390078853.html",
+      "formula": "ē → ī",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.1002"
+        ]
+      ],
+      "linked": [
+        "ē",
+        "ō"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ē], [ō] became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-1277969137.html",
+      "formula": "ē → ī",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "GG/14",
+          "https://eldamo.org/content/references/ref-GG.html#GG/14.1615"
+        ],
+        [
+          "PE15/13",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/13.1303"
+        ]
+      ],
+      "linked": [
+        "ē",
+        "ō"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ę̄], [ǭ] became [ē], [ō]",
+      "url": "https://eldamo.org/content/words/word-1363608031.html",
+      "formula": "ē ← ę̄",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE18/96",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/096.2321"
+        ]
+      ],
+      "linked": [
+        "ē",
+        "ę̄",
+        "ō",
+        "ǭ"
+      ]
+    }
+  ],
+  "ę̄": [
+    {
+      "marker": "AQ.",
+      "title": "[ę̄], [ǭ] became [ā]",
+      "url": "https://eldamo.org/content/words/word-1446209733.html",
+      "formula": "ę̄ → ā",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/96",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/096.2306"
+        ],
+        [
+          "VT39/10",
+          "https://eldamo.org/content/references/ref-VT39.html#VT39/10.0411"
+        ]
+      ],
+      "linked": [
+        "ę̄",
+        "ǭ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ę̄], [ǭ] became [ē], [ō]",
+      "url": "https://eldamo.org/content/words/word-1363608031.html",
+      "formula": "ę̄ → ē",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/96",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/096.2321"
+        ]
+      ],
+      "linked": [
+        "ē",
+        "ę̄",
+        "ō",
+        "ǭ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ǣ] became [ē]",
+      "url": "https://eldamo.org/content/words/word-692160099.html",
+      "formula": "ǣ → ē",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/96",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/096.2321-1"
+        ],
+        [
+          "PE18/47",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/047.0204"
+        ],
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.2303"
+        ]
+      ],
+      "linked": [
+        "ę̄",
+        "ǣ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ǣ], [ai] became [ę̄]",
+      "url": "https://eldamo.org/content/words/word-3619603651.html",
+      "formula": "ǣ → ę̄",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.1003"
+        ]
+      ],
+      "linked": [
+        "ę̄",
+        "ǣ",
+        "ai"
+      ]
+    }
+  ],
+  "ǣ": [],
+  "ø": [
+    {
+      "marker": "Q.",
+      "title": "[d] vanished between [n], [r], [l] and [j]",
+      "url": "https://eldamo.org/content/words/word-297797679.html",
+      "formula": "lj ← ldj",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0502"
+        ],
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.2703"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ð",
+        "n",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[d] vanished between [n], [r], [l] and [j]",
+      "url": "https://eldamo.org/content/words/word-297797679.html",
+      "formula": "nj ← ndj",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.2505"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ð",
+        "n",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[d] vanished between [n], [r], [l] and [j]",
+      "url": "https://eldamo.org/content/words/word-297797679.html",
+      "formula": "rj ← rdj",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/82",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/082.0501"
+        ],
+        [
+          "PE19/92",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/092.2704"
+        ],
+        [
+          "PE19/93",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/093.2110"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ð",
+        "n",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[wo] became [o]",
+      "url": "https://eldamo.org/content/words/word-1082322649.html",
+      "formula": "o- ← wo-",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PM/357",
+          "https://eldamo.org/content/references/ref-PM.html#PM/357.4608"
+        ],
+        [
+          "WJ/367",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/367.3205"
+        ]
+      ],
+      "linked": [
+        "w",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-2035963219.html",
+      "formula": "ām ← aŋm",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/97",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/097.0113"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-2035963219.html",
+      "formula": "ēm ← eŋm",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/97",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/097.0112"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-2035963219.html",
+      "formula": "īm ← iŋm",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.3811"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-2035963219.html",
+      "formula": "īn ← iŋn",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.2801"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-2035963219.html",
+      "formula": "ōm ← oŋm",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/97",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/097.0114"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-2035963219.html",
+      "formula": "ūm ← uŋm",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/96",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/096.3812"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[ŋ] vanished between [i], [u] and [n] with compensatory lengthening",
+      "url": "https://eldamo.org/content/words/word-2035963219.html",
+      "formula": "ūn ← uŋn",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.2802"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "ø"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "nasals and liquids often became syllabic after a consonant",
+      "url": "https://eldamo.org/content/words/word-613618983.html",
+      "formula": "Cr → Car",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.1614"
+        ],
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.1111"
+        ],
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.1112"
+        ],
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.1113"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.0612"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.1010"
+        ],
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0506"
+        ]
+      ],
+      "linked": [
+        "ø",
+        "a",
+        "u"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "nasals and liquids often became syllabic after a consonant",
+      "url": "https://eldamo.org/content/words/word-613618983.html",
+      "formula": "ml → mul",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.0613"
+        ]
+      ],
+      "linked": [
+        "ø",
+        "a",
+        "u"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[d] vanished between [n], [r], [l] and [j]",
+      "url": "https://eldamo.org/content/words/word-2488350997.html",
+      "formula": "lj ← ldj",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.1805"
+        ],
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.2201-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ø"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[d] vanished between [n], [r], [l] and [j]",
+      "url": "https://eldamo.org/content/words/word-2488350997.html",
+      "formula": "nj ← ndj",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/50",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/050.3601-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ø"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[d] vanished between [n], [r], [l] and [j]",
+      "url": "https://eldamo.org/content/words/word-2488350997.html",
+      "formula": "rj ← rdj",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/51",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/051.3501-2"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ø"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[r], [l] often became syllabic in clusters",
+      "url": "https://eldamo.org/content/words/word-825670671.html",
+      "formula": "CCr → CCar",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.2010"
+        ]
+      ],
+      "linked": [
+        "ø",
+        "a"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[β], [ɣ] vocalized before voiced consonants",
+      "url": "https://eldamo.org/content/words/word-1104502097.html",
+      "formula": "āC ← aɣC",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/95",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/095.0115"
+        ]
+      ],
+      "linked": [
+        "β",
+        "ɣ",
+        "j",
+        "i",
+        "ø",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [dr-], [dl-] became [r-], [l-]",
+      "url": "https://eldamo.org/content/words/word-3688462237.html",
+      "formula": "l- ← dl-",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.3619"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ø"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "initial [dr-], [dl-] became [r-], [l-]",
+      "url": "https://eldamo.org/content/words/word-3688462237.html",
+      "formula": "r- ← dr-",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/79",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/079.3618"
+        ]
+      ],
+      "linked": [
+        "d",
+        "ø"
+      ]
+    },
+    {
+      "marker": "ᴹAQ.",
+      "title": "initial [ŋ] vanished",
+      "url": "https://eldamo.org/content/words/word-923465271.html",
+      "formula": "øV- ← ŋV-",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/38",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/038.1301-2"
+        ]
+      ],
+      "linked": [
+        "ŋ",
+        "w",
+        "ø"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ɣ]/[h] vanished except before [t]",
+      "url": "https://eldamo.org/content/words/word-2690267141.html",
+      "formula": "-ø- ← -h-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/74",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/074.1807"
+        ],
+        [
+          "WJ/368",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/368.2502"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h",
+        "i",
+        "ī",
+        "ø",
+        "u",
+        "ū"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ɣ]/[h] vanished except before [t]",
+      "url": "https://eldamo.org/content/words/word-2690267141.html",
+      "formula": "-ø- ← -ɣ-",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/6",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/06.1506"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h",
+        "i",
+        "ī",
+        "ø",
+        "u",
+        "ū"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ɣ]/[h] vanished except before [t]",
+      "url": "https://eldamo.org/content/words/word-2690267141.html",
+      "formula": "āC ← aɣC",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT47/12",
+          "https://eldamo.org/content/references/ref-VT47.html#VT47/12.2506"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h",
+        "i",
+        "ī",
+        "ø",
+        "u",
+        "ū"
+      ]
+    }
+  ],
+  "a": [
+    {
+      "marker": "Q.",
+      "title": "nasals and liquids often became syllabic after a consonant",
+      "url": "https://eldamo.org/content/words/word-613618983.html",
+      "formula": "Car ← Cr",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.1614"
+        ],
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.1111"
+        ],
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.1112"
+        ],
+        [
+          "PE19/86",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/086.1113"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.0612"
+        ],
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.1010"
+        ],
+        [
+          "PE19/102",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/102.0506"
+        ]
+      ],
+      "linked": [
+        "ø",
+        "a",
+        "u"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ei], [ou] generally became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-1123007057.html",
+      "formula": "ai ← éi",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE21/6",
+          "https://eldamo.org/content/references/ref-PE21.html#PE21/06.2701"
+        ],
+        [
+          "Ety/WEY",
+          "https://eldamo.org/content/references/ref-Ety.html#Ety/WEY.009"
+        ],
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.05085"
+        ]
+      ],
+      "linked": [
+        "ī",
+        "e",
+        "a",
+        "ū",
+        "ai",
+        "ei",
+        "au",
+        "ou"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j], [w] often reduced between vowels",
+      "url": "https://eldamo.org/content/words/word-3978101829.html",
+      "formula": "awa → oa",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/118",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/118.2803"
+        ],
+        [
+          "WJ/367",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/367.1101"
+        ]
+      ],
+      "linked": [
+        "j",
+        "i",
+        "a",
+        "o",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[r], [l] often became syllabic in clusters",
+      "url": "https://eldamo.org/content/words/word-825670671.html",
+      "formula": "CCar ← CCr",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/83",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/083.2010"
+        ]
+      ],
+      "linked": [
+        "ø",
+        "a"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[ae], [ao] became [ā]",
+      "url": "https://eldamo.org/content/words/word-1056240093.html",
+      "formula": "ae → ā",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/96",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/096.0806-1"
+        ],
+        [
+          "PE18/98",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/098.0211"
+        ]
+      ],
+      "linked": [
+        "a",
+        "ā"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[ae], [ao] became [ā]",
+      "url": "https://eldamo.org/content/words/word-1056240093.html",
+      "formula": "ao → ā",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/96",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/096.0806-2"
+        ]
+      ],
+      "linked": [
+        "a",
+        "ā"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ae], [ao] became [ā]",
+      "url": "https://eldamo.org/content/words/word-2229536775.html",
+      "formula": "ae → ā",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/46",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/046.2604-1"
+        ]
+      ],
+      "linked": [
+        "a",
+        "ā"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ae], [ao] became [ā]",
+      "url": "https://eldamo.org/content/words/word-2229536775.html",
+      "formula": "ao → ā",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/46",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/046.2604-2"
+        ]
+      ],
+      "linked": [
+        "a",
+        "ā"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "stressed [wŏ] became [wa]",
+      "url": "https://eldamo.org/content/words/word-1415948757.html",
+      "formula": "wa ← wŏ́",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "Ety/WŌ",
+          "https://eldamo.org/content/references/ref-Ety.html#Ety/W%C5%8C.009"
+        ]
+      ],
+      "linked": [
+        "a",
+        "o"
+      ]
+    }
+  ],
+  "ā": [
+    {
+      "marker": "AQ.",
+      "title": "[ā] became [ō]",
+      "url": "https://eldamo.org/content/words/word-3140771935.html",
+      "formula": "ā → ō",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "GG/14",
+          "https://eldamo.org/content/references/ref-GG.html#GG/14.1614"
+        ]
+      ],
+      "linked": [
+        "ā"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[ae], [ao] became [ā]",
+      "url": "https://eldamo.org/content/words/word-1056240093.html",
+      "formula": "ā ← ae",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/96",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/096.0806-1"
+        ],
+        [
+          "PE18/98",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/098.0211"
+        ]
+      ],
+      "linked": [
+        "a",
+        "ā"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[ae], [ao] became [ā]",
+      "url": "https://eldamo.org/content/words/word-1056240093.html",
+      "formula": "ā ← ao",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/96",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/096.0806-2"
+        ]
+      ],
+      "linked": [
+        "a",
+        "ā"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "[ā], [au] became [ǭ]",
+      "url": "https://eldamo.org/content/words/word-2858643115.html",
+      "formula": "ā → ǭ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/45",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/045.3511"
+        ],
+        [
+          "PE18/96",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/096.2212"
+        ],
+        [
+          "PE19/91",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/091.0803"
+        ]
+      ],
+      "linked": [
+        "ā"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ae], [ao] became [ā]",
+      "url": "https://eldamo.org/content/words/word-2229536775.html",
+      "formula": "ā ← ae",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/46",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/046.2604-1"
+        ]
+      ],
+      "linked": [
+        "a",
+        "ā"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ae], [ao] became [ā]",
+      "url": "https://eldamo.org/content/words/word-2229536775.html",
+      "formula": "ā ← ao",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/46",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/046.2604-2"
+        ]
+      ],
+      "linked": [
+        "a",
+        "ā"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ā] became [ǭ] in Primitive Danian",
+      "url": "https://eldamo.org/content/words/word-2277851021.html",
+      "formula": "ā → ǭ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.1304"
+        ]
+      ],
+      "linked": [
+        "ā"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ā], [au] became [ǭ]",
+      "url": "https://eldamo.org/content/words/word-2790556075.html",
+      "formula": "ā → ǭ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "Ety/THŌN",
+          "https://eldamo.org/content/references/ref-Ety.html#Ety/TH%C5%8CN.022"
+        ],
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.1004"
+        ]
+      ],
+      "linked": [
+        "ā",
+        "au"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "[ā], [ǭ] became [ō]",
+      "url": "https://eldamo.org/content/words/word-1909322629.html",
+      "formula": "ā → ō",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/47",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/047.0210-1"
+        ],
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.2304"
+        ]
+      ],
+      "linked": [
+        "ā",
+        "ǭ"
+      ]
+    }
+  ],
+  "o": [
+    {
+      "marker": "AQ.",
+      "title": "[j], [w] often reduced between vowels",
+      "url": "https://eldamo.org/content/words/word-3978101829.html",
+      "formula": "oa ← awa",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE17/118",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/118.2803"
+        ],
+        [
+          "WJ/367",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/367.1101"
+        ]
+      ],
+      "linked": [
+        "j",
+        "i",
+        "a",
+        "o",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j], [w] often reduced between vowels",
+      "url": "https://eldamo.org/content/words/word-3978101829.html",
+      "formula": "owo → uo",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/137",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/137.0811"
+        ],
+        [
+          "VT48/28",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/28.1704"
+        ]
+      ],
+      "linked": [
+        "j",
+        "i",
+        "a",
+        "o",
+        "u"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "short final [i], [u] became [e], [o]",
+      "url": "https://eldamo.org/content/words/word-3064357955.html",
+      "formula": "-So ← -Sŭ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/100",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/100.2204"
+        ]
+      ],
+      "linked": [
+        "i",
+        "e",
+        "o",
+        "u"
+      ]
+    },
+    {
+      "marker": "ᴹ✶",
+      "title": "stressed [wŏ] became [wa]",
+      "url": "https://eldamo.org/content/words/word-1415948757.html",
+      "formula": "wŏ́ → wa",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "Ety/WŌ",
+          "https://eldamo.org/content/references/ref-Ety.html#Ety/W%C5%8C.009"
+        ]
+      ],
+      "linked": [
+        "a",
+        "o"
+      ]
+    }
+  ],
+  "ō": [
+    {
+      "marker": "Q.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ō ← ao",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE12/14",
+          "https://eldamo.org/content/references/ref-PE12.html#PE12/014.1603"
+        ]
+      ],
+      "linked": [
+        "ō"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[jei], [wou] became [jē], [wō]",
+      "url": "https://eldamo.org/content/words/word-1657301905.html",
+      "formula": "wō ← wou",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "VT48/7",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/07.3708"
+        ]
+      ],
+      "linked": [
+        "ē",
+        "ō",
+        "ei",
+        "ou"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ē], [ō] became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-3889365613.html",
+      "formula": "ō → ū",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/96",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/096.2214"
+        ],
+        [
+          "PE19/91",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/091.0810-1"
+        ]
+      ],
+      "linked": [
+        "ē",
+        "ō"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ē], [ō] became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-390078853.html",
+      "formula": "ō → ū",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.1006"
+        ]
+      ],
+      "linked": [
+        "ē",
+        "ō"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ē], [ō] became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-1277969137.html",
+      "formula": "ō → ū",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "GG/14",
+          "https://eldamo.org/content/references/ref-GG.html#GG/14.1616"
+        ],
+        [
+          "PE15/13",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/13.1603"
+        ]
+      ],
+      "linked": [
+        "ē",
+        "ō"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ę̄], [ǭ] became [ē], [ō]",
+      "url": "https://eldamo.org/content/words/word-1363608031.html",
+      "formula": "ō ← ǭ",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE18/96",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/096.2402"
+        ]
+      ],
+      "linked": [
+        "ē",
+        "ę̄",
+        "ō",
+        "ǭ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ō ← ao",
+      "langs": "Middle Quenya",
+      "sources": [
+        [
+          "PE12/14",
+          "https://eldamo.org/content/references/ref-PE12.html#PE12/014.1603"
+        ]
+      ],
+      "linked": [
+        "ō"
+      ]
+    }
+  ],
+  "ǭ": [
+    {
+      "marker": "AQ.",
+      "title": "[ā], [ǭ] became [ō]",
+      "url": "https://eldamo.org/content/words/word-1909322629.html",
+      "formula": "ǭ → ō",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE18/96",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/096.2402-1"
+        ],
+        [
+          "PE18/47",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/047.0210-2"
+        ],
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.2305"
+        ]
+      ],
+      "linked": [
+        "ā",
+        "ǭ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ę̄], [ǭ] became [ā]",
+      "url": "https://eldamo.org/content/words/word-1446209733.html",
+      "formula": "ǭ → ā",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/96",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/096.2306-3"
+        ],
+        [
+          "VT39/10",
+          "https://eldamo.org/content/references/ref-VT39.html#VT39/10.0411-2"
+        ]
+      ],
+      "linked": [
+        "ę̄",
+        "ǭ"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ę̄], [ǭ] became [ē], [ō]",
+      "url": "https://eldamo.org/content/words/word-1363608031.html",
+      "formula": "ǭ → ō",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/96",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/096.2402"
+        ]
+      ],
+      "linked": [
+        "ē",
+        "ę̄",
+        "ō",
+        "ǭ"
+      ]
+    }
+  ],
+  "u": [
+    {
+      "marker": "Q.",
+      "title": "nasals and liquids often became syllabic after a consonant",
+      "url": "https://eldamo.org/content/words/word-613618983.html",
+      "formula": "mul ← ml",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/98",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/098.0613"
+        ]
+      ],
+      "linked": [
+        "ø",
+        "a",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[j], [w] often reduced between vowels",
+      "url": "https://eldamo.org/content/words/word-3978101829.html",
+      "formula": "uo ← owo",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE17/137",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/137.0811"
+        ],
+        [
+          "VT48/28",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/28.1704"
+        ]
+      ],
+      "linked": [
+        "j",
+        "i",
+        "a",
+        "o",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[β], [ɣ] vocalized before voiced consonants",
+      "url": "https://eldamo.org/content/words/word-1104502097.html",
+      "formula": "VuC ← VβC",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/90",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/090.2004"
+        ],
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.1514"
+        ]
+      ],
+      "linked": [
+        "β",
+        "ɣ",
+        "j",
+        "i",
+        "ø",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[β], [ɣ] vocalized before voiced consonants",
+      "url": "https://eldamo.org/content/words/word-1104502097.html",
+      "formula": "Vuw ← Vɣw",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE19/94",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/094.3305"
+        ]
+      ],
+      "linked": [
+        "β",
+        "ɣ",
+        "j",
+        "i",
+        "ø",
+        "u"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "syllabic nasals developed a preceding vowel of similar quality",
+      "url": "https://eldamo.org/content/words/word-4294735057.html",
+      "formula": "uŋgw- ← ŋ̣gw-",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE17/124",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/124.0410"
+        ],
+        [
+          "PE19/77",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/077.1407-1"
+        ]
+      ],
+      "linked": [
+        "m",
+        "n",
+        "ŋ",
+        "i",
+        "a",
+        "u"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "final [j], [w] became [i], [u]",
+      "url": "https://eldamo.org/content/words/word-2641132585.html",
+      "formula": "-u ← -w",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/103",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/103.1006"
+        ]
+      ],
+      "linked": [
+        "w",
+        "j",
+        "i",
+        "u"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ɣ]/[h] vanished except before [t]",
+      "url": "https://eldamo.org/content/words/word-2690267141.html",
+      "formula": "uɣC → ūC",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/98",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/098.2704"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h",
+        "i",
+        "ī",
+        "ø",
+        "u",
+        "ū"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "short final [i], [u] became [e], [o]",
+      "url": "https://eldamo.org/content/words/word-3064357955.html",
+      "formula": "-Sŭ → -So",
+      "langs": "Ancient Quenya",
+      "sources": [
+        [
+          "PE19/100",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/100.2204"
+        ]
+      ],
+      "linked": [
+        "i",
+        "e",
+        "o",
+        "u"
+      ]
+    }
+  ],
+  "ū": [
+    {
+      "marker": "Q.",
+      "title": "[ei], [ou] generally became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-2315722009.html",
+      "formula": "ū ← ou",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "VT48/7",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/07.3707"
+        ]
+      ],
+      "linked": [
+        "ī",
+        "ū",
+        "ei",
+        "ou"
+      ]
+    },
+    {
+      "marker": "Q.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ū ← ɣʷu",
+      "langs": "Quenya",
+      "sources": [
+        [
+          "PE12/12",
+          "https://eldamo.org/content/references/ref-PE12.html#PE12/012.0204"
+        ]
+      ],
+      "linked": [
+        "ū"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ei], [ou] generally became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-1123007057.html",
+      "formula": "ū ← ou",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.0512"
+        ]
+      ],
+      "linked": [
+        "ī",
+        "e",
+        "a",
+        "ū",
+        "ai",
+        "ei",
+        "au",
+        "ou"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ī], [ū] became [ai], [au]",
+      "url": "https://eldamo.org/content/words/word-1815156341.html",
+      "formula": "ū → au",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "GG/14",
+          "https://eldamo.org/content/references/ref-GG.html#GG/14.1618"
+        ]
+      ],
+      "linked": [
+        "ū"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[без названия]",
+      "url": "",
+      "formula": "ū ← ɣʷu",
+      "langs": "Middle Quenya",
+      "sources": [
+        [
+          "PE12/12",
+          "https://eldamo.org/content/references/ref-PE12.html#PE12/012.0204"
+        ]
+      ],
+      "linked": [
+        "ū"
+      ]
+    },
+    {
+      "marker": "✶",
+      "title": "medial [ɣ]/[h] vanished except before [t]",
+      "url": "https://eldamo.org/content/words/word-2690267141.html",
+      "formula": "ūC ← uɣC",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE18/98",
+          "https://eldamo.org/content/references/ref-PE18.html#PE18/098.2704"
+        ]
+      ],
+      "linked": [
+        "ɣ",
+        "h",
+        "i",
+        "ī",
+        "ø",
+        "u",
+        "ū"
+      ]
+    }
+  ],
+  "ai": [
+    {
+      "marker": "AQ.",
+      "title": "[ai], [oi] became [ae], [oe]",
+      "url": "https://eldamo.org/content/words/word-941153689.html",
+      "formula": "ai → ae",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/91",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/091.1004"
+        ],
+        [
+          "VT48/7",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/07.3620"
+        ]
+      ],
+      "linked": [
+        "ai"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ǣ], [ai] became [ę̄]",
+      "url": "https://eldamo.org/content/words/word-3619603651.html",
+      "formula": "ai → ę̄",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.1009"
+        ]
+      ],
+      "linked": [
+        "ę̄",
+        "ǣ",
+        "ai"
+      ]
+    }
+  ],
+  "ei": [
+    {
+      "marker": "Q.",
+      "title": "[ei], [ou] generally became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-2315722009.html",
+      "formula": "ei → ī",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT48/7",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/07.3607"
+        ]
+      ],
+      "linked": [
+        "ī",
+        "ū",
+        "ei",
+        "ou"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ei], [ou] became [oi], [ū]",
+      "url": "https://eldamo.org/content/words/word-1880600739.html",
+      "formula": "ei → oi",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.1008"
+        ]
+      ],
+      "linked": [
+        "ei",
+        "ou"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ei], [ou] generally became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-1123007057.html",
+      "formula": "ei → ī",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.0508"
+        ]
+      ],
+      "linked": [
+        "ī",
+        "e",
+        "a",
+        "ū",
+        "ai",
+        "ei",
+        "au",
+        "ou"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ei] became [ai] or [ui]",
+      "url": "https://eldamo.org/content/words/word-338579369.html",
+      "formula": "ei → ai",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE15/64",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/64.0602"
+        ],
+        [
+          "PE15/64",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/64.1402"
+        ]
+      ],
+      "linked": [
+        "ei"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ei], [ou] became [ē], [ō]",
+      "url": "https://eldamo.org/content/words/word-1053983129.html",
+      "formula": "ei → ē",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE15/13",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/13.0608"
+        ]
+      ],
+      "linked": [
+        "ei",
+        "ou"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ei], [ou] became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-1942848653.html",
+      "formula": "ei → ī",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/91",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/091.1008"
+        ],
+        [
+          "VT48/7",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/07.3619"
+        ]
+      ],
+      "linked": [
+        "ei",
+        "ou"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ei], [ou] became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-4217992645.html",
+      "formula": "ei → ī",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.2308"
+        ]
+      ],
+      "linked": [
+        "ei",
+        "ou"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ei], [ui] became [ī], [ū] in Primitive Danian",
+      "url": "https://eldamo.org/content/words/word-3695192375.html",
+      "formula": "ei → ī",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.1308"
+        ]
+      ],
+      "linked": [
+        "ei",
+        "ui"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[jei], [wou] became [jē], [wō]",
+      "url": "https://eldamo.org/content/words/word-1657301905.html",
+      "formula": "jei → jē",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT48/7",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/07.3608"
+        ]
+      ],
+      "linked": [
+        "ē",
+        "ō",
+        "ei",
+        "ou"
+      ]
+    }
+  ],
+  "oi": [
+    {
+      "marker": "AQ.",
+      "title": "[oi] became [ui]",
+      "url": "https://eldamo.org/content/words/word-2264199397.html",
+      "formula": "oi → ui",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.2310"
+        ]
+      ],
+      "linked": [
+        "oi"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[oi] became [ui]",
+      "url": "https://eldamo.org/content/words/word-2638900527.html",
+      "formula": "oi → ui",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE15/64",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/64.0302"
+        ],
+        [
+          "PE15/64",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/64.1502"
+        ]
+      ],
+      "linked": [
+        "oi"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[oi] became [ui]",
+      "url": "https://eldamo.org/content/words/word-1684892745.html",
+      "formula": "oi → ui",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE15/13",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/13.0607"
+        ]
+      ],
+      "linked": [
+        "oi"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[oi], [ǭi] became [ui], [oi]",
+      "url": "https://eldamo.org/content/words/word-2010669085.html",
+      "formula": "oi → ui",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE19/91",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/091.1011-1"
+        ],
+        [
+          "VT48/7",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/07.3621"
+        ]
+      ],
+      "linked": [
+        "oi"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "short [ŏ] became [a] in Primitive Danian",
+      "url": "https://eldamo.org/content/words/word-562246463.html",
+      "formula": "ŏ → a",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.1310"
+        ],
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.1312"
+        ]
+      ],
+      "linked": [
+        "oi",
+        "ou"
+      ]
+    }
+  ],
+  "ui": [
+    {
+      "marker": "AQ.",
+      "title": "[ei], [ui] became [ī], [ū] in Primitive Danian",
+      "url": "https://eldamo.org/content/words/word-3695192375.html",
+      "formula": "ui → ū",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.1311"
+        ]
+      ],
+      "linked": [
+        "ei",
+        "ui"
+      ]
+    }
+  ],
+  "au": [
+    {
+      "marker": "ᴹQ.",
+      "title": "[ei], [ou] generally became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-1123007057.html",
+      "formula": "au ← óu",
+      "langs": "Quenya, Middle Quenya",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.05125"
+        ]
+      ],
+      "linked": [
+        "ī",
+        "e",
+        "a",
+        "ū",
+        "ai",
+        "ei",
+        "au",
+        "ou"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[au], [ae] became [o], [e] in polysyllables",
+      "url": "https://eldamo.org/content/words/word-567222053.html",
+      "formula": "ˌau → o",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "WJ/367",
+          "https://eldamo.org/content/references/ref-WJ.html#WJ/367.0112"
+        ]
+      ],
+      "linked": [
+        "au"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ā], [au] became [ǭ]",
+      "url": "https://eldamo.org/content/words/word-2790556075.html",
+      "formula": "au → ǭ",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.1013"
+        ]
+      ],
+      "linked": [
+        "ā",
+        "au"
+      ]
+    }
+  ],
+  "eu": [
+    {
+      "marker": "AQ.",
+      "title": "[eu] became [iu]",
+      "url": "https://eldamo.org/content/words/word-2662025405.html",
+      "formula": "eu → iu",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT48/7",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/07.3719"
+        ]
+      ],
+      "linked": [
+        "eu"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[eu], [iu] became [io]",
+      "url": "https://eldamo.org/content/words/word-3538583603.html",
+      "formula": "eu → io",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.2314"
+        ]
+      ],
+      "linked": [
+        "eu",
+        "iu"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[eu], [iu] became [io]",
+      "url": "https://eldamo.org/content/words/word-2838612897.html",
+      "formula": "eu → io",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE15/64",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/64.0402"
+        ],
+        [
+          "PE15/64",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/64.2003"
+        ]
+      ],
+      "linked": [
+        "eu",
+        "iu"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[eu], [iu] became [io] or [iu]",
+      "url": "https://eldamo.org/content/words/word-1598541361.html",
+      "formula": "eu → iu",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE15/13",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/13.0807"
+        ]
+      ],
+      "linked": [
+        "eu"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[eu], [iu] became [ū]",
+      "url": "https://eldamo.org/content/words/word-1713708009.html",
+      "formula": "eu → ū",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.1014"
+        ]
+      ],
+      "linked": [
+        "eu",
+        "iu"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[iu] and [ju] became [ȳ]",
+      "url": "https://eldamo.org/content/words/word-659168127.html",
+      "formula": "iu → ȳ",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "LotR/1115",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1115.3315-1"
+        ],
+        [
+          "LotR/1115",
+          "https://eldamo.org/content/references/ref-LotR.html#LotR/1115.3315-2"
+        ]
+      ],
+      "linked": [
+        "eu",
+        "iu"
+      ]
+    }
+  ],
+  "iu": [
+    {
+      "marker": "AQ.",
+      "title": "[eu], [iu] became [io]",
+      "url": "https://eldamo.org/content/words/word-3538583603.html",
+      "formula": "iu → io",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.2315"
+        ]
+      ],
+      "linked": [
+        "eu",
+        "iu"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[eu], [iu] became [io]",
+      "url": "https://eldamo.org/content/words/word-2838612897.html",
+      "formula": "iu → io",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE15/64",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/64.1802"
+        ]
+      ],
+      "linked": [
+        "eu",
+        "iu"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[eu], [iu] became [ū]",
+      "url": "https://eldamo.org/content/words/word-1713708009.html",
+      "formula": "iu → ū",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.1015"
+        ]
+      ],
+      "linked": [
+        "eu",
+        "iu"
+      ]
+    }
+  ],
+  "ou": [
+    {
+      "marker": "Q.",
+      "title": "[ei], [ou] generally became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-2315722009.html",
+      "formula": "ou → ū",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT48/7",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/07.3707"
+        ]
+      ],
+      "linked": [
+        "ī",
+        "ū",
+        "ei",
+        "ou"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ei], [ou] became [oi], [ū]",
+      "url": "https://eldamo.org/content/words/word-1880600739.html",
+      "formula": "ou → ū",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.1012"
+        ]
+      ],
+      "linked": [
+        "ei",
+        "ou"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ei], [ou] generally became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-1123007057.html",
+      "formula": "ou → ū",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.0512"
+        ]
+      ],
+      "linked": [
+        "ī",
+        "e",
+        "a",
+        "ū",
+        "ai",
+        "ei",
+        "au",
+        "ou"
+      ]
+    },
+    {
+      "marker": "ᴹQ.",
+      "title": "[ei], [ou] generally became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-1123007057.html",
+      "formula": "óu → au",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.05125"
+        ]
+      ],
+      "linked": [
+        "ī",
+        "e",
+        "a",
+        "ū",
+        "ai",
+        "ei",
+        "au",
+        "ou"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ei], [ou] became [ē], [ō]",
+      "url": "https://eldamo.org/content/words/word-1053983129.html",
+      "formula": "ou → ō",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE15/13",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/13.0806"
+        ]
+      ],
+      "linked": [
+        "ei",
+        "ou"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ei], [ou] became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-1942848653.html",
+      "formula": "ou → ū",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "PE17/99",
+          "https://eldamo.org/content/references/ref-PE17.html#PE17/099.3203"
+        ],
+        [
+          "VT48/7",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/07.3717"
+        ]
+      ],
+      "linked": [
+        "ei",
+        "ou"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ei], [ou] became [ī], [ū]",
+      "url": "https://eldamo.org/content/words/word-4217992645.html",
+      "formula": "ou → ū",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE19/25",
+          "https://eldamo.org/content/references/ref-PE19.html#PE19/025.2312"
+        ]
+      ],
+      "linked": [
+        "ei",
+        "ou"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[jei], [wou] became [jē], [wō]",
+      "url": "https://eldamo.org/content/words/word-1657301905.html",
+      "formula": "wou → wō",
+      "langs": "Primitive Elvish",
+      "sources": [
+        [
+          "VT48/7",
+          "https://eldamo.org/content/references/ref-VT48.html#VT48/07.3708"
+        ]
+      ],
+      "linked": [
+        "ē",
+        "ō",
+        "ei",
+        "ou"
+      ]
+    },
+    {
+      "marker": "AQ.",
+      "title": "[ou] became [au]",
+      "url": "https://eldamo.org/content/words/word-1155192707.html",
+      "formula": "ou → au",
+      "langs": "Primitive Elvish, Middle Primitive Elvish",
+      "sources": [
+        [
+          "PE15/64",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/64.0502"
+        ],
+        [
+          "PE15/64",
+          "https://eldamo.org/content/references/ref-PE15.html#PE15/64.2103"
+        ]
+      ],
+      "linked": [
+        "ou"
+      ]
+    }
+  ]
+};

@@ -324,3 +324,6 @@ code {
   margin-top:12px;
   color:#b5c6dc
 }
+
+/* Expandable chain atlas and contextual development trees */
+.atlas-filters{margin-top:14px}.atlas-card{border:1px solid var(--stroke);border-radius:10px;margin:9px 0;padding:12px;background:#111d30}.atlas-card summary{cursor:pointer;font-weight:600}.atlas-card summary:hover{color:var(--accent)}.atlas-route{overflow-wrap:anywhere}.atlas-grade{display:inline-block;border:1px solid #697b94;border-radius:5px;padding:1px 7px;margin-left:8px;font-size:12px;color:#cbd9ed}.atlas-meta{font-size:12px;color:var(--muted);margin:8px 0}.atlas-card ol{padding-left:23px}.atlas-card li{margin:6px 0}.atlas-link{display:inline-block;margin:4px 8px 4px 0}.atlas-pager{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:15px}.atlas-pager button{background:#2c4366;color:#e5efff}.atlas-tree-group{margin:12px 0 20px;border-left:2px solid #587298;padding-left:13px}.atlas-tree-group h3{margin:7px 0}.atlas-tree-route{padding:7px 9px;margin:5px 0;background:#1e3049;border-radius:7px;overflow-wrap:anywhere}.atlas-status{font-size:12px;color:#aec4dd}.atlas-note{padding:9px;background:#26374c;border-radius:7px;margin:10px 0}

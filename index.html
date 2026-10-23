@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Eldamo — атлас звуковых путей
+  </title>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <h1>
+    Атлас звуковых путей Eldamo
+   </h1>
+   <div>
+    Праэльфийский → древняя квенья → квенья · Eldamo 0.8.13
+   </div>
+   <small>
+    Автономный исследовательский интерфейс. Цепочки — структурные кандидаты, не автоматически доказанные исторические процессы.
+   </small>
+  </header>
+  <main>
+   <section class="panel">
+    <h2>
+     Поиск путей между звуками и сочетаниями
+    </h2>
+    <div class="selection-grid">
+     <div class="side" data-slot="from">
+      <h3>
+       Исходное состояние
+      </h3>
+      <div class="choice-mode">
+       <button class="mode active" data-mode="phoneme" data-slot="from" type="button">
+        Отдельная фонема
+       </button>
+       <button class="mode" data-mode="cluster" data-slot="from" type="button">
+        Сочетание
+       </button>
+      </div>
+      <div class="current">
+       Выбрано:
+       <strong id="from-chosen">
+        b
+       </strong>
+      </div>
+      <div class="ipa-choice" id="from-ipa">
+       <div class="ipa-scroll">
+        <h3>
+         Согласные
+        </h3>
+        <table>
+         <thead>
+          <tr>
+           <th>
+            Способ образования
+           </th>
+           <th>
+            Губные
+           </th>
+           <th>
+            Зубные / альвеолярные
+           </th>
+           <th>
+            Палатальные / палатализованные
+           </th>
+           <th>
+            Велярные
+           </th>
+           <th>
+            Лабиовелярные
+           </th>
+           <th>
+            Гортанные
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td>
+            Смычные
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="p" type="button">
+             p
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="b" type="button">
+             b
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="pʰ" type="button">
+             pʰ
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="t" type="button">
+             t
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="d" type="button">
+             d
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="tʰ" type="button">
+             tʰ
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="tʲ" type="button">
+             tʲ
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="dʲ" type="button">
+             dʲ
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="k" type="button">
+             k
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="g" type="button">
+             g
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="kʰ" type="button">
+             kʰ
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="kʷ" type="button">
+             kʷ
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="gʷ" type="button">
+             gʷ
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Фрикативные
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="ɸ" type="button">
+             ɸ
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="β" type="button">
+             β
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="f" type="button">
+             f
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="v" type="button">
+             v
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="s" type="button">
+             s
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="z" type="button">
+             z
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="θ" type="button">
+             θ
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ð" type="button">
+             ð
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="x" type="button">
+             x
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ɣ" type="button">
+             ɣ
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="h" type="button">
+             h
+            </button>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Носовые
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="m" type="button">
+             m
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="m̥" type="button">
+             m̥
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="n" type="button">
+             n
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="n̥" type="button">
+             n̥
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="nʲ" type="button">
+             nʲ
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="ŋ" type="button">
+             ŋ
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="ŋʷ" type="button">
+             ŋʷ
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Боковые
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="l" type="button">
+             l
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="l̥" type="button">
+             l̥
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Дрожащие
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="r" type="button">
+             r
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="r̥" type="button">
+             r̥
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Аппроксиманты
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="w" type="button">
+             w
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="w̥" type="button">
+             w̥
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="j" type="button">
+             j
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="j̊" type="button">
+             j̊
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <h3>
+         Гласные
+        </h3>
+        <table>
+         <thead>
+          <tr>
+           <th>
+            Подъём
+           </th>
+           <th>
+            Передние
+           </th>
+           <th>
+            Центральные
+           </th>
+           <th>
+            Задние
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td>
+            Верхние
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="i" type="button">
+             i
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ī" type="button">
+             ī
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="u" type="button">
+             u
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ū" type="button">
+             ū
+            </button>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Средние
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="e" type="button">
+             e
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ē" type="button">
+             ē
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ę̄" type="button">
+             ę̄
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ǣ" type="button">
+             ǣ
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ø" type="button">
+             ø
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="o" type="button">
+             o
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ō" type="button">
+             ō
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ǭ" type="button">
+             ǭ
+            </button>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Нижние
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="a" type="button">
+             a
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ā" type="button">
+             ā
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <h3>
+         Дифтонги
+        </h3>
+        <table>
+         <thead>
+          <tr>
+           <th>
+            С окончанием на i
+           </th>
+           <th>
+            С окончанием на u
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td>
+            <button class="ipa-sound" data-phoneme="ai" type="button">
+             ai
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ei" type="button">
+             ei
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="oi" type="button">
+             oi
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ui" type="button">
+             ui
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="au" type="button">
+             au
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="eu" type="button">
+             eu
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="iu" type="button">
+             iu
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ou" type="button">
+             ou
+            </button>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+      <div class="cluster-control" id="from-cluster">
+       <label>
+        Первая фонема сочетания
+        <select id="from-first">
+        </select>
+       </label>
+       <label>
+        Сочетание
+        <select id="from-combo">
+        </select>
+       </label>
+       <div class="filter-tip">
+        В списке только сочетания, присутствующие в индексированных преобразованиях. Для незнакомых сочетаний нужен полноценный анализ словоформ.
+       </div>
+      </div>
+     </div>
+     <div class="side" data-slot="to">
+      <h3>
+       Целевое состояние
+      </h3>
+      <div class="choice-mode">
+       <button class="mode active" data-mode="phoneme" data-slot="to" type="button">
+        Отдельная фонема
+       </button>
+       <button class="mode" data-mode="cluster" data-slot="to" type="button">
+        Сочетание
+       </button>
+      </div>
+      <div class="current">
+       Выбрано:
+       <strong id="to-chosen">
+        f
+       </strong>
+      </div>
+      <div class="ipa-choice" id="to-ipa">
+       <div class="ipa-scroll">
+        <h3>
+         Согласные
+        </h3>
+        <table>
+         <thead>
+          <tr>
+           <th>
+            Способ образования
+           </th>
+           <th>
+            Губные
+           </th>
+           <th>
+            Зубные / альвеолярные
+           </th>
+           <th>
+            Палатальные / палатализованные
+           </th>
+           <th>
+            Велярные
+           </th>
+           <th>
+            Лабиовелярные
+           </th>
+           <th>
+            Гортанные
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td>
+            Смычные
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="p" type="button">
+             p
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="b" type="button">
+             b
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="pʰ" type="button">
+             pʰ
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="t" type="button">
+             t
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="d" type="button">
+             d
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="tʰ" type="button">
+             tʰ
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="tʲ" type="button">
+             tʲ
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="dʲ" type="button">
+             dʲ
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="k" type="button">
+             k
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="g" type="button">
+             g
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="kʰ" type="button">
+             kʰ
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="kʷ" type="button">
+             kʷ
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="gʷ" type="button">
+             gʷ
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Фрикативные
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="ɸ" type="button">
+             ɸ
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="β" type="button">
+             β
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="f" type="button">
+             f
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="v" type="button">
+             v
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="s" type="button">
+             s
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="z" type="button">
+             z
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="θ" type="button">
+             θ
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ð" type="button">
+             ð
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="x" type="button">
+             x
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ɣ" type="button">
+             ɣ
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="h" type="button">
+             h
+            </button>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Носовые
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="m" type="button">
+             m
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="m̥" type="button">
+             m̥
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="n" type="button">
+             n
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="n̥" type="button">
+             n̥
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="nʲ" type="button">
+             nʲ
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="ŋ" type="button">
+             ŋ
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="ŋʷ" type="button">
+             ŋʷ
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Боковые
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="l" type="button">
+             l
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="l̥" type="button">
+             l̥
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Дрожащие
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="r" type="button">
+             r
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="r̥" type="button">
+             r̥
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Аппроксиманты
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="w" type="button">
+             w
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="w̥" type="button">
+             w̥
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="j" type="button">
+             j
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="j̊" type="button">
+             j̊
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            —
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <h3>
+         Гласные
+        </h3>
+        <table>
+         <thead>
+          <tr>
+           <th>
+            Подъём
+           </th>
+           <th>
+            Передние
+           </th>
+           <th>
+            Центральные
+           </th>
+           <th>
+            Задние
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td>
+            Верхние
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="i" type="button">
+             i
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ī" type="button">
+             ī
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="u" type="button">
+             u
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ū" type="button">
+             ū
+            </button>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Средние
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="e" type="button">
+             e
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ē" type="button">
+             ē
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ę̄" type="button">
+             ę̄
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ǣ" type="button">
+             ǣ
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ø" type="button">
+             ø
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="o" type="button">
+             o
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ō" type="button">
+             ō
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ǭ" type="button">
+             ǭ
+            </button>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Нижние
+           </td>
+           <td>
+            —
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="a" type="button">
+             a
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ā" type="button">
+             ā
+            </button>
+           </td>
+           <td>
+            —
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <h3>
+         Дифтонги
+        </h3>
+        <table>
+         <thead>
+          <tr>
+           <th>
+            С окончанием на i
+           </th>
+           <th>
+            С окончанием на u
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td>
+            <button class="ipa-sound" data-phoneme="ai" type="button">
+             ai
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ei" type="button">
+             ei
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="oi" type="button">
+             oi
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ui" type="button">
+             ui
+            </button>
+           </td>
+           <td>
+            <button class="ipa-sound" data-phoneme="au" type="button">
+             au
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="eu" type="button">
+             eu
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="iu" type="button">
+             iu
+            </button>
+            ·
+            <button class="ipa-sound" data-phoneme="ou" type="button">
+             ou
+            </button>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+      <div class="cluster-control" id="to-cluster">
+       <label>
+        Первая фонема сочетания
+        <select id="to-first">
+        </select>
+       </label>
+       <label>
+        Сочетание
+        <select id="to-combo">
+        </select>
+       </label>
+       <div class="filter-tip">
+        В списке только сочетания, присутствующие в индексированных преобразованиях. Для незнакомых сочетаний нужен полноценный анализ словоформ.
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="controls" style="margin-top:14px">
+     <label>
+      Период разработки Толкина
+      <select id="era">
+       <option value="late">
+        Поздняя концепция (✶, AQ., Q.)
+       </option>
+       <option value="middle">
+        Средняя концепция (ᴹ✶, ᴹAQ., ᴹQ.)
+       </option>
+      </select>
+     </label>
+     <label>
+      Максимальное число переходов
+      <select id="depth">
+       <option>
+        2
+       </option>
+       <option selected="">
+        3
+       </option>
+       <option>
+        4
+       </option>
+       <option>
+        5
+       </option>
+       <option>
+        6
+       </option>
+      </select>
+     </label>
+    </div>
+    <div class="row">
+     <label>
+      <input checked="" id="stage" type="checkbox"/>
+      Соблюдать ступени Primitive → Ancient → Quenya
+     </label>
+     <label>
+      <input id="evidence" type="checkbox"/>
+      Только переходы с воспроизведёнными примерами
+     </label>
+     <label>
+      <input checked="" id="simple" type="checkbox"/>
+      Без повторения состояний
+     </label>
+    </div>
+    <div class="row">
+     <button id="go">
+      Найти пути
+     </button>
+     <button class="secondary-action" id="rules-from" type="button">
+      Правила исходного звука
+     </button>
+     <button class="secondary-action" id="rules-to" type="button">
+      Правила конечного звука
+     </button>
+     <button id="swap" style="background:#2c4366;color:#e5efff">
+      Поменять местами
+     </button>
+     <span class="stats" id="numbers">
+     </span>
+    </div>
+   </section>
+   <section class="panel" hidden="" id="rule-panel">
+    <h2 id="rule-title">
+     Правила выбранного состояния
+    </h2>
+    <div class="stats" id="rule-count">
+    </div>
+    <div id="rule-table">
+    </div>
+   </section>
+   <section class="panel">
+    <h2>
+     Найденные цепочки
+    </h2>
+    <div aria-live="polite" id="output">
+     Укажите два звука и нажмите «Найти пути».
+    </div>
+   </section>
+   <section class="panel">
+    <h2>
+     О достоверности
+    </h2>
+    <p>
+     Каждая стрелка связана с записью правила Eldamo. Наличие формулы и даже отдельного примера
+     <strong>
+      не доказывает
+     </strong>
+     непрерывное развитие одной словоформы. Сохраняются ограничения из свободных заметок, диалектные исключения, редакционные различия, порядок внутри одной ступени и специфика групп звуков.
+    </p>
+    <p>
+     Индекс включает лишь те варианты правил, которые безопасно удалось представить как переходы между явными строковыми состояниями. Контекстные формулы остаются в полном каталоге и интерпретаторе Python, но не превращаются в безусловные рёбра интерфейса.
+    </p>
+    <p>
+     Выполненный поиск не показывает гарантированно все исторические линии: это контролируемый поиск по атомарной проекции правил. Статусы «есть пример» — свидетельства одного шага, не всей цепочки.
+    </p>
+   </section>
+  </main>
+  <script defer="" src="data.js">
+  </script>
+  <script defer="" src="app.js">
+  </script>
+ </body>
+</html>

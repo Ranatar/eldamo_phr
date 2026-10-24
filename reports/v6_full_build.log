@@ -1,0 +1,47 @@
+extraction quenya 861 legacy-only 123
+Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+quenya {'branch': 'quenya', 'all_rules': 861, 'atomic_edges': 391, 'guarded_rules': 139, 'structural_chains': 216, 'search_truncations': []} {'branch': 'quenya', 'number': 216, 'distribution': {'C': 38, 'U': 170, 'D': 8}}
+extraction sindarin 570 legacy-only 0
+Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+sindarin {'branch': 'sindarin', 'all_rules': 570, 'atomic_edges': 234, 'guarded_rules': 150, 'structural_chains': 114, 'search_truncations': []} {'branch': 'sindarin', 'number': 114, 'distribution': {'U': 93, 'D': 10, 'C': 11}}
+quenya 216
+sindarin 114
+{
+  "quenya": {
+    "critical": {
+      "chain:graph_steps_verified": 66,
+      "chain:unresolved_steps": 73,
+      "exact_step_match": 197,
+      "missing_chain_rule_url": 8,
+      "not_in_atomic_graph": 88,
+      "rule_url_mismatch": 3
+    },
+    "structural": {
+      "chain:ambiguous_rule_identity": 2,
+      "chain:graph_steps_verified": 208,
+      "chain:unresolved_steps": 6,
+      "exact_step_match": 473,
+      "missing_chain_rule_url": 6,
+      "multiple_matching_rules": 2
+    }
+  },
+  "sindarin": {
+    "critical": {
+      "chain:graph_steps_verified": 102,
+      "chain:incompatible_position": 5,
+      "chain:unresolved_steps": 11,
+      "exact_step_match": 259,
+      "missing_chain_rule_url": 11
+    },
+    "structural": {
+      "chain:graph_steps_verified": 106,
+      "chain:unresolved_steps": 8,
+      "exact_step_match": 251,
+      "missing_chain_rule_url": 8
+    }
+  }
+}
+Rebuilt /mnt/data/eldamo_atlas_v6_work/app/index.html
+quenya canonical rows: 216 grades {'C': 38, 'U': 170, 'D': 8} atomic edges 391
+sindarin canonical rows: 114 grades {'U': 93, 'D': 10, 'C': 11} atomic edges 234
+canonical pipeline invariants OK

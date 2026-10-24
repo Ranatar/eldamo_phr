@@ -1,0 +1,5280 @@
+[
+  {
+    "uid": "sindarin:chain:0",
+    "branch": "sindarin",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html"
+    ],
+    "original": {
+      "id": "S1",
+      "states": [
+        "ae",
+        "ā",
+        "ǭ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → OS.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1056240093.html",
+        "https://eldamo.org/content/words/word-2858643115.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1056240093.html",
+        "https://eldamo.org/content/words/word-2858643115.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ā], [au] became [ǭ]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:1",
+    "branch": "sindarin",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ",
+      "au"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-558704171.html"
+    ],
+    "original": {
+      "id": "S2",
+      "states": [
+        "ae",
+        "ā",
+        "ǭ",
+        "au"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → OS. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+      "reason": "Строго сопоставимые примеры найдены для 2 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1056240093.html",
+        "https://eldamo.org/content/words/word-2858643115.html",
+        "https://eldamo.org/content/words/word-558704171.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1056240093.html",
+        "https://eldamo.org/content/words/word-2858643115.html",
+        "https://eldamo.org/content/words/word-558704171.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ā], [au] became [ǭ]",
+        "[ǭ] became [au]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:2",
+    "branch": "sindarin",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html"
+    ],
+    "original": {
+      "id": "S3",
+      "states": [
+        "ao",
+        "ā",
+        "ǭ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → OS.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1056240093.html",
+        "https://eldamo.org/content/words/word-2858643115.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1056240093.html",
+        "https://eldamo.org/content/words/word-2858643115.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ā], [au] became [ǭ]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:3",
+    "branch": "sindarin",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ",
+      "au"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-558704171.html"
+    ],
+    "original": {
+      "id": "S4",
+      "states": [
+        "ao",
+        "ā",
+        "ǭ",
+        "au"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → OS. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+      "reason": "Строго сопоставимые примеры найдены для 2 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1056240093.html",
+        "https://eldamo.org/content/words/word-2858643115.html",
+        "https://eldamo.org/content/words/word-558704171.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1056240093.html",
+        "https://eldamo.org/content/words/word-2858643115.html",
+        "https://eldamo.org/content/words/word-558704171.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ā], [au] became [ǭ]",
+        "[ǭ] became [au]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:4",
+    "branch": "sindarin",
+    "states": [
+      "bm",
+      "mm",
+      "m"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2615312913.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "original": {
+      "id": "S5",
+      "states": [
+        "bm",
+        "mm",
+        "m"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "OS. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2615312913.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2615312913.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "rules": [
+        "[bm], [dn] became [mm], [nn]",
+        "[mm] shortened"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:5",
+    "branch": "sindarin",
+    "states": [
+      "bm",
+      "mb",
+      "mm"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "original": {
+      "id": "S6",
+      "states": [
+        "bm",
+        "mb",
+        "mm"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "machine-audited",
+      "markers": "✶ → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+      "reason": "Каждый переход представлен примерами соответствующей формулы, но непрерывного ряда одной словоформы не обнаружено.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3882201769.html",
+        "https://eldamo.org/content/words/word-868023175.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3882201769.html",
+        "https://eldamo.org/content/words/word-868023175.html"
+      ],
+      "rules": [
+        "[bm], [dn] became [mb], [nd]",
+        "[mb], [nd] became [mm], [nn]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:6",
+    "branch": "sindarin",
+    "states": [
+      "bm",
+      "mb",
+      "mm",
+      "m"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "Сопоставленные примеры отдельных правил: 3/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "https://eldamo.org/content/words/word-868023175.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "original": {
+      "id": "S7",
+      "states": [
+        "bm",
+        "mb",
+        "mm",
+        "m"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "machine-audited",
+      "markers": "✶ → S. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 3/3",
+      "reason": "Каждый переход представлен примерами соответствующей формулы, но непрерывного ряда одной словоформы не обнаружено.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3882201769.html",
+        "https://eldamo.org/content/words/word-868023175.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3882201769.html",
+        "https://eldamo.org/content/words/word-868023175.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "rules": [
+        "[bm], [dn] became [mb], [nd]",
+        "[mb], [nd] became [mm], [nn]",
+        "[mm] shortened"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:7",
+    "branch": "sindarin",
+    "states": [
+      "bm",
+      "mb",
+      "b"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "original": {
+      "id": "S8",
+      "states": [
+        "bm",
+        "mb",
+        "b"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3882201769.html",
+        "https://eldamo.org/content/words/word-3057844573.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3882201769.html",
+        "https://eldamo.org/content/words/word-3057844573.html"
+      ],
+      "rules": [
+        "[bm], [dn] became [mb], [nd]",
+        "initial nasals vanished before stops"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:8",
+    "branch": "sindarin",
+    "states": [
+      "bm",
+      "mb",
+      "m"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      ""
+    ],
+    "original": {
+      "id": "S9",
+      "states": [
+        "bm",
+        "mb",
+        "m"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3882201769.html",
+        ""
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3882201769.html",
+        ""
+      ],
+      "rules": [
+        "[bm], [dn] became [mb], [nd]",
+        "[bm], [dn] became [mb], [nd]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:9",
+    "branch": "sindarin",
+    "states": [
+      "bm",
+      "mb",
+      "m",
+      "n"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "",
+      "https://eldamo.org/content/words/word-760163573.html"
+    ],
+    "original": {
+      "id": "S10",
+      "states": [
+        "bm",
+        "mb",
+        "m",
+        "n"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → ✶ → ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/3",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3882201769.html",
+        "",
+        "https://eldamo.org/content/words/word-760163573.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3882201769.html",
+        "",
+        "https://eldamo.org/content/words/word-760163573.html"
+      ],
+      "rules": [
+        "[bm], [dn] became [mb], [nd]",
+        "[bm], [dn] became [mb], [nd]",
+        "final [m] became [n]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:10",
+    "branch": "sindarin",
+    "states": [
+      "eu",
+      "iu",
+      "ȳ"
+    ],
+    "era": "late",
+    "grade": "C",
+    "evidence": "Примеры с общим источником и статьёй; формы: deule → diule → dȳle",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2662025405.html",
+      "https://eldamo.org/content/words/word-659168127.html"
+    ],
+    "original": {
+      "id": "S11",
+      "states": [
+        "eu",
+        "iu",
+        "ȳ"
+      ],
+      "era": "late",
+      "grade": "C",
+      "kind": "machine-audited",
+      "markers": "OS. → S.",
+      "evidence": "Примеры с общим источником и статьёй; формы: deule → diule → dȳle",
+      "reason": "Непрерывные примеры с общей словарной статьёй и библиографической ссылкой; хронология и контекст ещё требуют текстологической проверки.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2662025405.html",
+        "https://eldamo.org/content/words/word-659168127.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2662025405.html",
+        "https://eldamo.org/content/words/word-659168127.html"
+      ],
+      "rules": [
+        "[eu] became [iu]",
+        "[iu] and [ju] became [ȳ]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:11",
+    "branch": "sindarin",
+    "states": [
+      "mb",
+      "mm",
+      "m"
+    ],
+    "era": "late",
+    "grade": "C",
+    "evidence": "Примеры с общим источником и статьёй; формы: ambar → ammar → amar",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-868023175.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "original": {
+      "id": "S12",
+      "states": [
+        "mb",
+        "mm",
+        "m"
+      ],
+      "era": "late",
+      "grade": "C",
+      "kind": "machine-audited",
+      "markers": "S. → S.",
+      "evidence": "Примеры с общим источником и статьёй; формы: ambar → ammar → amar",
+      "reason": "Непрерывные примеры с общей словарной статьёй и библиографической ссылкой; хронология и контекст ещё требуют текстологической проверки.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-868023175.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-868023175.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "rules": [
+        "[mb], [nd] became [mm], [nn]",
+        "[mm] shortened"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:12",
+    "branch": "sindarin",
+    "states": [
+      "mb",
+      "m",
+      "n"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-760163573.html"
+    ],
+    "original": {
+      "id": "S13",
+      "states": [
+        "mb",
+        "m",
+        "n"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "",
+        "https://eldamo.org/content/words/word-760163573.html"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-760163573.html"
+      ],
+      "rules": [
+        "[bm], [dn] became [mb], [nd]",
+        "final [m] became [n]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:13",
+    "branch": "sindarin",
+    "states": [
+      "mf",
+      "mm",
+      "m"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2996915415.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "original": {
+      "id": "S14",
+      "states": [
+        "mf",
+        "mm",
+        "m"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "S. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2996915415.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2996915415.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "rules": [
+        "medial [mf], [nθ], [ŋx], [lθ] became [mm], [nn], [ŋg], [ll]",
+        "[mm] shortened"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:14",
+    "branch": "sindarin",
+    "states": [
+      "mw",
+      "mm",
+      "m"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1484184939.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "original": {
+      "id": "S15",
+      "states": [
+        "mw",
+        "mm",
+        "m"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "OS. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1484184939.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1484184939.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "rules": [
+        "medial [m] became [n] before [j], [w]",
+        "[mm] shortened"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:15",
+    "branch": "sindarin",
+    "states": [
+      "pm",
+      "bm",
+      "mm"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3463937975.html",
+      "https://eldamo.org/content/words/word-2615312913.html"
+    ],
+    "original": {
+      "id": "S16",
+      "states": [
+        "pm",
+        "bm",
+        "mm"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "OS. → OS.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3463937975.html",
+        "https://eldamo.org/content/words/word-2615312913.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3463937975.html",
+        "https://eldamo.org/content/words/word-2615312913.html"
+      ],
+      "rules": [
+        "voiceless stops were voiced before nasals",
+        "[bm], [dn] became [mm], [nn]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:16",
+    "branch": "sindarin",
+    "states": [
+      "pm",
+      "bm",
+      "mm",
+      "m"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3463937975.html",
+      "https://eldamo.org/content/words/word-2615312913.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "original": {
+      "id": "S17",
+      "states": [
+        "pm",
+        "bm",
+        "mm",
+        "m"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "OS. → OS. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/3",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3463937975.html",
+        "https://eldamo.org/content/words/word-2615312913.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3463937975.html",
+        "https://eldamo.org/content/words/word-2615312913.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "rules": [
+        "voiceless stops were voiced before nasals",
+        "[bm], [dn] became [mm], [nn]",
+        "[mm] shortened"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:17",
+    "branch": "sindarin",
+    "states": [
+      "sb",
+      "zb",
+      "ðβ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-1951748921.html"
+    ],
+    "original": {
+      "id": "S18",
+      "states": [
+        "sb",
+        "zb",
+        "ðβ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-882174441.html",
+        "https://eldamo.org/content/words/word-1951748921.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-882174441.html",
+        "https://eldamo.org/content/words/word-1951748921.html"
+      ],
+      "rules": [
+        "[s] became [z] before voiced stops",
+        "[zb], [zg] became [ðβ], [ðɣ]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:18",
+    "branch": "sindarin",
+    "states": [
+      "sg",
+      "zg",
+      "ðɣ"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-1951748921.html"
+    ],
+    "original": {
+      "id": "S19",
+      "states": [
+        "sg",
+        "zg",
+        "ðɣ"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "machine-audited",
+      "markers": "✶ → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+      "reason": "Каждый переход представлен примерами соответствующей формулы, но непрерывного ряда одной словоформы не обнаружено.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-882174441.html",
+        "https://eldamo.org/content/words/word-1951748921.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-882174441.html",
+        "https://eldamo.org/content/words/word-1951748921.html"
+      ],
+      "rules": [
+        "[s] became [z] before voiced stops",
+        "[zb], [zg] became [ðβ], [ðɣ]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:19",
+    "branch": "sindarin",
+    "states": [
+      "tn",
+      "dn",
+      "nn"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3463937975.html",
+      "https://eldamo.org/content/words/word-2615312913.html"
+    ],
+    "original": {
+      "id": "S20",
+      "states": [
+        "tn",
+        "dn",
+        "nn"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "OS. → OS.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3463937975.html",
+        "https://eldamo.org/content/words/word-2615312913.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3463937975.html",
+        "https://eldamo.org/content/words/word-2615312913.html"
+      ],
+      "rules": [
+        "voiceless stops were voiced before nasals",
+        "[bm], [dn] became [mm], [nn]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:20",
+    "branch": "sindarin",
+    "states": [
+      "ttʰ",
+      "θθ",
+      "θ"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-883570327.html",
+      "https://eldamo.org/content/words/word-1206014597.html"
+    ],
+    "original": {
+      "id": "S21",
+      "states": [
+        "ttʰ",
+        "θθ",
+        "θ"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "machine-audited",
+      "markers": "OS. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+      "reason": "Каждый переход представлен примерами соответствующей формулы, но непрерывного ряда одной словоформы не обнаружено.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-883570327.html",
+        "https://eldamo.org/content/words/word-1206014597.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-883570327.html",
+        "https://eldamo.org/content/words/word-1206014597.html"
+      ],
+      "rules": [
+        "aspirates became voiceless spirants",
+        "long voiceless spirants shortened"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:21",
+    "branch": "sindarin",
+    "states": [
+      "tʰt",
+      "ttʰ",
+      "θθ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html"
+    ],
+    "original": {
+      "id": "S22",
+      "states": [
+        "tʰt",
+        "ttʰ",
+        "θθ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → OS.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-883570327.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-883570327.html"
+      ],
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless spirants"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:22",
+    "branch": "sindarin",
+    "states": [
+      "tʰt",
+      "ttʰ",
+      "θθ",
+      "θ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html",
+      "https://eldamo.org/content/words/word-1206014597.html"
+    ],
+    "original": {
+      "id": "S23",
+      "states": [
+        "tʰt",
+        "ttʰ",
+        "θθ",
+        "θ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → OS. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+      "reason": "Строго сопоставимые примеры найдены для 2 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-883570327.html",
+        "https://eldamo.org/content/words/word-1206014597.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-883570327.html",
+        "https://eldamo.org/content/words/word-1206014597.html"
+      ],
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless spirants",
+        "long voiceless spirants shortened"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:23",
+    "branch": "sindarin",
+    "states": [
+      "tʰtʰ",
+      "ttʰ",
+      "θθ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html"
+    ],
+    "original": {
+      "id": "S24",
+      "states": [
+        "tʰtʰ",
+        "ttʰ",
+        "θθ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → OS.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-883570327.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-883570327.html"
+      ],
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless spirants"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:24",
+    "branch": "sindarin",
+    "states": [
+      "tʰtʰ",
+      "ttʰ",
+      "θθ",
+      "θ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html",
+      "https://eldamo.org/content/words/word-1206014597.html"
+    ],
+    "original": {
+      "id": "S25",
+      "states": [
+        "tʰtʰ",
+        "ttʰ",
+        "θθ",
+        "θ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → OS. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+      "reason": "Строго сопоставимые примеры найдены для 2 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-883570327.html",
+        "https://eldamo.org/content/words/word-1206014597.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-883570327.html",
+        "https://eldamo.org/content/words/word-1206014597.html"
+      ],
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless spirants",
+        "long voiceless spirants shortened"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:25",
+    "branch": "sindarin",
+    "states": [
+      "ðm",
+      "ðv",
+      "ðw"
+    ],
+    "era": "late",
+    "grade": "C",
+    "evidence": "Примеры с общим источником и статьёй; формы: haðm → haðv → haðw",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1951379117.html",
+      "https://eldamo.org/content/words/word-2192660503.html"
+    ],
+    "original": {
+      "id": "S26",
+      "states": [
+        "ðm",
+        "ðv",
+        "ðw"
+      ],
+      "era": "late",
+      "grade": "C",
+      "kind": "machine-audited",
+      "markers": "S. → S.",
+      "evidence": "Примеры с общим источником и статьёй; формы: haðm → haðv → haðw",
+      "reason": "Непрерывные примеры с общей словарной статьёй и библиографической ссылкой; хронология и контекст ещё требуют текстологической проверки.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1951379117.html",
+        "https://eldamo.org/content/words/word-2192660503.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1951379117.html",
+        "https://eldamo.org/content/words/word-2192660503.html"
+      ],
+      "rules": [
+        "non-initial [m] usually became [v]",
+        "[ðv] became [ðw]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:26",
+    "branch": "sindarin",
+    "states": [
+      "ā",
+      "ǭ",
+      "au"
+    ],
+    "era": "late",
+    "grade": "C",
+    "evidence": "Примеры с общим источником и статьёй; формы: abakarā- → abakarǭ- → abakarau-",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-558704171.html"
+    ],
+    "original": {
+      "id": "S27",
+      "states": [
+        "ā",
+        "ǭ",
+        "au"
+      ],
+      "era": "late",
+      "grade": "C",
+      "kind": "machine-audited",
+      "markers": "OS. → S.",
+      "evidence": "Примеры с общим источником и статьёй; формы: abakarā- → abakarǭ- → abakarau-",
+      "reason": "Непрерывные примеры с общей словарной статьёй и библиографической ссылкой; хронология и контекст ещё требуют текстологической проверки.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2858643115.html",
+        "https://eldamo.org/content/words/word-558704171.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2858643115.html",
+        "https://eldamo.org/content/words/word-558704171.html"
+      ],
+      "rules": [
+        "[ā], [au] became [ǭ]",
+        "[ǭ] became [au]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:27",
+    "branch": "sindarin",
+    "states": [
+      "ę̄",
+      "ai",
+      "ae"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2387695245.html",
+      "https://eldamo.org/content/words/word-941153689.html"
+    ],
+    "original": {
+      "id": "S28",
+      "states": [
+        "ę̄",
+        "ai",
+        "ae"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "S. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2387695245.html",
+        "https://eldamo.org/content/words/word-941153689.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2387695245.html",
+        "https://eldamo.org/content/words/word-941153689.html"
+      ],
+      "rules": [
+        "[ę̄] became [ai]",
+        "[ai], [oi] became [ae], [oe]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:28",
+    "branch": "sindarin",
+    "states": [
+      "ŋ",
+      "ŋg",
+      "g"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "original": {
+      "id": "S29",
+      "states": [
+        "ŋ",
+        "ŋg",
+        "g"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "",
+        "https://eldamo.org/content/words/word-3057844573.html"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-3057844573.html"
+      ],
+      "rules": [
+        "medial nasal plus stop after another consonant became simple nasal",
+        "initial nasals vanished before stops"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:29",
+    "branch": "sindarin",
+    "states": [
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "original": {
+      "id": "S30",
+      "states": [
+        "ŋgw",
+        "mb",
+        "mm"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "machine-audited",
+      "markers": "AT. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+      "reason": "Каждый переход представлен примерами соответствующей формулы, но непрерывного ряда одной словоформы не обнаружено.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-171120983.html",
+        "https://eldamo.org/content/words/word-868023175.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-171120983.html",
+        "https://eldamo.org/content/words/word-868023175.html"
+      ],
+      "rules": [
+        "labialized velars became labials",
+        "[mb], [nd] became [mm], [nn]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:30",
+    "branch": "sindarin",
+    "states": [
+      "ŋgw",
+      "mb",
+      "mm",
+      "m"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "Сопоставленные примеры отдельных правил: 3/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-868023175.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "original": {
+      "id": "S31",
+      "states": [
+        "ŋgw",
+        "mb",
+        "mm",
+        "m"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "machine-audited",
+      "markers": "AT. → S. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 3/3",
+      "reason": "Каждый переход представлен примерами соответствующей формулы, но непрерывного ряда одной словоформы не обнаружено.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-171120983.html",
+        "https://eldamo.org/content/words/word-868023175.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-171120983.html",
+        "https://eldamo.org/content/words/word-868023175.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "rules": [
+        "labialized velars became labials",
+        "[mb], [nd] became [mm], [nn]",
+        "[mm] shortened"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:31",
+    "branch": "sindarin",
+    "states": [
+      "ŋgw",
+      "mb",
+      "b"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "original": {
+      "id": "S32",
+      "states": [
+        "ŋgw",
+        "mb",
+        "b"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "AT. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-171120983.html",
+        "https://eldamo.org/content/words/word-3057844573.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-171120983.html",
+        "https://eldamo.org/content/words/word-3057844573.html"
+      ],
+      "rules": [
+        "labialized velars became labials",
+        "initial nasals vanished before stops"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:32",
+    "branch": "sindarin",
+    "states": [
+      "ŋgw",
+      "m",
+      "n"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-760163573.html"
+    ],
+    "original": {
+      "id": "S33",
+      "states": [
+        "ŋgw",
+        "m",
+        "n"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "",
+        "https://eldamo.org/content/words/word-760163573.html"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-760163573.html"
+      ],
+      "rules": [
+        "medial nasal plus stop after another consonant became simple nasal",
+        "final [m] became [n]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:33",
+    "branch": "sindarin",
+    "states": [
+      "ŋj",
+      "ŋgj",
+      "n"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      ""
+    ],
+    "original": {
+      "id": "S34",
+      "states": [
+        "ŋj",
+        "ŋgj",
+        "n"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2233951333.html",
+        ""
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2233951333.html",
+        ""
+      ],
+      "rules": [
+        "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+        "medial nasal plus stop after another consonant became simple nasal"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:34",
+    "branch": "sindarin",
+    "states": [
+      "ŋw",
+      "m",
+      "n"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-760163573.html"
+    ],
+    "original": {
+      "id": "S35",
+      "states": [
+        "ŋw",
+        "m",
+        "n"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "",
+        "https://eldamo.org/content/words/word-760163573.html"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-760163573.html"
+      ],
+      "rules": [
+        "medial nasal plus stop after another consonant became simple nasal",
+        "final [m] became [n]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:35",
+    "branch": "sindarin",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      "https://eldamo.org/content/words/word-171120983.html"
+    ],
+    "original": {
+      "id": "S36",
+      "states": [
+        "ŋw",
+        "ŋgw",
+        "mb"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → AT.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2233951333.html",
+        "https://eldamo.org/content/words/word-171120983.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2233951333.html",
+        "https://eldamo.org/content/words/word-171120983.html"
+      ],
+      "rules": [
+        "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+        "labialized velars became labials"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:36",
+    "branch": "sindarin",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "original": {
+      "id": "S37",
+      "states": [
+        "ŋw",
+        "ŋgw",
+        "mb",
+        "mm"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → AT. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+      "reason": "Строго сопоставимые примеры найдены для 2 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2233951333.html",
+        "https://eldamo.org/content/words/word-171120983.html",
+        "https://eldamo.org/content/words/word-868023175.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2233951333.html",
+        "https://eldamo.org/content/words/word-171120983.html",
+        "https://eldamo.org/content/words/word-868023175.html"
+      ],
+      "rules": [
+        "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+        "labialized velars became labials",
+        "[mb], [nd] became [mm], [nn]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:37",
+    "branch": "sindarin",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb",
+      "b"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "original": {
+      "id": "S38",
+      "states": [
+        "ŋw",
+        "ŋgw",
+        "mb",
+        "b"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → AT. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/3",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2233951333.html",
+        "https://eldamo.org/content/words/word-171120983.html",
+        "https://eldamo.org/content/words/word-3057844573.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2233951333.html",
+        "https://eldamo.org/content/words/word-171120983.html",
+        "https://eldamo.org/content/words/word-3057844573.html"
+      ],
+      "rules": [
+        "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+        "labialized velars became labials",
+        "initial nasals vanished before stops"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:38",
+    "branch": "sindarin",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "m"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      ""
+    ],
+    "original": {
+      "id": "S39",
+      "states": [
+        "ŋw",
+        "ŋgw",
+        "m"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2233951333.html",
+        ""
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2233951333.html",
+        ""
+      ],
+      "rules": [
+        "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+        "medial nasal plus stop after another consonant became simple nasal"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:39",
+    "branch": "sindarin",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "m",
+      "n"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      "",
+      "https://eldamo.org/content/words/word-760163573.html"
+    ],
+    "original": {
+      "id": "S40",
+      "states": [
+        "ŋw",
+        "ŋgw",
+        "m",
+        "n"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → ✶ → ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2233951333.html",
+        "",
+        "https://eldamo.org/content/words/word-760163573.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2233951333.html",
+        "",
+        "https://eldamo.org/content/words/word-760163573.html"
+      ],
+      "rules": [
+        "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+        "medial nasal plus stop after another consonant became simple nasal",
+        "final [m] became [n]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:40",
+    "branch": "sindarin",
+    "states": [
+      "ŋx",
+      "ŋg",
+      "g"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2996915415.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "original": {
+      "id": "S41",
+      "states": [
+        "ŋx",
+        "ŋg",
+        "g"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "S. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2996915415.html",
+        "https://eldamo.org/content/words/word-3057844573.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2996915415.html",
+        "https://eldamo.org/content/words/word-3057844573.html"
+      ],
+      "rules": [
+        "medial [mf], [nθ], [ŋx], [lθ] became [mm], [nn], [ŋg], [ll]",
+        "initial nasals vanished before stops"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:41",
+    "branch": "sindarin",
+    "states": [
+      "ŋx",
+      "x",
+      "h"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3057844573.html",
+      "https://eldamo.org/content/words/word-4188321265.html"
+    ],
+    "original": {
+      "id": "S42",
+      "states": [
+        "ŋx",
+        "x",
+        "h"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "S. → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3057844573.html",
+        "https://eldamo.org/content/words/word-4188321265.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3057844573.html",
+        "https://eldamo.org/content/words/word-4188321265.html"
+      ],
+      "rules": [
+        "initial nasals vanished before stops",
+        "medial [x] became [h] in Gondorian pronunciation"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:42",
+    "branch": "sindarin",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "original": {
+      "id": "S43",
+      "states": [
+        "ŋŋ",
+        "ŋg",
+        "g"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3404492995.html",
+        "https://eldamo.org/content/words/word-3057844573.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3404492995.html",
+        "https://eldamo.org/content/words/word-3057844573.html"
+      ],
+      "rules": [
+        "[ŋŋ], [ŋɣ] became [ŋg]",
+        "initial nasals vanished before stops"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:43",
+    "branch": "sindarin",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "ŋ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      ""
+    ],
+    "original": {
+      "id": "S44",
+      "states": [
+        "ŋŋ",
+        "ŋg",
+        "ŋ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3404492995.html",
+        ""
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3404492995.html",
+        ""
+      ],
+      "rules": [
+        "[ŋŋ], [ŋɣ] became [ŋg]",
+        "medial nasal plus stop after another consonant became simple nasal"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:44",
+    "branch": "sindarin",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "original": {
+      "id": "S45",
+      "states": [
+        "ŋɣ",
+        "ŋg",
+        "g"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → S.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3404492995.html",
+        "https://eldamo.org/content/words/word-3057844573.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3404492995.html",
+        "https://eldamo.org/content/words/word-3057844573.html"
+      ],
+      "rules": [
+        "[ŋŋ], [ŋɣ] became [ŋg]",
+        "initial nasals vanished before stops"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:45",
+    "branch": "sindarin",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "ŋ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      ""
+    ],
+    "original": {
+      "id": "S46",
+      "states": [
+        "ŋɣ",
+        "ŋg",
+        "ŋ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "✶ → ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3404492995.html",
+        ""
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3404492995.html",
+        ""
+      ],
+      "rules": [
+        "[ŋŋ], [ŋɣ] became [ŋg]",
+        "medial nasal plus stop after another consonant became simple nasal"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:46",
+    "branch": "sindarin",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html"
+    ],
+    "original": {
+      "id": "S47",
+      "states": [
+        "ae",
+        "ā",
+        "ǭ"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2790556075.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2790556075.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ā], [au] became [ǭ]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:47",
+    "branch": "sindarin",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "original": {
+      "id": "S48",
+      "states": [
+        "ae",
+        "ā",
+        "ǭ",
+        "ou"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+      "reason": "Строго сопоставимые примеры найдены для 2 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2790556075.html",
+        "https://eldamo.org/content/words/word-4073827619.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2790556075.html",
+        "https://eldamo.org/content/words/word-4073827619.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ā], [au] became [ǭ]",
+        "[ǭ] became [ou]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:48",
+    "branch": "sindarin",
+    "states": [
+      "ae",
+      "ā",
+      "ō"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html"
+    ],
+    "original": {
+      "id": "S49",
+      "states": [
+        "ae",
+        "ā",
+        "ō"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-1909322629.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-1909322629.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ae], [ao] became [ā]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:49",
+    "branch": "sindarin",
+    "states": [
+      "ae",
+      "ā",
+      "ō",
+      "ū"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html",
+      "https://eldamo.org/content/words/word-390078853.html"
+    ],
+    "original": {
+      "id": "S50",
+      "states": [
+        "ae",
+        "ā",
+        "ō",
+        "ū"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶ → ON.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+      "reason": "Строго сопоставимые примеры найдены для 2 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-1909322629.html",
+        "https://eldamo.org/content/words/word-390078853.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-1909322629.html",
+        "https://eldamo.org/content/words/word-390078853.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ae], [ao] became [ā]",
+        "[ē], [ō] became [ī], [ū]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:50",
+    "branch": "sindarin",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html"
+    ],
+    "original": {
+      "id": "S51",
+      "states": [
+        "ae",
+        "ā",
+        "ǭ"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2277851021.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2277851021.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ae], [ao] became [ā]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:51",
+    "branch": "sindarin",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "original": {
+      "id": "S52",
+      "states": [
+        "ae",
+        "ā",
+        "ǭ",
+        "ou"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶ → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+      "reason": "Строго сопоставимые примеры найдены для 2 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2277851021.html",
+        "https://eldamo.org/content/words/word-4073827619.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2277851021.html",
+        "https://eldamo.org/content/words/word-4073827619.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ae], [ao] became [ā]",
+        "[ǭ] became [ou]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:52",
+    "branch": "sindarin",
+    "states": [
+      "ai",
+      "ę̄",
+      "ae"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3619603651.html",
+      "https://eldamo.org/content/words/word-3173115217.html"
+    ],
+    "original": {
+      "id": "S53",
+      "states": [
+        "ai",
+        "ę̄",
+        "ae"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "machine-audited",
+      "markers": "ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+      "reason": "Каждый переход представлен примерами соответствующей формулы, но непрерывного ряда одной словоформы не обнаружено.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3619603651.html",
+        "https://eldamo.org/content/words/word-3173115217.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3619603651.html",
+        "https://eldamo.org/content/words/word-3173115217.html"
+      ],
+      "rules": [
+        "[ǣ], [ai] became [ę̄]",
+        "[ai] became [oe] or [ae]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:53",
+    "branch": "sindarin",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html"
+    ],
+    "original": {
+      "id": "S54",
+      "states": [
+        "ao",
+        "ā",
+        "ǭ"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2790556075.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2790556075.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ā], [au] became [ǭ]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:54",
+    "branch": "sindarin",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "original": {
+      "id": "S55",
+      "states": [
+        "ao",
+        "ā",
+        "ǭ",
+        "ou"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+      "reason": "Строго сопоставимые примеры найдены для 2 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2790556075.html",
+        "https://eldamo.org/content/words/word-4073827619.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2790556075.html",
+        "https://eldamo.org/content/words/word-4073827619.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ā], [au] became [ǭ]",
+        "[ǭ] became [ou]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:55",
+    "branch": "sindarin",
+    "states": [
+      "ao",
+      "ā",
+      "ō"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html"
+    ],
+    "original": {
+      "id": "S56",
+      "states": [
+        "ao",
+        "ā",
+        "ō"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-1909322629.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-1909322629.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ae], [ao] became [ā]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:56",
+    "branch": "sindarin",
+    "states": [
+      "ao",
+      "ā",
+      "ō",
+      "ū"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html",
+      "https://eldamo.org/content/words/word-390078853.html"
+    ],
+    "original": {
+      "id": "S57",
+      "states": [
+        "ao",
+        "ā",
+        "ō",
+        "ū"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶ → ON.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+      "reason": "Строго сопоставимые примеры найдены для 2 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-1909322629.html",
+        "https://eldamo.org/content/words/word-390078853.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-1909322629.html",
+        "https://eldamo.org/content/words/word-390078853.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ae], [ao] became [ā]",
+        "[ē], [ō] became [ī], [ū]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:57",
+    "branch": "sindarin",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html"
+    ],
+    "original": {
+      "id": "S58",
+      "states": [
+        "ao",
+        "ā",
+        "ǭ"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2277851021.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2277851021.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ae], [ao] became [ā]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:58",
+    "branch": "sindarin",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "original": {
+      "id": "S59",
+      "states": [
+        "ao",
+        "ā",
+        "ǭ",
+        "ou"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶ → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+      "reason": "Строго сопоставимые примеры найдены для 2 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2277851021.html",
+        "https://eldamo.org/content/words/word-4073827619.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2229536775.html",
+        "https://eldamo.org/content/words/word-2277851021.html",
+        "https://eldamo.org/content/words/word-4073827619.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ae], [ao] became [ā]",
+        "[ǭ] became [ou]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:59",
+    "branch": "sindarin",
+    "states": [
+      "au",
+      "ǭ",
+      "ou"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "Примеры с общим источником и статьёй; формы: glaure → glǭre → gloure",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "original": {
+      "id": "S60",
+      "states": [
+        "au",
+        "ǭ",
+        "ou"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "machine-audited",
+      "markers": "ON. → N.",
+      "evidence": "Примеры с общим источником и статьёй; формы: glaure → glǭre → gloure",
+      "reason": "Непрерывные примеры с общей словарной статьёй и библиографической ссылкой; хронология и контекст ещё требуют текстологической проверки.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2790556075.html",
+        "https://eldamo.org/content/words/word-4073827619.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2790556075.html",
+        "https://eldamo.org/content/words/word-4073827619.html"
+      ],
+      "rules": [
+        "[ā], [au] became [ǭ]",
+        "[ǭ] became [ou]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:60",
+    "branch": "sindarin",
+    "states": [
+      "ei",
+      "oi",
+      "ui"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "Примеры с общим источником и статьёй; формы: geigo → goigo → guigo",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1880600739.html",
+      "https://eldamo.org/content/words/word-2826795683.html"
+    ],
+    "original": {
+      "id": "S61",
+      "states": [
+        "ei",
+        "oi",
+        "ui"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "machine-audited",
+      "markers": "ON. → ON.",
+      "evidence": "Примеры с общим источником и статьёй; формы: geigo → goigo → guigo",
+      "reason": "Непрерывные примеры с общей словарной статьёй и библиографической ссылкой; хронология и контекст ещё требуют текстологической проверки.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1880600739.html",
+        "https://eldamo.org/content/words/word-2826795683.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1880600739.html",
+        "https://eldamo.org/content/words/word-2826795683.html"
+      ],
+      "rules": [
+        "[ei], [ou] became [oi], [ū]",
+        "[oi], [ǭi] became [ui]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:61",
+    "branch": "sindarin",
+    "states": [
+      "j̊",
+      "x",
+      "h"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1284301541.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "original": {
+      "id": "S62",
+      "states": [
+        "j̊",
+        "x",
+        "h"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "N. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1284301541.html",
+        "https://eldamo.org/content/words/word-1195324115.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1284301541.html",
+        "https://eldamo.org/content/words/word-1195324115.html"
+      ],
+      "rules": [
+        "voiceless [j̊], [w̥] became [x], [xw]",
+        "initial [x-] became [h-]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:62",
+    "branch": "sindarin",
+    "states": [
+      "kʰ",
+      "x",
+      "h"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "original": {
+      "id": "S63",
+      "states": [
+        "kʰ",
+        "x",
+        "h"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1770347191.html",
+        "https://eldamo.org/content/words/word-1195324115.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1770347191.html",
+        "https://eldamo.org/content/words/word-1195324115.html"
+      ],
+      "rules": [
+        "aspirates became voiceless spirants",
+        "initial [x-] became [h-]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:63",
+    "branch": "sindarin",
+    "states": [
+      "kʰj",
+      "kʰ",
+      "x"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-1770347191.html"
+    ],
+    "original": {
+      "id": "S64",
+      "states": [
+        "kʰj",
+        "kʰ",
+        "x"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → ON.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-4025342543.html",
+        "https://eldamo.org/content/words/word-1770347191.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-4025342543.html",
+        "https://eldamo.org/content/words/word-1770347191.html"
+      ],
+      "rules": [
+        "[j] was lost after initial velars",
+        "aspirates became voiceless spirants"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:64",
+    "branch": "sindarin",
+    "states": [
+      "kʰj",
+      "kʰ",
+      "x",
+      "h"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "original": {
+      "id": "S65",
+      "states": [
+        "kʰj",
+        "kʰ",
+        "x",
+        "h"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/3",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-4025342543.html",
+        "https://eldamo.org/content/words/word-1770347191.html",
+        "https://eldamo.org/content/words/word-1195324115.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-4025342543.html",
+        "https://eldamo.org/content/words/word-1770347191.html",
+        "https://eldamo.org/content/words/word-1195324115.html"
+      ],
+      "rules": [
+        "[j] was lost after initial velars",
+        "aspirates became voiceless spirants",
+        "initial [x-] became [h-]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:65",
+    "branch": "sindarin",
+    "states": [
+      "kʰw",
+      "pʰ",
+      "ɸ"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1770347191.html"
+    ],
+    "original": {
+      "id": "S66",
+      "states": [
+        "kʰw",
+        "pʰ",
+        "ɸ"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → ON.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3214863235.html",
+        "https://eldamo.org/content/words/word-1770347191.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3214863235.html",
+        "https://eldamo.org/content/words/word-1770347191.html"
+      ],
+      "rules": [
+        "labialized velars became labials",
+        "aspirates became voiceless spirants"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:66",
+    "branch": "sindarin",
+    "states": [
+      "kʰw",
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "original": {
+      "id": "S67",
+      "states": [
+        "kʰw",
+        "pʰ",
+        "ɸ",
+        "f"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+      "reason": "Строго сопоставимые примеры найдены для 2 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3214863235.html",
+        "https://eldamo.org/content/words/word-1770347191.html",
+        "https://eldamo.org/content/words/word-2995333959.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3214863235.html",
+        "https://eldamo.org/content/words/word-1770347191.html",
+        "https://eldamo.org/content/words/word-2995333959.html"
+      ],
+      "rules": [
+        "labialized velars became labials",
+        "aspirates became voiceless spirants",
+        "[ɸ], [β] became [f], [v]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:67",
+    "branch": "sindarin",
+    "states": [
+      "p",
+      "pʰ",
+      "ɸ"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-1770347191.html"
+    ],
+    "original": {
+      "id": "S68",
+      "states": [
+        "p",
+        "pʰ",
+        "ɸ"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2684793511.html",
+        "https://eldamo.org/content/words/word-1770347191.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2684793511.html",
+        "https://eldamo.org/content/words/word-1770347191.html"
+      ],
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless spirants"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:68",
+    "branch": "sindarin",
+    "states": [
+      "p",
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "original": {
+      "id": "S69",
+      "states": [
+        "p",
+        "pʰ",
+        "ɸ",
+        "f"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+      "reason": "Строго сопоставимые примеры найдены для 2 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2684793511.html",
+        "https://eldamo.org/content/words/word-1770347191.html",
+        "https://eldamo.org/content/words/word-2995333959.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2684793511.html",
+        "https://eldamo.org/content/words/word-1770347191.html",
+        "https://eldamo.org/content/words/word-2995333959.html"
+      ],
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless spirants",
+        "[ɸ], [β] became [f], [v]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:69",
+    "branch": "sindarin",
+    "states": [
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "Примеры с общим источником и статьёй; формы: alpʰa → alɸa → alfa",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "original": {
+      "id": "S70",
+      "states": [
+        "pʰ",
+        "ɸ",
+        "f"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "machine-audited",
+      "markers": "ON. → N.",
+      "evidence": "Примеры с общим источником и статьёй; формы: alpʰa → alɸa → alfa",
+      "reason": "Непрерывные примеры с общей словарной статьёй и библиографической ссылкой; хронология и контекст ещё требуют текстологической проверки.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1770347191.html",
+        "https://eldamo.org/content/words/word-2995333959.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1770347191.html",
+        "https://eldamo.org/content/words/word-2995333959.html"
+      ],
+      "rules": [
+        "aspirates became voiceless spirants",
+        "[ɸ], [β] became [f], [v]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:70",
+    "branch": "sindarin",
+    "states": [
+      "sj",
+      "j̊",
+      "x"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "original": {
+      "id": "S71",
+      "states": [
+        "sj",
+        "j̊",
+        "x"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3693878703.html",
+        "https://eldamo.org/content/words/word-1284301541.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3693878703.html",
+        "https://eldamo.org/content/words/word-1284301541.html"
+      ],
+      "rules": [
+        "initial [s] unvoiced following [m], [n], [j], [w]",
+        "voiceless [j̊], [w̥] became [x], [xw]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:71",
+    "branch": "sindarin",
+    "states": [
+      "sj",
+      "j̊",
+      "x",
+      "h"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "original": {
+      "id": "S72",
+      "states": [
+        "sj",
+        "j̊",
+        "x",
+        "h"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → N. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3693878703.html",
+        "https://eldamo.org/content/words/word-1284301541.html",
+        "https://eldamo.org/content/words/word-1195324115.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3693878703.html",
+        "https://eldamo.org/content/words/word-1284301541.html",
+        "https://eldamo.org/content/words/word-1195324115.html"
+      ],
+      "rules": [
+        "initial [s] unvoiced following [m], [n], [j], [w]",
+        "voiceless [j̊], [w̥] became [x], [xw]",
+        "initial [x-] became [h-]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:72",
+    "branch": "sindarin",
+    "states": [
+      "sk",
+      "sx",
+      "x"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "original": {
+      "id": "S73",
+      "states": [
+        "sk",
+        "sx",
+        "x"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html"
+      ],
+      "rules": [
+        "voiceless stops became spirants after initial [s]",
+        "initial [s] vanished before spirants"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:73",
+    "branch": "sindarin",
+    "states": [
+      "sk",
+      "sx",
+      "x",
+      "h"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "original": {
+      "id": "S74",
+      "states": [
+        "sk",
+        "sx",
+        "x",
+        "h"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → N. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html",
+        "https://eldamo.org/content/words/word-1195324115.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html",
+        "https://eldamo.org/content/words/word-1195324115.html"
+      ],
+      "rules": [
+        "voiceless stops became spirants after initial [s]",
+        "initial [s] vanished before spirants",
+        "initial [x-] became [h-]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:74",
+    "branch": "sindarin",
+    "states": [
+      "skj",
+      "sk",
+      "sx"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-948882833.html"
+    ],
+    "original": {
+      "id": "S75",
+      "states": [
+        "skj",
+        "sk",
+        "sx"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → ON.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-4025342543.html",
+        "https://eldamo.org/content/words/word-948882833.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-4025342543.html",
+        "https://eldamo.org/content/words/word-948882833.html"
+      ],
+      "rules": [
+        "[j] was lost after initial velars",
+        "voiceless stops became spirants after initial [s]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:75",
+    "branch": "sindarin",
+    "states": [
+      "skj",
+      "sk",
+      "sx",
+      "x"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "original": {
+      "id": "S76",
+      "states": [
+        "skj",
+        "sk",
+        "sx",
+        "x"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-4025342543.html",
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-4025342543.html",
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html"
+      ],
+      "rules": [
+        "[j] was lost after initial velars",
+        "voiceless stops became spirants after initial [s]",
+        "initial [s] vanished before spirants"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:76",
+    "branch": "sindarin",
+    "states": [
+      "skw",
+      "sw",
+      "w̥"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-3693878703.html"
+    ],
+    "original": {
+      "id": "S77",
+      "states": [
+        "skw",
+        "sw",
+        "w̥"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1872897535.html",
+        "https://eldamo.org/content/words/word-3693878703.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1872897535.html",
+        "https://eldamo.org/content/words/word-3693878703.html"
+      ],
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "initial [s] unvoiced following [m], [n], [j], [w]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:77",
+    "branch": "sindarin",
+    "states": [
+      "skw",
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "original": {
+      "id": "S78",
+      "states": [
+        "skw",
+        "sw",
+        "w̥",
+        "xw"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1872897535.html",
+        "https://eldamo.org/content/words/word-3693878703.html",
+        "https://eldamo.org/content/words/word-1284301541.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1872897535.html",
+        "https://eldamo.org/content/words/word-3693878703.html",
+        "https://eldamo.org/content/words/word-1284301541.html"
+      ],
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "initial [s] unvoiced following [m], [n], [j], [w]",
+        "voiceless [j̊], [w̥] became [x], [xw]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:78",
+    "branch": "sindarin",
+    "states": [
+      "skw",
+      "sw",
+      "w̥"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-165461035.html"
+    ],
+    "original": {
+      "id": "S79",
+      "states": [
+        "skw",
+        "sw",
+        "w̥"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1872897535.html",
+        "https://eldamo.org/content/words/word-165461035.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1872897535.html",
+        "https://eldamo.org/content/words/word-165461035.html"
+      ],
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "[hs] became [ss]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:79",
+    "branch": "sindarin",
+    "states": [
+      "skw",
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-165461035.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "original": {
+      "id": "S80",
+      "states": [
+        "skw",
+        "sw",
+        "w̥",
+        "xw"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶ → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1872897535.html",
+        "https://eldamo.org/content/words/word-165461035.html",
+        "https://eldamo.org/content/words/word-1284301541.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1872897535.html",
+        "https://eldamo.org/content/words/word-165461035.html",
+        "https://eldamo.org/content/words/word-1284301541.html"
+      ],
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "[hs] became [ss]",
+        "voiceless [j̊], [w̥] became [x], [xw]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:80",
+    "branch": "sindarin",
+    "states": [
+      "skʰ",
+      "sk",
+      "sx"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html"
+    ],
+    "original": {
+      "id": "S81",
+      "states": [
+        "skʰ",
+        "sk",
+        "sx"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2699949575.html",
+        "https://eldamo.org/content/words/word-948882833.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2699949575.html",
+        "https://eldamo.org/content/words/word-948882833.html"
+      ],
+      "rules": [
+        "aspirates became voiceless stops after [s], [h]",
+        "voiceless stops became spirants after initial [s]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:81",
+    "branch": "sindarin",
+    "states": [
+      "skʰ",
+      "sk",
+      "sx",
+      "x"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "original": {
+      "id": "S82",
+      "states": [
+        "skʰ",
+        "sk",
+        "sx",
+        "x"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2699949575.html",
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2699949575.html",
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html"
+      ],
+      "rules": [
+        "aspirates became voiceless stops after [s], [h]",
+        "voiceless stops became spirants after initial [s]",
+        "initial [s] vanished before spirants"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:82",
+    "branch": "sindarin",
+    "states": [
+      "sl",
+      "θl",
+      "fl"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2075290201.html",
+      "https://eldamo.org/content/words/word-2640707457.html"
+    ],
+    "original": {
+      "id": "S83",
+      "states": [
+        "sl",
+        "θl",
+        "fl"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2075290201.html",
+        "https://eldamo.org/content/words/word-2640707457.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2075290201.html",
+        "https://eldamo.org/content/words/word-2640707457.html"
+      ],
+      "rules": [
+        "initial [s] became [θ] before [l], [r]",
+        "initial [θl] sometimes became [fl]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:83",
+    "branch": "sindarin",
+    "states": [
+      "sp",
+      "sɸ",
+      "ɸ"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "original": {
+      "id": "S84",
+      "states": [
+        "sp",
+        "sɸ",
+        "ɸ"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html"
+      ],
+      "rules": [
+        "voiceless stops became spirants after initial [s]",
+        "initial [s] vanished before spirants"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:84",
+    "branch": "sindarin",
+    "states": [
+      "sp",
+      "sɸ",
+      "ɸ",
+      "f"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "original": {
+      "id": "S85",
+      "states": [
+        "sp",
+        "sɸ",
+        "ɸ",
+        "f"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → N. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/3",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html",
+        "https://eldamo.org/content/words/word-2995333959.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html",
+        "https://eldamo.org/content/words/word-2995333959.html"
+      ],
+      "rules": [
+        "voiceless stops became spirants after initial [s]",
+        "initial [s] vanished before spirants",
+        "[ɸ], [β] became [f], [v]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:85",
+    "branch": "sindarin",
+    "states": [
+      "st",
+      "sθ",
+      "θ"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "original": {
+      "id": "S86",
+      "states": [
+        "st",
+        "sθ",
+        "θ"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html"
+      ],
+      "rules": [
+        "voiceless stops became spirants after initial [s]",
+        "initial [s] vanished before spirants"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:86",
+    "branch": "sindarin",
+    "states": [
+      "stʰ",
+      "st",
+      "sθ"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html"
+    ],
+    "original": {
+      "id": "S87",
+      "states": [
+        "stʰ",
+        "st",
+        "sθ"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2699949575.html",
+        "https://eldamo.org/content/words/word-948882833.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2699949575.html",
+        "https://eldamo.org/content/words/word-948882833.html"
+      ],
+      "rules": [
+        "aspirates became voiceless stops after [s], [h]",
+        "voiceless stops became spirants after initial [s]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:87",
+    "branch": "sindarin",
+    "states": [
+      "stʰ",
+      "st",
+      "sθ",
+      "θ"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "original": {
+      "id": "S88",
+      "states": [
+        "stʰ",
+        "st",
+        "sθ",
+        "θ"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/3",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2699949575.html",
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2699949575.html",
+        "https://eldamo.org/content/words/word-948882833.html",
+        "https://eldamo.org/content/words/word-2061688473.html"
+      ],
+      "rules": [
+        "aspirates became voiceless stops after [s], [h]",
+        "voiceless stops became spirants after initial [s]",
+        "initial [s] vanished before spirants"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:88",
+    "branch": "sindarin",
+    "states": [
+      "stʰ",
+      "st",
+      "θ"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-570537175.html"
+    ],
+    "original": {
+      "id": "S89",
+      "states": [
+        "stʰ",
+        "st",
+        "θ"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2699949575.html",
+        "https://eldamo.org/content/words/word-570537175.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2699949575.html",
+        "https://eldamo.org/content/words/word-570537175.html"
+      ],
+      "rules": [
+        "aspirates became voiceless stops after [s], [h]",
+        "aspirate became voiceless stop before [s]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:89",
+    "branch": "sindarin",
+    "states": [
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "original": {
+      "id": "S90",
+      "states": [
+        "sw",
+        "w̥",
+        "xw"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3693878703.html",
+        "https://eldamo.org/content/words/word-1284301541.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3693878703.html",
+        "https://eldamo.org/content/words/word-1284301541.html"
+      ],
+      "rules": [
+        "initial [s] unvoiced following [m], [n], [j], [w]",
+        "voiceless [j̊], [w̥] became [x], [xw]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:90",
+    "branch": "sindarin",
+    "states": [
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-165461035.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "original": {
+      "id": "S91",
+      "states": [
+        "sw",
+        "w̥",
+        "xw"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-165461035.html",
+        "https://eldamo.org/content/words/word-1284301541.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-165461035.html",
+        "https://eldamo.org/content/words/word-1284301541.html"
+      ],
+      "rules": [
+        "[hs] became [ss]",
+        "voiceless [j̊], [w̥] became [x], [xw]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:91",
+    "branch": "sindarin",
+    "states": [
+      "sx",
+      "x",
+      "h"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "original": {
+      "id": "S92",
+      "states": [
+        "sx",
+        "x",
+        "h"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "N. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 0/2",
+      "reason": "Строго сопоставимые примеры найдены для 0 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2061688473.html",
+        "https://eldamo.org/content/words/word-1195324115.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2061688473.html",
+        "https://eldamo.org/content/words/word-1195324115.html"
+      ],
+      "rules": [
+        "initial [s] vanished before spirants",
+        "initial [x-] became [h-]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:92",
+    "branch": "sindarin",
+    "states": [
+      "sɸ",
+      "ɸ",
+      "f"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "original": {
+      "id": "S93",
+      "states": [
+        "sɸ",
+        "ɸ",
+        "f"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "N. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2061688473.html",
+        "https://eldamo.org/content/words/word-2995333959.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2061688473.html",
+        "https://eldamo.org/content/words/word-2995333959.html"
+      ],
+      "rules": [
+        "initial [s] vanished before spirants",
+        "[ɸ], [β] became [f], [v]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:93",
+    "branch": "sindarin",
+    "states": [
+      "z",
+      "r",
+      "r̥"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-982618329.html",
+      "https://eldamo.org/content/words/word-876815979.html"
+    ],
+    "original": {
+      "id": "S94",
+      "states": [
+        "z",
+        "r",
+        "r̥"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-982618329.html",
+        "https://eldamo.org/content/words/word-876815979.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-982618329.html",
+        "https://eldamo.org/content/words/word-876815979.html"
+      ],
+      "rules": [
+        "[t+t], [d+d] from suffixion became [st], [zd]",
+        "initial [r-], [l-] were unvoiced"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:94",
+    "branch": "sindarin",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "Примеры с общим источником и статьёй; формы: abāro → abǭro → abouro",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "original": {
+      "id": "S95",
+      "states": [
+        "ā",
+        "ǭ",
+        "ou"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "machine-audited",
+      "markers": "ON. → N.",
+      "evidence": "Примеры с общим источником и статьёй; формы: abāro → abǭro → abouro",
+      "reason": "Непрерывные примеры с общей словарной статьёй и библиографической ссылкой; хронология и контекст ещё требуют текстологической проверки.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2790556075.html",
+        "https://eldamo.org/content/words/word-4073827619.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2790556075.html",
+        "https://eldamo.org/content/words/word-4073827619.html"
+      ],
+      "rules": [
+        "[ā], [au] became [ǭ]",
+        "[ǭ] became [ou]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:95",
+    "branch": "sindarin",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou",
+      "au"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "Примеры с общим источником и статьёй; формы: anār → anǭr → anour → anaur",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html",
+      "https://eldamo.org/content/words/word-2902864717.html"
+    ],
+    "original": {
+      "id": "S96",
+      "states": [
+        "ā",
+        "ǭ",
+        "ou",
+        "au"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "machine-audited",
+      "markers": "ON. → N. → N.",
+      "evidence": "Примеры с общим источником и статьёй; формы: anār → anǭr → anour → anaur",
+      "reason": "Непрерывные примеры с общей словарной статьёй и библиографической ссылкой; хронология и контекст ещё требуют текстологической проверки.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2790556075.html",
+        "https://eldamo.org/content/words/word-4073827619.html",
+        "https://eldamo.org/content/words/word-2902864717.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2790556075.html",
+        "https://eldamo.org/content/words/word-4073827619.html",
+        "https://eldamo.org/content/words/word-2902864717.html"
+      ],
+      "rules": [
+        "[ā], [au] became [ǭ]",
+        "[ǭ] became [ou]",
+        "[ou] became [au]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:96",
+    "branch": "sindarin",
+    "states": [
+      "ā",
+      "ō",
+      "ū"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1909322629.html",
+      "https://eldamo.org/content/words/word-390078853.html"
+    ],
+    "original": {
+      "id": "S97",
+      "states": [
+        "ā",
+        "ō",
+        "ū"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+      "reason": "Промежуточные словоформы стыкуются, но единая статья и источник не доказаны; требуется проверка концептуальной принадлежности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1909322629.html",
+        "https://eldamo.org/content/words/word-390078853.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1909322629.html",
+        "https://eldamo.org/content/words/word-390078853.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ē], [ō] became [ī], [ū]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:97",
+    "branch": "sindarin",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "original": {
+      "id": "S98",
+      "states": [
+        "ā",
+        "ǭ",
+        "ou"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+      "reason": "Каждый переход представлен примерами соответствующей формулы, но непрерывного ряда одной словоформы не обнаружено.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2277851021.html",
+        "https://eldamo.org/content/words/word-4073827619.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2277851021.html",
+        "https://eldamo.org/content/words/word-4073827619.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ǭ] became [ou]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:98",
+    "branch": "sindarin",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou",
+      "au"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "Сопоставленные примеры отдельных правил: 3/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html",
+      "https://eldamo.org/content/words/word-2902864717.html"
+    ],
+    "original": {
+      "id": "S99",
+      "states": [
+        "ā",
+        "ǭ",
+        "ou",
+        "au"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → N. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 3/3",
+      "reason": "Каждый переход представлен примерами соответствующей формулы, но непрерывного ряда одной словоформы не обнаружено.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2277851021.html",
+        "https://eldamo.org/content/words/word-4073827619.html",
+        "https://eldamo.org/content/words/word-2902864717.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2277851021.html",
+        "https://eldamo.org/content/words/word-4073827619.html",
+        "https://eldamo.org/content/words/word-2902864717.html"
+      ],
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ǭ] became [ou]",
+        "[ou] became [au]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:99",
+    "branch": "sindarin",
+    "states": [
+      "ŋgj",
+      "ŋg",
+      "g"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "original": {
+      "id": "S100",
+      "states": [
+        "ŋgj",
+        "ŋg",
+        "g"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-4025342543.html",
+        "https://eldamo.org/content/words/word-956128961.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-4025342543.html",
+        "https://eldamo.org/content/words/word-956128961.html"
+      ],
+      "rules": [
+        "[j] was lost after initial velars",
+        "initial nasals vanished before stops"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:100",
+    "branch": "sindarin",
+    "states": [
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1317326183.html"
+    ],
+    "original": {
+      "id": "S101",
+      "states": [
+        "ŋgw",
+        "mb",
+        "mm"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "machine-audited",
+      "markers": "ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/2",
+      "reason": "Каждый переход представлен примерами соответствующей формулы, но непрерывного ряда одной словоформы не обнаружено.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3214863235.html",
+        "https://eldamo.org/content/words/word-1317326183.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3214863235.html",
+        "https://eldamo.org/content/words/word-1317326183.html"
+      ],
+      "rules": [
+        "labialized velars became labials",
+        "[mb], [nd] became [mm], [nn]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:101",
+    "branch": "sindarin",
+    "states": [
+      "ŋgw",
+      "mb",
+      "b"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "original": {
+      "id": "S102",
+      "states": [
+        "ŋgw",
+        "mb",
+        "b"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3214863235.html",
+        "https://eldamo.org/content/words/word-956128961.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3214863235.html",
+        "https://eldamo.org/content/words/word-956128961.html"
+      ],
+      "rules": [
+        "labialized velars became labials",
+        "initial nasals vanished before stops"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:102",
+    "branch": "sindarin",
+    "states": [
+      "ŋj",
+      "ŋgj",
+      "ŋg"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-4025342543.html"
+    ],
+    "original": {
+      "id": "S103",
+      "states": [
+        "ŋj",
+        "ŋgj",
+        "ŋg"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1270135967.html",
+        "https://eldamo.org/content/words/word-4025342543.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1270135967.html",
+        "https://eldamo.org/content/words/word-4025342543.html"
+      ],
+      "rules": [
+        "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+        "[j] was lost after initial velars"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:103",
+    "branch": "sindarin",
+    "states": [
+      "ŋj",
+      "ŋgj",
+      "ŋg",
+      "g"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "original": {
+      "id": "S104",
+      "states": [
+        "ŋj",
+        "ŋgj",
+        "ŋg",
+        "g"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/3",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1270135967.html",
+        "https://eldamo.org/content/words/word-4025342543.html",
+        "https://eldamo.org/content/words/word-956128961.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1270135967.html",
+        "https://eldamo.org/content/words/word-4025342543.html",
+        "https://eldamo.org/content/words/word-956128961.html"
+      ],
+      "rules": [
+        "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+        "[j] was lost after initial velars",
+        "initial nasals vanished before stops"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:104",
+    "branch": "sindarin",
+    "states": [
+      "ŋs",
+      "ɣs",
+      "hs"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3915121695.html",
+      "https://eldamo.org/content/words/word-2810726977.html"
+    ],
+    "original": {
+      "id": "S105",
+      "states": [
+        "ŋs",
+        "ɣs",
+        "hs"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3915121695.html",
+        "https://eldamo.org/content/words/word-2810726977.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3915121695.html",
+        "https://eldamo.org/content/words/word-2810726977.html"
+      ],
+      "rules": [
+        "medial [ŋ] usually became [ɣ]",
+        "[ɣ] became [h] before voiceless consonants"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:105",
+    "branch": "sindarin",
+    "states": [
+      "ŋs",
+      "ɣs",
+      "hs",
+      "ss"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3915121695.html",
+      "https://eldamo.org/content/words/word-2810726977.html",
+      "https://eldamo.org/content/words/word-178282823.html"
+    ],
+    "original": {
+      "id": "S106",
+      "states": [
+        "ŋs",
+        "ɣs",
+        "hs",
+        "ss"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶ → ᴹ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+      "reason": "Строго сопоставимые примеры найдены для 2 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3915121695.html",
+        "https://eldamo.org/content/words/word-2810726977.html",
+        "https://eldamo.org/content/words/word-178282823.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3915121695.html",
+        "https://eldamo.org/content/words/word-2810726977.html",
+        "https://eldamo.org/content/words/word-178282823.html"
+      ],
+      "rules": [
+        "medial [ŋ] usually became [ɣ]",
+        "[ɣ] became [h] before voiceless consonants",
+        "[hs] became [ss]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:106",
+    "branch": "sindarin",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-3214863235.html"
+    ],
+    "original": {
+      "id": "S107",
+      "states": [
+        "ŋw",
+        "ŋgw",
+        "mb"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1270135967.html",
+        "https://eldamo.org/content/words/word-3214863235.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1270135967.html",
+        "https://eldamo.org/content/words/word-3214863235.html"
+      ],
+      "rules": [
+        "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+        "labialized velars became labials"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:107",
+    "branch": "sindarin",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1317326183.html"
+    ],
+    "original": {
+      "id": "S108",
+      "states": [
+        "ŋw",
+        "ŋgw",
+        "mb",
+        "mm"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 2/3",
+      "reason": "Строго сопоставимые примеры найдены для 2 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1270135967.html",
+        "https://eldamo.org/content/words/word-3214863235.html",
+        "https://eldamo.org/content/words/word-1317326183.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1270135967.html",
+        "https://eldamo.org/content/words/word-3214863235.html",
+        "https://eldamo.org/content/words/word-1317326183.html"
+      ],
+      "rules": [
+        "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+        "labialized velars became labials",
+        "[mb], [nd] became [mm], [nn]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:108",
+    "branch": "sindarin",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb",
+      "b"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/3",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "original": {
+      "id": "S109",
+      "states": [
+        "ŋw",
+        "ŋgw",
+        "mb",
+        "b"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/3",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 3 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-1270135967.html",
+        "https://eldamo.org/content/words/word-3214863235.html",
+        "https://eldamo.org/content/words/word-956128961.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1270135967.html",
+        "https://eldamo.org/content/words/word-3214863235.html",
+        "https://eldamo.org/content/words/word-956128961.html"
+      ],
+      "rules": [
+        "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+        "labialized velars became labials",
+        "initial nasals vanished before stops"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:109",
+    "branch": "sindarin",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "original": {
+      "id": "S110",
+      "states": [
+        "ŋŋ",
+        "ŋg",
+        "g"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2849203249.html",
+        "https://eldamo.org/content/words/word-956128961.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2849203249.html",
+        "https://eldamo.org/content/words/word-956128961.html"
+      ],
+      "rules": [
+        "[ŋŋ], [ŋɣ] became [ŋg]",
+        "initial nasals vanished before stops"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:110",
+    "branch": "sindarin",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "original": {
+      "id": "S111",
+      "states": [
+        "ŋŋ",
+        "ŋg",
+        "g"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2849203249.html",
+        "https://eldamo.org/content/words/word-1688730459.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2849203249.html",
+        "https://eldamo.org/content/words/word-1688730459.html"
+      ],
+      "rules": [
+        "[ŋŋ], [ŋɣ] became [ŋg]",
+        "nasals assimilated to following stops and aspirates"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:111",
+    "branch": "sindarin",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-3944232895.html"
+    ],
+    "original": {
+      "id": "S112",
+      "states": [
+        "ŋŋ",
+        "ŋg",
+        "g"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2849203249.html",
+        "https://eldamo.org/content/words/word-3944232895.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2849203249.html",
+        "https://eldamo.org/content/words/word-3944232895.html"
+      ],
+      "rules": [
+        "[ŋŋ], [ŋɣ] became [ŋg]",
+        "nasals assimilated to following stops and aspirates"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:112",
+    "branch": "sindarin",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "original": {
+      "id": "S113",
+      "states": [
+        "ŋɣ",
+        "ŋg",
+        "g"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2849203249.html",
+        "https://eldamo.org/content/words/word-956128961.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2849203249.html",
+        "https://eldamo.org/content/words/word-956128961.html"
+      ],
+      "rules": [
+        "[ŋŋ], [ŋɣ] became [ŋg]",
+        "initial nasals vanished before stops"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:113",
+    "branch": "sindarin",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "original": {
+      "id": "S114",
+      "states": [
+        "ŋɣ",
+        "ŋg",
+        "g"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2849203249.html",
+        "https://eldamo.org/content/words/word-1688730459.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2849203249.html",
+        "https://eldamo.org/content/words/word-1688730459.html"
+      ],
+      "rules": [
+        "[ŋŋ], [ŋɣ] became [ŋg]",
+        "nasals assimilated to following stops and aspirates"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:114",
+    "branch": "sindarin",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-3944232895.html"
+    ],
+    "original": {
+      "id": "S115",
+      "states": [
+        "ŋɣ",
+        "ŋg",
+        "g"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2849203249.html",
+        "https://eldamo.org/content/words/word-3944232895.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2849203249.html",
+        "https://eldamo.org/content/words/word-3944232895.html"
+      ],
+      "rules": [
+        "[ŋŋ], [ŋɣ] became [ŋg]",
+        "nasals assimilated to following stops and aspirates"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:115",
+    "branch": "sindarin",
+    "states": [
+      "ǣ",
+      "ę̄",
+      "ae"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3619603651.html",
+      "https://eldamo.org/content/words/word-3173115217.html"
+    ],
+    "original": {
+      "id": "S116",
+      "states": [
+        "ǣ",
+        "ę̄",
+        "ae"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "machine-audited",
+      "markers": "ON. → N.",
+      "evidence": "Сопоставленные примеры отдельных правил: 1/2",
+      "reason": "Строго сопоставимые примеры найдены для 1 из 2 переходов; этого недостаточно для оценки исторической последовательности.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-3619603651.html",
+        "https://eldamo.org/content/words/word-3173115217.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3619603651.html",
+        "https://eldamo.org/content/words/word-3173115217.html"
+      ],
+      "rules": [
+        "[ǣ], [ai] became [ę̄]",
+        "[ai] became [oe] or [ae]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:116",
+    "branch": "sindarin",
+    "states": [
+      "ǭ",
+      "ou",
+      "au"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "Примеры с общим источником и статьёй; формы: anǭr → anour → anaur",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-4073827619.html",
+      "https://eldamo.org/content/words/word-2902864717.html"
+    ],
+    "original": {
+      "id": "S117",
+      "states": [
+        "ǭ",
+        "ou",
+        "au"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "machine-audited",
+      "markers": "N. → N.",
+      "evidence": "Примеры с общим источником и статьёй; формы: anǭr → anour → anaur",
+      "reason": "Непрерывные примеры с общей словарной статьёй и библиографической ссылкой; хронология и контекст ещё требуют текстологической проверки.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-4073827619.html",
+        "https://eldamo.org/content/words/word-2902864717.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-4073827619.html",
+        "https://eldamo.org/content/words/word-2902864717.html"
+      ],
+      "rules": [
+        "[ǭ] became [ou]",
+        "[ou] became [au]"
+      ]
+    }
+  },
+  {
+    "uid": "sindarin:chain:117",
+    "branch": "sindarin",
+    "states": [
+      "ɣs",
+      "hs",
+      "ss"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "Примеры с общим источником и статьёй; формы: maɣse → mahse → masse",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2810726977.html",
+      "https://eldamo.org/content/words/word-178282823.html"
+    ],
+    "original": {
+      "id": "S118",
+      "states": [
+        "ɣs",
+        "hs",
+        "ss"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "machine-audited",
+      "markers": "ᴹ✶ → ᴹ✶",
+      "evidence": "Примеры с общим источником и статьёй; формы: maɣse → mahse → masse",
+      "reason": "Непрерывные примеры с общей словарной статьёй и библиографической ссылкой; хронология и контекст ещё требуют текстологической проверки.",
+      "action": "Проверить полные заметки к правилам, относительный порядок, окружение и период, прежде чем утверждать историческую последовательность.",
+      "rule_urls": [
+        "https://eldamo.org/content/words/word-2810726977.html",
+        "https://eldamo.org/content/words/word-178282823.html"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2810726977.html",
+        "https://eldamo.org/content/words/word-178282823.html"
+      ],
+      "rules": [
+        "[ɣ] became [h] before voiceless consonants",
+        "[hs] became [ss]"
+      ]
+    }
+  }
+]

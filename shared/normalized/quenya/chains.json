@@ -1,0 +1,6440 @@
+[
+  {
+    "uid": "quenya:chain:0",
+    "branch": "quenya",
+    "states": [
+      "pʰt",
+      "ptʰ",
+      "pt",
+      "ɸt"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-2190887743.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "C1",
+      "states": [
+        "pʰt",
+        "ptʰ",
+        "pt",
+        "ɸt"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless stops after voiceless stops",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-2190887743.html",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "Primitive Elvish → Ancient Quenya → Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:1",
+    "branch": "quenya",
+    "states": [
+      "pʰtʰ",
+      "ptʰ",
+      "pt",
+      "ɸt"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-2190887743.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "C2",
+      "states": [
+        "pʰtʰ",
+        "ptʰ",
+        "pt",
+        "ɸt"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless stops after voiceless stops",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-2190887743.html",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "Primitive Elvish → Ancient Quenya → Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:2",
+    "branch": "quenya",
+    "states": [
+      "ŋ-",
+      "ŋg-",
+      "ŋ-",
+      "ø-"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2123493145.html",
+      "https://eldamo.org/content/words/word-4225848175.html"
+    ],
+    "original": {
+      "id": "C3",
+      "states": [
+        "ŋ-",
+        "ŋg-",
+        "ŋ-",
+        "ø-"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "initial nasals plus stops reduced to nasals",
+        "initial [ŋ] vanishes"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-2123493145.html",
+        "https://eldamo.org/content/words/word-4225848175.html"
+      ],
+      "language": "UNKNOWN → Ancient Quenya → Telerin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:3",
+    "branch": "quenya",
+    "states": [
+      "kʰt",
+      "ktʰ",
+      "kt",
+      "xt"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-798737509.html",
+      "https://eldamo.org/content/words/word-2769500867.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "original": {
+      "id": "C4",
+      "states": [
+        "kʰt",
+        "ktʰ",
+        "kt",
+        "xt"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless stops after voiceless stops",
+        "[pt], [kt] became [ps], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-798737509.html",
+        "https://eldamo.org/content/words/word-2769500867.html",
+        "https://eldamo.org/content/words/word-2701010297.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Ancient Quenya → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:4",
+    "branch": "quenya",
+    "states": [
+      "pʰt",
+      "ptʰ",
+      "pt",
+      "ps"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-798737509.html",
+      "https://eldamo.org/content/words/word-2769500867.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "original": {
+      "id": "C5",
+      "states": [
+        "pʰt",
+        "ptʰ",
+        "pt",
+        "ps"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless stops after voiceless stops",
+        "[pt], [kt] became [ps], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-798737509.html",
+        "https://eldamo.org/content/words/word-2769500867.html",
+        "https://eldamo.org/content/words/word-2701010297.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Ancient Quenya → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:5",
+    "branch": "quenya",
+    "states": [
+      "pʰt",
+      "ptʰ",
+      "pt",
+      "xt"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-798737509.html",
+      "https://eldamo.org/content/words/word-2769500867.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "original": {
+      "id": "C6",
+      "states": [
+        "pʰt",
+        "ptʰ",
+        "pt",
+        "xt"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless stops after voiceless stops",
+        "[pt], [kt] became [ps], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-798737509.html",
+        "https://eldamo.org/content/words/word-2769500867.html",
+        "https://eldamo.org/content/words/word-2701010297.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Ancient Quenya → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:6",
+    "branch": "quenya",
+    "states": [
+      "sb",
+      "zb",
+      "sp",
+      "ps"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2884507077.html",
+      "https://eldamo.org/content/words/word-4145487633.html",
+      "https://eldamo.org/content/words/word-3499874945.html"
+    ],
+    "original": {
+      "id": "C7",
+      "states": [
+        "sb",
+        "zb",
+        "sp",
+        "ps"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "[s] became [z] before voiced stops",
+        "[z] plus voiced stop became unvoiced",
+        "[sp], [sk] became [ps], [ks]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2884507077.html",
+        "https://eldamo.org/content/words/word-4145487633.html",
+        "https://eldamo.org/content/words/word-3499874945.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Ancient Quenya → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:7",
+    "branch": "quenya",
+    "states": [
+      "sg",
+      "zg",
+      "sk",
+      "ks"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2884507077.html",
+      "https://eldamo.org/content/words/word-4145487633.html",
+      "https://eldamo.org/content/words/word-3499874945.html"
+    ],
+    "original": {
+      "id": "C8",
+      "states": [
+        "sg",
+        "zg",
+        "sk",
+        "ks"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "[s] became [z] before voiced stops",
+        "[z] plus voiced stop became unvoiced",
+        "[sp], [sk] became [ps], [ks]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2884507077.html",
+        "https://eldamo.org/content/words/word-4145487633.html",
+        "https://eldamo.org/content/words/word-3499874945.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Ancient Quenya → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:8",
+    "branch": "quenya",
+    "states": [
+      "ŋ",
+      "g",
+      "ɣ",
+      "ø"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-44379183.html",
+      "https://eldamo.org/content/words/word-2772726195.html",
+      "https://eldamo.org/content/words/word-3266317297.html"
+    ],
+    "original": {
+      "id": "C9",
+      "states": [
+        "ŋ",
+        "g",
+        "ɣ",
+        "ø"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[ŋ], [ɣ] became [g]",
+        "voiced stops became spirants except after nasals and liquids",
+        "[ɣ] from [g] vanished"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-44379183.html",
+        "https://eldamo.org/content/words/word-2772726195.html",
+        "https://eldamo.org/content/words/word-3266317297.html"
+      ],
+      "language": "Danian/Ossiriandic → Middle Ancient Quenya → Middle Quenya",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:9",
+    "branch": "quenya",
+    "states": [
+      "ŋ",
+      "g",
+      "ɣ",
+      "ø"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-44379183.html",
+      "https://eldamo.org/content/words/word-2772726195.html",
+      "https://eldamo.org/content/words/word-3657372981.html"
+    ],
+    "original": {
+      "id": "C10",
+      "states": [
+        "ŋ",
+        "g",
+        "ɣ",
+        "ø"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[ŋ], [ɣ] became [g]",
+        "voiced stops became spirants except after nasals and liquids",
+        "[ɣ] vanished"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-44379183.html",
+        "https://eldamo.org/content/words/word-2772726195.html",
+        "https://eldamo.org/content/words/word-3657372981.html"
+      ],
+      "language": "Danian/Ossiriandic → Middle Ancient Quenya → Old Noldorin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:10",
+    "branch": "quenya",
+    "states": [
+      "ɣ",
+      "g",
+      "ɣ",
+      "ø"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-44379183.html",
+      "https://eldamo.org/content/words/word-2772726195.html",
+      "https://eldamo.org/content/words/word-3266317297.html"
+    ],
+    "original": {
+      "id": "C11",
+      "states": [
+        "ɣ",
+        "g",
+        "ɣ",
+        "ø"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[ŋ], [ɣ] became [g]",
+        "voiced stops became spirants except after nasals and liquids",
+        "[ɣ] from [g] vanished"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-44379183.html",
+        "https://eldamo.org/content/words/word-2772726195.html",
+        "https://eldamo.org/content/words/word-3266317297.html"
+      ],
+      "language": "Danian/Ossiriandic → Middle Ancient Quenya → Middle Quenya",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:11",
+    "branch": "quenya",
+    "states": [
+      "ɣ",
+      "g",
+      "ɣ",
+      "ø"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-44379183.html",
+      "https://eldamo.org/content/words/word-2772726195.html",
+      "https://eldamo.org/content/words/word-3657372981.html"
+    ],
+    "original": {
+      "id": "C12",
+      "states": [
+        "ɣ",
+        "g",
+        "ɣ",
+        "ø"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[ŋ], [ɣ] became [g]",
+        "voiced stops became spirants except after nasals and liquids",
+        "[ɣ] vanished"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-44379183.html",
+        "https://eldamo.org/content/words/word-2772726195.html",
+        "https://eldamo.org/content/words/word-3657372981.html"
+      ],
+      "language": "Danian/Ossiriandic → Middle Ancient Quenya → Old Noldorin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:12",
+    "branch": "quenya",
+    "states": [
+      "ae",
+      "ā",
+      "ō"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-3140771935.html"
+    ],
+    "original": {
+      "id": "C13",
+      "states": [
+        "ae",
+        "ā",
+        "ō"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ā] became [ō]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1056240093.html",
+        "https://eldamo.org/content/words/word-3140771935.html"
+      ],
+      "language": "Primitive Elvish → Gnomish",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:13",
+    "branch": "quenya",
+    "states": [
+      "ao",
+      "ā",
+      "ō"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-3140771935.html"
+    ],
+    "original": {
+      "id": "C14",
+      "states": [
+        "ao",
+        "ā",
+        "ō"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[ae], [ao] became [ā]",
+        "[ā] became [ō]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1056240093.html",
+        "https://eldamo.org/content/words/word-3140771935.html"
+      ],
+      "language": "Primitive Elvish → Gnomish",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:14",
+    "branch": "quenya",
+    "states": [
+      "b",
+      "β",
+      "v"
+    ],
+    "era": "late",
+    "grade": "B",
+    "evidence": "aubie → auβie → auvie",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1141570065.html",
+      "https://eldamo.org/content/words/word-14484545.html"
+    ],
+    "original": {
+      "id": "C15",
+      "states": [
+        "b",
+        "β",
+        "v"
+      ],
+      "era": "late",
+      "grade": "B",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "aubie → auβie → auvie",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Спирантизация медиального b не действует после носовых; более позднее β → v зависит от сохранения β и редакции.",
+      "action": "Проверить вокалическое окружение b и редакционную принадлежность примера.",
+      "sources": "✧ PE22/151",
+      "rules": [
+        "voiced stops became spirants except after nasals",
+        "[ɸ], [β] became [f], [v]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1141570065.html",
+        "https://eldamo.org/content/words/word-14484545.html"
+      ],
+      "language": "Ancient Quenya → Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:15",
+    "branch": "quenya",
+    "states": [
+      "bd",
+      "pt",
+      "ɸt"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "labdē → laptē → laɸtē",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1625077395.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "C16",
+      "states": [
+        "bd",
+        "pt",
+        "ɸt"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "labdē → laptē → laɸtē",
+      "reason": "Найденное свидетельство помечено как устаревшее/удалённое; не установлено, устарела ли лишь словоформа или само правило.",
+      "action": "Разделить статус исторического закона и статус конкретного примера.",
+      "sources": "✧ PE19/92",
+      "rules": [
+        "combinations of voiced stops were unvoiced",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1625077395.html",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "Ancient Quenya → Quenya",
+      "previous": "ONLY_OBSOLETE_OR_DELETED_EXAMPLES"
+    }
+  },
+  {
+    "uid": "quenya:chain:16",
+    "branch": "quenya",
+    "states": [
+      "bm",
+      "mm",
+      "m"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2830908887.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "original": {
+      "id": "C17",
+      "states": [
+        "bm",
+        "mm",
+        "m"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "voiced stops became nasals before nasals",
+        "[mm] shortened"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2830908887.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "language": "Ancient Quenya → Sindarin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:17",
+    "branch": "quenya",
+    "states": [
+      "bm",
+      "mb",
+      "mm"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "original": {
+      "id": "C18",
+      "states": [
+        "bm",
+        "mb",
+        "mm"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[bm], [dn] became [mb], [nd]",
+        "[mb], [nd] became [mm], [nn]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3882201769.html",
+        "https://eldamo.org/content/words/word-868023175.html"
+      ],
+      "language": "Primitive Elvish → Sindarin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:18",
+    "branch": "quenya",
+    "states": [
+      "d",
+      "ð",
+      "z"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1141570065.html",
+      "https://eldamo.org/content/words/word-767593015.html"
+    ],
+    "original": {
+      "id": "C19",
+      "states": [
+        "d",
+        "ð",
+        "z"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "voiced stops became spirants except after nasals",
+        "[ð] became [z]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1141570065.html",
+        "https://eldamo.org/content/words/word-767593015.html"
+      ],
+      "language": "Ancient Quenya → Vanyarin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:19",
+    "branch": "quenya",
+    "states": [
+      "g",
+      "ɣ",
+      "ø"
+    ],
+    "era": "late",
+    "grade": "B",
+    "evidence": "agwalda → aɣwalda → awalda",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1141570065.html",
+      "https://eldamo.org/content/words/word-1833409085.html"
+    ],
+    "original": {
+      "id": "C20",
+      "states": [
+        "g",
+        "ɣ",
+        "ø"
+      ],
+      "era": "late",
+      "grade": "B",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "agwalda → aɣwalda → awalda",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Потеря ɣ из g в Quenya описана как обычная, но заметка различает начальную позицию, Parmaquesta и Tarquesta.",
+      "action": "Проверить позицию g в форме и хронологию ослабления/исчезновения.",
+      "sources": "✧ PE17/189",
+      "rules": [
+        "voiced stops became spirants except after nasals",
+        "[ɣ] from [g] vanished"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1141570065.html",
+        "https://eldamo.org/content/words/word-1833409085.html"
+      ],
+      "language": "Ancient Quenya → Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:20",
+    "branch": "quenya",
+    "states": [
+      "gd",
+      "kt",
+      "xt"
+    ],
+    "era": "late",
+    "grade": "C",
+    "evidence": "negdē → nektē → nextē",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1625077395.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "C21",
+      "states": [
+        "gd",
+        "kt",
+        "xt"
+      ],
+      "era": "late",
+      "grade": "C",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "negdē → nektē → nextē",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Заметка о pt/kt → ɸt/xt рассматривает конкурирующие исторические редакции, а также переход pt → ps.",
+      "action": "Разделить варианты OP1/OP2 и установить, к какой именно редакции относится пример.",
+      "sources": "✧ PE19/91",
+      "rules": [
+        "combinations of voiced stops were unvoiced",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1625077395.html",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "Ancient Quenya → Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:21",
+    "branch": "quenya",
+    "states": [
+      "gj",
+      "dj",
+      "dʒ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3703720537.html",
+      "https://eldamo.org/content/words/word-3605637247.html"
+    ],
+    "original": {
+      "id": "C22",
+      "states": [
+        "gj",
+        "dj",
+        "dʒ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "velars were dentalized before [j]",
+        "approximants produced various spirants"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3703720537.html",
+        "https://eldamo.org/content/words/word-3605637247.html"
+      ],
+      "language": "Ancient Quenya → Vanyarin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:22",
+    "branch": "quenya",
+    "states": [
+      "gj",
+      "dj",
+      "dʒ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-3605637247.html"
+    ],
+    "original": {
+      "id": "C23",
+      "states": [
+        "gj",
+        "dj",
+        "dʒ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "approximants produced various spirants"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-3605637247.html"
+      ],
+      "language": "UNKNOWN → Vanyarin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:23",
+    "branch": "quenya",
+    "states": [
+      "gj",
+      "dj",
+      "lj"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-1574644731.html"
+    ],
+    "original": {
+      "id": "C24",
+      "states": [
+        "gj",
+        "dj",
+        "lj"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "[dj] became [lj]"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-1574644731.html"
+      ],
+      "language": "UNKNOWN → Ancient Quenya",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:24",
+    "branch": "quenya",
+    "states": [
+      "gt",
+      "kt",
+      "xt"
+    ],
+    "era": "late",
+    "grade": "C",
+    "evidence": "magta- → makta- → maxta-",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1944249607.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "C25",
+      "states": [
+        "gt",
+        "kt",
+        "xt"
+      ],
+      "era": "late",
+      "grade": "C",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "magta- → makta- → maxta-",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Оглушение g перед t относится к ранним стадиям, но итог kt → xt имеет редакционные альтернативы.",
+      "action": "Сопоставить происхождение группы gt и позднее продолжение kt по одной редакции.",
+      "sources": "✧ PE17/161",
+      "rules": [
+        "voiced stops unvoiced before voiceless consonants",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1944249607.html",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "Primitive Elvish → Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:25",
+    "branch": "quenya",
+    "states": [
+      "kj",
+      "tj",
+      "tʃ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-3605637247.html"
+    ],
+    "original": {
+      "id": "C26",
+      "states": [
+        "kj",
+        "tj",
+        "tʃ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "approximants produced various spirants"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-3605637247.html"
+      ],
+      "language": "UNKNOWN → Vanyarin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:26",
+    "branch": "quenya",
+    "states": [
+      "kn",
+      "kt",
+      "xt"
+    ],
+    "era": "late",
+    "grade": "C",
+    "evidence": "paknā → paktā → paxtā",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3418086257.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "C27",
+      "states": [
+        "kn",
+        "kt",
+        "xt"
+      ],
+      "era": "late",
+      "grade": "C",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "paknā → paktā → paxtā",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Преобразование kn → kt имеет специальные условия после глухих смычных; kt → xt редакционно вариативно.",
+      "action": "Проверить точную ветвь правила и источник примера.",
+      "sources": "✧ PE17/171",
+      "rules": [
+        "[n], [m] became [t], [w] after voiceless stops and aspirates",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3418086257.html",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "Ancient Quenya → Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:27",
+    "branch": "quenya",
+    "states": [
+      "ktʰ",
+      "kt",
+      "xt"
+    ],
+    "era": "late",
+    "grade": "C",
+    "evidence": "naktʰa- → nakta- → naxta-",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2190887743.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "C28",
+      "states": [
+        "ktʰ",
+        "kt",
+        "xt"
+      ],
+      "era": "late",
+      "grade": "C",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "naktʰa- → nakta- → naxta-",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Упрощение придыхания после глухой смычной и последующий переход kt → xt требуют подтверждения относительного порядка.",
+      "action": "Проверить, что в выбранном примере придыхание действительно исчезает до спирантизации.",
+      "sources": "✧ PE17/166",
+      "rules": [
+        "aspirates became voiceless stops after voiceless stops",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2190887743.html",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "Ancient Quenya → Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:28",
+    "branch": "quenya",
+    "states": [
+      "kʰ",
+      "x",
+      "h"
+    ],
+    "era": "late",
+    "grade": "B",
+    "evidence": "nākʰa → naxa → naha",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3262991621.html",
+      "https://eldamo.org/content/words/word-2071843593.html"
+    ],
+    "original": {
+      "id": "C29",
+      "states": [
+        "kʰ",
+        "x",
+        "h"
+      ],
+      "era": "late",
+      "grade": "B",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "nākʰa → naxa → naha",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Заметка прямо относит x → h к позиции вне сочетания xt, с различием начальной и срединной позиции по времени.",
+      "action": "Указать позицию x и ступень PQ/TQ; не распространять на xt.",
+      "sources": "✧ PE17/166",
+      "rules": [
+        "aspirates became voiceless spirants",
+        "[x] became [h] except before [t]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3262991621.html",
+        "https://eldamo.org/content/words/word-2071843593.html"
+      ],
+      "language": "Ancient Quenya → Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:29",
+    "branch": "quenya",
+    "states": [
+      "mm",
+      "mb",
+      "mm"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-4145612709.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "original": {
+      "id": "C30",
+      "states": [
+        "mm",
+        "mb",
+        "mm"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[mm], [nn] became [mb], [nd]",
+        "[mb], [nd] became [mm], [nn]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-4145612709.html",
+        "https://eldamo.org/content/words/word-868023175.html"
+      ],
+      "language": "Vanyarin → Sindarin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:30",
+    "branch": "quenya",
+    "states": [
+      "nn",
+      "nd",
+      "nn"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-4145612709.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "original": {
+      "id": "C31",
+      "states": [
+        "nn",
+        "nd",
+        "nn"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[mm], [nn] became [mb], [nd]",
+        "[mb], [nd] became [mm], [nn]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-4145612709.html",
+        "https://eldamo.org/content/words/word-868023175.html"
+      ],
+      "language": "Vanyarin → Sindarin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:31",
+    "branch": "quenya",
+    "states": [
+      "pm",
+      "pw",
+      "pp"
+    ],
+    "era": "late",
+    "grade": "B",
+    "evidence": "napma → napwa → nappa",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3418086257.html",
+      "https://eldamo.org/content/words/word-182545135.html"
+    ],
+    "original": {
+      "id": "C32",
+      "states": [
+        "pm",
+        "pw",
+        "pp"
+      ],
+      "era": "late",
+      "grade": "B",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "napma → napwa → nappa",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Примечание объясняет pm → pp через краткое промежуточное pʍ; формула pw является условным упрощением.",
+      "action": "Представить уточнённую ветвь pm → pʍ → pp, если она поддержана данной редакцией.",
+      "sources": "✧ VT47/20",
+      "rules": [
+        "[n], [m] became [t], [w] after voiceless stops and aspirates",
+        "[pw] became [pp]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3418086257.html",
+        "https://eldamo.org/content/words/word-182545135.html"
+      ],
+      "language": "Ancient Quenya → Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:32",
+    "branch": "quenya",
+    "states": [
+      "pn",
+      "pt",
+      "ɸt"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3418086257.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "C33",
+      "states": [
+        "pn",
+        "pt",
+        "ɸt"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "[n], [m] became [t], [w] after voiceless stops and aspirates",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3418086257.html",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "Ancient Quenya → Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:33",
+    "branch": "quenya",
+    "states": [
+      "ptʰ",
+      "pt",
+      "ɸt"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2190887743.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "C34",
+      "states": [
+        "ptʰ",
+        "pt",
+        "ɸt"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspirates became voiceless stops after voiceless stops",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2190887743.html",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "Ancient Quenya → Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:34",
+    "branch": "quenya",
+    "states": [
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "era": "late",
+    "grade": "B",
+    "evidence": "rapʰe → raɸe → rafe",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3262991621.html",
+      "https://eldamo.org/content/words/word-14484545.html"
+    ],
+    "original": {
+      "id": "C35",
+      "states": [
+        "pʰ",
+        "ɸ",
+        "f"
+      ],
+      "era": "late",
+      "grade": "B",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "rapʰe → raɸe → rafe",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Заметки фиксируют pʰ → ɸ и затем ɸ → f, но первый переход датируется границей AQ/PQ по-разному в OP1 и OP2.",
+      "action": "Не закреплять первый переход за AQ без оговорки; проверить границу PQ.",
+      "sources": "✧ PE19/89",
+      "rules": [
+        "aspirates became voiceless spirants",
+        "[ɸ], [β] became [f], [v]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3262991621.html",
+        "https://eldamo.org/content/words/word-14484545.html"
+      ],
+      "language": "Ancient Quenya → Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:35",
+    "branch": "quenya",
+    "states": [
+      "pʰt",
+      "ptʰ",
+      "pt"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "original": {
+      "id": "C36",
+      "states": [
+        "pʰt",
+        "ptʰ",
+        "pt"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless stops after voiceless stops"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-2190887743.html"
+      ],
+      "language": "Primitive Elvish → Ancient Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:36",
+    "branch": "quenya",
+    "states": [
+      "pʰtʰ",
+      "ptʰ",
+      "pt"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "original": {
+      "id": "C37",
+      "states": [
+        "pʰtʰ",
+        "ptʰ",
+        "pt"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless stops after voiceless stops"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-2190887743.html"
+      ],
+      "language": "Primitive Elvish → Ancient Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:37",
+    "branch": "quenya",
+    "states": [
+      "pʰw",
+      "ppʰ",
+      "pp"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2859678213.html",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "original": {
+      "id": "C38",
+      "states": [
+        "pʰw",
+        "ppʰ",
+        "pp"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "[pw], [pʰw] became [pp], [pʰp]",
+        "aspirates became voiceless stops after voiceless stops"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2859678213.html",
+        "https://eldamo.org/content/words/word-2190887743.html"
+      ],
+      "language": "Primitive Elvish → Ancient Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:38",
+    "branch": "quenya",
+    "states": [
+      "sd",
+      "zd",
+      "st"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "nisdo → nizdo → nizdo",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-3279729471.html"
+    ],
+    "original": {
+      "id": "C39",
+      "states": [
+        "sd",
+        "zd",
+        "st"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "nisdo → nizdo → nizdo",
+      "reason": "В примерах наблюдается неизменённый или двусмысленно аннотированный переход, который нельзя принимать за подтверждение.",
+      "action": "Сверить отдельные поля исходной/результирующей формы и условия в заметке.",
+      "sources": "✧ VT47/33",
+      "rules": [
+        "[s] became [z] before voiced stops",
+        "[z] plus voiced stop became unvoiced"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-882174441.html",
+        "https://eldamo.org/content/words/word-3279729471.html"
+      ],
+      "language": "Primitive Elvish → Ancient Quenya",
+      "previous": "ANNOTATION_OR_UNCHANGED_FORM_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:39",
+    "branch": "quenya",
+    "states": [
+      "sg",
+      "zg",
+      "ðɣ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-1951748921.html"
+    ],
+    "original": {
+      "id": "C40",
+      "states": [
+        "sg",
+        "zg",
+        "ðɣ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[s] became [z] before voiced stops",
+        "[zb], [zg] became [ðβ], [ðɣ]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-882174441.html",
+        "https://eldamo.org/content/words/word-1951748921.html"
+      ],
+      "language": "Primitive Elvish → Sindarin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:40",
+    "branch": "quenya",
+    "states": [
+      "sj",
+      "zj",
+      "ʒ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-127393503.html",
+      "https://eldamo.org/content/words/word-3605637247.html"
+    ],
+    "original": {
+      "id": "C41",
+      "states": [
+        "sj",
+        "zj",
+        "ʒ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "medial [s] often became [z]",
+        "approximants produced various spirants"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-127393503.html",
+        "https://eldamo.org/content/words/word-3605637247.html"
+      ],
+      "language": "Ancient Quenya → Vanyarin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:41",
+    "branch": "quenya",
+    "states": [
+      "tk",
+      "sk",
+      "ks"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-700934409.html",
+      "https://eldamo.org/content/words/word-2094898289.html"
+    ],
+    "original": {
+      "id": "C42",
+      "states": [
+        "tk",
+        "sk",
+        "ks"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "[tk] became [kk] or [kt] or [sk]",
+        "[sp], [sk] became [ps], [ks]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-700934409.html",
+        "https://eldamo.org/content/words/word-2094898289.html"
+      ],
+      "language": "Primitive Elvish → Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:42",
+    "branch": "quenya",
+    "states": [
+      "tk",
+      "kt",
+      "xt"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-700934409.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "C43",
+      "states": [
+        "tk",
+        "kt",
+        "xt"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "[tk] became [kk] or [kt] or [sk]",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-700934409.html",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "Primitive Elvish → Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:43",
+    "branch": "quenya",
+    "states": [
+      "tʰ",
+      "θ",
+      "s"
+    ],
+    "era": "late",
+    "grade": "B",
+    "evidence": "atʰa- → aθa- → asa-",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3262991621.html",
+      "https://eldamo.org/content/words/word-3491983963.html"
+    ],
+    "original": {
+      "id": "C44",
+      "states": [
+        "tʰ",
+        "θ",
+        "s"
+      ],
+      "era": "late",
+      "grade": "B",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "atʰa- → aθa- → asa-",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; θ → s прямо описан для Ñoldorin Quenya; в Vanyarin θ сохраняется.",
+      "action": "Маркировать конец цепочки как Ñoldorin Quenya, а не обще-квенийский.",
+      "sources": "✧ PE17/148",
+      "rules": [
+        "aspirates became voiceless spirants",
+        "[θ] became [s]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3262991621.html",
+        "https://eldamo.org/content/words/word-3491983963.html"
+      ],
+      "language": "Ancient Quenya → Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:44",
+    "branch": "quenya",
+    "states": [
+      "tʰt",
+      "ttʰ",
+      "tt"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "original": {
+      "id": "C45",
+      "states": [
+        "tʰt",
+        "ttʰ",
+        "tt"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless stops after voiceless stops"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-2190887743.html"
+      ],
+      "language": "Primitive Elvish → Ancient Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:45",
+    "branch": "quenya",
+    "states": [
+      "tʰt",
+      "ttʰ",
+      "θθ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html"
+    ],
+    "original": {
+      "id": "C46",
+      "states": [
+        "tʰt",
+        "ttʰ",
+        "θθ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless spirants"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-883570327.html"
+      ],
+      "language": "Primitive Elvish → Old Sindarin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:46",
+    "branch": "quenya",
+    "states": [
+      "tʰtʰ",
+      "ttʰ",
+      "tt"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "original": {
+      "id": "C47",
+      "states": [
+        "tʰtʰ",
+        "ttʰ",
+        "tt"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless stops after voiceless stops"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-2190887743.html"
+      ],
+      "language": "Primitive Elvish → Ancient Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:47",
+    "branch": "quenya",
+    "states": [
+      "tʰtʰ",
+      "ttʰ",
+      "θθ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html"
+    ],
+    "original": {
+      "id": "C48",
+      "states": [
+        "tʰtʰ",
+        "ttʰ",
+        "θθ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless spirants"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3183451073.html",
+        "https://eldamo.org/content/words/word-883570327.html"
+      ],
+      "language": "Primitive Elvish → Old Sindarin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:48",
+    "branch": "quenya",
+    "states": [
+      "zm",
+      "mm",
+      "m"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-10156157.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "original": {
+      "id": "C49",
+      "states": [
+        "zm",
+        "mm",
+        "m"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[z] assimilated to following [m], [n]",
+        "[mm] shortened"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-10156157.html",
+        "https://eldamo.org/content/words/word-3689144303.html"
+      ],
+      "language": "Ancient Quenya → Sindarin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:49",
+    "branch": "quenya",
+    "states": [
+      "ā",
+      "ǭ",
+      "ā"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-1446209733.html"
+    ],
+    "original": {
+      "id": "C50",
+      "states": [
+        "ā",
+        "ǭ",
+        "ā"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[ā], [au] became [ǭ]",
+        "[ę̄], [ǭ] became [ā]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2858643115.html",
+        "https://eldamo.org/content/words/word-1446209733.html"
+      ],
+      "language": "Old Sindarin → Telerin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:50",
+    "branch": "quenya",
+    "states": [
+      "ā",
+      "ǭ",
+      "ō"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-1363608031.html"
+    ],
+    "original": {
+      "id": "C51",
+      "states": [
+        "ā",
+        "ǭ",
+        "ō"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[ā], [au] became [ǭ]",
+        "[ę̄], [ǭ] became [ē], [ō]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2858643115.html",
+        "https://eldamo.org/content/words/word-1363608031.html"
+      ],
+      "language": "Old Sindarin → Ancient Quenya",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:51",
+    "branch": "quenya",
+    "states": [
+      "ā",
+      "ǭ",
+      "ō"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-1909322629.html"
+    ],
+    "original": {
+      "id": "C52",
+      "states": [
+        "ā",
+        "ǭ",
+        "ō"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[ā], [au] became [ǭ]",
+        "[ā], [ǭ] became [ō]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2858643115.html",
+        "https://eldamo.org/content/words/word-1909322629.html"
+      ],
+      "language": "Old Sindarin → Ilkorin/Doriathrin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:52",
+    "branch": "quenya",
+    "states": [
+      "ŋ-",
+      "ŋg-",
+      "g-"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "original": {
+      "id": "C53",
+      "states": [
+        "ŋ-",
+        "ŋg-",
+        "g-"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "initial nasals usually vanished before stops"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-1688730459.html"
+      ],
+      "language": "UNKNOWN → Ilkorin/Doriathrin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:53",
+    "branch": "quenya",
+    "states": [
+      "ŋ-",
+      "ŋg-",
+      "g-"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "original": {
+      "id": "C54",
+      "states": [
+        "ŋ-",
+        "ŋg-",
+        "g-"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "initial nasals vanished before stops"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-3057844573.html"
+      ],
+      "language": "UNKNOWN → Sindarin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:54",
+    "branch": "quenya",
+    "states": [
+      "ŋ-",
+      "ŋg-",
+      "g-"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-493039001.html"
+    ],
+    "original": {
+      "id": "C55",
+      "states": [
+        "ŋ-",
+        "ŋg-",
+        "g-"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "initial nasalized voiced stops became stops"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-493039001.html"
+      ],
+      "language": "UNKNOWN → Telerin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:55",
+    "branch": "quenya",
+    "states": [
+      "ŋ-",
+      "ŋg-",
+      "ŋ-"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2123493145.html"
+    ],
+    "original": {
+      "id": "C56",
+      "states": [
+        "ŋ-",
+        "ŋg-",
+        "ŋ-"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "initial nasals plus stops reduced to nasals"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-2123493145.html"
+      ],
+      "language": "UNKNOWN → Ancient Quenya",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:56",
+    "branch": "quenya",
+    "states": [
+      "ŋg-",
+      "ŋ-",
+      "g-"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-1228875561.html"
+    ],
+    "original": {
+      "id": "C57",
+      "states": [
+        "ŋg-",
+        "ŋ-",
+        "g-"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "initial [ŋ], [ɣ] became [g]"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-1228875561.html"
+      ],
+      "language": "UNKNOWN → Ilkorin/Doriathrin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:57",
+    "branch": "quenya",
+    "states": [
+      "ŋg-",
+      "ŋ-",
+      "ø-"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2123493145.html",
+      "https://eldamo.org/content/words/word-4225848175.html"
+    ],
+    "original": {
+      "id": "C58",
+      "states": [
+        "ŋg-",
+        "ŋ-",
+        "ø-"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "initial nasals plus stops reduced to nasals",
+        "initial [ŋ] vanishes"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2123493145.html",
+        "https://eldamo.org/content/words/word-4225848175.html"
+      ],
+      "language": "Ancient Quenya → Telerin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:58",
+    "branch": "quenya",
+    "states": [
+      "ŋg-",
+      "ŋ-",
+      "ø-"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-552653835.html"
+    ],
+    "original": {
+      "id": "C59",
+      "states": [
+        "ŋg-",
+        "ŋ-",
+        "ø-"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "initial and intervocalic [ŋ] vanished"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-552653835.html"
+      ],
+      "language": "UNKNOWN → Old Noldorin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:59",
+    "branch": "quenya",
+    "states": [
+      "ŋg-",
+      "ŋ-",
+      "ø-"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-4225848175.html"
+    ],
+    "original": {
+      "id": "C60",
+      "states": [
+        "ŋg-",
+        "ŋ-",
+        "ø-"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "initial [ŋ] vanishes"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-4225848175.html"
+      ],
+      "language": "UNKNOWN → Telerin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:60",
+    "branch": "quenya",
+    "states": [
+      "ŋgj",
+      "ndj",
+      "nj"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3703720537.html",
+      "https://eldamo.org/content/words/word-297797679.html"
+    ],
+    "original": {
+      "id": "C61",
+      "states": [
+        "ŋgj",
+        "ndj",
+        "nj"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "velars were dentalized before [j]",
+        "[d] vanished between [n], [r], [l] and [j]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3703720537.html",
+        "https://eldamo.org/content/words/word-297797679.html"
+      ],
+      "language": "Ancient Quenya → Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:61",
+    "branch": "quenya",
+    "states": [
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "original": {
+      "id": "C62",
+      "states": [
+        "ŋgw",
+        "mb",
+        "mm"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "labialized velars became labials",
+        "[mb], [nd] became [mm], [nn]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-171120983.html",
+        "https://eldamo.org/content/words/word-868023175.html"
+      ],
+      "language": "Ancient Telerin → Sindarin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:62",
+    "branch": "quenya",
+    "states": [
+      "ŋs",
+      "ns",
+      "ss"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-484908271.html",
+      "https://eldamo.org/content/words/word-2591378297.html"
+    ],
+    "original": {
+      "id": "C63",
+      "states": [
+        "ŋs",
+        "ns",
+        "ss"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "[ŋs] became [ns]",
+        "[ns] became [ss]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-484908271.html",
+        "https://eldamo.org/content/words/word-2591378297.html"
+      ],
+      "language": "Primitive Elvish → Ancient Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:63",
+    "branch": "quenya",
+    "states": [
+      "Vp",
+      "Vb",
+      "Vv"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2421096703.html",
+      "https://eldamo.org/content/words/word-3689929017.html"
+    ],
+    "original": {
+      "id": "C64",
+      "states": [
+        "Vp",
+        "Vb",
+        "Vv"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "voiceless stops voiced after vowels",
+        "medial [b] became [v]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2421096703.html",
+        "https://eldamo.org/content/words/word-3689929017.html"
+      ],
+      "language": "Ilkorin/Doriathrin → Danian/Ossiriandic",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:64",
+    "branch": "quenya",
+    "states": [
+      "Vp",
+      "Vb",
+      "Vv"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2421096703.html",
+      "https://eldamo.org/content/words/word-501836955.html"
+    ],
+    "original": {
+      "id": "C65",
+      "states": [
+        "Vp",
+        "Vb",
+        "Vv"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "voiceless stops voiced after vowels",
+        "voiced stops spirantalized after vowels"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2421096703.html",
+        "https://eldamo.org/content/words/word-501836955.html"
+      ],
+      "language": "Ilkorin/Doriathrin → Ilkorin/Doriathrin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:65",
+    "branch": "quenya",
+    "states": [
+      "Vt",
+      "Vd",
+      "Vð"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2421096703.html",
+      "https://eldamo.org/content/words/word-501836955.html"
+    ],
+    "original": {
+      "id": "C66",
+      "states": [
+        "Vt",
+        "Vd",
+        "Vð"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "voiceless stops voiced after vowels",
+        "voiced stops spirantalized after vowels"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2421096703.html",
+        "https://eldamo.org/content/words/word-501836955.html"
+      ],
+      "language": "Ilkorin/Doriathrin → Ilkorin/Doriathrin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:66",
+    "branch": "quenya",
+    "states": [
+      "bd",
+      "pt",
+      "ps"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "labdā → laptā → lapsā",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-654861237.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "original": {
+      "id": "C67",
+      "states": [
+        "bd",
+        "pt",
+        "ps"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "labdā → laptā → lapsā",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; В предварительном извлечении нет развёрнутой заметки для одного или обоих среднепериодных правил.",
+      "action": "Проверить источник PE19/45, особенно pt → ps и датировку.",
+      "sources": "✧ PE19/45",
+      "rules": [
+        "combinations of voiced stops were unvoiced",
+        "[pt], [kt] became [ps], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-654861237.html",
+        "https://eldamo.org/content/words/word-2701010297.html"
+      ],
+      "language": "Middle Ancient Quenya → Middle Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:67",
+    "branch": "quenya",
+    "states": [
+      "bd",
+      "pt",
+      "xt"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-654861237.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "original": {
+      "id": "C68",
+      "states": [
+        "bd",
+        "pt",
+        "xt"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "combinations of voiced stops were unvoiced",
+        "[pt], [kt] became [ps], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-654861237.html",
+        "https://eldamo.org/content/words/word-2701010297.html"
+      ],
+      "language": "Middle Ancient Quenya → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:68",
+    "branch": "quenya",
+    "states": [
+      "bt",
+      "pt",
+      "ps"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "abta- → apta- → apsa-",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2905876955.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "original": {
+      "id": "C69",
+      "states": [
+        "bt",
+        "pt",
+        "ps"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "abta- → apta- → apsa-",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Нет полной извлечённой заметки; формулы относятся к среднему периоду и могут зависеть от согласного окружения.",
+      "action": "Проверить первоисточник и порядок двух законов.",
+      "sources": "✧ PE19/45",
+      "rules": [
+        "voiced stops unvoiced before voiceless consonants",
+        "[pt], [kt] became [ps], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2905876955.html",
+        "https://eldamo.org/content/words/word-2701010297.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:69",
+    "branch": "quenya",
+    "states": [
+      "bt",
+      "pt",
+      "xt"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2905876955.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "original": {
+      "id": "C70",
+      "states": [
+        "bt",
+        "pt",
+        "xt"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "voiced stops unvoiced before voiceless consonants",
+        "[pt], [kt] became [ps], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2905876955.html",
+        "https://eldamo.org/content/words/word-2701010297.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:70",
+    "branch": "quenya",
+    "states": [
+      "dm",
+      "nm",
+      "nw"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "jadmē → janmē → janwē",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1312520143.html",
+      "https://eldamo.org/content/words/word-2886094609.html"
+    ],
+    "original": {
+      "id": "C71",
+      "states": [
+        "dm",
+        "nm",
+        "nw"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "jadmē → janmē → janwē",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Нет развёрнутой извлечённой заметки для двух среднепериодных правил.",
+      "action": "Сопоставить Ety/YAT и обоснование dm → nm → nw.",
+      "sources": "✧ Ety/YAT",
+      "rules": [
+        "voiced stops became nasals before nasals",
+        "[nm], [ŋm] became [nw], [ŋgw]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1312520143.html",
+        "https://eldamo.org/content/words/word-2886094609.html"
+      ],
+      "language": "Middle Ancient Quenya → Middle Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:71",
+    "branch": "quenya",
+    "states": [
+      "g",
+      "ɣ",
+      "ø"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "ga → ɣa → a",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2772726195.html",
+      "https://eldamo.org/content/words/word-3266317297.html"
+    ],
+    "original": {
+      "id": "C72",
+      "states": [
+        "g",
+        "ɣ",
+        "ø"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "ga → ɣa → a",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Нет извлечённого развёрнутого комментария по последовательности g → ɣ → ø.",
+      "action": "Проверить локализацию и окружение g в среднепериодном источнике.",
+      "sources": "✧ PE22/94",
+      "rules": [
+        "voiced stops became spirants except after nasals and liquids",
+        "[ɣ] from [g] vanished"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2772726195.html",
+        "https://eldamo.org/content/words/word-3266317297.html"
+      ],
+      "language": "Middle Ancient Quenya → Middle Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:72",
+    "branch": "quenya",
+    "states": [
+      "g",
+      "ɣ",
+      "ø"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2772726195.html",
+      "https://eldamo.org/content/words/word-3657372981.html"
+    ],
+    "original": {
+      "id": "C73",
+      "states": [
+        "g",
+        "ɣ",
+        "ø"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "voiced stops became spirants except after nasals and liquids",
+        "[ɣ] vanished"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2772726195.html",
+        "https://eldamo.org/content/words/word-3657372981.html"
+      ],
+      "language": "Middle Ancient Quenya → Old Noldorin",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:73",
+    "branch": "quenya",
+    "states": [
+      "gm",
+      "ŋm",
+      "ŋgw"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "nagma → naŋma → naŋgwa",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1312520143.html",
+      "https://eldamo.org/content/words/word-2886094609.html"
+    ],
+    "original": {
+      "id": "C74",
+      "states": [
+        "gm",
+        "ŋm",
+        "ŋgw"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "nagma → naŋma → naŋgwa",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Не хватает развёрнутой заметки к этапам gm → ŋm → ŋgw.",
+      "action": "Проверить Ety/NAK и относительную хронологию.",
+      "sources": "✧ Ety/NAK",
+      "rules": [
+        "voiced stops became nasals before nasals",
+        "[nm], [ŋm] became [nw], [ŋgw]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1312520143.html",
+        "https://eldamo.org/content/words/word-2886094609.html"
+      ],
+      "language": "Middle Ancient Quenya → Middle Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:74",
+    "branch": "quenya",
+    "states": [
+      "gt",
+      "kt",
+      "xt"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2905876955.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "original": {
+      "id": "C75",
+      "states": [
+        "gt",
+        "kt",
+        "xt"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "voiced stops unvoiced before voiceless consonants",
+        "[pt], [kt] became [ps], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2905876955.html",
+        "https://eldamo.org/content/words/word-2701010297.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:75",
+    "branch": "quenya",
+    "states": [
+      "kd",
+      "kt",
+      "xt"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3661438765.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "original": {
+      "id": "C76",
+      "states": [
+        "kd",
+        "kt",
+        "xt"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "voiced stops unvoiced after voiceless stops and aspirates",
+        "[pt], [kt] became [ps], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3661438765.html",
+        "https://eldamo.org/content/words/word-2701010297.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:76",
+    "branch": "quenya",
+    "states": [
+      "ktʰ",
+      "kt",
+      "xt"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2769500867.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "original": {
+      "id": "C77",
+      "states": [
+        "ktʰ",
+        "kt",
+        "xt"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspirates became voiceless stops after voiceless stops",
+        "[pt], [kt] became [ps], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2769500867.html",
+        "https://eldamo.org/content/words/word-2701010297.html"
+      ],
+      "language": "Middle Ancient Quenya → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:77",
+    "branch": "quenya",
+    "states": [
+      "kʰ",
+      "x",
+      "h"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "lakʰe → lakʰe → lahe",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3537093625.html",
+      "https://eldamo.org/content/words/word-2800366809.html"
+    ],
+    "original": {
+      "id": "C78",
+      "states": [
+        "kʰ",
+        "x",
+        "h"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "lakʰe → lakʰe → lahe",
+      "reason": "В примерах наблюдается неизменённый или двусмысленно аннотированный переход, который нельзя принимать за подтверждение.",
+      "action": "Сверить отдельные поля исходной/результирующей формы и условия в заметке.",
+      "sources": "✧ PE22/102",
+      "rules": [
+        "aspirates became voiceless spirants",
+        "[x] became [h] except before [t]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3537093625.html",
+        "https://eldamo.org/content/words/word-2800366809.html"
+      ],
+      "language": "Middle Ancient Quenya → Middle Quenya",
+      "previous": "ANNOTATION_OR_UNCHANGED_FORM_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:78",
+    "branch": "quenya",
+    "states": [
+      "kʰn",
+      "kt",
+      "xt"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "lakʰne → lakte → laxte",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-372953021.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "original": {
+      "id": "C79",
+      "states": [
+        "kʰn",
+        "kt",
+        "xt"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "lakʰne → lakte → laxte",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Не извлечены развёрнутые заметки к kʰn → kt и kt → xt среднепериодной редакции.",
+      "action": "Проверить PE22/103 и необходимость промежуточного звука.",
+      "sources": "✧ PE22/103",
+      "rules": [
+        "[n], [m] became [t], [w] after aspirates",
+        "[pt], [kt] became [ps], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-372953021.html",
+        "https://eldamo.org/content/words/word-2701010297.html"
+      ],
+      "language": "Middle Ancient Quenya → Middle Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:79",
+    "branch": "quenya",
+    "states": [
+      "kʰt",
+      "ktʰ",
+      "kt"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-798737509.html",
+      "https://eldamo.org/content/words/word-2769500867.html"
+    ],
+    "original": {
+      "id": "C80",
+      "states": [
+        "kʰt",
+        "ktʰ",
+        "kt"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless stops after voiceless stops"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-798737509.html",
+        "https://eldamo.org/content/words/word-2769500867.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Ancient Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:80",
+    "branch": "quenya",
+    "states": [
+      "nd-",
+      "d-",
+      "l-"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3944232895.html",
+      "https://eldamo.org/content/words/word-31048751.html"
+    ],
+    "original": {
+      "id": "C81",
+      "states": [
+        "nd-",
+        "d-",
+        "l-"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "initial nasals vanished before stops",
+        "initial [d] became [l]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3944232895.html",
+        "https://eldamo.org/content/words/word-31048751.html"
+      ],
+      "language": "Danian/Ossiriandic → Middle Ancient Quenya",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:81",
+    "branch": "quenya",
+    "states": [
+      "nd-",
+      "d-",
+      "l-"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1688730459.html",
+      "https://eldamo.org/content/words/word-31048751.html"
+    ],
+    "original": {
+      "id": "C82",
+      "states": [
+        "nd-",
+        "d-",
+        "l-"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "initial nasals usually vanished before stops",
+        "initial [d] became [l]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1688730459.html",
+        "https://eldamo.org/content/words/word-31048751.html"
+      ],
+      "language": "Ilkorin/Doriathrin → Middle Ancient Quenya",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:82",
+    "branch": "quenya",
+    "states": [
+      "ptʰ",
+      "pt",
+      "ps"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2769500867.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "original": {
+      "id": "C83",
+      "states": [
+        "ptʰ",
+        "pt",
+        "ps"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspirates became voiceless stops after voiceless stops",
+        "[pt], [kt] became [ps], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2769500867.html",
+        "https://eldamo.org/content/words/word-2701010297.html"
+      ],
+      "language": "Middle Ancient Quenya → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:83",
+    "branch": "quenya",
+    "states": [
+      "ptʰ",
+      "pt",
+      "xt"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2769500867.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "original": {
+      "id": "C84",
+      "states": [
+        "ptʰ",
+        "pt",
+        "xt"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspirates became voiceless stops after voiceless stops",
+        "[pt], [kt] became [ps], [xt]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2769500867.html",
+        "https://eldamo.org/content/words/word-2701010297.html"
+      ],
+      "language": "Middle Ancient Quenya → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:84",
+    "branch": "quenya",
+    "states": [
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "rapʰe → raɸe → rafe",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3537093625.html",
+      "https://eldamo.org/content/words/word-2661449019.html"
+    ],
+    "original": {
+      "id": "C85",
+      "states": [
+        "pʰ",
+        "ɸ",
+        "f"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "rapʰe → raɸe → rafe",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Извлечённых пояснений среднепериодных правил недостаточно для датировки pʰ → ɸ → f.",
+      "action": "Проверить PE22/102 и согласование двух процессов.",
+      "sources": "✧ PE22/102",
+      "rules": [
+        "aspirates became voiceless spirants",
+        "[ɸ], [β] became [f], [v]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3537093625.html",
+        "https://eldamo.org/content/words/word-2661449019.html"
+      ],
+      "language": "Middle Ancient Quenya → Middle Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:85",
+    "branch": "quenya",
+    "states": [
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "pʰaire → ɸaire → faire",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-2661449019.html"
+    ],
+    "original": {
+      "id": "C86",
+      "states": [
+        "pʰ",
+        "ɸ",
+        "f"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "pʰaire → ɸaire → faire",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "✧ Ety/PHAY",
+      "rules": [
+        "aspirates became voiceless spirants",
+        "[ɸ], [β] became [f], [v]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1770347191.html",
+        "https://eldamo.org/content/words/word-2661449019.html"
+      ],
+      "language": "Old Noldorin → Middle Quenya",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:86",
+    "branch": "quenya",
+    "states": [
+      "pʰm",
+      "mpʰ",
+      "ppʰ"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1396728225.html",
+      "https://eldamo.org/content/words/word-2847294287.html"
+    ],
+    "original": {
+      "id": "C87",
+      "states": [
+        "pʰm",
+        "mpʰ",
+        "ppʰ"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "metathesis",
+        "nasals became voiceless stops before aspirates"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1396728225.html",
+        "https://eldamo.org/content/words/word-2847294287.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Ancient Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:87",
+    "branch": "quenya",
+    "states": [
+      "pʰt",
+      "ptʰ",
+      "pt"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-798737509.html",
+      "https://eldamo.org/content/words/word-2769500867.html"
+    ],
+    "original": {
+      "id": "C88",
+      "states": [
+        "pʰt",
+        "ptʰ",
+        "pt"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspiration moved to end of group of stops",
+        "aspirates became voiceless stops after voiceless stops"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-798737509.html",
+        "https://eldamo.org/content/words/word-2769500867.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Ancient Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:88",
+    "branch": "quenya",
+    "states": [
+      "sb",
+      "zb",
+      "sp"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2884507077.html",
+      "https://eldamo.org/content/words/word-4145487633.html"
+    ],
+    "original": {
+      "id": "C89",
+      "states": [
+        "sb",
+        "zb",
+        "sp"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "[s] became [z] before voiced stops",
+        "[z] plus voiced stop became unvoiced"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2884507077.html",
+        "https://eldamo.org/content/words/word-4145487633.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Ancient Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:89",
+    "branch": "quenya",
+    "states": [
+      "sd",
+      "zd",
+      "st"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "esdē → ezdē → estē",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2884507077.html",
+      "https://eldamo.org/content/words/word-4145487633.html"
+    ],
+    "original": {
+      "id": "C90",
+      "states": [
+        "sd",
+        "zd",
+        "st"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "esdē → ezdē → estē",
+      "reason": "Формы стыкуются, но нет единого свидетельства с одной статьёй и библиографической ссылкой на всю линию.",
+      "action": "Проверить историческую совместимость независимых свидетельств.",
+      "sources": "",
+      "rules": [
+        "[s] became [z] before voiced stops",
+        "[z] plus voiced stop became unvoiced"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2884507077.html",
+        "https://eldamo.org/content/words/word-4145487633.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Ancient Quenya",
+      "previous": "FORM_CHAIN_WITHOUT_COMMON_SOURCE_AND_ARTICLE"
+    }
+  },
+  {
+    "uid": "quenya:chain:90",
+    "branch": "quenya",
+    "states": [
+      "sg",
+      "zg",
+      "sk"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "lisge → lizge → liske",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2884507077.html",
+      "https://eldamo.org/content/words/word-4145487633.html"
+    ],
+    "original": {
+      "id": "C91",
+      "states": [
+        "sg",
+        "zg",
+        "sk"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "lisge → lizge → liske",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Отсутствуют развёрнутые заметки по sg → zg → sk; сочетание требует строгого учёта порядка озвончения и оглушения.",
+      "action": "Проверить PE19/51 и фонетическое окружение.",
+      "sources": "✧ PE19/51",
+      "rules": [
+        "[s] became [z] before voiced stops",
+        "[z] plus voiced stop became unvoiced"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2884507077.html",
+        "https://eldamo.org/content/words/word-4145487633.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Ancient Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:91",
+    "branch": "quenya",
+    "states": [
+      "skʰ",
+      "sk",
+      "ks"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-3499874945.html"
+    ],
+    "original": {
+      "id": "C92",
+      "states": [
+        "skʰ",
+        "sk",
+        "ks"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "aspirates became voiceless stops after [s], [h]",
+        "[sp], [sk] became [ps], [ks]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2699949575.html",
+        "https://eldamo.org/content/words/word-3499874945.html"
+      ],
+      "language": "Middle Primitive Elvish → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:92",
+    "branch": "quenya",
+    "states": [
+      "tʰ",
+      "θ",
+      "s"
+    ],
+    "era": "middle",
+    "grade": "C",
+    "evidence": "itʰil → iθil → isil",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3537093625.html",
+      "https://eldamo.org/content/words/word-3006504693.html"
+    ],
+    "original": {
+      "id": "C93",
+      "states": [
+        "tʰ",
+        "θ",
+        "s"
+      ],
+      "era": "middle",
+      "grade": "C",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "itʰil → iθil → isil",
+      "reason": "Полный ряд словоформ с общими ссылками на словарную статью и источник; Среднепериодная θ → s не должна автоматически получать позднее диалектное объяснение; заметки не извлечены.",
+      "action": "Проверить Ety/I² независимо от позднего описания Shibboleth.",
+      "sources": "✧ Ety/I²",
+      "rules": [
+        "aspirates became voiceless spirants",
+        "[θ] became [s]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3537093625.html",
+        "https://eldamo.org/content/words/word-3006504693.html"
+      ],
+      "language": "Middle Ancient Quenya → Middle Quenya",
+      "previous": "COHERENT_EXAMPLES_NEEDS_TEXTUAL_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:93",
+    "branch": "quenya",
+    "states": [
+      "tʰ",
+      "θ",
+      "s"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3124926163.html",
+      "https://eldamo.org/content/words/word-3006504693.html"
+    ],
+    "original": {
+      "id": "C94",
+      "states": [
+        "tʰ",
+        "θ",
+        "s"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "aspirates became voiceless spirants",
+        "[θ] became [s]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3124926163.html",
+        "https://eldamo.org/content/words/word-3006504693.html"
+      ],
+      "language": "Danian/Ossiriandic → Middle Quenya",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:94",
+    "branch": "quenya",
+    "states": [
+      "tʰ",
+      "θ",
+      "s"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "tʰinde → θinde → sinde",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-4030743197.html",
+      "https://eldamo.org/content/words/word-3006504693.html"
+    ],
+    "original": {
+      "id": "C95",
+      "states": [
+        "tʰ",
+        "θ",
+        "s"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "tʰinde → θinde → sinde",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "✧ Ety/THIN",
+      "rules": [
+        "aspirates became voiceless spirants",
+        "[θ] became [s]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-4030743197.html",
+        "https://eldamo.org/content/words/word-3006504693.html"
+      ],
+      "language": "Ilkorin/Doriathrin → Middle Quenya",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:95",
+    "branch": "quenya",
+    "states": [
+      "tʰ",
+      "θ",
+      "s"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "itʰil → iθil → isil",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-3006504693.html"
+    ],
+    "original": {
+      "id": "C96",
+      "states": [
+        "tʰ",
+        "θ",
+        "s"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "itʰil → iθil → isil",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "✧ Ety/I²",
+      "rules": [
+        "aspirates became voiceless spirants",
+        "[θ] became [s]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1770347191.html",
+        "https://eldamo.org/content/words/word-3006504693.html"
+      ],
+      "language": "Old Noldorin → Middle Quenya",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:96",
+    "branch": "quenya",
+    "states": [
+      "zb",
+      "sp",
+      "ps"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-4145487633.html",
+      "https://eldamo.org/content/words/word-3499874945.html"
+    ],
+    "original": {
+      "id": "C97",
+      "states": [
+        "zb",
+        "sp",
+        "ps"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "[z] plus voiced stop became unvoiced",
+        "[sp], [sk] became [ps], [ks]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-4145487633.html",
+        "https://eldamo.org/content/words/word-3499874945.html"
+      ],
+      "language": "Middle Ancient Quenya → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:97",
+    "branch": "quenya",
+    "states": [
+      "zg",
+      "sk",
+      "ks"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-4145487633.html",
+      "https://eldamo.org/content/words/word-3499874945.html"
+    ],
+    "original": {
+      "id": "C98",
+      "states": [
+        "zg",
+        "sk",
+        "ks"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "[z] plus voiced stop became unvoiced",
+        "[sp], [sk] became [ps], [ks]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-4145487633.html",
+        "https://eldamo.org/content/words/word-3499874945.html"
+      ],
+      "language": "Middle Ancient Quenya → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:98",
+    "branch": "quenya",
+    "states": [
+      "ŋ",
+      "g",
+      "ɣ"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-44379183.html",
+      "https://eldamo.org/content/words/word-2772726195.html"
+    ],
+    "original": {
+      "id": "C99",
+      "states": [
+        "ŋ",
+        "g",
+        "ɣ"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[ŋ], [ɣ] became [g]",
+        "voiced stops became spirants except after nasals and liquids"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-44379183.html",
+        "https://eldamo.org/content/words/word-2772726195.html"
+      ],
+      "language": "Danian/Ossiriandic → Middle Ancient Quenya",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:99",
+    "branch": "quenya",
+    "states": [
+      "ŋgj",
+      "ndj",
+      "nj"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3291729015.html",
+      "https://eldamo.org/content/words/word-2488350997.html"
+    ],
+    "original": {
+      "id": "C100",
+      "states": [
+        "ŋgj",
+        "ndj",
+        "nj"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Формулы состыкуются, но непрерывный этимологический ряд не найден. Это отсутствие прямого свидетельства, не опровержение.",
+      "action": "Проверить применимость условий к одному слову, порядок законов и наличие промежуточных форм.",
+      "sources": "",
+      "rules": [
+        "velars were dentalized before [j]",
+        "[d] vanished between [n], [r], [l] and [j]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3291729015.html",
+        "https://eldamo.org/content/words/word-2488350997.html"
+      ],
+      "language": "Middle Ancient Quenya → Middle Quenya",
+      "previous": "NO_CONTINUOUS_WORD_FORMS"
+    }
+  },
+  {
+    "uid": "quenya:chain:100",
+    "branch": "quenya",
+    "states": [
+      "ɣ",
+      "g",
+      "ɣ"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-44379183.html",
+      "https://eldamo.org/content/words/word-2772726195.html"
+    ],
+    "original": {
+      "id": "C101",
+      "states": [
+        "ɣ",
+        "g",
+        "ɣ"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed",
+      "markers": "",
+      "evidence": "",
+      "reason": "Одна или несколько индивидуальных страниц правил относятся к языку вне заданной линии Quenya; необходимо установить, допустимо ли правило в рассматриваемой ветви.",
+      "action": "Прочесть языковую атрибуцию и пояснение каждого правила; не переносить закон из Sindarin/Telerin автоматически.",
+      "sources": "",
+      "rules": [
+        "[ŋ], [ɣ] became [g]",
+        "voiced stops became spirants except after nasals and liquids"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-44379183.html",
+        "https://eldamo.org/content/words/word-2772726195.html"
+      ],
+      "language": "Danian/Ossiriandic → Middle Ancient Quenya",
+      "previous": "LANGUAGE_CONFLICT_REVIEW"
+    }
+  },
+  {
+    "uid": "quenya:chain:101",
+    "branch": "quenya",
+    "states": [
+      "mpʰ",
+      "ppʰ",
+      "pp"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3474357431.html",
+      ""
+    ],
+    "original": {
+      "id": "S8",
+      "states": [
+        "mpʰ",
+        "ppʰ",
+        "pp"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "AQ. → Q.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+      "reason": "Для шагов [2] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "nasals became voiceless stops before aspirates",
+        "[без названия]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3474357431.html",
+        ""
+      ],
+      "language": "aq/p → q",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C87",
+          "shared_edges": 1,
+          "grade": "D"
+        },
+        {
+          "id": "C38",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:102",
+    "branch": "quenya",
+    "states": [
+      "skʰ",
+      "sk",
+      "sx"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 0.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html"
+    ],
+    "original": {
+      "id": "S21",
+      "states": [
+        "skʰ",
+        "sk",
+        "sx"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed_extension",
+      "markers": "ᴹ✶ → ᴹAQ.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 0.",
+      "reason": "Прямые примеры найдены лишь для 1 из 2 шагов (точных совпадений формул: 1); вся цепочка остаётся формальной гипотезой.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "aspirates became voiceless stops after [s], [h]",
+        "Точное правило не сопоставлено с инвентарём"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2699949575.html",
+        "https://eldamo.org/content/words/word-948882833.html"
+      ],
+      "language": "aq;maq/mp;p → ?",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C92",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:103",
+    "branch": "quenya",
+    "states": [
+      "w",
+      "β",
+      "v"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-14484545.html"
+    ],
+    "original": {
+      "id": "S24",
+      "states": [
+        "w",
+        "β",
+        "v"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "AQ. → Q.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+      "reason": "Для шагов [1] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "[ɸ], [β] became [f], [v]"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-14484545.html"
+      ],
+      "language": "? → q/aq;p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C15",
+          "shared_edges": 1,
+          "grade": "B"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:104",
+    "branch": "quenya",
+    "states": [
+      "g",
+      "ɣ",
+      "h"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 0.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1141570065.html",
+      "https://eldamo.org/content/words/word-3274491131.html"
+    ],
+    "original": {
+      "id": "S26",
+      "states": [
+        "g",
+        "ɣ",
+        "h"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed_extension",
+      "markers": "AQ. → Q.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 0.",
+      "reason": "Прямые примеры найдены лишь для 1 из 2 шагов (точных совпадений формул: 1); вся цепочка остаётся формальной гипотезой.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "voiced stops became spirants except after nasals",
+        "Точное правило не сопоставлено с инвентарём"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1141570065.html",
+        "https://eldamo.org/content/words/word-3274491131.html"
+      ],
+      "language": "aq/p → ?",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C99",
+          "shared_edges": 1,
+          "grade": "U"
+        },
+        {
+          "id": "C9",
+          "shared_edges": 1,
+          "grade": "U"
+        },
+        {
+          "id": "C73",
+          "shared_edges": 1,
+          "grade": "U"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:105",
+    "branch": "quenya",
+    "states": [
+      "zb",
+      "sp",
+      "ps"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "Переходов: 2; с примерами: 2; с точной формулой: 1; шагов без страницы правила: 0.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3279729471.html",
+      "https://eldamo.org/content/words/word-2094898289.html"
+    ],
+    "original": {
+      "id": "S28",
+      "states": [
+        "zb",
+        "sp",
+        "ps"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed_extension",
+      "markers": "AQ. → Q.",
+      "evidence": "Переходов: 2; с примерами: 2; с точной формулой: 1; шагов без страницы правила: 0.",
+      "reason": "Прямые примеры найдены лишь для 2 из 2 шагов (точных совпадений формул: 1); вся цепочка остаётся формальной гипотезой.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[z] plus voiced stop became unvoiced",
+        "[sp], [sk] became [ps], [ks]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3279729471.html",
+        "https://eldamo.org/content/words/word-2094898289.html"
+      ],
+      "language": "aq/p → q/aq;p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "2",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C97",
+          "shared_edges": 2,
+          "grade": "D"
+        },
+        {
+          "id": "C7",
+          "shared_edges": 2,
+          "grade": "D"
+        },
+        {
+          "id": "C89",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:106",
+    "branch": "quenya",
+    "states": [
+      "zg",
+      "sk",
+      "ks"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "Переходов: 2; с примерами: 2; с точной формулой: 1; шагов без страницы правила: 0.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-3279729471.html",
+      "https://eldamo.org/content/words/word-2094898289.html"
+    ],
+    "original": {
+      "id": "S29",
+      "states": [
+        "zg",
+        "sk",
+        "ks"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed_extension",
+      "markers": "AQ. → Q.",
+      "evidence": "Переходов: 2; с примерами: 2; с точной формулой: 1; шагов без страницы правила: 0.",
+      "reason": "Прямые примеры найдены лишь для 2 из 2 шагов (точных совпадений формул: 1); вся цепочка остаётся формальной гипотезой.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[z] plus voiced stop became unvoiced",
+        "[sp], [sk] became [ps], [ks]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-3279729471.html",
+        "https://eldamo.org/content/words/word-2094898289.html"
+      ],
+      "language": "aq/p → q/aq;p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "2",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C98",
+          "shared_edges": 2,
+          "grade": "D"
+        },
+        {
+          "id": "C8",
+          "shared_edges": 2,
+          "grade": "D"
+        },
+        {
+          "id": "C92",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:107",
+    "branch": "quenya",
+    "states": [
+      "gŋ",
+      "ŋŋ",
+      "ŋg"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 0.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2830908887.html",
+      "https://eldamo.org/content/words/word-447633467.html"
+    ],
+    "original": {
+      "id": "S35",
+      "states": [
+        "gŋ",
+        "ŋŋ",
+        "ŋg"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed_extension",
+      "markers": "AQ. → Q.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 0.",
+      "reason": "Прямые примеры найдены лишь для 1 из 2 шагов (точных совпадений формул: 1); вся цепочка остаётся формальной гипотезой.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "voiced stops became nasals before nasals",
+        "Точное правило не сопоставлено с инвентарём"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2830908887.html",
+        "https://eldamo.org/content/words/word-447633467.html"
+      ],
+      "language": "aq/p → ?",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": []
+    }
+  },
+  {
+    "uid": "quenya:chain:108",
+    "branch": "quenya",
+    "states": [
+      "bt",
+      "pt",
+      "ɸt"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "S41",
+      "states": [
+        "bt",
+        "pt",
+        "ɸt"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → Q.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+      "reason": "Для шагов [1] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "p → q/aq",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C70",
+          "shared_edges": 1,
+          "grade": "D"
+        },
+        {
+          "id": "C69",
+          "shared_edges": 1,
+          "grade": "C"
+        },
+        {
+          "id": "C34",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:109",
+    "branch": "quenya",
+    "states": [
+      "bpʰ",
+      "ppʰ",
+      "pp"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 2.",
+    "rule_urls": [
+      "",
+      ""
+    ],
+    "original": {
+      "id": "S42",
+      "states": [
+        "bpʰ",
+        "ppʰ",
+        "pp"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → Q.",
+      "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 2.",
+      "reason": "Для шагов [1, 2] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "[без названия]"
+      ],
+      "urls": [
+        "",
+        ""
+      ],
+      "language": "? → q",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "0",
+      "exact": "0",
+      "related_prior": [
+        {
+          "id": "C38",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:110",
+    "branch": "quenya",
+    "states": [
+      "bpʰ",
+      "ppʰ",
+      "pp"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "original": {
+      "id": "S43",
+      "states": [
+        "bpʰ",
+        "ppʰ",
+        "pp"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → AQ.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+      "reason": "Для шагов [1] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "aspirates became voiceless stops after voiceless stops"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-2190887743.html"
+      ],
+      "language": "? → aq/p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C38",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:111",
+    "branch": "quenya",
+    "states": [
+      "btʰ",
+      "ptʰ",
+      "pt"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 1.",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "original": {
+      "id": "S44",
+      "states": [
+        "btʰ",
+        "ptʰ",
+        "pt"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → AQ.",
+      "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 1.",
+      "reason": "Для шагов [1] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "aspirates became voiceless stops after voiceless stops"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-2190887743.html"
+      ],
+      "language": "? → aq/p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "0",
+      "exact": "0",
+      "related_prior": [
+        {
+          "id": "C88",
+          "shared_edges": 1,
+          "grade": "D"
+        },
+        {
+          "id": "C84",
+          "shared_edges": 1,
+          "grade": "D"
+        },
+        {
+          "id": "C83",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:112",
+    "branch": "quenya",
+    "states": [
+      "btʰ",
+      "ptʰ",
+      "pt",
+      "ɸt"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 3; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2190887743.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "S45",
+      "states": [
+        "btʰ",
+        "ptʰ",
+        "pt",
+        "ɸt"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → AQ. → Q.",
+      "evidence": "Переходов: 3; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+      "reason": "Для шагов [1] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "aspirates became voiceless stops after voiceless stops",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-2190887743.html",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "? → aq/p → q/aq",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C34",
+          "shared_edges": 2,
+          "grade": "D"
+        },
+        {
+          "id": "C2",
+          "shared_edges": 2,
+          "grade": "D"
+        },
+        {
+          "id": "C1",
+          "shared_edges": 2,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:113",
+    "branch": "quenya",
+    "states": [
+      "pp",
+      "ppʰ",
+      "pp"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 2.",
+    "rule_urls": [
+      "",
+      ""
+    ],
+    "original": {
+      "id": "S46",
+      "states": [
+        "pp",
+        "ppʰ",
+        "pp"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → Q.",
+      "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 2.",
+      "reason": "Последовательность возвращается к ранее встречавшемуся состоянию; необходимо подтвердить разные контексты/исторические ступени, иначе возможно ложное соединение.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "[без названия]"
+      ],
+      "urls": [
+        "",
+        ""
+      ],
+      "language": "p → q",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "0",
+      "exact": "0",
+      "related_prior": [
+        {
+          "id": "C38",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:114",
+    "branch": "quenya",
+    "states": [
+      "pp",
+      "ppʰ",
+      "pp"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "original": {
+      "id": "S47",
+      "states": [
+        "pp",
+        "ppʰ",
+        "pp"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → AQ.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+      "reason": "Последовательность возвращается к ранее встречавшемуся состоянию; необходимо подтвердить разные контексты/исторические ступени, иначе возможно ложное соединение.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "aspirates became voiceless stops after voiceless stops"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-2190887743.html"
+      ],
+      "language": "p → aq/p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C38",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:115",
+    "branch": "quenya",
+    "states": [
+      "tp",
+      "tpʰ",
+      "tp"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 2.",
+    "rule_urls": [
+      "",
+      ""
+    ],
+    "original": {
+      "id": "S48",
+      "states": [
+        "tp",
+        "tpʰ",
+        "tp"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → Q.",
+      "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 2.",
+      "reason": "Последовательность возвращается к ранее встречавшемуся состоянию; необходимо подтвердить разные контексты/исторические ступени, иначе возможно ложное соединение.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "[без названия]"
+      ],
+      "urls": [
+        "",
+        ""
+      ],
+      "language": "p → q",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "0",
+      "exact": "0",
+      "related_prior": []
+    }
+  },
+  {
+    "uid": "quenya:chain:116",
+    "branch": "quenya",
+    "states": [
+      "kp",
+      "kpʰ",
+      "kp"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 2.",
+    "rule_urls": [
+      "",
+      ""
+    ],
+    "original": {
+      "id": "S49",
+      "states": [
+        "kp",
+        "kpʰ",
+        "kp"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → Q.",
+      "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 2.",
+      "reason": "Последовательность возвращается к ранее встречавшемуся состоянию; необходимо подтвердить разные контексты/исторические ступени, иначе возможно ложное соединение.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "[без названия]"
+      ],
+      "urls": [
+        "",
+        ""
+      ],
+      "language": "p → q",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "0",
+      "exact": "0",
+      "related_prior": []
+    }
+  },
+  {
+    "uid": "quenya:chain:117",
+    "branch": "quenya",
+    "states": [
+      "mp",
+      "mpʰ",
+      "ppʰ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-3474357431.html"
+    ],
+    "original": {
+      "id": "S50",
+      "states": [
+        "mp",
+        "mpʰ",
+        "ppʰ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → AQ.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+      "reason": "Для шагов [1] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "nasals became voiceless stops before aspirates"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-3474357431.html"
+      ],
+      "language": "p → aq/p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C87",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:118",
+    "branch": "quenya",
+    "states": [
+      "mp",
+      "mpʰ",
+      "ppʰ",
+      "pp"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 3; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 2.",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-3474357431.html",
+      ""
+    ],
+    "original": {
+      "id": "S51",
+      "states": [
+        "mp",
+        "mpʰ",
+        "ppʰ",
+        "pp"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → AQ. → Q.",
+      "evidence": "Переходов: 3; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 2.",
+      "reason": "Для шагов [1, 3] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "nasals became voiceless stops before aspirates",
+        "[без названия]"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-3474357431.html",
+        ""
+      ],
+      "language": "p → aq/p → q",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C87",
+          "shared_edges": 1,
+          "grade": "D"
+        },
+        {
+          "id": "C38",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:119",
+    "branch": "quenya",
+    "states": [
+      "p",
+      "pʰ",
+      "ɸ"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 0.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-3537093625.html"
+    ],
+    "original": {
+      "id": "S57",
+      "states": [
+        "p",
+        "pʰ",
+        "ɸ"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed_extension",
+      "markers": "ᴹ✶ → ᴹAQ.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 0.",
+      "reason": "Прямые примеры найдены лишь для 1 из 2 шагов (точных совпадений формул: 1); вся цепочка остаётся формальной гипотезой.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "aspirates became voiceless spirants"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2684793511.html",
+        "https://eldamo.org/content/words/word-3537093625.html"
+      ],
+      "language": "? → aq;maq;mq;q/mp;p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C86",
+          "shared_edges": 1,
+          "grade": "U"
+        },
+        {
+          "id": "C85",
+          "shared_edges": 1,
+          "grade": "C"
+        },
+        {
+          "id": "C35",
+          "shared_edges": 1,
+          "grade": "B"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:120",
+    "branch": "quenya",
+    "states": [
+      "p",
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "era": "middle",
+    "grade": "D",
+    "evidence": "Переходов: 3; с примерами: 2; с точной формулой: 2; шагов без страницы правила: 0.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-3537093625.html",
+      "https://eldamo.org/content/words/word-2661449019.html"
+    ],
+    "original": {
+      "id": "S58",
+      "states": [
+        "p",
+        "pʰ",
+        "ɸ",
+        "f"
+      ],
+      "era": "middle",
+      "grade": "D",
+      "kind": "assessed_extension",
+      "markers": "ᴹ✶ → ᴹAQ. → ᴹQ.",
+      "evidence": "Переходов: 3; с примерами: 2; с точной формулой: 2; шагов без страницы правила: 0.",
+      "reason": "Прямые примеры найдены лишь для 2 из 3 шагов (точных совпадений формул: 2); вся цепочка остаётся формальной гипотезой.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "aspirates became voiceless spirants",
+        "[ɸ], [β] became [f], [v]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2684793511.html",
+        "https://eldamo.org/content/words/word-3537093625.html",
+        "https://eldamo.org/content/words/word-2661449019.html"
+      ],
+      "language": "? → aq;maq;mq;q/mp;p → mq;q/aq;maq",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "2",
+      "exact": "2",
+      "related_prior": [
+        {
+          "id": "C86",
+          "shared_edges": 2,
+          "grade": "U"
+        },
+        {
+          "id": "C85",
+          "shared_edges": 2,
+          "grade": "C"
+        },
+        {
+          "id": "C35",
+          "shared_edges": 2,
+          "grade": "B"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:121",
+    "branch": "quenya",
+    "states": [
+      "p",
+      "pʰ",
+      "f"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 0.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-3124926163.html"
+    ],
+    "original": {
+      "id": "S59",
+      "states": [
+        "p",
+        "pʰ",
+        "f"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "ᴹ✶ → ᴹAQ.",
+      "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 0.",
+      "reason": "Не найдено применимого примера ни для одного шага; недостаточно данных для содержательной оценки всей цепочки.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "aspirates became voiceless spirants"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2684793511.html",
+        "https://eldamo.org/content/words/word-3124926163.html"
+      ],
+      "language": "? → mp;p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "0",
+      "exact": "0",
+      "related_prior": []
+    }
+  },
+  {
+    "uid": "quenya:chain:122",
+    "branch": "quenya",
+    "states": [
+      "p",
+      "pʰ",
+      "f"
+    ],
+    "era": "middle",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 0.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-4030743197.html"
+    ],
+    "original": {
+      "id": "S60",
+      "states": [
+        "p",
+        "pʰ",
+        "f"
+      ],
+      "era": "middle",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "ᴹ✶ → ᴹAQ.",
+      "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 0.",
+      "reason": "Не найдено применимого примера ни для одного шага; недостаточно данных для содержательной оценки всей цепочки.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "aspirates became voiceless spirants"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-2684793511.html",
+        "https://eldamo.org/content/words/word-4030743197.html"
+      ],
+      "language": "? → mp;p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "0",
+      "exact": "0",
+      "related_prior": []
+    }
+  },
+  {
+    "uid": "quenya:chain:123",
+    "branch": "quenya",
+    "states": [
+      "pd",
+      "pt",
+      "ɸt"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "S61",
+      "states": [
+        "pd",
+        "pt",
+        "ɸt"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "AQ. → Q.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+      "reason": "Для шагов [1] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "p → q/aq",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C34",
+          "shared_edges": 1,
+          "grade": "D"
+        },
+        {
+          "id": "C33",
+          "shared_edges": 1,
+          "grade": "D"
+        },
+        {
+          "id": "C2",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:124",
+    "branch": "quenya",
+    "states": [
+      "kd",
+      "kt",
+      "xt"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "S62",
+      "states": [
+        "kd",
+        "kt",
+        "xt"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "AQ. → Q.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+      "reason": "Для шагов [1] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "p → q/aq",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C76",
+          "shared_edges": 2,
+          "grade": "D"
+        },
+        {
+          "id": "C79",
+          "shared_edges": 1,
+          "grade": "C"
+        },
+        {
+          "id": "C77",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:125",
+    "branch": "quenya",
+    "states": [
+      "dpʰ",
+      "tpʰ",
+      "tp"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 2.",
+    "rule_urls": [
+      "",
+      ""
+    ],
+    "original": {
+      "id": "S63",
+      "states": [
+        "dpʰ",
+        "tpʰ",
+        "tp"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "AQ. → Q.",
+      "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 2.",
+      "reason": "Для шагов [1, 2] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "[без названия]"
+      ],
+      "urls": [
+        "",
+        ""
+      ],
+      "language": "? → q",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "0",
+      "exact": "0",
+      "related_prior": []
+    }
+  },
+  {
+    "uid": "quenya:chain:126",
+    "branch": "quenya",
+    "states": [
+      "dpʰ",
+      "tpʰ",
+      "tp"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 2.",
+    "rule_urls": [
+      "",
+      ""
+    ],
+    "original": {
+      "id": "S68",
+      "states": [
+        "dpʰ",
+        "tpʰ",
+        "tp"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → Q.",
+      "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 2.",
+      "reason": "Для шагов [1, 2] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "[без названия]"
+      ],
+      "urls": [
+        "",
+        ""
+      ],
+      "language": "? → q",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "0",
+      "exact": "0",
+      "related_prior": []
+    }
+  },
+  {
+    "uid": "quenya:chain:127",
+    "branch": "quenya",
+    "states": [
+      "dtʰ",
+      "ttʰ",
+      "tt"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "original": {
+      "id": "S69",
+      "states": [
+        "dtʰ",
+        "ttʰ",
+        "tt"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → AQ.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+      "reason": "Для шагов [1] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "aspirates became voiceless stops after voiceless stops"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-2190887743.html"
+      ],
+      "language": "? → aq;q/p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C47",
+          "shared_edges": 1,
+          "grade": "D"
+        },
+        {
+          "id": "C45",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:128",
+    "branch": "quenya",
+    "states": [
+      "dtʰ",
+      "ttʰ",
+      "θθ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-883570327.html"
+    ],
+    "original": {
+      "id": "S70",
+      "states": [
+        "dtʰ",
+        "ttʰ",
+        "θθ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → AQ.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+      "reason": "Для шагов [1] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "aspirates became voiceless spirants"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-883570327.html"
+      ],
+      "language": "? → p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C48",
+          "shared_edges": 1,
+          "grade": "U"
+        },
+        {
+          "id": "C46",
+          "shared_edges": 1,
+          "grade": "U"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:129",
+    "branch": "quenya",
+    "states": [
+      "pd",
+      "pt",
+      "ɸt"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "S71",
+      "states": [
+        "pd",
+        "pt",
+        "ɸt"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → Q.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+      "reason": "Для шагов [1] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "p → q/aq",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C34",
+          "shared_edges": 1,
+          "grade": "D"
+        },
+        {
+          "id": "C33",
+          "shared_edges": 1,
+          "grade": "D"
+        },
+        {
+          "id": "C2",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:130",
+    "branch": "quenya",
+    "states": [
+      "kd",
+      "kt",
+      "xt"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "S72",
+      "states": [
+        "kd",
+        "kt",
+        "xt"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → Q.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+      "reason": "Для шагов [1] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "p → q/aq",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C76",
+          "shared_edges": 2,
+          "grade": "D"
+        },
+        {
+          "id": "C79",
+          "shared_edges": 1,
+          "grade": "C"
+        },
+        {
+          "id": "C77",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:131",
+    "branch": "quenya",
+    "states": [
+      "bt",
+      "pt",
+      "ɸt"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+    "rule_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "original": {
+      "id": "S89",
+      "states": [
+        "bt",
+        "pt",
+        "ɸt"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "AQ. → Q.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 1; шагов без страницы правила: 1.",
+      "reason": "Для шагов [1] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[без названия]",
+        "[pt], [kt] became [ɸt], [xt]"
+      ],
+      "urls": [
+        "",
+        "https://eldamo.org/content/words/word-2265073101.html"
+      ],
+      "language": "p → q/aq",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C70",
+          "shared_edges": 1,
+          "grade": "D"
+        },
+        {
+          "id": "C69",
+          "shared_edges": 1,
+          "grade": "C"
+        },
+        {
+          "id": "C34",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:132",
+    "branch": "quenya",
+    "states": [
+      "bpʰ",
+      "ppʰ",
+      "pp"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 2.",
+    "rule_urls": [
+      "",
+      ""
+    ],
+    "original": {
+      "id": "S90",
+      "states": [
+        "bpʰ",
+        "ppʰ",
+        "pp"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "AQ. → Q.",
+      "evidence": "Переходов: 2; с примерами: 0; с точной формулой: 0; шагов без страницы правила: 2.",
+      "reason": "Для шагов [1, 2] нет ссылки на индивидуальную страницу правила; невозможно проверить языковую и контекстную атрибуцию каждого перехода.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "[без названия]"
+      ],
+      "urls": [
+        "",
+        ""
+      ],
+      "language": "? → q",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "0",
+      "exact": "0",
+      "related_prior": [
+        {
+          "id": "C38",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:133",
+    "branch": "quenya",
+    "states": [
+      "ɣ",
+      "g",
+      "ɣ"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 2; с примерами: 2; с точной формулой: 2; шагов без страницы правила: 0.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1228875561.html",
+      "https://eldamo.org/content/words/word-1141570065.html"
+    ],
+    "original": {
+      "id": "S97",
+      "states": [
+        "ɣ",
+        "g",
+        "ɣ"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → AQ.",
+      "evidence": "Переходов: 2; с примерами: 2; с точной формулой: 2; шагов без страницы правила: 0.",
+      "reason": "Последовательность возвращается к ранее встречавшемуся состоянию; необходимо подтвердить разные контексты/исторические ступени, иначе возможно ложное соединение.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "voiced stops became spirants except after nasals"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1228875561.html",
+        "https://eldamo.org/content/words/word-1141570065.html"
+      ],
+      "language": "? → aq/p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "2",
+      "exact": "2",
+      "related_prior": [
+        {
+          "id": "C12",
+          "shared_edges": 2,
+          "grade": "U"
+        },
+        {
+          "id": "C11",
+          "shared_edges": 2,
+          "grade": "U"
+        },
+        {
+          "id": "C101",
+          "shared_edges": 2,
+          "grade": "U"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:134",
+    "branch": "quenya",
+    "states": [
+      "ɣ",
+      "g",
+      "ɣ",
+      "h"
+    ],
+    "era": "late",
+    "grade": "U",
+    "evidence": "Переходов: 3; с примерами: 2; с точной формулой: 2; шагов без страницы правила: 0.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-1228875561.html",
+      "https://eldamo.org/content/words/word-1141570065.html",
+      "https://eldamo.org/content/words/word-3274491131.html"
+    ],
+    "original": {
+      "id": "S98",
+      "states": [
+        "ɣ",
+        "g",
+        "ɣ",
+        "h"
+      ],
+      "era": "late",
+      "grade": "U",
+      "kind": "assessed_extension",
+      "markers": "✶ → AQ. → Q.",
+      "evidence": "Переходов: 3; с примерами: 2; с точной формулой: 2; шагов без страницы правила: 0.",
+      "reason": "Последовательность возвращается к ранее встречавшемуся состоянию; необходимо подтвердить разные контексты/исторические ступени, иначе возможно ложное соединение.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "Точное правило не сопоставлено с инвентарём",
+        "voiced stops became spirants except after nasals",
+        "Точное правило не сопоставлено с инвентарём"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-1228875561.html",
+        "https://eldamo.org/content/words/word-1141570065.html",
+        "https://eldamo.org/content/words/word-3274491131.html"
+      ],
+      "language": "? → aq/p → ?",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "2",
+      "exact": "2",
+      "related_prior": [
+        {
+          "id": "C12",
+          "shared_edges": 2,
+          "grade": "U"
+        },
+        {
+          "id": "C11",
+          "shared_edges": 2,
+          "grade": "U"
+        },
+        {
+          "id": "C101",
+          "shared_edges": 2,
+          "grade": "U"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:135",
+    "branch": "quenya",
+    "states": [
+      "sb",
+      "zb",
+      "sp"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 0; шагов без страницы правила: 0.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-3279729471.html"
+    ],
+    "original": {
+      "id": "S102",
+      "states": [
+        "sb",
+        "zb",
+        "sp"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed_extension",
+      "markers": "✶ → AQ.",
+      "evidence": "Переходов: 2; с примерами: 1; с точной формулой: 0; шагов без страницы правила: 0.",
+      "reason": "Прямые примеры найдены лишь для 1 из 2 шагов (точных совпадений формул: 0); вся цепочка остаётся формальной гипотезой.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[s] became [z] before voiced stops",
+        "[z] plus voiced stop became unvoiced"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-882174441.html",
+        "https://eldamo.org/content/words/word-3279729471.html"
+      ],
+      "language": "p → aq/p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "1",
+      "exact": "0",
+      "related_prior": [
+        {
+          "id": "C89",
+          "shared_edges": 2,
+          "grade": "D"
+        },
+        {
+          "id": "C7",
+          "shared_edges": 2,
+          "grade": "D"
+        },
+        {
+          "id": "C97",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:136",
+    "branch": "quenya",
+    "states": [
+      "sb",
+      "zb",
+      "sp",
+      "ps"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "Переходов: 3; с примерами: 2; с точной формулой: 1; шагов без страницы правила: 0.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-3279729471.html",
+      "https://eldamo.org/content/words/word-2094898289.html"
+    ],
+    "original": {
+      "id": "S103",
+      "states": [
+        "sb",
+        "zb",
+        "sp",
+        "ps"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed_extension",
+      "markers": "✶ → AQ. → Q.",
+      "evidence": "Переходов: 3; с примерами: 2; с точной формулой: 1; шагов без страницы правила: 0.",
+      "reason": "Прямые примеры найдены лишь для 2 из 3 шагов (точных совпадений формул: 1); вся цепочка остаётся формальной гипотезой.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[s] became [z] before voiced stops",
+        "[z] plus voiced stop became unvoiced",
+        "[sp], [sk] became [ps], [ks]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-882174441.html",
+        "https://eldamo.org/content/words/word-3279729471.html",
+        "https://eldamo.org/content/words/word-2094898289.html"
+      ],
+      "language": "p → aq/p → q/aq;p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "2",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C7",
+          "shared_edges": 3,
+          "grade": "D"
+        },
+        {
+          "id": "C97",
+          "shared_edges": 2,
+          "grade": "D"
+        },
+        {
+          "id": "C89",
+          "shared_edges": 2,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:137",
+    "branch": "quenya",
+    "states": [
+      "sg",
+      "zg",
+      "sk"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "Переходов: 2; с примерами: 2; с точной формулой: 1; шагов без страницы правила: 0.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-3279729471.html"
+    ],
+    "original": {
+      "id": "S104",
+      "states": [
+        "sg",
+        "zg",
+        "sk"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed_extension",
+      "markers": "✶ → AQ.",
+      "evidence": "Переходов: 2; с примерами: 2; с точной формулой: 1; шагов без страницы правила: 0.",
+      "reason": "Прямые примеры найдены лишь для 2 из 2 шагов (точных совпадений формул: 1); вся цепочка остаётся формальной гипотезой.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[s] became [z] before voiced stops",
+        "[z] plus voiced stop became unvoiced"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-882174441.html",
+        "https://eldamo.org/content/words/word-3279729471.html"
+      ],
+      "language": "p → aq/p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "2",
+      "exact": "1",
+      "related_prior": [
+        {
+          "id": "C91",
+          "shared_edges": 2,
+          "grade": "C"
+        },
+        {
+          "id": "C8",
+          "shared_edges": 2,
+          "grade": "D"
+        },
+        {
+          "id": "C98",
+          "shared_edges": 1,
+          "grade": "D"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "quenya:chain:138",
+    "branch": "quenya",
+    "states": [
+      "sg",
+      "zg",
+      "sk",
+      "ks"
+    ],
+    "era": "late",
+    "grade": "D",
+    "evidence": "Переходов: 3; с примерами: 3; с точной формулой: 2; шагов без страницы правила: 0.",
+    "rule_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-3279729471.html",
+      "https://eldamo.org/content/words/word-2094898289.html"
+    ],
+    "original": {
+      "id": "S105",
+      "states": [
+        "sg",
+        "zg",
+        "sk",
+        "ks"
+      ],
+      "era": "late",
+      "grade": "D",
+      "kind": "assessed_extension",
+      "markers": "✶ → AQ. → Q.",
+      "evidence": "Переходов: 3; с примерами: 3; с точной формулой: 2; шагов без страницы правила: 0.",
+      "reason": "Прямые примеры найдены лишь для 3 из 3 шагов (точных совпадений формул: 2); вся цепочка остаётся формальной гипотезой.",
+      "action": "Проверить непрерывные формы одного слова, окружение, последовательность и диалект по заметкам каждого правила.",
+      "sources": "",
+      "rules": [
+        "[s] became [z] before voiced stops",
+        "[z] plus voiced stop became unvoiced",
+        "[sp], [sk] became [ps], [ks]"
+      ],
+      "urls": [
+        "https://eldamo.org/content/words/word-882174441.html",
+        "https://eldamo.org/content/words/word-3279729471.html",
+        "https://eldamo.org/content/words/word-2094898289.html"
+      ],
+      "language": "p → aq/p → q/aq;p",
+      "previous": "ADDITIONAL_STRUCTURAL_CANDIDATE",
+      "supported": "3",
+      "exact": "2",
+      "related_prior": [
+        {
+          "id": "C8",
+          "shared_edges": 3,
+          "grade": "D"
+        },
+        {
+          "id": "C98",
+          "shared_edges": 2,
+          "grade": "D"
+        },
+        {
+          "id": "C91",
+          "shared_edges": 2,
+          "grade": "C"
+        }
+      ]
+    }
+  }
+]

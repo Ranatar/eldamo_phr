@@ -1,0 +1,3 @@
+quenya canonical rows: 216 grades {'C': 38, 'U': 170, 'D': 8} atomic edges 391
+sindarin canonical rows: 114 grades {'U': 93, 'D': 10, 'C': 11} atomic edges 234
+canonical pipeline invariants OK

@@ -1,0 +1,1760 @@
+{
+  "critical": {
+    "total": 139,
+    "chain_statuses": {
+      "graph_steps_verified": 66,
+      "unresolved_steps": 73
+    },
+    "step_statuses": {
+      "exact_step_match": 197,
+      "not_in_atomic_graph": 88,
+      "missing_chain_rule_url": 8,
+      "rule_url_mismatch": 3
+    },
+    "unresolved": [
+      {
+        "id": "C3",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋ-",
+            "to": "ŋg-",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "ŋg-",
+            "to": "ŋ-",
+            "rule_url": "https://eldamo.org/content/words/word-2123493145.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 2,
+            "from": "ŋ-",
+            "to": "ø-",
+            "rule_url": "https://eldamo.org/content/words/word-4225848175.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C9",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 2,
+            "from": "ɣ",
+            "to": "ø",
+            "rule_url": "https://eldamo.org/content/words/word-3266317297.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C10",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 2,
+            "from": "ɣ",
+            "to": "ø",
+            "rule_url": "https://eldamo.org/content/words/word-3657372981.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C11",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 2,
+            "from": "ɣ",
+            "to": "ø",
+            "rule_url": "https://eldamo.org/content/words/word-3266317297.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C12",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 2,
+            "from": "ɣ",
+            "to": "ø",
+            "rule_url": "https://eldamo.org/content/words/word-3657372981.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C13",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ā",
+            "to": "ō",
+            "rule_url": "https://eldamo.org/content/words/word-3140771935.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C14",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ā",
+            "to": "ō",
+            "rule_url": "https://eldamo.org/content/words/word-3140771935.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C17",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "mm",
+            "to": "m",
+            "rule_url": "https://eldamo.org/content/words/word-3689144303.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C18",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "mb",
+            "to": "mm",
+            "rule_url": "https://eldamo.org/content/words/word-868023175.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C20",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ɣ",
+            "to": "ø",
+            "rule_url": "https://eldamo.org/content/words/word-1833409085.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C23",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "gj",
+            "to": "dj",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              "",
+              "https://eldamo.org/content/words/word-3703720537.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C24",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "gj",
+            "to": "dj",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              "",
+              "https://eldamo.org/content/words/word-3703720537.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C26",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "kj",
+            "to": "tj",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              "",
+              "https://eldamo.org/content/words/word-3703720537.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C30",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "mb",
+            "to": "mm",
+            "rule_url": "https://eldamo.org/content/words/word-868023175.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C31",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "nd",
+            "to": "nn",
+            "rule_url": "https://eldamo.org/content/words/word-868023175.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C40",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "zg",
+            "to": "ðɣ",
+            "rule_url": "https://eldamo.org/content/words/word-1951748921.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C46",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ttʰ",
+            "to": "θθ",
+            "rule_url": "https://eldamo.org/content/words/word-883570327.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C48",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ttʰ",
+            "to": "θθ",
+            "rule_url": "https://eldamo.org/content/words/word-883570327.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C49",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "mm",
+            "to": "m",
+            "rule_url": "https://eldamo.org/content/words/word-3689144303.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C50",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ā",
+            "to": "ǭ",
+            "rule_url": "https://eldamo.org/content/words/word-2858643115.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "ǭ",
+            "to": "ā",
+            "rule_url": "https://eldamo.org/content/words/word-1446209733.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C51",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ā",
+            "to": "ǭ",
+            "rule_url": "https://eldamo.org/content/words/word-2858643115.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C52",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ā",
+            "to": "ǭ",
+            "rule_url": "https://eldamo.org/content/words/word-2858643115.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C53",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋ-",
+            "to": "ŋg-",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "ŋg-",
+            "to": "g-",
+            "rule_url": "https://eldamo.org/content/words/word-1688730459.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C54",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋ-",
+            "to": "ŋg-",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "ŋg-",
+            "to": "g-",
+            "rule_url": "https://eldamo.org/content/words/word-3057844573.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C55",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋ-",
+            "to": "ŋg-",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "ŋg-",
+            "to": "g-",
+            "rule_url": "https://eldamo.org/content/words/word-493039001.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C56",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋ-",
+            "to": "ŋg-",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "ŋg-",
+            "to": "ŋ-",
+            "rule_url": "https://eldamo.org/content/words/word-2123493145.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C57",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋg-",
+            "to": "ŋ-",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "ŋ-",
+            "to": "g-",
+            "rule_url": "https://eldamo.org/content/words/word-1228875561.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C58",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋg-",
+            "to": "ŋ-",
+            "rule_url": "https://eldamo.org/content/words/word-2123493145.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "ŋ-",
+            "to": "ø-",
+            "rule_url": "https://eldamo.org/content/words/word-4225848175.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C59",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋg-",
+            "to": "ŋ-",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "ŋ-",
+            "to": "ø-",
+            "rule_url": "https://eldamo.org/content/words/word-552653835.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C60",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋg-",
+            "to": "ŋ-",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "ŋ-",
+            "to": "ø-",
+            "rule_url": "https://eldamo.org/content/words/word-4225848175.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C62",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋgw",
+            "to": "mb",
+            "rule_url": "https://eldamo.org/content/words/word-171120983.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "mb",
+            "to": "mm",
+            "rule_url": "https://eldamo.org/content/words/word-868023175.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C64",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "Vp",
+            "to": "Vb",
+            "rule_url": "https://eldamo.org/content/words/word-2421096703.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "Vb",
+            "to": "Vv",
+            "rule_url": "https://eldamo.org/content/words/word-3689929017.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C65",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "Vp",
+            "to": "Vb",
+            "rule_url": "https://eldamo.org/content/words/word-2421096703.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "Vb",
+            "to": "Vv",
+            "rule_url": "https://eldamo.org/content/words/word-501836955.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C66",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "Vt",
+            "to": "Vd",
+            "rule_url": "https://eldamo.org/content/words/word-2421096703.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "Vd",
+            "to": "Vð",
+            "rule_url": "https://eldamo.org/content/words/word-501836955.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C72",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ɣ",
+            "to": "ø",
+            "rule_url": "https://eldamo.org/content/words/word-3266317297.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C73",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ɣ",
+            "to": "ø",
+            "rule_url": "https://eldamo.org/content/words/word-3657372981.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C81",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "nd-",
+            "to": "d-",
+            "rule_url": "https://eldamo.org/content/words/word-3944232895.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "d-",
+            "to": "l-",
+            "rule_url": "https://eldamo.org/content/words/word-31048751.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C82",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "nd-",
+            "to": "d-",
+            "rule_url": "https://eldamo.org/content/words/word-1688730459.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "d-",
+            "to": "l-",
+            "rule_url": "https://eldamo.org/content/words/word-31048751.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C86",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "pʰ",
+            "to": "ɸ",
+            "rule_url": "https://eldamo.org/content/words/word-1770347191.html",
+            "status": "rule_url_mismatch",
+            "candidate_rule_urls": [
+              "https://eldamo.org/content/words/word-3537093625.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "C96",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "tʰ",
+            "to": "θ",
+            "rule_url": "https://eldamo.org/content/words/word-1770347191.html",
+            "status": "rule_url_mismatch",
+            "candidate_rule_urls": [
+              "https://eldamo.org/content/words/word-3124926163.html",
+              "https://eldamo.org/content/words/word-3537093625.html",
+              "https://eldamo.org/content/words/word-4030743197.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S8",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ppʰ",
+            "to": "pp",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              "https://eldamo.org/content/words/word-2190887743.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S21",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "sk",
+            "to": "sx",
+            "rule_url": "https://eldamo.org/content/words/word-948882833.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S24",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "w",
+            "to": "β",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S26",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ɣ",
+            "to": "h",
+            "rule_url": "https://eldamo.org/content/words/word-3274491131.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S28",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "zb",
+            "to": "sp",
+            "rule_url": "https://eldamo.org/content/words/word-3279729471.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S29",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "zg",
+            "to": "sk",
+            "rule_url": "https://eldamo.org/content/words/word-3279729471.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S35",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ŋŋ",
+            "to": "ŋg",
+            "rule_url": "https://eldamo.org/content/words/word-447633467.html",
+            "status": "rule_url_mismatch",
+            "candidate_rule_urls": [
+              "https://eldamo.org/content/words/word-3404492995.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S41",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "bt",
+            "to": "pt",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S42",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "bpʰ",
+            "to": "ppʰ",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "ppʰ",
+            "to": "pp",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              "https://eldamo.org/content/words/word-2190887743.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S43",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "bpʰ",
+            "to": "ppʰ",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S44",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "btʰ",
+            "to": "ptʰ",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S45",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "btʰ",
+            "to": "ptʰ",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S46",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "pp",
+            "to": "ppʰ",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "ppʰ",
+            "to": "pp",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              "https://eldamo.org/content/words/word-2190887743.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S47",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "pp",
+            "to": "ppʰ",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S48",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "tp",
+            "to": "tpʰ",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "tpʰ",
+            "to": "tp",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S49",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "kp",
+            "to": "kpʰ",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "kpʰ",
+            "to": "kp",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S50",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "mp",
+            "to": "mpʰ",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S51",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "mp",
+            "to": "mpʰ",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 2,
+            "from": "ppʰ",
+            "to": "pp",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              "https://eldamo.org/content/words/word-2190887743.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S61",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "pd",
+            "to": "pt",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S62",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "kd",
+            "to": "kt",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S63",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "dpʰ",
+            "to": "tpʰ",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "tpʰ",
+            "to": "tp",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S68",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "dpʰ",
+            "to": "tpʰ",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "tpʰ",
+            "to": "tp",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S69",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "dtʰ",
+            "to": "ttʰ",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S70",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "dtʰ",
+            "to": "ttʰ",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "ttʰ",
+            "to": "θθ",
+            "rule_url": "https://eldamo.org/content/words/word-883570327.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S71",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "pd",
+            "to": "pt",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S72",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "kd",
+            "to": "kt",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S89",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "bt",
+            "to": "pt",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S90",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "bpʰ",
+            "to": "ppʰ",
+            "rule_url": "",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          },
+          {
+            "index": 1,
+            "from": "ppʰ",
+            "to": "pp",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              "https://eldamo.org/content/words/word-2190887743.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S98",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 2,
+            "from": "ɣ",
+            "to": "h",
+            "rule_url": "https://eldamo.org/content/words/word-3274491131.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S102",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "zb",
+            "to": "sp",
+            "rule_url": "https://eldamo.org/content/words/word-3279729471.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S103",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "zb",
+            "to": "sp",
+            "rule_url": "https://eldamo.org/content/words/word-3279729471.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S104",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "zg",
+            "to": "sk",
+            "rule_url": "https://eldamo.org/content/words/word-3279729471.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S105",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "zg",
+            "to": "sk",
+            "rule_url": "https://eldamo.org/content/words/word-3279729471.html",
+            "status": "not_in_atomic_graph",
+            "candidate_rule_urls": [],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      }
+    ]
+  },
+  "structural": {
+    "total": 216,
+    "chain_statuses": {
+      "graph_steps_verified": 208,
+      "unresolved_steps": 6,
+      "ambiguous_rule_identity": 2
+    },
+    "step_statuses": {
+      "exact_step_match": 473,
+      "missing_chain_rule_url": 6,
+      "multiple_matching_rules": 2
+    },
+    "unresolved": [
+      {
+        "id": "QUENYA5",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "mb",
+            "to": "m",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              "",
+              "https://eldamo.org/content/words/word-2123493145.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "QUENYA15",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "gj",
+            "to": "dj",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              "",
+              "https://eldamo.org/content/words/word-3703720537.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "QUENYA16",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "gj",
+            "to": "dj",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              "",
+              "https://eldamo.org/content/words/word-3703720537.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "QUENYA20",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "kj",
+            "to": "tj",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              "",
+              "https://eldamo.org/content/words/word-3703720537.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "QUENYA63",
+        "overall": "ambiguous_rule_identity",
+        "steps": [
+          {
+            "index": 1,
+            "from": "w̥",
+            "to": "f",
+            "rule_url": "https://eldamo.org/content/words/word-3605637247.html",
+            "status": "multiple_matching_rules",
+            "candidate_rule_urls": [
+              "https://eldamo.org/content/words/word-3605637247.html"
+            ],
+            "matching_edge_ids": [
+              "quenya-r173",
+              "quenya-r422"
+            ],
+            "matching_stages": [
+              1,
+              2
+            ],
+            "matching_positions": [
+              "any"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "QUENYA72",
+        "overall": "ambiguous_rule_identity",
+        "steps": [
+          {
+            "index": 1,
+            "from": "w̥",
+            "to": "f",
+            "rule_url": "https://eldamo.org/content/words/word-3605637247.html",
+            "status": "multiple_matching_rules",
+            "candidate_rule_urls": [
+              "https://eldamo.org/content/words/word-3605637247.html"
+            ],
+            "matching_edge_ids": [
+              "quenya-r173",
+              "quenya-r422"
+            ],
+            "matching_stages": [
+              1,
+              2
+            ],
+            "matching_positions": [
+              "any"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "QUENYA87",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ŋg",
+            "to": "ŋ",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              "",
+              "https://eldamo.org/content/words/word-2123493145.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "QUENYA89",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ŋg",
+            "to": "ŋ",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              "",
+              "https://eldamo.org/content/words/word-2123493145.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      }
+    ]
+  }
+}

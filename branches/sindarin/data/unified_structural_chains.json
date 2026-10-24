@@ -1,0 +1,3318 @@
+[
+  {
+    "id": "SINDARIN1",
+    "era": "late",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ā], [au] became [ǭ]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html"
+    ],
+    "markers": "✶ → OS.",
+    "stages": [
+      0,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN2",
+    "era": "late",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ",
+      "au"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ā], [au] became [ǭ]",
+      "[ǭ] became [au]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-558704171.html"
+    ],
+    "markers": "✶ → OS. → S.",
+    "stages": [
+      0,
+      2,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN3",
+    "era": "late",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ā], [au] became [ǭ]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html"
+    ],
+    "markers": "✶ → OS.",
+    "stages": [
+      0,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN4",
+    "era": "late",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ",
+      "au"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ā], [au] became [ǭ]",
+      "[ǭ] became [au]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-558704171.html"
+    ],
+    "markers": "✶ → OS. → S.",
+    "stages": [
+      0,
+      2,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN5",
+    "era": "late",
+    "states": [
+      "bm",
+      "mb",
+      "m"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[bm], [dn] became [mb], [nd]",
+      "[bm], [dn] became [mb], [nd]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      ""
+    ],
+    "markers": "✶ → ✶",
+    "stages": [
+      0,
+      0
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN6",
+    "era": "late",
+    "states": [
+      "bm",
+      "mb",
+      "mm"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[bm], [dn] became [mb], [nd]",
+      "[mb], [nd] became [mm], [nn]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "markers": "✶ → S.",
+    "stages": [
+      0,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN7",
+    "era": "late",
+    "states": [
+      "bm",
+      "mb",
+      "mm",
+      "m"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[bm], [dn] became [mb], [nd]",
+      "[mb], [nd] became [mm], [nn]",
+      "[mm] shortened"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "https://eldamo.org/content/words/word-868023175.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "markers": "✶ → S. → S.",
+    "stages": [
+      0,
+      3,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN8",
+    "era": "late",
+    "states": [
+      "bm",
+      "mb",
+      "b"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[bm], [dn] became [mb], [nd]",
+      "initial nasals vanished before stops"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "markers": "✶ → S.",
+    "stages": [
+      0,
+      3
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN9",
+    "era": "late",
+    "states": [
+      "bm",
+      "mm",
+      "m"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[bm], [dn] became [mm], [nn]",
+      "[mm] shortened"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2615312913.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "markers": "OS. → S.",
+    "stages": [
+      2,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN10",
+    "era": "late",
+    "states": [
+      "eu",
+      "iu",
+      "ȳ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[eu] became [iu]",
+      "[iu] and [ju] became [ȳ]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2662025405.html",
+      "https://eldamo.org/content/words/word-659168127.html"
+    ],
+    "markers": "OS. → S.",
+    "stages": [
+      2,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN11",
+    "era": "late",
+    "states": [
+      "mb",
+      "mm",
+      "m"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[mb], [nd] became [mm], [nn]",
+      "[mm] shortened"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-868023175.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "markers": "S. → S.",
+    "stages": [
+      3,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN12",
+    "era": "late",
+    "states": [
+      "mf",
+      "mm",
+      "m"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "medial [mf], [nθ], [ŋx], [lθ] became [mm], [nn], [ŋg], [ll]",
+      "[mm] shortened"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2996915415.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "markers": "S. → S.",
+    "stages": [
+      3,
+      3
+    ],
+    "required_position": "medial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN13",
+    "era": "late",
+    "states": [
+      "mw",
+      "mm",
+      "m"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "medial [m] became [n] before [j], [w]",
+      "[mm] shortened"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1484184939.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "markers": "OS. → S.",
+    "stages": [
+      2,
+      3
+    ],
+    "required_position": "final",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN14",
+    "era": "late",
+    "states": [
+      "pm",
+      "bm",
+      "mm"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "voiceless stops were voiced before nasals",
+      "[bm], [dn] became [mm], [nn]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3463937975.html",
+      "https://eldamo.org/content/words/word-2615312913.html"
+    ],
+    "markers": "OS. → OS.",
+    "stages": [
+      2,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN15",
+    "era": "late",
+    "states": [
+      "pm",
+      "bm",
+      "mm",
+      "m"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "voiceless stops were voiced before nasals",
+      "[bm], [dn] became [mm], [nn]",
+      "[mm] shortened"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3463937975.html",
+      "https://eldamo.org/content/words/word-2615312913.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "markers": "OS. → OS. → S.",
+    "stages": [
+      2,
+      2,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN16",
+    "era": "late",
+    "states": [
+      "sb",
+      "zb",
+      "ðβ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[s] became [z] before voiced stops",
+      "[zb], [zg] became [ðβ], [ðɣ]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-1951748921.html"
+    ],
+    "markers": "✶ → S.",
+    "stages": [
+      0,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN17",
+    "era": "late",
+    "states": [
+      "sg",
+      "zg",
+      "ðɣ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[s] became [z] before voiced stops",
+      "[zb], [zg] became [ðβ], [ðɣ]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-1951748921.html"
+    ],
+    "markers": "✶ → S.",
+    "stages": [
+      0,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN18",
+    "era": "late",
+    "states": [
+      "tn",
+      "dn",
+      "nn"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "voiceless stops were voiced before nasals",
+      "[bm], [dn] became [mm], [nn]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3463937975.html",
+      "https://eldamo.org/content/words/word-2615312913.html"
+    ],
+    "markers": "OS. → OS.",
+    "stages": [
+      2,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN19",
+    "era": "late",
+    "states": [
+      "ttʰ",
+      "θθ",
+      "θ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspirates became voiceless spirants",
+      "long voiceless spirants shortened"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-883570327.html",
+      "https://eldamo.org/content/words/word-1206014597.html"
+    ],
+    "markers": "OS. → S.",
+    "stages": [
+      2,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN20",
+    "era": "late",
+    "states": [
+      "tʰt",
+      "ttʰ",
+      "θθ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspiration moved to end of group of stops",
+      "aspirates became voiceless spirants"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html"
+    ],
+    "markers": "✶ → OS.",
+    "stages": [
+      0,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN21",
+    "era": "late",
+    "states": [
+      "tʰt",
+      "ttʰ",
+      "θθ",
+      "θ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspiration moved to end of group of stops",
+      "aspirates became voiceless spirants",
+      "long voiceless spirants shortened"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html",
+      "https://eldamo.org/content/words/word-1206014597.html"
+    ],
+    "markers": "✶ → OS. → S.",
+    "stages": [
+      0,
+      2,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN22",
+    "era": "late",
+    "states": [
+      "tʰtʰ",
+      "ttʰ",
+      "θθ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspiration moved to end of group of stops",
+      "aspirates became voiceless spirants"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html"
+    ],
+    "markers": "✶ → OS.",
+    "stages": [
+      0,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN23",
+    "era": "late",
+    "states": [
+      "tʰtʰ",
+      "ttʰ",
+      "θθ",
+      "θ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspiration moved to end of group of stops",
+      "aspirates became voiceless spirants",
+      "long voiceless spirants shortened"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html",
+      "https://eldamo.org/content/words/word-1206014597.html"
+    ],
+    "markers": "✶ → OS. → S.",
+    "stages": [
+      0,
+      2,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN24",
+    "era": "late",
+    "states": [
+      "ðm",
+      "ðv",
+      "ðw"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "non-initial [m] usually became [v]",
+      "[ðv] became [ðw]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1951379117.html",
+      "https://eldamo.org/content/words/word-2192660503.html"
+    ],
+    "markers": "S. → S.",
+    "stages": [
+      3,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN25",
+    "era": "late",
+    "states": [
+      "ā",
+      "ǭ",
+      "au"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ā], [au] became [ǭ]",
+      "[ǭ] became [au]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-558704171.html"
+    ],
+    "markers": "OS. → S.",
+    "stages": [
+      2,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN26",
+    "era": "late",
+    "states": [
+      "ę̄",
+      "ai",
+      "ae"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ę̄] became [ai]",
+      "[ai], [oi] became [ae], [oe]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2387695245.html",
+      "https://eldamo.org/content/words/word-941153689.html"
+    ],
+    "markers": "S. → S.",
+    "stages": [
+      3,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN27",
+    "era": "late",
+    "states": [
+      "ŋ",
+      "ŋg",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "medial nasal plus stop after another consonant became simple nasal",
+      "labialized velars became labials"
+    ],
+    "urls": [
+      "",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "markers": "✶ → AT.",
+    "stages": [
+      0,
+      1
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN28",
+    "era": "late",
+    "states": [
+      "ŋ",
+      "ŋg",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "medial nasal plus stop after another consonant became simple nasal",
+      "initial nasals vanished before stops"
+    ],
+    "urls": [
+      "",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "markers": "✶ → S.",
+    "stages": [
+      0,
+      3
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN29",
+    "era": "late",
+    "states": [
+      "ŋg",
+      "ŋ",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "medial nasal plus stop after another consonant became simple nasal",
+      "labialized velars became labials"
+    ],
+    "urls": [
+      "",
+      "https://eldamo.org/content/words/word-1228875561.html"
+    ],
+    "markers": "✶ → AT.",
+    "stages": [
+      0,
+      1
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN30",
+    "era": "late",
+    "states": [
+      "ŋgj",
+      "ŋg",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[j] was lost after initial velars",
+      "initial nasals vanished before stops"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-345959193.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "markers": "OS. → S.",
+    "stages": [
+      2,
+      3
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN31",
+    "era": "late",
+    "states": [
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "labialized velars became labials",
+      "[mb], [nd] became [mm], [nn]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "markers": "AT. → S.",
+    "stages": [
+      1,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN32",
+    "era": "late",
+    "states": [
+      "ŋgw",
+      "mb",
+      "mm",
+      "m"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "labialized velars became labials",
+      "[mb], [nd] became [mm], [nn]",
+      "[mm] shortened"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-868023175.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "markers": "AT. → S. → S.",
+    "stages": [
+      1,
+      3,
+      3
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN33",
+    "era": "late",
+    "states": [
+      "ŋgw",
+      "mb",
+      "b"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "labialized velars became labials",
+      "initial nasals vanished before stops"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "markers": "AT. → S.",
+    "stages": [
+      1,
+      3
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN34",
+    "era": "late",
+    "states": [
+      "ŋj",
+      "ŋgj",
+      "ŋg"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+      "[j] was lost after initial velars"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      "https://eldamo.org/content/words/word-345959193.html"
+    ],
+    "markers": "✶ → OS.",
+    "stages": [
+      0,
+      2
+    ],
+    "required_position": "medial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN35",
+    "era": "late",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+      "labialized velars became labials"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      "https://eldamo.org/content/words/word-171120983.html"
+    ],
+    "markers": "✶ → AT.",
+    "stages": [
+      0,
+      1
+    ],
+    "required_position": "medial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN36",
+    "era": "late",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+      "labialized velars became labials",
+      "[mb], [nd] became [mm], [nn]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "markers": "✶ → AT. → S.",
+    "stages": [
+      0,
+      1,
+      3
+    ],
+    "required_position": "medial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN37",
+    "era": "late",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ŋŋ], [ŋɣ] became [ŋg]",
+      "labialized velars became labials"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "markers": "✶ → AT.",
+    "stages": [
+      0,
+      1
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN38",
+    "era": "late",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "ŋ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ŋŋ], [ŋɣ] became [ŋg]",
+      "medial nasal plus stop after another consonant became simple nasal"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      ""
+    ],
+    "markers": "✶ → ✶",
+    "stages": [
+      0,
+      0
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN39",
+    "era": "late",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "ŋ",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ŋŋ], [ŋɣ] became [ŋg]",
+      "medial nasal plus stop after another consonant became simple nasal",
+      "labialized velars became labials"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "",
+      "https://eldamo.org/content/words/word-1228875561.html"
+    ],
+    "markers": "✶ → ✶ → AT.",
+    "stages": [
+      0,
+      0,
+      1
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN40",
+    "era": "late",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ŋŋ], [ŋɣ] became [ŋg]",
+      "initial nasals vanished before stops"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "markers": "✶ → S.",
+    "stages": [
+      0,
+      3
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN41",
+    "era": "late",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ŋŋ], [ŋɣ] became [ŋg]",
+      "labialized velars became labials"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "markers": "✶ → AT.",
+    "stages": [
+      0,
+      1
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN42",
+    "era": "late",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "ŋ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ŋŋ], [ŋɣ] became [ŋg]",
+      "medial nasal plus stop after another consonant became simple nasal"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      ""
+    ],
+    "markers": "✶ → ✶",
+    "stages": [
+      0,
+      0
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN43",
+    "era": "late",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "ŋ",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ŋŋ], [ŋɣ] became [ŋg]",
+      "medial nasal plus stop after another consonant became simple nasal",
+      "labialized velars became labials"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "",
+      "https://eldamo.org/content/words/word-1228875561.html"
+    ],
+    "markers": "✶ → ✶ → AT.",
+    "stages": [
+      0,
+      0,
+      1
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN44",
+    "era": "late",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ŋŋ], [ŋɣ] became [ŋg]",
+      "initial nasals vanished before stops"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "markers": "✶ → S.",
+    "stages": [
+      0,
+      3
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN45",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ō"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ae], [ao] became [ā]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶",
+    "stages": [
+      0,
+      0
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN46",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ō",
+      "ū"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ae], [ao] became [ā]",
+      "[ē], [ō] became [ī], [ū]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html",
+      "https://eldamo.org/content/words/word-390078853.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶ → ON.",
+    "stages": [
+      0,
+      0,
+      1
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN47",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ae], [ao] became [ā]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶",
+    "stages": [
+      0,
+      0
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN48",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ae], [ao] became [ā]",
+      "[ǭ] became [ou]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶ → N.",
+    "stages": [
+      0,
+      0,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN49",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ā], [au] became [ǭ]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html"
+    ],
+    "markers": "ᴹ✶ → ON.",
+    "stages": [
+      0,
+      1
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN50",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ā], [au] became [ǭ]",
+      "[ǭ] became [ou]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "markers": "ᴹ✶ → ON. → N.",
+    "stages": [
+      0,
+      1,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN51",
+    "era": "middle",
+    "states": [
+      "ai",
+      "ę̄",
+      "ae"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ǣ], [ai] became [ę̄]",
+      "[ai] became [oe] or [ae]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3619603651.html",
+      "https://eldamo.org/content/words/word-3173115217.html"
+    ],
+    "markers": "ON. → N.",
+    "stages": [
+      1,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN52",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ō"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ae], [ao] became [ā]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶",
+    "stages": [
+      0,
+      0
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN53",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ō",
+      "ū"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ae], [ao] became [ā]",
+      "[ē], [ō] became [ī], [ū]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html",
+      "https://eldamo.org/content/words/word-390078853.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶ → ON.",
+    "stages": [
+      0,
+      0,
+      1
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN54",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ae], [ao] became [ā]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶",
+    "stages": [
+      0,
+      0
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN55",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ae], [ao] became [ā]",
+      "[ǭ] became [ou]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶ → N.",
+    "stages": [
+      0,
+      0,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN56",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ā], [au] became [ǭ]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html"
+    ],
+    "markers": "ᴹ✶ → ON.",
+    "stages": [
+      0,
+      1
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN57",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ā], [au] became [ǭ]",
+      "[ǭ] became [ou]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "markers": "ᴹ✶ → ON. → N.",
+    "stages": [
+      0,
+      1,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN58",
+    "era": "middle",
+    "states": [
+      "au",
+      "ǭ",
+      "ou"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ā], [au] became [ǭ]",
+      "[ǭ] became [ou]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "markers": "ON. → N.",
+    "stages": [
+      1,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN59",
+    "era": "middle",
+    "states": [
+      "ei",
+      "oi",
+      "ui"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ei], [ou] became [oi], [ū]",
+      "[oi], [ǭi] became [ui]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1880600739.html",
+      "https://eldamo.org/content/words/word-2826795683.html"
+    ],
+    "markers": "ON. → ON.",
+    "stages": [
+      1,
+      1
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN60",
+    "era": "middle",
+    "states": [
+      "j̊",
+      "x",
+      "h"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "voiceless [j̊], [w̥] became [x], [xw]",
+      "initial [x-] became [h-]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1284301541.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "markers": "N. → N.",
+    "stages": [
+      2,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN61",
+    "era": "middle",
+    "states": [
+      "kʰ",
+      "x",
+      "h"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspirates became voiceless spirants",
+      "initial [x-] became [h-]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "markers": "ON. → N.",
+    "stages": [
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN62",
+    "era": "middle",
+    "states": [
+      "kʰj",
+      "kʰ",
+      "x"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[j] was lost after initial velars",
+      "aspirates became voiceless spirants"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-1770347191.html"
+    ],
+    "markers": "ON. → ON.",
+    "stages": [
+      1,
+      1
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN63",
+    "era": "middle",
+    "states": [
+      "kʰj",
+      "kʰ",
+      "x",
+      "h"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[j] was lost after initial velars",
+      "aspirates became voiceless spirants",
+      "initial [x-] became [h-]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "markers": "ON. → ON. → N.",
+    "stages": [
+      1,
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN64",
+    "era": "middle",
+    "states": [
+      "kʰw",
+      "pʰ",
+      "ɸ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "labialized velars became labials",
+      "aspirates became voiceless spirants"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1770347191.html"
+    ],
+    "markers": "ON. → ON.",
+    "stages": [
+      1,
+      1
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN65",
+    "era": "middle",
+    "states": [
+      "kʰw",
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "labialized velars became labials",
+      "aspirates became voiceless spirants",
+      "[ɸ], [β] became [f], [v]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "markers": "ON. → ON. → N.",
+    "stages": [
+      1,
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN66",
+    "era": "middle",
+    "states": [
+      "p",
+      "pʰ",
+      "ɸ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspiration moved to end of group of stops",
+      "aspirates became voiceless spirants"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-1770347191.html"
+    ],
+    "markers": "ᴹ✶ → ON.",
+    "stages": [
+      0,
+      1
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN67",
+    "era": "middle",
+    "states": [
+      "p",
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspiration moved to end of group of stops",
+      "aspirates became voiceless spirants",
+      "[ɸ], [β] became [f], [v]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "markers": "ᴹ✶ → ON. → N.",
+    "stages": [
+      0,
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN68",
+    "era": "middle",
+    "states": [
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspirates became voiceless spirants",
+      "[ɸ], [β] became [f], [v]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "markers": "ON. → N.",
+    "stages": [
+      1,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN69",
+    "era": "middle",
+    "states": [
+      "sj",
+      "j̊",
+      "x"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "initial [s] unvoiced following [m], [n], [j], [w]",
+      "voiceless [j̊], [w̥] became [x], [xw]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "markers": "ON. → N.",
+    "stages": [
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN70",
+    "era": "middle",
+    "states": [
+      "sj",
+      "j̊",
+      "x",
+      "h"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "initial [s] unvoiced following [m], [n], [j], [w]",
+      "voiceless [j̊], [w̥] became [x], [xw]",
+      "initial [x-] became [h-]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "markers": "ON. → N. → N.",
+    "stages": [
+      1,
+      2,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN71",
+    "era": "middle",
+    "states": [
+      "sk",
+      "sx",
+      "x"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "voiceless stops became spirants after initial [s]",
+      "initial [s] vanished before spirants"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "markers": "ON. → N.",
+    "stages": [
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN72",
+    "era": "middle",
+    "states": [
+      "sk",
+      "sx",
+      "x",
+      "h"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "voiceless stops became spirants after initial [s]",
+      "initial [s] vanished before spirants",
+      "initial [x-] became [h-]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "markers": "ON. → N. → N.",
+    "stages": [
+      1,
+      2,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN73",
+    "era": "middle",
+    "states": [
+      "skj",
+      "sk",
+      "sx"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[j] was lost after initial velars",
+      "voiceless stops became spirants after initial [s]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-948882833.html"
+    ],
+    "markers": "ON. → ON.",
+    "stages": [
+      1,
+      1
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN74",
+    "era": "middle",
+    "states": [
+      "skj",
+      "sk",
+      "sx",
+      "x"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[j] was lost after initial velars",
+      "voiceless stops became spirants after initial [s]",
+      "initial [s] vanished before spirants"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "markers": "ON. → ON. → N.",
+    "stages": [
+      1,
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN75",
+    "era": "middle",
+    "states": [
+      "skw",
+      "sw",
+      "w̥"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspiration moved to end of group of stops",
+      "[hs] became [ss]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-165461035.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶",
+    "stages": [
+      0,
+      0
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN76",
+    "era": "middle",
+    "states": [
+      "skw",
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspiration moved to end of group of stops",
+      "[hs] became [ss]",
+      "voiceless [j̊], [w̥] became [x], [xw]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-165461035.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶ → N.",
+    "stages": [
+      0,
+      0,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN77",
+    "era": "middle",
+    "states": [
+      "skw",
+      "sw",
+      "w̥"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspiration moved to end of group of stops",
+      "initial [s] unvoiced following [m], [n], [j], [w]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-3693878703.html"
+    ],
+    "markers": "ᴹ✶ → ON.",
+    "stages": [
+      0,
+      1
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN78",
+    "era": "middle",
+    "states": [
+      "skw",
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspiration moved to end of group of stops",
+      "initial [s] unvoiced following [m], [n], [j], [w]",
+      "voiceless [j̊], [w̥] became [x], [xw]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "markers": "ᴹ✶ → ON. → N.",
+    "stages": [
+      0,
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN79",
+    "era": "middle",
+    "states": [
+      "skʰ",
+      "sk",
+      "sx"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspirates became voiceless stops after [s], [h]",
+      "voiceless stops became spirants after initial [s]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html"
+    ],
+    "markers": "ᴹ✶ → ON.",
+    "stages": [
+      0,
+      1
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN80",
+    "era": "middle",
+    "states": [
+      "skʰ",
+      "sk",
+      "sx",
+      "x"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspirates became voiceless stops after [s], [h]",
+      "voiceless stops became spirants after initial [s]",
+      "initial [s] vanished before spirants"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "markers": "ᴹ✶ → ON. → N.",
+    "stages": [
+      0,
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN81",
+    "era": "middle",
+    "states": [
+      "sl",
+      "θl",
+      "fl"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "initial [s] became [θ] before [l], [r]",
+      "initial [θl] sometimes became [fl]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2075290201.html",
+      "https://eldamo.org/content/words/word-2640707457.html"
+    ],
+    "markers": "ON. → N.",
+    "stages": [
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN82",
+    "era": "middle",
+    "states": [
+      "sp",
+      "sɸ",
+      "ɸ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "voiceless stops became spirants after initial [s]",
+      "initial [s] vanished before spirants"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "markers": "ON. → N.",
+    "stages": [
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN83",
+    "era": "middle",
+    "states": [
+      "sp",
+      "sɸ",
+      "ɸ",
+      "f"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "voiceless stops became spirants after initial [s]",
+      "initial [s] vanished before spirants",
+      "[ɸ], [β] became [f], [v]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "markers": "ON. → N. → N.",
+    "stages": [
+      1,
+      2,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN84",
+    "era": "middle",
+    "states": [
+      "st",
+      "sθ",
+      "θ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "voiceless stops became spirants after initial [s]",
+      "initial [s] vanished before spirants"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "markers": "ON. → N.",
+    "stages": [
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN85",
+    "era": "middle",
+    "states": [
+      "stʰ",
+      "st",
+      "θ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspirates became voiceless stops after [s], [h]",
+      "aspirate became voiceless stop before [s]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-570537175.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶",
+    "stages": [
+      0,
+      0
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN86",
+    "era": "middle",
+    "states": [
+      "stʰ",
+      "st",
+      "sθ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspirates became voiceless stops after [s], [h]",
+      "voiceless stops became spirants after initial [s]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html"
+    ],
+    "markers": "ᴹ✶ → ON.",
+    "stages": [
+      0,
+      1
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN87",
+    "era": "middle",
+    "states": [
+      "stʰ",
+      "st",
+      "sθ",
+      "θ"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "aspirates became voiceless stops after [s], [h]",
+      "voiceless stops became spirants after initial [s]",
+      "initial [s] vanished before spirants"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "markers": "ᴹ✶ → ON. → N.",
+    "stages": [
+      0,
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN88",
+    "era": "middle",
+    "states": [
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[hs] became [ss]",
+      "voiceless [j̊], [w̥] became [x], [xw]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-165461035.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "markers": "ᴹ✶ → N.",
+    "stages": [
+      0,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN89",
+    "era": "middle",
+    "states": [
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "initial [s] unvoiced following [m], [n], [j], [w]",
+      "voiceless [j̊], [w̥] became [x], [xw]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "markers": "ON. → N.",
+    "stages": [
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN90",
+    "era": "middle",
+    "states": [
+      "sx",
+      "x",
+      "h"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "initial [s] vanished before spirants",
+      "initial [x-] became [h-]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "markers": "N. → N.",
+    "stages": [
+      2,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN91",
+    "era": "middle",
+    "states": [
+      "sɸ",
+      "ɸ",
+      "f"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "initial [s] vanished before spirants",
+      "[ɸ], [β] became [f], [v]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "markers": "N. → N.",
+    "stages": [
+      2,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN92",
+    "era": "middle",
+    "states": [
+      "z",
+      "r",
+      "r̥"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[t+t], [d+d] from suffixion became [st], [zd]",
+      "initial [r-], [l-] were unvoiced"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-982618329.html",
+      "https://eldamo.org/content/words/word-876815979.html"
+    ],
+    "markers": "ᴹ✶ → N.",
+    "stages": [
+      0,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN93",
+    "era": "middle",
+    "states": [
+      "ā",
+      "ō",
+      "ū"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ē], [ō] became [ī], [ū]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1909322629.html",
+      "https://eldamo.org/content/words/word-390078853.html"
+    ],
+    "markers": "ᴹ✶ → ON.",
+    "stages": [
+      0,
+      1
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN94",
+    "era": "middle",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ǭ] became [ou]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "markers": "ᴹ✶ → N.",
+    "stages": [
+      0,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN95",
+    "era": "middle",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou",
+      "au"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ae], [ao] became [ā]",
+      "[ǭ] became [ou]",
+      "[ou] became [au]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html",
+      "https://eldamo.org/content/words/word-2902864717.html"
+    ],
+    "markers": "ᴹ✶ → N. → N.",
+    "stages": [
+      0,
+      2,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN96",
+    "era": "middle",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ā], [au] became [ǭ]",
+      "[ǭ] became [ou]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "markers": "ON. → N.",
+    "stages": [
+      1,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN97",
+    "era": "middle",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou",
+      "au"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ā], [au] became [ǭ]",
+      "[ǭ] became [ou]",
+      "[ou] became [au]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html",
+      "https://eldamo.org/content/words/word-2902864717.html"
+    ],
+    "markers": "ON. → N. → N.",
+    "stages": [
+      1,
+      2,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN98",
+    "era": "middle",
+    "states": [
+      "ŋgj",
+      "ŋg",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[j] was lost after initial velars",
+      "initial nasals vanished before stops"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "markers": "ON. → N.",
+    "stages": [
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN99",
+    "era": "middle",
+    "states": [
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "labialized velars became labials",
+      "[mb], [nd] became [mm], [nn]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1317326183.html"
+    ],
+    "markers": "ON. → N.",
+    "stages": [
+      1,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN100",
+    "era": "middle",
+    "states": [
+      "ŋgw",
+      "mb",
+      "b"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "labialized velars became labials",
+      "initial nasals vanished before stops"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "markers": "ON. → N.",
+    "stages": [
+      1,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN101",
+    "era": "middle",
+    "states": [
+      "ŋj",
+      "ŋgj",
+      "ŋg"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+      "[j] was lost after initial velars"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-4025342543.html"
+    ],
+    "markers": "ᴹ✶ → ON.",
+    "stages": [
+      0,
+      1
+    ],
+    "required_position": "medial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN102",
+    "era": "middle",
+    "states": [
+      "ŋs",
+      "ɣs",
+      "hs"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "medial [ŋ] usually became [ɣ]",
+      "[ɣ] became [h] before voiceless consonants"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3915121695.html",
+      "https://eldamo.org/content/words/word-2810726977.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶",
+    "stages": [
+      0,
+      0
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN103",
+    "era": "middle",
+    "states": [
+      "ŋs",
+      "ɣs",
+      "hs",
+      "ss"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "medial [ŋ] usually became [ɣ]",
+      "[ɣ] became [h] before voiceless consonants",
+      "[hs] became [ss]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3915121695.html",
+      "https://eldamo.org/content/words/word-2810726977.html",
+      "https://eldamo.org/content/words/word-178282823.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶ → ᴹ✶",
+    "stages": [
+      0,
+      0,
+      0
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN104",
+    "era": "middle",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+      "labialized velars became labials"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-3214863235.html"
+    ],
+    "markers": "ᴹ✶ → ON.",
+    "stages": [
+      0,
+      1
+    ],
+    "required_position": "medial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN105",
+    "era": "middle",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",
+      "labialized velars became labials",
+      "[mb], [nd] became [mm], [nn]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1317326183.html"
+    ],
+    "markers": "ᴹ✶ → ON. → N.",
+    "stages": [
+      0,
+      1,
+      2
+    ],
+    "required_position": "medial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN106",
+    "era": "middle",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ŋŋ], [ŋɣ] became [ŋg]",
+      "nasals assimilated to following stops and aspirates"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶",
+    "stages": [
+      0,
+      0
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN107",
+    "era": "middle",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ŋŋ], [ŋɣ] became [ŋg]",
+      "nasals assimilated to following stops and aspirates"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-3944232895.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶",
+    "stages": [
+      0,
+      0
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN108",
+    "era": "middle",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ŋŋ], [ŋɣ] became [ŋg]",
+      "initial nasals vanished before stops"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "markers": "ᴹ✶ → N.",
+    "stages": [
+      0,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN109",
+    "era": "middle",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ŋŋ], [ŋɣ] became [ŋg]",
+      "nasals assimilated to following stops and aspirates"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶",
+    "stages": [
+      0,
+      0
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN110",
+    "era": "middle",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ŋŋ], [ŋɣ] became [ŋg]",
+      "nasals assimilated to following stops and aspirates"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-3944232895.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶",
+    "stages": [
+      0,
+      0
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN111",
+    "era": "middle",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ŋŋ], [ŋɣ] became [ŋg]",
+      "initial nasals vanished before stops"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "markers": "ᴹ✶ → N.",
+    "stages": [
+      0,
+      2
+    ],
+    "required_position": "initial",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN112",
+    "era": "middle",
+    "states": [
+      "ǣ",
+      "ę̄",
+      "ae"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ǣ], [ai] became [ę̄]",
+      "[ai] became [oe] or [ae]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3619603651.html",
+      "https://eldamo.org/content/words/word-3173115217.html"
+    ],
+    "markers": "ON. → N.",
+    "stages": [
+      1,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN113",
+    "era": "middle",
+    "states": [
+      "ǭ",
+      "ou",
+      "au"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ǭ] became [ou]",
+      "[ou] became [au]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-4073827619.html",
+      "https://eldamo.org/content/words/word-2902864717.html"
+    ],
+    "markers": "N. → N.",
+    "stages": [
+      2,
+      2
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  },
+  {
+    "id": "SINDARIN114",
+    "era": "middle",
+    "states": [
+      "ɣs",
+      "hs",
+      "ss"
+    ],
+    "grade": "unassessed",
+    "kind": "new-unassessed",
+    "rules": [
+      "[ɣ] became [h] before voiceless consonants",
+      "[hs] became [ss]"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2810726977.html",
+      "https://eldamo.org/content/words/word-178282823.html"
+    ],
+    "markers": "ᴹ✶ → ᴹ✶",
+    "stages": [
+      0,
+      0
+    ],
+    "required_position": "any",
+    "evidence": "Не оценена как единая история словоформ.",
+    "reason": "Структурно составимая последовательность атомарных правил; совместимость окружений и хронология не установлены.",
+    "action": "Проверить применение к одной словоформе, диалект и редакцию концепции."
+  }
+]

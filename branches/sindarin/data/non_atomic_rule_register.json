@@ -1,0 +1,3025 @@
+[
+  {
+    "rule_id": "sindarin-r2",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "p < p",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3457234969.html",
+      "https://eldamo.org/content/words/word-2811821309.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r4",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "t < t",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1838541811.html",
+      "https://eldamo.org/content/words/word-1193128061.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r7",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "k < k",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3333117731.html",
+      "https://eldamo.org/content/words/word-2687704131.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r9",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "[no change]",
+    "formula": "b < b",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-532726325.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r11",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "b < b",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-532726325.html",
+      "https://eldamo.org/content/words/word-4182280021.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r13",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "voiceless stops voiced after vowels",
+    "formula": "Vb < Vp",
+    "url": "https://eldamo.org/content/words/word-2951504533.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 37,
+    "reproduced_source_examples": 36,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-532726325.html",
+      "https://eldamo.org/content/words/word-4182280021.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r14",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "d < d",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4018347057.html",
+      "https://eldamo.org/content/words/word-3372933457.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r16",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "voiceless stops voiced after vowels",
+    "formula": "Vd < Vt",
+    "url": "https://eldamo.org/content/words/word-2951504533.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 105,
+    "reproduced_source_examples": 101,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4018347057.html",
+      "https://eldamo.org/content/words/word-3372933457.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r18",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "[no change]",
+    "formula": "g < g",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-656843563.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r24",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "g < g",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-656843563.html",
+      "https://eldamo.org/content/words/word-11429963.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r27",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "medial [j] became [i]",
+    "formula": "CiV < CjV",
+    "url": "https://eldamo.org/content/words/word-1126685261.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 58,
+    "reproduced_source_examples": 51,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-656843563.html",
+      "https://eldamo.org/content/words/word-219848563.html",
+      "https://eldamo.org/content/words/word-4142464295.html",
+      "https://eldamo.org/content/words/word-11429963.html",
+      "https://eldamo.org/content/words/word-3869402109.html",
+      "https://eldamo.org/content/words/word-3497050695.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r28",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "voiceless stops voiced after vowels",
+    "formula": "Vg < Vk",
+    "url": "https://eldamo.org/content/words/word-2951504533.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 87,
+    "reproduced_source_examples": 86,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-656843563.html",
+      "https://eldamo.org/content/words/word-11429963.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r34",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "s < s",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-95731475.html",
+      "https://eldamo.org/content/words/word-3745285021.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r37",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "θ < θ",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2834069363.html",
+      "https://eldamo.org/content/words/word-2188655613.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r45",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "x < x",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-219848563.html",
+      "https://eldamo.org/content/words/word-3869402109.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r49",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "voiced stops became spirants after vowels",
+    "formula": "Vv < Vb",
+    "url": "https://eldamo.org/content/words/word-1726791627.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 45,
+    "reproduced_source_examples": 41,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1029195187.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r50",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "non-initial [m] usually became [v]",
+    "formula": "Vv < Vm",
+    "url": "https://eldamo.org/content/words/word-1951379117.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 91,
+    "reproduced_source_examples": 90,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1029195187.html",
+      "https://eldamo.org/content/words/word-4142464295.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r51",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "voiced stops became spirants after vowels",
+    "formula": "Vv < Vb",
+    "url": "https://eldamo.org/content/words/word-8115507.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 22,
+    "reproduced_source_examples": 20,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1029195187.html",
+      "https://eldamo.org/content/words/word-383781437.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r54",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "voiced stops became spirants after vowels",
+    "formula": "Vð < Vd",
+    "url": "https://eldamo.org/content/words/word-1726791627.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 115,
+    "reproduced_source_examples": 107,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3198658675.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r55",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "final [ɣ] became [a] after a consonant",
+    "formula": "-Ca < -Cɣ",
+    "url": "https://eldamo.org/content/words/word-916418731.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 10,
+    "reproduced_source_examples": 10,
+    "unsupported_example_reasons": "unsupported:unaligned insertion/deletion",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3198658675.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r60",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "final [ɣ] became [a] after a consonant",
+    "formula": "-Cɣ > -Ca",
+    "url": "https://eldamo.org/content/words/word-916418731.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 10,
+    "reproduced_source_examples": 10,
+    "unsupported_example_reasons": "unsupported:unaligned insertion/deletion",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3198658675.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r63",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "voiced stops became spirants after vowels",
+    "formula": "Vð < Vd",
+    "url": "https://eldamo.org/content/words/word-8115507.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 55,
+    "reproduced_source_examples": 54,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3198658675.html",
+      "https://eldamo.org/content/words/word-2553244925.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r64",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "voiced stops became spirants after vowels",
+    "formula": "Vɣ < Vg",
+    "url": "https://eldamo.org/content/words/word-1726791627.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 72,
+    "reproduced_source_examples": 66,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1241231635.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r67",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "voiced stops became spirants after vowels",
+    "formula": "Vɣ < Vg",
+    "url": "https://eldamo.org/content/words/word-8115507.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 42,
+    "reproduced_source_examples": 39,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1241231635.html",
+      "https://eldamo.org/content/words/word-595817885.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r72",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "m < m",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2523771167.html",
+      "https://eldamo.org/content/words/word-1878357567.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r76",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "final [ll], [nn], [ss] shortened in polysyllables",
+    "formula": "-SSn < -SSnn",
+    "url": "https://eldamo.org/content/words/word-1742178057.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unsupported_on_example",
+    "matching_source_examples": 63,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "unsupported:unresolved syllable expression",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4266581533.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r77",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "final [ll], [nn], [ss] shortened in polysyllables",
+    "formula": "-SSnn > -SSn",
+    "url": "https://eldamo.org/content/words/word-1742178057.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unsupported_on_example",
+    "matching_source_examples": 63,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "unsupported:unresolved syllable expression",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4266581533.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r78",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "n < n",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4266581533.html",
+      "https://eldamo.org/content/words/word-3621167933.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r80",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "[no change]",
+    "formula": "ŋ < ŋ",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2880609299.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r82",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "ŋ < ŋ",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2880609299.html",
+      "https://eldamo.org/content/words/word-2235195549.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r90",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "[ŋ] vanished with compensatory lengthening",
+    "formula": "Vŋw > V̄w",
+    "url": "https://eldamo.org/content/words/word-3707785609.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 8,
+    "reproduced_source_examples": 8,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2772005523.html",
+      "https://eldamo.org/content/words/word-2493361049.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r91",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "w < w",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2772005523.html",
+      "https://eldamo.org/content/words/word-2126591773.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r92",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "[no change]",
+    "formula": "l < l",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-780960801.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r95",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "[no change]",
+    "formula": "r < r",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2647888405.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r96",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "[no change]",
+    "formula": "j < j",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1590307365.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r97",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "j < j",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1590307365.html",
+      "https://eldamo.org/content/words/word-944893765.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r101",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "non-initial [m] usually became [v]",
+    "formula": "Vm > Vv",
+    "url": "https://eldamo.org/content/words/word-1951379117.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 91,
+    "reproduced_source_examples": 90,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4142464295.html",
+      "https://eldamo.org/content/words/word-645062343.html",
+      "https://eldamo.org/content/words/word-2136523007.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r105",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "final [w] usually became [u]",
+    "formula": "-Cu < -Cw",
+    "url": "https://eldamo.org/content/words/word-798091205.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 36,
+    "reproduced_source_examples": 35,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3581352147.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r107",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "ī < ī",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2945253395.html",
+      "https://eldamo.org/content/words/word-2299839645.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r109",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "ū < ū",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2815965203.html",
+      "https://eldamo.org/content/words/word-2170551453.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r113",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "[no change]",
+    "formula": "ui < ui",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1117540359.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r114",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "ui < ui",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1117540359.html",
+      "https://eldamo.org/content/words/word-3645333329.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r121",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "final nasals vanished after vowels",
+    "formula": "-Vø < -Vn",
+    "url": "https://eldamo.org/content/words/word-876455981.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 16,
+    "reproduced_source_examples": 16,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4256239475.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r122",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "final nasals vanished after vowels",
+    "formula": "-Vø < -Vm",
+    "url": "https://eldamo.org/content/words/word-876455981.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 1,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4256239475.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r123",
+    "era": "late",
+    "stage": 2,
+    "marker": "OS.",
+    "rule": "initial [ɣ]/[h] vanished",
+    "formula": "ø- < ɣ-",
+    "url": "https://eldamo.org/content/words/word-1117448055.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 18,
+    "reproduced_source_examples": 18,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4256239475.html",
+      "https://eldamo.org/content/words/word-2811964629.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r124",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "initial and intervocalic [ŋ] vanished",
+    "formula": "ø- < ŋ-",
+    "url": "https://eldamo.org/content/words/word-552653835.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 6,
+    "reproduced_source_examples": 6,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4256239475.html",
+      "https://eldamo.org/content/words/word-1772455553.html",
+      "https://eldamo.org/content/words/word-2811964629.html",
+      "https://eldamo.org/content/words/word-4278978579.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r125",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "[ŋ] vanished with compensatory lengthening",
+    "formula": "V̄n < Vŋn",
+    "url": "https://eldamo.org/content/words/word-3707785609.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4256239475.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r126",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "[ŋ] vanished with compensatory lengthening",
+    "formula": "V̄w < Vŋw",
+    "url": "https://eldamo.org/content/words/word-3707785609.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 8,
+    "reproduced_source_examples": 8,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4256239475.html",
+      "https://eldamo.org/content/words/word-2811964629.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r127",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[no change]",
+    "formula": "ø < ø",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4256239475.html",
+      "https://eldamo.org/content/words/word-3610825725.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r128",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[h] vanished after vowels",
+    "formula": "Vø < Vh",
+    "url": "https://eldamo.org/content/words/word-2979061283.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 19,
+    "reproduced_source_examples": 17,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4256239475.html",
+      "https://eldamo.org/content/words/word-3610825725.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r129",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "p < p",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3812635499.html",
+      "https://eldamo.org/content/words/word-984682243.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r132",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "voiceless stops voiced after vowels",
+    "formula": "Vp > Vb",
+    "url": "https://eldamo.org/content/words/word-2951504533.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 37,
+    "reproduced_source_examples": 36,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3812635499.html",
+      "https://eldamo.org/content/words/word-984682243.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r133",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "t < t",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-877785037.html",
+      "https://eldamo.org/content/words/word-2344798987.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r134",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "voiceless stops voiced after vowels",
+    "formula": "Vt > Vd",
+    "url": "https://eldamo.org/content/words/word-2951504533.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 105,
+    "reproduced_source_examples": 101,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-877785037.html",
+      "https://eldamo.org/content/words/word-2344798987.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r135",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "k < k",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4259969347.html",
+      "https://eldamo.org/content/words/word-1432017051.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r136",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "medial [j] became [i]",
+    "formula": "CjV > CiV",
+    "url": "https://eldamo.org/content/words/word-1126685261.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 58,
+    "reproduced_source_examples": 51,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4259969347.html",
+      "https://eldamo.org/content/words/word-2237901781.html",
+      "https://eldamo.org/content/words/word-1772455553.html",
+      "https://eldamo.org/content/words/word-1432017051.html",
+      "https://eldamo.org/content/words/word-3704915731.html",
+      "https://eldamo.org/content/words/word-3239470553.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r137",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "voiceless stops voiced after vowels",
+    "formula": "Vk > Vg",
+    "url": "https://eldamo.org/content/words/word-2951504533.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 87,
+    "reproduced_source_examples": 86,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4259969347.html",
+      "https://eldamo.org/content/words/word-1432017051.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r145",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "s < s",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2685239499.html",
+      "https://eldamo.org/content/words/word-4152253449.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r159",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "intervocalic [s] became [h]",
+    "formula": "VhV < VsV",
+    "url": "https://eldamo.org/content/words/word-4036446677.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 21,
+    "reproduced_source_examples": 18,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1092395261.html",
+      "https://eldamo.org/content/words/word-2559410261.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r160",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "[h] vanished after vowels",
+    "formula": "Vh > Vø",
+    "url": "https://eldamo.org/content/words/word-2979061283.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 19,
+    "reproduced_source_examples": 17,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1092395261.html",
+      "https://eldamo.org/content/words/word-2559410261.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r170",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "voiced stops became spirants after vowels",
+    "formula": "Vb > Vv",
+    "url": "https://eldamo.org/content/words/word-1726791627.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 45,
+    "reproduced_source_examples": 41,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3347181681.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r171",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "b < b",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3347181681.html",
+      "https://eldamo.org/content/words/word-519229385.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r173",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "voiced stops became spirants after vowels",
+    "formula": "Vb > Vv",
+    "url": "https://eldamo.org/content/words/word-8115507.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 22,
+    "reproduced_source_examples": 20,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3347181681.html",
+      "https://eldamo.org/content/words/word-519229385.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r176",
+    "era": "late",
+    "stage": 2,
+    "marker": "OS.",
+    "rule": "[z] vanished before [d] lengthening preceding vowel",
+    "formula": "V̄d < Vzd",
+    "url": "https://eldamo.org/content/words/word-1249932447.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 5,
+    "reproduced_source_examples": 4,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4027241973.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r178",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "voiced stops became spirants after vowels",
+    "formula": "Vd > Vð",
+    "url": "https://eldamo.org/content/words/word-1726791627.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 115,
+    "reproduced_source_examples": 107,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4027241973.html",
+      "https://eldamo.org/content/words/word-3631098897.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r179",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "d < d",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4027241973.html",
+      "https://eldamo.org/content/words/word-1199289677.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r180",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "voiced stops became spirants after vowels",
+    "formula": "Vd > Vð",
+    "url": "https://eldamo.org/content/words/word-8115507.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 55,
+    "reproduced_source_examples": 54,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4027241973.html",
+      "https://eldamo.org/content/words/word-1199289677.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r183",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "voiced stops became spirants after vowels",
+    "formula": "Vg > Vɣ",
+    "url": "https://eldamo.org/content/words/word-1726791627.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 72,
+    "reproduced_source_examples": 66,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2899848763.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r184",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "g < g",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2899848763.html",
+      "https://eldamo.org/content/words/word-71896467.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r185",
+    "era": "middle",
+    "stage": 2,
+    "marker": "N.",
+    "rule": "voiced stops became spirants after vowels",
+    "formula": "Vg > Vɣ",
+    "url": "https://eldamo.org/content/words/word-8115507.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 42,
+    "reproduced_source_examples": 39,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2899848763.html",
+      "https://eldamo.org/content/words/word-71896467.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r191",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "m < m",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-645062343.html",
+      "https://eldamo.org/content/words/word-2112077343.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r202",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "n < n",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3132576137.html",
+      "https://eldamo.org/content/words/word-304623841.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r207",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "ŋ < ŋ",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3117099643.html",
+      "https://eldamo.org/content/words/word-289146297.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r216",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "final [w] usually became [u]",
+    "formula": "-Cw > -Cu",
+    "url": "https://eldamo.org/content/words/word-798091205.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 36,
+    "reproduced_source_examples": 35,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4045356243.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r217",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "w < w",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4045356243.html",
+      "https://eldamo.org/content/words/word-1217402897.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r219",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "l < l",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2452515845.html",
+      "https://eldamo.org/content/words/word-3919530845.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r221",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "r < r",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-197726635.html",
+      "https://eldamo.org/content/words/word-1664740615.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r223",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "j < j",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1772455553.html",
+      "https://eldamo.org/content/words/word-3239470553.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r235",
+    "era": "late",
+    "stage": 2,
+    "marker": "OS.",
+    "rule": "[no change]",
+    "formula": "ī < ī",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-826100283.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r237",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "ī < ī",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-826100283.html",
+      "https://eldamo.org/content/words/word-2293114233.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r241",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "ǭ < ǭ",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2367252927.html",
+      "https://eldamo.org/content/words/word-3834266877.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r245",
+    "era": "late",
+    "stage": 2,
+    "marker": "OS.",
+    "rule": "[no change]",
+    "formula": "ū < ū",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1113131707.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r247",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "oi < oi",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1113131707.html",
+      "https://eldamo.org/content/words/word-2693238221.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r250",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "ū < ū",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1113131707.html",
+      "https://eldamo.org/content/words/word-2580145657.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r255",
+    "era": "late",
+    "stage": 2,
+    "marker": "OS.",
+    "rule": "[no change]",
+    "formula": "ui < ui",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3744257499.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r257",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[no change]",
+    "formula": "ui < ui",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3744257499.html",
+      "https://eldamo.org/content/words/word-501464665.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r259",
+    "era": "late",
+    "stage": 2,
+    "marker": "OS.",
+    "rule": "[no change]",
+    "formula": "iu < iu",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1474675267.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r262",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "initial and intervocalic [ŋ] vanished",
+    "formula": "VøV < VŋV",
+    "url": "https://eldamo.org/content/words/word-552653835.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2811964629.html",
+      "https://eldamo.org/content/words/word-4278978579.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r263",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[ɣ] vanished",
+    "formula": "ø- < ɣ-",
+    "url": "https://eldamo.org/content/words/word-3657372981.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 10,
+    "reproduced_source_examples": 10,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2811964629.html",
+      "https://eldamo.org/content/words/word-4278978579.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r264",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[ɣ] vanished",
+    "formula": "ø < ɣ",
+    "url": "https://eldamo.org/content/words/word-3657372981.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 8,
+    "reproduced_source_examples": 6,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2811964629.html",
+      "https://eldamo.org/content/words/word-4278978579.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r279",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspiration moved to end of group of stops",
+    "formula": "p{ptkpʰtʰkʰs} < b{ptkpʰtʰkʰs}",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3069986809.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r280",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspiration moved to end of group of stops",
+    "formula": "{ptkmnŋlr}p > {ptkmnŋlr}pʰ",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3069986809.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r289",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspiration moved to end of group of stops",
+    "formula": "Vp > Vb",
+    "url": "https://eldamo.org/content/words/word-2421096703.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 1,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3069986809.html",
+      "https://eldamo.org/content/words/word-1408992549.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r293",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspiration moved to end of group of stops",
+    "formula": "t{ptkpʰtʰkʰs} < d{ptkpʰtʰkʰs}",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1451293561.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r294",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspiration moved to end of group of stops",
+    "formula": "{pʰtʰkʰptk}d > {pʰtʰkʰptk}t",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1451293561.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r299",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "t+t > st",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 7,
+    "reproduced_source_examples": 7,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1451293561.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r306",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspirate became voiceless stop before [s]",
+    "formula": "Vt > Vd",
+    "url": "https://eldamo.org/content/words/word-2421096703.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 7,
+    "reproduced_source_examples": 6,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1451293561.html",
+      "https://eldamo.org/content/words/word-2769109293.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r307",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "t+t > st",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1451293561.html",
+      "https://eldamo.org/content/words/word-2769109293.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r323",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspiration moved to end of group of stops",
+    "formula": "Xw > Xv",
+    "url": "https://eldamo.org/content/words/word-1848454147.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 3,
+    "reproduced_source_examples": 3,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2945869571.html",
+      "https://eldamo.org/content/words/word-1856328257.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r324",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspiration moved to end of group of stops",
+    "formula": "Vk > Vg",
+    "url": "https://eldamo.org/content/words/word-2421096703.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 12,
+    "reproduced_source_examples": 10,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2945869571.html",
+      "https://eldamo.org/content/words/word-1856328257.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r328",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[pw], [pʰw] became [pp], [pʰp]",
+    "formula": "{ptk}pʰ > {ptk}p",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2137826555.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r352",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "d+d > zd",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 10,
+    "reproduced_source_examples": 8,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3631098897.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r355",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "d+d > zd",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3631098897.html",
+      "https://eldamo.org/content/words/word-1623600883.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r379",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "formula": "-Cm- < -Cmb-",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2136523007.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r383",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "formula": "-Cmb- > -Cm-",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2136523007.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r389",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "final nasals vanished after vowels",
+    "formula": "-Vm > -Vø",
+    "url": "https://eldamo.org/content/words/word-876455981.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 1,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2136523007.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r394",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "metathesis",
+    "formula": "sC- > øC-",
+    "url": "https://eldamo.org/content/words/word-3538536723.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2136523007.html",
+      "https://eldamo.org/content/words/word-2536388549.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r399",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "formula": "-Cn- < -Cnd-",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3879333373.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r401",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "final [m] became [n]",
+    "formula": "Vnr > V̄ør",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3879333373.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r405",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "formula": "-Cnd- > -Cn-",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3879333373.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r411",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "nasals assimilated to following stops and aspirates",
+    "formula": "sC- > øC-",
+    "url": "https://eldamo.org/content/words/word-3538536723.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3879333373.html",
+      "https://eldamo.org/content/words/word-728934117.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r416",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "formula": "-Cŋ- < -Cŋg-",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r422",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "formula": "V̄ŋ{rlmn} > V̄{rlmn}",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r427",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "initial and intervocalic [ŋ] vanished",
+    "formula": "ŋ- > ø-",
+    "url": "https://eldamo.org/content/words/word-552653835.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 6,
+    "reproduced_source_examples": 6,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html",
+      "https://eldamo.org/content/words/word-713456603.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r430",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "formula": "VŋV > VɣV",
+    "url": "https://eldamo.org/content/words/word-768986721.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 16,
+    "reproduced_source_examples": 13,
+    "unsupported_example_reasons": "unsupported:unaligned insertion/deletion",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r436",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "formula": "-Cŋg- > -Cŋ-",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r438",
+    "era": "late",
+    "stage": 3,
+    "marker": "S.",
+    "rule": "[ŋ] vanished with compensatory lengthening",
+    "formula": "Vŋn > V̄n",
+    "url": "https://eldamo.org/content/words/word-3707785609.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r442",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "nasals assimilated to following stops and aspirates",
+    "formula": "VŋV > VɣV",
+    "url": "https://eldamo.org/content/words/word-1844604693.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html",
+      "https://eldamo.org/content/words/word-713456603.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r448",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "formula": "VŋV > VɣV",
+    "url": "https://eldamo.org/content/words/word-3915121695.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 4,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "unsupported:unaligned insertion/deletion",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html",
+      "https://eldamo.org/content/words/word-713456603.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r453",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "initial and intervocalic [ŋ] vanished",
+    "formula": "VŋV > VøV",
+    "url": "https://eldamo.org/content/words/word-552653835.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html",
+      "https://eldamo.org/content/words/word-713456603.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r458",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "formula": "VɣV < VŋV",
+    "url": "https://eldamo.org/content/words/word-768986721.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 16,
+    "reproduced_source_examples": 13,
+    "unsupported_example_reasons": "unsupported:unaligned insertion/deletion",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r459",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "formula": "xs > xs",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r461",
+    "era": "late",
+    "stage": 2,
+    "marker": "OS.",
+    "rule": "initial [ɣ]/[h] vanished",
+    "formula": "ɣ- > ø-",
+    "url": "https://eldamo.org/content/words/word-1117448055.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 18,
+    "reproduced_source_examples": 18,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html",
+      "https://eldamo.org/content/words/word-2012405769.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r463",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "formula": "xtʰ > xtʰ",
+    "url": "https://eldamo.org/content/words/word-794129503.html",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "mismatch_or_context",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r464",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "-ɣ- > -ø-",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 29,
+    "reproduced_source_examples": 14,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r465",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "aɣC > āC",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 4,
+    "reproduced_source_examples": 4,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r467",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "formula": "VɣV < VŋV",
+    "url": "https://eldamo.org/content/words/word-3915121695.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 4,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "unsupported:unaligned insertion/deletion",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html",
+      "https://eldamo.org/content/words/word-1432348171.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r472",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "formula": "Vht > V̄t",
+    "url": "https://eldamo.org/content/words/word-3116721073.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html",
+      "https://eldamo.org/content/words/word-1432348171.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r474",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "formula": "ɣ > ø",
+    "url": "https://eldamo.org/content/words/word-1476955021.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 4,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html",
+      "https://eldamo.org/content/words/word-1432348171.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r478",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[ɣ] vanished",
+    "formula": "ɣ- > ø-",
+    "url": "https://eldamo.org/content/words/word-3657372981.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 10,
+    "reproduced_source_examples": 10,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html",
+      "https://eldamo.org/content/words/word-1432348171.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r479",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "[ɣ] vanished",
+    "formula": "ɣ > ø",
+    "url": "https://eldamo.org/content/words/word-3657372981.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 8,
+    "reproduced_source_examples": 6,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html",
+      "https://eldamo.org/content/words/word-1432348171.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r487",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "st < t+t",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 7,
+    "reproduced_source_examples": 7,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4003450521.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r496",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "st < t+t",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4003450521.html",
+      "https://eldamo.org/content/words/word-281596459.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r509",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ON.",
+    "rule": "intervocalic [s] became [h]",
+    "formula": "VsV > VhV",
+    "url": "https://eldamo.org/content/words/word-4036446677.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 21,
+    "reproduced_source_examples": 18,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4003450521.html",
+      "https://eldamo.org/content/words/word-281596459.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r513",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "zd < d+d",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 10,
+    "reproduced_source_examples": 8,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3318220985.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r516",
+    "era": "late",
+    "stage": 2,
+    "marker": "OS.",
+    "rule": "[z] vanished before [d] lengthening preceding vowel",
+    "formula": "Vzd > V̄d",
+    "url": "https://eldamo.org/content/words/word-1249932447.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 5,
+    "reproduced_source_examples": 4,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3318220985.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r521",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "zd < d+d",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3318220985.html",
+      "https://eldamo.org/content/words/word-514317113.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r523",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "formula": "xtʰ < xtʰ",
+    "url": "https://eldamo.org/content/words/word-794129503.html",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "mismatch_or_context",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2012405769.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r524",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "formula": "xs < xs",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2012405769.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r525",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "formula": "h- > ø-",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2012405769.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r526",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "-h- > -ø-",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "mismatch_or_context",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2012405769.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r531",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "iɣC > īC",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 1,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3755216135.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r532",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "short final [i], [u] became [e], [o]",
+    "formula": "-Se < -Sĭ",
+    "url": "https://eldamo.org/content/words/word-3064357955.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 266,
+    "reproduced_source_examples": 248,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1078941967.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r538",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "short final [i], [u] became [e], [o]",
+    "formula": "-So < -Sŭ",
+    "url": "https://eldamo.org/content/words/word-3064357955.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 67,
+    "reproduced_source_examples": 58,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1327176443.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r541",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "uɣC > ūC",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "mismatch_or_context",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3194103897.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r542",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "īC < iɣC",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 1,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2558005145.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r556",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "ūC < uɣC",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "mismatch_or_context",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2428716953.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r568",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "-ø- < -h-",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "mismatch_or_context",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3868991225.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r569",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "-ø- < -ɣ-",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 29,
+    "reproduced_source_examples": 14,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3868991225.html"
+    ]
+  },
+  {
+    "rule_id": "sindarin-r570",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "āC < aɣC",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 4,
+    "reproduced_source_examples": 4,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3868991225.html"
+    ]
+  }
+]

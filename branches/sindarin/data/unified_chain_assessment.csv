@@ -1,0 +1,115 @@
+id,era,path,grade,attested_steps,steps,coherent_examples,contiguous_examples,coherent_source_and_article,dp_max_states,urls
+SINDARIN1,late,ae → ā → ǭ,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-1056240093.html | https://eldamo.org/content/words/word-2858643115.html
+SINDARIN2,late,ae → ā → ǭ → au,U,2,3,0,0,False,0,https://eldamo.org/content/words/word-1056240093.html | https://eldamo.org/content/words/word-2858643115.html | https://eldamo.org/content/words/word-558704171.html
+SINDARIN3,late,ao → ā → ǭ,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-1056240093.html | https://eldamo.org/content/words/word-2858643115.html
+SINDARIN4,late,ao → ā → ǭ → au,U,2,3,0,0,False,0,https://eldamo.org/content/words/word-1056240093.html | https://eldamo.org/content/words/word-2858643115.html | https://eldamo.org/content/words/word-558704171.html
+SINDARIN5,late,bm → mb → m,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-3882201769.html | 
+SINDARIN6,late,bm → mb → mm,D,2,2,0,0,False,6,https://eldamo.org/content/words/word-3882201769.html | https://eldamo.org/content/words/word-868023175.html
+SINDARIN7,late,bm → mb → mm → m,D,3,3,0,0,False,6,https://eldamo.org/content/words/word-3882201769.html | https://eldamo.org/content/words/word-868023175.html | https://eldamo.org/content/words/word-3689144303.html
+SINDARIN8,late,bm → mb → b,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-3882201769.html | https://eldamo.org/content/words/word-3057844573.html
+SINDARIN9,late,bm → mm → m,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2615312913.html | https://eldamo.org/content/words/word-3689144303.html
+SINDARIN10,late,eu → iu → ȳ,C,2,2,7,7,True,8,https://eldamo.org/content/words/word-2662025405.html | https://eldamo.org/content/words/word-659168127.html
+SINDARIN11,late,mb → mm → m,C,2,2,28,41,True,33,https://eldamo.org/content/words/word-868023175.html | https://eldamo.org/content/words/word-3689144303.html
+SINDARIN12,late,mf → mm → m,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2996915415.html | https://eldamo.org/content/words/word-3689144303.html
+SINDARIN13,late,mw → mm → m,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-1484184939.html | https://eldamo.org/content/words/word-3689144303.html
+SINDARIN14,late,pm → bm → mm,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-3463937975.html | https://eldamo.org/content/words/word-2615312913.html
+SINDARIN15,late,pm → bm → mm → m,U,1,3,0,0,False,0,https://eldamo.org/content/words/word-3463937975.html | https://eldamo.org/content/words/word-2615312913.html | https://eldamo.org/content/words/word-3689144303.html
+SINDARIN16,late,sb → zb → ðβ,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-882174441.html | https://eldamo.org/content/words/word-1951748921.html
+SINDARIN17,late,sg → zg → ðɣ,D,2,2,0,0,False,1,https://eldamo.org/content/words/word-882174441.html | https://eldamo.org/content/words/word-1951748921.html
+SINDARIN18,late,tn → dn → nn,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-3463937975.html | https://eldamo.org/content/words/word-2615312913.html
+SINDARIN19,late,ttʰ → θθ → θ,D,2,2,0,0,False,17,https://eldamo.org/content/words/word-883570327.html | https://eldamo.org/content/words/word-1206014597.html
+SINDARIN20,late,tʰt → ttʰ → θθ,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-3183451073.html | https://eldamo.org/content/words/word-883570327.html
+SINDARIN21,late,tʰt → ttʰ → θθ → θ,U,2,3,0,0,False,0,https://eldamo.org/content/words/word-3183451073.html | https://eldamo.org/content/words/word-883570327.html | https://eldamo.org/content/words/word-1206014597.html
+SINDARIN22,late,tʰtʰ → ttʰ → θθ,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-3183451073.html | https://eldamo.org/content/words/word-883570327.html
+SINDARIN23,late,tʰtʰ → ttʰ → θθ → θ,U,2,3,0,0,False,0,https://eldamo.org/content/words/word-3183451073.html | https://eldamo.org/content/words/word-883570327.html | https://eldamo.org/content/words/word-1206014597.html
+SINDARIN24,late,ðm → ðv → ðw,C,2,2,2,2,True,2,https://eldamo.org/content/words/word-1951379117.html | https://eldamo.org/content/words/word-2192660503.html
+SINDARIN25,late,ā → ǭ → au,C,2,2,53,81,True,75,https://eldamo.org/content/words/word-2858643115.html | https://eldamo.org/content/words/word-558704171.html
+SINDARIN26,late,ę̄ → ai → ae,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2387695245.html | https://eldamo.org/content/words/word-941153689.html
+SINDARIN27,late,ŋ → ŋg → g,U,0,2,0,0,False,0, | https://eldamo.org/content/words/word-1688730459.html
+SINDARIN28,late,ŋ → ŋg → g,U,0,2,0,0,False,0, | https://eldamo.org/content/words/word-3057844573.html
+SINDARIN29,late,ŋg → ŋ → g,U,0,2,0,0,False,0, | https://eldamo.org/content/words/word-1228875561.html
+SINDARIN30,late,ŋgj → ŋg → g,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-345959193.html | https://eldamo.org/content/words/word-3057844573.html
+SINDARIN31,late,ŋgw → mb → mm,D,2,2,0,0,False,2,https://eldamo.org/content/words/word-171120983.html | https://eldamo.org/content/words/word-868023175.html
+SINDARIN32,late,ŋgw → mb → mm → m,D,3,3,0,0,False,2,https://eldamo.org/content/words/word-171120983.html | https://eldamo.org/content/words/word-868023175.html | https://eldamo.org/content/words/word-3689144303.html
+SINDARIN33,late,ŋgw → mb → b,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-171120983.html | https://eldamo.org/content/words/word-3057844573.html
+SINDARIN34,late,ŋj → ŋgj → ŋg,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-2233951333.html | https://eldamo.org/content/words/word-345959193.html
+SINDARIN35,late,ŋw → ŋgw → mb,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2233951333.html | https://eldamo.org/content/words/word-171120983.html
+SINDARIN36,late,ŋw → ŋgw → mb → mm,U,2,3,0,0,False,0,https://eldamo.org/content/words/word-2233951333.html | https://eldamo.org/content/words/word-171120983.html | https://eldamo.org/content/words/word-868023175.html
+SINDARIN37,late,ŋŋ → ŋg → g,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-3404492995.html | https://eldamo.org/content/words/word-1688730459.html
+SINDARIN38,late,ŋŋ → ŋg → ŋ,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-3404492995.html | 
+SINDARIN39,late,ŋŋ → ŋg → ŋ → g,U,1,3,0,0,False,0,https://eldamo.org/content/words/word-3404492995.html |  | https://eldamo.org/content/words/word-1228875561.html
+SINDARIN40,late,ŋŋ → ŋg → g,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-3404492995.html | https://eldamo.org/content/words/word-3057844573.html
+SINDARIN41,late,ŋɣ → ŋg → g,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-3404492995.html | https://eldamo.org/content/words/word-1688730459.html
+SINDARIN42,late,ŋɣ → ŋg → ŋ,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-3404492995.html | 
+SINDARIN43,late,ŋɣ → ŋg → ŋ → g,U,0,3,0,0,False,0,https://eldamo.org/content/words/word-3404492995.html |  | https://eldamo.org/content/words/word-1228875561.html
+SINDARIN44,late,ŋɣ → ŋg → g,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-3404492995.html | https://eldamo.org/content/words/word-3057844573.html
+SINDARIN45,middle,ae → ā → ō,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-1909322629.html
+SINDARIN46,middle,ae → ā → ō → ū,U,2,3,0,0,False,0,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-1909322629.html | https://eldamo.org/content/words/word-390078853.html
+SINDARIN47,middle,ae → ā → ǭ,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2277851021.html
+SINDARIN48,middle,ae → ā → ǭ → ou,U,2,3,0,0,False,0,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2277851021.html | https://eldamo.org/content/words/word-4073827619.html
+SINDARIN49,middle,ae → ā → ǭ,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2790556075.html
+SINDARIN50,middle,ae → ā → ǭ → ou,U,2,3,0,0,False,0,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2790556075.html | https://eldamo.org/content/words/word-4073827619.html
+SINDARIN51,middle,ai → ę̄ → ae,D,2,2,0,0,False,1,https://eldamo.org/content/words/word-3619603651.html | https://eldamo.org/content/words/word-3173115217.html
+SINDARIN52,middle,ao → ā → ō,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-1909322629.html
+SINDARIN53,middle,ao → ā → ō → ū,U,2,3,0,0,False,0,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-1909322629.html | https://eldamo.org/content/words/word-390078853.html
+SINDARIN54,middle,ao → ā → ǭ,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2277851021.html
+SINDARIN55,middle,ao → ā → ǭ → ou,U,2,3,0,0,False,0,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2277851021.html | https://eldamo.org/content/words/word-4073827619.html
+SINDARIN56,middle,ao → ā → ǭ,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2790556075.html
+SINDARIN57,middle,ao → ā → ǭ → ou,U,2,3,0,0,False,0,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2790556075.html | https://eldamo.org/content/words/word-4073827619.html
+SINDARIN58,middle,au → ǭ → ou,C,2,2,14,17,True,26,https://eldamo.org/content/words/word-2790556075.html | https://eldamo.org/content/words/word-4073827619.html
+SINDARIN59,middle,ei → oi → ui,C,2,2,6,8,True,8,https://eldamo.org/content/words/word-1880600739.html | https://eldamo.org/content/words/word-2826795683.html
+SINDARIN60,middle,j̊ → x → h,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-1284301541.html | https://eldamo.org/content/words/word-1195324115.html
+SINDARIN61,middle,kʰ → x → h,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-1770347191.html | https://eldamo.org/content/words/word-1195324115.html
+SINDARIN62,middle,kʰj → kʰ → x,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-4025342543.html | https://eldamo.org/content/words/word-1770347191.html
+SINDARIN63,middle,kʰj → kʰ → x → h,U,1,3,0,0,False,0,https://eldamo.org/content/words/word-4025342543.html | https://eldamo.org/content/words/word-1770347191.html | https://eldamo.org/content/words/word-1195324115.html
+SINDARIN64,middle,kʰw → pʰ → ɸ,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-3214863235.html | https://eldamo.org/content/words/word-1770347191.html
+SINDARIN65,middle,kʰw → pʰ → ɸ → f,U,2,3,0,0,False,0,https://eldamo.org/content/words/word-3214863235.html | https://eldamo.org/content/words/word-1770347191.html | https://eldamo.org/content/words/word-2995333959.html
+SINDARIN66,middle,p → pʰ → ɸ,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2684793511.html | https://eldamo.org/content/words/word-1770347191.html
+SINDARIN67,middle,p → pʰ → ɸ → f,U,2,3,0,0,False,0,https://eldamo.org/content/words/word-2684793511.html | https://eldamo.org/content/words/word-1770347191.html | https://eldamo.org/content/words/word-2995333959.html
+SINDARIN68,middle,pʰ → ɸ → f,C,2,2,36,40,True,54,https://eldamo.org/content/words/word-1770347191.html | https://eldamo.org/content/words/word-2995333959.html
+SINDARIN69,middle,sj → j̊ → x,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-3693878703.html | https://eldamo.org/content/words/word-1284301541.html
+SINDARIN70,middle,sj → j̊ → x → h,U,0,3,0,0,False,0,https://eldamo.org/content/words/word-3693878703.html | https://eldamo.org/content/words/word-1284301541.html | https://eldamo.org/content/words/word-1195324115.html
+SINDARIN71,middle,sk → sx → x,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html
+SINDARIN72,middle,sk → sx → x → h,U,0,3,0,0,False,0,https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html | https://eldamo.org/content/words/word-1195324115.html
+SINDARIN73,middle,skj → sk → sx,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-4025342543.html | https://eldamo.org/content/words/word-948882833.html
+SINDARIN74,middle,skj → sk → sx → x,U,0,3,0,0,False,0,https://eldamo.org/content/words/word-4025342543.html | https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html
+SINDARIN75,middle,skw → sw → w̥,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-1872897535.html | https://eldamo.org/content/words/word-165461035.html
+SINDARIN76,middle,skw → sw → w̥ → xw,U,0,3,0,0,False,0,https://eldamo.org/content/words/word-1872897535.html | https://eldamo.org/content/words/word-165461035.html | https://eldamo.org/content/words/word-1284301541.html
+SINDARIN77,middle,skw → sw → w̥,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-1872897535.html | https://eldamo.org/content/words/word-3693878703.html
+SINDARIN78,middle,skw → sw → w̥ → xw,U,0,3,0,0,False,0,https://eldamo.org/content/words/word-1872897535.html | https://eldamo.org/content/words/word-3693878703.html | https://eldamo.org/content/words/word-1284301541.html
+SINDARIN79,middle,skʰ → sk → sx,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-948882833.html
+SINDARIN80,middle,skʰ → sk → sx → x,U,0,3,0,0,False,0,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html
+SINDARIN81,middle,sl → θl → fl,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-2075290201.html | https://eldamo.org/content/words/word-2640707457.html
+SINDARIN82,middle,sp → sɸ → ɸ,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html
+SINDARIN83,middle,sp → sɸ → ɸ → f,U,1,3,0,0,False,0,https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html | https://eldamo.org/content/words/word-2995333959.html
+SINDARIN84,middle,st → sθ → θ,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html
+SINDARIN85,middle,stʰ → st → θ,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-570537175.html
+SINDARIN86,middle,stʰ → st → sθ,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-948882833.html
+SINDARIN87,middle,stʰ → st → sθ → θ,U,0,3,0,0,False,0,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html
+SINDARIN88,middle,sw → w̥ → xw,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-165461035.html | https://eldamo.org/content/words/word-1284301541.html
+SINDARIN89,middle,sw → w̥ → xw,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-3693878703.html | https://eldamo.org/content/words/word-1284301541.html
+SINDARIN90,middle,sx → x → h,U,0,2,0,0,False,0,https://eldamo.org/content/words/word-2061688473.html | https://eldamo.org/content/words/word-1195324115.html
+SINDARIN91,middle,sɸ → ɸ → f,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2061688473.html | https://eldamo.org/content/words/word-2995333959.html
+SINDARIN92,middle,z → r → r̥,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-982618329.html | https://eldamo.org/content/words/word-876815979.html
+SINDARIN93,middle,ā → ō → ū,U,2,2,0,1,False,18,https://eldamo.org/content/words/word-1909322629.html | https://eldamo.org/content/words/word-390078853.html
+SINDARIN94,middle,ā → ǭ → ou,D,2,2,0,0,False,1,https://eldamo.org/content/words/word-2277851021.html | https://eldamo.org/content/words/word-4073827619.html
+SINDARIN95,middle,ā → ǭ → ou → au,D,3,3,0,0,False,1,https://eldamo.org/content/words/word-2277851021.html | https://eldamo.org/content/words/word-4073827619.html | https://eldamo.org/content/words/word-2902864717.html
+SINDARIN96,middle,ā → ǭ → ou,C,2,2,40,53,True,63,https://eldamo.org/content/words/word-2790556075.html | https://eldamo.org/content/words/word-4073827619.html
+SINDARIN97,middle,ā → ǭ → ou → au,C,3,3,25,56,True,63,https://eldamo.org/content/words/word-2790556075.html | https://eldamo.org/content/words/word-4073827619.html | https://eldamo.org/content/words/word-2902864717.html
+SINDARIN98,middle,ŋgj → ŋg → g,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-4025342543.html | https://eldamo.org/content/words/word-956128961.html
+SINDARIN99,middle,ŋgw → mb → mm,D,2,2,0,0,False,11,https://eldamo.org/content/words/word-3214863235.html | https://eldamo.org/content/words/word-1317326183.html
+SINDARIN100,middle,ŋgw → mb → b,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-3214863235.html | https://eldamo.org/content/words/word-956128961.html
+SINDARIN101,middle,ŋj → ŋgj → ŋg,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-1270135967.html | https://eldamo.org/content/words/word-4025342543.html
+SINDARIN102,middle,ŋs → ɣs → hs,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-3915121695.html | https://eldamo.org/content/words/word-2810726977.html
+SINDARIN103,middle,ŋs → ɣs → hs → ss,U,2,3,0,0,False,0,https://eldamo.org/content/words/word-3915121695.html | https://eldamo.org/content/words/word-2810726977.html | https://eldamo.org/content/words/word-178282823.html
+SINDARIN104,middle,ŋw → ŋgw → mb,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-1270135967.html | https://eldamo.org/content/words/word-3214863235.html
+SINDARIN105,middle,ŋw → ŋgw → mb → mm,U,2,3,0,0,False,0,https://eldamo.org/content/words/word-1270135967.html | https://eldamo.org/content/words/word-3214863235.html | https://eldamo.org/content/words/word-1317326183.html
+SINDARIN106,middle,ŋŋ → ŋg → g,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-1688730459.html
+SINDARIN107,middle,ŋŋ → ŋg → g,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-3944232895.html
+SINDARIN108,middle,ŋŋ → ŋg → g,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-956128961.html
+SINDARIN109,middle,ŋɣ → ŋg → g,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-1688730459.html
+SINDARIN110,middle,ŋɣ → ŋg → g,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-3944232895.html
+SINDARIN111,middle,ŋɣ → ŋg → g,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-956128961.html
+SINDARIN112,middle,ǣ → ę̄ → ae,U,1,2,0,0,False,0,https://eldamo.org/content/words/word-3619603651.html | https://eldamo.org/content/words/word-3173115217.html
+SINDARIN113,middle,ǭ → ou → au,C,2,2,60,74,True,86,https://eldamo.org/content/words/word-4073827619.html | https://eldamo.org/content/words/word-2902864717.html
+SINDARIN114,middle,ɣs → hs → ss,C,2,2,1,1,True,1,https://eldamo.org/content/words/word-2810726977.html | https://eldamo.org/content/words/word-178282823.html

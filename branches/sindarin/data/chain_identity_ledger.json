@@ -1,0 +1,2941 @@
+[
+  {
+    "display_id": "S1",
+    "era": "late",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN1",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1056240093.html",
+          "https://eldamo.org/content/words/word-2858643115.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S2",
+    "era": "late",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ",
+      "au"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-558704171.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN2",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1056240093.html",
+          "https://eldamo.org/content/words/word-2858643115.html",
+          "https://eldamo.org/content/words/word-558704171.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S3",
+    "era": "late",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN3",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1056240093.html",
+          "https://eldamo.org/content/words/word-2858643115.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S4",
+    "era": "late",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ",
+      "au"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-558704171.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN4",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1056240093.html",
+          "https://eldamo.org/content/words/word-2858643115.html",
+          "https://eldamo.org/content/words/word-558704171.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S5",
+    "era": "late",
+    "states": [
+      "bm",
+      "mm",
+      "m"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2615312913.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN9",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2615312913.html",
+          "https://eldamo.org/content/words/word-3689144303.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S6",
+    "era": "late",
+    "states": [
+      "bm",
+      "mb",
+      "mm"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN6",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-3882201769.html",
+          "https://eldamo.org/content/words/word-868023175.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S7",
+    "era": "late",
+    "states": [
+      "bm",
+      "mb",
+      "mm",
+      "m"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "https://eldamo.org/content/words/word-868023175.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN7",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-3882201769.html",
+          "https://eldamo.org/content/words/word-868023175.html",
+          "https://eldamo.org/content/words/word-3689144303.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S8",
+    "era": "late",
+    "states": [
+      "bm",
+      "mb",
+      "b"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN8",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3882201769.html",
+          "https://eldamo.org/content/words/word-3057844573.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S9",
+    "era": "late",
+    "states": [
+      "bm",
+      "mb",
+      "m"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      ""
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN5",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3882201769.html",
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S10",
+    "era": "late",
+    "states": [
+      "bm",
+      "mb",
+      "m",
+      "n"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "",
+      "https://eldamo.org/content/words/word-760163573.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S11",
+    "era": "late",
+    "states": [
+      "eu",
+      "iu",
+      "ȳ"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2662025405.html",
+      "https://eldamo.org/content/words/word-659168127.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN10",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-2662025405.html",
+          "https://eldamo.org/content/words/word-659168127.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S12",
+    "era": "late",
+    "states": [
+      "mb",
+      "mm",
+      "m"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-868023175.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN11",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-868023175.html",
+          "https://eldamo.org/content/words/word-3689144303.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S13",
+    "era": "late",
+    "states": [
+      "mb",
+      "m",
+      "n"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-760163573.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S14",
+    "era": "late",
+    "states": [
+      "mf",
+      "mm",
+      "m"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2996915415.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN12",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2996915415.html",
+          "https://eldamo.org/content/words/word-3689144303.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S15",
+    "era": "late",
+    "states": [
+      "mw",
+      "mm",
+      "m"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1484184939.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN13",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1484184939.html",
+          "https://eldamo.org/content/words/word-3689144303.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S16",
+    "era": "late",
+    "states": [
+      "pm",
+      "bm",
+      "mm"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3463937975.html",
+      "https://eldamo.org/content/words/word-2615312913.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN14",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3463937975.html",
+          "https://eldamo.org/content/words/word-2615312913.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S17",
+    "era": "late",
+    "states": [
+      "pm",
+      "bm",
+      "mm",
+      "m"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3463937975.html",
+      "https://eldamo.org/content/words/word-2615312913.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN15",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3463937975.html",
+          "https://eldamo.org/content/words/word-2615312913.html",
+          "https://eldamo.org/content/words/word-3689144303.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S18",
+    "era": "late",
+    "states": [
+      "sb",
+      "zb",
+      "ðβ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-1951748921.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN16",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-882174441.html",
+          "https://eldamo.org/content/words/word-1951748921.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S19",
+    "era": "late",
+    "states": [
+      "sg",
+      "zg",
+      "ðɣ"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-1951748921.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN17",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-882174441.html",
+          "https://eldamo.org/content/words/word-1951748921.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S20",
+    "era": "late",
+    "states": [
+      "tn",
+      "dn",
+      "nn"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3463937975.html",
+      "https://eldamo.org/content/words/word-2615312913.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN18",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3463937975.html",
+          "https://eldamo.org/content/words/word-2615312913.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S21",
+    "era": "late",
+    "states": [
+      "ttʰ",
+      "θθ",
+      "θ"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-883570327.html",
+      "https://eldamo.org/content/words/word-1206014597.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN19",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-883570327.html",
+          "https://eldamo.org/content/words/word-1206014597.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S22",
+    "era": "late",
+    "states": [
+      "tʰt",
+      "ttʰ",
+      "θθ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN20",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3183451073.html",
+          "https://eldamo.org/content/words/word-883570327.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S23",
+    "era": "late",
+    "states": [
+      "tʰt",
+      "ttʰ",
+      "θθ",
+      "θ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html",
+      "https://eldamo.org/content/words/word-1206014597.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN21",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3183451073.html",
+          "https://eldamo.org/content/words/word-883570327.html",
+          "https://eldamo.org/content/words/word-1206014597.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S24",
+    "era": "late",
+    "states": [
+      "tʰtʰ",
+      "ttʰ",
+      "θθ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN22",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3183451073.html",
+          "https://eldamo.org/content/words/word-883570327.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S25",
+    "era": "late",
+    "states": [
+      "tʰtʰ",
+      "ttʰ",
+      "θθ",
+      "θ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html",
+      "https://eldamo.org/content/words/word-1206014597.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN23",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3183451073.html",
+          "https://eldamo.org/content/words/word-883570327.html",
+          "https://eldamo.org/content/words/word-1206014597.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S26",
+    "era": "late",
+    "states": [
+      "ðm",
+      "ðv",
+      "ðw"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1951379117.html",
+      "https://eldamo.org/content/words/word-2192660503.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN24",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-1951379117.html",
+          "https://eldamo.org/content/words/word-2192660503.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S27",
+    "era": "late",
+    "states": [
+      "ā",
+      "ǭ",
+      "au"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-558704171.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN25",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-2858643115.html",
+          "https://eldamo.org/content/words/word-558704171.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S28",
+    "era": "late",
+    "states": [
+      "ę̄",
+      "ai",
+      "ae"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2387695245.html",
+      "https://eldamo.org/content/words/word-941153689.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN26",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2387695245.html",
+          "https://eldamo.org/content/words/word-941153689.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S29",
+    "era": "late",
+    "states": [
+      "ŋ",
+      "ŋg",
+      "g"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN28",
+        "grade": "U",
+        "urls": [
+          "",
+          "https://eldamo.org/content/words/word-3057844573.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S30",
+    "era": "late",
+    "states": [
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN31",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-171120983.html",
+          "https://eldamo.org/content/words/word-868023175.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S31",
+    "era": "late",
+    "states": [
+      "ŋgw",
+      "mb",
+      "mm",
+      "m"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-868023175.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN32",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-171120983.html",
+          "https://eldamo.org/content/words/word-868023175.html",
+          "https://eldamo.org/content/words/word-3689144303.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S32",
+    "era": "late",
+    "states": [
+      "ŋgw",
+      "mb",
+      "b"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN33",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-171120983.html",
+          "https://eldamo.org/content/words/word-3057844573.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S33",
+    "era": "late",
+    "states": [
+      "ŋgw",
+      "m",
+      "n"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-760163573.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S34",
+    "era": "late",
+    "states": [
+      "ŋj",
+      "ŋgj",
+      "n"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      ""
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S35",
+    "era": "late",
+    "states": [
+      "ŋw",
+      "m",
+      "n"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-760163573.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S36",
+    "era": "late",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      "https://eldamo.org/content/words/word-171120983.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN35",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2233951333.html",
+          "https://eldamo.org/content/words/word-171120983.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S37",
+    "era": "late",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN36",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2233951333.html",
+          "https://eldamo.org/content/words/word-171120983.html",
+          "https://eldamo.org/content/words/word-868023175.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S38",
+    "era": "late",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb",
+      "b"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S39",
+    "era": "late",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "m"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      ""
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S40",
+    "era": "late",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "m",
+      "n"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      "",
+      "https://eldamo.org/content/words/word-760163573.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S41",
+    "era": "late",
+    "states": [
+      "ŋx",
+      "ŋg",
+      "g"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2996915415.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S42",
+    "era": "late",
+    "states": [
+      "ŋx",
+      "x",
+      "h"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3057844573.html",
+      "https://eldamo.org/content/words/word-4188321265.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S43",
+    "era": "late",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN40",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3404492995.html",
+          "https://eldamo.org/content/words/word-3057844573.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S44",
+    "era": "late",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "ŋ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      ""
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN38",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3404492995.html",
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S45",
+    "era": "late",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN44",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3404492995.html",
+          "https://eldamo.org/content/words/word-3057844573.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S46",
+    "era": "late",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "ŋ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      ""
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN42",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3404492995.html",
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S47",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN49",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2229536775.html",
+          "https://eldamo.org/content/words/word-2790556075.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S48",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN50",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2229536775.html",
+          "https://eldamo.org/content/words/word-2790556075.html",
+          "https://eldamo.org/content/words/word-4073827619.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S49",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ō"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN45",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2229536775.html",
+          "https://eldamo.org/content/words/word-1909322629.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S50",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ō",
+      "ū"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html",
+      "https://eldamo.org/content/words/word-390078853.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN46",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2229536775.html",
+          "https://eldamo.org/content/words/word-1909322629.html",
+          "https://eldamo.org/content/words/word-390078853.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S51",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN47",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2229536775.html",
+          "https://eldamo.org/content/words/word-2277851021.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S52",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN48",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2229536775.html",
+          "https://eldamo.org/content/words/word-2277851021.html",
+          "https://eldamo.org/content/words/word-4073827619.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S53",
+    "era": "middle",
+    "states": [
+      "ai",
+      "ę̄",
+      "ae"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3619603651.html",
+      "https://eldamo.org/content/words/word-3173115217.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN51",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-3619603651.html",
+          "https://eldamo.org/content/words/word-3173115217.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S54",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN56",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2229536775.html",
+          "https://eldamo.org/content/words/word-2790556075.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S55",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN57",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2229536775.html",
+          "https://eldamo.org/content/words/word-2790556075.html",
+          "https://eldamo.org/content/words/word-4073827619.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S56",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ō"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN52",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2229536775.html",
+          "https://eldamo.org/content/words/word-1909322629.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S57",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ō",
+      "ū"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html",
+      "https://eldamo.org/content/words/word-390078853.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN53",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2229536775.html",
+          "https://eldamo.org/content/words/word-1909322629.html",
+          "https://eldamo.org/content/words/word-390078853.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S58",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN54",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2229536775.html",
+          "https://eldamo.org/content/words/word-2277851021.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S59",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN55",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2229536775.html",
+          "https://eldamo.org/content/words/word-2277851021.html",
+          "https://eldamo.org/content/words/word-4073827619.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S60",
+    "era": "middle",
+    "states": [
+      "au",
+      "ǭ",
+      "ou"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN58",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-2790556075.html",
+          "https://eldamo.org/content/words/word-4073827619.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S61",
+    "era": "middle",
+    "states": [
+      "ei",
+      "oi",
+      "ui"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1880600739.html",
+      "https://eldamo.org/content/words/word-2826795683.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN59",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-1880600739.html",
+          "https://eldamo.org/content/words/word-2826795683.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S62",
+    "era": "middle",
+    "states": [
+      "j̊",
+      "x",
+      "h"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1284301541.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN60",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1284301541.html",
+          "https://eldamo.org/content/words/word-1195324115.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S63",
+    "era": "middle",
+    "states": [
+      "kʰ",
+      "x",
+      "h"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN61",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1770347191.html",
+          "https://eldamo.org/content/words/word-1195324115.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S64",
+    "era": "middle",
+    "states": [
+      "kʰj",
+      "kʰ",
+      "x"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-1770347191.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN62",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-4025342543.html",
+          "https://eldamo.org/content/words/word-1770347191.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S65",
+    "era": "middle",
+    "states": [
+      "kʰj",
+      "kʰ",
+      "x",
+      "h"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN63",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-4025342543.html",
+          "https://eldamo.org/content/words/word-1770347191.html",
+          "https://eldamo.org/content/words/word-1195324115.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S66",
+    "era": "middle",
+    "states": [
+      "kʰw",
+      "pʰ",
+      "ɸ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1770347191.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN64",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3214863235.html",
+          "https://eldamo.org/content/words/word-1770347191.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S67",
+    "era": "middle",
+    "states": [
+      "kʰw",
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN65",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3214863235.html",
+          "https://eldamo.org/content/words/word-1770347191.html",
+          "https://eldamo.org/content/words/word-2995333959.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S68",
+    "era": "middle",
+    "states": [
+      "p",
+      "pʰ",
+      "ɸ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-1770347191.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN66",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2684793511.html",
+          "https://eldamo.org/content/words/word-1770347191.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S69",
+    "era": "middle",
+    "states": [
+      "p",
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN67",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2684793511.html",
+          "https://eldamo.org/content/words/word-1770347191.html",
+          "https://eldamo.org/content/words/word-2995333959.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S70",
+    "era": "middle",
+    "states": [
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN68",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-1770347191.html",
+          "https://eldamo.org/content/words/word-2995333959.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S71",
+    "era": "middle",
+    "states": [
+      "sj",
+      "j̊",
+      "x"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN69",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3693878703.html",
+          "https://eldamo.org/content/words/word-1284301541.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S72",
+    "era": "middle",
+    "states": [
+      "sj",
+      "j̊",
+      "x",
+      "h"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN70",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3693878703.html",
+          "https://eldamo.org/content/words/word-1284301541.html",
+          "https://eldamo.org/content/words/word-1195324115.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S73",
+    "era": "middle",
+    "states": [
+      "sk",
+      "sx",
+      "x"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN71",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-948882833.html",
+          "https://eldamo.org/content/words/word-2061688473.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S74",
+    "era": "middle",
+    "states": [
+      "sk",
+      "sx",
+      "x",
+      "h"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN72",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-948882833.html",
+          "https://eldamo.org/content/words/word-2061688473.html",
+          "https://eldamo.org/content/words/word-1195324115.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S75",
+    "era": "middle",
+    "states": [
+      "skj",
+      "sk",
+      "sx"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-948882833.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN73",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-4025342543.html",
+          "https://eldamo.org/content/words/word-948882833.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S76",
+    "era": "middle",
+    "states": [
+      "skj",
+      "sk",
+      "sx",
+      "x"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN74",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-4025342543.html",
+          "https://eldamo.org/content/words/word-948882833.html",
+          "https://eldamo.org/content/words/word-2061688473.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S77",
+    "era": "middle",
+    "states": [
+      "skw",
+      "sw",
+      "w̥"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-3693878703.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN77",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1872897535.html",
+          "https://eldamo.org/content/words/word-3693878703.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S78",
+    "era": "middle",
+    "states": [
+      "skw",
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN78",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1872897535.html",
+          "https://eldamo.org/content/words/word-3693878703.html",
+          "https://eldamo.org/content/words/word-1284301541.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S79",
+    "era": "middle",
+    "states": [
+      "skw",
+      "sw",
+      "w̥"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-165461035.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN75",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1872897535.html",
+          "https://eldamo.org/content/words/word-165461035.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S80",
+    "era": "middle",
+    "states": [
+      "skw",
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-165461035.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN76",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1872897535.html",
+          "https://eldamo.org/content/words/word-165461035.html",
+          "https://eldamo.org/content/words/word-1284301541.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S81",
+    "era": "middle",
+    "states": [
+      "skʰ",
+      "sk",
+      "sx"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN79",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2699949575.html",
+          "https://eldamo.org/content/words/word-948882833.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S82",
+    "era": "middle",
+    "states": [
+      "skʰ",
+      "sk",
+      "sx",
+      "x"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN80",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2699949575.html",
+          "https://eldamo.org/content/words/word-948882833.html",
+          "https://eldamo.org/content/words/word-2061688473.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S83",
+    "era": "middle",
+    "states": [
+      "sl",
+      "θl",
+      "fl"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2075290201.html",
+      "https://eldamo.org/content/words/word-2640707457.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN81",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2075290201.html",
+          "https://eldamo.org/content/words/word-2640707457.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S84",
+    "era": "middle",
+    "states": [
+      "sp",
+      "sɸ",
+      "ɸ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN82",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-948882833.html",
+          "https://eldamo.org/content/words/word-2061688473.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S85",
+    "era": "middle",
+    "states": [
+      "sp",
+      "sɸ",
+      "ɸ",
+      "f"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN83",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-948882833.html",
+          "https://eldamo.org/content/words/word-2061688473.html",
+          "https://eldamo.org/content/words/word-2995333959.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S86",
+    "era": "middle",
+    "states": [
+      "st",
+      "sθ",
+      "θ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN84",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-948882833.html",
+          "https://eldamo.org/content/words/word-2061688473.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S87",
+    "era": "middle",
+    "states": [
+      "stʰ",
+      "st",
+      "sθ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN86",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2699949575.html",
+          "https://eldamo.org/content/words/word-948882833.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S88",
+    "era": "middle",
+    "states": [
+      "stʰ",
+      "st",
+      "sθ",
+      "θ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN87",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2699949575.html",
+          "https://eldamo.org/content/words/word-948882833.html",
+          "https://eldamo.org/content/words/word-2061688473.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S89",
+    "era": "middle",
+    "states": [
+      "stʰ",
+      "st",
+      "θ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-570537175.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN85",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2699949575.html",
+          "https://eldamo.org/content/words/word-570537175.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S90",
+    "era": "middle",
+    "states": [
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN89",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3693878703.html",
+          "https://eldamo.org/content/words/word-1284301541.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S91",
+    "era": "middle",
+    "states": [
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-165461035.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN88",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-165461035.html",
+          "https://eldamo.org/content/words/word-1284301541.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S92",
+    "era": "middle",
+    "states": [
+      "sx",
+      "x",
+      "h"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN90",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2061688473.html",
+          "https://eldamo.org/content/words/word-1195324115.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S93",
+    "era": "middle",
+    "states": [
+      "sɸ",
+      "ɸ",
+      "f"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN91",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2061688473.html",
+          "https://eldamo.org/content/words/word-2995333959.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S94",
+    "era": "middle",
+    "states": [
+      "z",
+      "r",
+      "r̥"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-982618329.html",
+      "https://eldamo.org/content/words/word-876815979.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN92",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-982618329.html",
+          "https://eldamo.org/content/words/word-876815979.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S95",
+    "era": "middle",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN96",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-2790556075.html",
+          "https://eldamo.org/content/words/word-4073827619.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S96",
+    "era": "middle",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou",
+      "au"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html",
+      "https://eldamo.org/content/words/word-2902864717.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN97",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-2790556075.html",
+          "https://eldamo.org/content/words/word-4073827619.html",
+          "https://eldamo.org/content/words/word-2902864717.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S97",
+    "era": "middle",
+    "states": [
+      "ā",
+      "ō",
+      "ū"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1909322629.html",
+      "https://eldamo.org/content/words/word-390078853.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN93",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-1909322629.html",
+          "https://eldamo.org/content/words/word-390078853.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S98",
+    "era": "middle",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN94",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-2277851021.html",
+          "https://eldamo.org/content/words/word-4073827619.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S99",
+    "era": "middle",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou",
+      "au"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html",
+      "https://eldamo.org/content/words/word-2902864717.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN95",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-2277851021.html",
+          "https://eldamo.org/content/words/word-4073827619.html",
+          "https://eldamo.org/content/words/word-2902864717.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S100",
+    "era": "middle",
+    "states": [
+      "ŋgj",
+      "ŋg",
+      "g"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN98",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-4025342543.html",
+          "https://eldamo.org/content/words/word-956128961.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S101",
+    "era": "middle",
+    "states": [
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1317326183.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN99",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-3214863235.html",
+          "https://eldamo.org/content/words/word-1317326183.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S102",
+    "era": "middle",
+    "states": [
+      "ŋgw",
+      "mb",
+      "b"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN100",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3214863235.html",
+          "https://eldamo.org/content/words/word-956128961.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S103",
+    "era": "middle",
+    "states": [
+      "ŋj",
+      "ŋgj",
+      "ŋg"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-4025342543.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN101",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1270135967.html",
+          "https://eldamo.org/content/words/word-4025342543.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S104",
+    "era": "middle",
+    "states": [
+      "ŋj",
+      "ŋgj",
+      "ŋg",
+      "g"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S105",
+    "era": "middle",
+    "states": [
+      "ŋs",
+      "ɣs",
+      "hs"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3915121695.html",
+      "https://eldamo.org/content/words/word-2810726977.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN102",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3915121695.html",
+          "https://eldamo.org/content/words/word-2810726977.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S106",
+    "era": "middle",
+    "states": [
+      "ŋs",
+      "ɣs",
+      "hs",
+      "ss"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3915121695.html",
+      "https://eldamo.org/content/words/word-2810726977.html",
+      "https://eldamo.org/content/words/word-178282823.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN103",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3915121695.html",
+          "https://eldamo.org/content/words/word-2810726977.html",
+          "https://eldamo.org/content/words/word-178282823.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S107",
+    "era": "middle",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-3214863235.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN104",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1270135967.html",
+          "https://eldamo.org/content/words/word-3214863235.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S108",
+    "era": "middle",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1317326183.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN105",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1270135967.html",
+          "https://eldamo.org/content/words/word-3214863235.html",
+          "https://eldamo.org/content/words/word-1317326183.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S109",
+    "era": "middle",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb",
+      "b"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S110",
+    "era": "middle",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN108",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2849203249.html",
+          "https://eldamo.org/content/words/word-956128961.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S111",
+    "era": "middle",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN106",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2849203249.html",
+          "https://eldamo.org/content/words/word-1688730459.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S112",
+    "era": "middle",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-3944232895.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN107",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2849203249.html",
+          "https://eldamo.org/content/words/word-3944232895.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S113",
+    "era": "middle",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN111",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2849203249.html",
+          "https://eldamo.org/content/words/word-956128961.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S114",
+    "era": "middle",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN109",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2849203249.html",
+          "https://eldamo.org/content/words/word-1688730459.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S115",
+    "era": "middle",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-3944232895.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN110",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2849203249.html",
+          "https://eldamo.org/content/words/word-3944232895.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S116",
+    "era": "middle",
+    "states": [
+      "ǣ",
+      "ę̄",
+      "ae"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3619603651.html",
+      "https://eldamo.org/content/words/word-3173115217.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN112",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3619603651.html",
+          "https://eldamo.org/content/words/word-3173115217.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S117",
+    "era": "middle",
+    "states": [
+      "ǭ",
+      "ou",
+      "au"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-4073827619.html",
+      "https://eldamo.org/content/words/word-2902864717.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN113",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-4073827619.html",
+          "https://eldamo.org/content/words/word-2902864717.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S118",
+    "era": "middle",
+    "states": [
+      "ɣs",
+      "hs",
+      "ss"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2810726977.html",
+      "https://eldamo.org/content/words/word-178282823.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "SINDARIN114",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-2810726977.html",
+          "https://eldamo.org/content/words/word-178282823.html"
+        ]
+      }
+    ]
+  }
+]

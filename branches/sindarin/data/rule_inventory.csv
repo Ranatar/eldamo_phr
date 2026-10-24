@@ -1,0 +1,441 @@
+era,stage,marker,rule,a,b,formula,url,catalogs,sounds,refs_all
+late,0,✶,"[pw], [pʰw] became [pp], [pʰp]",pw,pp,pp < pw,https://eldamo.org/content/words/word-2859678213.html,['p'],['p'],['PE19/86']
+late,0,✶,aspiration moved to end of group of stops,pʰt,ptʰ,ptʰ < pʰt,https://eldamo.org/content/words/word-3183451073.html,['p'],['p'],['PE19/87']
+late,0,✶,aspiration moved to end of group of stops,pʰtʰ,ptʰ,ptʰ < pʰtʰ,https://eldamo.org/content/words/word-3183451073.html,['p'],['p'],['PE19/87']
+late,0,✶,aspiration moved to end of group of stops,b{ptkpʰtʰkʰs},p{ptkpʰtʰkʰs},p{ptkpʰtʰkʰs} < b{ptkpʰtʰkʰs},,['p'],['p'],"['PE19/90', 'PE19/95']"
+late,0,✶,aspiration moved to end of group of stops,{ptkmnŋlr}p,{ptkmnŋlr}pʰ,{ptkmnŋlr}p > {ptkmnŋlr}pʰ,,['p'],['p'],"['PE18/91', 'PE19/86']"
+late,0,✶,aspiration moved to end of group of stops,tʰt,ttʰ,ttʰ < tʰt,https://eldamo.org/content/words/word-3183451073.html,['p'],['t'],['PE18/102']
+late,0,✶,aspiration moved to end of group of stops,tʰtʰ,ttʰ,ttʰ < tʰtʰ,https://eldamo.org/content/words/word-3183451073.html,['p'],['t'],['PE18/102']
+late,0,✶,aspiration moved to end of group of stops,d{ptkpʰtʰkʰs},t{ptkpʰtʰkʰs},t{ptkpʰtʰkʰs} < d{ptkpʰtʰkʰs},,['p'],['t'],"['PE19/90', 'PE19/95']"
+late,0,✶,aspiration moved to end of group of stops,{pʰtʰkʰptk}d,{pʰtʰkʰptk}t,{pʰtʰkʰptk}d > {pʰtʰkʰptk}t,,['p'],['t'],['PE18/102']
+late,0,✶,[tk] became [kk] or [kt] or [sk],tk,kk,tk > kk,https://eldamo.org/content/words/word-700934409.html,['p'],['t'],['PE19/87']
+late,0,✶,"[t+t], [d+d] from suffixion became [st], [zd]",t+t,st,t+t > st,https://eldamo.org/content/words/word-2479050823.html,['p'],['t'],"['PE18/102', 'PE19/82', 'PE19/84', 'PE19/87', 'PE18/91', 'VT42/18']"
+late,0,✶,[tk] became [kk] or [kt] or [sk],tk,sk,tk > sk,https://eldamo.org/content/words/word-700934409.html,['p'],['t'],['VT47/42']
+late,0,✶,[tk] became [kk] or [kt] or [sk],tk,kt,tk > kt,https://eldamo.org/content/words/word-700934409.html,['p'],['t'],['PE17/166']
+late,0,✶,[tk] became [kk] or [kt] or [sk],tk,kk,kk < tk,https://eldamo.org/content/words/word-700934409.html,['p'],['k'],['PE19/87']
+late,0,✶,voiced stops unvoiced before voiceless consonants,gt,kt,kt < gt,https://eldamo.org/content/words/word-1944249607.html,['p'],['k'],['PE19/90']
+late,0,✶,voiced stops unvoiced before voiceless consonants,gs,ks,ks < gs,https://eldamo.org/content/words/word-1944249607.html,['p'],['k'],['PE19/95']
+late,0,✶,voiced stops unvoiced before voiceless consonants,kj,tj,kj > tj,,['p'],['k'],['PE19/75']
+late,0,✶,"[pw], [pʰw] became [pp], [pʰp]",pʰw,ppʰ,ppʰ < pʰw,https://eldamo.org/content/words/word-2859678213.html,['p'],['pʰ'],['PE19/88']
+late,0,✶,"[pw], [pʰw] became [pp], [pʰp]",{ptk}pʰ,{ptk}p,{ptk}pʰ > {ptk}p,,['p'],['pʰ'],['PE18/91']
+late,0,✶,aspiration moved to end of group of stops,pʰt,ptʰ,pʰt > ptʰ,https://eldamo.org/content/words/word-3183451073.html,['p'],['pʰ'],['PE19/87']
+late,0,✶,aspiration moved to end of group of stops,pʰtʰ,ptʰ,pʰtʰ > ptʰ,https://eldamo.org/content/words/word-3183451073.html,['p'],['pʰ'],['PE19/87']
+late,0,✶,aspirate became voiceless stop before [s],pʰs,ps,pʰs > ps,https://eldamo.org/content/words/word-2225058767.html,['p'],['pʰ'],['PE19/83']
+late,0,✶,aspiration moved to end of group of stops,tʰt,ttʰ,tʰt > ttʰ,https://eldamo.org/content/words/word-3183451073.html,['p'],['tʰ'],['PE18/102']
+late,0,✶,aspiration moved to end of group of stops,tʰtʰ,ttʰ,tʰtʰ > ttʰ,https://eldamo.org/content/words/word-3183451073.html,['p'],['tʰ'],['PE18/102']
+late,0,✶,aspirate became voiceless stop before [s],tʰs,ts,tʰs > ts,https://eldamo.org/content/words/word-2225058767.html,['p'],['tʰ'],['PE19/83']
+late,0,✶,"aspirates became voiceless stops after [s], [h]",stʰ,st,stʰ > st,https://eldamo.org/content/words/word-3915424757.html,['p'],['tʰ'],['PE19/84']
+late,0,✶,aspirate became voiceless stop before [s],kʰs,ks,kʰs > ks,https://eldamo.org/content/words/word-2225058767.html,['p'],['kʰ'],"['PE19/83', 'PE19/100']"
+late,0,✶,"[bm], [dn] became [mb], [nd]",bm,mb,bm > mb,https://eldamo.org/content/words/word-3882201769.html,['p'],['b'],"['VT47/12', 'WJ/416']"
+late,0,✶,"[t+t], [d+d] from suffixion became [st], [zd]",d+d,zd,d+d > zd,https://eldamo.org/content/words/word-2479050823.html,['p'],['d'],"['PE18/102', 'PE19/82', 'PE19/90', 'PE18/91']"
+late,0,✶,"[ŋŋ], [ŋɣ] became [ŋg]",ŋŋ,ŋg,ŋg < ŋŋ,https://eldamo.org/content/words/word-3404492995.html,['p'],['g'],"['PE18/91', 'PE18/104', 'PE19/96', 'PE22/149']"
+late,0,✶,"[ŋŋ], [ŋɣ] became [ŋg]",ŋɣ,ŋg,ŋg < ŋɣ,https://eldamo.org/content/words/word-3404492995.html,['p'],['g'],['PE18/102']
+late,0,✶,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",-ŋj-,-ŋgj-,-ŋgj- < -ŋj-,https://eldamo.org/content/words/word-2233951333.html,['p'],"['g', 'ŋ']","['PE19/74', 'PE19/97', 'PE18/102', 'PE18/104']"
+late,0,✶,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",-ŋw-,-ŋgw-,-ŋgw- < -ŋw-,https://eldamo.org/content/words/word-2233951333.html,['p'],"['g', 'ŋ']","['PE19/74', 'PE19/95', 'PE19/97', 'PE18/102', 'PE18/104']"
+late,0,✶,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",ɣw,ww,ɣw > ww,,['p'],['g'],['PE19/76']
+late,0,✶,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",gj,dj,gj > dj,,['p'],['g'],['PE19/75']
+late,0,✶,voiced stops unvoiced before voiceless consonants,gt,kt,gt > kt,https://eldamo.org/content/words/word-1944249607.html,['p'],['g'],['PE19/90']
+late,0,✶,voiced stops unvoiced before voiceless consonants,gs,ks,gs > ks,https://eldamo.org/content/words/word-1944249607.html,['p'],['g'],['PE19/95']
+late,0,✶,nasals assimilated to following stops and aspirates,ŋp,mp,mp < ŋp,https://eldamo.org/content/words/word-2143444883.html,['p'],['m'],"['PE18/102', 'PE19/98']"
+late,0,✶,nasals assimilated to following stops and aspirates,np,mp,mp < np,https://eldamo.org/content/words/word-2143444883.html,['p'],['m'],"['PE18/102', 'PE19/98']"
+late,0,✶,medial nasal plus stop after another consonant became simple nasal,-Cmb-,-Cm-,-Cm- < -Cmb-,https://eldamo.org/content/words/word-4126101193.html,['p'],['m'],['PE19/81']
+late,0,✶,"[bm], [dn] became [mb], [nd]",bm,mb,mb < bm,https://eldamo.org/content/words/word-3882201769.html,['p'],['m'],"['VT47/12', 'WJ/416']"
+late,0,✶,"[bm], [dn] became [mb], [nd]",mb-,m-,mb- > m-,,['p'],['m'],['PE18/105']
+late,0,✶,medial nasal plus stop after another consonant became simple nasal,-Cmb-,-Cm-,-Cmb- > -Cm-,https://eldamo.org/content/words/word-4126101193.html,['p'],['m'],['PE19/81']
+late,0,✶,final [m] became [n],-m,-n,-m > -n,https://eldamo.org/content/words/word-760163573.html,['p'],['m'],['VT47/24']
+late,0,✶,nasals assimilated to following stops and aspirates,mk,ŋk,mk > ŋk,https://eldamo.org/content/words/word-2143444883.html,['p'],['m'],"['PE18/102', 'PE19/98']"
+late,0,✶,nasals assimilated to following stops and aspirates,mt,nt,mt > nt,https://eldamo.org/content/words/word-2143444883.html,['p'],['m'],['PE19/99']
+late,0,✶,nasals assimilated to following stops and aspirates,ŋt,nt,nt < ŋt,https://eldamo.org/content/words/word-2143444883.html,['p'],['n'],"['PE18/102', 'PE19/98', 'PE19/99']"
+late,0,✶,[ŋs] became [ns],ŋs,ns,ns < ŋs,https://eldamo.org/content/words/word-484908271.html,['p'],['n'],"['PE18/102', 'PE19/82', 'PE19/99']"
+late,0,✶,medial nasal plus stop after another consonant became simple nasal,-Cnd-,-Cn-,-Cn- < -Cnd-,https://eldamo.org/content/words/word-4126101193.html,['p'],['n'],['PE19/81']
+late,0,✶,final [m] became [n],-m,-n,-n < -m,https://eldamo.org/content/words/word-760163573.html,['p'],['n'],['VT47/24']
+late,0,✶,final [m] became [n],Vnr,V̄ør,Vnr > V̄ør,,['p'],['n'],['PE17/162']
+late,0,✶,nasals assimilated to following stops and aspirates,np,mp,np > mp,https://eldamo.org/content/words/word-2143444883.html,['p'],['n'],"['PE18/102', 'PE19/98']"
+late,0,✶,medial nasal plus stop after another consonant became simple nasal,-Cnd-,-Cn-,-Cnd- > -Cn-,https://eldamo.org/content/words/word-4126101193.html,['p'],['n'],['PE19/81']
+late,0,✶,nasals assimilated to following stops and aspirates,nk,ŋk,nk > ŋk,https://eldamo.org/content/words/word-2143444883.html,['p'],['n'],"['PE18/102', 'PE19/98']"
+late,0,✶,"[ŋŋ], [ŋɣ] became [ŋg]",ŋŋ,ŋg,ŋŋ > ŋg,https://eldamo.org/content/words/word-3404492995.html,['p'],"['n', 'ŋ']","['PE22/149', 'PE22/149', 'PE18/91', 'PE18/104', 'PE19/96']"
+late,0,✶,nasals assimilated to following stops and aspirates,nk,ŋk,ŋk < nk,https://eldamo.org/content/words/word-2143444883.html,['p'],['ŋ'],"['PE18/102', 'PE19/98']"
+late,0,✶,nasals assimilated to following stops and aspirates,mk,ŋk,ŋk < mk,https://eldamo.org/content/words/word-2143444883.html,['p'],['ŋ'],['PE18/102']
+late,0,✶,medial nasal plus stop after another consonant became simple nasal,-Cŋg-,-Cŋ-,-Cŋ- < -Cŋg-,https://eldamo.org/content/words/word-4126101193.html,['p'],['ŋ'],['PE19/81']
+late,0,✶,medial nasal plus stop after another consonant became simple nasal,ŋ-,ŋg-,ŋ- > ŋg-,,['p'],['ŋ'],['PE17/60']
+late,0,✶,medial nasal plus stop after another consonant became simple nasal,ŋw-,m-,ŋw- > m-,,['p'],['ŋ'],['PE18/105']
+late,0,✶,medial nasal plus stop after another consonant became simple nasal,ŋgw-,m-,ŋgw- > m-,,['p'],['ŋ'],['PE18/105']
+late,0,✶,medial nasal plus stop after another consonant became simple nasal,ŋgj-,n-,ŋgj- > n-,,['p'],['ŋ'],['PE18/105']
+late,0,✶,medial nasal plus stop after another consonant became simple nasal,ŋg-,ŋ-,ŋg- > ŋ-,,['p'],['ŋ'],"['PE18/104', 'PE18/105']"
+late,0,✶,medial nasal plus stop after another consonant became simple nasal,V̄ŋ{rlmn},V̄{rlmn},V̄ŋ{rlmn} > V̄{rlmn},,['p'],['ŋ'],['PE18/103']
+late,0,✶,medial [ŋ] usually became [ɣ],VŋV,VɣV,VŋV > VɣV,https://eldamo.org/content/words/word-768986721.html,['p'],['ŋ'],"['PE18/102', 'PE19/72', 'PE19/95']"
+late,0,✶,nasals assimilated to following stops and aspirates,ŋp,mp,ŋp > mp,https://eldamo.org/content/words/word-2143444883.html,['p'],['ŋ'],"['PE18/102', 'PE19/98']"
+late,0,✶,nasals assimilated to following stops and aspirates,ŋt,nt,ŋt > nt,https://eldamo.org/content/words/word-2143444883.html,['p'],['ŋ'],"['PE18/102', 'PE19/98', 'PE19/99']"
+late,0,✶,[ŋs] became [ns],ŋs,ns,ŋs > ns,https://eldamo.org/content/words/word-484908271.html,['p'],['ŋ'],"['PE18/102', 'PE19/82', 'PE19/99', 'PE18/104']"
+late,0,✶,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",-ŋj-,-ŋgj-,-ŋj- > -ŋgj-,https://eldamo.org/content/words/word-2233951333.html,['p'],"['ŋ', 'ø']","['PE18/102', 'PE18/104', 'PE19/74', 'PE19/97']"
+late,0,✶,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",-ŋw-,-ŋgw-,-ŋw- > -ŋgw-,https://eldamo.org/content/words/word-2233951333.html,['p'],"['ŋ', 'ø']","['PE18/102', 'PE18/104', 'PE19/74', 'PE19/95', 'PE19/97']"
+late,0,✶,medial nasal plus stop after another consonant became simple nasal,-Cŋg-,-Cŋ-,-Cŋg- > -Cŋ-,https://eldamo.org/content/words/word-4126101193.html,['p'],['ŋ'],['PE19/81']
+late,0,✶,"[pw], [pʰw] became [pp], [pʰp]",pw,pp,pw > pp,https://eldamo.org/content/words/word-2859678213.html,['p'],['w'],['PE19/86']
+late,0,✶,"[pw], [pʰw] became [pp], [pʰp]",pʰw,ppʰ,pʰw > ppʰ,https://eldamo.org/content/words/word-2859678213.html,['p'],['w'],['PE19/88']
+late,0,✶,"final [j], [w] became [i], [u]",-w,-u,-w > -u,https://eldamo.org/content/words/word-2641132585.html,['p'],['w'],['PE19/103']
+late,0,✶,medial [ŋ] usually became [ɣ],VŋV,VɣV,VɣV < VŋV,https://eldamo.org/content/words/word-768986721.html,['p'],['ɣ'],"['PE18/102', 'PE19/72', 'PE19/95']"
+late,0,✶,medial [ŋ] usually became [ɣ],xs,xs,xs > xs,,['p'],['ɣ'],['VT47/12']
+late,0,✶,medial [ŋ] usually became [ɣ],ɣ-,g-,ɣ- > g-,https://eldamo.org/content/words/word-1228875561.html,['p'],['ɣ'],['PE18/105']
+late,0,✶,"[ŋŋ], [ŋɣ] became [ŋg]",ŋɣ,ŋg,ŋɣ > ŋg,https://eldamo.org/content/words/word-3404492995.html,['p'],['ɣ'],['PE18/102']
+late,0,✶,[ɣ] became [h] before voiceless consonants,xtʰ,xtʰ,xtʰ > xtʰ,https://eldamo.org/content/words/word-794129503.html,['p'],['ɣ'],"['PE18/82', 'PE18/89']"
+late,0,✶,medial [ɣ]/[h] vanished except before [t],-ɣ-,-ø-,-ɣ- > -ø-,https://eldamo.org/content/words/word-2690267141.html,['p'],['ɣ'],['VT47/6']
+late,0,✶,medial [ɣ]/[h] vanished except before [t],aɣC,āC,aɣC > āC,https://eldamo.org/content/words/word-2690267141.html,['p'],['ɣ'],['VT47/12']
+late,0,✶,[hs] became [ss],hs,ss,hs > ss,https://eldamo.org/content/words/word-2177009433.html,['p'],"['ɣ', 'h']","['PE18/104', 'PE19/74']"
+late,0,✶,"final [j], [w] became [i], [u]",-j,-i,-j > -i,https://eldamo.org/content/words/word-2641132585.html,['p'],['j'],['PE19/103']
+late,0,✶,"[t+t], [d+d] from suffixion became [st], [zd]",t+t,st,st < t+t,https://eldamo.org/content/words/word-2479050823.html,['p'],['s'],"['PE18/102', 'PE19/82', 'PE19/84', 'PE19/87']"
+late,0,✶,[hs] became [ss],hs,ss,ss < hs,https://eldamo.org/content/words/word-2177009433.html,['p'],['s'],['PE19/74']
+late,0,✶,[tk] became [kk] or [kt] or [sk],tk,sk,sk < tk,https://eldamo.org/content/words/word-700934409.html,['p'],['s'],['VT47/42']
+late,0,✶,[s] became [z] before voiced stops,sd,zd,sd > zd,https://eldamo.org/content/words/word-882174441.html,['p'],['s'],"['PE18/82', 'PE19/91']"
+late,0,✶,[s] became [z] before voiced stops,sb,zb,sb > zb,https://eldamo.org/content/words/word-882174441.html,['p'],['s'],['PE19/69']
+late,0,✶,[s] became [z] before voiced stops,sg,zg,sg > zg,https://eldamo.org/content/words/word-882174441.html,['p'],['s'],['PE19/101']
+late,0,✶,[s] became [z] before voiced stops,sd,zd,zd < sd,https://eldamo.org/content/words/word-882174441.html,['p'],['z'],"['PE18/82', 'PE19/91']"
+late,0,✶,"[t+t], [d+d] from suffixion became [st], [zd]",d+d,zd,zd < d+d,https://eldamo.org/content/words/word-2479050823.html,['p'],['z'],"['PE18/102', 'PE19/82', 'PE19/90']"
+late,0,✶,[s] became [z] before voiced stops,sb,zb,zb < sb,https://eldamo.org/content/words/word-882174441.html,['p'],['z'],['PE19/69']
+late,0,✶,[s] became [z] before voiced stops,sg,zg,zg < sg,https://eldamo.org/content/words/word-882174441.html,['p'],['z'],['PE19/101']
+late,0,✶,[ɣ] became [h] before voiceless consonants,xtʰ,xtʰ,xtʰ < xtʰ,https://eldamo.org/content/words/word-794129503.html,['p'],['h'],"['PE18/82', 'PE18/89']"
+late,0,✶,[ɣ] became [h] before voiceless consonants,xs,xs,xs < xs,,['p'],['h'],['VT47/12']
+late,0,✶,[ɣ] became [h] before voiceless consonants,h-,ø-,h- > ø-,,['p'],['h'],"['PE19/74', 'WJ/365', 'WJ/369']"
+late,0,✶,medial [ɣ]/[h] vanished except before [t],-h-,-ø-,-h- > -ø-,https://eldamo.org/content/words/word-2690267141.html,['p'],['h'],"['PE19/74', 'WJ/368']"
+late,0,✶,"final [j], [w] became [i], [u]",-j,-i,-i < -j,https://eldamo.org/content/words/word-2641132585.html,['p'],['i'],['PE19/103']
+late,0,✶,medial [ɣ]/[h] vanished except before [t],iɣC,īC,iɣC > īC,https://eldamo.org/content/words/word-2690267141.html,['p'],['i'],['PE18/98']
+late,0,✶,"short final [i], [u] became [e], [o]",-Sĭ,-Se,-Se < -Sĭ,https://eldamo.org/content/words/word-3064357955.html,['p'],['e'],['PE19/100']
+late,0,✶,"[ae], [ao] became [ā]",ae,ā,ae > ā,https://eldamo.org/content/words/word-1056240093.html,['p'],['a'],"['PE18/96', 'PE18/98']"
+late,0,✶,"[ae], [ao] became [ā]",ao,ā,ao > ā,https://eldamo.org/content/words/word-1056240093.html,['p'],['a'],['PE18/96']
+late,0,✶,"short final [i], [u] became [e], [o]",-Sŭ,-So,-So < -Sŭ,https://eldamo.org/content/words/word-3064357955.html,['p'],['o'],['PE19/100']
+late,0,✶,"final [j], [w] became [i], [u]",-w,-u,-u < -w,https://eldamo.org/content/words/word-2641132585.html,['p'],['u'],['PE19/103']
+late,0,✶,medial [ɣ]/[h] vanished except before [t],uɣC,ūC,uɣC > ūC,https://eldamo.org/content/words/word-2690267141.html,['p'],['u'],['PE18/98']
+late,0,✶,medial [ɣ]/[h] vanished except before [t],iɣC,īC,īC < iɣC,https://eldamo.org/content/words/word-2690267141.html,['p'],['ī'],['PE18/98']
+late,0,✶,"[ae], [ao] became [ā]",ae,ā,ā < ae,https://eldamo.org/content/words/word-1056240093.html,['p'],['ā'],"['PE18/96', 'PE18/98']"
+late,0,✶,"[ae], [ao] became [ā]",ao,ā,ā < ao,https://eldamo.org/content/words/word-1056240093.html,['p'],['ā'],['PE18/96']
+late,0,✶,medial [ɣ]/[h] vanished except before [t],uɣC,ūC,ūC < uɣC,https://eldamo.org/content/words/word-2690267141.html,['p'],['ū'],['PE18/98']
+late,0,✶,medial [ɣ]/[h] vanished except before [t],-h-,-ø-,-ø- < -h-,https://eldamo.org/content/words/word-2690267141.html,['p'],['ø'],"['PE19/74', 'WJ/368']"
+late,0,✶,medial [ɣ]/[h] vanished except before [t],-ɣ-,-ø-,-ø- < -ɣ-,https://eldamo.org/content/words/word-2690267141.html,['p'],['ø'],['VT47/6']
+late,0,✶,medial [ɣ]/[h] vanished except before [t],aɣC,āC,āC < aɣC,https://eldamo.org/content/words/word-2690267141.html,['p'],['ø'],['VT47/12']
+late,1,AT.,labialized velars became labials,gw,b,b < gw,https://eldamo.org/content/words/word-171120983.html,['at'],['b'],['PE18/105']
+late,1,AT.,labialized velars became labials,ŋgw,mb,mb < ŋgw,https://eldamo.org/content/words/word-171120983.html,['at'],"['b', 'm']","['PE18/105', 'PE18/104']"
+late,1,AT.,[ln] became [ll],ln,ll,ll < ln,https://eldamo.org/content/words/word-1062284643.html,['at'],['l'],['PE19/100']
+late,1,AT.,labialized velars became labials,ŋw-,m-,m- < ŋw-,https://eldamo.org/content/words/word-171120983.html,['at'],['m'],"['PE18/104', 'PE18/105']"
+late,1,AT.,labialized velars became labials,kw,p,p < kw,https://eldamo.org/content/words/word-171120983.html,['at'],['p'],['VT42/7']
+late,2,OS.,aspirates became voiceless spirants,ttʰ,θθ,θθ < ttʰ,https://eldamo.org/content/words/word-883570327.html,['os'],['θ'],"['VT47/14', 'VT47/16']"
+late,2,OS.,voiceless stops were voiced before nasals,pm,bm,bm < pm,https://eldamo.org/content/words/word-3463937975.html,['os'],['b'],['VT42/26']
+late,2,OS.,voiceless stops were voiced before nasals,pn,bn,bn < pn,https://eldamo.org/content/words/word-3463937975.html,['os'],['b'],['VT42/26']
+late,2,OS.,"[bm], [dn] became [mm], [nn]",bm,mm,bm > mm,https://eldamo.org/content/words/word-2615312913.html,['os'],['b'],['VT42/26']
+late,2,OS.,voiceless stops were voiced before nasals,tn,dn,dn < tn,https://eldamo.org/content/words/word-3463937975.html,['os'],['d'],['VT42/26']
+late,2,OS.,voiceless stops were voiced before nasals,tm,dm,dm < tm,https://eldamo.org/content/words/word-3463937975.html,['os'],['d'],['VT42/26']
+late,2,OS.,[z] vanished before [d] lengthening preceding vowel,Vzd,V̄d,V̄d < Vzd,https://eldamo.org/content/words/word-1249932447.html,['os'],['d'],"['PE19/91', 'PE19/101']"
+late,2,OS.,"[bm], [dn] became [mm], [nn]",dn,nn,dn > nn,https://eldamo.org/content/words/word-2615312913.html,['os'],['d'],['VT42/26']
+late,2,OS.,voiceless stops were voiced before nasals,kn,gn,gn < kn,https://eldamo.org/content/words/word-3463937975.html,['os'],['g'],['VT42/26']
+late,2,OS.,voiceless stops were voiced before nasals,km,gm,gm < km,https://eldamo.org/content/words/word-3463937975.html,['os'],['g'],['VT42/26']
+late,2,OS.,"medial [m] became [n] before [j], [w]",-mw,-mm,-mm < -mw,https://eldamo.org/content/words/word-1484184939.html,['os'],['m'],['PE17/148']
+late,2,OS.,initial [s] unvoiced following consonants,sm-,m̥-,m̥- < sm-,https://eldamo.org/content/words/word-3923357111.html,['os'],['m'],['PE19/79']
+late,2,OS.,"[bm], [dn] became [mm], [nn]",bm,mm,mm < bm,https://eldamo.org/content/words/word-2615312913.html,['os'],['m'],['VT42/26']
+late,2,OS.,"medial [m] became [n] before [j], [w]",-mw,-mm,-mw > -mm,https://eldamo.org/content/words/word-1484184939.html,['os'],['m'],['PE17/148']
+late,2,OS.,initial [s] unvoiced following consonants,sn-,n̥-,n̥- < sn-,https://eldamo.org/content/words/word-3923357111.html,['os'],['n'],['PE19/79']
+late,2,OS.,"[bm], [dn] became [mm], [nn]",dn,nn,nn < dn,https://eldamo.org/content/words/word-2615312913.html,['os'],['n'],['VT42/26']
+late,2,OS.,initial [s] unvoiced following consonants,sl-,l̥-,l̥- < sl-,https://eldamo.org/content/words/word-3923357111.html,['os'],['l̥'],"['LotR/1114', 'PE19/79']"
+late,2,OS.,initial [s] unvoiced following consonants,sr-,r̥-,r̥- < sr-,https://eldamo.org/content/words/word-3923357111.html,['os'],['r̥'],"['LotR/1114', 'PE19/79']"
+late,2,OS.,"initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",ṃ-,am-,am- < ṃ-,https://eldamo.org/content/words/word-1024355367.html,['os'],['a'],['PE17/124']
+late,2,OS.,"initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",ṇ-,an-,an- < ṇ-,https://eldamo.org/content/words/word-1024355367.html,['os'],['a'],['PE17/124']
+late,2,OS.,"initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",ŋ̣-,aŋ-,aŋ- < ŋ̣-,https://eldamo.org/content/words/word-1024355367.html,['os'],['a'],['PE17/124']
+late,2,OS.,[no change],ī,ī,ī < ī,,['os'],['ī'],"['PE19/91', 'PE19/91']"
+late,2,OS.,"[ei], [ou] became [ī], [ū]",ei,ī,ī < ei,https://eldamo.org/content/words/word-1942848653.html,['os'],['ī'],"['PE19/91', 'VT48/7']"
+late,2,OS.,"[ā], [au] became [ǭ]",ā,ǭ,ǭ < ā,https://eldamo.org/content/words/word-2858643115.html,['os'],['ǭ'],"['PE17/45', 'PE18/96', 'PE19/91']"
+late,2,OS.,[no change],ū,ū,ū < ū,,['os'],['ū'],['PE19/91']
+late,2,OS.,"[ei], [ou] became [ī], [ū]",ou,ū,ū < ou,https://eldamo.org/content/words/word-1942848653.html,['os'],['ū'],"['PE17/99', 'VT48/7']"
+late,2,OS.,[no change],ui,ui,ui < ui,,['os'],['ui'],['PE19/91']
+late,2,OS.,"[oi], [ǭi] became [ui], [oi]",oi,ui,ui < oi,https://eldamo.org/content/words/word-2010669085.html,['os'],['ui'],"['PE19/91', 'VT48/7']"
+late,2,OS.,[no change],iu,iu,iu < iu,,['os'],['iu'],['VT48/7']
+late,2,OS.,[eu] became [iu],eu,iu,iu < eu,https://eldamo.org/content/words/word-2662025405.html,['os'],['iu'],['VT48/7']
+late,2,OS.,initial [ɣ]/[h] vanished,ɣ-,ø-,ø- < ɣ-,https://eldamo.org/content/words/word-1117448055.html,['os'],['ø'],"['PE18/104', 'VT48/26']"
+late,3,S.,"final [mf], [nθ], [ŋx], [lθ] became [mp], [nt], [ŋk], [lt]",-mf,-mp,-mp < -mf,https://eldamo.org/content/words/word-1531741019.html,['s'],['p'],['VT42/27']
+late,3,S.,"final [mf], [nθ], [ŋx], [lθ] became [mp], [nt], [ŋk], [lt]",-nθ,-nt,-nt < -nθ,https://eldamo.org/content/words/word-1531741019.html,['s'],['t'],['VT42/27']
+late,3,S.,"final [mf], [nθ], [ŋx], [lθ] became [mp], [nt], [ŋk], [lt]",-ŋx,-ŋk,-ŋk < -ŋx,https://eldamo.org/content/words/word-1531741019.html,['s'],['k'],['VT42/27']
+late,3,S.,[no change],b,b,b < b,,['s'],['b'],['PE18/105']
+late,3,S.,initial nasals vanished before stops,mb-,b-,b- < mb-,https://eldamo.org/content/words/word-3057844573.html,['s'],['b'],"['PE17/104', 'PE18/105']"
+late,3,S.,[no change],g,g,g < g,,['s'],['g'],['PE18/105']
+late,3,S.,initial [w] became [gw],w-,gw-,gw- < w-,https://eldamo.org/content/words/word-2002760597.html,['s'],['g'],"['PE17/41', 'PE18/105']"
+late,3,S.,initial nasals vanished before stops,ŋg-,g-,g- < ŋg-,https://eldamo.org/content/words/word-3057844573.html,['s'],['g'],"['PE17/60', 'PE17/169', 'PE18/105']"
+late,3,S.,initial nasals vanished before stops,mf-,f-,f- < mf-,https://eldamo.org/content/words/word-3057844573.html,['s'],['f'],['PE18/92']
+late,3,S.,initial nasals vanished before stops,nθ-,θ-,θ- < nθ-,https://eldamo.org/content/words/word-3057844573.html,['s'],['θ'],['PE18/92']
+late,3,S.,long voiceless spirants shortened,θθ,θ,θ < θθ,https://eldamo.org/content/words/word-1206014597.html,['s'],['θ'],"['VT47/14', 'VT47/16']"
+late,3,S.,initial nasals vanished before stops,ŋx-,x-,x- < ŋx-,https://eldamo.org/content/words/word-3057844573.html,['s'],['h'],['PE18/92']
+late,3,S.,medial [x] became [h] in Gondorian pronunciation,-x-,-h-,-h- < -x-,https://eldamo.org/content/words/word-4188321265.html,['s'],['h'],['LotR/1113']
+late,3,S.,medial [x] became [h] in Gondorian pronunciation,-x-,-h-,-x- > -h-,https://eldamo.org/content/words/word-4188321265.html,['s'],['x'],['LotR/1113']
+late,3,S.,voiced stops became spirants after vowels,Vb,Vv,Vv < Vb,https://eldamo.org/content/words/word-1726791627.html,['s'],['v'],['VT42/26']
+late,3,S.,non-initial [m] usually became [v],Vm,Vv,Vv < Vm,https://eldamo.org/content/words/word-1951379117.html,['s'],"['v', 'i']","['PE17/131', 'PE17/133', 'PE22/149', 'VT42/26']"
+late,3,S.,"[zb], [zg] became [ðβ], [ðɣ]",zg,ðɣ,ðɣ < zg,https://eldamo.org/content/words/word-1951748921.html,['s'],['ð'],['PE19/101']
+late,3,S.,"[zb], [zg] became [ðβ], [ðɣ]",zb,ðβ,ðβ < zb,https://eldamo.org/content/words/word-1951748921.html,['s'],['ð'],['PE19/101']
+late,3,S.,voiced stops became spirants after vowels,Vd,Vð,Vð < Vd,https://eldamo.org/content/words/word-1726791627.html,['s'],['ð'],"['LotR/1113', 'PE19/101', 'VT42/26']"
+late,3,S.,final [ɣ] became [a] after a consonant,-Cɣ,-Ca,-Ca < -Cɣ,https://eldamo.org/content/words/word-916418731.html,['s'],['ð'],['PE19/101']
+late,3,S.,[nr] became [ðr],nr,ðr,ðr < nr,https://eldamo.org/content/words/word-1105959911.html,['s'],['ð'],"['LotR/1113', 'PE17/36', 'WJ/363']"
+late,3,S.,non-initial [m] usually became [v],ðm,ðv,ðv < ðm,https://eldamo.org/content/words/word-1951379117.html,['s'],['ð'],['VT42/26']
+late,3,S.,[ðv] became [ðw],ðv,ðw,ðw < ðv,https://eldamo.org/content/words/word-2192660503.html,['s'],['ð'],"['PE19/101', 'VT42/26']"
+late,3,S.,"[zb], [zg] became [ðβ], [ðɣ]",zb,ðβ,zb > ðβ,https://eldamo.org/content/words/word-1951748921.html,['s'],['ð'],['PE19/101']
+late,3,S.,final [ɣ] became [a] after a consonant,-Cɣ,-Ca,-Cɣ > -Ca,https://eldamo.org/content/words/word-916418731.html,['s'],['ð'],['PE19/101']
+late,3,S.,non-initial [m] usually became [v],ðm,ðv,ðm > ðv,https://eldamo.org/content/words/word-1951379117.html,['s'],['ð'],['VT42/26']
+late,3,S.,[ðv] became [ðw],ðv,ðw,ðv > ðw,https://eldamo.org/content/words/word-2192660503.html,['s'],['ð'],"['PE19/101', 'VT42/26']"
+late,3,S.,voiced stops became spirants after vowels,Vg,Vɣ,Vɣ < Vg,https://eldamo.org/content/words/word-1726791627.html,['s'],['ɣ'],"['VT42/26', 'VT42/26']"
+late,3,S.,"[ɣ] vocalized before [l], [r], [m], [n]",aɣn,ain,aɣn > ain,https://eldamo.org/content/words/word-539122737.html,['s'],['ɣ'],['VT42/26']
+late,3,S.,"[ɣ] vocalized before [l], [r], [m], [n]",aɣm,aim,aɣm > aim,https://eldamo.org/content/words/word-539122737.html,['s'],['ɣ'],['VT42/26']
+late,3,S.,"medial [mf], [nθ], [ŋx], [lθ] became [mm], [nn], [ŋg], [ll]",-mf-,-mm-,-mm- < -mf-,https://eldamo.org/content/words/word-2996915415.html,['s'],['m'],"['PE17/131', 'VT42/27']"
+late,3,S.,"[mb], [nd] became [mm], [nn]",mb,mm,mm < mb,https://eldamo.org/content/words/word-868023175.html,['s'],['m'],"['LotR/1115', 'PE17/104', 'PE19/92']"
+late,3,S.,[mm] shortened,mm,m,m < mm,https://eldamo.org/content/words/word-3689144303.html,['s'],['m'],"['PE17/104', 'PE17/131', 'PE22/149']"
+late,3,S.,[mm] shortened,mm,m,mm > m,https://eldamo.org/content/words/word-3689144303.html,['s'],['m'],"['PE17/104', 'PE17/131']"
+late,3,S.,"medial [mf], [nθ], [ŋx], [lθ] became [mm], [nn], [ŋg], [ll]",-nθ-,-nn-,-nn- < -nθ-,https://eldamo.org/content/words/word-2996915415.html,['s'],['n'],"['PE17/131', 'VT42/27']"
+late,3,S.,"[mb], [nd] became [mm], [nn]",nd,nn,nn < nd,https://eldamo.org/content/words/word-868023175.html,['s'],['n'],"['LotR/1115', 'PE19/92']"
+late,3,S.,"final [ll], [nn], [ss] shortened in polysyllables",-SSnn,-SSn,-SSn < -SSnn,https://eldamo.org/content/words/word-1742178057.html,['s'],['n'],['LotR/1115']
+late,3,S.,"final [ll], [nn], [ss] shortened in polysyllables",-SSnn,-SSn,-SSnn > -SSn,https://eldamo.org/content/words/word-1742178057.html,['s'],['n'],['LotR/1115']
+late,3,S.,[no change],ŋ,ŋ,ŋ < ŋ,,['s'],['ŋ'],['LotR/1115']
+late,3,S.,"medial [mf], [nθ], [ŋx], [lθ] became [mm], [nn], [ŋg], [ll]",-ŋx-,-ŋg-,-ŋg- < -ŋx-,https://eldamo.org/content/words/word-2996915415.html,['s'],['ŋ'],"['PE17/131', 'VT42/27']"
+late,3,S.,"[nm], [ŋm] became [nw], [ŋw]",nm,nw,nw < nm,https://eldamo.org/content/words/word-3258926163.html,['s'],['w'],['PE22/149']
+late,3,S.,"[nm], [ŋm] became [nw], [ŋw]",ŋm,ŋw,ŋw < ŋm,https://eldamo.org/content/words/word-3258926163.html,['s'],['w'],['PE22/149']
+late,3,S.,[ŋ] vanished with compensatory lengthening,Vŋw,V̄w,Vŋw > V̄w,https://eldamo.org/content/words/word-3707785609.html,['s'],['w'],['PE22/149']
+late,3,S.,[no change],l,l,l < l,,['s'],['l'],['PE18/105']
+late,3,S.,"final [mf], [nθ], [ŋx], [lθ] became [mp], [nt], [ŋk], [lt]",-lθ,-lt,-lt < -lθ,https://eldamo.org/content/words/word-1531741019.html,['s'],['l'],['VT42/27']
+late,3,S.,"medial [mf], [nθ], [ŋx], [lθ] became [mm], [nn], [ŋg], [ll]",-lθ-,-ll-,-ll- < -lθ-,https://eldamo.org/content/words/word-2996915415.html,['s'],['l'],"['PE17/131', 'VT42/27']"
+late,3,S.,[no change],r,r,r < r,,['s'],['r'],['PE18/105']
+late,3,S.,[no change],j,j,j < j,,['s'],['j'],['PE18/105']
+late,3,S.,"[ɣ] vocalized before [l], [r], [m], [n]",aɣn,ain,ain < aɣn,https://eldamo.org/content/words/word-539122737.html,['s'],['i'],['VT42/26']
+late,3,S.,"[ɣ] vocalized before [l], [r], [m], [n]",aɣm,aim,aim < aɣm,https://eldamo.org/content/words/word-539122737.html,['s'],['i'],['VT42/26']
+late,3,S.,non-initial [m] usually became [v],-iv,-iw,-iv > -iw,,['s'],['i'],['VT42/26']
+late,3,S.,non-initial [m] usually became [v],Vm,Vv,Vm > Vv,https://eldamo.org/content/words/word-1951379117.html,['s'],['i'],['VT42/26']
+late,3,S.,[iu] and [ju] became [ȳ],iu,ȳ,ȳ < iu,https://eldamo.org/content/words/word-659168127.html,['s'],"['y', 'ȳ']","['LotR/1115', 'LotR/1115', 'VT48/7']"
+late,3,S.,"[au], [ae] became [o], [e] in polysyllables",ˌau,o,ˌau > o,https://eldamo.org/content/words/word-567222053.html,['s'],['a'],['WJ/414']
+late,3,S.,"[au], [ae] became [o], [e] in polysyllables",ˌau,o,o < ˌau,https://eldamo.org/content/words/word-567222053.html,['s'],['o'],"['WJ/367', 'WJ/414']"
+late,3,S.,final [w] usually became [u],-Cw,-Cu,-Cu < -Cw,https://eldamo.org/content/words/word-798091205.html,['s'],['u'],['PE17/148']
+late,3,S.,"[ē], [ō] became [ī], [ū]",ē,ī,ī < ē,https://eldamo.org/content/words/word-3889365613.html,['s'],['ī'],"['PE18/96', 'PE19/91']"
+late,3,S.,"[ē], [ō] became [ī], [ū]",ō,ū,ū < ō,https://eldamo.org/content/words/word-3889365613.html,['s'],['ū'],"['PE18/96', 'PE19/91']"
+late,3,S.,"[ai], [oi] became [ae], [oe]",ai,ae,ae < ai,https://eldamo.org/content/words/word-941153689.html,['s'],['ae'],"['PE19/91', 'VT48/7']"
+late,3,S.,[ę̄] became [ai],ę̄,ai,ai < ę̄,https://eldamo.org/content/words/word-2387695245.html,['s'],['ai'],['PE18/96']
+late,3,S.,[no change],ui,ui,ui < ui,,['s'],['ui'],['VT48/7']
+late,3,S.,[ǭ] became [au],ǭ,au,au < ǭ,https://eldamo.org/content/words/word-558704171.html,['s'],['au'],"['PE17/45', 'PE17/108', 'PE18/96', 'PE19/91']"
+late,3,S.,[ou] became [au],ou,au,au < ou,https://eldamo.org/content/words/word-2476983755.html,['s'],['au'],['PE17/99']
+late,3,S.,[ou] became [au],ou,au,ou > au,https://eldamo.org/content/words/word-2476983755.html,['s'],['ou'],['PE17/99']
+late,3,S.,final nasals vanished after vowels,-Vn,-Vø,-Vø < -Vn,https://eldamo.org/content/words/word-876455981.html,['s'],['ø'],['VT42/24']
+late,3,S.,final nasals vanished after vowels,-Vm,-Vø,-Vø < -Vm,https://eldamo.org/content/words/word-876455981.html,['s'],['ø'],['VT47/10']
+late,3,S.,[ŋ] vanished with compensatory lengthening,Vŋn,V̄n,V̄n < Vŋn,https://eldamo.org/content/words/word-3707785609.html,['s'],['ø'],['PE22/149']
+late,3,S.,[ŋ] vanished with compensatory lengthening,Vŋw,V̄w,V̄w < Vŋw,https://eldamo.org/content/words/word-3707785609.html,['s'],['ø'],['PE22/149']
+middle,0,ᴹ✶,voiced stops unvoiced before voiceless consonants,bs,ps,ps < bs,https://eldamo.org/content/words/word-2905876955.html,['mp'],['p'],['PE19/50']
+middle,0,ᴹ✶,voiced stops unvoiced before voiceless consonants,bt,pt,pt < bt,https://eldamo.org/content/words/word-2905876955.html,['mp'],['p'],['PE19/52']
+middle,0,ᴹ✶,aspirate became voiceless stop before [s],pʰs,ps,ps < pʰs,https://eldamo.org/content/words/word-2678342679.html,['mp'],['p'],['PE19/50']
+middle,0,ᴹ✶,aspiration moved to end of group of stops,pʰt,ptʰ,ptʰ < pʰt,https://eldamo.org/content/words/word-798737509.html,['mp'],['p'],"['PE19/50', 'PE19/52']"
+middle,0,ᴹ✶,aspiration moved to end of group of stops,p-,pʰ-,p- > pʰ-,https://eldamo.org/content/words/word-2684793511.html,['mp'],['p'],"['PE19/18', 'PE19/18', 'PE19/21', 'PE19/21', 'PE19/21', 'PE19/21']"
+middle,0,ᴹ✶,aspiration moved to end of group of stops,sp-,f-,sp- > f-,https://eldamo.org/content/words/word-570537175.html,['mp'],['p'],['PE19/20']
+middle,0,ᴹ✶,aspiration moved to end of group of stops,Vp,Vb,Vp > Vb,https://eldamo.org/content/words/word-2421096703.html,['mp'],['p'],['PE19/23']
+middle,0,ᴹ✶,voiced stops unvoiced after voiceless stops and aspirates,kd,kt,kt < kd,https://eldamo.org/content/words/word-3661438765.html,['mp'],['t'],['PE19/52']
+middle,0,ᴹ✶,voiced stops unvoiced before voiceless consonants,ds,ts,ts < ds,https://eldamo.org/content/words/word-2905876955.html,['mp'],['t'],['PE19/50']
+middle,0,ᴹ✶,aspirate became voiceless stop before [s],tʰs,ts,ts < tʰs,https://eldamo.org/content/words/word-2678342679.html,['mp'],['t'],['PE19/50']
+middle,0,ᴹ✶,aspirate became voiceless stop before [s],st-,θ-,st- > θ-,https://eldamo.org/content/words/word-570537175.html,['mp'],['t'],['PE19/20']
+middle,0,ᴹ✶,aspirate became voiceless stop before [s],Vt,Vd,Vt > Vd,https://eldamo.org/content/words/word-2421096703.html,['mp'],['t'],['PE19/23']
+middle,0,ᴹ✶,"[t+t], [d+d] from suffixion became [st], [zd]",t+t,st,t+t > st,https://eldamo.org/content/words/word-2630259491.html,['mp'],['t'],['PE19/51']
+middle,0,ᴹ✶,voiced stops unvoiced before voiceless consonants,gs,ks,ks < gs,https://eldamo.org/content/words/word-2905876955.html,['mp'],['k'],['PE19/50']
+middle,0,ᴹ✶,voiced stops unvoiced before voiceless consonants,gt,kt,kt < gt,https://eldamo.org/content/words/word-2905876955.html,['mp'],['k'],['PE19/52']
+middle,0,ᴹ✶,aspirate became voiceless stop before [s],kʰs,ks,ks < kʰs,https://eldamo.org/content/words/word-2678342679.html,['mp'],['k'],['PE19/50']
+middle,0,ᴹ✶,aspiration moved to end of group of stops,kʰt,ktʰ,ktʰ < kʰt,https://eldamo.org/content/words/word-798737509.html,['mp'],['k'],['PE19/52']
+middle,0,ᴹ✶,aspiration moved to end of group of stops,skw-,sw-,skw- > sw-,https://eldamo.org/content/words/word-1872897535.html,['mp'],['k'],['PE19/20']
+middle,0,ᴹ✶,aspiration moved to end of group of stops,-kw-,-k-,-kw- > -k-,https://eldamo.org/content/words/word-78414621.html,['mp'],['k'],['PE19/23']
+middle,0,ᴹ✶,aspiration moved to end of group of stops,j,i,j > i,https://eldamo.org/content/words/word-2818409497.html,['mp'],['k'],['PE19/23']
+middle,0,ᴹ✶,aspiration moved to end of group of stops,Xw,Xv,Xw > Xv,https://eldamo.org/content/words/word-1848454147.html,['mp'],['k'],"['PE19/18', 'PE19/23']"
+middle,0,ᴹ✶,aspiration moved to end of group of stops,Vk,Vg,Vk > Vg,https://eldamo.org/content/words/word-2421096703.html,['mp'],['k'],['PE19/23']
+middle,0,ᴹ✶,metathesis,pʰm,mpʰ,pʰm > mpʰ,https://eldamo.org/content/words/word-1396728225.html,['mp'],['pʰ'],['PE19/50']
+middle,0,ᴹ✶,aspirate became voiceless stop before [s],pʰs,ps,pʰs > ps,https://eldamo.org/content/words/word-2678342679.html,['mp'],['pʰ'],['PE19/50']
+middle,0,ᴹ✶,aspiration moved to end of group of stops,pʰt,ptʰ,pʰt > ptʰ,https://eldamo.org/content/words/word-798737509.html,['mp'],['pʰ'],"['PE19/50', 'PE19/52']"
+middle,0,ᴹ✶,"aspirates became voiceless stops after [s], [h]",stʰ,st,stʰ > st,https://eldamo.org/content/words/word-2699949575.html,['mp'],['tʰ'],"['PE19/51', 'PE19/51']"
+middle,0,ᴹ✶,aspirate became voiceless stop before [s],tʰs,ts,tʰs > ts,https://eldamo.org/content/words/word-2678342679.html,['mp'],['tʰ'],['PE19/50']
+middle,0,ᴹ✶,"aspirates became voiceless stops after [s], [h]",skʰ,sk,skʰ > sk,https://eldamo.org/content/words/word-2699949575.html,['mp'],['kʰ'],['PE19/51']
+middle,0,ᴹ✶,aspirate became voiceless stop before [s],kʰs,ks,kʰs > ks,https://eldamo.org/content/words/word-2678342679.html,['mp'],['kʰ'],['PE19/50']
+middle,0,ᴹ✶,aspiration moved to end of group of stops,kʰt,ktʰ,kʰt > ktʰ,https://eldamo.org/content/words/word-798737509.html,['mp'],['kʰ'],['PE19/52']
+middle,0,ᴹ✶,voiced stops unvoiced before voiceless consonants,bs,ps,bs > ps,https://eldamo.org/content/words/word-2905876955.html,['mp'],['b'],['PE19/50']
+middle,0,ᴹ✶,voiced stops unvoiced before voiceless consonants,bt,pt,bt > pt,https://eldamo.org/content/words/word-2905876955.html,['mp'],['b'],['PE19/52']
+middle,0,ᴹ✶,voiced stops unvoiced after voiceless stops and aspirates,kd,kt,kd > kt,https://eldamo.org/content/words/word-3661438765.html,['mp'],['d'],['PE19/52']
+middle,0,ᴹ✶,voiced stops unvoiced before voiceless consonants,ds,ts,ds > ts,https://eldamo.org/content/words/word-2905876955.html,['mp'],['d'],['PE19/50']
+middle,0,ᴹ✶,"[t+t], [d+d] from suffixion became [st], [zd]",d+d,zd,d+d > zd,https://eldamo.org/content/words/word-2630259491.html,['mp'],['d'],['PE19/51']
+middle,0,ᴹ✶,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",-ŋj-,-ŋgj-,-ŋgj- < -ŋj-,https://eldamo.org/content/words/word-1270135967.html,['mp'],['g'],"['PE18/54', 'PE19/50']"
+middle,0,ᴹ✶,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",-ŋw-,-ŋgw-,-ŋgw- < -ŋw-,https://eldamo.org/content/words/word-1270135967.html,['mp'],['g'],"['PE18/54', 'PE19/50']"
+middle,0,ᴹ✶,"[ŋŋ], [ŋɣ] became [ŋg]",ŋɣ,ŋg,ŋg < ŋɣ,https://eldamo.org/content/words/word-2849203249.html,['mp'],['g'],['PE19/50']
+middle,0,ᴹ✶,"[ŋŋ], [ŋɣ] became [ŋg]",ŋŋ,ŋg,ŋg < ŋŋ,https://eldamo.org/content/words/word-2849203249.html,['mp'],['g'],['PE19/50']
+middle,0,ᴹ✶,"[ŋŋ], [ŋɣ] became [ŋg]",-gw-,-g-,-gw- > -g-,https://eldamo.org/content/words/word-78414621.html,['mp'],['g'],"['PE19/23', 'PE19/23']"
+middle,0,ᴹ✶,"[ŋŋ], [ŋɣ] became [ŋg]",gw-,w-,gw- > w-,https://eldamo.org/content/words/word-88234997.html,['mp'],['g'],"['PE19/18', 'PE19/18']"
+middle,0,ᴹ✶,"[ŋŋ], [ŋɣ] became [ŋg]",j,i,j > i,https://eldamo.org/content/words/word-2818409497.html,['mp'],['g'],['PE19/23']
+middle,0,ᴹ✶,voiced stops unvoiced before voiceless consonants,gs,ks,gs > ks,https://eldamo.org/content/words/word-2905876955.html,['mp'],['g'],['PE19/50']
+middle,0,ᴹ✶,voiced stops unvoiced before voiceless consonants,gt,kt,gt > kt,https://eldamo.org/content/words/word-2905876955.html,['mp'],['g'],['PE19/52']
+middle,0,ᴹ✶,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",-ŋw-,-ŋgw-,-ŋw- > -ŋgw-,https://eldamo.org/content/words/word-1270135967.html,['mp'],"['g', 'ŋ']","['PE19/50', 'PE18/54']"
+middle,0,ᴹ✶,metathesis,pʰm,mpʰ,mpʰ < pʰm,https://eldamo.org/content/words/word-1396728225.html,['mp'],['m'],['PE19/50']
+middle,0,ᴹ✶,metathesis,mb-,b-,mb- > b-,https://eldamo.org/content/words/word-3944232895.html,['mp'],['m'],"['PE19/20', 'PE19/20']"
+middle,0,ᴹ✶,metathesis,sC-,øC-,sC- > øC-,https://eldamo.org/content/words/word-3538536723.html,['mp'],['m'],['PE19/21']
+middle,0,ᴹ✶,metathesis,mb-,b-,mb- > b-,https://eldamo.org/content/words/word-1688730459.html,['mp'],['m'],['PE19/20']
+middle,0,ᴹ✶,nasals assimilated to following stops and aspirates,mk,ŋk,mk > ŋk,https://eldamo.org/content/words/word-2390772785.html,['mp'],"['m', 'n']",['PE19/50']
+middle,0,ᴹ✶,nasals assimilated to following stops and aspirates,ŋt,nt,nt < ŋt,https://eldamo.org/content/words/word-2390772785.html,['mp'],['n'],['PE18/54']
+middle,0,ᴹ✶,nasals assimilated to following stops and aspirates,nd-,d-,nd- > d-,https://eldamo.org/content/words/word-3944232895.html,['mp'],['n'],"['PE19/20', 'PE19/20']"
+middle,0,ᴹ✶,nasals assimilated to following stops and aspirates,sC-,øC-,sC- > øC-,https://eldamo.org/content/words/word-3538536723.html,['mp'],['n'],['PE19/21']
+middle,0,ᴹ✶,nasals assimilated to following stops and aspirates,nd-,d-,nd- > d-,https://eldamo.org/content/words/word-1688730459.html,['mp'],['n'],['PE19/20']
+middle,0,ᴹ✶,nasals assimilated to following stops and aspirates,mk,ŋk,ŋk < mk,https://eldamo.org/content/words/word-2390772785.html,['mp'],['ŋ'],"['PE19/50', 'PE19/50']"
+middle,0,ᴹ✶,nasals assimilated to following stops and aspirates,ŋ,g,ŋ > g,https://eldamo.org/content/words/word-44379183.html,['mp'],['ŋ'],"['PE19/19', 'PE19/19', 'PE19/23', 'PE19/23']"
+middle,0,ᴹ✶,nasals assimilated to following stops and aspirates,ŋg-,g-,ŋg- > g-,https://eldamo.org/content/words/word-3944232895.html,['mp'],['ŋ'],"['PE19/20', 'PE19/20']"
+middle,0,ᴹ✶,nasals assimilated to following stops and aspirates,VŋV,VɣV,VŋV > VɣV,https://eldamo.org/content/words/word-1844604693.html,['mp'],['ŋ'],['PE19/23']
+middle,0,ᴹ✶,nasals assimilated to following stops and aspirates,ŋ-,g-,ŋ- > g-,https://eldamo.org/content/words/word-1228875561.html,['mp'],['ŋ'],"['PE19/19', 'PE19/19']"
+middle,0,ᴹ✶,nasals assimilated to following stops and aspirates,ŋg-,g-,ŋg- > g-,https://eldamo.org/content/words/word-1688730459.html,['mp'],['ŋ'],"['PE19/20', 'PE19/20']"
+middle,0,ᴹ✶,nasals assimilated to following stops and aspirates,ŋt,nt,ŋt > nt,https://eldamo.org/content/words/word-2390772785.html,['mp'],['ŋ'],['PE18/54']
+middle,0,ᴹ✶,"medial [ŋj], [ŋw] became [ŋgj], [ŋgw]",-ŋj-,-ŋgj-,-ŋj- > -ŋgj-,https://eldamo.org/content/words/word-1270135967.html,['mp'],['ŋ'],"['PE18/54', 'PE19/50']"
+middle,0,ᴹ✶,"[ŋŋ], [ŋɣ] became [ŋg]",ŋŋ,ŋg,ŋŋ > ŋg,https://eldamo.org/content/words/word-2849203249.html,['mp'],['ŋ'],['PE19/50']
+middle,0,ᴹ✶,medial [ŋ] usually became [ɣ],VŋV,VɣV,VŋV > VɣV,https://eldamo.org/content/words/word-3915121695.html,['mp'],['ŋ'],['PE18/54']
+middle,0,ᴹ✶,medial [ŋ] usually became [ɣ],ŋr,ɣr,ŋr > ɣr,https://eldamo.org/content/words/word-3915121695.html,['mp'],['ŋ'],['PE18/54']
+middle,0,ᴹ✶,medial [ŋ] usually became [ɣ],ŋl,ɣl,ŋl > ɣl,https://eldamo.org/content/words/word-3915121695.html,['mp'],['ŋ'],['PE18/54']
+middle,0,ᴹ✶,medial [ŋ] usually became [ɣ],ŋs,ɣs,ŋs > ɣs,https://eldamo.org/content/words/word-3915121695.html,['mp'],['ŋ'],['PE18/54']
+middle,0,ᴹ✶,medial [ŋ] usually became [ɣ],VŋV,VɣV,VɣV < VŋV,https://eldamo.org/content/words/word-3915121695.html,['mp'],['ɣ'],['PE18/54']
+middle,0,ᴹ✶,medial [ŋ] usually became [ɣ],ŋr,ɣr,ɣr < ŋr,https://eldamo.org/content/words/word-3915121695.html,['mp'],['ɣ'],['PE18/54']
+middle,0,ᴹ✶,medial [ŋ] usually became [ɣ],ŋl,ɣl,ɣl < ŋl,https://eldamo.org/content/words/word-3915121695.html,['mp'],['ɣ'],['PE18/54']
+middle,0,ᴹ✶,medial [ŋ] usually became [ɣ],ŋs,ɣs,ɣs < ŋs,https://eldamo.org/content/words/word-3915121695.html,['mp'],['ɣ'],['PE18/54']
+middle,0,ᴹ✶,medial [ŋ] usually became [ɣ],ɣ,g,ɣ > g,https://eldamo.org/content/words/word-44379183.html,['mp'],['ɣ'],"['PE19/19', 'PE19/19', 'PE19/23', 'PE19/23']"
+middle,0,ᴹ✶,medial [ŋ] usually became [ɣ],Vht,V̄t,Vht > V̄t,https://eldamo.org/content/words/word-3116721073.html,['mp'],['ɣ'],['PE18/104']
+middle,0,ᴹ✶,medial [ŋ] usually became [ɣ],ɣ-,g-,ɣ- > g-,https://eldamo.org/content/words/word-1228875561.html,['mp'],['ɣ'],['PE19/19']
+middle,0,ᴹ✶,medial [ŋ] usually became [ɣ],ɣ,ø,ɣ > ø,https://eldamo.org/content/words/word-1476955021.html,['mp'],['ɣ'],['PE19/23']
+middle,0,ᴹ✶,"[ŋŋ], [ŋɣ] became [ŋg]",ŋɣ,ŋg,ŋɣ > ŋg,https://eldamo.org/content/words/word-2849203249.html,['mp'],['ɣ'],['PE19/50']
+middle,0,ᴹ✶,[ɣ] became [h] before voiceless consonants,ɣs,hs,ɣs > hs,https://eldamo.org/content/words/word-2810726977.html,['mp'],['ɣ'],"['PE18/54', 'PE19/51']"
+middle,0,ᴹ✶,[ɣ] became [h] before voiceless consonants,ɣt,xt,ɣt > xt,https://eldamo.org/content/words/word-2810726977.html,['mp'],['ɣ'],['PE18/59']
+middle,0,ᴹ✶,"[t+t], [d+d] from suffixion became [st], [zd]",t+t,st,st < t+t,https://eldamo.org/content/words/word-2630259491.html,['mp'],['s'],['PE19/51']
+middle,0,ᴹ✶,[hs] became [ss],hs,ss,ss < hs,https://eldamo.org/content/words/word-178282823.html,['mp'],['s'],"['PE18/54', 'PE19/51']"
+middle,0,ᴹ✶,[hs] became [ss],sj-,s-,sj- > s-,https://eldamo.org/content/words/word-217666031.html,['mp'],['s'],"['PE19/21', 'PE19/21']"
+middle,0,ᴹ✶,[hs] became [ss],sr-,str-,sr- > str-,https://eldamo.org/content/words/word-1674031447.html,['mp'],['s'],"['PE19/21', 'PE19/21']"
+middle,0,ᴹ✶,[hs] became [ss],sj-,s-,sj- > s-,https://eldamo.org/content/words/word-1659657875.html,['mp'],['s'],['PE19/21']
+middle,0,ᴹ✶,[hs] became [ss],sl-,l̥-,sl- > l̥-,https://eldamo.org/content/words/word-165461035.html,['mp'],['s'],['PE19/21']
+middle,0,ᴹ✶,[hs] became [ss],sr-,r̥-,sr- > r̥-,https://eldamo.org/content/words/word-165461035.html,['mp'],['s'],['PE19/21']
+middle,0,ᴹ✶,[hs] became [ss],sw-,w̥-,sw- > w̥-,https://eldamo.org/content/words/word-165461035.html,['mp'],['s'],['PE19/21']
+middle,0,ᴹ✶,[s] became [z] before voiced stops,sb,zb,sb > zb,https://eldamo.org/content/words/word-2884507077.html,['mp'],['s'],['PE18/54']
+middle,0,ᴹ✶,[s] became [z] before voiced stops,sd,zd,sd > zd,https://eldamo.org/content/words/word-2884507077.html,['mp'],['s'],"['PE18/54', 'PE18/59']"
+middle,0,ᴹ✶,[s] became [z] before voiced stops,sg,zg,sg > zg,https://eldamo.org/content/words/word-2884507077.html,['mp'],['s'],['PE18/54']
+middle,0,ᴹ✶,[s] became [z] before voiced stops,sb,zb,zb < sb,https://eldamo.org/content/words/word-2884507077.html,['mp'],['z'],['PE18/54']
+middle,0,ᴹ✶,[s] became [z] before voiced stops,sd,zd,zd < sd,https://eldamo.org/content/words/word-2884507077.html,['mp'],['z'],"['PE18/54', 'PE18/59']"
+middle,0,ᴹ✶,[s] became [z] before voiced stops,sg,zg,zg < sg,https://eldamo.org/content/words/word-2884507077.html,['mp'],['z'],['PE18/54']
+middle,0,ᴹ✶,"[t+t], [d+d] from suffixion became [st], [zd]",d+d,zd,zd < d+d,https://eldamo.org/content/words/word-2630259491.html,['mp'],['z'],['PE19/51']
+middle,0,ᴹ✶,"[t+t], [d+d] from suffixion became [st], [zd]",z,r,z > r,https://eldamo.org/content/words/word-982618329.html,['mp'],['z'],['PE19/28']
+middle,0,ᴹ✶,[ɣ] became [h] before voiceless consonants,ɣs,hs,hs < ɣs,https://eldamo.org/content/words/word-2810726977.html,['mp'],['h'],"['PE18/54', 'PE19/51']"
+middle,0,ᴹ✶,[ɣ] became [h] before voiceless consonants,ɣt,xt,xt < ɣt,https://eldamo.org/content/words/word-2810726977.html,['mp'],['h'],['PE18/59']
+middle,0,ᴹ✶,[hs] became [ss],hs,ss,hs > ss,https://eldamo.org/content/words/word-178282823.html,['mp'],['h'],"['PE18/54', 'PE19/51']"
+middle,0,ᴹ✶,stressed [wŏ] became [wa],wŏ́,wa,wa < wŏ́,https://eldamo.org/content/words/word-1415948757.html,['mp'],['a'],['Ety/WŌ']
+middle,0,ᴹ✶,"[ae], [ao] became [ā]",ae,ā,ae > ā,https://eldamo.org/content/words/word-2229536775.html,['mp'],['a'],['PE18/46']
+middle,0,ᴹ✶,"[ae], [ao] became [ā]",ao,ā,ao > ā,https://eldamo.org/content/words/word-2229536775.html,['mp'],['a'],['PE18/46']
+middle,0,ᴹ✶,stressed [wŏ] became [wa],wŏ́,wa,wŏ́ > wa,https://eldamo.org/content/words/word-1415948757.html,['mp'],['o'],['Ety/WŌ']
+middle,0,ᴹ✶,"[ae], [ao] became [ā]",ae,ā,ā < ae,https://eldamo.org/content/words/word-2229536775.html,['mp'],['ā'],['PE18/46']
+middle,0,ᴹ✶,"[ae], [ao] became [ā]",ao,ā,ā < ao,https://eldamo.org/content/words/word-2229536775.html,['mp'],['ā'],['PE18/46']
+middle,0,ᴹ✶,"[ae], [ao] became [ā]",ā,ǭ,ā > ǭ,https://eldamo.org/content/words/word-2277851021.html,['mp'],['ā'],['PE19/25']
+middle,0,ᴹ✶,"[ae], [ao] became [ā]",ā,ō,ā > ō,https://eldamo.org/content/words/word-1909322629.html,['mp'],['ā'],"['PE18/47', 'PE19/25']"
+middle,1,ON.,[no change],p,p,p < p,,['on'],['p'],"['PE19/18', 'PE19/21', 'PE19/21', 'PE19/23']"
+middle,1,ON.,labialized velars became labials,kw,p,p < kw,https://eldamo.org/content/words/word-3214863235.html,['on'],['p'],"['PE19/18', 'PE19/20', 'PE19/23']"
+middle,1,ON.,[no change],t,t,t < t,,['on'],['t'],"['PE19/18', 'PE19/21', 'PE19/21', 'PE19/23']"
+middle,1,ON.,[no change],k,k,k < k,,['on'],['k'],"['PE19/18', 'PE19/21', 'PE19/21', 'PE19/23', 'PE19/23']"
+middle,1,ON.,labialized velars became labials,kʰw-,pʰ-,pʰ- < kʰw-,https://eldamo.org/content/words/word-3214863235.html,['on'],['ɸ'],['PE19/18']
+middle,1,ON.,aspirates became voiceless spirants,pʰ,ɸ,ɸ < pʰ,https://eldamo.org/content/words/word-1770347191.html,['on'],['ɸ'],"['PE19/18', 'PE19/21', 'PE19/21', 'PE19/23']"
+middle,1,ON.,voiceless stops became spirants after initial [s],sp-,sɸ-,sɸ- < sp-,https://eldamo.org/content/words/word-948882833.html,['on'],['ɸ'],['PE19/20']
+middle,1,ON.,[no change],s,s,s < s,,['on'],['s'],"['PE19/19', 'PE19/21', 'PE19/21']"
+middle,1,ON.,"initial [s] unvoiced following [l], [r]",sl-,l̥-,sl- > l̥-,https://eldamo.org/content/words/word-2031443013.html,['on'],['s'],['PE19/21']
+middle,1,ON.,"initial [s] unvoiced following [l], [r]",sr-,r̥-,sr- > r̥-,https://eldamo.org/content/words/word-2031443013.html,['on'],['s'],['PE19/21']
+middle,1,ON.,aspirates became voiceless spirants,tʰ,θ,θ < tʰ,https://eldamo.org/content/words/word-1770347191.html,['on'],['θ'],"['PE19/18', 'PE19/21', 'PE19/21', 'PE19/23']"
+middle,1,ON.,voiceless stops became spirants after initial [s],st-,sθ-,sθ- < st-,https://eldamo.org/content/words/word-948882833.html,['on'],['θ'],['PE19/20']
+middle,1,ON.,"initial [s] became [θ] before [l], [r]",sl-,θl-,θl- < sl-,https://eldamo.org/content/words/word-2075290201.html,['on'],['θ'],['PE19/21']
+middle,1,ON.,"initial [s] became [θ] before [l], [r]",sr-,θr-,θr- < sr-,https://eldamo.org/content/words/word-2075290201.html,['on'],['θ'],['PE19/21']
+middle,1,ON.,intervocalic [s] became [h],VsV,VhV,VhV < VsV,https://eldamo.org/content/words/word-4036446677.html,['on'],['h'],['PE19/23']
+middle,1,ON.,aspirates became voiceless spirants,kʰ,x,x < kʰ,https://eldamo.org/content/words/word-1770347191.html,['on'],['x'],"['PE19/18', 'PE19/21', 'PE19/21', 'PE19/23', 'PE19/23', 'PE19/23']"
+middle,1,ON.,voiceless stops became spirants after initial [s],sk-,sx-,sx- < sk-,https://eldamo.org/content/words/word-948882833.html,['on'],['x'],['PE19/20']
+middle,1,ON.,[no change],b,b,b < b,,['on'],['b'],"['PE19/18', 'PE19/21', 'PE19/21', 'PE19/23']"
+middle,1,ON.,labialized velars became labials,gw,b,b < gw,https://eldamo.org/content/words/word-3214863235.html,['on'],['b'],"['PE19/18', 'PE19/23']"
+middle,1,ON.,[no change],d,d,d < d,,['on'],['d'],"['PE19/18', 'PE19/21', 'PE19/21', 'PE19/23']"
+middle,1,ON.,[no change],g,g,g < g,,['on'],['g'],"['PE19/18', 'PE19/21', 'PE19/21', 'PE19/23', 'PE19/23']"
+middle,1,ON.,[no change],m,m,m < m,,['on'],['m'],"['PE19/19', 'PE19/20', 'PE19/23']"
+middle,1,ON.,labialized velars became labials,ŋgw,mb,mb < ŋgw,https://eldamo.org/content/words/word-3214863235.html,['on'],['m'],"['Ety/ING', 'PE19/20']"
+middle,1,ON.,"initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",ṃ-,am-,ṃ- > am-,https://eldamo.org/content/words/word-1642455461.html,['on'],['m'],"['PE19/20', 'PE19/20']"
+middle,1,ON.,"initial [s] unvoiced following [m], [n], [j], [w]",sm-,m̥-,m̥- < sm-,https://eldamo.org/content/words/word-3693878703.html,['on'],['m̥'],['PE19/21']
+middle,1,ON.,[no change],n,n,n < n,,['on'],['n'],"['PE19/19', 'PE19/20', 'PE19/23']"
+middle,1,ON.,"initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",ṇ-,an-,ṇ- > an-,https://eldamo.org/content/words/word-1642455461.html,['on'],['n'],['PE19/20']
+middle,1,ON.,"initial [s] unvoiced following [m], [n], [j], [w]",sn-,n̥-,n̥- < sn-,https://eldamo.org/content/words/word-3693878703.html,['on'],['n̥'],['PE19/21']
+middle,1,ON.,[no change],ŋ,ŋ,ŋ < ŋ,,['on'],['ŋ'],['PE19/20']
+middle,1,ON.,"initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",ŋ̣-,aŋ-,ŋ̣- > aŋ-,https://eldamo.org/content/words/word-1642455461.html,['on'],"['ŋ', 'ø']",['PE19/20']
+middle,1,ON.,"initial [s] unvoiced following [m], [n], [j], [w]",sw-,w̥-,w̥- < sw-,https://eldamo.org/content/words/word-3693878703.html,['on'],['w̥'],['PE19/21']
+middle,1,ON.,"initial [s] unvoiced following [m], [n], [j], [w]",sj-,j̊-,j̊- < sj-,https://eldamo.org/content/words/word-3693878703.html,['on'],['j̊'],['PE19/21']
+middle,1,ON.,[no change],w,w,w < w,,['on'],['w'],"['PE19/19', 'PE19/23']"
+middle,1,ON.,[no change],l,l,l < l,,['on'],['l'],['PE19/19']
+middle,1,ON.,[no change],r,r,r < r,,['on'],['r'],['PE19/19']
+middle,1,ON.,[no change],j,j,j < j,,['on'],['j'],"['PE19/19', 'PE19/23']"
+middle,1,ON.,"initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",ṃ-,am-,am- < ṃ-,https://eldamo.org/content/words/word-1642455461.html,['on'],['a'],"['PE19/20', 'PE19/20']"
+middle,1,ON.,"initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",ṇ-,an-,an- < ṇ-,https://eldamo.org/content/words/word-1642455461.html,['on'],['a'],['PE19/20']
+middle,1,ON.,"initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",ŋ̣-,aŋ-,aŋ- < ŋ̣-,https://eldamo.org/content/words/word-1642455461.html,['on'],['a'],"['PE19/20', 'PE19/20']"
+middle,1,ON.,"[ǣ], [ai] became [ę̄]",ǣ,ę̄,ę̄ < ǣ,https://eldamo.org/content/words/word-3619603651.html,['on'],['ę̄'],['PE19/25']
+middle,1,ON.,"[ǣ], [ai] became [ę̄]",ai,ę̄,ę̄ < ai,https://eldamo.org/content/words/word-3619603651.html,['on'],['ę̄'],['PE19/25']
+middle,1,ON.,[no change],ī,ī,ī < ī,,['on'],['ī'],['PE19/25']
+middle,1,ON.,"[ē], [ō] became [ī], [ū]",ē,ī,ī < ē,https://eldamo.org/content/words/word-390078853.html,['on'],['ī'],['PE19/25']
+middle,1,ON.,[no change],ǭ,ǭ,ǭ < ǭ,,['on'],['ǭ'],['PE19/25']
+middle,1,ON.,"[ā], [au] became [ǭ]",ā,ǭ,ǭ < ā,https://eldamo.org/content/words/word-2790556075.html,['on'],['ǭ'],"['Ety/THŌN', 'PE19/25']"
+middle,1,ON.,"[ā], [au] became [ǭ]",au,ǭ,ǭ < au,https://eldamo.org/content/words/word-2790556075.html,['on'],['ǭ'],['PE19/25']
+middle,1,ON.,[no change],ū,ū,ū < ū,,['on'],['ū'],['PE19/25']
+middle,1,ON.,"[ē], [ō] became [ī], [ū]",ō,ū,ū < ō,https://eldamo.org/content/words/word-390078853.html,['on'],['ū'],['PE19/25']
+middle,1,ON.,"[eu], [iu] became [ū]",eu,ū,ū < eu,https://eldamo.org/content/words/word-1713708009.html,['on'],['ū'],['PE19/25']
+middle,1,ON.,"[eu], [iu] became [ū]",iu,ū,ū < iu,https://eldamo.org/content/words/word-1713708009.html,['on'],['ū'],['PE19/25']
+middle,1,ON.,"[ei], [ou] became [oi], [ū]",ou,ū,ū < ou,https://eldamo.org/content/words/word-1880600739.html,['on'],['ū'],['PE19/25']
+middle,1,ON.,[no change],oi,oi,oi < oi,,['on'],['oi'],['PE19/25']
+middle,1,ON.,"[ei], [ou] became [oi], [ū]",ei,oi,oi < ei,https://eldamo.org/content/words/word-1880600739.html,['on'],['oi'],['PE19/25']
+middle,1,ON.,"[oi], [ǭi] became [ui]",oi,ui,oi > ui,https://eldamo.org/content/words/word-2826795683.html,['on'],['oi'],"['PE19/25', 'PE19/25']"
+middle,1,ON.,[no change],ui,ui,ui < ui,,['on'],['ui'],['PE19/25']
+middle,1,ON.,"[oi], [ǭi] became [ui]",oi,ui,ui < oi,https://eldamo.org/content/words/word-2826795683.html,['on'],['ui'],"['PE19/25', 'PE19/25']"
+middle,1,ON.,initial and intervocalic [ŋ] vanished,ŋ-,ø-,ø- < ŋ-,https://eldamo.org/content/words/word-552653835.html,['on'],['ø'],"['PE19/19', 'PE19/19', 'PE19/19']"
+middle,1,ON.,initial and intervocalic [ŋ] vanished,VŋV,VøV,VøV < VŋV,https://eldamo.org/content/words/word-552653835.html,['on'],['ø'],['PE19/23']
+middle,1,ON.,[ɣ] vanished,ɣ-,ø-,ø- < ɣ-,https://eldamo.org/content/words/word-3657372981.html,['on'],['ø'],['PE19/19']
+middle,1,ON.,[ɣ] vanished,ɣ,ø,ø < ɣ,https://eldamo.org/content/words/word-3657372981.html,['on'],['ø'],['PE19/23']
+middle,1,ON.,[j] was lost after initial velars,kj-,k-,k- < kj-,https://eldamo.org/content/words/word-4025342543.html,['on'],['ø'],['PE19/18']
+middle,1,ON.,[j] was lost after initial velars,kʰj-,kʰ-,kʰ- < kʰj-,https://eldamo.org/content/words/word-4025342543.html,['on'],['ø'],['PE19/18']
+middle,1,ON.,[j] was lost after initial velars,gj-,g-,g- < gj-,https://eldamo.org/content/words/word-4025342543.html,['on'],['ø'],['PE19/18']
+middle,1,ON.,[j] was lost after initial velars,ŋgj,ŋg,ŋg < ŋgj,https://eldamo.org/content/words/word-4025342543.html,['on'],['ø'],['PE19/20']
+middle,1,ON.,[j] was lost after initial velars,skj-,sk-,sk- < skj-,https://eldamo.org/content/words/word-4025342543.html,['on'],['ø'],['PE19/20']
+middle,1,ON.,"[j] vanished before [i], [ui]",ji,i,i < ji,https://eldamo.org/content/words/word-4029245039.html,['on'],['ø'],['PE19/19']
+middle,2,N.,[no change],p,p,p < p,,['n'],['p'],"['PE19/18', 'PE19/18', 'PE19/21', 'PE19/21']"
+middle,2,N.,[no change],t,t,t < t,,['n'],['t'],"['PE19/18', 'PE19/21', 'PE19/21']"
+middle,2,N.,"[tl], [dl] became [kl], [gl]",tl,kl,tl > kl,https://eldamo.org/content/words/word-2165755085.html,['n'],['t'],['PE19/21']
+middle,2,N.,[no change],k,k,k < k,,['n'],['k'],"['PE19/18', 'PE19/18', 'PE19/21', 'PE19/21']"
+middle,2,N.,"[tl], [dl] became [kl], [gl]",tl,kl,kl < tl,https://eldamo.org/content/words/word-2165755085.html,['n'],['k'],['PE19/21']
+middle,2,N.,[no change],b,b,b < b,,['n'],['b'],"['PE19/18', 'PE19/18', 'PE19/21', 'PE19/21']"
+middle,2,N.,initial nasals vanished before stops,mb-,b-,b- < mb-,https://eldamo.org/content/words/word-956128961.html,['n'],['b'],"['PE19/20', 'PE19/20']"
+middle,2,N.,voiceless stops voiced after vowels,Vp,Vb,Vb < Vp,https://eldamo.org/content/words/word-2951504533.html,['n'],['b'],"['PE19/23', 'PE19/23']"
+middle,2,N.,[no change],d,d,d < d,,['n'],['d'],"['PE19/18', 'PE19/21', 'PE19/21']"
+middle,2,N.,initial nasals vanished before stops,nd-,d-,d- < nd-,https://eldamo.org/content/words/word-956128961.html,['n'],['d'],['PE19/20']
+middle,2,N.,voiceless stops voiced after vowels,Vt,Vd,Vd < Vt,https://eldamo.org/content/words/word-2951504533.html,['n'],['d'],['PE19/23']
+middle,2,N.,"[tl], [dl] became [kl], [gl]",dl,gl,dl > gl,https://eldamo.org/content/words/word-2165755085.html,['n'],['d'],['PE19/21']
+middle,2,N.,[no change],g,g,g < g,,['n'],['g'],"['PE19/18', 'PE19/18', 'PE19/21', 'PE19/21']"
+middle,2,N.,initial nasals vanished before stops,ŋg-,g-,g- < ŋg-,https://eldamo.org/content/words/word-956128961.html,['n'],['g'],"['PE19/20', 'PE19/20']"
+middle,2,N.,initial [w] became [gw],w-,gw-,gw- < w-,https://eldamo.org/content/words/word-2451728863.html,['n'],['g'],"['PE19/19', 'PE19/19']"
+middle,2,N.,medial [j] became [i],CjV,CiV,CiV < CjV,https://eldamo.org/content/words/word-1126685261.html,['n'],"['g', 'x', 'i']",['PE19/23']
+middle,2,N.,voiceless stops voiced after vowels,Vk,Vg,Vg < Vk,https://eldamo.org/content/words/word-2951504533.html,['n'],['g'],['PE19/23']
+middle,2,N.,"[tl], [dl] became [kl], [gl]",dl,gl,gl < dl,https://eldamo.org/content/words/word-2165755085.html,['n'],['g'],['PE19/21']
+middle,2,N.,initial [s] vanished before spirants,sɸ-,ɸ-,ɸ- < sɸ-,https://eldamo.org/content/words/word-2061688473.html,['n'],['f'],"['PE19/20', 'PE19/20']"
+middle,2,N.,"[ɸ], [β] became [f], [v]",ɸ,f,f < ɸ,https://eldamo.org/content/words/word-2995333959.html,['n'],['f'],"['PE19/18', 'PE19/18', 'PE19/21', 'PE19/21', 'PE19/23']"
+middle,2,N.,initial [θl] sometimes became [fl],θl-,fl-,fl- < θl-,https://eldamo.org/content/words/word-2640707457.html,['n'],['f'],['PE19/21']
+middle,2,N.,[no change],s,s,s < s,,['n'],['s'],['PE19/19']
+middle,2,N.,[no change],θ,θ,θ < θ,,['n'],['θ'],"['PE19/18', 'PE19/21', 'PE19/21', 'PE19/23']"
+middle,2,N.,initial [s] vanished before spirants,sθ-,θ-,θ- < sθ-,https://eldamo.org/content/words/word-2061688473.html,['n'],['θ'],['PE19/20']
+middle,2,N.,initial [θl] sometimes became [fl],θl-,fl-,θl- > fl-,https://eldamo.org/content/words/word-2640707457.html,['n'],['θ'],['PE19/21']
+middle,2,N.,initial [s] vanished before spirants,sx-,x-,x- < sx-,https://eldamo.org/content/words/word-2061688473.html,['n'],['h'],"['PE19/20', 'PE19/20']"
+middle,2,N.,initial [x-] became [h-],x-,h-,h- < x-,https://eldamo.org/content/words/word-1195324115.html,['n'],['h'],['PE19/21']
+middle,2,N.,[no change],x,x,x < x,,['n'],['x'],"['PE19/18', 'PE19/18', 'PE19/21', 'PE19/23', 'PE19/23']"
+middle,2,N.,"voiceless [j̊], [w̥] became [x], [xw]",j̊-,x-,x- < j̊-,https://eldamo.org/content/words/word-1284301541.html,['n'],['x'],['PE19/21']
+middle,2,N.,"voiceless [j̊], [w̥] became [x], [xw]",w̥-,xw-,xw- < w̥-,https://eldamo.org/content/words/word-1284301541.html,['n'],['x'],['PE19/21']
+middle,2,N.,initial [x-] became [h-],x-,h-,x- > h-,https://eldamo.org/content/words/word-1195324115.html,['n'],['x'],['PE19/21']
+middle,2,N.,voiced stops became spirants after vowels,Vb,Vv,Vv < Vb,https://eldamo.org/content/words/word-8115507.html,['n'],['v'],"['PE19/23', 'PE19/23']"
+middle,2,N.,voiced stops became spirants after vowels,Vd,Vð,Vð < Vd,https://eldamo.org/content/words/word-8115507.html,['n'],['ð'],['PE19/23']
+middle,2,N.,voiced stops became spirants after vowels,Vg,Vɣ,Vɣ < Vg,https://eldamo.org/content/words/word-8115507.html,['n'],['ɣ'],['PE19/23']
+middle,2,N.,[no change],m,m,m < m,,['n'],['m'],"['PE19/19', 'PE19/21', 'PE19/23']"
+middle,2,N.,"[mb], [nd] became [mm], [nn]",mb,mm,mm < mb,https://eldamo.org/content/words/word-1317326183.html,['n'],['m'],"['PE19/20', 'PE19/20', 'PE19/23']"
+middle,2,N.,[no change],n,n,n < n,,['n'],['n'],"['PE19/19', 'PE19/21', 'PE19/23']"
+middle,2,N.,"[mb], [nd] became [mm], [nn]",nd,nn,nn < nd,https://eldamo.org/content/words/word-1317326183.html,['n'],['n'],['PE19/20']
+middle,2,N.,[no change],ŋ,ŋ,ŋ < ŋ,,['n'],['ŋ'],"['PE19/20', 'PE19/20', 'PE19/23']"
+middle,2,N.,"initial [r-], [l-] were unvoiced",l-,l̥-,l̥- < l-,https://eldamo.org/content/words/word-876815979.html,['n'],['l̥'],['PE19/19']
+middle,2,N.,initial [x-] became [h-],xl-,l̥-,l̥- < xl-,https://eldamo.org/content/words/word-1195324115.html,['n'],['l̥'],['PE19/21']
+middle,2,N.,"initial [r-], [l-] were unvoiced",r-,r̥-,r̥- < r-,https://eldamo.org/content/words/word-876815979.html,['n'],['r̥'],['PE19/19']
+middle,2,N.,[no change],w,w,w < w,,['n'],['w'],['PE19/23']
+middle,2,N.,[no change],j,j,j < j,,['n'],['j'],"['PE19/19', 'PE19/19']"
+middle,2,N.,[no change],ī,ī,ī < ī,,['n'],['ī'],"['PE19/25', 'PE19/25']"
+middle,2,N.,[no change],ū,ū,ū < ū,,['n'],['ū'],"['PE19/25', 'PE19/25', 'PE19/25', 'PE19/25', 'PE19/25']"
+middle,2,N.,[ai] became [oe] or [ae],ę̄,ae,ae < ę̄,https://eldamo.org/content/words/word-3173115217.html,['n'],['ae'],"['PE19/25', 'PE19/25']"
+middle,2,N.,[no change],ui,ui,ui < ui,,['n'],['ui'],"['PE19/25', 'PE19/25', 'PE19/25']"
+middle,2,N.,[ou] became [au],ou,au,au < ou,https://eldamo.org/content/words/word-2902864717.html,['n'],['au'],"['PE19/25', 'PE19/25', 'PE19/25']"
+middle,2,N.,[ǭ] became [ou],ǭ,ou,ou < ǭ,https://eldamo.org/content/words/word-4073827619.html,['n'],['ou'],"['PE19/25', 'PE19/25', 'PE19/25']"
+middle,2,N.,[ou] became [au],ou,au,ou > au,https://eldamo.org/content/words/word-2902864717.html,['n'],['ou'],"['PE19/25', 'PE19/25', 'PE19/25']"
+middle,2,N.,[no change],ø,ø,ø < ø,,['n'],['ø'],"['PE19/19', 'PE19/19', 'PE19/23', 'PE19/23']"
+middle,2,N.,[h] vanished after vowels,Vh,Vø,Vø < Vh,https://eldamo.org/content/words/word-2979061283.html,['n'],['ø'],"['EtyAC/NDIS', 'PE19/23']"

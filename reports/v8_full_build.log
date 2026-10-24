@@ -1,0 +1,87 @@
+extraction quenya 861 legacy-only 123
+quenya {'branch': 'quenya', 'all_rules': 861, 'atomic_edges': 391, 'guarded_rules': 139, 'structural_chains': 216, 'search_truncations': []} {'branch': 'quenya', 'number': 216, 'distribution': {'C': 38, 'U': 170, 'D': 8}}
+extraction sindarin 570 legacy-only 0
+sindarin {'branch': 'sindarin', 'all_rules': 570, 'atomic_edges': 234, 'guarded_rules': 150, 'structural_chains': 114, 'search_truncations': []} {'branch': 'sindarin', 'number': 114, 'distribution': {'U': 93, 'D': 10, 'C': 11}}
+quenya 216
+sindarin 114
+{
+  "quenya": {
+    "critical": {
+      "chain:graph_steps_verified": 66,
+      "chain:unresolved_steps": 73,
+      "exact_step_match": 197,
+      "missing_chain_rule_url": 8,
+      "not_in_atomic_graph": 88,
+      "rule_url_mismatch": 3
+    },
+    "structural": {
+      "chain:ambiguous_rule_identity": 2,
+      "chain:graph_steps_verified": 208,
+      "chain:unresolved_steps": 6,
+      "exact_step_match": 473,
+      "missing_chain_rule_url": 6,
+      "multiple_matching_rules": 2
+    }
+  },
+  "sindarin": {
+    "critical": {
+      "chain:graph_steps_verified": 102,
+      "chain:incompatible_position": 5,
+      "chain:unresolved_steps": 11,
+      "exact_step_match": 259,
+      "missing_chain_rule_url": 11
+    },
+    "structural": {
+      "chain:graph_steps_verified": 106,
+      "chain:unresolved_steps": 8,
+      "exact_step_match": 251,
+      "missing_chain_rule_url": 8
+    }
+  }
+}
+Rebuilt /mnt/data/eldamo_v8/app/index.html
+quenya canonical rows: 216 grades {'C': 38, 'U': 170, 'D': 8} atomic edges 391
+sindarin canonical rows: 114 grades {'U': 93, 'D': 10, 'C': 11} atomic edges 234
+canonical pipeline invariants OK
+{
+  "quenya": {
+    "total_rules": 861,
+    "atomic_edges": 391,
+    "non_atomic_entries": 139,
+    "non_atomic_reason_counts": {
+      "no_sound_change": 120,
+      "complex_or_contextual_formula": 107
+    },
+    "non_atomic_validation_counts": {
+      "unverified_no_matching_example": 69,
+      "reproduced": 62,
+      "mismatch_or_context": 8
+    },
+    "non_atomic_reproduced_examples": 1638,
+    "non_atomic_with_matching_examples": 70,
+    "source_pages_verified_utf8": 274
+  },
+  "sindarin": {
+    "total_rules": 570,
+    "atomic_edges": 234,
+    "non_atomic_entries": 150,
+    "non_atomic_reason_counts": {
+      "no_sound_change": 128,
+      "complex_or_contextual_formula": 99
+    },
+    "non_atomic_validation_counts": {
+      "unverified_no_matching_example": 71,
+      "reproduced": 71,
+      "unsupported_on_example": 2,
+      "mismatch_or_context": 6
+    },
+    "non_atomic_reproduced_examples": 2100,
+    "non_atomic_with_matching_examples": 79,
+    "source_pages_verified_utf8": 248
+  }
+}
+quenya PASS 861 source identities; merged 331
+sindarin PASS 570 source identities; merged 186
+{"quenya": {"canonical": {"same_stage_order_unverified": 92, "different_position_requirements": 0, "contextual_rules_not_considered": 216, "relative_chronology_unverified": 216, "authorial_revision_compatibility_unverified": 216, "ambiguous_atomic_match": 2, "merged_rule_provenance": 211, "without_shared_example_witness": 178, "total": 216}, "archival": {"critical": {"chain_statuses": {"graph_steps_verified": 66, "unresolved_steps": 73}, "step_statuses": {"exact_step_match": 197, "not_in_atomic_graph": 88, "missing_chain_rule_url": 8, "rule_url_mismatch": 3}}, "structural": {"chain_statuses": {"graph_steps_verified": 208, "unresolved_steps": 6, "ambiguous_rule_identity": 2}, "step_statuses": {"exact_step_match": 473, "missing_chain_rule_url": 6, "multiple_matching_rules": 2}}}, "guarded_records": 139}, "sindarin": {"canonical": {"same_stage_order_unverified": 48, "different_position_requirements": 0, "contextual_rules_not_considered": 114, "relative_chronology_unverified": 114, "authorial_revision_compatibility_unverified": 114, "ambiguous_atomic_match": 0, "merged_rule_provenance": 110, "without_shared_example_witness": 103, "total": 114}, "archival": {"critical": {"chain_statuses": {"graph_steps_verified": 102, "unresolved_steps": 11, "incompatible_position": 5}, "step_statuses": {"exact_step_match": 259, "missing_chain_rule_url": 11}}, "structural": {"chain_statuses": {"graph_steps_verified": 106, "unresolved_steps": 8}, "step_statuses": {"exact_step_match": 251, "missing_chain_rule_url": 8}}}, "guarded_records": 150}}
+{"quenya": {"canonical": {"same_stage_order_unverified": 92, "different_position_requirements": 0, "contextual_rules_not_considered": 216, "relative_chronology_unverified": 216, "authorial_revision_compatibility_unverified": 216, "ambiguous_atomic_match": 2, "merged_rule_provenance": 211, "without_shared_example_witness": 178, "total": 216}, "archival": {"critical": {"chain_statuses": {"graph_steps_verified": 66, "unresolved_steps": 73}, "step_statuses": {"exact_step_match": 197, "not_in_atomic_graph": 88, "missing_chain_rule_url": 8, "rule_url_mismatch": 3}}, "structural": {"chain_statuses": {"graph_steps_verified": 208, "unresolved_steps": 6, "ambiguous_rule_identity": 2}, "step_statuses": {"exact_step_match": 473, "missing_chain_rule_url": 6, "multiple_matching_rules": 2}}}, "guarded_records": 139}, "sindarin": {"canonical": {"same_stage_order_unverified": 48, "different_position_requirements": 0, "contextual_rules_not_considered": 114, "relative_chronology_unverified": 114, "authorial_revision_compatibility_unverified": 114, "ambiguous_atomic_match": 0, "merged_rule_provenance": 110, "without_shared_example_witness": 103, "total": 114}, "archival": {"critical": {"chain_statuses": {"graph_steps_verified": 102, "unresolved_steps": 11, "incompatible_position": 5}, "step_statuses": {"exact_step_match": 259, "missing_chain_rule_url": 11}}, "structural": {"chain_statuses": {"graph_steps_verified": 106, "unresolved_steps": 8}, "step_statuses": {"exact_step_match": 251, "missing_chain_rule_url": 8}}}, "guarded_records": 150}}
+v8 historical limits: PASS

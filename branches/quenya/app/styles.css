@@ -1,0 +1,329 @@
+:root {
+  color-scheme:dark;
+  --bg:#0d1523;
+  --fg:#e7edf6;
+  --muted:#9aabc2;
+  --accent:#88baff;
+  --panel:#172237;
+  --stroke:#34445c
+}
+* {
+  box-sizing:border-box
+}
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+  font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif
+}
+header {
+  padding:30px max(20px,calc((100vw - 1100px)/2));
+  background:linear-gradient(110deg,#1d3556,#101a2b)
+}
+h1 {
+  margin:0 0 5px;
+  font-size:clamp(23px,4vw,35px)
+}
+h2 {
+  font-size:19px;
+  margin:8px 0 14px
+}
+small,.muted {
+  color:var(--muted)
+}
+main {
+  max-width:1100px;
+  padding:20px;
+  margin:auto
+}
+.panel {
+  background:var(--panel);
+  border:1px solid var(--stroke);
+  border-radius:13px;
+  padding:19px;
+  margin-bottom:16px
+}
+.controls {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px
+}
+label {
+  display:block;
+  font-size:13px;
+  color:var(--muted)
+}
+input,select {
+  display:block;
+  width:100%;
+  background:#0b1423;
+  color:var(--fg);
+  border:1px solid #60718a;
+  border-radius:7px;
+  padding:10px;
+  font:inherit;
+  margin-top:5px
+}
+button {
+  background:#8abaff;
+  color:#051224;
+  border:0;
+  border-radius:8px;
+  padding:10px 18px;
+  font-weight:700;
+  cursor:pointer
+}
+button:hover {
+  background:#b4d3ff
+}
+.row {
+  display:flex;
+  gap:14px;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-top:14px
+}
+.row label {
+  display:flex;
+  gap:6px;
+  align-items:center
+}
+.row input {
+  width:auto;
+  margin:0
+}
+.stats {
+  font-size:13px;
+  color:var(--muted)
+}
+.path {
+  border-top:1px solid var(--stroke);
+  padding:15px 0
+}
+.route {
+  font-size:20px;
+  font-weight:650;
+  overflow-wrap:anywhere;
+  line-height:1.8
+}
+.route span {
+  display:inline-block;
+  border-radius:6px;
+  background:#283e60;
+  padding:0px 9px;
+  margin:2px
+}
+.pill {
+  display:inline-block;
+  border:1px solid #556b87;
+  padding:2px 7px;
+  border-radius:100px;
+  font-size:12px;
+  color:#baccdf;
+  margin:5px 4px 5px 0
+}
+ol {
+  padding-left:22px
+}
+li {
+  margin:6px 0
+}
+a {
+  color:#a5cdff;
+  overflow-wrap:anywhere
+}
+.warn {
+  border-left:3px solid #d2ad6d;
+  padding:8px 12px;
+  background:#352b22;
+  color:#f0d8ad;
+  border-radius:4px;
+  margin:10px 0
+}
+details {
+  margin-top:8px
+}
+summary {
+  cursor:pointer;
+  color:#bcd4fa
+}
+code {
+  color:#b1e1f1
+}
+#output {
+  min-height:70px
+}
+@media(max-width:650px) {
+  .controls {
+    grid-template-columns:1fr
+  }
+  main {
+    padding:12px
+  }
+  .panel {
+    padding:14px
+  }
+}
+.selection-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px
+}
+.side {
+  min-width:0;
+  border:1px solid var(--stroke);
+  border-radius:10px;
+  padding:12px
+}
+.side h3 {
+  margin:0 0 10px;
+  font-size:16px
+}
+.choice-mode {
+  display:flex;
+  gap:7px;
+  margin-bottom:10px
+}
+.mode {
+  background:#283e60;
+  color:var(--fg);
+  border:1px solid #536988;
+  padding:8px 10px;
+  font-size:13px;
+  flex:1
+}
+.mode.active {
+  background:#9ac7ff;
+  color:#09192d
+}
+.current {
+  background:#0b1423;
+  padding:8px 11px;
+  border-radius:7px;
+  margin-bottom:10px;
+  font-size:14px
+}
+.current strong {
+  font-size:20px;
+  color:#c7e1ff
+}
+.ipa-scroll {
+  max-height:470px;
+  overflow:auto
+}
+.ipa-scroll h3 {
+  font-size:14px;
+  margin:14px 0 6px
+}
+.ipa-scroll table {
+  border-collapse:collapse;
+  width:100%;
+  font-size:12px
+}
+.ipa-scroll th,.ipa-scroll td {
+  border:1px solid #405470;
+  padding:6px;
+  vertical-align:middle
+}
+.ipa-scroll th {
+  color:#ccdafa;
+  background:#263854
+}
+.ipa-sound {
+  background:#293b55;
+  color:#d8eaff;
+  padding:3px 6px;
+  font-size:13px;
+  margin:2px;
+  border:1px solid #4a658b;
+  border-radius:5px;
+  min-width:31px
+}
+.ipa-sound:hover {
+  background:#5077ad
+}
+.ipa-sound.selected {
+  background:#b9dbff;
+  color:#10243e;
+  outline:2px solid #f2e0a0
+}
+.cluster-control {
+  display:none
+}
+.cluster-control.active {
+  display:block
+}
+.ipa-choice.hidden {
+  display:none
+}
+.filter-tip {
+  font-size:12px;
+  color:var(--muted);
+  margin-top:8px
+}
+.empty-info {
+  padding:12px;
+  background:#1c2b42;
+  border:1px solid #4b607b;
+  border-radius:8px
+}
+.nearby {
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap;
+  margin:8px 0
+}
+.nearby button {
+  background:#263f60;
+  color:#dcecff;
+  border:1px solid #526c8e;
+  font-size:13px;
+  padding:5px 10px
+}
+@media(max-width:760px) {
+  .selection-grid {
+    grid-template-columns:1fr
+  }
+  .ipa-scroll {
+    max-height:340px
+  }
+}
+.secondary-action {
+  background:#2c4366;
+  color:#e5efff;
+  border:1px solid #647993
+}
+.rule-scroll {
+  overflow-x:auto;
+  margin-top:12px
+}
+.rule-table {
+  width:100%;
+  border-collapse:collapse;
+  font-size:13px;
+  min-width:650px
+}
+.rule-table th,.rule-table td {
+  padding:9px 10px;
+  text-align:left;
+  vertical-align:top;
+  border-bottom:1px solid #405470
+}
+.rule-table th {
+  background:#243750;
+  position:sticky;
+  top:0
+}
+.rule-table td:first-child {
+  white-space:nowrap
+}
+.rule-table .refs {
+  font-size:12px
+}
+.rule-note {
+  margin-top:12px;
+  color:#b5c6dc
+}
+
+/* Expandable chain atlas and contextual development trees */
+.atlas-filters{margin-top:14px}.atlas-card{border:1px solid var(--stroke);border-radius:10px;margin:9px 0;padding:12px;background:#111d30}.atlas-card summary{cursor:pointer;font-weight:600}.atlas-card summary:hover{color:var(--accent)}.atlas-route{overflow-wrap:anywhere}.atlas-grade{display:inline-block;border:1px solid #697b94;border-radius:5px;padding:1px 7px;margin-left:8px;font-size:12px;color:#cbd9ed}.atlas-meta{font-size:12px;color:var(--muted);margin:8px 0}.atlas-card ol{padding-left:23px}.atlas-card li{margin:6px 0}.atlas-link{display:inline-block;margin:4px 8px 4px 0}.atlas-pager{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:15px}.atlas-pager button{background:#2c4366;color:#e5efff}.atlas-tree-group{margin:12px 0 20px;border-left:2px solid #587298;padding-left:13px}.atlas-tree-group h3{margin:7px 0}.atlas-tree-route{padding:7px 9px;margin:5px 0;background:#1e3049;border-radius:7px;overflow-wrap:anywhere}.atlas-status{font-size:12px;color:#aec4dd}.atlas-note{padding:9px;background:#26374c;border-radius:7px;margin:10px 0}

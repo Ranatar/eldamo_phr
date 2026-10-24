@@ -1,0 +1,9 @@
+{
+  "total": 570,
+  "outcomes": {
+    "reproduced": 378,
+    "unverified_no_matching_example": 178,
+    "unsupported_on_example": 2,
+    "mismatch_or_context": 12
+  }
+}

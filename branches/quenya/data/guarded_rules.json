@@ -1,0 +1,4143 @@
+[
+  {
+    "id": "quenya-r1",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "p < p",
+    "a_formula": "p",
+    "b_formula": "p",
+    "cards": "q",
+    "phonemes": [
+      "p"
+    ],
+    "sources": [
+      "PE19/69"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "p",
+    "b": "p"
+  },
+  {
+    "id": "quenya-r2",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "{ptk}p < {ptk}pʰ",
+    "a_formula": "{ptk}pʰ",
+    "b_formula": "{ptk}p",
+    "cards": "q",
+    "phonemes": [
+      "p"
+    ],
+    "sources": [
+      "PE18/91"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "{ptk}pʰ",
+    "b": "{ptk}p"
+  },
+  {
+    "id": "quenya-r7",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "p < p",
+    "a_formula": "p",
+    "b_formula": "p",
+    "cards": "q, mq",
+    "phonemes": [
+      "p"
+    ],
+    "sources": [
+      "PE19/37",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "p",
+    "b": "p"
+  },
+  {
+    "id": "quenya-r12",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "t < t",
+    "a_formula": "t",
+    "b_formula": "t",
+    "cards": "q",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE19/69"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "t",
+    "b": "t"
+  },
+  {
+    "id": "quenya-r13",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "{rl}t < {rl}θ",
+    "a_formula": "{rl}θ",
+    "b_formula": "{rl}t",
+    "cards": "q",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE19/82",
+      "PE19/82"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "{rl}θ",
+    "b": "{rl}t"
+  },
+  {
+    "id": "quenya-r15",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "t < t",
+    "a_formula": "t",
+    "b_formula": "t",
+    "cards": "q, mq",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE19/37",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "t",
+    "b": "t"
+  },
+  {
+    "id": "quenya-r24",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "k < k",
+    "a_formula": "k",
+    "b_formula": "k",
+    "cards": "q",
+    "phonemes": [
+      "k"
+    ],
+    "sources": [
+      "PE19/69"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "k",
+    "b": "k"
+  },
+  {
+    "id": "quenya-r28",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "k < k",
+    "a_formula": "k",
+    "b_formula": "k",
+    "cards": "q, mq",
+    "phonemes": [
+      "k"
+    ],
+    "sources": [
+      "PE19/37",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "k",
+    "b": "k"
+  },
+  {
+    "id": "quenya-r33",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "kʷ < kʷ",
+    "a_formula": "kʷ",
+    "b_formula": "kʷ",
+    "cards": "q",
+    "phonemes": [
+      "kʷ"
+    ],
+    "sources": [
+      "PE19/76"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "kʷ",
+    "b": "kʷ"
+  },
+  {
+    "id": "quenya-r34",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "kʷ < kʷ",
+    "a_formula": "kʷ",
+    "b_formula": "kʷ",
+    "cards": "q, mq",
+    "phonemes": [
+      "kʷ"
+    ],
+    "sources": [
+      "PE19/38"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "kʷ",
+    "b": "kʷ"
+  },
+  {
+    "id": "quenya-r35",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "d < d",
+    "a_formula": "d",
+    "b_formula": "d",
+    "cards": "q, mq",
+    "phonemes": [
+      "d"
+    ],
+    "sources": [
+      "PE19/51"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "d",
+    "b": "d"
+  },
+  {
+    "id": "quenya-r36",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "medial [ŋ] after a [n], [ŋ], [l], [r] became [g]",
+    "url": "https://eldamo.org/content/words/word-447633467.html",
+    "formula": "-{nŋlr}g- < -{nŋlr}ŋ-",
+    "a_formula": "-{nŋlr}ŋ-",
+    "b_formula": "-{nŋlr}g-",
+    "cards": "q",
+    "phonemes": [
+      "g"
+    ],
+    "sources": [
+      "PE19/81"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-{nŋlr}ŋ-",
+    "b": "-{nŋlr}g-"
+  },
+  {
+    "id": "quenya-r42",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "s < s",
+    "a_formula": "s",
+    "b_formula": "s",
+    "cards": "q",
+    "phonemes": [
+      "s"
+    ],
+    "sources": [
+      "PE19/73"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "s",
+    "b": "s"
+  },
+  {
+    "id": "quenya-r43",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "formula": "st < t+t",
+    "a_formula": "t+t",
+    "b_formula": "st",
+    "cards": "q, p",
+    "phonemes": [
+      "s"
+    ],
+    "sources": [
+      "PE18/91",
+      "VT42/18",
+      "PE18/102",
+      "PE19/82",
+      "PE19/84",
+      "PE19/87"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "t+t",
+    "b": "st"
+  },
+  {
+    "id": "quenya-r44",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "formula": "zd < d+d",
+    "a_formula": "d+d",
+    "b_formula": "zd",
+    "cards": "q, p",
+    "phonemes": [
+      "s",
+      "z"
+    ],
+    "sources": [
+      "PE18/91",
+      "PE18/102",
+      "PE19/82",
+      "PE19/90"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "d+d",
+    "b": "zd"
+  },
+  {
+    "id": "quenya-r49",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "s < s",
+    "a_formula": "s",
+    "b_formula": "s",
+    "cards": "q, mq",
+    "phonemes": [
+      "s"
+    ],
+    "sources": [
+      "PE19/37",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "s",
+    "b": "s"
+  },
+  {
+    "id": "quenya-r77",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "m < m",
+    "a_formula": "m",
+    "b_formula": "m",
+    "cards": "q",
+    "phonemes": [
+      "m"
+    ],
+    "sources": [
+      "PE19/71",
+      "PE22/149",
+      "PE22/149"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "m",
+    "b": "m"
+  },
+  {
+    "id": "quenya-r83",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "m < m",
+    "a_formula": "m",
+    "b_formula": "m",
+    "cards": "q, mq",
+    "phonemes": [
+      "m"
+    ],
+    "sources": [
+      "PE19/38",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "m",
+    "b": "m"
+  },
+  {
+    "id": "quenya-r87",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "n < n",
+    "a_formula": "n",
+    "b_formula": "n",
+    "cards": "q",
+    "phonemes": [
+      "n"
+    ],
+    "sources": [
+      "PE19/71",
+      "PE22/149"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "n",
+    "b": "n"
+  },
+  {
+    "id": "quenya-r88",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "initial [d] assimilated to following nasal",
+    "url": "https://eldamo.org/content/words/word-2885687903.html",
+    "formula": "nVXn- < dVXn-",
+    "a_formula": "dVXn-",
+    "b_formula": "nVXn-",
+    "cards": "q",
+    "phonemes": [
+      "n"
+    ],
+    "sources": [
+      "VT48/30",
+      "WJ/414"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "dVXn-",
+    "b": "nVXn-"
+  },
+  {
+    "id": "quenya-r98",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "n < n",
+    "a_formula": "n",
+    "b_formula": "n",
+    "cards": "q, mq",
+    "phonemes": [
+      "n"
+    ],
+    "sources": [
+      "PE19/38",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "n",
+    "b": "n"
+  },
+  {
+    "id": "quenya-r106",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ŋ < ŋ",
+    "a_formula": "ŋ",
+    "b_formula": "ŋ",
+    "cards": "q",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE17/60",
+      "PE18/105",
+      "PE19/71"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ŋ",
+    "b": "ŋ"
+  },
+  {
+    "id": "quenya-r111",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ŋ < ŋ",
+    "a_formula": "ŋ",
+    "b_formula": "ŋ",
+    "cards": "q, mq",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE19/50",
+      "PE19/50",
+      "PE19/50",
+      "PE19/50"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ŋ",
+    "b": "ŋ"
+  },
+  {
+    "id": "quenya-r114",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ŋʷ < ŋʷ",
+    "a_formula": "ŋʷ",
+    "b_formula": "ŋʷ",
+    "cards": "q",
+    "phonemes": [
+      "ŋʷ"
+    ],
+    "sources": [
+      "PE18/105",
+      "PE19/74",
+      "PE19/75"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ŋʷ",
+    "b": "ŋʷ"
+  },
+  {
+    "id": "quenya-r115",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ŋʷ < ŋʷ",
+    "a_formula": "ŋʷ",
+    "b_formula": "ŋʷ",
+    "cards": "q, mq",
+    "phonemes": [
+      "ŋʷ"
+    ],
+    "sources": [
+      "PE19/38"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ŋʷ",
+    "b": "ŋʷ"
+  },
+  {
+    "id": "quenya-r116",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "w < w",
+    "a_formula": "w",
+    "b_formula": "w",
+    "cards": "q",
+    "phonemes": [
+      "w"
+    ],
+    "sources": [
+      "PE18/105",
+      "PE19/72"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "w",
+    "b": "w"
+  },
+  {
+    "id": "quenya-r120",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[ɣ] from [g] vanished",
+    "url": "https://eldamo.org/content/words/word-1833409085.html",
+    "formula": "ø < ɣ",
+    "a_formula": "ɣ",
+    "b_formula": "ø",
+    "cards": "q",
+    "phonemes": [
+      "w",
+      "j",
+      "ø"
+    ],
+    "sources": [
+      "PE18/105",
+      "PE19/72",
+      "PE19/75",
+      "PE17/153",
+      "PE19/70"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "ɣ",
+    "b": "ø"
+  },
+  {
+    "id": "quenya-r121",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[ɣ] from [g] vanished",
+    "url": "",
+    "formula": "w-|VwV > β-|VβV",
+    "a_formula": "w-|VwV",
+    "b_formula": "β-|VβV",
+    "cards": "q",
+    "phonemes": [
+      "w"
+    ],
+    "sources": [
+      "PE17/76"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "w-|VwV",
+    "b": "β-|VβV"
+  },
+  {
+    "id": "quenya-r122",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[ɣ] from [g] vanished",
+    "url": "",
+    "formula": "w-|VwV > v-|VvV",
+    "a_formula": "w-|VwV",
+    "b_formula": "v-|VvV",
+    "cards": "q",
+    "phonemes": [
+      "w"
+    ],
+    "sources": [
+      "PE19/76"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "w-|VwV",
+    "b": "v-|VvV"
+  },
+  {
+    "id": "quenya-r123",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "w < w",
+    "a_formula": "w",
+    "b_formula": "w",
+    "cards": "q, mq",
+    "phonemes": [
+      "w"
+    ],
+    "sources": [
+      "PE19/38",
+      "PE19/51"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "w",
+    "b": "w"
+  },
+  {
+    "id": "quenya-r124",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[ɣ] from [g] vanished",
+    "url": "https://eldamo.org/content/words/word-3266317297.html",
+    "formula": "ø < ɣ",
+    "a_formula": "ɣ",
+    "b_formula": "ø",
+    "cards": "q, mq",
+    "phonemes": [
+      "w",
+      "ø"
+    ],
+    "sources": [
+      "PE19/38",
+      "PE19/51"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "ɣ",
+    "b": "ø"
+  },
+  {
+    "id": "quenya-r127",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "l < l",
+    "a_formula": "l",
+    "b_formula": "l",
+    "cards": "q",
+    "phonemes": [
+      "l"
+    ],
+    "sources": [
+      "PE18/105",
+      "PE19/72"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "l",
+    "b": "l"
+  },
+  {
+    "id": "quenya-r132",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "l < l",
+    "a_formula": "l",
+    "b_formula": "l",
+    "cards": "q, mq",
+    "phonemes": [
+      "l"
+    ],
+    "sources": [
+      "PE19/38",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "l",
+    "b": "l"
+  },
+  {
+    "id": "quenya-r136",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "medial [ð] dissimilated to [l] after [r]",
+    "url": "https://eldamo.org/content/words/word-687907123.html",
+    "formula": "rVl < rVð",
+    "a_formula": "rVð",
+    "b_formula": "rVl",
+    "cards": "q, mq",
+    "phonemes": [
+      "l"
+    ],
+    "sources": [
+      "PE19/51"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "rVð",
+    "b": "rVl"
+  },
+  {
+    "id": "quenya-r140",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "r < r",
+    "a_formula": "r",
+    "b_formula": "r",
+    "cards": "q",
+    "phonemes": [
+      "r"
+    ],
+    "sources": [
+      "PE18/105",
+      "PE19/72"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "r",
+    "b": "r"
+  },
+  {
+    "id": "quenya-r141",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "V̄ør < Vnr",
+    "a_formula": "Vnr",
+    "b_formula": "V̄ør",
+    "cards": "q",
+    "phonemes": [
+      "r"
+    ],
+    "sources": [
+      "PE17/162"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vnr",
+    "b": "V̄ør"
+  },
+  {
+    "id": "quenya-r143",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "intervocalic [ð] became [r]",
+    "url": "https://eldamo.org/content/words/word-2793529037.html",
+    "formula": "VrV < VðV",
+    "a_formula": "VðV",
+    "b_formula": "VrV",
+    "cards": "q",
+    "phonemes": [
+      "r"
+    ],
+    "sources": [
+      "PE19/69"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VðV",
+    "b": "VrV"
+  },
+  {
+    "id": "quenya-r148",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "r < r",
+    "a_formula": "r",
+    "b_formula": "r",
+    "cards": "q, mq",
+    "phonemes": [
+      "r"
+    ],
+    "sources": [
+      "PE19/38",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51",
+      "PE19/51"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "r",
+    "b": "r"
+  },
+  {
+    "id": "quenya-r149",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "intervocalic [ð] became [r]",
+    "url": "https://eldamo.org/content/words/word-3914129125.html",
+    "formula": "VrV < VðV",
+    "a_formula": "VðV",
+    "b_formula": "VrV",
+    "cards": "q, mq",
+    "phonemes": [
+      "r"
+    ],
+    "sources": [
+      "PE19/51"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VðV",
+    "b": "VrV"
+  },
+  {
+    "id": "quenya-r152",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "j < j",
+    "a_formula": "j",
+    "b_formula": "j",
+    "cards": "q",
+    "phonemes": [
+      "j"
+    ],
+    "sources": [
+      "PE18/105",
+      "PE19/72"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "j",
+    "b": "j"
+  },
+  {
+    "id": "quenya-r155",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[ɣ] became [j] between [i], [e] and a vowel",
+    "url": "https://eldamo.org/content/words/word-1700576467.html",
+    "formula": "ijV < iɣV",
+    "a_formula": "iɣV",
+    "b_formula": "ijV",
+    "cards": "q",
+    "phonemes": [
+      "j"
+    ],
+    "sources": [
+      "PE19/70"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "iɣV",
+    "b": "ijV"
+  },
+  {
+    "id": "quenya-r156",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[ɣ] became [j] between [i], [e] and a vowel",
+    "url": "https://eldamo.org/content/words/word-1700576467.html",
+    "formula": "ejV < eɣV",
+    "a_formula": "eɣV",
+    "b_formula": "ejV",
+    "cards": "q",
+    "phonemes": [
+      "j"
+    ],
+    "sources": [
+      "PE19/71"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "eɣV",
+    "b": "ejV"
+  },
+  {
+    "id": "quenya-r158",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "j < j",
+    "a_formula": "j",
+    "b_formula": "j",
+    "cards": "q, mq",
+    "phonemes": [
+      "j"
+    ],
+    "sources": [
+      "PE19/38",
+      "PE19/51"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "j",
+    "b": "j"
+  },
+  {
+    "id": "quenya-r159",
+    "marker": "ᴹAQ.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[ɣ] between a vowel and [e] and became [j]",
+    "url": "https://eldamo.org/content/words/word-2632900125.html",
+    "formula": "Vje < Vɣe",
+    "a_formula": "Vɣe",
+    "b_formula": "Vje",
+    "cards": "q, mq",
+    "phonemes": [
+      "j"
+    ],
+    "sources": [
+      "PE19/51"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vɣe",
+    "b": "Vje"
+  },
+  {
+    "id": "quenya-r178",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "formula": "Vij < Vɣj",
+    "a_formula": "Vɣj",
+    "b_formula": "Vij",
+    "cards": "q, aq",
+    "phonemes": [
+      "i",
+      "j"
+    ],
+    "sources": [
+      "PE19/94",
+      "PE19/75",
+      "PE19/83"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vɣj",
+    "b": "Vij"
+  },
+  {
+    "id": "quenya-r179",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "nasals and liquids often became syllabic after a consonant",
+    "url": "https://eldamo.org/content/words/word-613618983.html",
+    "formula": "Car < Cr",
+    "a_formula": "Cr",
+    "b_formula": "Car",
+    "cards": "q",
+    "phonemes": [
+      "a"
+    ],
+    "sources": [
+      "PE19/83",
+      "PE19/86",
+      "PE19/86",
+      "PE19/86",
+      "PE19/98",
+      "PE19/98",
+      "PE19/102"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Cr",
+    "b": "Car"
+  },
+  {
+    "id": "quenya-r185",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "formula": "Vuw < Vɣw",
+    "a_formula": "Vɣw",
+    "b_formula": "Vuw",
+    "cards": "q",
+    "phonemes": [
+      "u"
+    ],
+    "sources": [
+      "PE19/94"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vɣw",
+    "b": "Vuw"
+  },
+  {
+    "id": "quenya-r209",
+    "marker": "ᴹAQ.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "initial [ŋ] vanished",
+    "url": "https://eldamo.org/content/words/word-923465271.html",
+    "formula": "øV- < ŋV-",
+    "a_formula": "ŋV-",
+    "b_formula": "øV-",
+    "cards": "q, mq",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "PE19/38"
+    ],
+    "audit": "mismatch_or_context",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "ŋV-",
+    "b": "øV-"
+  },
+  {
+    "id": "quenya-r271",
+    "marker": "ᴹAQ.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[ɣ] between a vowel and [e] and became [j]",
+    "url": "https://eldamo.org/content/words/word-2632900125.html",
+    "formula": "Vɣe > Vje",
+    "a_formula": "Vɣe",
+    "b_formula": "Vje",
+    "cards": "aq, maq",
+    "phonemes": [
+      "g"
+    ],
+    "sources": [
+      "PE19/51"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vɣe",
+    "b": "Vje"
+  },
+  {
+    "id": "quenya-r272",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[ɣ] from [g] vanished",
+    "url": "https://eldamo.org/content/words/word-3266317297.html",
+    "formula": "ɣ > ø",
+    "a_formula": "ɣ",
+    "b_formula": "ø",
+    "cards": "aq, maq, p, mp",
+    "phonemes": [
+      "g",
+      "ɣ"
+    ],
+    "sources": [
+      "PE19/51",
+      "PE19/51",
+      "PE19/38"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "ɣ",
+    "b": "ø"
+  },
+  {
+    "id": "quenya-r273",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "formula": "VβC > VuC",
+    "a_formula": "VβC",
+    "b_formula": "VuC",
+    "cards": "aq",
+    "phonemes": [
+      "β"
+    ],
+    "sources": [
+      "PE19/90",
+      "PE19/94"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VβC",
+    "b": "VuC"
+  },
+  {
+    "id": "quenya-r275",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[ɸ], [β] became [f], [v]",
+    "url": "https://eldamo.org/content/words/word-3388104565.html",
+    "formula": "{rl}β > {rl}b",
+    "a_formula": "{rl}β",
+    "b_formula": "{rl}b",
+    "cards": "aq",
+    "phonemes": [
+      "β"
+    ],
+    "sources": [
+      "PE19/93"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "{rl}β",
+    "b": "{rl}b"
+  },
+  {
+    "id": "quenya-r280",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "intervocalic [ð] became [r]",
+    "url": "https://eldamo.org/content/words/word-2793529037.html",
+    "formula": "VðV > VrV",
+    "a_formula": "VðV",
+    "b_formula": "VrV",
+    "cards": "aq",
+    "phonemes": [
+      "ð"
+    ],
+    "sources": [
+      "PE19/69"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VðV",
+    "b": "VrV"
+  },
+  {
+    "id": "quenya-r281",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "medial [s] often became [z]",
+    "url": "https://eldamo.org/content/words/word-127393503.html",
+    "formula": "VzV < VsV",
+    "a_formula": "VsV",
+    "b_formula": "VzV",
+    "cards": "aq",
+    "phonemes": [
+      "z"
+    ],
+    "sources": [
+      "PE17/76",
+      "PE19/73",
+      "WJ/413"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VsV",
+    "b": "VzV"
+  },
+  {
+    "id": "quenya-r294",
+    "marker": "ᴹAQ.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "medial [s] often became [z]",
+    "url": "https://eldamo.org/content/words/word-2951986869.html",
+    "formula": "VzV < VsV",
+    "a_formula": "VsV",
+    "b_formula": "VzV",
+    "cards": "aq, maq",
+    "phonemes": [
+      "z"
+    ],
+    "sources": [
+      "PE19/50",
+      "PE19/51"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VsV",
+    "b": "VzV"
+  },
+  {
+    "id": "quenya-r305",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[ɣ] became [j] between [i], [e] and a vowel",
+    "url": "https://eldamo.org/content/words/word-1700576467.html",
+    "formula": "iɣV > ijV",
+    "a_formula": "iɣV",
+    "b_formula": "ijV",
+    "cards": "aq",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE19/70"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "iɣV",
+    "b": "ijV"
+  },
+  {
+    "id": "quenya-r306",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "formula": "Vɣj > Vij",
+    "a_formula": "Vɣj",
+    "b_formula": "Vij",
+    "cards": "aq",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE19/94",
+      "PE19/75",
+      "PE19/83"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vɣj",
+    "b": "Vij"
+  },
+  {
+    "id": "quenya-r307",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "formula": "Vɣw > Vuw",
+    "a_formula": "Vɣw",
+    "b_formula": "Vuw",
+    "cards": "aq",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE19/94"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vɣw",
+    "b": "Vuw"
+  },
+  {
+    "id": "quenya-r308",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "formula": "aɣC > āC",
+    "a_formula": "aɣC",
+    "b_formula": "āC",
+    "cards": "aq",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE19/95"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "aɣC",
+    "b": "āC"
+  },
+  {
+    "id": "quenya-r309",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[ɣ] from [g] vanished",
+    "url": "https://eldamo.org/content/words/word-1833409085.html",
+    "formula": "ɣ > ø",
+    "a_formula": "ɣ",
+    "b_formula": "ø",
+    "cards": "aq, p",
+    "phonemes": [
+      "ɣ",
+      "g"
+    ],
+    "sources": [
+      "PE19/75",
+      "PE17/153",
+      "PE19/70",
+      "PE18/105",
+      "PE19/72"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "ɣ",
+    "b": "ø"
+  },
+  {
+    "id": "quenya-r312",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[lɣ], [rɣ] became [ll], [rr]",
+    "url": "https://eldamo.org/content/words/word-3388104565.html",
+    "formula": "{rl}ɣ > {rl}g",
+    "a_formula": "{rl}ɣ",
+    "b_formula": "{rl}g",
+    "cards": "aq",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE19/94"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "{rl}ɣ",
+    "b": "{rl}g"
+  },
+  {
+    "id": "quenya-r313",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[lɣ], [rɣ] became [ll], [rr]",
+    "url": "https://eldamo.org/content/words/word-3388104565.html",
+    "formula": "{rl}ɣw > {rl}øw",
+    "a_formula": "{rl}ɣw",
+    "b_formula": "{rl}øw",
+    "cards": "aq",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE19/93"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "{rl}ɣw",
+    "b": "{rl}øw"
+  },
+  {
+    "id": "quenya-r329",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[z] plus voiced stop became unvoiced",
+    "url": "https://eldamo.org/content/words/word-3279729471.html",
+    "formula": "s{ptk} < z{bdg}",
+    "a_formula": "z{bdg}",
+    "b_formula": "s{ptk}",
+    "cards": "aq",
+    "phonemes": [
+      "s"
+    ],
+    "sources": [
+      "PE19/83",
+      "PE19/95",
+      "PE19/101"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "z{bdg}",
+    "b": "s{ptk}"
+  },
+  {
+    "id": "quenya-r343",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "initial [s] plus voiceless stops became voiceless spirants",
+    "url": "",
+    "formula": "{rl}θ > {rl}t",
+    "a_formula": "{rl}θ",
+    "b_formula": "{rl}t",
+    "cards": "aq",
+    "phonemes": [
+      "θ"
+    ],
+    "sources": [
+      "PE19/82",
+      "PE19/82"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "{rl}θ",
+    "b": "{rl}t"
+  },
+  {
+    "id": "quenya-r378",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ŋ < ŋ",
+    "a_formula": "ŋ",
+    "b_formula": "ŋ",
+    "cards": "aq",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE22/149"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ŋ",
+    "b": "ŋ"
+  },
+  {
+    "id": "quenya-r396",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+    "url": "",
+    "formula": "w-|VwV > β-|VβV",
+    "a_formula": "w-|VwV",
+    "b_formula": "β-|VβV",
+    "cards": "aq",
+    "phonemes": [
+      "w"
+    ],
+    "sources": [
+      "PE19/72"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "w-|VwV",
+    "b": "β-|VβV"
+  },
+  {
+    "id": "quenya-r425",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "short final [i], [u] became [e], [o]",
+    "url": "https://eldamo.org/content/words/word-3064357955.html",
+    "formula": "-Sĭ > -Se",
+    "a_formula": "-Sĭ",
+    "b_formula": "-Se",
+    "cards": "aq",
+    "phonemes": [
+      "i"
+    ],
+    "sources": [
+      "PE19/100"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Sĭ",
+    "b": "-Se"
+  },
+  {
+    "id": "quenya-r426",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[r], [l] often became syllabic in clusters",
+    "url": "https://eldamo.org/content/words/word-825670671.html",
+    "formula": "CCar < CCr",
+    "a_formula": "CCr",
+    "b_formula": "CCar",
+    "cards": "aq",
+    "phonemes": [
+      "a"
+    ],
+    "sources": [
+      "PE19/83"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "CCr",
+    "b": "CCar"
+  },
+  {
+    "id": "quenya-r427",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "formula": "VuC < VβC",
+    "a_formula": "VβC",
+    "b_formula": "VuC",
+    "cards": "aq",
+    "phonemes": [
+      "u"
+    ],
+    "sources": [
+      "PE19/90",
+      "PE19/94"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VβC",
+    "b": "VuC"
+  },
+  {
+    "id": "quenya-r428",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "short final [i], [u] became [e], [o]",
+    "url": "https://eldamo.org/content/words/word-3064357955.html",
+    "formula": "-Sŭ > -So",
+    "a_formula": "-Sŭ",
+    "b_formula": "-So",
+    "cards": "aq",
+    "phonemes": [
+      "u"
+    ],
+    "sources": [
+      "PE19/100"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Sŭ",
+    "b": "-So"
+  },
+  {
+    "id": "quenya-r431",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "formula": "āC < aɣC",
+    "a_formula": "aɣC",
+    "b_formula": "āC",
+    "cards": "aq",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "PE19/95"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "aɣC",
+    "b": "āC"
+  },
+  {
+    "id": "quenya-r432",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "nasals and liquids often became syllabic after a consonant",
+    "url": "https://eldamo.org/content/words/word-613618983.html",
+    "formula": "Cr > Car",
+    "a_formula": "Cr",
+    "b_formula": "Car",
+    "cards": "aq",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "PE19/83",
+      "PE19/86",
+      "PE19/86",
+      "PE19/86",
+      "PE19/98",
+      "PE19/98",
+      "PE19/102"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Cr",
+    "b": "Car"
+  },
+  {
+    "id": "quenya-r437",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "aspiration moved to end of group of stops",
+    "url": "",
+    "formula": "p{ptkpʰtʰkʰs} < b{ptkpʰtʰkʰs}",
+    "a_formula": "b{ptkpʰtʰkʰs}",
+    "b_formula": "p{ptkpʰtʰkʰs}",
+    "cards": "p",
+    "phonemes": [
+      "p"
+    ],
+    "sources": [
+      "PE19/90",
+      "PE19/95"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "b{ptkpʰtʰkʰs}",
+    "b": "p{ptkpʰtʰkʰs}"
+  },
+  {
+    "id": "quenya-r438",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "aspiration moved to end of group of stops",
+    "url": "",
+    "formula": "{ptkmnŋlr}p > {ptkmnŋlr}pʰ",
+    "a_formula": "{ptkmnŋlr}p",
+    "b_formula": "{ptkmnŋlr}pʰ",
+    "cards": "p",
+    "phonemes": [
+      "p"
+    ],
+    "sources": [
+      "PE18/91",
+      "PE19/86"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "{ptkmnŋlr}p",
+    "b": "{ptkmnŋlr}pʰ"
+  },
+  {
+    "id": "quenya-r446",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "aspiration moved to end of group of stops",
+    "url": "https://eldamo.org/content/words/word-2421096703.html",
+    "formula": "Vp > Vb",
+    "a_formula": "Vp",
+    "b_formula": "Vb",
+    "cards": "p, mp",
+    "phonemes": [
+      "p"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vp",
+    "b": "Vb"
+  },
+  {
+    "id": "quenya-r456",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "aspiration moved to end of group of stops",
+    "url": "",
+    "formula": "t{ptkpʰtʰkʰs} < d{ptkpʰtʰkʰs}",
+    "a_formula": "d{ptkpʰtʰkʰs}",
+    "b_formula": "t{ptkpʰtʰkʰs}",
+    "cards": "p",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE19/90",
+      "PE19/95"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "d{ptkpʰtʰkʰs}",
+    "b": "t{ptkpʰtʰkʰs}"
+  },
+  {
+    "id": "quenya-r457",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "aspiration moved to end of group of stops",
+    "url": "",
+    "formula": "{pʰtʰkʰptk}d > {pʰtʰkʰptk}t",
+    "a_formula": "{pʰtʰkʰptk}d",
+    "b_formula": "{pʰtʰkʰptk}t",
+    "cards": "p",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE18/102"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "{pʰtʰkʰptk}d",
+    "b": "{pʰtʰkʰptk}t"
+  },
+  {
+    "id": "quenya-r462",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "formula": "t+t > st",
+    "a_formula": "t+t",
+    "b_formula": "st",
+    "cards": "p",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE18/102",
+      "PE19/82",
+      "PE19/84",
+      "PE19/87",
+      "PE18/91",
+      "VT42/18"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "t+t",
+    "b": "st"
+  },
+  {
+    "id": "quenya-r469",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "aspirate became voiceless stop before [s]",
+    "url": "https://eldamo.org/content/words/word-2421096703.html",
+    "formula": "Vt > Vd",
+    "a_formula": "Vt",
+    "b_formula": "Vd",
+    "cards": "p, mp",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vt",
+    "b": "Vd"
+  },
+  {
+    "id": "quenya-r475",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "formula": "t+t > st",
+    "a_formula": "t+t",
+    "b_formula": "st",
+    "cards": "p, mp",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE19/51"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "t+t",
+    "b": "st"
+  },
+  {
+    "id": "quenya-r490",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "aspiration moved to end of group of stops",
+    "url": "https://eldamo.org/content/words/word-1848454147.html",
+    "formula": "Xw > Xv",
+    "a_formula": "Xw",
+    "b_formula": "Xv",
+    "cards": "p, mp",
+    "phonemes": [
+      "k"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Xw",
+    "b": "Xv"
+  },
+  {
+    "id": "quenya-r491",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "aspiration moved to end of group of stops",
+    "url": "https://eldamo.org/content/words/word-2421096703.html",
+    "formula": "Vk > Vg",
+    "a_formula": "Vk",
+    "b_formula": "Vg",
+    "cards": "p, mp",
+    "phonemes": [
+      "k"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vk",
+    "b": "Vg"
+  },
+  {
+    "id": "quenya-r498",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[pw], [pʰw] became [pp], [pʰp]",
+    "url": "",
+    "formula": "{ptk}pʰ > {ptk}p",
+    "a_formula": "{ptk}pʰ",
+    "b_formula": "{ptk}p",
+    "cards": "p",
+    "phonemes": [
+      "pʰ"
+    ],
+    "sources": [
+      "PE18/91"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "{ptk}pʰ",
+    "b": "{ptk}p"
+  },
+  {
+    "id": "quenya-r508",
+    "marker": "ᴹAQ.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-3083451453.html",
+    "formula": "-Vf- > -Vv-",
+    "a_formula": "-Vf-",
+    "b_formula": "-Vv-",
+    "cards": "p, mp",
+    "phonemes": [
+      "pʰ"
+    ],
+    "sources": [
+      "PE19/23",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Vf-",
+    "b": "-Vv-"
+  },
+  {
+    "id": "quenya-r510",
+    "marker": "ᴹAQ.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-4105744097.html",
+    "formula": "-Vf- > -Vv-",
+    "a_formula": "-Vf-",
+    "b_formula": "-Vv-",
+    "cards": "p, mp",
+    "phonemes": [
+      "pʰ"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Vf-",
+    "b": "-Vv-"
+  },
+  {
+    "id": "quenya-r526",
+    "marker": "ᴹAQ.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-3083451453.html",
+    "formula": "-Vθ- > -Vð-",
+    "a_formula": "-Vθ-",
+    "b_formula": "-Vð-",
+    "cards": "p, mp",
+    "phonemes": [
+      "tʰ"
+    ],
+    "sources": [
+      "PE19/23",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Vθ-",
+    "b": "-Vð-"
+  },
+  {
+    "id": "quenya-r529",
+    "marker": "ᴹAQ.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-4105744097.html",
+    "formula": "-Vθ- > -Vð-",
+    "a_formula": "-Vθ-",
+    "b_formula": "-Vð-",
+    "cards": "p, mp",
+    "phonemes": [
+      "tʰ"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Vθ-",
+    "b": "-Vð-"
+  },
+  {
+    "id": "quenya-r539",
+    "marker": "ᴹAQ.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "url": "https://eldamo.org/content/words/word-4185900741.html",
+    "formula": "-x- > -ø-",
+    "a_formula": "-x-",
+    "b_formula": "-ø-",
+    "cards": "p, mp",
+    "phonemes": [
+      "kʰ"
+    ],
+    "sources": [
+      "PE19/23",
+      "PE19/23",
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "-x-",
+    "b": "-ø-"
+  },
+  {
+    "id": "quenya-r556",
+    "marker": "ᴹAQ.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "voiceless stops were voiced before nasals",
+    "url": "https://eldamo.org/content/words/word-3689929017.html",
+    "formula": "Vb > Vv",
+    "a_formula": "Vb",
+    "b_formula": "Vv",
+    "cards": "p, mp",
+    "phonemes": [
+      "b"
+    ],
+    "sources": [
+      "PE19/23",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vb",
+    "b": "Vv"
+  },
+  {
+    "id": "quenya-r557",
+    "marker": "ᴹAQ.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "voiceless stops were voiced before nasals",
+    "url": "https://eldamo.org/content/words/word-501836955.html",
+    "formula": "Vb > Vv",
+    "a_formula": "Vb",
+    "b_formula": "Vv",
+    "cards": "p, mp",
+    "phonemes": [
+      "b"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vb",
+    "b": "Vv"
+  },
+  {
+    "id": "quenya-r565",
+    "marker": "ᴹAQ.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "medial [s] often became [z]",
+    "url": "https://eldamo.org/content/words/word-2951986869.html",
+    "formula": "VsV > VzV",
+    "a_formula": "VsV",
+    "b_formula": "VzV",
+    "cards": "p, mp",
+    "phonemes": [
+      "b",
+      "s"
+    ],
+    "sources": [
+      "PE19/51",
+      "PE19/50"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VsV",
+    "b": "VzV"
+  },
+  {
+    "id": "quenya-r568",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "initial [d] assimilated to following nasal",
+    "url": "https://eldamo.org/content/words/word-2885687903.html",
+    "formula": "dVXn- > nVXn-",
+    "a_formula": "dVXn-",
+    "b_formula": "nVXn-",
+    "cards": "p",
+    "phonemes": [
+      "d"
+    ],
+    "sources": [
+      "VT48/30",
+      "WJ/414"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "dVXn-",
+    "b": "nVXn-"
+  },
+  {
+    "id": "quenya-r576",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "formula": "d+d > zd",
+    "a_formula": "d+d",
+    "b_formula": "zd",
+    "cards": "p",
+    "phonemes": [
+      "d"
+    ],
+    "sources": [
+      "PE18/102",
+      "PE19/82",
+      "PE19/90",
+      "PE18/91"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "d+d",
+    "b": "zd"
+  },
+  {
+    "id": "quenya-r579",
+    "marker": "ᴹAQ.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "voiceless stops were voiced before nasals",
+    "url": "https://eldamo.org/content/words/word-501836955.html",
+    "formula": "Vd > Vð",
+    "a_formula": "Vd",
+    "b_formula": "Vð",
+    "cards": "p, mp",
+    "phonemes": [
+      "d"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vd",
+    "b": "Vð"
+  },
+  {
+    "id": "quenya-r589",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "formula": "d+d > zd",
+    "a_formula": "d+d",
+    "b_formula": "zd",
+    "cards": "p, mp",
+    "phonemes": [
+      "d"
+    ],
+    "sources": [
+      "PE19/51"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "d+d",
+    "b": "zd"
+  },
+  {
+    "id": "quenya-r590",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "medial [ð] dissimilated to [l] after [r]",
+    "url": "https://eldamo.org/content/words/word-687907123.html",
+    "formula": "rVð > rVl",
+    "a_formula": "rVð",
+    "b_formula": "rVl",
+    "cards": "p, mp",
+    "phonemes": [
+      "d"
+    ],
+    "sources": [
+      "PE19/51"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "rVð",
+    "b": "rVl"
+  },
+  {
+    "id": "quenya-r591",
+    "marker": "ᴹQ.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "intervocalic [ð] became [r]",
+    "url": "https://eldamo.org/content/words/word-3914129125.html",
+    "formula": "VðV > VrV",
+    "a_formula": "VðV",
+    "b_formula": "VrV",
+    "cards": "p, mp",
+    "phonemes": [
+      "d"
+    ],
+    "sources": [
+      "PE19/51"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VðV",
+    "b": "VrV"
+  },
+  {
+    "id": "quenya-r602",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[ɣ] became [j] between [i], [e] and a vowel",
+    "url": "https://eldamo.org/content/words/word-1700576467.html",
+    "formula": "eɣV > ejV",
+    "a_formula": "eɣV",
+    "b_formula": "ejV",
+    "cards": "p",
+    "phonemes": [
+      "g"
+    ],
+    "sources": [
+      "PE19/71"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "eɣV",
+    "b": "ejV"
+  },
+  {
+    "id": "quenya-r622",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "formula": "-Cm- < -Cmb-",
+    "a_formula": "-Cmb-",
+    "b_formula": "-Cm-",
+    "cards": "p",
+    "phonemes": [
+      "m"
+    ],
+    "sources": [
+      "PE19/81"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cmb-",
+    "b": "-Cm-"
+  },
+  {
+    "id": "quenya-r634",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "formula": "-Cmb- > -Cm-",
+    "a_formula": "-Cmb-",
+    "b_formula": "-Cm-",
+    "cards": "p",
+    "phonemes": [
+      "m"
+    ],
+    "sources": [
+      "PE19/81"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cmb-",
+    "b": "-Cm-"
+  },
+  {
+    "id": "quenya-r642",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "metathesis",
+    "url": "https://eldamo.org/content/words/word-3538536723.html",
+    "formula": "sC- > øC-",
+    "a_formula": "sC-",
+    "b_formula": "øC-",
+    "cards": "p, mp",
+    "phonemes": [
+      "m"
+    ],
+    "sources": [
+      "PE19/21"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "sC-",
+    "b": "øC-"
+  },
+  {
+    "id": "quenya-r651",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "formula": "-Cn- < -Cnd-",
+    "a_formula": "-Cnd-",
+    "b_formula": "-Cn-",
+    "cards": "p",
+    "phonemes": [
+      "n"
+    ],
+    "sources": [
+      "PE19/81"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cnd-",
+    "b": "-Cn-"
+  },
+  {
+    "id": "quenya-r653",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "final [m] became [n]",
+    "url": "",
+    "formula": "Vnr > V̄ør",
+    "a_formula": "Vnr",
+    "b_formula": "V̄ør",
+    "cards": "p",
+    "phonemes": [
+      "n"
+    ],
+    "sources": [
+      "PE17/162"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vnr",
+    "b": "V̄ør"
+  },
+  {
+    "id": "quenya-r663",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "formula": "-Cnd- > -Cn-",
+    "a_formula": "-Cnd-",
+    "b_formula": "-Cn-",
+    "cards": "p",
+    "phonemes": [
+      "n"
+    ],
+    "sources": [
+      "PE19/81"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cnd-",
+    "b": "-Cn-"
+  },
+  {
+    "id": "quenya-r669",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "nasals assimilated to following stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-3538536723.html",
+    "formula": "sC- > øC-",
+    "a_formula": "sC-",
+    "b_formula": "øC-",
+    "cards": "p, mp",
+    "phonemes": [
+      "n"
+    ],
+    "sources": [
+      "PE19/21"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "sC-",
+    "b": "øC-"
+  },
+  {
+    "id": "quenya-r680",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "formula": "-Cŋ- < -Cŋg-",
+    "a_formula": "-Cŋg-",
+    "b_formula": "-Cŋ-",
+    "cards": "p",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE19/81"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cŋg-",
+    "b": "-Cŋ-"
+  },
+  {
+    "id": "quenya-r686",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "url": "",
+    "formula": "V̄ŋ{rlmn} > V̄{rlmn}",
+    "a_formula": "V̄ŋ{rlmn}",
+    "b_formula": "V̄{rlmn}",
+    "cards": "p",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE18/103"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "V̄ŋ{rlmn}",
+    "b": "V̄{rlmn}"
+  },
+  {
+    "id": "quenya-r693",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "https://eldamo.org/content/words/word-768986721.html",
+    "formula": "VŋV > VɣV",
+    "a_formula": "VŋV",
+    "b_formula": "VɣV",
+    "cards": "p",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE18/102",
+      "PE19/72",
+      "PE19/95"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VŋV",
+    "b": "VɣV"
+  },
+  {
+    "id": "quenya-r699",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "formula": "-Cŋg- > -Cŋ-",
+    "a_formula": "-Cŋg-",
+    "b_formula": "-Cŋ-",
+    "cards": "p",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE19/81"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cŋg-",
+    "b": "-Cŋ-"
+  },
+  {
+    "id": "quenya-r700",
+    "marker": "Q.",
+    "era": "late",
+    "stage": 2,
+    "rule": "medial [ŋ] after a [n], [ŋ], [l], [r] became [g]",
+    "url": "https://eldamo.org/content/words/word-447633467.html",
+    "formula": "-{nŋlr}ŋ- > -{nŋlr}g-",
+    "a_formula": "-{nŋlr}ŋ-",
+    "b_formula": "-{nŋlr}g-",
+    "cards": "p",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE19/81"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-{nŋlr}ŋ-",
+    "b": "-{nŋlr}g-"
+  },
+  {
+    "id": "quenya-r704",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "nasals assimilated to following stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-1844604693.html",
+    "formula": "VŋV > VɣV",
+    "a_formula": "VŋV",
+    "b_formula": "VɣV",
+    "cards": "p, mp",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VŋV",
+    "b": "VɣV"
+  },
+  {
+    "id": "quenya-r711",
+    "marker": "ᴹAQ.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "initial [ŋ] vanished",
+    "url": "https://eldamo.org/content/words/word-923465271.html",
+    "formula": "ŋV- > øV-",
+    "a_formula": "ŋV-",
+    "b_formula": "øV-",
+    "cards": "p, mp",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE19/38"
+    ],
+    "audit": "mismatch_or_context",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "ŋV-",
+    "b": "øV-"
+  },
+  {
+    "id": "quenya-r716",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "https://eldamo.org/content/words/word-3915121695.html",
+    "formula": "VŋV > VɣV",
+    "a_formula": "VŋV",
+    "b_formula": "VɣV",
+    "cards": "p, mp",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE18/54"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VŋV",
+    "b": "VɣV"
+  },
+  {
+    "id": "quenya-r743",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "https://eldamo.org/content/words/word-768986721.html",
+    "formula": "VɣV < VŋV",
+    "a_formula": "VŋV",
+    "b_formula": "VɣV",
+    "cards": "p",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE18/102",
+      "PE19/72",
+      "PE19/95"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VŋV",
+    "b": "VɣV"
+  },
+  {
+    "id": "quenya-r744",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "",
+    "formula": "xs > xs",
+    "a_formula": "xs",
+    "b_formula": "xs",
+    "cards": "p",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "VT47/12"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "xs",
+    "b": "xs"
+  },
+  {
+    "id": "quenya-r747",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "url": "https://eldamo.org/content/words/word-794129503.html",
+    "formula": "xtʰ > xtʰ",
+    "a_formula": "xtʰ",
+    "b_formula": "xtʰ",
+    "cards": "p",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE18/82",
+      "PE18/89"
+    ],
+    "audit": "mismatch_or_context",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "xtʰ",
+    "b": "xtʰ"
+  },
+  {
+    "id": "quenya-r748",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "-ɣ- > -ø-",
+    "a_formula": "-ɣ-",
+    "b_formula": "-ø-",
+    "cards": "p",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "VT47/6"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "-ɣ-",
+    "b": "-ø-"
+  },
+  {
+    "id": "quenya-r749",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "aɣC > āC",
+    "a_formula": "aɣC",
+    "b_formula": "āC",
+    "cards": "p",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "VT47/12"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "aɣC",
+    "b": "āC"
+  },
+  {
+    "id": "quenya-r751",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "https://eldamo.org/content/words/word-3915121695.html",
+    "formula": "VɣV < VŋV",
+    "a_formula": "VŋV",
+    "b_formula": "VɣV",
+    "cards": "p, mp",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE18/54"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VŋV",
+    "b": "VɣV"
+  },
+  {
+    "id": "quenya-r756",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "https://eldamo.org/content/words/word-3116721073.html",
+    "formula": "Vht > V̄t",
+    "a_formula": "Vht",
+    "b_formula": "V̄t",
+    "cards": "p, mp",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE18/104"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vht",
+    "b": "V̄t"
+  },
+  {
+    "id": "quenya-r758",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "https://eldamo.org/content/words/word-1476955021.html",
+    "formula": "ɣ > ø",
+    "a_formula": "ɣ",
+    "b_formula": "ø",
+    "cards": "p, mp",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "ɣ",
+    "b": "ø"
+  },
+  {
+    "id": "quenya-r772",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "medial [s] often became [z]",
+    "url": "https://eldamo.org/content/words/word-127393503.html",
+    "formula": "VsV > VzV",
+    "a_formula": "VsV",
+    "b_formula": "VzV",
+    "cards": "p",
+    "phonemes": [
+      "s"
+    ],
+    "sources": [
+      "PE17/76",
+      "PE19/73",
+      "WJ/413"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VsV",
+    "b": "VzV"
+  },
+  {
+    "id": "quenya-r779",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "formula": "st < t+t",
+    "a_formula": "t+t",
+    "b_formula": "st",
+    "cards": "p, mp",
+    "phonemes": [
+      "s"
+    ],
+    "sources": [
+      "PE19/51"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "t+t",
+    "b": "st"
+  },
+  {
+    "id": "quenya-r809",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[z] plus voiced stop became unvoiced",
+    "url": "https://eldamo.org/content/words/word-3279729471.html",
+    "formula": "z{bdg} > s{ptk}",
+    "a_formula": "z{bdg}",
+    "b_formula": "s{ptk}",
+    "cards": "p",
+    "phonemes": [
+      "z"
+    ],
+    "sources": [
+      "PE19/83",
+      "PE19/95",
+      "PE19/101"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "z{bdg}",
+    "b": "s{ptk}"
+  },
+  {
+    "id": "quenya-r813",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "formula": "zd < d+d",
+    "a_formula": "d+d",
+    "b_formula": "zd",
+    "cards": "p, mp",
+    "phonemes": [
+      "z"
+    ],
+    "sources": [
+      "PE19/51"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "d+d",
+    "b": "zd"
+  },
+  {
+    "id": "quenya-r817",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "url": "https://eldamo.org/content/words/word-794129503.html",
+    "formula": "xtʰ < xtʰ",
+    "a_formula": "xtʰ",
+    "b_formula": "xtʰ",
+    "cards": "p",
+    "phonemes": [
+      "h"
+    ],
+    "sources": [
+      "PE18/82",
+      "PE18/89"
+    ],
+    "audit": "mismatch_or_context",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "xtʰ",
+    "b": "xtʰ"
+  },
+  {
+    "id": "quenya-r818",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "url": "",
+    "formula": "xs < xs",
+    "a_formula": "xs",
+    "b_formula": "xs",
+    "cards": "p",
+    "phonemes": [
+      "h"
+    ],
+    "sources": [
+      "VT47/12"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "xs",
+    "b": "xs"
+  },
+  {
+    "id": "quenya-r819",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "url": "",
+    "formula": "h- > ø-",
+    "a_formula": "h-",
+    "b_formula": "ø-",
+    "cards": "p",
+    "phonemes": [
+      "h"
+    ],
+    "sources": [
+      "PE19/74",
+      "WJ/365",
+      "WJ/369"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "h-",
+    "b": "ø-"
+  },
+  {
+    "id": "quenya-r820",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "-h- > -ø-",
+    "a_formula": "-h-",
+    "b_formula": "-ø-",
+    "cards": "p",
+    "phonemes": [
+      "h"
+    ],
+    "sources": [
+      "PE19/74",
+      "WJ/368"
+    ],
+    "audit": "mismatch_or_context",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "-h-",
+    "b": "-ø-"
+  },
+  {
+    "id": "quenya-r825",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "iɣC > īC",
+    "a_formula": "iɣC",
+    "b_formula": "īC",
+    "cards": "p",
+    "phonemes": [
+      "i"
+    ],
+    "sources": [
+      "PE18/98"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "iɣC",
+    "b": "īC"
+  },
+  {
+    "id": "quenya-r826",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "short final [i], [u] became [e], [o]",
+    "url": "https://eldamo.org/content/words/word-3064357955.html",
+    "formula": "-Se < -Sĭ",
+    "a_formula": "-Sĭ",
+    "b_formula": "-Se",
+    "cards": "p",
+    "phonemes": [
+      "e"
+    ],
+    "sources": [
+      "PE19/100"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Sĭ",
+    "b": "-Se"
+  },
+  {
+    "id": "quenya-r834",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "short final [i], [u] became [e], [o]",
+    "url": "https://eldamo.org/content/words/word-3064357955.html",
+    "formula": "-So < -Sŭ",
+    "a_formula": "-Sŭ",
+    "b_formula": "-So",
+    "cards": "p",
+    "phonemes": [
+      "o"
+    ],
+    "sources": [
+      "PE19/100"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Sŭ",
+    "b": "-So"
+  },
+  {
+    "id": "quenya-r838",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "uɣC > ūC",
+    "a_formula": "uɣC",
+    "b_formula": "ūC",
+    "cards": "p",
+    "phonemes": [
+      "u"
+    ],
+    "sources": [
+      "PE18/98"
+    ],
+    "audit": "mismatch_or_context",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "uɣC",
+    "b": "ūC"
+  },
+  {
+    "id": "quenya-r839",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "īC < iɣC",
+    "a_formula": "iɣC",
+    "b_formula": "īC",
+    "cards": "p",
+    "phonemes": [
+      "ī"
+    ],
+    "sources": [
+      "PE18/98"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "iɣC",
+    "b": "īC"
+  },
+  {
+    "id": "quenya-r850",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "ūC < uɣC",
+    "a_formula": "uɣC",
+    "b_formula": "ūC",
+    "cards": "p",
+    "phonemes": [
+      "ū"
+    ],
+    "sources": [
+      "PE18/98"
+    ],
+    "audit": "mismatch_or_context",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "uɣC",
+    "b": "ūC"
+  },
+  {
+    "id": "quenya-r858",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "-ø- < -h-",
+    "a_formula": "-h-",
+    "b_formula": "-ø-",
+    "cards": "p",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "PE19/74",
+      "WJ/368"
+    ],
+    "audit": "mismatch_or_context",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "-h-",
+    "b": "-ø-"
+  },
+  {
+    "id": "quenya-r859",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "-ø- < -ɣ-",
+    "a_formula": "-ɣ-",
+    "b_formula": "-ø-",
+    "cards": "p",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "VT47/6"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "-ɣ-",
+    "b": "-ø-"
+  },
+  {
+    "id": "quenya-r860",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "āC < aɣC",
+    "a_formula": "aɣC",
+    "b_formula": "āC",
+    "cards": "p",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "VT47/12"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "aɣC",
+    "b": "āC"
+  },
+  {
+    "id": "quenya-r861",
+    "marker": "AQ.",
+    "era": "late",
+    "stage": 1,
+    "rule": "[r], [l] often became syllabic in clusters",
+    "url": "https://eldamo.org/content/words/word-825670671.html",
+    "formula": "CCr > CCar",
+    "a_formula": "CCr",
+    "b_formula": "CCar",
+    "cards": "p",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "PE19/83"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "CCr",
+    "b": "CCar"
+  }
+]

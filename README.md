@@ -1,21 +1,68 @@
-# Eldamo research package — readable edition
+# Eldamo — объединённый атлас Quenya и Sindarin
 
-## Open
-- `app/built.html` — current one-file offline HTML app (with the assessed 38 additional chains).
-- `app/index.html` — readable, multi-file offline app. Keep `styles.css`, `data.js`, and `app.js` in the same directory.
+Откройте `app/index.html`: одно приложение, один `app/runtime.js`, один CSS, два набора данных. Без iframe и без второго экземпляра поискового кода. Файлы `branches/` сохраняют научные исходники и исторические результаты, чтобы унификация не уничтожила сведения.
 
-## Modify and rebuild
-- Edit `app/styles.css` and `app/app.js`.
-- Data is available in `app/edges.json`, `app/rules.json`; `app/data.js` is their prebuilt browser representation.
-- `python development/build_standalone.py` creates `app/built.html` from the readable source.
-- `python development/test_parity.py` checks browser behavior and reports differences versus `app/standalone.html` reference.
-- The identical original reference HTML can be found as `legacy/eldamo_sound_path_explorer_complete_original.html`.
+`app/branch_payloads.json` — единая форма интерфейсных данных; `reports/chain_reconciliation.md` — честная сверка двух разных типов цепочек. `shared/` — существующий общий исследовательский конвейер, его история и ограничения сохранены. Достоверность всей фонетической модели не подтверждается одним лишь интерфейсным тестом.
 
-The browser tests were successfully run in Chromium using Playwright's `page.set_content()` because file URL navigation is blocked in the test environment. Initial 1280 px screenshots were identical pixel-for-pixel.
+Для проверки: `python tests/test_unified.py`. HTML работает как локальный файл без сервера. Для полной пересборки исходных данных необходим Eldamo 0.8.13, который сохраняется отдельно в `/mnt/data/eldamo-0.8.13.zip`.
 
-The corpus of Eldamo 0.8.13 is research data; graph paths remain structural candidates, not historical proof.
+## Статус верификации
 
-## Chain assessments
-- `reports/eldamo_38_chain_assessment.md`: individual assessments for all 38 additional chains.
-- `data/eldamo_38_chain_assessment.csv`: machine-readable assessments.
-- `development/assess_38.py`: reproducible process, requires `eldamo_extended_rule_inventory.csv` alongside the project as a research input (included under data).
+Проверки `tests/test_unified.py` и `tests/test_data.py` подтверждают загрузку и работу контрольных сценариев, но **не доказывают эквивалентность всех возможных поисковых результатов** и не снимают филологических ограничений. Список точных несовпадений интерфейсных и исследовательских цепочек см. `reports/chain_reconciliation.md` и JSON-разности. Обе совокупности сохраняются без удаления. Интерфейс использует исходный (legacy) корпус переходов каждой ветви: нормализация не заменяет научную проверку всех правил.
+
+В `legacy/` можно поместить предыдущий исследовательский архив для независимой сверки, не смешивая его файлы с действующим единым интерфейсом.
+
+
+## Версия v3: уточнение корпусов
+
+В атласе появился переключатель двух принципиально различных корпусов цепочек. Данные обоих корпусов сохранены без склейки; `branches/*/data/chain_identity_ledger.json` проводит сопоставление звуковой последовательности и URL каждого правила. `chains_common_schema.json` сохраняет оригинальные записи и происхождение оценок. `reports/detailed_chain_reconciliation.md` документирует несовпадения. Это не филологическая верификация всех исторических путей.
+
+## Дополнительно: нормализованные правила и переходы
+
+Обе ветви имеют `data/edges_common_schema.json`, `data/rules_common_schema.json`, `data/chains_common_schema.json`: единые ключи с сохранением оригинальных объектов. Эти выгрузки **не заменяют** исторические источники и не выполняют автоматической реконструкции контекстных правил. Проверяются `tests/test_schema.py` и `tests/test_research_corpus.py`.
+
+## Версия v4 — поэтапная проверка цепочек
+
+Добавлен `scripts/audit_chain_provenance.py`, который сопоставляет **каждый отдельный шаг** обоих корпусов с нормализованными атомарными переходами той же ветви. Сравнение использует ветвь, период, исходный/конечный звук и URL правила. Результат сохраняется без исправления исходных оценок в `branches/*/data/chain_step_provenance.json` и сводится в `reports/chain_step_audit.md` и `.json`. Данные доступны в карточках цепочек автономного HTML.
+
+Типы расхождений: `not_in_atomic_graph` (отсутствует такое атомарное ребро), `missing_chain_rule_url` (в исходной цепочке нет ссылки), `rule_url_mismatch` (есть ребро, но другой URL), `multiple_matching_rules` (неоднозначность), `incompatible_position` и `nonmonotone_stages`. `graph_steps_verified` означает **только техническое соответствие графу**, не историческую доказанность цепочки. Неподдержанные контекстные формулы остаются в сохранённом корпусе guarded rules.
+
+Воспроизведение:
+
+```bash
+python scripts/audit_chain_provenance.py
+python scripts/rebuild.py
+python tests/test_provenance.py
+python tests/test_unified.py
+python tests/test_data.py
+python tests/test_schema.py
+python tests/test_research_corpus.py
+```
+
+Новые проверки не устраняют отсутствие некоторых URL в старых цепочках, не реконструируют недостающие варианты правил и не подменяют филологическую проверку словоформ. Полный список доступен в машинных отчётах.
+
+## Версия v5 — единообразный источник первичных цепочек
+
+**Основной корпус** для Quenya и Sindarin получают одни и те же файлы `shared/extract.py`, `shared/audit.py`, `shared/graph.py`, `shared/chains.py` непосредственно из Eldamo 0.8.13. В каждом языке используются только записи `unified_rules.json` из непосредственного извлечения; ранее добавленные развернутые варианты (`complete_rules.json`, в частности 123 квенийских) сохранены как наследие для отдельного исследования и НЕ служат основанием для основной статистики. Это преднамеренное методологическое изменение, а не удаление старого материала.
+
+Запуск полного конвейера: `python scripts/validate_and_build_canonical.py`. Проверка соответствия источников, графов, цепочек и интерфейсных данных: `python tests/test_canonical_pipeline.py`. Результаты и ограничения: `reports/v5_methodology_and_remaining_limits.md`.
+
+**Важно:** при запуске основным по умолчанию является единообразно сгенерированный *структурный исследовательский корпус*. Сохранённый прежний критический атлас доступен отдельно как архивный. Поиск путей в обеих ветвях работает на том же атомарном графе, из которого были построены основные структурные цепочки. Контекстные формулы не интерпретируются как безусловные переходы. Филологическая доказательность всех цепочек НЕ установлена. Присвоенные C/D/U являются осторожной машинной оценкой по примерам, не научной окончательной классификацией.
+
+При обработке части HTML BeautifulSoup сообщает о символах, которые не удалось декодировать. Это предупреждение НЕ доказывает точность чтения всех символов; отдельная посимвольная проверка источников не проведена. При этом ошибки открытия карточек в извлечении не зафиксированы.
+
+## Версия v6: точная проверка комбинаций примеров
+
+`shared/chains.py` больше не обрезает сочетания примеров до 5000. Введён точный динамический алгоритм `join_examples_exact`, сохраняющий все количества альтернативных последовательностей и проверяющий пересечение ссылок на этимологическую статью и обозначений источников. Итоговые категории v5 не изменились при полном пересчёте из исходного Eldamo. Тесты: `python tests/test_unbounded_example_join.py`, `python scripts/validate_and_build_canonical.py`, `python tests/test_unified.py`. Подробности: `reports/v6_evidence_join_audit.md`. Остальные ограничения v5 остаются открытыми.
+
+## Примечание v7: происхождение атомарных правил и декодирование
+
+Начиная с v7, извлечение и проверка страниц Eldamo выполняются со строгим UTF-8 декодированием. Обе ветви проверены на наличие и корректное декодирование используемых карточек и страниц правил. Атомарное ребро теперь хранит `source_rule_ids` и `source_rule_variants`, включая все записи, которые дают одну и ту же направленную проекцию. Реестр исключённых из атомарного поиска формул: `branches/{branch}/data/non_atomic_rule_register.json`; см. `reports/v7_exclusion_audit.md`. `tests/test_full_rule_provenance_v7.py` проверяет, что каждая запись исходного канонического корпуса представлена ровно один раз либо в объединённом ребре, либо в реестре неатомарных правил.
+
+Это **не** снимает исследовательские ограничения: машинный граф не исполняет все сложные контекстные формулы и не доказывает историческую последовательность словоформ. Предварительные категории C/D/U относятся только к проверенному подмножеству свидетельств.
+
+## Версия v8 — поцепочечный аудит непроверенных исторических предпосылок
+
+Команда `python scripts/audit_historical_limits_v8.py` создаёт одинаковые для Quenya и Sindarin поцепочечные реестры `historical_limit_ledger_v8.json`. Каждый путь помечается на предмет неопределённости порядка правил **внутри одной исторической ступени**, наличия объединённых исходных правил за одним атомарным ребром, отсутствия совместного машинного свидетельства, а также явной непроверенности полной хронологии и совместимости авторских редакций. Отдельный `archival_gap_register_v8.json` сохраняет конкретные несовпадения архивных цепочек с каноническим графом. Эти данные не изменяют не доказанные филологически оценки и не делают сложные контекстные формулы безусловными рёбрами.
+
+Полная пересборка `python scripts/validate_and_build_canonical.py` теперь включает эти проверки и тест `tests/test_historical_limits_v8.py`. Результаты: `reports/v8_historical_limits.md`, `reports/v8_historical_limit_summary.json`, `reports/v8_canonical_chain_limits.csv`. Это **аудит недостаточной доказанности**, а не реализация общего исторического интерпретатора фонетических формул. Последняя задача всё ещё не решена: на основании нынешнего кода нельзя честно гарантировать правильное последовательное применение всех контекстных законов к целому слову.

@@ -1,0 +1,79 @@
+{
+  "quenya": {
+    "canonical": {
+      "same_stage_order_unverified": 92,
+      "different_position_requirements": 0,
+      "contextual_rules_not_considered": 216,
+      "relative_chronology_unverified": 216,
+      "authorial_revision_compatibility_unverified": 216,
+      "ambiguous_atomic_match": 2,
+      "merged_rule_provenance": 211,
+      "without_shared_example_witness": 178,
+      "total": 216
+    },
+    "archival": {
+      "critical": {
+        "chain_statuses": {
+          "graph_steps_verified": 66,
+          "unresolved_steps": 73
+        },
+        "step_statuses": {
+          "exact_step_match": 197,
+          "not_in_atomic_graph": 88,
+          "missing_chain_rule_url": 8,
+          "rule_url_mismatch": 3
+        }
+      },
+      "structural": {
+        "chain_statuses": {
+          "graph_steps_verified": 208,
+          "unresolved_steps": 6,
+          "ambiguous_rule_identity": 2
+        },
+        "step_statuses": {
+          "exact_step_match": 473,
+          "missing_chain_rule_url": 6,
+          "multiple_matching_rules": 2
+        }
+      }
+    },
+    "guarded_records": 139
+  },
+  "sindarin": {
+    "canonical": {
+      "same_stage_order_unverified": 48,
+      "different_position_requirements": 0,
+      "contextual_rules_not_considered": 114,
+      "relative_chronology_unverified": 114,
+      "authorial_revision_compatibility_unverified": 114,
+      "ambiguous_atomic_match": 0,
+      "merged_rule_provenance": 110,
+      "without_shared_example_witness": 103,
+      "total": 114
+    },
+    "archival": {
+      "critical": {
+        "chain_statuses": {
+          "graph_steps_verified": 102,
+          "unresolved_steps": 11,
+          "incompatible_position": 5
+        },
+        "step_statuses": {
+          "exact_step_match": 259,
+          "missing_chain_rule_url": 11
+        }
+      },
+      "structural": {
+        "chain_statuses": {
+          "graph_steps_verified": 106,
+          "unresolved_steps": 8
+        },
+        "step_statuses": {
+          "exact_step_match": 251,
+          "missing_chain_rule_url": 8
+        }
+      }
+    },
+    "guarded_records": 150
+  }
+}

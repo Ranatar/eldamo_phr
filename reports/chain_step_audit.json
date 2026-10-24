@@ -1,0 +1,1346 @@
+{
+  "summary": {
+    "quenya": {
+      "critical": {
+        "chain:graph_steps_verified": 66,
+        "chain:unresolved_steps": 73,
+        "exact_step_match": 197,
+        "missing_chain_rule_url": 8,
+        "not_in_atomic_graph": 88,
+        "rule_url_mismatch": 3
+      },
+      "structural": {
+        "chain:ambiguous_rule_identity": 2,
+        "chain:graph_steps_verified": 208,
+        "chain:unresolved_steps": 6,
+        "exact_step_match": 473,
+        "missing_chain_rule_url": 6,
+        "multiple_matching_rules": 2
+      }
+    },
+    "sindarin": {
+      "critical": {
+        "chain:graph_steps_verified": 102,
+        "chain:incompatible_position": 5,
+        "chain:unresolved_steps": 11,
+        "exact_step_match": 259,
+        "missing_chain_rule_url": 11
+      },
+      "structural": {
+        "chain:graph_steps_verified": 106,
+        "chain:unresolved_steps": 8,
+        "exact_step_match": 251,
+        "missing_chain_rule_url": 8
+      }
+    }
+  },
+  "unresolved": [
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S9",
+      "era": "late",
+      "states": [
+        "bm",
+        "mb",
+        "m"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "bm",
+          "to": "mb",
+          "rule_url": "https://eldamo.org/content/words/word-3882201769.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-3882201769.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r349"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "any"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "mb",
+          "to": "m",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S10",
+      "era": "late",
+      "states": [
+        "bm",
+        "mb",
+        "m",
+        "n"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "bm",
+          "to": "mb",
+          "rule_url": "https://eldamo.org/content/words/word-3882201769.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-3882201769.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r349"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "any"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "mb",
+          "to": "m",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        },
+        {
+          "index": 2,
+          "from": "m",
+          "to": "n",
+          "rule_url": "https://eldamo.org/content/words/word-760163573.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-760163573.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r384"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "final"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S13",
+      "era": "late",
+      "states": [
+        "mb",
+        "m",
+        "n"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "mb",
+          "to": "m",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        },
+        {
+          "index": 1,
+          "from": "m",
+          "to": "n",
+          "rule_url": "https://eldamo.org/content/words/word-760163573.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-760163573.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r384"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "final"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S29",
+      "era": "late",
+      "states": [
+        "ŋ",
+        "ŋg",
+        "g"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋ",
+          "to": "ŋg",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        },
+        {
+          "index": 1,
+          "from": "ŋg",
+          "to": "g",
+          "rule_url": "https://eldamo.org/content/words/word-3057844573.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-1688730459.html",
+            "https://eldamo.org/content/words/word-3057844573.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r21"
+          ],
+          "matching_stages": [
+            3
+          ],
+          "matching_positions": [
+            "initial"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S33",
+      "era": "late",
+      "states": [
+        "ŋgw",
+        "m",
+        "n"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋgw",
+          "to": "m",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        },
+        {
+          "index": 1,
+          "from": "m",
+          "to": "n",
+          "rule_url": "https://eldamo.org/content/words/word-760163573.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-760163573.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r384"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "final"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S34",
+      "era": "late",
+      "states": [
+        "ŋj",
+        "ŋgj",
+        "n"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋj",
+          "to": "ŋgj",
+          "rule_url": "https://eldamo.org/content/words/word-2233951333.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-2233951333.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r357"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "medial"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "ŋgj",
+          "to": "n",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S35",
+      "era": "late",
+      "states": [
+        "ŋw",
+        "m",
+        "n"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋw",
+          "to": "m",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            "",
+            "https://eldamo.org/content/words/word-171120983.html"
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        },
+        {
+          "index": 1,
+          "from": "m",
+          "to": "n",
+          "rule_url": "https://eldamo.org/content/words/word-760163573.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-760163573.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r384"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "final"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S38",
+      "era": "late",
+      "states": [
+        "ŋw",
+        "ŋgw",
+        "mb",
+        "b"
+      ],
+      "overall": "incompatible_position",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋw",
+          "to": "ŋgw",
+          "rule_url": "https://eldamo.org/content/words/word-2233951333.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-2233951333.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r358"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "medial"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "ŋgw",
+          "to": "mb",
+          "rule_url": "https://eldamo.org/content/words/word-171120983.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-171120983.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r272"
+          ],
+          "matching_stages": [
+            1
+          ],
+          "matching_positions": [
+            "any"
+          ]
+        },
+        {
+          "index": 2,
+          "from": "mb",
+          "to": "b",
+          "rule_url": "https://eldamo.org/content/words/word-3057844573.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-3057844573.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r10"
+          ],
+          "matching_stages": [
+            3
+          ],
+          "matching_positions": [
+            "initial"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S39",
+      "era": "late",
+      "states": [
+        "ŋw",
+        "ŋgw",
+        "m"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋw",
+          "to": "ŋgw",
+          "rule_url": "https://eldamo.org/content/words/word-2233951333.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-2233951333.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r358"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "medial"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "ŋgw",
+          "to": "m",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S40",
+      "era": "late",
+      "states": [
+        "ŋw",
+        "ŋgw",
+        "m",
+        "n"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋw",
+          "to": "ŋgw",
+          "rule_url": "https://eldamo.org/content/words/word-2233951333.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-2233951333.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r358"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "medial"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "ŋgw",
+          "to": "m",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        },
+        {
+          "index": 2,
+          "from": "m",
+          "to": "n",
+          "rule_url": "https://eldamo.org/content/words/word-760163573.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-760163573.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r384"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "final"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S41",
+      "era": "late",
+      "states": [
+        "ŋx",
+        "ŋg",
+        "g"
+      ],
+      "overall": "incompatible_position",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋx",
+          "to": "ŋg",
+          "rule_url": "https://eldamo.org/content/words/word-2996915415.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-2996915415.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r81"
+          ],
+          "matching_stages": [
+            3
+          ],
+          "matching_positions": [
+            "medial"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "ŋg",
+          "to": "g",
+          "rule_url": "https://eldamo.org/content/words/word-3057844573.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-1688730459.html",
+            "https://eldamo.org/content/words/word-3057844573.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r21"
+          ],
+          "matching_stages": [
+            3
+          ],
+          "matching_positions": [
+            "initial"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S42",
+      "era": "late",
+      "states": [
+        "ŋx",
+        "x",
+        "h"
+      ],
+      "overall": "incompatible_position",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋx",
+          "to": "x",
+          "rule_url": "https://eldamo.org/content/words/word-3057844573.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-3057844573.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r40"
+          ],
+          "matching_stages": [
+            3
+          ],
+          "matching_positions": [
+            "initial"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "x",
+          "to": "h",
+          "rule_url": "https://eldamo.org/content/words/word-4188321265.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-4188321265.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r41"
+          ],
+          "matching_stages": [
+            3
+          ],
+          "matching_positions": [
+            "medial"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S44",
+      "era": "late",
+      "states": [
+        "ŋŋ",
+        "ŋg",
+        "ŋ"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋŋ",
+          "to": "ŋg",
+          "rule_url": "https://eldamo.org/content/words/word-3404492995.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-3404492995.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r19"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "any"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "ŋg",
+          "to": "ŋ",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S46",
+      "era": "late",
+      "states": [
+        "ŋɣ",
+        "ŋg",
+        "ŋ"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋɣ",
+          "to": "ŋg",
+          "rule_url": "https://eldamo.org/content/words/word-3404492995.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-3404492995.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r356"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "any"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "ŋg",
+          "to": "ŋ",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S104",
+      "era": "middle",
+      "states": [
+        "ŋj",
+        "ŋgj",
+        "ŋg",
+        "g"
+      ],
+      "overall": "incompatible_position",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋj",
+          "to": "ŋgj",
+          "rule_url": "https://eldamo.org/content/words/word-1270135967.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-1270135967.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r366"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "medial"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "ŋgj",
+          "to": "ŋg",
+          "rule_url": "https://eldamo.org/content/words/word-4025342543.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-4025342543.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r268"
+          ],
+          "matching_stages": [
+            1
+          ],
+          "matching_positions": [
+            "any"
+          ]
+        },
+        {
+          "index": 2,
+          "from": "ŋg",
+          "to": "g",
+          "rule_url": "https://eldamo.org/content/words/word-956128961.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-1688730459.html",
+            "https://eldamo.org/content/words/word-3944232895.html",
+            "https://eldamo.org/content/words/word-956128961.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r25"
+          ],
+          "matching_stages": [
+            2
+          ],
+          "matching_positions": [
+            "initial"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "critical",
+      "id": "S109",
+      "era": "middle",
+      "states": [
+        "ŋw",
+        "ŋgw",
+        "mb",
+        "b"
+      ],
+      "overall": "incompatible_position",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋw",
+          "to": "ŋgw",
+          "rule_url": "https://eldamo.org/content/words/word-1270135967.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-1270135967.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r367"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "medial"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "ŋgw",
+          "to": "mb",
+          "rule_url": "https://eldamo.org/content/words/word-3214863235.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-3214863235.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r192"
+          ],
+          "matching_stages": [
+            1
+          ],
+          "matching_positions": [
+            "any"
+          ]
+        },
+        {
+          "index": 2,
+          "from": "mb",
+          "to": "b",
+          "rule_url": "https://eldamo.org/content/words/word-956128961.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-1688730459.html",
+            "https://eldamo.org/content/words/word-3944232895.html",
+            "https://eldamo.org/content/words/word-956128961.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r12"
+          ],
+          "matching_stages": [
+            2
+          ],
+          "matching_positions": [
+            "initial"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "structural",
+      "id": "SINDARIN5",
+      "era": "late",
+      "states": [
+        "bm",
+        "mb",
+        "m"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "bm",
+          "to": "mb",
+          "rule_url": "https://eldamo.org/content/words/word-3882201769.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-3882201769.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r349"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "any"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "mb",
+          "to": "m",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "structural",
+      "id": "SINDARIN27",
+      "era": "late",
+      "states": [
+        "ŋ",
+        "ŋg",
+        "g"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋ",
+          "to": "ŋg",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        },
+        {
+          "index": 1,
+          "from": "ŋg",
+          "to": "g",
+          "rule_url": "https://eldamo.org/content/words/word-1688730459.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-1688730459.html",
+            "https://eldamo.org/content/words/word-3057844573.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r426"
+          ],
+          "matching_stages": [
+            1
+          ],
+          "matching_positions": [
+            "initial"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "structural",
+      "id": "SINDARIN28",
+      "era": "late",
+      "states": [
+        "ŋ",
+        "ŋg",
+        "g"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋ",
+          "to": "ŋg",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        },
+        {
+          "index": 1,
+          "from": "ŋg",
+          "to": "g",
+          "rule_url": "https://eldamo.org/content/words/word-3057844573.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-1688730459.html",
+            "https://eldamo.org/content/words/word-3057844573.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r21"
+          ],
+          "matching_stages": [
+            3
+          ],
+          "matching_positions": [
+            "initial"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "structural",
+      "id": "SINDARIN29",
+      "era": "late",
+      "states": [
+        "ŋg",
+        "ŋ",
+        "g"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋg",
+          "to": "ŋ",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        },
+        {
+          "index": 1,
+          "from": "ŋ",
+          "to": "g",
+          "rule_url": "https://eldamo.org/content/words/word-1228875561.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-1228875561.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r425"
+          ],
+          "matching_stages": [
+            1
+          ],
+          "matching_positions": [
+            "initial"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "structural",
+      "id": "SINDARIN38",
+      "era": "late",
+      "states": [
+        "ŋŋ",
+        "ŋg",
+        "ŋ"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋŋ",
+          "to": "ŋg",
+          "rule_url": "https://eldamo.org/content/words/word-3404492995.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-3404492995.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r19"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "any"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "ŋg",
+          "to": "ŋ",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "structural",
+      "id": "SINDARIN39",
+      "era": "late",
+      "states": [
+        "ŋŋ",
+        "ŋg",
+        "ŋ",
+        "g"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋŋ",
+          "to": "ŋg",
+          "rule_url": "https://eldamo.org/content/words/word-3404492995.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-3404492995.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r19"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "any"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "ŋg",
+          "to": "ŋ",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        },
+        {
+          "index": 2,
+          "from": "ŋ",
+          "to": "g",
+          "rule_url": "https://eldamo.org/content/words/word-1228875561.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-1228875561.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r425"
+          ],
+          "matching_stages": [
+            1
+          ],
+          "matching_positions": [
+            "initial"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "structural",
+      "id": "SINDARIN42",
+      "era": "late",
+      "states": [
+        "ŋɣ",
+        "ŋg",
+        "ŋ"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋɣ",
+          "to": "ŋg",
+          "rule_url": "https://eldamo.org/content/words/word-3404492995.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-3404492995.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r356"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "any"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "ŋg",
+          "to": "ŋ",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    },
+    {
+      "branch": "sindarin",
+      "corpus": "structural",
+      "id": "SINDARIN43",
+      "era": "late",
+      "states": [
+        "ŋɣ",
+        "ŋg",
+        "ŋ",
+        "g"
+      ],
+      "overall": "unresolved_steps",
+      "steps": [
+        {
+          "index": 0,
+          "from": "ŋɣ",
+          "to": "ŋg",
+          "rule_url": "https://eldamo.org/content/words/word-3404492995.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-3404492995.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r356"
+          ],
+          "matching_stages": [
+            0
+          ],
+          "matching_positions": [
+            "any"
+          ]
+        },
+        {
+          "index": 1,
+          "from": "ŋg",
+          "to": "ŋ",
+          "rule_url": "",
+          "status": "missing_chain_rule_url",
+          "candidate_rule_urls": [
+            ""
+          ],
+          "matching_edge_ids": [],
+          "matching_stages": [],
+          "matching_positions": []
+        },
+        {
+          "index": 2,
+          "from": "ŋ",
+          "to": "g",
+          "rule_url": "https://eldamo.org/content/words/word-1228875561.html",
+          "status": "exact_step_match",
+          "candidate_rule_urls": [
+            "https://eldamo.org/content/words/word-1228875561.html"
+          ],
+          "matching_edge_ids": [
+            "sindarin-r425"
+          ],
+          "matching_stages": [
+            1
+          ],
+          "matching_positions": [
+            "initial"
+          ]
+        }
+      ],
+      "limitation": "Совпадение атомарных правил не доказывает общую этимологию, совместимость контекстов или редакций."
+    }
+  ]
+}

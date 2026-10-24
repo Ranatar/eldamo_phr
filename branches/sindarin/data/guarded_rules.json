@@ -1,0 +1,4418 @@
+[
+  {
+    "id": "sindarin-r2",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "p < p",
+    "a_formula": "p",
+    "b_formula": "p",
+    "cards": "s, n",
+    "phonemes": [
+      "p"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/18",
+      "PE19/21",
+      "PE19/21"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "p",
+    "b": "p"
+  },
+  {
+    "id": "sindarin-r4",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "t < t",
+    "a_formula": "t",
+    "b_formula": "t",
+    "cards": "s, n",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/21",
+      "PE19/21"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "t",
+    "b": "t"
+  },
+  {
+    "id": "sindarin-r7",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "k < k",
+    "a_formula": "k",
+    "b_formula": "k",
+    "cards": "s, n",
+    "phonemes": [
+      "k"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/18",
+      "PE19/21",
+      "PE19/21"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "k",
+    "b": "k"
+  },
+  {
+    "id": "sindarin-r9",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "b < b",
+    "a_formula": "b",
+    "b_formula": "b",
+    "cards": "s",
+    "phonemes": [
+      "b"
+    ],
+    "sources": [
+      "PE18/105"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "b",
+    "b": "b"
+  },
+  {
+    "id": "sindarin-r11",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "b < b",
+    "a_formula": "b",
+    "b_formula": "b",
+    "cards": "s, n",
+    "phonemes": [
+      "b"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/18",
+      "PE19/21",
+      "PE19/21"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "b",
+    "b": "b"
+  },
+  {
+    "id": "sindarin-r13",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "voiceless stops voiced after vowels",
+    "url": "https://eldamo.org/content/words/word-2951504533.html",
+    "formula": "Vb < Vp",
+    "a_formula": "Vp",
+    "b_formula": "Vb",
+    "cards": "s, n",
+    "phonemes": [
+      "b"
+    ],
+    "sources": [
+      "PE19/23",
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vp",
+    "b": "Vb"
+  },
+  {
+    "id": "sindarin-r14",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "d < d",
+    "a_formula": "d",
+    "b_formula": "d",
+    "cards": "s, n",
+    "phonemes": [
+      "d"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/21",
+      "PE19/21"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "d",
+    "b": "d"
+  },
+  {
+    "id": "sindarin-r16",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "voiceless stops voiced after vowels",
+    "url": "https://eldamo.org/content/words/word-2951504533.html",
+    "formula": "Vd < Vt",
+    "a_formula": "Vt",
+    "b_formula": "Vd",
+    "cards": "s, n",
+    "phonemes": [
+      "d"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vt",
+    "b": "Vd"
+  },
+  {
+    "id": "sindarin-r18",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "g < g",
+    "a_formula": "g",
+    "b_formula": "g",
+    "cards": "s",
+    "phonemes": [
+      "g"
+    ],
+    "sources": [
+      "PE18/105"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "g",
+    "b": "g"
+  },
+  {
+    "id": "sindarin-r24",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "g < g",
+    "a_formula": "g",
+    "b_formula": "g",
+    "cards": "s, n",
+    "phonemes": [
+      "g"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/18",
+      "PE19/21",
+      "PE19/21"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "g",
+    "b": "g"
+  },
+  {
+    "id": "sindarin-r27",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "medial [j] became [i]",
+    "url": "https://eldamo.org/content/words/word-1126685261.html",
+    "formula": "CiV < CjV",
+    "a_formula": "CjV",
+    "b_formula": "CiV",
+    "cards": "s, n",
+    "phonemes": [
+      "g",
+      "x",
+      "i"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "CjV",
+    "b": "CiV"
+  },
+  {
+    "id": "sindarin-r28",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "voiceless stops voiced after vowels",
+    "url": "https://eldamo.org/content/words/word-2951504533.html",
+    "formula": "Vg < Vk",
+    "a_formula": "Vk",
+    "b_formula": "Vg",
+    "cards": "s, n",
+    "phonemes": [
+      "g"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vk",
+    "b": "Vg"
+  },
+  {
+    "id": "sindarin-r34",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "s < s",
+    "a_formula": "s",
+    "b_formula": "s",
+    "cards": "s, n",
+    "phonemes": [
+      "s"
+    ],
+    "sources": [
+      "PE19/19"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "s",
+    "b": "s"
+  },
+  {
+    "id": "sindarin-r37",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "θ < θ",
+    "a_formula": "θ",
+    "b_formula": "θ",
+    "cards": "s, n",
+    "phonemes": [
+      "θ"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/21",
+      "PE19/21",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "θ",
+    "b": "θ"
+  },
+  {
+    "id": "sindarin-r45",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "x < x",
+    "a_formula": "x",
+    "b_formula": "x",
+    "cards": "s, n",
+    "phonemes": [
+      "x"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/18",
+      "PE19/21",
+      "PE19/23",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "x",
+    "b": "x"
+  },
+  {
+    "id": "sindarin-r49",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "voiced stops became spirants after vowels",
+    "url": "https://eldamo.org/content/words/word-1726791627.html",
+    "formula": "Vv < Vb",
+    "a_formula": "Vb",
+    "b_formula": "Vv",
+    "cards": "s",
+    "phonemes": [
+      "v"
+    ],
+    "sources": [
+      "VT42/26"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vb",
+    "b": "Vv"
+  },
+  {
+    "id": "sindarin-r50",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "non-initial [m] usually became [v]",
+    "url": "https://eldamo.org/content/words/word-1951379117.html",
+    "formula": "Vv < Vm",
+    "a_formula": "Vm",
+    "b_formula": "Vv",
+    "cards": "s",
+    "phonemes": [
+      "v",
+      "i"
+    ],
+    "sources": [
+      "PE17/131",
+      "PE17/133",
+      "PE22/149",
+      "VT42/26"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vm",
+    "b": "Vv"
+  },
+  {
+    "id": "sindarin-r51",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "voiced stops became spirants after vowels",
+    "url": "https://eldamo.org/content/words/word-8115507.html",
+    "formula": "Vv < Vb",
+    "a_formula": "Vb",
+    "b_formula": "Vv",
+    "cards": "s, n",
+    "phonemes": [
+      "v"
+    ],
+    "sources": [
+      "PE19/23",
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vb",
+    "b": "Vv"
+  },
+  {
+    "id": "sindarin-r54",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "voiced stops became spirants after vowels",
+    "url": "https://eldamo.org/content/words/word-1726791627.html",
+    "formula": "Vð < Vd",
+    "a_formula": "Vd",
+    "b_formula": "Vð",
+    "cards": "s",
+    "phonemes": [
+      "ð"
+    ],
+    "sources": [
+      "LotR/1113",
+      "PE19/101",
+      "VT42/26"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vd",
+    "b": "Vð"
+  },
+  {
+    "id": "sindarin-r55",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "final [ɣ] became [a] after a consonant",
+    "url": "https://eldamo.org/content/words/word-916418731.html",
+    "formula": "-Ca < -Cɣ",
+    "a_formula": "-Cɣ",
+    "b_formula": "-Ca",
+    "cards": "s",
+    "phonemes": [
+      "ð"
+    ],
+    "sources": [
+      "PE19/101"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cɣ",
+    "b": "-Ca"
+  },
+  {
+    "id": "sindarin-r60",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "final [ɣ] became [a] after a consonant",
+    "url": "https://eldamo.org/content/words/word-916418731.html",
+    "formula": "-Cɣ > -Ca",
+    "a_formula": "-Cɣ",
+    "b_formula": "-Ca",
+    "cards": "s",
+    "phonemes": [
+      "ð"
+    ],
+    "sources": [
+      "PE19/101"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cɣ",
+    "b": "-Ca"
+  },
+  {
+    "id": "sindarin-r63",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "voiced stops became spirants after vowels",
+    "url": "https://eldamo.org/content/words/word-8115507.html",
+    "formula": "Vð < Vd",
+    "a_formula": "Vd",
+    "b_formula": "Vð",
+    "cards": "s, n",
+    "phonemes": [
+      "ð"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vd",
+    "b": "Vð"
+  },
+  {
+    "id": "sindarin-r64",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "voiced stops became spirants after vowels",
+    "url": "https://eldamo.org/content/words/word-1726791627.html",
+    "formula": "Vɣ < Vg",
+    "a_formula": "Vg",
+    "b_formula": "Vɣ",
+    "cards": "s",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "VT42/26",
+      "VT42/26"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vg",
+    "b": "Vɣ"
+  },
+  {
+    "id": "sindarin-r67",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "voiced stops became spirants after vowels",
+    "url": "https://eldamo.org/content/words/word-8115507.html",
+    "formula": "Vɣ < Vg",
+    "a_formula": "Vg",
+    "b_formula": "Vɣ",
+    "cards": "s, n",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vg",
+    "b": "Vɣ"
+  },
+  {
+    "id": "sindarin-r72",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "m < m",
+    "a_formula": "m",
+    "b_formula": "m",
+    "cards": "s, n",
+    "phonemes": [
+      "m"
+    ],
+    "sources": [
+      "PE19/19",
+      "PE19/21",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "m",
+    "b": "m"
+  },
+  {
+    "id": "sindarin-r76",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "final [ll], [nn], [ss] shortened in polysyllables",
+    "url": "https://eldamo.org/content/words/word-1742178057.html",
+    "formula": "-SSn < -SSnn",
+    "a_formula": "-SSnn",
+    "b_formula": "-SSn",
+    "cards": "s",
+    "phonemes": [
+      "n"
+    ],
+    "sources": [
+      "LotR/1115"
+    ],
+    "audit": "unsupported_on_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-SSnn",
+    "b": "-SSn"
+  },
+  {
+    "id": "sindarin-r77",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "final [ll], [nn], [ss] shortened in polysyllables",
+    "url": "https://eldamo.org/content/words/word-1742178057.html",
+    "formula": "-SSnn > -SSn",
+    "a_formula": "-SSnn",
+    "b_formula": "-SSn",
+    "cards": "s",
+    "phonemes": [
+      "n"
+    ],
+    "sources": [
+      "LotR/1115"
+    ],
+    "audit": "unsupported_on_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-SSnn",
+    "b": "-SSn"
+  },
+  {
+    "id": "sindarin-r78",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "n < n",
+    "a_formula": "n",
+    "b_formula": "n",
+    "cards": "s, n",
+    "phonemes": [
+      "n"
+    ],
+    "sources": [
+      "PE19/19",
+      "PE19/21",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "n",
+    "b": "n"
+  },
+  {
+    "id": "sindarin-r80",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ŋ < ŋ",
+    "a_formula": "ŋ",
+    "b_formula": "ŋ",
+    "cards": "s",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "LotR/1115"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ŋ",
+    "b": "ŋ"
+  },
+  {
+    "id": "sindarin-r82",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ŋ < ŋ",
+    "a_formula": "ŋ",
+    "b_formula": "ŋ",
+    "cards": "s, n",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE19/20",
+      "PE19/20",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ŋ",
+    "b": "ŋ"
+  },
+  {
+    "id": "sindarin-r90",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "[ŋ] vanished with compensatory lengthening",
+    "url": "https://eldamo.org/content/words/word-3707785609.html",
+    "formula": "Vŋw > V̄w",
+    "a_formula": "Vŋw",
+    "b_formula": "V̄w",
+    "cards": "s, p",
+    "phonemes": [
+      "w",
+      "ŋ"
+    ],
+    "sources": [
+      "PE22/149",
+      "PE17/44"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vŋw",
+    "b": "V̄w"
+  },
+  {
+    "id": "sindarin-r91",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "w < w",
+    "a_formula": "w",
+    "b_formula": "w",
+    "cards": "s, n",
+    "phonemes": [
+      "w"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "w",
+    "b": "w"
+  },
+  {
+    "id": "sindarin-r92",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "l < l",
+    "a_formula": "l",
+    "b_formula": "l",
+    "cards": "s",
+    "phonemes": [
+      "l"
+    ],
+    "sources": [
+      "PE18/105"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "l",
+    "b": "l"
+  },
+  {
+    "id": "sindarin-r95",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "r < r",
+    "a_formula": "r",
+    "b_formula": "r",
+    "cards": "s",
+    "phonemes": [
+      "r"
+    ],
+    "sources": [
+      "PE18/105"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "r",
+    "b": "r"
+  },
+  {
+    "id": "sindarin-r96",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "j < j",
+    "a_formula": "j",
+    "b_formula": "j",
+    "cards": "s",
+    "phonemes": [
+      "j"
+    ],
+    "sources": [
+      "PE18/105"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "j",
+    "b": "j"
+  },
+  {
+    "id": "sindarin-r97",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "j < j",
+    "a_formula": "j",
+    "b_formula": "j",
+    "cards": "s, n",
+    "phonemes": [
+      "j"
+    ],
+    "sources": [
+      "PE19/19",
+      "PE19/19"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "j",
+    "b": "j"
+  },
+  {
+    "id": "sindarin-r101",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "non-initial [m] usually became [v]",
+    "url": "https://eldamo.org/content/words/word-1951379117.html",
+    "formula": "Vm > Vv",
+    "a_formula": "Vm",
+    "b_formula": "Vv",
+    "cards": "s, os, p",
+    "phonemes": [
+      "i",
+      "m"
+    ],
+    "sources": [
+      "VT42/26",
+      "PE17/131",
+      "PE17/133",
+      "PE22/149"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vm",
+    "b": "Vv"
+  },
+  {
+    "id": "sindarin-r105",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "final [w] usually became [u]",
+    "url": "https://eldamo.org/content/words/word-798091205.html",
+    "formula": "-Cu < -Cw",
+    "a_formula": "-Cw",
+    "b_formula": "-Cu",
+    "cards": "s",
+    "phonemes": [
+      "u"
+    ],
+    "sources": [
+      "PE17/148"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cw",
+    "b": "-Cu"
+  },
+  {
+    "id": "sindarin-r107",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ī < ī",
+    "a_formula": "ī",
+    "b_formula": "ī",
+    "cards": "s, n",
+    "phonemes": [
+      "ī"
+    ],
+    "sources": [
+      "PE19/25",
+      "PE19/25"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ī",
+    "b": "ī"
+  },
+  {
+    "id": "sindarin-r109",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ū < ū",
+    "a_formula": "ū",
+    "b_formula": "ū",
+    "cards": "s, n",
+    "phonemes": [
+      "ū"
+    ],
+    "sources": [
+      "PE19/25",
+      "PE19/25",
+      "PE19/25",
+      "PE19/25",
+      "PE19/25"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ū",
+    "b": "ū"
+  },
+  {
+    "id": "sindarin-r113",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ui < ui",
+    "a_formula": "ui",
+    "b_formula": "ui",
+    "cards": "s",
+    "phonemes": [
+      "ui"
+    ],
+    "sources": [
+      "VT48/7"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ui",
+    "b": "ui"
+  },
+  {
+    "id": "sindarin-r114",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ui < ui",
+    "a_formula": "ui",
+    "b_formula": "ui",
+    "cards": "s, n",
+    "phonemes": [
+      "ui"
+    ],
+    "sources": [
+      "PE19/25",
+      "PE19/25",
+      "PE19/25"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ui",
+    "b": "ui"
+  },
+  {
+    "id": "sindarin-r121",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "final nasals vanished after vowels",
+    "url": "https://eldamo.org/content/words/word-876455981.html",
+    "formula": "-Vø < -Vn",
+    "a_formula": "-Vn",
+    "b_formula": "-Vø",
+    "cards": "s",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "VT42/24"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Vn",
+    "b": "-Vø"
+  },
+  {
+    "id": "sindarin-r122",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "final nasals vanished after vowels",
+    "url": "https://eldamo.org/content/words/word-876455981.html",
+    "formula": "-Vø < -Vm",
+    "a_formula": "-Vm",
+    "b_formula": "-Vø",
+    "cards": "s",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "VT47/10"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Vm",
+    "b": "-Vø"
+  },
+  {
+    "id": "sindarin-r123",
+    "marker": "OS.",
+    "era": "late",
+    "stage": 2,
+    "rule": "initial [ɣ]/[h] vanished",
+    "url": "https://eldamo.org/content/words/word-1117448055.html",
+    "formula": "ø- < ɣ-",
+    "a_formula": "ɣ-",
+    "b_formula": "ø-",
+    "cards": "s, os",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "PE18/105",
+      "PE18/104",
+      "VT48/26"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "ɣ-",
+    "b": "ø-"
+  },
+  {
+    "id": "sindarin-r124",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "initial and intervocalic [ŋ] vanished",
+    "url": "https://eldamo.org/content/words/word-552653835.html",
+    "formula": "ø- < ŋ-",
+    "a_formula": "ŋ-",
+    "b_formula": "ø-",
+    "cards": "s, os, on",
+    "phonemes": [
+      "ø",
+      "j"
+    ],
+    "sources": [
+      "PE18/105",
+      "PE18/105",
+      "PE18/104",
+      "PE19/19"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "ŋ-",
+    "b": "ø-"
+  },
+  {
+    "id": "sindarin-r125",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "[ŋ] vanished with compensatory lengthening",
+    "url": "https://eldamo.org/content/words/word-3707785609.html",
+    "formula": "V̄n < Vŋn",
+    "a_formula": "Vŋn",
+    "b_formula": "V̄n",
+    "cards": "s",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "PE22/149"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vŋn",
+    "b": "V̄n"
+  },
+  {
+    "id": "sindarin-r126",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "[ŋ] vanished with compensatory lengthening",
+    "url": "https://eldamo.org/content/words/word-3707785609.html",
+    "formula": "V̄w < Vŋw",
+    "a_formula": "Vŋw",
+    "b_formula": "V̄w",
+    "cards": "s, os",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "PE22/149",
+      "PE17/44"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vŋw",
+    "b": "V̄w"
+  },
+  {
+    "id": "sindarin-r127",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ø < ø",
+    "a_formula": "ø",
+    "b_formula": "ø",
+    "cards": "s, n",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "PE19/19",
+      "PE19/19",
+      "PE19/23",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "ø",
+    "b": "ø"
+  },
+  {
+    "id": "sindarin-r128",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[h] vanished after vowels",
+    "url": "https://eldamo.org/content/words/word-2979061283.html",
+    "formula": "Vø < Vh",
+    "a_formula": "Vh",
+    "b_formula": "Vø",
+    "cards": "s, n",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "EtyAC/NDIS",
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vh",
+    "b": "Vø"
+  },
+  {
+    "id": "sindarin-r129",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "p < p",
+    "a_formula": "p",
+    "b_formula": "p",
+    "cards": "os, on",
+    "phonemes": [
+      "p"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/21",
+      "PE19/21",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "p",
+    "b": "p"
+  },
+  {
+    "id": "sindarin-r132",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "voiceless stops voiced after vowels",
+    "url": "https://eldamo.org/content/words/word-2951504533.html",
+    "formula": "Vp > Vb",
+    "a_formula": "Vp",
+    "b_formula": "Vb",
+    "cards": "os, on",
+    "phonemes": [
+      "p"
+    ],
+    "sources": [
+      "PE19/23",
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vp",
+    "b": "Vb"
+  },
+  {
+    "id": "sindarin-r133",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "t < t",
+    "a_formula": "t",
+    "b_formula": "t",
+    "cards": "os, on",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/21",
+      "PE19/21",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "t",
+    "b": "t"
+  },
+  {
+    "id": "sindarin-r134",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "voiceless stops voiced after vowels",
+    "url": "https://eldamo.org/content/words/word-2951504533.html",
+    "formula": "Vt > Vd",
+    "a_formula": "Vt",
+    "b_formula": "Vd",
+    "cards": "os, on",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vt",
+    "b": "Vd"
+  },
+  {
+    "id": "sindarin-r135",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "k < k",
+    "a_formula": "k",
+    "b_formula": "k",
+    "cards": "os, on",
+    "phonemes": [
+      "k"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/21",
+      "PE19/21",
+      "PE19/23",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "k",
+    "b": "k"
+  },
+  {
+    "id": "sindarin-r136",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "medial [j] became [i]",
+    "url": "https://eldamo.org/content/words/word-1126685261.html",
+    "formula": "CjV > CiV",
+    "a_formula": "CjV",
+    "b_formula": "CiV",
+    "cards": "os, on",
+    "phonemes": [
+      "k",
+      "x",
+      "j"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "CjV",
+    "b": "CiV"
+  },
+  {
+    "id": "sindarin-r137",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "voiceless stops voiced after vowels",
+    "url": "https://eldamo.org/content/words/word-2951504533.html",
+    "formula": "Vk > Vg",
+    "a_formula": "Vk",
+    "b_formula": "Vg",
+    "cards": "os, on",
+    "phonemes": [
+      "k"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vk",
+    "b": "Vg"
+  },
+  {
+    "id": "sindarin-r145",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "s < s",
+    "a_formula": "s",
+    "b_formula": "s",
+    "cards": "os, on",
+    "phonemes": [
+      "s"
+    ],
+    "sources": [
+      "PE19/19",
+      "PE19/21",
+      "PE19/21"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "s",
+    "b": "s"
+  },
+  {
+    "id": "sindarin-r159",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "intervocalic [s] became [h]",
+    "url": "https://eldamo.org/content/words/word-4036446677.html",
+    "formula": "VhV < VsV",
+    "a_formula": "VsV",
+    "b_formula": "VhV",
+    "cards": "os, on",
+    "phonemes": [
+      "h"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VsV",
+    "b": "VhV"
+  },
+  {
+    "id": "sindarin-r160",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "[h] vanished after vowels",
+    "url": "https://eldamo.org/content/words/word-2979061283.html",
+    "formula": "Vh > Vø",
+    "a_formula": "Vh",
+    "b_formula": "Vø",
+    "cards": "os, on",
+    "phonemes": [
+      "h"
+    ],
+    "sources": [
+      "EtyAC/NDIS",
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vh",
+    "b": "Vø"
+  },
+  {
+    "id": "sindarin-r170",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "voiced stops became spirants after vowels",
+    "url": "https://eldamo.org/content/words/word-1726791627.html",
+    "formula": "Vb > Vv",
+    "a_formula": "Vb",
+    "b_formula": "Vv",
+    "cards": "os",
+    "phonemes": [
+      "b"
+    ],
+    "sources": [
+      "VT42/26"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vb",
+    "b": "Vv"
+  },
+  {
+    "id": "sindarin-r171",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "b < b",
+    "a_formula": "b",
+    "b_formula": "b",
+    "cards": "os, on",
+    "phonemes": [
+      "b"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/21",
+      "PE19/21",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "b",
+    "b": "b"
+  },
+  {
+    "id": "sindarin-r173",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "voiced stops became spirants after vowels",
+    "url": "https://eldamo.org/content/words/word-8115507.html",
+    "formula": "Vb > Vv",
+    "a_formula": "Vb",
+    "b_formula": "Vv",
+    "cards": "os, on",
+    "phonemes": [
+      "b"
+    ],
+    "sources": [
+      "PE19/23",
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vb",
+    "b": "Vv"
+  },
+  {
+    "id": "sindarin-r176",
+    "marker": "OS.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[z] vanished before [d] lengthening preceding vowel",
+    "url": "https://eldamo.org/content/words/word-1249932447.html",
+    "formula": "V̄d < Vzd",
+    "a_formula": "Vzd",
+    "b_formula": "V̄d",
+    "cards": "os",
+    "phonemes": [
+      "d"
+    ],
+    "sources": [
+      "PE19/91",
+      "PE19/101"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vzd",
+    "b": "V̄d"
+  },
+  {
+    "id": "sindarin-r178",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "voiced stops became spirants after vowels",
+    "url": "https://eldamo.org/content/words/word-1726791627.html",
+    "formula": "Vd > Vð",
+    "a_formula": "Vd",
+    "b_formula": "Vð",
+    "cards": "os, p",
+    "phonemes": [
+      "d"
+    ],
+    "sources": [
+      "PE19/101",
+      "VT42/26",
+      "LotR/1113"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vd",
+    "b": "Vð"
+  },
+  {
+    "id": "sindarin-r179",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "d < d",
+    "a_formula": "d",
+    "b_formula": "d",
+    "cards": "os, on",
+    "phonemes": [
+      "d"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/21",
+      "PE19/21",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "d",
+    "b": "d"
+  },
+  {
+    "id": "sindarin-r180",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "voiced stops became spirants after vowels",
+    "url": "https://eldamo.org/content/words/word-8115507.html",
+    "formula": "Vd > Vð",
+    "a_formula": "Vd",
+    "b_formula": "Vð",
+    "cards": "os, on",
+    "phonemes": [
+      "d"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vd",
+    "b": "Vð"
+  },
+  {
+    "id": "sindarin-r183",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "voiced stops became spirants after vowels",
+    "url": "https://eldamo.org/content/words/word-1726791627.html",
+    "formula": "Vg > Vɣ",
+    "a_formula": "Vg",
+    "b_formula": "Vɣ",
+    "cards": "os",
+    "phonemes": [
+      "g"
+    ],
+    "sources": [
+      "VT42/26",
+      "VT42/26"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vg",
+    "b": "Vɣ"
+  },
+  {
+    "id": "sindarin-r184",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "g < g",
+    "a_formula": "g",
+    "b_formula": "g",
+    "cards": "os, on",
+    "phonemes": [
+      "g"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/21",
+      "PE19/21",
+      "PE19/23",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "g",
+    "b": "g"
+  },
+  {
+    "id": "sindarin-r185",
+    "marker": "N.",
+    "era": "middle",
+    "stage": 2,
+    "rule": "voiced stops became spirants after vowels",
+    "url": "https://eldamo.org/content/words/word-8115507.html",
+    "formula": "Vg > Vɣ",
+    "a_formula": "Vg",
+    "b_formula": "Vɣ",
+    "cards": "os, on",
+    "phonemes": [
+      "g"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vg",
+    "b": "Vɣ"
+  },
+  {
+    "id": "sindarin-r191",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "m < m",
+    "a_formula": "m",
+    "b_formula": "m",
+    "cards": "os, on",
+    "phonemes": [
+      "m"
+    ],
+    "sources": [
+      "PE19/19",
+      "PE19/20",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "m",
+    "b": "m"
+  },
+  {
+    "id": "sindarin-r202",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "n < n",
+    "a_formula": "n",
+    "b_formula": "n",
+    "cards": "os, on",
+    "phonemes": [
+      "n"
+    ],
+    "sources": [
+      "PE19/19",
+      "PE19/20",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "n",
+    "b": "n"
+  },
+  {
+    "id": "sindarin-r207",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ŋ < ŋ",
+    "a_formula": "ŋ",
+    "b_formula": "ŋ",
+    "cards": "os, on",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE19/20"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ŋ",
+    "b": "ŋ"
+  },
+  {
+    "id": "sindarin-r216",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "final [w] usually became [u]",
+    "url": "https://eldamo.org/content/words/word-798091205.html",
+    "formula": "-Cw > -Cu",
+    "a_formula": "-Cw",
+    "b_formula": "-Cu",
+    "cards": "os",
+    "phonemes": [
+      "w"
+    ],
+    "sources": [
+      "PE17/148"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cw",
+    "b": "-Cu"
+  },
+  {
+    "id": "sindarin-r217",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "w < w",
+    "a_formula": "w",
+    "b_formula": "w",
+    "cards": "os, on",
+    "phonemes": [
+      "w"
+    ],
+    "sources": [
+      "PE19/19",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "w",
+    "b": "w"
+  },
+  {
+    "id": "sindarin-r219",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "l < l",
+    "a_formula": "l",
+    "b_formula": "l",
+    "cards": "os, on",
+    "phonemes": [
+      "l"
+    ],
+    "sources": [
+      "PE19/19"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "l",
+    "b": "l"
+  },
+  {
+    "id": "sindarin-r221",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "r < r",
+    "a_formula": "r",
+    "b_formula": "r",
+    "cards": "os, on",
+    "phonemes": [
+      "r"
+    ],
+    "sources": [
+      "PE19/19"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "r",
+    "b": "r"
+  },
+  {
+    "id": "sindarin-r223",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "j < j",
+    "a_formula": "j",
+    "b_formula": "j",
+    "cards": "os, on",
+    "phonemes": [
+      "j"
+    ],
+    "sources": [
+      "PE19/19",
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "j",
+    "b": "j"
+  },
+  {
+    "id": "sindarin-r235",
+    "marker": "OS.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ī < ī",
+    "a_formula": "ī",
+    "b_formula": "ī",
+    "cards": "os",
+    "phonemes": [
+      "ī"
+    ],
+    "sources": [
+      "PE19/91",
+      "PE19/91"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ī",
+    "b": "ī"
+  },
+  {
+    "id": "sindarin-r237",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ī < ī",
+    "a_formula": "ī",
+    "b_formula": "ī",
+    "cards": "os, on",
+    "phonemes": [
+      "ī"
+    ],
+    "sources": [
+      "PE19/25"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ī",
+    "b": "ī"
+  },
+  {
+    "id": "sindarin-r241",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ǭ < ǭ",
+    "a_formula": "ǭ",
+    "b_formula": "ǭ",
+    "cards": "os, on",
+    "phonemes": [
+      "ǭ"
+    ],
+    "sources": [
+      "PE19/25"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ǭ",
+    "b": "ǭ"
+  },
+  {
+    "id": "sindarin-r245",
+    "marker": "OS.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ū < ū",
+    "a_formula": "ū",
+    "b_formula": "ū",
+    "cards": "os",
+    "phonemes": [
+      "ū"
+    ],
+    "sources": [
+      "PE19/91"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ū",
+    "b": "ū"
+  },
+  {
+    "id": "sindarin-r247",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "oi < oi",
+    "a_formula": "oi",
+    "b_formula": "oi",
+    "cards": "os, on",
+    "phonemes": [
+      "ū",
+      "oi"
+    ],
+    "sources": [
+      "PE19/25"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "oi",
+    "b": "oi"
+  },
+  {
+    "id": "sindarin-r250",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ū < ū",
+    "a_formula": "ū",
+    "b_formula": "ū",
+    "cards": "os, on",
+    "phonemes": [
+      "ū"
+    ],
+    "sources": [
+      "PE19/25"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ū",
+    "b": "ū"
+  },
+  {
+    "id": "sindarin-r255",
+    "marker": "OS.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ui < ui",
+    "a_formula": "ui",
+    "b_formula": "ui",
+    "cards": "os",
+    "phonemes": [
+      "ui"
+    ],
+    "sources": [
+      "PE19/91"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ui",
+    "b": "ui"
+  },
+  {
+    "id": "sindarin-r257",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "ui < ui",
+    "a_formula": "ui",
+    "b_formula": "ui",
+    "cards": "os, on",
+    "phonemes": [
+      "ui"
+    ],
+    "sources": [
+      "PE19/25"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "ui",
+    "b": "ui"
+  },
+  {
+    "id": "sindarin-r259",
+    "marker": "OS.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[no change]",
+    "url": "",
+    "formula": "iu < iu",
+    "a_formula": "iu",
+    "b_formula": "iu",
+    "cards": "os",
+    "phonemes": [
+      "iu"
+    ],
+    "sources": [
+      "VT48/7"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "iu",
+    "b": "iu"
+  },
+  {
+    "id": "sindarin-r262",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "initial and intervocalic [ŋ] vanished",
+    "url": "https://eldamo.org/content/words/word-552653835.html",
+    "formula": "VøV < VŋV",
+    "a_formula": "VŋV",
+    "b_formula": "VøV",
+    "cards": "os, on",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VŋV",
+    "b": "VøV"
+  },
+  {
+    "id": "sindarin-r263",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[ɣ] vanished",
+    "url": "https://eldamo.org/content/words/word-3657372981.html",
+    "formula": "ø- < ɣ-",
+    "a_formula": "ɣ-",
+    "b_formula": "ø-",
+    "cards": "os, on",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "PE19/19"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "ɣ-",
+    "b": "ø-"
+  },
+  {
+    "id": "sindarin-r264",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[ɣ] vanished",
+    "url": "https://eldamo.org/content/words/word-3657372981.html",
+    "formula": "ø < ɣ",
+    "a_formula": "ɣ",
+    "b_formula": "ø",
+    "cards": "os, on",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "ɣ",
+    "b": "ø"
+  },
+  {
+    "id": "sindarin-r279",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "aspiration moved to end of group of stops",
+    "url": "",
+    "formula": "p{ptkpʰtʰkʰs} < b{ptkpʰtʰkʰs}",
+    "a_formula": "b{ptkpʰtʰkʰs}",
+    "b_formula": "p{ptkpʰtʰkʰs}",
+    "cards": "p",
+    "phonemes": [
+      "p"
+    ],
+    "sources": [
+      "PE19/90",
+      "PE19/95"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "b{ptkpʰtʰkʰs}",
+    "b": "p{ptkpʰtʰkʰs}"
+  },
+  {
+    "id": "sindarin-r280",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "aspiration moved to end of group of stops",
+    "url": "",
+    "formula": "{ptkmnŋlr}p > {ptkmnŋlr}pʰ",
+    "a_formula": "{ptkmnŋlr}p",
+    "b_formula": "{ptkmnŋlr}pʰ",
+    "cards": "p",
+    "phonemes": [
+      "p"
+    ],
+    "sources": [
+      "PE18/91",
+      "PE19/86"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "{ptkmnŋlr}p",
+    "b": "{ptkmnŋlr}pʰ"
+  },
+  {
+    "id": "sindarin-r289",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "aspiration moved to end of group of stops",
+    "url": "https://eldamo.org/content/words/word-2421096703.html",
+    "formula": "Vp > Vb",
+    "a_formula": "Vp",
+    "b_formula": "Vb",
+    "cards": "p, mp",
+    "phonemes": [
+      "p"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vp",
+    "b": "Vb"
+  },
+  {
+    "id": "sindarin-r293",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "aspiration moved to end of group of stops",
+    "url": "",
+    "formula": "t{ptkpʰtʰkʰs} < d{ptkpʰtʰkʰs}",
+    "a_formula": "d{ptkpʰtʰkʰs}",
+    "b_formula": "t{ptkpʰtʰkʰs}",
+    "cards": "p",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE19/90",
+      "PE19/95"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "d{ptkpʰtʰkʰs}",
+    "b": "t{ptkpʰtʰkʰs}"
+  },
+  {
+    "id": "sindarin-r294",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "aspiration moved to end of group of stops",
+    "url": "",
+    "formula": "{pʰtʰkʰptk}d > {pʰtʰkʰptk}t",
+    "a_formula": "{pʰtʰkʰptk}d",
+    "b_formula": "{pʰtʰkʰptk}t",
+    "cards": "p",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE18/102"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "{pʰtʰkʰptk}d",
+    "b": "{pʰtʰkʰptk}t"
+  },
+  {
+    "id": "sindarin-r299",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "formula": "t+t > st",
+    "a_formula": "t+t",
+    "b_formula": "st",
+    "cards": "p",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE18/102",
+      "PE19/82",
+      "PE19/84",
+      "PE19/87",
+      "PE18/91",
+      "VT42/18"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "t+t",
+    "b": "st"
+  },
+  {
+    "id": "sindarin-r306",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "aspirate became voiceless stop before [s]",
+    "url": "https://eldamo.org/content/words/word-2421096703.html",
+    "formula": "Vt > Vd",
+    "a_formula": "Vt",
+    "b_formula": "Vd",
+    "cards": "p, mp",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vt",
+    "b": "Vd"
+  },
+  {
+    "id": "sindarin-r307",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "formula": "t+t > st",
+    "a_formula": "t+t",
+    "b_formula": "st",
+    "cards": "p, mp",
+    "phonemes": [
+      "t"
+    ],
+    "sources": [
+      "PE19/51"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "t+t",
+    "b": "st"
+  },
+  {
+    "id": "sindarin-r323",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "aspiration moved to end of group of stops",
+    "url": "https://eldamo.org/content/words/word-1848454147.html",
+    "formula": "Xw > Xv",
+    "a_formula": "Xw",
+    "b_formula": "Xv",
+    "cards": "p, mp",
+    "phonemes": [
+      "k"
+    ],
+    "sources": [
+      "PE19/18",
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Xw",
+    "b": "Xv"
+  },
+  {
+    "id": "sindarin-r324",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "aspiration moved to end of group of stops",
+    "url": "https://eldamo.org/content/words/word-2421096703.html",
+    "formula": "Vk > Vg",
+    "a_formula": "Vk",
+    "b_formula": "Vg",
+    "cards": "p, mp",
+    "phonemes": [
+      "k"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vk",
+    "b": "Vg"
+  },
+  {
+    "id": "sindarin-r328",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[pw], [pʰw] became [pp], [pʰp]",
+    "url": "",
+    "formula": "{ptk}pʰ > {ptk}p",
+    "a_formula": "{ptk}pʰ",
+    "b_formula": "{ptk}p",
+    "cards": "p",
+    "phonemes": [
+      "pʰ"
+    ],
+    "sources": [
+      "PE18/91"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "{ptk}pʰ",
+    "b": "{ptk}p"
+  },
+  {
+    "id": "sindarin-r352",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "formula": "d+d > zd",
+    "a_formula": "d+d",
+    "b_formula": "zd",
+    "cards": "p",
+    "phonemes": [
+      "d"
+    ],
+    "sources": [
+      "PE18/102",
+      "PE19/82",
+      "PE19/90",
+      "PE18/91"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "d+d",
+    "b": "zd"
+  },
+  {
+    "id": "sindarin-r355",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "formula": "d+d > zd",
+    "a_formula": "d+d",
+    "b_formula": "zd",
+    "cards": "p, mp",
+    "phonemes": [
+      "d"
+    ],
+    "sources": [
+      "PE19/51"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "d+d",
+    "b": "zd"
+  },
+  {
+    "id": "sindarin-r379",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "formula": "-Cm- < -Cmb-",
+    "a_formula": "-Cmb-",
+    "b_formula": "-Cm-",
+    "cards": "p",
+    "phonemes": [
+      "m"
+    ],
+    "sources": [
+      "PE19/81"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cmb-",
+    "b": "-Cm-"
+  },
+  {
+    "id": "sindarin-r383",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "formula": "-Cmb- > -Cm-",
+    "a_formula": "-Cmb-",
+    "b_formula": "-Cm-",
+    "cards": "p",
+    "phonemes": [
+      "m"
+    ],
+    "sources": [
+      "PE19/81"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cmb-",
+    "b": "-Cm-"
+  },
+  {
+    "id": "sindarin-r389",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "final nasals vanished after vowels",
+    "url": "https://eldamo.org/content/words/word-876455981.html",
+    "formula": "-Vm > -Vø",
+    "a_formula": "-Vm",
+    "b_formula": "-Vø",
+    "cards": "p",
+    "phonemes": [
+      "m"
+    ],
+    "sources": [
+      "VT47/10"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Vm",
+    "b": "-Vø"
+  },
+  {
+    "id": "sindarin-r394",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "metathesis",
+    "url": "https://eldamo.org/content/words/word-3538536723.html",
+    "formula": "sC- > øC-",
+    "a_formula": "sC-",
+    "b_formula": "øC-",
+    "cards": "p, mp",
+    "phonemes": [
+      "m"
+    ],
+    "sources": [
+      "PE19/21"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "sC-",
+    "b": "øC-"
+  },
+  {
+    "id": "sindarin-r399",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "formula": "-Cn- < -Cnd-",
+    "a_formula": "-Cnd-",
+    "b_formula": "-Cn-",
+    "cards": "p",
+    "phonemes": [
+      "n"
+    ],
+    "sources": [
+      "PE19/81"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cnd-",
+    "b": "-Cn-"
+  },
+  {
+    "id": "sindarin-r401",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "final [m] became [n]",
+    "url": "",
+    "formula": "Vnr > V̄ør",
+    "a_formula": "Vnr",
+    "b_formula": "V̄ør",
+    "cards": "p",
+    "phonemes": [
+      "n"
+    ],
+    "sources": [
+      "PE17/162"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vnr",
+    "b": "V̄ør"
+  },
+  {
+    "id": "sindarin-r405",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "formula": "-Cnd- > -Cn-",
+    "a_formula": "-Cnd-",
+    "b_formula": "-Cn-",
+    "cards": "p",
+    "phonemes": [
+      "n"
+    ],
+    "sources": [
+      "PE19/81"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cnd-",
+    "b": "-Cn-"
+  },
+  {
+    "id": "sindarin-r411",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "nasals assimilated to following stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-3538536723.html",
+    "formula": "sC- > øC-",
+    "a_formula": "sC-",
+    "b_formula": "øC-",
+    "cards": "p, mp",
+    "phonemes": [
+      "n"
+    ],
+    "sources": [
+      "PE19/21"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "sC-",
+    "b": "øC-"
+  },
+  {
+    "id": "sindarin-r416",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "formula": "-Cŋ- < -Cŋg-",
+    "a_formula": "-Cŋg-",
+    "b_formula": "-Cŋ-",
+    "cards": "p",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE19/81"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cŋg-",
+    "b": "-Cŋ-"
+  },
+  {
+    "id": "sindarin-r422",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "url": "",
+    "formula": "V̄ŋ{rlmn} > V̄{rlmn}",
+    "a_formula": "V̄ŋ{rlmn}",
+    "b_formula": "V̄{rlmn}",
+    "cards": "p",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE18/103"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "V̄ŋ{rlmn}",
+    "b": "V̄{rlmn}"
+  },
+  {
+    "id": "sindarin-r427",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "initial and intervocalic [ŋ] vanished",
+    "url": "https://eldamo.org/content/words/word-552653835.html",
+    "formula": "ŋ- > ø-",
+    "a_formula": "ŋ-",
+    "b_formula": "ø-",
+    "cards": "p, mp",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE18/105",
+      "PE18/105",
+      "PE18/104",
+      "PE18/104",
+      "PE19/19"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "ŋ-",
+    "b": "ø-"
+  },
+  {
+    "id": "sindarin-r430",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "https://eldamo.org/content/words/word-768986721.html",
+    "formula": "VŋV > VɣV",
+    "a_formula": "VŋV",
+    "b_formula": "VɣV",
+    "cards": "p",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE18/102",
+      "PE19/72",
+      "PE19/95"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VŋV",
+    "b": "VɣV"
+  },
+  {
+    "id": "sindarin-r436",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "formula": "-Cŋg- > -Cŋ-",
+    "a_formula": "-Cŋg-",
+    "b_formula": "-Cŋ-",
+    "cards": "p",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE19/81"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Cŋg-",
+    "b": "-Cŋ-"
+  },
+  {
+    "id": "sindarin-r438",
+    "marker": "S.",
+    "era": "late",
+    "stage": 3,
+    "rule": "[ŋ] vanished with compensatory lengthening",
+    "url": "https://eldamo.org/content/words/word-3707785609.html",
+    "formula": "Vŋn > V̄n",
+    "a_formula": "Vŋn",
+    "b_formula": "V̄n",
+    "cards": "p",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE22/149"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vŋn",
+    "b": "V̄n"
+  },
+  {
+    "id": "sindarin-r442",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "nasals assimilated to following stops and aspirates",
+    "url": "https://eldamo.org/content/words/word-1844604693.html",
+    "formula": "VŋV > VɣV",
+    "a_formula": "VŋV",
+    "b_formula": "VɣV",
+    "cards": "p, mp",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VŋV",
+    "b": "VɣV"
+  },
+  {
+    "id": "sindarin-r448",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "https://eldamo.org/content/words/word-3915121695.html",
+    "formula": "VŋV > VɣV",
+    "a_formula": "VŋV",
+    "b_formula": "VɣV",
+    "cards": "p, mp",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE18/54"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VŋV",
+    "b": "VɣV"
+  },
+  {
+    "id": "sindarin-r453",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "initial and intervocalic [ŋ] vanished",
+    "url": "https://eldamo.org/content/words/word-552653835.html",
+    "formula": "VŋV > VøV",
+    "a_formula": "VŋV",
+    "b_formula": "VøV",
+    "cards": "p, mp",
+    "phonemes": [
+      "ŋ"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VŋV",
+    "b": "VøV"
+  },
+  {
+    "id": "sindarin-r458",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "https://eldamo.org/content/words/word-768986721.html",
+    "formula": "VɣV < VŋV",
+    "a_formula": "VŋV",
+    "b_formula": "VɣV",
+    "cards": "p",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE18/102",
+      "PE19/72",
+      "PE19/95"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VŋV",
+    "b": "VɣV"
+  },
+  {
+    "id": "sindarin-r459",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "",
+    "formula": "xs > xs",
+    "a_formula": "xs",
+    "b_formula": "xs",
+    "cards": "p",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "VT47/12"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "xs",
+    "b": "xs"
+  },
+  {
+    "id": "sindarin-r461",
+    "marker": "OS.",
+    "era": "late",
+    "stage": 2,
+    "rule": "initial [ɣ]/[h] vanished",
+    "url": "https://eldamo.org/content/words/word-1117448055.html",
+    "formula": "ɣ- > ø-",
+    "a_formula": "ɣ-",
+    "b_formula": "ø-",
+    "cards": "p",
+    "phonemes": [
+      "ɣ",
+      "h"
+    ],
+    "sources": [
+      "PE18/105",
+      "PE18/104",
+      "VT48/26"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "ɣ-",
+    "b": "ø-"
+  },
+  {
+    "id": "sindarin-r463",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "url": "https://eldamo.org/content/words/word-794129503.html",
+    "formula": "xtʰ > xtʰ",
+    "a_formula": "xtʰ",
+    "b_formula": "xtʰ",
+    "cards": "p",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE18/82",
+      "PE18/89"
+    ],
+    "audit": "mismatch_or_context",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "xtʰ",
+    "b": "xtʰ"
+  },
+  {
+    "id": "sindarin-r464",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "-ɣ- > -ø-",
+    "a_formula": "-ɣ-",
+    "b_formula": "-ø-",
+    "cards": "p",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "VT47/6"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "-ɣ-",
+    "b": "-ø-"
+  },
+  {
+    "id": "sindarin-r465",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "aɣC > āC",
+    "a_formula": "aɣC",
+    "b_formula": "āC",
+    "cards": "p",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "VT47/12"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "aɣC",
+    "b": "āC"
+  },
+  {
+    "id": "sindarin-r467",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "https://eldamo.org/content/words/word-3915121695.html",
+    "formula": "VɣV < VŋV",
+    "a_formula": "VŋV",
+    "b_formula": "VɣV",
+    "cards": "p, mp",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE18/54"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VŋV",
+    "b": "VɣV"
+  },
+  {
+    "id": "sindarin-r472",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "https://eldamo.org/content/words/word-3116721073.html",
+    "formula": "Vht > V̄t",
+    "a_formula": "Vht",
+    "b_formula": "V̄t",
+    "cards": "p, mp",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE18/104"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vht",
+    "b": "V̄t"
+  },
+  {
+    "id": "sindarin-r474",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "url": "https://eldamo.org/content/words/word-1476955021.html",
+    "formula": "ɣ > ø",
+    "a_formula": "ɣ",
+    "b_formula": "ø",
+    "cards": "p, mp",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "ɣ",
+    "b": "ø"
+  },
+  {
+    "id": "sindarin-r478",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[ɣ] vanished",
+    "url": "https://eldamo.org/content/words/word-3657372981.html",
+    "formula": "ɣ- > ø-",
+    "a_formula": "ɣ-",
+    "b_formula": "ø-",
+    "cards": "p, mp",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE19/19"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "ɣ-",
+    "b": "ø-"
+  },
+  {
+    "id": "sindarin-r479",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "[ɣ] vanished",
+    "url": "https://eldamo.org/content/words/word-3657372981.html",
+    "formula": "ɣ > ø",
+    "a_formula": "ɣ",
+    "b_formula": "ø",
+    "cards": "p, mp",
+    "phonemes": [
+      "ɣ"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "ɣ",
+    "b": "ø"
+  },
+  {
+    "id": "sindarin-r487",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "formula": "st < t+t",
+    "a_formula": "t+t",
+    "b_formula": "st",
+    "cards": "p",
+    "phonemes": [
+      "s"
+    ],
+    "sources": [
+      "PE18/102",
+      "PE19/82",
+      "PE19/84",
+      "PE19/87"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "t+t",
+    "b": "st"
+  },
+  {
+    "id": "sindarin-r496",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "formula": "st < t+t",
+    "a_formula": "t+t",
+    "b_formula": "st",
+    "cards": "p, mp",
+    "phonemes": [
+      "s"
+    ],
+    "sources": [
+      "PE19/51"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "t+t",
+    "b": "st"
+  },
+  {
+    "id": "sindarin-r509",
+    "marker": "ON.",
+    "era": "middle",
+    "stage": 1,
+    "rule": "intervocalic [s] became [h]",
+    "url": "https://eldamo.org/content/words/word-4036446677.html",
+    "formula": "VsV > VhV",
+    "a_formula": "VsV",
+    "b_formula": "VhV",
+    "cards": "p, mp",
+    "phonemes": [
+      "s"
+    ],
+    "sources": [
+      "PE19/23"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "VsV",
+    "b": "VhV"
+  },
+  {
+    "id": "sindarin-r513",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "formula": "zd < d+d",
+    "a_formula": "d+d",
+    "b_formula": "zd",
+    "cards": "p",
+    "phonemes": [
+      "z"
+    ],
+    "sources": [
+      "PE18/102",
+      "PE19/82",
+      "PE19/90"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "d+d",
+    "b": "zd"
+  },
+  {
+    "id": "sindarin-r516",
+    "marker": "OS.",
+    "era": "late",
+    "stage": 2,
+    "rule": "[z] vanished before [d] lengthening preceding vowel",
+    "url": "https://eldamo.org/content/words/word-1249932447.html",
+    "formula": "Vzd > V̄d",
+    "a_formula": "Vzd",
+    "b_formula": "V̄d",
+    "cards": "p",
+    "phonemes": [
+      "z"
+    ],
+    "sources": [
+      "PE19/91",
+      "PE19/101"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "Vzd",
+    "b": "V̄d"
+  },
+  {
+    "id": "sindarin-r521",
+    "marker": "ᴹ✶",
+    "era": "middle",
+    "stage": 0,
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "formula": "zd < d+d",
+    "a_formula": "d+d",
+    "b_formula": "zd",
+    "cards": "p, mp",
+    "phonemes": [
+      "z"
+    ],
+    "sources": [
+      "PE19/51"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "d+d",
+    "b": "zd"
+  },
+  {
+    "id": "sindarin-r523",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "url": "https://eldamo.org/content/words/word-794129503.html",
+    "formula": "xtʰ < xtʰ",
+    "a_formula": "xtʰ",
+    "b_formula": "xtʰ",
+    "cards": "p",
+    "phonemes": [
+      "h"
+    ],
+    "sources": [
+      "PE18/82",
+      "PE18/89"
+    ],
+    "audit": "mismatch_or_context",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "xtʰ",
+    "b": "xtʰ"
+  },
+  {
+    "id": "sindarin-r524",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "url": "",
+    "formula": "xs < xs",
+    "a_formula": "xs",
+    "b_formula": "xs",
+    "cards": "p",
+    "phonemes": [
+      "h"
+    ],
+    "sources": [
+      "VT47/12"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "no_sound_change"
+    ],
+    "a": "xs",
+    "b": "xs"
+  },
+  {
+    "id": "sindarin-r525",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "url": "",
+    "formula": "h- > ø-",
+    "a_formula": "h-",
+    "b_formula": "ø-",
+    "cards": "p",
+    "phonemes": [
+      "h"
+    ],
+    "sources": [
+      "PE19/74",
+      "WJ/365",
+      "WJ/369"
+    ],
+    "audit": "unverified_no_matching_example",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "h-",
+    "b": "ø-"
+  },
+  {
+    "id": "sindarin-r526",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "-h- > -ø-",
+    "a_formula": "-h-",
+    "b_formula": "-ø-",
+    "cards": "p",
+    "phonemes": [
+      "h"
+    ],
+    "sources": [
+      "PE19/74",
+      "WJ/368"
+    ],
+    "audit": "mismatch_or_context",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "-h-",
+    "b": "-ø-"
+  },
+  {
+    "id": "sindarin-r531",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "iɣC > īC",
+    "a_formula": "iɣC",
+    "b_formula": "īC",
+    "cards": "p",
+    "phonemes": [
+      "i"
+    ],
+    "sources": [
+      "PE18/98"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "iɣC",
+    "b": "īC"
+  },
+  {
+    "id": "sindarin-r532",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "short final [i], [u] became [e], [o]",
+    "url": "https://eldamo.org/content/words/word-3064357955.html",
+    "formula": "-Se < -Sĭ",
+    "a_formula": "-Sĭ",
+    "b_formula": "-Se",
+    "cards": "p",
+    "phonemes": [
+      "e"
+    ],
+    "sources": [
+      "PE19/100"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Sĭ",
+    "b": "-Se"
+  },
+  {
+    "id": "sindarin-r538",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "short final [i], [u] became [e], [o]",
+    "url": "https://eldamo.org/content/words/word-3064357955.html",
+    "formula": "-So < -Sŭ",
+    "a_formula": "-Sŭ",
+    "b_formula": "-So",
+    "cards": "p",
+    "phonemes": [
+      "o"
+    ],
+    "sources": [
+      "PE19/100"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "-Sŭ",
+    "b": "-So"
+  },
+  {
+    "id": "sindarin-r541",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "uɣC > ūC",
+    "a_formula": "uɣC",
+    "b_formula": "ūC",
+    "cards": "p",
+    "phonemes": [
+      "u"
+    ],
+    "sources": [
+      "PE18/98"
+    ],
+    "audit": "mismatch_or_context",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "uɣC",
+    "b": "ūC"
+  },
+  {
+    "id": "sindarin-r542",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "īC < iɣC",
+    "a_formula": "iɣC",
+    "b_formula": "īC",
+    "cards": "p",
+    "phonemes": [
+      "ī"
+    ],
+    "sources": [
+      "PE18/98"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "iɣC",
+    "b": "īC"
+  },
+  {
+    "id": "sindarin-r556",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "ūC < uɣC",
+    "a_formula": "uɣC",
+    "b_formula": "ūC",
+    "cards": "p",
+    "phonemes": [
+      "ū"
+    ],
+    "sources": [
+      "PE18/98"
+    ],
+    "audit": "mismatch_or_context",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "uɣC",
+    "b": "ūC"
+  },
+  {
+    "id": "sindarin-r568",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "-ø- < -h-",
+    "a_formula": "-h-",
+    "b_formula": "-ø-",
+    "cards": "p",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "PE19/74",
+      "WJ/368"
+    ],
+    "audit": "mismatch_or_context",
+    "tested": false,
+    "exact": false,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "-h-",
+    "b": "-ø-"
+  },
+  {
+    "id": "sindarin-r569",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "-ø- < -ɣ-",
+    "a_formula": "-ɣ-",
+    "b_formula": "-ø-",
+    "cards": "p",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "VT47/6"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "a": "-ɣ-",
+    "b": "-ø-"
+  },
+  {
+    "id": "sindarin-r570",
+    "marker": "✶",
+    "era": "late",
+    "stage": 0,
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "formula": "āC < aɣC",
+    "a_formula": "aɣC",
+    "b_formula": "āC",
+    "cards": "p",
+    "phonemes": [
+      "ø"
+    ],
+    "sources": [
+      "VT47/12"
+    ],
+    "audit": "reproduced",
+    "tested": true,
+    "exact": true,
+    "comment": "",
+    "cautions": "Результат атомарной проекции. Проверяйте языковую ступень, диалект, историческую редакцию и фонетическое окружение.",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "a": "aɣC",
+    "b": "āC"
+  }
+]

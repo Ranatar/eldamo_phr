@@ -1,0 +1,2797 @@
+[
+  {
+    "rule_id": "quenya-r1",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "p < p",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3199069529.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r2",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "{ptk}p < {ptk}pʰ",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3199069529.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r7",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[no change]",
+    "formula": "p < p",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3199069529.html",
+      "https://eldamo.org/content/words/word-1115589543.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r12",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "t < t",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1580376311.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r13",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "{rl}t < {rl}θ",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1580376311.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r15",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[no change]",
+    "formula": "t < t",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1580376311.html",
+      "https://eldamo.org/content/words/word-2475706317.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r24",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "k < k",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3074952291.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r28",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[no change]",
+    "formula": "k < k",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3074952291.html",
+      "https://eldamo.org/content/words/word-1562925251.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r33",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "kʷ < kʷ",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2847551335.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r34",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[no change]",
+    "formula": "kʷ < kʷ",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2847551335.html",
+      "https://eldamo.org/content/words/word-2561073859.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r35",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[no change]",
+    "formula": "d < d",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3760181617.html",
+      "https://eldamo.org/content/words/word-1330197877.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r36",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "medial [ŋ] after a [n], [ŋ], [l], [r] became [g]",
+    "formula": "-{nŋlr}g- < -{nŋlr}ŋ-",
+    "url": "https://eldamo.org/content/words/word-447633467.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 1,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-398678123.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r42",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "s < s",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4132533271.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r43",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "st < t+t",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 7,
+    "reproduced_source_examples": 7,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4132533271.html",
+      "https://eldamo.org/content/words/word-4003450521.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r44",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "zd < d+d",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 10,
+    "reproduced_source_examples": 8,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4132533271.html",
+      "https://eldamo.org/content/words/word-3318220985.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r49",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[no change]",
+    "formula": "s < s",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4132533271.html",
+      "https://eldamo.org/content/words/word-4283160779.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r77",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "m < m",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2265605727.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r83",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[no change]",
+    "formula": "m < m",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2265605727.html",
+      "https://eldamo.org/content/words/word-2242985543.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r87",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "n < n",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4008416093.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r88",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [d] assimilated to following nasal",
+    "formula": "nVXn- < dVXn-",
+    "url": "https://eldamo.org/content/words/word-2885687903.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 8,
+    "reproduced_source_examples": 5,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4008416093.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r98",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[no change]",
+    "formula": "n < n",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4008416093.html",
+      "https://eldamo.org/content/words/word-435531111.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r106",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "ŋ < ŋ",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2622443799.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r111",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[no change]",
+    "formula": "ŋ < ŋ",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2622443799.html",
+      "https://eldamo.org/content/words/word-420053627.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r114",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "ŋʷ < ŋʷ",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1778211699.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r115",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[no change]",
+    "formula": "ŋʷ < ŋʷ",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1778211699.html",
+      "https://eldamo.org/content/words/word-3770965451.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r116",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "w < w",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2513840023.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r120",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ɣ] from [g] vanished",
+    "formula": "ø < ɣ",
+    "url": "https://eldamo.org/content/words/word-1833409085.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 232,
+    "reproduced_source_examples": 200,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2513840023.html",
+      "https://eldamo.org/content/words/word-1332141925.html",
+      "https://eldamo.org/content/words/word-3998073975.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r121",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ɣ] from [g] vanished",
+    "formula": "w-|VwV > β-|VβV",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2513840023.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r122",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ɣ] from [g] vanished",
+    "formula": "w-|VwV > v-|VvV",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2513840023.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r123",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[no change]",
+    "formula": "w < w",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2513840023.html",
+      "https://eldamo.org/content/words/word-1348310227.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r124",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[ɣ] from [g] vanished",
+    "formula": "ø < ɣ",
+    "url": "https://eldamo.org/content/words/word-3266317297.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 137,
+    "reproduced_source_examples": 124,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2513840023.html",
+      "https://eldamo.org/content/words/word-3998073975.html",
+      "https://eldamo.org/content/words/word-1348310227.html",
+      "https://eldamo.org/content/words/word-114918613.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r127",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "l < l",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-522795361.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r132",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[no change]",
+    "formula": "l < l",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-522795361.html",
+      "https://eldamo.org/content/words/word-4050439045.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r136",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "medial [ð] dissimilated to [l] after [r]",
+    "formula": "rVl < rVð",
+    "url": "https://eldamo.org/content/words/word-687907123.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-522795361.html",
+      "https://eldamo.org/content/words/word-4050439045.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r140",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "r < r",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2389722935.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r141",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "V̄ør < Vnr",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2389722935.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r143",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "intervocalic [ð] became [r]",
+    "formula": "VrV < VðV",
+    "url": "https://eldamo.org/content/words/word-2793529037.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 29,
+    "reproduced_source_examples": 20,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2389722935.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r148",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[no change]",
+    "formula": "r < r",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2389722935.html",
+      "https://eldamo.org/content/words/word-1795647945.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r149",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "intervocalic [ð] became [r]",
+    "formula": "VrV < VðV",
+    "url": "https://eldamo.org/content/words/word-3914129125.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 13,
+    "reproduced_source_examples": 8,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2389722935.html",
+      "https://eldamo.org/content/words/word-1795647945.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r152",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[no change]",
+    "formula": "j < j",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1332141925.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r155",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ɣ] became [j] between [i], [e] and a vowel",
+    "formula": "ijV < iɣV",
+    "url": "https://eldamo.org/content/words/word-1700576467.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1332141925.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r156",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ɣ] became [j] between [i], [e] and a vowel",
+    "formula": "ejV < eɣV",
+    "url": "https://eldamo.org/content/words/word-1700576467.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 1,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1332141925.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r158",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[no change]",
+    "formula": "j < j",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1332141925.html",
+      "https://eldamo.org/content/words/word-3370378753.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r159",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[ɣ] between a vowel and [e] and became [j]",
+    "formula": "Vje < Vɣe",
+    "url": "https://eldamo.org/content/words/word-2632900125.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 3,
+    "reproduced_source_examples": 1,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1332141925.html",
+      "https://eldamo.org/content/words/word-3370378753.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r178",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "formula": "Vij < Vɣj",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 5,
+    "reproduced_source_examples": 5,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3884298855.html",
+      "https://eldamo.org/content/words/word-847138919.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r179",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "nasals and liquids often became syllabic after a consonant",
+    "formula": "Car < Cr",
+    "url": "https://eldamo.org/content/words/word-613618983.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2826717815.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r185",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "formula": "Vuw < Vɣw",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3323186647.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r209",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [ŋ] vanished",
+    "formula": "øV- < ŋV-",
+    "url": "https://eldamo.org/content/words/word-923465271.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "mismatch_or_context",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3998073975.html",
+      "https://eldamo.org/content/words/word-114918613.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r271",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "[ɣ] between a vowel and [e] and became [j]",
+    "formula": "Vɣe > Vje",
+    "url": "https://eldamo.org/content/words/word-2632900125.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 3,
+    "reproduced_source_examples": 1,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1974534919.html",
+      "https://eldamo.org/content/words/word-1267389919.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r272",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[ɣ] from [g] vanished",
+    "formula": "ɣ > ø",
+    "url": "https://eldamo.org/content/words/word-3266317297.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 137,
+    "reproduced_source_examples": 124,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1974534919.html",
+      "https://eldamo.org/content/words/word-2910669867.html",
+      "https://eldamo.org/content/words/word-1267389919.html",
+      "https://eldamo.org/content/words/word-222783575.html",
+      "https://eldamo.org/content/words/word-269595403.html",
+      "https://eldamo.org/content/words/word-853983385.html",
+      "https://eldamo.org/content/words/word-496207673.html",
+      "https://eldamo.org/content/words/word-1432348171.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r273",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "formula": "VβC > VuC",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 23,
+    "reproduced_source_examples": 19,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3003813833.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r275",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ɸ], [β] became [f], [v]",
+    "formula": "{rl}β > {rl}b",
+    "url": "https://eldamo.org/content/words/word-3388104565.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3003813833.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r280",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "intervocalic [ð] became [r]",
+    "formula": "VðV > VrV",
+    "url": "https://eldamo.org/content/words/word-2793529037.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 29,
+    "reproduced_source_examples": 20,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3461377093.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r281",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "medial [s] often became [z]",
+    "formula": "VzV < VsV",
+    "url": "https://eldamo.org/content/words/word-127393503.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 33,
+    "reproduced_source_examples": 32,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1992638809.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r294",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "medial [s] often became [z]",
+    "formula": "VzV < VsV",
+    "url": "https://eldamo.org/content/words/word-2951986869.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 9,
+    "reproduced_source_examples": 8,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1992638809.html",
+      "https://eldamo.org/content/words/word-1828606519.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r305",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ɣ] became [j] between [i], [e] and a vowel",
+    "formula": "iɣV > ijV",
+    "url": "https://eldamo.org/content/words/word-1700576467.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2910669867.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r306",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "formula": "Vɣj > Vij",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 5,
+    "reproduced_source_examples": 5,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2910669867.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r307",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "formula": "Vɣw > Vuw",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2910669867.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r308",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "formula": "aɣC > āC",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 12,
+    "reproduced_source_examples": 11,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2910669867.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r309",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ɣ] from [g] vanished",
+    "formula": "ɣ > ø",
+    "url": "https://eldamo.org/content/words/word-1833409085.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 232,
+    "reproduced_source_examples": 200,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2910669867.html",
+      "https://eldamo.org/content/words/word-269595403.html",
+      "https://eldamo.org/content/words/word-853983385.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r312",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[lɣ], [rɣ] became [ll], [rr]",
+    "formula": "{rl}ɣ > {rl}g",
+    "url": "https://eldamo.org/content/words/word-3388104565.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2910669867.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r313",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[lɣ], [rɣ] became [ll], [rr]",
+    "formula": "{rl}ɣw > {rl}øw",
+    "url": "https://eldamo.org/content/words/word-3388104565.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2910669867.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r329",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[z] plus voiced stop became unvoiced",
+    "formula": "s{ptk} < z{bdg}",
+    "url": "https://eldamo.org/content/words/word-3279729471.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1759918155.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r343",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [s] plus voiceless stops became voiceless spirants",
+    "formula": "{rl}θ > {rl}t",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-749021653.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r378",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[no change]",
+    "formula": "ŋ < ŋ",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2191778299.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r396",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[n], [m] became [t], [w] after voiceless stops and aspirates",
+    "formula": "w-|VwV > β-|VβV",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3120034899.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r425",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "short final [i], [u] became [e], [o]",
+    "formula": "-Sĭ > -Se",
+    "url": "https://eldamo.org/content/words/word-3064357955.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 266,
+    "reproduced_source_examples": 248,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2654593351.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r426",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[r], [l] often became syllabic in clusters",
+    "formula": "CCar < CCr",
+    "url": "https://eldamo.org/content/words/word-825670671.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 3,
+    "reproduced_source_examples": 3,
+    "unsupported_example_reasons": "unsupported:unaligned insertion/deletion",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4229326919.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r427",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "formula": "VuC < VβC",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 23,
+    "reproduced_source_examples": 19,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2439976527.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r428",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "short final [i], [u] became [e], [o]",
+    "formula": "-Sŭ > -So",
+    "url": "https://eldamo.org/content/words/word-3064357955.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 67,
+    "reproduced_source_examples": 58,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2439976527.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r431",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[β], [ɣ] vocalized before voiced consonants",
+    "formula": "āC < aɣC",
+    "url": "https://eldamo.org/content/words/word-1104502097.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 12,
+    "reproduced_source_examples": 11,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1886643285.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r432",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "nasals and liquids often became syllabic after a consonant",
+    "formula": "Cr > Car",
+    "url": "https://eldamo.org/content/words/word-613618983.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1886643285.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r437",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspiration moved to end of group of stops",
+    "formula": "p{ptkpʰtʰkʰs} < b{ptkpʰtʰkʰs}",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3069986809.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r438",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspiration moved to end of group of stops",
+    "formula": "{ptkmnŋlr}p > {ptkmnŋlr}pʰ",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3069986809.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r446",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspiration moved to end of group of stops",
+    "formula": "Vp > Vb",
+    "url": "https://eldamo.org/content/words/word-2421096703.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 1,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3069986809.html",
+      "https://eldamo.org/content/words/word-1408992549.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r456",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspiration moved to end of group of stops",
+    "formula": "t{ptkpʰtʰkʰs} < d{ptkpʰtʰkʰs}",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1451293561.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r457",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspiration moved to end of group of stops",
+    "formula": "{pʰtʰkʰptk}d > {pʰtʰkʰptk}t",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1451293561.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r462",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "t+t > st",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 7,
+    "reproduced_source_examples": 7,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1451293561.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r469",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspirate became voiceless stop before [s]",
+    "formula": "Vt > Vd",
+    "url": "https://eldamo.org/content/words/word-2421096703.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 7,
+    "reproduced_source_examples": 6,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1451293561.html",
+      "https://eldamo.org/content/words/word-2769109293.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r475",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "t+t > st",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1451293561.html",
+      "https://eldamo.org/content/words/word-2769109293.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r490",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspiration moved to end of group of stops",
+    "formula": "Xw > Xv",
+    "url": "https://eldamo.org/content/words/word-1848454147.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 3,
+    "reproduced_source_examples": 3,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2945869571.html",
+      "https://eldamo.org/content/words/word-1856328257.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r491",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspiration moved to end of group of stops",
+    "formula": "Vk > Vg",
+    "url": "https://eldamo.org/content/words/word-2421096703.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 12,
+    "reproduced_source_examples": 10,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2945869571.html",
+      "https://eldamo.org/content/words/word-1856328257.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r498",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[pw], [pʰw] became [pp], [pʰp]",
+    "formula": "{ptk}pʰ > {ptk}p",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2137826555.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r508",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "formula": "-Vf- > -Vv-",
+    "url": "https://eldamo.org/content/words/word-3083451453.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2137826555.html",
+      "https://eldamo.org/content/words/word-2034356809.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r510",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "formula": "-Vf- > -Vv-",
+    "url": "https://eldamo.org/content/words/word-4105744097.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2137826555.html",
+      "https://eldamo.org/content/words/word-2034356809.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r526",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "formula": "-Vθ- > -Vð-",
+    "url": "https://eldamo.org/content/words/word-3083451453.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1351772659.html",
+      "https://eldamo.org/content/words/word-3436486089.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r529",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "formula": "-Vθ- > -Vð-",
+    "url": "https://eldamo.org/content/words/word-4105744097.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 3,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1351772659.html",
+      "https://eldamo.org/content/words/word-3436486089.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r539",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "stops frequently underwent metathesis with nasals and liquids",
+    "formula": "-x- > -ø-",
+    "url": "https://eldamo.org/content/words/word-4185900741.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 3,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3120389275.html",
+      "https://eldamo.org/content/words/word-2429116547.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r556",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "formula": "Vb > Vv",
+    "url": "https://eldamo.org/content/words/word-3689929017.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-145478165.html",
+      "https://eldamo.org/content/words/word-943540591.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r557",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "formula": "Vb > Vv",
+    "url": "https://eldamo.org/content/words/word-501836955.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 7,
+    "reproduced_source_examples": 7,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-145478165.html",
+      "https://eldamo.org/content/words/word-943540591.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r565",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "medial [s] often became [z]",
+    "formula": "VsV > VzV",
+    "url": "https://eldamo.org/content/words/word-2951986869.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 9,
+    "reproduced_source_examples": 8,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-145478165.html",
+      "https://eldamo.org/content/words/word-4003450521.html",
+      "https://eldamo.org/content/words/word-943540591.html",
+      "https://eldamo.org/content/words/word-281596459.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r568",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [d] assimilated to following nasal",
+    "formula": "dVXn- > nVXn-",
+    "url": "https://eldamo.org/content/words/word-2885687903.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 8,
+    "reproduced_source_examples": 5,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3631098897.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r576",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "d+d > zd",
+    "url": "https://eldamo.org/content/words/word-2479050823.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 10,
+    "reproduced_source_examples": 8,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3631098897.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r579",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "formula": "Vd > Vð",
+    "url": "https://eldamo.org/content/words/word-501836955.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 5,
+    "reproduced_source_examples": 5,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3631098897.html",
+      "https://eldamo.org/content/words/word-1623600883.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r589",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "d+d > zd",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3631098897.html",
+      "https://eldamo.org/content/words/word-1623600883.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r590",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "medial [ð] dissimilated to [l] after [r]",
+    "formula": "rVð > rVl",
+    "url": "https://eldamo.org/content/words/word-687907123.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3631098897.html",
+      "https://eldamo.org/content/words/word-1623600883.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r591",
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "intervocalic [ð] became [r]",
+    "formula": "VðV > VrV",
+    "url": "https://eldamo.org/content/words/word-3914129125.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 13,
+    "reproduced_source_examples": 8,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3631098897.html",
+      "https://eldamo.org/content/words/word-1623600883.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r602",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ɣ] became [j] between [i], [e] and a vowel",
+    "formula": "eɣV > ejV",
+    "url": "https://eldamo.org/content/words/word-1700576467.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 1,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-269595403.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r622",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "formula": "-Cm- < -Cmb-",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2136523007.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r634",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "formula": "-Cmb- > -Cm-",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2136523007.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r642",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "metathesis",
+    "formula": "sC- > øC-",
+    "url": "https://eldamo.org/content/words/word-3538536723.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2136523007.html",
+      "https://eldamo.org/content/words/word-2536388549.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r651",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "formula": "-Cn- < -Cnd-",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3879333373.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r653",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "final [m] became [n]",
+    "formula": "Vnr > V̄ør",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3879333373.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r663",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "formula": "-Cnd- > -Cn-",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3879333373.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r669",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "nasals assimilated to following stops and aspirates",
+    "formula": "sC- > øC-",
+    "url": "https://eldamo.org/content/words/word-3538536723.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3879333373.html",
+      "https://eldamo.org/content/words/word-728934117.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r680",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "formula": "-Cŋ- < -Cŋg-",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r686",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "formula": "V̄ŋ{rlmn} > V̄{rlmn}",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r693",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "formula": "VŋV > VɣV",
+    "url": "https://eldamo.org/content/words/word-768986721.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 16,
+    "reproduced_source_examples": 13,
+    "unsupported_example_reasons": "unsupported:unaligned insertion/deletion",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r699",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial nasal plus stop after another consonant became simple nasal",
+    "formula": "-Cŋg- > -Cŋ-",
+    "url": "https://eldamo.org/content/words/word-4126101193.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r700",
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "medial [ŋ] after a [n], [ŋ], [l], [r] became [g]",
+    "formula": "-{nŋlr}ŋ- > -{nŋlr}g-",
+    "url": "https://eldamo.org/content/words/word-447633467.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 1,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r704",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "nasals assimilated to following stops and aspirates",
+    "formula": "VŋV > VɣV",
+    "url": "https://eldamo.org/content/words/word-1844604693.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html",
+      "https://eldamo.org/content/words/word-713456603.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r711",
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "initial [ŋ] vanished",
+    "formula": "ŋV- > øV-",
+    "url": "https://eldamo.org/content/words/word-923465271.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "mismatch_or_context",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html",
+      "https://eldamo.org/content/words/word-713456603.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r716",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "formula": "VŋV > VɣV",
+    "url": "https://eldamo.org/content/words/word-3915121695.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 4,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "unsupported:unaligned insertion/deletion",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2493361049.html",
+      "https://eldamo.org/content/words/word-713456603.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r743",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "formula": "VɣV < VŋV",
+    "url": "https://eldamo.org/content/words/word-768986721.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 16,
+    "reproduced_source_examples": 13,
+    "unsupported_example_reasons": "unsupported:unaligned insertion/deletion",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r744",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "formula": "xs > xs",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r747",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "formula": "xtʰ > xtʰ",
+    "url": "https://eldamo.org/content/words/word-794129503.html",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "mismatch_or_context",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r748",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "-ɣ- > -ø-",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 29,
+    "reproduced_source_examples": 14,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r749",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "aɣC > āC",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 4,
+    "reproduced_source_examples": 4,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r751",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "formula": "VɣV < VŋV",
+    "url": "https://eldamo.org/content/words/word-3915121695.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 4,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "unsupported:unaligned insertion/deletion",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html",
+      "https://eldamo.org/content/words/word-1432348171.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r756",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "formula": "Vht > V̄t",
+    "url": "https://eldamo.org/content/words/word-3116721073.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html",
+      "https://eldamo.org/content/words/word-1432348171.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r758",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "medial [ŋ] usually became [ɣ]",
+    "formula": "ɣ > ø",
+    "url": "https://eldamo.org/content/words/word-1476955021.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 4,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-853983385.html",
+      "https://eldamo.org/content/words/word-1432348171.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r772",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "medial [s] often became [z]",
+    "formula": "VsV > VzV",
+    "url": "https://eldamo.org/content/words/word-127393503.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 33,
+    "reproduced_source_examples": 32,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4003450521.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r779",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "st < t+t",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-4003450521.html",
+      "https://eldamo.org/content/words/word-281596459.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r809",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[z] plus voiced stop became unvoiced",
+    "formula": "z{bdg} > s{ptk}",
+    "url": "https://eldamo.org/content/words/word-3279729471.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3318220985.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r813",
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "[t+t], [d+d] from suffixion became [st], [zd]",
+    "formula": "zd < d+d",
+    "url": "https://eldamo.org/content/words/word-2630259491.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 2,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3318220985.html",
+      "https://eldamo.org/content/words/word-514317113.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r817",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "formula": "xtʰ < xtʰ",
+    "url": "https://eldamo.org/content/words/word-794129503.html",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "mismatch_or_context",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2012405769.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r818",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "formula": "xs < xs",
+    "url": "",
+    "reason": [
+      "no_sound_change"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2012405769.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r819",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[ɣ] became [h] before voiceless consonants",
+    "formula": "h- > ø-",
+    "url": "",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "unverified_no_matching_example",
+    "matching_source_examples": 0,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2012405769.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r820",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "-h- > -ø-",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "mismatch_or_context",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2012405769.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r825",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "iɣC > īC",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 1,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3755216135.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r826",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "short final [i], [u] became [e], [o]",
+    "formula": "-Se < -Sĭ",
+    "url": "https://eldamo.org/content/words/word-3064357955.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 266,
+    "reproduced_source_examples": 248,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1078941967.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r834",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "short final [i], [u] became [e], [o]",
+    "formula": "-So < -Sŭ",
+    "url": "https://eldamo.org/content/words/word-3064357955.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 67,
+    "reproduced_source_examples": 58,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-1327176443.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r838",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "uɣC > ūC",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "mismatch_or_context",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3194103897.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r839",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "īC < iɣC",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 1,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2558005145.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r850",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "ūC < uɣC",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "mismatch_or_context",
+    "matching_source_examples": 1,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-2428716953.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r858",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "-ø- < -h-",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "mismatch_or_context",
+    "matching_source_examples": 2,
+    "reproduced_source_examples": 0,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3868991225.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r859",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "-ø- < -ɣ-",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 29,
+    "reproduced_source_examples": 14,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3868991225.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r860",
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "medial [ɣ]/[h] vanished except before [t]",
+    "formula": "āC < aɣC",
+    "url": "https://eldamo.org/content/words/word-2690267141.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 4,
+    "reproduced_source_examples": 4,
+    "unsupported_example_reasons": "",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3868991225.html"
+    ]
+  },
+  {
+    "rule_id": "quenya-r861",
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[r], [l] often became syllabic in clusters",
+    "formula": "CCr > CCar",
+    "url": "https://eldamo.org/content/words/word-825670671.html",
+    "reason": [
+      "complex_or_contextual_formula",
+      "no_sound_change"
+    ],
+    "validation_status": "reproduced",
+    "matching_source_examples": 3,
+    "reproduced_source_examples": 3,
+    "unsupported_example_reasons": "unsupported:unaligned insertion/deletion",
+    "card_urls": [
+      "https://eldamo.org/content/words/word-3868991225.html"
+    ]
+  }
+]

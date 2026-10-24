@@ -1,0 +1,37 @@
+{
+  "quenya": {
+    "total_rules": 861,
+    "atomic_edges": 391,
+    "non_atomic_entries": 139,
+    "non_atomic_reason_counts": {
+      "no_sound_change": 120,
+      "complex_or_contextual_formula": 107
+    },
+    "non_atomic_validation_counts": {
+      "unverified_no_matching_example": 69,
+      "reproduced": 62,
+      "mismatch_or_context": 8
+    },
+    "non_atomic_reproduced_examples": 1638,
+    "non_atomic_with_matching_examples": 70,
+    "source_pages_verified_utf8": 274
+  },
+  "sindarin": {
+    "total_rules": 570,
+    "atomic_edges": 234,
+    "non_atomic_entries": 150,
+    "non_atomic_reason_counts": {
+      "no_sound_change": 128,
+      "complex_or_contextual_formula": 99
+    },
+    "non_atomic_validation_counts": {
+      "unverified_no_matching_example": 71,
+      "reproduced": 71,
+      "unsupported_on_example": 2,
+      "mismatch_or_context": 6
+    },
+    "non_atomic_reproduced_examples": 2100,
+    "non_atomic_with_matching_examples": 79,
+    "source_pages_verified_utf8": 248
+  }
+}

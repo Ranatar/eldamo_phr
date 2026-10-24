@@ -1,0 +1,30 @@
+{
+  "branches": {
+    "quenya": {
+      "html_bytes": 964845,
+      "phonemes": 61,
+      "rules_rows": 1013,
+      "complete_rules": 984,
+      "unified_rules": 861,
+      "edges": 601,
+      "app_chains": 139,
+      "structural_chains": 387,
+      "standalone_sha256": "049ba545238077154560bb9184ed3c8d2081eb705daadcdc629a7202332231dd"
+    },
+    "sindarin": {
+      "html_bytes": 475374,
+      "phonemes": 57,
+      "rules_rows": 603,
+      "complete_rules": 570,
+      "unified_rules": 570,
+      "edges": 234,
+      "app_chains": 118,
+      "structural_chains": 114,
+      "standalone_sha256": "cd832fe1e9348894545980f5d33aa0dee8ba25b680e2d8473275b4a5acfb4d3a"
+    }
+  },
+  "discrepancies": [
+    "quenya: app chains=139, structural chains=387",
+    "sindarin: app chains=118, structural chains=114"
+  ]
+}

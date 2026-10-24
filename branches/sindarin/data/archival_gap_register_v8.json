@@ -1,0 +1,416 @@
+{
+  "critical": {
+    "total": 118,
+    "chain_statuses": {
+      "graph_steps_verified": 102,
+      "unresolved_steps": 11,
+      "incompatible_position": 5
+    },
+    "step_statuses": {
+      "exact_step_match": 259,
+      "missing_chain_rule_url": 11
+    },
+    "unresolved": [
+      {
+        "id": "S9",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "mb",
+            "to": "m",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S10",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "mb",
+            "to": "m",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S13",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "mb",
+            "to": "m",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S29",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋ",
+            "to": "ŋg",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S33",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋgw",
+            "to": "m",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S34",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ŋgj",
+            "to": "n",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S35",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋw",
+            "to": "m",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              "",
+              "https://eldamo.org/content/words/word-171120983.html"
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S38",
+        "overall": "incompatible_position",
+        "steps": []
+      },
+      {
+        "id": "S39",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ŋgw",
+            "to": "m",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S40",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ŋgw",
+            "to": "m",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S41",
+        "overall": "incompatible_position",
+        "steps": []
+      },
+      {
+        "id": "S42",
+        "overall": "incompatible_position",
+        "steps": []
+      },
+      {
+        "id": "S44",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ŋg",
+            "to": "ŋ",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S46",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ŋg",
+            "to": "ŋ",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "S104",
+        "overall": "incompatible_position",
+        "steps": []
+      },
+      {
+        "id": "S109",
+        "overall": "incompatible_position",
+        "steps": []
+      }
+    ]
+  },
+  "structural": {
+    "total": 114,
+    "chain_statuses": {
+      "graph_steps_verified": 106,
+      "unresolved_steps": 8
+    },
+    "step_statuses": {
+      "exact_step_match": 251,
+      "missing_chain_rule_url": 8
+    },
+    "unresolved": [
+      {
+        "id": "SINDARIN5",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "mb",
+            "to": "m",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "SINDARIN27",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋ",
+            "to": "ŋg",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "SINDARIN28",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋ",
+            "to": "ŋg",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "SINDARIN29",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 0,
+            "from": "ŋg",
+            "to": "ŋ",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "SINDARIN38",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ŋg",
+            "to": "ŋ",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "SINDARIN39",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ŋg",
+            "to": "ŋ",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "SINDARIN42",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ŋg",
+            "to": "ŋ",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      },
+      {
+        "id": "SINDARIN43",
+        "overall": "unresolved_steps",
+        "steps": [
+          {
+            "index": 1,
+            "from": "ŋg",
+            "to": "ŋ",
+            "rule_url": "",
+            "status": "missing_chain_rule_url",
+            "candidate_rule_urls": [
+              ""
+            ],
+            "matching_edge_ids": [],
+            "matching_stages": [],
+            "matching_positions": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,331 @@
+branch,id,era,grade,same_stage_order_unverified,different_position_requirements,ambiguous_atomic_match,merged_rule_steps,whole_word_attested_machine,states,urls
+quenya,QUENYA1,late,C,False,False,0,2,True,b → β → v,https://eldamo.org/content/words/word-1141570065.html | https://eldamo.org/content/words/word-14484545.html
+quenya,QUENYA2,late,U,False,False,0,2,False,bd → pt → ɸt,https://eldamo.org/content/words/word-1625077395.html | https://eldamo.org/content/words/word-2265073101.html
+quenya,QUENYA3,late,U,False,False,0,1,False,bm → mb → b,https://eldamo.org/content/words/word-3882201769.html | https://eldamo.org/content/words/word-1688730459.html
+quenya,QUENYA4,late,U,True,False,0,2,False,bm → mb → b → β,https://eldamo.org/content/words/word-3882201769.html | https://eldamo.org/content/words/word-1688730459.html | https://eldamo.org/content/words/word-1141570065.html
+quenya,QUENYA5,late,U,True,False,0,1,False,bm → mb → m,https://eldamo.org/content/words/word-3882201769.html | 
+quenya,QUENYA6,late,U,False,False,0,2,False,bm → mb → m,https://eldamo.org/content/words/word-3882201769.html | https://eldamo.org/content/words/word-2123493145.html
+quenya,QUENYA7,late,U,True,False,0,1,False,bm → mm → mb,https://eldamo.org/content/words/word-2830908887.html | https://eldamo.org/content/words/word-4145612709.html
+quenya,QUENYA8,late,U,True,False,0,1,False,bm → mm → mb → b,https://eldamo.org/content/words/word-2830908887.html | https://eldamo.org/content/words/word-4145612709.html | https://eldamo.org/content/words/word-1688730459.html
+quenya,QUENYA9,late,U,True,False,0,2,False,bm → mm → mb → m,https://eldamo.org/content/words/word-2830908887.html | https://eldamo.org/content/words/word-4145612709.html | https://eldamo.org/content/words/word-2123493145.html
+quenya,QUENYA10,late,U,False,False,0,1,False,d → ð → z,https://eldamo.org/content/words/word-1141570065.html | https://eldamo.org/content/words/word-767593015.html
+quenya,QUENYA11,late,U,True,False,0,2,False,d → ð → z → r,https://eldamo.org/content/words/word-1141570065.html | https://eldamo.org/content/words/word-767593015.html | https://eldamo.org/content/words/word-3534004155.html
+quenya,QUENYA12,late,U,True,False,0,1,False,dn → nn → nd,https://eldamo.org/content/words/word-2830908887.html | https://eldamo.org/content/words/word-4145612709.html
+quenya,QUENYA13,late,U,True,False,0,2,False,dn → nn → nd → n,https://eldamo.org/content/words/word-2830908887.html | https://eldamo.org/content/words/word-4145612709.html | https://eldamo.org/content/words/word-2123493145.html
+quenya,QUENYA14,late,C,False,False,0,2,True,gd → kt → xt,https://eldamo.org/content/words/word-1625077395.html | https://eldamo.org/content/words/word-2265073101.html
+quenya,QUENYA15,late,U,False,False,0,0,False,gj → dj → dʒ, | https://eldamo.org/content/words/word-3605637247.html
+quenya,QUENYA16,late,U,False,False,0,1,False,gj → dj → lj, | https://eldamo.org/content/words/word-1574644731.html
+quenya,QUENYA17,late,U,False,False,0,1,False,gj → dj → dʒ,https://eldamo.org/content/words/word-3703720537.html | https://eldamo.org/content/words/word-3605637247.html
+quenya,QUENYA18,late,U,True,False,0,2,False,gj → dj → lj,https://eldamo.org/content/words/word-3703720537.html | https://eldamo.org/content/words/word-1574644731.html
+quenya,QUENYA19,late,C,False,False,0,2,True,gt → kt → xt,https://eldamo.org/content/words/word-1944249607.html | https://eldamo.org/content/words/word-2265073101.html
+quenya,QUENYA20,late,U,False,False,0,1,False,kj → tj → tʃ, | https://eldamo.org/content/words/word-3605637247.html
+quenya,QUENYA21,late,U,True,False,0,2,False,kj → tj → tʃ,https://eldamo.org/content/words/word-3703720537.html | https://eldamo.org/content/words/word-3605637247.html
+quenya,QUENYA22,late,C,False,False,0,2,True,kn → kt → xt,https://eldamo.org/content/words/word-3418086257.html | https://eldamo.org/content/words/word-2265073101.html
+quenya,QUENYA23,late,C,False,False,0,2,True,ktʰ → kt → xt,https://eldamo.org/content/words/word-2190887743.html | https://eldamo.org/content/words/word-2265073101.html
+quenya,QUENYA24,late,C,False,False,0,2,True,kʰ → x → h,https://eldamo.org/content/words/word-3262991621.html | https://eldamo.org/content/words/word-2071843593.html
+quenya,QUENYA25,late,U,True,False,0,1,False,mb → b → β,https://eldamo.org/content/words/word-1688730459.html | https://eldamo.org/content/words/word-1141570065.html
+quenya,QUENYA26,late,U,True,False,0,2,False,mb → b → β → v,https://eldamo.org/content/words/word-1688730459.html | https://eldamo.org/content/words/word-1141570065.html | https://eldamo.org/content/words/word-14484545.html
+quenya,QUENYA27,late,U,False,False,0,2,False,mk → ŋk → k,https://eldamo.org/content/words/word-2143444883.html | https://eldamo.org/content/words/word-2123493145.html
+quenya,QUENYA28,late,U,True,False,0,0,False,mm → mb → b,https://eldamo.org/content/words/word-4145612709.html | https://eldamo.org/content/words/word-1688730459.html
+quenya,QUENYA29,late,U,True,False,0,1,False,mm → mb → b → β,https://eldamo.org/content/words/word-4145612709.html | https://eldamo.org/content/words/word-1688730459.html | https://eldamo.org/content/words/word-1141570065.html
+quenya,QUENYA30,late,U,True,False,0,1,False,mm → mb → m,https://eldamo.org/content/words/word-4145612709.html | https://eldamo.org/content/words/word-2123493145.html
+quenya,QUENYA31,late,C,True,False,0,2,True,mpʰ → ppʰ → pp,https://eldamo.org/content/words/word-3474357431.html | https://eldamo.org/content/words/word-2190887743.html
+quenya,QUENYA32,late,U,True,False,0,2,False,ms → ns → ss,https://eldamo.org/content/words/word-1399041717.html | https://eldamo.org/content/words/word-2591378297.html
+quenya,QUENYA33,late,U,False,False,0,2,False,nk → ŋk → k,https://eldamo.org/content/words/word-2143444883.html | https://eldamo.org/content/words/word-2123493145.html
+quenya,QUENYA34,late,U,True,False,0,1,False,nn → nd → n,https://eldamo.org/content/words/word-4145612709.html | https://eldamo.org/content/words/word-2123493145.html
+quenya,QUENYA35,late,U,False,False,0,2,False,np → mp → p,https://eldamo.org/content/words/word-2143444883.html | https://eldamo.org/content/words/word-2123493145.html
+quenya,QUENYA36,late,C,True,False,0,2,True,ntʰ → ttʰ → tt,https://eldamo.org/content/words/word-3474357431.html | https://eldamo.org/content/words/word-2190887743.html
+quenya,QUENYA37,late,C,False,False,0,2,True,pm → pw → pp,https://eldamo.org/content/words/word-3418086257.html | https://eldamo.org/content/words/word-182545135.html
+quenya,QUENYA38,late,U,False,False,0,2,False,pn → pt → ɸt,https://eldamo.org/content/words/word-3418086257.html | https://eldamo.org/content/words/word-2265073101.html
+quenya,QUENYA39,late,U,False,False,0,2,False,ptʰ → pt → ɸt,https://eldamo.org/content/words/word-2190887743.html | https://eldamo.org/content/words/word-2265073101.html
+quenya,QUENYA40,late,C,False,False,0,2,True,pʰ → ɸ → f,https://eldamo.org/content/words/word-3262991621.html | https://eldamo.org/content/words/word-14484545.html
+quenya,QUENYA41,late,U,False,False,0,2,False,pʰt → ptʰ → pt,https://eldamo.org/content/words/word-3183451073.html | https://eldamo.org/content/words/word-2190887743.html
+quenya,QUENYA42,late,U,False,False,0,3,False,pʰt → ptʰ → pt → ɸt,https://eldamo.org/content/words/word-3183451073.html | https://eldamo.org/content/words/word-2190887743.html | https://eldamo.org/content/words/word-2265073101.html
+quenya,QUENYA43,late,U,False,False,0,2,False,pʰtʰ → ptʰ → pt,https://eldamo.org/content/words/word-3183451073.html | https://eldamo.org/content/words/word-2190887743.html
+quenya,QUENYA44,late,U,False,False,0,3,False,pʰtʰ → ptʰ → pt → ɸt,https://eldamo.org/content/words/word-3183451073.html | https://eldamo.org/content/words/word-2190887743.html | https://eldamo.org/content/words/word-2265073101.html
+quenya,QUENYA45,late,U,False,False,0,2,False,pʰw → ppʰ → pp,https://eldamo.org/content/words/word-2859678213.html | https://eldamo.org/content/words/word-2190887743.html
+quenya,QUENYA46,late,C,False,False,0,2,True,sd → zd → st,https://eldamo.org/content/words/word-882174441.html | https://eldamo.org/content/words/word-3279729471.html
+quenya,QUENYA47,late,U,True,False,0,3,False,sd → zd → st → θ,https://eldamo.org/content/words/word-882174441.html | https://eldamo.org/content/words/word-3279729471.html | https://eldamo.org/content/words/word-1605344503.html
+quenya,QUENYA48,late,U,False,False,0,1,False,sj → zj → ʒ,https://eldamo.org/content/words/word-127393503.html | https://eldamo.org/content/words/word-3605637247.html
+quenya,QUENYA49,late,U,True,False,0,1,False,sj → j̊ → ʃ,https://eldamo.org/content/words/word-1556924193.html | https://eldamo.org/content/words/word-3605637247.html
+quenya,QUENYA50,late,U,False,False,0,2,False,sk → x → h,https://eldamo.org/content/words/word-1605344503.html | https://eldamo.org/content/words/word-2071843593.html
+quenya,QUENYA51,late,C,True,False,0,2,True,sl → zl → ll,https://eldamo.org/content/words/word-127393503.html | https://eldamo.org/content/words/word-1472480589.html
+quenya,QUENYA52,late,U,False,False,0,2,False,sm → m̥ → m,https://eldamo.org/content/words/word-1556924193.html | https://eldamo.org/content/words/word-3012528347.html
+quenya,QUENYA53,late,C,True,False,0,2,True,sm → zm → mm,https://eldamo.org/content/words/word-127393503.html | https://eldamo.org/content/words/word-10156157.html
+quenya,QUENYA54,late,U,True,False,0,2,False,sm → zm → mm → mb,https://eldamo.org/content/words/word-127393503.html | https://eldamo.org/content/words/word-10156157.html | https://eldamo.org/content/words/word-4145612709.html
+quenya,QUENYA55,late,U,False,False,0,2,False,sn → n̥ → n,https://eldamo.org/content/words/word-1556924193.html | https://eldamo.org/content/words/word-3012528347.html
+quenya,QUENYA56,late,U,True,False,0,2,False,sn → zn → nn,https://eldamo.org/content/words/word-127393503.html | https://eldamo.org/content/words/word-10156157.html
+quenya,QUENYA57,late,U,True,False,0,2,False,sn → zn → nn → nd,https://eldamo.org/content/words/word-127393503.html | https://eldamo.org/content/words/word-10156157.html | https://eldamo.org/content/words/word-4145612709.html
+quenya,QUENYA58,late,U,False,False,0,2,False,sp → ɸ → f,https://eldamo.org/content/words/word-1605344503.html | https://eldamo.org/content/words/word-14484545.html
+quenya,QUENYA59,late,C,True,False,0,2,True,sr → zr → rr,https://eldamo.org/content/words/word-127393503.html | https://eldamo.org/content/words/word-1472480589.html
+quenya,QUENYA60,late,U,False,False,0,2,False,st → θ → s,https://eldamo.org/content/words/word-1605344503.html | https://eldamo.org/content/words/word-3491983963.html
+quenya,QUENYA61,late,U,False,False,0,2,False,stʰ → st → θ,https://eldamo.org/content/words/word-3915424757.html | https://eldamo.org/content/words/word-1605344503.html
+quenya,QUENYA62,late,U,False,False,0,3,False,stʰ → st → θ → s,https://eldamo.org/content/words/word-3915424757.html | https://eldamo.org/content/words/word-1605344503.html | https://eldamo.org/content/words/word-3491983963.html
+quenya,QUENYA63,late,U,False,False,1,1,False,sw → w̥ → f,https://eldamo.org/content/words/word-1556924193.html | https://eldamo.org/content/words/word-3605637247.html
+quenya,QUENYA64,late,U,False,False,0,2,False,tk → sk → x,https://eldamo.org/content/words/word-700934409.html | https://eldamo.org/content/words/word-1605344503.html
+quenya,QUENYA65,late,U,False,False,0,3,False,tk → sk → x → h,https://eldamo.org/content/words/word-700934409.html | https://eldamo.org/content/words/word-1605344503.html | https://eldamo.org/content/words/word-2071843593.html
+quenya,QUENYA66,late,U,False,False,0,2,False,tk → sk → ks,https://eldamo.org/content/words/word-700934409.html | https://eldamo.org/content/words/word-2094898289.html
+quenya,QUENYA67,late,U,False,False,0,2,False,tk → kt → xt,https://eldamo.org/content/words/word-700934409.html | https://eldamo.org/content/words/word-2265073101.html
+quenya,QUENYA68,late,C,False,False,0,2,True,tʰ → θ → s,https://eldamo.org/content/words/word-3262991621.html | https://eldamo.org/content/words/word-3491983963.html
+quenya,QUENYA69,late,U,False,False,0,2,False,tʰt → ttʰ → tt,https://eldamo.org/content/words/word-3183451073.html | https://eldamo.org/content/words/word-2190887743.html
+quenya,QUENYA70,late,U,False,False,0,2,False,tʰtʰ → ttʰ → tt,https://eldamo.org/content/words/word-3183451073.html | https://eldamo.org/content/words/word-2190887743.html
+quenya,QUENYA71,late,U,True,False,0,1,False,xj → j̊ → ʃ,https://eldamo.org/content/words/word-2963647241.html | https://eldamo.org/content/words/word-3605637247.html
+quenya,QUENYA72,late,U,False,False,1,1,False,xw → w̥ → f,https://eldamo.org/content/words/word-2963647241.html | https://eldamo.org/content/words/word-3605637247.html
+quenya,QUENYA73,late,U,True,False,0,2,False,zd → st → θ,https://eldamo.org/content/words/word-3279729471.html | https://eldamo.org/content/words/word-1605344503.html
+quenya,QUENYA74,late,U,True,False,0,3,False,zd → st → θ → s,https://eldamo.org/content/words/word-3279729471.html | https://eldamo.org/content/words/word-1605344503.html | https://eldamo.org/content/words/word-3491983963.html
+quenya,QUENYA75,late,U,True,False,0,1,False,zm → mm → mb,https://eldamo.org/content/words/word-10156157.html | https://eldamo.org/content/words/word-4145612709.html
+quenya,QUENYA76,late,U,True,False,0,1,False,zm → mm → mb → b,https://eldamo.org/content/words/word-10156157.html | https://eldamo.org/content/words/word-4145612709.html | https://eldamo.org/content/words/word-1688730459.html
+quenya,QUENYA77,late,U,True,False,0,2,False,zm → mm → mb → m,https://eldamo.org/content/words/word-10156157.html | https://eldamo.org/content/words/word-4145612709.html | https://eldamo.org/content/words/word-2123493145.html
+quenya,QUENYA78,late,U,True,False,0,1,False,zn → nn → nd,https://eldamo.org/content/words/word-10156157.html | https://eldamo.org/content/words/word-4145612709.html
+quenya,QUENYA79,late,U,True,False,0,2,False,zn → nn → nd → n,https://eldamo.org/content/words/word-10156157.html | https://eldamo.org/content/words/word-4145612709.html | https://eldamo.org/content/words/word-2123493145.html
+quenya,QUENYA80,late,U,True,False,0,1,False,ð → z → r,https://eldamo.org/content/words/word-767593015.html | https://eldamo.org/content/words/word-3534004155.html
+quenya,QUENYA81,late,D,False,False,0,2,False,ŋgj → ndj → nj,https://eldamo.org/content/words/word-3703720537.html | https://eldamo.org/content/words/word-297797679.html
+quenya,QUENYA82,late,U,False,False,0,2,False,ŋj → ŋgj → ndj,https://eldamo.org/content/words/word-2233951333.html | https://eldamo.org/content/words/word-3703720537.html
+quenya,QUENYA83,late,U,False,False,0,3,False,ŋj → ŋgj → ndj → nj,https://eldamo.org/content/words/word-2233951333.html | https://eldamo.org/content/words/word-3703720537.html | https://eldamo.org/content/words/word-297797679.html
+quenya,QUENYA84,late,U,True,False,0,2,False,ŋkʰ → kkʰ → kk,https://eldamo.org/content/words/word-3474357431.html | https://eldamo.org/content/words/word-2190887743.html
+quenya,QUENYA85,late,U,False,False,0,2,False,ŋp → mp → p,https://eldamo.org/content/words/word-2143444883.html | https://eldamo.org/content/words/word-2123493145.html
+quenya,QUENYA86,late,U,False,False,0,2,False,ŋs → ns → ss,https://eldamo.org/content/words/word-484908271.html | https://eldamo.org/content/words/word-2591378297.html
+quenya,QUENYA87,late,U,True,False,0,1,False,ŋŋ → ŋg → ŋ,https://eldamo.org/content/words/word-3404492995.html | 
+quenya,QUENYA88,late,U,False,False,0,2,False,ŋŋ → ŋg → ŋ,https://eldamo.org/content/words/word-3404492995.html | https://eldamo.org/content/words/word-2123493145.html
+quenya,QUENYA89,late,U,True,False,0,1,False,ŋɣ → ŋg → ŋ,https://eldamo.org/content/words/word-3404492995.html | 
+quenya,QUENYA90,late,U,False,False,0,2,False,ŋɣ → ŋg → ŋ,https://eldamo.org/content/words/word-3404492995.html | https://eldamo.org/content/words/word-2123493145.html
+quenya,QUENYA91,middle,U,True,False,0,1,False,ae → ā → ō,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-1909322629.html
+quenya,QUENYA92,middle,U,True,False,0,1,False,ae → ā → ǭ,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2277851021.html
+quenya,QUENYA93,middle,U,True,False,0,1,False,ao → ā → ō,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-1909322629.html
+quenya,QUENYA94,middle,U,True,False,0,1,False,ao → ā → ǭ,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2277851021.html
+quenya,QUENYA95,middle,U,False,False,0,2,False,bd → pt → xt,https://eldamo.org/content/words/word-654861237.html | https://eldamo.org/content/words/word-2701010297.html
+quenya,QUENYA96,middle,C,False,False,0,2,True,bd → pt → ps,https://eldamo.org/content/words/word-654861237.html | https://eldamo.org/content/words/word-2701010297.html
+quenya,QUENYA97,middle,U,True,False,0,3,False,bd → pt → ps → s,https://eldamo.org/content/words/word-654861237.html | https://eldamo.org/content/words/word-2701010297.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA98,middle,U,True,False,0,1,False,br → rb → rv,https://eldamo.org/content/words/word-716992289.html | https://eldamo.org/content/words/word-1110299815.html
+quenya,QUENYA99,middle,U,False,False,0,2,False,bs → ps → s,https://eldamo.org/content/words/word-2905876955.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA100,middle,U,False,False,0,2,False,bt → pt → xt,https://eldamo.org/content/words/word-2905876955.html | https://eldamo.org/content/words/word-2701010297.html
+quenya,QUENYA101,middle,C,False,False,0,2,True,bt → pt → ps,https://eldamo.org/content/words/word-2905876955.html | https://eldamo.org/content/words/word-2701010297.html
+quenya,QUENYA102,middle,U,True,False,0,3,False,bt → pt → ps → s,https://eldamo.org/content/words/word-2905876955.html | https://eldamo.org/content/words/word-2701010297.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA103,middle,U,True,False,0,1,False,dl → gl → lg,https://eldamo.org/content/words/word-3584827489.html | https://eldamo.org/content/words/word-716992289.html
+quenya,QUENYA104,middle,C,False,False,0,2,True,dm → nm → nw,https://eldamo.org/content/words/word-1312520143.html | https://eldamo.org/content/words/word-2886094609.html
+quenya,QUENYA105,middle,U,False,False,0,2,False,ds → ts → s,https://eldamo.org/content/words/word-2905876955.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA106,middle,C,False,False,0,2,True,gm → ŋm → ŋgw,https://eldamo.org/content/words/word-1312520143.html | https://eldamo.org/content/words/word-2886094609.html
+quenya,QUENYA107,middle,U,False,False,0,2,False,gs → ks → s,https://eldamo.org/content/words/word-2905876955.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA108,middle,D,False,False,0,2,False,gt → kt → xt,https://eldamo.org/content/words/word-2905876955.html | https://eldamo.org/content/words/word-2701010297.html
+quenya,QUENYA109,middle,U,False,False,0,1,False,gw → g → ɣ,https://eldamo.org/content/words/word-78414621.html | https://eldamo.org/content/words/word-2772726195.html
+quenya,QUENYA110,middle,U,False,False,0,2,False,kd → kt → xt,https://eldamo.org/content/words/word-3661438765.html | https://eldamo.org/content/words/word-2701010297.html
+quenya,QUENYA111,middle,C,True,False,0,2,True,km → gm → ŋm,https://eldamo.org/content/words/word-1324444289.html | https://eldamo.org/content/words/word-1312520143.html
+quenya,QUENYA112,middle,C,True,False,0,3,True,km → gm → ŋm → ŋgw,https://eldamo.org/content/words/word-1324444289.html | https://eldamo.org/content/words/word-1312520143.html | https://eldamo.org/content/words/word-2886094609.html
+quenya,QUENYA113,middle,U,False,False,0,2,False,kr → ks → s,https://eldamo.org/content/words/word-1238072385.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA114,middle,U,False,False,0,2,False,ktʰ → kt → xt,https://eldamo.org/content/words/word-2769500867.html | https://eldamo.org/content/words/word-2701010297.html
+quenya,QUENYA115,middle,C,False,False,0,2,True,kʰ → x → h,https://eldamo.org/content/words/word-3537093625.html | https://eldamo.org/content/words/word-2800366809.html
+quenya,QUENYA116,middle,C,False,False,0,2,True,kʰn → kt → xt,https://eldamo.org/content/words/word-372953021.html | https://eldamo.org/content/words/word-2701010297.html
+quenya,QUENYA117,middle,U,False,False,0,2,False,kʰr → ks → s,https://eldamo.org/content/words/word-1238072385.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA118,middle,U,False,False,0,2,False,kʰs → ks → s,https://eldamo.org/content/words/word-2678342679.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA119,middle,U,False,False,0,2,False,kʰt → ktʰ → kt,https://eldamo.org/content/words/word-798737509.html | https://eldamo.org/content/words/word-2769500867.html
+quenya,QUENYA120,middle,U,False,False,0,3,False,kʰt → ktʰ → kt → xt,https://eldamo.org/content/words/word-798737509.html | https://eldamo.org/content/words/word-2769500867.html | https://eldamo.org/content/words/word-2701010297.html
+quenya,QUENYA121,middle,U,False,False,0,1,False,mb → b → β,https://eldamo.org/content/words/word-1688730459.html | https://eldamo.org/content/words/word-2772726195.html
+quenya,QUENYA122,middle,U,False,False,0,1,False,mb → b → β,https://eldamo.org/content/words/word-3944232895.html | https://eldamo.org/content/words/word-2772726195.html
+quenya,QUENYA123,middle,U,False,False,0,2,False,mk → ŋk → k,https://eldamo.org/content/words/word-2390772785.html | https://eldamo.org/content/words/word-2830500177.html
+quenya,QUENYA124,middle,C,True,False,0,2,True,mpʰ → ppʰ → pp,https://eldamo.org/content/words/word-2847294287.html | https://eldamo.org/content/words/word-2769500867.html
+quenya,QUENYA125,middle,U,False,False,0,1,False,nd → d → l,https://eldamo.org/content/words/word-1688730459.html | https://eldamo.org/content/words/word-31048751.html
+quenya,QUENYA126,middle,U,False,False,0,1,False,nd → d → l,https://eldamo.org/content/words/word-3944232895.html | https://eldamo.org/content/words/word-31048751.html
+quenya,QUENYA127,middle,U,True,False,0,2,False,ntr → ns → ss,https://eldamo.org/content/words/word-1238072385.html | https://eldamo.org/content/words/word-1082153437.html
+quenya,QUENYA128,middle,C,True,False,0,2,True,ntʰ → ttʰ → tt,https://eldamo.org/content/words/word-2847294287.html | https://eldamo.org/content/words/word-2769500867.html
+quenya,QUENYA129,middle,U,False,False,0,0,False,p → pʰ → f,https://eldamo.org/content/words/word-2684793511.html | https://eldamo.org/content/words/word-4030743197.html
+quenya,QUENYA130,middle,U,False,False,0,0,False,p → pʰ → f,https://eldamo.org/content/words/word-2684793511.html | https://eldamo.org/content/words/word-3124926163.html
+quenya,QUENYA131,middle,U,False,False,0,1,False,p → pʰ → ɸ,https://eldamo.org/content/words/word-2684793511.html | https://eldamo.org/content/words/word-3537093625.html
+quenya,QUENYA132,middle,U,False,False,0,2,False,p → pʰ → ɸ → f,https://eldamo.org/content/words/word-2684793511.html | https://eldamo.org/content/words/word-3537093625.html | https://eldamo.org/content/words/word-2661449019.html
+quenya,QUENYA133,middle,C,True,False,0,2,True,pm → bm → mm,https://eldamo.org/content/words/word-1324444289.html | https://eldamo.org/content/words/word-1312520143.html
+quenya,QUENYA134,middle,C,True,False,0,2,True,pn → bn → mn,https://eldamo.org/content/words/word-1324444289.html | https://eldamo.org/content/words/word-1312520143.html
+quenya,QUENYA135,middle,U,False,False,0,2,False,pr → ps → s,https://eldamo.org/content/words/word-1238072385.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA136,middle,U,True,False,0,2,False,pt → ps → s,https://eldamo.org/content/words/word-2701010297.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA137,middle,U,False,False,0,2,False,ptʰ → pt → xt,https://eldamo.org/content/words/word-2769500867.html | https://eldamo.org/content/words/word-2701010297.html
+quenya,QUENYA138,middle,U,False,False,0,2,False,ptʰ → pt → ps,https://eldamo.org/content/words/word-2769500867.html | https://eldamo.org/content/words/word-2701010297.html
+quenya,QUENYA139,middle,U,True,False,0,3,False,ptʰ → pt → ps → s,https://eldamo.org/content/words/word-2769500867.html | https://eldamo.org/content/words/word-2701010297.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA140,middle,C,False,False,0,2,True,pʰ → ɸ → f,https://eldamo.org/content/words/word-3537093625.html | https://eldamo.org/content/words/word-2661449019.html
+quenya,QUENYA141,middle,U,False,False,0,2,False,pʰm → mpʰ → ppʰ,https://eldamo.org/content/words/word-1396728225.html | https://eldamo.org/content/words/word-2847294287.html
+quenya,QUENYA142,middle,U,True,False,0,3,False,pʰm → mpʰ → ppʰ → pp,https://eldamo.org/content/words/word-1396728225.html | https://eldamo.org/content/words/word-2847294287.html | https://eldamo.org/content/words/word-2769500867.html
+quenya,QUENYA143,middle,U,False,False,0,2,False,pʰr → ps → s,https://eldamo.org/content/words/word-1238072385.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA144,middle,U,False,False,0,2,False,pʰs → ps → s,https://eldamo.org/content/words/word-2678342679.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA145,middle,U,False,False,0,2,False,pʰt → ptʰ → pt,https://eldamo.org/content/words/word-798737509.html | https://eldamo.org/content/words/word-2769500867.html
+quenya,QUENYA146,middle,U,False,False,0,3,False,pʰt → ptʰ → pt → xt,https://eldamo.org/content/words/word-798737509.html | https://eldamo.org/content/words/word-2769500867.html | https://eldamo.org/content/words/word-2701010297.html
+quenya,QUENYA147,middle,U,False,False,0,3,False,pʰt → ptʰ → pt → ps,https://eldamo.org/content/words/word-798737509.html | https://eldamo.org/content/words/word-2769500867.html | https://eldamo.org/content/words/word-2701010297.html
+quenya,QUENYA148,middle,U,False,False,0,2,False,sb → zb → sp,https://eldamo.org/content/words/word-2884507077.html | https://eldamo.org/content/words/word-4145487633.html
+quenya,QUENYA149,middle,U,True,False,0,3,False,sb → zb → sp → ɸ,https://eldamo.org/content/words/word-2884507077.html | https://eldamo.org/content/words/word-4145487633.html | https://eldamo.org/content/words/word-3333849997.html
+quenya,QUENYA150,middle,U,False,False,0,3,False,sb → zb → sp → ps,https://eldamo.org/content/words/word-2884507077.html | https://eldamo.org/content/words/word-4145487633.html | https://eldamo.org/content/words/word-3499874945.html
+quenya,QUENYA151,middle,U,False,False,0,2,False,sd → zd → st,https://eldamo.org/content/words/word-2884507077.html | https://eldamo.org/content/words/word-4145487633.html
+quenya,QUENYA152,middle,U,True,False,0,3,False,sd → zd → st → θ,https://eldamo.org/content/words/word-2884507077.html | https://eldamo.org/content/words/word-4145487633.html | https://eldamo.org/content/words/word-3333849997.html
+quenya,QUENYA153,middle,C,False,False,0,2,True,sg → zg → sk,https://eldamo.org/content/words/word-2884507077.html | https://eldamo.org/content/words/word-4145487633.html
+quenya,QUENYA154,middle,U,True,False,0,3,False,sg → zg → sk → x,https://eldamo.org/content/words/word-2884507077.html | https://eldamo.org/content/words/word-4145487633.html | https://eldamo.org/content/words/word-3333849997.html
+quenya,QUENYA155,middle,D,False,False,0,3,False,sg → zg → sk → ks,https://eldamo.org/content/words/word-2884507077.html | https://eldamo.org/content/words/word-4145487633.html | https://eldamo.org/content/words/word-3499874945.html
+quenya,QUENYA156,middle,U,False,False,0,2,False,sk → x → h,https://eldamo.org/content/words/word-3333849997.html | https://eldamo.org/content/words/word-2800366809.html
+quenya,QUENYA157,middle,U,True,False,0,2,False,sk → ks → s,https://eldamo.org/content/words/word-3499874945.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA158,middle,U,True,False,0,0,False,skw → sw → w̥,https://eldamo.org/content/words/word-1872897535.html | https://eldamo.org/content/words/word-165461035.html
+quenya,QUENYA159,middle,U,False,False,0,1,False,skw → sw → w̥,https://eldamo.org/content/words/word-1872897535.html | https://eldamo.org/content/words/word-3260572145.html
+quenya,QUENYA160,middle,U,False,False,0,1,False,skw → sw → w̥,https://eldamo.org/content/words/word-1872897535.html | https://eldamo.org/content/words/word-476591497.html
+quenya,QUENYA161,middle,U,False,False,0,2,False,skʰ → sk → x,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-3333849997.html
+quenya,QUENYA162,middle,U,False,False,0,3,False,skʰ → sk → x → h,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-3333849997.html | https://eldamo.org/content/words/word-2800366809.html
+quenya,QUENYA163,middle,U,False,False,0,2,False,skʰ → sk → ks,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-3499874945.html
+quenya,QUENYA164,middle,U,True,False,0,3,False,skʰ → sk → ks → s,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-3499874945.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA165,middle,C,True,False,0,2,True,sl → zl → ll,https://eldamo.org/content/words/word-2951986869.html | https://eldamo.org/content/words/word-98897835.html
+quenya,QUENYA166,middle,U,True,False,0,2,False,sm → zm → mm,https://eldamo.org/content/words/word-2951986869.html | https://eldamo.org/content/words/word-927570507.html
+quenya,QUENYA167,middle,C,True,False,0,2,True,sn → zn → nn,https://eldamo.org/content/words/word-2951986869.html | https://eldamo.org/content/words/word-927570507.html
+quenya,QUENYA168,middle,U,False,False,0,2,False,sp → ɸ → f,https://eldamo.org/content/words/word-3333849997.html | https://eldamo.org/content/words/word-2661449019.html
+quenya,QUENYA169,middle,U,True,False,0,2,False,sp → ps → s,https://eldamo.org/content/words/word-3499874945.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA170,middle,U,False,False,0,1,False,st → θ → s,https://eldamo.org/content/words/word-570537175.html | https://eldamo.org/content/words/word-3006504693.html
+quenya,QUENYA171,middle,U,False,False,0,2,False,st → θ → s,https://eldamo.org/content/words/word-3333849997.html | https://eldamo.org/content/words/word-3006504693.html
+quenya,QUENYA172,middle,U,True,False,0,1,False,stʰ → st → θ,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-570537175.html
+quenya,QUENYA173,middle,U,True,False,0,2,False,stʰ → st → θ → s,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-570537175.html | https://eldamo.org/content/words/word-3006504693.html
+quenya,QUENYA174,middle,U,False,False,0,2,False,stʰ → st → θ,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-3333849997.html
+quenya,QUENYA175,middle,U,False,False,0,3,False,stʰ → st → θ → s,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-3333849997.html | https://eldamo.org/content/words/word-3006504693.html
+quenya,QUENYA176,middle,C,True,False,0,2,True,tm → dm → nm,https://eldamo.org/content/words/word-1324444289.html | https://eldamo.org/content/words/word-1312520143.html
+quenya,QUENYA177,middle,C,True,False,0,3,True,tm → dm → nm → nw,https://eldamo.org/content/words/word-1324444289.html | https://eldamo.org/content/words/word-1312520143.html | https://eldamo.org/content/words/word-2886094609.html
+quenya,QUENYA178,middle,C,True,False,0,2,True,tn → dn → nn,https://eldamo.org/content/words/word-1324444289.html | https://eldamo.org/content/words/word-1312520143.html
+quenya,QUENYA179,middle,U,False,False,0,2,False,tr → ts → s,https://eldamo.org/content/words/word-1238072385.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA180,middle,C,False,False,0,1,True,tʰ → θ → s,https://eldamo.org/content/words/word-4030743197.html | https://eldamo.org/content/words/word-3006504693.html
+quenya,QUENYA181,middle,D,False,False,0,1,False,tʰ → θ → s,https://eldamo.org/content/words/word-3124926163.html | https://eldamo.org/content/words/word-3006504693.html
+quenya,QUENYA182,middle,C,False,False,0,2,True,tʰ → θ → s,https://eldamo.org/content/words/word-3537093625.html | https://eldamo.org/content/words/word-3006504693.html
+quenya,QUENYA183,middle,U,False,False,0,2,False,tʰr → ts → s,https://eldamo.org/content/words/word-1238072385.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA184,middle,U,False,False,0,2,False,tʰs → ts → s,https://eldamo.org/content/words/word-2678342679.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA185,middle,U,True,False,0,2,False,zb → sp → ɸ,https://eldamo.org/content/words/word-4145487633.html | https://eldamo.org/content/words/word-3333849997.html
+quenya,QUENYA186,middle,U,True,False,0,3,False,zb → sp → ɸ → f,https://eldamo.org/content/words/word-4145487633.html | https://eldamo.org/content/words/word-3333849997.html | https://eldamo.org/content/words/word-2661449019.html
+quenya,QUENYA187,middle,D,False,False,0,2,False,zb → sp → ps,https://eldamo.org/content/words/word-4145487633.html | https://eldamo.org/content/words/word-3499874945.html
+quenya,QUENYA188,middle,U,True,False,0,3,False,zb → sp → ps → s,https://eldamo.org/content/words/word-4145487633.html | https://eldamo.org/content/words/word-3499874945.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA189,middle,U,True,False,0,2,False,zd → st → θ,https://eldamo.org/content/words/word-4145487633.html | https://eldamo.org/content/words/word-3333849997.html
+quenya,QUENYA190,middle,U,True,False,0,3,False,zd → st → θ → s,https://eldamo.org/content/words/word-4145487633.html | https://eldamo.org/content/words/word-3333849997.html | https://eldamo.org/content/words/word-3006504693.html
+quenya,QUENYA191,middle,U,True,False,0,2,False,zg → sk → x,https://eldamo.org/content/words/word-4145487633.html | https://eldamo.org/content/words/word-3333849997.html
+quenya,QUENYA192,middle,U,True,False,0,3,False,zg → sk → x → h,https://eldamo.org/content/words/word-4145487633.html | https://eldamo.org/content/words/word-3333849997.html | https://eldamo.org/content/words/word-2800366809.html
+quenya,QUENYA193,middle,D,False,False,0,2,False,zg → sk → ks,https://eldamo.org/content/words/word-4145487633.html | https://eldamo.org/content/words/word-3499874945.html
+quenya,QUENYA194,middle,U,True,False,0,3,False,zg → sk → ks → s,https://eldamo.org/content/words/word-4145487633.html | https://eldamo.org/content/words/word-3499874945.html | https://eldamo.org/content/words/word-93837315.html
+quenya,QUENYA195,middle,U,False,False,0,1,False,ŋ → g → ɣ,https://eldamo.org/content/words/word-1228875561.html | https://eldamo.org/content/words/word-2772726195.html
+quenya,QUENYA196,middle,D,False,False,0,1,False,ŋ → g → ɣ,https://eldamo.org/content/words/word-44379183.html | https://eldamo.org/content/words/word-2772726195.html
+quenya,QUENYA197,middle,U,False,False,0,1,False,ŋg → g → ɣ,https://eldamo.org/content/words/word-1688730459.html | https://eldamo.org/content/words/word-2772726195.html
+quenya,QUENYA198,middle,U,False,False,0,1,False,ŋg → g → ɣ,https://eldamo.org/content/words/word-3944232895.html | https://eldamo.org/content/words/word-2772726195.html
+quenya,QUENYA199,middle,D,False,False,0,2,False,ŋgj → ndj → nj,https://eldamo.org/content/words/word-3291729015.html | https://eldamo.org/content/words/word-2488350997.html
+quenya,QUENYA200,middle,U,False,False,0,2,False,ŋj → ŋgj → ndj,https://eldamo.org/content/words/word-1270135967.html | https://eldamo.org/content/words/word-3291729015.html
+quenya,QUENYA201,middle,U,False,False,0,3,False,ŋj → ŋgj → ndj → nj,https://eldamo.org/content/words/word-1270135967.html | https://eldamo.org/content/words/word-3291729015.html | https://eldamo.org/content/words/word-2488350997.html
+quenya,QUENYA202,middle,C,True,False,0,2,True,ŋkʰ → kkʰ → kk,https://eldamo.org/content/words/word-2847294287.html | https://eldamo.org/content/words/word-2769500867.html
+quenya,QUENYA203,middle,U,True,False,0,2,False,ŋs → ɣs → hs,https://eldamo.org/content/words/word-3915121695.html | https://eldamo.org/content/words/word-2810726977.html
+quenya,QUENYA204,middle,U,True,False,0,3,False,ŋs → ɣs → hs → ss,https://eldamo.org/content/words/word-3915121695.html | https://eldamo.org/content/words/word-2810726977.html | https://eldamo.org/content/words/word-178282823.html
+quenya,QUENYA205,middle,U,False,False,0,2,False,ŋt → nt → t,https://eldamo.org/content/words/word-2390772785.html | https://eldamo.org/content/words/word-2830500177.html
+quenya,QUENYA206,middle,U,True,False,0,1,False,ŋŋ → ŋg → g,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-1688730459.html
+quenya,QUENYA207,middle,U,True,False,0,2,False,ŋŋ → ŋg → g → ɣ,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-1688730459.html | https://eldamo.org/content/words/word-2772726195.html
+quenya,QUENYA208,middle,U,True,False,0,1,False,ŋŋ → ŋg → g,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-3944232895.html
+quenya,QUENYA209,middle,U,True,False,0,2,False,ŋŋ → ŋg → g → ɣ,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-3944232895.html | https://eldamo.org/content/words/word-2772726195.html
+quenya,QUENYA210,middle,U,False,False,0,2,False,ŋŋ → ŋg → ŋ,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-2830500177.html
+quenya,QUENYA211,middle,U,True,False,0,1,False,ŋɣ → ŋg → g,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-1688730459.html
+quenya,QUENYA212,middle,U,True,False,0,2,False,ŋɣ → ŋg → g → ɣ,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-1688730459.html | https://eldamo.org/content/words/word-2772726195.html
+quenya,QUENYA213,middle,U,True,False,0,1,False,ŋɣ → ŋg → g,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-3944232895.html
+quenya,QUENYA214,middle,U,True,False,0,2,False,ŋɣ → ŋg → g → ɣ,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-3944232895.html | https://eldamo.org/content/words/word-2772726195.html
+quenya,QUENYA215,middle,U,False,False,0,2,False,ŋɣ → ŋg → ŋ,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-2830500177.html
+quenya,QUENYA216,middle,C,True,False,0,2,True,ɣs → hs → ss,https://eldamo.org/content/words/word-2810726977.html | https://eldamo.org/content/words/word-178282823.html
+sindarin,SINDARIN1,late,U,False,False,0,2,False,ae → ā → ǭ,https://eldamo.org/content/words/word-1056240093.html | https://eldamo.org/content/words/word-2858643115.html
+sindarin,SINDARIN2,late,U,False,False,0,3,False,ae → ā → ǭ → au,https://eldamo.org/content/words/word-1056240093.html | https://eldamo.org/content/words/word-2858643115.html | https://eldamo.org/content/words/word-558704171.html
+sindarin,SINDARIN3,late,U,False,False,0,2,False,ao → ā → ǭ,https://eldamo.org/content/words/word-1056240093.html | https://eldamo.org/content/words/word-2858643115.html
+sindarin,SINDARIN4,late,U,False,False,0,3,False,ao → ā → ǭ → au,https://eldamo.org/content/words/word-1056240093.html | https://eldamo.org/content/words/word-2858643115.html | https://eldamo.org/content/words/word-558704171.html
+sindarin,SINDARIN5,late,U,True,False,0,1,False,bm → mb → m,https://eldamo.org/content/words/word-3882201769.html | 
+sindarin,SINDARIN6,late,D,False,False,0,2,False,bm → mb → mm,https://eldamo.org/content/words/word-3882201769.html | https://eldamo.org/content/words/word-868023175.html
+sindarin,SINDARIN7,late,D,True,False,0,3,False,bm → mb → mm → m,https://eldamo.org/content/words/word-3882201769.html | https://eldamo.org/content/words/word-868023175.html | https://eldamo.org/content/words/word-3689144303.html
+sindarin,SINDARIN8,late,U,False,False,0,2,False,bm → mb → b,https://eldamo.org/content/words/word-3882201769.html | https://eldamo.org/content/words/word-3057844573.html
+sindarin,SINDARIN9,late,U,False,False,0,2,False,bm → mm → m,https://eldamo.org/content/words/word-2615312913.html | https://eldamo.org/content/words/word-3689144303.html
+sindarin,SINDARIN10,late,C,False,False,0,2,True,eu → iu → ȳ,https://eldamo.org/content/words/word-2662025405.html | https://eldamo.org/content/words/word-659168127.html
+sindarin,SINDARIN11,late,C,True,False,0,2,True,mb → mm → m,https://eldamo.org/content/words/word-868023175.html | https://eldamo.org/content/words/word-3689144303.html
+sindarin,SINDARIN12,late,U,True,False,0,2,False,mf → mm → m,https://eldamo.org/content/words/word-2996915415.html | https://eldamo.org/content/words/word-3689144303.html
+sindarin,SINDARIN13,late,U,False,False,0,2,False,mw → mm → m,https://eldamo.org/content/words/word-1484184939.html | https://eldamo.org/content/words/word-3689144303.html
+sindarin,SINDARIN14,late,U,True,False,0,2,False,pm → bm → mm,https://eldamo.org/content/words/word-3463937975.html | https://eldamo.org/content/words/word-2615312913.html
+sindarin,SINDARIN15,late,U,True,False,0,3,False,pm → bm → mm → m,https://eldamo.org/content/words/word-3463937975.html | https://eldamo.org/content/words/word-2615312913.html | https://eldamo.org/content/words/word-3689144303.html
+sindarin,SINDARIN16,late,U,False,False,0,2,False,sb → zb → ðβ,https://eldamo.org/content/words/word-882174441.html | https://eldamo.org/content/words/word-1951748921.html
+sindarin,SINDARIN17,late,D,False,False,0,2,False,sg → zg → ðɣ,https://eldamo.org/content/words/word-882174441.html | https://eldamo.org/content/words/word-1951748921.html
+sindarin,SINDARIN18,late,U,True,False,0,2,False,tn → dn → nn,https://eldamo.org/content/words/word-3463937975.html | https://eldamo.org/content/words/word-2615312913.html
+sindarin,SINDARIN19,late,D,False,False,0,2,False,ttʰ → θθ → θ,https://eldamo.org/content/words/word-883570327.html | https://eldamo.org/content/words/word-1206014597.html
+sindarin,SINDARIN20,late,U,False,False,0,2,False,tʰt → ttʰ → θθ,https://eldamo.org/content/words/word-3183451073.html | https://eldamo.org/content/words/word-883570327.html
+sindarin,SINDARIN21,late,U,False,False,0,3,False,tʰt → ttʰ → θθ → θ,https://eldamo.org/content/words/word-3183451073.html | https://eldamo.org/content/words/word-883570327.html | https://eldamo.org/content/words/word-1206014597.html
+sindarin,SINDARIN22,late,U,False,False,0,2,False,tʰtʰ → ttʰ → θθ,https://eldamo.org/content/words/word-3183451073.html | https://eldamo.org/content/words/word-883570327.html
+sindarin,SINDARIN23,late,U,False,False,0,3,False,tʰtʰ → ttʰ → θθ → θ,https://eldamo.org/content/words/word-3183451073.html | https://eldamo.org/content/words/word-883570327.html | https://eldamo.org/content/words/word-1206014597.html
+sindarin,SINDARIN24,late,C,True,False,0,2,True,ðm → ðv → ðw,https://eldamo.org/content/words/word-1951379117.html | https://eldamo.org/content/words/word-2192660503.html
+sindarin,SINDARIN25,late,C,False,False,0,2,True,ā → ǭ → au,https://eldamo.org/content/words/word-2858643115.html | https://eldamo.org/content/words/word-558704171.html
+sindarin,SINDARIN26,late,U,True,False,0,2,False,ę̄ → ai → ae,https://eldamo.org/content/words/word-2387695245.html | https://eldamo.org/content/words/word-941153689.html
+sindarin,SINDARIN27,late,U,False,False,0,0,False,ŋ → ŋg → g, | https://eldamo.org/content/words/word-1688730459.html
+sindarin,SINDARIN28,late,U,False,False,0,1,False,ŋ → ŋg → g, | https://eldamo.org/content/words/word-3057844573.html
+sindarin,SINDARIN29,late,U,False,False,0,0,False,ŋg → ŋ → g, | https://eldamo.org/content/words/word-1228875561.html
+sindarin,SINDARIN30,late,U,False,False,0,2,False,ŋgj → ŋg → g,https://eldamo.org/content/words/word-345959193.html | https://eldamo.org/content/words/word-3057844573.html
+sindarin,SINDARIN31,late,D,False,False,0,2,False,ŋgw → mb → mm,https://eldamo.org/content/words/word-171120983.html | https://eldamo.org/content/words/word-868023175.html
+sindarin,SINDARIN32,late,D,True,False,0,3,False,ŋgw → mb → mm → m,https://eldamo.org/content/words/word-171120983.html | https://eldamo.org/content/words/word-868023175.html | https://eldamo.org/content/words/word-3689144303.html
+sindarin,SINDARIN33,late,U,False,False,0,2,False,ŋgw → mb → b,https://eldamo.org/content/words/word-171120983.html | https://eldamo.org/content/words/word-3057844573.html
+sindarin,SINDARIN34,late,U,False,False,0,2,False,ŋj → ŋgj → ŋg,https://eldamo.org/content/words/word-2233951333.html | https://eldamo.org/content/words/word-345959193.html
+sindarin,SINDARIN35,late,U,False,False,0,2,False,ŋw → ŋgw → mb,https://eldamo.org/content/words/word-2233951333.html | https://eldamo.org/content/words/word-171120983.html
+sindarin,SINDARIN36,late,U,False,False,0,3,False,ŋw → ŋgw → mb → mm,https://eldamo.org/content/words/word-2233951333.html | https://eldamo.org/content/words/word-171120983.html | https://eldamo.org/content/words/word-868023175.html
+sindarin,SINDARIN37,late,U,False,False,0,1,False,ŋŋ → ŋg → g,https://eldamo.org/content/words/word-3404492995.html | https://eldamo.org/content/words/word-1688730459.html
+sindarin,SINDARIN38,late,U,True,False,0,1,False,ŋŋ → ŋg → ŋ,https://eldamo.org/content/words/word-3404492995.html | 
+sindarin,SINDARIN39,late,U,True,False,0,1,False,ŋŋ → ŋg → ŋ → g,https://eldamo.org/content/words/word-3404492995.html |  | https://eldamo.org/content/words/word-1228875561.html
+sindarin,SINDARIN40,late,U,False,False,0,2,False,ŋŋ → ŋg → g,https://eldamo.org/content/words/word-3404492995.html | https://eldamo.org/content/words/word-3057844573.html
+sindarin,SINDARIN41,late,U,False,False,0,1,False,ŋɣ → ŋg → g,https://eldamo.org/content/words/word-3404492995.html | https://eldamo.org/content/words/word-1688730459.html
+sindarin,SINDARIN42,late,U,True,False,0,1,False,ŋɣ → ŋg → ŋ,https://eldamo.org/content/words/word-3404492995.html | 
+sindarin,SINDARIN43,late,U,True,False,0,1,False,ŋɣ → ŋg → ŋ → g,https://eldamo.org/content/words/word-3404492995.html |  | https://eldamo.org/content/words/word-1228875561.html
+sindarin,SINDARIN44,late,U,False,False,0,2,False,ŋɣ → ŋg → g,https://eldamo.org/content/words/word-3404492995.html | https://eldamo.org/content/words/word-3057844573.html
+sindarin,SINDARIN45,middle,U,True,False,0,1,False,ae → ā → ō,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-1909322629.html
+sindarin,SINDARIN46,middle,U,True,False,0,2,False,ae → ā → ō → ū,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-1909322629.html | https://eldamo.org/content/words/word-390078853.html
+sindarin,SINDARIN47,middle,U,True,False,0,1,False,ae → ā → ǭ,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2277851021.html
+sindarin,SINDARIN48,middle,U,True,False,0,2,False,ae → ā → ǭ → ou,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2277851021.html | https://eldamo.org/content/words/word-4073827619.html
+sindarin,SINDARIN49,middle,U,False,False,0,2,False,ae → ā → ǭ,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2790556075.html
+sindarin,SINDARIN50,middle,U,False,False,0,3,False,ae → ā → ǭ → ou,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2790556075.html | https://eldamo.org/content/words/word-4073827619.html
+sindarin,SINDARIN51,middle,D,False,False,0,2,False,ai → ę̄ → ae,https://eldamo.org/content/words/word-3619603651.html | https://eldamo.org/content/words/word-3173115217.html
+sindarin,SINDARIN52,middle,U,True,False,0,1,False,ao → ā → ō,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-1909322629.html
+sindarin,SINDARIN53,middle,U,True,False,0,2,False,ao → ā → ō → ū,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-1909322629.html | https://eldamo.org/content/words/word-390078853.html
+sindarin,SINDARIN54,middle,U,True,False,0,1,False,ao → ā → ǭ,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2277851021.html
+sindarin,SINDARIN55,middle,U,True,False,0,2,False,ao → ā → ǭ → ou,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2277851021.html | https://eldamo.org/content/words/word-4073827619.html
+sindarin,SINDARIN56,middle,U,False,False,0,2,False,ao → ā → ǭ,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2790556075.html
+sindarin,SINDARIN57,middle,U,False,False,0,3,False,ao → ā → ǭ → ou,https://eldamo.org/content/words/word-2229536775.html | https://eldamo.org/content/words/word-2790556075.html | https://eldamo.org/content/words/word-4073827619.html
+sindarin,SINDARIN58,middle,C,False,False,0,2,True,au → ǭ → ou,https://eldamo.org/content/words/word-2790556075.html | https://eldamo.org/content/words/word-4073827619.html
+sindarin,SINDARIN59,middle,C,True,False,0,2,True,ei → oi → ui,https://eldamo.org/content/words/word-1880600739.html | https://eldamo.org/content/words/word-2826795683.html
+sindarin,SINDARIN60,middle,U,True,False,0,2,False,j̊ → x → h,https://eldamo.org/content/words/word-1284301541.html | https://eldamo.org/content/words/word-1195324115.html
+sindarin,SINDARIN61,middle,U,False,False,0,2,False,kʰ → x → h,https://eldamo.org/content/words/word-1770347191.html | https://eldamo.org/content/words/word-1195324115.html
+sindarin,SINDARIN62,middle,U,True,False,0,2,False,kʰj → kʰ → x,https://eldamo.org/content/words/word-4025342543.html | https://eldamo.org/content/words/word-1770347191.html
+sindarin,SINDARIN63,middle,U,True,False,0,3,False,kʰj → kʰ → x → h,https://eldamo.org/content/words/word-4025342543.html | https://eldamo.org/content/words/word-1770347191.html | https://eldamo.org/content/words/word-1195324115.html
+sindarin,SINDARIN64,middle,U,True,False,0,2,False,kʰw → pʰ → ɸ,https://eldamo.org/content/words/word-3214863235.html | https://eldamo.org/content/words/word-1770347191.html
+sindarin,SINDARIN65,middle,U,True,False,0,3,False,kʰw → pʰ → ɸ → f,https://eldamo.org/content/words/word-3214863235.html | https://eldamo.org/content/words/word-1770347191.html | https://eldamo.org/content/words/word-2995333959.html
+sindarin,SINDARIN66,middle,U,False,False,0,1,False,p → pʰ → ɸ,https://eldamo.org/content/words/word-2684793511.html | https://eldamo.org/content/words/word-1770347191.html
+sindarin,SINDARIN67,middle,U,False,False,0,2,False,p → pʰ → ɸ → f,https://eldamo.org/content/words/word-2684793511.html | https://eldamo.org/content/words/word-1770347191.html | https://eldamo.org/content/words/word-2995333959.html
+sindarin,SINDARIN68,middle,C,False,False,0,2,True,pʰ → ɸ → f,https://eldamo.org/content/words/word-1770347191.html | https://eldamo.org/content/words/word-2995333959.html
+sindarin,SINDARIN69,middle,U,False,False,0,2,False,sj → j̊ → x,https://eldamo.org/content/words/word-3693878703.html | https://eldamo.org/content/words/word-1284301541.html
+sindarin,SINDARIN70,middle,U,True,False,0,3,False,sj → j̊ → x → h,https://eldamo.org/content/words/word-3693878703.html | https://eldamo.org/content/words/word-1284301541.html | https://eldamo.org/content/words/word-1195324115.html
+sindarin,SINDARIN71,middle,U,False,False,0,2,False,sk → sx → x,https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html
+sindarin,SINDARIN72,middle,U,True,False,0,3,False,sk → sx → x → h,https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html | https://eldamo.org/content/words/word-1195324115.html
+sindarin,SINDARIN73,middle,U,True,False,0,2,False,skj → sk → sx,https://eldamo.org/content/words/word-4025342543.html | https://eldamo.org/content/words/word-948882833.html
+sindarin,SINDARIN74,middle,U,True,False,0,3,False,skj → sk → sx → x,https://eldamo.org/content/words/word-4025342543.html | https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html
+sindarin,SINDARIN75,middle,U,True,False,0,0,False,skw → sw → w̥,https://eldamo.org/content/words/word-1872897535.html | https://eldamo.org/content/words/word-165461035.html
+sindarin,SINDARIN76,middle,U,True,False,0,1,False,skw → sw → w̥ → xw,https://eldamo.org/content/words/word-1872897535.html | https://eldamo.org/content/words/word-165461035.html | https://eldamo.org/content/words/word-1284301541.html
+sindarin,SINDARIN77,middle,U,False,False,0,1,False,skw → sw → w̥,https://eldamo.org/content/words/word-1872897535.html | https://eldamo.org/content/words/word-3693878703.html
+sindarin,SINDARIN78,middle,U,False,False,0,2,False,skw → sw → w̥ → xw,https://eldamo.org/content/words/word-1872897535.html | https://eldamo.org/content/words/word-3693878703.html | https://eldamo.org/content/words/word-1284301541.html
+sindarin,SINDARIN79,middle,U,False,False,0,1,False,skʰ → sk → sx,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-948882833.html
+sindarin,SINDARIN80,middle,U,False,False,0,2,False,skʰ → sk → sx → x,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html
+sindarin,SINDARIN81,middle,U,False,False,0,2,False,sl → θl → fl,https://eldamo.org/content/words/word-2075290201.html | https://eldamo.org/content/words/word-2640707457.html
+sindarin,SINDARIN82,middle,U,False,False,0,2,False,sp → sɸ → ɸ,https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html
+sindarin,SINDARIN83,middle,U,True,False,0,3,False,sp → sɸ → ɸ → f,https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html | https://eldamo.org/content/words/word-2995333959.html
+sindarin,SINDARIN84,middle,U,False,False,0,2,False,st → sθ → θ,https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html
+sindarin,SINDARIN85,middle,U,True,False,0,0,False,stʰ → st → θ,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-570537175.html
+sindarin,SINDARIN86,middle,U,False,False,0,1,False,stʰ → st → sθ,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-948882833.html
+sindarin,SINDARIN87,middle,U,False,False,0,2,False,stʰ → st → sθ → θ,https://eldamo.org/content/words/word-2699949575.html | https://eldamo.org/content/words/word-948882833.html | https://eldamo.org/content/words/word-2061688473.html
+sindarin,SINDARIN88,middle,U,False,False,0,1,False,sw → w̥ → xw,https://eldamo.org/content/words/word-165461035.html | https://eldamo.org/content/words/word-1284301541.html
+sindarin,SINDARIN89,middle,U,False,False,0,2,False,sw → w̥ → xw,https://eldamo.org/content/words/word-3693878703.html | https://eldamo.org/content/words/word-1284301541.html
+sindarin,SINDARIN90,middle,U,True,False,0,2,False,sx → x → h,https://eldamo.org/content/words/word-2061688473.html | https://eldamo.org/content/words/word-1195324115.html
+sindarin,SINDARIN91,middle,U,True,False,0,2,False,sɸ → ɸ → f,https://eldamo.org/content/words/word-2061688473.html | https://eldamo.org/content/words/word-2995333959.html
+sindarin,SINDARIN92,middle,U,False,False,0,1,False,z → r → r̥,https://eldamo.org/content/words/word-982618329.html | https://eldamo.org/content/words/word-876815979.html
+sindarin,SINDARIN93,middle,U,False,False,0,1,False,ā → ō → ū,https://eldamo.org/content/words/word-1909322629.html | https://eldamo.org/content/words/word-390078853.html
+sindarin,SINDARIN94,middle,D,False,False,0,1,False,ā → ǭ → ou,https://eldamo.org/content/words/word-2277851021.html | https://eldamo.org/content/words/word-4073827619.html
+sindarin,SINDARIN95,middle,D,True,False,0,2,False,ā → ǭ → ou → au,https://eldamo.org/content/words/word-2277851021.html | https://eldamo.org/content/words/word-4073827619.html | https://eldamo.org/content/words/word-2902864717.html
+sindarin,SINDARIN96,middle,C,False,False,0,2,True,ā → ǭ → ou,https://eldamo.org/content/words/word-2790556075.html | https://eldamo.org/content/words/word-4073827619.html
+sindarin,SINDARIN97,middle,C,True,False,0,3,True,ā → ǭ → ou → au,https://eldamo.org/content/words/word-2790556075.html | https://eldamo.org/content/words/word-4073827619.html | https://eldamo.org/content/words/word-2902864717.html
+sindarin,SINDARIN98,middle,U,False,False,0,2,False,ŋgj → ŋg → g,https://eldamo.org/content/words/word-4025342543.html | https://eldamo.org/content/words/word-956128961.html
+sindarin,SINDARIN99,middle,D,False,False,0,2,False,ŋgw → mb → mm,https://eldamo.org/content/words/word-3214863235.html | https://eldamo.org/content/words/word-1317326183.html
+sindarin,SINDARIN100,middle,U,False,False,0,2,False,ŋgw → mb → b,https://eldamo.org/content/words/word-3214863235.html | https://eldamo.org/content/words/word-956128961.html
+sindarin,SINDARIN101,middle,U,False,False,0,2,False,ŋj → ŋgj → ŋg,https://eldamo.org/content/words/word-1270135967.html | https://eldamo.org/content/words/word-4025342543.html
+sindarin,SINDARIN102,middle,U,True,False,0,2,False,ŋs → ɣs → hs,https://eldamo.org/content/words/word-3915121695.html | https://eldamo.org/content/words/word-2810726977.html
+sindarin,SINDARIN103,middle,U,True,False,0,3,False,ŋs → ɣs → hs → ss,https://eldamo.org/content/words/word-3915121695.html | https://eldamo.org/content/words/word-2810726977.html | https://eldamo.org/content/words/word-178282823.html
+sindarin,SINDARIN104,middle,U,False,False,0,2,False,ŋw → ŋgw → mb,https://eldamo.org/content/words/word-1270135967.html | https://eldamo.org/content/words/word-3214863235.html
+sindarin,SINDARIN105,middle,U,False,False,0,3,False,ŋw → ŋgw → mb → mm,https://eldamo.org/content/words/word-1270135967.html | https://eldamo.org/content/words/word-3214863235.html | https://eldamo.org/content/words/word-1317326183.html
+sindarin,SINDARIN106,middle,U,True,False,0,1,False,ŋŋ → ŋg → g,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-1688730459.html
+sindarin,SINDARIN107,middle,U,True,False,0,1,False,ŋŋ → ŋg → g,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-3944232895.html
+sindarin,SINDARIN108,middle,U,False,False,0,2,False,ŋŋ → ŋg → g,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-956128961.html
+sindarin,SINDARIN109,middle,U,True,False,0,1,False,ŋɣ → ŋg → g,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-1688730459.html
+sindarin,SINDARIN110,middle,U,True,False,0,1,False,ŋɣ → ŋg → g,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-3944232895.html
+sindarin,SINDARIN111,middle,U,False,False,0,2,False,ŋɣ → ŋg → g,https://eldamo.org/content/words/word-2849203249.html | https://eldamo.org/content/words/word-956128961.html
+sindarin,SINDARIN112,middle,U,False,False,0,2,False,ǣ → ę̄ → ae,https://eldamo.org/content/words/word-3619603651.html | https://eldamo.org/content/words/word-3173115217.html
+sindarin,SINDARIN113,middle,C,True,False,0,2,True,ǭ → ou → au,https://eldamo.org/content/words/word-4073827619.html | https://eldamo.org/content/words/word-2902864717.html
+sindarin,SINDARIN114,middle,C,True,False,0,2,True,ɣs → hs → ss,https://eldamo.org/content/words/word-2810726977.html | https://eldamo.org/content/words/word-178282823.html

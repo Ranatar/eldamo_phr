@@ -1,0 +1,4895 @@
+[
+  {
+    "id": "SINDARIN1",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r533",
+          "sindarin-r546"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r239",
+          "sindarin-r548"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN2",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ",
+      "au"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-558704171.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      2,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r533",
+          "sindarin-r546"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r239",
+          "sindarin-r548"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r115",
+          "sindarin-r240"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN3",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r534",
+          "sindarin-r547"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r239",
+          "sindarin-r548"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN4",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ",
+      "au"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-558704171.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      2,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r534",
+          "sindarin-r547"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r239",
+          "sindarin-r548"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r115",
+          "sindarin-r240"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN5",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "bm",
+      "mb",
+      "m"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      ""
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r349",
+          "sindarin-r380"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN6",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "bm",
+      "mb",
+      "mm"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "grade": "D",
+    "stage_sequence": [
+      0,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r349",
+          "sindarin-r380"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r69",
+          "sindarin-r190"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN7",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "bm",
+      "mb",
+      "mm",
+      "m"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "https://eldamo.org/content/words/word-868023175.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "grade": "D",
+    "stage_sequence": [
+      0,
+      3,
+      3
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r349",
+          "sindarin-r380"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r69",
+          "sindarin-r190"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r70",
+          "sindarin-r71"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN8",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "bm",
+      "mb",
+      "b"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r349",
+          "sindarin-r380"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r10",
+          "sindarin-r387"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN9",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "bm",
+      "mm",
+      "m"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2615312913.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      2,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r169",
+          "sindarin-r188"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r70",
+          "sindarin-r71"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN10",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "eu",
+      "iu",
+      "ȳ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2662025405.html",
+      "https://eldamo.org/content/words/word-659168127.html"
+    ],
+    "grade": "C",
+    "stage_sequence": [
+      2,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r260",
+          "sindarin-r563"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r102",
+          "sindarin-r261"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": true,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN11",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "mb",
+      "mm",
+      "m"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-868023175.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "grade": "C",
+    "stage_sequence": [
+      3,
+      3
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r69",
+          "sindarin-r190"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r70",
+          "sindarin-r71"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": true,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN12",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "mf",
+      "mm",
+      "m"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2996915415.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      3,
+      3
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r68",
+          "sindarin-r139"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r70",
+          "sindarin-r71"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN13",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "mw",
+      "mm",
+      "m"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1484184939.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      2,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r186",
+          "sindarin-r189"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r70",
+          "sindarin-r71"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN14",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "pm",
+      "bm",
+      "mm"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3463937975.html",
+      "https://eldamo.org/content/words/word-2615312913.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      2,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r167",
+          "sindarin-r281"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r169",
+          "sindarin-r188"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN15",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "pm",
+      "bm",
+      "mm",
+      "m"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3463937975.html",
+      "https://eldamo.org/content/words/word-2615312913.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      2,
+      2,
+      3
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r167",
+          "sindarin-r281"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r169",
+          "sindarin-r188"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r70",
+          "sindarin-r71"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN16",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "sb",
+      "zb",
+      "ðβ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-1951748921.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r494",
+          "sindarin-r514"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r53",
+          "sindarin-r59"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN17",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "sg",
+      "zg",
+      "ðɣ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-1951748921.html"
+    ],
+    "grade": "D",
+    "stage_sequence": [
+      0,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r495",
+          "sindarin-r515"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r52",
+          "sindarin-r517"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN18",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "tn",
+      "dn",
+      "nn"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3463937975.html",
+      "https://eldamo.org/content/words/word-2615312913.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      2,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r174",
+          "sindarin-r295"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r177",
+          "sindarin-r199"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN19",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ttʰ",
+      "θθ",
+      "θ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-883570327.html",
+      "https://eldamo.org/content/words/word-1206014597.html"
+    ],
+    "grade": "D",
+    "stage_sequence": [
+      2,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r148",
+          "sindarin-r297"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r36",
+          "sindarin-r153"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN20",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "tʰt",
+      "ttʰ",
+      "θθ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r291",
+          "sindarin-r336"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r148",
+          "sindarin-r297"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN21",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "tʰt",
+      "ttʰ",
+      "θθ",
+      "θ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html",
+      "https://eldamo.org/content/words/word-1206014597.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      2,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r291",
+          "sindarin-r336"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r148",
+          "sindarin-r297"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r36",
+          "sindarin-r153"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN22",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "tʰtʰ",
+      "ttʰ",
+      "θθ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r292",
+          "sindarin-r337"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r148",
+          "sindarin-r297"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN23",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "tʰtʰ",
+      "ttʰ",
+      "θθ",
+      "θ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html",
+      "https://eldamo.org/content/words/word-1206014597.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      2,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r292",
+          "sindarin-r337"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r148",
+          "sindarin-r297"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r36",
+          "sindarin-r153"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN24",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ðm",
+      "ðv",
+      "ðw"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1951379117.html",
+      "https://eldamo.org/content/words/word-2192660503.html"
+    ],
+    "grade": "C",
+    "stage_sequence": [
+      3,
+      3
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r57",
+          "sindarin-r61"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r58",
+          "sindarin-r62"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": true,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN25",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ā",
+      "ǭ",
+      "au"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-558704171.html"
+    ],
+    "grade": "C",
+    "stage_sequence": [
+      2,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r239",
+          "sindarin-r548"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r115",
+          "sindarin-r240"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": true,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN26",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ę̄",
+      "ai",
+      "ae"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2387695245.html",
+      "https://eldamo.org/content/words/word-941153689.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      3,
+      3
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r112",
+          "sindarin-r231"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r110",
+          "sindarin-r557"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN27",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋ",
+      "ŋg",
+      "g"
+    ],
+    "urls": [
+      "",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN28",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋ",
+      "ŋg",
+      "g"
+    ],
+    "urls": [
+      "",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r21",
+          "sindarin-r206"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN29",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋg",
+      "ŋ",
+      "g"
+    ],
+    "urls": [
+      "",
+      "https://eldamo.org/content/words/word-1228875561.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN30",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋgj",
+      "ŋg",
+      "g"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-345959193.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      2,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r23",
+          "sindarin-r428"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r21",
+          "sindarin-r206"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN31",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "grade": "D",
+    "stage_sequence": [
+      1,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r272",
+          "sindarin-r423"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r69",
+          "sindarin-r190"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN32",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋgw",
+      "mb",
+      "mm",
+      "m"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-868023175.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "grade": "D",
+    "stage_sequence": [
+      1,
+      3,
+      3
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r272",
+          "sindarin-r423"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r69",
+          "sindarin-r190"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r70",
+          "sindarin-r71"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN33",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋgw",
+      "mb",
+      "b"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r272",
+          "sindarin-r423"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r10",
+          "sindarin-r387"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN34",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋj",
+      "ŋgj",
+      "ŋg"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      "https://eldamo.org/content/words/word-345959193.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r357",
+          "sindarin-r434"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r23",
+          "sindarin-r428"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN35",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      "https://eldamo.org/content/words/word-171120983.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r358",
+          "sindarin-r435"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r272",
+          "sindarin-r423"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN36",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2233951333.html",
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r358",
+          "sindarin-r435"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r272",
+          "sindarin-r423"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r69",
+          "sindarin-r190"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN37",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r19",
+          "sindarin-r407"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN38",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "ŋ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      ""
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r19",
+          "sindarin-r407"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN39",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "ŋ",
+      "g"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "",
+      "https://eldamo.org/content/words/word-1228875561.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0,
+      1
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r19",
+          "sindarin-r407"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN40",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r19",
+          "sindarin-r407"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r21",
+          "sindarin-r206"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN41",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r356",
+          "sindarin-r462"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN42",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "ŋ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      ""
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r356",
+          "sindarin-r462"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN43",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "ŋ",
+      "g"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "",
+      "https://eldamo.org/content/words/word-1228875561.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0,
+      1
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r356",
+          "sindarin-r462"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN44",
+    "branch": "sindarin",
+    "era": "late",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3404492995.html",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      3
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r356",
+          "sindarin-r462"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r21",
+          "sindarin-r206"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN45",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ō"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r536",
+          "sindarin-r549"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN46",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ō",
+      "ū"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html",
+      "https://eldamo.org/content/words/word-390078853.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0,
+      1
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r536",
+          "sindarin-r549"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r251",
+          "sindarin-r555"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN47",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r536",
+          "sindarin-r549"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN48",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r536",
+          "sindarin-r549"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r119",
+          "sindarin-r244"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN49",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r536",
+          "sindarin-r549"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r242",
+          "sindarin-r553"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN50",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ae",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r536",
+          "sindarin-r549"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r242",
+          "sindarin-r553"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r119",
+          "sindarin-r244"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN51",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ai",
+      "ę̄",
+      "ae"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3619603651.html",
+      "https://eldamo.org/content/words/word-3173115217.html"
+    ],
+    "grade": "D",
+    "stage_sequence": [
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r233",
+          "sindarin-r558"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r111",
+          "sindarin-r234"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN52",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ō"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r537",
+          "sindarin-r550"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN53",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ō",
+      "ū"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-1909322629.html",
+      "https://eldamo.org/content/words/word-390078853.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0,
+      1
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r537",
+          "sindarin-r550"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r251",
+          "sindarin-r555"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN54",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r537",
+          "sindarin-r550"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN55",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r537",
+          "sindarin-r550"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r119",
+          "sindarin-r244"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN56",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r537",
+          "sindarin-r550"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r242",
+          "sindarin-r553"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN57",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ao",
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2229536775.html",
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r537",
+          "sindarin-r550"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r242",
+          "sindarin-r553"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r119",
+          "sindarin-r244"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN58",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "au",
+      "ǭ",
+      "ou"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "grade": "C",
+    "stage_sequence": [
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r243",
+          "sindarin-r562"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r119",
+          "sindarin-r244"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": true,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN59",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ei",
+      "oi",
+      "ui"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1880600739.html",
+      "https://eldamo.org/content/words/word-2826795683.html"
+    ],
+    "grade": "C",
+    "stage_sequence": [
+      1,
+      1
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r248",
+          "sindarin-r560"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r249",
+          "sindarin-r258"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": true,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN60",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "j̊",
+      "x",
+      "h"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1284301541.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      2,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r46",
+          "sindarin-r215"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r43",
+          "sindarin-r48"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN61",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "kʰ",
+      "x",
+      "h"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r163",
+          "sindarin-r348"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r43",
+          "sindarin-r48"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN62",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "kʰj",
+      "kʰ",
+      "x"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-1770347191.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      1
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r266",
+          "sindarin-r482"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r163",
+          "sindarin-r348"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN63",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "kʰj",
+      "kʰ",
+      "x",
+      "h"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      1,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r266",
+          "sindarin-r482"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r163",
+          "sindarin-r348"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r43",
+          "sindarin-r48"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN64",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "kʰw",
+      "pʰ",
+      "ɸ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1770347191.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      1
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r140",
+          "sindarin-r347"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r141",
+          "sindarin-r335"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN65",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "kʰw",
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      1,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r140",
+          "sindarin-r347"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r141",
+          "sindarin-r335"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r32",
+          "sindarin-r143"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN66",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "p",
+      "pʰ",
+      "ɸ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-1770347191.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r141",
+          "sindarin-r335"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN67",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "p",
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r141",
+          "sindarin-r335"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r32",
+          "sindarin-r143"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN68",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "grade": "C",
+    "stage_sequence": [
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r141",
+          "sindarin-r335"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r32",
+          "sindarin-r143"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": true,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN69",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "sj",
+      "j̊",
+      "x"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r214",
+          "sindarin-r507"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r46",
+          "sindarin-r215"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN70",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "sj",
+      "j̊",
+      "x",
+      "h"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      2,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r214",
+          "sindarin-r507"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r46",
+          "sindarin-r215"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r43",
+          "sindarin-r48"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN71",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "sk",
+      "sx",
+      "x"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r164",
+          "sindarin-r326"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r42",
+          "sindarin-r165"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN72",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "sk",
+      "sx",
+      "x",
+      "h"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      2,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r164",
+          "sindarin-r326"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r42",
+          "sindarin-r165"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r43",
+          "sindarin-r48"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN73",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "skj",
+      "sk",
+      "sx"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-948882833.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      1
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r269",
+          "sindarin-r485"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r164",
+          "sindarin-r326"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN74",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "skj",
+      "sk",
+      "sx",
+      "x"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      1,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r269",
+          "sindarin-r485"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r164",
+          "sindarin-r326"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r42",
+          "sindarin-r165"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN75",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "skw",
+      "sw",
+      "w̥"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-165461035.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN76",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "skw",
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-165461035.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r47",
+          "sindarin-r211"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN77",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "skw",
+      "sw",
+      "w̥"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-3693878703.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r210",
+          "sindarin-r508"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN78",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "skw",
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1872897535.html",
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r210",
+          "sindarin-r508"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r47",
+          "sindarin-r211"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN79",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "skʰ",
+      "sk",
+      "sx"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r164",
+          "sindarin-r326"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN80",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "skʰ",
+      "sk",
+      "sx",
+      "x"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r164",
+          "sindarin-r326"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r42",
+          "sindarin-r165"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN81",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "sl",
+      "θl",
+      "fl"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2075290201.html",
+      "https://eldamo.org/content/words/word-2640707457.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r156",
+          "sindarin-r510"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r33",
+          "sindarin-r39"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN82",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "sp",
+      "sɸ",
+      "ɸ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r142",
+          "sindarin-r290"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r31",
+          "sindarin-r131"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN83",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "sp",
+      "sɸ",
+      "ɸ",
+      "f"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      2,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r142",
+          "sindarin-r290"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r31",
+          "sindarin-r131"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r32",
+          "sindarin-r143"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN84",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "st",
+      "sθ",
+      "θ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r155",
+          "sindarin-r308"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r38",
+          "sindarin-r158"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN85",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "stʰ",
+      "st",
+      "θ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-570537175.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN86",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "stʰ",
+      "st",
+      "sθ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r155",
+          "sindarin-r308"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN87",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "stʰ",
+      "st",
+      "sθ",
+      "θ"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html",
+      "https://eldamo.org/content/words/word-2061688473.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r155",
+          "sindarin-r308"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r38",
+          "sindarin-r158"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN88",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-165461035.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r47",
+          "sindarin-r211"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN89",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "sw",
+      "w̥",
+      "xw"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3693878703.html",
+      "https://eldamo.org/content/words/word-1284301541.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r210",
+          "sindarin-r508"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r47",
+          "sindarin-r211"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN90",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "sx",
+      "x",
+      "h"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-1195324115.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      2,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r42",
+          "sindarin-r165"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r43",
+          "sindarin-r48"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN91",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "sɸ",
+      "ɸ",
+      "f"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2061688473.html",
+      "https://eldamo.org/content/words/word-2995333959.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      2,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r31",
+          "sindarin-r131"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r32",
+          "sindarin-r143"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN92",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "z",
+      "r",
+      "r̥"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-982618329.html",
+      "https://eldamo.org/content/words/word-876815979.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r86",
+          "sindarin-r222"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN93",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ā",
+      "ō",
+      "ū"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1909322629.html",
+      "https://eldamo.org/content/words/word-390078853.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r251",
+          "sindarin-r555"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN94",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "grade": "D",
+    "stage_sequence": [
+      0,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r119",
+          "sindarin-r244"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN95",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou",
+      "au"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2277851021.html",
+      "https://eldamo.org/content/words/word-4073827619.html",
+      "https://eldamo.org/content/words/word-2902864717.html"
+    ],
+    "grade": "D",
+    "stage_sequence": [
+      0,
+      2,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r119",
+          "sindarin-r244"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r117",
+          "sindarin-r120"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN96",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html"
+    ],
+    "grade": "C",
+    "stage_sequence": [
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r242",
+          "sindarin-r553"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r119",
+          "sindarin-r244"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": true,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN97",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ā",
+      "ǭ",
+      "ou",
+      "au"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2790556075.html",
+      "https://eldamo.org/content/words/word-4073827619.html",
+      "https://eldamo.org/content/words/word-2902864717.html"
+    ],
+    "grade": "C",
+    "stage_sequence": [
+      1,
+      2,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r242",
+          "sindarin-r553"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r119",
+          "sindarin-r244"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r117",
+          "sindarin-r120"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": true,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN98",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ŋgj",
+      "ŋg",
+      "g"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-4025342543.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r268",
+          "sindarin-r484"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r25",
+          "sindarin-r208"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN99",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1317326183.html"
+    ],
+    "grade": "D",
+    "stage_sequence": [
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r192",
+          "sindarin-r452"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r73",
+          "sindarin-r194"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN100",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ŋgw",
+      "mb",
+      "b"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r192",
+          "sindarin-r452"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r12",
+          "sindarin-r193"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN101",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ŋj",
+      "ŋgj",
+      "ŋg"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-4025342543.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r366",
+          "sindarin-r446"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r268",
+          "sindarin-r484"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN102",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ŋs",
+      "ɣs",
+      "hs"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3915121695.html",
+      "https://eldamo.org/content/words/word-2810726977.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r451",
+          "sindarin-r470"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r476",
+          "sindarin-r527"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN103",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ŋs",
+      "ɣs",
+      "hs",
+      "ss"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3915121695.html",
+      "https://eldamo.org/content/words/word-2810726977.html",
+      "https://eldamo.org/content/words/word-178282823.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r451",
+          "sindarin-r470"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r476",
+          "sindarin-r527"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r497",
+          "sindarin-r529"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN104",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-3214863235.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r367",
+          "sindarin-r375"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r192",
+          "sindarin-r452"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN105",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ŋw",
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-1270135967.html",
+      "https://eldamo.org/content/words/word-3214863235.html",
+      "https://eldamo.org/content/words/word-1317326183.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r367",
+          "sindarin-r375"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r192",
+          "sindarin-r452"
+        ]
+      },
+      {
+        "step": 2,
+        "source_rule_ids": [
+          "sindarin-r73",
+          "sindarin-r194"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN106",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r369",
+          "sindarin-r447"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN107",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-3944232895.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r369",
+          "sindarin-r447"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN108",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ŋŋ",
+      "ŋg",
+      "g"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r369",
+          "sindarin-r447"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r25",
+          "sindarin-r208"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN109",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r368",
+          "sindarin-r475"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN110",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-3944232895.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r368",
+          "sindarin-r475"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN111",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ŋɣ",
+      "ŋg",
+      "g"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2849203249.html",
+      "https://eldamo.org/content/words/word-956128961.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      0,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r368",
+          "sindarin-r475"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r25",
+          "sindarin-r208"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN112",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ǣ",
+      "ę̄",
+      "ae"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-3619603651.html",
+      "https://eldamo.org/content/words/word-3173115217.html"
+    ],
+    "grade": "U",
+    "stage_sequence": [
+      1,
+      2
+    ],
+    "same_stage_order_unverified": false,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r232",
+          "sindarin-r545"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r111",
+          "sindarin-r234"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": false,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN113",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ǭ",
+      "ou",
+      "au"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-4073827619.html",
+      "https://eldamo.org/content/words/word-2902864717.html"
+    ],
+    "grade": "C",
+    "stage_sequence": [
+      2,
+      2
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r119",
+          "sindarin-r244"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r117",
+          "sindarin-r120"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": true,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  },
+  {
+    "id": "SINDARIN114",
+    "branch": "sindarin",
+    "era": "middle",
+    "states": [
+      "ɣs",
+      "hs",
+      "ss"
+    ],
+    "urls": [
+      "https://eldamo.org/content/words/word-2810726977.html",
+      "https://eldamo.org/content/words/word-178282823.html"
+    ],
+    "grade": "C",
+    "stage_sequence": [
+      0,
+      0
+    ],
+    "same_stage_order_unverified": true,
+    "different_position_requirements": false,
+    "ambiguous_atomic_match": [],
+    "merged_rule_provenance": [
+      {
+        "step": 0,
+        "source_rule_ids": [
+          "sindarin-r476",
+          "sindarin-r527"
+        ]
+      },
+      {
+        "step": 1,
+        "source_rule_ids": [
+          "sindarin-r497",
+          "sindarin-r529"
+        ]
+      }
+    ],
+    "shared_article_and_source_example": true,
+    "contextual_rules_not_considered": true,
+    "relative_chronology_unverified": true,
+    "authorial_revision_compatibility_unverified": true,
+    "machine_attested_examples_are_not_historical_proof": true
+  }
+]

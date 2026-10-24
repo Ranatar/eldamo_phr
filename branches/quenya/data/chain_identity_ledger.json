@@ -1,0 +1,3017 @@
+[
+  {
+    "display_id": "C1",
+    "era": "late",
+    "states": [
+      "pʰt",
+      "ptʰ",
+      "pt",
+      "ɸt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-2190887743.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA111",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3183451073.html",
+          "https://eldamo.org/content/words/word-2190887743.html",
+          "https://eldamo.org/content/words/word-2265073101.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C2",
+    "era": "late",
+    "states": [
+      "pʰtʰ",
+      "ptʰ",
+      "pt",
+      "ɸt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-2190887743.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA113",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3183451073.html",
+          "https://eldamo.org/content/words/word-2190887743.html",
+          "https://eldamo.org/content/words/word-2265073101.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C3",
+    "era": "late",
+    "states": [
+      "ŋ-",
+      "ŋg-",
+      "ŋ-",
+      "ø-"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2123493145.html",
+      "https://eldamo.org/content/words/word-4225848175.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C4",
+    "era": "middle",
+    "states": [
+      "kʰt",
+      "ktʰ",
+      "kt",
+      "xt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-798737509.html",
+      "https://eldamo.org/content/words/word-2769500867.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA274",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-798737509.html",
+          "https://eldamo.org/content/words/word-2769500867.html",
+          "https://eldamo.org/content/words/word-2701010297.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C5",
+    "era": "middle",
+    "states": [
+      "pʰt",
+      "ptʰ",
+      "pt",
+      "ps"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-798737509.html",
+      "https://eldamo.org/content/words/word-2769500867.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA304",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-798737509.html",
+          "https://eldamo.org/content/words/word-2769500867.html",
+          "https://eldamo.org/content/words/word-2701010297.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C6",
+    "era": "middle",
+    "states": [
+      "pʰt",
+      "ptʰ",
+      "pt",
+      "xt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-798737509.html",
+      "https://eldamo.org/content/words/word-2769500867.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA303",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-798737509.html",
+          "https://eldamo.org/content/words/word-2769500867.html",
+          "https://eldamo.org/content/words/word-2701010297.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C7",
+    "era": "middle",
+    "states": [
+      "sb",
+      "zb",
+      "sp",
+      "ps"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2884507077.html",
+      "https://eldamo.org/content/words/word-4145487633.html",
+      "https://eldamo.org/content/words/word-3499874945.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA308",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2884507077.html",
+          "https://eldamo.org/content/words/word-4145487633.html",
+          "https://eldamo.org/content/words/word-3499874945.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C8",
+    "era": "middle",
+    "states": [
+      "sg",
+      "zg",
+      "sk",
+      "ks"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2884507077.html",
+      "https://eldamo.org/content/words/word-4145487633.html",
+      "https://eldamo.org/content/words/word-3499874945.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA314",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-2884507077.html",
+          "https://eldamo.org/content/words/word-4145487633.html",
+          "https://eldamo.org/content/words/word-3499874945.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C9",
+    "era": "middle",
+    "states": [
+      "ŋ",
+      "g",
+      "ɣ",
+      "ø"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-44379183.html",
+      "https://eldamo.org/content/words/word-2772726195.html",
+      "https://eldamo.org/content/words/word-3266317297.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C10",
+    "era": "middle",
+    "states": [
+      "ŋ",
+      "g",
+      "ɣ",
+      "ø"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-44379183.html",
+      "https://eldamo.org/content/words/word-2772726195.html",
+      "https://eldamo.org/content/words/word-3657372981.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C11",
+    "era": "middle",
+    "states": [
+      "ɣ",
+      "g",
+      "ɣ",
+      "ø"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-44379183.html",
+      "https://eldamo.org/content/words/word-2772726195.html",
+      "https://eldamo.org/content/words/word-3266317297.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C12",
+    "era": "middle",
+    "states": [
+      "ɣ",
+      "g",
+      "ɣ",
+      "ø"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-44379183.html",
+      "https://eldamo.org/content/words/word-2772726195.html",
+      "https://eldamo.org/content/words/word-3657372981.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C13",
+    "era": "late",
+    "states": [
+      "ae",
+      "ā",
+      "ō"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-3140771935.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA1",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1056240093.html",
+          "https://eldamo.org/content/words/word-3140771935.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C14",
+    "era": "late",
+    "states": [
+      "ao",
+      "ā",
+      "ō"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1056240093.html",
+      "https://eldamo.org/content/words/word-3140771935.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA12",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1056240093.html",
+          "https://eldamo.org/content/words/word-3140771935.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C15",
+    "era": "late",
+    "states": [
+      "b",
+      "β",
+      "v"
+    ],
+    "display_grade": "B",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1141570065.html",
+      "https://eldamo.org/content/words/word-14484545.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA23",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-1141570065.html",
+          "https://eldamo.org/content/words/word-14484545.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C16",
+    "era": "late",
+    "states": [
+      "bd",
+      "pt",
+      "ɸt"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1625077395.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA24",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1625077395.html",
+          "https://eldamo.org/content/words/word-2265073101.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C17",
+    "era": "late",
+    "states": [
+      "bm",
+      "mm",
+      "m"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2830908887.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA32",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2830908887.html",
+          "https://eldamo.org/content/words/word-3689144303.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C18",
+    "era": "late",
+    "states": [
+      "bm",
+      "mb",
+      "mm"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3882201769.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA25",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-3882201769.html",
+          "https://eldamo.org/content/words/word-868023175.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C19",
+    "era": "late",
+    "states": [
+      "d",
+      "ð",
+      "z"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1141570065.html",
+      "https://eldamo.org/content/words/word-767593015.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA37",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1141570065.html",
+          "https://eldamo.org/content/words/word-767593015.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C20",
+    "era": "late",
+    "states": [
+      "g",
+      "ɣ",
+      "ø"
+    ],
+    "display_grade": "B",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1141570065.html",
+      "https://eldamo.org/content/words/word-1833409085.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C21",
+    "era": "late",
+    "states": [
+      "gd",
+      "kt",
+      "xt"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1625077395.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA54",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-1625077395.html",
+          "https://eldamo.org/content/words/word-2265073101.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C22",
+    "era": "late",
+    "states": [
+      "gj",
+      "dj",
+      "dʒ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3703720537.html",
+      "https://eldamo.org/content/words/word-3605637247.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA59",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3703720537.html",
+          "https://eldamo.org/content/words/word-3605637247.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C23",
+    "era": "late",
+    "states": [
+      "gj",
+      "dj",
+      "dʒ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-3605637247.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA57",
+        "grade": "U",
+        "urls": [
+          "",
+          "https://eldamo.org/content/words/word-3605637247.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C24",
+    "era": "late",
+    "states": [
+      "gj",
+      "dj",
+      "lj"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-1574644731.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA58",
+        "grade": "U",
+        "urls": [
+          "",
+          "https://eldamo.org/content/words/word-1574644731.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C25",
+    "era": "late",
+    "states": [
+      "gt",
+      "kt",
+      "xt"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1944249607.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA61",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-1944249607.html",
+          "https://eldamo.org/content/words/word-2265073101.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C26",
+    "era": "late",
+    "states": [
+      "kj",
+      "tj",
+      "tʃ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-3605637247.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA67",
+        "grade": "U",
+        "urls": [
+          "",
+          "https://eldamo.org/content/words/word-3605637247.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C27",
+    "era": "late",
+    "states": [
+      "kn",
+      "kt",
+      "xt"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3418086257.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA70",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-3418086257.html",
+          "https://eldamo.org/content/words/word-2265073101.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C28",
+    "era": "late",
+    "states": [
+      "ktʰ",
+      "kt",
+      "xt"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2190887743.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA71",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-2190887743.html",
+          "https://eldamo.org/content/words/word-2265073101.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C29",
+    "era": "late",
+    "states": [
+      "kʰ",
+      "x",
+      "h"
+    ],
+    "display_grade": "B",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3262991621.html",
+      "https://eldamo.org/content/words/word-2071843593.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA72",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-3262991621.html",
+          "https://eldamo.org/content/words/word-2071843593.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C30",
+    "era": "late",
+    "states": [
+      "mm",
+      "mb",
+      "mm"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-4145612709.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C31",
+    "era": "late",
+    "states": [
+      "nn",
+      "nd",
+      "nn"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-4145612709.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C32",
+    "era": "late",
+    "states": [
+      "pm",
+      "pw",
+      "pp"
+    ],
+    "display_grade": "B",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3418086257.html",
+      "https://eldamo.org/content/words/word-182545135.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA106",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-3418086257.html",
+          "https://eldamo.org/content/words/word-182545135.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C33",
+    "era": "late",
+    "states": [
+      "pn",
+      "pt",
+      "ɸt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3418086257.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA107",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3418086257.html",
+          "https://eldamo.org/content/words/word-2265073101.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C34",
+    "era": "late",
+    "states": [
+      "ptʰ",
+      "pt",
+      "ɸt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2190887743.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA108",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2190887743.html",
+          "https://eldamo.org/content/words/word-2265073101.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C35",
+    "era": "late",
+    "states": [
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "display_grade": "B",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3262991621.html",
+      "https://eldamo.org/content/words/word-14484545.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA109",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-3262991621.html",
+          "https://eldamo.org/content/words/word-14484545.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C36",
+    "era": "late",
+    "states": [
+      "pʰt",
+      "ptʰ",
+      "pt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA110",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3183451073.html",
+          "https://eldamo.org/content/words/word-2190887743.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C37",
+    "era": "late",
+    "states": [
+      "pʰtʰ",
+      "ptʰ",
+      "pt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA112",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3183451073.html",
+          "https://eldamo.org/content/words/word-2190887743.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C38",
+    "era": "late",
+    "states": [
+      "pʰw",
+      "ppʰ",
+      "pp"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2859678213.html",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA114",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2859678213.html",
+          "https://eldamo.org/content/words/word-2190887743.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C39",
+    "era": "late",
+    "states": [
+      "sd",
+      "zd",
+      "st"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-3279729471.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA115",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-882174441.html",
+          "https://eldamo.org/content/words/word-3279729471.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C40",
+    "era": "late",
+    "states": [
+      "sg",
+      "zg",
+      "ðɣ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-1951748921.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA117",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-882174441.html",
+          "https://eldamo.org/content/words/word-1951748921.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C41",
+    "era": "late",
+    "states": [
+      "sj",
+      "zj",
+      "ʒ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-127393503.html",
+      "https://eldamo.org/content/words/word-3605637247.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA118",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-127393503.html",
+          "https://eldamo.org/content/words/word-3605637247.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C42",
+    "era": "late",
+    "states": [
+      "tk",
+      "sk",
+      "ks"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-700934409.html",
+      "https://eldamo.org/content/words/word-2094898289.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA140",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-700934409.html",
+          "https://eldamo.org/content/words/word-2094898289.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C43",
+    "era": "late",
+    "states": [
+      "tk",
+      "kt",
+      "xt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-700934409.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA141",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-700934409.html",
+          "https://eldamo.org/content/words/word-2265073101.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C44",
+    "era": "late",
+    "states": [
+      "tʰ",
+      "θ",
+      "s"
+    ],
+    "display_grade": "B",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3262991621.html",
+      "https://eldamo.org/content/words/word-3491983963.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA144",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-3262991621.html",
+          "https://eldamo.org/content/words/word-3491983963.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C45",
+    "era": "late",
+    "states": [
+      "tʰt",
+      "ttʰ",
+      "tt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA146",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3183451073.html",
+          "https://eldamo.org/content/words/word-2190887743.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C46",
+    "era": "late",
+    "states": [
+      "tʰt",
+      "ttʰ",
+      "θθ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA145",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3183451073.html",
+          "https://eldamo.org/content/words/word-883570327.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C47",
+    "era": "late",
+    "states": [
+      "tʰtʰ",
+      "ttʰ",
+      "tt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA148",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3183451073.html",
+          "https://eldamo.org/content/words/word-2190887743.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C48",
+    "era": "late",
+    "states": [
+      "tʰtʰ",
+      "ttʰ",
+      "θθ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3183451073.html",
+      "https://eldamo.org/content/words/word-883570327.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA147",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3183451073.html",
+          "https://eldamo.org/content/words/word-883570327.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C49",
+    "era": "late",
+    "states": [
+      "zm",
+      "mm",
+      "m"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-10156157.html",
+      "https://eldamo.org/content/words/word-3689144303.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA159",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-10156157.html",
+          "https://eldamo.org/content/words/word-3689144303.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C50",
+    "era": "late",
+    "states": [
+      "ā",
+      "ǭ",
+      "ā"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-1446209733.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C51",
+    "era": "late",
+    "states": [
+      "ā",
+      "ǭ",
+      "ō"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-1363608031.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA172",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-2858643115.html",
+          "https://eldamo.org/content/words/word-1363608031.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C52",
+    "era": "late",
+    "states": [
+      "ā",
+      "ǭ",
+      "ō"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2858643115.html",
+      "https://eldamo.org/content/words/word-1909322629.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA170",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-2858643115.html",
+          "https://eldamo.org/content/words/word-1909322629.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C53",
+    "era": "late",
+    "states": [
+      "ŋ-",
+      "ŋg-",
+      "g-"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-1688730459.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C54",
+    "era": "late",
+    "states": [
+      "ŋ-",
+      "ŋg-",
+      "g-"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-3057844573.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C55",
+    "era": "late",
+    "states": [
+      "ŋ-",
+      "ŋg-",
+      "g-"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-493039001.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C56",
+    "era": "late",
+    "states": [
+      "ŋ-",
+      "ŋg-",
+      "ŋ-"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2123493145.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C57",
+    "era": "late",
+    "states": [
+      "ŋg-",
+      "ŋ-",
+      "g-"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-1228875561.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C58",
+    "era": "late",
+    "states": [
+      "ŋg-",
+      "ŋ-",
+      "ø-"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2123493145.html",
+      "https://eldamo.org/content/words/word-4225848175.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C59",
+    "era": "late",
+    "states": [
+      "ŋg-",
+      "ŋ-",
+      "ø-"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-552653835.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C60",
+    "era": "late",
+    "states": [
+      "ŋg-",
+      "ŋ-",
+      "ø-"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-4225848175.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C61",
+    "era": "late",
+    "states": [
+      "ŋgj",
+      "ndj",
+      "nj"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3703720537.html",
+      "https://eldamo.org/content/words/word-297797679.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA195",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-3703720537.html",
+          "https://eldamo.org/content/words/word-297797679.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C62",
+    "era": "late",
+    "states": [
+      "ŋgw",
+      "mb",
+      "mm"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-171120983.html",
+      "https://eldamo.org/content/words/word-868023175.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA196",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-171120983.html",
+          "https://eldamo.org/content/words/word-868023175.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C63",
+    "era": "late",
+    "states": [
+      "ŋs",
+      "ns",
+      "ss"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-484908271.html",
+      "https://eldamo.org/content/words/word-2591378297.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA207",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-484908271.html",
+          "https://eldamo.org/content/words/word-2591378297.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C64",
+    "era": "middle",
+    "states": [
+      "Vp",
+      "Vb",
+      "Vv"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2421096703.html",
+      "https://eldamo.org/content/words/word-3689929017.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C65",
+    "era": "middle",
+    "states": [
+      "Vp",
+      "Vb",
+      "Vv"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2421096703.html",
+      "https://eldamo.org/content/words/word-501836955.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C66",
+    "era": "middle",
+    "states": [
+      "Vt",
+      "Vd",
+      "Vð"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2421096703.html",
+      "https://eldamo.org/content/words/word-501836955.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C67",
+    "era": "middle",
+    "states": [
+      "bd",
+      "pt",
+      "ps"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-654861237.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA249",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-654861237.html",
+          "https://eldamo.org/content/words/word-2701010297.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C68",
+    "era": "middle",
+    "states": [
+      "bd",
+      "pt",
+      "xt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-654861237.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA248",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-654861237.html",
+          "https://eldamo.org/content/words/word-2701010297.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C69",
+    "era": "middle",
+    "states": [
+      "bt",
+      "pt",
+      "ps"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2905876955.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA254",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-2905876955.html",
+          "https://eldamo.org/content/words/word-2701010297.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C70",
+    "era": "middle",
+    "states": [
+      "bt",
+      "pt",
+      "xt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2905876955.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA253",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2905876955.html",
+          "https://eldamo.org/content/words/word-2701010297.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C71",
+    "era": "middle",
+    "states": [
+      "dm",
+      "nm",
+      "nw"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1312520143.html",
+      "https://eldamo.org/content/words/word-2886094609.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA257",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-1312520143.html",
+          "https://eldamo.org/content/words/word-2886094609.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C72",
+    "era": "middle",
+    "states": [
+      "g",
+      "ɣ",
+      "ø"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2772726195.html",
+      "https://eldamo.org/content/words/word-3266317297.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C73",
+    "era": "middle",
+    "states": [
+      "g",
+      "ɣ",
+      "ø"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2772726195.html",
+      "https://eldamo.org/content/words/word-3657372981.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C74",
+    "era": "middle",
+    "states": [
+      "gm",
+      "ŋm",
+      "ŋgw"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1312520143.html",
+      "https://eldamo.org/content/words/word-2886094609.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA259",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-1312520143.html",
+          "https://eldamo.org/content/words/word-2886094609.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C75",
+    "era": "middle",
+    "states": [
+      "gt",
+      "kt",
+      "xt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2905876955.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA261",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-2905876955.html",
+          "https://eldamo.org/content/words/word-2701010297.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C76",
+    "era": "middle",
+    "states": [
+      "kd",
+      "kt",
+      "xt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3661438765.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA263",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-3661438765.html",
+          "https://eldamo.org/content/words/word-2701010297.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C77",
+    "era": "middle",
+    "states": [
+      "ktʰ",
+      "kt",
+      "xt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2769500867.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA267",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2769500867.html",
+          "https://eldamo.org/content/words/word-2701010297.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C78",
+    "era": "middle",
+    "states": [
+      "kʰ",
+      "x",
+      "h"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3537093625.html",
+      "https://eldamo.org/content/words/word-2800366809.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA269",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-3537093625.html",
+          "https://eldamo.org/content/words/word-2800366809.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C79",
+    "era": "middle",
+    "states": [
+      "kʰn",
+      "kt",
+      "xt"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-372953021.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA270",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-372953021.html",
+          "https://eldamo.org/content/words/word-2701010297.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C80",
+    "era": "middle",
+    "states": [
+      "kʰt",
+      "ktʰ",
+      "kt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-798737509.html",
+      "https://eldamo.org/content/words/word-2769500867.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA273",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-798737509.html",
+          "https://eldamo.org/content/words/word-2769500867.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C81",
+    "era": "middle",
+    "states": [
+      "nd-",
+      "d-",
+      "l-"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3944232895.html",
+      "https://eldamo.org/content/words/word-31048751.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C82",
+    "era": "middle",
+    "states": [
+      "nd-",
+      "d-",
+      "l-"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1688730459.html",
+      "https://eldamo.org/content/words/word-31048751.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "C83",
+    "era": "middle",
+    "states": [
+      "ptʰ",
+      "pt",
+      "ps"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2769500867.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA294",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2769500867.html",
+          "https://eldamo.org/content/words/word-2701010297.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C84",
+    "era": "middle",
+    "states": [
+      "ptʰ",
+      "pt",
+      "xt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2769500867.html",
+      "https://eldamo.org/content/words/word-2701010297.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA293",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2769500867.html",
+          "https://eldamo.org/content/words/word-2701010297.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C85",
+    "era": "middle",
+    "states": [
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3537093625.html",
+      "https://eldamo.org/content/words/word-2661449019.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA297",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-3537093625.html",
+          "https://eldamo.org/content/words/word-2661449019.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C86",
+    "era": "middle",
+    "states": [
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-2661449019.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA296",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-1770347191.html",
+          "https://eldamo.org/content/words/word-2661449019.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C87",
+    "era": "middle",
+    "states": [
+      "pʰm",
+      "mpʰ",
+      "ppʰ"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1396728225.html",
+      "https://eldamo.org/content/words/word-2847294287.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA298",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1396728225.html",
+          "https://eldamo.org/content/words/word-2847294287.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C88",
+    "era": "middle",
+    "states": [
+      "pʰt",
+      "ptʰ",
+      "pt"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-798737509.html",
+      "https://eldamo.org/content/words/word-2769500867.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA302",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-798737509.html",
+          "https://eldamo.org/content/words/word-2769500867.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C89",
+    "era": "middle",
+    "states": [
+      "sb",
+      "zb",
+      "sp"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2884507077.html",
+      "https://eldamo.org/content/words/word-4145487633.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA305",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2884507077.html",
+          "https://eldamo.org/content/words/word-4145487633.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C90",
+    "era": "middle",
+    "states": [
+      "sd",
+      "zd",
+      "st"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2884507077.html",
+      "https://eldamo.org/content/words/word-4145487633.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA309",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-2884507077.html",
+          "https://eldamo.org/content/words/word-4145487633.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C91",
+    "era": "middle",
+    "states": [
+      "sg",
+      "zg",
+      "sk"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2884507077.html",
+      "https://eldamo.org/content/words/word-4145487633.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA311",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-2884507077.html",
+          "https://eldamo.org/content/words/word-4145487633.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C92",
+    "era": "middle",
+    "states": [
+      "skʰ",
+      "sk",
+      "ks"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-3499874945.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA324",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2699949575.html",
+          "https://eldamo.org/content/words/word-3499874945.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C93",
+    "era": "middle",
+    "states": [
+      "tʰ",
+      "θ",
+      "s"
+    ],
+    "display_grade": "C",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3537093625.html",
+      "https://eldamo.org/content/words/word-3006504693.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA345",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-3537093625.html",
+          "https://eldamo.org/content/words/word-3006504693.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C94",
+    "era": "middle",
+    "states": [
+      "tʰ",
+      "θ",
+      "s"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3124926163.html",
+      "https://eldamo.org/content/words/word-3006504693.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA344",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-3124926163.html",
+          "https://eldamo.org/content/words/word-3006504693.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C95",
+    "era": "middle",
+    "states": [
+      "tʰ",
+      "θ",
+      "s"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-4030743197.html",
+      "https://eldamo.org/content/words/word-3006504693.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA343",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-4030743197.html",
+          "https://eldamo.org/content/words/word-3006504693.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C96",
+    "era": "middle",
+    "states": [
+      "tʰ",
+      "θ",
+      "s"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1770347191.html",
+      "https://eldamo.org/content/words/word-3006504693.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA342",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-1770347191.html",
+          "https://eldamo.org/content/words/word-3006504693.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C97",
+    "era": "middle",
+    "states": [
+      "zb",
+      "sp",
+      "ps"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-4145487633.html",
+      "https://eldamo.org/content/words/word-3499874945.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA351",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-4145487633.html",
+          "https://eldamo.org/content/words/word-3499874945.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C98",
+    "era": "middle",
+    "states": [
+      "zg",
+      "sk",
+      "ks"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-4145487633.html",
+      "https://eldamo.org/content/words/word-3499874945.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA358",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-4145487633.html",
+          "https://eldamo.org/content/words/word-3499874945.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C99",
+    "era": "middle",
+    "states": [
+      "ŋ",
+      "g",
+      "ɣ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-44379183.html",
+      "https://eldamo.org/content/words/word-2772726195.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA361",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-44379183.html",
+          "https://eldamo.org/content/words/word-2772726195.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C100",
+    "era": "middle",
+    "states": [
+      "ŋgj",
+      "ndj",
+      "nj"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3291729015.html",
+      "https://eldamo.org/content/words/word-2488350997.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA364",
+        "grade": "D",
+        "urls": [
+          "https://eldamo.org/content/words/word-3291729015.html",
+          "https://eldamo.org/content/words/word-2488350997.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "C101",
+    "era": "middle",
+    "states": [
+      "ɣ",
+      "g",
+      "ɣ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-44379183.html",
+      "https://eldamo.org/content/words/word-2772726195.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S8",
+    "era": "late",
+    "states": [
+      "mpʰ",
+      "ppʰ",
+      "pp"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3474357431.html",
+      ""
+    ],
+    "status": "same_sequence_different_or_missing_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA83",
+        "grade": "C",
+        "urls": [
+          "https://eldamo.org/content/words/word-3474357431.html",
+          "https://eldamo.org/content/words/word-2190887743.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S21",
+    "era": "middle",
+    "states": [
+      "skʰ",
+      "sk",
+      "sx"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2699949575.html",
+      "https://eldamo.org/content/words/word-948882833.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA321",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2699949575.html",
+          "https://eldamo.org/content/words/word-948882833.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S24",
+    "era": "late",
+    "states": [
+      "w",
+      "β",
+      "v"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-14484545.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S26",
+    "era": "late",
+    "states": [
+      "g",
+      "ɣ",
+      "h"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1141570065.html",
+      "https://eldamo.org/content/words/word-3274491131.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA53",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-1141570065.html",
+          "https://eldamo.org/content/words/word-3274491131.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S28",
+    "era": "late",
+    "states": [
+      "zb",
+      "sp",
+      "ps"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3279729471.html",
+      "https://eldamo.org/content/words/word-2094898289.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S29",
+    "era": "late",
+    "states": [
+      "zg",
+      "sk",
+      "ks"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-3279729471.html",
+      "https://eldamo.org/content/words/word-2094898289.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S35",
+    "era": "late",
+    "states": [
+      "gŋ",
+      "ŋŋ",
+      "ŋg"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2830908887.html",
+      "https://eldamo.org/content/words/word-447633467.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S41",
+    "era": "late",
+    "states": [
+      "bt",
+      "pt",
+      "ɸt"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S42",
+    "era": "late",
+    "states": [
+      "bpʰ",
+      "ppʰ",
+      "pp"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      ""
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S43",
+    "era": "late",
+    "states": [
+      "bpʰ",
+      "ppʰ",
+      "pp"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S44",
+    "era": "late",
+    "states": [
+      "btʰ",
+      "ptʰ",
+      "pt"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S45",
+    "era": "late",
+    "states": [
+      "btʰ",
+      "ptʰ",
+      "pt",
+      "ɸt"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2190887743.html",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S46",
+    "era": "late",
+    "states": [
+      "pp",
+      "ppʰ",
+      "pp"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      ""
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S47",
+    "era": "late",
+    "states": [
+      "pp",
+      "ppʰ",
+      "pp"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S48",
+    "era": "late",
+    "states": [
+      "tp",
+      "tpʰ",
+      "tp"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      ""
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S49",
+    "era": "late",
+    "states": [
+      "kp",
+      "kpʰ",
+      "kp"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      ""
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S50",
+    "era": "late",
+    "states": [
+      "mp",
+      "mpʰ",
+      "ppʰ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-3474357431.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S51",
+    "era": "late",
+    "states": [
+      "mp",
+      "mpʰ",
+      "ppʰ",
+      "pp"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-3474357431.html",
+      ""
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S57",
+    "era": "middle",
+    "states": [
+      "p",
+      "pʰ",
+      "ɸ"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-3537093625.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA287",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2684793511.html",
+          "https://eldamo.org/content/words/word-3537093625.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S58",
+    "era": "middle",
+    "states": [
+      "p",
+      "pʰ",
+      "ɸ",
+      "f"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-3537093625.html",
+      "https://eldamo.org/content/words/word-2661449019.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA288",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2684793511.html",
+          "https://eldamo.org/content/words/word-3537093625.html",
+          "https://eldamo.org/content/words/word-2661449019.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S59",
+    "era": "middle",
+    "states": [
+      "p",
+      "pʰ",
+      "f"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-3124926163.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA286",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2684793511.html",
+          "https://eldamo.org/content/words/word-3124926163.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S60",
+    "era": "middle",
+    "states": [
+      "p",
+      "pʰ",
+      "f"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-2684793511.html",
+      "https://eldamo.org/content/words/word-4030743197.html"
+    ],
+    "status": "same_sequence_and_rule_urls",
+    "research_matches": [
+      {
+        "id": "QUENYA285",
+        "grade": "U",
+        "urls": [
+          "https://eldamo.org/content/words/word-2684793511.html",
+          "https://eldamo.org/content/words/word-4030743197.html"
+        ]
+      }
+    ]
+  },
+  {
+    "display_id": "S61",
+    "era": "late",
+    "states": [
+      "pd",
+      "pt",
+      "ɸt"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S62",
+    "era": "late",
+    "states": [
+      "kd",
+      "kt",
+      "xt"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S63",
+    "era": "late",
+    "states": [
+      "dpʰ",
+      "tpʰ",
+      "tp"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      ""
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S68",
+    "era": "late",
+    "states": [
+      "dpʰ",
+      "tpʰ",
+      "tp"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      ""
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S69",
+    "era": "late",
+    "states": [
+      "dtʰ",
+      "ttʰ",
+      "tt"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2190887743.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S70",
+    "era": "late",
+    "states": [
+      "dtʰ",
+      "ttʰ",
+      "θθ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-883570327.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S71",
+    "era": "late",
+    "states": [
+      "pd",
+      "pt",
+      "ɸt"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S72",
+    "era": "late",
+    "states": [
+      "kd",
+      "kt",
+      "xt"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S89",
+    "era": "late",
+    "states": [
+      "bt",
+      "pt",
+      "ɸt"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      "https://eldamo.org/content/words/word-2265073101.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S90",
+    "era": "late",
+    "states": [
+      "bpʰ",
+      "ppʰ",
+      "pp"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "",
+      ""
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S97",
+    "era": "late",
+    "states": [
+      "ɣ",
+      "g",
+      "ɣ"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1228875561.html",
+      "https://eldamo.org/content/words/word-1141570065.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S98",
+    "era": "late",
+    "states": [
+      "ɣ",
+      "g",
+      "ɣ",
+      "h"
+    ],
+    "display_grade": "U",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-1228875561.html",
+      "https://eldamo.org/content/words/word-1141570065.html",
+      "https://eldamo.org/content/words/word-3274491131.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S102",
+    "era": "late",
+    "states": [
+      "sb",
+      "zb",
+      "sp"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-3279729471.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S103",
+    "era": "late",
+    "states": [
+      "sb",
+      "zb",
+      "sp",
+      "ps"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-3279729471.html",
+      "https://eldamo.org/content/words/word-2094898289.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S104",
+    "era": "late",
+    "states": [
+      "sg",
+      "zg",
+      "sk"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-3279729471.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  },
+  {
+    "display_id": "S105",
+    "era": "late",
+    "states": [
+      "sg",
+      "zg",
+      "sk",
+      "ks"
+    ],
+    "display_grade": "D",
+    "display_urls": [
+      "https://eldamo.org/content/words/word-882174441.html",
+      "https://eldamo.org/content/words/word-3279729471.html",
+      "https://eldamo.org/content/words/word-2094898289.html"
+    ],
+    "status": "only_in_display_atlas",
+    "research_matches": []
+  }
+]

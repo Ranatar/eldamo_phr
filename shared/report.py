@@ -19,6 +19,7 @@ STATUS_RU = {
     'deleted_rule': 'правило удалено Толкином',
 }
 FAILING = ('mismatch', 'no_match', 'unsupported')
+BACKFORM_SAMPLE = 150
 
 
 def failing_steps(data: dict) -> list:
@@ -114,7 +115,7 @@ def write_report(branches: dict) -> None:
 def render_sequencer(branches: dict) -> tuple[str, dict]:
     """reports/sequencer.md: every attested derivation replayed from its start
     form through the whole chronology of the branch (shared/sequencer.py)."""
-    from . import compound
+    from . import backform, compound
     from .sequencer import Sequencer, backtest
     lines = [
         '# Проверка секвенсора',
@@ -185,7 +186,38 @@ def render_sequencer(branches: dict) -> tuple[str, dict]:
                       f"| соединение праформ совпало с начальной формой деривации | {cres['join_ok']} ({100 * cres['join_ok'] / k:.0f}%) |",
                       f"| основное чтение = засвидетельствованная форма | {cres['main']} ({100 * cres['main'] / k:.0f}%) |",
                       f"| форма среди вариантов | {cres['any']} ({100 * cres['any'] / k:.0f}%) |", '']
+        lres = compound.latest_backtest(data, data['lexicon'], seq)
+        if lres['cases']:
+            k = lres['cases']
+            lines += ['### Сложения на последней стадии', '',
+                      f"Сложения {'квенья' if b == 'quenya' else 'синдарина'} из двух элементов того же языка. "
+                      'Таблица стыков (`shared/junctions.py`, `branches/' + b + '/data/junctions.json`) строится '
+                      'без проверяемого сложения, затем сложение предсказывается по элементам: основа или словарная '
+                      'форма первого элемента, словарная форма второго; изменения на стыке и в конце — по частоте '
+                      'в остальных сложениях; ' + ('плюс правила §6.1 учебника (`shared/morphophonology.py`).'
+                                                    if b == 'quenya' else
+                                                    'плюс мягкая мутация второго элемента и правила синдарина для многосложных слов.'), '',
+                      '| показатель | случаев |', '|---|---|',
+                      f'| сложений | {k} |',
+                      f"| первый вариант = засвидетельствованная форма | {lres['main']} ({100 * lres['main'] / k:.0f}%) |",
+                      f"| форма среди первых 8 вариантов | {lres['any']} ({100 * lres['any'] / k:.0f}%) |", '']
+        final_code = max((l for l in langs.values() if l['era'] == 'late'), key=lambda l: l['stage'])['code']
+        bres = backform.evaluate(data, seq, final_code, sample=BACKFORM_SAMPLE)
+        if bres.get('cases'):
+            k = bres['cases']
+            lines += ['### Обратное восстановление праформ', '',
+                      'Соответствия «праформа → конечная форма» выучены на половине дериваций; для другой половины '
+                      '(первые ' + str(k) + ') праформа восстанавливается по конечной форме: кандидаты перебираются по '
+                      'вероятности и проверяются прямым прогоном (`shared/backform.py`). Восстановленная праформа — '
+                      'гипотеза; так помечаются и сложения, построенные на ней.', '',
+                      '| показатель | случаев |', '|---|---|',
+                      f'| конечных форм | {k} |',
+                      f"| найдена хотя бы одна праформа, дающая форму прямым прогоном | {bres.get('verified', 0)} ({100 * bres.get('verified', 0) / k:.0f}%) |",
+                      f"| первая из них = праформа Eldamo | {bres.get('first', 0)} ({100 * bres.get('first', 0) / k:.0f}%) |",
+                      f"| праформа Eldamo среди найденных (до 8) | {bres.get('any', 0)} ({100 * bres.get('any', 0) / k:.0f}%) |", '']
         js[b] = {'derivations': n, 'main': res['main'], 'any': res['any'], 'eras': per_era,
+                 'backform': bres,
+                 'latest_compounds': {k2: v for k2, v in lres.items()},
                  'results': [r for r in res['results'] if not r['ok_main']],
                  'compounds': {k2: v for k2, v in cres.items()}}
         lines += [f"Расходящиеся деривации ({n - res['main']}) — `reports/sequencer.json`.", '']

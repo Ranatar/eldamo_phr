@@ -21,7 +21,9 @@ from .languages import STRESS
 
 MONO = re.compile(r'\bmonosyllab', re.I)
 POLY = re.compile(r'\bpolysyllab', re.I)
-OPTIONAL = re.compile(r'\b(often|sometimes|usually|occasionally|generally|sporadically|may|might)\b', re.I)
+OPTIONAL = re.compile(r'\b(often|sometimes|usually|occasionally|generally|sporadically|frequently|may|might)\b'
+                      r'|in long compounds', re.I)
+RARE = re.compile(r'(?<!and )\b(sometimes|occasionally|sporadically|may|might)\b', re.I)   # main reading: not applied
 MAX_VARIANTS = 24
 
 
@@ -34,6 +36,7 @@ class CompiledRule:
     era: str
     order: float
     optional: bool
+    rare: bool
     stress: str | None              # stress model of the rule's stage (shared.stress)
     scope: str | None               # 'mono' / 'poly': rule named for mono- or polysyllables
     rule: object | None             # interpreter.Rule of the changing sub-formulas
@@ -42,10 +45,12 @@ class CompiledRule:
     unsupported: list = field(default_factory=list)
     sources: list = field(default_factory=list)    # input formulas of the changing sub-formulas
     blocked_by: list = field(default_factory=list)  # later rules that take precedence (elsewhere condition)
+    formulas: dict = field(default_factory=dict)    # source formulas, for the browser engine (app/wordform.js)
 
 
 def _compile(rule: dict, pairs: dict, langs: dict, order: float) -> CompiledRule:
     changing, unchanged, bad, sources = [], [], [], []
+    formulas = {'changing': [], 'protect': []}
     for pid in rule['pairs']:
         p = pairs[pid]
         if not p.get('in_branch', True):
@@ -57,19 +62,22 @@ def _compile(rule: dict, pairs: dict, langs: dict, order: float) -> CompiledRule
             continue
         if p['kind'] == 'identity':
             unchanged.append(compiled)
+            formulas['protect'].append([p['from'] or '', p['to']])
         else:
             changing.append((compiled, '+' in (p['from'] or '')))
             sources.append(p['from'] or '')
+            formulas['changing'].append([p['from'] or '', p['to'], '+' in (p['from'] or '')])
     L = langs[rule['lang']]
     return CompiledRule(
         id=rule['id'], name=rule['name'], lang=rule['lang'], stage=L['stage'], era=L['era'], order=order,
         stress=STRESS.get(rule['lang']),
         scope='mono' if MONO.search(rule['name']) else 'poly' if POLY.search(rule['name']) else None,
         optional=bool(OPTIONAL.search(rule['name'])),
+        rare=bool(RARE.search(rule['name'])),
         rule=interpreter.combine([r for r, plus in changing if not plus]) if any(not p for _, p in changing) else None,
         rule_plus=interpreter.combine([r for r, _ in changing]) if any(p for _, p in changing) else None,
         protect=interpreter.combine(unchanged) if unchanged else None,
-        unsupported=bad, sources=sources)
+        unsupported=bad, sources=sources, formulas=formulas)
 
 
 def infer_orders(rules: list, pairs: dict, derivations: list) -> dict:
@@ -134,6 +142,8 @@ def infer_orders(rules: list, pairs: dict, derivations: list) -> dict:
 class Sequencer:
     def __init__(self, data: dict):
         self.branch = data['summary']['branch'] if 'summary' in data else None
+        self.derivations = data['derivations']
+        self._backform_tables = {}
         self.langs = {l['code']: l for l in data['meta']['languages']}
         pairs = {p['id']: p for p in data['pairs']}
         position = infer_orders(data['rules'], pairs, data['derivations'])
@@ -164,12 +174,31 @@ class Sequencer:
                     for x in hits:
                         try:
                             extra.append(interpreter.compile_rule(x, x))
+                            a.formulas['protect'].append([x, x])
                         except Unsupported:
                             continue
                     if hits:
                         a.blocked_by.append(b.id)
                 if extra:
                     a.protect = interpreter.combine(([a.protect] if a.protect else []) + extra)
+
+    def export(self) -> list:
+        """Rules in sequence order with their formulas, for app/wordform.js."""
+        out = []
+        for c in self.rules:
+            ch = c.formulas['changing']
+            out.append({'id': c.id, 'name': c.name, 'lang': c.lang, 'stage': c.stage, 'era': c.era,
+                        'optional': c.optional, 'rare': c.rare, 'stress': c.stress, 'scope': c.scope,
+                        'alts': [[f, t] for f, t, plus in ch if not plus],
+                        'all': [[f, t] for f, t, _ in ch] if any(plus for _, _, plus in ch) else [],
+                        'protect': c.formulas['protect']})
+        return out
+
+    def backform_table(self, final_code: str) -> dict:
+        if final_code not in self._backform_tables:
+            from .backform import learn
+            self._backform_tables[final_code] = learn(self.derivations, self.langs, final_code)
+        return self._backform_tables[final_code]
 
     def sequence(self, era: str, first_stage: int, last_stage: int, after_order: float | None = None):
         """Rules of one era from first_stage to last_stage, optionally only those
@@ -194,7 +223,8 @@ class Sequencer:
 
     def run(self, form: str, rules: list, branch_optional: bool = True) -> list:
         """Apply rules in order. Returns variants: [{'form', 'trace'}], the first
-        being the main reading (optional rules applied)."""
+        being the main reading: optional rules applied, except those named as
+        occasional ("sometimes", "occasionally", "may"), which are not."""
         variants = [{'form': form, 'trace': []}]
         for c in rules:
             if c.rule is None and c.rule_plus is None:
@@ -213,9 +243,12 @@ class Sequencer:
                     extra = [o for o in self._apply(c, c.rule_plus, v['form']) if o not in outs]
                 if not outs:
                     nxt.append(v)
+                keep = outs and c.optional and branch_optional
+                if keep and c.rare:
+                    nxt.append({'form': v['form'], 'trace': v['trace'] + [(c.id, v['form'], None)]})
                 for o in outs:
                     nxt.append({'form': o, 'trace': v['trace'] + [(c.id, v['form'], o)]})
-                if outs and c.optional and branch_optional:
+                if keep and not c.rare:
                     nxt.append({'form': v['form'], 'trace': v['trace'] + [(c.id, v['form'], None)]})
                 for o in extra:
                     nxt.append({'form': o, 'trace': v['trace'] + [(c.id, v['form'], o)]})

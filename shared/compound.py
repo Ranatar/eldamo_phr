@@ -18,6 +18,10 @@ an attested derivation from a primitive form.
 from __future__ import annotations
 
 import itertools
+import re
+
+from . import junctions as junction_table
+from . import morphophonology
 
 from .interpreter import comparable, is_vowel, join, phonemes
 from .orthography import to_phonetic
@@ -66,13 +70,20 @@ def forms_at(entry: dict, seq, era: str, stage: int, final: bool = False) -> lis
         out.append((to_phonetic(entry['form'], family).rstrip('-'), 'dictionary'))
         seen = set()
         return [(f, h) for f, h in out if f and not (comparable(f) in seen or seen.add(comparable(f)))]
-    base = origins(entry, era)
+    base = [(f, 'primitive') for f in origins(entry, era)]
+    final = max(langs, key=lambda l: l['stage'])['code']
+    if not base and entry.get('lang') == final:
+        # no primitive form in Eldamo: reconstruct one (shared/backform.py)
+        from .backform import backform
+        word = to_phonetic(entry['form'], seq.branch).rstrip('-')
+        found = backform(seq, seq.backform_table(final), word, era, max(l['stage'] for l in langs), limit=3)
+        base = [(f['primitive'], 'reconstructed') for f in found]
     if stage == 0:
-        return [(f, 'primitive') for f in base]
+        return base
     rules = seq.sequence(era, 0, stage)
-    for f in base:
+    for f, how in base:
         for v in seq.run(f, rules)[:2]:
-            out.append((v['form'], 'computed'))
+            out.append((v['form'], 'computed' if how == 'primitive' else 'reconstructed'))
     return out
 
 
@@ -85,11 +96,71 @@ def junctions(a: str, b: str) -> list:
     return out
 
 
+POLYSYLLABLE_RULES = re.compile(r'polysyllab', re.I)
+LENITION_WEIGHT = 0.2   # the junction table already holds attested lenitions
+MORPH_WEIGHT = 0.3      # prior of an optional synchronic adjustment (§6.1)
+
+
+def predict_latest(lexicon: dict, seq, table: dict, element_ids: list, era: str = 'late') -> list:
+    """Two elements joined at the latest stage of the branch.
+
+    The junction table (shared/junctions.py) gives the junction and ending
+    variants with their frequency among attested compounds. Quenya adds the
+    adjustments of the course, §6.1 (shared/morphophonology.py); Sindarin runs
+    the rules of its last stage that apply to polysyllables, since a compound
+    is a new polysyllable (S. [au] > [o]: aeg + naur > Aegnor)."""
+    last = max(l['stage'] for l in seq.langs.values() if l['era'] == era)
+    if len(element_ids) != 2 or table is None:
+        return []
+    firsts = forms_at(lexicon[element_ids[0]], seq, era, last) if element_ids[0] in lexicon else []
+    seconds = forms_at(lexicon[element_ids[1]], seq, era, last, final=True) if element_ids[1] in lexicon else []
+    if seq.branch == 'sindarin':
+        # the second element of a Sindarin compound is usually lenited
+        for b, hb in list(seconds):
+            m = morphophonology.lenite(phonemes(comparable(b)))
+            if m is not None:
+                seconds.append((join(m), 'soft-mutation'))
+    poly = [c for c in seq.sequence(era, last, last) if POLYSYLLABLE_RULES.search(c.name)]
+    scored = {}
+
+    def add(form, score, info):
+        key = comparable(form)
+        if key not in scored or scored[key][0] < score:
+            scored[key] = (score, form, info)
+
+    for (a, ha), (b, hb) in itertools.product(firsts, seconds):
+        pa, pb = phonemes(comparable(a)), phonemes(comparable(b))
+        # a first element that has a stem joins by it more often (Q.: 2 of 3)
+        weight = 0.5 if ha == 'dictionary' and any(h == 'stem' for _, h in firsts) else 1.0
+        if hb == 'soft-mutation':
+            weight *= LENITION_WEIGHT
+        for form, p, jop, eop, short in junction_table.predict(table, pa, pb, limit=10):
+            p *= weight
+            info = {'joined': a + '+' + b, 'elements': [a, b], 'element_sources': [ha, hb],
+                    'junction': list(jop), 'ending': list(eop), 'shortened': short, 'adjustments': [], 'trace': []}
+            add(form, p, info)
+            if poly:
+                for v in seq.run(form, poly)[:3]:
+                    if v['trace']:
+                        add(v['form'], p * MORPH_WEIGHT, {**info, 'trace': v['trace']})
+        if seq.branch == 'quenya':
+            for w, stem, rules in morphophonology.compound_variants(pa, pb)[1:]:
+                add(join(w), MORPH_WEIGHT * 0.5 ** (len(rules) - 1) * 0.5,
+                    {'joined': a + '+' + b, 'elements': [a, b], 'element_sources': [ha, hb],
+                     'junction': [0, 0, ''], 'ending': [0, ''], 'shortened': False,
+                     'adjustments': [{'rule': r, **morphophonology.SOURCES[r]} for r in rules],
+                     'stem': join(stem) if stem else None, 'trace': []})
+    ranked = sorted(scored.values(), key=lambda x: -x[0])
+    return [{'form': f, 'score': round(sc, 3), **info} for sc, f, info in ranked]
+
+
 def predict(lexicon: dict, seq, element_ids: list, era: str = 'late', stage: int = 0,
-            last_stage: int | None = None) -> list:
+            last_stage: int | None = None, table: dict | None = None) -> list:
     """Ranked variants [{'form', 'joined', 'junction', 'elements', 'trace'}]."""
     if last_stage is None:
         last_stage = max(l['stage'] for l in seq.langs.values() if l['era'] == era)
+    if stage >= last_stage and table is not None:
+        return predict_latest(lexicon, seq, table, element_ids, era)
     parts = []
     for k, i in enumerate(element_ids):
         e = lexicon.get(i)
@@ -158,3 +229,22 @@ def backtest(data: dict, lexicon_list: list, seq) -> dict:
     n = len(results)
     return {'cases': n, 'join_ok': sum(r['join_ok'] for r in results), 'main': sum(r['ok_main'] for r in results),
             'any': sum(r['ok_any'] for r in results), 'results': results}
+
+
+def latest_backtest(data: dict, lexicon_list: list, seq, limit: int = 8) -> dict:
+    """Leave-one-out check of predict_latest on Eldamo's compounds of the
+    branch's latest language: the junction table is rebuilt without the
+    compound, then the compound is predicted from its elements."""
+    lexicon = {e['id']: e for e in lexicon_list}
+    rows = junction_table.cases(seq.branch, lexicon_list)
+    results = []
+    for k, r in enumerate(rows):
+        table = junction_table.learn(rows[:k] + rows[k + 1:])
+        ids = [x['id'] for x in lexicon[r['word']]['elements']]
+        vs = predict_latest(lexicon, seq, table, ids)
+        forms = [comparable(v['form']) for v in vs[:limit]]
+        results.append({'word': r['word'], 'form': r['form'], 'target': r['c'],
+                         'main': vs[0]['form'] if vs else None,
+                         'ok_main': bool(forms) and forms[0] == r['c'], 'ok_any': r['c'] in forms})
+    return {'cases': len(results), 'main': sum(x['ok_main'] for x in results),
+            'any': sum(x['ok_any'] for x in results), 'results': results}

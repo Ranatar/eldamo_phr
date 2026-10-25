@@ -145,6 +145,7 @@ reports/           audit.md, audit.json — охват, проверка шаг�
                    sequencer.md, sequencer.json — прогон дериваций, сложения, восстановление праформ
 tests/             поведение интерпретатора, инварианты против XML, граф, выходные файлы, браузер
 docs/              словотворчество (word-formation.md) и его план (word-formation-plan.md),
+                   план реконструкции между периодами (period-reconstruction-plan.md),
                    переход с HTML-конвейера (MIGRATION.md), наследие прежних этапов (legacy/),
                    прежние README и отчёты (history/)
 ```

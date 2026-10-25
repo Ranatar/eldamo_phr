@@ -1,0 +1,67 @@
+{
+ "branch": "quenya",
+ "eldamo_version": "0.8.13",
+ "phonemes": 61,
+ "rules": 251,
+ "rules_with_order": 211,
+ "excluded_rules": [
+  {
+   "rule": "794129503",
+   "lang": "p",
+   "name": "[ɣ] became [h] before voiceless consonants",
+   "reason": "deleted by Tolkien (mark \"-\")"
+  }
+ ],
+ "pairs": 782,
+ "pair_kinds": {
+  "contextual": 163,
+  "identity": 11,
+  "literal": 603,
+  "loss": 5
+ },
+ "pairs_with_examples": 464,
+ "derivations": 2556,
+ "deleted_derivations": 194,
+ "branch_steps": 4485,
+ "step_status": {
+  "deleted_rule": 11,
+  "identity": 2,
+  "mismatch": 78,
+  "no_match": 154,
+  "reproduced": 4099,
+  "reproduced_partial": 23,
+  "unknown_rule": 87,
+  "unmatched_formula": 5,
+  "unsupported": 26
+ },
+ "reproduction_rate": 0.9411,
+ "edges": 606,
+ "conditional_edges": 112,
+ "edges_with_examples": 340,
+ "contextual_pairs": 174,
+ "chains": {
+  "chains": 344,
+  "rejected_by_chronology": 64,
+  "grades": {
+   "A": 83,
+   "B": 63,
+   "C": 2,
+   "D": 196
+  }
+ },
+ "grade_legend": {
+  "A": "засвидетельствована в одной деривации",
+  "B": "шаги засвидетельствованы, порядок подтверждён",
+  "C": "шаги засвидетельствованы, порядок не установлен",
+  "D": "есть шаг без засвидетельствованных примеров"
+ },
+ "unmatched_formulas": [
+  "aq: -Sā > -Să",
+  "maq: -CC > -C",
+  "maq: rx > rk",
+  "maq: ɸ > f",
+  "mp: None > !",
+  "q: None > ???",
+  "s: None > !"
+ ]
+}

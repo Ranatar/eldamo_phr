@@ -1,0 +1,80 @@
+{
+ "branch": "sindarin",
+ "eldamo_version": "0.8.13",
+ "phonemes": 61,
+ "rules": 303,
+ "rules_with_order": 263,
+ "excluded_rules": [
+  {
+   "rule": "794129503",
+   "lang": "p",
+   "name": "[ɣ] became [h] before voiceless consonants",
+   "reason": "deleted by Tolkien (mark \"-\")"
+  },
+  {
+   "rule": "1880600739",
+   "lang": "on",
+   "name": "[ei], [ou] became [oi], [ū]",
+   "reason": "deleted by Tolkien (mark \"-\")"
+  },
+  {
+   "rule": "2031443013",
+   "lang": "on",
+   "name": "initial [s] unvoiced following [l], [r]",
+   "reason": "deleted by Tolkien (mark \"-\")"
+  }
+ ],
+ "pairs": 868,
+ "pair_kinds": {
+  "contextual": 268,
+  "identity": 17,
+  "literal": 574,
+  "loss": 9
+ },
+ "pairs_with_examples": 664,
+ "derivations": 2847,
+ "deleted_derivations": 186,
+ "branch_steps": 8379,
+ "step_status": {
+  "deleted_rule": 11,
+  "identity": 114,
+  "mismatch": 134,
+  "no_match": 202,
+  "reproduced": 7696,
+  "reproduced_partial": 18,
+  "unknown_rule": 98,
+  "unmatched_formula": 10,
+  "unsupported": 96
+ },
+ "reproduction_rate": 0.947,
+ "edges": 575,
+ "conditional_edges": 98,
+ "edges_with_examples": 419,
+ "contextual_pairs": 293,
+ "chains": {
+  "chains": 332,
+  "rejected_by_chronology": 101,
+  "grades": {
+   "A": 123,
+   "B": 81,
+   "C": 1,
+   "D": 127
+  }
+ },
+ "grade_legend": {
+  "A": "засвидетельствована в одной деривации",
+  "B": "шаги засвидетельствованы, порядок подтверждён",
+  "C": "шаги засвидетельствованы, порядок не установлен",
+  "D": "есть шаг без засвидетельствованных примеров"
+ },
+ "unmatched_formulas": [
+  "maq: -CC > -C",
+  "mp: None > !",
+  "n: None > !",
+  "os: -j- > -i-",
+  "os: None > !",
+  "os: ŋ- > ŋg-",
+  "s: -Sā > -Să",
+  "s: None > !"
+ ]
+}

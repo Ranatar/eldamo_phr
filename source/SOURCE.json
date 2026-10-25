@@ -1,0 +1,19 @@
+{
+  "eldamo_version": "0.8.13",
+  "file": "eldamo-data-0.8.13.xml.xz",
+  "xz_sha256": "5041e1281906575857df404e1ac701287f9dd7db6fb52248c22ec379790d95d4",
+  "xml_bytes": 30325949,
+  "xml_sha256": "4e561d4dfc15919d300adcb3ef8cb93298cb0b6fe0291f8fd1bef93abeea7979",
+  "release_archive": {
+    "file": "eldamo-0.8.13.zip",
+    "bytes": 81446139,
+    "sha256": "51a6efccaac68aa623d54b6c61c6fbd295193f4c049fcc03102acbbdbb8882a8",
+    "member": "eldamo-0.8.13/content/data-model/eldamo-data.xml"
+  },
+  "upstream": {
+    "site": "https://eldamo.org",
+    "repository": "https://github.com/pfstrack/eldamo",
+    "author": "Paul Strack",
+    "license": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"
+  }
+}

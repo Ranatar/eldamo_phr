@@ -1,0 +1,9082 @@
+[
+ {
+  "id": "late:g>ɣ>ø",
+  "era": "late",
+  "states": [
+   "g",
+   "ɣ",
+   "ø"
+  ],
+  "grade": "A",
+  "steps": [
+   "E96",
+   "E301"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D60",
+   "D72",
+   "D77",
+   "D78",
+   "D85",
+   "D91",
+   "D108",
+   "D109",
+   "D110",
+   "D111",
+   "D112",
+   "D113"
+  ],
+  "attested_count": 76
+ },
+ {
+  "id": "late:b>β>v",
+  "era": "late",
+  "states": [
+   "b",
+   "β",
+   "v"
+  ],
+  "grade": "A",
+  "steps": [
+   "E73",
+   "E305"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D147",
+   "D280",
+   "D282",
+   "D283",
+   "D284",
+   "D285",
+   "D286",
+   "D287",
+   "D289",
+   "D290",
+   "D292",
+   "D293"
+  ],
+  "attested_count": 74
+ },
+ {
+  "id": "late:pʰ>ɸ>f",
+  "era": "late",
+  "states": [
+   "pʰ",
+   "ɸ",
+   "f"
+  ],
+  "grade": "A",
+  "steps": [
+   "E151",
+   "E302"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D453",
+   "D454",
+   "D456",
+   "D458",
+   "D460",
+   "D463",
+   "D464",
+   "D467",
+   "D468",
+   "D469",
+   "D470",
+   "D471"
+  ],
+  "attested_count": 66
+ },
+ {
+  "id": "late:tʰ>θ>s",
+  "era": "late",
+  "states": [
+   "tʰ",
+   "θ",
+   "s"
+  ],
+  "grade": "A",
+  "steps": [
+   "E186",
+   "E306"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D249",
+   "D250",
+   "D251",
+   "D253",
+   "D254",
+   "D255",
+   "D256",
+   "D259",
+   "D260",
+   "D272",
+   "D334",
+   "D618"
+  ],
+  "attested_count": 53
+ },
+ {
+  "id": "late:kʰ>x>h",
+  "era": "late",
+  "states": [
+   "kʰ",
+   "x",
+   "h"
+  ],
+  "grade": "A",
+  "steps": [
+   "E117",
+   "E290"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D52",
+   "D570",
+   "D581",
+   "D588",
+   "D591",
+   "D594",
+   "D595",
+   "D596",
+   "D601",
+   "D612",
+   "D621",
+   "D622"
+  ],
+  "attested_count": 39
+ },
+ {
+  "id": "late:w>β>v",
+  "era": "late",
+  "states": [
+   "w",
+   "β",
+   "v"
+  ],
+  "grade": "A",
+  "steps": [
+   "E287",
+   "E305"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [
+   "D274",
+   "D2103",
+   "D2104",
+   "D2105",
+   "D2111",
+   "D2112",
+   "D2113",
+   "D2115",
+   "D2140",
+   "D2143",
+   "D2144",
+   "D2159"
+  ],
+  "attested_count": 35
+ },
+ {
+  "id": "late:ŋg>ŋ>n",
+  "era": "late",
+  "states": [
+   "ŋg",
+   "ŋ",
+   "n"
+  ],
+  "grade": "A",
+  "steps": [
+   "E203",
+   "E297"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D146",
+   "D1253",
+   "D1257",
+   "D1293",
+   "D1294",
+   "D1352",
+   "D1353",
+   "D1383",
+   "D1384",
+   "D1385",
+   "D1386",
+   "D1387"
+  ],
+  "attested_count": 32
+ },
+ {
+  "id": "late:d>ð>r",
+  "era": "late",
+  "states": [
+   "d",
+   "ð",
+   "r"
+  ],
+  "grade": "A",
+  "steps": [
+   "E82",
+   "E293"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D198",
+   "D200",
+   "D202",
+   "D203",
+   "D204",
+   "D205",
+   "D206",
+   "D211",
+   "D322",
+   "D324",
+   "D1066",
+   "D1484"
+  ],
+  "attested_count": 14
+ },
+ {
+  "id": "late:gt>kt>xt",
+  "era": "late",
+  "states": [
+   "gt",
+   "kt",
+   "xt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E10",
+   "E235"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [
+   "D1069",
+   "D1074",
+   "D1079",
+   "D1244",
+   "D2036",
+   "D2200"
+  ],
+  "attested_count": 6
+ },
+ {
+  "id": "late:sp>ɸ>f",
+  "era": "late",
+  "states": [
+   "sp",
+   "ɸ",
+   "f"
+  ],
+  "grade": "A",
+  "steps": [
+   "E169",
+   "E302"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D538",
+   "D541",
+   "D542",
+   "D544",
+   "D545"
+  ],
+  "attested_count": 5
+ },
+ {
+  "id": "late:dm>nm>nw",
+  "era": "late",
+  "states": [
+   "dm",
+   "nm",
+   "nw"
+  ],
+  "grade": "A",
+  "steps": [
+   "E89",
+   "E252"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D601",
+   "D955",
+   "D1274",
+   "D2293"
+  ],
+  "attested_count": 4
+ },
+ {
+  "id": "late:sr>zr>rr",
+  "era": "late",
+  "states": [
+   "sr",
+   "zr",
+   "rr"
+  ],
+  "grade": "A",
+  "steps": [
+   "E173",
+   "E199"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [
+   "D319",
+   "D320",
+   "D1212",
+   "D1213"
+  ],
+  "attested_count": 4
+ },
+ {
+  "id": "late:st>θ>s",
+  "era": "late",
+  "states": [
+   "st",
+   "θ",
+   "s"
+  ],
+  "grade": "A",
+  "steps": [
+   "E174",
+   "E306"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D1763",
+   "D1764",
+   "D1766",
+   "D1767"
+  ],
+  "attested_count": 4
+ },
+ {
+  "id": "late:sk>x>h",
+  "era": "late",
+  "states": [
+   "sk",
+   "x",
+   "h"
+  ],
+  "grade": "A",
+  "steps": [
+   "E161",
+   "E290"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D575",
+   "D747",
+   "D750"
+  ],
+  "attested_count": 3
+ },
+ {
+  "id": "late:gd>kt>xt",
+  "era": "late",
+  "states": [
+   "gd",
+   "kt",
+   "xt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E98",
+   "E235"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D570",
+   "D1309"
+  ],
+  "attested_count": 2
+ },
+ {
+  "id": "late:gm>ŋm>ŋgw",
+  "era": "late",
+  "states": [
+   "gm",
+   "ŋm",
+   "ŋgw"
+  ],
+  "grade": "A",
+  "steps": [
+   "E101",
+   "E298"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D2143",
+   "D2144"
+  ],
+  "attested_count": 2
+ },
+ {
+  "id": "late:ktʰ>kt>xt",
+  "era": "late",
+  "states": [
+   "ktʰ",
+   "kt",
+   "xt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E116",
+   "E235"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D1249",
+   "D1488"
+  ],
+  "attested_count": 2
+ },
+ {
+  "id": "late:kʰt>ktʰ>kt",
+  "era": "late",
+  "states": [
+   "kʰt",
+   "ktʰ",
+   "kt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E19",
+   "E116"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [
+   "D1249",
+   "D1488"
+  ],
+  "attested_count": 2
+ },
+ {
+  "id": "late:sn>n̥>n",
+  "era": "late",
+  "states": [
+   "sn",
+   "n̥",
+   "n"
+  ],
+  "grade": "A",
+  "steps": [
+   "E167",
+   "E255"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D1244",
+   "D1251"
+  ],
+  "attested_count": 2
+ },
+ {
+  "id": "late:wa>wo>o",
+  "era": "late",
+  "states": [
+   "wa",
+   "wo",
+   "o"
+  ],
+  "grade": "A",
+  "steps": [
+   "E49",
+   "E288"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [
+   "D1509",
+   "D1518"
+  ],
+  "attested_count": 2
+ },
+ {
+  "id": "late:zg>sk>ks",
+  "era": "late",
+  "states": [
+   "zg",
+   "sk",
+   "ks"
+  ],
+  "grade": "A",
+  "steps": [
+   "E195",
+   "E276"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D1182",
+   "D1300"
+  ],
+  "attested_count": 2
+ },
+ {
+  "id": "late:kʰt>ktʰ>kt>xt",
+  "era": "late",
+  "states": [
+   "kʰt",
+   "ktʰ",
+   "kt",
+   "xt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E19",
+   "E116",
+   "E235"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D1249",
+   "D1488"
+  ],
+  "attested_count": 2
+ },
+ {
+  "id": "late:bd>pt>ɸt",
+  "era": "late",
+  "states": [
+   "bd",
+   "pt",
+   "ɸt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E75",
+   "E263"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D895"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:bt>pt>ɸt",
+  "era": "late",
+  "states": [
+   "bt",
+   "pt",
+   "ɸt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E5",
+   "E263"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [
+   "D194"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:kd>kt>xt",
+  "era": "late",
+  "states": [
+   "kd",
+   "kt",
+   "xt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E15",
+   "E235"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [
+   "D1900"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:km>mk>ŋk",
+  "era": "late",
+  "states": [
+   "km",
+   "mk",
+   "ŋk"
+  ],
+  "grade": "A",
+  "steps": [
+   "E16",
+   "E25"
+  ],
+  "transitions": [
+   "unknown"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "✶"
+  ],
+  "attested_in": [
+   "D1040"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:kn>kt>xt",
+  "era": "late",
+  "states": [
+   "kn",
+   "kt",
+   "xt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E112",
+   "E235"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D1566"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:kʰk>kkʰ>kk",
+  "era": "late",
+  "states": [
+   "kʰk",
+   "kkʰ",
+   "kk"
+  ],
+  "grade": "A",
+  "steps": [
+   "E17",
+   "E109"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [
+   "D164"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:mpʰ>ppʰ>pp",
+  "era": "late",
+  "states": [
+   "mpʰ",
+   "ppʰ",
+   "pp"
+  ],
+  "grade": "A",
+  "steps": [
+   "E130",
+   "E148"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [
+   "D1653"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:ntʰ>ttʰ>tt",
+  "era": "late",
+  "states": [
+   "ntʰ",
+   "ttʰ",
+   "tt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E139",
+   "E185"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [
+   "D1581"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:pm>pw>pp",
+  "era": "late",
+  "states": [
+   "pm",
+   "pw",
+   "pp"
+  ],
+  "grade": "A",
+  "steps": [
+   "E144",
+   "E264"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D1279"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:pt>ɸt>ut",
+  "era": "late",
+  "states": [
+   "pt",
+   "ɸt",
+   "ut"
+  ],
+  "grade": "A",
+  "steps": [
+   "E263",
+   "E303"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [
+   "D963"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:sl>l̥>l",
+  "era": "late",
+  "states": [
+   "sl",
+   "l̥",
+   "l"
+  ],
+  "grade": "A",
+  "steps": [
+   "E163",
+   "E243"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D692"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:sl>zl>ll",
+  "era": "late",
+  "states": [
+   "sl",
+   "zl",
+   "ll"
+  ],
+  "grade": "A",
+  "steps": [
+   "E164",
+   "E196"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [
+   "D1355"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:sm>zm>mm",
+  "era": "late",
+  "states": [
+   "sm",
+   "zm",
+   "mm"
+  ],
+  "grade": "A",
+  "steps": [
+   "E166",
+   "E197"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [
+   "D881"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:tkʰ>tk>θk",
+  "era": "late",
+  "states": [
+   "tkʰ",
+   "tk",
+   "θk"
+  ],
+  "grade": "A",
+  "steps": [
+   "E178",
+   "E279"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D1717"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:tʰk>tkʰ>tk",
+  "era": "late",
+  "states": [
+   "tʰk",
+   "tkʰ",
+   "tk"
+  ],
+  "grade": "A",
+  "steps": [
+   "E44",
+   "E178"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [
+   "D1717"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:zb>sp>ps",
+  "era": "late",
+  "states": [
+   "zb",
+   "sp",
+   "ps"
+  ],
+  "grade": "A",
+  "steps": [
+   "E193",
+   "E277"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D1609"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:θ>t>s",
+  "era": "late",
+  "states": [
+   "θ",
+   "t",
+   "s"
+  ],
+  "grade": "A",
+  "steps": [
+   "E307",
+   "E278"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [
+   "D1226"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:tʰk>tkʰ>tk>θk",
+  "era": "late",
+  "states": [
+   "tʰk",
+   "tkʰ",
+   "tk",
+   "θk"
+  ],
+  "grade": "A",
+  "steps": [
+   "E44",
+   "E178",
+   "E279"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [
+   "D1717"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "late:bm>mb>m",
+  "era": "late",
+  "states": [
+   "bm",
+   "mb",
+   "m"
+  ],
+  "grade": "B",
+  "steps": [
+   "E3",
+   "E127"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 2,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:dn>nd>n",
+  "era": "late",
+  "states": [
+   "dn",
+   "nd",
+   "n"
+  ],
+  "grade": "B",
+  "steps": [
+   "E6",
+   "E133"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:kr>ks>s",
+  "era": "late",
+  "states": [
+   "kr",
+   "ks",
+   "s"
+  ],
+  "grade": "B",
+  "steps": [
+   "E115",
+   "E234"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:md>nd>n",
+  "era": "late",
+  "states": [
+   "md",
+   "nd",
+   "n"
+  ],
+  "grade": "B",
+  "steps": [
+   "E24",
+   "E133"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:nb>mb>m",
+  "era": "late",
+  "states": [
+   "nb",
+   "mb",
+   "m"
+  ],
+  "grade": "B",
+  "steps": [
+   "E27",
+   "E127"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sd>st>θ",
+  "era": "late",
+  "states": [
+   "sd",
+   "st",
+   "θ"
+  ],
+  "grade": "B",
+  "steps": [
+   "E36",
+   "E174"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sd>zd>st",
+  "era": "late",
+  "states": [
+   "sd",
+   "zd",
+   "st"
+  ],
+  "grade": "B",
+  "steps": [
+   "E37",
+   "E194"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sg>zg>sk",
+  "era": "late",
+  "states": [
+   "sg",
+   "zg",
+   "sk"
+  ],
+  "grade": "B",
+  "steps": [
+   "E38",
+   "E195"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:skʰ>sk>ks",
+  "era": "late",
+  "states": [
+   "skʰ",
+   "sk",
+   "ks"
+  ],
+  "grade": "B",
+  "steps": [
+   "E162",
+   "E276"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tʰ>θ>t",
+  "era": "late",
+  "states": [
+   "tʰ",
+   "θ",
+   "t"
+  ],
+  "grade": "B",
+  "steps": [
+   "E186",
+   "E307"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:zb>sp>ɸ",
+  "era": "late",
+  "states": [
+   "zb",
+   "sp",
+   "ɸ"
+  ],
+  "grade": "B",
+  "steps": [
+   "E193",
+   "E169"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:zd>st>θ",
+  "era": "late",
+  "states": [
+   "zd",
+   "st",
+   "θ"
+  ],
+  "grade": "B",
+  "steps": [
+   "E194",
+   "E174"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:zg>sk>x",
+  "era": "late",
+  "states": [
+   "zg",
+   "sk",
+   "x"
+  ],
+  "grade": "B",
+  "steps": [
+   "E195",
+   "E161"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ŋ>ɣ>ø",
+  "era": "late",
+  "states": [
+   "ŋ",
+   "ɣ",
+   "ø"
+  ],
+  "grade": "B",
+  "steps": [
+   "E54",
+   "E301"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ŋgj>ndj>nj",
+  "era": "late",
+  "states": [
+   "ŋgj",
+   "ndj",
+   "nj"
+  ],
+  "grade": "B",
+  "steps": [
+   "E204",
+   "E250"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ŋw>w>v",
+  "era": "late",
+  "states": [
+   "ŋw",
+   "w",
+   "v"
+  ],
+  "grade": "B",
+  "steps": [
+   "E209",
+   "E286"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ŋw>w>β",
+  "era": "late",
+  "states": [
+   "ŋw",
+   "w",
+   "β"
+  ],
+  "grade": "B",
+  "steps": [
+   "E209",
+   "E287"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ŋŋ>ŋg>ŋ",
+  "era": "late",
+  "states": [
+   "ŋŋ",
+   "ŋg",
+   "ŋ"
+  ],
+  "grade": "B",
+  "steps": [
+   "E62",
+   "E203"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:bd>pt>ɸt>ut",
+  "era": "late",
+  "states": [
+   "bd",
+   "pt",
+   "ɸt",
+   "ut"
+  ],
+  "grade": "B",
+  "steps": [
+   "E75",
+   "E263",
+   "E303"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:bt>pt>ɸt>ut",
+  "era": "late",
+  "states": [
+   "bt",
+   "pt",
+   "ɸt",
+   "ut"
+  ],
+  "grade": "B",
+  "steps": [
+   "E5",
+   "E263",
+   "E303"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sd>st>θ>s",
+  "era": "late",
+  "states": [
+   "sd",
+   "st",
+   "θ",
+   "s"
+  ],
+  "grade": "B",
+  "steps": [
+   "E36",
+   "E174",
+   "E306"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sd>zd>st>θ",
+  "era": "late",
+  "states": [
+   "sd",
+   "zd",
+   "st",
+   "θ"
+  ],
+  "grade": "B",
+  "steps": [
+   "E37",
+   "E194",
+   "E174"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sg>zg>sk>ks",
+  "era": "late",
+  "states": [
+   "sg",
+   "zg",
+   "sk",
+   "ks"
+  ],
+  "grade": "B",
+  "steps": [
+   "E38",
+   "E195",
+   "E276"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sg>zg>sk>x",
+  "era": "late",
+  "states": [
+   "sg",
+   "zg",
+   "sk",
+   "x"
+  ],
+  "grade": "B",
+  "steps": [
+   "E38",
+   "E195",
+   "E161"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tʰ>θ>t>s",
+  "era": "late",
+  "states": [
+   "tʰ",
+   "θ",
+   "t",
+   "s"
+  ],
+  "grade": "B",
+  "steps": [
+   "E186",
+   "E307",
+   "E278"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:zb>sp>ɸ>f",
+  "era": "late",
+  "states": [
+   "zb",
+   "sp",
+   "ɸ",
+   "f"
+  ],
+  "grade": "B",
+  "steps": [
+   "E193",
+   "E169",
+   "E302"
+  ],
+  "transitions": [
+   "ordered",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:zd>st>θ>s",
+  "era": "late",
+  "states": [
+   "zd",
+   "st",
+   "θ",
+   "s"
+  ],
+  "grade": "B",
+  "steps": [
+   "E194",
+   "E174",
+   "E306"
+  ],
+  "transitions": [
+   "ordered",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:zg>sk>x>h",
+  "era": "late",
+  "states": [
+   "zg",
+   "sk",
+   "x",
+   "h"
+  ],
+  "grade": "B",
+  "steps": [
+   "E195",
+   "E161",
+   "E290"
+  ],
+  "transitions": [
+   "ordered",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ŋw>w>β>v",
+  "era": "late",
+  "states": [
+   "ŋw",
+   "w",
+   "β",
+   "v"
+  ],
+  "grade": "B",
+  "steps": [
+   "E209",
+   "E287",
+   "E305"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ŋŋ>ŋg>ŋ>n",
+  "era": "late",
+  "states": [
+   "ŋŋ",
+   "ŋg",
+   "ŋ",
+   "n"
+  ],
+  "grade": "B",
+  "steps": [
+   "E62",
+   "E203",
+   "E297"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:skʰ>sk>x",
+  "era": "late",
+  "states": [
+   "skʰ",
+   "sk",
+   "x"
+  ],
+  "grade": "C",
+  "steps": [
+   "E162",
+   "E161"
+  ],
+  "transitions": [
+   "unknown"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:skʰ>sk>x>h",
+  "era": "late",
+  "states": [
+   "skʰ",
+   "sk",
+   "x",
+   "h"
+  ],
+  "grade": "C",
+  "steps": [
+   "E162",
+   "E161",
+   "E290"
+  ],
+  "transitions": [
+   "unknown",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:bd>pt>t",
+  "era": "late",
+  "states": [
+   "bd",
+   "pt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E75",
+   "E262"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:bs>ps>s",
+  "era": "late",
+  "states": [
+   "bs",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E4",
+   "E260"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:bs>ps>ups",
+  "era": "late",
+  "states": [
+   "bs",
+   "ps",
+   "ups"
+  ],
+  "grade": "D",
+  "steps": [
+   "E4",
+   "E261"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:bt>pt>t",
+  "era": "late",
+  "states": [
+   "bt",
+   "pt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E5",
+   "E262"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:dg>tk>θk",
+  "era": "late",
+  "states": [
+   "dg",
+   "tk",
+   "θk"
+  ],
+  "grade": "D",
+  "steps": [
+   "E85",
+   "E279"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:dm>nm>mm",
+  "era": "late",
+  "states": [
+   "dm",
+   "nm",
+   "mm"
+  ],
+  "grade": "D",
+  "steps": [
+   "E89",
+   "E251"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ds>ts>s",
+  "era": "late",
+  "states": [
+   "ds",
+   "ts",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E7",
+   "E280"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ds>ts>ss",
+  "era": "late",
+  "states": [
+   "ds",
+   "ts",
+   "ss"
+  ],
+  "grade": "D",
+  "steps": [
+   "E7",
+   "E281"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ds>ts>st",
+  "era": "late",
+  "states": [
+   "ds",
+   "ts",
+   "st"
+  ],
+  "grade": "D",
+  "steps": [
+   "E7",
+   "E282"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:gs>ks>iks",
+  "era": "late",
+  "states": [
+   "gs",
+   "ks",
+   "iks"
+  ],
+  "grade": "D",
+  "steps": [
+   "E9",
+   "E233"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:gs>ks>s",
+  "era": "late",
+  "states": [
+   "gs",
+   "ks",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E9",
+   "E234"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ht>xt>t",
+  "era": "late",
+  "states": [
+   "ht",
+   "xt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E13",
+   "E291"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:k>t>s",
+  "era": "late",
+  "states": [
+   "k",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E232",
+   "E278"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:kn>ŋk>k",
+  "era": "late",
+  "states": [
+   "kn",
+   "ŋk",
+   "k"
+  ],
+  "grade": "D",
+  "steps": [
+   "E113",
+   "E206"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:kr>ks>iks",
+  "era": "late",
+  "states": [
+   "kr",
+   "ks",
+   "iks"
+  ],
+  "grade": "D",
+  "steps": [
+   "E115",
+   "E233"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:kt>xt>t",
+  "era": "late",
+  "states": [
+   "kt",
+   "xt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E235",
+   "E291"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:kʰn>kt>xt",
+  "era": "late",
+  "states": [
+   "kʰn",
+   "kt",
+   "xt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E119",
+   "E235"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:kʰr>ks>iks",
+  "era": "late",
+  "states": [
+   "kʰr",
+   "ks",
+   "iks"
+  ],
+  "grade": "D",
+  "steps": [
+   "E120",
+   "E233"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:kʰr>ks>s",
+  "era": "late",
+  "states": [
+   "kʰr",
+   "ks",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E120",
+   "E234"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:kʰs>ks>iks",
+  "era": "late",
+  "states": [
+   "kʰs",
+   "ks",
+   "iks"
+  ],
+  "grade": "D",
+  "steps": [
+   "E18",
+   "E233"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:kʰs>ks>s",
+  "era": "late",
+  "states": [
+   "kʰs",
+   "ks",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E18",
+   "E234"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:lɣw>lw>lv",
+  "era": "late",
+  "states": [
+   "lɣw",
+   "lw",
+   "lv"
+  ],
+  "grade": "D",
+  "steps": [
+   "E126",
+   "E237"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:mk>ŋk>k",
+  "era": "late",
+  "states": [
+   "mk",
+   "ŋk",
+   "k"
+  ],
+  "grade": "D",
+  "steps": [
+   "E25",
+   "E206"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ms>ns>ss",
+  "era": "late",
+  "states": [
+   "ms",
+   "ns",
+   "ss"
+  ],
+  "grade": "D",
+  "steps": [
+   "E131",
+   "E136"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:mt>nt>t",
+  "era": "late",
+  "states": [
+   "mt",
+   "nt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E26",
+   "E137"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:nk>ŋk>k",
+  "era": "late",
+  "states": [
+   "nk",
+   "ŋk",
+   "k"
+  ],
+  "grade": "D",
+  "steps": [
+   "E28",
+   "E206"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:np>mp>p",
+  "era": "late",
+  "states": [
+   "np",
+   "mp",
+   "p"
+  ],
+  "grade": "D",
+  "steps": [
+   "E29",
+   "E129"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pm>mp>p",
+  "era": "late",
+  "states": [
+   "pm",
+   "mp",
+   "p"
+  ],
+  "grade": "D",
+  "steps": [
+   "E143",
+   "E129"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pn>mp>p",
+  "era": "late",
+  "states": [
+   "pn",
+   "mp",
+   "p"
+  ],
+  "grade": "D",
+  "steps": [
+   "E145",
+   "E129"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pn>pt>t",
+  "era": "late",
+  "states": [
+   "pn",
+   "pt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E147",
+   "E262"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pn>pt>ɸt",
+  "era": "late",
+  "states": [
+   "pn",
+   "pt",
+   "ɸt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E147",
+   "E263"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pr>ps>s",
+  "era": "late",
+  "states": [
+   "pr",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E149",
+   "E260"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pr>ps>ups",
+  "era": "late",
+  "states": [
+   "pr",
+   "ps",
+   "ups"
+  ],
+  "grade": "D",
+  "steps": [
+   "E149",
+   "E261"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pt>t>s",
+  "era": "late",
+  "states": [
+   "pt",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E262",
+   "E278"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ptʰ>pt>t",
+  "era": "late",
+  "states": [
+   "ptʰ",
+   "pt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E150",
+   "E262"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ptʰ>pt>ɸt",
+  "era": "late",
+  "states": [
+   "ptʰ",
+   "pt",
+   "ɸt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E150",
+   "E263"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰm>pw>pp",
+  "era": "late",
+  "states": [
+   "pʰm",
+   "pw",
+   "pp"
+  ],
+  "grade": "D",
+  "steps": [
+   "E152",
+   "E264"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰn>pt>t",
+  "era": "late",
+  "states": [
+   "pʰn",
+   "pt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E153",
+   "E262"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰn>pt>ɸt",
+  "era": "late",
+  "states": [
+   "pʰn",
+   "pt",
+   "ɸt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E153",
+   "E263"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰr>ps>s",
+  "era": "late",
+  "states": [
+   "pʰr",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E154",
+   "E260"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰr>ps>ups",
+  "era": "late",
+  "states": [
+   "pʰr",
+   "ps",
+   "ups"
+  ],
+  "grade": "D",
+  "steps": [
+   "E154",
+   "E261"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰs>ps>s",
+  "era": "late",
+  "states": [
+   "pʰs",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E31",
+   "E260"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰs>ps>ups",
+  "era": "late",
+  "states": [
+   "pʰs",
+   "ps",
+   "ups"
+  ],
+  "grade": "D",
+  "steps": [
+   "E31",
+   "E261"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰt>ptʰ>pt",
+  "era": "late",
+  "states": [
+   "pʰt",
+   "ptʰ",
+   "pt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E32",
+   "E150"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰtʰ>ptʰ>pt",
+  "era": "late",
+  "states": [
+   "pʰtʰ",
+   "ptʰ",
+   "pt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E33",
+   "E150"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰw>ppʰ>pp",
+  "era": "late",
+  "states": [
+   "pʰw",
+   "ppʰ",
+   "pp"
+  ],
+  "grade": "D",
+  "steps": [
+   "E34",
+   "E148"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:rɣw>rw>rv",
+  "era": "late",
+  "states": [
+   "rɣw",
+   "rw",
+   "rv"
+  ],
+  "grade": "D",
+  "steps": [
+   "E158",
+   "E267"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sb>zb>sp",
+  "era": "late",
+  "states": [
+   "sb",
+   "zb",
+   "sp"
+  ],
+  "grade": "D",
+  "steps": [
+   "E35",
+   "E193"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sk>ks>iks",
+  "era": "late",
+  "states": [
+   "sk",
+   "ks",
+   "iks"
+  ],
+  "grade": "D",
+  "steps": [
+   "E276",
+   "E233"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sl>ls>ll",
+  "era": "late",
+  "states": [
+   "sl",
+   "ls",
+   "ll"
+  ],
+  "grade": "D",
+  "steps": [
+   "E39",
+   "E123"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sm>m̥>m",
+  "era": "late",
+  "states": [
+   "sm",
+   "m̥",
+   "m"
+  ],
+  "grade": "D",
+  "steps": [
+   "E165",
+   "E249"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sn>zn>nn",
+  "era": "late",
+  "states": [
+   "sn",
+   "zn",
+   "nn"
+  ],
+  "grade": "D",
+  "steps": [
+   "E168",
+   "E198"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sp>ps>ups",
+  "era": "late",
+  "states": [
+   "sp",
+   "ps",
+   "ups"
+  ],
+  "grade": "D",
+  "steps": [
+   "E277",
+   "E261"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:spʰ>sp>ps",
+  "era": "late",
+  "states": [
+   "spʰ",
+   "sp",
+   "ps"
+  ],
+  "grade": "D",
+  "steps": [
+   "E170",
+   "E277"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:spʰ>sp>ɸ",
+  "era": "late",
+  "states": [
+   "spʰ",
+   "sp",
+   "ɸ"
+  ],
+  "grade": "D",
+  "steps": [
+   "E170",
+   "E169"
+  ],
+  "transitions": [
+   "unknown"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sr>r̥>r",
+  "era": "late",
+  "states": [
+   "sr",
+   "r̥",
+   "r"
+  ],
+  "grade": "D",
+  "steps": [
+   "E171",
+   "E273"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:stʰ>st>θ",
+  "era": "late",
+  "states": [
+   "stʰ",
+   "st",
+   "θ"
+  ],
+  "grade": "D",
+  "steps": [
+   "E175",
+   "E174"
+  ],
+  "transitions": [
+   "unknown"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tk>kt>xt",
+  "era": "late",
+  "states": [
+   "tk",
+   "kt",
+   "xt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E41",
+   "E235"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tk>sk>ks",
+  "era": "late",
+  "states": [
+   "tk",
+   "sk",
+   "ks"
+  ],
+  "grade": "D",
+  "steps": [
+   "E42",
+   "E276"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tk>sk>x",
+  "era": "late",
+  "states": [
+   "tk",
+   "sk",
+   "x"
+  ],
+  "grade": "D",
+  "steps": [
+   "E42",
+   "E161"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tn>nt>t",
+  "era": "late",
+  "states": [
+   "tn",
+   "nt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E180",
+   "E137"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tr>ts>s",
+  "era": "late",
+  "states": [
+   "tr",
+   "ts",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E184",
+   "E280"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tr>ts>ss",
+  "era": "late",
+  "states": [
+   "tr",
+   "ts",
+   "ss"
+  ],
+  "grade": "D",
+  "steps": [
+   "E184",
+   "E281"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tr>ts>st",
+  "era": "late",
+  "states": [
+   "tr",
+   "ts",
+   "st"
+  ],
+  "grade": "D",
+  "steps": [
+   "E184",
+   "E282"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tʰr>ts>s",
+  "era": "late",
+  "states": [
+   "tʰr",
+   "ts",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E189",
+   "E280"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tʰr>ts>ss",
+  "era": "late",
+  "states": [
+   "tʰr",
+   "ts",
+   "ss"
+  ],
+  "grade": "D",
+  "steps": [
+   "E189",
+   "E281"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tʰr>ts>st",
+  "era": "late",
+  "states": [
+   "tʰr",
+   "ts",
+   "st"
+  ],
+  "grade": "D",
+  "steps": [
+   "E189",
+   "E282"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tʰs>ts>s",
+  "era": "late",
+  "states": [
+   "tʰs",
+   "ts",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E45",
+   "E280"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tʰs>ts>ss",
+  "era": "late",
+  "states": [
+   "tʰs",
+   "ts",
+   "ss"
+  ],
+  "grade": "D",
+  "steps": [
+   "E45",
+   "E281"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tʰs>ts>st",
+  "era": "late",
+  "states": [
+   "tʰs",
+   "ts",
+   "st"
+  ],
+  "grade": "D",
+  "steps": [
+   "E45",
+   "E282"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tʰt>ttʰ>tt",
+  "era": "late",
+  "states": [
+   "tʰt",
+   "ttʰ",
+   "tt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E46",
+   "E185"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tʰtʰ>ttʰ>tt",
+  "era": "late",
+  "states": [
+   "tʰtʰ",
+   "ttʰ",
+   "tt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E47",
+   "E185"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:xt>t>s",
+  "era": "late",
+  "states": [
+   "xt",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E291",
+   "E278"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ŋj>ŋgj>ndj",
+  "era": "late",
+  "states": [
+   "ŋj",
+   "ŋgj",
+   "ndj"
+  ],
+  "grade": "D",
+  "steps": [
+   "E55",
+   "E204"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ŋkʰ>kkʰ>kk",
+  "era": "late",
+  "states": [
+   "ŋkʰ",
+   "kkʰ",
+   "kk"
+  ],
+  "grade": "D",
+  "steps": [
+   "E208",
+   "E109"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ŋp>mp>p",
+  "era": "late",
+  "states": [
+   "ŋp",
+   "mp",
+   "p"
+  ],
+  "grade": "D",
+  "steps": [
+   "E57",
+   "E129"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ŋs>ns>ss",
+  "era": "late",
+  "states": [
+   "ŋs",
+   "ns",
+   "ss"
+  ],
+  "grade": "D",
+  "steps": [
+   "E59",
+   "E136"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ŋt>nt>t",
+  "era": "late",
+  "states": [
+   "ŋt",
+   "nt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E60",
+   "E137"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ŋɣ>ŋg>ŋ",
+  "era": "late",
+  "states": [
+   "ŋɣ",
+   "ŋg",
+   "ŋ"
+  ],
+  "grade": "D",
+  "steps": [
+   "E63",
+   "E203"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:bd>pt>t>s",
+  "era": "late",
+  "states": [
+   "bd",
+   "pt",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E75",
+   "E262",
+   "E278"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:bt>pt>t>s",
+  "era": "late",
+  "states": [
+   "bt",
+   "pt",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E5",
+   "E262",
+   "E278"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:gd>kt>xt>t",
+  "era": "late",
+  "states": [
+   "gd",
+   "kt",
+   "xt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E98",
+   "E235",
+   "E291"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:gt>kt>xt>t",
+  "era": "late",
+  "states": [
+   "gt",
+   "kt",
+   "xt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E10",
+   "E235",
+   "E291"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ht>xt>t>s",
+  "era": "late",
+  "states": [
+   "ht",
+   "xt",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E13",
+   "E291",
+   "E278"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:kd>kt>xt>t",
+  "era": "late",
+  "states": [
+   "kd",
+   "kt",
+   "xt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E15",
+   "E235",
+   "E291"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:km>mk>ŋk>k",
+  "era": "late",
+  "states": [
+   "km",
+   "mk",
+   "ŋk",
+   "k"
+  ],
+  "grade": "D",
+  "steps": [
+   "E16",
+   "E25",
+   "E206"
+  ],
+  "transitions": [
+   "unknown",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "✶",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:kn>kt>xt>t",
+  "era": "late",
+  "states": [
+   "kn",
+   "kt",
+   "xt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E112",
+   "E235",
+   "E291"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:kt>xt>t>s",
+  "era": "late",
+  "states": [
+   "kt",
+   "xt",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E235",
+   "E291",
+   "E278"
+  ],
+  "transitions": [
+   "ordered",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "Q.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ktʰ>kt>xt>t",
+  "era": "late",
+  "states": [
+   "ktʰ",
+   "kt",
+   "xt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E116",
+   "E235",
+   "E291"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:kʰn>kt>xt>t",
+  "era": "late",
+  "states": [
+   "kʰn",
+   "kt",
+   "xt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E119",
+   "E235",
+   "E291"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pn>pt>t>s",
+  "era": "late",
+  "states": [
+   "pn",
+   "pt",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E147",
+   "E262",
+   "E278"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pn>pt>ɸt>ut",
+  "era": "late",
+  "states": [
+   "pn",
+   "pt",
+   "ɸt",
+   "ut"
+  ],
+  "grade": "D",
+  "steps": [
+   "E147",
+   "E263",
+   "E303"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ptʰ>pt>t>s",
+  "era": "late",
+  "states": [
+   "ptʰ",
+   "pt",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E150",
+   "E262",
+   "E278"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ptʰ>pt>ɸt>ut",
+  "era": "late",
+  "states": [
+   "ptʰ",
+   "pt",
+   "ɸt",
+   "ut"
+  ],
+  "grade": "D",
+  "steps": [
+   "E150",
+   "E263",
+   "E303"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰn>pt>t>s",
+  "era": "late",
+  "states": [
+   "pʰn",
+   "pt",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E153",
+   "E262",
+   "E278"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰn>pt>ɸt>ut",
+  "era": "late",
+  "states": [
+   "pʰn",
+   "pt",
+   "ɸt",
+   "ut"
+  ],
+  "grade": "D",
+  "steps": [
+   "E153",
+   "E263",
+   "E303"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰt>ptʰ>pt>t",
+  "era": "late",
+  "states": [
+   "pʰt",
+   "ptʰ",
+   "pt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E32",
+   "E150",
+   "E262"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰt>ptʰ>pt>ɸt",
+  "era": "late",
+  "states": [
+   "pʰt",
+   "ptʰ",
+   "pt",
+   "ɸt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E32",
+   "E150",
+   "E263"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰtʰ>ptʰ>pt>t",
+  "era": "late",
+  "states": [
+   "pʰtʰ",
+   "ptʰ",
+   "pt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E33",
+   "E150",
+   "E262"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:pʰtʰ>ptʰ>pt>ɸt",
+  "era": "late",
+  "states": [
+   "pʰtʰ",
+   "ptʰ",
+   "pt",
+   "ɸt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E33",
+   "E150",
+   "E263"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sb>zb>sp>ps",
+  "era": "late",
+  "states": [
+   "sb",
+   "zb",
+   "sp",
+   "ps"
+  ],
+  "grade": "D",
+  "steps": [
+   "E35",
+   "E193",
+   "E277"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:sb>zb>sp>ɸ",
+  "era": "late",
+  "states": [
+   "sb",
+   "zb",
+   "sp",
+   "ɸ"
+  ],
+  "grade": "D",
+  "steps": [
+   "E35",
+   "E193",
+   "E169"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "AQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:skʰ>sk>ks>iks",
+  "era": "late",
+  "states": [
+   "skʰ",
+   "sk",
+   "ks",
+   "iks"
+  ],
+  "grade": "D",
+  "steps": [
+   "E162",
+   "E276",
+   "E233"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:spʰ>sp>ps>ups",
+  "era": "late",
+  "states": [
+   "spʰ",
+   "sp",
+   "ps",
+   "ups"
+  ],
+  "grade": "D",
+  "steps": [
+   "E170",
+   "E277",
+   "E261"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:spʰ>sp>ɸ>f",
+  "era": "late",
+  "states": [
+   "spʰ",
+   "sp",
+   "ɸ",
+   "f"
+  ],
+  "grade": "D",
+  "steps": [
+   "E170",
+   "E169",
+   "E302"
+  ],
+  "transitions": [
+   "unknown",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:stʰ>st>θ>s",
+  "era": "late",
+  "states": [
+   "stʰ",
+   "st",
+   "θ",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E175",
+   "E174",
+   "E306"
+  ],
+  "transitions": [
+   "unknown",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tk>kt>xt>t",
+  "era": "late",
+  "states": [
+   "tk",
+   "kt",
+   "xt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E41",
+   "E235",
+   "E291"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tk>sk>ks>iks",
+  "era": "late",
+  "states": [
+   "tk",
+   "sk",
+   "ks",
+   "iks"
+  ],
+  "grade": "D",
+  "steps": [
+   "E42",
+   "E276",
+   "E233"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:tk>sk>x>h",
+  "era": "late",
+  "states": [
+   "tk",
+   "sk",
+   "x",
+   "h"
+  ],
+  "grade": "D",
+  "steps": [
+   "E42",
+   "E161",
+   "E290"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:zb>sp>ps>ups",
+  "era": "late",
+  "states": [
+   "zb",
+   "sp",
+   "ps",
+   "ups"
+  ],
+  "grade": "D",
+  "steps": [
+   "E193",
+   "E277",
+   "E261"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:zg>sk>ks>iks",
+  "era": "late",
+  "states": [
+   "zg",
+   "sk",
+   "ks",
+   "iks"
+  ],
+  "grade": "D",
+  "steps": [
+   "E195",
+   "E276",
+   "E233"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "AQ.",
+   "Q.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ŋj>ŋgj>ndj>nj",
+  "era": "late",
+  "states": [
+   "ŋj",
+   "ŋgj",
+   "ndj",
+   "nj"
+  ],
+  "grade": "D",
+  "steps": [
+   "E55",
+   "E204",
+   "E250"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "late:ŋɣ>ŋg>ŋ>n",
+  "era": "late",
+  "states": [
+   "ŋɣ",
+   "ŋg",
+   "ŋ",
+   "n"
+  ],
+  "grade": "D",
+  "steps": [
+   "E63",
+   "E203",
+   "E297"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "✶",
+   "AQ.",
+   "Q."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:g>ɣ>ø",
+  "era": "middle",
+  "states": [
+   "g",
+   "ɣ",
+   "ø"
+  ],
+  "grade": "A",
+  "steps": [
+   "E394",
+   "E601"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D56",
+   "D73",
+   "D79",
+   "D86",
+   "D95",
+   "D118",
+   "D119",
+   "D120",
+   "D130",
+   "D132",
+   "D150",
+   "D156"
+  ],
+  "attested_count": 63
+ },
+ {
+  "id": "middle:b>β>v",
+  "era": "middle",
+  "states": [
+   "b",
+   "β",
+   "v"
+  ],
+  "grade": "A",
+  "steps": [
+   "E369",
+   "E604"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D278",
+   "D294",
+   "D725",
+   "D870",
+   "D922",
+   "D923",
+   "D924",
+   "D1029",
+   "D1238",
+   "D1605",
+   "D1675",
+   "D1761"
+  ],
+  "attested_count": 54
+ },
+ {
+  "id": "middle:kʰ>x>h",
+  "era": "middle",
+  "states": [
+   "kʰ",
+   "x",
+   "h"
+  ],
+  "grade": "A",
+  "steps": [
+   "E416",
+   "E591"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D571",
+   "D572",
+   "D573",
+   "D578",
+   "D579",
+   "D582",
+   "D585",
+   "D586",
+   "D587",
+   "D590",
+   "D592",
+   "D593"
+  ],
+  "attested_count": 49
+ },
+ {
+  "id": "middle:pʰ>ɸ>f",
+  "era": "middle",
+  "states": [
+   "pʰ",
+   "ɸ",
+   "f"
+  ],
+  "grade": "A",
+  "steps": [
+   "E458",
+   "E602"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D385",
+   "D457",
+   "D459",
+   "D461",
+   "D462",
+   "D465",
+   "D466",
+   "D492",
+   "D493",
+   "D494",
+   "D496",
+   "D497"
+  ],
+  "attested_count": 38
+ },
+ {
+  "id": "middle:tʰ>θ>s",
+  "era": "middle",
+  "states": [
+   "tʰ",
+   "θ",
+   "s"
+  ],
+  "grade": "A",
+  "steps": [
+   "E496",
+   "E605"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D665",
+   "D666",
+   "D669",
+   "D670",
+   "D825",
+   "D826",
+   "D827",
+   "D828",
+   "D1024",
+   "D1296",
+   "D1329",
+   "D1429"
+  ],
+  "attested_count": 26
+ },
+ {
+  "id": "middle:ŋg>ŋ>n",
+  "era": "middle",
+  "states": [
+   "ŋg",
+   "ŋ",
+   "n"
+  ],
+  "grade": "A",
+  "steps": [
+   "E516",
+   "E598"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D1283",
+   "D1295",
+   "D1382",
+   "D1394",
+   "D1395",
+   "D1396",
+   "D1397",
+   "D1401",
+   "D1405",
+   "D1432",
+   "D1433",
+   "D1454"
+  ],
+  "attested_count": 19
+ },
+ {
+  "id": "middle:gm>ŋm>ŋgw",
+  "era": "middle",
+  "states": [
+   "gm",
+   "ŋm",
+   "ŋgw"
+  ],
+  "grade": "A",
+  "steps": [
+   "E400",
+   "E599"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D685",
+   "D1272",
+   "D1529",
+   "D1665",
+   "D1828",
+   "D1869",
+   "D1933",
+   "D1934",
+   "D1938",
+   "D1941",
+   "D1942",
+   "D1943"
+  ],
+  "attested_count": 13
+ },
+ {
+  "id": "middle:km>gm>ŋm",
+  "era": "middle",
+  "states": [
+   "km",
+   "gm",
+   "ŋm"
+  ],
+  "grade": "A",
+  "steps": [
+   "E410",
+   "E400"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [
+   "D1272",
+   "D1529",
+   "D1665",
+   "D1828",
+   "D1869",
+   "D1933",
+   "D1934",
+   "D1938",
+   "D1941",
+   "D1942",
+   "D1943",
+   "D1947"
+  ],
+  "attested_count": 12
+ },
+ {
+  "id": "middle:km>gm>ŋm>ŋgw",
+  "era": "middle",
+  "states": [
+   "km",
+   "gm",
+   "ŋm",
+   "ŋgw"
+  ],
+  "grade": "A",
+  "steps": [
+   "E410",
+   "E400",
+   "E599"
+  ],
+  "transitions": [
+   "ordered",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D1272",
+   "D1529",
+   "D1665",
+   "D1828",
+   "D1869",
+   "D1933",
+   "D1934",
+   "D1938",
+   "D1941",
+   "D1942",
+   "D1943",
+   "D1947"
+  ],
+  "attested_count": 12
+ },
+ {
+  "id": "middle:sp>ɸ>f",
+  "era": "middle",
+  "states": [
+   "sp",
+   "ɸ",
+   "f"
+  ],
+  "grade": "A",
+  "steps": [
+   "E479",
+   "E602"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D455",
+   "D472",
+   "D473",
+   "D486",
+   "D488",
+   "D489",
+   "D490",
+   "D495",
+   "D516",
+   "D540",
+   "D543"
+  ],
+  "attested_count": 11
+ },
+ {
+  "id": "middle:sk>x>h",
+  "era": "middle",
+  "states": [
+   "sk",
+   "x",
+   "h"
+  ],
+  "grade": "A",
+  "steps": [
+   "E471",
+   "E591"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D577",
+   "D580",
+   "D583",
+   "D608",
+   "D609",
+   "D615",
+   "D620",
+   "D631",
+   "D635",
+   "D704"
+  ],
+  "attested_count": 10
+ },
+ {
+  "id": "middle:sl>l̥>l",
+  "era": "middle",
+  "states": [
+   "sl",
+   "l̥",
+   "l"
+  ],
+  "grade": "A",
+  "steps": [
+   "E473",
+   "E555"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D672",
+   "D679",
+   "D680",
+   "D690",
+   "D691",
+   "D969",
+   "D970",
+   "D978",
+   "D980",
+   "D1006"
+  ],
+  "attested_count": 10
+ },
+ {
+  "id": "middle:st>θ>s",
+  "era": "middle",
+  "states": [
+   "st",
+   "θ",
+   "s"
+  ],
+  "grade": "A",
+  "steps": [
+   "E484",
+   "E605"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D1727",
+   "D1728",
+   "D1729",
+   "D1765",
+   "D1768",
+   "D1826",
+   "D2029"
+  ],
+  "attested_count": 7
+ },
+ {
+  "id": "middle:d>ð>r",
+  "era": "middle",
+  "states": [
+   "d",
+   "ð",
+   "r"
+  ],
+  "grade": "A",
+  "steps": [
+   "E379",
+   "E594"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D1115",
+   "D1207",
+   "D1569",
+   "D1876",
+   "D1877",
+   "D1878"
+  ],
+  "attested_count": 6
+ },
+ {
+  "id": "middle:kn>gn>ŋn",
+  "era": "middle",
+  "states": [
+   "kn",
+   "gn",
+   "ŋn"
+  ],
+  "grade": "A",
+  "steps": [
+   "E411",
+   "E401"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [
+   "D1698",
+   "D1931",
+   "D1932",
+   "D1995",
+   "D2029"
+  ],
+  "attested_count": 5
+ },
+ {
+  "id": "middle:pn>bn>mn",
+  "era": "middle",
+  "states": [
+   "pn",
+   "bn",
+   "mn"
+  ],
+  "grade": "A",
+  "steps": [
+   "E452",
+   "E375"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [
+   "D945",
+   "D1743",
+   "D1905",
+   "D2085"
+  ],
+  "attested_count": 4
+ },
+ {
+  "id": "middle:zg>sk>ks",
+  "era": "middle",
+  "states": [
+   "zg",
+   "sk",
+   "ks"
+  ],
+  "grade": "A",
+  "steps": [
+   "E509",
+   "E580"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D1094",
+   "D1096",
+   "D1097",
+   "D1183"
+  ],
+  "attested_count": 4
+ },
+ {
+  "id": "middle:dm>nm>nw",
+  "era": "middle",
+  "states": [
+   "dm",
+   "nm",
+   "nw"
+  ],
+  "grade": "A",
+  "steps": [
+   "E386",
+   "E561"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D1148",
+   "D1408",
+   "D2281"
+  ],
+  "attested_count": 3
+ },
+ {
+  "id": "middle:sm>m̥>m",
+  "era": "middle",
+  "states": [
+   "sm",
+   "m̥",
+   "m"
+  ],
+  "grade": "A",
+  "steps": [
+   "E475",
+   "E559"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D1108",
+   "D1110",
+   "D1112"
+  ],
+  "attested_count": 3
+ },
+ {
+  "id": "middle:sn>n̥>n",
+  "era": "middle",
+  "states": [
+   "sn",
+   "n̥",
+   "n"
+  ],
+  "grade": "A",
+  "steps": [
+   "E477",
+   "E562"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D1282",
+   "D1308",
+   "D1339"
+  ],
+  "attested_count": 3
+ },
+ {
+  "id": "middle:tm>dm>nm",
+  "era": "middle",
+  "states": [
+   "tm",
+   "dm",
+   "nm"
+  ],
+  "grade": "A",
+  "steps": [
+   "E490",
+   "E386"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [
+   "D1148",
+   "D1408",
+   "D2281"
+  ],
+  "attested_count": 3
+ },
+ {
+  "id": "middle:tn>dn>nn",
+  "era": "middle",
+  "states": [
+   "tn",
+   "dn",
+   "nn"
+  ],
+  "grade": "A",
+  "steps": [
+   "E491",
+   "E387"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [
+   "D1611",
+   "D1612",
+   "D1631"
+  ],
+  "attested_count": 3
+ },
+ {
+  "id": "middle:tm>dm>nm>nw",
+  "era": "middle",
+  "states": [
+   "tm",
+   "dm",
+   "nm",
+   "nw"
+  ],
+  "grade": "A",
+  "steps": [
+   "E490",
+   "E386",
+   "E561"
+  ],
+  "transitions": [
+   "ordered",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D1148",
+   "D1408",
+   "D2281"
+  ],
+  "attested_count": 3
+ },
+ {
+  "id": "middle:bd>pt>ps",
+  "era": "middle",
+  "states": [
+   "bd",
+   "pt",
+   "ps"
+  ],
+  "grade": "A",
+  "steps": [
+   "E371",
+   "E570"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D896",
+   "D988"
+  ],
+  "attested_count": 2
+ },
+ {
+  "id": "middle:bt>pt>ps",
+  "era": "middle",
+  "states": [
+   "bt",
+   "pt",
+   "ps"
+  ],
+  "grade": "A",
+  "steps": [
+   "E312",
+   "E570"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D195",
+   "D894"
+  ],
+  "attested_count": 2
+ },
+ {
+  "id": "middle:gd>kt>xt",
+  "era": "middle",
+  "states": [
+   "gd",
+   "kt",
+   "xt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E396",
+   "E550"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D590",
+   "D1310"
+  ],
+  "attested_count": 2
+ },
+ {
+  "id": "middle:sr>zr>rr",
+  "era": "middle",
+  "states": [
+   "sr",
+   "zr",
+   "rr"
+  ],
+  "grade": "A",
+  "steps": [
+   "E483",
+   "E513"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [
+   "D1551",
+   "D1555"
+  ],
+  "attested_count": 2
+ },
+ {
+  "id": "middle:tʰt>ttʰ>tt",
+  "era": "middle",
+  "states": [
+   "tʰt",
+   "ttʰ",
+   "tt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E347",
+   "E495"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [
+   "D1233",
+   "D2282"
+  ],
+  "attested_count": 2
+ },
+ {
+  "id": "middle:ŋ>ɣ>h",
+  "era": "middle",
+  "states": [
+   "ŋ",
+   "ɣ",
+   "h"
+  ],
+  "grade": "A",
+  "steps": [
+   "E352",
+   "E529"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [
+   "D671",
+   "D696"
+  ],
+  "attested_count": 2
+ },
+ {
+  "id": "middle:gt>kt>xt",
+  "era": "middle",
+  "states": [
+   "gt",
+   "kt",
+   "xt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E317",
+   "E550"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D1247"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "middle:kt>xt>t",
+  "era": "middle",
+  "states": [
+   "kt",
+   "xt",
+   "t"
+  ],
+  "grade": "A",
+  "steps": [
+   "E550",
+   "E592"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D2283"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "middle:kʰn>kt>xt",
+  "era": "middle",
+  "states": [
+   "kʰn",
+   "kt",
+   "xt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E420",
+   "E550"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D855"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "middle:mpʰ>ppʰ>pp",
+  "era": "middle",
+  "states": [
+   "mpʰ",
+   "ppʰ",
+   "pp"
+  ],
+  "grade": "A",
+  "steps": [
+   "E434",
+   "E454"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [
+   "D1655"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "middle:ntʰ>ttʰ>tt",
+  "era": "middle",
+  "states": [
+   "ntʰ",
+   "ttʰ",
+   "tt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E445",
+   "E495"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [
+   "D1603"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "middle:pm>bm>mm",
+  "era": "middle",
+  "states": [
+   "pm",
+   "bm",
+   "mm"
+  ],
+  "grade": "A",
+  "steps": [
+   "E451",
+   "E374"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [
+   "D1280"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "middle:sg>zg>sk",
+  "era": "middle",
+  "states": [
+   "sg",
+   "zg",
+   "sk"
+  ],
+  "grade": "A",
+  "steps": [
+   "E340",
+   "E509"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [
+   "D992"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "middle:sl>zl>ll",
+  "era": "middle",
+  "states": [
+   "sl",
+   "zl",
+   "ll"
+  ],
+  "grade": "A",
+  "steps": [
+   "E474",
+   "E510"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [
+   "D676"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "middle:sn>zn>nn",
+  "era": "middle",
+  "states": [
+   "sn",
+   "zn",
+   "nn"
+  ],
+  "grade": "A",
+  "steps": [
+   "E478",
+   "E512"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [
+   "D2225"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "middle:tk>kt>xt",
+  "era": "middle",
+  "states": [
+   "tk",
+   "kt",
+   "xt"
+  ],
+  "grade": "A",
+  "steps": [
+   "E342",
+   "E550"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D389"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "middle:tʰr>ts>ss",
+  "era": "middle",
+  "states": [
+   "tʰr",
+   "ts",
+   "ss"
+  ],
+  "grade": "A",
+  "steps": [
+   "E501",
+   "E585"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D1333"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "middle:zb>sp>ps",
+  "era": "middle",
+  "states": [
+   "zb",
+   "sp",
+   "ps"
+  ],
+  "grade": "A",
+  "steps": [
+   "E507",
+   "E581"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [
+   "D1610"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "middle:ŋkʰ>kkʰ>kk",
+  "era": "middle",
+  "states": [
+   "ŋkʰ",
+   "kkʰ",
+   "kk"
+  ],
+  "grade": "A",
+  "steps": [
+   "E521",
+   "E408"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [
+   "D856"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "middle:ɣs>hs>ss",
+  "era": "middle",
+  "states": [
+   "ɣs",
+   "hs",
+   "ss"
+  ],
+  "grade": "A",
+  "steps": [
+   "E363",
+   "E318"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹ✶"
+  ],
+  "attested_in": [
+   "D1172"
+  ],
+  "attested_count": 1
+ },
+ {
+  "id": "middle:bd>pt>xt",
+  "era": "middle",
+  "states": [
+   "bd",
+   "pt",
+   "xt"
+  ],
+  "grade": "B",
+  "steps": [
+   "E371",
+   "E571"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:bt>pt>xt",
+  "era": "middle",
+  "states": [
+   "bt",
+   "pt",
+   "xt"
+  ],
+  "grade": "B",
+  "steps": [
+   "E312",
+   "E571"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:dn>nd>n",
+  "era": "middle",
+  "states": [
+   "dn",
+   "nd",
+   "n"
+  ],
+  "grade": "B",
+  "steps": [
+   "E313",
+   "E438"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ds>ts>ss",
+  "era": "middle",
+  "states": [
+   "ds",
+   "ts",
+   "ss"
+  ],
+  "grade": "B",
+  "steps": [
+   "E314",
+   "E585"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:kʰs>ks>s",
+  "era": "middle",
+  "states": [
+   "kʰs",
+   "ks",
+   "s"
+  ],
+  "grade": "B",
+  "steps": [
+   "E322",
+   "E548"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:md>nd>n",
+  "era": "middle",
+  "states": [
+   "md",
+   "nd",
+   "n"
+  ],
+  "grade": "B",
+  "steps": [
+   "E326",
+   "E438"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:nb>mb>m",
+  "era": "middle",
+  "states": [
+   "nb",
+   "mb",
+   "m"
+  ],
+  "grade": "B",
+  "steps": [
+   "E329",
+   "E431"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pt>xt>t",
+  "era": "middle",
+  "states": [
+   "pt",
+   "xt",
+   "t"
+  ],
+  "grade": "B",
+  "steps": [
+   "E571",
+   "E592"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:tr>ts>ss",
+  "era": "middle",
+  "states": [
+   "tr",
+   "ts",
+   "ss"
+  ],
+  "grade": "B",
+  "steps": [
+   "E494",
+   "E585"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:tʰs>ts>ss",
+  "era": "middle",
+  "states": [
+   "tʰs",
+   "ts",
+   "ss"
+  ],
+  "grade": "B",
+  "steps": [
+   "E346",
+   "E585"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:zb>sp>ɸ",
+  "era": "middle",
+  "states": [
+   "zb",
+   "sp",
+   "ɸ"
+  ],
+  "grade": "B",
+  "steps": [
+   "E507",
+   "E479"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:zd>st>θ",
+  "era": "middle",
+  "states": [
+   "zd",
+   "st",
+   "θ"
+  ],
+  "grade": "B",
+  "steps": [
+   "E508",
+   "E484"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:zg>sk>x",
+  "era": "middle",
+  "states": [
+   "zg",
+   "sk",
+   "x"
+  ],
+  "grade": "B",
+  "steps": [
+   "E509",
+   "E471"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ŋ>ɣ>ø",
+  "era": "middle",
+  "states": [
+   "ŋ",
+   "ɣ",
+   "ø"
+  ],
+  "grade": "B",
+  "steps": [
+   "E352",
+   "E601"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ŋgj>ndj>nj",
+  "era": "middle",
+  "states": [
+   "ŋgj",
+   "ndj",
+   "nj"
+  ],
+  "grade": "B",
+  "steps": [
+   "E517",
+   "E560"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ŋj>ŋgj>ndj",
+  "era": "middle",
+  "states": [
+   "ŋj",
+   "ŋgj",
+   "ndj"
+  ],
+  "grade": "B",
+  "steps": [
+   "E353",
+   "E517"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ŋŋ>ŋg>ŋ",
+  "era": "middle",
+  "states": [
+   "ŋŋ",
+   "ŋg",
+   "ŋ"
+  ],
+  "grade": "B",
+  "steps": [
+   "E360",
+   "E516"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ŋɣ>ŋg>ŋ",
+  "era": "middle",
+  "states": [
+   "ŋɣ",
+   "ŋg",
+   "ŋ"
+  ],
+  "grade": "B",
+  "steps": [
+   "E361",
+   "E516"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ɣt>xt>t",
+  "era": "middle",
+  "states": [
+   "ɣt",
+   "xt",
+   "t"
+  ],
+  "grade": "B",
+  "steps": [
+   "E364",
+   "E592"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:bd>pt>xt>t",
+  "era": "middle",
+  "states": [
+   "bd",
+   "pt",
+   "xt",
+   "t"
+  ],
+  "grade": "B",
+  "steps": [
+   "E371",
+   "E571",
+   "E592"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:bt>pt>xt>t",
+  "era": "middle",
+  "states": [
+   "bt",
+   "pt",
+   "xt",
+   "t"
+  ],
+  "grade": "B",
+  "steps": [
+   "E312",
+   "E571",
+   "E592"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:gd>kt>xt>t",
+  "era": "middle",
+  "states": [
+   "gd",
+   "kt",
+   "xt",
+   "t"
+  ],
+  "grade": "B",
+  "steps": [
+   "E396",
+   "E550",
+   "E592"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:gt>kt>xt>t",
+  "era": "middle",
+  "states": [
+   "gt",
+   "kt",
+   "xt",
+   "t"
+  ],
+  "grade": "B",
+  "steps": [
+   "E317",
+   "E550",
+   "E592"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:kʰn>kt>xt>t",
+  "era": "middle",
+  "states": [
+   "kʰn",
+   "kt",
+   "xt",
+   "t"
+  ],
+  "grade": "B",
+  "steps": [
+   "E420",
+   "E550",
+   "E592"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:sg>zg>sk>ks",
+  "era": "middle",
+  "states": [
+   "sg",
+   "zg",
+   "sk",
+   "ks"
+  ],
+  "grade": "B",
+  "steps": [
+   "E340",
+   "E509",
+   "E580"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:sg>zg>sk>x",
+  "era": "middle",
+  "states": [
+   "sg",
+   "zg",
+   "sk",
+   "x"
+  ],
+  "grade": "B",
+  "steps": [
+   "E340",
+   "E509",
+   "E471"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:tk>kt>xt>t",
+  "era": "middle",
+  "states": [
+   "tk",
+   "kt",
+   "xt",
+   "t"
+  ],
+  "grade": "B",
+  "steps": [
+   "E342",
+   "E550",
+   "E592"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:zb>sp>ɸ>f",
+  "era": "middle",
+  "states": [
+   "zb",
+   "sp",
+   "ɸ",
+   "f"
+  ],
+  "grade": "B",
+  "steps": [
+   "E507",
+   "E479",
+   "E602"
+  ],
+  "transitions": [
+   "ordered",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:zd>st>θ>s",
+  "era": "middle",
+  "states": [
+   "zd",
+   "st",
+   "θ",
+   "s"
+  ],
+  "grade": "B",
+  "steps": [
+   "E508",
+   "E484",
+   "E605"
+  ],
+  "transitions": [
+   "ordered",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:zg>sk>x>h",
+  "era": "middle",
+  "states": [
+   "zg",
+   "sk",
+   "x",
+   "h"
+  ],
+  "grade": "B",
+  "steps": [
+   "E509",
+   "E471",
+   "E591"
+  ],
+  "transitions": [
+   "ordered",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ŋj>ŋgj>ndj>nj",
+  "era": "middle",
+  "states": [
+   "ŋj",
+   "ŋgj",
+   "ndj",
+   "nj"
+  ],
+  "grade": "B",
+  "steps": [
+   "E353",
+   "E517",
+   "E560"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ŋŋ>ŋg>ŋ>n",
+  "era": "middle",
+  "states": [
+   "ŋŋ",
+   "ŋg",
+   "ŋ",
+   "n"
+  ],
+  "grade": "B",
+  "steps": [
+   "E360",
+   "E516",
+   "E598"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ŋɣ>ŋg>ŋ>n",
+  "era": "middle",
+  "states": [
+   "ŋɣ",
+   "ŋg",
+   "ŋ",
+   "n"
+  ],
+  "grade": "B",
+  "steps": [
+   "E361",
+   "E516",
+   "E598"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:bm>mb>m",
+  "era": "middle",
+  "states": [
+   "bm",
+   "mb",
+   "m"
+  ],
+  "grade": "D",
+  "steps": [
+   "E310",
+   "E431"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:bs>ps>s",
+  "era": "middle",
+  "states": [
+   "bs",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E311",
+   "E568"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ds>ts>s",
+  "era": "middle",
+  "states": [
+   "ds",
+   "ts",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E314",
+   "E583"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ei>ai>e",
+  "era": "middle",
+  "states": [
+   "ei",
+   "ai",
+   "e"
+  ],
+  "grade": "D",
+  "steps": [
+   "E540",
+   "E537"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:gl>lg>ll",
+  "era": "middle",
+  "states": [
+   "gl",
+   "lg",
+   "ll"
+  ],
+  "grade": "D",
+  "steps": [
+   "E399",
+   "E552"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:gr>rg>rr",
+  "era": "middle",
+  "states": [
+   "gr",
+   "rg",
+   "rr"
+  ],
+  "grade": "D",
+  "steps": [
+   "E402",
+   "E574"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:gs>ks>s",
+  "era": "middle",
+  "states": [
+   "gs",
+   "ks",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E316",
+   "E548"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:k>t>s",
+  "era": "middle",
+  "states": [
+   "k",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E547",
+   "E582"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:kd>kt>xt",
+  "era": "middle",
+  "states": [
+   "kd",
+   "kt",
+   "xt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E320",
+   "E550"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:kr>ks>s",
+  "era": "middle",
+  "states": [
+   "kr",
+   "ks",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E413",
+   "E548"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ktʰ>kt>xt",
+  "era": "middle",
+  "states": [
+   "ktʰ",
+   "kt",
+   "xt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E415",
+   "E550"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:kʰk>kkʰ>kk",
+  "era": "middle",
+  "states": [
+   "kʰk",
+   "kkʰ",
+   "kk"
+  ],
+  "grade": "D",
+  "steps": [
+   "E321",
+   "E408"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:kʰr>ks>s",
+  "era": "middle",
+  "states": [
+   "kʰr",
+   "ks",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E421",
+   "E548"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:kʰt>ktʰ>kt",
+  "era": "middle",
+  "states": [
+   "kʰt",
+   "ktʰ",
+   "kt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E323",
+   "E415"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:lɣ>lg>ll",
+  "era": "middle",
+  "states": [
+   "lɣ",
+   "lg",
+   "ll"
+  ],
+  "grade": "D",
+  "steps": [
+   "E325",
+   "E552"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:mk>ŋk>k",
+  "era": "middle",
+  "states": [
+   "mk",
+   "ŋk",
+   "k"
+  ],
+  "grade": "D",
+  "steps": [
+   "E327",
+   "E519"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ms>ns>ss",
+  "era": "middle",
+  "states": [
+   "ms",
+   "ns",
+   "ss"
+  ],
+  "grade": "D",
+  "steps": [
+   "E436",
+   "E442"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:mt>nt>t",
+  "era": "middle",
+  "states": [
+   "mt",
+   "nt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E328",
+   "E443"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:nk>ŋk>k",
+  "era": "middle",
+  "states": [
+   "nk",
+   "ŋk",
+   "k"
+  ],
+  "grade": "D",
+  "steps": [
+   "E330",
+   "E519"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:np>mp>p",
+  "era": "middle",
+  "states": [
+   "np",
+   "mp",
+   "p"
+  ],
+  "grade": "D",
+  "steps": [
+   "E331",
+   "E433"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pr>ps>s",
+  "era": "middle",
+  "states": [
+   "pr",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E455",
+   "E568"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pt>ps>s",
+  "era": "middle",
+  "states": [
+   "pt",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E570",
+   "E568"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ptʰ>pt>ps",
+  "era": "middle",
+  "states": [
+   "ptʰ",
+   "pt",
+   "ps"
+  ],
+  "grade": "D",
+  "steps": [
+   "E457",
+   "E570"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ptʰ>pt>xt",
+  "era": "middle",
+  "states": [
+   "ptʰ",
+   "pt",
+   "xt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E457",
+   "E571"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pʰm>mpʰ>ppʰ",
+  "era": "middle",
+  "states": [
+   "pʰm",
+   "mpʰ",
+   "ppʰ"
+  ],
+  "grade": "D",
+  "steps": [
+   "E333",
+   "E434"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pʰn>pt>ps",
+  "era": "middle",
+  "states": [
+   "pʰn",
+   "pt",
+   "ps"
+  ],
+  "grade": "D",
+  "steps": [
+   "E461",
+   "E570"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pʰn>pt>xt",
+  "era": "middle",
+  "states": [
+   "pʰn",
+   "pt",
+   "xt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E461",
+   "E571"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pʰr>ps>s",
+  "era": "middle",
+  "states": [
+   "pʰr",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E462",
+   "E568"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pʰs>ps>s",
+  "era": "middle",
+  "states": [
+   "pʰs",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E334",
+   "E568"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pʰt>ptʰ>pt",
+  "era": "middle",
+  "states": [
+   "pʰt",
+   "ptʰ",
+   "pt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E335",
+   "E457"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pʰtʰ>ptʰ>pt",
+  "era": "middle",
+  "states": [
+   "pʰtʰ",
+   "ptʰ",
+   "pt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E336",
+   "E457"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pʰw>ppʰ>pp",
+  "era": "middle",
+  "states": [
+   "pʰw",
+   "ppʰ",
+   "pp"
+  ],
+  "grade": "D",
+  "steps": [
+   "E337",
+   "E454"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:sb>zb>sp",
+  "era": "middle",
+  "states": [
+   "sb",
+   "zb",
+   "sp"
+  ],
+  "grade": "D",
+  "steps": [
+   "E338",
+   "E507"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:sd>zd>st",
+  "era": "middle",
+  "states": [
+   "sd",
+   "zd",
+   "st"
+  ],
+  "grade": "D",
+  "steps": [
+   "E339",
+   "E508"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:sk>ks>s",
+  "era": "middle",
+  "states": [
+   "sk",
+   "ks",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E580",
+   "E549"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:skʰ>sk>ks",
+  "era": "middle",
+  "states": [
+   "skʰ",
+   "sk",
+   "ks"
+  ],
+  "grade": "D",
+  "steps": [
+   "E472",
+   "E580"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:skʰ>sk>x",
+  "era": "middle",
+  "states": [
+   "skʰ",
+   "sk",
+   "x"
+  ],
+  "grade": "D",
+  "steps": [
+   "E472",
+   "E471"
+  ],
+  "transitions": [
+   "unknown"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:sm>zm>mm",
+  "era": "middle",
+  "states": [
+   "sm",
+   "zm",
+   "mm"
+  ],
+  "grade": "D",
+  "steps": [
+   "E476",
+   "E511"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:sp>ps>s",
+  "era": "middle",
+  "states": [
+   "sp",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E581",
+   "E569"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:spʰ>sp>ps",
+  "era": "middle",
+  "states": [
+   "spʰ",
+   "sp",
+   "ps"
+  ],
+  "grade": "D",
+  "steps": [
+   "E480",
+   "E581"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:spʰ>sp>ɸ",
+  "era": "middle",
+  "states": [
+   "spʰ",
+   "sp",
+   "ɸ"
+  ],
+  "grade": "D",
+  "steps": [
+   "E480",
+   "E479"
+  ],
+  "transitions": [
+   "unknown"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:sr>r̥>r",
+  "era": "middle",
+  "states": [
+   "sr",
+   "r̥",
+   "r"
+  ],
+  "grade": "D",
+  "steps": [
+   "E481",
+   "E578"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:stʰ>st>θ",
+  "era": "middle",
+  "states": [
+   "stʰ",
+   "st",
+   "θ"
+  ],
+  "grade": "D",
+  "steps": [
+   "E485",
+   "E484"
+  ],
+  "transitions": [
+   "unknown"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:tr>ts>s",
+  "era": "middle",
+  "states": [
+   "tr",
+   "ts",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E494",
+   "E583"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:tʰ>θ>t",
+  "era": "middle",
+  "states": [
+   "tʰ",
+   "θ",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E496",
+   "E606"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:tʰr>ts>s",
+  "era": "middle",
+  "states": [
+   "tʰr",
+   "ts",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E501",
+   "E583"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:tʰs>ts>s",
+  "era": "middle",
+  "states": [
+   "tʰs",
+   "ts",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E346",
+   "E583"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:tʰtʰ>ttʰ>tt",
+  "era": "middle",
+  "states": [
+   "tʰtʰ",
+   "ttʰ",
+   "tt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E348",
+   "E495"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:xt>t>s",
+  "era": "middle",
+  "states": [
+   "xt",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E592",
+   "E582"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ŋp>mp>p",
+  "era": "middle",
+  "states": [
+   "ŋp",
+   "mp",
+   "p"
+  ],
+  "grade": "D",
+  "steps": [
+   "E355",
+   "E433"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ŋs>ɣs>hs",
+  "era": "middle",
+  "states": [
+   "ŋs",
+   "ɣs",
+   "hs"
+  ],
+  "grade": "D",
+  "steps": [
+   "E357",
+   "E363"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹ✶"
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ŋt>nt>t",
+  "era": "middle",
+  "states": [
+   "ŋt",
+   "nt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E358",
+   "E443"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ŋw>w>v",
+  "era": "middle",
+  "states": [
+   "ŋw",
+   "w",
+   "v"
+  ],
+  "grade": "D",
+  "steps": [
+   "E522",
+   "E588"
+  ],
+  "transitions": [
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:θ>t>s",
+  "era": "middle",
+  "states": [
+   "θ",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E606",
+   "E582"
+  ],
+  "transitions": [
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:bd>pt>ps>s",
+  "era": "middle",
+  "states": [
+   "bd",
+   "pt",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E371",
+   "E570",
+   "E568"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:bt>pt>ps>s",
+  "era": "middle",
+  "states": [
+   "bt",
+   "pt",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E312",
+   "E570",
+   "E568"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:kd>kt>xt>t",
+  "era": "middle",
+  "states": [
+   "kd",
+   "kt",
+   "xt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E320",
+   "E550",
+   "E592"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:kt>xt>t>s",
+  "era": "middle",
+  "states": [
+   "kt",
+   "xt",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E550",
+   "E592",
+   "E582"
+  ],
+  "transitions": [
+   "ordered",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ktʰ>kt>xt>t",
+  "era": "middle",
+  "states": [
+   "ktʰ",
+   "kt",
+   "xt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E415",
+   "E550",
+   "E592"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:kʰt>ktʰ>kt>xt",
+  "era": "middle",
+  "states": [
+   "kʰt",
+   "ktʰ",
+   "kt",
+   "xt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E323",
+   "E415",
+   "E550"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pt>xt>t>s",
+  "era": "middle",
+  "states": [
+   "pt",
+   "xt",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E571",
+   "E592",
+   "E582"
+  ],
+  "transitions": [
+   "ordered",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ptʰ>pt>ps>s",
+  "era": "middle",
+  "states": [
+   "ptʰ",
+   "pt",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E457",
+   "E570",
+   "E568"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ptʰ>pt>xt>t",
+  "era": "middle",
+  "states": [
+   "ptʰ",
+   "pt",
+   "xt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E457",
+   "E571",
+   "E592"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pʰm>mpʰ>ppʰ>pp",
+  "era": "middle",
+  "states": [
+   "pʰm",
+   "mpʰ",
+   "ppʰ",
+   "pp"
+  ],
+  "grade": "D",
+  "steps": [
+   "E333",
+   "E434",
+   "E454"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pʰn>pt>ps>s",
+  "era": "middle",
+  "states": [
+   "pʰn",
+   "pt",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E461",
+   "E570",
+   "E568"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 2,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pʰn>pt>xt>t",
+  "era": "middle",
+  "states": [
+   "pʰn",
+   "pt",
+   "xt",
+   "t"
+  ],
+  "grade": "D",
+  "steps": [
+   "E461",
+   "E571",
+   "E592"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pʰt>ptʰ>pt>ps",
+  "era": "middle",
+  "states": [
+   "pʰt",
+   "ptʰ",
+   "pt",
+   "ps"
+  ],
+  "grade": "D",
+  "steps": [
+   "E335",
+   "E457",
+   "E570"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pʰt>ptʰ>pt>xt",
+  "era": "middle",
+  "states": [
+   "pʰt",
+   "ptʰ",
+   "pt",
+   "xt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E335",
+   "E457",
+   "E571"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pʰtʰ>ptʰ>pt>ps",
+  "era": "middle",
+  "states": [
+   "pʰtʰ",
+   "ptʰ",
+   "pt",
+   "ps"
+  ],
+  "grade": "D",
+  "steps": [
+   "E336",
+   "E457",
+   "E570"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:pʰtʰ>ptʰ>pt>xt",
+  "era": "middle",
+  "states": [
+   "pʰtʰ",
+   "ptʰ",
+   "pt",
+   "xt"
+  ],
+  "grade": "D",
+  "steps": [
+   "E336",
+   "E457",
+   "E571"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:sb>zb>sp>ps",
+  "era": "middle",
+  "states": [
+   "sb",
+   "zb",
+   "sp",
+   "ps"
+  ],
+  "grade": "D",
+  "steps": [
+   "E338",
+   "E507",
+   "E581"
+  ],
+  "transitions": [
+   "stage",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:sb>zb>sp>ɸ",
+  "era": "middle",
+  "states": [
+   "sb",
+   "zb",
+   "sp",
+   "ɸ"
+  ],
+  "grade": "D",
+  "steps": [
+   "E338",
+   "E507",
+   "E479"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:sd>zd>st>θ",
+  "era": "middle",
+  "states": [
+   "sd",
+   "zd",
+   "st",
+   "θ"
+  ],
+  "grade": "D",
+  "steps": [
+   "E339",
+   "E508",
+   "E484"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹAQ.",
+   "ᴹAQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:skʰ>sk>ks>s",
+  "era": "middle",
+  "states": [
+   "skʰ",
+   "sk",
+   "ks",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E472",
+   "E580",
+   "E549"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:skʰ>sk>x>h",
+  "era": "middle",
+  "states": [
+   "skʰ",
+   "sk",
+   "x",
+   "h"
+  ],
+  "grade": "D",
+  "steps": [
+   "E472",
+   "E471",
+   "E591"
+  ],
+  "transitions": [
+   "unknown",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:spʰ>sp>ps>s",
+  "era": "middle",
+  "states": [
+   "spʰ",
+   "sp",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E480",
+   "E581",
+   "E569"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:spʰ>sp>ɸ>f",
+  "era": "middle",
+  "states": [
+   "spʰ",
+   "sp",
+   "ɸ",
+   "f"
+  ],
+  "grade": "D",
+  "steps": [
+   "E480",
+   "E479",
+   "E602"
+  ],
+  "transitions": [
+   "unknown",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:stʰ>st>θ>s",
+  "era": "middle",
+  "states": [
+   "stʰ",
+   "st",
+   "θ",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E485",
+   "E484",
+   "E605"
+  ],
+  "transitions": [
+   "unknown",
+   "stage"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹAQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:tʰ>θ>t>s",
+  "era": "middle",
+  "states": [
+   "tʰ",
+   "θ",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E496",
+   "E606",
+   "E582"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:zb>sp>ps>s",
+  "era": "middle",
+  "states": [
+   "zb",
+   "sp",
+   "ps",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E507",
+   "E581",
+   "E569"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:zg>sk>ks>s",
+  "era": "middle",
+  "states": [
+   "zg",
+   "sk",
+   "ks",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E509",
+   "E580",
+   "E549"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹAQ.",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ŋs>ɣs>hs>ss",
+  "era": "middle",
+  "states": [
+   "ŋs",
+   "ɣs",
+   "hs",
+   "ss"
+  ],
+  "grade": "D",
+  "steps": [
+   "E357",
+   "E363",
+   "E318"
+  ],
+  "transitions": [
+   "ordered",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹ✶",
+   "ᴹ✶"
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ },
+ {
+  "id": "middle:ɣt>xt>t>s",
+  "era": "middle",
+  "states": [
+   "ɣt",
+   "xt",
+   "t",
+   "s"
+  ],
+  "grade": "D",
+  "steps": [
+   "E364",
+   "E592",
+   "E582"
+  ],
+  "transitions": [
+   "stage",
+   "ordered"
+  ],
+  "variants": 1,
+  "markers": [
+   "ᴹ✶",
+   "ᴹQ.",
+   "ᴹQ."
+  ],
+  "attested_in": [],
+  "attested_count": 0
+ }
+]

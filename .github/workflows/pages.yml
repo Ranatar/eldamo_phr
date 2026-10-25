@@ -1,0 +1,64 @@
+name: build, test, publish
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Playwright for the browser test
+        run: |
+          pip install playwright==1.48.0
+          python -m playwright install --with-deps chromium
+
+      - name: Build and test
+        env:
+          ELDAMO_REQUIRE_BROWSER: '1'
+        run: python scripts/build.py
+
+      - name: Stale committed data?
+        run: git diff --exit-code -- branches reports
+
+      - name: Publish to gh-pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        run: |
+          set -e
+          site=$(mktemp -d)
+          if git fetch --depth=1 origin gh-pages; then
+            git worktree add "$site" FETCH_HEAD
+            cd "$site"
+            git checkout -q -B gh-pages
+            git rm -q -r --ignore-unmatch .
+          else
+            git worktree add --detach "$site"
+            cd "$site"
+            git checkout -q --orphan gh-pages
+            git rm -q -r --ignore-unmatch .
+          fi
+          cp "$GITHUB_WORKSPACE"/app/index.html "$GITHUB_WORKSPACE"/app/corpus.html .
+          mkdir -p exports
+          cp "$GITHUB_WORKSPACE"/exports/canonical.json "$GITHUB_WORKSPACE"/exports/atlas.graphml "$GITHUB_WORKSPACE"/exports/README.md exports/
+          cp "$GITHUB_WORKSPACE"/DATA_LICENSE.md .
+          touch .nojekyll
+          git add -A
+          if git diff --cached --quiet; then echo 'nothing to publish'; exit 0; fi
+          git -c user.name='Ranatar' -c user.email='sheogorath2006@gmail.com' \
+              commit -q -m "Публикация атласа из ${GITHUB_SHA::7}"
+          git push origin gh-pages

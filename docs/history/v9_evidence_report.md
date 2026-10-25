@@ -1,0 +1,285 @@
+# Проверка старых вариантов и контекстных правил по Eldamo 0.8.13
+
+Сведения ниже извлечены только из существующих файлов и HTML-страниц включённого архива. Наличие формулы или воспроизведение примера не доказывает исторической совместимости цепочки.
+
+## Сводка старых записей
+
+- `expanded_variant` / `formula_examples_not_fully_reproduced`: **21**
+- `expanded_variant` / `formula_examples_reproduced`: **56**
+- `expanded_variant` / `formula_text_found_no_matching_examples`: **31**
+- `expanded_variant` / `source_not_verified`: **15**
+- `old_only_rule` / `formula_not_verified_on_source_page`: **127**
+- `old_only_rule` / `source_not_verified`: **3**
+
+## Контекстные и неатомарные правила
+
+- **quenya**: 139 записей; точные примеры для 70; исполненный пример для 62; неподдерживаемый пример для 0.
+- **sindarin**: 150 записей; точные примеры для 79; исполненный пример для 71; неподдерживаемый пример для 2.
+
+## Реестр старых вариантов
+
+- `old_only_rule-001` — source_not_verified; AQ.; [без названия]; 
+- `old_only_rule-002` — formula_not_verified_on_source_page; AQ.; initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]; https://eldamo.org/content/words/word-1024355367.html
+- `old_only_rule-003` — formula_not_verified_on_source_page; AQ.; [ei], [ou] became [ē], [ō]; https://eldamo.org/content/words/word-1053983129.html
+- `old_only_rule-004` — formula_not_verified_on_source_page; AQ.; [ln] became [ll]; https://eldamo.org/content/words/word-1062284643.html
+- `old_only_rule-005` — formula_not_verified_on_source_page; AQ.; initial [j] vanished; https://eldamo.org/content/words/word-1112487071.html
+- `old_only_rule-006` — formula_not_verified_on_source_page; AQ.; [j] was lost after initial velars and dentals; https://eldamo.org/content/words/word-1120953457.html
+- `old_only_rule-007` — formula_not_verified_on_source_page; AQ.; [ou] became [au]; https://eldamo.org/content/words/word-1155192707.html
+- `old_only_rule-008` — formula_not_verified_on_source_page; AQ.; initial [ŋ], [ɣ] became [g]; https://eldamo.org/content/words/word-1228875561.html
+- `old_only_rule-009` — formula_not_verified_on_source_page; AQ.; [z] vanished before [d] lengthening preceding vowel; https://eldamo.org/content/words/word-1249932447.html
+- `old_only_rule-010` — formula_not_verified_on_source_page; AQ.; [ē], [ō] became [ī], [ū]; https://eldamo.org/content/words/word-1277969137.html
+- `old_only_rule-011` — formula_not_verified_on_source_page; AQ.; [ę̄], [ǭ] became [ā]; https://eldamo.org/content/words/word-1446209733.html
+- `old_only_rule-012` — formula_not_verified_on_source_page; AQ.; medial [j] became [i]; https://eldamo.org/content/words/word-1471734033.html
+- `old_only_rule-013` — formula_not_verified_on_source_page; AQ.; [eu], [iu] became [io] or [iu]; https://eldamo.org/content/words/word-1598541361.html
+- `old_only_rule-014` — formula_not_verified_on_source_page; AQ.; initial [s] unvoiced following [l], [r], [w]; https://eldamo.org/content/words/word-165461035.html
+- `old_only_rule-015` — formula_not_verified_on_source_page; AQ.; [oi] became [ui]; https://eldamo.org/content/words/word-1684892745.html
+- `old_only_rule-016` — formula_not_verified_on_source_page; AQ.; initial nasals usually vanished before stops; https://eldamo.org/content/words/word-1688730459.html
+- `old_only_rule-017` — formula_not_verified_on_source_page; AQ.; labialized velars became labials; https://eldamo.org/content/words/word-171120983.html
+- `old_only_rule-018` — formula_not_verified_on_source_page; AQ.; [eu], [iu] became [ū]; https://eldamo.org/content/words/word-1713708009.html
+- `old_only_rule-019` — formula_not_verified_on_source_page; AQ.; initial [j] vanished in East Danian; https://eldamo.org/content/words/word-1803976769.html
+- `old_only_rule-020` — formula_not_verified_on_source_page; AQ.; [ī], [ū] became [ai], [au]; https://eldamo.org/content/words/word-1815156341.html
+- `old_only_rule-021` — formula_not_verified_on_source_page; AQ.; non-initial [w] became [v] in East Danian; https://eldamo.org/content/words/word-1848454147.html
+- `old_only_rule-022` — formula_not_verified_on_source_page; AQ.; [ā], [ǭ] became [ō]; https://eldamo.org/content/words/word-1909322629.html
+- `old_only_rule-023` — formula_not_verified_on_source_page; AQ.; [ei], [ou] became [ī], [ū]; https://eldamo.org/content/words/word-1942848653.html
+- `old_only_rule-024` — formula_not_verified_on_source_page; AQ.; [zb], [zg] became [ðβ], [ðɣ]; https://eldamo.org/content/words/word-1951748921.html
+- `old_only_rule-025` — formula_not_verified_on_source_page; AQ.; [oi], [ǭi] became [ui], [oi]; https://eldamo.org/content/words/word-2010669085.html
+- `old_only_rule-026` — formula_not_verified_on_source_page; AQ.; [oi] became [ui]; https://eldamo.org/content/words/word-2264199397.html
+- `old_only_rule-027` — formula_not_verified_on_source_page; AQ.; [oi] became [ui]; https://eldamo.org/content/words/word-2638900527.html
+- `old_only_rule-028` — formula_not_verified_on_source_page; AQ.; [eu] became [iu]; https://eldamo.org/content/words/word-2662025405.html
+- `old_only_rule-029` — formula_not_verified_on_source_page; AQ.; [ā], [au] became [ǭ]; https://eldamo.org/content/words/word-2790556075.html
+- `old_only_rule-030` — formula_not_verified_on_source_page; AQ.; [j] became [i] in Ossiriandic; https://eldamo.org/content/words/word-2818409497.html
+- `old_only_rule-031` — formula_not_verified_on_source_page; AQ.; [eu], [iu] became [io]; https://eldamo.org/content/words/word-2838612897.html
+- `old_only_rule-032` — formula_not_verified_on_source_page; AQ.; [j] became [i] after a vowel; https://eldamo.org/content/words/word-3125122253.html
+- `old_only_rule-033` — formula_not_verified_on_source_page; AQ.; [ā] became [ō]; https://eldamo.org/content/words/word-3140771935.html
+- `old_only_rule-034` — formula_not_verified_on_source_page; AQ.; [ei] became [ai] or [ui]; https://eldamo.org/content/words/word-338579369.html
+- `old_only_rule-035` — formula_not_verified_on_source_page; AQ.; [j] was lost after initial velars; https://eldamo.org/content/words/word-345959193.html
+- `old_only_rule-036` — formula_not_verified_on_source_page; AQ.; voiceless stops were voiced before nasals; https://eldamo.org/content/words/word-3463937975.html
+- `old_only_rule-037` — formula_not_verified_on_source_page; AQ.; [eu], [iu] became [io]; https://eldamo.org/content/words/word-3538583603.html
+- `old_only_rule-038` — formula_not_verified_on_source_page; AQ.; approximants produced various spirants; https://eldamo.org/content/words/word-3605637247.html
+- `old_only_rule-039` — formula_not_verified_on_source_page; AQ.; [ǣ], [ai] became [ę̄]; https://eldamo.org/content/words/word-3619603651.html
+- `old_only_rule-040` — formula_not_verified_on_source_page; AQ.; [ei], [ui] became [ī], [ū] in Primitive Danian; https://eldamo.org/content/words/word-3695192375.html
+- `old_only_rule-041` — formula_not_verified_on_source_page; AQ.; [ē], [ō] became [ī], [ū]; https://eldamo.org/content/words/word-3889365613.html
+- `old_only_rule-042` — formula_not_verified_on_source_page; AQ.; [ē], [ō] became [ī], [ū]; https://eldamo.org/content/words/word-390078853.html
+- `old_only_rule-043` — formula_not_verified_on_source_page; AQ.; initial [s] unvoiced following consonants; https://eldamo.org/content/words/word-3923357111.html
+- `old_only_rule-044` — formula_not_verified_on_source_page; AQ.; [j] was lost after initial velars; https://eldamo.org/content/words/word-4025342543.html
+- `old_only_rule-045` — formula_not_verified_on_source_page; AQ.; [j] vanished before [i], [ui]; https://eldamo.org/content/words/word-4029245039.html
+- `old_only_rule-046` — formula_not_verified_on_source_page; AQ.; [j] was lost after initial velars; https://eldamo.org/content/words/word-4118572109.html
+- `old_only_rule-047` — formula_not_verified_on_source_page; AQ.; [mm], [nn] became [mb], [nd]; https://eldamo.org/content/words/word-4145612709.html
+- `old_only_rule-048` — formula_not_verified_on_source_page; AQ.; [ei], [ou] became [ī], [ū]; https://eldamo.org/content/words/word-4217992645.html
+- `old_only_rule-049` — formula_not_verified_on_source_page; AQ.; initial and intervocalic [ŋ] vanished; https://eldamo.org/content/words/word-552653835.html
+- `old_only_rule-050` — formula_not_verified_on_source_page; AQ.; short [ŏ] became [a] in Primitive Danian; https://eldamo.org/content/words/word-562246463.html
+- `old_only_rule-051` — formula_not_verified_on_source_page; AQ.; [au], [ae] became [o], [e] in polysyllables; https://eldamo.org/content/words/word-567222053.html
+- `old_only_rule-052` — formula_not_verified_on_source_page; AQ.; [w] became [u] after a vowel; https://eldamo.org/content/words/word-592723565.html
+- `old_only_rule-053` — formula_not_verified_on_source_page; AQ.; [iu] and [ju] became [ȳ]; https://eldamo.org/content/words/word-659168127.html
+- `old_only_rule-054` — formula_not_verified_on_source_page; AQ.; [ǣ] became [ē]; https://eldamo.org/content/words/word-692160099.html
+- `old_only_rule-055` — formula_not_verified_on_source_page; AQ.; aspirates became voiceless spirants; https://eldamo.org/content/words/word-883570327.html
+- `old_only_rule-056` — formula_not_verified_on_source_page; AQ.; [ai], [oi] became [ae], [oe]; https://eldamo.org/content/words/word-941153689.html
+- `old_only_rule-057` — formula_not_verified_on_source_page; AQ.; initial [w] became [gw]; https://eldamo.org/content/words/word-965501987.html
+- `old_only_rule-058` — source_not_verified; Q.; [без названия]; 
+- `old_only_rule-059` — formula_not_verified_on_source_page; Q.; initial [w] became [v]; https://eldamo.org/content/words/word-1192708475.html
+- `old_only_rule-060` — formula_not_verified_on_source_page; Q.; [s] medially between vowels became [z]; https://eldamo.org/content/words/word-1546616217.html
+- `old_only_rule-061` — formula_not_verified_on_source_page; Q.; non-initial [m] usually became [v]; https://eldamo.org/content/words/word-1951379117.html
+- `old_only_rule-062` — formula_not_verified_on_source_page; Q.; initial [w] became [gw]; https://eldamo.org/content/words/word-2002760597.html
+- `old_only_rule-063` — formula_not_verified_on_source_page; Q.; initial nasals vanished before stops; https://eldamo.org/content/words/word-3057844573.html
+- `old_only_rule-064` — formula_not_verified_on_source_page; Q.; [nm], [ŋm] became [nw], [ŋw]; https://eldamo.org/content/words/word-3258926163.html
+- `old_only_rule-065` — formula_not_verified_on_source_page; Q.; initial [ɣ] became [h]; https://eldamo.org/content/words/word-3274491131.html
+- `old_only_rule-066` — formula_not_verified_on_source_page; Q.; [β], [ɣ] after [r], [l] usually became stops; https://eldamo.org/content/words/word-3388104565.html
+- `old_only_rule-067` — formula_not_verified_on_source_page; Q.; approximants produced various spirants; https://eldamo.org/content/words/word-3605637247.html
+- `old_only_rule-068` — formula_not_verified_on_source_page; Q.; [mm] shortened; https://eldamo.org/content/words/word-3689144303.html
+- `old_only_rule-069` — formula_not_verified_on_source_page; Q.; [ŋ] vanished with compensatory lengthening; https://eldamo.org/content/words/word-3707785609.html
+- `old_only_rule-070` — formula_not_verified_on_source_page; Q.; initial [ŋ] vanishes; https://eldamo.org/content/words/word-4225848175.html
+- `old_only_rule-071` — formula_not_verified_on_source_page; Q.; initial [sm], [sn] became nasals [m], [n]; https://eldamo.org/content/words/word-4226922765.html
+- `old_only_rule-072` — formula_not_verified_on_source_page; Q.; initial nasalized voiced stops became stops; https://eldamo.org/content/words/word-493039001.html
+- `old_only_rule-073` — formula_not_verified_on_source_page; Q.; palatalized velars became dentals; https://eldamo.org/content/words/word-745600013.html
+- `old_only_rule-074` — formula_not_verified_on_source_page; Q.; [ð] became [z]; https://eldamo.org/content/words/word-767593015.html
+- `old_only_rule-075` — formula_not_verified_on_source_page; Q.; [mb], [nd] became [mm], [nn]; https://eldamo.org/content/words/word-868023175.html
+- `old_only_rule-076` — formula_not_verified_on_source_page; Q.; final nasals vanished after vowels; https://eldamo.org/content/words/word-876455981.html
+- `old_only_rule-077` — formula_not_verified_on_source_page; ᴹAQ.; [rb] became [rv]; https://eldamo.org/content/words/word-1110299815.html
+- `old_only_rule-078` — formula_not_verified_on_source_page; ᴹAQ.; initial [θl] became [fl]; https://eldamo.org/content/words/word-119585643.html
+- `old_only_rule-079` — formula_not_verified_on_source_page; ᴹAQ.; medial voiceless spirants voiced after vowels; https://eldamo.org/content/words/word-3083451453.html
+- `old_only_rule-080` — formula_not_verified_on_source_page; ᴹAQ.; aspirates became voiceless spirants; https://eldamo.org/content/words/word-3124926163.html
+- `old_only_rule-081` — formula_not_verified_on_source_page; ᴹAQ.; labialized velars became labials; https://eldamo.org/content/words/word-3214863235.html
+- `old_only_rule-082` — formula_not_verified_on_source_page; ᴹAQ.; [dl] became [gl]; https://eldamo.org/content/words/word-3584827489.html
+- `old_only_rule-083` — formula_not_verified_on_source_page; ᴹAQ.; medial [b] became [v]; https://eldamo.org/content/words/word-3689929017.html
+- `old_only_rule-084` — formula_not_verified_on_source_page; ᴹAQ.; aspirates became voiceless spirants; https://eldamo.org/content/words/word-4030743197.html
+- `old_only_rule-085` — formula_not_verified_on_source_page; ᴹAQ.; medial voiceless spirants voiced after vowels; https://eldamo.org/content/words/word-4105744097.html
+- `old_only_rule-086` — formula_not_verified_on_source_page; ᴹAQ.; medial [x] vanished between vowels; https://eldamo.org/content/words/word-4185900741.html
+- `old_only_rule-087` — formula_not_verified_on_source_page; ᴹAQ.; voiced stops spirantalized after vowels; https://eldamo.org/content/words/word-501836955.html
+- `old_only_rule-088` — formula_not_verified_on_source_page; ᴹAQ.; voiceless stops became spirants after initial [s]; https://eldamo.org/content/words/word-948882833.html
+- `old_only_rule-089` — formula_not_verified_on_source_page; ᴹQ.; aspirates became voiceless spirants; https://eldamo.org/content/words/word-1770347191.html
+- `old_only_rule-090` — formula_not_verified_on_source_page; ᴹQ.; [ei], [ou] became [oi], [ū]; https://eldamo.org/content/words/word-1880600739.html
+- `old_only_rule-091` — formula_not_verified_on_source_page; ᴹQ.; initial [s] became [θ] before [l], [r]; https://eldamo.org/content/words/word-2075290201.html
+- `old_only_rule-092` — formula_not_verified_on_source_page; ᴹQ.; labialized velars became labials; https://eldamo.org/content/words/word-3214863235.html
+- `old_only_rule-093` — formula_not_verified_on_source_page; ᴹQ.; [ɣ] vanished; https://eldamo.org/content/words/word-3657372981.html
+- `old_only_rule-094` — formula_not_verified_on_source_page; ᴹQ.; initial [s] unvoiced following [m], [n], [j], [w]; https://eldamo.org/content/words/word-3693878703.html
+- `old_only_rule-095` — formula_not_verified_on_source_page; ᴹQ.; intervocalic [s] became [h]; https://eldamo.org/content/words/word-4036446677.html
+- `old_only_rule-096` — formula_not_verified_on_source_page; ᴹ✶; initial [ŋ], [ɣ] became [g]; https://eldamo.org/content/words/word-1228875561.html
+- `old_only_rule-097` — formula_not_verified_on_source_page; ᴹ✶; [ɣ] vanished; https://eldamo.org/content/words/word-1476955021.html
+- `old_only_rule-098` — formula_not_verified_on_source_page; ᴹ✶; initial [s] unvoiced following [l], [r], [w]; https://eldamo.org/content/words/word-165461035.html
+- `old_only_rule-099` — formula_not_verified_on_source_page; ᴹ✶; [j] was lost after initial [s]; https://eldamo.org/content/words/word-1659657875.html
+- `old_only_rule-100` — formula_not_verified_on_source_page; ᴹ✶; initial [sr] became [str]; https://eldamo.org/content/words/word-1674031447.html
+- `old_only_rule-101` — formula_not_verified_on_source_page; ᴹ✶; initial nasals usually vanished before stops; https://eldamo.org/content/words/word-1688730459.html
+- `old_only_rule-102` — formula_not_verified_on_source_page; ᴹ✶; aspirates became voiceless spirants; https://eldamo.org/content/words/word-1770347191.html
+- `old_only_rule-103` — formula_not_verified_on_source_page; ᴹ✶; [ŋ] became [ɣ] between vowels and before [l], [r]; https://eldamo.org/content/words/word-1844604693.html
+- `old_only_rule-104` — formula_not_verified_on_source_page; ᴹ✶; non-initial [w] became [v] in East Danian; https://eldamo.org/content/words/word-1848454147.html
+- `old_only_rule-105` — formula_not_verified_on_source_page; ᴹ✶; initial [skw] became [sw]; https://eldamo.org/content/words/word-1872897535.html
+- `old_only_rule-106` — formula_not_verified_on_source_page; ᴹ✶; [ā], [ǭ] became [ō]; https://eldamo.org/content/words/word-1909322629.html
+- `old_only_rule-107` — formula_not_verified_on_source_page; ᴹ✶; [j] was lost after initial dentals and [s]; https://eldamo.org/content/words/word-217666031.html
+- `old_only_rule-108` — formula_not_verified_on_source_page; ᴹ✶; [ā] became [ǭ] in Primitive Danian; https://eldamo.org/content/words/word-2277851021.html
+- `old_only_rule-109` — formula_not_verified_on_source_page; ᴹ✶; voiceless stops voiced after vowels; https://eldamo.org/content/words/word-2421096703.html
+- `old_only_rule-110` — formula_not_verified_on_source_page; ᴹ✶; initial [p] became [pʰ]; https://eldamo.org/content/words/word-2684793511.html
+- `old_only_rule-111` — formula_not_verified_on_source_page; ᴹ✶; [ā], [au] became [ǭ]; https://eldamo.org/content/words/word-2790556075.html
+- `old_only_rule-112` — formula_not_verified_on_source_page; ᴹ✶; [j] became [i] in Ossiriandic; https://eldamo.org/content/words/word-2818409497.html
+- `old_only_rule-113` — formula_not_verified_on_source_page; ᴹ✶; [h] vanished before consonants lengthening the preceding vowel; https://eldamo.org/content/words/word-3116721073.html
+- `old_only_rule-114` — formula_not_verified_on_source_page; ᴹ✶; labialized velars became labials; https://eldamo.org/content/words/word-3214863235.html
+- `old_only_rule-115` — formula_not_verified_on_source_page; ᴹ✶; initial [s] was lost before consonants; https://eldamo.org/content/words/word-3538536723.html
+- `old_only_rule-116` — formula_not_verified_on_source_page; ᴹ✶; initial [s] unvoiced following [m], [n], [j], [w]; https://eldamo.org/content/words/word-3693878703.html
+- `old_only_rule-117` — formula_not_verified_on_source_page; ᴹ✶; initial nasals vanished before stops; https://eldamo.org/content/words/word-3944232895.html
+- `old_only_rule-118` — formula_not_verified_on_source_page; ᴹ✶; [ŋ], [ɣ] became [g]; https://eldamo.org/content/words/word-44379183.html
+- `old_only_rule-119` — formula_not_verified_on_source_page; ᴹ✶; initial and intervocalic [ŋ] vanished; https://eldamo.org/content/words/word-552653835.html
+- `old_only_rule-120` — formula_not_verified_on_source_page; ᴹ✶; initial [s] spirantalized following voiceless stops; https://eldamo.org/content/words/word-570537175.html
+- `old_only_rule-121` — formula_not_verified_on_source_page; ᴹ✶; [w] vanished after medial velars in Ossiriandic; https://eldamo.org/content/words/word-78414621.html
+- `old_only_rule-122` — formula_not_verified_on_source_page; ᴹ✶; initial [g] was lost before [w]; https://eldamo.org/content/words/word-88234997.html
+- `old_only_rule-123` — formula_not_verified_on_source_page; ᴹ✶; voiceless stops became spirants after initial [s]; https://eldamo.org/content/words/word-948882833.html
+- `old_only_rule-124` — formula_not_verified_on_source_page; ᴹ✶; [z] became [r]; https://eldamo.org/content/words/word-982618329.html
+- `old_only_rule-125` — source_not_verified; ✶; [без названия]; 
+- `old_only_rule-126` — formula_not_verified_on_source_page; ✶; initial [ɣ]/[h] vanished; https://eldamo.org/content/words/word-1117448055.html
+- `old_only_rule-127` — formula_not_verified_on_source_page; ✶; initial [ŋ], [ɣ] became [g]; https://eldamo.org/content/words/word-1228875561.html
+- `old_only_rule-128` — formula_not_verified_on_source_page; ✶; voiced stops became spirants after vowels; https://eldamo.org/content/words/word-1726791627.html
+- `old_only_rule-129` — formula_not_verified_on_source_page; ✶; aspirates became voiceless stops after voiceless stops; https://eldamo.org/content/words/word-2789676367.html
+- `old_only_rule-130` — formula_not_verified_on_source_page; ✶; [ā], [au] became [ǭ]; https://eldamo.org/content/words/word-2858643115.html
+- `expanded_variant-001` — source_not_verified; Q.; jj → ij; 
+- `expanded_variant-002` — source_not_verified; Q.; ðʲi → ī; 
+- `expanded_variant-003` — source_not_verified; Q.; ao → ō; 
+- `expanded_variant-004` — source_not_verified; Q.; ɣʷu → ū; 
+- `expanded_variant-005` — source_not_verified; AQ.; ðʲi → ī; 
+- `expanded_variant-006` — source_not_verified; AQ.; ao → ō; 
+- `expanded_variant-007` — source_not_verified; AQ.; ɣʷu → ū; 
+- `expanded_variant-008` — source_not_verified; AQ.; tʰr → tʰs; 
+- `expanded_variant-009` — source_not_verified; AQ.; rl|lr → ll|ll; 
+- `expanded_variant-010` — formula_text_found_no_matching_examples; AQ.; pm → bm; https://eldamo.org/content/words/word-3463937975.html
+- `expanded_variant-011` — formula_examples_reproduced; AQ.; pn → bn; https://eldamo.org/content/words/word-3463937975.html
+- `expanded_variant-012` — formula_examples_reproduced; ᴹAQ.; sp- → sɸ-; https://eldamo.org/content/words/word-948882833.html
+- `expanded_variant-013` — source_not_verified; AQ.; {pʰtʰkʰptk}d → {pʰtʰkʰptk}t; 
+- `expanded_variant-014` — source_not_verified; AQ.; d{pʰtʰkʰptk} → t{pʰtʰkʰptk}; 
+- `expanded_variant-015` — formula_examples_reproduced; AQ.; tn → dn; https://eldamo.org/content/words/word-3463937975.html
+- `expanded_variant-016` — formula_examples_reproduced; AQ.; tm → dm; https://eldamo.org/content/words/word-3463937975.html
+- `expanded_variant-017` — formula_examples_reproduced; AQ.; ttʰ → θθ; https://eldamo.org/content/words/word-883570327.html
+- `expanded_variant-018` — formula_text_found_no_matching_examples; ✶; {ptk}tʰ → {ptk}t; https://eldamo.org/content/words/word-2789676367.html
+- `expanded_variant-019` — formula_examples_not_fully_reproduced; ᴹ✶; st- → sθ-; https://eldamo.org/content/words/word-948882833.html
+- `expanded_variant-020` — formula_examples_reproduced; AQ.; kw → p; https://eldamo.org/content/words/word-171120983.html
+- `expanded_variant-021` — formula_examples_reproduced; AQ.; kn → gn; https://eldamo.org/content/words/word-3463937975.html
+- `expanded_variant-022` — formula_examples_reproduced; AQ.; km → gm; https://eldamo.org/content/words/word-3463937975.html
+- `expanded_variant-023` — formula_examples_reproduced; ᴹAQ.; kw → p; https://eldamo.org/content/words/word-3214863235.html
+- `expanded_variant-024` — formula_examples_reproduced; ᴹAQ.; sk- → sx-; https://eldamo.org/content/words/word-948882833.html
+- `expanded_variant-025` — formula_examples_not_fully_reproduced; ᴹ✶; pʰ → ɸ; https://eldamo.org/content/words/word-1770347191.html
+- `expanded_variant-026` — formula_examples_not_fully_reproduced; ᴹ✶; tʰ → θ; https://eldamo.org/content/words/word-1770347191.html
+- `expanded_variant-027` — formula_text_found_no_matching_examples; ᴹQ.; kʰw- → pʰ-; https://eldamo.org/content/words/word-3214863235.html
+- `expanded_variant-028` — formula_examples_not_fully_reproduced; ᴹQ.; kʰ → x; https://eldamo.org/content/words/word-1770347191.html
+- `expanded_variant-029` — source_not_verified; AQ.; {lr}xʷ → {lr}w; 
+- `expanded_variant-030` — source_not_verified; AQ.; b{ptkpʰtʰkʰs} → p{ptkpʰtʰkʰs}; 
+- `expanded_variant-031` — source_not_verified; AQ.; d{ptkpʰtʰkʰs} → t{ptkpʰtʰkʰs}; 
+- `expanded_variant-032` — formula_examples_not_fully_reproduced; ✶; Vd → Vð; https://eldamo.org/content/words/word-1726791627.html
+- `expanded_variant-033` — formula_examples_reproduced; AQ.; gw → b; https://eldamo.org/content/words/word-171120983.html
+- `expanded_variant-034` — formula_examples_reproduced; AQ.; gj- → g-; https://eldamo.org/content/words/word-1120953457.html
+- `expanded_variant-035` — formula_text_found_no_matching_examples; Q.; gj- → d-; https://eldamo.org/content/words/word-745600013.html
+- `expanded_variant-036` — formula_examples_reproduced; ᴹQ.; gw → b; https://eldamo.org/content/words/word-3214863235.html
+- `expanded_variant-037` — formula_examples_reproduced; AQ.; ṃ- → am-; https://eldamo.org/content/words/word-1024355367.html
+- `expanded_variant-038` — formula_examples_reproduced; Q.; mb- → b-; https://eldamo.org/content/words/word-3057844573.html
+- `expanded_variant-039` — formula_text_found_no_matching_examples; Q.; mf- → f-; https://eldamo.org/content/words/word-3057844573.html
+- `expanded_variant-040` — formula_examples_reproduced; Q.; -Vm → -Vø; https://eldamo.org/content/words/word-876455981.html
+- `expanded_variant-041` — formula_examples_reproduced; Q.; ŋm → ŋw; https://eldamo.org/content/words/word-3258926163.html
+- `expanded_variant-042` — formula_examples_reproduced; Q.; mb → mm; https://eldamo.org/content/words/word-868023175.html
+- `expanded_variant-043` — formula_examples_reproduced; Q.; Vm → Vv; https://eldamo.org/content/words/word-1951379117.html
+- `expanded_variant-044` — formula_examples_reproduced; Q.; mm → m; https://eldamo.org/content/words/word-3689144303.html
+- `expanded_variant-045` — formula_examples_not_fully_reproduced; ᴹ✶; sm- → m̥-; https://eldamo.org/content/words/word-3693878703.html
+- `expanded_variant-046` — formula_examples_reproduced; AQ.; ln → ll; https://eldamo.org/content/words/word-1062284643.html
+- `expanded_variant-047` — formula_examples_reproduced; AQ.; ṇ- → an-; https://eldamo.org/content/words/word-1024355367.html
+- `expanded_variant-048` — formula_text_found_no_matching_examples; Q.; nθ- → θ-; https://eldamo.org/content/words/word-3057844573.html
+- `expanded_variant-049` — formula_examples_not_fully_reproduced; Q.; nd → nn; https://eldamo.org/content/words/word-868023175.html
+- `expanded_variant-050` — formula_text_found_no_matching_examples; Q.; nd- → d-; https://eldamo.org/content/words/word-493039001.html
+- `expanded_variant-051` — formula_examples_reproduced; ᴹ✶; sn- → n̥-; https://eldamo.org/content/words/word-3693878703.html
+- `expanded_variant-052` — formula_examples_reproduced; AQ.; ŋgw → mb; https://eldamo.org/content/words/word-171120983.html
+- `expanded_variant-053` — formula_text_found_no_matching_examples; AQ.; ŋw- → m-; https://eldamo.org/content/words/word-171120983.html
+- `expanded_variant-054` — formula_examples_reproduced; AQ.; ŋ- → g-; https://eldamo.org/content/words/word-1228875561.html
+- `expanded_variant-055` — formula_examples_reproduced; AQ.; ŋg- → g-; https://eldamo.org/content/words/word-1688730459.html
+- `expanded_variant-056` — formula_examples_reproduced; AQ.; ŋ- → ø-; https://eldamo.org/content/words/word-552653835.html
+- `expanded_variant-057` — formula_examples_not_fully_reproduced; AQ.; ŋgj → ŋg; https://eldamo.org/content/words/word-345959193.html
+- `expanded_variant-058` — formula_examples_not_fully_reproduced; AQ.; ŋ̣- → aŋ-; https://eldamo.org/content/words/word-1024355367.html
+- `expanded_variant-059` — formula_examples_not_fully_reproduced; Q.; ŋg- → g-; https://eldamo.org/content/words/word-3057844573.html
+- `expanded_variant-060` — formula_text_found_no_matching_examples; Q.; ŋx- → x-; https://eldamo.org/content/words/word-3057844573.html
+- `expanded_variant-061` — formula_text_found_no_matching_examples; Q.; Vŋn → V̄n; https://eldamo.org/content/words/word-3707785609.html
+- `expanded_variant-062` — formula_examples_reproduced; Q.; Vŋw → V̄w; https://eldamo.org/content/words/word-3707785609.html
+- `expanded_variant-063` — formula_text_found_no_matching_examples; Q.; ŋj- → n-; https://eldamo.org/content/words/word-745600013.html
+- `expanded_variant-064` — formula_text_found_no_matching_examples; Q.; ŋgj- → nd-; https://eldamo.org/content/words/word-745600013.html
+- `expanded_variant-065` — formula_text_found_no_matching_examples; Q.; ŋ- → ø-; https://eldamo.org/content/words/word-4225848175.html
+- `expanded_variant-066` — formula_examples_reproduced; ᴹ✶; ŋgw → mb; https://eldamo.org/content/words/word-3214863235.html
+- `expanded_variant-067` — formula_examples_reproduced; ᴹ✶; ŋ- → ø-; https://eldamo.org/content/words/word-552653835.html
+- `expanded_variant-068` — formula_text_found_no_matching_examples; ᴹ✶; VŋV → VøV; https://eldamo.org/content/words/word-552653835.html
+- `expanded_variant-069` — source_not_verified; AQ.; w-|VwV → v-|VvV; 
+- `expanded_variant-070` — formula_examples_not_fully_reproduced; Q.; w- → gw-; https://eldamo.org/content/words/word-2002760597.html
+- `expanded_variant-071` — formula_text_found_no_matching_examples; Q.; w- → v-; https://eldamo.org/content/words/word-1192708475.html
+- `expanded_variant-072` — formula_examples_reproduced; AQ.; Xw → Xv; https://eldamo.org/content/words/word-1848454147.html
+- `expanded_variant-073` — formula_examples_reproduced; AQ.; w- → gw-; https://eldamo.org/content/words/word-965501987.html
+- `expanded_variant-074` — formula_text_found_no_matching_examples; AQ.; uw → ū; https://eldamo.org/content/words/word-592723565.html
+- `expanded_variant-075` — formula_examples_reproduced; ✶; ɣ- → ø-; https://eldamo.org/content/words/word-1117448055.html
+- `expanded_variant-076` — formula_text_found_no_matching_examples; Q.; ɣ- → h-; https://eldamo.org/content/words/word-3274491131.html
+- `expanded_variant-077` — formula_examples_reproduced; ᴹQ.; ɣ- → ø-; https://eldamo.org/content/words/word-3657372981.html
+- `expanded_variant-078` — formula_text_found_no_matching_examples; AQ.; kj- → k-; https://eldamo.org/content/words/word-4118572109.html
+- `expanded_variant-079` — formula_text_found_no_matching_examples; AQ.; skj- → sk-; https://eldamo.org/content/words/word-4118572109.html
+- `expanded_variant-080` — formula_examples_reproduced; AQ.; j → i; https://eldamo.org/content/words/word-2818409497.html
+- `expanded_variant-081` — formula_text_found_no_matching_examples; AQ.; j- → ø-; https://eldamo.org/content/words/word-1803976769.html
+- `expanded_variant-082` — formula_examples_reproduced; AQ.; -j- → -i-; https://eldamo.org/content/words/word-1471734033.html
+- `expanded_variant-083` — formula_examples_reproduced; AQ.; kʰj- → kʰ-; https://eldamo.org/content/words/word-4025342543.html
+- `expanded_variant-084` — formula_examples_not_fully_reproduced; AQ.; ji → i; https://eldamo.org/content/words/word-4029245039.html
+- `expanded_variant-085` — formula_text_found_no_matching_examples; AQ.; ij → ī; https://eldamo.org/content/words/word-3125122253.html
+- `expanded_variant-086` — formula_text_found_no_matching_examples; Q.; sm- → m-; https://eldamo.org/content/words/word-4226922765.html
+- `expanded_variant-087` — formula_text_found_no_matching_examples; Q.; sn- → n-; https://eldamo.org/content/words/word-4226922765.html
+- `expanded_variant-088` — formula_text_found_no_matching_examples; Q.; VsV → VzV; https://eldamo.org/content/words/word-1546616217.html
+- `expanded_variant-089` — formula_examples_reproduced; ᴹQ.; sj- → j̊-; https://eldamo.org/content/words/word-3693878703.html
+- `expanded_variant-090` — formula_examples_reproduced; ᴹQ.; sw- → w̥-; https://eldamo.org/content/words/word-3693878703.html
+- `expanded_variant-091` — formula_examples_not_fully_reproduced; ᴹQ.; VsV → VhV; https://eldamo.org/content/words/word-4036446677.html
+- `expanded_variant-092` — formula_examples_reproduced; ᴹQ.; sl- → θl-; https://eldamo.org/content/words/word-2075290201.html
+- `expanded_variant-093` — formula_examples_reproduced; ᴹQ.; sr- → θr-; https://eldamo.org/content/words/word-2075290201.html
+- `expanded_variant-094` — formula_examples_reproduced; AQ.; Vzd → V̄d; https://eldamo.org/content/words/word-1249932447.html
+- `expanded_variant-095` — formula_examples_reproduced; AQ.; zg → ðɣ; https://eldamo.org/content/words/word-1951748921.html
+- `expanded_variant-096` — formula_examples_reproduced; AQ.; ē → ī; https://eldamo.org/content/words/word-3889365613.html
+- `expanded_variant-097` — formula_text_found_no_matching_examples; AQ.; ę̄ → ā; https://eldamo.org/content/words/word-1446209733.html
+- `expanded_variant-098` — formula_text_found_no_matching_examples; AQ.; ǣ → ę̄; https://eldamo.org/content/words/word-3619603651.html
+- `expanded_variant-099` — formula_examples_not_fully_reproduced; ✶; ā → ǭ; https://eldamo.org/content/words/word-2858643115.html
+- `expanded_variant-100` — formula_examples_reproduced; AQ.; ā → ō; https://eldamo.org/content/words/word-3140771935.html
+- `expanded_variant-101` — formula_examples_not_fully_reproduced; AQ.; ō → ū; https://eldamo.org/content/words/word-3889365613.html
+- `expanded_variant-102` — formula_text_found_no_matching_examples; AQ.; ǭ → ā; https://eldamo.org/content/words/word-1446209733.html
+- `expanded_variant-103` — formula_examples_reproduced; AQ.; ū → au; https://eldamo.org/content/words/word-1815156341.html
+- `expanded_variant-104` — formula_examples_not_fully_reproduced; AQ.; ai → ae; https://eldamo.org/content/words/word-941153689.html
+- `expanded_variant-105` — formula_examples_reproduced; AQ.; ai → ę̄; https://eldamo.org/content/words/word-3619603651.html
+- `expanded_variant-106` — formula_examples_not_fully_reproduced; AQ.; ei → ī; https://eldamo.org/content/words/word-1942848653.html
+- `expanded_variant-107` — formula_examples_reproduced; ᴹQ.; ei → oi; https://eldamo.org/content/words/word-1880600739.html
+- `expanded_variant-108` — formula_text_found_no_matching_examples; AQ.; ei → ai; https://eldamo.org/content/words/word-338579369.html
+- `expanded_variant-109` — formula_examples_not_fully_reproduced; AQ.; ei → ē; https://eldamo.org/content/words/word-1053983129.html
+- `expanded_variant-110` — formula_examples_reproduced; AQ.; oi → ui; https://eldamo.org/content/words/word-2010669085.html
+- `expanded_variant-111` — formula_text_found_no_matching_examples; AQ.; ŏ → a; https://eldamo.org/content/words/word-562246463.html
+- `expanded_variant-112` — formula_text_found_no_matching_examples; AQ.; ui → ū; https://eldamo.org/content/words/word-3695192375.html
+- `expanded_variant-113` — formula_examples_not_fully_reproduced; AQ.; ˌau → o; https://eldamo.org/content/words/word-567222053.html
+- `expanded_variant-114` — formula_examples_not_fully_reproduced; AQ.; au → ǭ; https://eldamo.org/content/words/word-2790556075.html
+- `expanded_variant-115` — formula_examples_reproduced; AQ.; eu → iu; https://eldamo.org/content/words/word-2662025405.html
+- `expanded_variant-116` — formula_examples_reproduced; AQ.; iu → ȳ; https://eldamo.org/content/words/word-659168127.html
+- `expanded_variant-117` — formula_examples_reproduced; AQ.; eu → io; https://eldamo.org/content/words/word-3538583603.html
+- `expanded_variant-118` — formula_examples_reproduced; AQ.; eu → ū; https://eldamo.org/content/words/word-1713708009.html
+- `expanded_variant-119` — formula_examples_reproduced; AQ.; iu → io; https://eldamo.org/content/words/word-3538583603.html
+- `expanded_variant-120` — formula_examples_reproduced; AQ.; iu → ū; https://eldamo.org/content/words/word-1713708009.html
+- `expanded_variant-121` — formula_examples_reproduced; AQ.; ou → ū; https://eldamo.org/content/words/word-1942848653.html
+- `expanded_variant-122` — formula_text_found_no_matching_examples; AQ.; ou → au; https://eldamo.org/content/words/word-1155192707.html
+- `expanded_variant-123` — formula_examples_not_fully_reproduced; AQ.; ou → ō; https://eldamo.org/content/words/word-1053983129.html
+
+## Пределы интерпретатора
+
+Проверено только то, что имеет точный пример собственной формулы на странице правила. Для остальных формул не создавались искусственные примеры и не утверждалась возможность исполнения. Контекстные условия, не закодированные формулой, не выводятся из названия закона.
+
+## Интерпретация результата `old_only_rule/formula_not_verified_on_source_page`
+
+У этих 127 записей в сохранённом аудиторском реестре **нет самой формулы** (есть название правила). Поэтому `formula_not_verified_on_source_page` не означает, что формула отсутствует в Eldamo: это **непроверяемость точного выражения по имеющимся полям**, а не отрицательный вердикт. Для проверки соответствия нужно заново извлекать формулы со страниц и независимо устанавливать принадлежность языковой ступени.
+
+## Политика включения
+
+56 успешно воспроизведённых старых формул **не включены автоматически** в канонический корпус: успешное исполнение примера не доказывает совпадения конкретного исторического маркера, ступени или допустимость использования данного правила в рассматриваемой цепочке. Реестр фиксирует источники и фактические проверки для последующей проверки этих свойств. Никакой синтетической цепочки не добавлено.

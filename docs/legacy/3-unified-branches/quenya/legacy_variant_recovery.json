@@ -1,0 +1,2394 @@
+[
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[без названия]",
+    "a": "jj",
+    "b": "ij",
+    "formula": "jj → ij",
+    "url": "",
+    "catalogs": [
+      "q"
+    ],
+    "sounds": [
+      "i"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[без названия]",
+    "a": "ðʲi",
+    "b": "ī",
+    "formula": "ðʲi → ī",
+    "url": "",
+    "catalogs": [
+      "q"
+    ],
+    "sounds": [
+      "ī"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[без названия]",
+    "a": "ao",
+    "b": "ō",
+    "formula": "ao → ō",
+    "url": "",
+    "catalogs": [
+      "q"
+    ],
+    "sounds": [
+      "ō"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[без названия]",
+    "a": "ɣʷu",
+    "b": "ū",
+    "formula": "ɣʷu → ū",
+    "url": "",
+    "catalogs": [
+      "q"
+    ],
+    "sounds": [
+      "ū"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "a": "ðʲi",
+    "b": "ī",
+    "formula": "ðʲi → ī",
+    "url": "",
+    "catalogs": [
+      "mq"
+    ],
+    "sounds": [
+      "ī"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "a": "ao",
+    "b": "ō",
+    "formula": "ao → ō",
+    "url": "",
+    "catalogs": [
+      "mq"
+    ],
+    "sounds": [
+      "ō"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "a": "ɣʷu",
+    "b": "ū",
+    "formula": "ɣʷu → ū",
+    "url": "",
+    "catalogs": [
+      "mq"
+    ],
+    "sounds": [
+      "ū"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "a": "tʰr",
+    "b": "tʰs",
+    "formula": "tʰr → tʰs",
+    "url": "",
+    "catalogs": [
+      "aq"
+    ],
+    "sounds": [
+      "s"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "a": "rl|lr",
+    "b": "ll|ll",
+    "formula": "rl|lr → ll|ll",
+    "url": "",
+    "catalogs": [
+      "aq"
+    ],
+    "sounds": [
+      "l"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "complex_variable_or_alternation"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "a": "pm",
+    "b": "bm",
+    "formula": "pm → bm",
+    "url": "https://eldamo.org/content/words/word-3463937975.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "p"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "a": "pn",
+    "b": "bn",
+    "formula": "pn → bn",
+    "url": "https://eldamo.org/content/words/word-3463937975.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "p"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiceless stops became spirants after initial [s]",
+    "a": "sp-",
+    "b": "sɸ-",
+    "formula": "sp- → sɸ-",
+    "url": "https://eldamo.org/content/words/word-948882833.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "p"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "a": "{pʰtʰkʰptk}d",
+    "b": "{pʰtʰkʰptk}t",
+    "formula": "{pʰtʰkʰptk}d → {pʰtʰkʰptk}t",
+    "url": "",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "t"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported expanded"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "a": "d{pʰtʰkʰptk}",
+    "b": "t{pʰtʰkʰptk}",
+    "formula": "d{pʰtʰkʰptk} → t{pʰtʰkʰptk}",
+    "url": "",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "t"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported expanded"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "a": "tn",
+    "b": "dn",
+    "formula": "tn → dn",
+    "url": "https://eldamo.org/content/words/word-3463937975.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "t"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "a": "tm",
+    "b": "dm",
+    "formula": "tm → dm",
+    "url": "https://eldamo.org/content/words/word-3463937975.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "t"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "aspirates became voiceless spirants",
+    "a": "ttʰ",
+    "b": "θθ",
+    "formula": "ttʰ → θθ",
+    "url": "https://eldamo.org/content/words/word-883570327.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "t"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "aspirates became voiceless stops after voiceless stops",
+    "a": "{ptk}tʰ",
+    "b": "{ptk}t",
+    "formula": "{ptk}tʰ → {ptk}t",
+    "url": "https://eldamo.org/content/words/word-2789676367.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "t"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported expanded"
+  },
+  {
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "voiceless stops became spirants after initial [s]",
+    "a": "st-",
+    "b": "sθ-",
+    "formula": "st- → sθ-",
+    "url": "https://eldamo.org/content/words/word-948882833.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "t"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "labialized velars became labials",
+    "a": "kw",
+    "b": "p",
+    "formula": "kw → p",
+    "url": "https://eldamo.org/content/words/word-171120983.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "k"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "a": "kn",
+    "b": "gn",
+    "formula": "kn → gn",
+    "url": "https://eldamo.org/content/words/word-3463937975.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "k"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "voiceless stops were voiced before nasals",
+    "a": "km",
+    "b": "gm",
+    "formula": "km → gm",
+    "url": "https://eldamo.org/content/words/word-3463937975.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "k"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "labialized velars became labials",
+    "a": "kw",
+    "b": "p",
+    "formula": "kw → p",
+    "url": "https://eldamo.org/content/words/word-3214863235.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "k"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 1,
+    "marker": "ᴹAQ.",
+    "rule": "voiceless stops became spirants after initial [s]",
+    "a": "sk-",
+    "b": "sx-",
+    "formula": "sk- → sx-",
+    "url": "https://eldamo.org/content/words/word-948882833.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "k"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspirates became voiceless spirants",
+    "a": "pʰ",
+    "b": "ɸ",
+    "formula": "pʰ → ɸ",
+    "url": "https://eldamo.org/content/words/word-1770347191.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "pʰ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "aspirates became voiceless spirants",
+    "a": "tʰ",
+    "b": "θ",
+    "formula": "tʰ → θ",
+    "url": "https://eldamo.org/content/words/word-1770347191.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "tʰ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "labialized velars became labials",
+    "a": "kʰw-",
+    "b": "pʰ-",
+    "formula": "kʰw- → pʰ-",
+    "url": "https://eldamo.org/content/words/word-3214863235.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "kʰ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "aspirates became voiceless spirants",
+    "a": "kʰ",
+    "b": "x",
+    "formula": "kʰ → x",
+    "url": "https://eldamo.org/content/words/word-1770347191.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "kʰ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "a": "{lr}xʷ",
+    "b": "{lr}w",
+    "formula": "{lr}xʷ → {lr}w",
+    "url": "",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "kʰ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported expanded"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "a": "b{ptkpʰtʰkʰs}",
+    "b": "p{ptkpʰtʰkʰs}",
+    "formula": "b{ptkpʰtʰkʰs} → p{ptkpʰtʰkʰs}",
+    "url": "",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "b"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported expanded"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "a": "d{ptkpʰtʰkʰs}",
+    "b": "t{ptkpʰtʰkʰs}",
+    "formula": "d{ptkpʰtʰkʰs} → t{ptkpʰtʰkʰs}",
+    "url": "",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "d"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported expanded"
+  },
+  {
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "voiced stops became spirants after vowels",
+    "a": "Vd",
+    "b": "Vð",
+    "formula": "Vd → Vð",
+    "url": "https://eldamo.org/content/words/word-1726791627.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "d"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "labialized velars became labials",
+    "a": "gw",
+    "b": "b",
+    "formula": "gw → b",
+    "url": "https://eldamo.org/content/words/word-171120983.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "g"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars and dentals",
+    "a": "gj-",
+    "b": "g-",
+    "formula": "gj- → g-",
+    "url": "https://eldamo.org/content/words/word-1120953457.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "g",
+      "j",
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "palatalized velars became dentals",
+    "a": "gj-",
+    "b": "d-",
+    "formula": "gj- → d-",
+    "url": "https://eldamo.org/content/words/word-745600013.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "g"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "labialized velars became labials",
+    "a": "gw",
+    "b": "b",
+    "formula": "gw → b",
+    "url": "https://eldamo.org/content/words/word-3214863235.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "g"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",
+    "a": "ṃ-",
+    "b": "am-",
+    "formula": "ṃ- → am-",
+    "url": "https://eldamo.org/content/words/word-1024355367.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "m"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial nasals vanished before stops",
+    "a": "mb-",
+    "b": "b-",
+    "formula": "mb- → b-",
+    "url": "https://eldamo.org/content/words/word-3057844573.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "m"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial nasals vanished before stops",
+    "a": "mf-",
+    "b": "f-",
+    "formula": "mf- → f-",
+    "url": "https://eldamo.org/content/words/word-3057844573.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "m"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "final nasals vanished after vowels",
+    "a": "-Vm",
+    "b": "-Vø",
+    "formula": "-Vm → -Vø",
+    "url": "https://eldamo.org/content/words/word-876455981.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "m"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[nm], [ŋm] became [nw], [ŋw]",
+    "a": "ŋm",
+    "b": "ŋw",
+    "formula": "ŋm → ŋw",
+    "url": "https://eldamo.org/content/words/word-3258926163.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "m"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[mb], [nd] became [mm], [nn]",
+    "a": "mb",
+    "b": "mm",
+    "formula": "mb → mm",
+    "url": "https://eldamo.org/content/words/word-868023175.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "m"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "non-initial [m] usually became [v]",
+    "a": "Vm",
+    "b": "Vv",
+    "formula": "Vm → Vv",
+    "url": "https://eldamo.org/content/words/word-1951379117.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "m"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[mm] shortened",
+    "a": "mm",
+    "b": "m",
+    "formula": "mm → m",
+    "url": "https://eldamo.org/content/words/word-3689144303.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "m"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial [s] unvoiced following [m], [n], [j], [w]",
+    "a": "sm-",
+    "b": "m̥-",
+    "formula": "sm- → m̥-",
+    "url": "https://eldamo.org/content/words/word-3693878703.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "m"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ln] became [ll]",
+    "a": "ln",
+    "b": "ll",
+    "formula": "ln → ll",
+    "url": "https://eldamo.org/content/words/word-1062284643.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "n"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",
+    "a": "ṇ-",
+    "b": "an-",
+    "formula": "ṇ- → an-",
+    "url": "https://eldamo.org/content/words/word-1024355367.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "n"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial nasals vanished before stops",
+    "a": "nθ-",
+    "b": "θ-",
+    "formula": "nθ- → θ-",
+    "url": "https://eldamo.org/content/words/word-3057844573.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "n"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[mb], [nd] became [mm], [nn]",
+    "a": "nd",
+    "b": "nn",
+    "formula": "nd → nn",
+    "url": "https://eldamo.org/content/words/word-868023175.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "n"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial nasalized voiced stops became stops",
+    "a": "nd-",
+    "b": "d-",
+    "formula": "nd- → d-",
+    "url": "https://eldamo.org/content/words/word-493039001.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "n"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial [s] unvoiced following [m], [n], [j], [w]",
+    "a": "sn-",
+    "b": "n̥-",
+    "formula": "sn- → n̥-",
+    "url": "https://eldamo.org/content/words/word-3693878703.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "n"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "labialized velars became labials",
+    "a": "ŋgw",
+    "b": "mb",
+    "formula": "ŋgw → mb",
+    "url": "https://eldamo.org/content/words/word-171120983.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "labialized velars became labials",
+    "a": "ŋw-",
+    "b": "m-",
+    "formula": "ŋw- → m-",
+    "url": "https://eldamo.org/content/words/word-171120983.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [ŋ], [ɣ] became [g]",
+    "a": "ŋ-",
+    "b": "g-",
+    "formula": "ŋ- → g-",
+    "url": "https://eldamo.org/content/words/word-1228875561.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial nasals usually vanished before stops",
+    "a": "ŋg-",
+    "b": "g-",
+    "formula": "ŋg- → g-",
+    "url": "https://eldamo.org/content/words/word-1688730459.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial and intervocalic [ŋ] vanished",
+    "a": "ŋ-",
+    "b": "ø-",
+    "formula": "ŋ- → ø-",
+    "url": "https://eldamo.org/content/words/word-552653835.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars",
+    "a": "ŋgj",
+    "b": "ŋg",
+    "formula": "ŋgj → ŋg",
+    "url": "https://eldamo.org/content/words/word-345959193.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]",
+    "a": "ŋ̣-",
+    "b": "aŋ-",
+    "formula": "ŋ̣- → aŋ-",
+    "url": "https://eldamo.org/content/words/word-1024355367.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial nasals vanished before stops",
+    "a": "ŋg-",
+    "b": "g-",
+    "formula": "ŋg- → g-",
+    "url": "https://eldamo.org/content/words/word-3057844573.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial nasals vanished before stops",
+    "a": "ŋx-",
+    "b": "x-",
+    "formula": "ŋx- → x-",
+    "url": "https://eldamo.org/content/words/word-3057844573.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ŋ] vanished with compensatory lengthening",
+    "a": "Vŋn",
+    "b": "V̄n",
+    "formula": "Vŋn → V̄n",
+    "url": "https://eldamo.org/content/words/word-3707785609.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "complex_variable_or_alternation"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[ŋ] vanished with compensatory lengthening",
+    "a": "Vŋw",
+    "b": "V̄w",
+    "formula": "Vŋw → V̄w",
+    "url": "https://eldamo.org/content/words/word-3707785609.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "complex_variable_or_alternation"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "palatalized velars became dentals",
+    "a": "ŋj-",
+    "b": "n-",
+    "formula": "ŋj- → n-",
+    "url": "https://eldamo.org/content/words/word-745600013.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "palatalized velars became dentals",
+    "a": "ŋgj-",
+    "b": "nd-",
+    "formula": "ŋgj- → nd-",
+    "url": "https://eldamo.org/content/words/word-745600013.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial [ŋ] vanishes",
+    "a": "ŋ-",
+    "b": "ø-",
+    "formula": "ŋ- → ø-",
+    "url": "https://eldamo.org/content/words/word-4225848175.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "labialized velars became labials",
+    "a": "ŋgw",
+    "b": "mb",
+    "formula": "ŋgw → mb",
+    "url": "https://eldamo.org/content/words/word-3214863235.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial and intervocalic [ŋ] vanished",
+    "a": "ŋ-",
+    "b": "ø-",
+    "formula": "ŋ- → ø-",
+    "url": "https://eldamo.org/content/words/word-552653835.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 0,
+    "marker": "ᴹ✶",
+    "rule": "initial and intervocalic [ŋ] vanished",
+    "a": "VŋV",
+    "b": "VøV",
+    "formula": "VŋV → VøV",
+    "url": "https://eldamo.org/content/words/word-552653835.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "ŋ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[без названия]",
+    "a": "w-|VwV",
+    "b": "v-|VvV",
+    "formula": "w-|VwV → v-|VvV",
+    "url": "",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "w"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "complex_variable_or_alternation"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial [w] became [gw]",
+    "a": "w-",
+    "b": "gw-",
+    "formula": "w- → gw-",
+    "url": "https://eldamo.org/content/words/word-2002760597.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "w"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial [w] became [v]",
+    "a": "w-",
+    "b": "v-",
+    "formula": "w- → v-",
+    "url": "https://eldamo.org/content/words/word-1192708475.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "w"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "non-initial [w] became [v] in East Danian",
+    "a": "Xw",
+    "b": "Xv",
+    "formula": "Xw → Xv",
+    "url": "https://eldamo.org/content/words/word-1848454147.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "w"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [w] became [gw]",
+    "a": "w-",
+    "b": "gw-",
+    "formula": "w- → gw-",
+    "url": "https://eldamo.org/content/words/word-965501987.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "w"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[w] became [u] after a vowel",
+    "a": "uw",
+    "b": "ū",
+    "formula": "uw → ū",
+    "url": "https://eldamo.org/content/words/word-592723565.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "w"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "initial [ɣ]/[h] vanished",
+    "a": "ɣ-",
+    "b": "ø-",
+    "formula": "ɣ- → ø-",
+    "url": "https://eldamo.org/content/words/word-1117448055.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "h",
+      "ɣ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial [ɣ] became [h]",
+    "a": "ɣ-",
+    "b": "h-",
+    "formula": "ɣ- → h-",
+    "url": "https://eldamo.org/content/words/word-3274491131.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ɣ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[ɣ] vanished",
+    "a": "ɣ-",
+    "b": "ø-",
+    "formula": "ɣ- → ø-",
+    "url": "https://eldamo.org/content/words/word-3657372981.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "ɣ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars",
+    "a": "kj-",
+    "b": "k-",
+    "formula": "kj- → k-",
+    "url": "https://eldamo.org/content/words/word-4118572109.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "j"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars",
+    "a": "skj-",
+    "b": "sk-",
+    "formula": "skj- → sk-",
+    "url": "https://eldamo.org/content/words/word-4118572109.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "j"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] became [i] in Ossiriandic",
+    "a": "j",
+    "b": "i",
+    "formula": "j → i",
+    "url": "https://eldamo.org/content/words/word-2818409497.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "j"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "initial [j] vanished in East Danian",
+    "a": "j-",
+    "b": "ø-",
+    "formula": "j- → ø-",
+    "url": "https://eldamo.org/content/words/word-1803976769.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "j"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "medial [j] became [i]",
+    "a": "-j-",
+    "b": "-i-",
+    "formula": "-j- → -i-",
+    "url": "https://eldamo.org/content/words/word-1471734033.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "j"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] was lost after initial velars",
+    "a": "kʰj-",
+    "b": "kʰ-",
+    "formula": "kʰj- → kʰ-",
+    "url": "https://eldamo.org/content/words/word-4025342543.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "j"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] vanished before [i], [ui]",
+    "a": "ji",
+    "b": "i",
+    "formula": "ji → i",
+    "url": "https://eldamo.org/content/words/word-4029245039.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "j"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[j] became [i] after a vowel",
+    "a": "ij",
+    "b": "ī",
+    "formula": "ij → ī",
+    "url": "https://eldamo.org/content/words/word-3125122253.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "j"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial [sm], [sn] became nasals [m], [n]",
+    "a": "sm-",
+    "b": "m-",
+    "formula": "sm- → m-",
+    "url": "https://eldamo.org/content/words/word-4226922765.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "s"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "initial [sm], [sn] became nasals [m], [n]",
+    "a": "sn-",
+    "b": "n-",
+    "formula": "sn- → n-",
+    "url": "https://eldamo.org/content/words/word-4226922765.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "s"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 2,
+    "marker": "Q.",
+    "rule": "[s] medially between vowels became [z]",
+    "a": "VsV",
+    "b": "VzV",
+    "formula": "VsV → VzV",
+    "url": "https://eldamo.org/content/words/word-1546616217.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "s"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "initial [s] unvoiced following [m], [n], [j], [w]",
+    "a": "sj-",
+    "b": "j̊-",
+    "formula": "sj- → j̊-",
+    "url": "https://eldamo.org/content/words/word-3693878703.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "s"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "initial [s] unvoiced following [m], [n], [j], [w]",
+    "a": "sw-",
+    "b": "w̥-",
+    "formula": "sw- → w̥-",
+    "url": "https://eldamo.org/content/words/word-3693878703.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "s"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "intervocalic [s] became [h]",
+    "a": "VsV",
+    "b": "VhV",
+    "formula": "VsV → VhV",
+    "url": "https://eldamo.org/content/words/word-4036446677.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "s"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "initial [s] became [θ] before [l], [r]",
+    "a": "sl-",
+    "b": "θl-",
+    "formula": "sl- → θl-",
+    "url": "https://eldamo.org/content/words/word-2075290201.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "s"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "initial [s] became [θ] before [l], [r]",
+    "a": "sr-",
+    "b": "θr-",
+    "formula": "sr- → θr-",
+    "url": "https://eldamo.org/content/words/word-2075290201.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "s"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[z] vanished before [d] lengthening preceding vowel",
+    "a": "Vzd",
+    "b": "V̄d",
+    "formula": "Vzd → V̄d",
+    "url": "https://eldamo.org/content/words/word-1249932447.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "z"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "complex_variable_or_alternation"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[zb], [zg] became [ðβ], [ðɣ]",
+    "a": "zg",
+    "b": "ðɣ",
+    "formula": "zg → ðɣ",
+    "url": "https://eldamo.org/content/words/word-1951748921.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "z"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ē], [ō] became [ī], [ū]",
+    "a": "ē",
+    "b": "ī",
+    "formula": "ē → ī",
+    "url": "https://eldamo.org/content/words/word-3889365613.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ē"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ę̄], [ǭ] became [ā]",
+    "a": "ę̄",
+    "b": "ā",
+    "formula": "ę̄ → ā",
+    "url": "https://eldamo.org/content/words/word-1446209733.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ę̄"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ǣ], [ai] became [ę̄]",
+    "a": "ǣ",
+    "b": "ę̄",
+    "formula": "ǣ → ę̄",
+    "url": "https://eldamo.org/content/words/word-3619603651.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "ę̄",
+      "ǣ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 0,
+    "marker": "✶",
+    "rule": "[ā], [au] became [ǭ]",
+    "a": "ā",
+    "b": "ǭ",
+    "formula": "ā → ǭ",
+    "url": "https://eldamo.org/content/words/word-2858643115.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ā"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ā] became [ō]",
+    "a": "ā",
+    "b": "ō",
+    "formula": "ā → ō",
+    "url": "https://eldamo.org/content/words/word-3140771935.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "ā"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ē], [ō] became [ī], [ū]",
+    "a": "ō",
+    "b": "ū",
+    "formula": "ō → ū",
+    "url": "https://eldamo.org/content/words/word-3889365613.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ō"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ę̄], [ǭ] became [ā]",
+    "a": "ǭ",
+    "b": "ā",
+    "formula": "ǭ → ā",
+    "url": "https://eldamo.org/content/words/word-1446209733.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ǭ"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ī], [ū] became [ai], [au]",
+    "a": "ū",
+    "b": "au",
+    "formula": "ū → au",
+    "url": "https://eldamo.org/content/words/word-1815156341.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "ū"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ai], [oi] became [ae], [oe]",
+    "a": "ai",
+    "b": "ae",
+    "formula": "ai → ae",
+    "url": "https://eldamo.org/content/words/word-941153689.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ai"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ǣ], [ai] became [ę̄]",
+    "a": "ai",
+    "b": "ę̄",
+    "formula": "ai → ę̄",
+    "url": "https://eldamo.org/content/words/word-3619603651.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "ai"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ei], [ou] became [ī], [ū]",
+    "a": "ei",
+    "b": "ī",
+    "formula": "ei → ī",
+    "url": "https://eldamo.org/content/words/word-1942848653.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ei"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "middle",
+    "stage": 2,
+    "marker": "ᴹQ.",
+    "rule": "[ei], [ou] became [oi], [ū]",
+    "a": "ei",
+    "b": "oi",
+    "formula": "ei → oi",
+    "url": "https://eldamo.org/content/words/word-1880600739.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "ei"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ei] became [ai] or [ui]",
+    "a": "ei",
+    "b": "ai",
+    "formula": "ei → ai",
+    "url": "https://eldamo.org/content/words/word-338579369.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "ei"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ei], [ou] became [ē], [ō]",
+    "a": "ei",
+    "b": "ē",
+    "formula": "ei → ē",
+    "url": "https://eldamo.org/content/words/word-1053983129.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "ei"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[oi], [ǭi] became [ui], [oi]",
+    "a": "oi",
+    "b": "ui",
+    "formula": "oi → ui",
+    "url": "https://eldamo.org/content/words/word-2010669085.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "oi"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "short [ŏ] became [a] in Primitive Danian",
+    "a": "ŏ",
+    "b": "a",
+    "formula": "ŏ → a",
+    "url": "https://eldamo.org/content/words/word-562246463.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "oi",
+      "ou"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ei], [ui] became [ī], [ū] in Primitive Danian",
+    "a": "ui",
+    "b": "ū",
+    "formula": "ui → ū",
+    "url": "https://eldamo.org/content/words/word-3695192375.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "ui"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[au], [ae] became [o], [e] in polysyllables",
+    "a": "ˌau",
+    "b": "o",
+    "formula": "ˌau → o",
+    "url": "https://eldamo.org/content/words/word-567222053.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "au"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ā], [au] became [ǭ]",
+    "a": "au",
+    "b": "ǭ",
+    "formula": "au → ǭ",
+    "url": "https://eldamo.org/content/words/word-2790556075.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "au"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[eu] became [iu]",
+    "a": "eu",
+    "b": "iu",
+    "formula": "eu → iu",
+    "url": "https://eldamo.org/content/words/word-2662025405.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "eu"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[iu] and [ju] became [ȳ]",
+    "a": "iu",
+    "b": "ȳ",
+    "formula": "iu → ȳ",
+    "url": "https://eldamo.org/content/words/word-659168127.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "eu",
+      "iu"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[eu], [iu] became [io]",
+    "a": "eu",
+    "b": "io",
+    "formula": "eu → io",
+    "url": "https://eldamo.org/content/words/word-3538583603.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "eu"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[eu], [iu] became [ū]",
+    "a": "eu",
+    "b": "ū",
+    "formula": "eu → ū",
+    "url": "https://eldamo.org/content/words/word-1713708009.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "eu"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[eu], [iu] became [io]",
+    "a": "iu",
+    "b": "io",
+    "formula": "iu → io",
+    "url": "https://eldamo.org/content/words/word-3538583603.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "iu"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[eu], [iu] became [ū]",
+    "a": "iu",
+    "b": "ū",
+    "formula": "iu → ū",
+    "url": "https://eldamo.org/content/words/word-1713708009.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "iu"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ei], [ou] became [ī], [ū]",
+    "a": "ou",
+    "b": "ū",
+    "formula": "ou → ū",
+    "url": "https://eldamo.org/content/words/word-1942848653.html",
+    "catalogs": [
+      "p"
+    ],
+    "sounds": [
+      "ou"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ou] became [au]",
+    "a": "ou",
+    "b": "au",
+    "formula": "ou → au",
+    "url": "https://eldamo.org/content/words/word-1155192707.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "ou"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  },
+  {
+    "era": "late",
+    "stage": 1,
+    "marker": "AQ.",
+    "rule": "[ei], [ou] became [ē], [ō]",
+    "a": "ou",
+    "b": "ō",
+    "formula": "ou → ō",
+    "url": "https://eldamo.org/content/words/word-1053983129.html",
+    "catalogs": [
+      "mp",
+      "p"
+    ],
+    "sounds": [
+      "ou"
+    ],
+    "refs": [],
+    "provenance": "legacy_expanded_variant_not_found_in_direct_extraction",
+    "legacy_parser_status": "supported"
+  }
+]

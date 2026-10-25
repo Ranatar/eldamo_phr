@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eldamo — фонетический атлас</title>
+<meta name="description" content="Атлас звуковых изменений Quenya и Sindarin по данным Eldamo (Paul Strack)">
+<style>
+@@STYLES@@
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><a href="#" id="home-link">Eldamo · фонетический атлас</a></div>
+  <label>Ветвь <select id="branch-select" aria-label="Ветвь"></select></label>
+  <label>Концепция <select id="era-select" aria-label="Концепция">
+    <option value="late">поздняя</option><option value="middle">средняя</option>
+  </select></label>
+  <button type="button" id="theme-toggle" aria-label="Переключить тему">Тема</button>
+</header>
+
+<div id="landing" class="landing">
+  <h1>Eldamo — фонетический атлас</h1>
+  <p>Звуковые изменения Quenya и Sindarin по данным лексикона Eldamo: правила, их засвидетельствованные применения к словам, пути между звуками и цепочки с оценкой по свидетельствам и хронологии.</p>
+  <div class="branch-cards" id="branch-cards"></div>
+  <p class="muted">Найденный по графу путь — структурный кандидат. Историческим его делает засвидетельствованная деривация (оценка A) или подтверждённый порядок правил (B).</p>
+</div>
+
+<p id="status" class="sr-only" role="status" aria-live="polite"></p>
+<main id="app" hidden>
+  <section class="panel" aria-labelledby="paths-title">
+    <h2 id="paths-title">Пути между звуками</h2>
+    <p class="lead" id="branch-path"></p>
+    <div class="pickers">
+      <div class="picker" data-slot="from">
+        <h3>Исходный звук</h3>
+        <div class="chosen">Выбрано: <strong id="from-chosen"></strong></div>
+        <div class="mode-switch" role="group" aria-label="Что выбирать">
+          <button type="button" data-mode="phoneme" aria-pressed="true">Фонема</button>
+          <button type="button" data-mode="cluster" aria-pressed="false">Сочетание</button>
+        </div>
+        <div class="grid-scroll" data-role="grid"></div>
+        <div class="cluster" data-role="cluster" hidden>
+          <label>Сочетание <input type="search" list="from-states" id="from-cluster" autocomplete="off" placeholder="например, mb"></label>
+          <datalist id="from-states"></datalist>
+        </div>
+      </div>
+      <div class="picker" data-slot="to">
+        <h3>Конечный звук</h3>
+        <div class="chosen">Выбрано: <strong id="to-chosen"></strong></div>
+        <div class="mode-switch" role="group" aria-label="Что выбирать">
+          <button type="button" data-mode="phoneme" aria-pressed="true">Фонема</button>
+          <button type="button" data-mode="cluster" aria-pressed="false">Сочетание</button>
+        </div>
+        <div class="grid-scroll" data-role="grid"></div>
+        <div class="cluster" data-role="cluster" hidden>
+          <label>Сочетание <input type="search" list="to-states" id="to-cluster" autocomplete="off" placeholder="например, mm"></label>
+          <datalist id="to-states"></datalist>
+        </div>
+      </div>
+    </div>
+    <div class="options">
+      <label>Шагов не больше <select id="depth"><option>2</option><option selected>3</option><option>4</option><option>5</option><option>6</option></select></label>
+      <label><input type="checkbox" id="chronology" checked> соблюдать хронологию Eldamo</label>
+      <label><input type="checkbox" id="attested"> только шаги с засвидетельствованными примерами</label>
+      <label><input type="checkbox" id="unconditional"> без условных правил</label>
+    </div>
+    <div class="actions">
+      <button type="button" class="primary" id="go">Найти пути</button>
+      <button type="button" id="swap">Поменять местами</button>
+      <button type="button" id="develop">Развитие исходного</button>
+      <button type="button" id="origins">Происхождение конечного</button>
+      <button type="button" id="rules-from">Правила исходного</button>
+      <button type="button" id="rules-to">Правила конечного</button>
+    </div>
+    <div id="output"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="chains-title">
+    <h2 id="chains-title">Атлас цепочек</h2>
+    <p class="lead">Цепочки из двух-трёх изменений в хронологическом порядке. Оценки:
+      <span class="grade grade-A">A</span> засвидетельствована в одной деривации,
+      <span class="grade grade-B">B</span> шаги засвидетельствованы, порядок подтверждён,
+      <span class="grade grade-C">C</span> порядок не установлен,
+      <span class="grade grade-D">D</span> есть шаг без примеров.</p>
+    <div class="filters">
+      <input type="search" id="chain-query" placeholder="Звук или название правила" aria-label="Поиск цепочек">
+      <label>Оценка <select id="chain-grade"><option value="">все</option><option>A</option><option>B</option><option>C</option><option>D</option></select></label>
+    </div>
+    <div id="chains"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="derivs-title" id="derivations-panel">
+    <h2 id="derivs-title">Деривации Eldamo</h2>
+    <p class="lead">Засвидетельствованные последовательности изменений конкретных слов с промежуточными формами — как их приводит Eldamo. Каждый шаг проверен интерпретатором формулы.</p>
+    <div class="filters">
+      <input type="search" id="deriv-query" placeholder="Слово, форма, значение или правило" aria-label="Поиск дериваций">
+      <label><input type="checkbox" id="deriv-deleted"> показывать отвергнутые Толкином</label>
+      <label><input type="checkbox" id="deriv-issues"> только с расхождениями</label>
+      <label><input type="checkbox" id="deriv-others"> слова других ветвей (общие праэльфийские шаги)</label>
+    </div>
+    <div id="derivations"></div>
+  </section>
+</main>
+
+<footer>
+  Данные: <a href="https://eldamo.org" target="_blank" rel="noopener">Eldamo</a> <span id="eldamo-version"></span>
+  © Paul Strack, лицензия <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>;
+  в атласе данные преобразованы (извлечение правил, граф, цепочки, проверка формул).
+  Полный корпус: <a href="corpus.html">corpus.html</a>.
+</footer>
+
+<script type="application/json" id="atlas-data">@@DATA@@</script>
+<script>
+@@RUNTIME@@
+</script>
+</body>
+</html>

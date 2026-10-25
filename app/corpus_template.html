@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eldamo — полный корпус</title>
+<style>
+@@STYLES@@
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+.tabs button[aria-pressed="true"] { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+details.row > summary { cursor: pointer; }
+pre.json { white-space: pre-wrap; word-break: break-word; font-size: 12px; background: var(--panel-2); padding: 8px; border-radius: 6px; max-height: 30em; overflow: auto; }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><a href="index.html">Eldamo · фонетический атлас</a> — полный корпус</div>
+  <label>Ветвь <select id="branch"></select></label>
+  <button type="button" id="theme-toggle">Тема</button>
+</header>
+<main>
+  <section class="panel">
+    <h1 style="font-size:22px;margin:0 0 6px">Полный корпус</h1>
+    <p class="lead">Все данные ветви в том виде, в каком их строит конвейер: правила, подформулы, рёбра графа, цепочки и деривации. Поиск идёт по всем полям записи.</p>
+    <div class="tabs" id="tabs" role="group" aria-label="Раздел"></div>
+    <div class="filters"><input type="search" id="q" placeholder="Поиск по всем полям" aria-label="Поиск"></div>
+    <p class="small muted" id="count" aria-live="polite"></p>
+    <div class="table-scroll"><table class="data"><thead id="head"></thead><tbody id="body"></tbody></table></div>
+    <div class="pager"><button type="button" id="prev">← Назад</button><span id="page"></span><button type="button" id="next">Вперёд →</button></div>
+  </section>
+</main>
+<footer>Данные: <a href="https://eldamo.org" target="_blank" rel="noopener">Eldamo</a> @@VERSION@@ © Paul Strack, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>; преобразованы конвейером проекта.</footer>
+<script type="application/json" id="corpus-data">@@DATA@@</script>
+<script>
+"use strict";
+(function () {
+const DATA = JSON.parse(document.getElementById('corpus-data').textContent);
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const SITE = 'https://eldamo.org/content/';
+const rule = id => id ? `<a href="${SITE}words/word-${esc(id)}.html" target="_blank" rel="noopener">${esc(id)}</a>` : '';
+const src = s => s ? `<a href="${SITE}references/ref-${esc(s.split('/')[0])}.html#${esc(s)}" target="_blank" rel="noopener">${esc(s.split('.')[0])}</a>` : '';
+const list = v => Array.isArray(v) ? v.map(esc).join(', ') : esc(v);
+const SECTIONS = {
+  rules: { title: 'Правила', cols: [['id', 'Страница', r => rule(r.id)], ['lang', 'Язык', r => esc(r.marker)], ['name', 'Название', r => esc(r.name)], ['order', 'Порядок', r => esc(r.order)], ['formula', 'Общая формула', r => r.formula ? `<code>${esc(r.formula.from)} &gt; ${esc(r.formula.to)}</code>` : ''], ['pairs', 'Подформул', r => r.pairs.length]] },
+  pairs: { title: 'Подформулы', cols: [['id', 'ID', p => esc(p.id)], ['rule', 'Правило', p => rule(p.rule)], ['marker', 'Язык', p => esc(p.marker)], ['formula', 'Формула', p => `<code>${esc(p.from)} &gt; ${esc(p.to)}</code>`], ['kind', 'Вид', p => esc(p.kind)], ['examples', 'Примеры / воспр.', p => `${p.examples} / ${p.reproduced + p.partial}`]] },
+  edges: { title: 'Рёбра графа', cols: [['id', 'ID', e => esc(e.id)], ['era', 'Период', e => esc(e.era)], ['marker', 'Язык', e => esc(e.marker)], ['ab', 'Переход', e => `<span class="ipa">${esc(e.a)} → ${esc(e.b)}</span>`], ['position', 'Позиция', e => esc(e.position)], ['rules', 'Правила', e => e.rules.map(rule).join(', ')], ['conditional', 'Условное', e => e.conditional ? 'да' : ''], ['examples', 'Примеры', e => e.examples]] },
+  chains: { title: 'Цепочки', cols: [['id', 'Цепочка', c => `<span class="ipa">${esc(c.states.join(' → '))}</span>`], ['era', 'Период', c => esc(c.era)], ['grade', 'Оценка', c => `<span class="grade grade-${esc(c.grade)}">${esc(c.grade)}</span>`], ['markers', 'Языки', c => list(c.markers)], ['attested', 'Дериваций', c => c.attested_count]] },
+  derivations: { title: 'Деривации', cols: [['id', 'ID', d => esc(d.id)], ['word', 'Слово', d => `<a href="${SITE}words/word-${esc(d.word)}.html" target="_blank" rel="noopener">${esc(d.word_form)}</a>${d.deleted ? ' <span class="pill warn">отвергнуто</span>' : ''}`], ['gloss', 'Значение', d => esc(d.gloss)], ['chain', 'Формы', d => `<span class="ipa">${esc([d.start, ...d.steps.map(s => s.after)].join(' → '))}</span>`], ['source', 'Источник', d => src(d.source)]] },
+  phonemes: { title: 'Фонемы', cols: [['symbol', 'Фонема', p => `<span class="ipa">${esc(p.symbol)}</span>`], ['languages', 'Языки', p => list(p.languages)], ['cards', 'Карточки', p => p.cards.map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join(' ')]] },
+};
+const st = { branch: Object.keys(DATA.branches)[0], section: 'rules', page: 0 };
+const PAGE = 50;
+$('branch').replaceChildren(...Object.keys(DATA.branches).map(b => new Option(DATA.branches[b].title, b)));
+$('tabs').innerHTML = Object.entries(SECTIONS).map(([k, s]) => `<button type="button" data-section="${k}" aria-pressed="${k === st.section}">${esc(s.title)}</button>`).join('');
+const texts = new WeakMap();
+const text = r => { if (!texts.has(r)) texts.set(r, JSON.stringify(r).toLowerCase()); return texts.get(r); };
+function render() {
+  const S = SECTIONS[st.section];
+  const q = $('q').value.trim().toLowerCase();
+  const rows = DATA.branches[st.branch][st.section].filter(r => !q || text(r).includes(q));
+  const pages = Math.max(1, Math.ceil(rows.length / PAGE));
+  st.page = Math.min(st.page, pages - 1);
+  $('count').textContent = `${rows.length} записей`;
+  $('head').innerHTML = `<tr>${S.cols.map(c => `<th>${esc(c[1])}</th>`).join('')}<th></th></tr>`;
+  $('body').innerHTML = rows.slice(st.page * PAGE, (st.page + 1) * PAGE).map(r => `<tr>${S.cols.map(c => `<td>${c[2](r)}</td>`).join('')}<td><details class="row"><summary>все поля</summary><pre class="json">${esc(JSON.stringify(r, null, 1))}</pre></details></td></tr>`).join('');
+  $('page').textContent = `Страница ${st.page + 1} из ${pages}`;
+  $('prev').disabled = st.page === 0; $('next').disabled = st.page >= pages - 1;
+  document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.section === st.section)));
+}
+$('tabs').addEventListener('click', e => { const b = e.target.closest('[data-section]'); if (b) { st.section = b.dataset.section; st.page = 0; render(); } });
+$('branch').addEventListener('change', e => { st.branch = e.target.value; st.page = 0; render(); });
+$('q').addEventListener('input', () => { st.page = 0; render(); });
+$('prev').addEventListener('click', () => { st.page--; render(); });
+$('next').addEventListener('click', () => { st.page++; render(); });
+const key = 'eldamo-atlas-theme';
+try { const t = localStorage.getItem(key); if (t) document.documentElement.setAttribute('data-theme', t); } catch (_e) { /* no storage */ }
+$('theme-toggle').addEventListener('click', () => {
+  const cur = document.documentElement.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  try { localStorage.setItem(key, next); } catch (_e) { /* no storage */ }
+});
+render();
+})();
+</script>
+</body>
+</html>

@@ -115,7 +115,7 @@ def write_report(branches: dict) -> None:
 def render_sequencer(branches: dict) -> tuple[str, dict]:
     """reports/sequencer.md: every attested derivation replayed from its start
     form through the whole chronology of the branch (shared/sequencer.py)."""
-    from . import backform, compound
+    from . import affixes, backform, compound
     from .sequencer import Sequencer, backtest
     lines = [
         '# Проверка секвенсора',
@@ -201,6 +201,19 @@ def render_sequencer(branches: dict) -> tuple[str, dict]:
                       f'| сложений | {k} |',
                       f"| первый вариант = засвидетельствованная форма | {lres['main']} ({100 * lres['main'] / k:.0f}%) |",
                       f"| форма среди первых 8 вариантов | {lres['any']} ({100 * lres['any'] / k:.0f}%) |", '']
+        ares = affixes.leave_one_out(b, data['lexicon'])
+        if ares['cases']:
+            pct = lambda x, n: f'{x} ({100 * x / n:.0f}%)' if n else '0'
+            lines += ['### Суффиксы и приставки', '',
+                      'Производные слова Eldamo из основы и одного аффикса (часть речи `suf` или `pref`). Модель '
+                      '(`shared/affixes.py`, `branches/' + b + '/data/affixes.json`) строится без проверяемого слова: '
+                      'какая форма аффикса берётся после гласного и после согласного, что происходит на стыке и в '
+                      'конце — сначала по словам с этим же аффиксом, иначе по всем словам с аффиксом того же вида.', '',
+                      '| | слов | первый вариант = форма Eldamo | среди первых 8 |', '|---|---|---|---|']
+            for k, label in (('suffix', 'суффиксы'), ('prefix', 'приставки')):
+                x = ares[k]
+                lines.append(f"| {label} | {x['cases']} | {pct(x['main'], x['cases'])} | {pct(x['any'], x['cases'])} |")
+            lines += [f"| всего | {ares['cases']} | {pct(ares['main'], ares['cases'])} | {pct(ares['any'], ares['cases'])} |", '']
         final_code = max((l for l in langs.values() if l['era'] == 'late'), key=lambda l: l['stage'])['code']
         bres = backform.evaluate(data, seq, final_code, sample=BACKFORM_SAMPLE)
         if bres.get('cases'):
@@ -217,6 +230,7 @@ def render_sequencer(branches: dict) -> tuple[str, dict]:
                       f"| праформа Eldamo среди найденных (до 8) | {bres.get('any', 0)} ({100 * bres.get('any', 0) / k:.0f}%) |", '']
         js[b] = {'derivations': n, 'main': res['main'], 'any': res['any'], 'eras': per_era,
                  'backform': bres,
+                 'affixes': {k2: v for k2, v in ares.items()},
                  'latest_compounds': {k2: v for k2, v in lres.items()},
                  'results': [r for r in res['results'] if not r['ok_main']],
                  'compounds': {k2: v for k2, v in cres.items()}}

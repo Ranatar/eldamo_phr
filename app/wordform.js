@@ -48,7 +48,15 @@ const isLong = p => nfd(p).includes(MACRON);
 const shorten = p => nfc(chars(nfd(p)).filter(c => c !== MACRON && c !== BREVE).join(''));
 function lengthen(p) { const d = chars(nfd(shorten(p))); return nfc(d[0] + MACRON + d.slice(1).join('')); }
 const join = ph => nfc(ph.join(''));
-const r3 = x => Number(x.toFixed(3));   // Python round(x, 3)
+function r3(x) {   // Python round(x, 3): exact value, ties to even
+  const m = Math.abs(x).toFixed(20).match(/^(\d+)\.(\d{3})(\d*)$/);
+  if (m && /^50*$/.test(m[3])) {
+    let n = Number(m[1] + m[2]);
+    if (n % 2) n += 1;
+    return Math.sign(x) * n / 1000;
+  }
+  return Number(x.toFixed(3));
+}
 
 // ---------------------------------------------------------------- patterns
 function token(kind, o = {}) {
@@ -618,7 +626,7 @@ function toPhonetic(form, fam) {
 const keyOf = parts => JSON.stringify(parts);
 function junctionPredict(table, a, b, limit = 10) {
   const sk = shortKey(b);
-  const shorts = sk && table.short[sk] ? table.short[sk] : [[false, 1]];
+  const shorts = sk && table.short[sk] && table.short[sk].length ? table.short[sk] : [[false, 1]];
   const sn = shorts.reduce((x, [, n]) => x + n, 0);
   const out = new Map();
   for (const [short, sc] of shorts) {
@@ -705,6 +713,26 @@ function prosodicLengthening(base, suffix, eNoun = false) {
   const out = base.slice(); out[start] = lengthen(out[start]);
   return out.concat(suffix);
 }
+const DIRECTIONAL = ['nna', 'llo', 'sse', 'nnar', 'llon', 'ssen'];
+function directionalShortening(base, suffix) {
+  if (!DIRECTIONAL.includes(join(suffix)) || syllableCount(base) < 3) return null;
+  const ns = nuclei(base);
+  const [start, end] = ns[ns.length - 2];
+  let any = false;
+  for (let i = start; i < end; i++) if (isLong(base[i])) any = true;
+  if (!any) return null;
+  const out = base.slice();
+  for (let i = start; i < end; i++) out[i] = shorten(out[i]);
+  return out.concat(suffix);
+}
+function suffixVariants(base, suffix, eNoun = false) {
+  const out = [[base.concat(suffix), []]];
+  const r = directionalShortening(base, suffix);
+  if (r) out.push([r, ['shortening']]);
+  const l = prosodicLengthening(base, suffix, eNoun);
+  if (l) out.push([l, ['lengthening']]);
+  return out;
+}
 function compoundVariants(first, second) {
   const out = [[first.concat(second), null, []]];
   const len = prosodicLengthening(first, second);
@@ -774,6 +802,114 @@ function backform(engine, form, era, lastStage, limit = 5) {
   return found;
 }
 
+// ---------------------------------------------------------------- affixes (shared/affixes.py)
+const AFFIX_KINDS = { suf: 'suffix', pref: 'prefix' };
+const affixKind = e => AFFIX_KINDS[e.speech] || null;
+function allomorphs(entry, fam) {
+  const out = [];
+  for (let part of entry.form.replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰]/g, '').split('/')) {
+    part = part.trim().replace(/^-+|-+$/g, '').trim();
+    const groups = part.match(/\(([^)]*)\)/g) || [];
+    for (const keep of product(groups.map(() => [true, false]))) {
+      let k = 0;
+      let f = part.replace(/\(([^)]*)\)/g, (_m, g) => (keep[k++] ? g : ''));
+      f = toPhonetic(f, fam).replace(/^-+|-+$/g, '');
+      if (f && !out.includes(f)) out.push(f);
+    }
+  }
+  return out;
+}
+const ctxOf = sound => isVowel(sound) ? 'V' : 'C';
+function lengthenedBase(base) {
+  let v = null;
+  for (let i = base.length - 1; i >= 0; i--) if (isVowel(base[i])) { v = i; break; }
+  if (v == null || isLong(base[v]) || (v > 0 && isVowel(base[v - 1]))) return null;
+  const out = base.slice(); out[v] = lengthen(out[v]); return out;
+}
+const lengthKey = base => syllableCount(base) === 1 ? 'mono' : 'poly';
+function affixTable(model, aid, kind, jkey, ekey, skey) {
+  const own = (model.affix[aid] || {}).table;
+  const pooled = model.kind[kind];
+  const pick = (part, key) => (own && own[part][key] && own[part][key].length ? own[part][key] : null) || pooled[part][key] || [];
+  const t = { junction: { [jkey]: pick('junction', jkey) }, ending: { [ekey]: pick('ending', ekey) }, short: {}, smoothing: model.smoothing };
+  if (skey) t.short[skey] = pick('short', skey);
+  return t;
+}
+const AFFIX_LENITION = 0.5, AFFIX_MORPH = 0.3;
+function predictAffix(engine, affix, baseForms, limit = 10) {
+  const kind = affixKind(affix), model = engine.affixes;
+  const allos = allomorphs(affix, engine.branch);
+  const info = model.affix[affix.id] || {};
+  const scored = new Map();
+  const add = (form, score, rec) => { const k = comparable(form); if (!scored.has(k) || scored.get(k)[0] < score) scored.set(k, [score, form, rec]); };
+  const bases = baseForms.map(([bf, how]) => [bf, how, false, 1]);
+  if (kind === 'suffix') {
+    for (const [bf, how] of baseForms) {
+      const pb = phonemes(comparable(bf));
+      const longer = lengthenedBase(pb);
+      if (!longer) continue;
+      const lk = lengthKey(pb);
+      const own = (info.lengths || {})[lk], pooled = (model.lengths || {})[lk];
+      const c = (own && own.length ? own : null) || pooled || [];
+      const get = v => (c.find(([x]) => x === v) || [v, 0])[1];
+      const total = c.reduce((x, [, n]) => x + n, 0);
+      const share = (get(true) + 0.5) / (total + 1);
+      bases.push([join(longer), how, true, share]);
+      const i = bases.findIndex(x => x[0] === bf && !x[2]);
+      bases[i] = [bf, how, false, 1 - share];
+    }
+  }
+  if (engine.branch === 'sindarin' && kind === 'prefix') {
+    for (const [bf, , , sh] of bases.slice()) { const m = lenite(phonemes(comparable(bf))); if (m) bases.push([join(m), 'soft-mutation', false, sh]); }
+  }
+  for (const [bf, how, length, share] of bases) for (const allo of allos) {
+    const pb = phonemes(comparable(bf)), pa = phonemes(comparable(allo));
+    const [a, b] = kind === 'suffix' ? [pb, pa] : [pa, pb];
+    if (!a.length || !b.length) continue;
+    const ctx = ctxOf(kind === 'prefix' ? b[0] : a[a.length - 1]);
+    const counts = new Map(((info.allomorphs || {})[ctx] || []));
+    const total = [...counts.values()].reduce((x, y) => x + y, 0);
+    let w = ((counts.get(allo) || 0) + 1) / (total + allos.length);
+    if (how === 'dictionary' && baseForms.some(([, h]) => h === 'stem')) w *= 0.5;
+    if (how === 'soft-mutation') w *= AFFIX_LENITION;
+    w *= share;
+    const jk = keyOf([a[a.length - 1], b[0]]), ek = keyOf(b.slice(-2));
+    const table = affixTable(model, affix.id, kind, jk, ek, shortKey(b));
+    for (const [form, p, jop, eop, short] of junctionPredict(table, a, b, limit)) {
+      add(form, p * w, { joined: join(a) + '+' + join(b), allomorph: allo, base: bf, baseSource: how, junction: jop, ending: eop, shortened: short, lengthened: length, adjustments: [] });
+    }
+    if (engine.branch === 'quenya' && kind === 'suffix') {
+      for (const [v, rules] of suffixVariants(a, b).slice(1)) {
+        add(join(v), w * AFFIX_MORPH, { joined: join(a) + '+' + join(b), allomorph: allo, base: bf, baseSource: how,
+          junction: [0, 0, ''], ending: [0, ''], shortened: false, lengthened: length, adjustments: rules });
+      }
+    }
+  }
+  return [...scored.values()].sort((x, y) => y[0] - x[0]).slice(0, limit)
+    .map(([sc, f, rec]) => Object.assign({ form: f, score: r3(sc) }, rec));
+}
+function formsAtLatest(entry, fam, final = false) {
+  const out = final ? [] : (entry.stems || []).map(x => [toPhonetic(x, fam).replace(/-+$/, ''), 'stem']);
+  out.push([toPhonetic(entry.form, fam).replace(/-+$/, ''), 'dictionary']);
+  const seen = new Set();
+  return out.filter(([f]) => f && !seen.has(comparable(f)) && seen.add(comparable(f)));
+}
+function predictAffixed(engine, ids) {
+  if (ids.length !== 2 || !ids.every(i => engine.lexicon.has(i))) return null;
+  let [e1, e2] = ids.map(i => engine.lexicon.get(i));
+  let k1 = affixKind(e1), k2 = affixKind(e2);
+  if ((k1 === 'suffix' && k2 == null) || (k1 == null && k2 === 'prefix')) { [e1, e2, k1, k2] = [e2, e1, k2, k1]; }
+  let base, affix, kind;
+  if (k1 == null && k2 === 'suffix') { base = e1; affix = e2; kind = 'suffix'; }
+  else if (k1 === 'prefix' && k2 == null) { affix = e1; base = e2; kind = 'prefix'; }
+  else return null;
+  return predictAffix(engine, affix, formsAtLatest(base, engine.branch, kind === 'prefix')).map(v => Object.assign({}, v, {
+    elements: kind === 'suffix' ? [v.base, v.allomorph] : [v.allomorph, v.base],
+    sources: kind === 'suffix' ? [v.baseSource, 'suffix'] : ['prefix', v.baseSource],
+    affix: affix.id, kind, trace: [],
+  }));
+}
+
 // ---------------------------------------------------------------- compounds
 const MAX_ORIGINS = 4, MAX_JOINS = 12, LENITION_WEIGHT = 0.2, MORPH_WEIGHT = 0.3, POLY_WEIGHT = 1.01;
 function cleanOrigin(form) {
@@ -784,7 +920,7 @@ function cleanOrigin(form) {
 function origins(entry, era) {
   const proto = era === 'middle' ? 'mp' : 'p';
   let out = (entry.starts || []).concat((entry.stages || {})[proto] || []);
-  if (!out.length) out = (entry.written_origins || []).filter(w => w.toUpperCase() !== w);
+  if (!out.length) out = (entry.written_origins || []).filter(w => w.toUpperCase() !== w).concat(entry.proto_forms || []);
   const seen = new Set(), clean = [];
   for (const f of out) { const c = cleanOrigin(f); if (c && !seen.has(comparable(c))) { seen.add(comparable(c)); clean.push(c); } }
   return clean.slice(0, MAX_ORIGINS);
@@ -796,12 +932,7 @@ function formsAt(engine, entry, era, stage, final = false) {
   const attested = code && stage > 0 ? ((entry.stages || {})[code] || []) : [];
   let out = attested.map(f => [f, 'attested']);
   if (out.length) return out;
-  if (code && entry.lang === code) {
-    out = final ? [] : (entry.stems || []).map(x => [toPhonetic(x, engine.branch).replace(/-+$/, ''), 'stem']);
-    out.push([toPhonetic(entry.form, engine.branch).replace(/-+$/, ''), 'dictionary']);
-    const seen = new Set();
-    return out.filter(([f]) => f && !seen.has(comparable(f)) && seen.add(comparable(f)));
-  }
+  if (code && entry.lang === code) return formsAtLatest(entry, engine.branch, final);
   let baseForms = origins(entry, era).map(f => [f, 'primitive']);
   const finalLang = langs.reduce((a, b) => (b.stage > a.stage ? b : a));
   if (!baseForms.length && entry.lang === finalLang.code) {
@@ -821,6 +952,8 @@ function junctionsOf(a, b) {
 }
 function predictLatest(engine, ids, era) {
   const last = Math.max(...engine.languages.filter(l => l.era === era).map(l => l.stage));
+  const affixed = predictAffixed(engine, ids);
+  if (affixed) return affixed;
   if (ids.length !== 2) return [];
   const e1 = engine.lexicon.get(ids[0]), e2 = engine.lexicon.get(ids[1]);
   const firsts = e1 ? formsAt(engine, e1, era, last) : [];
@@ -897,6 +1030,7 @@ function makeEngine(branch, wf) {
     junctions: wf.junctions,
     backform: wf.backform,
     analogues: wf.analogues,
+    affixes: Object.assign({ smoothing: wf.junctions.smoothing }, wf.affixes),
   };
 }
 
@@ -921,6 +1055,8 @@ function parity(engine, V) {
   for (const [ids, want] of V.latest) check('latest', ids, want, predict(engine, ids, 'late', 9).slice(0, 10).map(v => [v.form, v.score]));
   for (const [ids, era, stage, last, want] of V.early) check('early', ids, want, predict(engine, ids, era, stage, last).slice(0, 10).map(v => v.form));
   for (const [form, last, want] of V.backform) check('backform', form, want, backform(engine, form, 'late', last).map(r => r.primitive));
+  for (const [id, want] of V.allomorphs || []) check('allomorphs', id, want, allomorphs(engine.lexicon.get(id), engine.branch));
+  for (const [ids, want] of V.affixed || []) check('affixed', ids, want, predict(engine, ids, 'late', 9).slice(0, 10).map(v => [v.form, v.score]));
   return bad;
 }
 
@@ -928,6 +1064,6 @@ window.WF = {
   parity,
   Unsupported, phonemes, canonical, comparable, compileRule, applyRule, stressed, nuclei, run, sequence,
   toPhonetic, junctionPredict, reduceCompound, prosodicLengthening, compoundVariants, lenite, backform,
-  formsAt, predict, makeEngine,
+  formsAt, predict, makeEngine, allomorphs, affixKind, predictAffix,
 };
 })();

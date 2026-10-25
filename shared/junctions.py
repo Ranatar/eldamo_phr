@@ -30,6 +30,12 @@ MAX_SHARE_CHANGED = 0.5
 SMOOTHING = 0.5
 
 
+def _key(parts) -> str:
+    """Python tuple key -> the JSON string app/wordform.js builds (keyOf)."""
+    import json
+    return json.dumps(list(parts), ensure_ascii=False, separators=(',', ':'))
+
+
 def _ph(form: str, family: str) -> list:
     return phonemes(comparable(to_phonetic(form, family).strip('-')))
 
@@ -130,6 +136,8 @@ def cases(branch: str, lexicon: list) -> list:
         els = [by_id.get(x.get('id')) for x in e['elements']]
         if not all(els) or any(x['lang'] != code for x in els):
             continue
+        if any(x.get('speech') in ('suf', 'pref') for x in els):
+            continue    # derivation with an affix: shared/affixes.py
         c = _ph(e['form'], branch)
         b = _ph(els[1]['form'], branch)
         best = None

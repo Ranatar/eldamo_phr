@@ -168,6 +168,7 @@ def build_lexicon(branch: str, derivations: list) -> list:
                 entry['stages'] = dict(stages)
         entries.append(entry)
     _resolve_roots(entries, W)
+    _proto_forms(entries, W)
     entries.sort(key=lambda e: (e['lang'], bare(e['form']).lower(), e['id']))
     return entries
 
@@ -196,6 +197,25 @@ def _resolve_roots(entries: list, W: Words) -> None:
                 roots.append(r)
         if roots:
             e['roots'] = roots
+
+
+PROTO = ('p', 'mp')
+
+
+def _proto_forms(entries: list, W: Words) -> None:
+    """proto_forms: primitive word forms (not roots) the word is linked to -- its
+    own form for a Primitive Elvish word, or a parent page in Primitive Elvish
+    (Q. -mo < ✶-mō). Used when the word has no derivation."""
+    for e in entries:
+        out = []
+        if e['lang'] in PROTO and e['speech'] != 'root':
+            out.append(e['form'])
+        for p in e.get('parents', ()):
+            w = W.by_id.get(p.get('id')) if p.get('id') else None
+            if w is not None and w.get('l') in PROTO and w.get('speech') != 'root' and w.get('v'):
+                out.append(w.get('v'))
+        if out:
+            e['proto_forms'] = list(dict.fromkeys(out))
 
 
 def summary(entries: list) -> dict:

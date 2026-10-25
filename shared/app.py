@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 from collections import defaultdict
 
+from . import affixes
 from . import junctions as junction_table
 from .formula import NULL
 from .graph import GRADES
@@ -73,7 +74,8 @@ def payload(branches: dict) -> dict:
     return out
 
 
-LEXICON_FIELDS = ('id', 'lang', 'form', 'gloss', 'speech', 'mark', 'neo', 'stems', 'starts', 'stages', 'written_origins')
+LEXICON_FIELDS = ('id', 'lang', 'form', 'gloss', 'speech', 'mark', 'neo', 'stems', 'starts', 'stages', 'written_origins',
+                  'proto_forms')
 
 
 def _key(parts) -> str:
@@ -117,6 +119,7 @@ def wordform_payload(name: str, data: dict) -> dict:
         },
         'analogues': dict(analogues),
         'backform': {_key(k): c.most_common() for k, c in bf.items()},
+        'affixes': affixes.model_json(data['affixes']['cases']),
         'final': final,
     }
 

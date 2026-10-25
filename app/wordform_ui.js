@@ -15,6 +15,7 @@ const SOURCE = {
   attested: 'форма засвидетельствована в деривации Eldamo', stem: 'основа', dictionary: 'словарная форма',
   primitive: 'праформа Eldamo', computed: 'праформа Eldamo, прогнанная до выбранной стадии',
   reconstructed: 'восстановленная праформа, гипотеза', 'soft-mutation': 'с мягкой мутацией',
+  suffix: 'суффикс', prefix: 'приставка',
 };
 const ADJUST = {
   reduction: 'сокращение конца длинного сложения (учебник §6.1.2.1; Толкин, PE17/106, PE21/32)',
@@ -71,7 +72,7 @@ function search(slot) {
   }
   hits.sort((a, b) => a[0] - b[0] || a[1].form.length - b[1].form.length);
   box.innerHTML = hits.slice(0, 12).map(([, e]) => `<button type="button" data-id="${esc(e.id)}" data-slot="${slot}">
-    <span class="marker">${esc(marker(E, e.lang))}</span> <span class="form">${esc(e.form)}</span>${e.neo ? ' <span class="tag">неологизм</span>' : ''}
+    <span class="marker">${esc(marker(E, e.lang))}</span> <span class="form">${esc(e.form)}</span>${e.neo ? ' <span class="tag">неологизм</span>' : ''}${WF.affixKind(e) ? ` <span class="tag">${WF.affixKind(e) === 'suffix' ? 'суффикс' : 'приставка'}</span>` : ''}
     <span class="muted">${esc(e.gloss)}</span></button>`).join('') || '<p class="muted">Ничего не найдено.</p>';
 }
 
@@ -82,6 +83,12 @@ function describe(E, e) {
   if (pr) bits.push('праформа ' + pr.map(s => `<span class="form">${esc(s)}</span>`).join(', '));
   else bits.push('праформы в Eldamo нет — для ранних стадий она восстанавливается');
   if (e.mark && e.mark !== '#') bits.push(`пометка Eldamo «${esc(e.mark)}»`);
+  const kind = WF.affixKind(e);
+  if (kind) {
+    bits.unshift(`${kind === 'suffix' ? 'суффикс' : 'приставка'}, формы: ${WF.allomorphs(e, E.branch).map(f => `<span class="form">${esc(f)}</span>`).join(', ')}`);
+    const ex = (E.affixes.affix[e.id] || {}).examples || [];
+    if (ex.length) bits.push('засвидетельствован в ' + ex.map(f => `<span class="form">${esc(f)}</span>`).join(', '));
+  }
   return `<a href="${SITE}words/word-${esc(e.id)}.html" target="_blank" rel="noopener"><span class="marker">${esc(marker(E, e.lang))}</span> <span class="form">${esc(e.form)}</span></a>
     <span class="muted">${esc(e.gloss)}</span><br><span class="small">${bits.join('; ')}</span>`;
 }
@@ -129,7 +136,8 @@ function opText(v) {
   const [ke, repe] = v.ending || [0, ''];
   if (ke || repe) out.push(`в конце -${esc(show(b.slice(b.length - ke)))} → -${esc(show(WF.phonemes(repe)))}`);
   if (v.shortened) out.push('долгий гласный второго элемента сокращён');
-  return out.length ? out.join('; ') + ' — как в засвидетельствованных сложениях' : 'без изменений на стыке';
+  if (v.lengthened) out.push('гласный основы удлинён перед суффиксом');
+  return out.length ? out.join('; ') + ' — как в засвидетельствованных словах' : 'без изменений на стыке';
 }
 
 function compose() {
@@ -165,7 +173,11 @@ function compose() {
       ${traceHtml(E, v.trace || [])}</li>`;
   }).join('');
   let analog = '';
-  if (stage >= last && vs[0].elements) {
+  if (stage >= last && vs[0].affix) {
+    const ex = (E.affixes.affix[vs[0].affix] || {}).examples || [];
+    analog = ex.length ? `<p class="small">Засвидетельствованные слова с этим аффиксом: ${ex.map(f => `<span class="form">${esc(f)}</span>`).join(', ')}.</p>`
+      : '<p class="small">Засвидетельствованных слов с этим аффиксом в разборе Eldamo нет — стык подобран по всем словам с аффиксами того же вида.</p>';
+  } else if (stage >= last && vs[0].elements) {
     const pa = WF.phonemes(WF.comparable(vs[0].elements[0])), pb = WF.phonemes(WF.comparable(vs[0].elements[1]));
     const list = E.analogues[JSON.stringify([pa[pa.length - 1], pb[0]])] || [];
     const groups = new Map();
@@ -178,7 +190,9 @@ function compose() {
       + [...groups.entries()].map(([k, fs]) => `${fs.map(f => `<span class="form">${esc(f)}</span>`).join(', ')} (${esc(k)})`).join('; ') + '.</p>';
   }
   out.innerHTML = `<ol class="wf-variants">${rows}</ol>${analog}
-    <p class="small muted">${stage >= last
+    <p class="small muted">${stage >= last && vs[0].affix
+      ? 'Форма аффикса и изменения на стыке подобраны по засвидетельствованным словам с этим аффиксом (иначе — со всеми аффиксами того же вида)' + (state.branch === 'quenya' ? '; плюс просодическое удлинение и сокращение перед суффиксами (§6.1).' : '; приставка может вызывать мягкую мутацию основы.')
+      : stage >= last
       ? 'На последней стадии исторические законы уже отработали: стык и конец сложения подбираются по засвидетельствованным сложениям (частота — «вес»)' + (state.branch === 'quenya' ? ', плюс правила §6.1 учебника Страка.' : ', плюс мягкая мутация второго элемента и правила для многосложных слов.')
       : 'Элементы взяты в формах выбранной стадии и соединены через границу морфем; дальше действуют все последующие правила ветви в порядке Eldamo. Первый вариант — основное чтение (необязательные правила применены).'}
     ${reconstructed ? ' Хотя бы одна праформа восстановлена по соответствиям в деривациях — это гипотеза, а не форма Толкина.' : ''}

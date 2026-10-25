@@ -20,6 +20,7 @@ from __future__ import annotations
 import itertools
 import re
 
+from . import affixes
 from . import junctions as junction_table
 from . import morphophonology
 
@@ -44,7 +45,7 @@ def origins(entry: dict, era: str) -> list:
     proto = 'mp' if era == 'middle' else 'p'
     out = list(entry.get('starts', ())) + list(entry.get('stages', {}).get(proto, ()))
     if not out:
-        out = [w for w in entry.get('written_origins', ()) if w.upper() != w]
+        out = [w for w in entry.get('written_origins', ()) if w.upper() != w] + list(entry.get('proto_forms', ()))
     seen, clean = set(), []
     for f in out:
         c = _clean(f)
@@ -52,6 +53,16 @@ def origins(entry: dict, era: str) -> list:
             seen.add(comparable(c))
             clean.append(c)
     return clean[:MAX_ORIGINS]
+
+
+def forms_at_latest(entry: dict, family: str, final: bool = False) -> list:
+    """(form, how) of a word in its own (latest) language: its stems, the
+    combining forms, then its dictionary form; the last element of a word
+    keeps its own ending, so it takes the dictionary form only."""
+    out = [] if final else [(to_phonetic(x, family).rstrip('-'), 'stem') for x in entry.get('stems', ())]
+    out.append((to_phonetic(entry['form'], family).rstrip('-'), 'dictionary'))
+    seen = set()
+    return [(f, h) for f, h in out if f and not (comparable(f) in seen or seen.add(comparable(f)))]
 
 
 def forms_at(entry: dict, seq, era: str, stage: int, final: bool = False) -> list:
@@ -63,13 +74,7 @@ def forms_at(entry: dict, seq, era: str, stage: int, final: bool = False) -> lis
     if out:
         return out
     if code and entry.get('lang') == code:
-        # the word's own language: its stem (the combining form) or its dictionary form
-        family = seq.branch
-        # (the last element of a compound keeps its own ending)
-        out = [] if final else [(to_phonetic(x, family).rstrip('-'), 'stem') for x in entry.get('stems', ())]
-        out.append((to_phonetic(entry['form'], family).rstrip('-'), 'dictionary'))
-        seen = set()
-        return [(f, h) for f, h in out if f and not (comparable(f) in seen or seen.add(comparable(f)))]
+        return forms_at_latest(entry, seq.branch, final)
     base = [(f, 'primitive') for f in origins(entry, era)]
     final = max(langs, key=lambda l: l['stage'])['code']
     if not base and entry.get('lang') == final:
@@ -102,7 +107,32 @@ MORPH_WEIGHT = 0.3      # prior of an optional synchronic adjustment (§6.1)
 POLY_WEIGHT = 1.01      # a law of the last stage for polysyllables: the new compound undergoes it (aeg + naur > Aegnor)
 
 
-def predict_latest(lexicon: dict, seq, table: dict, element_ids: list, era: str = 'late') -> list:
+def predict_affixed(lexicon: dict, seq, affix_model: dict, element_ids: list) -> list | None:
+    """A base and a suffix or a prefix (shared/affixes.py), in either order;
+    None when the elements are not one base and one affix."""
+    if len(element_ids) != 2 or not all(i in lexicon for i in element_ids):
+        return None
+    e1, e2 = (lexicon[i] for i in element_ids)
+    k1, k2 = affixes.kind(e1), affixes.kind(e2)
+    if (k1, k2) in (('suffix', None), (None, 'prefix')):
+        e1, e2, k1, k2 = e2, e1, k2, k1
+    if (k1, k2) == (None, 'suffix'):
+        base, affix, k = e1, e2, 'suffix'
+    elif (k1, k2) == ('prefix', None):
+        affix, base, k = e1, e2, 'prefix'
+    else:
+        return None
+    vs = affixes.predict(affix_model, seq.branch, affix, forms_at_latest(base, seq.branch, final=k == 'prefix'))
+    out = []
+    for v in vs:
+        pair = [v['base'], v['allomorph']] if k == 'suffix' else [v['allomorph'], v['base']]
+        how = [v['base_source'], k] if k == 'suffix' else [k, v['base_source']]
+        out.append({**v, 'elements': pair, 'element_sources': how, 'affix': affix['id'], 'kind': k, 'trace': []})
+    return out
+
+
+def predict_latest(lexicon: dict, seq, table: dict, element_ids: list, era: str = 'late',
+                   affix_model: dict | None = None) -> list:
     """Two elements joined at the latest stage of the branch.
 
     The junction table (shared/junctions.py) gives the junction and ending
@@ -111,6 +141,10 @@ def predict_latest(lexicon: dict, seq, table: dict, element_ids: list, era: str 
     the rules of its last stage that apply to polysyllables, since a compound
     is a new polysyllable (S. [au] > [o]: aeg + naur > Aegnor)."""
     last = max(l['stage'] for l in seq.langs.values() if l['era'] == era)
+    if affix_model is not None:
+        affixed = predict_affixed(lexicon, seq, affix_model, element_ids)
+        if affixed is not None:
+            return affixed
     if len(element_ids) != 2 or table is None:
         return []
     firsts = forms_at(lexicon[element_ids[0]], seq, era, last) if element_ids[0] in lexicon else []
@@ -157,12 +191,12 @@ def predict_latest(lexicon: dict, seq, table: dict, element_ids: list, era: str 
 
 
 def predict(lexicon: dict, seq, element_ids: list, era: str = 'late', stage: int = 0,
-            last_stage: int | None = None, table: dict | None = None) -> list:
+            last_stage: int | None = None, table: dict | None = None, affix_model: dict | None = None) -> list:
     """Ranked variants [{'form', 'joined', 'junction', 'elements', 'trace'}]."""
     if last_stage is None:
         last_stage = max(l['stage'] for l in seq.langs.values() if l['era'] == era)
-    if stage >= last_stage and table is not None:
-        return predict_latest(lexicon, seq, table, element_ids, era)
+    if stage >= last_stage and (table is not None or affix_model is not None):
+        return predict_latest(lexicon, seq, table, element_ids, era, affix_model)
     parts = []
     for k, i in enumerate(element_ids):
         e = lexicon.get(i)

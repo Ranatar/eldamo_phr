@@ -132,6 +132,17 @@ class Browser(unittest.TestCase):
         self.assertIn('восстановлена', page.inner_text('#wf-output'))
         self.assertGreater(page.locator('#wf-output .wf-variant').count(), 1)
 
+    def test_wordform_suffix(self):
+        page = self.page(self.atlas + '#quenya')
+        page.fill('#wf-q1', '-ima')
+        page.click('#wf-r1 button:has-text("-ima")')
+        self.assertIn('суффикс', page.inner_text('#wf-chosen1'))
+        page.fill('#wf-q2', 'cen-')
+        page.click('#wf-r2 button:has(.form:text-is("cen-"))')
+        page.click('#wf-go')
+        self.assertIn('cénima', page.inner_text('#wf-output .wf-variant.main'))
+        self.assertIn('Засвидетельствованные слова с этим аффиксом', page.inner_text('#wf-output'))
+
     def test_corpus_browser(self):
         page = self.page(self.corpus)
         self.assertIn('записей', page.inner_text('#count'))

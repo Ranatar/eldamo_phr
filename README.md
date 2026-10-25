@@ -6,7 +6,8 @@
 хронологии. Результат — автономный атлас в одном HTML-файле, обозреватель полного корпуса и данные в JSON.
 
 Атлас умеет и **словотворчество**: соединить два слова на выбранной стадии истории языка и получить
-вероятные формы сложения с правилами, которые к ним привели (Ambar + lindë → amballindë). Как это
+вероятные формы сложения с правилами, которые к ним привели (Ambar + lindë → amballindë), а также
+присоединить суффикс или приставку (cen- + -ima → cénima). Как это
 устроено и насколько можно доверять ответам — `docs/word-formation.md`.
 
 - Атлас: `app/index.html` (после сборки), опубликованная версия — GitHub Pages репозитория.
@@ -100,9 +101,11 @@ python scripts/build.py --no-tests   # только сборка
    (`shared/stress.py`): начальное в праэльфийском и древних стадиях, «латинское» в квенья и синдарине.
 7. **Лексикон** (`shared/lexicon.py`) — статьи ветви: омонимы по отдельности, основы, элементы сложений,
    корни, праформы и формы на стадиях из дериваций (`data/lexicon.json`).
-8. **Сложения** (`shared/compound.py`, `junctions.py`, `morphophonology.py`, `backform.py`) — соединение
+8. **Сложения и аффиксы** (`shared/compound.py`, `junctions.py`, `affixes.py`, `morphophonology.py`,
+   `backform.py`) — соединение
    элементов на стадии и прогон, таблица стыков по засвидетельствованным сложениям
-   (`data/junctions.json`), правила §6.1 учебника Страка, мягкая мутация синдарина, восстановление
+   (`data/junctions.json`), формы и стыки суффиксов и приставок по производным словам
+   (`data/affixes.json`), правила §6.1 учебника Страка, мягкая мутация синдарина, восстановление
    праформы для слов без деривации.
 
 ## Что умеет атлас
@@ -130,13 +133,13 @@ source/            eldamo-data-*.xml.xz и SOURCE.json — единственн�
 shared/            source, languages, model, interpreter, formula, graph, pipeline,
                    ipa, catalog, exports, app, report, io;
                    словотворчество: stress, sequencer, lexicon, orthography, junctions,
-                   morphophonology, backform, compound, parity
+                   affixes, morphophonology, backform, compound, parity
 scripts/build.py   полная сборка и тесты
 scripts/import_eldamo_release.py   импорт новой версии Eldamo
 app/               template.html, runtime.js, wordform.js, wordform_ui.js, styles.css,
                    corpus_template.html → index.html, corpus.html
 branches/<ветвь>/  data/{phonemes,rules,pairs,derivations,edges,chains,lexicon,junctions,
-                   calibration,summary}.json, catalog.md
+                   affixes,calibration,summary}.json, catalog.md
 exports/           canonical.json (всё одним файлом), atlas.graphml (граф для Gephi/yEd)
 reports/           audit.md, audit.json — охват, проверка шагов, невоспроизведённые шаги;
                    sequencer.md, sequencer.json — прогон дериваций, сложения, восстановление праформ

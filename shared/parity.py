@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import random
 
-from . import backform, compound, junctions
+from . import affixes, backform, compound, junctions
 from .interpreter import Unsupported, apply_rule, comparable, compile_rule, phonemes
 from .orthography import to_phonetic
 from .sequencer import Sequencer
@@ -22,7 +22,7 @@ def vectors(branches: dict, size: int = 1) -> dict:
         seq = Sequencer(data)
         lexicon = {e['id']: e for e in data['lexicon']}
         V = {'apply': [], 'comparable': [], 'stress': [], 'run': [], 'phonetic': [], 'junction': [],
-             'latest': [], 'early': [], 'backform': []}
+             'latest': [], 'early': [], 'backform': [], 'allomorphs': [], 'affixed': []}
         steps = [(s['from'] or '', s['to'], s['before'] or '') for d in data['derivations'] for s in d['steps']
                  if s['to'] and s['to'] != '?' and s['before']]
         for f, t, before in rnd.sample(steps, min(len(steps), 400 * size)):
@@ -65,5 +65,16 @@ def vectors(branches: dict, size: int = 1) -> dict:
         for d in rnd.sample([d for d in ders if d['steps'][-1]['lang'] == final['code']], min(5 * size, 40)):
             res = backform.backform(seq, seq.backform_table(final['code']), d['steps'][-1]['after'], 'late', final['stage'])
             V['backform'].append([d['steps'][-1]['after'], final['stage'], [r['primitive'] for r in res]])
+        affix_model = affixes.learn(data['affixes']['cases'])
+        affix_entries = [e for e in data['lexicon'] if affixes.kind(e)]
+        for e in rnd.sample(affix_entries, min(len(affix_entries), 40 * size)):
+            V['allomorphs'].append([e['id'], affixes.allomorphs(e, b)])
+        arows = data['affixes']['cases']
+        for r in rnd.sample(arows, min(len(arows), 25 * size)):
+            ids = [r['base'], r['affix']] if r['kind'] == 'suffix' else [r['affix'], r['base']]
+            if rnd.random() < 0.3:
+                ids = ids[::-1]                 # either order of picking
+            vs = compound.predict(lexicon, seq, ids, 'late', 9, table=table, affix_model=affix_model)
+            V['affixed'].append([ids, [[v['form'], v['score']] for v in vs[:10]]])
         out[b] = V
     return out

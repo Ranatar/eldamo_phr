@@ -2,7 +2,7 @@
 import unittest
 
 from tests.support import branches
-from shared import backform, compound, junctions, morphophonology as M
+from shared import affixes, backform, compound, junctions, morphophonology as M
 from shared.interpreter import comparable, join, phonemes as P
 from shared.sequencer import Sequencer
 
@@ -79,9 +79,50 @@ class Junctions(unittest.TestCase):
         self.assertIn('ambarlinde', [v['form'] for v in vs])
 
     def test_leave_one_out_floor(self):
-        floors = {'quenya': (0.45, 0.62), 'sindarin': (0.33, 0.52)}
+        floors = {'quenya': (0.37, 0.60), 'sindarin': (0.32, 0.55)}
         for b, (main, anyv) in floors.items():
             r = compound.latest_backtest(self.data[b], self.data[b]['lexicon'], self.seq[b])
+            self.assertGreaterEqual(r['main'] / r['cases'], main, b)
+            self.assertGreaterEqual(r['any'] / r['cases'], anyv, b)
+
+
+class Affixes(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.data = branches()
+        cls.seq = {b: Sequencer(d) for b, d in cls.data.items()}
+
+    def entry(self, b, lang, form):
+        return next(e for e in self.data[b]['lexicon'] if e['lang'] == lang and e['form'] == form)
+
+    def test_allomorphs(self):
+        for b, lang, form, expected in [('quenya', 'q', '-(n)dil', ['ndil', 'dil']), ('quenya', 'q', 'al(a)-¹', ['ala', 'al']),
+                                        ('sindarin', 's', '-(r)on', ['ron', 'on']), ('quenya', 'q', '-itë', ['ite'])]:
+            self.assertEqual(affixes.allomorphs(self.entry(b, lang, form), b), expected, form)
+
+    def test_derivation(self):
+        b = 'quenya'
+        lex = {e['id']: e for e in self.data[b]['lexicon']}
+        model = affixes.learn(self.data[b]['affixes']['cases'])
+        cen, ima = self.entry(b, 'q', 'cen-'), self.entry(b, 'q', '-ima')
+        # either order of picking: the suffix goes last
+        for ids in ([cen['id'], ima['id']], [ima['id'], cen['id']]):
+            vs = compound.predict(lex, self.seq[b], ids, 'late', 2, affix_model=model)
+            self.assertEqual(vs[0]['form'], 'kēnima')      # cénima «visible», PE22/156
+            self.assertEqual(vs[0]['kind'], 'suffix')
+        u, linde = self.entry(b, 'q', 'ú-'), self.entry(b, 'q', 'lindë')
+        vs = compound.predict(lex, self.seq[b], [u['id'], linde['id']], 'late', 2, affix_model=model)
+        self.assertEqual(vs[0]['form'], 'ūlinde')
+
+    def test_no_deep_junction_changes(self):
+        for b, data in self.data.items():
+            for r in data['affixes']['cases']:
+                self.assertLessEqual(max(r['junction'][0], r['junction'][1]), affixes.MAX_OP, r['form'])
+
+    def test_leave_one_out_floor(self):
+        floors = {'quenya': (0.55, 0.65), 'sindarin': (0.42, 0.52)}
+        for b, (main, anyv) in floors.items():
+            r = affixes.leave_one_out(b, self.data[b]['lexicon'])
             self.assertGreaterEqual(r['main'] / r['cases'], main, b)
             self.assertGreaterEqual(r['any'] / r['cases'], anyv, b)
 

@@ -8,11 +8,12 @@ from .io import write_json
 from .languages import BRANCHES
 from .lexicon import build_lexicon, summary as lexicon_summary
 from .sequencer import calibrate
+from . import affixes
 from . import junctions as junction_table
 from .model import build
 from .source import ROOT, meta
 
-DATA_FILES = ('phonemes', 'rules', 'pairs', 'derivations', 'edges', 'chains', 'lexicon', 'junctions', 'calibration',
+DATA_FILES = ('phonemes', 'rules', 'pairs', 'derivations', 'edges', 'chains', 'lexicon', 'junctions', 'affixes', 'calibration',
               'summary')
 
 
@@ -26,6 +27,7 @@ def build_branch(branch: str) -> dict:
     chains, chain_summary = build_chains(model, edges)
     lexicon = build_lexicon(branch, model['derivations'])
     junction_rows = junction_table.cases(branch, lexicon)
+    affix_rows = affixes.cases(branch, lexicon)
     codes = {l['code'] for l in model['languages']}
     steps = [s for d in model['derivations'] if not d['deleted'] for s in d['steps'] if s['lang'] in codes]
     status = Counter(s['status'].split(':')[0] for s in steps)
@@ -54,6 +56,7 @@ def build_branch(branch: str) -> dict:
         'chains': chain_summary,
         'lexicon': lexicon_summary(lexicon),
         'junction_cases': len(junction_rows),
+        'affix_cases': len(affix_rows),
         'grade_legend': GRADES,
         'unmatched_formulas': sorted({f"{s['lang']}: {s['from']} > {s['to']}" for d in model['derivations']
                                       for s in d['steps'] if s['status'] == 'unmatched_formula'}),
@@ -67,6 +70,7 @@ def build_branch(branch: str) -> dict:
         'chains': chains,
         'lexicon': lexicon,
         'junctions': {'cases': junction_rows, **junction_table.table_json(junction_rows)},
+        'affixes': {'cases': affix_rows},
         'summary': summary,
         'meta': {'title': model['title'], 'path': model['path'], 'languages': model['languages'],
                  'language_names': model['language_names']},

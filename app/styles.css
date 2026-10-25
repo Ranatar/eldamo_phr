@@ -150,3 +150,19 @@ footer { max-width: 1180px; margin: 0 auto; padding: 8px 16px 40px; font-size: 1
   .topbar { padding: 6px 10px; position: static; }
   .topbar .brand { width: 100%; }
 }
+
+/* word formation */
+.wf-pick { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin: 8px 0; }
+.wf-slot label { display: flex; flex-direction: column; gap: 4px; font-weight: 600; }
+.wf-slot input { width: 100%; }
+.wf-results { display: flex; flex-direction: column; gap: 4px; margin-top: 6px; max-height: 260px; overflow-y: auto; }
+.wf-results button { text-align: left; display: block; }
+.wf-results .muted { display: block; font-size: 13px; }
+.wf-chosen { margin-top: 6px; padding: 6px 8px; background: var(--panel-2); border-radius: 6px; }
+.wf-chosen:empty { display: none; }
+.marker { color: var(--muted); font-size: 13px; }
+.tag { font-size: 12px; padding: 0 6px; border-radius: 10px; background: var(--warn-soft); color: var(--warn); }
+.wf-variants { padding-left: 22px; }
+.wf-variant { margin: 8px 0; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; }
+.wf-variant.main { border-color: var(--accent); background: var(--accent-soft); }
+.wf-variant .steps { margin: 4px 0; padding-left: 20px; font-size: 13px; }

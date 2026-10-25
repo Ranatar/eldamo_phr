@@ -99,6 +99,7 @@ def junctions(a: str, b: str) -> list:
 POLYSYLLABLE_RULES = re.compile(r'polysyllab', re.I)
 LENITION_WEIGHT = 0.2   # the junction table already holds attested lenitions
 MORPH_WEIGHT = 0.3      # prior of an optional synchronic adjustment (§6.1)
+POLY_WEIGHT = 1.01      # a law of the last stage for polysyllables: the new compound undergoes it (aeg + naur > Aegnor)
 
 
 def predict_latest(lexicon: dict, seq, table: dict, element_ids: list, era: str = 'late') -> list:
@@ -142,7 +143,7 @@ def predict_latest(lexicon: dict, seq, table: dict, element_ids: list, era: str 
             if poly:
                 for v in seq.run(form, poly)[:3]:
                     if v['trace']:
-                        add(v['form'], p * MORPH_WEIGHT, {**info, 'trace': v['trace']})
+                        add(v['form'], p * POLY_WEIGHT, {**info, 'trace': v['trace']})
         if seq.branch == 'quenya':
             for w, stem, rules in morphophonology.compound_variants(pa, pb)[1:]:
                 add(join(w), MORPH_WEIGHT * 0.5 ** (len(rules) - 1) * 0.5,

@@ -7,11 +7,13 @@ from .graph import GRADES, build_chains, build_edges
 from .io import write_json
 from .languages import BRANCHES
 from .lexicon import build_lexicon, summary as lexicon_summary
+from .sequencer import calibrate
 from . import junctions as junction_table
 from .model import build
 from .source import ROOT, meta
 
-DATA_FILES = ('phonemes', 'rules', 'pairs', 'derivations', 'edges', 'chains', 'lexicon', 'junctions', 'summary')
+DATA_FILES = ('phonemes', 'rules', 'pairs', 'derivations', 'edges', 'chains', 'lexicon', 'junctions', 'calibration',
+              'summary')
 
 
 def branch_dir(branch: str):
@@ -56,7 +58,7 @@ def build_branch(branch: str) -> dict:
         'unmatched_formulas': sorted({f"{s['lang']}: {s['from']} > {s['to']}" for d in model['derivations']
                                       for s in d['steps'] if s['status'] == 'unmatched_formula'}),
     }
-    return {
+    out = {
         'phonemes': model['phonemes'],
         'rules': model['rules'],
         'pairs': model['pairs'],
@@ -69,6 +71,9 @@ def build_branch(branch: str) -> dict:
         'meta': {'title': model['title'], 'path': model['path'], 'languages': model['languages'],
                  'language_names': model['language_names']},
     }
+    # which optional rules the sequencer's main reading applies (shared/sequencer.py)
+    out['calibration'] = calibrate(out)
+    return out
 
 
 def write_branch(branch: str, data: dict) -> None:

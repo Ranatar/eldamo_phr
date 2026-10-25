@@ -25,6 +25,7 @@ OPTIONAL = re.compile(r'\b(often|sometimes|usually|occasionally|generally|sporad
                       r'|in long compounds', re.I)
 RARE = re.compile(r'(?<!and )\b(sometimes|occasionally|sporadically|may|might)\b', re.I)   # main reading: not applied
 MAX_VARIANTS = 24
+CALIBRATION_MIN = 3     # derivations needed to override the reading of a rule's name
 
 
 @dataclass
@@ -152,6 +153,12 @@ class Sequencer:
         self.rules.sort(key=lambda c: (c.era, c.stage, c.order, c.id))
         self.by_id = {c.id: c for c in self.rules}
         self._elsewhere()
+        # optional rules: whether the main reading applies them, from how often
+        # the replayed derivations of Eldamo needed them (calibrate)
+        for rid, (applied, skipped) in (data.get('calibration') or {}).items():
+            c = self.by_id.get(rid)
+            if c is not None and c.optional and applied + skipped >= CALIBRATION_MIN:
+                c.rare = skipped > applied
 
     def _elsewhere(self):
         """Elsewhere condition: a general sub-formula (sr > ss anywhere) does not
@@ -262,12 +269,10 @@ class Sequencer:
         return variants
 
 
-def backtest(data: dict, seq: Sequencer | None = None) -> dict:
-    """Replay every attested derivation of the branch from its start form."""
-    seq = seq or Sequencer(data)
+def _replays(data: dict, seq: Sequencer):
+    """(derivation, variants) for every replayable derivation (see backtest)."""
     langs = seq.langs
     pair_rule = {p['id']: p['rule'] for p in data['pairs']}
-    results = []
     for d in data['derivations']:
         if d['deleted'] or not d['steps']:
             continue
@@ -285,7 +290,30 @@ def backtest(data: dict, seq: Sequencer | None = None) -> dict:
         if last_pair:
             bound = seq.by_id[pair_rule[last_pair]]
             rules = [c for c in rules if (c.stage, c.order) <= (bound.stage, bound.order)]
-        variants = seq.run(d['start'], rules)
+        yield d, seq.run(d['start'], rules)
+
+
+def calibrate(data: dict) -> dict:
+    """{rule id: [applied, skipped]} for optional rules: in the first variant
+    that reproduces an attested derivation, was the rule applied or not."""
+    seq = Sequencer({**data, 'calibration': None})
+    out = {}
+    for d, variants in _replays(data, seq):
+        target = comparable(d['steps'][-1]['after'])
+        hit = next((v for v in variants if comparable(v['form']) == target), None)
+        if hit is None:
+            continue
+        for rid, _, after in hit['trace']:
+            if seq.by_id[rid].optional:
+                out.setdefault(rid, [0, 0])[0 if after is not None else 1] += 1
+    return dict(sorted(out.items()))
+
+
+def backtest(data: dict, seq: Sequencer | None = None) -> dict:
+    """Replay every attested derivation of the branch from its start form."""
+    seq = seq or Sequencer(data)
+    results = []
+    for d, variants in _replays(data, seq):
         target = comparable(d['steps'][-1]['after'])
         forms = [comparable(v['form']) for v in variants]
         main = forms[0] == target

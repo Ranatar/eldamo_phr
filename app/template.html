@@ -76,6 +76,31 @@
     <div id="output"></div>
   </section>
 
+  <section class="panel" aria-labelledby="wf-title" id="wordform-panel">
+    <h2 id="wf-title">Словотворчество</h2>
+    <p class="lead">Соедините два слова и выберите стадию, на которой образуется сложение. На ранней стадии элементы
+      берутся в её формах и дальше проходят все последующие звуковые законы ветви; на последней — стык подбирается
+      по засвидетельствованным сложениям. Омонимы различаются статьёй Eldamo.</p>
+    <div class="wf-pick">
+      <div class="wf-slot">
+        <label>Первый элемент <input type="search" id="wf-q1" autocomplete="off" placeholder="форма или значение, например Ambar"></label>
+        <div class="wf-results" id="wf-r1"></div>
+        <div class="wf-chosen" id="wf-chosen1" aria-live="polite"></div>
+      </div>
+      <div class="wf-slot">
+        <label>Второй элемент <input type="search" id="wf-q2" autocomplete="off" placeholder="например lindë"></label>
+        <div class="wf-results" id="wf-r2"></div>
+        <div class="wf-chosen" id="wf-chosen2" aria-live="polite"></div>
+      </div>
+    </div>
+    <div class="options">
+      <label>Стадия образования <select id="wf-stage"></select></label>
+      <label><input type="checkbox" id="wf-neo"> искать и среди неологизмов (не Толкин)</label>
+    </div>
+    <div class="actions"><button type="button" class="primary" id="wf-go" disabled>Соединить</button></div>
+    <div id="wf-output" aria-live="polite"></div>
+  </section>
+
   <section class="panel" aria-labelledby="chains-title">
     <h2 id="chains-title">Атлас цепочек</h2>
     <p class="lead">Цепочки из двух-трёх изменений в хронологическом порядке. Оценки:
@@ -111,8 +136,15 @@
 </footer>
 
 <script type="application/json" id="atlas-data">@@DATA@@</script>
+<script type="application/json" id="wordform-data">@@WORDFORM_DATA@@</script>
+<script>
+@@WORDFORM@@
+</script>
 <script>
 @@RUNTIME@@
+</script>
+<script>
+@@WORDFORM_UI@@
 </script>
 </body>
 </html>

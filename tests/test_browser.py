@@ -8,7 +8,7 @@ specific browser executable.
 import os
 import unittest
 
-from tests.support import ROOT
+from tests.support import ROOT, branches
 
 try:
     from playwright.sync_api import sync_playwright
@@ -105,6 +105,32 @@ class Browser(unittest.TestCase):
     def test_narrow_screen(self):
         page = self.page(self.atlas + '#quenya', width=375)
         self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'), 375)
+
+    def test_wordform_engine_matches_python(self):
+        # app/wordform.js repeats shared/ (interpreter, sequencer, junctions, compounds, backform)
+        from shared.parity import vectors
+        V = vectors(branches())
+        page = self.page(self.atlas + '#quenya')
+        for b, v in V.items():
+            bad = page.evaluate('([b, v]) => WF.parity(WFUI.engine(b), v)', [b, v])
+            self.assertEqual(bad, [], b)
+
+    def test_wordform_panel(self):
+        page = self.page(self.atlas + '#quenya')
+        page.fill('#wf-q1', 'Ambar')
+        page.click('#wf-r1 button[data-id="4273482913"]')        # Ambar "world", not ambar "fate"
+        page.fill('#wf-q2', 'lindë')
+        page.click('#wf-r2 button[data-id="403686503"]')
+        self.assertIn('lindi-', page.inner_text('#wf-chosen2'))
+        page.click('#wf-go')
+        first = page.inner_text('#wf-output .wf-variant.main')
+        self.assertIn('amballindë', first)
+        self.assertIn('Casallië', page.inner_text('#wf-output'))
+        # formed in Primitive Elvish: the laws of Ancient Quenya and Quenya act on the join
+        page.select_option('#wf-stage', '0')
+        page.click('#wf-go')
+        self.assertIn('восстановлена', page.inner_text('#wf-output'))
+        self.assertGreater(page.locator('#wf-output .wf-variant').count(), 1)
 
     def test_corpus_browser(self):
         page = self.page(self.corpus)

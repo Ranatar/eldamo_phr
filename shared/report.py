@@ -19,7 +19,7 @@ STATUS_RU = {
     'deleted_rule': 'правило удалено Толкином',
 }
 FAILING = ('mismatch', 'no_match', 'unsupported')
-BACKFORM_SAMPLE = 150
+BACKFORM_SAMPLE = 100
 
 
 def failing_steps(data: dict) -> list:

@@ -1,10 +1,15 @@
 """Build the offline atlas (app/index.html) and the corpus browser (app/corpus.html)."""
 from __future__ import annotations
 
+import json
+from collections import defaultdict
+
+from . import junctions as junction_table
 from .formula import NULL
 from .graph import GRADES
 from .io import embed_json, write_text
 from .ipa import layout
+from .sequencer import Sequencer
 from .source import ROOT, meta
 
 APP = ROOT / 'app'
@@ -68,15 +73,68 @@ def payload(branches: dict) -> dict:
     return out
 
 
+LEXICON_FIELDS = ('id', 'lang', 'form', 'gloss', 'speech', 'mark', 'neo', 'stems', 'starts', 'stages', 'written_origins')
+
+
+def _key(parts) -> str:
+    """Python tuple key -> the JSON string app/wordform.js builds (keyOf)."""
+    return json.dumps(list(parts), ensure_ascii=False, separators=(',', ':'))
+
+
+def wordform_payload(name: str, data: dict) -> dict:
+    """What app/wordform.js needs: rules in sequence order, a trimmed lexicon,
+    the junction table and the backform correspondences of the branch."""
+    seq = Sequencer(data)
+    final = max((l for l in data['meta']['languages'] if l['era'] == 'late'), key=lambda l: l['stage'])['code']
+    rows = data['junctions']['cases']
+    table = junction_table.learn(rows)
+    analogues = defaultdict(list)
+    for r in rows:
+        if len(analogues[_key(r['jkey'])]) < 12:
+            analogues[_key(r['jkey'])].append([r['form'], list(r['junction'])])
+    bf = seq.backform_table(final)
+    lexicon = []
+    for e in data['lexicon']:
+        if e['speech'] == 'root':
+            continue
+        x = {k: e[k] for k in LEXICON_FIELDS if e.get(k)}
+        if x.get('starts'):
+            x.pop('written_origins', None)
+        if len(x.get('gloss', '')) > 80:
+            x['gloss'] = x['gloss'][:77] + '…'
+        if e.get('elements'):
+            x['elements'] = [el.get('id') for el in e['elements']]
+        lexicon.append(x)
+    return {
+        'languages': data['meta']['languages'],
+        'rules': seq.export(),
+        'lexicon': lexicon,
+        'junctions': {
+            'junction': {_key(k): [[list(op), n] for op, n in c.items()] for k, c in table['junction'].items()},
+            'ending': {_key(k): [[list(op), n] for op, n in c.items()] for k, c in table['ending'].items()},
+            'short': {k: [[s, n] for s, n in c.items()] for k, c in table['short'].items()},
+            'smoothing': junction_table.SMOOTHING,
+        },
+        'analogues': dict(analogues),
+        'backform': {_key(k): c.most_common() for k, c in bf.items()},
+        'final': final,
+    }
+
+
 def build_index(branches: dict) -> str:
     template = (APP / 'template.html').read_text(encoding='utf-8')
     styles = (APP / 'styles.css').read_text(encoding='utf-8')
     runtime = (APP / 'runtime.js').read_text(encoding='utf-8')
-    for marker in ('@@STYLES@@', '@@DATA@@', '@@RUNTIME@@'):
+    engine = (APP / 'wordform.js').read_text(encoding='utf-8')
+    ui = (APP / 'wordform_ui.js').read_text(encoding='utf-8')
+    for marker in ('@@STYLES@@', '@@DATA@@', '@@RUNTIME@@', '@@WORDFORM@@', '@@WORDFORM_DATA@@', '@@WORDFORM_UI@@'):
         if template.count(marker) != 1:
             raise SystemExit(f'app/template.html must contain {marker} exactly once')
     html = template.replace('@@STYLES@@', styles.rstrip('\n'))
     html = html.replace('@@RUNTIME@@', runtime.rstrip('\n'))
+    html = html.replace('@@WORDFORM_UI@@', ui.rstrip('\n'))
+    html = html.replace('@@WORDFORM@@', engine.rstrip('\n'))
+    html = html.replace('@@WORDFORM_DATA@@', embed_json({b: wordform_payload(b, d) for b, d in branches.items()}))
     html = html.replace('@@DATA@@', embed_json(payload(branches)))
     return html
 

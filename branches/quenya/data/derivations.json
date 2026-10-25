@@ -5107,7 +5107,7 @@
     "before": "alakwā",
     "after": "alkwā",
     "pair": "3116715705.1",
-    "status": "no_match"
+    "status": "reproduced"
    },
    {
     "lang": "q",
@@ -14430,7 +14430,7 @@
     "before": "enekwe",
     "after": "eŋkwe",
     "pair": "3116715705.2",
-    "status": "no_match"
+    "status": "mismatch"
    }
   ]
  },
@@ -14455,7 +14455,7 @@
     "before": "enekwe",
     "after": "eŋkwe",
     "pair": "511172017.2",
-    "status": "no_match"
+    "status": "mismatch"
    }
   ]
  },
@@ -40937,7 +40937,7 @@
     "before": "minikwē",
     "after": "minkwē",
     "pair": "3116715705.3",
-    "status": "no_match"
+    "status": "reproduced"
    },
    {
     "lang": "p",
@@ -40980,7 +40980,7 @@
     "before": "minikwē",
     "after": "minkwē",
     "pair": "3116715705.3",
-    "status": "no_match"
+    "status": "reproduced"
    },
    {
     "lang": "p",
@@ -41023,7 +41023,7 @@
     "before": "minikwē",
     "after": "minkwē",
     "pair": "511172017.3",
-    "status": "no_match"
+    "status": "reproduced"
    },
    {
     "lang": "mp",
@@ -44781,7 +44781,7 @@
     "before": "nelekwe",
     "after": "nelkwe",
     "pair": "3116715705.2",
-    "status": "no_match"
+    "status": "reproduced"
    }
   ]
  },
@@ -58307,7 +58307,7 @@
     "before": "salakwē",
     "after": "salkwē",
     "pair": "511172017.1",
-    "status": "no_match"
+    "status": "reproduced"
    },
    {
     "lang": "mq",
@@ -70529,7 +70529,7 @@
     "before": "usukwē",
     "after": "uskwē",
     "pair": "3116715705.5",
-    "status": "no_match"
+    "status": "reproduced"
    },
    {
     "lang": "q",

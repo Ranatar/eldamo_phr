@@ -26,15 +26,15 @@
  "step_status": {
   "deleted_rule": 11,
   "identity": 2,
-  "mismatch": 78,
-  "no_match": 154,
-  "reproduced": 4099,
+  "mismatch": 80,
+  "no_match": 145,
+  "reproduced": 4106,
   "reproduced_partial": 23,
   "unknown_rule": 87,
   "unmatched_formula": 5,
   "unsupported": 26
  },
- "reproduction_rate": 0.9411,
+ "reproduction_rate": 0.9427,
  "edges": 606,
  "conditional_edges": 112,
  "edges_with_examples": 340,
@@ -48,6 +48,18 @@
    "C": 2,
    "D": 196
   }
+ },
+ "lexicon": {
+  "entries": 12846,
+  "derivations": 1463,
+  "stages": 1463,
+  "parents": 1843,
+  "roots": 3369,
+  "elements": 4369,
+  "stems": 532,
+  "compounds_with_derivations": 156,
+  "neo": 3527,
+  "homonym_forms": 337
  },
  "grade_legend": {
   "A": "засвидетельствована в одной деривации",

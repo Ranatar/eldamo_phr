@@ -37,6 +37,16 @@ BRANCHES = {
 
 ERAS = ('late', 'middle')
 
+# Stress model of each stage (shared.stress). Primitive Elvish and the ancient
+# stages keep the old initial stress; the stress shift to the Latin-like
+# pattern ("before the Q. accent shift", OP1, PE19/58) separates them from
+# Quenya and Sindarin proper. Forms that mark stress with an acute keep it.
+STRESS = {
+    'p': 'initial', 'mp': 'initial',
+    'aq': 'initial', 'maq': 'initial', 'q': 'latin', 'mq': 'latin',
+    'at': 'initial', 'os': 'initial', 'on': 'initial', 's': 'latin-sindarin', 'n': 'latin-sindarin',
+}
+
 
 def languages(branch: str) -> dict:
     return {code: {'code': code, 'marker': marker, 'name': name, 'era': era, 'stage': stage}

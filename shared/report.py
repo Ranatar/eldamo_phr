@@ -109,3 +109,90 @@ def write_report(branches: dict) -> None:
     text, js = render(branches)
     write_text(REPORTS / 'audit.md', text)
     write_text(REPORTS / 'audit.json', dumps(js))
+
+
+def render_sequencer(branches: dict) -> tuple[str, dict]:
+    """reports/sequencer.md: every attested derivation replayed from its start
+    form through the whole chronology of the branch (shared/sequencer.py)."""
+    from . import compound
+    from .sequencer import Sequencer, backtest
+    lines = [
+        '# Проверка секвенсора',
+        '',
+        f"Источник: Eldamo {meta()['eldamo_version']}. Файл создаётся `scripts/build.py`; не править вручную.",
+        '',
+        'Секвенсор (`shared/sequencer.py`) прогоняет начальную форму деривации через все правила ветви в '
+        'хронологическом порядке — так, как будет порождаться форма нового слова, — и сравнивает результат с '
+        'конечной формой деривации Eldamo. В отличие от `audit.md`, где каждый шаг проверяется отдельно, здесь '
+        'правила не подсказываются: секвенсор сам решает, какие из них применимы. Прогон останавливается на '
+        'правиле последнего засвидетельствованного шага (деривация может кончаться промежуточной формой).',
+        '',
+        '«Основное» — первое чтение (необязательные правила применены, из альтернатив выбрана первая '
+        'подформула); «любое» — конечная форма среди всех вариантов (необязательные правила, альтернативные '
+        'исходы, правила на границе морфем `+` в формах без отмеченной границы).',
+        '',
+    ]
+    js = {}
+    for b, data in branches.items():
+        seq = Sequencer(data)
+        res = backtest(data, seq)
+        langs = seq.langs
+        era_of = {d['id']: langs[d['steps'][0]['lang']]['era'] for d in data['derivations']
+                  if d['steps'] and d['steps'][0]['lang'] in langs}
+        pairs = {p['id']: p for p in data['pairs']}
+        rules = {r['id']: r for r in data['rules']}
+        lines += [f"## {data['meta']['title']}", '', '| эпоха | дериваций | основное | любое |', '|---|---|---|---|']
+        per_era = {}
+        for era in ('late', 'middle'):
+            rs = [r for r in res['results'] if era_of.get(r['derivation']) == era]
+            if not rs:
+                continue
+            n, m, a = len(rs), sum(r['ok_main'] for r in rs), sum(r['ok_any'] for r in rs)
+            per_era[era] = {'derivations': n, 'main': m, 'any': a}
+            lines.append(f"| {'поздняя' if era == 'late' else 'средняя'} | {n} | {m} ({100 * m / n:.1f}%) | {a} ({100 * a / n:.1f}%) |")
+        n = res['derivations']
+        lines += [f"| всего | {n} | {res['main']} ({100 * res['main'] / n:.1f}%) | {res['any']} ({100 * res['any'] / n:.1f}%) |", '']
+        blame = Counter()
+        for r in res['results']:
+            if not r['ok_main'] and r['diverge'] and r['diverge']['pair'] in pairs:
+                blame[pairs[r['diverge']['pair']]['rule']] += 1
+        lines += ['### Где основное чтение впервые расходится с деривацией', '',
+                  'Правило засвидетельствованного шага, чью форму основное чтение не проходит.', '',
+                  '| правило | язык | дериваций |', '|---|---|---|']
+        for rid, c in blame.most_common(15):
+            lines.append(f"| [{rules[rid]['name']}](https://eldamo.org/content/words/word-{rid}.html) | {rules[rid]['lang']} | {c} |")
+        lines.append('')
+        blocked = [c for c in seq.rules if c.blocked_by]
+        if blocked:
+            lines += ['### Условие «elsewhere»', '',
+                      'Общая подформула не применяется там, где более позднее правило того же языка задаёт тот же '
+                      'вход для определённой позиции:', '']
+            lines += [f"- {c.lang}: {c.name} ← {', '.join(seq.by_id[x].name for x in c.blocked_by)}" for c in blocked]
+            lines.append('')
+        bad = [c for c in seq.rules if c.unsupported]
+        if bad:
+            lines += [f"Подформул вне документированной нотации, пропускаемых секвенсором: "
+                      f"{sum(len(c.unsupported) for c in bad)} (в {len(bad)} правилах).", '']
+        cres = compound.backtest(data, data['lexicon'], seq)
+        if cres['cases']:
+            k = cres['cases']
+            lines += ['### Сложения с праформами', '',
+                      'Сложения Eldamo из двух элементов, у которых есть деривация от праформы и праформы обоих '
+                      'элементов. Праформы элементов соединяются через `+` (полный первый элемент или без '
+                      'конечного гласного), затем соединение проходит все правила ветви (`shared/compound.py`).', '',
+                      '| показатель | случаев |', '|---|---|',
+                      f'| случаев (сложение × деривация) | {k} |',
+                      f"| соединение праформ совпало с начальной формой деривации | {cres['join_ok']} ({100 * cres['join_ok'] / k:.0f}%) |",
+                      f"| основное чтение = засвидетельствованная форма | {cres['main']} ({100 * cres['main'] / k:.0f}%) |",
+                      f"| форма среди вариантов | {cres['any']} ({100 * cres['any'] / k:.0f}%) |", '']
+        js[b] = {'derivations': n, 'main': res['main'], 'any': res['any'], 'eras': per_era,
+                 'results': [r for r in res['results'] if not r['ok_main']],
+                 'compounds': {k2: v for k2, v in cres.items()}}
+        lines += [f"Расходящиеся деривации ({n - res['main']}) — `reports/sequencer.json`.", '']
+    return '\n'.join(lines).rstrip() + '\n', js
+
+
+def write_sequencer_report(branches: dict) -> None:
+    text, js = render_sequencer(branches)
+    write_text(REPORTS / 'sequencer.md', text)
+    write_text(REPORTS / 'sequencer.json', dumps(js))

@@ -15,7 +15,7 @@
 | подформул с засвидетельствованными примерами | 464 |
 | дериваций (из них отвергнутых Толкином) | 2556 (194) |
 | шагов дериваций в языках ветви | 4485 |
-| доля воспроизведённых среди шагов с известной формулой | 94.1% |
+| доля воспроизведённых среди шагов с известной формулой | 94.3% |
 | рёбер графа (условных; с примерами) | 606 (112; 340) |
 | контекстных подформул вне графа | 174 |
 | цепочек | 344 (A: 83, B: 63, C: 2, D: 196) |
@@ -27,9 +27,9 @@
 |---|---|
 | правило удалено Толкином (`deleted_rule`) | 11 |
 | исключение правила: звук сохраняется (`identity`) | 2 |
-| формула применима, но даёт другую форму (`mismatch`) | 78 |
-| формула не находит, к чему примениться (`no_match`) | 154 |
-| формула воспроизводит шаг (`reproduced`) | 4099 |
+| формула применима, но даёт другую форму (`mismatch`) | 80 |
+| формула не находит, к чему примениться (`no_match`) | 145 |
+| формула воспроизводит шаг (`reproduced`) | 4106 |
 | воспроизводит при применении в одной позиции (`reproduced_partial`) | 23 |
 | правило в Eldamo не указано («?») (`unknown_rule`) | 87 |
 | формулы шага нет среди правил (`unmatched_formula`) | 5 |
@@ -41,19 +41,19 @@
 |---|---|---|---|
 | [[j], [w] often reduced between vowels](https://eldamo.org/content/words/word-3978101829.html) | 0 | 26 | 0 |
 | [[t+t], [d+d] from suffixion became [st], [zd]](https://eldamo.org/content/words/word-2479050823.html) | 0 | 0 | 15 |
-| [second short vowel of same quality lost](https://eldamo.org/content/words/word-3116715705.html) | 6 | 9 | 0 |
 | [long final vowels were shortened](https://eldamo.org/content/words/word-2821506177.html) | 8 | 7 | 0 |
 | [[t+t], [d+d] from suffixion became [st], [zd]](https://eldamo.org/content/words/word-2630259491.html) | 0 | 0 | 11 |
+| [second short vowel of same quality lost](https://eldamo.org/content/words/word-3116715705.html) | 7 | 3 | 0 |
 | [medial [ɣ]/[h] vanished except before [t]](https://eldamo.org/content/words/word-2690267141.html) | 3 | 5 | 0 |
 | [voiced stops became spirants except after nasals and liquids](https://eldamo.org/content/words/word-2772726195.html) | 2 | 6 | 0 |
 | [initial [s] plus voiceless stops became voiceless spirants](https://eldamo.org/content/words/word-3333849997.html) | 0 | 8 | 0 |
 | [long final vowels were shortened](https://eldamo.org/content/words/word-1072764601.html) | 2 | 5 | 0 |
-| [second short vowel of same quality lost](https://eldamo.org/content/words/word-511172017.html) | 0 | 7 | 0 |
 | [aspirates became voiceless spirants](https://eldamo.org/content/words/word-3262991621.html) | 1 | 6 | 0 |
 | [[ɣ] from [g] vanished](https://eldamo.org/content/words/word-1833409085.html) | 5 | 1 | 0 |
 | [unstressed medial long vowels shortened](https://eldamo.org/content/words/word-3034061375.html) | 3 | 3 | 0 |
 | [[j], [w] often reduced between vowels](https://eldamo.org/content/words/word-1324632797.html) | 0 | 6 | 0 |
 | [[r], [l] often became syllabic in clusters](https://eldamo.org/content/words/word-720793221.html) | 1 | 4 | 0 |
+| [voiced stops became spirants except after nasals](https://eldamo.org/content/words/word-1141570065.html) | 1 | 4 | 0 |
 
 ### Исключённые правила
 
@@ -69,7 +69,7 @@
 - `q: None > ???`
 - `s: None > !`
 
-Полный список невоспроизведённых шагов (258) — `reports/audit.json`.
+Полный список невоспроизведённых шагов (251) — `reports/audit.json`.
 
 ## Sindarin / Noldorin
 

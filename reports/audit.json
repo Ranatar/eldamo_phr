@@ -28,15 +28,15 @@
    "step_status": {
     "deleted_rule": 11,
     "identity": 2,
-    "mismatch": 78,
-    "no_match": 154,
-    "reproduced": 4099,
+    "mismatch": 80,
+    "no_match": 145,
+    "reproduced": 4106,
     "reproduced_partial": 23,
     "unknown_rule": 87,
     "unmatched_formula": 5,
     "unsupported": 26
    },
-   "reproduction_rate": 0.9411,
+   "reproduction_rate": 0.9427,
    "edges": 606,
    "conditional_edges": 112,
    "edges_with_examples": 340,
@@ -50,6 +50,18 @@
      "C": 2,
      "D": 196
     }
+   },
+   "lexicon": {
+    "entries": 12846,
+    "derivations": 1463,
+    "stages": 1463,
+    "parents": 1843,
+    "roots": 3369,
+    "elements": 4369,
+    "stems": 532,
+    "compounds_with_derivations": 156,
+    "neo": 3527,
+    "homonym_forms": 337
    },
    "grade_legend": {
     "A": "засвидетельствована в одной деривации",
@@ -99,17 +111,6 @@
     "formula": "aCCl > aCCal",
     "before": "ḷ-",
     "after": "al-",
-    "status": "no_match"
-   },
-   {
-    "derivation": "D137",
-    "word": "alqua",
-    "source": "SA/alqua",
-    "rule": "3116715705",
-    "rule_name": "second short vowel of same quality lost",
-    "formula": "aCaCV > aCCV",
-    "before": "alakwā",
-    "after": "alkwā",
     "status": "no_match"
    },
    {
@@ -528,7 +529,7 @@
     "formula": "eCeCV > eCCV",
     "before": "enekwe",
     "after": "eŋkwe",
-    "status": "no_match"
+    "status": "mismatch"
    },
    {
     "derivation": "D427",
@@ -539,7 +540,7 @@
     "formula": "eCeCV > eCCV",
     "before": "enekwe",
     "after": "eŋkwe",
-    "status": "no_match"
+    "status": "mismatch"
    },
    {
     "derivation": "D432",
@@ -1312,39 +1313,6 @@
     "status": "unsupported:morpheme boundary not marked in the form"
    },
    {
-    "derivation": "D1204",
-    "word": "minquë",
-    "source": "VT48/07",
-    "rule": "3116715705",
-    "rule_name": "second short vowel of same quality lost",
-    "formula": "iCiCV > iCCV",
-    "before": "minikwē",
-    "after": "minkwē",
-    "status": "no_match"
-   },
-   {
-    "derivation": "D1205",
-    "word": "minquë",
-    "source": "VT48/08",
-    "rule": "3116715705",
-    "rule_name": "second short vowel of same quality lost",
-    "formula": "iCiCV > iCCV",
-    "before": "minikwē",
-    "after": "minkwē",
-    "status": "no_match"
-   },
-   {
-    "derivation": "D1206",
-    "word": "minqe",
-    "source": "Ety/MINI",
-    "rule": "511172017",
-    "rule_name": "second short vowel of same quality lost",
-    "formula": "iCiCV > iCCV",
-    "before": "minikwē",
-    "after": "minkwē",
-    "status": "no_match"
-   },
-   {
     "derivation": "D1231",
     "word": "morko",
     "source": "Ety/MORÓK",
@@ -1420,17 +1388,6 @@
     "before": "nauwē",
     "after": "naue",
     "status": "mismatch"
-   },
-   {
-    "derivation": "D1316",
-    "word": "nelquë",
-    "source": "VT48/21",
-    "rule": "3116715705",
-    "rule_name": "second short vowel of same quality lost",
-    "formula": "eCeCV > eCCV",
-    "before": "nelekwe",
-    "after": "nelkwe",
-    "status": "no_match"
    },
    {
     "derivation": "D1368",
@@ -1815,17 +1772,6 @@
     "formula": "iŋn > īn",
     "before": "rigna",
     "after": "rīna",
-    "status": "no_match"
-   },
-   {
-    "derivation": "D1726",
-    "word": "salqe",
-    "source": "Ety/SALÁK",
-    "rule": "511172017",
-    "rule_name": "second short vowel of same quality lost",
-    "formula": "aCaCV > aCCV",
-    "before": "salakwē",
-    "after": "salkwē",
     "status": "no_match"
    },
    {
@@ -2412,17 +2358,6 @@
     "status": "no_match"
    },
    {
-    "derivation": "D2082",
-    "word": "usquë",
-    "source": "PE21/71",
-    "rule": "3116715705",
-    "rule_name": "second short vowel of same quality lost",
-    "formula": "uCuCV > uCCV",
-    "before": "usukwē",
-    "after": "uskwē",
-    "status": "no_match"
-   },
-   {
     "derivation": "D2094",
     "word": "-va",
     "source": "PE17/059",
@@ -2971,6 +2906,18 @@
      "C": 1,
      "D": 127
     }
+   },
+   "lexicon": {
+    "entries": 9773,
+    "roots": 2596,
+    "derivations": 1776,
+    "stages": 1776,
+    "elements": 2360,
+    "parents": 1337,
+    "stems": 12,
+    "compounds_with_derivations": 150,
+    "neo": 1749,
+    "homonym_forms": 231
    },
    "grade_legend": {
     "A": "засвидетельствована в одной деривации",

@@ -61,6 +61,18 @@
    "D": 127
   }
  },
+ "lexicon": {
+  "entries": 9773,
+  "roots": 2596,
+  "derivations": 1776,
+  "stages": 1776,
+  "elements": 2360,
+  "parents": 1337,
+  "stems": 12,
+  "compounds_with_derivations": 150,
+  "neo": 1749,
+  "homonym_forms": 231
+ },
  "grade_legend": {
   "A": "засвидетельствована в одной деривации",
   "B": "шаги засвидетельствованы, порядок подтверждён",

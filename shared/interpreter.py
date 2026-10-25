@@ -25,6 +25,7 @@ from __future__ import annotations
 import itertools
 import unicodedata
 from dataclasses import dataclass, field
+from functools import lru_cache
 
 SUBSCRIPTS = {'₁': '1', '₂': '2', '₃': '3', '₄': '4', '₅': '5', '₆': '6', '₇': '7', '₈': '8', '₉': '9'}
 MODIFIERS = set('ʰʷʲ')
@@ -34,6 +35,10 @@ CLASSES = {'V', 'C', 'X', 'S'}
 # Notational variants that denote the same sound in Eldamo forms.
 EQUIVALENT = {'þ': 'θ', 'ñ': 'ŋ', 'ʒ': 'ɣ'}
 BOUNDARY_CHARS = set("+’'ʼ·")
+# Falling diphthongs: a rule whose match starts at their second element does
+# not change it (u > o leaves the u of ou alone; ou > au applies).
+LABIALIZABLE = set('kg')
+DIPHTHONGS = {'ai', 'au', 'oi', 'ui', 'eu', 'iu', 'ei', 'ou', 'ae', 'oe', 'œi', 'yi', 'yu'}
 
 
 class Unsupported(Exception):
@@ -101,12 +106,13 @@ def strip_breve(p: str) -> str:
 
 @dataclass
 class Token:
-    kind: str                      # 'lit' | 'set' | 'class' | 'null'
+    kind: str                      # 'lit' | 'set' | 'class' | 'null' | 'boundary' (+)
     options: tuple = ()            # lit: (tuple(phonemes),); set: tuple of phoneme tuples
     cls: str = ''                  # class letter
     length: str = ''               # '', 'long', 'short' (for V)
     index: str = ''
     star: bool = False             # Kleene star: zero or more repetitions
+    stress: str = ''               # '', 'stressed' (V́, Ś, ˈ), 'unstressed' (ˌ)
 
     def family(self) -> str:
         if self.kind == 'class':
@@ -169,17 +175,24 @@ def _read_tail(s: str, i: int) -> tuple[str, str, int]:
 
 def parse_pattern(text: str) -> Pattern:
     core, position = position_of(text)
-    core = core.replace('+', '')  # morpheme boundary; word forms are compared without boundaries
-    # Stress marks (ˈ ˌ, acute on a class) constrain syllables whose stress the
-    # word forms do not record; they are ignored, so such rules may over-apply.
-    core = core.replace('ˈ', '').replace('ˌ', '')
+    # Stress marks: ˌ before a token = unstressed, ˈ = stressed, an acute on a
+    # vowel or on S = stressed. They constrain matching only when the caller
+    # supplies the stressed positions of the word (apply_rule(stress_mode=...));
+    # otherwise they are ignored and such rules may over-apply.
     if any(ch in core for ch in '?()/=<>'):
         raise Unsupported('notation not defined by Eldamo documentation')
     s = unicodedata.normalize('NFD', core)
     tokens: list[Token] = []
     i = 0
+    pending, mark = '', 0
     while i < len(s):
+        if pending and len(tokens) > mark:
+            tokens[mark].stress, pending = pending, ''
         ch = s[i]
+        if ch in 'ˌˈ':
+            pending, mark = ('unstressed' if ch == 'ˌ' else 'stressed'), len(tokens)
+            i += 1
+            continue
         if ch in ' \t':
             raise Unsupported('space inside pattern')
         if ch == '{':
@@ -198,10 +211,16 @@ def parse_pattern(text: str) -> Pattern:
                 raise Unsupported('empty group')
             if any(c in CLASSES for o in opts for p in o for c in p):
                 raise Unsupported('class inside group')
-            tokens.append(Token('set', opts, index=idx))
+            tokens.append(Token('set', opts, index=idx, stress='stressed' if ACUTE in mods else ''))
+            continue
+        if ch == '+':
+            # morpheme boundary: zero-width, matches where the form has + (or
+            # anywhere when the form marks no boundaries)
+            tokens.append(Token('boundary'))
+            i += 1
             continue
         if ch == '*':
-            if not tokens or tokens[-1].kind == 'null':
+            if not tokens or tokens[-1].kind in ('null', 'boundary'):
                 raise Unsupported('star without token')
             tokens[-1].star = True
             i += 1
@@ -220,7 +239,11 @@ def parse_pattern(text: str) -> Pattern:
             tokens.append(Token('null', index=idx))
         else:
             tokens.append(Token('lit', ((nfc(ch + mods),),), index=idx))
+        if ACUTE in mods:
+            tokens[-1].stress = 'stressed'
         i = nxt
+    if pending and len(tokens) > mark:
+        tokens[mark].stress = pending
     return Pattern(tokens, position, text)
 
 
@@ -235,8 +258,30 @@ def _lit_eq(pattern: str, sound: str) -> bool:
     return canonical(pattern) == canonical(sound)
 
 
-def _match_token(tok: Token, word: list[str], i: int, open_start: bool = False):
+def _stress_ok(tok: Token, word: list[str], i: int, end: int, stress) -> bool:
+    """A stress-marked token matches only a stressed (or unstressed) vowel;
+    unknown stress (None) or a span without vowels satisfies any mark."""
+    if not tok.stress or stress is None:
+        return True
+    vowels = [k for k in range(i, end) if is_vowel(word[k])]
+    if not vowels:
+        return True
+    hit = any(k in stress for k in vowels)
+    return hit if tok.stress == 'stressed' else not hit
+
+
+def _match_token(tok: Token, word: list[str], i: int, open_start: bool = False, stress=None, bounds=None):
     """Yield (end, captured phonemes, chosen option index) for tok at word[i:]."""
+    if tok.kind == 'boundary':
+        if bounds is None or i in bounds:
+            yield i, (), None
+        return
+    for end, cap, opt in _match_plain(tok, word, i, open_start):
+        if _stress_ok(tok, word, i, end, stress):
+            yield end, cap, opt
+
+
+def _match_plain(tok: Token, word: list[str], i: int, open_start: bool = False):
     if tok.kind == 'null':
         yield i, (), None
         return
@@ -253,6 +298,9 @@ def _match_token(tok: Token, word: list[str], i: int, open_start: bool = False):
     if i >= len(word):
         return
     p = word[i]
+    if tok.cls == 'C' and i + 1 < len(word) and base(p) in LABIALIZABLE and word[i + 1] == 'w':
+        # kw, gw (Quenya qu, ngw) also count as one consonant: alakwā > alkwā
+        yield i + 2, (p, 'w'), None
     if tok.cls == 'X':
         ok = True
     elif tok.cls == 'C':
@@ -290,8 +338,10 @@ def _match_syllable(word: list[str], i: int, open_start: bool = False):
             yield e, tuple(word[i:e]), None
 
 
-def match_at(pattern: Pattern, word: list[str], start: int, fragment: tuple[bool, bool]):
-    """Yield (end, captures) for every way pattern matches word starting at start."""
+def match_at(pattern: Pattern, word: list[str], start: int, fragment: tuple[bool, bool], stress=None, bounds=None):
+    """Yield (end, captures) for every way pattern matches word starting at start.
+    stress: indices of stressed phonemes, or None when unknown; bounds: indices
+    of phonemes preceded by a morpheme boundary, or None when unmarked."""
     lead_fragment, trail_fragment = fragment
     pos = pattern.position
 
@@ -313,7 +363,7 @@ def match_at(pattern: Pattern, word: list[str], start: int, fragment: tuple[bool
             while frontier:
                 nxt = []
                 for at, cap in frontier:
-                    for end, c, _ in _match_token(tok, word, at, lead_fragment and at == 0):
+                    for end, c, _ in _match_token(tok, word, at, lead_fragment and at == 0, stress, bounds):
                         if end > at:
                             nxt.append((end, cap + c))
                 spans += nxt
@@ -321,10 +371,17 @@ def match_at(pattern: Pattern, word: list[str], start: int, fragment: tuple[bool
             for end, cap in sorted(spans, key=lambda x: -x[0]):
                 yield from rec(t + 1, end, caps + [(cap, None)])
             return
-        for end, cap, opt in _match_token(tok, word, i, lead_fragment and i == 0):
+        for end, cap, opt in _match_token(tok, word, i, lead_fragment and i == 0, stress, bounds):
             yield from rec(t + 1, end, caps + [(cap, opt)])
 
     yield from rec(0, start, [])
+
+
+def _offglide(word: list[str], i: int) -> bool:
+    a, b = word[i - 1], word[i]
+    return (is_vowel(a) and is_vowel(b) and not is_long(a) and not is_long(b)
+            and canonical(a)[0] + canonical(b)[0] in DIPHTHONGS
+            and not (i >= 2 and _offglide(word, i - 1)))
 
 
 # --------------------------------------------------------------------------
@@ -332,6 +389,8 @@ def match_at(pattern: Pattern, word: list[str], start: int, fragment: tuple[bool
 
 def _compatible(a: Token, b: Token) -> int:
     """Alignment cost between an input and output token (0 = same slot)."""
+    if a.kind == 'boundary' or b.kind == 'boundary':
+        return 0 if a.kind == b.kind else 2
     if a.kind == 'null' or b.kind == 'null':
         return 0
     if a.index and b.index and a.index == b.index:
@@ -388,8 +447,8 @@ def _render(out_tok: Token, in_tok, cap, opt, bound) -> list[list[str]]:
     """Return candidate phoneme lists produced for one output slot."""
     if out_tok is None:
         return [[]]
-    if out_tok.kind == 'null':
-        return [[]]
+    if out_tok.kind in ('null', 'boundary'):
+        return [[]]     # boundaries are carried over by position (apply_rule)
     if out_tok.kind == 'lit':
         return [list(out_tok.options[0])]
     if out_tok.kind == 'set':
@@ -518,17 +577,59 @@ class Rule:
             alts.append((px, py))
         return cls(alts)
 
-    def sites(self, word: list[str], fragment=(False, False)):
+    def sites(self, word: list[str], fragment=(False, False), stress=None, bounds=None):
         """All (start, end, alternatives' outputs) match sites."""
         out = []
         for start in range(len(word) + 1):
             for src, dst in self.alternatives:
-                for end, caps in match_at(src, word, start, fragment):
-                    if end == start and all(t.kind == 'null' for t in src.tokens):
+                for end, caps in match_at(src, word, start, fragment, stress, bounds):
+                    if end == start and all(t.kind in ('null', 'boundary') for t in src.tokens):
                         continue
                     outs = transform(src, dst, caps)
                     out.append((start, end, outs))
         return out
+
+
+def boundaries(form: str) -> frozenset | None:
+    """Indices (in normalize_word phonemes) of phonemes preceded by +, or None
+    when the form marks no morpheme boundary."""
+    s = nfc(form.strip())
+    if '+' not in s:
+        return None
+    out, k = set(), 0
+    for part in phonemes(''.join(ch for ch in s if ch not in BOUNDARY_CHARS - {'+'} and ch != '-' and not ch.isspace())):
+        if part == '+':
+            out.add(k)
+        else:
+            k += 1
+    return frozenset(out)
+
+
+def _rebuild(word: list[str], changes, bounds) -> str:
+    """word with non-overlapping, sorted (start, end, replacement) changes
+    applied. Morpheme boundaries stay at their positions; one inside a
+    replaced span moves to its end."""
+    bounds = bounds or frozenset()
+    res, cursor = [], 0
+
+    def copy(a, b):
+        for k in range(a, b):
+            if k in bounds:
+                res.append('+')
+            res.append(word[k])
+
+    for cs, ce, repl in changes:
+        copy(cursor, cs)
+        if cs in bounds:
+            res.append('+')
+        res.extend(repl)
+        if any(cs < k < ce for k in bounds):
+            res.append('+')
+        cursor = ce
+    copy(cursor, len(word))
+    if len(word) in bounds:
+        res.append('+')
+    return join(res)
 
 
 def normalize_word(form: str) -> tuple[list[str], tuple[bool, bool]]:
@@ -544,22 +645,59 @@ def join(ph: list[str]) -> str:
     return nfc(''.join(ph))
 
 
+@lru_cache(maxsize=None)
+def compile_rule(src: str, dst: str) -> 'Rule':
+    """Parsed rule, cached; raises Unsupported like Rule.parse."""
+    return Rule.parse(src, dst)
+
+
+def combine(rules) -> 'Rule':
+    """One rule whose alternatives are those of all given rules (applied together)."""
+    return Rule([alt for r in rules for alt in r.alternatives])
+
+
 def apply(src: str, dst: str, form: str, limit: int = 64) -> dict:
     """Apply a rule to a word form.
 
-    Returns {'all_sites': set, 'single_site': set, 'sites': n}.
+    Returns {'all_sites': set, 'ordered': list, 'single_site': set, 'sites': n};
+    'ordered' holds all_sites in the order of the rule's sub-formulas.
     'all_sites' applies the rule at every site at once; 'single_site' at one site.
     """
-    rule = Rule.parse(src, dst)
+    return apply_rule(compile_rule(src, dst), form, limit)
+
+
+def apply_rule(rule: 'Rule', form: str, limit: int = 64, protect: 'Rule | None' = None,
+               stress_mode: str | None = None, scope: str | None = None) -> dict:
+    """apply() for a compiled rule. `protect` lists patterns whose matches must
+    not change (a rule's exceptions such as mb > mb). `stress_mode` ('initial',
+    'latin', see shared.stress) makes stress-marked patterns match only
+    stressed or unstressed vowels. `scope` restricts a rule named for
+    monosyllables ('mono': the word has one syllable and the match covers its
+    vowel and the word's end, as in C*V̆C) or polysyllables ('poly')."""
     word, fragment = normalize_word(form)
-    sites = rule.sites(word, fragment)
-    single = set()
-    for start, end, outs in sites:
-        for o in outs[:limit]:
-            single.add(join(word[:start] + o + word[end:]))
-    # Simultaneous application (a sound law). Only the part of a match that
-    # actually changes is replaced, so context shared by neighbouring sites
-    # stays available: VsV > VhV turns asasa into ahaha.
+    stress = None
+    if stress_mode:
+        from .stress import stressed
+        stress = stressed(word, stress_mode)
+    bounds = boundaries(form)
+    sites = rule.sites(word, fragment, stress, bounds)
+    if scope:
+        from .stress import syllable_count
+        n = syllable_count(word)
+        if scope == 'mono':
+            sites = [x for x in sites if n == 1 and x[1] == len(word) and not any(is_vowel(p) for p in word[:x[0]])]
+        elif scope == 'poly' and n < 2:
+            sites = []
+    guarded = []
+    if protect is not None:
+        guarded = [(st, en) for st, en, _ in protect.sites(word, fragment, stress, bounds)]
+        if guarded:
+            def free(cs, ce):
+                return not any((cs < en and ce > st) if ce > cs else (st < cs < en) for st, en in guarded)
+            sites = [(st, en, outs) for st, en, outs in sites if free(st, en)]
+    # Only the part of a match that actually changes is replaced, so context
+    # shared by neighbouring sites stays available in simultaneous
+    # application (a sound law): VsV > VhV turns asasa into ahaha.
     changes = []   # per site: [(core start, core end, replacement), ...] one per output variant
     for start, end, outs in sites:
         variants = []
@@ -573,23 +711,26 @@ def apply(src: str, dst: str, form: str, limit: int = 64) -> dict:
                 suf += 1
             if pre == len(span) == len(o):
                 continue  # no change at this site
+            if pre == 0 and start > 0 and start < len(word) and _offglide(word, start):
+                continue  # a lone vowel pattern leaves the second element of a diphthong alone
             variants.append((start + pre, end - suf, tuple(o[pre:len(o) - suf])))
         if variants:
-            changes.append(sorted(set(variants)))
-    all_sites = set()
+            changes.append(list(dict.fromkeys(variants)))   # keep the order of the sub-formulas
+    single = {_rebuild(word, [(cs, ce, list(r))], bounds) for site in changes for cs, ce, r in site}
+    if not changes:
+        single = {join(word[:st] + list(o) + word[en:]) for st, en, outs in sites for o in outs[:limit]}
+    all_sites, ordered = set(), []
     for combo in itertools.islice(itertools.product(*changes), limit) if changes else ():
         chosen, last = [], -1
         for cs, ce, repl in sorted(combo):
             if cs >= last and not (cs == ce == last):
                 chosen.append((cs, ce, repl))
                 last = max(ce, cs + (1 if cs == ce else 0))
-        res, cursor = [], 0
-        for cs, ce, repl in chosen:
-            res += word[cursor:cs] + list(repl)
-            cursor = ce
-        res += word[cursor:]
-        all_sites.add(join(res))
-    return {'all_sites': all_sites, 'single_site': single, 'sites': len(sites)}
+        out = _rebuild(word, [(cs, ce, list(repl)) for cs, ce, repl in chosen], bounds)
+        if out not in all_sites:
+            all_sites.add(out)
+            ordered.append(out)
+    return {'all_sites': all_sites, 'ordered': ordered, 'single_site': single, 'sites': len(sites)}
 
 
 def comparable(form: str) -> str:

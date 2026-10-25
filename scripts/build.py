@@ -7,7 +7,8 @@
 Only the Python standard library is required to build. Writes:
   branches/<branch>/data/*.json, branches/<branch>/catalog.md,
   exports/canonical.json, exports/atlas.graphml,
-  app/index.html, app/corpus.html, reports/audit.md, reports/audit.json
+  app/index.html, app/corpus.html, reports/audit.md, reports/audit.json,
+  reports/sequencer.md, reports/sequencer.json
 """
 import argparse
 import os
@@ -23,7 +24,7 @@ from shared.app import write_app  # noqa: E402
 from shared.catalog import write_catalog  # noqa: E402
 from shared.exports import write_exports  # noqa: E402
 from shared.pipeline import build_all, write_branch  # noqa: E402
-from shared.report import write_report  # noqa: E402
+from shared.report import write_report, write_sequencer_report  # noqa: E402
 
 
 def step(name, fn, *args):
@@ -49,6 +50,7 @@ def main(argv=None):
     step('exports and corpus browser', write_exports, branches)
     step('atlas app/index.html', write_app, branches)
     step('report', write_report, branches)
+    step('sequencer backtest', write_sequencer_report, branches)
 
     if args.no_tests:
         return 0

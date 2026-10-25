@@ -2,7 +2,7 @@
 
 Источник: Eldamo 0.8.13 © Paul Strack, CC BY 4.0. Файл создан `scripts/build.py`; не править вручную.
 
-Правил: 251 (с порядком Eldamo: 211); подформул: 782; засвидетельствованных дериваций: 2362; формулы воспроизводят 94.1% шагов с известной формулой.
+Правил: 251 (с порядком Eldamo: 211); подформул: 782; засвидетельствованных дериваций: 2362; формулы воспроизводят 94.3% шагов с известной формулой.
 
 Столбец «примеры» — число засвидетельствованных шагов дериваций с этой подформулой / сколько из них формула воспроизводит.
 
@@ -379,11 +379,11 @@
 
 | подформула | вид | примеры |
 |---|---|---|
-| `aCaCV > aCCV` | contextual | 51 / 46 |
-| `eCeCV > eCCV` | contextual | 41 / 35 |
-| `iCiCV > iCCV` | contextual | 7 / 4 |
+| `aCaCV > aCCV` | contextual | 51 / 47 |
+| `eCeCV > eCCV` | contextual | 41 / 36 |
+| `iCiCV > iCCV` | contextual | 7 / 6 |
 | `oCoCV > oCCV` | contextual | 15 / 15 |
-| `uCuCV > uCCV` | contextual | 4 / 3 |
+| `uCuCV > uCCV` | contextual | 4 / 4 |
 
 ### [later [j], [w] became [i], [u] before consonants](https://eldamo.org/content/words/word-2232975397.html)
 
@@ -1875,9 +1875,9 @@
 
 | подформула | вид | примеры |
 |---|---|---|
-| `aCaCV > aCCV` | contextual | 16 / 13 |
+| `aCaCV > aCCV` | contextual | 16 / 14 |
 | `eCeCV > eCCV` | contextual | 20 / 17 |
-| `iCiCV > iCCV` | contextual | 4 / 3 |
+| `iCiCV > iCCV` | contextual | 4 / 4 |
 | `oCoCV > oCCV` | contextual | 10 / 10 |
 | `uCuCV > uCCV` | contextual | 2 / 2 |
 

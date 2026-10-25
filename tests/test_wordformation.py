@@ -38,8 +38,20 @@ class Course(unittest.TestCase):
         self.assertIn('kuiviēnen', forms)
 
     def test_soft_mutation(self):
-        for word, expected in [('tir', 'dir'), ('gwen', 'wen'), ('galad', 'alad'), ('mīr', 'vīr'), ('r̥ūn', 'rūn')]:
+        for word, expected in [('tir', 'dir'), ('gwen', 'wen'), ('galad', 'alad'), ('mīr', 'vīr'), ('haered', 'xaered')]:
             self.assertEqual(j(M.lenite(P(word))), expected)
+        for word in ('r̥ūn', 'l̥eweg', 'nīn', 'θīr', 'faroθ'):
+            self.assertIsNone(M.lenite(P(word)), word)       # lh, rh, n, th, f do not mutate
+        # ancient nasalized stops: ✶mbar > bâr, mutated *mâr
+        self.assertEqual(j(M.lenite(P('bār'), 'mbar')), 'mār')
+        self.assertEqual(j(M.lenite(P('dōr'), 'ndorē')), 'nōr')
+
+    def test_no_epenthesis_inside_geminate(self):
+        # Q. "nasals and liquids often became syllabic after a consonant" (ClV₁ > CV₁lV₁) does not split ll
+        from shared.interpreter import apply
+        rule = ('ClV₁|ml|Cr|{ptk}{nm}', 'CV₁lV₁|mul|Car|{ptk}{an|um}')
+        self.assertEqual(apply(*rule, 'amballinde')['ordered'], [])
+        self.assertEqual(apply(*rule, 'aklinde')['ordered'], ['akilinde'])
 
 
 class Junctions(unittest.TestCase):

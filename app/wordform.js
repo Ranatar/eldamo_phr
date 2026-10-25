@@ -458,6 +458,8 @@ function applyRule(alts, form, opts = {}) {
       while (suf < span.length - pre && suf < o.length - pre && canonical(span[span.length - 1 - suf]) === canonical(o[o.length - 1 - suf])) suf++;
       if (pre === span.length && span.length === o.length) continue;
       if (pre === 0 && start > 0 && start < word.length && offglide(word, start)) continue;
+      const cs = start + pre;
+      if (cs === end - suf && cs > 0 && cs < word.length && word[cs - 1] === word[cs] && !isVowel(word[cs])) continue;
       const v = [start + pre, end - suf, o.slice(pre, o.length - suf)];
       const key = JSON.stringify(v);
       if (!seen.has(key)) { seen.add(key); variants.push(v); }
@@ -717,9 +719,14 @@ function compoundVariants(first, second) {
   return out.filter(([w]) => { const k = join(w); if (seen.has(k)) return false; seen.add(k); return true; });
 }
 const SOFT_MUTATION = [['gw', 'w'], ['p', 'b'], ['t', 'd'], ['k', 'g'], ['b', 'v'], ['d', 'ð'], ['g', ''], ['m', 'v'],
-  ['s', 'h'], ['h', 'x'], ['l̥', 'l'], ['r̥', 'r'], ['w̥', 'xw']];
-function lenite(word) {
+  ['s', 'h'], ['h', 'x'], ['w̥', 'xw']];
+const NASALIZED = [['mb', 'm'], ['nd', 'n'], ['ŋg', 'ŋ']];
+function lenite(word, primitive = null) {
   const s = join(word);
+  if (primitive) {
+    const p = primitive.replace(/^-+/, '');
+    for (const [a, b] of NASALIZED) if (p.startsWith(a) && s.slice(0, 1) === a.slice(1)) return phonemes(b + s.slice(1));
+  }
   for (const [a, b] of SOFT_MUTATION) if (s.startsWith(a)) return phonemes(b + s.slice(a.length));
   return null;
 }
@@ -819,7 +826,8 @@ function predictLatest(engine, ids, era) {
   const firsts = e1 ? formsAt(engine, e1, era, last) : [];
   const seconds = e2 ? formsAt(engine, e2, era, last, true) : [];
   if (engine.branch === 'sindarin') {
-    for (const [b] of seconds.slice()) { const m = lenite(phonemes(comparable(b))); if (m) seconds.push([join(m), 'soft-mutation']); }
+    const starts = (e2 && e2.starts) || [];
+    for (const [b] of seconds.slice()) { const m = lenite(phonemes(comparable(b)), starts[0] || null); if (m) seconds.push([join(m), 'soft-mutation']); }
   }
   const poly = sequence(engine.rules, era, last, last).filter(c => /polysyllab/i.test(c.name));
   const scored = new Map();

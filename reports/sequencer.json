@@ -1,12 +1,12 @@
 {
  "quenya": {
   "derivations": 2119,
-  "main": 1681,
+  "main": 1682,
   "any": 1718,
   "eras": {
    "late": {
     "derivations": 1212,
-    "main": 926,
+    "main": 927,
     "any": 953
    },
    "middle": {
@@ -7771,7 +7771,7 @@
     "start": "pʰaralē",
     "target": "farale",
     "main": "fallĕ",
-    "variants": 2,
+    "variants": 1,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -7801,7 +7801,7 @@
     "start": "pʰaralē",
     "target": "farale",
     "main": "fallĕ",
-    "variants": 2,
+    "variants": 1,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -8116,7 +8116,7 @@
     "start": "slūbu",
     "target": "lūvo",
     "main": "llūv",
-    "variants": 2,
+    "variants": 1,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -10055,21 +10055,6 @@
     "steps": 2
    },
    {
-    "derivation": "D1243",
-    "word": "Nahar",
-    "start": "naxarra",
-    "target": "nahar",
-    "main": "naharar",
-    "variants": 2,
-    "ok_main": false,
-    "ok_any": true,
-    "diverge": {
-     "pair": "2071843593.1",
-     "expected": "naharr"
-    },
-    "steps": 3
-   },
-   {
     "derivation": "D1244",
     "word": "nahta-¹",
     "start": "snagta-",
@@ -10711,7 +10696,7 @@
     "start": "olosi",
     "target": "olori",
     "main": "olli",
-    "variants": 2,
+    "variants": 1,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -11067,7 +11052,7 @@
     "word": "pella",
     "start": "petʰla",
     "target": "pella",
-    "main": "petʰla",
+    "main": "petʰala",
     "variants": 2,
     "ok_main": false,
     "ok_any": false,
@@ -11935,7 +11920,7 @@
     "start": "kjelesi",
     "target": "teleri",
     "main": "tjelli",
-    "variants": 2,
+    "variants": 1,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -11950,7 +11935,7 @@
     "start": "telesi",
     "target": "teleri",
     "main": "telli",
-    "variants": 2,
+    "variants": 1,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -11965,7 +11950,7 @@
     "start": "telesi",
     "target": "teleri",
     "main": "telli",
-    "variants": 2,
+    "variants": 1,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -13272,7 +13257,7 @@
      "ok_main": true,
      "ok_any": true,
      "main": "alkariŋkwă",
-     "variants": 41
+     "variants": 30
     },
     {
      "word": "1992388353",
@@ -13290,7 +13275,7 @@
      "ok_main": false,
      "ok_any": true,
      "main": "aldārembină",
-     "variants": 15
+     "variants": 12
     },
     {
      "word": "903399645",
@@ -13398,7 +13383,7 @@
      "ok_main": false,
      "ok_any": false,
      "main": "eldākară",
-     "variants": 21
+     "variants": 14
     },
     {
      "word": "2564790529",
@@ -13524,7 +13509,7 @@
      "ok_main": false,
      "ok_any": false,
      "main": "foallōke",
-     "variants": 32
+     "variants": 24
     },
     {
      "word": "537340477",
@@ -13614,7 +13599,7 @@
      "ok_main": false,
      "ok_any": true,
      "main": "altārielle",
-     "variants": 18
+     "variants": 12
     },
     {
      "word": "4281976313",
@@ -13722,7 +13707,7 @@
      "ok_main": false,
      "ok_any": true,
      "main": "oarēldă",
-     "variants": 24
+     "variants": 18
     },
     {
      "word": "3358028127",
@@ -13758,7 +13743,7 @@
      "ok_main": false,
      "ok_any": true,
      "main": "pelolaŋa",
-     "variants": 10
+     "variants": 7
     },
     {
      "word": "966567391",
@@ -13776,7 +13761,7 @@
      "ok_main": false,
      "ok_any": true,
      "main": "pelolaŋa",
-     "variants": 10
+     "variants": 7
     },
     {
      "word": "966567391",
@@ -13794,7 +13779,7 @@
      "ok_main": false,
      "ok_any": true,
      "main": "pelolaŋa",
-     "variants": 10
+     "variants": 7
     },
     {
      "word": "84450489",
@@ -13909,7 +13894,7 @@
  },
  "sindarin": {
   "derivations": 2383,
-  "main": 1605,
+  "main": 1606,
   "any": 1703,
   "eras": {
    "late": {
@@ -13919,7 +13904,7 @@
    },
    "middle": {
     "derivations": 1356,
-    "main": 882,
+    "main": 883,
     "any": 938
    }
   },
@@ -14116,7 +14101,7 @@
      "target": "amrūn",
      "main": "amr̥un",
      "ok_main": false,
-     "ok_any": true
+     "ok_any": false
     },
     {
      "word": "1385154671",
@@ -15420,7 +15405,7 @@
      "target": "eglamar",
      "main": "eglabar",
      "ok_main": false,
-     "ok_any": false
+     "ok_any": true
     },
     {
      "word": "2871866013",
@@ -22094,21 +22079,6 @@
     "steps": 3
    },
    {
-    "derivation": "D1197",
-    "word": "gaer",
-    "start": "gę̄rra",
-    "target": "gaer",
-    "main": "gaeror",
-    "variants": 2,
-    "ok_main": false,
-    "ok_any": true,
-    "diverge": {
-     "pair": "701237681.1",
-     "expected": "gaer"
-    },
-    "steps": 3
-   },
-   {
     "derivation": "D1202",
     "word": "gala-",
     "start": "agālē",
@@ -27258,8 +27228,8 @@
     "word": "iell",
     "start": "sell",
     "target": "jell",
-    "main": "selol",
-    "variants": 6,
+    "main": "sell",
+    "variants": 4,
     "ok_main": false,
     "ok_any": false,
     "diverge": {

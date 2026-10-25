@@ -713,12 +713,15 @@ def apply_rule(rule: 'Rule', form: str, limit: int = 64, protect: 'Rule | None' 
                 continue  # no change at this site
             if pre == 0 and start > 0 and start < len(word) and _offglide(word, start):
                 continue  # a lone vowel pattern leaves the second element of a diphthong alone
+            cs = start + pre
+            if cs == end - suf and 0 < cs < len(word) and word[cs - 1] == word[cs] and not is_vowel(word[cs]):
+                continue  # nothing is inserted inside a geminate: ll is one long consonant, not C + l
             variants.append((start + pre, end - suf, tuple(o[pre:len(o) - suf])))
         if variants:
             changes.append(list(dict.fromkeys(variants)))   # keep the order of the sub-formulas
     single = {_rebuild(word, [(cs, ce, list(r))], bounds) for site in changes for cs, ce, r in site}
-    if not changes:
-        single = {join(word[:st] + list(o) + word[en:]) for st, en, outs in sites for o in outs[:limit]}
+    if not changes and sites:
+        single = {join(word)}     # the rule matches but changes nothing
     all_sites, ordered = set(), []
     for combo in itertools.islice(itertools.product(*changes), limit) if changes else ():
         chosen, last = [], -1

@@ -117,8 +117,9 @@ def predict_latest(lexicon: dict, seq, table: dict, element_ids: list, era: str 
     seconds = forms_at(lexicon[element_ids[1]], seq, era, last, final=True) if element_ids[1] in lexicon else []
     if seq.branch == 'sindarin':
         # the second element of a Sindarin compound is usually lenited
+        starts = lexicon[element_ids[1]].get('starts', ()) if element_ids[1] in lexicon else ()
         for b, hb in list(seconds):
-            m = morphophonology.lenite(phonemes(comparable(b)))
+            m = morphophonology.lenite(phonemes(comparable(b)), starts[0] if starts else None)
             if m is not None:
                 seconds.append((join(m), 'soft-mutation'))
     poly = [c for c in seq.sequence(era, last, last) if POLYSYLLABLE_RULES.search(c.name)]

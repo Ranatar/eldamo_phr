@@ -176,16 +176,31 @@ def text(form: str) -> list:
     return phonemes(form)
 
 
-# Sindarin soft mutation (lenition) of an initial consonant: the second element
-# of a compound is usually lenited (Eldamo marks 402 such elements). Phonetic
-# notation: c = k, ch = x, dh = ð, lh = l̥, rh = r̥.
+# Sindarin soft mutation (lenition) of an initial consonant, after Strack's
+# Eldamo entry "soft mutation": the second element of a compound is usually
+# lenited (Eldamo marks 402 such elements). Phonetic notation: c = k,
+# ch = x, dh = ð, lh = l̥, rh = r̥, wh = w̥.
+#   p t c > b d g;  b d > v dh;  g (and g of gw) vanishes;  m > v (optional:
+#   "generally abandoned", but frequent "at the beginning of second elements of
+#   compounds", PE23/136);  s > h;  h > ch;  wh > chw (Strack's analogy with
+#   the nasal mutation);  n, f, th, l, r do not mutate;  lh, rh do not mutate
+#   in modern Sindarin (archaic thl, thr: PE23/136);
+#   an ancient nasalized stop (✶mb-, ✶nd-, ✶ŋg-, now b- d- g-) mutates to
+#   m, n, ng: i·mbas / *i·mâr (PE17/104).
 SOFT_MUTATION = [('gw', 'w'), ('p', 'b'), ('t', 'd'), ('k', 'g'), ('b', 'v'), ('d', 'ð'), ('g', ''),
-                 ('m', 'v'), ('s', 'h'), ('h', 'x'), ('l̥', 'l'), ('r̥', 'r'), ('w̥', 'xw')]
+                 ('m', 'v'), ('s', 'h'), ('h', 'x'), ('w̥', 'xw')]
+NASALIZED = {'mb': 'm', 'nd': 'n', 'ŋg': 'ŋ'}
 
 
-def lenite(word: list) -> list | None:
-    """Soft mutation of the first sound of a Sindarin word, or None."""
+def lenite(word: list, primitive: str | None = None) -> list | None:
+    """Soft mutation of the first sound of a Sindarin word, or None.
+    `primitive`: the word's primitive form, to recognise ancient mb-, nd-, ŋg-."""
     s = join(word)
+    if primitive:
+        p = primitive.lstrip('-')
+        for a, b in NASALIZED.items():
+            if p.startswith(a) and s[:1] == a[1]:
+                return phonemes(b + s[1:])
     for a, b in SOFT_MUTATION:
         if s.startswith(a):
             return phonemes(b + s[len(a):])

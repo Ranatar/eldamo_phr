@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns">
-  <!-- Eldamo 0.8.13 © Paul Strack, CC BY 4.0; sound graph built by eldamo_phr -->
+  <!-- Eldamo 0.8.13 © Paul Strack, CC BY 4.0; sound graph built by Quettamin -->
   <key id="n_sound" for="node" attr.name="sound" attr.type="string"/>
   <key id="n_branch" for="node" attr.name="branch" attr.type="string"/>
   <key id="n_era" for="node" attr.name="era" attr.type="string"/>

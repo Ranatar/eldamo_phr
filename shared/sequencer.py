@@ -157,8 +157,14 @@ class Sequencer:
         # the replayed derivations of Eldamo needed them (calibrate)
         for rid, (applied, skipped) in (data.get('calibration') or {}).items():
             c = self.by_id.get(rid)
-            if c is not None and c.optional and applied + skipped >= CALIBRATION_MIN:
+            if c is None or applied + skipped < CALIBRATION_MIN:
+                continue
+            if c.optional:
                 c.rare = skipped > applied
+            elif c.stage == 0 and skipped > applied:
+                # a primitive rule most written primitive forms already went
+                # through (_primitive_calibration): kept as a variant only
+                c.optional = c.rare = True
 
     def _elsewhere(self):
         """Elsewhere condition: a general sub-formula (sr > ss anywhere) does not
@@ -312,7 +318,40 @@ def calibrate(data: dict) -> dict:
         for rid, _, after in hit['trace']:
             if seq.by_id[rid].optional:
                 out.setdefault(rid, [0, 0])[0 if after is not None else 1] += 1
+    out.update(_primitive_calibration(data, seq))
     return dict(sorted(out.items()))
+
+
+def _primitive_calibration(data: dict, seq: 'Sequencer') -> dict:
+    """{rule id: [applied, skipped]} for the rules of Primitive Elvish (stage 0)
+    that are not named as optional. Eldamo writes most primitive forms after
+    these rules (✶delya -> AQ. lelja, not ✶delya -> delj by 'short final [e],
+    [a], [o] vanished'), and only some derivations start before them (✶ambara ->
+    ambar). A rule is counted as applied when a derivation names it, as skipped
+    when a derivation that starts from a primitive form does not name it although
+    it would change that form."""
+    pair_rule = {p['id']: p['rule'] for p in data['pairs']}
+    rules = [c for c in seq.rules if c.stage == 0 and not c.optional and c.rule is not None]
+    out = {}
+    for d in data['derivations']:
+        if d['deleted'] or not d['steps']:
+            continue
+        first = seq.langs.get(d['steps'][0]['lang'])
+        if first is None or first['stage'] > 1:
+            continue
+        named = {pair_rule.get(s['pair']) for s in d['steps']}
+        start = comparable(d['start'])
+        sounds = interpreter.word_sounds(d['start'])
+        for c in rules:
+            if c.era != first['era']:
+                continue
+            if c.id in named:
+                out.setdefault(c.id, [0, 0])[0] += 1
+                continue
+            changed = Sequencer._apply(c, c.rule, d['start'], sounds)
+            if changed and comparable(changed[0]) != start:
+                out.setdefault(c.id, [0, 0])[1] += 1
+    return out
 
 
 def backtest(data: dict, seq: Sequencer | None = None) -> dict:

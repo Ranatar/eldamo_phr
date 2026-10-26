@@ -26,6 +26,28 @@ SINDARIN = [
 ]
 
 
+# Eldamo writes primitive words (✶) in a spelling of its own, its derivations
+# in phonetic notation (✶delya, start delja; ✶phayanāro, pʰajanāro). Most
+# frequent correspondences between the two, from words that have both:
+PRIMITIVE = [
+    ('ı̯', 'j'), ('i̯', 'j'), ('u̯', 'w'), ('\u032f', ''),
+    ('ph', 'pʰ'), ('th', 'tʰ'), ('kh', 'kʰ'), ('qu', 'kʷ'), ('q', 'kʷ'),
+    ('ñ', 'ŋ'), ('ʒ', 'ɣ'), ('χ', 'x'), ('þ', 'θ'), ('đ', 'ð'), ('c', 'k'), ('y', 'j'),
+]
+VELAR_NASAL = re.compile(r'n(?=[kgxɣ])')
+
+
+def primitive_phonetic(form: str) -> str:
+    """A primitive form as Eldamo writes it -> its phonetic notation. Roots in
+    capitals (DEL) are left as they are."""
+    if not form or form.upper() == form:
+        return form
+    f = unicodedata.normalize('NFC', form)
+    for a, b in PRIMITIVE:
+        f = f.replace(a, b)
+    return VELAR_NASAL.sub('ŋ', f)
+
+
 def _long(text: str) -> str:
     """Acute and circumflex mark long vowels; the diaeresis only shows a
     vowel is pronounced (ë); a breve (explicit shortness) is dropped."""

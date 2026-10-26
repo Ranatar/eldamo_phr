@@ -27,6 +27,7 @@ from collections import Counter, defaultdict
 
 from .languages import BRANCHES, languages
 from .model import deleted_mark, index
+from .orthography import primitive_phonetic
 from .source import root, word_url
 
 SKIP_SPEECH = {'phonetic-rule', 'phoneme', 'grammar', 'phonetic-group', 'phonetics', 'text', 'phrase'}
@@ -227,7 +228,9 @@ def _proto_forms(entries: list, W: Words) -> None:
             if w is not None and w.get('l') in PROTO and w.get('speech') != 'root' and w.get('v'):
                 out.append(w.get('v'))
         if out:
-            e['proto_forms'] = list(dict.fromkeys(out))
+            e['proto_forms'] = list(dict.fromkeys(primitive_phonetic(f) for f in out))
+        if e.get('written_origins'):
+            e['written_origins'] = list(dict.fromkeys(primitive_phonetic(f) for f in e['written_origins']))
 
 
 def summary(entries: list) -> dict:

@@ -1128,9 +1128,12 @@ function backwardRun(E, era, form, src, dst, roots = []) {
   for (const f of found) add(f.primitive, Math.exp(f.logp) * (f.main ? 1 : 0.5), f.trace, 'direct');
   if (dst > 0) {
     const prims = backformWith(E, table(src, 0), form, era, src, 4, 0, SEARCH);
+    if (!E.stageOf) E.stageOf = new Map(E.rules.map(r => [r.id, r.stage]));
     for (const f of prims) {
-      forwardRun(E, era, f.primitive, 0, dst).slice(0, 2).forEach(([g, trace], k) =>
-        add(g, Math.exp(f.logp) * (f.main ? 1 : 0.5) * (k === 0 ? 1 : 0.5), trace, 'primitive ' + f.primitive));
+      // the form at stage dst on the very run that gave `form`
+      const trace = f.trace.filter(t => E.stageOf.get(t[0]) <= dst);
+      const hit = [...trace].reverse().find(t => t[2] != null);
+      add(hit ? hit[2] : f.primitive, Math.exp(f.logp) * (f.main ? 1 : 0.5), trace, 'primitive ' + f.primitive);
     }
   }
   return [...out.values()].sort((a, b) => b.p * (b.root ? ROOT_BONUS : 1) - a.p * (a.root ? ROOT_BONUS : 1)).slice(0, RECON_LIMIT);

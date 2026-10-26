@@ -273,9 +273,10 @@ class Context:
         if dst > 0:
             prims = BF.backform(seq, self.table(branch, era, src, 0, exclude), form, era, src, limit=4, **SEARCH)
             for f in prims:
-                for k, (g, trace) in enumerate(self.forward(branch, era, f['primitive'], 0, dst)[:2]):
-                    add(g, math.exp(f['logp']) * (1.0 if f['main'] else 0.5) * (1.0 if k == 0 else 0.5), trace,
-                        'primitive ' + f['primitive'])
+                # the form at stage dst on the very run that gave `form`
+                trace = [t for t in f['trace'] if seq.by_id[t[0]].stage <= dst]
+                g = next((t[2] for t in reversed(trace) if t[2] is not None), f['primitive'])
+                add(g, math.exp(f['logp']) * (1.0 if f['main'] else 0.5), trace, 'primitive ' + f['primitive'])
         ranked = sorted(out.values(), key=lambda r: -(r['p'] * (ROOT_BONUS if r['root'] else 1.0)))
         return ranked[:limit]
 

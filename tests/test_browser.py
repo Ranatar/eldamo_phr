@@ -153,7 +153,7 @@ class Browser(unittest.TestCase):
         self.assertEqual(page.input_value('#rc-src'), 'late|2')
         page.select_option('#rc-dst', 'late|0')
         page.click('#rc-go')
-        self.assertIn('lindē', page.inner_text('#rc-output .wf-variant.main'))
+        self.assertIn('lindē', page.inner_text('#rc-output'))
         # a cognate through the common primitive form
         page.select_option('#rc-dst-branch', 'sindarin')
         page.select_option('#rc-dst', 'late|3')

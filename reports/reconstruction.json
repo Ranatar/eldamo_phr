@@ -2,99 +2,99 @@
  "quenya": {
   "late: 2 -> 0": {
    "cases": 30,
-   "found": 27,
-   "first": 3,
-   "any": 9
+   "found": 25,
+   "first": 4,
+   "any": 11
   },
   "late: 2 -> 1": {
    "cases": 30,
-   "found": 29,
-   "first": 8,
-   "any": 24
+   "found": 28,
+   "first": 12,
+   "any": 26
   },
   "middle: 2 -> 0": {
    "cases": 30,
-   "found": 30,
-   "first": 7,
-   "any": 12
+   "found": 27,
+   "first": 4,
+   "any": 17
   },
   "middle: 2 -> 1": {
    "cases": 30,
-   "found": 28,
-   "first": 12,
-   "any": 22
+   "found": 29,
+   "first": 13,
+   "any": 28
   },
   "early: 1 -> 0": {
    "cases": 30,
    "found": 30,
-   "first": 17,
-   "any": 26
+   "first": 12,
+   "any": 24
   }
  },
  "sindarin": {
   "late: 3 -> 0": {
    "cases": 30,
-   "found": 22,
-   "first": 1,
-   "any": 4
+   "found": 28,
+   "first": 4,
+   "any": 12
   },
   "late: 3 -> 1": {
    "cases": 30,
-   "found": 22,
+   "found": 30,
    "first": 2,
-   "any": 9
+   "any": 13
   },
   "late: 3 -> 2": {
    "cases": 30,
-   "found": 30,
-   "first": 4,
-   "any": 18
+   "found": 28,
+   "first": 3,
+   "any": 12
   },
   "middle: 2 -> 0": {
    "cases": 30,
-   "found": 28,
-   "first": 2,
-   "any": 6
+   "found": 27,
+   "first": 1,
+   "any": 2
   },
   "middle: 2 -> 1": {
    "cases": 30,
    "found": 28,
-   "first": 5,
-   "any": 19
+   "first": 4,
+   "any": 16
   },
   "early: 1 -> 0": {
    "cases": 30,
-   "found": 28,
-   "first": 5,
-   "any": 13
+   "found": 24,
+   "first": 4,
+   "any": 6
   }
  },
  "cognates quenya -> sindarin": {
-  "cases": 8,
-  "first": 3,
+  "cases": 12,
+  "first": 5,
   "any": 7,
-  "pairs": 8
+  "pairs": 12
  },
  "cognates sindarin -> quenya": {
-  "cases": 8,
-  "first": 1,
-  "any": 2,
-  "pairs": 8
+  "cases": 12,
+  "first": 0,
+  "any": 5,
+  "pairs": 12
  },
  "cognate links q -> s": {
   "cases": 30,
-  "word_first": 6,
-  "word_any": 8,
-  "form_first": 5,
-  "form_any": 11,
+  "word_first": 9,
+  "word_any": 13,
+  "form_first": 6,
+  "form_any": 14,
   "pairs": 53
  },
  "cognate links s -> q": {
   "cases": 30,
-  "word_first": 4,
-  "word_any": 6,
-  "form_first": 3,
-  "form_any": 5,
+  "word_first": 2,
+  "word_any": 8,
+  "form_first": 1,
+  "form_any": 8,
   "pairs": 79
  },
  "conceptions mq -> q": {
@@ -108,7 +108,7 @@
   "cases": 30,
   "identity": 16,
   "first": 16,
-  "any": 17,
+  "any": 18,
   "pairs": 574
  },
  "conceptions eq -> q": {

@@ -239,6 +239,26 @@
   "exceptions": []
  },
  {
+  "id": "666754093",
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "era": "early",
+  "stage": 0,
+  "name": "[kʷu] became [ku]",
+  "url": "https://eldamo.org/content/words/word-666754093.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "666754093.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "2151845509",
   "lang": "p",
   "marker": "✶",
@@ -885,6 +905,26 @@
   "exceptions": []
  },
  {
+  "id": "2628655373",
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "era": "early",
+  "stage": 0,
+  "name": "final [ai] became [ī]",
+  "url": "https://eldamo.org/content/words/word-2628655373.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "2628655373.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "2641132585",
   "lang": "p",
   "marker": "✶",
@@ -990,6 +1030,33 @@
   "exceptions": []
  },
  {
+  "id": "3594765139",
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "era": "early",
+  "stage": 0,
+  "name": "final [l], [r], [n] became syllabic after a consonant",
+  "url": "https://eldamo.org/content/words/word-3594765139.html",
+  "order": null,
+  "formula": {
+   "from": "-C{lrn}",
+   "to": "-C{ḷṛṇ}"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "2186610087"
+  ],
+  "pairs": [
+   "3594765139.1",
+   "3594765139.2",
+   "3594765139.3"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "3385004377",
   "lang": "p",
   "marker": "✶",
@@ -1030,6 +1097,47 @@
   "exceptions": []
  },
  {
+  "id": "3141061005",
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "era": "early",
+  "stage": 0,
+  "name": "initial nasalized voiced stops reduced to stops",
+  "url": "https://eldamo.org/content/words/word-3141061005.html",
+  "order": null,
+  "formula": {
+   "from": "{ŋgʷ|ŋg|nd|ndʲ|mb}-",
+   "to": "{gʷ|g|d|dʲ|b}-"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3141061005.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1942014713",
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "era": "early",
+  "stage": 0,
+  "name": "intervocalic [l] may have had different developments by position",
+  "url": "https://eldamo.org/content/words/word-1942014713.html",
+  "order": 100,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "542079381",
   "lang": "p",
   "marker": "✶",
@@ -1067,6 +1175,27 @@
    "2818407091.1"
   ],
   "notes": "GS/§4.6 @@@",
+  "exceptions": []
+ },
+ {
+  "id": "2461772055",
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "era": "early",
+  "stage": 0,
+  "name": "long vowels shortened before consonant groups and in diphthongs",
+  "url": "https://eldamo.org/content/words/word-2461772055.html",
+  "order": 700,
+  "formula": {
+   "from": "V̄CC|V̄V",
+   "to": "V̆CC|V̆V"
+  },
+  "mark": "",
+  "variant_of": "2818407091",
+  "before": [],
+  "after": [],
+  "pairs": [],
+  "notes": "",
   "exceptions": []
  },
  {
@@ -1200,6 +1329,30 @@
    "3915121695.4",
    "3915121695.5",
    "3915121695.6"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "4001161343",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "intervocalic [ŋ], [ŋʷ] became [ŋg], [ŋgʷ]",
+  "url": "https://eldamo.org/content/words/word-4001161343.html",
+  "order": null,
+  "formula": {
+   "from": "V{ŋ|ŋʷ}V",
+   "to": "V{ŋg|ŋgʷ}V"
+  },
+  "mark": "",
+  "variant_of": "3915121695",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "4001161343.1",
+   "4001161343.2"
   ],
   "notes": "",
   "exceptions": []
@@ -1410,6 +1563,34 @@
   "exceptions": []
  },
  {
+  "id": "2698200055",
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "era": "early",
+  "stage": 0,
+  "name": "nasals assimilated to following consonant",
+  "url": "https://eldamo.org/content/words/word-2698200055.html",
+  "order": 200,
+  "formula": {
+   "from": "{mnŋ}{pb}|{mnŋ}{td}|{mnŋ}{kg}",
+   "to": "m{pb}|n{td}|ŋ{kg}"
+  },
+  "mark": "",
+  "variant_of": "2390772785",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "2698200055.1",
+   "2698200055.2",
+   "2698200055.3",
+   "2698200055.4",
+   "2698200055.5",
+   "2698200055.6"
+  ],
+  "notes": "HPG/§3",
+  "exceptions": []
+ },
+ {
   "id": "2794740763",
   "lang": "p",
   "marker": "✶",
@@ -1462,6 +1643,104 @@
   "exceptions": []
  },
  {
+  "id": "1398002213",
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "era": "early",
+  "stage": 0,
+  "name": "final [ǝ] vanished",
+  "url": "https://eldamo.org/content/words/word-1398002213.html",
+  "order": 400,
+  "formula": null,
+  "mark": "",
+  "variant_of": "3998109579",
+  "before": [
+   {
+    "rule": "4062489737",
+    "lang": "ep",
+    "name": "short final [i], [u] became [e], [o]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "2954387961"
+  ],
+  "pairs": [
+   "1398002213.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2186610087",
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "era": "early",
+  "stage": 0,
+  "name": "final [j], [w] became [i], [u]",
+  "url": "https://eldamo.org/content/words/word-2186610087.html",
+  "order": 500,
+  "formula": {
+   "from": "-{jw}",
+   "to": "-{iu}"
+  },
+  "mark": "",
+  "variant_of": "3998109579",
+  "before": [
+   {
+    "rule": "4062489737",
+    "lang": "ep",
+    "name": "short final [i], [u] became [e], [o]",
+    "evidence": []
+   },
+   {
+    "rule": "3594765139",
+    "lang": "ep",
+    "name": "final [l], [r], [n] became syllabic after a consonant",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "2186610087.1",
+   "2186610087.2"
+  ],
+  "notes": "@@@ this means in EQ, final [tj] and [gw] developed differently from [tʲ], [gʷ]; distinguish y, w from ẏ, ẇ?",
+  "exceptions": []
+ },
+ {
+  "id": "2954387961",
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "era": "early",
+  "stage": 0,
+  "name": "short final [e], [a], [o] became [ǝ]",
+  "url": "https://eldamo.org/content/words/word-2954387961.html",
+  "order": 300,
+  "formula": {
+   "from": "-S{ĕăŏ}",
+   "to": "-Sǝ"
+  },
+  "mark": "",
+  "variant_of": "3998109579",
+  "before": [
+   {
+    "rule": "1398002213",
+    "lang": "ep",
+    "name": "final [ǝ] vanished",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "2954387961.1",
+   "2954387961.2",
+   "2954387961.3"
+  ],
+  "notes": "@@@ but not in monosyllables or after vowels [nauva < naχū́a]",
+  "exceptions": []
+ },
+ {
   "id": "3064357955",
   "lang": "p",
   "marker": "✶",
@@ -1507,6 +1786,33 @@
    "2698078435.2"
   ],
   "notes": "GS/§4.13 §66iv @@@",
+  "exceptions": []
+ },
+ {
+  "id": "4062489737",
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "era": "early",
+  "stage": 0,
+  "name": "short final [i], [u] became [e], [o]",
+  "url": "https://eldamo.org/content/words/word-4062489737.html",
+  "order": 600,
+  "formula": {
+   "from": "-{ĭŭ}",
+   "to": "-{eo}"
+  },
+  "mark": "",
+  "variant_of": "2698078435",
+  "before": [],
+  "after": [
+   "1398002213",
+   "2186610087"
+  ],
+  "pairs": [
+   "4062489737.1",
+   "4062489737.2"
+  ],
+  "notes": "",
   "exceptions": []
  },
  {
@@ -1595,6 +1901,34 @@
    "3404671151.1"
   ],
   "notes": "GS/§4.14 @@@ but note ᴹ✶ábārō̆ > ON. abōro",
+  "exceptions": []
+ },
+ {
+  "id": "2168100881",
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "era": "early",
+  "stage": 0,
+  "name": "voiced stops became nasals before nasals",
+  "url": "https://eldamo.org/content/words/word-2168100881.html",
+  "order": null,
+  "formula": {
+   "from": "{bdg}{mn}",
+   "to": "{mnŋ}{mn}"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "2168100881.1",
+   "2168100881.2",
+   "2168100881.3",
+   "2168100881.4",
+   "2168100881.5",
+   "2168100881.6"
+  ],
+  "notes": "",
   "exceptions": []
  },
  {
@@ -1716,6 +2050,29 @@
   "exceptions": []
  },
  {
+  "id": "4185647833",
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "era": "early",
+  "stage": 0,
+  "name": "voiced stops unvoiced before voiceless consonants",
+  "url": "https://eldamo.org/content/words/word-4185647833.html",
+  "order": null,
+  "formula": {
+   "from": "{bdg}{ptks}",
+   "to": "{ptk}{ptks}"
+  },
+  "mark": "",
+  "variant_of": "2905876955",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "4185647833.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "1132141441",
   "lang": "q",
   "marker": "Q.",
@@ -1786,6 +2143,31 @@
   "exceptions": []
  },
  {
+  "id": "794699965",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ae], [ao] generally became [ā]",
+  "url": "https://eldamo.org/content/words/word-794699965.html",
+  "order": 3800,
+  "formula": {
+   "from": "a{eo}|ăō",
+   "to": "ā|ō"
+  },
+  "mark": "",
+  "variant_of": "205917541",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "794699965.1",
+   "794699965.2",
+   "794699965.3"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "2761837707",
   "lang": "q",
   "marker": "Q.",
@@ -1821,6 +2203,31 @@
   "after": [],
   "pairs": [
    "356705051.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "93891029",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[aie] became [aije]",
+  "url": "https://eldamo.org/content/words/word-93891029.html",
+  "order": 3000,
+  "formula": {
+   "from": "aie",
+   "to": "aije"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "1017982247"
+  ],
+  "pairs": [
+   "93891029.1"
   ],
   "notes": "",
   "exceptions": []
@@ -1875,6 +2282,29 @@
    "2488350997.1",
    "2488350997.2",
    "2488350997.3"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1926351487",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[dʲ] became [j]",
+  "url": "https://eldamo.org/content/words/word-1926351487.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": "2488350997",
+  "before": [],
+  "after": [
+   "3480191301",
+   "1497556499"
+  ],
+  "pairs": [
+   "1926351487.1"
   ],
   "notes": "",
   "exceptions": []
@@ -1937,6 +2367,165 @@
   "exceptions": []
  },
  {
+  "id": "3589750713",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ð] became [θ] before voiceless stops and [s]",
+  "url": "https://eldamo.org/content/words/word-3589750713.html",
+  "order": null,
+  "formula": {
+   "from": "ð{ptks}",
+   "to": "θ{ptks}"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "1053361623",
+    "lang": "eq",
+    "name": "[ð] became [z]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "3179825887"
+  ],
+  "pairs": [
+   "3589750713.1",
+   "3589750713.2"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "593991133",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ðθ] became [θθ]",
+  "url": "https://eldamo.org/content/words/word-593991133.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "3536671329",
+    "lang": "eq",
+    "name": "[θ] became [ð] after voiced spirants and stops",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "593991133.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2901784817",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ðʲ] became [j]",
+  "url": "https://eldamo.org/content/words/word-2901784817.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "451471319",
+    "lang": "eq",
+    "name": "later [j], [w] became [i], [u] finally or between a vowel and a consonant",
+    "evidence": []
+   },
+   {
+    "rule": "1865495919",
+    "lang": "eq",
+    "name": "[ei], [ou] became [ai], [au]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "2107569835",
+   "609719289",
+   "579131439"
+  ],
+  "pairs": [
+   "2901784817.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2107569835",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ðʲi] became [ī] and [ɣʷu] became [ū]",
+  "url": "https://eldamo.org/content/words/word-2107569835.html",
+  "order": null,
+  "formula": {
+   "from": "ðʲi|ɣʷu",
+   "to": "ī|ū"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "2901784817",
+    "lang": "eq",
+    "name": "[ðʲ] became [j]",
+    "evidence": []
+   },
+   {
+    "rule": "1501380803",
+    "lang": "eq",
+    "name": "[ɣʷ] became [w]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "2107569835.1",
+   "2107569835.2"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "774448523",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ǝ] assimilated to preceding vowel",
+  "url": "https://eldamo.org/content/words/word-774448523.html",
+  "order": 4000,
+  "formula": {
+   "from": "Vǝ",
+   "to": "V̄"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "774448523.1",
+   "774448523.2",
+   "774448523.3"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "2315722009",
   "lang": "q",
   "marker": "Q.",
@@ -1989,6 +2578,113 @@
    "1123007057.4",
    "1123007057.5",
    "1123007057.6"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1865495919",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ei], [ou] became [ai], [au]",
+  "url": "https://eldamo.org/content/words/word-1865495919.html",
+  "order": null,
+  "formula": {
+   "from": "ei|ou",
+   "to": "ai|au"
+  },
+  "mark": "",
+  "variant_of": "1123007057",
+  "before": [],
+  "after": [
+   "2901784817",
+   "2475648287",
+   "609719289",
+   "834390781"
+  ],
+  "pairs": [
+   "1865495919.1",
+   "1865495919.2",
+   "1865495919.3"
+  ],
+  "notes": "Exception: neite",
+  "exceptions": []
+ },
+ {
+  "id": "3875992065",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ei] became [e] before [a], [o] or [u], but [i] before [e]",
+  "url": "https://eldamo.org/content/words/word-3875992065.html",
+  "order": 3200,
+  "formula": {
+   "from": "ei{auo}",
+   "to": "eø{auo}"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "1017982247"
+  ],
+  "pairs": [
+   "3875992065.1",
+   "3875992065.2",
+   "3875992065.3",
+   "3875992065.4"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1625996953",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[eu], [iu] became [euw], [iuw] before unstressed vowel, [ew], [iw] before stressed vowel",
+  "url": "https://eldamo.org/content/words/word-1625996953.html",
+  "order": 3600,
+  "formula": {
+   "from": "{ei}uV|{ei}uV́",
+   "to": "{ei}uwV|{ei}wV́"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "1625996953.1",
+   "1625996953.2",
+   "1625996953.3",
+   "1625996953.4"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3263617489",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[f] became [v] except before stressed vowel",
+  "url": "https://eldamo.org/content/words/word-3263617489.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "3931943725",
+   "3931943725"
+  ],
+  "pairs": [
+   "3263617489.1"
   ],
   "notes": "",
   "exceptions": []
@@ -2183,6 +2879,73 @@
   "exceptions": []
  },
  {
+  "id": "71510193",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ɣ] otherwise vanished",
+  "url": "https://eldamo.org/content/words/word-71510193.html",
+  "order": 2400,
+  "formula": null,
+  "mark": "",
+  "variant_of": "3266317297",
+  "before": [
+   {
+    "rule": "2218848947",
+    "lang": "mq",
+    "name": "[wo] became [o]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "110060203",
+   "3179825887"
+  ],
+  "pairs": [
+   "71510193.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1501380803",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ɣʷ] became [w]",
+  "url": "https://eldamo.org/content/words/word-1501380803.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "451471319",
+    "lang": "eq",
+    "name": "later [j], [w] became [i], [u] finally or between a vowel and a consonant",
+    "evidence": []
+   },
+   {
+    "rule": null,
+    "lang": "eq",
+    "name": "[ou] became [au]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "2107569835",
+   "1412754393",
+   "579131439"
+  ],
+  "pairs": [
+   "1501380803.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "1619715205",
   "lang": "q",
   "marker": "Q.",
@@ -2226,6 +2989,65 @@
   "pairs": [
    "2416213929.1",
    "2416213929.2"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2796400083",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ij], [uw] became [i], [u]",
+  "url": "https://eldamo.org/content/words/word-2796400083.html",
+  "order": 2500,
+  "formula": {
+   "from": "ij|uw",
+   "to": "i|u"
+  },
+  "mark": "",
+  "variant_of": "2416213929",
+  "before": [
+   {
+    "rule": "2868696637",
+    "lang": "eq",
+    "name": "[j], [w] became [i], [u] after a vowel",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "2796400083.1",
+   "2796400083.2",
+   "2796400083.3",
+   "2796400083.4"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2868696637",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[j], [w] became [i], [u] after a vowel",
+  "url": "https://eldamo.org/content/words/word-2868696637.html",
+  "order": 2900,
+  "formula": {
+   "from": "V{jw}",
+   "to": "V{iu}"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "2796400083"
+  ],
+  "pairs": [
+   "2868696637.1",
+   "2868696637.2"
   ],
   "notes": "",
   "exceptions": []
@@ -2409,6 +3231,159 @@
   "exceptions": []
  },
  {
+  "id": "3015430929",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ai] became [e] before unstressed [a], [o] or [u], but [aj] before stressed [a], [o] or [u]",
+  "url": "https://eldamo.org/content/words/word-3015430929.html",
+  "order": 3100,
+  "formula": {
+   "from": "ai{auo}|ai{áóú}",
+   "to": "eø{auo}|aj{áóú}"
+  },
+  "mark": "",
+  "variant_of": "1324632797",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3015430929.1",
+   "3015430929.2",
+   "3015430929.3",
+   "3015430929.4",
+   "3015430929.5",
+   "3015430929.6"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "964124395",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[au] became [o] before unstressed vowel, but [aw] before stressed vowel",
+  "url": "https://eldamo.org/content/words/word-964124395.html",
+  "order": 3300,
+  "formula": {
+   "from": "au{ieao}|au{íéáó}",
+   "to": "oø{ieao}|aw{íéáó}"
+  },
+  "mark": "",
+  "variant_of": "1324632797",
+  "before": [
+   {
+    "rule": "1504974675",
+    "lang": "eq",
+    "name": "[oe] became [oa]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "1017982247"
+  ],
+  "pairs": [
+   "964124395.1",
+   "964124395.2",
+   "964124395.3",
+   "964124395.4",
+   "964124395.5",
+   "964124395.6",
+   "964124395.7",
+   "964124395.8"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2475648287",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ou] became [u] before [e] and [o], but [o] before [i] and [a]",
+  "url": "https://eldamo.org/content/words/word-2475648287.html",
+  "order": 3400,
+  "formula": {
+   "from": "ou{eo}|ou{ia}",
+   "to": "uø{eo}|oø{ia}"
+  },
+  "mark": "",
+  "variant_of": "1324632797",
+  "before": [
+   {
+    "rule": "1865495919",
+    "lang": "eq",
+    "name": "[ei], [ou] became [ai], [au]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "1017982247"
+  ],
+  "pairs": [
+   "2475648287.1",
+   "2475648287.2",
+   "2475648287.3",
+   "2475648287.4"
+  ],
+  "notes": "@@@ counterexample: ua (GL/61)",
+  "exceptions": []
+ },
+ {
+  "id": "1017982247",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[jǝ], [wǝ] became [je], [wo] after a vowel",
+  "url": "https://eldamo.org/content/words/word-1017982247.html",
+  "order": 2700,
+  "formula": {
+   "from": "Vjǝ|Vwǝ",
+   "to": "Vje|Vwo"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "93891029",
+    "lang": "eq",
+    "name": "[aie] became [aije]",
+    "evidence": []
+   },
+   {
+    "rule": "3875992065",
+    "lang": "eq",
+    "name": "[ei] became [e] before [a], [o] or [u], but [i] before [e]",
+    "evidence": []
+   },
+   {
+    "rule": "964124395",
+    "lang": "eq",
+    "name": "[au] became [o] before unstressed vowel, but [aw] before stressed vowel",
+    "evidence": []
+   },
+   {
+    "rule": "2475648287",
+    "lang": "eq",
+    "name": "[ou] became [u] before [e] and [o], but [o] before [i] and [a]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "1017982247.1",
+   "1017982247.2",
+   "1017982247.3",
+   "1017982247.4"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "1657301905",
   "lang": "aq",
   "marker": "AQ.",
@@ -2525,6 +3500,87 @@
   "exceptions": []
  },
  {
+  "id": "609719289",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ji], [wu] became [i], [u] after a vowel",
+  "url": "https://eldamo.org/content/words/word-609719289.html",
+  "order": 2600,
+  "formula": {
+   "from": "Vji|Vwu",
+   "to": "Vi|Vu"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "1865495919",
+    "lang": "eq",
+    "name": "[ei], [ou] became [ai], [au]",
+    "evidence": []
+   },
+   {
+    "rule": "2901784817",
+    "lang": "eq",
+    "name": "[ðʲ] became [j]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "609719289.1",
+   "609719289.2",
+   "609719289.3",
+   "609719289.4"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3664845381",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[kw] became [kʷ]",
+  "url": "https://eldamo.org/content/words/word-3664845381.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3664845381.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2229352317",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[kʷkʷ] became [kʷ]",
+  "url": "https://eldamo.org/content/words/word-2229352317.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "3099273747"
+  ],
+  "pairs": [
+   "2229352317.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "2837004771",
   "lang": "q",
   "marker": "Q.",
@@ -2573,6 +3629,26 @@
    "1946719133.2"
   ],
   "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3720428755",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[rg] became [rk]",
+  "url": "https://eldamo.org/content/words/word-3720428755.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": "1946719133",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3720428755.1"
+  ],
+  "notes": "@@@ similarly [lg]?",
   "exceptions": []
  },
  {
@@ -2731,6 +3807,26 @@
   "exceptions": []
  },
  {
+  "id": "1979851293",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[mn] became [nm]",
+  "url": "https://eldamo.org/content/words/word-1979851293.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "1979851293.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "1399041717",
   "lang": "aq",
   "marker": "AQ.",
@@ -2820,6 +3916,26 @@
   "after": [],
   "pairs": [
    "1010737209.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3713651241",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[mw] became [nw]",
+  "url": "https://eldamo.org/content/words/word-3713651241.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": "1010737209",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3713651241.1"
   ],
   "notes": "",
   "exceptions": []
@@ -3059,6 +4175,26 @@
   "exceptions": []
  },
  {
+  "id": "3086270501",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ndj] became [nj] in Inwelin",
+  "url": "https://eldamo.org/content/words/word-3086270501.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3086270501.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "1625553255",
   "lang": "aq",
   "marker": "AQ.",
@@ -3197,6 +4333,29 @@
   "exceptions": []
  },
  {
+  "id": "2457955191",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "medial nasal plus [w] became [ŋgw]",
+  "url": "https://eldamo.org/content/words/word-2457955191.html",
+  "order": null,
+  "formula": {
+   "from": "{nʲmnŋ}w",
+   "to": "ŋgw"
+  },
+  "mark": "",
+  "variant_of": "2886094609",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "2457955191.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "2591378297",
   "lang": "aq",
   "marker": "AQ.",
@@ -3242,6 +4401,77 @@
    "1082153437.1"
   ],
   "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1504974675",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[oe] became [oa]",
+  "url": "https://eldamo.org/content/words/word-1504974675.html",
+  "order": 3900,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "964124395"
+  ],
+  "pairs": [
+   "1504974675.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "554348879",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[oi], [ui] became [oij], [uij] before unstressed vowel, [oj], [uj] before stressed vowel",
+  "url": "https://eldamo.org/content/words/word-554348879.html",
+  "order": 3500,
+  "formula": {
+   "from": "{ou}iV|{ou}iV́",
+   "to": "{ou}ijV|{ou}jV́"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "554348879.1",
+   "554348879.2",
+   "554348879.3",
+   "554348879.4"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1728242171",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[pp] became [pt]",
+  "url": "https://eldamo.org/content/words/word-1728242171.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "574672121",
+   "3099273747"
+  ],
+  "pairs": [
+   "1728242171.1"
+  ],
+  "notes": "@@@ possible counterexample lappa",
   "exceptions": []
  },
  {
@@ -3319,6 +4549,26 @@
   "exceptions": []
  },
  {
+  "id": "2805959101",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[kt] became [xt]",
+  "url": "https://eldamo.org/content/words/word-2805959101.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": "2701010297",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "2805959101.1"
+  ],
+  "notes": "compare ektele >> ehtil",
+  "exceptions": []
+ },
+ {
   "id": "182545135",
   "lang": "q",
   "marker": "Q.",
@@ -3356,6 +4606,26 @@
   "after": [],
   "pairs": [
    "1491842395.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3476641749",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[pw] became [tw]",
+  "url": "https://eldamo.org/content/words/word-3476641749.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3476641749.1"
   ],
   "notes": "",
   "exceptions": []
@@ -3432,6 +4702,62 @@
   "exceptions": []
  },
  {
+  "id": "1720939405",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "short syllabic [ḷ] became [il], or [ul] before labials",
+  "url": "https://eldamo.org/content/words/word-1720939405.html",
+  "order": 400,
+  "formula": {
+   "from": "ḷ|ḷ{pbɸmw}|ḷCʷ",
+   "to": "il|ul{pbɸmw}|ulCʷ"
+  },
+  "mark": "",
+  "variant_of": "720793221",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "1720939405.1",
+   "1720939405.2",
+   "1720939405.3",
+   "1720939405.4",
+   "1720939405.5",
+   "1720939405.6",
+   "1720939405.7",
+   "1720939405.8"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2915077261",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "short syllabic [ṛ] became [ar], [ir] before palatalized consonants or [ur] after [w] and [kʷ]",
+  "url": "https://eldamo.org/content/words/word-2915077261.html",
+  "order": 600,
+  "formula": {
+   "from": "ṛ|ṛCʲ|wṛ",
+   "to": "ar|irCʲ|ur"
+  },
+  "mark": "",
+  "variant_of": "720793221",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "2915077261.1",
+   "2915077261.2",
+   "2915077261.3",
+   "2915077261.4"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "1071202939",
   "lang": "aq",
   "marker": "AQ.",
@@ -3503,6 +4829,30 @@
    "1238072385.5",
    "1238072385.6",
    "1238072385.7"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2661447495",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[r] dissimilated to [l]",
+  "url": "https://eldamo.org/content/words/word-2661447495.html",
+  "order": null,
+  "formula": {
+   "from": "rVr|rCVr",
+   "to": "lVr|rCVl"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "2661447495.1",
+   "2661447495.2"
   ],
   "notes": "",
   "exceptions": []
@@ -3650,6 +5000,33 @@
   "exceptions": []
  },
  {
+  "id": "3935033455",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[sf] became [ff]",
+  "url": "https://eldamo.org/content/words/word-3935033455.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": "1165599019",
+  "before": [
+   {
+    "rule": "3931943725",
+    "lang": "eq",
+    "name": "geminate voiceless spirants reduced",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "3935033455.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "2094898289",
   "lang": "q",
   "marker": "Q.",
@@ -3721,6 +5098,30 @@
   "exceptions": []
  },
  {
+  "id": "3881401387",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[sp] became [ps], [sk] sometimes [ks]",
+  "url": "https://eldamo.org/content/words/word-3881401387.html",
+  "order": null,
+  "formula": {
+   "from": "sp|sk",
+   "to": "ps|ks"
+  },
+  "mark": "",
+  "variant_of": "3499874945",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3881401387.1",
+   "3881401387.2"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "1606156545",
   "lang": "aq",
   "marker": "AQ.",
@@ -3775,6 +5176,130 @@
   "exceptions": []
  },
  {
+  "id": "3702117245",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[sx] became [ss]",
+  "url": "https://eldamo.org/content/words/word-3702117245.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3702117245.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1439505743",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[sxʷ] became [sw]",
+  "url": "https://eldamo.org/content/words/word-1439505743.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "1439505743.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1784632669",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ti] became [tsi]",
+  "url": "https://eldamo.org/content/words/word-1784632669.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "1142199593",
+    "lang": "eq",
+    "name": "[ts] became [s] after diphthong",
+    "evidence": []
+   },
+   {
+    "rule": "3480191301",
+    "lang": "eq",
+    "name": "palatals became dentals before [i]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "1784632669.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1142199593",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ts] became [s] after diphthong",
+  "url": "https://eldamo.org/content/words/word-1142199593.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "1784632669"
+  ],
+  "pairs": [
+   "1142199593.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3536671329",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[θ] became [ð] after voiced spirants and stops",
+  "url": "https://eldamo.org/content/words/word-3536671329.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "281616373",
+    "lang": "eq",
+    "name": "[θ] became [s]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "593991133"
+  ],
+  "pairs": [
+   "3536671329.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "3491983963",
   "lang": "q",
   "marker": "Q.",
@@ -3821,6 +5346,143 @@
   "exceptions": []
  },
  {
+  "id": "281616373",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[θ] became [s]",
+  "url": "https://eldamo.org/content/words/word-281616373.html",
+  "order": 1100,
+  "formula": null,
+  "mark": "",
+  "variant_of": "3006504693",
+  "before": [
+   {
+    "rule": "3922871059",
+    "lang": "eq",
+    "name": "initial [sw] and [sβ] became [f], [sj] became [j̊]",
+    "evidence": []
+   },
+   {
+    "rule": "1821618891",
+    "lang": "eq",
+    "name": "[s] became [z] before nasals and voiced spirants",
+    "evidence": []
+   },
+   {
+    "rule": "3362555183",
+    "lang": "eq",
+    "name": "voiceless spirants became stops before stops, [s] or [z]",
+    "evidence": []
+   },
+   {
+    "rule": "2101627003",
+    "lang": "eq",
+    "name": "[tʲ], [kʷ] became [t], [k] before [t], [s]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "3536671329",
+   "3802989615",
+   "3235607655",
+   "3654836095",
+   "169515023",
+   "1412754393"
+  ],
+  "pairs": [
+   "281616373.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3802989615",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[θʲ] became [θ] before stops",
+  "url": "https://eldamo.org/content/words/word-3802989615.html",
+  "order": 900,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "281616373",
+    "lang": "eq",
+    "name": "[θ] became [s]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "3802989615.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1652146593",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[θʲi] became [xi]",
+  "url": "https://eldamo.org/content/words/word-1652146593.html",
+  "order": 800,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "3480191301",
+    "lang": "eq",
+    "name": "palatals became dentals before [i]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "3654836095"
+  ],
+  "pairs": [
+   "1652146593.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2101627003",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[tʲ], [kʷ] became [t], [k] before [t], [s]",
+  "url": "https://eldamo.org/content/words/word-2101627003.html",
+  "order": null,
+  "formula": {
+   "from": "{tʲkʷ}{ts}",
+   "to": "{tk}"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "281616373",
+   "3362555183"
+  ],
+  "pairs": [
+   "2101627003.1",
+   "2101627003.2",
+   "2101627003.3",
+   "2101627003.4"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "2276015165",
   "lang": "q",
   "marker": "Q.",
@@ -3862,6 +5524,64 @@
   "before": [],
   "after": [],
   "pairs": [],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1557215875",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[w] became [v] after [u] and [o] and before [o]",
+  "url": "https://eldamo.org/content/words/word-1557215875.html",
+  "order": 4300,
+  "formula": {
+   "from": "{uo}w|wo",
+   "to": "v{uo}|ov"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "1196923337",
+    "lang": "eq",
+    "name": "initial [gʷ] became [w]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "834390781"
+  ],
+  "pairs": [
+   "1557215875.1",
+   "1557215875.2",
+   "1557215875.3"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2529974525",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[w] became [v] in Cortirion",
+  "url": "https://eldamo.org/content/words/word-2529974525.html",
+  "order": null,
+  "formula": {
+   "from": "VwV|w-",
+   "to": "VvV|v-"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "2529974525.1",
+   "2529974525.2"
+  ],
   "notes": "",
   "exceptions": []
  },
@@ -3997,9 +5717,45 @@
     "evidence": []
    }
   ],
-  "after": [],
+  "after": [
+   "71510193"
+  ],
   "pairs": [
    "2218848947.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "574672121",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[x] assimilated to preceding stop",
+  "url": "https://eldamo.org/content/words/word-574672121.html",
+  "order": null,
+  "formula": {
+   "from": "px|tx|tʲx|kx|kʷx",
+   "to": "pp|tt|tt|kk|kk"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "1728242171",
+    "lang": "eq",
+    "name": "[pp] became [pt]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "574672121.1",
+   "574672121.2",
+   "574672121.3",
+   "574672121.4",
+   "574672121.5"
   ],
   "notes": "",
   "exceptions": []
@@ -4150,6 +5906,123 @@
   "exceptions": []
  },
  {
+  "id": "3235607655",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[xs] became [xx]",
+  "url": "https://eldamo.org/content/words/word-3235607655.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "281616373",
+    "lang": "eq",
+    "name": "[θ] became [s]",
+    "evidence": []
+   },
+   {
+    "rule": "3931943725",
+    "lang": "eq",
+    "name": "geminate voiceless spirants reduced",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "3235607655.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1950246799",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[xʷ] became [kʷ] after voiceless stops",
+  "url": "https://eldamo.org/content/words/word-1950246799.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "1950246799.1"
+  ],
+  "notes": "@@@ can this generalize?",
+  "exceptions": []
+ },
+ {
+  "id": "4193614505",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[xʷ] became [x] before consonants",
+  "url": "https://eldamo.org/content/words/word-4193614505.html",
+  "order": null,
+  "formula": {
+   "from": "xʷC|xʷ{βðɣɣʷjw}",
+   "to": "xC|w{βðɣɣʷjw}"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "579131439"
+  ],
+  "pairs": [
+   "4193614505.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "4101283277",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[xʷu] became [xu]",
+  "url": "https://eldamo.org/content/words/word-4101283277.html",
+  "order": 1200,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "3717166775",
+    "lang": "eq",
+    "name": "initial and intervocalic [xʷ] became [f]",
+    "evidence": []
+   },
+   {
+    "rule": "3654836095",
+    "lang": "eq",
+    "name": "voiceless spirants became stops after nasals",
+    "evidence": []
+   },
+   {
+    "rule": "1412754393",
+    "lang": "eq",
+    "name": "voiceless spirants voiced after liquids",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "4101283277.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "1472480589",
   "lang": "aq",
   "marker": "AQ.",
@@ -4203,6 +6076,28 @@
    "98897835.2",
    "98897835.3",
    "98897835.4"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3780248481",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[rl] became [ll]",
+  "url": "https://eldamo.org/content/words/word-3780248481.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": "98897835",
+  "before": [],
+  "after": [
+   "1584268155"
+  ],
+  "pairs": [
+   "3780248481.1"
   ],
   "notes": "",
   "exceptions": []
@@ -4329,6 +6224,38 @@
   "exceptions": []
  },
  {
+  "id": "1584268155",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[z] became [r]",
+  "url": "https://eldamo.org/content/words/word-1584268155.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": "14189179",
+  "before": [
+   {
+    "rule": "3780248481",
+    "lang": "eq",
+    "name": "[rl] became [ll]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "1025055523",
+   "1053361623",
+   "1821618891",
+   "2012556159"
+  ],
+  "pairs": [
+   "1584268155.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "3279729471",
   "lang": "aq",
   "marker": "AQ.",
@@ -4401,6 +6328,33 @@
    "4145487633.1",
    "4145487633.2",
    "4145487633.3"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1025055523",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[z] vanished between a vowel and [m] after a preceding [z], [r]",
+  "url": "https://eldamo.org/content/words/word-1025055523.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "1584268155",
+    "lang": "eq",
+    "name": "[z] became [r]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "1025055523.1"
   ],
   "notes": "",
   "exceptions": []
@@ -4526,6 +6480,73 @@
   "exceptions": []
  },
  {
+  "id": "1670039283",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ɸ] usually became [f]",
+  "url": "https://eldamo.org/content/words/word-1670039283.html",
+  "order": 1400,
+  "formula": {
+   "from": "ɸ|ɸɣʷ|ɸðʲ|ɸu",
+   "to": "f|f|j̊|βu"
+  },
+  "mark": "",
+  "variant_of": "2661449019",
+  "before": [
+   {
+    "rule": "110060203",
+    "lang": "eq",
+    "name": "intervocalic voiceless spirants became voiced",
+    "evidence": []
+   },
+   {
+    "rule": "3931943725",
+    "lang": "eq",
+    "name": "geminate voiceless spirants reduced",
+    "evidence": []
+   },
+   {
+    "rule": "3496955393",
+    "lang": "eq",
+    "name": "[β] vanished before [u]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "3362555183"
+  ],
+  "pairs": [
+   "1670039283.1",
+   "1670039283.2",
+   "1670039283.3",
+   "1670039283.4"
+  ],
+  "notes": "@@@ voiced spirants unvoiced?",
+  "exceptions": []
+ },
+ {
+  "id": "1245311459",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[β] became [v]",
+  "url": "https://eldamo.org/content/words/word-1245311459.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": "2661449019",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "1245311459.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "2497198855",
   "lang": "q",
   "marker": "Q.",
@@ -4597,6 +6618,33 @@
   "after": [],
   "pairs": [
    "223912721.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "4047708457",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ɸx] became [f]",
+  "url": "https://eldamo.org/content/words/word-4047708457.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "169515023",
+    "lang": "eq",
+    "name": "voiceless spirant combinations assimilated except to [θ]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "4047708457.1"
   ],
   "notes": "",
   "exceptions": []
@@ -4700,6 +6748,81 @@
    "641476107.6",
    "641476107.7",
    "641476107.8"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2080125305",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[β] became [u] before consonants and finally",
+  "url": "https://eldamo.org/content/words/word-2080125305.html",
+  "order": null,
+  "formula": {
+   "from": "-β|VβC",
+   "to": "-u|VuC"
+  },
+  "mark": "",
+  "variant_of": "641476107",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "2080125305.1",
+   "2080125305.2"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3676149149",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "between vowels and consonants [ɣ] vanished with compensatory lengthening",
+  "url": "https://eldamo.org/content/words/word-3676149149.html",
+  "order": 2100,
+  "formula": null,
+  "mark": "",
+  "variant_of": "641476107",
+  "before": [
+   {
+    "rule": "2705037297",
+    "lang": "eq",
+    "name": "middle consonant lost in three-consonant cluster",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "579131439"
+  ],
+  "pairs": [
+   "3676149149.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3496955393",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[β] vanished before [u]",
+  "url": "https://eldamo.org/content/words/word-3496955393.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "1670039283"
+  ],
+  "pairs": [
+   "3496955393.1"
   ],
   "notes": "",
   "exceptions": []
@@ -5005,6 +7128,29 @@
   "exceptions": []
  },
  {
+  "id": "3634388709",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "diphthongs usually reduced before consonant clusters",
+  "url": "https://eldamo.org/content/words/word-3634388709.html",
+  "order": 4200,
+  "formula": {
+   "from": "{ei|ai|oi|ui|au|eu|ou|iu}CC",
+   "to": "{i|e|e|wi|o|o|u|ju}CC"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3634388709.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "173969535",
   "lang": "q",
   "marker": "Q.",
@@ -5045,6 +7191,132 @@
   "exceptions": []
  },
  {
+  "id": "3415804419",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "final [ɣ] vanished with compensatory lengthening",
+  "url": "https://eldamo.org/content/words/word-3415804419.html",
+  "order": 2200,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "1161720749"
+  ],
+  "pairs": [
+   "3415804419.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1312700867",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "final [nt] became [n] in polysyllables",
+  "url": "https://eldamo.org/content/words/word-1312700867.html",
+  "order": 1900,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "1312700867.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3490136699",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "final [s] became [r]",
+  "url": "https://eldamo.org/content/words/word-3490136699.html",
+  "order": 1500,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "2485190991",
+    "lang": "eq",
+    "name": "final [ss], [st], [ps], [ts], [ks] became [s]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "3490136699.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2789267955",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "final [sk] became [ss]",
+  "url": "https://eldamo.org/content/words/word-2789267955.html",
+  "order": 1600,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "2485190991",
+    "lang": "eq",
+    "name": "final [ss], [st], [ps], [ts], [ks] became [s]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "2789267955.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2485190991",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "final [ss], [st], [ps], [ts], [ks] became [s]",
+  "url": "https://eldamo.org/content/words/word-2485190991.html",
+  "order": 1700,
+  "formula": {
+   "from": "-s{st}|-{ptk}s",
+   "to": "-s|-s"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "3490136699",
+   "2789267955"
+  ],
+  "pairs": [
+   "2485190991.1",
+   "2485190991.2",
+   "2485190991.3",
+   "2485190991.4",
+   "2485190991.5"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "2842904179",
   "lang": "q",
   "marker": "Q.",
@@ -5080,6 +7352,53 @@
   "after": [],
   "pairs": [
    "539818035.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3850922299",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "final [t] became [s]",
+  "url": "https://eldamo.org/content/words/word-3850922299.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": "539818035",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3850922299.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2038949399",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "final [ɸ] became [xʷ]",
+  "url": "https://eldamo.org/content/words/word-2038949399.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "1161720749",
+    "lang": "eq",
+    "name": "final voiceless spirants were weakened and voiced",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "2038949399.1"
   ],
   "notes": "",
   "exceptions": []
@@ -5160,6 +7479,50 @@
   "exceptions": []
  },
  {
+  "id": "4175300709",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "final consonant clusters simplified",
+  "url": "https://eldamo.org/content/words/word-4175300709.html",
+  "order": 1800,
+  "formula": {
+   "from": "-CC",
+   "to": "-C"
+  },
+  "mark": "",
+  "variant_of": "4243668855",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "4175300709.1",
+   "4175300709.2",
+   "4175300709.3",
+   "4175300709.4",
+   "4175300709.5",
+   "4175300709.6",
+   "4175300709.7",
+   "4175300709.8",
+   "4175300709.9",
+   "4175300709.10",
+   "4175300709.11",
+   "4175300709.12",
+   "4175300709.13",
+   "4175300709.14",
+   "4175300709.15",
+   "4175300709.16",
+   "4175300709.17",
+   "4175300709.18",
+   "4175300709.19",
+   "4175300709.20",
+   "4175300709.21",
+   "4175300709.22"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "3283441787",
   "lang": "q",
   "marker": "Q.",
@@ -5203,6 +7566,59 @@
   "pairs": [
    "2371293137.1",
    "2371293137.2"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "884464849",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "final consonants often became dentals",
+  "url": "https://eldamo.org/content/words/word-884464849.html",
+  "order": null,
+  "formula": {
+   "from": "-{km}|-ŋg",
+   "to": "-{tn}|-n"
+  },
+  "mark": "",
+  "variant_of": "2371293137",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "884464849.1",
+   "884464849.2",
+   "884464849.3",
+   "884464849.4",
+   "884464849.5",
+   "884464849.6"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3633742017",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "final nasal + [ḷ] became [ndḷ]",
+  "url": "https://eldamo.org/content/words/word-3633742017.html",
+  "order": null,
+  "formula": {
+   "from": "-{mnŋ}ḷ",
+   "to": "-ndl"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3633742017.1",
+   "3633742017.2",
+   "3633742017.3"
   ],
   "notes": "",
   "exceptions": []
@@ -5267,6 +7683,98 @@
    "1377107961.2"
   ],
   "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1161720749",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "final voiceless spirants were weakened and voiced",
+  "url": "https://eldamo.org/content/words/word-1161720749.html",
+  "order": null,
+  "formula": {
+   "from": "-xw|-θj|-{xθs}",
+   "to": "-w|-j|-{ɣðz}"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "451471319",
+    "lang": "eq",
+    "name": "later [j], [w] became [i], [u] finally or between a vowel and a consonant",
+    "evidence": []
+   },
+   {
+    "rule": "3415804419",
+    "lang": "eq",
+    "name": "final [ɣ] vanished with compensatory lengthening",
+    "evidence": []
+   },
+   {
+    "rule": "1053361623",
+    "lang": "eq",
+    "name": "[ð] became [z]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "2038949399"
+  ],
+  "pairs": [
+   "1161720749.1",
+   "1161720749.2",
+   "1161720749.3",
+   "1161720749.4",
+   "1161720749.5"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3931943725",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "geminate voiceless spirants reduced",
+  "url": "https://eldamo.org/content/words/word-3931943725.html",
+  "order": null,
+  "formula": {
+   "from": "ff|xʷxʷ|xx|θʲθʲ",
+   "to": "f|f|h|θʲ"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "3263617489",
+    "lang": "eq",
+    "name": "[f] became [v] except before stressed vowel",
+    "evidence": []
+   },
+   {
+    "rule": "3263617489",
+    "lang": "eq",
+    "name": "[f] became [v] except before stressed vowel",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "3935033455",
+   "3235607655",
+   "1670039283",
+   "169515023"
+  ],
+  "pairs": [
+   "3931943725.1",
+   "3931943725.2",
+   "3931943725.3",
+   "3931943725.4"
+  ],
+  "notes": "@@@ figure out [xs] > [h] or [ks], possible example -lukse",
   "exceptions": []
  },
  {
@@ -5446,6 +7954,78 @@
   "exceptions": []
  },
  {
+  "id": "1417666947",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "initial [ð] became [s]",
+  "url": "https://eldamo.org/content/words/word-1417666947.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "1417666947.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3626017139",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "initial [ð] became [d]",
+  "url": "https://eldamo.org/content/words/word-3626017139.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": "1417666947",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3626017139.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1196923337",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "initial [gʷ] became [w]",
+  "url": "https://eldamo.org/content/words/word-1196923337.html",
+  "order": null,
+  "formula": {
+   "from": "gʷ-",
+   "to": "w-"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "630957615",
+    "lang": "eq",
+    "name": "initial voiced stops were unvoiced",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "1557215875"
+  ],
+  "pairs": [
+   "1196923337.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "3316553555",
   "lang": "aq",
   "marker": "AQ.",
@@ -5495,6 +8075,30 @@
   "after": [],
   "pairs": [
    "1968067631.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3275368525",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "initial [ɣ] vanished or became [h]",
+  "url": "https://eldamo.org/content/words/word-3275368525.html",
+  "order": 2300,
+  "formula": {
+   "from": "ɣ-|ɣ-",
+   "to": "ø-|h-"
+  },
+  "mark": "",
+  "variant_of": "1968067631",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3275368525.1",
+   "3275368525.2"
   ],
   "notes": "",
   "exceptions": []
@@ -5592,6 +8196,26 @@
   "exceptions": []
  },
  {
+  "id": "331431039",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "initial [ŋ] became [n]",
+  "url": "https://eldamo.org/content/words/word-331431039.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": "1117953113",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "331431039.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "1073157723",
   "lang": "aq",
   "marker": "AQ.",
@@ -5655,6 +8279,28 @@
    "923465271.2"
   ],
   "notes": "@@@ initial [ŋw] survived according to PE19/38",
+  "exceptions": []
+ },
+ {
+  "id": "2133998255",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "initial [ŋʷ] became [m]",
+  "url": "https://eldamo.org/content/words/word-2133998255.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "4287379737"
+  ],
+  "pairs": [
+   "2133998255.1"
+  ],
+  "notes": "",
   "exceptions": []
  },
  {
@@ -5795,6 +8441,31 @@
   "exceptions": []
  },
  {
+  "id": "95585617",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "initial [s] plus voiceless stops became voiceless spirants",
+  "url": "https://eldamo.org/content/words/word-95585617.html",
+  "order": null,
+  "formula": {
+   "from": "s{pɸ}-|s{tθ}-|s{kx}-",
+   "to": "ɸ-|θ-|x-"
+  },
+  "mark": "",
+  "variant_of": "3333849997",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "95585617.1",
+   "95585617.2",
+   "95585617.3"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "1556924193",
   "lang": "aq",
   "marker": "AQ.",
@@ -5846,6 +8517,161 @@
    "476591497.4",
    "476591497.5",
    "476591497.6"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1793089541",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "initial [s] vanished before liquids and nasals",
+  "url": "https://eldamo.org/content/words/word-1793089541.html",
+  "order": null,
+  "formula": {
+   "from": "s{lrmnŋ}-",
+   "to": "{lrmnŋ}-"
+  },
+  "mark": "",
+  "variant_of": "476591497",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "1793089541.1",
+   "1793089541.2",
+   "1793089541.3",
+   "1793089541.4",
+   "1793089541.5"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3922871059",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "initial [sw] and [sβ] became [f], [sj] became [j̊]",
+  "url": "https://eldamo.org/content/words/word-3922871059.html",
+  "order": null,
+  "formula": {
+   "from": "s{wβ}-|sj-",
+   "to": "f-|j̊-"
+  },
+  "mark": "",
+  "variant_of": "476591497",
+  "before": [],
+  "after": [
+   "281616373",
+   "2921880273"
+  ],
+  "pairs": [
+   "3922871059.1",
+   "3922871059.2",
+   "3922871059.3"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1971369121",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "medial [sj] became [j̊]",
+  "url": "https://eldamo.org/content/words/word-1971369121.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": "476591497",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "1971369121.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2921880273",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "initial [θʲ] became [sj]",
+  "url": "https://eldamo.org/content/words/word-2921880273.html",
+  "order": 900,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "3922871059",
+    "lang": "eq",
+    "name": "initial [sw] and [sβ] became [f], [sj] became [j̊]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "2921880273.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "777007581",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "initial [x-] became [h-]",
+  "url": "https://eldamo.org/content/words/word-777007581.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "777007581.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3717166775",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "initial and intervocalic [xʷ] became [f]",
+  "url": "https://eldamo.org/content/words/word-3717166775.html",
+  "order": 1300,
+  "formula": {
+   "from": "xʷ-|VxʷV",
+   "to": "f-|VfV"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "110060203",
+    "lang": "eq",
+    "name": "intervocalic voiceless spirants became voiced",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "4101283277"
+  ],
+  "pairs": [
+   "3717166775.1",
+   "3717166775.2"
   ],
   "notes": "",
   "exceptions": []
@@ -5909,6 +8735,40 @@
    "2830500177.4",
    "2830500177.5",
    "2830500177.6"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "4287379737",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "initial nasalized stops became nasals",
+  "url": "https://eldamo.org/content/words/word-4287379737.html",
+  "order": null,
+  "formula": {
+   "from": "{mb|nd|ndʲ|ŋg|ŋgʷ}-",
+   "to": "{mnnʲŋŋʷ}-"
+  },
+  "mark": "",
+  "variant_of": "2830500177",
+  "before": [
+   {
+    "rule": "2133998255",
+    "lang": "eq",
+    "name": "initial [ŋʷ] became [m]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "4287379737.1",
+   "4287379737.2",
+   "4287379737.3",
+   "4287379737.4",
+   "4287379737.5"
   ],
   "notes": "",
   "exceptions": []
@@ -6031,6 +8891,37 @@
   "exceptions": []
  },
  {
+  "id": "1053361623",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[ð] became [z]",
+  "url": "https://eldamo.org/content/words/word-1053361623.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": "3914129125",
+  "before": [
+   {
+    "rule": "1584268155",
+    "lang": "eq",
+    "name": "[z] became [r]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "3589750713",
+   "1161720749",
+   "3179825887"
+  ],
+  "pairs": [
+   "1053361623.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "3458631869",
   "lang": "q",
   "marker": "Q.",
@@ -6079,6 +8970,80 @@
    "3477758271.1"
   ],
   "notes": "@@@ PE19/62",
+  "exceptions": []
+ },
+ {
+  "id": "834390781",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "intervocalic [ū], [ī] became [uw], [ij]",
+  "url": "https://eldamo.org/content/words/word-834390781.html",
+  "order": 3700,
+  "formula": {
+   "from": "VūV|VīV",
+   "to": "VuwV|VijV"
+  },
+  "mark": "",
+  "variant_of": "3477758271",
+  "before": [
+   {
+    "rule": "1557215875",
+    "lang": "eq",
+    "name": "[w] became [v] after [u] and [o] and before [o]",
+    "evidence": []
+   },
+   {
+    "rule": "1865495919",
+    "lang": "eq",
+    "name": "[ei], [ou] became [ai], [au]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "834390781.1",
+   "834390781.2"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "110060203",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "intervocalic voiceless spirants became voiced",
+  "url": "https://eldamo.org/content/words/word-110060203.html",
+  "order": 2000,
+  "formula": {
+   "from": "V{fθθʲx}V",
+   "to": "V{vððʲɣ}V"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "71510193",
+    "lang": "eq",
+    "name": "[ɣ] otherwise vanished",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "1670039283",
+   "3717166775"
+  ],
+  "pairs": [
+   "110060203.1",
+   "110060203.2",
+   "110060203.3",
+   "110060203.4",
+   "110060203.5"
+  ],
+  "notes": "first θʲ became j̊ and then j @@@",
   "exceptions": []
  },
  {
@@ -6143,6 +9108,36 @@
   "pairs": [
    "1025863587.1",
    "1025863587.2"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "451471319",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "later [j], [w] became [i], [u] finally or between a vowel and a consonant",
+  "url": "https://eldamo.org/content/words/word-451471319.html",
+  "order": null,
+  "formula": {
+   "from": "VjC|VwC|-j|-w",
+   "to": "ViC|VuC|-i|-u"
+  },
+  "mark": "",
+  "variant_of": "1025863587",
+  "before": [],
+  "after": [
+   "2901784817",
+   "1501380803",
+   "1161720749"
+  ],
+  "pairs": [
+   "451471319.1",
+   "451471319.2",
+   "451471319.3",
+   "451471319.4"
   ],
   "notes": "",
   "exceptions": []
@@ -6255,6 +9250,86 @@
   "exceptions": []
  },
  {
+  "id": "504909023",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "long final vowels were shortened",
+  "url": "https://eldamo.org/content/words/word-504909023.html",
+  "order": 100,
+  "formula": {
+   "from": "-SV̄",
+   "to": "-SV̆"
+  },
+  "mark": "",
+  "variant_of": "1072764601",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "504909023.1",
+   "504909023.2",
+   "504909023.3",
+   "504909023.4",
+   "504909023.5"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3968461507",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "long syllabic [ḹ], [ṝ] became [al], [ar]",
+  "url": "https://eldamo.org/content/words/word-3968461507.html",
+  "order": 200,
+  "formula": {
+   "from": "ḹ|ṝ",
+   "to": "al|ar"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3968461507.1",
+   "3968461507.2",
+   "3968461507.3",
+   "3968461507.4"
+  ],
+  "notes": "@@@ before short syllabic changes",
+  "exceptions": []
+ },
+ {
+  "id": "406180735",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "long syllabic [ṇ̄] became [a] + homorganic nasal",
+  "url": "https://eldamo.org/content/words/word-406180735.html",
+  "order": 300,
+  "formula": {
+   "from": "ṇ̄",
+   "to": "an"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "406180735.1",
+   "406180735.2",
+   "406180735.3",
+   "406180735.4",
+   "406180735.5"
+  ],
+  "notes": "@@@ before short syllabic changes",
+  "exceptions": []
+ },
+ {
   "id": "4125237087",
   "lang": "q",
   "marker": "Q.",
@@ -6295,6 +9370,26 @@
   "before": [],
   "after": [],
   "pairs": [],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3237906463",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "long vowels shortened before consonant clusters",
+  "url": "https://eldamo.org/content/words/word-3237906463.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": "1524904053",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3237906463.1"
+  ],
   "notes": "",
   "exceptions": []
  },
@@ -6494,6 +9589,86 @@
   "exceptions": []
  },
  {
+  "id": "1821618891",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[s] became [z] before nasals and voiced spirants",
+  "url": "https://eldamo.org/content/words/word-1821618891.html",
+  "order": null,
+  "formula": {
+   "from": "s{lrmnβðʲðɣɣʷ}",
+   "to": "z{lrmnβðʲðɣɣʷ}"
+  },
+  "mark": "",
+  "variant_of": "2951986869",
+  "before": [
+   {
+    "rule": "1584268155",
+    "lang": "eq",
+    "name": "[z] became [r]",
+    "evidence": []
+   },
+   {
+    "rule": "1497556499",
+    "lang": "eq",
+    "name": "voiced spirants becames stops after liquids, nasals and [z]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "281616373"
+  ],
+  "pairs": [
+   "1821618891.1",
+   "1821618891.2",
+   "1821618891.3"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2705037297",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "middle consonant lost in three-consonant cluster",
+  "url": "https://eldamo.org/content/words/word-2705037297.html",
+  "order": null,
+  "formula": {
+   "from": "CCC",
+   "to": "CC"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [
+   "3676149149"
+  ],
+  "pairs": [
+   "2705037297.1",
+   "2705037297.2",
+   "2705037297.3",
+   "2705037297.4",
+   "2705037297.5",
+   "2705037297.6",
+   "2705037297.7",
+   "2705037297.8",
+   "2705037297.9",
+   "2705037297.10",
+   "2705037297.11",
+   "2705037297.12",
+   "2705037297.13",
+   "2705037297.14",
+   "2705037297.15",
+   "2705037297.16"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "613618983",
   "lang": "q",
   "marker": "Q.",
@@ -6538,6 +9713,63 @@
   "pairs": [
    "277667125.1",
    "277667125.2"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2012556159",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "nasals assimilated to preceding [z]",
+  "url": "https://eldamo.org/content/words/word-2012556159.html",
+  "order": null,
+  "formula": {
+   "from": "z{ŋʷ|ŋ|nʲ}",
+   "to": "z{nu|n|ni}"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "1584268155",
+    "lang": "eq",
+    "name": "[z] became [r]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "2012556159.1",
+   "2012556159.2",
+   "2012556159.3"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2394802469",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "nasals became [n] before [j]",
+  "url": "https://eldamo.org/content/words/word-2394802469.html",
+  "order": null,
+  "formula": {
+   "from": "{mŋnʲ}j",
+   "to": "nj"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "2394802469.1",
+   "2394802469.2",
+   "2394802469.3"
   ],
   "notes": "",
   "exceptions": []
@@ -6614,6 +9846,47 @@
    "2847294287.1",
    "2847294287.2",
    "2847294287.3"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3480191301",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "palatals became dentals before [i]",
+  "url": "https://eldamo.org/content/words/word-3480191301.html",
+  "order": null,
+  "formula": {
+   "from": "{tdnθ}ʲi",
+   "to": "{tdnθ}i"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "1926351487",
+    "lang": "eq",
+    "name": "[dʲ] became [j]",
+    "evidence": []
+   },
+   {
+    "rule": "630957615",
+    "lang": "eq",
+    "name": "initial voiced stops were unvoiced",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "1784632669",
+   "1652146593"
+  ],
+  "pairs": [
+   "3480191301.1",
+   "3480191301.2",
+   "3480191301.3"
   ],
   "notes": "",
   "exceptions": []
@@ -6748,6 +10021,57 @@
   "exceptions": []
  },
  {
+  "id": "2030742295",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "second short vowel of same quality lost",
+  "url": "https://eldamo.org/content/words/word-2030742295.html",
+  "order": null,
+  "formula": {
+   "from": "V₁CV̆₁CV",
+   "to": "V₁CCV"
+  },
+  "mark": "",
+  "variant_of": "511172017",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "2030742295.1",
+   "2030742295.2",
+   "2030742295.3",
+   "2030742295.4",
+   "2030742295.5"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3171133497",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "short [i], [u] became [j], [w] between a consonant and vowel",
+  "url": "https://eldamo.org/content/words/word-3171133497.html",
+  "order": 2800,
+  "formula": {
+   "from": "V{ĭŭ}C",
+   "to": "V{jw}C"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3171133497.1",
+   "3171133497.2"
+  ],
+  "notes": "long counter-example: paiyan",
+  "exceptions": []
+ },
+ {
   "id": "3904029624",
   "lang": "q",
   "marker": "Q.",
@@ -6812,6 +10136,36 @@
    "3760896435.1",
    "3760896435.2",
    "3760896435.3"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "2670096403",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "short syllabic [ṇ] became [a] + homorganic nasal, [i] before palatals or [u] before labials",
+  "url": "https://eldamo.org/content/words/word-2670096403.html",
+  "order": 500,
+  "formula": {
+   "from": "ṇ|ṇCj|ṇ{kg}|ṇp|ṇCw",
+   "to": "an|inCj|aŋ{kg}|ump|uŋCw"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "2670096403.1",
+   "2670096403.2",
+   "2670096403.3",
+   "2670096403.4",
+   "2670096403.5",
+   "2670096403.6",
+   "2670096403.7",
+   "2670096403.8"
   ],
   "notes": "",
   "exceptions": []
@@ -6911,6 +10265,52 @@
   "exceptions": []
  },
  {
+  "id": "1497556499",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "voiced spirants becames stops after liquids, nasals and [z]",
+  "url": "https://eldamo.org/content/words/word-1497556499.html",
+  "order": null,
+  "formula": {
+   "from": "{lrmnŋz}{βððʲɣɣʷ}",
+   "to": "{lrmnŋz}{bddʲggʷ}"
+  },
+  "mark": "",
+  "variant_of": "556722173",
+  "before": [
+   {
+    "rule": "1926351487",
+    "lang": "eq",
+    "name": "[dʲ] became [j]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "1821618891",
+   "1412754393"
+  ],
+  "pairs": [
+   "1497556499.1",
+   "1497556499.2",
+   "1497556499.3",
+   "1497556499.4",
+   "1497556499.5",
+   "1497556499.6",
+   "1497556499.7",
+   "1497556499.8",
+   "1497556499.9",
+   "1497556499.10",
+   "1497556499.11",
+   "1497556499.12",
+   "1497556499.13",
+   "1497556499.14"
+  ],
+  "notes": "@@@ but Elben >> Elwen",
+  "exceptions": []
+ },
+ {
   "id": "545708645",
   "lang": "q",
   "marker": "Q.",
@@ -6961,6 +10361,48 @@
    "699730083.1",
    "699730083.2",
    "699730083.3"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3654836095",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "voiceless spirants became stops after nasals",
+  "url": "https://eldamo.org/content/words/word-3654836095.html",
+  "order": null,
+  "formula": {
+   "from": "mɸ|nθ|nθʲ|ŋx|ŋxʷ",
+   "to": "mp|nt|ntʲ|ŋk|ŋkʷ"
+  },
+  "mark": "",
+  "variant_of": "699730083",
+  "before": [
+   {
+    "rule": "281616373",
+    "lang": "eq",
+    "name": "[θ] became [s]",
+    "evidence": []
+   },
+   {
+    "rule": "1652146593",
+    "lang": "eq",
+    "name": "[θʲi] became [xi]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "4101283277"
+  ],
+  "pairs": [
+   "3654836095.1",
+   "3654836095.2",
+   "3654836095.3",
+   "3654836095.4",
+   "3654836095.5"
   ],
   "notes": "",
   "exceptions": []
@@ -7061,6 +10503,50 @@
   "exceptions": []
  },
  {
+  "id": "231729157",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "stops frequently underwent metathesis with nasals and liquids",
+  "url": "https://eldamo.org/content/words/word-231729157.html",
+  "order": null,
+  "formula": {
+   "from": "{ptk}{rl}",
+   "to": "{rl}{ptk}"
+  },
+  "mark": "",
+  "variant_of": "716992289",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "231729157.1",
+   "231729157.2"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "475956217",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "stops unvoiced before liquids",
+  "url": "https://eldamo.org/content/words/word-475956217.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "475956217.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
   "id": "785281061",
   "lang": "aq",
   "marker": "AQ.",
@@ -7122,6 +10608,32 @@
   "after": [],
   "pairs": [
    "2033267709.1"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "967048541",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "syllabic [s] developed a vowel",
+  "url": "https://eldamo.org/content/words/word-967048541.html",
+  "order": 700,
+  "formula": {
+   "from": "ṣ|ṣCʷ|ṣ̄|ẓ",
+   "to": "is|usCʷ|as|iz"
+  },
+  "mark": "",
+  "variant_of": "2033267709",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "967048541.1",
+   "967048541.2",
+   "967048541.3",
+   "967048541.4"
   ],
   "notes": "",
   "exceptions": []
@@ -7243,6 +10755,26 @@
   "pairs": [
    "2540314691.1",
    "2540314691.2"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1954971469",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "unstressed long vowels usually shortened",
+  "url": "https://eldamo.org/content/words/word-1954971469.html",
+  "order": null,
+  "formula": null,
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "1954971469.1"
   ],
   "notes": "",
   "exceptions": []
@@ -7412,6 +10944,30 @@
    "3291729015.4",
    "3291729015.5",
    "3291729015.6"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "858042645",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "[pj], [kj] became [tj]",
+  "url": "https://eldamo.org/content/words/word-858042645.html",
+  "order": null,
+  "formula": {
+   "from": "{pk}j",
+   "to": "tj"
+  },
+  "mark": "",
+  "variant_of": "3291729015",
+  "before": [],
+  "after": [],
+  "pairs": [
+   "858042645.1",
+   "858042645.2"
   ],
   "notes": "",
   "exceptions": []
@@ -7653,5 +11209,381 @@
    "nd > nd",
    "ŋg > ŋg"
   ]
+ },
+ {
+  "id": "630957615",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "initial voiced stops were unvoiced",
+  "url": "https://eldamo.org/content/words/word-630957615.html",
+  "order": null,
+  "formula": {
+   "from": "{bdggʷ}-",
+   "to": "{ptkkʷ}-"
+  },
+  "mark": "",
+  "variant_of": "2772726195",
+  "before": [],
+  "after": [
+   "1196923337",
+   "3480191301"
+  ],
+  "pairs": [
+   "630957615.1",
+   "630957615.2",
+   "630957615.3",
+   "630957615.4"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3179825887",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "voiced stops became spirants after vowels",
+  "url": "https://eldamo.org/content/words/word-3179825887.html",
+  "order": null,
+  "formula": {
+   "from": "V{bddʲggʷ}",
+   "to": "V{βððʲɣɣʷ}"
+  },
+  "mark": "",
+  "variant_of": "2772726195",
+  "before": [
+   {
+    "rule": "3589750713",
+    "lang": "eq",
+    "name": "[ð] became [θ] before voiceless stops and [s]",
+    "evidence": []
+   },
+   {
+    "rule": "1053361623",
+    "lang": "eq",
+    "name": "[ð] became [z]",
+    "evidence": []
+   },
+   {
+    "rule": "71510193",
+    "lang": "eq",
+    "name": "[ɣ] otherwise vanished",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "3179825887.1",
+   "3179825887.2",
+   "3179825887.3",
+   "3179825887.4",
+   "3179825887.5"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "3562966925",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "voiceless and voiced [w] became [f], [v] in Inwelin",
+  "url": "https://eldamo.org/content/words/word-3562966925.html",
+  "order": null,
+  "formula": {
+   "from": "w̥|w",
+   "to": "f|v"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "3562966925.1",
+   "3562966925.2"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "169515023",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "voiceless spirant combinations assimilated except to [θ]",
+  "url": "https://eldamo.org/content/words/word-169515023.html",
+  "order": null,
+  "formula": {
+   "from": "{ɸθθʲxxʷ}₁{ɸθʲxxʷ}₂",
+   "to": "{ɸθʲxxʷ}₂{ɸθʲxxʷ}₂"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "281616373",
+    "lang": "eq",
+    "name": "[θ] became [s]",
+    "evidence": []
+   },
+   {
+    "rule": "3931943725",
+    "lang": "eq",
+    "name": "geminate voiceless spirants reduced",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "4047708457"
+  ],
+  "pairs": [
+   "169515023.1",
+   "169515023.2",
+   "169515023.3",
+   "169515023.4",
+   "169515023.5",
+   "169515023.6",
+   "169515023.7",
+   "169515023.8",
+   "169515023.9",
+   "169515023.10",
+   "169515023.11",
+   "169515023.12"
+  ],
+  "notes": "",
+  "exceptions": [
+   "xʷxʷ > xʷxʷ"
+  ]
+ },
+ {
+  "id": "3362555183",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "voiceless spirants became stops before stops, [s] or [z]",
+  "url": "https://eldamo.org/content/words/word-3362555183.html",
+  "order": null,
+  "formula": {
+   "from": "{ɸxxʷθʲ}{ptkbdgsz}",
+   "to": "{pkkk}{ptkbdgsz}"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "1670039283",
+    "lang": "eq",
+    "name": "[ɸ] usually became [f]",
+    "evidence": []
+   },
+   {
+    "rule": "2101627003",
+    "lang": "eq",
+    "name": "[tʲ], [kʷ] became [t], [k] before [t], [s]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "281616373"
+  ],
+  "pairs": [
+   "3362555183.1",
+   "3362555183.2",
+   "3362555183.3",
+   "3362555183.4",
+   "3362555183.5",
+   "3362555183.6",
+   "3362555183.7"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1412754393",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "voiceless spirants voiced after liquids",
+  "url": "https://eldamo.org/content/words/word-1412754393.html",
+  "order": null,
+  "formula": {
+   "from": "{lr}{ɸθθʲxxʷ}",
+   "to": "{lr}{βððʲɣɣʷ}"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "1497556499",
+    "lang": "eq",
+    "name": "voiced spirants becames stops after liquids, nasals and [z]",
+    "evidence": []
+   },
+   {
+    "rule": "281616373",
+    "lang": "eq",
+    "name": "[θ] became [s]",
+    "evidence": []
+   },
+   {
+    "rule": "1501380803",
+    "lang": "eq",
+    "name": "[ɣʷ] became [w]",
+    "evidence": []
+   }
+  ],
+  "after": [
+   "4101283277"
+  ],
+  "pairs": [
+   "1412754393.1",
+   "1412754393.2",
+   "1412754393.3",
+   "1412754393.4",
+   "1412754393.5",
+   "1412754393.6",
+   "1412754393.7",
+   "1412754393.8",
+   "1412754393.9",
+   "1412754393.10"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "579131439",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "voiceless spirants voiced before voiced continuants",
+  "url": "https://eldamo.org/content/words/word-579131439.html",
+  "order": null,
+  "formula": {
+   "from": "{ɸxxʷθʲ}{βɣmnŋrljw}",
+   "to": "{βɣxʷðʲ}{βɣmnŋrljw}"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "4193614505",
+    "lang": "eq",
+    "name": "[xʷ] became [x] before consonants",
+    "evidence": []
+   },
+   {
+    "rule": "3676149149",
+    "lang": "eq",
+    "name": "between vowels and consonants [ɣ] vanished with compensatory lengthening",
+    "evidence": []
+   },
+   {
+    "rule": "1501380803",
+    "lang": "eq",
+    "name": "[ɣʷ] became [w]",
+    "evidence": []
+   },
+   {
+    "rule": "2901784817",
+    "lang": "eq",
+    "name": "[ðʲ] became [j]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "579131439.1",
+   "579131439.2",
+   "579131439.3",
+   "579131439.4",
+   "579131439.5",
+   "579131439.6",
+   "579131439.7",
+   "579131439.8",
+   "579131439.9"
+  ],
+  "notes": "@@@ possibly sometimes transposition: tempe, timpinen but “no certain cases of occurrence with any spirants” (PE12/25)",
+  "exceptions": []
+ },
+ {
+  "id": "3099273747",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "voiceless stop assimilated to following voiceless stop except [t]",
+  "url": "https://eldamo.org/content/words/word-3099273747.html",
+  "order": null,
+  "formula": {
+   "from": "{ttʲkkʷ}p|{ttʲkʷ}k|{ttʲk}kʷ",
+   "to": "pp|kk|kʷkʷ"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [
+   {
+    "rule": "2229352317",
+    "lang": "eq",
+    "name": "[kʷkʷ] became [kʷ]",
+    "evidence": []
+   },
+   {
+    "rule": "1728242171",
+    "lang": "eq",
+    "name": "[pp] became [pt]",
+    "evidence": []
+   }
+  ],
+  "after": [],
+  "pairs": [
+   "3099273747.1",
+   "3099273747.2",
+   "3099273747.3",
+   "3099273747.4",
+   "3099273747.5",
+   "3099273747.6",
+   "3099273747.7",
+   "3099273747.8"
+  ],
+  "notes": "",
+  "exceptions": []
+ },
+ {
+  "id": "1124989585",
+  "lang": "eq",
+  "marker": "ᴱQ.",
+  "era": "early",
+  "stage": 1,
+  "name": "vowels in hiatus reduced",
+  "url": "https://eldamo.org/content/words/word-1124989585.html",
+  "order": 4100,
+  "formula": {
+   "from": "V̄̆V̄̆",
+   "to": "V̆V̆"
+  },
+  "mark": "",
+  "variant_of": null,
+  "before": [],
+  "after": [],
+  "pairs": [
+   "1124989585.1",
+   "1124989585.2",
+   "1124989585.3",
+   "1124989585.4",
+   "1124989585.5",
+   "1124989585.6",
+   "1124989585.7",
+   "1124989585.8"
+  ],
+  "notes": "",
+  "exceptions": []
  }
 ]

@@ -12,7 +12,8 @@ ambar "fate", stem ambart-, are different entries). Each entry carries:
                  morpheme hyphens: Aika-nār-) and the phonetic start forms of
                  attested derivations (<rule-start stage>);
 * stages      -- for every branch language: the forms an attested derivation
-                 of the word reaches at the end of that language's rules.
+                 of the word reaches at the end of that language's rules;
+* links       -- combine / deprecated / cognate / see links to other pages.
 
 Words deleted by Tolkien (mark "-") are left out; references marked "-"
 contribute nothing. Neologisms (Neo-Quenya, Neo-Sindarin, Neo-Primitive and
@@ -32,6 +33,10 @@ SKIP_SPEECH = {'phonetic-rule', 'phoneme', 'grammar', 'phonetic-group', 'phoneti
 NEO = {'nq', 'ns', 'np'}
 EXTRA = {'quenya': ('nq', 'np', 'van'), 'sindarin': ('ns', 'np', 'norths')}
 SUPERSCRIPT = re.compile(r'[¹²³⁴⁵⁶⁷⁸⁹⁰]+$')
+# Eldamo's links between word pages: an earlier conception merged into a later
+# word (combine) or replaced by it (deprecated), a cognate in another language,
+# a word to compare (see)
+LINK_TAGS = ('combine', 'deprecated', 'cognate', 'see')
 
 
 def bare(form: str | None) -> str:
@@ -131,6 +136,13 @@ def build_lexicon(branch: str, derivations: list) -> list:
         elements = [_link(W, e.get('l'), e.get('v'), e.get('form')) for e in w.findall('element') if _live(e)]
         if elements:
             entry['elements'] = elements
+        links = {}
+        for tag in LINK_TAGS:
+            found = [x for x in (_link(W, el.get('l'), el.get('v')) for el in w.findall(tag)) if x.get('id')]
+            if found:
+                links[tag] = [{'lang': x['lang'], 'form': x['form'], 'id': x['id']} for x in found]
+        if links:
+            entry['links'] = links
         parents = [_link(W, d.get('l'), d.get('v')) for d in w.findall('deriv') if _live(d)]
         if parents:
             entry['parents'] = parents

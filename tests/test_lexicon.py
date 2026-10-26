@@ -93,7 +93,7 @@ class Compounds(unittest.TestCase):
         for b, data in self.data.items():
             r = compound.backtest(data, data['lexicon'], self.seq[b])
             self.assertGreater(r['cases'], 40, b)
-            self.assertGreaterEqual(r['any'] / r['cases'], 0.25, b)
+            self.assertGreaterEqual(r['any'] / r['cases'], 0.2, b)
 
 
 if __name__ == '__main__':

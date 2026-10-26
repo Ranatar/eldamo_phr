@@ -14,7 +14,7 @@
   <div class="brand"><a href="#" id="home-link">Eldamo · фонетический атлас</a></div>
   <label>Ветвь <select id="branch-select" aria-label="Ветвь"></select></label>
   <label>Концепция <select id="era-select" aria-label="Концепция">
-    <option value="late">поздняя</option><option value="middle">средняя</option>
+    <option value="late">поздняя</option><option value="middle">средняя</option><option value="early">ранняя</option>
   </select></label>
   <button type="button" id="theme-toggle" aria-label="Переключить тему">Тема</button>
 </header>
@@ -102,6 +102,29 @@
     <div id="wf-output" aria-live="polite"></div>
   </section>
 
+  <section class="panel" aria-labelledby="rc-title" id="reconstruct-panel">
+    <h2 id="rc-title">Реконструкция</h2>
+    <p class="lead">Форма слова для другого периода: более ранней или более поздней стадии языка, другой ветви
+      (когнат через общую праформу) или другой концепции Толкина. Засвидетельствованное в Eldamo показывается первым,
+      остальное строится по законам и проверяется прогоном вперёд.</p>
+    <div class="wf-pick">
+      <div class="wf-slot">
+        <label>Слово <input type="search" id="rc-q" autocomplete="off" placeholder="форма или значение, например lindë"></label>
+        <div class="wf-results" id="rc-r"></div>
+        <div class="wf-chosen" id="rc-chosen" aria-live="polite"></div>
+        <label>или форма <input type="text" id="rc-form" autocomplete="off" placeholder="например linde"></label>
+        <label class="small"><input type="checkbox" id="rc-spelled" checked> в написании Толкина (иначе — фонетическая запись Eldamo)</label>
+      </div>
+      <div class="wf-slot">
+        <label>Исходный период <select id="rc-src"></select></label>
+        <label>Целевая ветвь <select id="rc-dst-branch"></select></label>
+        <label>Целевой период <select id="rc-dst"></select></label>
+      </div>
+    </div>
+    <div class="actions"><button type="button" class="primary" id="rc-go" disabled>Реконструировать</button></div>
+    <div id="rc-output" aria-live="polite"></div>
+  </section>
+
   <section class="panel" aria-labelledby="chains-title">
     <h2 id="chains-title">Атлас цепочек</h2>
     <p class="lead">Цепочки из двух-трёх изменений в хронологическом порядке. Оценки:
@@ -146,6 +169,9 @@
 </script>
 <script>
 @@WORDFORM_UI@@
+</script>
+<script>
+@@RECON_UI@@
 </script>
 </body>
 </html>

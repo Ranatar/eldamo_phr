@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from .graph import GRADES
 from .io import write_text
+from .languages import ERA_NAMES
 from .source import ROOT, word_url
 
 
@@ -33,7 +34,7 @@ def render(branch: str, data: dict) -> str:
         rules = sorted(rules_by_lang.get(lang['code'], []), key=lambda r: (r['order'] is None, r['order'] or 0, r['name']))
         if not rules:
             continue
-        lines += [f"## {lang['marker']} {lang['name']} ({'поздняя' if lang['era'] == 'late' else 'средняя'} концепция)", '']
+        lines += [f"## {lang['marker']} {lang['name']} ({ERA_NAMES[lang['era']]} концепция)", '']
         for r in rules:
             head = f"### [{r['name']}]({r['url']})"
             lines += [head, '']
@@ -63,7 +64,7 @@ def render(branch: str, data: dict) -> str:
         for c in data['chains']:
             if c['grade'] == g:
                 extra = f" — {c['attested_count']} дерив." if c['attested_count'] else ''
-                lines.append(f"- {'поздн.' if c['era'] == 'late' else 'средн.'} `{' → '.join(c['states'])}` ({', '.join(c['markers'])}){extra}")
+                lines.append(f"- {ERA_NAMES[c['era']][:5]}. `{' → '.join(c['states'])}` ({', '.join(c['markers'])}){extra}")
         lines.append('')
     return '\n'.join(lines).rstrip() + '\n'
 

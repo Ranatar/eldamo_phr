@@ -551,8 +551,21 @@ function compileSequence(rules) {
   });
 }
 
-function applyCompiled(c, alts, form) {
+// a fast pre-check (shared/interpreter.py: may_apply): every literal or set
+// token not starred needs one of its first sounds somewhere in the word
+function requirements(pattern) {
+  if (!pattern._req) pattern._req = pattern.tokens.filter(t => !t.star && (t.kind === 'lit' || t.kind === 'set'))
+    .map(t => new Set(t.options.filter(o => o.length).map(o => canonical(o[0])))).filter(r => r.size);
+  return pattern._req;
+}
+function mayApply(alts, sounds) {
+  return alts.some(([src]) => requirements(src).every(req => [...req].some(x => sounds.has(x))));
+}
+function wordSounds(form) { return new Set(normalizeWord(form)[0].map(canonical)); }
+
+function applyCompiled(c, alts, form, sounds) {
   if (!alts) return [];
+  if (sounds && !mayApply(alts, sounds)) return [];
   try { return applyRule(alts, form, { protect: c.protectAlts, stressMode: c.stress, scope: c.scope }).ordered; }
   catch (e) { if (e instanceof Unsupported) return []; throw e; }
 }
@@ -560,15 +573,18 @@ function applyCompiled(c, alts, form) {
 const MAX_VARIANTS = 24;
 function run(form, rules, branchOptional = true) {
   let variants = [{ form, trace: [] }];
+  const soundCache = new Map();
   for (const c of rules) {
     if (!c.rule && !c.rulePlus) continue;
     const nxt = [];
     for (const v of variants) {
       const marked = v.form.includes('+');
       const mainRule = marked && c.rulePlus ? c.rulePlus : c.rule;
-      const outs = applyCompiled(c, mainRule, v.form);
+      let sounds = soundCache.get(v.form);
+      if (!sounds) { sounds = wordSounds(v.form); soundCache.set(v.form, sounds); }
+      const outs = applyCompiled(c, mainRule, v.form, sounds);
       let extra = [];
-      if (!marked && c.rulePlus) extra = applyCompiled(c, c.rulePlus, v.form).filter(o => !outs.includes(o));
+      if (!marked && c.rulePlus) extra = applyCompiled(c, c.rulePlus, v.form, sounds).filter(o => !outs.includes(o));
       if (!outs.length) nxt.push(v);
       const keep = outs.length && c.optional && branchOptional;
       if (keep && c.rare) nxt.push({ form: v.form, trace: v.trace.concat([[c.id, v.form, null]]) });
@@ -762,36 +778,42 @@ function lenite(word, primitive = null) {
 // ---------------------------------------------------------------- backform
 const BEAM = 60, MAX_OPTIONS = 4, MIN_SHARE = 0.03;
 const positionName = (i, n) => i === 0 ? 'initial' : i === n - 1 ? 'final' : 'medial';
-function bfOptions(table, sound, pos) {
+function bfOptions(table, sound, pos, options = MAX_OPTIONS, minShare = MIN_SHARE) {
   const c = table[keyOf([sound, pos])] || table[keyOf([sound, 'medial'])] || [[sound, 1]];
   const total = c.reduce((x, [, n]) => x + n, 0);
-  const out = c.filter(([, n]) => n / total >= MIN_SHARE).map(([s, n]) => [s, n / total]);
+  const out = c.filter(([, n]) => n / total >= minShare).map(([s, n]) => [s, n / total]);
   if (!out.some(([s]) => s === sound)) out.push([sound, 0.5 / total]);
-  return out.slice(0, MAX_OPTIONS);
+  return out.slice(0, options);
 }
-function bfCandidates(table, form) {
+function bfCandidates(table, form, beam = BEAM, options = MAX_OPTIONS, minShare = MIN_SHARE) {
   const y = phonemes(comparable(form));
   let states = [['', 0]];
   y.forEach((sound, j) => {
     const nxt = [];
-    for (const [prefix, lp] of states) for (const [seg, p] of bfOptions(table, sound, positionName(j, y.length))) nxt.push([prefix + seg, lp + Math.log(p)]);
+    for (const [prefix, lp] of states) for (const [seg, p] of bfOptions(table, sound, positionName(j, y.length), options, minShare)) nxt.push([prefix + seg, lp + Math.log(p)]);
     nxt.sort((a, b) => b[1] - a[1]);
-    states = nxt.slice(0, BEAM);
+    states = nxt.slice(0, beam);
   });
   const end = table[keyOf(['#', 'end'])] || [['', 1]];
   const total = end.reduce((x, [, n]) => x + n, 0);
+  const ends = end.slice(0, options).filter(([, n]) => n / total >= minShare);
+  if (!ends.some(([seg]) => seg === '')) {
+    const e0 = end.find(([seg]) => seg === '');
+    ends.push(['', Math.max(e0 ? e0[1] : 0, 0.5)]);
+  }
   const out = [];
-  for (const [prefix, lp] of states) for (const [seg, n] of end.slice(0, MAX_OPTIONS)) if (n / total >= MIN_SHARE) out.push([prefix + seg, lp + Math.log(n / total)]);
+  for (const [prefix, lp] of states) for (const [seg, n] of ends) out.push([prefix + seg, lp + Math.log(n / total)]);
   out.sort((a, b) => b[1] - a[1]);
   const seen = new Set(), uniq = [];
   for (const [f, lp] of out) if (f && !seen.has(f)) { seen.add(f); uniq.push([f, lp]); }
-  return uniq.slice(0, BEAM);
+  return uniq.slice(0, beam);
 }
-function backform(engine, form, era, lastStage, limit = 5) {
+function backformWith(engine, table, form, era, lastStage, limit = 5, firstStage = 0, search = {}) {
   const target = comparable(form);
-  const rules = sequence(engine.rules, era, 0, lastStage);
+  const rules = sequence(engine.rules, era, firstStage, lastStage);
   const found = [];
-  for (const [cand, lp] of bfCandidates(engine.backform, form)) {
+  for (const [cand, lp] of bfCandidates(table, form, search.beam || BEAM, search.options || MAX_OPTIONS,
+                                         search.minShare == null ? MIN_SHARE : search.minShare)) {
     const vs = run(cand, rules);
     const hit = vs.findIndex(v => comparable(v.form) === target);
     if (hit < 0) continue;
@@ -800,6 +822,9 @@ function backform(engine, form, era, lastStage, limit = 5) {
   }
   found.sort((a, b) => (a.main === b.main ? 0 : a.main ? -1 : 1) || (b.logp - a.logp));
   return found;
+}
+function backform(engine, form, era, lastStage, limit = 5) {
+  return backformWith(engine, engine.backform, form, era, lastStage, limit);
 }
 
 // ---------------------------------------------------------------- affixes (shared/affixes.py)
@@ -994,7 +1019,7 @@ function predict(engine, ids, era, stage, lastStage = null) {
     if (!fs.length) return [];
     parts.push(fs);
   }
-  const rules = sequence(engine.rules, era, stage + 1, last);
+  const rules = sequence(engine.rules, era, stage ? stage + 1 : 0, last);
   const joins = [];
   for (const combo of product(parts)) {
     let acc = [[combo[0][0], 'full']];
@@ -1018,6 +1043,208 @@ function predict(engine, ids, era, stage, lastStage = null) {
   return variants;
 }
 
+// ---------------------------------------------------------------- reconstruction (shared/reconstruct.py)
+const RECON_LIMIT = 8, ROOT_BONUS = 2.0, PHONOTACTIC_PENALTY = 0.2;
+const SEARCH = { beam: 150, options: 6, minShare: 0.02 };
+const EQUIV = ['kgxɣhq', 'tdθðþ', 'pbɸβfv', 'mṃ', 'nŋñṇ', 'l', 'r', 'sz', 'w', 'jy'].map(x => new Set(chars(x)));
+function skeleton(rootForm) {
+  let f = rootForm.replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰√()\-]/g, '').toLowerCase();
+  f = f.split('kh').join('x').split('th').join('θ').split('ph').join('f').split('gw').join('g').split('kw').join('k');
+  const out = [];
+  for (const ch of chars(f)) { const cls = EQUIV.findIndex(c => c.has(ch)); if (cls >= 0) out.push(cls); }
+  return out;
+}
+function soundClasses(form) {
+  const out = [];
+  for (const p of phonemes(comparable(form))) {
+    if (isVowel(p)) continue;
+    const b = chars(p)[0];
+    const cls = EQUIV.findIndex(c => c.has(b));
+    if (cls >= 0) out.push(cls);
+  }
+  return out;
+}
+function rootMatch(form, roots) {
+  const cs = soundClasses(form);
+  for (const r of roots) {
+    const sk = skeleton(r);
+    if (!sk.length) continue;
+    let i = 0, ok = true;
+    for (const k of sk) { while (i < cs.length && cs[i] !== k) i++; if (i >= cs.length) { ok = false; break; } i++; }
+    if (ok) return true;
+  }
+  return false;
+}
+function runs(form) {
+  const ph = phonemes(comparable(form));
+  const vowels = []; ph.forEach((p, i) => { if (isVowel(p)) vowels.push(i); });
+  if (!vowels.length) return [ph.join(''), [], ''];
+  const initial = ph.slice(0, vowels[0]).join(''), final = ph.slice(vowels[vowels.length - 1] + 1).join('');
+  const medial = [];
+  for (let k = 0; k + 1 < vowels.length; k++) if (vowels[k + 1] - vowels[k] > 2) medial.push(ph.slice(vowels[k] + 1, vowels[k + 1]).join(''));
+  return [initial, medial, final];
+}
+function phonotacticProblems(pt, form, minCount = 2) {
+  const [i, ms, fin] = runs(form);
+  const out = [];
+  const n = (t, k) => t[k] || 0;
+  if (phonemes(i).length > 1 && n(pt.initials, i) < minCount) out.push(`начало ${i}-`);
+  for (const m of ms) if (n(pt.clusters, m) < minCount) out.push(`сочетание ${m}`);
+  if (fin && n(pt.finals, fin) < minCount) out.push(`конец -${fin}`);
+  return out;
+}
+const reconLangs = E => E.languages;
+const codeOf = (E, era, stage) => { const l = E.languages.find(x => x.era === era && x.stage === stage); return l ? l.code : null; };
+const lastStageOf = (E, era) => Math.max(...E.languages.filter(l => l.era === era).map(l => l.stage));
+function entryOf(engines, wid) {
+  for (const [b, E] of Object.entries(engines)) if (E.lexicon.has(wid)) return [b, E.lexicon.get(wid)];
+  return [null, null];
+}
+function reverseLinks(engines) {
+  if (engines.__reverse) return engines.__reverse;
+  const rev = new Map();
+  for (const E of Object.values(engines)) for (const e of E.lexiconList) {
+    if (e.speech === 'root') continue;
+    for (const [tag, ids] of Object.entries(e.links || {})) for (const id of ids) {
+      if (!rev.has(id)) rev.set(id, []);
+      rev.get(id).push([e.id, tag]);
+    }
+  }
+  Object.defineProperty(engines, '__reverse', { value: rev, enumerable: false });
+  return rev;
+}
+function forwardRun(E, era, form, src, dst) {
+  return run(form, sequence(E.rules, era, src > 0 ? src + 1 : 0, dst)).map(v => [v.form, v.trace]);
+}
+function backwardRun(E, era, form, src, dst, roots = []) {
+  const out = new Map();
+  const add = (f, p, trace, via) => {
+    const k = comparable(f);
+    const rec = { form: f, p, trace, via, root: roots.length > 0 && rootMatch(f, roots) };
+    if (!out.has(k) || out.get(k).p < p) out.set(k, rec);
+  };
+  const table = (s, d) => E.recon.tables[`${era}|${s}|${d}`] || {};
+  const found = backformWith(E, table(src, dst), form, era, src, RECON_LIMIT, dst > 0 ? dst + 1 : 0, SEARCH);
+  for (const f of found) add(f.primitive, Math.exp(f.logp) * (f.main ? 1 : 0.5), f.trace, 'direct');
+  if (dst > 0) {
+    const prims = backformWith(E, table(src, 0), form, era, src, 4, 0, SEARCH);
+    for (const f of prims) {
+      forwardRun(E, era, f.primitive, 0, dst).slice(0, 2).forEach(([g, trace], k) =>
+        add(g, Math.exp(f.logp) * (f.main ? 1 : 0.5) * (k === 0 ? 1 : 0.5), trace, 'primitive ' + f.primitive));
+    }
+  }
+  return [...out.values()].sort((a, b) => b.p * (b.root ? ROOT_BONUS : 1) - a.p * (a.root ? ROOT_BONUS : 1)).slice(0, RECON_LIMIT);
+}
+function stageForms(E, branch, entry, era, stage) {
+  const code = codeOf(E, era, stage);
+  const out = [];
+  if (code && entry.lang === code) out.push(toPhonetic(entry.form, branch).replace(/^-+|-+$/g, ''));
+  if (stage === 0) out.push(...origins(entry, era));
+  else if (code) out.push(...((entry.stages || {})[code] || []));
+  return [...new Set(out.filter(Boolean))];
+}
+function reconstruct(engines, src, dst, opts = {}) {
+  const [sb, se, ss] = src, [db, de, ds] = dst;
+  const S = engines[sb], D = engines[db];
+  let entry = null;
+  if (opts.word) entry = entryOf(engines, opts.word)[1];
+  let form = opts.form;
+  if (form == null) {
+    if (!entry) return [];
+    let forms = stageForms(S, sb, entry, se, ss);
+    if (!forms.length && entry.lang === codeOf(S, se, ss)) forms = [toPhonetic(entry.form, sb)];
+    if (!forms.length) return [];
+    form = forms[0];
+  } else if (opts.spelled) form = toPhonetic(form, sb).replace(/^-+|-+$/g, '');
+  const roots = (entry && entry.roots) || [];
+  const results = new Map();
+  const add = (f, score, route, marks, steps) => {
+    const k = comparable(f);
+    const rec = { form: f.split('+').join(''), score, route, marks, steps };
+    if (!results.has(k) || results.get(k).score < score) results.set(k, rec);
+  };
+  if (entry && sb === db && se === de) for (const f of stageForms(D, db, entry, de, ds)) add(f, 10, 'засвидетельствовано', ['attested'], []);
+  if (sb === db && se === de) within(engines, add, sb, se, form, ss, ds, roots);
+  else if (se === de) sideways(engines, add, src, dst, form, entry, roots);
+  else across(engines, add, src, dst, form, entry, roots, opts.useLinks !== false);
+  if (ds === lastStageOf(D, de) && codeOf(D, de, ds) != null) {
+    const pt = D.recon.phonotactics[codeOf(D, de, ds)] || { initials: {}, clusters: {}, finals: {} };
+    for (const r of results.values()) {
+      if (r.marks.includes('attested') || r.marks.includes('link')) continue;
+      const problems = phonotacticProblems(pt, r.form);
+      if (problems.length) {
+        r.score *= PHONOTACTIC_PENALTY;
+        if (!r.marks.includes('phonotactics')) { r.marks = r.marks.concat(['phonotactics']); r.problems = problems; }
+      }
+    }
+  }
+  const ranked = [...results.values()].sort((a, b) => b.score - a.score);
+  const total = ranked.reduce((x, r) => x + r.score, 0) || 1;
+  for (const r of ranked) r.score = r3(r.score / total);
+  return ranked.slice(0, opts.limit || RECON_LIMIT);
+}
+function within(engines, add, branch, era, form, ss, ds, roots, baseScore = 1, prefix = '', marks = []) {
+  const E = engines[branch];
+  if (ds === ss) add(form, baseScore, prefix + 'та же стадия', marks.slice(), []);
+  else if (ds > ss) {
+    forwardRun(E, era, form, ss, ds).slice(0, 4).forEach(([f, trace], k) =>
+      add(f, baseScore * (k === 0 ? 1 : 0.5 / k), prefix + 'вперёд по законам', marks.concat(k === 0 ? ['main'] : []), trace));
+  } else {
+    const found = backwardRun(E, era, form, ss, ds, roots);
+    const top = Math.max(...found.map(r => r.p), 0) || 1;
+    for (const r of found) {
+      const p = baseScore * 0.9 * (r.p / top) * (r.root ? ROOT_BONUS : 1);
+      add(r.form, p, prefix + 'назад: ' + (r.via === 'direct' ? 'напрямую' : 'через праформу'),
+        marks.concat(['reconstructed'], r.root ? ['root'] : []), r.trace);
+    }
+  }
+}
+function sideways(engines, add, src, dst, form, entry, roots) {
+  const [sb, era, ss] = src, [db, , ds] = dst;
+  let prims = [];
+  if (entry) prims = origins(entry, era).map(f => [f, 1, ['primitive-attested']]);
+  if (!prims.length) {
+    if (ss === 0) prims = [[form, 1, []]];
+    else {
+      const found = backwardRun(engines[sb], era, form, ss, 0, roots);
+      const top = Math.max(...found.map(r => r.p), 0) || 1;
+      prims = found.slice(0, 5).map(r => [r.form, (r.p / top) * (r.root ? ROOT_BONUS : 1), ['reconstructed']]);
+    }
+  }
+  for (const [prim, w, marks] of prims) within(engines, add, db, era, prim, 0, ds, [], w, `через праформу ${prim}: `, marks.concat(['cognate']));
+}
+function across(engines, add, src, dst, form, entry, roots, useLinks) {
+  const [sb, se, ss] = src, [db, de, ds] = dst;
+  const S = engines[sb], D = engines[db];
+  const dstCode = codeOf(D, de, ds);
+  if (useLinks && entry) {
+    const linked = [];
+    for (const [tag, ids] of Object.entries(entry.links || {})) if (['combine', 'deprecated', 'see'].includes(tag)) for (const id of ids) linked.push([id, tag]);
+    linked.push(...(reverseLinks(engines).get(entry.id) || []));
+    for (const [wid, tag] of linked) {
+      const [b2, e2] = entryOf(engines, wid);
+      if (!e2 || b2 !== db || e2.speech === 'root') continue;
+      const l2 = D.languages.find(l => l.code === e2.lang);
+      if (!l2 || l2.era !== de) continue;
+      const f2 = toPhonetic(e2.form, db).replace(/^-+|-+$/g, '');
+      if (l2.stage === ds) add(f2, 5, `связь Eldamo (${tag}): ${e2.form}`, ['link'], []);
+      else within(engines, add, db, de, f2, l2.stage, ds, e2.roots || [], 4, `связь Eldamo (${tag}) ${e2.form}, затем `, ['link']);
+    }
+  }
+  if (ss === lastStageOf(S, se) && ds === lastStageOf(D, de) && sb === db && dstCode) add(form, 1, 'без изменений', ['unchanged'], []);
+  let prims = [];
+  if (entry) prims = origins(entry, se).map(f => [f, 1]);
+  if (!prims.length) {
+    if (ss === 0) prims = [[form, 1]];
+    else {
+      const found = backwardRun(S, se, form, ss, 0, roots);
+      const top = Math.max(...found.map(r => r.p), 0) || 1;
+      prims = found.slice(0, 4).map(r => [r.form, (r.p / top) * (r.root ? ROOT_BONUS : 1)]);
+    }
+  }
+  for (const [prim, w] of prims) within(engines, add, db, de, prim, 0, ds, [], 0.6 * w, `переэтимологизация через праформу ${prim}: `, ['neologism']);
+}
+
 // ---------------------------------------------------------------- engine
 function makeEngine(branch, wf) {
   return {
@@ -1031,6 +1258,7 @@ function makeEngine(branch, wf) {
     backform: wf.backform,
     analogues: wf.analogues,
     affixes: Object.assign({ smoothing: wf.junctions.smoothing }, wf.affixes),
+    recon: wf.recon,
   };
 }
 
@@ -1060,10 +1288,19 @@ function parity(engine, V) {
   return bad;
 }
 
+function parityRecon(engines, cases) {
+  const bad = [];
+  for (const [src, dst, opts, want] of cases) {
+    const got = reconstruct(engines, src, dst, opts).map(v => [v.form, v.score, v.marks]);
+    if (JSON.stringify(got) !== JSON.stringify(want)) bad.push({ kind: 'reconstruct', input: [src, dst, opts], want, got });
+  }
+  return bad;
+}
+
 window.WF = {
-  parity,
+  parity, parityRecon,
   Unsupported, phonemes, canonical, comparable, compileRule, applyRule, stressed, nuclei, run, sequence,
   toPhonetic, junctionPredict, reduceCompound, prosodicLengthening, compoundVariants, lenite, backform,
-  formsAt, predict, makeEngine, allomorphs, affixKind, predictAffix,
+  formsAt, predict, makeEngine, allomorphs, affixKind, predictAffix, reconstruct, phonotacticProblems,
 };
 })();

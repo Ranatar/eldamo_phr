@@ -12,7 +12,8 @@
 |---|---|---|---|
 | поздняя | 1212 | 927 (76.5%) | 953 (78.6%) |
 | средняя | 907 | 755 (83.2%) | 765 (84.3%) |
-| всего | 2119 | 1682 (79.4%) | 1718 (81.1%) |
+| ранняя | 1594 | 1041 (65.3%) | 1054 (66.1%) |
+| всего | 3713 | 2723 (73.3%) | 2772 (74.7%) |
 
 ### Где основное чтение впервые расходится с деривацией
 
@@ -20,31 +21,38 @@
 
 | правило | язык | дериваций |
 |---|---|---|
+| [voiced spirants becames stops after liquids, nasals and [z]](https://eldamo.org/content/words/word-1497556499.html) | eq | 65 |
+| [[j], [w] became [i], [u] after a vowel](https://eldamo.org/content/words/word-2868696637.html) | eq | 46 |
+| [final consonant clusters simplified](https://eldamo.org/content/words/word-4175300709.html) | eq | 38 |
+| [final [ss], [st], [ps], [ts], [ks] became [s]](https://eldamo.org/content/words/word-2485190991.html) | eq | 36 |
+| [[β] became [v]](https://eldamo.org/content/words/word-1245311459.html) | eq | 32 |
+| [short syllabic [ṇ] became [a] + homorganic nasal, [i] before palatals or [u] before labials](https://eldamo.org/content/words/word-2670096403.html) | eq | 31 |
+| [short syllabic [ḷ] became [il], or [ul] before labials](https://eldamo.org/content/words/word-1720939405.html) | eq | 25 |
 | [second short vowel of same quality lost](https://eldamo.org/content/words/word-3116715705.html) | aq | 17 |
+| [initial [x-] became [h-]](https://eldamo.org/content/words/word-777007581.html) | eq | 17 |
+| [[ð] became [z]](https://eldamo.org/content/words/word-1053361623.html) | eq | 15 |
+| [short final [i], [u] became [e], [o]](https://eldamo.org/content/words/word-4062489737.html) | ep | 15 |
 | [[t+t], [d+d] from suffixion became [st], [zd]](https://eldamo.org/content/words/word-2479050823.html) | p | 14 |
 | [long final vowels were shortened](https://eldamo.org/content/words/word-2821506177.html) | q | 14 |
-| [medial [s] often became [z]](https://eldamo.org/content/words/word-127393503.html) | aq | 11 |
-| [aspirates became voiceless spirants](https://eldamo.org/content/words/word-3262991621.html) | aq | 11 |
-| [voiced stops became spirants except after nasals](https://eldamo.org/content/words/word-1141570065.html) | aq | 10 |
-| [[nm], [ŋm] became [nw], [ŋgw]](https://eldamo.org/content/words/word-1197128543.html) | q | 10 |
-| [[ɣ] from [g] vanished](https://eldamo.org/content/words/word-1833409085.html) | q | 9 |
-| [[pt], [kt] became [ps], [xt]](https://eldamo.org/content/words/word-2701010297.html) | mq | 9 |
-| [[ɸ], [β] became [f], [v]](https://eldamo.org/content/words/word-14484545.html) | q | 9 |
-| [initial nasals plus stops reduced to nasals](https://eldamo.org/content/words/word-2830500177.html) | maq | 8 |
-| [[θ] became [s]](https://eldamo.org/content/words/word-3491983963.html) | q | 8 |
-| [[w] became [β] initially and between vowels](https://eldamo.org/content/words/word-3625908403.html) | q | 8 |
-| [[r], [l] often became syllabic in clusters](https://eldamo.org/content/words/word-720793221.html) | maq | 7 |
-| [voiced stops unvoiced before voiceless consonants](https://eldamo.org/content/words/word-1944249607.html) | p | 7 |
+| [long syllabic [ṇ̄] became [a] + homorganic nasal](https://eldamo.org/content/words/word-406180735.html) | eq | 12 |
+| [initial [gʷ] became [w]](https://eldamo.org/content/words/word-1196923337.html) | eq | 12 |
 
 ### Условие «elsewhere»
 
 Общая подформула не применяется там, где более позднее правило того же языка задаёт тот же вход для определённой позиции:
 
+- eq: [ndj] became [nj] in Inwelin ← initial nasalized stops became nasals
+- eq: medial [sj] became [j̊] ← initial [sw] and [sβ] became [f], [sj] became [j̊]
+- eq: [sp] became [ps], [sk] sometimes [ks] ← final [sk] became [ss]
+- eq: voiceless and voiced [w] became [f], [v] in Inwelin ← [w] became [v] in Cortirion, later [j], [w] became [i], [u] finally or between a vowel and a consonant
+- eq: [kt] became [xt] ← final consonant clusters simplified
 - aq: stops frequently underwent metathesis with nasals and liquids ← initial [dr-], [dl-] became [r-], [l-]
 - aq: [sr] became [ss] ← initial [s] unvoiced following continuant
 - q: [pt], [kt] became [ɸt], [xt] ← final consonant clusters reduced
 - maq: stops frequently underwent metathesis with nasals and liquids ← initial [dr-], [dl-] became [r-], [l-]
 - maq: [sr] became [ss] ← initial [s] unvoiced following continuant
+
+Подформул вне документированной нотации, пропускаемых секвенсором: 4 (в 3 правилах).
 
 ### Сложения с праформами
 
@@ -52,10 +60,10 @@
 
 | показатель | случаев |
 |---|---|
-| случаев (сложение × деривация) | 61 |
-| соединение праформ совпало с начальной формой деривации | 17 (28%) |
-| основное чтение = засвидетельствованная форма | 7 (11%) |
-| форма среди вариантов | 23 (38%) |
+| случаев (сложение × деривация) | 63 |
+| соединение праформ совпало с начальной формой деривации | 16 (25%) |
+| основное чтение = засвидетельствованная форма | 10 (16%) |
+| форма среди вариантов | 26 (41%) |
 
 ### Сложения на последней стадии
 
@@ -88,7 +96,7 @@
 | первая из них = праформа Eldamo | 10 (10%) |
 | праформа Eldamo среди найденных (до 8) | 25 (25%) |
 
-Расходящиеся деривации (437) — `reports/sequencer.json`.
+Расходящиеся деривации (990) — `reports/sequencer.json`.
 
 ## Sindarin / Noldorin
 
@@ -96,7 +104,8 @@
 |---|---|---|---|
 | поздняя | 1027 | 723 (70.4%) | 765 (74.5%) |
 | средняя | 1356 | 883 (65.1%) | 938 (69.2%) |
-| всего | 2383 | 1606 (67.4%) | 1703 (71.5%) |
+| ранняя | 377 | 217 (57.6%) | 220 (58.4%) |
+| всего | 2760 | 1823 (66.1%) | 1923 (69.7%) |
 
 ### Где основное чтение впервые расходится с деривацией
 
@@ -111,24 +120,25 @@
 | [voiceless stops voiced after vowels](https://eldamo.org/content/words/word-2951504533.html) | n | 18 |
 | [short final vowels vanished](https://eldamo.org/content/words/word-1490765151.html) | n | 18 |
 | [short vowels vanished before morpheme boundaries](https://eldamo.org/content/words/word-2749565259.html) | s | 17 |
+| [voiceless stops spirantalized after many consonants](https://eldamo.org/content/words/word-473550387.html) | g | 15 |
 | [short final vowels vanished](https://eldamo.org/content/words/word-813787869.html) | s | 15 |
 | [long final vowels were shortened](https://eldamo.org/content/words/word-2753394075.html) | os | 15 |
 | [final [i], [u] generally vanished](https://eldamo.org/content/words/word-1815401039.html) | s | 14 |
+| [short final vowels vanished](https://eldamo.org/content/words/word-634661439.html) | g | 13 |
 | [non-initial [m] usually became [v]](https://eldamo.org/content/words/word-3030431535.html) | n | 13 |
 | [[mb], [nd] became [mm], [nn]](https://eldamo.org/content/words/word-1317326183.html) | n | 12 |
 | [final [i] intruded into preceding syllable](https://eldamo.org/content/words/word-2399289739.html) | s | 11 |
-| [aspirates became voiceless spirants](https://eldamo.org/content/words/word-883570327.html) | os | 11 |
-| [initial [x-] became [h-]](https://eldamo.org/content/words/word-1195324115.html) | n | 11 |
 
 ### Условие «elsewhere»
 
 Общая подформула не применяется там, где более позднее правило того же языка задаёт тот же вход для определённой позиции:
 
+- g: [nd] generally became [nn], while [mb] became [m] finally ← initial nasals vanished before stops
 - s: short [u] often became [o] ← final [i], [u] generally vanished
 - n: short [u] often became [o] ← final [i], [u] generally vanished
 - n: short [a], [o], [u] became [e], [œ], [y] preceding [i] ← final [i] intruded into preceding syllable
 
-Подформул вне документированной нотации, пропускаемых секвенсором: 1 (в 1 правилах).
+Подформул вне документированной нотации, пропускаемых секвенсором: 2 (в 2 правилах).
 
 ### Сложения с праформами
 
@@ -137,9 +147,9 @@
 | показатель | случаев |
 |---|---|
 | случаев (сложение × деривация) | 66 |
-| соединение праформ совпало с начальной формой деривации | 14 (21%) |
-| основное чтение = засвидетельствованная форма | 11 (17%) |
-| форма среди вариантов | 17 (26%) |
+| соединение праформ совпало с начальной формой деривации | 10 (15%) |
+| основное чтение = засвидетельствованная форма | 9 (14%) |
+| форма среди вариантов | 15 (23%) |
 
 ### Сложения на последней стадии
 
@@ -172,4 +182,4 @@
 | первая из них = праформа Eldamo | 2 (3%) |
 | праформа Eldamo среди найденных (до 8) | 8 (12%) |
 
-Расходящиеся деривации (777) — `reports/sequencer.json`.
+Расходящиеся деривации (937) — `reports/sequencer.json`.

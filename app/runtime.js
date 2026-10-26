@@ -5,6 +5,8 @@ const SITE = 'https://eldamo.org/content/';
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const NULL = 'ø';
+const ERAS = ['late', 'middle', 'early'];
+const ERA_NAMES = { late: 'поздняя', middle: 'средняя', early: 'ранняя' };
 
 // ---------- small helpers ---------------------------------------------------
 function plural(n, one, few, many) {
@@ -66,9 +68,8 @@ function index(name) {
   X.lang = Object.fromEntries(B.languages.map(l => [l.code, l]));
   X.edge = Object.fromEntries(B.edges.map(e => [e.id, e]));
   X.deriv = Object.fromEntries(B.derivs.map(d => [d.id, d]));
-  X.adj = { late: new Map(), middle: new Map() };
-  X.radj = { late: new Map(), middle: new Map() };
-  X.states = { late: new Set(), middle: new Set() };
+  X.adj = {}; X.radj = {}; X.states = {};
+  for (const era of ERAS) { X.adj[era] = new Map(); X.radj[era] = new Map(); X.states[era] = new Set(); }
   for (const e of B.edges) {
     (X.adj[e.era].get(e.a) || X.adj[e.era].set(e.a, []).get(e.a)).push(e);
     (X.radj[e.era].get(e.b) || X.radj[e.era].set(e.b, []).get(e.b)).push(e);
@@ -158,7 +159,7 @@ function route() {
   if (!DATA.branches[name]) { showLanding(); return; }
   const X = index(name);
   if (!state.sel[name]) state.sel[name] = { ...X.B.defaults };
-  if (params.get('era') === 'middle' || params.get('era') === 'late') state.era = params.get('era');
+  if (ERAS.includes(params.get('era'))) state.era = params.get('era');
   for (const slot of ['from', 'to']) if (params.get(slot)) state.sel[name][slot] = params.get(slot);
   for (const slot of ['from', 'to']) state.mode[slot] = X.phonemes.has(state.sel[name][slot]) ? 'phoneme' : 'cluster';
   if (state.branch !== name) { state.chainPage = 0; state.derivPage = 0; }
@@ -465,7 +466,7 @@ function showRules(slot) {
     <td><code>${esc(p.f)} &gt; ${esc(p.t)}</code>${p.k === 'contextual' ? '<div class="small muted">контекстная, вне графа</div>' : p.k === 'identity' ? '<div class="small muted">исключение: без изменения</div>' : ''}</td>
     <td>${r.f ? `<code>${esc(r.f[0])} &gt; ${esc(r.f[1])}</code>` : ''}</td>
     <td>${p.e ? `${p.e} / ${p.ok}` : '—'}</td></tr>`).join('');
-  $('output').innerHTML = `<div class="result-head"><strong>Правила со звуком [${esc(sound)}]</strong> — ${state.era === 'late' ? 'поздняя' : 'средняя'} концепция: ${count(rows.length, 'подформула', 'подформулы', 'подформул')}${isPhoneme ? ' (по карточкам фонем Eldamo и составу формул)' : ' (сочетание стоит целиком в одной из частей формулы)'}.</div>`
+  $('output').innerHTML = `<div class="result-head"><strong>Правила со звуком [${esc(sound)}]</strong> — ${ERA_NAMES[state.era]} концепция: ${count(rows.length, 'подформула', 'подформулы', 'подформул')}${isPhoneme ? ' (по карточкам фонем Eldamo и составу формул)' : ' (сочетание стоит целиком в одной из частей формулы)'}.</div>`
     + (rows.length ? `<div class="table-scroll"><table class="data"><thead><tr><th>Язык</th><th>Правило</th><th>Подформула</th><th>Общая формула</th><th>Примеры / воспроизведено</th></tr></thead><tbody>${body}</tbody></table></div>`
       : '<div class="empty">Подформул с этим звуком нет.</div>');
 }

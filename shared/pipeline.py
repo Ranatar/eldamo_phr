@@ -7,13 +7,15 @@ from .graph import GRADES, build_chains, build_edges
 from .io import write_json
 from .languages import BRANCHES
 from .lexicon import build_lexicon, summary as lexicon_summary
-from .sequencer import calibrate
+from .reconstruct import normalize
+from .sequencer import Sequencer, calibrate
 from . import affixes
 from . import junctions as junction_table
 from .model import build
 from .source import ROOT, meta
 
 DATA_FILES = ('phonemes', 'rules', 'pairs', 'derivations', 'edges', 'chains', 'lexicon', 'junctions', 'affixes', 'calibration',
+              'stages',
               'summary')
 
 
@@ -77,6 +79,8 @@ def build_branch(branch: str) -> dict:
     }
     # which optional rules the sequencer's main reading applies (shared/sequencer.py)
     out['calibration'] = calibrate(out)
+    # forms at the end of every stage, from the derivations the sequencer reproduces
+    out['stages'] = normalize(out, Sequencer(out))
     return out
 
 

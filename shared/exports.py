@@ -5,6 +5,7 @@ from xml.sax.saxutils import escape, quoteattr
 
 from .graph import GRADES
 from .io import dumps, embed_json, write_text
+from .languages import ERAS
 from .pipeline import DATA_FILES
 from .source import ROOT, meta
 
@@ -34,7 +35,7 @@ def graphml(branches: dict) -> str:
     for prefix, domain, name, typ in keys:
         out.append(f'  <key id="{prefix}_{name}" for="{domain}" attr.name="{name}" attr.type="{typ}"/>')
     for b, d in branches.items():
-        for era in ('late', 'middle'):
+        for era in ERAS:
             out.append(f'  <graph id="{b}-{era}" edgedefault="directed">')
             edges = [e for e in d['edges'] if e['era'] == era]
             nodes = sorted({e['a'] for e in edges} | {e['b'] for e in edges})

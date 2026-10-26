@@ -1,65 +1,71 @@
 {
  "branch": "quenya",
  "eldamo_version": "0.8.13",
- "phonemes": 61,
- "rules": 251,
- "rules_with_order": 211,
+ "phonemes": 80,
+ "rules": 387,
+ "rules_with_order": 261,
  "excluded_rules": [
   {
    "rule": "794129503",
    "lang": "p",
    "name": "[ɣ] became [h] before voiceless consonants",
    "reason": "deleted by Tolkien (mark \"-\")"
+  },
+  {
+   "rule": "1087797313",
+   "lang": "eq",
+   "name": "intervocalic [ĭ] became [j]",
+   "reason": "deleted by Tolkien (mark \"-\")"
   }
  ],
- "pairs": 782,
+ "pairs": 1186,
  "pair_kinds": {
-  "contextual": 163,
-  "identity": 11,
-  "literal": 603,
-  "loss": 5
+  "contextual": 241,
+  "identity": 12,
+  "literal": 925,
+  "loss": 8
  },
- "pairs_with_examples": 464,
- "derivations": 2556,
- "deleted_derivations": 194,
- "branch_steps": 4485,
+ "pairs_with_examples": 723,
+ "derivations": 4183,
+ "deleted_derivations": 226,
+ "branch_steps": 7532,
  "step_status": {
   "deleted_rule": 11,
-  "identity": 2,
-  "mismatch": 80,
-  "no_match": 145,
-  "reproduced": 4106,
-  "reproduced_partial": 23,
-  "unknown_rule": 87,
-  "unmatched_formula": 5,
-  "unsupported": 26
+  "identity": 28,
+  "mismatch": 110,
+  "no_match": 284,
+  "reproduced": 6903,
+  "reproduced_partial": 24,
+  "unknown_rule": 115,
+  "unmatched_formula": 8,
+  "unsupported": 49
  },
- "reproduction_rate": 0.9427,
- "edges": 606,
- "conditional_edges": 112,
- "edges_with_examples": 340,
- "contextual_pairs": 174,
+ "reproduction_rate": 0.9399,
+ "edges": 931,
+ "conditional_edges": 226,
+ "edges_with_examples": 550,
+ "contextual_pairs": 253,
  "chains": {
-  "chains": 344,
-  "rejected_by_chronology": 64,
+  "chains": 511,
+  "rejected_by_chronology": 84,
   "grades": {
-   "A": 83,
-   "B": 63,
-   "C": 2,
-   "D": 196
+   "A": 109,
+   "B": 68,
+   "C": 51,
+   "D": 283
   }
  },
  "lexicon": {
-  "entries": 12846,
-  "derivations": 1463,
-  "stages": 1463,
-  "parents": 1843,
-  "roots": 3369,
-  "elements": 4369,
-  "stems": 532,
-  "compounds_with_derivations": 156,
+  "entries": 18422,
+  "derivations": 2892,
+  "stages": 2892,
+  "parents": 2216,
+  "roots": 3848,
+  "elements": 4725,
+  "stems": 1072,
+  "compounds_with_derivations": 168,
   "neo": 3527,
-  "homonym_forms": 337
+  "homonym_forms": 535
  },
  "junction_cases": 384,
  "affix_cases": 422,
@@ -71,6 +77,9 @@
  },
  "unmatched_formulas": [
   "aq: -Sā > -Să",
+  "eq: -st > -t",
+  "eq: -ĭ > -e",
+  "eq: VVst > VVs",
   "maq: -CC > -C",
   "maq: rx > rk",
   "maq: ɸ > f",

@@ -115,11 +115,15 @@ class SequencerRun(unittest.TestCase):
 
     def test_backtest_floor(self):
         # regression guard: share of derivations whose main reading is the attested form
-        floor = {'quenya': 0.75, 'sindarin': 0.65}
+        floor = {('quenya', 'late'): 0.74, ('quenya', 'middle'): 0.80, ('quenya', 'early'): 0.62,
+                 ('sindarin', 'late'): 0.68, ('sindarin', 'middle'): 0.63, ('sindarin', 'early'): 0.55}
         for b, data in self.data.items():
             r = backtest(data, self.seq[b])
-            self.assertGreaterEqual(r['main'] / r['derivations'], floor[b], b)
             self.assertGreaterEqual(r['any'], r['main'])
+            langs, ders = self.seq[b].langs, {d['id']: d for d in data['derivations']}
+            for era in ('late', 'middle', 'early'):
+                rs = [x for x in r['results'] if langs[ders[x['derivation']]['steps'][0]['lang']]['era'] == era]
+                self.assertGreaterEqual(sum(x['ok_main'] for x in rs) / len(rs), floor[(b, era)], (b, era))
 
 
 if __name__ == '__main__':

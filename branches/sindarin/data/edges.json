@@ -1,6 +1,4790 @@
 [
  {
   "id": "E1",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "ai",
+  "b": "ī",
+  "position": "final",
+  "pairs": [
+   "2628655373.1"
+  ],
+  "rules": [
+   "2628655373"
+  ],
+  "names": [
+   "final [ai] became [ī]"
+  ],
+  "orders": [],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E2",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "bm",
+  "b": "mm",
+  "position": "any",
+  "pairs": [
+   "2168100881.1"
+  ],
+  "rules": [
+   "2168100881"
+  ],
+  "names": [
+   "voiced stops became nasals before nasals"
+  ],
+  "orders": [],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E3",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "bn",
+  "b": "mn",
+  "position": "any",
+  "pairs": [
+   "2168100881.2"
+  ],
+  "rules": [
+   "2168100881"
+  ],
+  "names": [
+   "voiced stops became nasals before nasals"
+  ],
+  "orders": [],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E4",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "dm",
+  "b": "nm",
+  "position": "any",
+  "pairs": [
+   "2168100881.3"
+  ],
+  "rules": [
+   "2168100881"
+  ],
+  "names": [
+   "voiced stops became nasals before nasals"
+  ],
+  "orders": [],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E5",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "dn",
+  "b": "nn",
+  "position": "any",
+  "pairs": [
+   "2168100881.4"
+  ],
+  "rules": [
+   "2168100881"
+  ],
+  "names": [
+   "voiced stops became nasals before nasals"
+  ],
+  "orders": [],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E6",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "gm",
+  "b": "ŋm",
+  "position": "any",
+  "pairs": [
+   "2168100881.5"
+  ],
+  "rules": [
+   "2168100881"
+  ],
+  "names": [
+   "voiced stops became nasals before nasals"
+  ],
+  "orders": [],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E7",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "gn",
+  "b": "ŋn",
+  "position": "any",
+  "pairs": [
+   "2168100881.6"
+  ],
+  "rules": [
+   "2168100881"
+  ],
+  "names": [
+   "voiced stops became nasals before nasals"
+  ],
+  "orders": [],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E8",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "gt",
+  "b": "kt",
+  "position": "any",
+  "pairs": [
+   "4185647833.1"
+  ],
+  "rules": [
+   "4185647833"
+  ],
+  "names": [
+   "voiced stops unvoiced before voiceless consonants"
+  ],
+  "orders": [],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E9",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "j",
+  "b": "i",
+  "position": "final",
+  "pairs": [
+   "2186610087.1"
+  ],
+  "rules": [
+   "2186610087"
+  ],
+  "names": [
+   "final [j], [w] became [i], [u]"
+  ],
+  "orders": [
+   500
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 6,
+  "reproduced": 6
+ },
+ {
+  "id": "E10",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "kʷu",
+  "b": "ku",
+  "position": "any",
+  "pairs": [
+   "666754093.1"
+  ],
+  "rules": [
+   "666754093"
+  ],
+  "names": [
+   "[kʷu] became [ku]"
+  ],
+  "orders": [],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E11",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "mb",
+  "b": "b",
+  "position": "initial",
+  "pairs": [
+   "3141061005.1"
+  ],
+  "rules": [
+   "3141061005"
+  ],
+  "names": [
+   "initial nasalized voiced stops reduced to stops"
+  ],
+  "orders": [],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E12",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "md",
+  "b": "nd",
+  "position": "any",
+  "pairs": [
+   "2698200055.4"
+  ],
+  "rules": [
+   "2698200055"
+  ],
+  "names": [
+   "nasals assimilated to following consonant"
+  ],
+  "orders": [
+   200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E13",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "mk",
+  "b": "ŋk",
+  "position": "any",
+  "pairs": [
+   "2698200055.3"
+  ],
+  "rules": [
+   "2698200055"
+  ],
+  "names": [
+   "nasals assimilated to following consonant"
+  ],
+  "orders": [
+   200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 0
+ },
+ {
+  "id": "E14",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "mt",
+  "b": "nt",
+  "position": "any",
+  "pairs": [
+   "2698200055.5"
+  ],
+  "rules": [
+   "2698200055"
+  ],
+  "names": [
+   "nasals assimilated to following consonant"
+  ],
+  "orders": [
+   200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 3,
+  "reproduced": 3
+ },
+ {
+  "id": "E15",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "nb",
+  "b": "mb",
+  "position": "any",
+  "pairs": [
+   "2698200055.1"
+  ],
+  "rules": [
+   "2698200055"
+  ],
+  "names": [
+   "nasals assimilated to following consonant"
+  ],
+  "orders": [
+   200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E16",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "nk",
+  "b": "ŋk",
+  "position": "any",
+  "pairs": [
+   "2698200055.2"
+  ],
+  "rules": [
+   "2698200055"
+  ],
+  "names": [
+   "nasals assimilated to following consonant"
+  ],
+  "orders": [
+   200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E17",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "w",
+  "b": "u",
+  "position": "final",
+  "pairs": [
+   "2186610087.2"
+  ],
+  "rules": [
+   "2186610087"
+  ],
+  "names": [
+   "final [j], [w] became [i], [u]"
+  ],
+  "orders": [
+   500
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E18",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "ǝ",
+  "b": "ø",
+  "position": "final",
+  "pairs": [
+   "1398002213.1"
+  ],
+  "rules": [
+   "1398002213"
+  ],
+  "names": [
+   "final [ǝ] vanished"
+  ],
+  "orders": [
+   400
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 80,
+  "reproduced": 72
+ },
+ {
+  "id": "E19",
+  "era": "early",
+  "stage": 0,
+  "lang": "ep",
+  "marker": "ᴱ✶",
+  "a": "ṃt",
+  "b": "ṇt",
+  "position": "any",
+  "pairs": [
+   "2698200055.6"
+  ],
+  "rules": [
+   "2698200055"
+  ],
+  "names": [
+   "nasals assimilated to following consonant"
+  ],
+  "orders": [
+   200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 4,
+  "reproduced": 2
+ },
+ {
+  "id": "E20",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ae",
+  "b": "ai",
+  "position": "any",
+  "pairs": [
+   "3505973729.1"
+  ],
+  "rules": [
+   "3505973729"
+  ],
+  "names": [
+   "[ae] became [ai]"
+  ],
+  "orders": [
+   6900
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E21",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "afθ",
+  "b": "auθ",
+  "position": "any",
+  "pairs": [
+   "3096214821.1"
+  ],
+  "rules": [
+   "3096214821"
+  ],
+  "names": [
+   "[f], [v] sometimes became [u]"
+  ],
+  "orders": [
+   4100
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E22",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ai",
+  "b": "ē",
+  "position": "any",
+  "pairs": [
+   "3579735133.2"
+  ],
+  "rules": [
+   "3579735133"
+  ],
+  "names": [
+   "unstressed [au], [ai] became [ō], [ē]"
+  ],
+  "orders": [
+   1400
+  ],
+  "conditional": true,
+  "context": [
+   "ˌai > ē (ударение)",
+   "ˌau|ˌai > ō|ē"
+  ],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 1
+ },
+ {
+  "id": "E23",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "all",
+  "b": "āl",
+  "position": "any",
+  "pairs": [
+   "711485671.2"
+  ],
+  "rules": [
+   "711485671"
+  ],
+  "names": [
+   "[ll] became [l] lengthening preceding stressed vowel"
+  ],
+  "orders": [
+   4900
+  ],
+  "conditional": true,
+  "context": [
+   "ll|V́ll > l|V̄l",
+   "áll > āl (ударение)"
+  ],
+  "exceptions": [],
+  "examples": 3,
+  "reproduced": 3
+ },
+ {
+  "id": "E24",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ao",
+  "b": "o",
+  "position": "any",
+  "pairs": [
+   "2507211565.1"
+  ],
+  "rules": [
+   "2507211565"
+  ],
+  "names": [
+   "[ao] became [o]"
+  ],
+  "orders": [
+   1800
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E25",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "au",
+  "b": "ō",
+  "position": "any",
+  "pairs": [
+   "3579735133.1"
+  ],
+  "rules": [
+   "3579735133"
+  ],
+  "names": [
+   "unstressed [au], [ai] became [ō], [ē]"
+  ],
+  "orders": [
+   1400
+  ],
+  "conditional": true,
+  "context": [
+   "ˌau > ō (ударение)",
+   "ˌau|ˌai > ō|ē"
+  ],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E26",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "avk",
+  "b": "auk",
+  "position": "any",
+  "pairs": [
+   "3096214821.2"
+  ],
+  "rules": [
+   "3096214821"
+  ],
+  "names": [
+   "[f], [v] sometimes became [u]"
+  ],
+  "orders": [
+   4100
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E27",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "avm",
+  "b": "aum",
+  "position": "any",
+  "pairs": [
+   "3096214821.3"
+  ],
+  "rules": [
+   "3096214821"
+  ],
+  "names": [
+   "[f], [v] sometimes became [u]"
+  ],
+  "orders": [
+   4100
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 0
+ },
+ {
+  "id": "E28",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "avs",
+  "b": "aus",
+  "position": "any",
+  "pairs": [
+   "3096214821.4"
+  ],
+  "rules": [
+   "3096214821"
+  ],
+  "names": [
+   "[f], [v] sometimes became [u]"
+  ],
+  "orders": [
+   4100
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 4,
+  "reproduced": 4
+ },
+ {
+  "id": "E29",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "avθ",
+  "b": "auθ",
+  "position": "any",
+  "pairs": [
+   "3096214821.5"
+  ],
+  "rules": [
+   "3096214821"
+  ],
+  "names": [
+   "[f], [v] sometimes became [u]"
+  ],
+  "orders": [
+   4100
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E30",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ax",
+  "b": "ai",
+  "position": "final",
+  "pairs": [
+   "272028599.4"
+  ],
+  "rules": [
+   "272028599"
+  ],
+  "names": [
+   "[x], [ɣ] sometimes became [i]"
+  ],
+  "orders": [
+   3900
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E31",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "aɣ",
+  "b": "ai",
+  "position": "final",
+  "pairs": [
+   "272028599.8"
+  ],
+  "rules": [
+   "272028599"
+  ],
+  "names": [
+   "[x], [ɣ] sometimes became [i]"
+  ],
+  "orders": [
+   3900
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E32",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "bala",
+  "b": "bla",
+  "position": "initial",
+  "pairs": [
+   "1096657061.1"
+  ],
+  "rules": [
+   "1096657061"
+  ],
+  "names": [
+   "unstressed initial syllables reduced to favored clusters"
+  ],
+  "orders": [
+   900
+  ],
+  "conditional": true,
+  "context": [
+   "{ptkɸθxbdgmn}V₁{rl}V́₁- > {ptkɸθxbdgmn}ø{rl}V́₁-"
+  ],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E33",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "bh",
+  "b": "f",
+  "position": "any",
+  "pairs": [
+   "259168593.1"
+  ],
+  "rules": [
+   "259168593"
+  ],
+  "names": [
+   "voiced stop plus [h] became voiceless spirant"
+  ],
+  "orders": [
+   3500
+  ],
+  "conditional": true,
+  "context": [
+   "{bdg}h > {fθx}ø"
+  ],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E34",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "boro",
+  "b": "bro",
+  "position": "initial",
+  "pairs": [
+   "1096657061.2"
+  ],
+  "rules": [
+   "1096657061"
+  ],
+  "names": [
+   "unstressed initial syllables reduced to favored clusters"
+  ],
+  "orders": [
+   900
+  ],
+  "conditional": true,
+  "context": [
+   "{ptkɸθxbdgmn}V₁{rl}V́₁- > {ptkɸθxbdgmn}ø{rl}V́₁-"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E35",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "bḷ",
+  "b": "bli",
+  "position": "initial",
+  "pairs": [
+   "1924948145.1"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E36",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "bṛ",
+  "b": "bri",
+  "position": "initial",
+  "pairs": [
+   "1924948145.7"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E37",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "dh",
+  "b": "θ",
+  "position": "any",
+  "pairs": [
+   "259168593.2"
+  ],
+  "rules": [
+   "259168593"
+  ],
+  "names": [
+   "voiced stop plus [h] became voiceless spirant"
+  ],
+  "orders": [
+   3500
+  ],
+  "conditional": true,
+  "context": [
+   "{bdg}h > {fθx}ø"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E38",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "dl",
+  "b": "gl",
+  "position": "any",
+  "pairs": [
+   "3113057765.1"
+  ],
+  "rules": [
+   "3113057765"
+  ],
+  "names": [
+   "[tl], [dl], [ðl] became [kl], [gl]"
+  ],
+  "orders": [
+   5300
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E39",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "dʲ",
+  "b": "g",
+  "position": "any",
+  "pairs": [
+   "2205165111.3"
+  ],
+  "rules": [
+   "2205165111"
+  ],
+  "names": [
+   "palatal consonants became velars"
+  ],
+  "orders": [
+   100
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 4,
+  "reproduced": 4
+ },
+ {
+  "id": "E40",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ei",
+  "b": "ai",
+  "position": "any",
+  "pairs": [
+   "3272158349.1"
+  ],
+  "rules": [
+   "3272158349"
+  ],
+  "names": [
+   "later [ei] became [ai]"
+  ],
+  "orders": [
+   4200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 9,
+  "reproduced": 9
+ },
+ {
+  "id": "E41",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ei",
+  "b": "ē",
+  "position": "any",
+  "pairs": [
+   "1053983129.1"
+  ],
+  "rules": [
+   "1053983129"
+  ],
+  "names": [
+   "[ei], [ou] became [ē], [ō]"
+  ],
+  "orders": [
+   1600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E42",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "eu",
+  "b": "io",
+  "position": "any",
+  "pairs": [
+   "1598541361.1"
+  ],
+  "rules": [
+   "1598541361"
+  ],
+  "names": [
+   "[eu], [iu] became [io] or [iu]"
+  ],
+  "orders": [
+   1500
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E43",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "eu",
+  "b": "iu",
+  "position": "any",
+  "pairs": [
+   "1598541361.3"
+  ],
+  "rules": [
+   "1598541361"
+  ],
+  "names": [
+   "[eu], [iu] became [io] or [iu]"
+  ],
+  "orders": [
+   1500
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E44",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ff",
+  "b": "f",
+  "position": "any",
+  "pairs": [
+   "4228274355.1"
+  ],
+  "rules": [
+   "4228274355"
+  ],
+  "names": [
+   "long voiceless spirants shortened"
+  ],
+  "orders": [
+   5700
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E45",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "folo",
+  "b": "flo",
+  "position": "initial",
+  "pairs": [
+   "1096657061.3"
+  ],
+  "rules": [
+   "1096657061"
+  ],
+  "names": [
+   "unstressed initial syllables reduced to favored clusters"
+  ],
+  "orders": [
+   900
+  ],
+  "conditional": true,
+  "context": [
+   "{ptkɸθxbdgmn}V₁{rl}V́₁- > {ptkɸθxbdgmn}ø{rl}V́₁-"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E46",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "gh",
+  "b": "x",
+  "position": "any",
+  "pairs": [
+   "259168593.3"
+  ],
+  "rules": [
+   "259168593"
+  ],
+  "names": [
+   "voiced stop plus [h] became voiceless spirant"
+  ],
+  "orders": [
+   3500
+  ],
+  "conditional": true,
+  "context": [
+   "{bdg}h > {fθx}ø"
+  ],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E47",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "gð",
+  "b": "ɣð",
+  "position": "any",
+  "pairs": [
+   "473550387.20"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E48",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "gǝro",
+  "b": "gro",
+  "position": "initial",
+  "pairs": [
+   "1096657061.8"
+  ],
+  "rules": [
+   "1096657061"
+  ],
+  "names": [
+   "unstressed initial syllables reduced to favored clusters"
+  ],
+  "orders": [
+   900
+  ],
+  "conditional": true,
+  "context": [
+   "{ptkɸθxbdgmn}V₁{rl}V́₁- > {ptkɸθxbdgmn}ø{rl}V́₁-"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E49",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "gʷo",
+  "b": "go",
+  "position": "any",
+  "pairs": [
+   "3460441403.1"
+  ],
+  "rules": [
+   "3460441403"
+  ],
+  "names": [
+   "labialized velars became velars before [o], [u]"
+  ],
+  "orders": [
+   2600
+  ],
+  "conditional": true,
+  "context": [
+   "Cʷu|Cʷo > Cu|Co"
+  ],
+  "exceptions": [],
+  "examples": 4,
+  "reproduced": 2
+ },
+ {
+  "id": "E50",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "gʷu",
+  "b": "gu",
+  "position": "any",
+  "pairs": [
+   "3460441403.2"
+  ],
+  "rules": [
+   "3460441403"
+  ],
+  "names": [
+   "labialized velars became velars before [o], [u]"
+  ],
+  "orders": [
+   2600
+  ],
+  "conditional": true,
+  "context": [
+   "Cʷu|Cʷo > Cu|Co"
+  ],
+  "exceptions": [],
+  "examples": 3,
+  "reproduced": 2
+ },
+ {
+  "id": "E51",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "gḷ",
+  "b": "gli",
+  "position": "initial",
+  "pairs": [
+   "1924948145.2"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E52",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "gṛ",
+  "b": "gri",
+  "position": "initial",
+  "pairs": [
+   "1924948145.8"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 3,
+  "reproduced": 3
+ },
+ {
+  "id": "E53",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "iu",
+  "b": "io",
+  "position": "any",
+  "pairs": [
+   "1598541361.2"
+  ],
+  "rules": [
+   "1598541361"
+  ],
+  "names": [
+   "[eu], [iu] became [io] or [iu]"
+  ],
+  "orders": [
+   1500
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 4,
+  "reproduced": 4
+ },
+ {
+  "id": "E54",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "j",
+  "b": "g",
+  "position": "initial",
+  "pairs": [
+   "712894237.1"
+  ],
+  "rules": [
+   "712894237"
+  ],
+  "names": [
+   "initial [j] usually became [g]"
+  ],
+  "orders": [
+   2300
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 17,
+  "reproduced": 15
+ },
+ {
+  "id": "E55",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ji",
+  "b": "i",
+  "position": "initial",
+  "pairs": [
+   "712894237.2"
+  ],
+  "rules": [
+   "712894237"
+  ],
+  "names": [
+   "initial [j] usually became [g]"
+  ],
+  "orders": [
+   2300
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E56",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "kala",
+  "b": "kla",
+  "position": "initial",
+  "pairs": [
+   "1096657061.4"
+  ],
+  "rules": [
+   "1096657061"
+  ],
+  "names": [
+   "unstressed initial syllables reduced to favored clusters"
+  ],
+  "orders": [
+   900
+  ],
+  "conditional": true,
+  "context": [
+   "{ptkɸθxbdgmn}V₁{rl}V́₁- > {ptkɸθxbdgmn}ø{rl}V́₁-"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E57",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "kere",
+  "b": "kre",
+  "position": "initial",
+  "pairs": [
+   "1096657061.5"
+  ],
+  "rules": [
+   "1096657061"
+  ],
+  "names": [
+   "unstressed initial syllables reduced to favored clusters"
+  ],
+  "orders": [
+   900
+  ],
+  "conditional": true,
+  "context": [
+   "{ptkɸθxbdgmn}V₁{rl}V́₁- > {ptkɸθxbdgmn}ø{rl}V́₁-"
+  ],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E58",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "kiri",
+  "b": "kri",
+  "position": "initial",
+  "pairs": [
+   "1096657061.6"
+  ],
+  "rules": [
+   "1096657061"
+  ],
+  "names": [
+   "unstressed initial syllables reduced to favored clusters"
+  ],
+  "orders": [
+   900
+  ],
+  "conditional": true,
+  "context": [
+   "kirí- > krí- (ударение)",
+   "{ptkɸθxbdgmn}V₁{rl}V́₁- > {ptkɸθxbdgmn}ø{rl}V́₁-"
+  ],
+  "exceptions": [],
+  "examples": 4,
+  "reproduced": 4
+ },
+ {
+  "id": "E59",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "kk",
+  "b": "xx",
+  "position": "any",
+  "pairs": [
+   "473550387.17"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 3,
+  "reproduced": 3
+ },
+ {
+  "id": "E60",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "koro",
+  "b": "kro",
+  "position": "initial",
+  "pairs": [
+   "1096657061.7"
+  ],
+  "rules": [
+   "1096657061"
+  ],
+  "names": [
+   "unstressed initial syllables reduced to favored clusters"
+  ],
+  "orders": [
+   900
+  ],
+  "conditional": true,
+  "context": [
+   "{ptkɸθxbdgmn}V₁{rl}V́₁- > {ptkɸθxbdgmn}ø{rl}V́₁-"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E61",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ks",
+  "b": "x",
+  "position": "any",
+  "pairs": [
+   "1497090471.3"
+  ],
+  "rules": [
+   "1497090471"
+  ],
+  "names": [
+   "[p], [t], [k] usually spirantalized with following [s]"
+  ],
+  "orders": [
+   3800
+  ],
+  "conditional": true,
+  "context": [
+   "{ptk}s > {fθx}ø"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 0
+ },
+ {
+  "id": "E62",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ks",
+  "b": "xs",
+  "position": "any",
+  "pairs": [
+   "1497090471.4"
+  ],
+  "rules": [
+   "1497090471"
+  ],
+  "names": [
+   "[p], [t], [k] usually spirantalized with following [s]"
+  ],
+  "orders": [
+   3800
+  ],
+  "conditional": true,
+  "context": [
+   "{ptk}s > {fθx}ø"
+  ],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E63",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "kt",
+  "b": "kθ",
+  "position": "any",
+  "pairs": [
+   "473550387.14"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 4,
+  "reproduced": 3
+ },
+ {
+  "id": "E64",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "kt",
+  "b": "xθ",
+  "position": "final",
+  "pairs": [
+   "473550387.15"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 4,
+  "reproduced": 1
+ },
+ {
+  "id": "E65",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "kð",
+  "b": "ɣð",
+  "position": "any",
+  "pairs": [
+   "473550387.21"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E66",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "kʷo",
+  "b": "ko",
+  "position": "any",
+  "pairs": [
+   "3460441403.3"
+  ],
+  "rules": [
+   "3460441403"
+  ],
+  "names": [
+   "labialized velars became velars before [o], [u]"
+  ],
+  "orders": [
+   2600
+  ],
+  "conditional": true,
+  "context": [
+   "Cʷu|Cʷo > Cu|Co"
+  ],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E67",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "kʷu",
+  "b": "ku",
+  "position": "any",
+  "pairs": [
+   "3460441403.4"
+  ],
+  "rules": [
+   "3460441403"
+  ],
+  "names": [
+   "labialized velars became velars before [o], [u]"
+  ],
+  "orders": [
+   2600
+  ],
+  "conditional": true,
+  "context": [
+   "Cʷu|Cʷo > Cu|Co"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E68",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "kḷ",
+  "b": "kli",
+  "position": "initial",
+  "pairs": [
+   "1924948145.3"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E69",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "l",
+  "b": "gl",
+  "position": "initial",
+  "pairs": [
+   "3606177509.1"
+  ],
+  "rules": [
+   "3606177509"
+  ],
+  "names": [
+   "initial [l], [r] sometimes strengthened to [gl], [gr]"
+  ],
+  "orders": [
+   6500
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E70",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ld",
+  "b": "ll",
+  "position": "any",
+  "pairs": [
+   "931729579.1"
+  ],
+  "rules": [
+   "931729579"
+  ],
+  "names": [
+   "[ld] became [ll]"
+  ],
+  "orders": [
+   4800
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 7,
+  "reproduced": 7
+ },
+ {
+  "id": "E71",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "lk",
+  "b": "lx",
+  "position": "any",
+  "pairs": [
+   "473550387.3"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 4,
+  "reproduced": 4
+ },
+ {
+  "id": "E72",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ll",
+  "b": "l",
+  "position": "any",
+  "pairs": [
+   "711485671.1"
+  ],
+  "rules": [
+   "711485671"
+  ],
+  "names": [
+   "[ll] became [l] lengthening preceding stressed vowel"
+  ],
+  "orders": [
+   4900
+  ],
+  "conditional": true,
+  "context": [
+   "ll|V́ll > l|V̄l"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E73",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "lp",
+  "b": "lf",
+  "position": "any",
+  "pairs": [
+   "473550387.1"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E74",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "lt",
+  "b": "lθ",
+  "position": "any",
+  "pairs": [
+   "473550387.2"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 6,
+  "reproduced": 6
+ },
+ {
+  "id": "E75",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "lw",
+  "b": "lb",
+  "position": "final",
+  "pairs": [
+   "1704662033.1"
+  ],
+  "rules": [
+   "1704662033"
+  ],
+  "names": [
+   "final [nw], [lw], [tw] became [m], [lb], [du]"
+  ],
+  "orders": [
+   6600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E76",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "lð",
+  "b": "l",
+  "position": "final",
+  "pairs": [
+   "3105939935.2"
+  ],
+  "rules": [
+   "3105939935"
+  ],
+  "names": [
+   "[lð] became [ld] medially, [l] finally"
+  ],
+  "orders": [
+   5200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E77",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "lð",
+  "b": "ld",
+  "position": "any",
+  "pairs": [
+   "3105939935.1"
+  ],
+  "rules": [
+   "3105939935"
+  ],
+  "names": [
+   "[lð] became [ld] medially, [l] finally"
+  ],
+  "orders": [
+   5200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E78",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "mb",
+  "b": "b",
+  "position": "initial",
+  "pairs": [
+   "2825088365.1"
+  ],
+  "rules": [
+   "2825088365"
+  ],
+  "names": [
+   "initial nasals vanished before stops"
+  ],
+  "orders": [
+   6400
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 7,
+  "reproduced": 7
+ },
+ {
+  "id": "E79",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "mb",
+  "b": "m",
+  "position": "final",
+  "pairs": [
+   "2845062117.3"
+  ],
+  "rules": [
+   "2845062117"
+  ],
+  "names": [
+   "[nd] generally became [nn], while [mb] became [m] finally"
+  ],
+  "orders": [
+   4700
+  ],
+  "conditional": true,
+  "context": [],
+  "exceptions": [
+   "nd > nd"
+  ],
+  "examples": 3,
+  "reproduced": 3
+ },
+ {
+  "id": "E80",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ml",
+  "b": "mbl",
+  "position": "initial",
+  "pairs": [
+   "1360745545.3"
+  ],
+  "rules": [
+   "1360745545"
+  ],
+  "names": [
+   "initial [n], [m] became [d], [b] before [l], [r]"
+  ],
+  "orders": [
+   3300
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E81",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "mp",
+  "b": "mf",
+  "position": "any",
+  "pairs": [
+   "473550387.7"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E82",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "mr",
+  "b": "mbr",
+  "position": "initial",
+  "pairs": [
+   "1360745545.4"
+  ],
+  "rules": [
+   "1360745545"
+  ],
+  "names": [
+   "initial [n], [m] became [d], [b] before [l], [r]"
+  ],
+  "orders": [
+   3300
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E83",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "mβ",
+  "b": "mb",
+  "position": "any",
+  "pairs": [
+   "1610556241.1"
+  ],
+  "rules": [
+   "1610556241"
+  ],
+  "names": [
+   "[mβ] became [mb]"
+  ],
+  "orders": [
+   4600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E84",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "mḷ",
+  "b": "mli",
+  "position": "initial",
+  "pairs": [
+   "1924948145.5"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E85",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "mṛ",
+  "b": "mri",
+  "position": "initial",
+  "pairs": [
+   "1924948145.10"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E86",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "nd",
+  "b": "d",
+  "position": "initial",
+  "pairs": [
+   "2825088365.2"
+  ],
+  "rules": [
+   "2825088365"
+  ],
+  "names": [
+   "initial nasals vanished before stops"
+  ],
+  "orders": [
+   6400
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 14,
+  "reproduced": 14
+ },
+ {
+  "id": "E87",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "nd",
+  "b": "nn",
+  "position": "any",
+  "pairs": [
+   "2845062117.1"
+  ],
+  "rules": [
+   "2845062117"
+  ],
+  "names": [
+   "[nd] generally became [nn], while [mb] became [m] finally"
+  ],
+  "orders": [
+   4700
+  ],
+  "conditional": true,
+  "context": [],
+  "exceptions": [
+   "nd > nd"
+  ],
+  "examples": 12,
+  "reproduced": 11
+ },
+ {
+  "id": "E88",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "nere",
+  "b": "nre",
+  "position": "initial",
+  "pairs": [
+   "1096657061.9"
+  ],
+  "rules": [
+   "1096657061"
+  ],
+  "names": [
+   "unstressed initial syllables reduced to favored clusters"
+  ],
+  "orders": [
+   900
+  ],
+  "conditional": true,
+  "context": [
+   "{ptkɸθxbdgmn}V₁{rl}V́₁- > {ptkɸθxbdgmn}ø{rl}V́₁-"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E89",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "nl",
+  "b": "dl",
+  "position": "initial",
+  "pairs": [
+   "1360745545.1"
+  ],
+  "rules": [
+   "1360745545"
+  ],
+  "names": [
+   "initial [n], [m] became [d], [b] before [l], [r]"
+  ],
+  "orders": [
+   3300
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E90",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "noro",
+  "b": "nro",
+  "position": "initial",
+  "pairs": [
+   "1096657061.10"
+  ],
+  "rules": [
+   "1096657061"
+  ],
+  "names": [
+   "unstressed initial syllables reduced to favored clusters"
+  ],
+  "orders": [
+   900
+  ],
+  "conditional": true,
+  "context": [
+   "{ptkɸθxbdgmn}V₁{rl}V́₁- > {ptkɸθxbdgmn}ø{rl}V́₁-"
+  ],
+  "exceptions": [],
+  "examples": 3,
+  "reproduced": 3
+ },
+ {
+  "id": "E91",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "nr",
+  "b": "ndr",
+  "position": "initial",
+  "pairs": [
+   "1360745545.2"
+  ],
+  "rules": [
+   "1360745545"
+  ],
+  "names": [
+   "initial [n], [m] became [d], [b] before [l], [r]"
+  ],
+  "orders": [
+   3300
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 7,
+  "reproduced": 7
+ },
+ {
+  "id": "E92",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "nt",
+  "b": "nθ",
+  "position": "any",
+  "pairs": [
+   "473550387.8"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 11,
+  "reproduced": 11
+ },
+ {
+  "id": "E93",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "nw",
+  "b": "m",
+  "position": "final",
+  "pairs": [
+   "4173802635.1"
+  ],
+  "rules": [
+   "4173802635"
+  ],
+  "names": [
+   "final [nw] became [m]"
+  ],
+  "orders": [
+   6700
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 4,
+  "reproduced": 4
+ },
+ {
+  "id": "E94",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "nx",
+  "b": "nθ",
+  "position": "any",
+  "pairs": [
+   "2274919337.1"
+  ],
+  "rules": [
+   "2274919337"
+  ],
+  "names": [
+   "[nx] became [nθ]"
+  ],
+  "orders": [
+   4500
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E95",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "nð",
+  "b": "nd",
+  "position": "any",
+  "pairs": [
+   "738701133.1"
+  ],
+  "rules": [
+   "738701133"
+  ],
+  "names": [
+   "[nð] became [nd]"
+  ],
+  "orders": [
+   4400
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 6,
+  "reproduced": 6
+ },
+ {
+  "id": "E96",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "nʲ",
+  "b": "ŋ",
+  "position": "any",
+  "pairs": [
+   "2205165111.4"
+  ],
+  "rules": [
+   "2205165111"
+  ],
+  "names": [
+   "palatal consonants became velars"
+  ],
+  "orders": [
+   100
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E97",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "nḷ",
+  "b": "nli",
+  "position": "initial",
+  "pairs": [
+   "1924948145.4"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E98",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "nṛ",
+  "b": "nri",
+  "position": "initial",
+  "pairs": [
+   "1924948145.9"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 3,
+  "reproduced": 3
+ },
+ {
+  "id": "E99",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "oi",
+  "b": "ui",
+  "position": "any",
+  "pairs": [
+   "1684892745.1"
+  ],
+  "rules": [
+   "1684892745"
+  ],
+  "names": [
+   "[oi] became [ui]"
+  ],
+  "orders": [
+   4000
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 9,
+  "reproduced": 9
+ },
+ {
+  "id": "E100",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "oll",
+  "b": "ōl",
+  "position": "any",
+  "pairs": [
+   "711485671.3"
+  ],
+  "rules": [
+   "711485671"
+  ],
+  "names": [
+   "[ll] became [l] lengthening preceding stressed vowel"
+  ],
+  "orders": [
+   4900
+  ],
+  "conditional": true,
+  "context": [
+   "ll|V́ll > l|V̄l",
+   "óll > ōl (ударение)"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E101",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ou",
+  "b": "ō",
+  "position": "any",
+  "pairs": [
+   "1053983129.2"
+  ],
+  "rules": [
+   "1053983129"
+  ],
+  "names": [
+   "[ei], [ou] became [ē], [ō]"
+  ],
+  "orders": [
+   1600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 13,
+  "reproduced": 11
+ },
+ {
+  "id": "E102",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "pp",
+  "b": "ff",
+  "position": "any",
+  "pairs": [
+   "473550387.10"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E103",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ps",
+  "b": "f",
+  "position": "any",
+  "pairs": [
+   "1497090471.1"
+  ],
+  "rules": [
+   "1497090471"
+  ],
+  "names": [
+   "[p], [t], [k] usually spirantalized with following [s]"
+  ],
+  "orders": [
+   3800
+  ],
+  "conditional": true,
+  "context": [
+   "{ptk}s > {fθx}ø"
+  ],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E104",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "pt",
+  "b": "fθ",
+  "position": "final",
+  "pairs": [
+   "473550387.12"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E105",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "pt",
+  "b": "pθ",
+  "position": "any",
+  "pairs": [
+   "473550387.11"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E106",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "r",
+  "b": "gr",
+  "position": "initial",
+  "pairs": [
+   "3606177509.2"
+  ],
+  "rules": [
+   "3606177509"
+  ],
+  "names": [
+   "initial [l], [r] sometimes strengthened to [gl], [gr]"
+  ],
+  "orders": [
+   6500
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E107",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "rk",
+  "b": "rx",
+  "position": "any",
+  "pairs": [
+   "473550387.6"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E108",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "rp",
+  "b": "rf",
+  "position": "any",
+  "pairs": [
+   "473550387.4"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E109",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "rt",
+  "b": "rθ",
+  "position": "any",
+  "pairs": [
+   "473550387.5"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E110",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "rð",
+  "b": "rd",
+  "position": "any",
+  "pairs": [
+   "3105939935.3"
+  ],
+  "rules": [
+   "3105939935"
+  ],
+  "names": [
+   "[lð] became [ld] medially, [l] finally"
+  ],
+  "orders": [
+   5200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E111",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "sf",
+  "b": "f",
+  "position": "any",
+  "pairs": [
+   "1586615947.2"
+  ],
+  "rules": [
+   "1586615947"
+  ],
+  "names": [
+   "[sm], [sf] became [f]"
+  ],
+  "orders": [
+   6100
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E112",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "sj",
+  "b": "x",
+  "position": "initial",
+  "pairs": [
+   "2688788155.1"
+  ],
+  "rules": [
+   "2688788155"
+  ],
+  "names": [
+   "initial [sj] became [x]"
+  ],
+  "orders": [
+   3100
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 3,
+  "reproduced": 3
+ },
+ {
+  "id": "E113",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "sl",
+  "b": "θl",
+  "position": "any",
+  "pairs": [
+   "3455596725.1"
+  ],
+  "rules": [
+   "3455596725"
+  ],
+  "names": [
+   "[s] became [θ] before [l], [r], [w]"
+  ],
+  "orders": [
+   5800
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E114",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "sm",
+  "b": "f",
+  "position": "any",
+  "pairs": [
+   "1586615947.1"
+  ],
+  "rules": [
+   "1586615947"
+  ],
+  "names": [
+   "[sm], [sf] became [f]"
+  ],
+  "orders": [
+   6100
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E115",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "sr",
+  "b": "θr",
+  "position": "any",
+  "pairs": [
+   "3455596725.2"
+  ],
+  "rules": [
+   "3455596725"
+  ],
+  "names": [
+   "[s] became [θ] before [l], [r], [w]"
+  ],
+  "orders": [
+   5800
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E116",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "sw",
+  "b": "θw",
+  "position": "any",
+  "pairs": [
+   "3455596725.3"
+  ],
+  "rules": [
+   "3455596725"
+  ],
+  "names": [
+   "[s] became [θ] before [l], [r], [w]"
+  ],
+  "orders": [
+   5800
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E117",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "sβ",
+  "b": "θw",
+  "position": "any",
+  "pairs": [
+   "963622237.1"
+  ],
+  "rules": [
+   "963622237"
+  ],
+  "names": [
+   "[sβ] became [θw]"
+  ],
+  "orders": [
+   6000
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E118",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "teli",
+  "b": "tli",
+  "position": "initial",
+  "pairs": [
+   "1096657061.11"
+  ],
+  "rules": [
+   "1096657061"
+  ],
+  "names": [
+   "unstressed initial syllables reduced to favored clusters"
+  ],
+  "orders": [
+   900
+  ],
+  "conditional": true,
+  "context": [
+   "{ptkɸθxbdgmn}V₁{rl}V́₁- > {ptkɸθxbdgmn}ø{rl}V́₁-"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E119",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "telu",
+  "b": "tlu",
+  "position": "initial",
+  "pairs": [
+   "1096657061.12"
+  ],
+  "rules": [
+   "1096657061"
+  ],
+  "names": [
+   "unstressed initial syllables reduced to favored clusters"
+  ],
+  "orders": [
+   900
+  ],
+  "conditional": true,
+  "context": [
+   "{ptkɸθxbdgmn}V₁{rl}V́₁- > {ptkɸθxbdgmn}ø{rl}V́₁-"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E120",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "tl",
+  "b": "kl",
+  "position": "any",
+  "pairs": [
+   "3113057765.3"
+  ],
+  "rules": [
+   "3113057765"
+  ],
+  "names": [
+   "[tl], [dl], [ðl] became [kl], [gl]"
+  ],
+  "orders": [
+   5300
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 3,
+  "reproduced": 3
+ },
+ {
+  "id": "E121",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "tl",
+  "b": "θl",
+  "position": "any",
+  "pairs": [
+   "3455596725.4"
+  ],
+  "rules": [
+   "3455596725"
+  ],
+  "names": [
+   "[s] became [θ] before [l], [r], [w]"
+  ],
+  "orders": [
+   5800
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E122",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ts",
+  "b": "θ",
+  "position": "any",
+  "pairs": [
+   "1497090471.2"
+  ],
+  "rules": [
+   "1497090471"
+  ],
+  "names": [
+   "[p], [t], [k] usually spirantalized with following [s]"
+  ],
+  "orders": [
+   3800
+  ],
+  "conditional": true,
+  "context": [
+   "{ptk}s > {fθx}ø"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E123",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "tt",
+  "b": "θθ",
+  "position": "any",
+  "pairs": [
+   "473550387.13"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 7,
+  "reproduced": 7
+ },
+ {
+  "id": "E124",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "tʲ",
+  "b": "k",
+  "position": "any",
+  "pairs": [
+   "2205165111.2"
+  ],
+  "rules": [
+   "2205165111"
+  ],
+  "names": [
+   "palatal consonants became velars"
+  ],
+  "orders": [
+   100
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 4,
+  "reproduced": 4
+ },
+ {
+  "id": "E125",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "tḷ",
+  "b": "tli",
+  "position": "initial",
+  "pairs": [
+   "1924948145.6"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E126",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "tṛ",
+  "b": "tri",
+  "position": "initial",
+  "pairs": [
+   "1924948145.11"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E127",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ui",
+  "b": "wi",
+  "position": "any",
+  "pairs": [
+   "150094523.1"
+  ],
+  "rules": [
+   "150094523"
+  ],
+  "names": [
+   "unstressed [ui] became [wi]"
+  ],
+  "orders": [
+   2000
+  ],
+  "conditional": true,
+  "context": [
+   "ˌui > wi (ударение)"
+  ],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E128",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "uɣ",
+  "b": "ui",
+  "position": "final",
+  "pairs": [
+   "272028599.9"
+  ],
+  "rules": [
+   "272028599"
+  ],
+  "names": [
+   "[x], [ɣ] sometimes became [i]"
+  ],
+  "orders": [
+   3900
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E129",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "vt",
+  "b": "vθ",
+  "position": "any",
+  "pairs": [
+   "473550387.22"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E130",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "w",
+  "b": "gʷ",
+  "position": "initial",
+  "pairs": [
+   "3358436645.1"
+  ],
+  "rules": [
+   "3358436645"
+  ],
+  "names": [
+   "initial [w] became [gw]"
+  ],
+  "orders": [
+   700
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 13,
+  "reproduced": 13
+ },
+ {
+  "id": "E131",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "wa",
+  "b": "wo",
+  "position": "any",
+  "pairs": [
+   "2099337057.1"
+  ],
+  "rules": [
+   "2099337057"
+  ],
+  "names": [
+   "unstressed [wa] became [wo]"
+  ],
+  "orders": [
+   1900
+  ],
+  "conditional": true,
+  "context": [
+   "wˌa > wo (ударение)",
+   "{wˌa|wo} > o"
+  ],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 0
+ },
+ {
+  "id": "E132",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "wets",
+  "b": "wess",
+  "position": "any",
+  "pairs": [
+   "1209928251.2"
+  ],
+  "rules": [
+   "1209928251"
+  ],
+  "names": [
+   "[ts] became [s] after long vowel"
+  ],
+  "orders": [
+   3700
+  ],
+  "conditional": true,
+  "context": [
+   "VVts > VVs"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 0
+ },
+ {
+  "id": "E133",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "wo",
+  "b": "o",
+  "position": "any",
+  "pairs": [
+   "2946990975.1"
+  ],
+  "rules": [
+   "2946990975"
+  ],
+  "names": [
+   "[wo] became [o]"
+  ],
+  "orders": [
+   2500
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E134",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "x",
+  "b": "h",
+  "position": "initial",
+  "pairs": [
+   "501264925.1"
+  ],
+  "rules": [
+   "501264925"
+  ],
+  "names": [
+   "initial [x-] became [h-]"
+  ],
+  "orders": [
+   3200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 19,
+  "reproduced": 18
+ },
+ {
+  "id": "E135",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "xt",
+  "b": "xθ",
+  "position": "any",
+  "pairs": [
+   "473550387.16"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 4,
+  "reproduced": 4
+ },
+ {
+  "id": "E136",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "xx",
+  "b": "x",
+  "position": "any",
+  "pairs": [
+   "4228274355.3"
+  ],
+  "rules": [
+   "4228274355"
+  ],
+  "names": [
+   "long voiceless spirants shortened"
+  ],
+  "orders": [
+   5700
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 3,
+  "reproduced": 3
+ },
+ {
+  "id": "E137",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "xʷ",
+  "b": "f",
+  "position": "any",
+  "pairs": [
+   "3323934825.1"
+  ],
+  "rules": [
+   "3323934825"
+  ],
+  "names": [
+   "[xʷ] became [f]"
+  ],
+  "orders": [
+   200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 5,
+  "reproduced": 5
+ },
+ {
+  "id": "E138",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ð",
+  "b": "d",
+  "position": "initial",
+  "pairs": [
+   "2523049185.2"
+  ],
+  "rules": [
+   "2523049185"
+  ],
+  "names": [
+   "initial voiced spirants became stops"
+  ],
+  "orders": [
+   300
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E139",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ð",
+  "b": "θ",
+  "position": "final",
+  "pairs": [
+   "3786037189.1"
+  ],
+  "rules": [
+   "3786037189"
+  ],
+  "names": [
+   "[ð] became [θ] finally or before a consonant"
+  ],
+  "orders": [
+   6300
+  ],
+  "conditional": true,
+  "context": [
+   "-ð|ðC > -θ|θC"
+  ],
+  "exceptions": [],
+  "examples": 7,
+  "reproduced": 7
+ },
+ {
+  "id": "E140",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ðk",
+  "b": "sk",
+  "position": "any",
+  "pairs": [
+   "976451235.1"
+  ],
+  "rules": [
+   "976451235"
+  ],
+  "names": [
+   "[θ], [ð] became [s] before [p], [t], [k], [b] and [s]"
+  ],
+  "orders": [
+   3400
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E141",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ðl",
+  "b": "gl",
+  "position": "any",
+  "pairs": [
+   "3113057765.2"
+  ],
+  "rules": [
+   "3113057765"
+  ],
+  "names": [
+   "[tl], [dl], [ðl] became [kl], [gl]"
+  ],
+  "orders": [
+   5300
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 3,
+  "reproduced": 2
+ },
+ {
+  "id": "E142",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ðs",
+  "b": "ss",
+  "position": "any",
+  "pairs": [
+   "976451235.2"
+  ],
+  "rules": [
+   "976451235"
+  ],
+  "names": [
+   "[θ], [ð] became [s] before [p], [t], [k], [b] and [s]"
+  ],
+  "orders": [
+   3400
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E143",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ðt",
+  "b": "st",
+  "position": "any",
+  "pairs": [
+   "976451235.3"
+  ],
+  "rules": [
+   "976451235"
+  ],
+  "names": [
+   "[θ], [ð] became [s] before [p], [t], [k], [b] and [s]"
+  ],
+  "orders": [
+   3400
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 3,
+  "reproduced": 2
+ },
+ {
+  "id": "E144",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ā",
+  "b": "ō",
+  "position": "any",
+  "pairs": [
+   "3140771935.1"
+  ],
+  "rules": [
+   "3140771935"
+  ],
+  "names": [
+   "[ā] became [ō]"
+  ],
+  "orders": [
+   1300
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 7,
+  "reproduced": 7
+ },
+ {
+  "id": "E145",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ē",
+  "b": "ī",
+  "position": "any",
+  "pairs": [
+   "1277969137.1"
+  ],
+  "rules": [
+   "1277969137"
+  ],
+  "names": [
+   "[ē], [ō] became [ī], [ū]"
+  ],
+  "orders": [
+   1100
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 7,
+  "reproduced": 7
+ },
+ {
+  "id": "E146",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ī",
+  "b": "ai",
+  "position": "any",
+  "pairs": [
+   "1815156341.1"
+  ],
+  "rules": [
+   "1815156341"
+  ],
+  "names": [
+   "[ī], [ū] became [ai], [au]"
+  ],
+  "orders": [
+   1000
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 8,
+  "reproduced": 8
+ },
+ {
+  "id": "E147",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ŋ",
+  "b": "ŋg",
+  "position": "any",
+  "pairs": [
+   "2869972293.1"
+  ],
+  "rules": [
+   "2869972293"
+  ],
+  "names": [
+   "[ŋ] became [ŋg]"
+  ],
+  "orders": [
+   600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 14,
+  "reproduced": 4
+ },
+ {
+  "id": "E148",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ŋg",
+  "b": "g",
+  "position": "initial",
+  "pairs": [
+   "2825088365.3"
+  ],
+  "rules": [
+   "2825088365"
+  ],
+  "names": [
+   "initial nasals vanished before stops"
+  ],
+  "orders": [
+   6400
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 4,
+  "reproduced": 4
+ },
+ {
+  "id": "E149",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ŋgʷ",
+  "b": "gʷ",
+  "position": "initial",
+  "pairs": [
+   "1371815731.1"
+  ],
+  "rules": [
+   "1371815731"
+  ],
+  "names": [
+   "initial [ŋgʷ] became [gʷ]"
+  ],
+  "orders": [
+   1200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 13,
+  "reproduced": 13
+ },
+ {
+  "id": "E150",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ŋk",
+  "b": "ŋx",
+  "position": "any",
+  "pairs": [
+   "473550387.9"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E151",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ō",
+  "b": "ū",
+  "position": "any",
+  "pairs": [
+   "1277969137.2"
+  ],
+  "rules": [
+   "1277969137"
+  ],
+  "names": [
+   "[ē], [ō] became [ī], [ū]"
+  ],
+  "orders": [
+   1100
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 2,
+  "reproduced": 2
+ },
+ {
+  "id": "E152",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ū",
+  "b": "au",
+  "position": "any",
+  "pairs": [
+   "1815156341.2"
+  ],
+  "rules": [
+   "1815156341"
+  ],
+  "names": [
+   "[ī], [ū] became [ai], [au]"
+  ],
+  "orders": [
+   1000
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 5,
+  "reproduced": 5
+ },
+ {
+  "id": "E153",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ɣ",
+  "b": "g",
+  "position": "initial",
+  "pairs": [
+   "2523049185.3"
+  ],
+  "rules": [
+   "2523049185"
+  ],
+  "names": [
+   "initial voiced spirants became stops"
+  ],
+  "orders": [
+   300
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 8,
+  "reproduced": 8
+ },
+ {
+  "id": "E154",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ɣt",
+  "b": "ɣð",
+  "position": "any",
+  "pairs": [
+   "473550387.19"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E155",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ɣt",
+  "b": "ɣθ",
+  "position": "any",
+  "pairs": [
+   "473550387.18"
+  ],
+  "rules": [
+   "473550387"
+  ],
+  "names": [
+   "voiceless stops spirantalized after many consonants"
+  ],
+  "orders": [
+   3600
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E156",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ɸ",
+  "b": "f",
+  "position": "any",
+  "pairs": [
+   "4218663817.1"
+  ],
+  "rules": [
+   "4218663817"
+  ],
+  "names": [
+   "[ɸ], [β] became [f], [v]"
+  ],
+  "orders": [
+   400
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 15,
+  "reproduced": 15
+ },
+ {
+  "id": "E157",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "β",
+  "b": "b",
+  "position": "initial",
+  "pairs": [
+   "2523049185.1"
+  ],
+  "rules": [
+   "2523049185"
+  ],
+  "names": [
+   "initial voiced spirants became stops"
+  ],
+  "orders": [
+   300
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 20,
+  "reproduced": 20
+ },
+ {
+  "id": "E158",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "β",
+  "b": "v",
+  "position": "any",
+  "pairs": [
+   "4218663817.2"
+  ],
+  "rules": [
+   "4218663817"
+  ],
+  "names": [
+   "[ɸ], [β] became [f], [v]"
+  ],
+  "orders": [
+   400
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 12,
+  "reproduced": 12
+ },
+ {
+  "id": "E159",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "θ",
+  "b": "s",
+  "position": "final",
+  "pairs": [
+   "49608021.1"
+  ],
+  "rules": [
+   "49608021"
+  ],
+  "names": [
+   "final [θ] sometimes became [s]"
+  ],
+  "orders": [
+   6200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E160",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "θk",
+  "b": "sk",
+  "position": "any",
+  "pairs": [
+   "976451235.4"
+  ],
+  "rules": [
+   "976451235"
+  ],
+  "names": [
+   "[θ], [ð] became [s] before [p], [t], [k], [b] and [s]"
+  ],
+  "orders": [
+   3400
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 3,
+  "reproduced": 3
+ },
+ {
+  "id": "E161",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "θl",
+  "b": "fl",
+  "position": "initial",
+  "pairs": [
+   "4288301617.1"
+  ],
+  "rules": [
+   "4288301617"
+  ],
+  "names": [
+   "initial [θ] sometimes became [f] before [l], [r], [w]"
+  ],
+  "orders": [
+   5900
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E162",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "θr",
+  "b": "fr",
+  "position": "initial",
+  "pairs": [
+   "4288301617.2"
+  ],
+  "rules": [
+   "4288301617"
+  ],
+  "names": [
+   "initial [θ] sometimes became [f] before [l], [r], [w]"
+  ],
+  "orders": [
+   5900
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E163",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "θs",
+  "b": "ss",
+  "position": "any",
+  "pairs": [
+   "976451235.5"
+  ],
+  "rules": [
+   "976451235"
+  ],
+  "names": [
+   "[θ], [ð] became [s] before [p], [t], [k], [b] and [s]"
+  ],
+  "orders": [
+   3400
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E164",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "θt",
+  "b": "st",
+  "position": "any",
+  "pairs": [
+   "976451235.6"
+  ],
+  "rules": [
+   "976451235"
+  ],
+  "names": [
+   "[θ], [ð] became [s] before [p], [t], [k], [b] and [s]"
+  ],
+  "orders": [
+   3400
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E165",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "θw",
+  "b": "fw",
+  "position": "initial",
+  "pairs": [
+   "4288301617.3"
+  ],
+  "rules": [
+   "4288301617"
+  ],
+  "names": [
+   "initial [θ] sometimes became [f] before [l], [r], [w]"
+  ],
+  "orders": [
+   5900
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 0,
+  "reproduced": 0
+ },
+ {
+  "id": "E166",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "θʲ",
+  "b": "x",
+  "position": "any",
+  "pairs": [
+   "2205165111.1"
+  ],
+  "rules": [
+   "2205165111"
+  ],
+  "names": [
+   "palatal consonants became velars"
+  ],
+  "orders": [
+   100
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E167",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "θθ",
+  "b": "θ",
+  "position": "any",
+  "pairs": [
+   "4228274355.2"
+  ],
+  "rules": [
+   "4228274355"
+  ],
+  "names": [
+   "long voiceless spirants shortened"
+  ],
+  "orders": [
+   5700
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 8,
+  "reproduced": 8
+ },
+ {
+  "id": "E168",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ḷ",
+  "b": "il",
+  "position": "any",
+  "pairs": [
+   "1924948145.16"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E169",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ḷ",
+  "b": "li",
+  "position": "final",
+  "pairs": [
+   "1924948145.12"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E170",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ḷm",
+  "b": "ulm",
+  "position": "any",
+  "pairs": [
+   "1924948145.14"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 1,
+  "reproduced": 1
+ },
+ {
+  "id": "E171",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ḹ",
+  "b": "al",
+  "position": "any",
+  "pairs": [
+   "1924948145.15"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 8,
+  "reproduced": 8
+ },
+ {
+  "id": "E172",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ṇ",
+  "b": "in",
+  "position": "any",
+  "pairs": [
+   "3923587781.1"
+  ],
+  "rules": [
+   "3923587781"
+  ],
+  "names": [
+   "syllabic nasals became [in] or [an]"
+  ],
+  "orders": [
+   2200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 3,
+  "reproduced": 3
+ },
+ {
+  "id": "E173",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ṇ̄",
+  "b": "an",
+  "position": "any",
+  "pairs": [
+   "3923587781.2"
+  ],
+  "rules": [
+   "3923587781"
+  ],
+  "names": [
+   "syllabic nasals became [in] or [an]"
+  ],
+  "orders": [
+   2200
+  ],
+  "conditional": false,
+  "context": [],
+  "exceptions": [],
+  "examples": 7,
+  "reproduced": 7
+ },
+ {
+  "id": "E174",
+  "era": "early",
+  "stage": 1,
+  "lang": "g",
+  "marker": "G.",
+  "a": "ṝ",
+  "b": "ar",
+  "position": "any",
+  "pairs": [
+   "1924948145.17"
+  ],
+  "rules": [
+   "1924948145"
+  ],
+  "names": [
+   "syllabic consonants developed vowels"
+  ],
+  "orders": [
+   2100
+  ],
+  "conditional": true,
+  "context": [
+   "ḷ|ṛ|ṇ > Vl|Vr|Vn"
+  ],
+  "exceptions": [],
+  "examples": 9,
+  "reproduced": 9
+ },
+ {
+  "id": "E175",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -27,7 +4811,7 @@
   "reproduced": 0
  },
  {
-  "id": "E2",
+  "id": "E176",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -54,7 +4838,7 @@
   "reproduced": 0
  },
  {
-  "id": "E3",
+  "id": "E177",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -79,7 +4863,7 @@
   "reproduced": 6
  },
  {
-  "id": "E4",
+  "id": "E178",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -104,7 +4888,7 @@
   "reproduced": 1
  },
  {
-  "id": "E5",
+  "id": "E179",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -129,7 +4913,7 @@
   "reproduced": 1
  },
  {
-  "id": "E6",
+  "id": "E180",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -154,7 +4938,7 @@
   "reproduced": 1
  },
  {
-  "id": "E7",
+  "id": "E181",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -179,7 +4963,7 @@
   "reproduced": 0
  },
  {
-  "id": "E8",
+  "id": "E182",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -204,7 +4988,7 @@
   "reproduced": 0
  },
  {
-  "id": "E9",
+  "id": "E183",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -229,7 +5013,7 @@
   "reproduced": 0
  },
  {
-  "id": "E10",
+  "id": "E184",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -254,7 +5038,7 @@
   "reproduced": 9
  },
  {
-  "id": "E11",
+  "id": "E185",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -281,7 +5065,7 @@
   "reproduced": 1
  },
  {
-  "id": "E12",
+  "id": "E186",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -306,7 +5090,7 @@
   "reproduced": 2
  },
  {
-  "id": "E13",
+  "id": "E187",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -333,7 +5117,7 @@
   "reproduced": 0
  },
  {
-  "id": "E14",
+  "id": "E188",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -358,7 +5142,7 @@
   "reproduced": 0
  },
  {
-  "id": "E15",
+  "id": "E189",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -383,7 +5167,7 @@
   "reproduced": 1
  },
  {
-  "id": "E16",
+  "id": "E190",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -408,7 +5192,7 @@
   "reproduced": 1
  },
  {
-  "id": "E17",
+  "id": "E191",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -433,7 +5217,7 @@
   "reproduced": 1
  },
  {
-  "id": "E18",
+  "id": "E192",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -458,7 +5242,7 @@
   "reproduced": 0
  },
  {
-  "id": "E19",
+  "id": "E193",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -483,7 +5267,7 @@
   "reproduced": 2
  },
  {
-  "id": "E20",
+  "id": "E194",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -508,7 +5292,7 @@
   "reproduced": 0
  },
  {
-  "id": "E21",
+  "id": "E195",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -535,7 +5319,7 @@
   "reproduced": 0
  },
  {
-  "id": "E22",
+  "id": "E196",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -560,7 +5344,7 @@
   "reproduced": 0
  },
  {
-  "id": "E23",
+  "id": "E197",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -585,7 +5369,7 @@
   "reproduced": 1
  },
  {
-  "id": "E24",
+  "id": "E198",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -610,7 +5394,7 @@
   "reproduced": 3
  },
  {
-  "id": "E25",
+  "id": "E199",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -635,7 +5419,7 @@
   "reproduced": 1
  },
  {
-  "id": "E26",
+  "id": "E200",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -660,7 +5444,7 @@
   "reproduced": 4
  },
  {
-  "id": "E27",
+  "id": "E201",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -685,7 +5469,7 @@
   "reproduced": 2
  },
  {
-  "id": "E28",
+  "id": "E202",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -710,7 +5494,7 @@
   "reproduced": 4
  },
  {
-  "id": "E29",
+  "id": "E203",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -735,7 +5519,7 @@
   "reproduced": 5
  },
  {
-  "id": "E30",
+  "id": "E204",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -760,7 +5544,7 @@
   "reproduced": 0
  },
  {
-  "id": "E31",
+  "id": "E205",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -785,7 +5569,7 @@
   "reproduced": 0
  },
  {
-  "id": "E32",
+  "id": "E206",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -810,7 +5594,7 @@
   "reproduced": 0
  },
  {
-  "id": "E33",
+  "id": "E207",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -835,7 +5619,7 @@
   "reproduced": 0
  },
  {
-  "id": "E34",
+  "id": "E208",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -860,7 +5644,7 @@
   "reproduced": 0
  },
  {
-  "id": "E35",
+  "id": "E209",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -885,7 +5669,7 @@
   "reproduced": 0
  },
  {
-  "id": "E36",
+  "id": "E210",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -910,7 +5694,7 @@
   "reproduced": 2
  },
  {
-  "id": "E37",
+  "id": "E211",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -935,7 +5719,7 @@
   "reproduced": 1
  },
  {
-  "id": "E38",
+  "id": "E212",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -960,7 +5744,7 @@
   "reproduced": 1
  },
  {
-  "id": "E39",
+  "id": "E213",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -985,7 +5769,7 @@
   "reproduced": 1
  },
  {
-  "id": "E40",
+  "id": "E214",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1010,7 +5794,7 @@
   "reproduced": 2
  },
  {
-  "id": "E41",
+  "id": "E215",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1035,7 +5819,7 @@
   "reproduced": 0
  },
  {
-  "id": "E42",
+  "id": "E216",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1060,7 +5844,7 @@
   "reproduced": 0
  },
  {
-  "id": "E43",
+  "id": "E217",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1085,7 +5869,7 @@
   "reproduced": 2
  },
  {
-  "id": "E44",
+  "id": "E218",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1110,7 +5894,7 @@
   "reproduced": 1
  },
  {
-  "id": "E45",
+  "id": "E219",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1135,7 +5919,7 @@
   "reproduced": 0
  },
  {
-  "id": "E46",
+  "id": "E220",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1160,7 +5944,7 @@
   "reproduced": 0
  },
  {
-  "id": "E47",
+  "id": "E221",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1185,7 +5969,7 @@
   "reproduced": 0
  },
  {
-  "id": "E48",
+  "id": "E222",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1210,7 +5994,7 @@
   "reproduced": 1
  },
  {
-  "id": "E49",
+  "id": "E223",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1237,7 +6021,7 @@
   "reproduced": 3
  },
  {
-  "id": "E50",
+  "id": "E224",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1262,7 +6046,7 @@
   "reproduced": 0
  },
  {
-  "id": "E51",
+  "id": "E225",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1287,7 +6071,7 @@
   "reproduced": 1
  },
  {
-  "id": "E52",
+  "id": "E226",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1315,7 +6099,7 @@
   "reproduced": 4
  },
  {
-  "id": "E53",
+  "id": "E227",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1340,7 +6124,7 @@
   "reproduced": 0
  },
  {
-  "id": "E54",
+  "id": "E228",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1367,7 +6151,7 @@
   "reproduced": 2
  },
  {
-  "id": "E55",
+  "id": "E229",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1392,7 +6176,7 @@
   "reproduced": 0
  },
  {
-  "id": "E56",
+  "id": "E230",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1419,7 +6203,7 @@
   "reproduced": 0
  },
  {
-  "id": "E57",
+  "id": "E231",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1444,7 +6228,7 @@
   "reproduced": 0
  },
  {
-  "id": "E58",
+  "id": "E232",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1471,7 +6255,7 @@
   "reproduced": 0
  },
  {
-  "id": "E59",
+  "id": "E233",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1496,7 +6280,7 @@
   "reproduced": 0
  },
  {
-  "id": "E60",
+  "id": "E234",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1521,7 +6305,7 @@
   "reproduced": 0
  },
  {
-  "id": "E61",
+  "id": "E235",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1546,7 +6330,7 @@
   "reproduced": 7
  },
  {
-  "id": "E62",
+  "id": "E236",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1571,7 +6355,7 @@
   "reproduced": 3
  },
  {
-  "id": "E63",
+  "id": "E237",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1596,7 +6380,7 @@
   "reproduced": 0
  },
  {
-  "id": "E64",
+  "id": "E238",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1623,7 +6407,7 @@
   "reproduced": 17
  },
  {
-  "id": "E65",
+  "id": "E239",
   "era": "late",
   "stage": 0,
   "lang": "p",
@@ -1648,7 +6432,7 @@
   "reproduced": 0
  },
  {
-  "id": "E66",
+  "id": "E240",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -1678,7 +6462,7 @@
   "reproduced": 5
  },
  {
-  "id": "E67",
+  "id": "E241",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -1705,7 +6489,7 @@
   "reproduced": 0
  },
  {
-  "id": "E68",
+  "id": "E242",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -1732,7 +6516,7 @@
   "reproduced": 3
  },
  {
-  "id": "E69",
+  "id": "E243",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -1762,7 +6546,7 @@
   "reproduced": 1
  },
  {
-  "id": "E70",
+  "id": "E244",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -1792,7 +6576,7 @@
   "reproduced": 2
  },
  {
-  "id": "E71",
+  "id": "E245",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -1819,7 +6603,7 @@
   "reproduced": 26
  },
  {
-  "id": "E72",
+  "id": "E246",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -1846,7 +6630,7 @@
   "reproduced": 0
  },
  {
-  "id": "E73",
+  "id": "E247",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -1873,7 +6657,7 @@
   "reproduced": 0
  },
  {
-  "id": "E74",
+  "id": "E248",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -1900,7 +6684,7 @@
   "reproduced": 2
  },
  {
-  "id": "E75",
+  "id": "E249",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -1927,7 +6711,7 @@
   "reproduced": 0
  },
  {
-  "id": "E76",
+  "id": "E250",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -1954,7 +6738,7 @@
   "reproduced": 0
  },
  {
-  "id": "E77",
+  "id": "E251",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -1981,7 +6765,7 @@
   "reproduced": 1
  },
  {
-  "id": "E78",
+  "id": "E252",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -2011,7 +6795,7 @@
   "reproduced": 1
  },
  {
-  "id": "E79",
+  "id": "E253",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -2041,7 +6825,7 @@
   "reproduced": 2
  },
  {
-  "id": "E80",
+  "id": "E254",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -2068,7 +6852,7 @@
   "reproduced": 0
  },
  {
-  "id": "E81",
+  "id": "E255",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -2098,7 +6882,7 @@
   "reproduced": 1
  },
  {
-  "id": "E82",
+  "id": "E256",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -2125,7 +6909,7 @@
   "reproduced": 0
  },
  {
-  "id": "E83",
+  "id": "E257",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -2152,7 +6936,7 @@
   "reproduced": 2
  },
  {
-  "id": "E84",
+  "id": "E258",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -2179,7 +6963,7 @@
   "reproduced": 3
  },
  {
-  "id": "E85",
+  "id": "E259",
   "era": "late",
   "stage": 1,
   "lang": "at",
@@ -2206,7 +6990,7 @@
   "reproduced": 0
  },
  {
-  "id": "E86",
+  "id": "E260",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2235,7 +7019,7 @@
   "reproduced": 1
  },
  {
-  "id": "E87",
+  "id": "E261",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2262,7 +7046,7 @@
   "reproduced": 0
  },
  {
-  "id": "E88",
+  "id": "E262",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2289,7 +7073,7 @@
   "reproduced": 0
  },
  {
-  "id": "E89",
+  "id": "E263",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2316,7 +7100,7 @@
   "reproduced": 0
  },
  {
-  "id": "E90",
+  "id": "E264",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2343,7 +7127,7 @@
   "reproduced": 1
  },
  {
-  "id": "E91",
+  "id": "E265",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2370,7 +7154,7 @@
   "reproduced": 8
  },
  {
-  "id": "E92",
+  "id": "E266",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2397,7 +7181,7 @@
   "reproduced": 0
  },
  {
-  "id": "E93",
+  "id": "E267",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2424,7 +7208,7 @@
   "reproduced": 0
  },
  {
-  "id": "E94",
+  "id": "E268",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2451,7 +7235,7 @@
   "reproduced": 0
  },
  {
-  "id": "E95",
+  "id": "E269",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2478,7 +7262,7 @@
   "reproduced": 1
  },
  {
-  "id": "E96",
+  "id": "E270",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2505,7 +7289,7 @@
   "reproduced": 9
  },
  {
-  "id": "E97",
+  "id": "E271",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2532,7 +7316,7 @@
   "reproduced": 3
  },
  {
-  "id": "E98",
+  "id": "E272",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2559,7 +7343,7 @@
   "reproduced": 3
  },
  {
-  "id": "E99",
+  "id": "E273",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2586,7 +7370,7 @@
   "reproduced": 6
  },
  {
-  "id": "E100",
+  "id": "E274",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2613,7 +7397,7 @@
   "reproduced": 0
  },
  {
-  "id": "E101",
+  "id": "E275",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2640,7 +7424,7 @@
   "reproduced": 1
  },
  {
-  "id": "E102",
+  "id": "E276",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2667,7 +7451,7 @@
   "reproduced": 17
  },
  {
-  "id": "E103",
+  "id": "E277",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2694,7 +7478,7 @@
   "reproduced": 17
  },
  {
-  "id": "E104",
+  "id": "E278",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2721,7 +7505,7 @@
   "reproduced": 38
  },
  {
-  "id": "E105",
+  "id": "E279",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2748,7 +7532,7 @@
   "reproduced": 1
  },
  {
-  "id": "E106",
+  "id": "E280",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2775,7 +7559,7 @@
   "reproduced": 0
  },
  {
-  "id": "E107",
+  "id": "E281",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2802,7 +7586,7 @@
   "reproduced": 1
  },
  {
-  "id": "E108",
+  "id": "E282",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2829,7 +7613,7 @@
   "reproduced": 4
  },
  {
-  "id": "E109",
+  "id": "E283",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2856,7 +7640,7 @@
   "reproduced": 3
  },
  {
-  "id": "E110",
+  "id": "E284",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2883,7 +7667,7 @@
   "reproduced": 1
  },
  {
-  "id": "E111",
+  "id": "E285",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2910,7 +7694,7 @@
   "reproduced": 0
  },
  {
-  "id": "E112",
+  "id": "E286",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2937,7 +7721,7 @@
   "reproduced": 7
  },
  {
-  "id": "E113",
+  "id": "E287",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2964,7 +7748,7 @@
   "reproduced": 0
  },
  {
-  "id": "E114",
+  "id": "E288",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -2991,7 +7775,7 @@
   "reproduced": 0
  },
  {
-  "id": "E115",
+  "id": "E289",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3018,7 +7802,7 @@
   "reproduced": 0
  },
  {
-  "id": "E116",
+  "id": "E290",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3045,7 +7829,7 @@
   "reproduced": 1
  },
  {
-  "id": "E117",
+  "id": "E291",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3072,7 +7856,7 @@
   "reproduced": 14
  },
  {
-  "id": "E118",
+  "id": "E292",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3099,7 +7883,7 @@
   "reproduced": 4
  },
  {
-  "id": "E119",
+  "id": "E293",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3126,7 +7910,7 @@
   "reproduced": 2
  },
  {
-  "id": "E120",
+  "id": "E294",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3153,7 +7937,7 @@
   "reproduced": 0
  },
  {
-  "id": "E121",
+  "id": "E295",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3180,7 +7964,7 @@
   "reproduced": 0
  },
  {
-  "id": "E122",
+  "id": "E296",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3207,7 +7991,7 @@
   "reproduced": 4
  },
  {
-  "id": "E123",
+  "id": "E297",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3234,7 +8018,7 @@
   "reproduced": 4
  },
  {
-  "id": "E124",
+  "id": "E298",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3261,7 +8045,7 @@
   "reproduced": 0
  },
  {
-  "id": "E125",
+  "id": "E299",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3288,7 +8072,7 @@
   "reproduced": 1
  },
  {
-  "id": "E126",
+  "id": "E300",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3315,7 +8099,7 @@
   "reproduced": 1
  },
  {
-  "id": "E127",
+  "id": "E301",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3342,7 +8126,7 @@
   "reproduced": 55
  },
  {
-  "id": "E128",
+  "id": "E302",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3369,7 +8153,7 @@
   "reproduced": 0
  },
  {
-  "id": "E129",
+  "id": "E303",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3396,7 +8180,7 @@
   "reproduced": 5
  },
  {
-  "id": "E130",
+  "id": "E304",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3423,7 +8207,7 @@
   "reproduced": 1
  },
  {
-  "id": "E131",
+  "id": "E305",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3450,7 +8234,7 @@
   "reproduced": 0
  },
  {
-  "id": "E132",
+  "id": "E306",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3477,7 +8261,7 @@
   "reproduced": 9
  },
  {
-  "id": "E133",
+  "id": "E307",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3506,7 +8290,7 @@
   "reproduced": 1
  },
  {
-  "id": "E134",
+  "id": "E308",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3535,7 +8319,7 @@
   "reproduced": 0
  },
  {
-  "id": "E135",
+  "id": "E309",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3562,7 +8346,7 @@
   "reproduced": 3
  },
  {
-  "id": "E136",
+  "id": "E310",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3589,7 +8373,7 @@
   "reproduced": 2
  },
  {
-  "id": "E137",
+  "id": "E311",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3616,7 +8400,7 @@
   "reproduced": 0
  },
  {
-  "id": "E138",
+  "id": "E312",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3643,7 +8427,7 @@
   "reproduced": 0
  },
  {
-  "id": "E139",
+  "id": "E313",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3670,7 +8454,7 @@
   "reproduced": 8
  },
  {
-  "id": "E140",
+  "id": "E314",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3697,7 +8481,7 @@
   "reproduced": 0
  },
  {
-  "id": "E141",
+  "id": "E315",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3724,7 +8508,7 @@
   "reproduced": 1
  },
  {
-  "id": "E142",
+  "id": "E316",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3751,7 +8535,7 @@
   "reproduced": 5
  },
  {
-  "id": "E143",
+  "id": "E317",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3778,7 +8562,7 @@
   "reproduced": 11
  },
  {
-  "id": "E144",
+  "id": "E318",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3805,7 +8589,7 @@
   "reproduced": 5
  },
  {
-  "id": "E145",
+  "id": "E319",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3834,7 +8618,7 @@
   "reproduced": 0
  },
  {
-  "id": "E146",
+  "id": "E320",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3861,7 +8645,7 @@
   "reproduced": 2
  },
  {
-  "id": "E147",
+  "id": "E321",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3888,7 +8672,7 @@
   "reproduced": 1
  },
  {
-  "id": "E148",
+  "id": "E322",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3915,7 +8699,7 @@
   "reproduced": 0
  },
  {
-  "id": "E149",
+  "id": "E323",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3942,7 +8726,7 @@
   "reproduced": 0
  },
  {
-  "id": "E150",
+  "id": "E324",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3969,7 +8753,7 @@
   "reproduced": 0
  },
  {
-  "id": "E151",
+  "id": "E325",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -3996,7 +8780,7 @@
   "reproduced": 0
  },
  {
-  "id": "E152",
+  "id": "E326",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4023,7 +8807,7 @@
   "reproduced": 2
  },
  {
-  "id": "E153",
+  "id": "E327",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4050,7 +8834,7 @@
   "reproduced": 16
  },
  {
-  "id": "E154",
+  "id": "E328",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4077,7 +8861,7 @@
   "reproduced": 18
  },
  {
-  "id": "E155",
+  "id": "E329",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4104,7 +8888,7 @@
   "reproduced": 0
  },
  {
-  "id": "E156",
+  "id": "E330",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4131,7 +8915,7 @@
   "reproduced": 87
  },
  {
-  "id": "E157",
+  "id": "E331",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4158,7 +8942,7 @@
   "reproduced": 0
  },
  {
-  "id": "E158",
+  "id": "E332",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4185,7 +8969,7 @@
   "reproduced": 0
  },
  {
-  "id": "E159",
+  "id": "E333",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4212,7 +8996,7 @@
   "reproduced": 0
  },
  {
-  "id": "E160",
+  "id": "E334",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4239,7 +9023,7 @@
   "reproduced": 0
  },
  {
-  "id": "E161",
+  "id": "E335",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4266,7 +9050,7 @@
   "reproduced": 1
  },
  {
-  "id": "E162",
+  "id": "E336",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4293,7 +9077,7 @@
   "reproduced": 74
  },
  {
-  "id": "E163",
+  "id": "E337",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4320,7 +9104,7 @@
   "reproduced": 0
  },
  {
-  "id": "E164",
+  "id": "E338",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4347,7 +9131,7 @@
   "reproduced": 0
  },
  {
-  "id": "E165",
+  "id": "E339",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4374,7 +9158,7 @@
   "reproduced": 9
  },
  {
-  "id": "E166",
+  "id": "E340",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4401,7 +9185,7 @@
   "reproduced": 0
  },
  {
-  "id": "E167",
+  "id": "E341",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4428,7 +9212,7 @@
   "reproduced": 7
  },
  {
-  "id": "E168",
+  "id": "E342",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4457,7 +9241,7 @@
   "reproduced": 8
  },
  {
-  "id": "E169",
+  "id": "E343",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4484,7 +9268,7 @@
   "reproduced": 1
  },
  {
-  "id": "E170",
+  "id": "E344",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4511,7 +9295,7 @@
   "reproduced": 6
  },
  {
-  "id": "E171",
+  "id": "E345",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4538,7 +9322,7 @@
   "reproduced": 1
  },
  {
-  "id": "E172",
+  "id": "E346",
   "era": "late",
   "stage": 2,
   "lang": "os",
@@ -4565,7 +9349,7 @@
   "reproduced": 5
  },
  {
-  "id": "E173",
+  "id": "E347",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -4595,7 +9379,7 @@
   "reproduced": 1
  },
  {
-  "id": "E174",
+  "id": "E348",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -4622,7 +9406,7 @@
   "reproduced": 3
  },
  {
-  "id": "E175",
+  "id": "E349",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -4649,7 +9433,7 @@
   "reproduced": 58
  },
  {
-  "id": "E176",
+  "id": "E350",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -4679,7 +9463,7 @@
   "reproduced": 38
  },
  {
-  "id": "E177",
+  "id": "E351",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -4708,7 +9492,7 @@
   "reproduced": 4
  },
  {
-  "id": "E178",
+  "id": "E352",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -4735,7 +9519,7 @@
   "reproduced": 1
  },
  {
-  "id": "E179",
+  "id": "E353",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -4764,7 +9548,7 @@
   "reproduced": 4
  },
  {
-  "id": "E180",
+  "id": "E354",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -4793,7 +9577,7 @@
   "reproduced": 1
  },
  {
-  "id": "E181",
+  "id": "E355",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -4822,7 +9606,7 @@
   "reproduced": 2
  },
  {
-  "id": "E182",
+  "id": "E356",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -4851,7 +9635,7 @@
   "reproduced": 0
  },
  {
-  "id": "E183",
+  "id": "E357",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -4880,7 +9664,7 @@
   "reproduced": 2
  },
  {
-  "id": "E184",
+  "id": "E358",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -4909,7 +9693,7 @@
   "reproduced": 0
  },
  {
-  "id": "E185",
+  "id": "E359",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -4938,7 +9722,7 @@
   "reproduced": 10
  },
  {
-  "id": "E186",
+  "id": "E360",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -4967,7 +9751,7 @@
   "reproduced": 1
  },
  {
-  "id": "E187",
+  "id": "E361",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -4996,7 +9780,7 @@
   "reproduced": 1
  },
  {
-  "id": "E188",
+  "id": "E362",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5025,7 +9809,7 @@
   "reproduced": 8
  },
  {
-  "id": "E189",
+  "id": "E363",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5054,7 +9838,7 @@
   "reproduced": 1
  },
  {
-  "id": "E190",
+  "id": "E364",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5083,7 +9867,7 @@
   "reproduced": 1
  },
  {
-  "id": "E191",
+  "id": "E365",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5110,7 +9894,7 @@
   "reproduced": 3
  },
  {
-  "id": "E192",
+  "id": "E366",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5137,7 +9921,7 @@
   "reproduced": 0
  },
  {
-  "id": "E193",
+  "id": "E367",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5164,7 +9948,7 @@
   "reproduced": 8
  },
  {
-  "id": "E194",
+  "id": "E368",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5191,7 +9975,7 @@
   "reproduced": 3
  },
  {
-  "id": "E195",
+  "id": "E369",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5224,7 +10008,7 @@
   "reproduced": 3
  },
  {
-  "id": "E196",
+  "id": "E370",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5251,7 +10035,7 @@
   "reproduced": 0
  },
  {
-  "id": "E197",
+  "id": "E371",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5278,7 +10062,7 @@
   "reproduced": 8
  },
  {
-  "id": "E198",
+  "id": "E372",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5305,7 +10089,7 @@
   "reproduced": 3
  },
  {
-  "id": "E199",
+  "id": "E373",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5332,7 +10116,7 @@
   "reproduced": 0
  },
  {
-  "id": "E200",
+  "id": "E374",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5359,7 +10143,7 @@
   "reproduced": 17
  },
  {
-  "id": "E201",
+  "id": "E375",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5386,7 +10170,7 @@
   "reproduced": 28
  },
  {
-  "id": "E202",
+  "id": "E376",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5413,7 +10197,7 @@
   "reproduced": 0
  },
  {
-  "id": "E203",
+  "id": "E377",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5440,7 +10224,7 @@
   "reproduced": 0
  },
  {
-  "id": "E204",
+  "id": "E378",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5467,7 +10251,7 @@
   "reproduced": 4
  },
  {
-  "id": "E205",
+  "id": "E379",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5494,7 +10278,7 @@
   "reproduced": 29
  },
  {
-  "id": "E206",
+  "id": "E380",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5521,7 +10305,7 @@
   "reproduced": 0
  },
  {
-  "id": "E207",
+  "id": "E381",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5548,7 +10332,7 @@
   "reproduced": 14
  },
  {
-  "id": "E208",
+  "id": "E382",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5575,7 +10359,7 @@
   "reproduced": 63
  },
  {
-  "id": "E209",
+  "id": "E383",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5604,7 +10388,7 @@
   "reproduced": 0
  },
  {
-  "id": "E210",
+  "id": "E384",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5631,7 +10415,7 @@
   "reproduced": 0
  },
  {
-  "id": "E211",
+  "id": "E385",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5658,7 +10442,7 @@
   "reproduced": 1
  },
  {
-  "id": "E212",
+  "id": "E386",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5685,7 +10469,7 @@
   "reproduced": 4
  },
  {
-  "id": "E213",
+  "id": "E387",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5712,7 +10496,7 @@
   "reproduced": 1
  },
  {
-  "id": "E214",
+  "id": "E388",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5739,7 +10523,7 @@
   "reproduced": 6
  },
  {
-  "id": "E215",
+  "id": "E389",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5766,7 +10550,7 @@
   "reproduced": 5
  },
  {
-  "id": "E216",
+  "id": "E390",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5793,7 +10577,7 @@
   "reproduced": 0
  },
  {
-  "id": "E217",
+  "id": "E391",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5820,7 +10604,7 @@
   "reproduced": 2
  },
  {
-  "id": "E218",
+  "id": "E392",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5847,7 +10631,7 @@
   "reproduced": 10
  },
  {
-  "id": "E219",
+  "id": "E393",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5874,7 +10658,7 @@
   "reproduced": 1
  },
  {
-  "id": "E220",
+  "id": "E394",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5901,7 +10685,7 @@
   "reproduced": 1
  },
  {
-  "id": "E221",
+  "id": "E395",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5930,7 +10714,7 @@
   "reproduced": 1
  },
  {
-  "id": "E222",
+  "id": "E396",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5959,7 +10743,7 @@
   "reproduced": 1
  },
  {
-  "id": "E223",
+  "id": "E397",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -5988,7 +10772,7 @@
   "reproduced": 1
  },
  {
-  "id": "E224",
+  "id": "E398",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6015,7 +10799,7 @@
   "reproduced": 0
  },
  {
-  "id": "E225",
+  "id": "E399",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6042,7 +10826,7 @@
   "reproduced": 4
  },
  {
-  "id": "E226",
+  "id": "E400",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6069,7 +10853,7 @@
   "reproduced": 0
  },
  {
-  "id": "E227",
+  "id": "E401",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6102,7 +10886,7 @@
   "reproduced": 0
  },
  {
-  "id": "E228",
+  "id": "E402",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6129,7 +10913,7 @@
   "reproduced": 0
  },
  {
-  "id": "E229",
+  "id": "E403",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6156,7 +10940,7 @@
   "reproduced": 0
  },
  {
-  "id": "E230",
+  "id": "E404",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6183,7 +10967,7 @@
   "reproduced": 1
  },
  {
-  "id": "E231",
+  "id": "E405",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6210,7 +10994,7 @@
   "reproduced": 2
  },
  {
-  "id": "E232",
+  "id": "E406",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6237,7 +11021,7 @@
   "reproduced": 0
  },
  {
-  "id": "E233",
+  "id": "E407",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6264,7 +11048,7 @@
   "reproduced": 5
  },
  {
-  "id": "E234",
+  "id": "E408",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6291,7 +11075,7 @@
   "reproduced": 5
  },
  {
-  "id": "E235",
+  "id": "E409",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6324,7 +11108,7 @@
   "reproduced": 10
  },
  {
-  "id": "E236",
+  "id": "E410",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6351,7 +11135,7 @@
   "reproduced": 8
  },
  {
-  "id": "E237",
+  "id": "E411",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6378,7 +11162,7 @@
   "reproduced": 1
  },
  {
-  "id": "E238",
+  "id": "E412",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6407,7 +11191,7 @@
   "reproduced": 2
  },
  {
-  "id": "E239",
+  "id": "E413",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6434,7 +11218,7 @@
   "reproduced": 0
  },
  {
-  "id": "E240",
+  "id": "E414",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6461,7 +11245,7 @@
   "reproduced": 0
  },
  {
-  "id": "E241",
+  "id": "E415",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6488,7 +11272,7 @@
   "reproduced": 35
  },
  {
-  "id": "E242",
+  "id": "E416",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6515,7 +11299,7 @@
   "reproduced": 1
  },
  {
-  "id": "E243",
+  "id": "E417",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6542,7 +11326,7 @@
   "reproduced": 7
  },
  {
-  "id": "E244",
+  "id": "E418",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6569,7 +11353,7 @@
   "reproduced": 24
  },
  {
-  "id": "E245",
+  "id": "E419",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6596,7 +11380,7 @@
   "reproduced": 0
  },
  {
-  "id": "E246",
+  "id": "E420",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6623,7 +11407,7 @@
   "reproduced": 0
  },
  {
-  "id": "E247",
+  "id": "E421",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6650,7 +11434,7 @@
   "reproduced": 0
  },
  {
-  "id": "E248",
+  "id": "E422",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6677,7 +11461,7 @@
   "reproduced": 4
  },
  {
-  "id": "E249",
+  "id": "E423",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6704,7 +11488,7 @@
   "reproduced": 2
  },
  {
-  "id": "E250",
+  "id": "E424",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6731,7 +11515,7 @@
   "reproduced": 1
  },
  {
-  "id": "E251",
+  "id": "E425",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6758,7 +11542,7 @@
   "reproduced": 2
  },
  {
-  "id": "E252",
+  "id": "E426",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6785,7 +11569,7 @@
   "reproduced": 0
  },
  {
-  "id": "E253",
+  "id": "E427",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6814,7 +11598,7 @@
   "reproduced": 1
  },
  {
-  "id": "E254",
+  "id": "E428",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6847,7 +11631,7 @@
   "reproduced": 2
  },
  {
-  "id": "E255",
+  "id": "E429",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6876,7 +11660,7 @@
   "reproduced": 1
  },
  {
-  "id": "E256",
+  "id": "E430",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6903,7 +11687,7 @@
   "reproduced": 3
  },
  {
-  "id": "E257",
+  "id": "E431",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6932,7 +11716,7 @@
   "reproduced": 0
  },
  {
-  "id": "E258",
+  "id": "E432",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6959,7 +11743,7 @@
   "reproduced": 17
  },
  {
-  "id": "E259",
+  "id": "E433",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -6986,7 +11770,7 @@
   "reproduced": 0
  },
  {
-  "id": "E260",
+  "id": "E434",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7013,7 +11797,7 @@
   "reproduced": 4
  },
  {
-  "id": "E261",
+  "id": "E435",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7040,7 +11824,7 @@
   "reproduced": 24
  },
  {
-  "id": "E262",
+  "id": "E436",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7067,7 +11851,7 @@
   "reproduced": 3
  },
  {
-  "id": "E263",
+  "id": "E437",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7094,7 +11878,7 @@
   "reproduced": 0
  },
  {
-  "id": "E264",
+  "id": "E438",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7121,7 +11905,7 @@
   "reproduced": 6
  },
  {
-  "id": "E265",
+  "id": "E439",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7148,7 +11932,7 @@
   "reproduced": 0
  },
  {
-  "id": "E266",
+  "id": "E440",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7175,7 +11959,7 @@
   "reproduced": 2
  },
  {
-  "id": "E267",
+  "id": "E441",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7202,7 +11986,7 @@
   "reproduced": 5
  },
  {
-  "id": "E268",
+  "id": "E442",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7229,7 +12013,7 @@
   "reproduced": 15
  },
  {
-  "id": "E269",
+  "id": "E443",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7256,7 +12040,7 @@
   "reproduced": 10
  },
  {
-  "id": "E270",
+  "id": "E444",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7283,7 +12067,7 @@
   "reproduced": 0
  },
  {
-  "id": "E271",
+  "id": "E445",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7310,7 +12094,7 @@
   "reproduced": 1
  },
  {
-  "id": "E272",
+  "id": "E446",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7337,7 +12121,7 @@
   "reproduced": 1
  },
  {
-  "id": "E273",
+  "id": "E447",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7364,7 +12148,7 @@
   "reproduced": 66
  },
  {
-  "id": "E274",
+  "id": "E448",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7391,7 +12175,7 @@
   "reproduced": 21
  },
  {
-  "id": "E275",
+  "id": "E449",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7418,7 +12202,7 @@
   "reproduced": 58
  },
  {
-  "id": "E276",
+  "id": "E450",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7445,7 +12229,7 @@
   "reproduced": 1
  },
  {
-  "id": "E277",
+  "id": "E451",
   "era": "late",
   "stage": 3,
   "lang": "s",
@@ -7472,7 +12256,7 @@
   "reproduced": 20
  },
  {
-  "id": "E278",
+  "id": "E452",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7499,7 +12283,7 @@
   "reproduced": 0
  },
  {
-  "id": "E279",
+  "id": "E453",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7526,7 +12310,7 @@
   "reproduced": 0
  },
  {
-  "id": "E280",
+  "id": "E454",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7551,7 +12335,7 @@
   "reproduced": 0
  },
  {
-  "id": "E281",
+  "id": "E455",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7578,7 +12362,7 @@
   "reproduced": 0
  },
  {
-  "id": "E282",
+  "id": "E456",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7605,7 +12389,7 @@
   "reproduced": 2
  },
  {
-  "id": "E283",
+  "id": "E457",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7630,7 +12414,7 @@
   "reproduced": 2
  },
  {
-  "id": "E284",
+  "id": "E458",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7657,7 +12441,7 @@
   "reproduced": 2
  },
  {
-  "id": "E285",
+  "id": "E459",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7684,7 +12468,7 @@
   "reproduced": 0
  },
  {
-  "id": "E286",
+  "id": "E460",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7711,7 +12495,7 @@
   "reproduced": 0
  },
  {
-  "id": "E287",
+  "id": "E461",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7738,7 +12522,7 @@
   "reproduced": 2
  },
  {
-  "id": "E288",
+  "id": "E462",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7765,7 +12549,7 @@
   "reproduced": 1
  },
  {
-  "id": "E289",
+  "id": "E463",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7792,7 +12576,7 @@
   "reproduced": 1
  },
  {
-  "id": "E290",
+  "id": "E464",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7817,7 +12601,7 @@
   "reproduced": 0
  },
  {
-  "id": "E291",
+  "id": "E465",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7844,7 +12628,7 @@
   "reproduced": 0
  },
  {
-  "id": "E292",
+  "id": "E466",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7871,7 +12655,7 @@
   "reproduced": 2
  },
  {
-  "id": "E293",
+  "id": "E467",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7898,7 +12682,7 @@
   "reproduced": 0
  },
  {
-  "id": "E294",
+  "id": "E468",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7925,7 +12709,7 @@
   "reproduced": 6
  },
  {
-  "id": "E295",
+  "id": "E469",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7950,7 +12734,7 @@
   "reproduced": 0
  },
  {
-  "id": "E296",
+  "id": "E470",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -7977,7 +12761,7 @@
   "reproduced": 1
  },
  {
-  "id": "E297",
+  "id": "E471",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8004,7 +12788,7 @@
   "reproduced": 0
  },
  {
-  "id": "E298",
+  "id": "E472",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8031,7 +12815,7 @@
   "reproduced": 1
  },
  {
-  "id": "E299",
+  "id": "E473",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8058,7 +12842,7 @@
   "reproduced": 1
  },
  {
-  "id": "E300",
+  "id": "E474",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8085,7 +12869,7 @@
   "reproduced": 2
  },
  {
-  "id": "E301",
+  "id": "E475",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8112,7 +12896,7 @@
   "reproduced": 1
  },
  {
-  "id": "E302",
+  "id": "E476",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8137,7 +12921,7 @@
   "reproduced": 0
  },
  {
-  "id": "E303",
+  "id": "E477",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8162,7 +12946,7 @@
   "reproduced": 0
  },
  {
-  "id": "E304",
+  "id": "E478",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8189,7 +12973,7 @@
   "reproduced": 0
  },
  {
-  "id": "E305",
+  "id": "E479",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8216,7 +13000,7 @@
   "reproduced": 0
  },
  {
-  "id": "E306",
+  "id": "E480",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8243,7 +13027,7 @@
   "reproduced": 0
  },
  {
-  "id": "E307",
+  "id": "E481",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8268,7 +13052,7 @@
   "reproduced": 0
  },
  {
-  "id": "E308",
+  "id": "E482",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8295,7 +13079,7 @@
   "reproduced": 0
  },
  {
-  "id": "E309",
+  "id": "E483",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8322,7 +13106,7 @@
   "reproduced": 0
  },
  {
-  "id": "E310",
+  "id": "E484",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8349,7 +13133,7 @@
   "reproduced": 4
  },
  {
-  "id": "E311",
+  "id": "E485",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8376,7 +13160,7 @@
   "reproduced": 2
  },
  {
-  "id": "E312",
+  "id": "E486",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8403,7 +13187,7 @@
   "reproduced": 2
  },
  {
-  "id": "E313",
+  "id": "E487",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8430,7 +13214,7 @@
   "reproduced": 3
  },
  {
-  "id": "E314",
+  "id": "E488",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8457,7 +13241,7 @@
   "reproduced": 1
  },
  {
-  "id": "E315",
+  "id": "E489",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8484,7 +13268,7 @@
   "reproduced": 1
  },
  {
-  "id": "E316",
+  "id": "E490",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8511,7 +13295,7 @@
   "reproduced": 1
  },
  {
-  "id": "E317",
+  "id": "E491",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8538,7 +13322,7 @@
   "reproduced": 2
  },
  {
-  "id": "E318",
+  "id": "E492",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8565,7 +13349,7 @@
   "reproduced": 0
  },
  {
-  "id": "E319",
+  "id": "E493",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8592,7 +13376,7 @@
   "reproduced": 0
  },
  {
-  "id": "E320",
+  "id": "E494",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8617,7 +13401,7 @@
   "reproduced": 0
  },
  {
-  "id": "E321",
+  "id": "E495",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8646,7 +13430,7 @@
   "reproduced": 4
  },
  {
-  "id": "E322",
+  "id": "E496",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8675,7 +13459,7 @@
   "reproduced": 2
  },
  {
-  "id": "E323",
+  "id": "E497",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8702,7 +13486,7 @@
   "reproduced": 2
  },
  {
-  "id": "E324",
+  "id": "E498",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8731,7 +13515,7 @@
   "reproduced": 0
  },
  {
-  "id": "E325",
+  "id": "E499",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8758,7 +13542,7 @@
   "reproduced": 0
  },
  {
-  "id": "E326",
+  "id": "E500",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8787,7 +13571,7 @@
   "reproduced": 1
  },
  {
-  "id": "E327",
+  "id": "E501",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8816,7 +13600,7 @@
   "reproduced": 0
  },
  {
-  "id": "E328",
+  "id": "E502",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8843,7 +13627,7 @@
   "reproduced": 0
  },
  {
-  "id": "E329",
+  "id": "E503",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8870,7 +13654,7 @@
   "reproduced": 11
  },
  {
-  "id": "E330",
+  "id": "E504",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8897,7 +13681,7 @@
   "reproduced": 5
  },
  {
-  "id": "E331",
+  "id": "E505",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8924,7 +13708,7 @@
   "reproduced": 2
  },
  {
-  "id": "E332",
+  "id": "E506",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8951,7 +13735,7 @@
   "reproduced": 5
  },
  {
-  "id": "E333",
+  "id": "E507",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -8980,7 +13764,7 @@
   "reproduced": 1
  },
  {
-  "id": "E334",
+  "id": "E508",
   "era": "middle",
   "stage": 0,
   "lang": "mp",
@@ -9009,7 +13793,7 @@
   "reproduced": 2
  },
  {
-  "id": "E335",
+  "id": "E509",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9038,7 +13822,7 @@
   "reproduced": 3
  },
  {
-  "id": "E336",
+  "id": "E510",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9067,7 +13851,7 @@
   "reproduced": 1
  },
  {
-  "id": "E337",
+  "id": "E511",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9094,7 +13878,7 @@
   "reproduced": 1
  },
  {
-  "id": "E338",
+  "id": "E512",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9121,7 +13905,7 @@
   "reproduced": 21
  },
  {
-  "id": "E339",
+  "id": "E513",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9151,7 +13935,7 @@
   "reproduced": 2
  },
  {
-  "id": "E340",
+  "id": "E514",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9181,7 +13965,7 @@
   "reproduced": 4
  },
  {
-  "id": "E341",
+  "id": "E515",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9208,7 +13992,7 @@
   "reproduced": 0
  },
  {
-  "id": "E342",
+  "id": "E516",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9235,7 +14019,7 @@
   "reproduced": 6
  },
  {
-  "id": "E343",
+  "id": "E517",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9265,7 +14049,7 @@
   "reproduced": 2
  },
  {
-  "id": "E344",
+  "id": "E518",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9295,7 +14079,7 @@
   "reproduced": 3
  },
  {
-  "id": "E345",
+  "id": "E519",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9322,7 +14106,7 @@
   "reproduced": 3
  },
  {
-  "id": "E346",
+  "id": "E520",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9349,7 +14133,7 @@
   "reproduced": 5
  },
  {
-  "id": "E347",
+  "id": "E521",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9376,7 +14160,7 @@
   "reproduced": 2
  },
  {
-  "id": "E348",
+  "id": "E522",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9405,7 +14189,7 @@
   "reproduced": 1
  },
  {
-  "id": "E349",
+  "id": "E523",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9434,7 +14218,7 @@
   "reproduced": 9
  },
  {
-  "id": "E350",
+  "id": "E524",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9463,7 +14247,7 @@
   "reproduced": 3
  },
  {
-  "id": "E351",
+  "id": "E525",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9490,7 +14274,7 @@
   "reproduced": 3
  },
  {
-  "id": "E352",
+  "id": "E526",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9520,7 +14304,7 @@
   "reproduced": 2
  },
  {
-  "id": "E353",
+  "id": "E527",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9547,7 +14331,7 @@
   "reproduced": 2
  },
  {
-  "id": "E354",
+  "id": "E528",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9574,7 +14358,7 @@
   "reproduced": 13
  },
  {
-  "id": "E355",
+  "id": "E529",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9601,7 +14385,7 @@
   "reproduced": 10
  },
  {
-  "id": "E356",
+  "id": "E530",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9631,7 +14415,7 @@
   "reproduced": 2
  },
  {
-  "id": "E357",
+  "id": "E531",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9658,7 +14442,7 @@
   "reproduced": 1
  },
  {
-  "id": "E358",
+  "id": "E532",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9685,7 +14469,7 @@
   "reproduced": 3
  },
  {
-  "id": "E359",
+  "id": "E533",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9712,7 +14496,7 @@
   "reproduced": 6
  },
  {
-  "id": "E360",
+  "id": "E534",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9739,7 +14523,7 @@
   "reproduced": 1
  },
  {
-  "id": "E361",
+  "id": "E535",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9766,7 +14550,7 @@
   "reproduced": 2
  },
  {
-  "id": "E362",
+  "id": "E536",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9796,7 +14580,7 @@
   "reproduced": 0
  },
  {
-  "id": "E363",
+  "id": "E537",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9826,7 +14610,7 @@
   "reproduced": 3
  },
  {
-  "id": "E364",
+  "id": "E538",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9853,7 +14637,7 @@
   "reproduced": 2
  },
  {
-  "id": "E365",
+  "id": "E539",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9880,7 +14664,7 @@
   "reproduced": 5
  },
  {
-  "id": "E366",
+  "id": "E540",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9907,7 +14691,7 @@
   "reproduced": 5
  },
  {
-  "id": "E367",
+  "id": "E541",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9934,7 +14718,7 @@
   "reproduced": 5
  },
  {
-  "id": "E368",
+  "id": "E542",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9961,7 +14745,7 @@
   "reproduced": 2
  },
  {
-  "id": "E369",
+  "id": "E543",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -9988,7 +14772,7 @@
   "reproduced": 5
  },
  {
-  "id": "E370",
+  "id": "E544",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10015,7 +14799,7 @@
   "reproduced": 23
  },
  {
-  "id": "E371",
+  "id": "E545",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10042,7 +14826,7 @@
   "reproduced": 24
  },
  {
-  "id": "E372",
+  "id": "E546",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10072,7 +14856,7 @@
   "reproduced": 1
  },
  {
-  "id": "E373",
+  "id": "E547",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10099,7 +14883,7 @@
   "reproduced": 25
  },
  {
-  "id": "E374",
+  "id": "E548",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10126,7 +14910,7 @@
   "reproduced": 91
  },
  {
-  "id": "E375",
+  "id": "E549",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10153,7 +14937,7 @@
   "reproduced": 5
  },
  {
-  "id": "E376",
+  "id": "E550",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10180,7 +14964,7 @@
   "reproduced": 0
  },
  {
-  "id": "E377",
+  "id": "E551",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10207,7 +14991,7 @@
   "reproduced": 0
  },
  {
-  "id": "E378",
+  "id": "E552",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10234,7 +15018,7 @@
   "reproduced": 0
  },
  {
-  "id": "E379",
+  "id": "E553",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10261,7 +15045,7 @@
   "reproduced": 7
  },
  {
-  "id": "E380",
+  "id": "E554",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10288,7 +15072,7 @@
   "reproduced": 4
  },
  {
-  "id": "E381",
+  "id": "E555",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10315,7 +15099,7 @@
   "reproduced": 4
  },
  {
-  "id": "E382",
+  "id": "E556",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10342,7 +15126,7 @@
   "reproduced": 7
  },
  {
-  "id": "E383",
+  "id": "E557",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10372,7 +15156,7 @@
   "reproduced": 0
  },
  {
-  "id": "E384",
+  "id": "E558",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10399,7 +15183,7 @@
   "reproduced": 1
  },
  {
-  "id": "E385",
+  "id": "E559",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10426,7 +15210,7 @@
   "reproduced": 0
  },
  {
-  "id": "E386",
+  "id": "E560",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10456,7 +15240,7 @@
   "reproduced": 1
  },
  {
-  "id": "E387",
+  "id": "E561",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10483,7 +15267,7 @@
   "reproduced": 10
  },
  {
-  "id": "E388",
+  "id": "E562",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10510,7 +15294,7 @@
   "reproduced": 1
  },
  {
-  "id": "E389",
+  "id": "E563",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10537,7 +15321,7 @@
   "reproduced": 1
  },
  {
-  "id": "E390",
+  "id": "E564",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10564,7 +15348,7 @@
   "reproduced": 5
  },
  {
-  "id": "E391",
+  "id": "E565",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10591,7 +15375,7 @@
   "reproduced": 1
  },
  {
-  "id": "E392",
+  "id": "E566",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10618,7 +15402,7 @@
   "reproduced": 0
  },
  {
-  "id": "E393",
+  "id": "E567",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10645,7 +15429,7 @@
   "reproduced": 30
  },
  {
-  "id": "E394",
+  "id": "E568",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10672,7 +15456,7 @@
   "reproduced": 6
  },
  {
-  "id": "E395",
+  "id": "E569",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10702,7 +15486,7 @@
   "reproduced": 1
  },
  {
-  "id": "E396",
+  "id": "E570",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10732,7 +15516,7 @@
   "reproduced": 1
  },
  {
-  "id": "E397",
+  "id": "E571",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10759,7 +15543,7 @@
   "reproduced": 0
  },
  {
-  "id": "E398",
+  "id": "E572",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10786,7 +15570,7 @@
   "reproduced": 2
  },
  {
-  "id": "E399",
+  "id": "E573",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10813,7 +15597,7 @@
   "reproduced": 2
  },
  {
-  "id": "E400",
+  "id": "E574",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10840,7 +15624,7 @@
   "reproduced": 2
  },
  {
-  "id": "E401",
+  "id": "E575",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10867,7 +15651,7 @@
   "reproduced": 3
  },
  {
-  "id": "E402",
+  "id": "E576",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10894,7 +15678,7 @@
   "reproduced": 0
  },
  {
-  "id": "E403",
+  "id": "E577",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10921,7 +15705,7 @@
   "reproduced": 0
  },
  {
-  "id": "E404",
+  "id": "E578",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10948,7 +15732,7 @@
   "reproduced": 49
  },
  {
-  "id": "E405",
+  "id": "E579",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -10978,7 +15762,7 @@
   "reproduced": 0
  },
  {
-  "id": "E406",
+  "id": "E580",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11005,7 +15789,7 @@
   "reproduced": 0
  },
  {
-  "id": "E407",
+  "id": "E581",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11032,7 +15816,7 @@
   "reproduced": 10
  },
  {
-  "id": "E408",
+  "id": "E582",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11059,7 +15843,7 @@
   "reproduced": 0
  },
  {
-  "id": "E409",
+  "id": "E583",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11086,7 +15870,7 @@
   "reproduced": 19
  },
  {
-  "id": "E410",
+  "id": "E584",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11115,7 +15899,7 @@
   "reproduced": 10
  },
  {
-  "id": "E411",
+  "id": "E585",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11142,7 +15926,7 @@
   "reproduced": 5
  },
  {
-  "id": "E412",
+  "id": "E586",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11169,7 +15953,7 @@
   "reproduced": 0
  },
  {
-  "id": "E413",
+  "id": "E587",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11196,7 +15980,7 @@
   "reproduced": 11
  },
  {
-  "id": "E414",
+  "id": "E588",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11223,7 +16007,7 @@
   "reproduced": 1
  },
  {
-  "id": "E415",
+  "id": "E589",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11250,7 +16034,7 @@
   "reproduced": 8
  },
  {
-  "id": "E416",
+  "id": "E590",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11279,7 +16063,7 @@
   "reproduced": 3
  },
  {
-  "id": "E417",
+  "id": "E591",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11306,7 +16090,7 @@
   "reproduced": 8
  },
  {
-  "id": "E418",
+  "id": "E592",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11335,7 +16119,7 @@
   "reproduced": 2
  },
  {
-  "id": "E419",
+  "id": "E593",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11362,7 +16146,7 @@
   "reproduced": 6
  },
  {
-  "id": "E420",
+  "id": "E594",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11389,7 +16173,7 @@
   "reproduced": 11
  },
  {
-  "id": "E421",
+  "id": "E595",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11418,7 +16202,7 @@
   "reproduced": 1
  },
  {
-  "id": "E422",
+  "id": "E596",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11445,7 +16229,7 @@
   "reproduced": 2
  },
  {
-  "id": "E423",
+  "id": "E597",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11472,7 +16256,7 @@
   "reproduced": 14
  },
  {
-  "id": "E424",
+  "id": "E598",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11501,7 +16285,7 @@
   "reproduced": 1
  },
  {
-  "id": "E425",
+  "id": "E599",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11528,7 +16312,7 @@
   "reproduced": 5
  },
  {
-  "id": "E426",
+  "id": "E600",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11555,7 +16339,7 @@
   "reproduced": 0
  },
  {
-  "id": "E427",
+  "id": "E601",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11585,7 +16369,7 @@
   "reproduced": 1
  },
  {
-  "id": "E428",
+  "id": "E602",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11615,7 +16399,7 @@
   "reproduced": 0
  },
  {
-  "id": "E429",
+  "id": "E603",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11642,7 +16426,7 @@
   "reproduced": 6
  },
  {
-  "id": "E430",
+  "id": "E604",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11669,7 +16453,7 @@
   "reproduced": 2
  },
  {
-  "id": "E431",
+  "id": "E605",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11696,7 +16480,7 @@
   "reproduced": 2
  },
  {
-  "id": "E432",
+  "id": "E606",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11723,7 +16507,7 @@
   "reproduced": 9
  },
  {
-  "id": "E433",
+  "id": "E607",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11750,7 +16534,7 @@
   "reproduced": 26
  },
  {
-  "id": "E434",
+  "id": "E608",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11777,7 +16561,7 @@
   "reproduced": 31
  },
  {
-  "id": "E435",
+  "id": "E609",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11807,7 +16591,7 @@
   "reproduced": 0
  },
  {
-  "id": "E436",
+  "id": "E610",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11834,7 +16618,7 @@
   "reproduced": 1
  },
  {
-  "id": "E437",
+  "id": "E611",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11861,7 +16645,7 @@
   "reproduced": 104
  },
  {
-  "id": "E438",
+  "id": "E612",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11888,7 +16672,7 @@
   "reproduced": 0
  },
  {
-  "id": "E439",
+  "id": "E613",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11915,7 +16699,7 @@
   "reproduced": 2
  },
  {
-  "id": "E440",
+  "id": "E614",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11942,7 +16726,7 @@
   "reproduced": 1
  },
  {
-  "id": "E441",
+  "id": "E615",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11969,7 +16753,7 @@
   "reproduced": 0
  },
  {
-  "id": "E442",
+  "id": "E616",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -11996,7 +16780,7 @@
   "reproduced": 3
  },
  {
-  "id": "E443",
+  "id": "E617",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12023,7 +16807,7 @@
   "reproduced": 0
  },
  {
-  "id": "E444",
+  "id": "E618",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12050,7 +16834,7 @@
   "reproduced": 4
  },
  {
-  "id": "E445",
+  "id": "E619",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12077,7 +16861,7 @@
   "reproduced": 1
  },
  {
-  "id": "E446",
+  "id": "E620",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12104,7 +16888,7 @@
   "reproduced": 55
  },
  {
-  "id": "E447",
+  "id": "E621",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12131,7 +16915,7 @@
   "reproduced": 25
  },
  {
-  "id": "E448",
+  "id": "E622",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12160,7 +16944,7 @@
   "reproduced": 3
  },
  {
-  "id": "E449",
+  "id": "E623",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12190,7 +16974,7 @@
   "reproduced": 1
  },
  {
-  "id": "E450",
+  "id": "E624",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12217,7 +17001,7 @@
   "reproduced": 1
  },
  {
-  "id": "E451",
+  "id": "E625",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12244,7 +17028,7 @@
   "reproduced": 10
  },
  {
-  "id": "E452",
+  "id": "E626",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12271,7 +17055,7 @@
   "reproduced": 15
  },
  {
-  "id": "E453",
+  "id": "E627",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12298,7 +17082,7 @@
   "reproduced": 4
  },
  {
-  "id": "E454",
+  "id": "E628",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12325,7 +17109,7 @@
   "reproduced": 0
  },
  {
-  "id": "E455",
+  "id": "E629",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12352,7 +17136,7 @@
   "reproduced": 3
  },
  {
-  "id": "E456",
+  "id": "E630",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12379,7 +17163,7 @@
   "reproduced": 31
  },
  {
-  "id": "E457",
+  "id": "E631",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12408,7 +17192,7 @@
   "reproduced": 0
  },
  {
-  "id": "E458",
+  "id": "E632",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12435,7 +17219,7 @@
   "reproduced": 6
  },
  {
-  "id": "E459",
+  "id": "E633",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12462,7 +17246,7 @@
   "reproduced": 0
  },
  {
-  "id": "E460",
+  "id": "E634",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12489,7 +17273,7 @@
   "reproduced": 5
  },
  {
-  "id": "E461",
+  "id": "E635",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12518,7 +17302,7 @@
   "reproduced": 6
  },
  {
-  "id": "E462",
+  "id": "E636",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12547,7 +17331,7 @@
   "reproduced": 8
  },
  {
-  "id": "E463",
+  "id": "E637",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12574,7 +17358,7 @@
   "reproduced": 1
  },
  {
-  "id": "E464",
+  "id": "E638",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12601,7 +17385,7 @@
   "reproduced": 2
  },
  {
-  "id": "E465",
+  "id": "E639",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12628,7 +17412,7 @@
   "reproduced": 0
  },
  {
-  "id": "E466",
+  "id": "E640",
   "era": "middle",
   "stage": 1,
   "lang": "on",
@@ -12655,7 +17439,7 @@
   "reproduced": 1
  },
  {
-  "id": "E467",
+  "id": "E641",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -12685,7 +17469,7 @@
   "reproduced": 1
  },
  {
-  "id": "E468",
+  "id": "E642",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -12712,7 +17496,7 @@
   "reproduced": 10
  },
  {
-  "id": "E469",
+  "id": "E643",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -12739,7 +17523,7 @@
   "reproduced": 54
  },
  {
-  "id": "E470",
+  "id": "E644",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -12766,7 +17550,7 @@
   "reproduced": 19
  },
  {
-  "id": "E471",
+  "id": "E645",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -12796,7 +17580,7 @@
   "reproduced": 21
  },
  {
-  "id": "E472",
+  "id": "E646",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -12825,7 +17609,7 @@
   "reproduced": 2
  },
  {
-  "id": "E473",
+  "id": "E647",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -12852,7 +17636,7 @@
   "reproduced": 4
  },
  {
-  "id": "E474",
+  "id": "E648",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -12879,7 +17663,7 @@
   "reproduced": 6
  },
  {
-  "id": "E475",
+  "id": "E649",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -12906,7 +17690,7 @@
   "reproduced": 5
  },
  {
-  "id": "E476",
+  "id": "E650",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -12933,7 +17717,7 @@
   "reproduced": 4
  },
  {
-  "id": "E477",
+  "id": "E651",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -12960,7 +17744,7 @@
   "reproduced": 1
  },
  {
-  "id": "E478",
+  "id": "E652",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -12987,7 +17771,7 @@
   "reproduced": 2
  },
  {
-  "id": "E479",
+  "id": "E653",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13014,7 +17798,7 @@
   "reproduced": 2
  },
  {
-  "id": "E480",
+  "id": "E654",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13041,7 +17825,7 @@
   "reproduced": 8
  },
  {
-  "id": "E481",
+  "id": "E655",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13068,7 +17852,7 @@
   "reproduced": 8
  },
  {
-  "id": "E482",
+  "id": "E656",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13095,7 +17879,7 @@
   "reproduced": 9
  },
  {
-  "id": "E483",
+  "id": "E657",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13122,7 +17906,7 @@
   "reproduced": 2
  },
  {
-  "id": "E484",
+  "id": "E658",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13149,7 +17933,7 @@
   "reproduced": 2
  },
  {
-  "id": "E485",
+  "id": "E659",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13176,7 +17960,7 @@
   "reproduced": 2
  },
  {
-  "id": "E486",
+  "id": "E660",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13203,7 +17987,7 @@
   "reproduced": 1
  },
  {
-  "id": "E487",
+  "id": "E661",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13230,7 +18014,7 @@
   "reproduced": 1
  },
  {
-  "id": "E488",
+  "id": "E662",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13257,7 +18041,7 @@
   "reproduced": 3
  },
  {
-  "id": "E489",
+  "id": "E663",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13284,7 +18068,7 @@
   "reproduced": 1
  },
  {
-  "id": "E490",
+  "id": "E664",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13311,7 +18095,7 @@
   "reproduced": 2
  },
  {
-  "id": "E491",
+  "id": "E665",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13338,7 +18122,7 @@
   "reproduced": 5
  },
  {
-  "id": "E492",
+  "id": "E666",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13365,7 +18149,7 @@
   "reproduced": 59
  },
  {
-  "id": "E493",
+  "id": "E667",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13392,7 +18176,7 @@
   "reproduced": 1
  },
  {
-  "id": "E494",
+  "id": "E668",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13419,7 +18203,7 @@
   "reproduced": 12
  },
  {
-  "id": "E495",
+  "id": "E669",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13446,7 +18230,7 @@
   "reproduced": 8
  },
  {
-  "id": "E496",
+  "id": "E670",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13479,7 +18263,7 @@
   "reproduced": 13
  },
  {
-  "id": "E497",
+  "id": "E671",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13506,7 +18290,7 @@
   "reproduced": 2
  },
  {
-  "id": "E498",
+  "id": "E672",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13533,7 +18317,7 @@
   "reproduced": 10
  },
  {
-  "id": "E499",
+  "id": "E673",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13560,7 +18344,7 @@
   "reproduced": 2
  },
  {
-  "id": "E500",
+  "id": "E674",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13589,7 +18373,7 @@
   "reproduced": 0
  },
  {
-  "id": "E501",
+  "id": "E675",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13618,7 +18402,7 @@
   "reproduced": 1
  },
  {
-  "id": "E502",
+  "id": "E676",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13647,7 +18431,7 @@
   "reproduced": 1
  },
  {
-  "id": "E503",
+  "id": "E677",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13674,7 +18458,7 @@
   "reproduced": 3
  },
  {
-  "id": "E504",
+  "id": "E678",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13701,7 +18485,7 @@
   "reproduced": 20
  },
  {
-  "id": "E505",
+  "id": "E679",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13728,7 +18512,7 @@
   "reproduced": 37
  },
  {
-  "id": "E506",
+  "id": "E680",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13755,7 +18539,7 @@
   "reproduced": 4
  },
  {
-  "id": "E507",
+  "id": "E681",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13782,7 +18566,7 @@
   "reproduced": 5
  },
  {
-  "id": "E508",
+  "id": "E682",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13809,7 +18593,7 @@
   "reproduced": 33
  },
  {
-  "id": "E509",
+  "id": "E683",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13836,7 +18620,7 @@
   "reproduced": 4
  },
  {
-  "id": "E510",
+  "id": "E684",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13863,7 +18647,7 @@
   "reproduced": 28
  },
  {
-  "id": "E511",
+  "id": "E685",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13890,7 +18674,7 @@
   "reproduced": 79
  },
  {
-  "id": "E512",
+  "id": "E686",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13917,7 +18701,7 @@
   "reproduced": 0
  },
  {
-  "id": "E513",
+  "id": "E687",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13944,7 +18728,7 @@
   "reproduced": 3
  },
  {
-  "id": "E514",
+  "id": "E688",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13971,7 +18755,7 @@
   "reproduced": 4
  },
  {
-  "id": "E515",
+  "id": "E689",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -13998,7 +18782,7 @@
   "reproduced": 5
  },
  {
-  "id": "E516",
+  "id": "E690",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14025,7 +18809,7 @@
   "reproduced": 12
  },
  {
-  "id": "E517",
+  "id": "E691",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14052,7 +18836,7 @@
   "reproduced": 16
  },
  {
-  "id": "E518",
+  "id": "E692",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14079,7 +18863,7 @@
   "reproduced": 85
  },
  {
-  "id": "E519",
+  "id": "E693",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14106,7 +18890,7 @@
   "reproduced": 1
  },
  {
-  "id": "E520",
+  "id": "E694",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14133,7 +18917,7 @@
   "reproduced": 2
  },
  {
-  "id": "E521",
+  "id": "E695",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14160,7 +18944,7 @@
   "reproduced": 1
  },
  {
-  "id": "E522",
+  "id": "E696",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14187,7 +18971,7 @@
   "reproduced": 1
  },
  {
-  "id": "E523",
+  "id": "E697",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14214,7 +18998,7 @@
   "reproduced": 1
  },
  {
-  "id": "E524",
+  "id": "E698",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14241,7 +19025,7 @@
   "reproduced": 57
  },
  {
-  "id": "E525",
+  "id": "E699",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14268,7 +19052,7 @@
   "reproduced": 2
  },
  {
-  "id": "E526",
+  "id": "E700",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14295,7 +19079,7 @@
   "reproduced": 4
  },
  {
-  "id": "E527",
+  "id": "E701",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14322,7 +19106,7 @@
   "reproduced": 4
  },
  {
-  "id": "E528",
+  "id": "E702",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14355,7 +19139,7 @@
   "reproduced": 8
  },
  {
-  "id": "E529",
+  "id": "E703",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14382,7 +19166,7 @@
   "reproduced": 1
  },
  {
-  "id": "E530",
+  "id": "E704",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14409,7 +19193,7 @@
   "reproduced": 3
  },
  {
-  "id": "E531",
+  "id": "E705",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14436,7 +19220,7 @@
   "reproduced": 3
  },
  {
-  "id": "E532",
+  "id": "E706",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14463,7 +19247,7 @@
   "reproduced": 12
  },
  {
-  "id": "E533",
+  "id": "E707",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14490,7 +19274,7 @@
   "reproduced": 11
  },
  {
-  "id": "E534",
+  "id": "E708",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14517,7 +19301,7 @@
   "reproduced": 15
  },
  {
-  "id": "E535",
+  "id": "E709",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14544,7 +19328,7 @@
   "reproduced": 1
  },
  {
-  "id": "E536",
+  "id": "E710",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14577,7 +19361,7 @@
   "reproduced": 22
  },
  {
-  "id": "E537",
+  "id": "E711",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14604,7 +19388,7 @@
   "reproduced": 4
  },
  {
-  "id": "E538",
+  "id": "E712",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14631,7 +19415,7 @@
   "reproduced": 4
  },
  {
-  "id": "E539",
+  "id": "E713",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14658,7 +19442,7 @@
   "reproduced": 2
  },
  {
-  "id": "E540",
+  "id": "E714",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14685,7 +19469,7 @@
   "reproduced": 13
  },
  {
-  "id": "E541",
+  "id": "E715",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14712,7 +19496,7 @@
   "reproduced": 0
  },
  {
-  "id": "E542",
+  "id": "E716",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14739,7 +19523,7 @@
   "reproduced": 3
  },
  {
-  "id": "E543",
+  "id": "E717",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14766,7 +19550,7 @@
   "reproduced": 3
  },
  {
-  "id": "E544",
+  "id": "E718",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14793,7 +19577,7 @@
   "reproduced": 1
  },
  {
-  "id": "E545",
+  "id": "E719",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14820,7 +19604,7 @@
   "reproduced": 1
  },
  {
-  "id": "E546",
+  "id": "E720",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14847,7 +19631,7 @@
   "reproduced": 2
  },
  {
-  "id": "E547",
+  "id": "E721",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14874,7 +19658,7 @@
   "reproduced": 40
  },
  {
-  "id": "E548",
+  "id": "E722",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14901,7 +19685,7 @@
   "reproduced": 1
  },
  {
-  "id": "E549",
+  "id": "E723",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14928,7 +19712,7 @@
   "reproduced": 5
  },
  {
-  "id": "E550",
+  "id": "E724",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14955,7 +19739,7 @@
   "reproduced": 71
  },
  {
-  "id": "E551",
+  "id": "E725",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -14982,7 +19766,7 @@
   "reproduced": 0
  },
  {
-  "id": "E552",
+  "id": "E726",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15009,7 +19793,7 @@
   "reproduced": 1
  },
  {
-  "id": "E553",
+  "id": "E727",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15036,7 +19820,7 @@
   "reproduced": 5
  },
  {
-  "id": "E554",
+  "id": "E728",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15063,7 +19847,7 @@
   "reproduced": 0
  },
  {
-  "id": "E555",
+  "id": "E729",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15090,7 +19874,7 @@
   "reproduced": 0
  },
  {
-  "id": "E556",
+  "id": "E730",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15117,7 +19901,7 @@
   "reproduced": 0
  },
  {
-  "id": "E557",
+  "id": "E731",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15146,7 +19930,7 @@
   "reproduced": 1
  },
  {
-  "id": "E558",
+  "id": "E732",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15175,7 +19959,7 @@
   "reproduced": 1
  },
  {
-  "id": "E559",
+  "id": "E733",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15204,7 +19988,7 @@
   "reproduced": 0
  },
  {
-  "id": "E560",
+  "id": "E734",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15231,7 +20015,7 @@
   "reproduced": 1
  },
  {
-  "id": "E561",
+  "id": "E735",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15258,7 +20042,7 @@
   "reproduced": 11
  },
  {
-  "id": "E562",
+  "id": "E736",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15285,7 +20069,7 @@
   "reproduced": 2
  },
  {
-  "id": "E563",
+  "id": "E737",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15312,7 +20096,7 @@
   "reproduced": 18
  },
  {
-  "id": "E564",
+  "id": "E738",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15339,7 +20123,7 @@
   "reproduced": 11
  },
  {
-  "id": "E565",
+  "id": "E739",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15366,7 +20150,7 @@
   "reproduced": 0
  },
  {
-  "id": "E566",
+  "id": "E740",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15393,7 +20177,7 @@
   "reproduced": 6
  },
  {
-  "id": "E567",
+  "id": "E741",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15420,7 +20204,7 @@
   "reproduced": 9
  },
  {
-  "id": "E568",
+  "id": "E742",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15447,7 +20231,7 @@
   "reproduced": 21
  },
  {
-  "id": "E569",
+  "id": "E743",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15474,7 +20258,7 @@
   "reproduced": 7
  },
  {
-  "id": "E570",
+  "id": "E744",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15501,7 +20285,7 @@
   "reproduced": 75
  },
  {
-  "id": "E571",
+  "id": "E745",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15528,7 +20312,7 @@
   "reproduced": 22
  },
  {
-  "id": "E572",
+  "id": "E746",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15555,7 +20339,7 @@
   "reproduced": 58
  },
  {
-  "id": "E573",
+  "id": "E747",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15582,7 +20366,7 @@
   "reproduced": 0
  },
  {
-  "id": "E574",
+  "id": "E748",
   "era": "middle",
   "stage": 2,
   "lang": "n",
@@ -15609,7 +20393,7 @@
   "reproduced": 3
  },
  {
-  "id": "E575",
+  "id": "E749",
   "era": "middle",
   "stage": 2,
   "lang": "n",

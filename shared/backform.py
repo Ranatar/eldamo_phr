@@ -35,14 +35,22 @@ def _position(i: int, n: int) -> str:
 
 def learn(derivations: list, langs: dict, final_code: str, exclude=frozenset()) -> dict:
     """{(final sound, position): Counter(primitive segment)} plus word-end additions."""
-    table = defaultdict(Counter)
+    pairs = []
     for d in derivations:
         if d['deleted'] or d['id'] in exclude or not d['steps'] or d['steps'][-1]['lang'] != final_code:
             continue
         if langs.get(d['steps'][0]['lang'], {}).get('stage', 99) > 1:
             continue                                    # starts must be (near) primitive
-        x = phonemes(comparable(d['start']))
-        y = phonemes(comparable(d['steps'][-1]['after']))
+        pairs.append((d['start'], d['steps'][-1]['after']))
+    return learn_pairs(pairs)
+
+
+def learn_pairs(pairs) -> dict:
+    """The correspondence table from (earlier form, later form) pairs."""
+    table = defaultdict(Counter)
+    for early, late in pairs:
+        x = phonemes(comparable(early))
+        y = phonemes(comparable(late))
         if not x or not y:
             continue
         al, cost = _align(x, y)
@@ -63,33 +71,38 @@ def learn(derivations: list, langs: dict, final_code: str, exclude=frozenset()) 
     return table
 
 
-def _options(table: dict, sound: str, pos: str) -> list:
+def _options(table: dict, sound: str, pos: str, options: int = None, min_share: float = None) -> list:
+    options = options or MAX_OPTIONS
+    min_share = MIN_SHARE if min_share is None else min_share
     c = table.get((sound, pos)) or table.get((sound, 'medial')) or Counter({sound: 1})
     total = sum(c.values())
-    out = [(seg, n / total) for seg, n in c.most_common() if n / total >= MIN_SHARE]
+    out = [(seg, n / total) for seg, n in c.most_common() if n / total >= min_share]
     if sound not in [s for s, _ in out]:
         out.append((sound, 0.5 / total))         # the sound itself stays possible
-    return out[:MAX_OPTIONS]
+    return out[:options]
 
 
-def candidates(table: dict, form: str, beam: int = BEAM) -> list:
+def candidates(table: dict, form: str, beam: int = BEAM, options: int = None, min_share: float = None) -> list:
     """[(primitive candidate, log probability)] by beam search."""
     y = phonemes(comparable(form))
     states = [('', 0.0)]
     for j, sound in enumerate(y):
         nxt = []
         for prefix, lp in states:
-            for seg, p in _options(table, sound, _position(j, len(y))):
+            for seg, p in _options(table, sound, _position(j, len(y)), options, min_share):
                 nxt.append((prefix + seg, lp + math.log(p)))
         nxt.sort(key=lambda s: -s[1])
         states = nxt[:beam]
     end = table.get(('#', 'end')) or Counter({'': 1})
     total = sum(end.values())
+    ends = [(seg, n) for seg, n in end.most_common(options or MAX_OPTIONS)
+            if n / total >= (MIN_SHARE if min_share is None else min_share)]
+    if '' not in [seg for seg, _ in ends]:
+        ends.append(('', max(end.get('', 0), 0.5)))       # nothing lost at the end stays possible
     out = []
     for prefix, lp in states:
-        for seg, n in end.most_common(MAX_OPTIONS):
-            if n / total >= MIN_SHARE:
-                out.append((prefix + seg, lp + math.log(n / total)))
+        for seg, n in ends:
+            out.append((prefix + seg, lp + math.log(n / total)))
     out.sort(key=lambda s: -s[1])
     seen, uniq = set(), []
     for f, lp in out:
@@ -99,12 +112,16 @@ def candidates(table: dict, form: str, beam: int = BEAM) -> list:
     return uniq[:beam]
 
 
-def backform(seq, table: dict, form: str, era: str, last_stage: int, limit: int = 5) -> list:
-    """Verified primitive forms: [{'primitive', 'logp', 'main', 'trace'}]."""
+def backform(seq, table: dict, form: str, era: str, last_stage: int, limit: int = 5, first_stage: int = 0,
+             beam: int = BEAM, options: int = None, min_share: float = None) -> list:
+    """Verified earlier forms: [{'primitive', 'logp', 'main', 'trace'}]. The
+    candidates are forms before the rules of `first_stage` (0: primitive forms,
+    before the Primitive Elvish rules); each must give `form` through the rules
+    of first_stage .. last_stage."""
     target = comparable(form)
-    rules = seq.sequence(era, 0, last_stage)
+    rules = seq.sequence(era, first_stage, last_stage)
     found = []
-    for cand, lp in candidates(table, form):
+    for cand, lp in candidates(table, form, beam, options, min_share):
         vs = seq.run(cand, rules)
         hit = next((k for k, v in enumerate(vs) if comparable(v['form']) == target), None)
         if hit is None:

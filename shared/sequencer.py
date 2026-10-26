@@ -220,8 +220,10 @@ class Sequencer:
         return out
 
     @staticmethod
-    def _apply(c: CompiledRule, rule, form: str) -> list:
+    def _apply(c: CompiledRule, rule, form: str, sounds: set | None = None) -> list:
         if rule is None:
+            return []
+        if sounds is not None and not interpreter.may_apply(rule, sounds):
             return []
         try:
             return interpreter.apply_rule(rule, form, protect=c.protect, stress_mode=c.stress, scope=c.scope)['ordered']
@@ -233,6 +235,7 @@ class Sequencer:
         being the main reading: optional rules applied, except those named as
         occasional ("sometimes", "occasionally", "may"), which are not."""
         variants = [{'form': form, 'trace': []}]
+        sound_cache = {}
         for c in rules:
             if c.rule is None and c.rule_plus is None:
                 continue
@@ -244,10 +247,13 @@ class Sequencer:
                 # form the boundary is unknown, so their result is kept as an
                 # extra variant, not as the main reading.
                 main_rule = c.rule_plus if marked and c.rule_plus is not None else c.rule
-                outs = self._apply(c, main_rule, v['form'])
+                sounds = sound_cache.get(v['form'])
+                if sounds is None:
+                    sounds = sound_cache[v['form']] = interpreter.word_sounds(v['form'])
+                outs = self._apply(c, main_rule, v['form'], sounds)
                 extra = []
                 if not marked and c.rule_plus is not None:
-                    extra = [o for o in self._apply(c, c.rule_plus, v['form']) if o not in outs]
+                    extra = [o for o in self._apply(c, c.rule_plus, v['form'], sounds) if o not in outs]
                 if not outs:
                     nxt.append(v)
                 keep = outs and c.optional and branch_optional

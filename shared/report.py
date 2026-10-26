@@ -4,6 +4,7 @@ from __future__ import annotations
 from collections import Counter, defaultdict
 
 from .io import dumps, write_text
+from .languages import ERA_NAMES, ERAS
 from .source import ROOT, meta, source_label
 
 REPORTS = ROOT / 'reports'
@@ -144,13 +145,13 @@ def render_sequencer(branches: dict) -> tuple[str, dict]:
         rules = {r['id']: r for r in data['rules']}
         lines += [f"## {data['meta']['title']}", '', '| эпоха | дериваций | основное | любое |', '|---|---|---|---|']
         per_era = {}
-        for era in ('late', 'middle'):
+        for era in ERAS:
             rs = [r for r in res['results'] if era_of.get(r['derivation']) == era]
             if not rs:
                 continue
             n, m, a = len(rs), sum(r['ok_main'] for r in rs), sum(r['ok_any'] for r in rs)
             per_era[era] = {'derivations': n, 'main': m, 'any': a}
-            lines.append(f"| {'поздняя' if era == 'late' else 'средняя'} | {n} | {m} ({100 * m / n:.1f}%) | {a} ({100 * a / n:.1f}%) |")
+            lines.append(f"| {ERA_NAMES[era]} | {n} | {m} ({100 * m / n:.1f}%) | {a} ({100 * a / n:.1f}%) |")
         n = res['derivations']
         lines += [f"| всего | {n} | {res['main']} ({100 * res['main'] / n:.1f}%) | {res['any']} ({100 * res['any'] / n:.1f}%) |", '']
         blame = Counter()
@@ -242,3 +243,70 @@ def write_sequencer_report(branches: dict) -> None:
     text, js = render_sequencer(branches)
     write_text(REPORTS / 'sequencer.md', text)
     write_text(REPORTS / 'sequencer.json', dumps(js))
+
+
+RECON_SAMPLE = 30
+
+
+def render_reconstruction(branches: dict) -> tuple[str, dict]:
+    """reports/reconstruction.md: reconstruction between periods checked on Eldamo."""
+    from .reconstruct import Context, evaluate
+    ctx = Context(branches)
+    res = evaluate(ctx, sample=RECON_SAMPLE)
+    pct = lambda x, n: f'{x} ({100 * x / n:.0f}%)' if n else '—'
+    lines = [
+        '# Проверка реконструкции между периодами',
+        '',
+        f"Источник: Eldamo {meta()['eldamo_version']}. Файл создаётся `scripts/build.py`; не править вручную. "
+        f'Выборки — до {RECON_SAMPLE} случаев на строку. Устройство — `shared/reconstruct.py`, план — '
+        '`docs/period-reconstruction-plan.md`.',
+        '',
+        '## Назад по стадиям одного языка',
+        '',
+        'Эталон — формы на конце каждой стадии из дериваций, которые секвенсор воспроизводит '
+        '(`branches/<ветвь>/data/stages.json`). Соответствия выучены на половине дериваций, проверка — на другой: по '
+        'форме последней стадии восстанавливается форма более ранней (0 — праформа).',
+        '',
+        '| ветвь | концепция: со стадии → на стадию | случаев | кандидат найден | первый = Eldamo | среди 8 |',
+        '|---|---|---|---|---|---|',
+    ]
+    for b in branches:
+        for key, st in res[b].items():
+            n = st.get('cases', 0)
+            era, path = key.split(': ')
+            lines.append(f"| {b} | {ERA_NAMES[era]}: {path.replace('->', '→')} | {n} | {pct(st.get('found', 0), n)} | "
+                         f"{pct(st.get('first', 0), n)} | {pct(st.get('any', 0), n)} |")
+    lines += ['', '## Когнаты: квенья ↔ синдарин (поздняя концепция)', '',
+              'Через праформу: назад в своей ветви, вперёд по законам другой. Пары с одной и той же праформой в '
+              'нормализованных деривациях обеих ветвей и пары по связям `<cognate>` Eldamo; для последних — по '
+              'слову (своя праформа Eldamo, если есть) и по одной форме.', '',
+              '| пары | случаев | по слову: первый / среди 8 | по форме: первый / среди 8 |', '|---|---|---|---|']
+    for key in ('cognates quenya -> sindarin', 'cognates sindarin -> quenya'):
+        st = res[key]
+        n = st['cases']
+        lines.append(f"| общая праформа, {key.split(' ', 1)[1].replace('->', '→')} | {n} | — | "
+                     f"{pct(st['first'], n)} / {pct(st['any'], n)} |")
+    for key in ('cognate links q -> s', 'cognate links s -> q'):
+        st = res[key]
+        n = st['cases']
+        lines.append(f"| `<cognate>`, {key.split(' ', 2)[2].replace('->', '→')} | {n} | {pct(st['word_first'], n)} / "
+                     f"{pct(st['word_any'], n)} | {pct(st['form_first'], n)} / {pct(st['form_any'], n)} |")
+    lines += ['', '## Концепции Толкина: ранняя и средняя → поздняя', '',
+              'Пары `combine`/`deprecated` Eldamo. Проверяемая связь при реконструкции не используется: ответ '
+              'строится как для слова без связи — без изменений, если поздний язык допускает форму, иначе '
+              'переэтимологизация через праформу. «Без изменений» — доля пар, где форма у Толкина действительно не '
+              'изменилась (нулевая модель).', '',
+              '| пары | всего | случаев | без изменений | первый вариант | среди 8 |', '|---|---|---|---|---|---|']
+    for key in ('conceptions mq -> q', 'conceptions n -> s', 'conceptions eq -> q', 'conceptions g -> s'):
+        st = res[key]
+        n = st['cases']
+        lines.append(f"| {key.split(' ', 1)[1].replace('->', '→')} | {st['pairs']} | {n} | {pct(st['identity'], n)} | "
+                     f"{pct(st['first'], n)} | {pct(st['any'], n)} |")
+    lines.append('')
+    return '\n'.join(lines) + '\n', res
+
+
+def write_reconstruction_report(branches: dict) -> None:
+    text, js = render_reconstruction(branches)
+    write_text(REPORTS / 'reconstruction.md', text)
+    write_text(REPORTS / 'reconstruction.json', dumps(js))

@@ -10,10 +10,16 @@
 присоединить суффикс или приставку (cen- + -ima → cénima). Как это
 устроено и насколько можно доверять ответам — `docs/word-formation.md`.
 
+**Реконструкция** восстанавливает форму слова для другого периода: более ранней или поздней стадии языка,
+другой ветви (когнат квенья ↔ синдарин) или другой концепции Толкина, в том числе форму, которой нет в
+Eldamo (lindë → ✶lindē, glindē; ᴹQ. → Q. по связям Eldamo или переэтимологизацией). Описание —
+`docs/reconstruction.md`.
+
 - Атлас: `app/index.html` (после сборки), опубликованная версия — GitHub Pages репозитория.
 - Обозреватель корпуса: `app/corpus.html`.
 - Данные ветвей: `branches/<ветвь>/data/*.json`, читаемый каталог правил: `branches/<ветвь>/catalog.md`.
-- Аудит сборки: `reports/audit.md`; проверка секвенсора и словотворчества: `reports/sequencer.md`.
+- Аудит сборки: `reports/audit.md`; проверка секвенсора и словотворчества: `reports/sequencer.md`;
+  проверка реконструкции: `reports/reconstruction.md`.
 
 ## Источник
 
@@ -39,8 +45,9 @@ python scripts/build.py --no-browser # без браузерного теста
 python scripts/build.py --no-tests   # только сборка
 ```
 
-Сборка занимает около минуты, ещё 2–3 минуты — проверка секвенсора и словотворчества для
-`reports/sequencer.md` (прогон всех дериваций, проверка сложений «без одного», восстановление праформ).
+Сборка занимает около минуты, ещё несколько минут — проверки для отчётов: секвенсора и словотворчества
+(`reports/sequencer.md`: прогон всех дериваций, сложения «без одного», восстановление праформ) и
+реконструкции (`reports/reconstruction.md`).
 Она детерминирована: на Python 3.8 в локали cp1251 и на Python 3.13 в UTF-8 получаются побайтово
 одинаковые файлы (все файлы пишутся в UTF-8 с `\n`, атомарно).
 
@@ -53,10 +60,10 @@ python scripts/build.py --no-tests   # только сборка
 
 Конфигурация ветвей — `shared/languages.py`:
 
-| ветвь | поздняя концепция | средняя концепция |
-|---|---|---|
-| quenya | ✶ Primitive → AQ. Ancient Quenya → Q. Quenya | ᴹ✶ → ᴹAQ. → ᴹQ. |
-| sindarin | ✶ → AT. Ancient Telerin → OS. Old Sindarin → S. Sindarin | ᴹ✶ → ON. Old Noldorin → N. Noldorin |
+| ветвь | поздняя концепция | средняя концепция | ранняя концепция |
+|---|---|---|---|
+| quenya | ✶ Primitive → AQ. Ancient Quenya → Q. Quenya | ᴹ✶ → ᴹAQ. → ᴹQ. | ᴱ✶ → ᴱQ. Qenya |
+| sindarin | ✶ → AT. Ancient Telerin → OS. Old Sindarin → S. Sindarin | ᴹ✶ → ON. Old Noldorin → N. Noldorin | ᴱ✶ → G. Gnomish |
 
 1. **Правила** (`shared/model.py`) — страницы `<word speech="phonetic-rule">` языков ветви: название,
    общая формула (`@from > @rule`), порядок `@order`, связи `<before>`, заметки, подформулы `<rule>`.
@@ -124,6 +131,9 @@ python scripts/build.py --no-tests   # только сборка
   образования, ранжированные варианты с источником каждой формы, изменениями на стыке, правилами
   прогона и засвидетельствованными аналогами; движок — порт Python-кода на JavaScript (`app/wordform.js`),
   совпадение ответов проверяется браузерным тестом;
+- реконструкция: слово из лексикона или форма, исходный и целевой период (ветвь, концепция, стадия);
+  варианты с маршрутом, весом, пометками (засвидетельствовано, связь Eldamo, восстановлено, неологизм,
+  нетипичная фонотактика) и правилами;
 - светлая и тёмная тема, работа без сети, мобильная вёрстка.
 
 ## Структура
@@ -133,19 +143,22 @@ source/            eldamo-data-*.xml.xz и SOURCE.json — единственн�
 shared/            source, languages, model, interpreter, formula, graph, pipeline,
                    ipa, catalog, exports, app, report, io;
                    словотворчество: stress, sequencer, lexicon, orthography, junctions,
-                   affixes, morphophonology, backform, compound, parity
+                   affixes, morphophonology, backform, compound, parity;
+                   реконструкция между периодами: reconstruct
 scripts/build.py   полная сборка и тесты
 scripts/import_eldamo_release.py   импорт новой версии Eldamo
-app/               template.html, runtime.js, wordform.js, wordform_ui.js, styles.css,
+app/               template.html, runtime.js, wordform.js, wordform_ui.js, reconstruct_ui.js, styles.css,
                    corpus_template.html → index.html, corpus.html
 branches/<ветвь>/  data/{phonemes,rules,pairs,derivations,edges,chains,lexicon,junctions,
-                   affixes,calibration,summary}.json, catalog.md
+                   affixes,calibration,stages,summary}.json, catalog.md
 exports/           canonical.json (всё одним файлом), atlas.graphml (граф для Gephi/yEd)
 reports/           audit.md, audit.json — охват, проверка шагов, невоспроизведённые шаги;
-                   sequencer.md, sequencer.json — прогон дериваций, сложения, восстановление праформ
+                   sequencer.md, sequencer.json — прогон дериваций, сложения, восстановление праформ;
+                   reconstruction.md, reconstruction.json — реконструкция между периодами
 tests/             поведение интерпретатора, инварианты против XML, граф, выходные файлы, браузер
 docs/              словотворчество (word-formation.md) и его план (word-formation-plan.md),
-                   план реконструкции между периодами (period-reconstruction-plan.md),
+                   реконструкция между периодами (reconstruction.md) и её план
+                   (period-reconstruction-plan.md),
                    переход с HTML-конвейера (MIGRATION.md), наследие прежних этапов (legacy/),
                    прежние README и отчёты (history/)
 ```
@@ -163,7 +176,8 @@ workflow `.github/workflows/pages.yml`. Данные ветвей, катало�
 - При проверке отдельных шагов знаки ударения в формулах игнорируются (ударение в формах не записано),
   поэтому такие правила могут применяться шире, чем у Страка. Секвенсор ударение вычисляет.
 - Ответы словотворчества — предсказания модели, а не формы Толкина; их точность на засвидетельствованных
-  данных — в `reports/sequencer.md`, ограничения — в `docs/word-formation.md`.
+  данных — в `reports/sequencer.md`, ограничения — в `docs/word-formation.md`. То же для реконструкции:
+  `reports/reconstruction.md` и `docs/reconstruction.md`.
 - Около 6% засвидетельствованных шагов формулы не воспроизводят: в Eldamo встречаются шаги, где в одной
   записи совмещено несколько изменений, повторы формы, позиционные правила внутри сложных слов, а в
   квенийских формах иногда пишется `y` вместо `j`. Полный список — `reports/audit.json`, разбор по

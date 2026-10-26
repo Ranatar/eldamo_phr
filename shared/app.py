@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 from collections import defaultdict
 
-from . import affixes
+from . import affixes, reconstruct
 from . import junctions as junction_table
 from .formula import NULL
 from .graph import GRADES
@@ -106,6 +106,10 @@ def wordform_payload(name: str, data: dict) -> dict:
             x['gloss'] = x['gloss'][:77] + '…'
         if e.get('elements'):
             x['elements'] = [el.get('id') for el in e['elements']]
+        if e.get('links'):
+            x['links'] = {tag: [l['id'] for l in ls] for tag, ls in e['links'].items()}
+        if e.get('roots'):
+            x['roots'] = [r['form'] for r in e['roots']]
         lexicon.append(x)
     return {
         'languages': data['meta']['languages'],
@@ -120,6 +124,7 @@ def wordform_payload(name: str, data: dict) -> dict:
         'analogues': dict(analogues),
         'backform': {_key(k): c.most_common() for k, c in bf.items()},
         'affixes': affixes.model_json(data['affixes']['cases']),
+        'recon': reconstruct.export(data),
         'final': final,
     }
 
@@ -130,12 +135,15 @@ def build_index(branches: dict) -> str:
     runtime = (APP / 'runtime.js').read_text(encoding='utf-8')
     engine = (APP / 'wordform.js').read_text(encoding='utf-8')
     ui = (APP / 'wordform_ui.js').read_text(encoding='utf-8')
-    for marker in ('@@STYLES@@', '@@DATA@@', '@@RUNTIME@@', '@@WORDFORM@@', '@@WORDFORM_DATA@@', '@@WORDFORM_UI@@'):
+    recon_ui = (APP / 'reconstruct_ui.js').read_text(encoding='utf-8')
+    for marker in ('@@STYLES@@', '@@DATA@@', '@@RUNTIME@@', '@@WORDFORM@@', '@@WORDFORM_DATA@@', '@@WORDFORM_UI@@',
+                   '@@RECON_UI@@'):
         if template.count(marker) != 1:
             raise SystemExit(f'app/template.html must contain {marker} exactly once')
     html = template.replace('@@STYLES@@', styles.rstrip('\n'))
     html = html.replace('@@RUNTIME@@', runtime.rstrip('\n'))
     html = html.replace('@@WORDFORM_UI@@', ui.rstrip('\n'))
+    html = html.replace('@@RECON_UI@@', recon_ui.rstrip('\n'))
     html = html.replace('@@WORDFORM@@', engine.rstrip('\n'))
     html = html.replace('@@WORDFORM_DATA@@', embed_json({b: wordform_payload(b, d) for b, d in branches.items()}))
     html = html.replace('@@DATA@@', embed_json(payload(branches)))

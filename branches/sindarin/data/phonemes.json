@@ -4,16 +4,20 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-2697635095.html",
    "https://eldamo.org/content/words/word-2750994093.html",
+   "https://eldamo.org/content/words/word-2500495549.html",
    "https://eldamo.org/content/words/word-3084883255.html",
    "https://eldamo.org/content/words/word-2439469655.html",
+   "https://eldamo.org/content/words/word-1535890615.html",
    "https://eldamo.org/content/words/word-859667887.html",
    "https://eldamo.org/content/words/word-2326682887.html"
   ]
@@ -34,16 +38,20 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-2269511035.html",
    "https://eldamo.org/content/words/word-1821714953.html",
+   "https://eldamo.org/content/words/word-1611017105.html",
    "https://eldamo.org/content/words/word-752835163.html",
    "https://eldamo.org/content/words/word-3280628283.html",
+   "https://eldamo.org/content/words/word-2524571295.html",
    "https://eldamo.org/content/words/word-1028334795.html",
    "https://eldamo.org/content/words/word-2080510307.html"
   ]
@@ -53,14 +61,18 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
-   "n"
+   "n",
+   "g"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-2054894181.html",
    "https://eldamo.org/content/words/word-3758524131.html",
+   "https://eldamo.org/content/words/word-3547822563.html",
    "https://eldamo.org/content/words/word-538218399.html",
-   "https://eldamo.org/content/words/word-3066011369.html"
+   "https://eldamo.org/content/words/word-3066011369.html",
+   "https://eldamo.org/content/words/word-2309954231.html"
   ]
  },
  {
@@ -68,8 +80,10 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on",
    "at"
@@ -77,8 +91,10 @@
   "cards": [
    "https://eldamo.org/content/words/word-145478165.html",
    "https://eldamo.org/content/words/word-943540591.html",
+   "https://eldamo.org/content/words/word-693042047.html",
    "https://eldamo.org/content/words/word-532726325.html",
    "https://eldamo.org/content/words/word-4182280021.html",
+   "https://eldamo.org/content/words/word-3278700981.html",
    "https://eldamo.org/content/words/word-3347181681.html",
    "https://eldamo.org/content/words/word-519229385.html",
    "https://eldamo.org/content/words/word-1541663469.html"
@@ -89,18 +105,31 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-3631098897.html",
    "https://eldamo.org/content/words/word-1623600883.html",
+   "https://eldamo.org/content/words/word-1373102339.html",
    "https://eldamo.org/content/words/word-4018347057.html",
    "https://eldamo.org/content/words/word-3372933457.html",
+   "https://eldamo.org/content/words/word-2469354417.html",
    "https://eldamo.org/content/words/word-4027241973.html",
    "https://eldamo.org/content/words/word-1199289677.html"
+  ]
+ },
+ {
+  "symbol": "dʲ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-1518937059.html"
   ]
  },
  {
@@ -108,16 +137,20 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-1078941967.html",
    "https://eldamo.org/content/words/word-4111114677.html",
+   "https://eldamo.org/content/words/word-3860616133.html",
    "https://eldamo.org/content/words/word-1466190127.html",
    "https://eldamo.org/content/words/word-820776527.html",
+   "https://eldamo.org/content/words/word-4212164783.html",
    "https://eldamo.org/content/words/word-2219788471.html",
    "https://eldamo.org/content/words/word-3686803471.html"
   ]
@@ -127,14 +160,18 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
-   "n"
+   "n",
+   "g"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-1483460859.html",
    "https://eldamo.org/content/words/word-3223963273.html",
+   "https://eldamo.org/content/words/word-3013265425.html",
    "https://eldamo.org/content/words/word-4261752283.html",
-   "https://eldamo.org/content/words/word-2494578107.html"
+   "https://eldamo.org/content/words/word-2494578107.html",
+   "https://eldamo.org/content/words/word-1738521119.html"
   ]
  },
  {
@@ -142,11 +179,13 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-1268844005.html",
    "https://eldamo.org/content/words/word-865805155.html",
+   "https://eldamo.org/content/words/word-655103587.html",
    "https://eldamo.org/content/words/word-4047135519.html"
   ]
  },
@@ -154,11 +193,13 @@
   "symbol": "f",
   "languages": [
    "s",
-   "n"
+   "n",
+   "g"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-3209000493.html",
-   "https://eldamo.org/content/words/word-2563586893.html"
+   "https://eldamo.org/content/words/word-2563586893.html",
+   "https://eldamo.org/content/words/word-1660007853.html"
   ]
  },
  {
@@ -166,18 +207,33 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-269595403.html",
    "https://eldamo.org/content/words/word-496207673.html",
+   "https://eldamo.org/content/words/word-245707269.html",
    "https://eldamo.org/content/words/word-656843563.html",
    "https://eldamo.org/content/words/word-11429963.html",
+   "https://eldamo.org/content/words/word-3402818219.html",
    "https://eldamo.org/content/words/word-2899848763.html",
    "https://eldamo.org/content/words/word-71896467.html"
+  ]
+ },
+ {
+  "symbol": "gʷ",
+  "languages": [
+   "ep",
+   "g"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-3735481767.html",
+   "https://eldamo.org/content/words/word-99252859.html"
   ]
  },
  {
@@ -187,6 +243,7 @@
    "mp",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
@@ -195,6 +252,7 @@
    "https://eldamo.org/content/words/word-2983721467.html",
    "https://eldamo.org/content/words/word-2399653929.html",
    "https://eldamo.org/content/words/word-1754240329.html",
+   "https://eldamo.org/content/words/word-850661259.html",
    "https://eldamo.org/content/words/word-1092395261.html",
    "https://eldamo.org/content/words/word-2559410261.html"
   ]
@@ -204,18 +262,31 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-3755216135.html",
    "https://eldamo.org/content/words/word-1176267965.html",
+   "https://eldamo.org/content/words/word-925765701.html",
    "https://eldamo.org/content/words/word-4142464295.html",
    "https://eldamo.org/content/words/word-3497050695.html",
+   "https://eldamo.org/content/words/word-2593471595.html",
    "https://eldamo.org/content/words/word-3579909055.html",
    "https://eldamo.org/content/words/word-751956759.html"
+  ]
+ },
+ {
+  "symbol": "io",
+  "languages": [
+   "g"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-2992644199.html"
   ]
  },
  {
@@ -223,11 +294,13 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "os"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-482793829.html",
    "https://eldamo.org/content/words/word-2268053475.html",
+   "https://eldamo.org/content/words/word-2057236587.html",
    "https://eldamo.org/content/words/word-1474675267.html"
   ]
  },
@@ -245,6 +318,7 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
    "os",
@@ -253,6 +327,7 @@
   "cards": [
    "https://eldamo.org/content/words/word-1203059205.html",
    "https://eldamo.org/content/words/word-3663781759.html",
+   "https://eldamo.org/content/words/word-3413278565.html",
    "https://eldamo.org/content/words/word-1590307365.html",
    "https://eldamo.org/content/words/word-944893765.html",
    "https://eldamo.org/content/words/word-1772455553.html",
@@ -275,16 +350,20 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-2945869571.html",
    "https://eldamo.org/content/words/word-1856328257.html",
+   "https://eldamo.org/content/words/word-1605824133.html",
    "https://eldamo.org/content/words/word-3333117731.html",
    "https://eldamo.org/content/words/word-2687704131.html",
+   "https://eldamo.org/content/words/word-1784124971.html",
    "https://eldamo.org/content/words/word-4259969347.html",
    "https://eldamo.org/content/words/word-1432017051.html"
   ]
@@ -301,12 +380,25 @@
   ]
  },
  {
+  "symbol": "kʷ",
+  "languages": [
+   "ep",
+   "g"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-842647471.html",
+   "https://eldamo.org/content/words/word-3608166259.html"
+  ]
+ },
+ {
   "symbol": "l",
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on",
    "at"
@@ -314,8 +406,10 @@
   "cards": [
    "https://eldamo.org/content/words/word-393712641.html",
    "https://eldamo.org/content/words/word-48874755.html",
+   "https://eldamo.org/content/words/word-4093336997.html",
    "https://eldamo.org/content/words/word-780960801.html",
    "https://eldamo.org/content/words/word-135547201.html",
+   "https://eldamo.org/content/words/word-3526935307.html",
    "https://eldamo.org/content/words/word-2452515845.html",
    "https://eldamo.org/content/words/word-3919530845.html",
    "https://eldamo.org/content/words/word-646988333.html"
@@ -326,11 +420,13 @@
   "languages": [
    "s",
    "n",
+   "g",
    "os"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-388426399.html",
    "https://eldamo.org/content/words/word-2916219369.html",
+   "https://eldamo.org/content/words/word-2160157581.html",
    "https://eldamo.org/content/words/word-2616540579.html"
   ]
  },
@@ -339,8 +435,10 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on",
    "at"
@@ -348,20 +446,33 @@
   "cards": [
    "https://eldamo.org/content/words/word-2136523007.html",
    "https://eldamo.org/content/words/word-2536388549.html",
+   "https://eldamo.org/content/words/word-2285882565.html",
    "https://eldamo.org/content/words/word-2523771167.html",
    "https://eldamo.org/content/words/word-1878357567.html",
+   "https://eldamo.org/content/words/word-974778347.html",
    "https://eldamo.org/content/words/word-645062343.html",
    "https://eldamo.org/content/words/word-2112077343.html",
    "https://eldamo.org/content/words/word-3134501197.html"
   ]
  },
  {
+  "symbol": "mb",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-2898061727.html"
+  ]
+ },
+ {
   "symbol": "m̥",
   "languages": [
+   "g",
    "os",
    "on"
   ],
   "cards": [
+   "https://eldamo.org/content/words/word-1963644107.html",
    "https://eldamo.org/content/words/word-819619011.html",
    "https://eldamo.org/content/words/word-1871793473.html"
   ]
@@ -371,27 +482,60 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-3879333373.html",
    "https://eldamo.org/content/words/word-728934117.html",
+   "https://eldamo.org/content/words/word-478428133.html",
    "https://eldamo.org/content/words/word-4266581533.html",
    "https://eldamo.org/content/words/word-3621167933.html",
+   "https://eldamo.org/content/words/word-2717588683.html",
    "https://eldamo.org/content/words/word-3132576137.html",
    "https://eldamo.org/content/words/word-304623841.html"
   ]
  },
  {
+  "symbol": "nd",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-708142971.html"
+  ]
+ },
+ {
+  "symbol": "ndʲ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-939620891.html"
+  ]
+ },
+ {
+  "symbol": "nʲ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-729331093.html"
+  ]
+ },
+ {
   "symbol": "n̥",
   "languages": [
+   "g",
    "os",
    "on"
   ],
   "cards": [
+   "https://eldamo.org/content/words/word-1767130633.html",
    "https://eldamo.org/content/words/word-3317664739.html",
    "https://eldamo.org/content/words/word-74871905.html"
   ]
@@ -401,16 +545,20 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-1327176443.html",
    "https://eldamo.org/content/words/word-3216446981.html",
+   "https://eldamo.org/content/words/word-2965940997.html",
    "https://eldamo.org/content/words/word-1714424603.html",
    "https://eldamo.org/content/words/word-1069010973.html",
+   "https://eldamo.org/content/words/word-165431723.html",
    "https://eldamo.org/content/words/word-1325122635.html",
    "https://eldamo.org/content/words/word-2792136705.html"
   ]
@@ -431,11 +579,13 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-3813297135.html",
    "https://eldamo.org/content/words/word-2434441937.html",
+   "https://eldamo.org/content/words/word-2223625049.html",
    "https://eldamo.org/content/words/word-2693238221.html"
   ]
  },
@@ -444,12 +594,14 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-3598685861.html",
    "https://eldamo.org/content/words/word-76400999.html",
+   "https://eldamo.org/content/words/word-4160436087.html",
    "https://eldamo.org/content/words/word-2082010079.html",
    "https://eldamo.org/content/words/word-335226083.html"
   ]
@@ -459,8 +611,10 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on",
    "at"
@@ -468,8 +622,10 @@
   "cards": [
    "https://eldamo.org/content/words/word-3069986809.html",
    "https://eldamo.org/content/words/word-1408992549.html",
+   "https://eldamo.org/content/words/word-1158486565.html",
    "https://eldamo.org/content/words/word-3457234969.html",
    "https://eldamo.org/content/words/word-2811821309.html",
+   "https://eldamo.org/content/words/word-1908242059.html",
    "https://eldamo.org/content/words/word-3812635499.html",
    "https://eldamo.org/content/words/word-984682243.html",
    "https://eldamo.org/content/words/word-2007105197.html"
@@ -491,16 +647,20 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-2260640185.html",
    "https://eldamo.org/content/words/word-2089050921.html",
+   "https://eldamo.org/content/words/word-1838544937.html",
    "https://eldamo.org/content/words/word-2647888405.html",
    "https://eldamo.org/content/words/word-2002474685.html",
+   "https://eldamo.org/content/words/word-1098895435.html",
    "https://eldamo.org/content/words/word-197726635.html",
    "https://eldamo.org/content/words/word-1664740615.html"
   ]
@@ -510,11 +670,13 @@
   "languages": [
    "s",
    "n",
+   "g",
    "os"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-3504318431.html",
    "https://eldamo.org/content/words/word-1737140385.html",
+   "https://eldamo.org/content/words/word-981076737.html",
    "https://eldamo.org/content/words/word-424859273.html"
   ]
  },
@@ -523,16 +685,20 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-4003450521.html",
    "https://eldamo.org/content/words/word-281596459.html",
+   "https://eldamo.org/content/words/word-31090475.html",
    "https://eldamo.org/content/words/word-95731475.html",
    "https://eldamo.org/content/words/word-3745285021.html",
+   "https://eldamo.org/content/words/word-2841705771.html",
    "https://eldamo.org/content/words/word-2685239499.html",
    "https://eldamo.org/content/words/word-4152253449.html"
   ]
@@ -542,16 +708,20 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-1451293561.html",
    "https://eldamo.org/content/words/word-2769109293.html",
+   "https://eldamo.org/content/words/word-2518603309.html",
    "https://eldamo.org/content/words/word-1838541811.html",
    "https://eldamo.org/content/words/word-1193128061.html",
+   "https://eldamo.org/content/words/word-289548811.html",
    "https://eldamo.org/content/words/word-877785037.html",
    "https://eldamo.org/content/words/word-2344798987.html"
   ]
@@ -568,20 +738,33 @@
   ]
  },
  {
+  "symbol": "tʲ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-2832526873.html"
+  ]
+ },
+ {
   "symbol": "u",
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-3194103897.html",
    "https://eldamo.org/content/words/word-961654831.html",
+   "https://eldamo.org/content/words/word-711148847.html",
    "https://eldamo.org/content/words/word-3581352147.html",
    "https://eldamo.org/content/words/word-2935938397.html",
+   "https://eldamo.org/content/words/word-2032359147.html",
    "https://eldamo.org/content/words/word-3365297871.html",
    "https://eldamo.org/content/words/word-537344525.html"
   ]
@@ -591,16 +774,20 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-2634216141.html",
    "https://eldamo.org/content/words/word-242668411.html",
+   "https://eldamo.org/content/words/word-31851523.html",
    "https://eldamo.org/content/words/word-1117540359.html",
    "https://eldamo.org/content/words/word-3645333329.html",
+   "https://eldamo.org/content/words/word-2889274331.html",
    "https://eldamo.org/content/words/word-3744257499.html",
    "https://eldamo.org/content/words/word-501464665.html"
   ]
@@ -609,11 +796,13 @@
   "symbol": "v",
   "languages": [
    "s",
-   "n"
+   "n",
+   "g"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-1029195187.html",
-   "https://eldamo.org/content/words/word-383781437.html"
+   "https://eldamo.org/content/words/word-383781437.html",
+   "https://eldamo.org/content/words/word-3775169483.html"
   ]
  },
  {
@@ -621,16 +810,20 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-2384757273.html",
    "https://eldamo.org/content/words/word-1641713203.html",
+   "https://eldamo.org/content/words/word-1391207219.html",
    "https://eldamo.org/content/words/word-2772005523.html",
    "https://eldamo.org/content/words/word-2126591773.html",
+   "https://eldamo.org/content/words/word-1223012523.html",
    "https://eldamo.org/content/words/word-4045356243.html",
    "https://eldamo.org/content/words/word-1217402897.html"
   ]
@@ -653,49 +846,79 @@
  {
   "symbol": "x",
   "languages": [
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
+   "https://eldamo.org/content/words/word-3878720053.html",
    "https://eldamo.org/content/words/word-219848563.html",
    "https://eldamo.org/content/words/word-3869402109.html",
+   "https://eldamo.org/content/words/word-2965822859.html",
    "https://eldamo.org/content/words/word-2237901781.html",
    "https://eldamo.org/content/words/word-3704915731.html"
+  ]
+ },
+ {
+  "symbol": "xʷ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-3252088633.html"
   ]
  },
  {
   "symbol": "y",
   "languages": [
    "s",
-   "n"
+   "n",
+   "g"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-1962658899.html",
-   "https://eldamo.org/content/words/word-1317245149.html"
+   "https://eldamo.org/content/words/word-1317245149.html",
+   "https://eldamo.org/content/words/word-413665899.html"
   ]
  },
  {
   "symbol": "z",
   "languages": [
    "p",
-   "mp"
+   "mp",
+   "ep"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-3318220985.html",
-   "https://eldamo.org/content/words/word-514317113.html"
+   "https://eldamo.org/content/words/word-514317113.html",
+   "https://eldamo.org/content/words/word-263811129.html"
   ]
  },
  {
   "symbol": "ð",
   "languages": [
+   "ep",
    "s",
-   "n"
+   "n",
+   "g"
   ],
   "cards": [
+   "https://eldamo.org/content/words/word-1732549413.html",
    "https://eldamo.org/content/words/word-3198658675.html",
-   "https://eldamo.org/content/words/word-2553244925.html"
+   "https://eldamo.org/content/words/word-2553244925.html",
+   "https://eldamo.org/content/words/word-1649665675.html"
+  ]
+ },
+ {
+  "symbol": "ðʲ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-3348861593.html"
   ]
  },
  {
@@ -704,6 +927,7 @@
    "p",
    "s",
    "n",
+   "g",
    "os",
    "on",
    "at"
@@ -712,6 +936,7 @@
    "https://eldamo.org/content/words/word-3868991225.html",
    "https://eldamo.org/content/words/word-4256239475.html",
    "https://eldamo.org/content/words/word-3610825725.html",
+   "https://eldamo.org/content/words/word-2707246475.html",
    "https://eldamo.org/content/words/word-2811964629.html",
    "https://eldamo.org/content/words/word-4278978579.html",
    "https://eldamo.org/content/words/word-1006434357.html"
@@ -722,14 +947,18 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
-   "n"
+   "n",
+   "g"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-2374415065.html",
    "https://eldamo.org/content/words/word-1321100615.html",
+   "https://eldamo.org/content/words/word-1070594631.html",
    "https://eldamo.org/content/words/word-2761663315.html",
-   "https://eldamo.org/content/words/word-2116249565.html"
+   "https://eldamo.org/content/words/word-2116249565.html",
+   "https://eldamo.org/content/words/word-1212670315.html"
   ]
  },
  {
@@ -737,14 +966,18 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
-   "n"
+   "n",
+   "g"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-3680230041.html",
    "https://eldamo.org/content/words/word-3146658667.html",
+   "https://eldamo.org/content/words/word-2896152683.html",
    "https://eldamo.org/content/words/word-4067478291.html",
-   "https://eldamo.org/content/words/word-3422064541.html"
+   "https://eldamo.org/content/words/word-3422064541.html",
+   "https://eldamo.org/content/words/word-2518485291.html"
   ]
  },
  {
@@ -765,16 +998,20 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-2558005145.html",
    "https://eldamo.org/content/words/word-2717424539.html",
+   "https://eldamo.org/content/words/word-2466918555.html",
    "https://eldamo.org/content/words/word-2945253395.html",
    "https://eldamo.org/content/words/word-2299839645.html",
+   "https://eldamo.org/content/words/word-1396260395.html",
    "https://eldamo.org/content/words/word-826100283.html",
    "https://eldamo.org/content/words/word-2293114233.html"
   ]
@@ -784,18 +1021,58 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-2493361049.html",
    "https://eldamo.org/content/words/word-713456603.html",
+   "https://eldamo.org/content/words/word-462950619.html",
    "https://eldamo.org/content/words/word-2880609299.html",
    "https://eldamo.org/content/words/word-2235195549.html",
+   "https://eldamo.org/content/words/word-1331616299.html",
    "https://eldamo.org/content/words/word-3117099643.html",
    "https://eldamo.org/content/words/word-289146297.html"
+  ]
+ },
+ {
+  "symbol": "ŋg",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-2424342639.html"
+  ]
+ },
+ {
+  "symbol": "ŋgʷ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-515483557.html"
+  ]
+ },
+ {
+  "symbol": "ŋʷ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-2052480473.html"
+  ]
+ },
+ {
+  "symbol": "ŋ̥",
+  "languages": [
+   "g"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-1287325839.html"
   ]
  },
  {
@@ -803,14 +1080,18 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
-   "n"
+   "n",
+   "g"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-1684014425.html",
    "https://eldamo.org/content/words/word-1393514975.html",
+   "https://eldamo.org/content/words/word-1143008991.html",
    "https://eldamo.org/content/words/word-2071262675.html",
-   "https://eldamo.org/content/words/word-1425848925.html"
+   "https://eldamo.org/content/words/word-1425848925.html",
+   "https://eldamo.org/content/words/word-522269675.html"
   ]
  },
  {
@@ -829,18 +1110,31 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-2428716953.html",
    "https://eldamo.org/content/words/word-3004455963.html",
+   "https://eldamo.org/content/words/word-2753949979.html",
    "https://eldamo.org/content/words/word-2815965203.html",
    "https://eldamo.org/content/words/word-2170551453.html",
+   "https://eldamo.org/content/words/word-1266972203.html",
    "https://eldamo.org/content/words/word-1113131707.html",
    "https://eldamo.org/content/words/word-2580145657.html"
+  ]
+ },
+ {
+  "symbol": "ǝ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-2862571519.html"
   ]
  },
  {
@@ -871,11 +1165,13 @@
   "symbol": "ȳ",
   "languages": [
    "s",
-   "n"
+   "n",
+   "g"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-3485681427.html",
-   "https://eldamo.org/content/words/word-2840267677.html"
+   "https://eldamo.org/content/words/word-2840267677.html",
+   "https://eldamo.org/content/words/word-1936688427.html"
   ]
  },
  {
@@ -883,23 +1179,38 @@
   "languages": [
    "p",
    "mp",
+   "ep",
    "s",
-   "n"
+   "n",
+   "g"
   ],
   "cards": [
    "https://eldamo.org/content/words/word-853983385.html",
    "https://eldamo.org/content/words/word-1432348171.html",
+   "https://eldamo.org/content/words/word-1181842187.html",
    "https://eldamo.org/content/words/word-1241231635.html",
-   "https://eldamo.org/content/words/word-595817885.html"
+   "https://eldamo.org/content/words/word-595817885.html",
+   "https://eldamo.org/content/words/word-3987205931.html"
+  ]
+ },
+ {
+  "symbol": "ɣʷ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-1417282265.html"
   ]
  },
  {
   "symbol": "ɸ",
   "languages": [
+   "ep",
    "os",
    "on"
   ],
   "cards": [
+   "https://eldamo.org/content/words/word-1880004149.html",
    "https://eldamo.org/content/words/word-239185877.html",
    "https://eldamo.org/content/words/word-1706199827.html"
   ]
@@ -907,25 +1218,112 @@
  {
   "symbol": "β",
   "languages": [
-   "mp"
+   "mp",
+   "ep"
   ],
   "cards": [
-   "https://eldamo.org/content/words/word-1525492137.html"
+   "https://eldamo.org/content/words/word-1525492137.html",
+   "https://eldamo.org/content/words/word-1274986153.html"
   ]
  },
  {
   "symbol": "θ",
   "languages": [
+   "ep",
    "s",
    "n",
+   "g",
    "os",
    "on"
   ],
   "cards": [
+   "https://eldamo.org/content/words/word-3315161269.html",
    "https://eldamo.org/content/words/word-2834069363.html",
    "https://eldamo.org/content/words/word-2188655613.html",
+   "https://eldamo.org/content/words/word-1285076363.html",
    "https://eldamo.org/content/words/word-1674342997.html",
    "https://eldamo.org/content/words/word-3141356947.html"
+  ]
+ },
+ {
+  "symbol": "θʲ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-3819762405.html"
+  ]
+ },
+ {
+  "symbol": "ḷ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-1188208307.html"
+  ]
+ },
+ {
+  "symbol": "ḹ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-1868266679.html"
+  ]
+ },
+ {
+  "symbol": "ṇ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-2333707987.html"
+  ]
+ },
+ {
+  "symbol": "ṇ̄",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-2300233503.html"
+  ]
+ },
+ {
+  "symbol": "ṛ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-544357115.html"
+  ]
+ },
+ {
+  "symbol": "ṝ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-1224415487.html"
+  ]
+ },
+ {
+  "symbol": "ṣ",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-3264590603.html"
+  ]
+ },
+ {
+  "symbol": "ṣ̄",
+  "languages": [
+   "ep"
+  ],
+  "cards": [
+   "https://eldamo.org/content/words/word-3525203031.html"
   ]
  }
 ]

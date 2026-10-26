@@ -204,7 +204,7 @@ def predict(lexicon: dict, seq, element_ids: list, era: str = 'late', stage: int
         if not fs:
             return []
         parts.append(fs)
-    rules = seq.sequence(era, stage + 1, last_stage)
+    rules = seq.sequence(era, stage + 1 if stage else 0, last_stage)   # primitive forms undergo the ✶ rules too
     variants, seen = [], set()
     joins = []
     for combo in itertools.product(*parts):

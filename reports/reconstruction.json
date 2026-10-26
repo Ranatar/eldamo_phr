@@ -1,0 +1,128 @@
+{
+ "quenya": {
+  "late: 2 -> 0": {
+   "cases": 30,
+   "found": 27,
+   "first": 3,
+   "any": 9
+  },
+  "late: 2 -> 1": {
+   "cases": 30,
+   "found": 29,
+   "first": 8,
+   "any": 24
+  },
+  "middle: 2 -> 0": {
+   "cases": 30,
+   "found": 30,
+   "first": 7,
+   "any": 12
+  },
+  "middle: 2 -> 1": {
+   "cases": 30,
+   "found": 28,
+   "first": 12,
+   "any": 22
+  },
+  "early: 1 -> 0": {
+   "cases": 30,
+   "found": 30,
+   "first": 17,
+   "any": 26
+  }
+ },
+ "sindarin": {
+  "late: 3 -> 0": {
+   "cases": 30,
+   "found": 22,
+   "first": 1,
+   "any": 4
+  },
+  "late: 3 -> 1": {
+   "cases": 30,
+   "found": 22,
+   "first": 2,
+   "any": 9
+  },
+  "late: 3 -> 2": {
+   "cases": 30,
+   "found": 30,
+   "first": 4,
+   "any": 18
+  },
+  "middle: 2 -> 0": {
+   "cases": 30,
+   "found": 28,
+   "first": 2,
+   "any": 6
+  },
+  "middle: 2 -> 1": {
+   "cases": 30,
+   "found": 28,
+   "first": 5,
+   "any": 19
+  },
+  "early: 1 -> 0": {
+   "cases": 30,
+   "found": 28,
+   "first": 5,
+   "any": 13
+  }
+ },
+ "cognates quenya -> sindarin": {
+  "cases": 8,
+  "first": 3,
+  "any": 7,
+  "pairs": 8
+ },
+ "cognates sindarin -> quenya": {
+  "cases": 8,
+  "first": 1,
+  "any": 2,
+  "pairs": 8
+ },
+ "cognate links q -> s": {
+  "cases": 30,
+  "word_first": 6,
+  "word_any": 8,
+  "form_first": 5,
+  "form_any": 11,
+  "pairs": 53
+ },
+ "cognate links s -> q": {
+  "cases": 30,
+  "word_first": 4,
+  "word_any": 6,
+  "form_first": 3,
+  "form_any": 5,
+  "pairs": 79
+ },
+ "conceptions mq -> q": {
+  "cases": 30,
+  "identity": 21,
+  "first": 21,
+  "any": 22,
+  "pairs": 939
+ },
+ "conceptions n -> s": {
+  "cases": 30,
+  "identity": 16,
+  "first": 16,
+  "any": 17,
+  "pairs": 574
+ },
+ "conceptions eq -> q": {
+  "cases": 30,
+  "identity": 3,
+  "first": 3,
+  "any": 5,
+  "pairs": 1456
+ },
+ "conceptions g -> s": {
+  "cases": 30,
+  "identity": 4,
+  "first": 3,
+  "any": 4,
+  "pairs": 865
+ }
+}

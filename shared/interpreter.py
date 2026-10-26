@@ -736,6 +736,36 @@ def apply_rule(rule: 'Rule', form: str, limit: int = 64, protect: 'Rule | None' 
     return {'all_sites': all_sites, 'ordered': ordered, 'single_site': single, 'sites': len(sites)}
 
 
+def _requirements(pattern: Pattern) -> list:
+    """Sounds a pattern cannot match without: for every literal or set token
+    (not starred), the set of canonical sounds one of which must be in the word."""
+    req = getattr(pattern, '_req', None)
+    if req is None:
+        req = []
+        for tok in pattern.tokens:
+            if tok.star:
+                continue
+            if tok.kind in ('lit', 'set'):
+                need = {canonical(o[0]) for o in tok.options if o}
+                if need:
+                    req.append(need)
+        pattern._req = req
+    return req
+
+
+def may_apply(rule: 'Rule', sounds: set) -> bool:
+    """False when no alternative of the rule can match a word made of these
+    canonical sounds (a fast pre-check; True does not mean it applies)."""
+    for src, _ in rule.alternatives:
+        if all(any(x in sounds for x in s) for s in _requirements(src)):
+            return True
+    return False
+
+
+def word_sounds(form: str) -> set:
+    return {canonical(p) for p in normalize_word(form)[0]}
+
+
 def comparable(form: str) -> str:
     """Form used to compare results: canonical phonemes, and two identical
     short vowels written as one long vowel (Eldamo writes both aa and ā)."""

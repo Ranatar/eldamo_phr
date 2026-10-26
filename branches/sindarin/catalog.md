@@ -2,7 +2,7 @@
 
 Источник: Eldamo 0.8.13 © Paul Strack, CC BY 4.0. Файл создан `scripts/build.py`; не править вручную.
 
-Правил: 303 (с порядком Eldamo: 263); подформул: 868; засвидетельствованных дериваций: 2661; формулы воспроизводят 94.7% шагов с известной формулой.
+Правил: 384 (с порядком Eldamo: 338); подформул: 1098; засвидетельствованных дериваций: 3175; формулы воспроизводят 94.4% шагов с известной формулой.
 
 Столбец «примеры» — число засвидетельствованных шагов дериваций с этой подформулой / сколько из них формула воспроизводит.
 
@@ -3585,10 +3585,949 @@
 | `vh > f` | literal | 1 / 1 |
 | `ðh > θ` | literal | — |
 
+## ᴱ✶ Early Primitive Elvish (ранняя концепция)
+
+### [intervocalic [l] may have had different developments by position](https://eldamo.org/content/words/word-1942014713.html)
+
+- порядок 00100
+
+### [nasals assimilated to following consonant](https://eldamo.org/content/words/word-2698200055.html)
+
+- порядок 00200
+- общая формула `{mnŋ}{pb}|{mnŋ}{td}|{mnŋ}{kg} > m{pb}|n{td}|ŋ{kg}`
+- вариант правила [nasals assimilated to following stops and aspirates](https://eldamo.org/content/words/word-2390772785.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `nb > mb` | literal | 2 / 2 |
+| `nk > ŋk` | literal | 2 / 2 |
+| `mk > ŋk` | literal | 1 / 0 |
+| `md > nd` | literal | 1 / 1 |
+| `mt > nt` | literal | 3 / 3 |
+| `ṃt > ṇt` | literal | 4 / 2 |
+
+### [short final [e], [a], [o] became [ǝ]](https://eldamo.org/content/words/word-2954387961.html)
+
+- порядок 00300
+- общая формула `-S{ĕăŏ} > -Sǝ`
+- раньше, чем: final [ǝ] vanished
+- вариант правила [short final [e], [a], [o] vanished](https://eldamo.org/content/words/word-3998109579.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-Sĕ > -Sǝ` | contextual | 3 / 1 |
+| `-Să > -Sǝ` | contextual | 11 / 11 |
+| `-Sŏ > -Sǝ` | contextual | 1 / 1 |
+
+### [final [ǝ] vanished](https://eldamo.org/content/words/word-1398002213.html)
+
+- порядок 00400
+- раньше, чем: short final [i], [u] became [e], [o]
+- позже, чем: short final [e], [a], [o] became [ǝ]
+- вариант правила [short final [e], [a], [o] vanished](https://eldamo.org/content/words/word-3998109579.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-ǝ > -ø` | loss | 80 / 72 |
+
+### [final [j], [w] became [i], [u]](https://eldamo.org/content/words/word-2186610087.html)
+
+- порядок 00500
+- общая формула `-{jw} > -{iu}`
+- раньше, чем: short final [i], [u] became [e], [o]; final [l], [r], [n] became syllabic after a consonant
+- вариант правила [short final [e], [a], [o] vanished](https://eldamo.org/content/words/word-3998109579.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-j > -i` | literal | 6 / 6 |
+| `-w > -u` | literal | 2 / 2 |
+
+### [short final [i], [u] became [e], [o]](https://eldamo.org/content/words/word-4062489737.html)
+
+- порядок 00600
+- общая формула `-{ĭŭ} > -{eo}`
+- позже, чем: final [ǝ] vanished; final [j], [w] became [i], [u]
+- вариант правила [short final [i], [u] became [e], [o]](https://eldamo.org/content/words/word-2698078435.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-Sĭ > -Se` | contextual | 85 / 75 |
+| `-Sŭ > -So` | contextual | 19 / 12 |
+
+### [long vowels shortened before consonant groups and in diphthongs](https://eldamo.org/content/words/word-2461772055.html)
+
+- порядок 00700
+- общая формула `V̄CC|V̄V > V̆CC|V̆V`
+- вариант правила [long vowels shortened before consonant clusters](https://eldamo.org/content/words/word-2818407091.html)
+
+### [[kʷu] became [ku]](https://eldamo.org/content/words/word-666754093.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `kʷu > ku` | literal | — |
+
+### [final [ai] became [ī]](https://eldamo.org/content/words/word-2628655373.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-ai > -ī` | literal | 1 / 1 |
+
+### [final [l], [r], [n] became syllabic after a consonant](https://eldamo.org/content/words/word-3594765139.html)
+
+- общая формула `-C{lrn} > -C{ḷṛṇ}`
+- позже, чем: final [j], [w] became [i], [u]
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-Cl > -Cḷ` | contextual | 26 / 26 |
+| `-Cr > -Cṛ` | contextual | — |
+| `-Cn > -Cṇ` | contextual | — |
+
+### [initial nasalized voiced stops reduced to stops](https://eldamo.org/content/words/word-3141061005.html)
+
+- общая формула `{ŋgʷ|ŋg|nd|ndʲ|mb}- > {gʷ|g|d|dʲ|b}-`
+
+| подформула | вид | примеры |
+|---|---|---|
+| `mb- > b-` | literal | — |
+
+### [voiced stops became nasals before nasals](https://eldamo.org/content/words/word-2168100881.html)
+
+- общая формула `{bdg}{mn} > {mnŋ}{mn}`
+
+| подформула | вид | примеры |
+|---|---|---|
+| `bm > mm` | literal | — |
+| `bn > mn` | literal | 2 / 2 |
+| `dm > nm` | literal | — |
+| `dn > nn` | literal | — |
+| `gm > ŋm` | literal | — |
+| `gn > ŋn` | literal | — |
+
+### [voiced stops unvoiced before voiceless consonants](https://eldamo.org/content/words/word-4185647833.html)
+
+- общая формула `{bdg}{ptks} > {ptk}{ptks}`
+- вариант правила [voiced stops unvoiced before voiceless consonants](https://eldamo.org/content/words/word-2905876955.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `gt > kt` | literal | 1 / 1 |
+
+## G. Gnomish (ранняя концепция)
+
+### [palatal consonants became velars](https://eldamo.org/content/words/word-2205165111.html)
+
+- порядок 00100
+- общая формула `{tdθzn}ʲ > {kgxðŋ}`
+- вариант правила [[j] was lost after initial velars](https://eldamo.org/content/words/word-4025342543.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `θʲ > x` | literal | 1 / 1 |
+| `tʲ > k` | literal | 4 / 4 |
+| `dʲ > g` | literal | 4 / 4 |
+| `nʲ > ŋ` | literal | — |
+
+### [[xʷ] became [f]](https://eldamo.org/content/words/word-3323934825.html)
+
+- порядок 00200
+
+| подформула | вид | примеры |
+|---|---|---|
+| `xʷ > f` | literal | 5 / 5 |
+
+### [initial voiced spirants became stops](https://eldamo.org/content/words/word-2523049185.html)
+
+- порядок 00300
+- общая формула `{βðɣ}- > {bdg}-`
+
+| подформула | вид | примеры |
+|---|---|---|
+| `β- > b-` | literal | 20 / 20 |
+| `ð- > d-` | literal | — |
+| `ɣ- > g-` | literal | 8 / 8 |
+
+### [[ɸ], [β] became [f], [v]](https://eldamo.org/content/words/word-4218663817.html)
+
+- порядок 00400
+- общая формула `β|ɸ > v|f`
+- вариант правила [[ɸ], [β] became [f], [v]](https://eldamo.org/content/words/word-2995333959.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ɸ > f` | literal | 15 / 15 |
+| `β > v` | literal | 12 / 12 |
+
+### [non-initial [kʷ] become [p]](https://eldamo.org/content/words/word-1365625999.html)
+
+- порядок 00500
+- вариант правила [2565789453](https://eldamo.org/content/words/word-2565789453.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `Xkʷ > Xp` | contextual | 2 / 2 |
+
+### [[ŋ] became [ŋg]](https://eldamo.org/content/words/word-2869972293.html)
+
+- порядок 00600
+- вариант правила [initial and intervocalic [ŋ] vanished](https://eldamo.org/content/words/word-552653835.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ŋ > ŋg` | literal | 14 / 4 |
+
+### [initial [w] became [gw]](https://eldamo.org/content/words/word-3358436645.html)
+
+- порядок 00700
+- раньше, чем: unstressed [wa] became [wo]
+- вариант правила [400710869](https://eldamo.org/content/words/word-400710869.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `w- > gʷ-` | literal | 13 / 13 |
+
+### [intervocalic [w] became [v]](https://eldamo.org/content/words/word-2741496655.html)
+
+- порядок 00800
+- раньше, чем: short final vowels vanished
+
+| подформула | вид | примеры |
+|---|---|---|
+| `VwV > VvV` | contextual | 2 / 2 |
+
+### [unstressed initial syllables reduced to favored clusters](https://eldamo.org/content/words/word-1096657061.html)
+
+- порядок 00900
+- общая формула `{ptkɸθxbdgmn}V₁{rl}V́₁- > {ptkɸθxbdgmn}ø{rl}V́₁-`
+- вариант правила [unstressed initial syllables reduced to favored clusters](https://eldamo.org/content/words/word-341640763.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `bala- > bla-` | literal | 2 / 2 |
+| `boro- > bro-` | literal | 1 / 1 |
+| `folo- > flo-` | literal | 1 / 1 |
+| `kala- > kla-` | literal | 1 / 1 |
+| `kere- > kre-` | literal | 2 / 2 |
+| `kirí- > krí-` | literal | 4 / 4 |
+| `koro- > kro-` | literal | 1 / 1 |
+| `gǝro- > gro-` | literal | 1 / 1 |
+| `nere- > nre-` | literal | 1 / 1 |
+| `noro- > nro-` | literal | 3 / 3 |
+| `teli- > tli-` | literal | 1 / 1 |
+| `telu- > tlu-` | literal | 1 / 1 |
+
+### [[ī], [ū] became [ai], [au]](https://eldamo.org/content/words/word-1815156341.html)
+
+- порядок 01000
+- общая формула `ī|ū|ū{pbfvm} > ai|au|ū{pbfvm}`
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ī > ai` | literal | 8 / 8 |
+| `ū > au` | literal | 5 / 5 |
+| `ū{pbfvm} > ū{pbfvm}` | contextual | — |
+
+### [[ē], [ō] became [ī], [ū]](https://eldamo.org/content/words/word-1277969137.html)
+
+- порядок 01100
+- общая формула `ē|ō > ī|ū`
+- раньше, чем: [ll] became [l] lengthening preceding stressed vowel
+- вариант правила [[ē], [ō] became [ī], [ū]](https://eldamo.org/content/words/word-390078853.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ē > ī` | literal | 7 / 7 |
+| `ō > ū` | literal | 2 / 2 |
+
+### [initial [ŋgʷ] became [gʷ]](https://eldamo.org/content/words/word-1371815731.html)
+
+- порядок 01200
+- вариант правила [initial nasals vanished before stops](https://eldamo.org/content/words/word-956128961.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ŋgʷ- > gʷ-` | literal | 13 / 13 |
+
+### [[ā] became [ō]](https://eldamo.org/content/words/word-3140771935.html)
+
+- порядок 01300
+- общая формула `ā > ō`
+- раньше, чем: [ll] became [l] lengthening preceding stressed vowel
+- вариант правила [[ā], [au] became [ǭ]](https://eldamo.org/content/words/word-2790556075.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ā > ō` | literal | 7 / 7 |
+
+### [unstressed [au], [ai] became [ō], [ē]](https://eldamo.org/content/words/word-3579735133.html)
+
+- порядок 01400
+- общая формула `ˌau|ˌai > ō|ē`
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ˌau > ō` | literal | — |
+| `ˌai > ē` | literal | 2 / 1 |
+
+### [[eu], [iu] became [io] or [iu]](https://eldamo.org/content/words/word-1598541361.html)
+
+- порядок 01500
+- общая формула `{eu|iu} > io|iu`
+- вариант правила [2838612897](https://eldamo.org/content/words/word-2838612897.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `eu > io` | literal | 1 / 1 |
+| `iu > io` | literal | 4 / 4 |
+| `eu > iu` | literal | — |
+
+### [[ei], [ou] became [ē], [ō]](https://eldamo.org/content/words/word-1053983129.html)
+
+- порядок 01600
+- общая формула `ei|ou > ē|ō`
+- раньше, чем: [oi] became [ui]
+- вариант правила [1880600739](https://eldamo.org/content/words/word-1880600739.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ei > ē` | literal | 2 / 2 |
+| `ou > ō` | literal | 13 / 11 |
+
+### [[ao] became [o]](https://eldamo.org/content/words/word-2507211565.html)
+
+- порядок 01800
+- общая формула `ao > o`
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ao > o` | literal | 1 / 1 |
+
+### [unstressed [wa] became [wo]](https://eldamo.org/content/words/word-2099337057.html)
+
+- порядок 01900
+- общая формула `{wˌa|wo} > o`
+- позже, чем: initial [w] became [gw]
+- вариант правила [stressed [wŏ] became [wa]](https://eldamo.org/content/words/word-1415948757.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `wˌa > wo` | literal | 2 / 0 |
+
+### [unstressed [ui] became [wi]](https://eldamo.org/content/words/word-150094523.html)
+
+- порядок 02000
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ˌui > wi` | literal | — |
+
+### [syllabic consonants developed vowels](https://eldamo.org/content/words/word-1924948145.html)
+
+- порядок 02100
+- общая формула `ḷ|ṛ|ṇ > Vl|Vr|Vn`
+
+| подформула | вид | примеры |
+|---|---|---|
+| `bḷ- > bli-` | literal | 1 / 1 |
+| `gḷ- > gli-` | literal | — |
+| `kḷ- > kli-` | literal | — |
+| `nḷ- > nli-` | literal | 1 / 1 |
+| `mḷ- > mli-` | literal | — |
+| `tḷ- > tli-` | literal | 1 / 1 |
+| `bṛ- > bri-` | literal | 1 / 1 |
+| `gṛ- > gri-` | literal | 3 / 3 |
+| `nṛ- > nri-` | literal | 3 / 3 |
+| `mṛ- > mri-` | literal | 2 / 2 |
+| `tṛ- > tri-` | literal | 1 / 1 |
+| `-ḷ > -li` | literal | 1 / 1 |
+| `Cʷṛ > Cʷur` | contextual | 3 / 0 |
+| `ḷm > ulm` | literal | 1 / 1 |
+| `ḹ > al` | literal | 8 / 8 |
+| `ḷ > il` | literal | 1 / 1 |
+| `ṝ > ar` | literal | 9 / 9 |
+
+### [syllabic nasals became [in] or [an]](https://eldamo.org/content/words/word-3923587781.html)
+
+- порядок 02200
+- общая формула `ṇ|ṇ̄ > in|an`
+- вариант правила [initial syllabic [m], [n], [ŋ] became [am], [an], [aŋ]](https://eldamo.org/content/words/word-1642455461.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ṇ > in` | literal | 3 / 3 |
+| `ṇ̄ > an` | literal | 7 / 7 |
+
+### [initial [j] usually became [g]](https://eldamo.org/content/words/word-712894237.html)
+
+- порядок 02300
+- общая формула `j-|ji- > g-|i-`
+- вариант правила [[j] vanished before [i], [ui]](https://eldamo.org/content/words/word-4029245039.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `j- > g-` | literal | 17 / 15 |
+| `ji- > i-` | literal | 1 / 1 |
+
+### [[e] becomes [i] before stressed [i]](https://eldamo.org/content/words/word-1312401427.html)
+
+- порядок 02400
+
+| подформула | вид | примеры |
+|---|---|---|
+| `eCí > iCi` | contextual | 3 / 3 |
+
+### [[wo] became [o]](https://eldamo.org/content/words/word-2946990975.html)
+
+- порядок 02500
+- вариант правила [[wo] became [o]](https://eldamo.org/content/words/word-3719761789.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `wo > o` | literal | — |
+
+### [labialized velars became velars before [o], [u]](https://eldamo.org/content/words/word-3460441403.html)
+
+- порядок 02600
+- общая формула `Cʷu|Cʷo > Cu|Co`
+- вариант правила [[wo] became [o]](https://eldamo.org/content/words/word-3719761789.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `gʷo > go` | literal | 4 / 2 |
+| `gʷu > gu` | literal | 3 / 2 |
+| `kʷo > ko` | literal | — |
+| `kʷu > ku` | literal | 1 / 1 |
+
+### [short final vowels vanished](https://eldamo.org/content/words/word-634661439.html)
+
+- порядок 02700
+- общая формула `-S{ĭĕăŏŭ} > -Sø`
+- позже, чем: intervocalic [w] became [v]
+- вариант правила [short final vowels vanished](https://eldamo.org/content/words/word-1490765151.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-Sĭ > -Sø` | contextual | 6 / 6 |
+| `-Sĕ > -Sø` | contextual | 27 / 24 |
+| `-Să > -Sø` | contextual | 42 / 42 |
+| `-Sŏ > -Sø` | contextual | 8 / 8 |
+| `-Sŭ > -Sø` | contextual | 7 / 7 |
+
+### [final [n] sometimes became syllabic](https://eldamo.org/content/words/word-1436029253.html)
+
+- порядок 02800
+- общая формула `-C{n} > -Co{n}`
+- вариант правила [final [vn] sometimes became [von]](https://eldamo.org/content/words/word-198304083.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-Cn > -Con` | contextual | 1 / 1 |
+
+### [long final vowels were shortened](https://eldamo.org/content/words/word-3801855289.html)
+
+- порядок 02900
+- общая формула `-S{īēǣāōū} > -S{ĭĭăăăŭ}`
+- вариант правила [long final vowels were shortened](https://eldamo.org/content/words/word-1410098833.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-Sī > -Sĭ` | contextual | 10 / 10 |
+| `-Sē > -Sĭ` | contextual | 2 / 1 |
+| `-Sǣ > -Să` | contextual | 3 / 1 |
+| `-Sā > -Să` | contextual | 18 / 17 |
+| `-Sō > -Să` | contextual | 2 / 2 |
+| `-Sū > -Sŭ` | contextual | 5 / 5 |
+
+### [unstressed long vowels shortened](https://eldamo.org/content/words/word-344365373.html)
+
+- порядок 03000
+- общая формула `ˌV̄ > V̆`
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ˌV̄ > V̆` | contextual | 4 / 4 |
+
+### [initial [sj] became [x]](https://eldamo.org/content/words/word-2688788155.html)
+
+- порядок 03100
+- раньше, чем: initial [x-] became [h-]
+
+| подформула | вид | примеры |
+|---|---|---|
+| `sj- > x-` | literal | 3 / 3 |
+
+### [initial [x-] became [h-]](https://eldamo.org/content/words/word-501264925.html)
+
+- порядок 03200
+- позже, чем: initial [sj] became [x]
+- вариант правила [initial [x-] became [h-]](https://eldamo.org/content/words/word-1195324115.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `x- > h-` | literal | 19 / 18 |
+
+### [initial [n], [m] became [d], [b] before [l], [r]](https://eldamo.org/content/words/word-1360745545.html)
+
+- порядок 03300
+- общая формула `{mn}{lr}- > {bd}{lr}-`
+- раньше, чем: [tl], [dl], [ðl] became [kl], [gl]
+- вариант правила [initial [ml], [mr] became [bl], [br]](https://eldamo.org/content/words/word-1353747713.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `nl- > dl-` | literal | 1 / 1 |
+| `nr- > ndr-` | literal | 7 / 7 |
+| `ml- > mbl-` | literal | 1 / 1 |
+| `mr- > mbr-` | literal | 2 / 2 |
+
+### [[θ], [ð] became [s] before [p], [t], [k], [b] and [s]](https://eldamo.org/content/words/word-976451235.html)
+
+- порядок 03400
+- общая формула `{θð}{ptkbs} > s{ptkbs}`
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ðk > sk` | literal | 1 / 1 |
+| `ðs > ss` | literal | 1 / 1 |
+| `ðt > st` | literal | 3 / 2 |
+| `θk > sk` | literal | 3 / 3 |
+| `θs > ss` | literal | 1 / 1 |
+| `θt > st` | literal | 1 / 1 |
+
+### [voiced stop plus [h] became voiceless spirant](https://eldamo.org/content/words/word-259168593.html)
+
+- порядок 03500
+- общая формула `{bdg}h > {fθx}ø`
+
+| подформула | вид | примеры |
+|---|---|---|
+| `bh > f` | literal | — |
+| `dh > θ` | literal | 1 / 1 |
+| `gh > x` | literal | — |
+
+### [voiceless stops spirantalized after many consonants](https://eldamo.org/content/words/word-473550387.html)
+
+- порядок 03600
+- общая формула `{lrmnŋ}{ptk}|{ptk}{fθx}|ɣt > {lrmnŋ]}{fθx}|{fθx}{fθx}|ɣð`
+- вариант правила [voiceless stops aspirated after consonants except [s]](https://eldamo.org/content/words/word-1775884631.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `lp > lf` | literal | 2 / 2 |
+| `lt > lθ` | literal | 6 / 6 |
+| `lk > lx` | literal | 4 / 4 |
+| `rp > rf` | literal | — |
+| `rt > rθ` | literal | 1 / 1 |
+| `rk > rx` | literal | 1 / 1 |
+| `mp > mf` | literal | — |
+| `nt > nθ` | literal | 11 / 11 |
+| `ŋk > ŋx` | literal | 1 / 1 |
+| `pp > ff` | literal | — |
+| `pt > pθ` | literal | 2 / 2 |
+| `-pt > -fθ` | literal | 1 / 1 |
+| `tt > θθ` | literal | 7 / 7 |
+| `kt > kθ` | literal | 4 / 3 |
+| `-kt > -xθ` | literal | 4 / 1 |
+| `xt > xθ` | literal | 4 / 4 |
+| `kk > xx` | literal | 3 / 3 |
+| `ɣt > ɣθ` | literal | 1 / 1 |
+| `ɣt > ɣð` | literal | 1 / 1 |
+| `gð > ɣð` | literal | — |
+| `kð > ɣð` | literal | 1 / 1 |
+| `vt > vθ` | literal | 1 / 1 |
+
+### [[ts] became [s] after long vowel](https://eldamo.org/content/words/word-1209928251.html)
+
+- порядок 03700
+- общая формула `VVts > VVs`
+- раньше, чем: [p], [t], [k] usually spirantalized with following [s]
+- вариант правила [[p], [t], [k] spirantalized before [s]](https://eldamo.org/content/words/word-1682758275.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `VVts > VVs` | contextual | 1 / 0 |
+| `wets > wess` | literal | 1 / 0 |
+
+### [[p], [t], [k] usually spirantalized with following [s]](https://eldamo.org/content/words/word-1497090471.html)
+
+- порядок 03800
+- общая формула `{ptk}s > {fθx}ø`
+- позже, чем: [ts] became [s] after long vowel
+- вариант правила [[p], [t], [k] spirantalized before [s]](https://eldamo.org/content/words/word-1682758275.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ps > f` | literal | — |
+| `ts > θ` | literal | 1 / 1 |
+| `ks > x` | literal | 1 / 0 |
+| `ks > xs` | literal | — |
+
+### [[x], [ɣ] sometimes became [i]](https://eldamo.org/content/words/word-272028599.html)
+
+- порядок 03900
+- общая формула `{xɣ} > i`
+- раньше, чем: final voiceless spirants restopped after consonants
+- вариант правила [[x], [ɸ] vocalized between a vowel and [s], [θ]](https://eldamo.org/content/words/word-297940333.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `axC > aiC` | contextual | 1 / 1 |
+| `exC > eiC` | contextual | 8 / 8 |
+| `oxC > oiC` | contextual | 3 / 3 |
+| `-ax > -ai` | literal | 1 / 1 |
+| `aɣC > aiC` | contextual | 4 / 4 |
+| `eɣC > eiC` | contextual | 1 / 1 |
+| `uɣC > uiC` | contextual | 1 / 1 |
+| `-aɣ > -ai` | literal | 1 / 1 |
+| `-uɣ > -ui` | literal | 1 / 1 |
+
+### [[oi] became [ui]](https://eldamo.org/content/words/word-1684892745.html)
+
+- порядок 04000
+- общая формула `oi > ui`
+- позже, чем: [ei], [ou] became [ē], [ō]
+- вариант правила [2638900527](https://eldamo.org/content/words/word-2638900527.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `oi > ui` | literal | 9 / 9 |
+
+### [[f], [v] sometimes became [u]](https://eldamo.org/content/words/word-3096214821.html)
+
+- порядок 04100
+- общая формула `{fv} > u`
+- раньше, чем: final voiceless spirants restopped after consonants
+- вариант правила [[x], [ɸ] vocalized between a vowel and [s], [θ]](https://eldamo.org/content/words/word-297940333.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `afθ > auθ` | literal | 1 / 1 |
+| `avk > auk` | literal | 2 / 2 |
+| `avm > aum` | literal | 1 / 0 |
+| `avs > aus` | literal | 4 / 4 |
+| `avθ > auθ` | literal | 1 / 1 |
+
+### [later [ei] became [ai]](https://eldamo.org/content/words/word-3272158349.html)
+
+- порядок 04200
+- вариант правила [[ei] (sometimes) became [ai] in final syllables](https://eldamo.org/content/words/word-3775120039.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ei > ai` | literal | 9 / 9 |
+
+### [final voiceless spirants restopped after consonants](https://eldamo.org/content/words/word-3441987869.html)
+
+- порядок 04300
+- общая формула `-C{fθx} > -C{ptk}`
+- раньше, чем: [ð] became [θ] finally or before a consonant
+- позже, чем: [f], [v] sometimes became [u]; [x], [ɣ] sometimes became [i]
+- вариант правила [final [mf], [nθ], [ŋx], [lθ] became [mp], [nt], [ŋk], [lt]](https://eldamo.org/content/words/word-1735735423.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-Cf > -Cp` | contextual | — |
+| `-Cθ > -Ct` | contextual | 14 / 14 |
+| `-Cx > -Ck` | contextual | 4 / 3 |
+| `-Cf > -Cf` | contextual | — |
+| `-Cθ > -Cθ` | contextual | — |
+| `-Cx > -Cx` | contextual | 1 / 0 |
+
+### [[nð] became [nd]](https://eldamo.org/content/words/word-738701133.html)
+
+- порядок 04400
+
+| подформула | вид | примеры |
+|---|---|---|
+| `nð > nd` | literal | 6 / 6 |
+
+### [[nx] became [nθ]](https://eldamo.org/content/words/word-2274919337.html)
+
+- порядок 04500
+
+| подформула | вид | примеры |
+|---|---|---|
+| `nx > nθ` | literal | 1 / 1 |
+
+### [[mβ] became [mb]](https://eldamo.org/content/words/word-1610556241.html)
+
+- порядок 04600
+- раньше, чем: [nd] generally became [nn], while [mb] became [m] finally
+- вариант правила [[mb], [nd] became [mm], [nn]](https://eldamo.org/content/words/word-1317326183.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `mβ > mb` | literal | 1 / 1 |
+
+### [[nd] generally became [nn], while [mb] became [m] finally](https://eldamo.org/content/words/word-2845062117.html)
+
+- порядок 04700
+- общая формула `n{dð}|-mb > nn|m`
+- позже, чем: [mβ] became [mb]
+- вариант правила [[mb], [nd] became [mm], [nn]](https://eldamo.org/content/words/word-1317326183.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `nd > nn` | literal | 12 / 11 |
+| `nd > nd` | identity | 1 / 0 |
+| `-mb > -m` | literal | 3 / 3 |
+
+### [[ld] became [ll]](https://eldamo.org/content/words/word-931729579.html)
+
+- порядок 04800
+- раньше, чем: [ll] became [l] lengthening preceding stressed vowel; [lð] became [ld] medially, [l] finally
+- вариант правила [[lð] became [ll] or [lt]](https://eldamo.org/content/words/word-3316520435.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ld > ll` | literal | 7 / 7 |
+
+### [[ll] became [l] lengthening preceding stressed vowel](https://eldamo.org/content/words/word-711485671.html)
+
+- порядок 04900
+- общая формула `ll|V́ll > l|V̄l`
+- позже, чем: [ē], [ō] became [ī], [ū]; [ld] became [ll]; [ā] became [ō]
+- вариант правила [final [ll], [nn], [ss] shortened in polysyllables](https://eldamo.org/content/words/word-2559778861.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ll > l` | literal | 1 / 1 |
+| `áll > āl` | literal | 3 / 3 |
+| `óll > ōl` | literal | 1 / 1 |
+
+### [final [nn], [ss] shortened in polysyllables](https://eldamo.org/content/words/word-2881686067.html)
+
+- порядок 05000
+- общая формула `-SS{nn|ss} > -SS{n|s}`
+- вариант правила [final [ll], [nn], [ss] shortened in polysyllables](https://eldamo.org/content/words/word-2559778861.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-SSnn > -SSn` | contextual | 3 / 2 |
+| `-SSss > -SSs` | contextual | 1 / 1 |
+
+### [[a], [u] became [o] in final unstressed closed syllable](https://eldamo.org/content/words/word-1152095659.html)
+
+- порядок 05100
+- общая формула `-ˌ{au}C > -oC`
+- вариант правила [short [u] often became [o]](https://eldamo.org/content/words/word-1228910977.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-ˌaC > -oC` | contextual | 7 / 6 |
+| `-ˌuC > -oC` | contextual | 4 / 3 |
+
+### [[lð] became [ld] medially, [l] finally](https://eldamo.org/content/words/word-3105939935.html)
+
+- порядок 05200
+- общая формула `lð|-lð > ld|-l`
+- позже, чем: [ld] became [ll]
+- вариант правила [[lð] became [ll] or [lt]](https://eldamo.org/content/words/word-3316520435.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `lð > ld` | literal | 1 / 1 |
+| `-lð > -l` | literal | 2 / 2 |
+| `rð > rd` | literal | — |
+
+### [[tl], [dl], [ðl] became [kl], [gl]](https://eldamo.org/content/words/word-3113057765.html)
+
+- порядок 05300
+- общая формула `tl|{dð}l > kl|gl`
+- раньше, чем: voiceless stops mostly voiced after vowels
+- позже, чем: initial [n], [m] became [d], [b] before [l], [r]
+- вариант правила [[tl], [dl] became [kl], [gl]](https://eldamo.org/content/words/word-2165755085.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `dl > gl` | literal | 2 / 2 |
+| `ðl > gl` | literal | 3 / 2 |
+| `tl > kl` | literal | 3 / 3 |
+
+### [voiced stops became spirants after vowels](https://eldamo.org/content/words/word-3492748191.html)
+
+- порядок 05400
+- общая формула `V{bdg} > V{vðɣ}`
+- вариант правила [1901523613](https://eldamo.org/content/words/word-1901523613.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `Vb > Vv` | contextual | — |
+| `Vd > Vð` | contextual | 1 / 1 |
+| `Vg > Vɣ` | contextual | 2 / 2 |
+
+### [voiceless stops mostly voiced after vowels](https://eldamo.org/content/words/word-1463657717.html)
+
+- порядок 05500
+- общая формула `V{ptk}|{pk}θ > V{bdg}|{pk}θ`
+- позже, чем: [tl], [dl], [ðl] became [kl], [gl]
+- вариант правила [3477429555](https://eldamo.org/content/words/word-3477429555.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `Vp > Vb` | contextual | 9 / 9 |
+| `Vt > Vd` | contextual | 17 / 16 |
+| `Vk > Vg` | contextual | 15 / 14 |
+| `pθ > pθ` | identity | 2 / 0 |
+| `kθ > kθ` | identity | 3 / 0 |
+
+### [intervocalic [x], [ɣ] vanished](https://eldamo.org/content/words/word-4134163671.html)
+
+- порядок 05600
+- общая формула `V{xɣ}V > VøV`
+- вариант правила [[ɣ] otherwise vanished](https://eldamo.org/content/words/word-1058893297.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `VxV > VøV` | contextual | 1 / 1 |
+| `VɣV > VøV` | contextual | 4 / 3 |
+
+### [long voiceless spirants shortened](https://eldamo.org/content/words/word-4228274355.html)
+
+- порядок 05700
+- общая формула `ff|θθ|xx > f|θ|x`
+- вариант правила [long voiceless spirants shortened](https://eldamo.org/content/words/word-2631001607.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ff > f` | literal | — |
+| `θθ > θ` | literal | 8 / 8 |
+| `xx > x` | literal | 3 / 3 |
+
+### [[s] became [θ] before [l], [r], [w]](https://eldamo.org/content/words/word-3455596725.html)
+
+- порядок 05800
+- общая формула `s{rlw} > θ{rlw}`
+- раньше, чем: initial [θ] sometimes became [f] before [l], [r], [w]
+- вариант правила [medial [s] became [θ] before [l], [r]](https://eldamo.org/content/words/word-2266682021.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `sl > θl` | literal | 2 / 2 |
+| `sr > θr` | literal | — |
+| `sw > θw` | literal | — |
+| `tl > θl` | literal | 1 / 1 |
+
+### [initial [θ] sometimes became [f] before [l], [r], [w]](https://eldamo.org/content/words/word-4288301617.html)
+
+- порядок 05900
+- общая формула `θ{rlw}- > f{rlw}-`
+- позже, чем: [s] became [θ] before [l], [r], [w]
+- вариант правила [initial [θl] sometimes became [fl]](https://eldamo.org/content/words/word-2640707457.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `θl- > fl-` | literal | — |
+| `θr- > fr-` | literal | — |
+| `θw- > fw-` | literal | — |
+
+### [[sβ] became [θw]](https://eldamo.org/content/words/word-963622237.html)
+
+- порядок 06000
+
+| подформула | вид | примеры |
+|---|---|---|
+| `sβ > θw` | literal | — |
+
+### [[sm], [sf] became [f]](https://eldamo.org/content/words/word-1586615947.html)
+
+- порядок 06100
+- общая формула `sm|sf > f`
+
+| подформула | вид | примеры |
+|---|---|---|
+| `sm > f` | literal | 2 / 2 |
+| `sf > f` | literal | 1 / 1 |
+
+### [final [θ] sometimes became [s]](https://eldamo.org/content/words/word-49608021.html)
+
+- порядок 06200
+- раньше, чем: [ð] became [θ] finally or before a consonant
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-θ > -s` | literal | 1 / 1 |
+
+### [[ð] became [θ] finally or before a consonant](https://eldamo.org/content/words/word-3786037189.html)
+
+- порядок 06300
+- общая формула `-ð|ðC > -θ|θC`
+- позже, чем: final voiceless spirants restopped after consonants; final [θ] sometimes became [s]
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-ð > -θ` | literal | 7 / 7 |
+| `ðC > θC` | contextual | 1 / 1 |
+
+### [initial nasals vanished before stops](https://eldamo.org/content/words/word-2825088365.html)
+
+- порядок 06400
+- общая формула `{mb|nd|ŋg}- > {bdg}-`
+- вариант правила [initial nasals vanished before stops](https://eldamo.org/content/words/word-956128961.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `mb- > b-` | literal | 7 / 7 |
+| `nd- > d-` | literal | 14 / 14 |
+| `ŋg- > g-` | literal | 4 / 4 |
+
+### [initial [l], [r] sometimes strengthened to [gl], [gr]](https://eldamo.org/content/words/word-3606177509.html)
+
+- порядок 06500
+- общая формула `{lr}- > g{lr}-`
+
+| подформула | вид | примеры |
+|---|---|---|
+| `l- > gl-` | literal | 2 / 2 |
+| `r- > gr-` | literal | — |
+
+### [final [nw], [lw], [tw] became [m], [lb], [du]](https://eldamo.org/content/words/word-1704662033.html)
+
+- порядок 06600
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-lw > -lb` | literal | 2 / 2 |
+
+### [final [nw] became [m]](https://eldamo.org/content/words/word-4173802635.html)
+
+- порядок 06700
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-nw > -m` | literal | 4 / 4 |
+
+### [final [w] usually became [u]](https://eldamo.org/content/words/word-1139075853.html)
+
+- порядок 06800
+- вариант правила [final [w] usually became [u]](https://eldamo.org/content/words/word-1104843109.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `-Cw > -Cu` | contextual | 1 / 1 |
+
+### [[ae] became [ai]](https://eldamo.org/content/words/word-3505973729.html)
+
+- порядок 06900
+- вариант правила [[ai] became [oe] or [ae]](https://eldamo.org/content/words/word-3173115217.html)
+
+| подформула | вид | примеры |
+|---|---|---|
+| `ae > ai` | literal | 2 / 2 |
+
 ## Цепочки с оценками A и B
 
 ### A — засвидетельствована в одной деривации
 
+- рання. `tt → θθ → θ` (G., G.) — 7 дерив.
+- рання. `nð → nd → nn` (G., G.) — 4 дерив.
+- рання. `ŋ → ŋg → g` (G., G.) — 4 дерив.
+- рання. `kk → xx → x` (G., G.) — 3 дерив.
+- рання. `sj → x → h` (G., G.) — 3 дерив.
+- рання. `ld → ll → l` (G., G.) — 1 дерив.
+- рання. `mβ → mb → m` (G., G.) — 1 дерив.
+- рання. `nl → dl → gl` (G., G.) — 1 дерив.
+- рання. `θʲ → x → h` (G., G.) — 1 дерив.
 - поздн. `ā → ǭ → au` (OS., S.) — 65 дерив.
 - поздн. `pʰ → ɸ → f` (OS., S.) — 49 дерив.
 - поздн. `ǭ → au → o` (S., S.) — 34 дерив.
@@ -3715,6 +4654,23 @@
 
 ### B — шаги засвидетельствованы, порядок подтверждён
 
+- рання. `dh → θ → s` (G., G.)
+- рання. `gt → kt → kθ` (ᴱ✶, G.)
+- рання. `gt → kt → xθ` (ᴱ✶, G.)
+- рання. `ll → l → gl` (G., G.)
+- рання. `md → nd → d` (ᴱ✶, G.)
+- рання. `md → nd → nn` (ᴱ✶, G.)
+- рання. `mt → nt → nθ` (ᴱ✶, G.)
+- рання. `mβ → mb → b` (G., G.)
+- рання. `nb → mb → b` (ᴱ✶, G.)
+- рання. `nb → mb → m` (ᴱ✶, G.)
+- рання. `nk → ŋk → ŋx` (ᴱ✶, G.)
+- рання. `nð → nd → d` (G., G.)
+- рання. `ts → θ → s` (G., G.)
+- рання. `ī → ai → ē` (G., G.)
+- рання. `θθ → θ → s` (G., G.)
+- рання. `ld → ll → l → gl` (G., G., G.)
+- рання. `tt → θθ → θ → s` (G., G., G.)
 - поздн. `awa → au → o` (S., S.)
 - поздн. `bm → mb → b` (✶, S.)
 - поздн. `bm → mb → mm` (✶, S.)

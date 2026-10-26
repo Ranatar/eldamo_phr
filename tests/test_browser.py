@@ -96,11 +96,11 @@ class Browser(unittest.TestCase):
     def test_malformed_hash_and_cluster_in_hash(self):
         page = self.page(self.atlas + '#%')
         self.assertTrue(page.is_visible('#landing'))
-        page.evaluate("location.hash = 'sindarin?from=mb'")
+        page.evaluate("location.hash = 'sindarin?from=nt'")
         page.wait_for_function("document.getElementById('branch-select').value === 'sindarin'")
         box = '.picker[data-slot=from]'
         self.assertEqual(page.get_attribute(box + ' .mode-switch button[data-mode=cluster]', 'aria-pressed'), 'true')
-        self.assertEqual(page.input_value('#from-cluster'), 'mb')
+        self.assertEqual(page.input_value('#from-cluster'), 'nt')
 
     def test_narrow_screen(self):
         page = self.page(self.atlas + '#quenya', width=375)
@@ -110,7 +110,10 @@ class Browser(unittest.TestCase):
         # app/wordform.js repeats shared/ (interpreter, sequencer, junctions, compounds, backform)
         from shared.parity import vectors
         V = vectors(branches())
+        recon = V.pop('__recon__')[::3]        # a third of the reconstruction calls: each takes a while
         page = self.page(self.atlas + '#quenya')
+        bad = page.evaluate("cases => WF.parityRecon({quenya: WFUI.engine('quenya'), sindarin: WFUI.engine('sindarin')}, cases)", recon)
+        self.assertEqual(bad, [], 'reconstruction')
         for b, v in V.items():
             bad = page.evaluate('([b, v]) => WF.parity(WFUI.engine(b), v)', [b, v])
             self.assertEqual(bad, [], b)
@@ -142,6 +145,30 @@ class Browser(unittest.TestCase):
         page.click('#wf-go')
         self.assertIn('cénima', page.inner_text('#wf-output .wf-variant.main'))
         self.assertIn('Засвидетельствованные слова с этим аффиксом', page.inner_text('#wf-output'))
+
+    def test_reconstruction_panel(self):
+        page = self.page(self.atlas + '#quenya')
+        page.fill('#rc-q', 'lindë')
+        page.click('#rc-r button[data-id="403686503"]')
+        self.assertEqual(page.input_value('#rc-src'), 'late|2')
+        page.select_option('#rc-dst', 'late|0')
+        page.click('#rc-go')
+        self.assertIn('lindē', page.inner_text('#rc-output .wf-variant.main'))
+        # a cognate through the common primitive form
+        page.select_option('#rc-dst-branch', 'sindarin')
+        page.select_option('#rc-dst', 'late|3')
+        page.click('#rc-go')
+        self.assertIn('через праформу', page.inner_text('#rc-output'))
+        # the middle conception: Eldamo's own link comes first
+        page.select_option('#rc-dst-branch', 'quenya')
+        page.select_option('#rc-dst', 'middle|2')
+        page.click('#rc-go')
+        self.assertIn('связь Eldamo', page.inner_text('#rc-output .wf-variant.main'))
+
+    def test_early_conception(self):
+        page = self.page(self.atlas + '#quenya?era=early')
+        self.assertEqual(page.input_value('#era-select'), 'early')
+        self.assertIn('Early Quenya', page.inner_text('#branch-path'))
 
     def test_corpus_browser(self):
         page = self.page(self.corpus)

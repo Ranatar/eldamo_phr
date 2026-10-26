@@ -1,14 +1,20 @@
 {
  "branch": "sindarin",
  "eldamo_version": "0.8.13",
- "phonemes": 61,
- "rules": 303,
- "rules_with_order": 263,
+ "phonemes": 87,
+ "rules": 384,
+ "rules_with_order": 338,
  "excluded_rules": [
   {
    "rule": "794129503",
    "lang": "p",
    "name": "[ɣ] became [h] before voiceless consonants",
+   "reason": "deleted by Tolkien (mark \"-\")"
+  },
+  {
+   "rule": "3137978311",
+   "lang": "g",
+   "name": "[ǣ] became [ē]",
    "reason": "deleted by Tolkien (mark \"-\")"
   },
   {
@@ -24,54 +30,54 @@
    "reason": "deleted by Tolkien (mark \"-\")"
   }
  ],
- "pairs": 868,
+ "pairs": 1098,
  "pair_kinds": {
-  "contextual": 268,
-  "identity": 17,
-  "literal": 574,
-  "loss": 9
+  "contextual": 321,
+  "identity": 20,
+  "literal": 747,
+  "loss": 10
  },
- "pairs_with_examples": 664,
- "derivations": 2847,
- "deleted_derivations": 186,
- "branch_steps": 8379,
+ "pairs_with_examples": 853,
+ "derivations": 3382,
+ "deleted_derivations": 207,
+ "branch_steps": 9407,
  "step_status": {
   "deleted_rule": 11,
-  "identity": 114,
-  "mismatch": 134,
-  "no_match": 202,
-  "reproduced": 7696,
-  "reproduced_partial": 18,
-  "unknown_rule": 98,
-  "unmatched_formula": 10,
-  "unsupported": 96
+  "identity": 121,
+  "mismatch": 151,
+  "no_match": 261,
+  "reproduced": 8598,
+  "reproduced_partial": 24,
+  "unknown_rule": 110,
+  "unmatched_formula": 32,
+  "unsupported": 99
  },
- "reproduction_rate": 0.947,
- "edges": 575,
- "conditional_edges": 98,
- "edges_with_examples": 419,
- "contextual_pairs": 293,
+ "reproduction_rate": 0.944,
+ "edges": 749,
+ "conditional_edges": 148,
+ "edges_with_examples": 559,
+ "contextual_pairs": 349,
  "chains": {
-  "chains": 332,
-  "rejected_by_chronology": 101,
+  "chains": 368,
+  "rejected_by_chronology": 127,
   "grades": {
-   "A": 123,
-   "B": 81,
+   "A": 132,
+   "B": 98,
    "C": 1,
-   "D": 127
+   "D": 137
   }
  },
  "lexicon": {
-  "entries": 9773,
-  "roots": 2596,
-  "derivations": 1776,
-  "stages": 1776,
-  "elements": 2360,
-  "parents": 1337,
-  "stems": 12,
-  "compounds_with_derivations": 150,
+  "entries": 14706,
+  "roots": 3627,
+  "derivations": 2083,
+  "stages": 2083,
+  "elements": 2610,
+  "parents": 2350,
+  "compounds_with_derivations": 155,
+  "stems": 23,
   "neo": 1749,
-  "homonym_forms": 231
+  "homonym_forms": 368
  },
  "junction_cases": 365,
  "affix_cases": 182,
@@ -82,6 +88,8 @@
   "D": "есть шаг без засвидетельствованных примеров"
  },
  "unmatched_formulas": [
+  "g: None > !",
+  "g: nj > n",
   "maq: -CC > -C",
   "mp: None > !",
   "n: None > !",

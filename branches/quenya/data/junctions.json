@@ -673,6 +673,34 @@
    "skey": null
   },
   {
+   "word": "3312486463",
+   "form": "andanéya",
+   "first": "anda",
+   "second": "néya",
+   "a": "anda",
+   "b": "nēja",
+   "c": "andanēja",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "n"
+   ],
+   "ekey": [
+    "j",
+    "a"
+   ],
+   "skey": "earlier"
+  },
+  {
    "word": "3669226417",
    "form": "andatehta",
    "first": "anda",
@@ -2325,6 +2353,34 @@
    "skey": null
   },
   {
+   "word": "4071766019",
+   "form": "Elda-lambë",
+   "first": "Elda",
+   "second": "lambë",
+   "a": "elda",
+   "b": "lambe",
+   "c": "eldalambe",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "l"
+   ],
+   "ekey": [
+    "b",
+    "e"
+   ],
+   "skey": null
+  },
+  {
    "word": "2436216133",
    "form": "Eldacar",
    "first": "Elda",
@@ -2407,6 +2463,34 @@
     "e"
    ],
    "skey": null
+  },
+  {
+   "word": "3465788703",
+   "form": "Eldalótë",
+   "first": "Elda",
+   "second": "lótë",
+   "a": "elda",
+   "b": "lōte",
+   "c": "eldalōte",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "l"
+   ],
+   "ekey": [
+    "t",
+    "e"
+   ],
+   "skey": "earlier"
   },
   {
    "word": "3798316169",
@@ -2519,6 +2603,34 @@
     "e"
    ],
    "skey": "earlier"
+  },
+  {
+   "word": "2558811603",
+   "form": "Eldavehtë",
+   "first": "Elda",
+   "second": "vehtë",
+   "a": "elda",
+   "b": "vexte",
+   "c": "eldavexte",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "v"
+   ],
+   "ekey": [
+    "t",
+    "e"
+   ],
+   "skey": null
   },
   {
    "word": "298149495",
@@ -2657,6 +2769,34 @@
    "ekey": [
     "i",
     "r"
+   ],
+   "skey": null
+  },
+  {
+   "word": "3892061093",
+   "form": "Elentirmo",
+   "first": "elen",
+   "second": "tirmo",
+   "a": "elen",
+   "b": "tirmo",
+   "c": "elentirmo",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "n",
+    "t"
+   ],
+   "ekey": [
+    "m",
+    "o"
    ],
    "skey": null
   },
@@ -3221,6 +3361,34 @@
    "skey": "earlier"
   },
   {
+   "word": "2196662151",
+   "form": "Erukyermë",
+   "first": "Eru",
+   "second": "kyermë",
+   "a": "eru",
+   "b": "kjerme",
+   "c": "erukjerme",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "u",
+    "k"
+   ],
+   "ekey": [
+    "m",
+    "e"
+   ],
+   "skey": null
+  },
+  {
    "word": "3785995163",
    "form": "Erulaitalë",
    "first": "Eru",
@@ -3389,6 +3557,62 @@
    "skey": null
   },
   {
+   "word": "920120461",
+   "form": "estat-",
+   "first": "et",
+   "second": "sat-",
+   "a": "et",
+   "b": "sat",
+   "c": "estat",
+   "junction": [
+    0,
+    1,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "t",
+    "s"
+   ],
+   "ekey": [
+    "a",
+    "t"
+   ],
+   "skey": null
+  },
+  {
+   "word": "3903335687",
+   "form": "ethenta-",
+   "first": "et",
+   "second": "henta-",
+   "a": "et",
+   "b": "henta",
+   "c": "eθenta",
+   "junction": [
+    1,
+    1,
+    "θ"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "t",
+    "h"
+   ],
+   "ekey": [
+    "t",
+    "a"
+   ],
+   "skey": null
+  },
+  {
    "word": "1515458015",
    "form": "etta",
    "first": "et",
@@ -3413,6 +3637,34 @@
    "ekey": [
     "t",
     "a"
+   ],
+   "skey": null
+  },
+  {
+   "word": "2747110953",
+   "form": "Etya-noldorin",
+   "first": "etya",
+   "second": "Noldorin",
+   "a": "etja",
+   "b": "noldorin",
+   "c": "etjanoldorin",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "n"
+   ],
+   "ekey": [
+    "i",
+    "n"
    ],
    "skey": null
   },
@@ -3609,6 +3861,34 @@
    "ekey": [
     "d",
     "o"
+   ],
+   "skey": null
+  },
+  {
+   "word": "3387166105",
+   "form": "fantercenya",
+   "first": "fana",
+   "second": "tercenya",
+   "a": "fana",
+   "b": "terkenja",
+   "c": "fanterkenja",
+   "junction": [
+    1,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "t"
+   ],
+   "ekey": [
+    "j",
+    "a"
    ],
    "skey": null
   },
@@ -3889,6 +4169,34 @@
    "ekey": [
     "a",
     "n"
+   ],
+   "skey": null
+  },
+  {
+   "word": "2953723553",
+   "form": "hanquenta",
+   "first": "han",
+   "second": "quenta",
+   "a": "han",
+   "b": "kwenta",
+   "c": "haŋkwenta",
+   "junction": [
+    1,
+    0,
+    "ŋ"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "n",
+    "k"
+   ],
+   "ekey": [
+    "t",
+    "a"
    ],
    "skey": null
   },
@@ -4901,6 +5209,34 @@
    "skey": "earlier"
   },
   {
+   "word": "794709445",
+   "form": "lasselanta",
+   "first": "lassë",
+   "second": "lanta",
+   "a": "lasse",
+   "b": "lanta",
+   "c": "lasselanta",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "e",
+    "l"
+   ],
+   "ekey": [
+    "t",
+    "a"
+   ],
+   "skey": null
+  },
+  {
    "word": "3343907183",
    "form": "Lassemista",
    "first": "lassë",
@@ -5009,6 +5345,62 @@
    "ekey": [
     "d",
     "e"
+   ],
+   "skey": null
+  },
+  {
+   "word": "3123790563",
+   "form": "Laurenandë",
+   "first": "laurë",
+   "second": "nandë",
+   "a": "laure",
+   "b": "nande",
+   "c": "laurenande",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "e",
+    "n"
+   ],
+   "ekey": [
+    "d",
+    "e"
+   ],
+   "skey": null
+  },
+  {
+   "word": "2584680719",
+   "form": "leptafinya",
+   "first": "lepta",
+   "second": "finya",
+   "a": "lepta",
+   "b": "finja",
+   "c": "leptafinja",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "f"
+   ],
+   "ekey": [
+    "j",
+    "a"
    ],
    "skey": null
   },
@@ -5235,6 +5627,34 @@
     "ā"
    ],
    "skey": "last"
+  },
+  {
+   "word": "2706118485",
+   "form": "Lámasampanë",
+   "first": "láma",
+   "second": "sampanë",
+   "a": "lāma",
+   "b": "sampane",
+   "c": "lāmasampane",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "s"
+   ],
+   "ekey": [
+    "n",
+    "e"
+   ],
+   "skey": null
   },
   {
    "word": "604204537",
@@ -5713,6 +6133,34 @@
    "skey": null
   },
   {
+   "word": "127488369",
+   "form": "mentië",
+   "first": "men-",
+   "second": "tië",
+   "a": "men",
+   "b": "tie",
+   "c": "mentie",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "n",
+    "t"
+   ],
+   "ekey": [
+    "i",
+    "e"
+   ],
+   "skey": null
+  },
+  {
    "word": "2570791209",
    "form": "Mettarë",
    "first": "metta",
@@ -5881,6 +6329,34 @@
    "skey": null
   },
   {
+   "word": "3951012883",
+   "form": "minasurië",
+   "first": "mina",
+   "second": "þurië",
+   "a": "mina",
+   "b": "θurie",
+   "c": "minasurie",
+   "junction": [
+    0,
+    1,
+    "s"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "θ"
+   ],
+   "ekey": [
+    "i",
+    "e"
+   ],
+   "skey": null
+  },
+  {
    "word": "3945644511",
    "form": "Minnónar",
    "first": "minya",
@@ -5960,6 +6436,34 @@
    ],
    "ekey": [
     "t",
+    "a"
+   ],
+   "skey": null
+  },
+  {
+   "word": "3331492993",
+   "form": "Minyarussa",
+   "first": "minya",
+   "second": "russa",
+   "a": "minja",
+   "b": "russa",
+   "c": "minjarussa",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "r"
+   ],
+   "ekey": [
+    "s",
     "a"
    ],
    "skey": null
@@ -6128,6 +6632,34 @@
    ],
    "ekey": [
     "d",
+    "e"
+   ],
+   "skey": null
+  },
+  {
+   "word": "1772662039",
+   "form": "málimë",
+   "first": "má",
+   "second": "limë",
+   "a": "mā",
+   "b": "lime",
+   "c": "mālime",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "ā",
+    "l"
+   ],
+   "ekey": [
+    "m",
     "e"
    ],
    "skey": null
@@ -6412,6 +6944,34 @@
    "skey": null
   },
   {
+   "word": "98612719",
+   "form": "Naucalië",
+   "first": "nauca",
+   "second": "lië",
+   "a": "nauka",
+   "b": "lie",
+   "c": "naukalie",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "l"
+   ],
+   "ekey": [
+    "i",
+    "e"
+   ],
+   "skey": null
+  },
+  {
    "word": "1908674521",
    "form": "ne(re)sta",
    "first": "nertë",
@@ -6664,6 +7224,34 @@
    "skey": null
   },
   {
+   "word": "1121838047",
+   "form": "Noldolantë",
+   "first": "Noldo",
+   "second": "lantë",
+   "a": "noldo",
+   "b": "lante",
+   "c": "noldolante",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "o",
+    "l"
+   ],
+   "ekey": [
+    "t",
+    "e"
+   ],
+   "skey": null
+  },
+  {
    "word": "3561596031",
    "form": "Noldóran",
    "first": "Noldo",
@@ -6743,6 +7331,34 @@
    ],
    "ekey": [
     "d",
+    "a"
+   ],
+   "skey": null
+  },
+  {
+   "word": "1226530577",
+   "form": "nuquerna",
+   "first": "nu",
+   "second": "querna",
+   "a": "nu",
+   "b": "kwerna",
+   "c": "nukwerna",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "u",
+    "k"
+   ],
+   "ekey": [
+    "n",
     "a"
    ],
    "skey": null
@@ -7532,6 +8148,34 @@
    "skey": null
   },
   {
+   "word": "2658215323",
+   "form": "ornemalin",
+   "first": "ornë",
+   "second": "malina",
+   "a": "orne",
+   "b": "malina",
+   "c": "ornemalin",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    1,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "e",
+    "m"
+   ],
+   "ekey": [
+    "n",
+    "a"
+   ],
+   "skey": null
+  },
+  {
    "word": "291607235",
    "form": "Orocarni",
    "first": "oro",
@@ -7812,6 +8456,34 @@
    "skey": null
   },
   {
+   "word": "3935682441",
+   "form": "parmahentië",
+   "first": "parma",
+   "second": "hentië",
+   "a": "parma",
+   "b": "hentie",
+   "c": "parmahentie",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "h"
+   ],
+   "ekey": [
+    "i",
+    "e"
+   ],
+   "skey": null
+  },
+  {
    "word": "1274220047",
    "form": "Parmaitë",
    "first": "parma",
@@ -7947,6 +8619,34 @@
    ],
    "ekey": [
     "r",
+    "o"
+   ],
+   "skey": null
+  },
+  {
+   "word": "2585427469",
+   "form": "Pitya-naucor",
+   "first": "pitya",
+   "second": "nauco",
+   "a": "pitja",
+   "b": "nauko",
+   "c": "pitjanaukor",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    "r"
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "n"
+   ],
+   "ekey": [
+    "k",
     "o"
    ],
    "skey": null
@@ -8484,6 +9184,34 @@
    "skey": null
   },
   {
+   "word": "475947119",
+   "form": "sincahonda",
+   "first": "sinca",
+   "second": "honda",
+   "a": "siŋka",
+   "b": "honda",
+   "c": "siŋkahonda",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "h"
+   ],
+   "ekey": [
+    "d",
+    "a"
+   ],
+   "skey": null
+  },
+  {
    "word": "1647513693",
    "form": "Sindacollo",
    "first": "sinda",
@@ -8559,6 +9287,34 @@
    "short": false,
    "jkey": [
     "i",
+    "k"
+   ],
+   "ekey": [
+    "l",
+    "o"
+   ],
+   "skey": null
+  },
+  {
+   "word": "2268640407",
+   "form": "Singollo",
+   "first": "sinda",
+   "second": "collo",
+   "a": "sinda",
+   "b": "kollo",
+   "c": "siŋgollo",
+   "junction": [
+    3,
+    1,
+    "ŋg"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
     "k"
    ],
    "ekey": [
@@ -8678,6 +9434,34 @@
     "n"
    ],
    "skey": "earlier"
+  },
+  {
+   "word": "1751226665",
+   "form": "Sundocarmë",
+   "first": "sundo",
+   "second": "carmë",
+   "a": "sundo",
+   "b": "karme",
+   "c": "sundokarme",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "o",
+    "k"
+   ],
+   "ekey": [
+    "m",
+    "e"
+   ],
+   "skey": null
   },
   {
    "word": "3645783073",
@@ -9324,6 +10108,34 @@
    "skey": "earlier"
   },
   {
+   "word": "2919755975",
+   "form": "Tauremorna",
+   "first": "taurë",
+   "second": "morna",
+   "a": "taure",
+   "b": "morna",
+   "c": "tauremorna",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "e",
+    "m"
+   ],
+   "ekey": [
+    "n",
+    "a"
+   ],
+   "skey": null
+  },
+  {
    "word": "1227645",
    "form": "Telemmaitë",
    "first": "telep-",
@@ -9408,6 +10220,34 @@
    "skey": "last"
   },
   {
+   "word": "1356351233",
+   "form": "Telufinwë",
+   "first": "telu",
+   "second": "Finwë",
+   "a": "telu",
+   "b": "finwe",
+   "c": "telufinwe",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "u",
+    "f"
+   ],
+   "ekey": [
+    "w",
+    "e"
+   ],
+   "skey": null
+  },
+  {
    "word": "2575898013",
    "form": "Telumehtar",
    "first": "telumë",
@@ -9432,6 +10272,34 @@
    "ekey": [
     "a",
     "r"
+   ],
+   "skey": null
+  },
+  {
+   "word": "1220852637",
+   "form": "tengwacilmë",
+   "first": "tengwa",
+   "second": "cilmë",
+   "a": "teŋgwa",
+   "b": "kilme",
+   "c": "teŋgwakilme",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "k"
+   ],
+   "ekey": [
+    "m",
+    "e"
    ],
    "skey": null
   },
@@ -9627,6 +10495,34 @@
    ],
    "ekey": [
     "t",
+    "a"
+   ],
+   "skey": null
+  },
+  {
+   "word": "518367003",
+   "form": "tornanga",
+   "first": "torna",
+   "second": "anga",
+   "a": "torna",
+   "b": "aŋga",
+   "c": "tornaŋga",
+   "junction": [
+    0,
+    1,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "a"
+   ],
+   "ekey": [
+    "g",
     "a"
    ],
    "skey": null
@@ -10052,6 +10948,34 @@
    "skey": null
   },
   {
+   "word": "4025193527",
+   "form": "Valacar",
+   "first": "Vala",
+   "second": "car-",
+   "a": "vala",
+   "b": "kar",
+   "c": "valakar",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "k"
+   ],
+   "ekey": [
+    "a",
+    "r"
+   ],
+   "skey": null
+  },
+  {
    "word": "2256994535",
    "form": "Valacirca",
    "first": "Vala",
@@ -10192,6 +11116,34 @@
    "skey": "earlier"
   },
   {
+   "word": "3421522419",
+   "form": "valwistë",
+   "first": "walmë",
+   "second": "wistë",
+   "a": "walme",
+   "b": "wiste",
+   "c": "valwiste",
+   "junction": [
+    2,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "e",
+    "w"
+   ],
+   "ekey": [
+    "t",
+    "e"
+   ],
+   "skey": null
+  },
+  {
    "word": "1166502843",
    "form": "Vardamir",
    "first": "Varda",
@@ -10300,6 +11252,34 @@
    "ekey": [
     "t",
     "a"
+   ],
+   "skey": null
+  },
+  {
+   "word": "2188832495",
+   "form": "Vinyalondë",
+   "first": "vinya",
+   "second": "londë",
+   "a": "vinja",
+   "b": "londe",
+   "c": "vinjalonde",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "l"
+   ],
+   "ekey": [
+    "d",
+    "e"
    ],
    "skey": null
   },
@@ -10472,6 +11452,34 @@
    "skey": "last"
   },
   {
+   "word": "974117705",
+   "form": "yulunefítë",
+   "first": "yul-",
+   "second": "nefítë",
+   "a": "jul",
+   "b": "nefīte",
+   "c": "julunefīte",
+   "junction": [
+    0,
+    0,
+    "u"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "l",
+    "n"
+   ],
+   "ekey": [
+    "t",
+    "e"
+   ],
+   "skey": "earlier"
+  },
+  {
    "word": "3649518499",
    "form": "yunquenta",
    "first": "yunquë",
@@ -10528,6 +11536,34 @@
    "skey": null
   },
   {
+   "word": "3217275813",
+   "form": "Yáranoldorin",
+   "first": "yára",
+   "second": "Noldorin",
+   "a": "jāra",
+   "b": "noldorin",
+   "c": "jāranoldorin",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "n"
+   ],
+   "ekey": [
+    "i",
+    "n"
+   ],
+   "skey": null
+  },
+  {
    "word": "794710155",
    "form": "yáviérë",
    "first": "yávië",
@@ -10554,6 +11590,34 @@
     "ē"
    ],
    "skey": "last"
+  },
+  {
+   "word": "1098548029",
+   "form": "Yénonótië",
+   "first": "yén",
+   "second": "onótië",
+   "a": "jēn",
+   "b": "onōtie",
+   "c": "jēnonōtie",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "n",
+    "o"
+   ],
+   "ekey": [
+    "i",
+    "e"
+   ],
+   "skey": "earlier"
   },
   {
    "word": "2392274047",
@@ -10750,6 +11814,34 @@
     "a"
    ],
    "skey": null
+  },
+  {
+   "word": "3930891423",
+   "form": "Ósanwe-centa",
+   "first": "ósanwë",
+   "second": "centa",
+   "a": "ōsanwe",
+   "b": "kenta",
+   "c": "ōsanwekenta",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "e",
+    "k"
+   ],
+   "ekey": [
+    "t",
+    "a"
+   ],
+   "skey": null
   }
  ],
  "junction": [
@@ -10840,7 +11932,7 @@
     "a",
     "n"
    ],
-   "total": 20,
+   "total": 24,
    "outcomes": [
     {
      "op": [
@@ -10848,13 +11940,13 @@
       0,
       ""
      ],
-     "count": 16,
+     "count": 20,
      "examples": [
       "Aicanáro",
+      "andanéya",
       "Apanónar",
       "Artanis",
-      "Artanáro",
-      "caistanótië"
+      "Artanáro"
      ]
     },
     {
@@ -10906,9 +11998,101 @@
   {
    "key": [
     "a",
+    "l"
+   ],
+   "total": 19,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 19,
+     "examples": [
+      "Aldalómë",
+      "Alqualondë",
+      "ambalotsë",
+      "Avallónë",
+      "Elda-lambë"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "a",
+    "k"
+   ],
+   "total": 19,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 15,
+     "examples": [
+      "apacen",
+      "Calacirya",
+      "Calaquendi",
+      "ciryaquen",
+      "Cormacolindor"
+     ]
+    },
+    {
+     "op": [
+      0,
+      2,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "Helcaraxë"
+     ]
+    },
+    {
+     "op": [
+      1,
+      1,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "Laiquendi"
+     ]
+    },
+    {
+     "op": [
+      3,
+      1,
+      "ŋg"
+     ],
+     "count": 1,
+     "examples": [
+      "Singollo"
+     ]
+    },
+    {
+     "op": [
+      2,
+      0,
+      "ŋ"
+     ],
+     "count": 1,
+     "examples": [
+      "Telpinquar"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "a",
     "a"
    ],
-   "total": 17,
+   "total": 18,
    "outcomes": [
     {
      "op": [
@@ -10916,7 +12100,7 @@
       1,
       ""
      ],
-     "count": 14,
+     "count": 15,
      "examples": [
       "Ambarto",
       "Ambaráto",
@@ -10963,90 +12147,9 @@
   {
    "key": [
     "a",
-    "k"
-   ],
-   "total": 16,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 13,
-     "examples": [
-      "apacen",
-      "Calacirya",
-      "Calaquendi",
-      "ciryaquen",
-      "Cormacolindor"
-     ]
-    },
-    {
-     "op": [
-      0,
-      2,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "Helcaraxë"
-     ]
-    },
-    {
-     "op": [
-      1,
-      1,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "Laiquendi"
-     ]
-    },
-    {
-     "op": [
-      2,
-      0,
-      "ŋ"
-     ],
-     "count": 1,
-     "examples": [
-      "Telpinquar"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "a",
-    "l"
-   ],
-   "total": 15,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 15,
-     "examples": [
-      "Aldalómë",
-      "Alqualondë",
-      "ambalotsë",
-      "Avallónë",
-      "Eldalië"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "a",
     "r"
    ],
-   "total": 12,
+   "total": 13,
    "outcomes": [
     {
      "op": [
@@ -11054,7 +12157,7 @@
       0,
       ""
      ],
-     "count": 11,
+     "count": 12,
      "examples": [
       "aldarembina",
       "Ambarussa",
@@ -11081,7 +12184,7 @@
     "e",
     "l"
    ],
-   "total": 12,
+   "total": 13,
    "outcomes": [
     {
      "op": [
@@ -11089,13 +12192,13 @@
       0,
       ""
      ],
-     "count": 10,
+     "count": 11,
      "examples": [
       "ambela",
       "lairelossë",
+      "lasselanta",
       "Laurelin",
-      "lómelindë",
-      "Mettelairë"
+      "lómelindë"
      ]
     },
     {
@@ -11127,7 +12230,7 @@
     "a",
     "t"
    ],
-   "total": 12,
+   "total": 13,
    "outcomes": [
     {
      "op": [
@@ -11147,23 +12250,24 @@
     {
      "op": [
       1,
+      0,
+      ""
+     ],
+     "count": 2,
+     "examples": [
+      "fantercenya",
+      "Hyarantar"
+     ]
+    },
+    {
+     "op": [
+      1,
       1,
       ""
      ],
      "count": 1,
      "examples": [
       "cantil"
-     ]
-    },
-    {
-     "op": [
-      1,
-      0,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "Hyarantar"
      ]
     }
    ]
@@ -11172,6 +12276,30 @@
    "key": [
     "n",
     "t"
+   ],
+   "total": 12,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 12,
+     "examples": [
+      "Arantar",
+      "Elentir",
+      "Elentirmo",
+      "Elentári",
+      "Hyarmentir"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "a",
+    "f"
    ],
    "total": 10,
    "outcomes": [
@@ -11182,30 +12310,6 @@
       ""
      ],
      "count": 10,
-     "examples": [
-      "Arantar",
-      "Elentir",
-      "Elentári",
-      "Hyarmentir",
-      "Kementári"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "a",
-    "f"
-   ],
-   "total": 9,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 9,
      "examples": [
       "Andafalassë",
       "Andafangar",
@@ -11283,6 +12387,52 @@
      "count": 1,
      "examples": [
       "ne(re)sta"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "e",
+    "m"
+   ],
+   "total": 8,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 6,
+     "examples": [
+      "Ingwemar",
+      "Lassemista",
+      "ornemalin",
+      "sanwementa",
+      "Tauremorna"
+     ]
+    },
+    {
+     "op": [
+      0,
+      2,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "Telumehtar"
+     ]
+    },
+    {
+     "op": [
+      1,
+      0,
+      "i"
+     ],
+     "count": 1,
+     "examples": [
+      "vinimetta"
      ]
     }
    ]
@@ -11370,7 +12520,7 @@
   {
    "key": [
     "e",
-    "m"
+    "k"
    ],
    "total": 6,
    "outcomes": [
@@ -11380,34 +12530,24 @@
       0,
       ""
      ],
-     "count": 4,
+     "count": 5,
      "examples": [
-      "Ingwemar",
-      "Lassemista",
-      "sanwementa",
-      "Tumbalemorna"
+      "Essecilmë",
+      "Findecáno",
+      "sanwecenda",
+      "vehtequentalë",
+      "Ósanwe-centa"
      ]
     },
     {
      "op": [
-      0,
       2,
+      1,
       ""
      ],
      "count": 1,
      "examples": [
-      "Telumehtar"
-     ]
-    },
-    {
-     "op": [
-      1,
-      0,
-      "i"
-     ],
-     "count": 1,
-     "examples": [
-      "vinimetta"
+      "niquessë"
      ]
     }
    ]
@@ -11432,6 +12572,30 @@
       "Moriquendi",
       "Sindicollo",
       "súriquessë"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "a",
+    "h"
+   ],
+   "total": 5,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 5,
+     "examples": [
+      "Artaher",
+      "Ciryaher",
+      "parmahenta-",
+      "parmahentië",
+      "sincahonda"
      ]
     }
    ]
@@ -11492,6 +12656,50 @@
   },
   {
    "key": [
+    "e",
+    "n"
+   ],
+   "total": 5,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 3,
+     "examples": [
+      "Lambenyáre",
+      "Laurenandë",
+      "mírenel"
+     ]
+    },
+    {
+     "op": [
+      1,
+      0,
+      "ē"
+     ],
+     "count": 1,
+     "examples": [
+      "Cuiviénen"
+     ]
+    },
+    {
+     "op": [
+      1,
+      1,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "Endórë"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
     "l",
     "m"
    ],
@@ -11520,40 +12728,6 @@
      "count": 1,
      "examples": [
       "mélamar"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "e",
-    "k"
-   ],
-   "total": 5,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 4,
-     "examples": [
-      "Essecilmë",
-      "Findecáno",
-      "sanwecenda",
-      "vehtequentalë"
-     ]
-    },
-    {
-     "op": [
-      2,
-      1,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "niquessë"
      ]
     }
    ]
@@ -11604,6 +12778,40 @@
   },
   {
    "key": [
+    "o",
+    "l"
+   ],
+   "total": 5,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 4,
+     "examples": [
+      "loicolícuma",
+      "Noldolantë",
+      "Ondolindë",
+      "ondolunca"
+     ]
+    },
+    {
+     "op": [
+      1,
+      0,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "pella"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
     "e",
     "t"
    ],
@@ -11632,6 +12840,49 @@
      "examples": [
       "Minastan",
       "Minastir"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "a",
+    "v"
+   ],
+   "total": 4,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 2,
+     "examples": [
+      "andavanwa",
+      "Eldavehtë"
+     ]
+    },
+    {
+     "op": [
+      1,
+      1,
+      "w"
+     ],
+     "count": 1,
+     "examples": [
+      "Lalwendë"
+     ]
+    },
+    {
+     "op": [
+      0,
+      1,
+      "mb"
+     ],
+     "count": 1,
+     "examples": [
+      "tambë"
      ]
     }
    ]
@@ -11714,49 +12965,6 @@
   },
   {
    "key": [
-    "e",
-    "n"
-   ],
-   "total": 4,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 2,
-     "examples": [
-      "Lambenyáre",
-      "mírenel"
-     ]
-    },
-    {
-     "op": [
-      1,
-      0,
-      "ē"
-     ],
-     "count": 1,
-     "examples": [
-      "Cuiviénen"
-     ]
-    },
-    {
-     "op": [
-      1,
-      1,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "Endórë"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "n",
     "r"
    ],
@@ -11784,6 +12992,29 @@
      "examples": [
       "Elerrína",
       "Númerrámar"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "u",
+    "k"
+   ],
+   "total": 4,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 4,
+     "examples": [
+      "Erukyermë",
+      "nuquerna",
+      "Turucáno",
+      "Turukondo"
      ]
     }
    ]
@@ -11856,39 +13087,6 @@
   },
   {
    "key": [
-    "o",
-    "l"
-   ],
-   "total": 4,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 3,
-     "examples": [
-      "loicolícuma",
-      "Ondolindë",
-      "ondolunca"
-     ]
-    },
-    {
-     "op": [
-      1,
-      0,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "pella"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "ā",
     "k"
    ],
@@ -11928,70 +13126,6 @@
       "amaltil",
       "Meneltarma",
       "taltil"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "a",
-    "v"
-   ],
-   "total": 3,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "andavanwa"
-     ]
-    },
-    {
-     "op": [
-      1,
-      1,
-      "w"
-     ],
-     "count": 1,
-     "examples": [
-      "Lalwendë"
-     ]
-    },
-    {
-     "op": [
-      0,
-      1,
-      "mb"
-     ],
-     "count": 1,
-     "examples": [
-      "tambë"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "a",
-    "h"
-   ],
-   "total": 3,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 3,
-     "examples": [
-      "Artaher",
-      "Ciryaher",
-      "parmahenta-"
      ]
     }
    ]
@@ -12056,6 +13190,38 @@
      "count": 1,
      "examples": [
       "lairus"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "u",
+    "f"
+   ],
+   "total": 3,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 2,
+     "examples": [
+      "Curufinwë",
+      "Telufinwë"
+     ]
+    },
+    {
+     "op": [
+      1,
+      0,
+      "a"
+     ],
+     "count": 1,
+     "examples": [
+      "Canafinwë"
      ]
     }
    ]
@@ -12330,6 +13496,38 @@
   },
   {
    "key": [
+    "o",
+    "k"
+   ],
+   "total": 3,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 2,
+     "examples": [
+      "Orocarni",
+      "Sundocarmë"
+     ]
+    },
+    {
+     "op": [
+      2,
+      1,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "roquen"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
     "e",
     "f"
    ],
@@ -12470,37 +13668,6 @@
      "examples": [
       "atartil",
       "Martamo"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "u",
-    "f"
-   ],
-   "total": 2,
-   "outcomes": [
-    {
-     "op": [
-      1,
-      0,
-      "a"
-     ],
-     "count": 1,
-     "examples": [
-      "Canafinwë"
-     ]
-    },
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "Curufinwë"
      ]
     }
    ]
@@ -12684,6 +13851,27 @@
   },
   {
    "key": [
+    "n",
+    "o"
+   ],
+   "total": 2,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 2,
+     "examples": [
+      "Formenos",
+      "Yénonótië"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
     "o",
     "w"
    ],
@@ -12730,6 +13918,27 @@
      "count": 1,
      "examples": [
       "Tarcil"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "ā",
+    "l"
+   ],
+   "total": 2,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 2,
+     "examples": [
+      "málimë",
+      "ála"
      ]
     }
    ]
@@ -12861,37 +14070,6 @@
   },
   {
    "key": [
-    "o",
-    "k"
-   ],
-   "total": 2,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "Orocarni"
-     ]
-    },
-    {
-     "op": [
-      2,
-      1,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "roquen"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "r",
     "e"
    ],
@@ -12907,27 +14085,6 @@
      "examples": [
       "Oärel",
       "Tareldar"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "u",
-    "k"
-   ],
-   "total": 2,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 2,
-     "examples": [
-      "Turucáno",
-      "Turukondo"
      ]
     }
    ]
@@ -13075,6 +14232,46 @@
   {
    "key": [
     "t",
+    "s"
+   ],
+   "total": 1,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      1,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "estat-"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "t",
+    "h"
+   ],
+   "total": 1,
+   "outcomes": [
+    {
+     "op": [
+      1,
+      1,
+      "θ"
+     ],
+     "count": 1,
+     "examples": [
+      "ethenta-"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "t",
     "t"
    ],
    "total": 1,
@@ -13088,26 +14285,6 @@
      "count": 1,
      "examples": [
       "etta"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "n",
-    "o"
-   ],
-   "total": 1,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "Formenos"
      ]
     }
    ]
@@ -13128,6 +14305,26 @@
      "count": 1,
      "examples": [
       "föalócë"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "n",
+    "k"
+   ],
+   "total": 1,
+   "outcomes": [
+    {
+     "op": [
+      1,
+      0,
+      "ŋ"
+     ],
+     "count": 1,
+     "examples": [
+      "hanquenta"
      ]
     }
    ]
@@ -13294,6 +14491,26 @@
   },
   {
    "key": [
+    "a",
+    "s"
+   ],
+   "total": 1,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "Lámasampanë"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
     "r",
     "s"
    ],
@@ -13328,6 +14545,26 @@
      "count": 1,
      "examples": [
       "menelluin"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "a",
+    "θ"
+   ],
+   "total": 1,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      1,
+      "s"
+     ],
+     "count": 1,
+     "examples": [
+      "minasurië"
      ]
     }
    ]
@@ -13794,8 +15031,28 @@
   },
   {
    "key": [
-    "ā",
-    "l"
+    "e",
+    "w"
+   ],
+   "total": 1,
+   "outcomes": [
+    {
+     "op": [
+      2,
+      0,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "valwistë"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "l",
+    "n"
    ],
    "total": 1,
    "outcomes": [
@@ -13803,11 +15060,11 @@
      "op": [
       0,
       0,
-      ""
+      "u"
      ],
      "count": 1,
      "examples": [
-      "ála"
+      "yulunefítë"
      ]
     }
    ]
@@ -13834,6 +15091,59 @@
   }
  ],
  "ending": [
+  {
+   "key": [
+    "t",
+    "a"
+   ],
+   "total": 31,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 28,
+     "examples": [
+      "andatehta",
+      "ca(na)sta",
+      "enquesta",
+      "ethenta-",
+      "etta"
+     ]
+    },
+    {
+     "op": [
+      1,
+      "o"
+     ],
+     "count": 1,
+     "examples": [
+      "Ambarto"
+     ]
+    },
+    {
+     "op": [
+      2,
+      "ie"
+     ],
+     "count": 1,
+     "examples": [
+      "massánië"
+     ]
+    },
+    {
+     "op": [
+      1,
+      "ie"
+     ],
+     "count": 1,
+     "examples": [
+      "palanyantië"
+     ]
+    }
+   ]
+  },
   {
    "key": [
     "r",
@@ -13883,70 +15193,17 @@
   },
   {
    "key": [
-    "t",
-    "a"
-   ],
-   "total": 27,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 24,
-     "examples": [
-      "andatehta",
-      "ca(na)sta",
-      "enquesta",
-      "etta",
-      "ita"
-     ]
-    },
-    {
-     "op": [
-      1,
-      "o"
-     ],
-     "count": 1,
-     "examples": [
-      "Ambarto"
-     ]
-    },
-    {
-     "op": [
-      2,
-      "ie"
-     ],
-     "count": 1,
-     "examples": [
-      "massánië"
-     ]
-    },
-    {
-     "op": [
-      1,
-      "ie"
-     ],
-     "count": 1,
-     "examples": [
-      "palanyantië"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "a",
     "r"
    ],
-   "total": 22,
+   "total": 23,
    "outcomes": [
     {
      "op": [
       0,
       ""
      ],
-     "count": 21,
+     "count": 22,
      "examples": [
       "Annatar",
       "Arantar",
@@ -13963,6 +15220,144 @@
      "count": 1,
      "examples": [
       "Nan-tasarion"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "m",
+    "e"
+   ],
+   "total": 21,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 21,
+     "examples": [
+      "Aldalómë",
+      "Erukyermë",
+      "Essecilmë",
+      "fëafelmë",
+      "hröafelmë"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "d",
+    "e"
+   ],
+   "total": 19,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 10,
+     "examples": [
+      "Alqualondë",
+      "Artafindë",
+      "Eldalondë",
+      "Hirilondë",
+      "Lalwendë"
+     ]
+    },
+    {
+     "op": [
+      2,
+      ""
+     ],
+     "count": 6,
+     "examples": [
+      "emerwen",
+      "Eärwen",
+      "Laurelin",
+      "mírenel",
+      "Sorontil"
+     ]
+    },
+    {
+     "op": [
+      1,
+      "i"
+     ],
+     "count": 3,
+     "examples": [
+      "Calaquendi",
+      "Laiquendi",
+      "Moriquendi"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "t",
+    "e"
+   ],
+   "total": 19,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 17,
+     "examples": [
+      "Angamaitë",
+      "Attólamaitë",
+      "Eldalótë",
+      "Eldavehtë",
+      "Erólamaitë"
+     ]
+    },
+    {
+     "op": [
+      2,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "inwis"
+     ]
+    },
+    {
+     "op": [
+      1,
+      "a"
+     ],
+     "count": 1,
+     "examples": [
+      "nernehta"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "i",
+    "e"
+   ],
+   "total": 19,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 19,
+     "examples": [
+      "caistanótië",
+      "Casallië",
+      "Eldalië",
+      "Ercantië",
+      "Follondië"
      ]
     }
    ]
@@ -14024,78 +15419,6 @@
   },
   {
    "key": [
-    "m",
-    "e"
-   ],
-   "total": 17,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 17,
-     "examples": [
-      "Aldalómë",
-      "Essecilmë",
-      "fëafelmë",
-      "hröafelmë",
-      "hröangolmë"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "d",
-    "e"
-   ],
-   "total": 17,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 8,
-     "examples": [
-      "Alqualondë",
-      "Artafindë",
-      "Eldalondë",
-      "Hirilondë",
-      "Lalwendë"
-     ]
-    },
-    {
-     "op": [
-      2,
-      ""
-     ],
-     "count": 6,
-     "examples": [
-      "emerwen",
-      "Eärwen",
-      "Laurelin",
-      "mírenel",
-      "Sorontil"
-     ]
-    },
-    {
-     "op": [
-      1,
-      "i"
-     ],
-     "count": 3,
-     "examples": [
-      "Calaquendi",
-      "Laiquendi",
-      "Moriquendi"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "s",
     "e"
    ],
@@ -14124,6 +15447,73 @@
      "examples": [
       "Maltaras",
       "tarminas"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "n",
+    "a"
+   ],
+   "total": 16,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 8,
+     "examples": [
+      "aldarembina",
+      "cöacalina",
+      "Elerrína",
+      "Eruanna",
+      "nuquerna"
+     ]
+    },
+    {
+     "op": [
+      1,
+      ""
+     ],
+     "count": 4,
+     "examples": [
+      "Anarcalin",
+      "ceuran",
+      "Eruhin",
+      "ornemalin"
+     ]
+    },
+    {
+     "op": [
+      0,
+      "r"
+     ],
+     "count": 2,
+     "examples": [
+      "Apanónar",
+      "Minnónar"
+     ]
+    },
+    {
+     "op": [
+      1,
+      "e"
+     ],
+     "count": 1,
+     "examples": [
+      "ambarónë"
+     ]
+    },
+    {
+     "op": [
+      1,
+      "i"
+     ],
+     "count": 1,
+     "examples": [
+      "Melkorohíni"
      ]
     }
    ]
@@ -14159,138 +15549,6 @@
       "Aicanáro",
       "Artanáro",
       "Fëanáro"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "t",
-    "e"
-   ],
-   "total": 14,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 12,
-     "examples": [
-      "Angamaitë",
-      "Attólamaitë",
-      "Erólamaitë",
-      "Eälótë",
-      "lungumaitë"
-     ]
-    },
-    {
-     "op": [
-      2,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "inwis"
-     ]
-    },
-    {
-     "op": [
-      1,
-      "a"
-     ],
-     "count": 1,
-     "examples": [
-      "nernehta"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "i",
-    "e"
-   ],
-   "total": 14,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 14,
-     "examples": [
-      "caistanótië",
-      "Casallië",
-      "Eldalië",
-      "Ercantië",
-      "Follondië"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "n",
-    "a"
-   ],
-   "total": 13,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 6,
-     "examples": [
-      "aldarembina",
-      "cöacalina",
-      "Elerrína",
-      "Eruanna",
-      "Tumbalemorna"
-     ]
-    },
-    {
-     "op": [
-      1,
-      ""
-     ],
-     "count": 3,
-     "examples": [
-      "Anarcalin",
-      "ceuran",
-      "Eruhin"
-     ]
-    },
-    {
-     "op": [
-      0,
-      "r"
-     ],
-     "count": 2,
-     "examples": [
-      "Apanónar",
-      "Minnónar"
-     ]
-    },
-    {
-     "op": [
-      1,
-      "e"
-     ],
-     "count": 1,
-     "examples": [
-      "ambarónë"
-     ]
-    },
-    {
-     "op": [
-      1,
-      "i"
-     ],
-     "count": 1,
-     "examples": [
-      "Melkorohíni"
      ]
     }
    ]
@@ -14424,6 +15682,61 @@
   },
   {
    "key": [
+    "d",
+    "a"
+   ],
+   "total": 10,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 5,
+     "examples": [
+      "Malinalda",
+      "nessamelda",
+      "norolinda",
+      "sanwecenda",
+      "sincahonda"
+     ]
+    },
+    {
+     "op": [
+      2,
+      ""
+     ],
+     "count": 3,
+     "examples": [
+      "Hecel",
+      "Oärel",
+      "Sindel"
+     ]
+    },
+    {
+     "op": [
+      1,
+      "i"
+     ],
+     "count": 1,
+     "examples": [
+      "Amaneldi"
+     ]
+    },
+    {
+     "op": [
+      0,
+      "r"
+     ],
+     "count": 1,
+     "examples": [
+      "Tareldar"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
     "t",
     "o"
    ],
@@ -14460,44 +15773,34 @@
   },
   {
    "key": [
-    "d",
-    "a"
+    "m",
+    "o"
    ],
-   "total": 9,
+   "total": 10,
    "outcomes": [
     {
      "op": [
       0,
       ""
      ],
-     "count": 4,
+     "count": 7,
      "examples": [
-      "Malinalda",
-      "nessamelda",
-      "norolinda",
-      "sanwecenda"
+      "Elentirmo",
+      "mamo",
+      "Martamo",
+      "ontamo",
+      "simo"
      ]
     },
     {
      "op": [
       2,
-      ""
+      "n"
      ],
-     "count": 3,
+     "count": 2,
      "examples": [
-      "Hecel",
-      "Oärel",
-      "Sindel"
-     ]
-    },
-    {
-     "op": [
-      1,
-      "i"
-     ],
-     "count": 1,
-     "examples": [
-      "Amaneldi"
+      "calmatan",
+      "Minastan"
      ]
     },
     {
@@ -14507,7 +15810,7 @@
      ],
      "count": 1,
      "examples": [
-      "Tareldar"
+      "Lambengolmor"
      ]
     }
    ]
@@ -14558,8 +15861,8 @@
   },
   {
    "key": [
-    "m",
-    "o"
+    "w",
+    "e"
    ],
    "total": 9,
    "outcomes": [
@@ -14568,51 +15871,7 @@
       0,
       ""
      ],
-     "count": 6,
-     "examples": [
-      "mamo",
-      "Martamo",
-      "ontamo",
-      "simo",
-      "tamo²"
-     ]
-    },
-    {
-     "op": [
-      2,
-      "n"
-     ],
-     "count": 2,
-     "examples": [
-      "calmatan",
-      "Minastan"
-     ]
-    },
-    {
-     "op": [
-      0,
-      "r"
-     ],
-     "count": 1,
-     "examples": [
-      "Lambengolmor"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "w",
-    "e"
-   ],
-   "total": 8,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 8,
+     "count": 9,
      "examples": [
       "Canafinwë",
       "Curufinwë",
@@ -14694,17 +15953,18 @@
     "n",
     "e"
    ],
-   "total": 6,
+   "total": 7,
    "outcomes": [
     {
      "op": [
       0,
       ""
      ],
-     "count": 4,
+     "count": 5,
      "examples": [
       "Avallónë",
       "Elestirnë",
+      "Lámasampanë",
       "malinornë",
       "Orofarnë"
      ]
@@ -14736,18 +15996,19 @@
     "g",
     "a"
    ],
-   "total": 5,
+   "total": 6,
    "outcomes": [
     {
      "op": [
       0,
       ""
      ],
-     "count": 4,
+     "count": 5,
      "examples": [
       "aldinga",
       "Artanga",
       "orotinga",
+      "tornanga",
       "Tyelpinga"
      ]
     },
@@ -14759,6 +16020,39 @@
      "count": 1,
      "examples": [
       "Andafangar"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "j",
+    "a"
+   ],
+   "total": 6,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 5,
+     "examples": [
+      "andanéya",
+      "Calacirya",
+      "fantercenya",
+      "leptafinya",
+      "sanwë-latya"
+     ]
+    },
+    {
+     "op": [
+      1,
+      "e"
+     ],
+     "count": 1,
+     "examples": [
+      "Narvinyë"
      ]
     }
    ]
@@ -14962,8 +16256,8 @@
   },
   {
    "key": [
-    "j",
-    "a"
+    "i",
+    "n"
    ],
    "total": 3,
    "outcomes": [
@@ -14972,20 +16266,11 @@
       0,
       ""
      ],
-     "count": 2,
+     "count": 3,
      "examples": [
-      "Calacirya",
-      "sanwë-latya"
-     ]
-    },
-    {
-     "op": [
-      1,
-      "e"
-     ],
-     "count": 1,
-     "examples": [
-      "Narvinyë"
+      "Angalailin",
+      "Etya-noldorin",
+      "Yáranoldorin"
      ]
     }
    ]
@@ -15106,6 +16391,47 @@
   },
   {
    "key": [
+    "l",
+    "o"
+   ],
+   "total": 3,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 3,
+     "examples": [
+      "Sindacollo",
+      "Sindicollo",
+      "Singollo"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "s",
+    "a"
+   ],
+   "total": 2,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 2,
+     "examples": [
+      "Ambarussa",
+      "Minyarussa"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
     "o",
     "n"
    ],
@@ -15185,6 +16511,26 @@
   {
    "key": [
     "b",
+    "e"
+   ],
+   "total": 2,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 2,
+     "examples": [
+      "Elda-lambë",
+      "Lindalambë"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "b",
     "a"
    ],
    "total": 2,
@@ -15233,28 +16579,8 @@
   },
   {
    "key": [
-    "l",
-    "o"
-   ],
-   "total": 2,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 2,
-     "examples": [
-      "Sindacollo",
-      "Sindicollo"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "s",
-    "a"
+    "a",
+    "t"
    ],
    "total": 1,
    "outcomes": [
@@ -15265,26 +16591,7 @@
      ],
      "count": 1,
      "examples": [
-      "Ambarussa"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "i",
-    "n"
-   ],
-   "total": 1,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "Angalailin"
+      "estat-"
      ]
     }
    ]
@@ -15304,25 +16611,6 @@
      "count": 1,
      "examples": [
       "föalócë"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "b",
-    "e"
-   ],
-   "total": 1,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "Lindalambë"
      ]
     }
    ]
@@ -15379,6 +16667,25 @@
      "count": 1,
      "examples": [
       "Pelóri"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "k",
+    "o"
+   ],
+   "total": 1,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      "r"
+     ],
+     "count": 1,
+     "examples": [
+      "Pitya-naucor"
      ]
     }
    ]
@@ -15485,7 +16792,7 @@
    "True": 30
   },
   "earlier": {
-   "False": 58,
+   "False": 62,
    "True": 16
   }
  }

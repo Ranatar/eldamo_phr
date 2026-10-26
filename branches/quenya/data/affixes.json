@@ -875,6 +875,75 @@
    "skey": null
   },
   {
+   "word": "638905337",
+   "form": "amaurë",
+   "kind": "prefix",
+   "affix": "4282118887",
+   "affix_form": "am-",
+   "base": "3521740537",
+   "base_form": "aurë",
+   "allomorph": "am",
+   "ctx": "V",
+   "a": "am",
+   "b": "aure",
+   "c": "amaure",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "m",
+    "a"
+   ],
+   "ekey": [
+    "r",
+    "e"
+   ],
+   "skey": null
+  },
+  {
+   "word": "1989269657",
+   "form": "amaurëa",
+   "kind": "suffix",
+   "affix": "1770267447",
+   "affix_form": "-a",
+   "base": "638905337",
+   "base_form": "amaurë",
+   "allomorph": "a",
+   "ctx": "V",
+   "a": "amaure",
+   "b": "a",
+   "c": "amaurea",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "poly",
+   "jkey": [
+    "e",
+    "a"
+   ],
+   "ekey": [
+    "a"
+   ],
+   "skey": null
+  },
+  {
    "word": "4173160963",
    "form": "amorta-",
    "kind": "prefix",
@@ -3498,6 +3567,41 @@
    "skey": null
   },
   {
+   "word": "1614948635",
+   "form": "Cormarë",
+   "kind": "suffix",
+   "affix": "731610737",
+   "affix_form": "-rë",
+   "base": "3681532269",
+   "base_form": "corma",
+   "allomorph": "re",
+   "ctx": "V",
+   "a": "korma",
+   "b": "re",
+   "c": "kormare",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "poly",
+   "jkey": [
+    "a",
+    "r"
+   ],
+   "ekey": [
+    "r",
+    "e"
+   ],
+   "skey": null
+  },
+  {
    "word": "697388925",
    "form": "Curumo",
    "kind": "suffix",
@@ -3594,6 +3698,76 @@
    "lkey": "mono",
    "jkey": [
     "n",
+    "i"
+   ],
+   "ekey": [
+    "m",
+    "a"
+   ],
+   "skey": null
+  },
+  {
+   "word": "1649496695",
+   "form": "cólima",
+   "kind": "suffix",
+   "affix": "2305656567",
+   "affix_form": "-ima",
+   "base": "4251142745",
+   "base_form": "col-",
+   "allomorph": "ima",
+   "ctx": "C",
+   "a": "kōl",
+   "b": "ima",
+   "c": "kōlima",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": true,
+   "lkey": "mono",
+   "jkey": [
+    "l",
+    "i"
+   ],
+   "ekey": [
+    "m",
+    "a"
+   ],
+   "skey": null
+  },
+  {
+   "word": "3766524639",
+   "form": "cúvima",
+   "kind": "suffix",
+   "affix": "2305656567",
+   "affix_form": "-ima",
+   "base": "2177391265",
+   "base_form": "cuv-",
+   "allomorph": "ima",
+   "ctx": "C",
+   "a": "kūv",
+   "b": "ima",
+   "c": "kūvima",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": true,
+   "lkey": "mono",
+   "jkey": [
+    "v",
     "i"
    ],
    "ekey": [
@@ -4472,6 +4646,40 @@
    "ekey": [
     "s",
     "e"
+   ],
+   "skey": null
+  },
+  {
+   "word": "2381113253",
+   "form": "eressëa",
+   "kind": "suffix",
+   "affix": "1770267447",
+   "affix_form": "-a",
+   "base": "285879429",
+   "base_form": "eressë",
+   "allomorph": "a",
+   "ctx": "V",
+   "a": "eresse",
+   "b": "a",
+   "c": "eressea",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "poly",
+   "jkey": [
+    "e",
+    "a"
+   ],
+   "ekey": [
+    "a"
    ],
    "skey": null
   },
@@ -5910,6 +6118,41 @@
    "skey": "earlier"
   },
   {
+   "word": "83477805",
+   "form": "ilquen",
+   "kind": "prefix",
+   "affix": "964582393",
+   "affix_form": "il-",
+   "base": "1405651303",
+   "base_form": "quén",
+   "allomorph": "il",
+   "ctx": "C",
+   "a": "il",
+   "b": "kwēn",
+   "c": "ilkwen",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": true,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "l",
+    "k"
+   ],
+   "ekey": [
+    "ē",
+    "n"
+   ],
+   "skey": "last"
+  },
+  {
    "word": "991700929",
    "form": "ilvan(y)a",
    "kind": "prefix",
@@ -6644,6 +6887,41 @@
    "skey": null
   },
   {
+   "word": "2096374869",
+   "form": "lacalima",
+   "kind": "prefix",
+   "affix": "2141101407",
+   "affix_form": "la-",
+   "base": "2383721897",
+   "base_form": "calima",
+   "allomorph": "la",
+   "ctx": "C",
+   "a": "la",
+   "b": "kalima",
+   "c": "lakalima",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "a",
+    "k"
+   ],
+   "ekey": [
+    "m",
+    "a"
+   ],
+   "skey": null
+  },
+  {
    "word": "1802295945",
    "form": "lacaraitë",
    "kind": "prefix",
@@ -6919,6 +7197,41 @@
    ],
    "ekey": [
     "n",
+    "a"
+   ],
+   "skey": null
+  },
+  {
+   "word": "801957389",
+   "form": "lamélima",
+   "kind": "prefix",
+   "affix": "2141101407",
+   "affix_form": "la-",
+   "base": "2672251663",
+   "base_form": "melima",
+   "allomorph": "la",
+   "ctx": "C",
+   "a": "la",
+   "b": "melima",
+   "c": "lamēlima",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "a",
+    "m"
+   ],
+   "ekey": [
+    "m",
     "a"
    ],
    "skey": null
@@ -7374,6 +7687,41 @@
    "ekey": [
     "i",
     "e"
+   ],
+   "skey": null
+  },
+  {
+   "word": "968402253",
+   "form": "lícuma",
+   "kind": "suffix",
+   "affix": "2686021607",
+   "affix_form": "-ma",
+   "base": "3106919459",
+   "base_form": "lícu-",
+   "allomorph": "ma",
+   "ctx": "V",
+   "a": "līku",
+   "b": "ma",
+   "c": "līkuma",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "poly",
+   "jkey": [
+    "u",
+    "m"
+   ],
+   "ekey": [
+    "m",
+    "a"
    ],
    "skey": null
   },
@@ -7896,6 +8244,41 @@
    ],
    "ekey": [
     "m",
+    "a"
+   ],
+   "skey": null
+  },
+  {
+   "word": "1329477379",
+   "form": "melumatya",
+   "kind": "suffix",
+   "affix": "2839805993",
+   "affix_form": "-matya",
+   "base": "752585143",
+   "base_form": "melu",
+   "allomorph": "matja",
+   "ctx": "V",
+   "a": "melu",
+   "b": "matja",
+   "c": "melumatja",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "poly",
+   "jkey": [
+    "u",
+    "m"
+   ],
+   "ekey": [
+    "j",
     "a"
    ],
    "skey": null
@@ -9020,6 +9403,40 @@
    "skey": null
   },
   {
+   "word": "4224936427",
+   "form": "nieninquëa",
+   "kind": "suffix",
+   "affix": "1770267447",
+   "affix_form": "-a",
+   "base": "2825838411",
+   "base_form": "nieninquë",
+   "allomorph": "a",
+   "ctx": "V",
+   "a": "nieniŋkwe",
+   "b": "a",
+   "c": "nieniŋkwea",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "poly",
+   "jkey": [
+    "e",
+    "a"
+   ],
+   "ekey": [
+    "a"
+   ],
+   "skey": null
+  },
+  {
    "word": "862041539",
    "form": "Noldorin",
    "kind": "suffix",
@@ -9822,6 +10239,41 @@
    "skey": null
   },
   {
+   "word": "3932030087",
+   "form": "nútima",
+   "kind": "suffix",
+   "affix": "2305656567",
+   "affix_form": "-ima",
+   "base": "1474256287",
+   "base_form": "núta-",
+   "allomorph": "ima",
+   "ctx": "V",
+   "a": "nūta",
+   "b": "ima",
+   "c": "nūtima",
+   "junction": [
+    1,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "poly",
+   "jkey": [
+    "a",
+    "i"
+   ],
+   "ekey": [
+    "m",
+    "a"
+   ],
+   "skey": null
+  },
+  {
    "word": "1659068133",
    "form": "ohtar",
    "kind": "suffix",
@@ -10028,6 +10480,41 @@
     "e"
    ],
    "skey": "earlier"
+  },
+  {
+   "word": "3088478543",
+   "form": "omen-",
+   "kind": "prefix",
+   "affix": "3022220127",
+   "affix_form": "o-",
+   "base": "1811784975",
+   "base_form": "men-",
+   "allomorph": "o",
+   "ctx": "C",
+   "a": "o",
+   "b": "men",
+   "c": "omen",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "o",
+    "m"
+   ],
+   "ekey": [
+    "e",
+    "n"
+   ],
+   "skey": null
   },
   {
    "word": "2911858939",
@@ -11010,6 +11497,41 @@
    "skey": null
   },
   {
+   "word": "474488755",
+   "form": "ruscuitë",
+   "kind": "suffix",
+   "affix": "2528281223",
+   "affix_form": "-itë",
+   "base": "757071129",
+   "base_form": "ruscu-",
+   "allomorph": "ite",
+   "ctx": "V",
+   "a": "rusku",
+   "b": "ite",
+   "c": "ruskuite",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "poly",
+   "jkey": [
+    "u",
+    "i"
+   ],
+   "ekey": [
+    "t",
+    "e"
+   ],
+   "skey": null
+  },
+  {
    "word": "3535335113",
    "form": "rávëa",
    "kind": "suffix",
@@ -11285,6 +11807,41 @@
    "ekey": [
     "o",
     "n"
+   ],
+   "skey": null
+  },
+  {
+   "word": "178290009",
+   "form": "serindë",
+   "kind": "suffix",
+   "affix": "400062103",
+   "affix_form": "-ndë",
+   "base": "980132123",
+   "base_form": "ser-",
+   "allomorph": "nde",
+   "ctx": "C",
+   "a": "ser",
+   "b": "nde",
+   "c": "serinde",
+   "junction": [
+    0,
+    0,
+    "i"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "mono",
+   "jkey": [
+    "r",
+    "n"
+   ],
+   "ekey": [
+    "d",
+    "e"
    ],
    "skey": null
   },
@@ -12475,6 +13032,41 @@
    "skey": null
   },
   {
+   "word": "3017001975",
+   "form": "tultaima",
+   "kind": "suffix",
+   "affix": "2305656567",
+   "affix_form": "-ima",
+   "base": "1341075349",
+   "base_form": "tulta-",
+   "allomorph": "ima",
+   "ctx": "V",
+   "a": "tulta",
+   "b": "ima",
+   "c": "tultaima",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "poly",
+   "jkey": [
+    "a",
+    "i"
+   ],
+   "ekey": [
+    "m",
+    "a"
+   ],
+   "skey": null
+  },
+  {
    "word": "413204657",
    "form": "tulusta",
    "kind": "suffix",
@@ -12681,6 +13273,40 @@
    "ekey": [
     "i",
     "n"
+   ],
+   "skey": null
+  },
+  {
+   "word": "478499025",
+   "form": "túrëa",
+   "kind": "suffix",
+   "affix": "1770267447",
+   "affix_form": "-a",
+   "base": "3387722417",
+   "base_form": "túrë",
+   "allomorph": "a",
+   "ctx": "V",
+   "a": "tūre",
+   "b": "a",
+   "c": "tūrea",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "poly",
+   "jkey": [
+    "e",
+    "a"
+   ],
+   "ekey": [
+    "a"
    ],
    "skey": null
   },
@@ -13663,6 +14289,41 @@
    "skey": null
   },
   {
+   "word": "693947865",
+   "form": "yunquë",
+   "kind": "prefix",
+   "affix": "615513863",
+   "affix_form": "yu-",
+   "base": "2994670795",
+   "base_form": "enquë",
+   "allomorph": "ju",
+   "ctx": "V",
+   "a": "ju",
+   "b": "eŋkwe",
+   "c": "juŋkwe",
+   "junction": [
+    0,
+    1,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "u",
+    "e"
+   ],
+   "ekey": [
+    "w",
+    "e"
+   ],
+   "skey": null
+  },
+  {
    "word": "1813198805",
    "form": "Yávien",
    "kind": "suffix",
@@ -14397,6 +15058,41 @@
    "skey": null
   },
   {
+   "word": "1568175287",
+   "form": "úmara",
+   "kind": "prefix",
+   "affix": "1831180401",
+   "affix_form": "ú-",
+   "base": "3694760767",
+   "base_form": "mára",
+   "allomorph": "ū",
+   "ctx": "C",
+   "a": "ū",
+   "b": "māra",
+   "c": "ūmara",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": true,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "ū",
+    "m"
+   ],
+   "ekey": [
+    "r",
+    "a"
+   ],
+   "skey": "earlier"
+  },
+  {
    "word": "4267548881",
    "form": "únat",
    "kind": "prefix",
@@ -14607,6 +15303,76 @@
    "skey": null
   },
   {
+   "word": "2527072637",
+   "form": "úsir",
+   "kind": "prefix",
+   "affix": "1831180401",
+   "affix_form": "ú-",
+   "base": "3036179073",
+   "base_form": "sír",
+   "allomorph": "ū",
+   "ctx": "C",
+   "a": "ū",
+   "b": "sīr",
+   "c": "ūsir",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": true,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "ū",
+    "s"
+   ],
+   "ekey": [
+    "ī",
+    "r"
+   ],
+   "skey": "last"
+  },
+  {
+   "word": "2953730349",
+   "form": "úsië",
+   "kind": "prefix",
+   "affix": "1831180401",
+   "affix_form": "ú-",
+   "base": "632005251",
+   "base_form": "sië",
+   "allomorph": "ū",
+   "ctx": "C",
+   "a": "ū",
+   "b": "sie",
+   "c": "ūsie",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "ū",
+    "s"
+   ],
+   "ekey": [
+    "i",
+    "e"
+   ],
+   "skey": null
+  },
+  {
    "word": "3516003693",
    "form": "úvana",
    "kind": "prefix",
@@ -14743,6 +15509,41 @@
    "ekey": [
     "n",
     "e"
+   ],
+   "skey": null
+  },
+  {
+   "word": "1313252895",
+   "form": "úχarin",
+   "kind": "prefix",
+   "affix": "1831180401",
+   "affix_form": "ú-",
+   "base": "1716960619",
+   "base_form": "χarina",
+   "allomorph": "ū",
+   "ctx": "C",
+   "a": "ū",
+   "b": "xarina",
+   "c": "ūxarin",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    1,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "ū",
+    "x"
+   ],
+   "ekey": [
+    "n",
+    "a"
    ],
    "skey": null
   }

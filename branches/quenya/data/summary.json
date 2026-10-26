@@ -61,14 +61,14 @@
   "stages": 2892,
   "parents": 2216,
   "roots": 3848,
-  "elements": 4725,
+  "elements": 6643,
   "stems": 1072,
-  "compounds_with_derivations": 168,
+  "compounds_with_derivations": 223,
   "neo": 3527,
   "homonym_forms": 535
  },
- "junction_cases": 384,
- "affix_cases": 422,
+ "junction_cases": 423,
+ "affix_cases": 445,
  "grade_legend": {
   "A": "засвидетельствована в одной деривации",
   "B": "шаги засвидетельствованы, порядок подтверждён",

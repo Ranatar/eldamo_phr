@@ -64,6 +64,24 @@ class Words:
         ids = self.by_key.get((lang, form)) or self.by_key.get((lang, bare(form))) or []
         return list(dict.fromkeys(ids))
 
+    def find_loose(self, lang: str | None, form: str | None) -> list:
+        """By a loose key (_loose): for forms written in a source's spelling."""
+        if getattr(self, '_loose', None) is None:
+            self._loose = defaultdict(list)
+            for pid, w in self.by_id.items():
+                if not deleted_mark(w.get('mark')):
+                    self._loose[(w.get('l'), _loose(w.get('v')))].append(pid)
+        return list(dict.fromkeys(self._loose.get((lang, _loose(form)), [])))
+
+
+_LOOSE = str.maketrans('āēīōūáéíóúâêîôûäëïöüǭ', 'aeiouaeiouaeiouaeiouo')
+
+
+def _loose(form: str | None) -> str:
+    """Loose key for element forms written inside a <ref> in the source's
+    spelling: tultā- ~ tulta-, kalta- ~ calta-, ima ~ -ima."""
+    return bare(form).lower().strip('- ').translate(_LOOSE).replace('k', 'c')
+
 
 _WORDS = None
 
@@ -104,6 +122,29 @@ def _link(W: Words, lang, form, tag=None) -> dict:
     return rec
 
 
+def _ref_link(W: Words, lang, form, tag=None) -> dict:
+    """_link for an element written inside a <ref>: exact form first, then the loose key."""
+    rec = _link(W, lang, form, tag)
+    if not (rec.get('id') or rec.get('candidates')):
+        ids = W.find_loose(lang, form)
+        if len(ids) == 1:
+            rec['id'] = ids[0]
+        elif ids:
+            rec['candidates'] = ids
+    rec['from_ref'] = True
+    return rec
+
+
+def _ref_elements(w) -> list:
+    """Elements Eldamo records only inside a <ref> (the word page has none of
+    its own): from the ref with the word's own form, else the first ref with elements."""
+    refs = [r for r in w.findall('ref') if _live(r) and r.findall('element')]
+    if not refs:
+        return []
+    own = [r for r in refs if _loose(r.get('v')) == _loose(w.get('v'))]
+    return [e for e in (own or refs)[0].findall('element') if _live(e)]
+
+
 def build_lexicon(branch: str, derivations: list) -> list:
     ix, W = index(), words()
     langs = languages(branch)
@@ -135,6 +176,9 @@ def build_lexicon(branch: str, derivations: list) -> list:
         if stems:
             entry['stems'] = stems
         elements = [_link(W, e.get('l'), e.get('v'), e.get('form')) for e in w.findall('element') if _live(e)]
+        if not elements:
+            # some pages record their elements only inside a reference, in the source's spelling
+            elements = [_ref_link(W, e.get('l') or lang, e.get('v'), e.get('form')) for e in _ref_elements(w)]
         if elements:
             entry['elements'] = elements
         links = {}

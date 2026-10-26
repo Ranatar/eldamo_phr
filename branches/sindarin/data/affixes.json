@@ -211,6 +211,41 @@
    "skey": null
   },
   {
+   "word": "1075300687",
+   "form": "angren",
+   "kind": "suffix",
+   "affix": "2282473589",
+   "affix_form": "-ren",
+   "base": "2297079921",
+   "base_form": "ang",
+   "allomorph": "ren",
+   "ctx": "C",
+   "a": "aŋ",
+   "b": "ren",
+   "c": "aŋgren",
+   "junction": [
+    0,
+    0,
+    "g"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "mono",
+   "jkey": [
+    "ŋ",
+    "r"
+   ],
+   "ekey": [
+    "e",
+    "n"
+   ],
+   "skey": null
+  },
+  {
    "word": "3068197151",
    "form": "Anórien",
    "kind": "suffix",
@@ -1261,6 +1296,41 @@
    "skey": null
   },
   {
+   "word": "2456200671",
+   "form": "bardor",
+   "kind": "suffix",
+   "affix": "2520265131",
+   "affix_form": "-dor",
+   "base": "480528801",
+   "base_form": "bar",
+   "allomorph": "dor",
+   "ctx": "C",
+   "a": "bar",
+   "b": "dor",
+   "c": "bardor",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "mono",
+   "jkey": [
+    "r",
+    "d"
+   ],
+   "ekey": [
+    "o",
+    "r"
+   ],
+   "skey": null
+  },
+  {
    "word": "1863828439",
    "form": "Beleriand",
    "kind": "suffix",
@@ -2030,6 +2100,75 @@
    "skey": null
   },
   {
+   "word": "2470256983",
+   "form": "enchui",
+   "kind": "suffix",
+   "affix": "2511870571",
+   "affix_form": "-ui",
+   "base": "601079373",
+   "base_form": "eneg",
+   "allomorph": "ui",
+   "ctx": "C",
+   "a": "eneg",
+   "b": "ui",
+   "c": "enxui",
+   "junction": [
+    2,
+    0,
+    "x"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "poly",
+   "jkey": [
+    "g",
+    "u"
+   ],
+   "ekey": [
+    "u",
+    "i"
+   ],
+   "skey": null
+  },
+  {
+   "word": "2803446275",
+   "form": "eneth",
+   "kind": "suffix",
+   "affix": "4176522889",
+   "affix_form": "-th",
+   "base": "3348247981",
+   "base_form": "en-",
+   "allomorph": "θ",
+   "ctx": "C",
+   "a": "en",
+   "b": "θ",
+   "c": "eneθ",
+   "junction": [
+    0,
+    0,
+    "e"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "mono",
+   "jkey": [
+    "n",
+    "θ"
+   ],
+   "ekey": [
+    "θ"
+   ],
+   "skey": null
+  },
+  {
    "word": "322794511",
    "form": "Ennorath",
    "kind": "suffix",
@@ -2310,6 +2449,41 @@
    "skey": null
   },
   {
+   "word": "4016710911",
+   "form": "fanui",
+   "kind": "suffix",
+   "affix": "2511870571",
+   "affix_form": "-ui",
+   "base": "4069992565",
+   "base_form": "fân",
+   "allomorph": "ui",
+   "ctx": "C",
+   "a": "fān",
+   "b": "ui",
+   "c": "fanui",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "n",
+    "u"
+   ],
+   "ekey": [
+    "u",
+    "i"
+   ],
+   "skey": null
+  },
+  {
    "word": "3912347965",
    "form": "fennas",
    "kind": "suffix",
@@ -2411,6 +2585,41 @@
    "ekey": [
     "o",
     "n"
+   ],
+   "skey": null
+  },
+  {
+   "word": "3949267541",
+   "form": "Firieth",
+   "kind": "suffix",
+   "affix": "1628202833",
+   "affix_form": "-eth",
+   "base": "1268185039",
+   "base_form": "Feir",
+   "allomorph": "eθ",
+   "ctx": "C",
+   "a": "feir",
+   "b": "eθ",
+   "c": "firieθ",
+   "junction": [
+    0,
+    0,
+    "i"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "r",
+    "e"
+   ],
+   "ekey": [
+    "e",
+    "θ"
    ],
    "skey": null
   },
@@ -2934,6 +3143,41 @@
    "ekey": [
     "o",
     "n"
+   ],
+   "skey": null
+  },
+  {
+   "word": "4979145",
+   "form": "glamog",
+   "kind": "suffix",
+   "affix": "3164901039",
+   "affix_form": "-og",
+   "base": "2198351911",
+   "base_form": "glam",
+   "allomorph": "og",
+   "ctx": "C",
+   "a": "glam",
+   "b": "og",
+   "c": "glamog",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "mono",
+   "jkey": [
+    "m",
+    "o"
+   ],
+   "ekey": [
+    "o",
+    "g"
    ],
    "skey": null
   },
@@ -3597,6 +3841,41 @@
    ],
    "ekey": [
     "θ"
+   ],
+   "skey": null
+  },
+  {
+   "word": "2862812157",
+   "form": "hiril",
+   "kind": "suffix",
+   "affix": "1440526559",
+   "affix_form": "-il",
+   "base": "3444049341",
+   "base_form": "hîr",
+   "allomorph": "il",
+   "ctx": "C",
+   "a": "hīr",
+   "b": "il",
+   "c": "hiril",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "r",
+    "i"
+   ],
+   "ekey": [
+    "i",
+    "l"
    ],
    "skey": null
   },
@@ -4684,6 +4963,41 @@
    "skey": null
   },
   {
+   "word": "999418593",
+   "form": "nedrui",
+   "kind": "suffix",
+   "affix": "2511870571",
+   "affix_form": "-ui",
+   "base": "2822334673",
+   "base_form": "neder",
+   "allomorph": "ui",
+   "ctx": "C",
+   "a": "neder",
+   "b": "ui",
+   "c": "nedrui",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "poly",
+   "jkey": [
+    "r",
+    "u"
+   ],
+   "ekey": [
+    "u",
+    "i"
+   ],
+   "skey": null
+  },
+  {
    "word": "1206589265",
    "form": "Neldoreth",
    "kind": "suffix",
@@ -4714,6 +5028,41 @@
    ],
    "ekey": [
     "θ"
+   ],
+   "skey": null
+  },
+  {
+   "word": "1602129693",
+   "form": "nelui",
+   "kind": "suffix",
+   "affix": "2511870571",
+   "affix_form": "-ui",
+   "base": "1778010933",
+   "base_form": "nêl",
+   "allomorph": "ui",
+   "ctx": "C",
+   "a": "nēl",
+   "b": "ui",
+   "c": "nelui",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "l",
+    "u"
+   ],
+   "ekey": [
+    "u",
+    "i"
    ],
    "skey": null
   },
@@ -5278,6 +5627,41 @@
    "skey": null
   },
   {
+   "word": "2564509863",
+   "form": "paenui",
+   "kind": "suffix",
+   "affix": "2511870571",
+   "affix_form": "-ui",
+   "base": "2293326951",
+   "base_form": "pae",
+   "allomorph": "ui",
+   "ctx": "V",
+   "a": "pae",
+   "b": "ui",
+   "c": "paenui",
+   "junction": [
+    0,
+    0,
+    "n"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "e",
+    "u"
+   ],
+   "ekey": [
+    "u",
+    "i"
+   ],
+   "skey": null
+  },
+  {
    "word": "2473621977",
    "form": "pedui",
    "kind": "suffix",
@@ -5802,6 +6186,41 @@
    "skey": null
   },
   {
+   "word": "3911858975",
+   "form": "rustui",
+   "kind": "suffix",
+   "affix": "2511870571",
+   "affix_form": "-ui",
+   "base": "3294494683",
+   "base_form": "rust",
+   "allomorph": "ui",
+   "ctx": "C",
+   "a": "rust",
+   "b": "ui",
+   "c": "rustui",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": "mono",
+   "jkey": [
+    "t",
+    "u"
+   ],
+   "ekey": [
+    "u",
+    "i"
+   ],
+   "skey": null
+  },
+  {
    "word": "3087798997",
    "form": "Saelon",
    "kind": "suffix",
@@ -5972,6 +6391,41 @@
    "ekey": [
     "e",
     "d"
+   ],
+   "skey": null
+  },
+  {
+   "word": "696871013",
+   "form": "tadui",
+   "kind": "suffix",
+   "affix": "2511870571",
+   "affix_form": "-ui",
+   "base": "4250276895",
+   "base_form": "tâd",
+   "allomorph": "ui",
+   "ctx": "C",
+   "a": "tād",
+   "b": "ui",
+   "c": "tadui",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "d",
+    "u"
+   ],
+   "ekey": [
+    "u",
+    "i"
    ],
    "skey": null
   },
@@ -6287,6 +6741,41 @@
    "ekey": [
     "a",
     "s"
+   ],
+   "skey": null
+  },
+  {
+   "word": "1055810531",
+   "form": "úlan(n)",
+   "kind": "prefix",
+   "affix": "1438153453",
+   "affix_form": "ú-",
+   "base": "3437593551",
+   "base_form": "land",
+   "allomorph": "ū",
+   "ctx": "C",
+   "a": "ū",
+   "b": "land",
+   "c": "ūlan",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    1,
+    ""
+   ],
+   "short": false,
+   "lengthened": false,
+   "lkey": null,
+   "jkey": [
+    "ū",
+    "l"
+   ],
+   "ekey": [
+    "n",
+    "d"
    ],
    "skey": null
   },

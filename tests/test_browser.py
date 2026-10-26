@@ -54,17 +54,34 @@ class Browser(unittest.TestCase):
         self.addCleanup(lambda: self.assertEqual(errors, []))
         return page
 
-    def test_landing_then_branch(self):
+    def test_intro_search_and_word(self):
         page = self.page(self.atlas)
-        self.assertTrue(page.is_visible('#landing'))
-        self.assertTrue(page.is_hidden('#app'))
-        page.click('[data-branch=quenya]')
-        page.wait_for_function("location.hash.startsWith('#quenya')")
-        self.assertTrue(page.is_hidden('#landing'))
-        self.assertIn('засвидетельствован целиком', page.inner_text('#output'))
+        self.assertIn('Quettamin', page.inner_text('#intro'))
+        self.assertTrue(page.is_hidden('#word-card'))
+        # the reference is collapsed and not drawn until opened
+        self.assertFalse(page.evaluate("document.getElementById('ref-paths').open"))
+        self.assertEqual(page.inner_text('#output'), '')
+        page.fill('#q', 'galadh')
+        page.click('#q-results button[data-word="3005081253"]')     # S. galadh, not N. galadh
+        page.wait_for_function("location.hash.includes('w=3005081253') && !document.getElementById('word-card').hidden")
+        self.assertIn('galadh', page.inner_text('#word-card'))
+        self.assertTrue(page.is_hidden('#intro'))
+        # the panorama fills every period; the word's own cell is attested
+        page.wait_for_function("[...document.querySelectorAll('.pcell .pform')].every(x => x.textContent !== '…')", timeout=60000)
+        self.assertIn('attested', page.get_attribute('.pcell[data-cell="sindarin/late/3"]', 'class'))
+        self.assertGreaterEqual(page.locator('.pcell').count(), 15)
 
-    def test_paths_rules_chains_derivations(self):
-        page = self.page(self.atlas + '#quenya?era=late&from=b&to=v')
+    def test_neologisms_by_switch(self):
+        page = self.page(self.atlas)
+        page.fill('#q', 'ticket')
+        self.assertNotIn('lelyaláve', page.inner_text('#q-results'))
+        page.check('#neo-toggle')
+        self.assertIn('lelyaláve', page.inner_text('#q-results'))
+
+    def test_reference_sections(self):
+        page = self.page(self.atlas + '#ref=paths&b=quenya&era=late&from=b&to=v')
+        self.assertTrue(page.evaluate("document.getElementById('ref-paths').open"))
+        self.assertFalse(page.evaluate("document.getElementById('ref-chains').open"))
         out = page.inner_text('#output')
         self.assertIn('b → v', out)
         page.click('#rules-to')
@@ -75,27 +92,35 @@ class Browser(unittest.TestCase):
         page.dispatch_event('#from-cluster', 'change')
         page.click('#rules-from')
         self.assertNotIn('Подформул с этим звуком нет', page.inner_text('#output'))
+        page.click('#ref-toggle-all')
+        self.assertTrue(page.evaluate("document.getElementById('ref-derivations').open"))
+        self.assertEqual(page.inner_text('#ref-toggle-all'), 'Свернуть всё')
         self.assertIn('цепоч', page.inner_text('#chains'))
         page.fill('#deriv-query', 'alda')
         self.assertIn('alda', page.inner_text('#derivations'))
+        page.click('#ref-toggle-all')
+        self.assertFalse(page.evaluate("document.getElementById('ref-chains').open"))
 
-    def test_era_switch_updates_everything(self):
-        page = self.page(self.atlas + '#sindarin')
+    def test_era_switch_updates_reference(self):
+        page = self.page(self.atlas + '#ref=chains&b=sindarin')
         late = page.inner_text('#chains').split('\n')[0]
         page.select_option('#era-select', 'middle')
         self.assertNotEqual(late, page.inner_text('#chains').split('\n')[0])
         self.assertIn('era=middle', page.evaluate('location.hash'))
 
-    def test_hash_navigation_and_back(self):
+    def test_old_addresses_and_back(self):
+        # addresses of the phonetic atlas open the reference with the same sounds
         page = self.page(self.atlas + '#quenya')
-        page.evaluate("location.hash = 'sindarin'")
-        page.wait_for_function("document.getElementById('branch-select').value === 'sindarin'")
+        self.assertIn('ref=paths', page.evaluate('location.hash'))
+        self.assertTrue(page.evaluate("document.getElementById('ref-paths').open"))
+        page.select_option('#branch-select', 'sindarin')
+        page.wait_for_function("location.hash.includes('b=sindarin')")
         page.go_back()
         page.wait_for_function("document.getElementById('branch-select').value === 'quenya'")
 
     def test_malformed_hash_and_cluster_in_hash(self):
         page = self.page(self.atlas + '#%')
-        self.assertTrue(page.is_visible('#landing'))
+        self.assertTrue(page.is_visible('#intro'))
         page.evaluate("location.hash = 'sindarin?from=nt'")
         page.wait_for_function("document.getElementById('branch-select').value === 'sindarin'")
         box = '.picker[data-slot=from]'
@@ -103,7 +128,10 @@ class Browser(unittest.TestCase):
         self.assertEqual(page.input_value('#from-cluster'), 'nt')
 
     def test_narrow_screen(self):
-        page = self.page(self.atlas + '#quenya', width=375)
+        page = self.page(self.atlas + '#w=403686503', width=375)
+        page.wait_for_function("[...document.querySelectorAll('.pcell .pform')].every(x => x.textContent !== '…')", timeout=60000)
+        self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'), 375)
+        page.goto(self.atlas + '#ref=paths&b=quenya')
         self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'), 375)
 
     def test_wordform_engine_matches_python(self):
@@ -111,7 +139,7 @@ class Browser(unittest.TestCase):
         from shared.parity import vectors
         V = vectors(branches())
         recon = V.pop('__recon__')[::3]        # a third of the reconstruction calls: each takes a while
-        page = self.page(self.atlas + '#quenya')
+        page = self.page(self.atlas)
         bad = page.evaluate("cases => WF.parityRecon({quenya: WFUI.engine('quenya'), sindarin: WFUI.engine('sindarin')}, cases)", recon)
         self.assertEqual(bad, [], 'reconstruction')
         for b, v in V.items():
@@ -119,7 +147,7 @@ class Browser(unittest.TestCase):
             self.assertEqual(bad, [], b)
 
     def test_wordform_panel(self):
-        page = self.page(self.atlas + '#quenya')
+        page = self.page(self.atlas + '#tab=compose')
         page.fill('#wf-q1', 'Ambar')
         page.click('#wf-r1 button[data-id="4273482913"]')        # Ambar "world", not ambar "fate"
         page.fill('#wf-q2', 'lindë')
@@ -134,9 +162,18 @@ class Browser(unittest.TestCase):
         page.click('#wf-go')
         self.assertIn('восстановлена', page.inner_text('#wf-output'))
         self.assertGreater(page.locator('#wf-output .wf-variant').count(), 1)
+        # a variant becomes the current word: a form without an Eldamo page
+        page.click('#wf-output .wf-variant.main [data-use]')
+        page.wait_for_function("location.hash.includes('f=') && document.getElementById('word-card').textContent.includes('Форма без статьи')")
+        self.assertIn('Форма без статьи Eldamo', page.inner_text('#word-card'))
+
+    def test_word_is_first_element(self):
+        page = self.page(self.atlas + '#w=4273482913&tab=compose')
+        self.assertIn('Ambar', page.inner_text('#wf-chosen1'))
+        self.assertEqual(page.input_value('#wf-branch'), 'quenya')
 
     def test_wordform_suffix(self):
-        page = self.page(self.atlas + '#quenya')
+        page = self.page(self.atlas + '#tab=compose')
         page.fill('#wf-q1', '-ima')
         page.click('#wf-r1 button:has-text("-ima")')
         self.assertIn('суффикс', page.inner_text('#wf-chosen1'))
@@ -147,26 +184,43 @@ class Browser(unittest.TestCase):
         self.assertIn('Засвидетельствованные слова с этим аффиксом', page.inner_text('#wf-output'))
 
     def test_reconstruction_panel(self):
-        page = self.page(self.atlas + '#quenya')
-        page.fill('#rc-q', 'lindë')
-        page.click('#rc-r button[data-id="403686503"]')
-        self.assertEqual(page.input_value('#rc-src'), 'late|2')
-        page.select_option('#rc-dst', 'late|0')
+        page = self.page(self.atlas + '#w=403686503')
+        self.assertEqual(page.input_value('#rc-src'), 'quenya|late|2')
+        page.select_option('#rc-dst', 'quenya|late|0')
         page.click('#rc-go')
         self.assertIn('lindē', page.inner_text('#rc-output'))
         # a cognate through the common primitive form
-        page.select_option('#rc-dst-branch', 'sindarin')
-        page.select_option('#rc-dst', 'late|3')
+        page.select_option('#rc-dst', 'sindarin|late|3')
         page.click('#rc-go')
         self.assertIn('через праформу', page.inner_text('#rc-output'))
         # the middle conception: Eldamo's own link comes first
-        page.select_option('#rc-dst-branch', 'quenya')
-        page.select_option('#rc-dst', 'middle|2')
+        page.select_option('#rc-dst', 'quenya|middle|2')
         page.click('#rc-go')
         self.assertIn('связь Eldamo', page.inner_text('#rc-output .wf-variant.main'))
 
+    def test_panorama_cell_and_rule_in_reference(self):
+        page = self.page(self.atlas + '#w=3880471189')                # Q. lelya "delicate"
+        page.wait_for_selector('.pcell[data-cell="sindarin/late/3"] .sym')
+        page.click('.pcell[data-cell="sindarin/late/3"]')
+        main = page.inner_text('#rc-output .wf-variant.main')
+        self.assertIn('dail', main)
+        self.assertIn('dst=sindarin', page.evaluate('location.hash'))
+        # rules are grouped by stage and open in the reference
+        page.click('#rc-output .wf-variant.main details.stages summary')
+        page.click('#rc-output .wf-variant.main [data-rule]')
+        page.wait_for_function("location.hash.includes('ref=rule') && document.getElementById('ref-paths').open")
+        self.assertIn('Правило', page.inner_text('#output'))
+        # the word stays chosen
+        self.assertIn('lelya', page.inner_text('#word-card'))
+
+    def test_open_word_from_derivation(self):
+        page = self.page(self.atlas + '#ref=derivations&b=quenya&q=alda')
+        page.click('#derivations details.card summary >> nth=0')
+        page.click('#derivations [data-word] >> nth=0')
+        page.wait_for_function("location.hash.includes('w=') && !document.getElementById('word-card').hidden")
+
     def test_early_conception(self):
-        page = self.page(self.atlas + '#quenya?era=early')
+        page = self.page(self.atlas + '#ref=paths&b=quenya&era=early')
         self.assertEqual(page.input_value('#era-select'), 'early')
         self.assertIn('Early Quenya', page.inner_text('#branch-path'))
 

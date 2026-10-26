@@ -2,15 +2,11 @@
 // get ranked variants with the rules that produced them (engine: wordform.js).
 (function () {
 'use strict';
-const WF = window.WF;
-const WDATA = JSON.parse(document.getElementById('wordform-data').textContent);
-const SITE = 'https://eldamo.org/content/';
+const WF = window.WF, QU = window.QU, QR = window.QR;
+const SITE = QU.SITE;
 const $ = id => document.getElementById(id);
-const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const engines = {};
-const engine = b => engines[b] || (engines[b] = WF.makeEngine(b, WDATA[b]));
-const NEO_ERA = { nq: 'late', ns: 'late', np: 'late', van: 'late', norths: 'late' };
-const MARKERS = { nq: 'NQ.', ns: 'NS.', np: 'N✶', van: 'Van.', norths: 'NS.' };
+const esc = QU.esc;
+const engine = QU.engine;
 const SOURCE = {
   attested: 'форма засвидетельствована в деривации Eldamo', stem: 'основа', dictionary: 'словарная форма',
   primitive: 'праформа Eldamo', computed: 'праформа Eldamo, прогнанная до выбранной стадии',
@@ -22,58 +18,19 @@ const ADJUST = {
   lengthening: 'просодическое удлинение на стыке (учебник §6.1.3; правила сформулированы Страком)',
   shortening: 'сокращение долгого гласного перед суффиксом (§6.1.2.2; Страк, по примерам)',
 };
-const state = { branch: null, picked: [null, null] };
-
-function currentBranch() {
-  let raw = location.hash.slice(1);
-  try { raw = decodeURIComponent(raw); } catch (_e) { /* as is */ }
-  const name = raw.split('?')[0];
-  return WDATA[name] ? name : null;
-}
-const era = () => $('era-select').value || 'late';
-function eraOf(E, code) {
-  const l = E.languages.find(x => x.code === code);
-  return l ? l.era : NEO_ERA[code] || null;
-}
-const marker = (E, code) => { const l = E.languages.find(x => x.code === code); return l ? l.marker : MARKERS[code] || code; };
-const fold = s => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
-
-// Tolkien's spelling for a phonetic form (the inverse of toPhonetic, approximately)
-const plainForm = form => form.normalize('NFD').replace(/\u0306/g, '').normalize('NFC');   // no breves
-function spelling(form, branch) {
-  let f = plainForm(form);
-  const acute = { 'ā': 'á', 'ē': 'é', 'ī': 'í', 'ō': 'ó', 'ū': 'ú', 'ȳ': 'ý' };
-  if (branch === 'quenya') {
-    for (const [a, b] of [['ŋkw', 'nqu'], ['ŋgw', 'ngw'], ['kw', 'qu'], ['ks', 'x'], ['ŋk', 'nc'], ['ŋg', 'ng'], ['ŋ', 'ñ'],
-      ['j̊', 'hy'], ['w̥', 'hw'], ['l̥', 'hl'], ['r̥', 'hr'], ['xt', 'ht'], ['x', 'h'], ['k', 'c'], ['j', 'y'], ['θ', 'þ']]) f = f.split(a).join(b);
-    f = f.replace(/[āēīōūȳ]/g, c => acute[c]);
-    return f.replace(/e$/, 'ë');
-  }
-  for (const [a, b] of [['x', 'ch'], ['θ', 'th'], ['ð', 'dh'], ['l̥', 'lh'], ['r̥', 'rh'], ['m̥', 'mh'], ['ŋg', 'ng'], ['ŋk', 'nc'],
-    ['ff', 'ph'], ['k', 'c']]) f = f.split(a).join(b);
-  f = f.replace(/ŋ$/, 'ng').replace(/ŋ/g, 'n').replace(/v$/, 'f').replace(/^j/, 'i');
-  const mono = (f.match(/[aeiouyáéíóúýāēīōūȳ]+/g) || []).length === 1;
-  const circ = { 'ā': 'â', 'ē': 'ê', 'ī': 'î', 'ō': 'ô', 'ū': 'û', 'ȳ': 'ŷ' };
-  return f.replace(/[āēīōūȳ]/g, c => (mono ? circ : acute)[c]);
-}
+const state = { branch: QU.BRANCHES[0], picked: [null, null] };
+const era = () => $('wf-era').value || 'late';
+const eraOf = QU.eraOf, marker = QU.marker;
+const spelling = QU.spelling, plainForm = QU.plainForm;
 
 function search(slot) {
-  const E = engine(state.branch);
-  const q = fold($('wf-q' + slot).value.trim());
+  const E = engine(state.branch), want = era();
   const box = $('wf-r' + slot);
-  if (!q) { box.innerHTML = ''; return; }
-  const neo = $('wf-neo').checked, want = era();
-  const hits = [];
-  for (const e of E.lexiconList) {
-    if ((e.neo && !neo) || eraOf(E, e.lang) !== want) continue;
-    const f = fold(e.form), g = fold(e.gloss || '');
-    const score = f === q ? 0 : f.startsWith(q) ? 1 : g.split(/[^\p{L}]+/u).includes(q) ? 2 : f.includes(q) ? 3 : g.includes(q) ? 4 : -1;
-    if (score >= 0) hits.push([score, e]);
-  }
-  hits.sort((a, b) => a[0] - b[0] || a[1].form.length - b[1].form.length);
-  box.innerHTML = hits.slice(0, 12).map(([, e]) => `<button type="button" data-id="${esc(e.id)}" data-slot="${slot}">
-    <span class="marker">${esc(marker(E, e.lang))}</span> <span class="form">${esc(e.form)}</span>${e.neo ? ' <span class="tag">неологизм</span>' : ''}${WF.affixKind(e) ? ` <span class="tag">${WF.affixKind(e) === 'suffix' ? 'суффикс' : 'приставка'}</span>` : ''}
-    <span class="muted">${esc(e.gloss)}</span></button>`).join('') || '<p class="muted">Ничего не найдено.</p>';
+  const q = $('wf-q' + slot).value;
+  if (!q.trim()) { box.innerHTML = ''; return; }
+  const hits = QU.searchWords(q, (b, e) => b === state.branch && eraOf(E, e.lang) === want, 12);
+  box.innerHTML = hits.map(h => QU.hitHtml(h, `data-id="${esc(h.entry.id)}" data-slot="${slot}"`)).join('')
+    || `<p class="muted">Ничего не найдено в ${esc(QU.BRANCH_NAMES[state.branch])} (${esc(QU.ERA_NAMES[want])} концепция)${QU.neo() ? '' : '; неологизмы скрыты'}.</p>`;
 }
 
 function describe(E, e) {
@@ -110,16 +67,7 @@ function stageOptions() {
   sel.value = langs.some(l => String(l.stage) === prev) ? prev : String(langs[langs.length - 1].stage);
 }
 
-function ruleName(E, id) { return E.ruleNames.get(id) || id; }
-function traceHtml(E, trace) {
-  const steps = trace.filter(t => t[2] != null);
-  const skipped = trace.filter(t => t[2] == null);
-  if (!steps.length && !skipped.length) return '';
-  const li = steps.map(t => `<li><span class="form">${esc(t[1])}</span> → <span class="form">${esc(t[2])}</span>
-    <a href="${SITE}words/word-${esc(t[0])}.html" target="_blank" rel="noopener">${esc(ruleName(E, t[0]))}</a></li>`).join('');
-  const sk = skipped.length ? `<p class="small muted">Не применены необязательные правила: ${skipped.map(t => esc(ruleName(E, t[0]))).join('; ')}.</p>` : '';
-  return `<details><summary>Правила (${steps.length})</summary><ol class="steps">${li}</ol>${sk}</details>`;
-}
+function traceHtml(E, trace) { return QU.stagesHtml(trace, E.branch); }
 const show = ph => ph.length ? ph.join('') : '∅';
 function junctionText(a, b, [k, m, rep]) {
   if (!(k || m || rep)) return '';
@@ -167,7 +115,8 @@ function compose() {
     const ops = stage >= last ? opText(v) : '';
     return `<li class="wf-variant${k === 0 ? ' main' : ''}">
       <div><strong class="form">${esc(spelling(v.form, state.branch))}</strong> <span class="ipa muted">[${esc(plainForm(v.form))}]</span>
-      ${v.score != null ? `<span class="small muted">вес ${v.score}</span>` : ''}${v.stem ? ` <span class="small">основа <span class="form">${esc(v.stem)}-</span></span>` : ''}</div>
+      ${v.score != null ? `<span class="small muted">вес ${v.score}</span>` : ''}${v.stem ? ` <span class="small">основа <span class="form">${esc(v.stem)}-</span></span>` : ''}
+      <button type="button" class="link small" data-use="${esc(plainForm(v.form))}" title="Сделать эту форму текущим словом">работать с этой формой</button></div>
       <div class="small">из ${src}</div>
       ${ops ? `<div class="small">${ops}</div>` : ''}${adj ? `<div class="small">${adj}</div>` : ''}
       ${traceHtml(E, v.trace || [])}</li>`;
@@ -199,25 +148,48 @@ function compose() {
     Результат — предсказание формы, а не засвидетельствованное слово.</p>`;
 }
 
-function render() {
-  const b = currentBranch();
-  if (!b) return;
-  if (b !== state.branch) {
-    state.branch = b; state.picked = [null, null];
-    for (const s of [1, 2]) { $('wf-q' + s).value = ''; $('wf-r' + s).innerHTML = ''; $('wf-chosen' + s).innerHTML = ''; }
-    $('wf-output').innerHTML = ''; $('wf-go').disabled = true;
-  }
+function branchOptions() {
+  $('wf-branch').replaceChildren(...QU.BRANCHES.map(b => new Option(QU.BRANCH_NAMES[b], b)));
+  $('wf-era').replaceChildren(...QU.ERAS.map(e => new Option(QU.ERA_NAMES[e], e)));
+}
+function reset() {
+  state.picked = [null, null];
+  for (const s of [1, 2]) { $('wf-q' + s).value = ''; $('wf-r' + s).innerHTML = ''; $('wf-chosen' + s).innerHTML = ''; }
+  $('wf-output').innerHTML = ''; $('wf-go').disabled = true;
+}
+function setBranch(b, e) {
+  const changed = b !== state.branch || e !== era();
+  state.branch = b;
+  $('wf-branch').value = b;
+  $('wf-era').value = e;
+  if (changed) reset();
   stageOptions();
 }
+// the chosen word becomes the first element, in its own branch and conception
+function onSubject(s) {
+  if (!s || s.kind !== 'word') return;
+  const e = s.entry, E = engine(s.branch);
+  const want = eraOf(E, e.lang);
+  if (!want) return;
+  setBranch(s.branch, want);
+  pick(1, e.id);
+}
 
+branchOptions();
 for (const s of [1, 2]) {
   $('wf-q' + s).addEventListener('input', () => search(s));
   $('wf-r' + s).addEventListener('click', e => { const t = e.target.closest('[data-id]'); if (t) pick(s, t.dataset.id); });
 }
-$('wf-neo').addEventListener('change', () => { search(1); search(2); });
+$('wf-branch').addEventListener('change', () => { state.branch = $('wf-branch').value; reset(); stageOptions(); });
+$('wf-era').addEventListener('change', () => { reset(); stageOptions(); });
 $('wf-go').addEventListener('click', compose);
-$('era-select').addEventListener('change', () => { if (state.branch) { stageOptions(); search(1); search(2); } });
-window.addEventListener('hashchange', render);
-render();
-window.WFUI = { pick, compose, spelling, engine };
+$('wf-output').addEventListener('click', e => {
+  const u = e.target.closest('[data-use]');
+  if (!u) return;
+  const E = engine(state.branch);
+  QU.openForm(u.dataset.use, state.branch, era(), Math.max(...E.languages.filter(l => l.era === era()).map(l => l.stage)));
+});
+QU.onSubject((s, why) => { if (why === 'subject') onSubject(s); else if (why === 'neo') { search(1); search(2); } });
+setBranch(state.branch, 'late');
+window.WFCOMPOSE = { pick, compose };
 })();

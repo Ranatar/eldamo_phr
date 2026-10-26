@@ -38,8 +38,7 @@ class Outputs(unittest.TestCase):
         html = path.read_text(encoding='utf-8')
         m = re.search(r'<script type="application/json" id="%s">(.*?)</script>' % element_id, html, re.S)
         self.assertIsNotNone(m)
-        for marker in ('@@STYLES@@', '@@RUNTIME@@', '@@DATA@@', '@@VERSION@@'):
-            self.assertNotIn(marker, html)
+        self.assertNotRegex(html, r'@@[A-Z_]+@@')        # every template marker is filled
         return json.loads(m.group(1))
 
     def test_atlas_embeds_current_payload(self):

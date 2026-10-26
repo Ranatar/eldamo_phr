@@ -129,22 +129,26 @@ def wordform_payload(name: str, data: dict) -> dict:
     }
 
 
+SCRIPTS = {                     # template marker -> file in app/
+    '@@ROUTER@@': 'router.js',
+    '@@WORDFORM@@': 'wordform.js',
+    '@@WORD_UI@@': 'word_ui.js',
+    '@@WORDFORM_UI@@': 'wordform_ui.js',
+    '@@RECON_UI@@': 'reconstruct_ui.js',
+    '@@RUNTIME@@': 'runtime.js',
+}
+
+
 def build_index(branches: dict) -> str:
     template = (APP / 'template.html').read_text(encoding='utf-8')
-    styles = (APP / 'styles.css').read_text(encoding='utf-8')
-    runtime = (APP / 'runtime.js').read_text(encoding='utf-8')
-    engine = (APP / 'wordform.js').read_text(encoding='utf-8')
-    ui = (APP / 'wordform_ui.js').read_text(encoding='utf-8')
-    recon_ui = (APP / 'reconstruct_ui.js').read_text(encoding='utf-8')
-    for marker in ('@@STYLES@@', '@@DATA@@', '@@RUNTIME@@', '@@WORDFORM@@', '@@WORDFORM_DATA@@', '@@WORDFORM_UI@@',
-                   '@@RECON_UI@@'):
+    markers = ('@@STYLES@@', '@@DATA@@', '@@WORDFORM_DATA@@', '@@ELDAMO_VERSION@@', *SCRIPTS)
+    for marker in markers:
         if template.count(marker) != 1:
             raise SystemExit(f'app/template.html must contain {marker} exactly once')
-    html = template.replace('@@STYLES@@', styles.rstrip('\n'))
-    html = html.replace('@@RUNTIME@@', runtime.rstrip('\n'))
-    html = html.replace('@@WORDFORM_UI@@', ui.rstrip('\n'))
-    html = html.replace('@@RECON_UI@@', recon_ui.rstrip('\n'))
-    html = html.replace('@@WORDFORM@@', engine.rstrip('\n'))
+    html = template.replace('@@STYLES@@', (APP / 'styles.css').read_text(encoding='utf-8').rstrip('\n'))
+    for marker, name in SCRIPTS.items():
+        html = html.replace(marker, (APP / name).read_text(encoding='utf-8').rstrip('\n'))
+    html = html.replace('@@ELDAMO_VERSION@@', meta()['eldamo_version'])
     html = html.replace('@@WORDFORM_DATA@@', embed_json({b: wordform_payload(b, d) for b, d in branches.items()}))
     html = html.replace('@@DATA@@', embed_json(payload(branches)))
     return html

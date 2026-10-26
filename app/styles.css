@@ -51,7 +51,7 @@ button.primary { background: var(--accent); color: var(--accent-text); border-co
   position: sticky; top: 0; z-index: 50; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center;
   padding: 8px 16px; background: var(--panel); border-bottom: 1px solid var(--line);
 }
-.topbar .brand { font-weight: 700; margin-right: auto; }
+.topbar .brand { font-weight: 700; font-size: 18px; letter-spacing: .02em; }
 .topbar .brand a { color: inherit; text-decoration: none; }
 .topbar label { display: flex; gap: 6px; align-items: center; }
 
@@ -59,14 +59,6 @@ main { max-width: 1180px; margin: 0 auto; padding: 16px; }
 .panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; margin: 0 0 16px; }
 .panel > h2 { margin: 0 0 8px; font-size: 20px; }
 .lead { margin: 0 0 12px; color: var(--muted); }
-
-/* landing */
-.landing { max-width: 920px; margin: 6vh auto; padding: 0 16px; }
-.landing h1 { font-size: 28px; margin: 0 0 8px; }
-.branch-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 20px 0; }
-.branch-cards button { text-align: left; padding: 18px; display: grid; gap: 4px; }
-.branch-cards strong { font-size: 20px; }
-.branch-cards span { color: var(--muted); font-size: 14px; }
 
 /* pickers */
 .pickers { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
@@ -148,7 +140,7 @@ footer { max-width: 1180px; margin: 0 auto; padding: 8px 16px 40px; font-size: 1
   .ipa-sound { min-width: 40px; min-height: 40px; }
   button, select, input { min-height: 40px; }
   .topbar { padding: 6px 10px; position: static; }
-  .topbar .brand { width: 100%; }
+  .topbar .search { order: 3; flex-basis: 100%; }
 }
 
 /* word formation */
@@ -170,3 +162,82 @@ footer { max-width: 1180px; margin: 0 auto; padding: 8px 16px 40px; font-size: 1
 .wf-slot > label + label { margin-top: 8px; }
 .wf-slot label.small { font-weight: normal; flex-direction: row; align-items: center; }
 .wf-slot input[type=checkbox] { width: auto; }
+
+/* search */
+.search { position: relative; flex: 1; min-width: 220px; max-width: 640px; }
+.search input { width: 100%; }
+.search-results {
+  position: absolute; left: 0; right: 0; top: calc(100% + 4px); z-index: 60; max-height: 60vh; overflow-y: auto;
+  display: flex; flex-direction: column; gap: 2px; padding: 6px; background: var(--panel);
+  border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+}
+.search-results button { text-align: left; border-color: transparent; }
+.search-results button:focus, .search-results button:hover { border-color: var(--accent); background: var(--accent-soft); }
+.search-results p { margin: 4px 6px; }
+
+/* the word */
+.word-section h1 { font-size: 26px; margin: 0 0 8px; }
+.word-section h2 { font-size: 18px; margin: 18px 0 8px; }
+.chip { display: inline-flex; gap: 4px; align-items: baseline; margin: 2px 0; border-radius: 999px; padding: 4px 12px; }
+.word-head { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; margin-bottom: 4px; }
+.word-head .big { font-size: 28px; }
+.word-head .gloss { font-size: 17px; }
+.word-card > div { margin: 3px 0; }
+table.panorama { border-collapse: separate; border-spacing: 4px; }
+table.panorama th { font-weight: 600; text-align: left; font-size: 13px; color: var(--muted); white-space: nowrap; padding: 0 6px; }
+table.panorama td { padding: 0; }
+.pcell {
+  width: 100%; min-width: 120px; text-align: left; display: flex; flex-wrap: wrap; gap: 2px 6px; align-items: baseline;
+  background: var(--panel-2); border-color: transparent;
+}
+.pcell .pform { font-size: 16px; }
+.pcell.attested { background: var(--ok-soft); }
+.pcell.attested .sym { color: var(--ok); }
+.pcell.neologism { opacity: .85; border-style: dashed; border-color: var(--line); }
+.pcell.own { outline: 2px solid var(--accent); outline-offset: -2px; }
+.pcell.empty { opacity: .55; }
+.sym.warn { color: var(--warn); }
+.legend { margin-top: 6px; }
+
+/* tabs */
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin: -4px 0 12px; }
+.tabs [role=tab] { border: 1px solid transparent; border-bottom: 0; border-radius: 6px 6px 0 0; font-size: 17px; font-weight: 600; padding: 8px 16px; background: none; color: var(--muted); }
+.tabs [role=tab][aria-selected=true] { color: var(--text); border-color: var(--line); background: var(--panel); margin-bottom: -1px; }
+button.link { border: 0; background: none; color: var(--accent); padding: 0 4px; min-height: 0; text-decoration: underline; }
+a.ext { text-decoration: none; font-size: 12px; }
+
+/* results by stage */
+.stage-chain { margin: 4px 0; font-size: 15px; }
+.stage-chain .arrow { color: var(--muted); }
+details.stages > summary { cursor: pointer; font-size: 13px; color: var(--muted); }
+ol.stage-list { padding-left: 20px; margin: 4px 0; font-size: 13px; }
+ol.stage-list > li { margin: 4px 0; }
+ol.stage-list ol.rules { padding-left: 18px; margin: 2px 0; }
+.tag.mark-attested, .tag.mark-link { background: var(--ok-soft); color: var(--ok); }
+.tag.mark-reconstructed, .tag.mark-root, .tag.mark-cognate, .tag.mark-primitive-attested, .tag.mark-unchanged { background: var(--accent-soft); color: var(--accent); }
+
+/* reference */
+.reference { margin-top: 28px; }
+.ref-head { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin: 0 0 10px; }
+.ref-head h2 { margin: 0 auto 0 0; font-size: 20px; }
+.ref-head label { display: flex; gap: 6px; align-items: center; }
+details.ref > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 8px; }
+details.ref > summary::-webkit-details-marker { display: none; }
+details.ref > summary::before { content: "▸"; color: var(--muted); font-size: 18px; }
+details.ref[open] > summary::before { content: "▾"; }
+details.ref > summary h2 { margin: 0; font-size: 19px; }
+details.ref[open] > summary { margin-bottom: 10px; }
+.rule-title { margin: 4px 0 8px; font-size: 18px; }
+@media (max-width: 760px) {
+  .tabs [role=tab] { padding: 8px 10px; font-size: 15px; }
+  .word-head .big { font-size: 24px; }
+  .pcell { min-width: 96px; }
+}
+@media (max-width: 760px) {
+  table.panorama thead { display: none; }
+  table.panorama, table.panorama tbody { display: block; }
+  table.panorama tr { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 10px; }
+  table.panorama tr > th { flex-basis: 100%; padding: 0; }
+  table.panorama td:empty { display: none; }
+  .pcell { min-width: 0; }
+}

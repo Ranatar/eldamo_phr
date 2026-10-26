@@ -1,6 +1,11 @@
 "use strict";
+// The phonetic reference of Quettamin: sound paths, rules, chains of changes and
+// Eldamo's derivations of one branch and conception. Three collapsed sections;
+// the data are parsed and drawn only when a section is first opened.
 (function () {
-const DATA = JSON.parse(document.getElementById('atlas-data').textContent);
+const QR = window.QR;
+let DATA = null;
+const data = () => DATA || (DATA = JSON.parse(document.getElementById('atlas-data').textContent));
 const SITE = 'https://eldamo.org/content/';
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -43,13 +48,13 @@ const STATUS = {
 };
 function announce(text) { $('status').textContent = text; }
 const ISSUE = new Set(['mismatch', 'no_match', 'unsupported', 'unmatched_formula']);
-const GRADE = DATA.grades || {
+const GRADE = {
   A: 'засвидетельствована в одной деривации', B: 'шаги засвидетельствованы, порядок подтверждён',
   C: 'шаги засвидетельствованы, порядок не установлен', D: 'есть шаг без засвидетельствованных примеров',
 };
 
 // ---------- theme -----------------------------------------------------------
-const THEME_KEY = 'eldamo-atlas-theme';
+const THEME_KEY = 'quettamin-theme';
 function applyTheme(t) { if (t) document.documentElement.setAttribute('data-theme', t); }
 applyTheme(store.get(THEME_KEY));
 $('theme-toggle').addEventListener('click', () => {
@@ -63,7 +68,7 @@ $('theme-toggle').addEventListener('click', () => {
 const cache = {};
 function index(name) {
   if (cache[name]) return cache[name];
-  const B = DATA.branches[name];
+  const B = data().branches[name];
   const X = { B, name };
   X.lang = Object.fromEntries(B.languages.map(l => [l.code, l]));
   X.edge = Object.fromEntries(B.edges.map(e => [e.id, e]));
@@ -138,69 +143,88 @@ function attest(X, edges) {
 }
 
 // ---------- state & routing -------------------------------------------------
-const state = { branch: null, era: 'late', sel: {}, mode: { from: 'phoneme', to: 'phoneme' }, chainPage: 0, derivPage: 0 };
-function readHash() {
-  let raw = location.hash.slice(1);
-  try { raw = decodeURIComponent(raw); } catch (_e) { /* malformed escape: use as is */ }
-  const [name, query] = raw.split('?');
-  const params = new URLSearchParams(query || '');
-  return { name, params };
-}
+const BRANCHES = QR.BRANCHES;
+const SECTIONS = { paths: 'ref-paths', rule: 'ref-paths', chains: 'ref-chains', derivations: 'ref-derivations' };
+const state = { branch: 'quenya', era: 'late', sel: {}, mode: { from: 'phoneme', to: 'phoneme' }, chainPage: 0, derivPage: 0, drawn: {}, ref: '' };
 function writeHash(push) {
-  if (!state.branch) return;
-  const sel = state.sel[state.branch];
-  const params = new URLSearchParams({ era: state.era, from: sel.from, to: sel.to });
-  const url = '#' + state.branch + '?' + params.toString();
-  if (push) location.hash = url.slice(1);
-  else try { history.replaceState(null, '', url); } catch (_e) { /* file:// in some browsers */ }
+  const sel = state.sel[state.branch] || {};
+  QR.set({ b: state.branch, era: state.era, from: sel.from, to: sel.to }, push);
 }
-function route() {
-  const { name, params } = readHash();
-  if (!DATA.branches[name]) { showLanding(); return; }
-  const X = index(name);
-  if (!state.sel[name]) state.sel[name] = { ...X.B.defaults };
-  if (ERAS.includes(params.get('era'))) state.era = params.get('era');
-  for (const slot of ['from', 'to']) if (params.get(slot)) state.sel[name][slot] = params.get(slot);
-  for (const slot of ['from', 'to']) state.mode[slot] = X.phonemes.has(state.sel[name][slot]) ? 'phoneme' : 'cluster';
-  if (state.branch !== name) { state.chainPage = 0; state.derivPage = 0; }
-  state.branch = name;
-  showBranch();
-}
-window.addEventListener('hashchange', route);
-
-// ---------- landing ---------------------------------------------------------------
-const branchSelect = $('branch-select');
-branchSelect.replaceChildren(new Option('—', ''), ...Object.entries(DATA.branches).map(([k, b]) => new Option(b.title, k)));
-branchSelect.addEventListener('change', () => { location.hash = branchSelect.value || ''; });
-$('era-select').addEventListener('change', e => { state.era = e.target.value; writeHash(false); renderAll(); });
-$('home-link').addEventListener('click', e => { e.preventDefault(); location.hash = ''; });
-$('eldamo-version').textContent = DATA.eldamo_version;
-$('branch-cards').innerHTML = Object.entries(DATA.branches).map(([k, b]) => `<button type="button" data-branch="${esc(k)}">
-  <strong>${esc(b.title)}</strong><span>${esc(b.path.late)}</span>
-  <span>${count(b.stats.rules, 'правило', 'правила', 'правил')} · ${count(b.stats.derivations, 'засвидетельствованная деривация', 'засвидетельствованные деривации', 'засвидетельствованных дериваций')} слов ветви · ${count(b.stats.chains, 'цепочка', 'цепочки', 'цепочек')} (A: ${b.stats.grades.A})</span></button>`).join('');
-$('branch-cards').addEventListener('click', e => { const b = e.target.closest('[data-branch]'); if (b) location.hash = b.dataset.branch; });
-
-function showLanding() {
-  state.branch = null;
-  $('landing').hidden = false; $('app').hidden = true; branchSelect.value = '';
-}
-function showBranch() {
-  $('landing').hidden = true; $('app').hidden = false;
-  branchSelect.value = state.branch; $('era-select').value = state.era;
-  renderAll();
-}
-function renderAll() {
+function ensureSel() {
   const X = index(state.branch);
-  $('branch-path').textContent = `${X.B.title}: ${X.B.path[state.era]}. Правил: ${X.B.stats.rules}, переходов в графе: ${X.B.stats.edges}, формулы воспроизводят ${Math.round(100 * X.B.stats.reproduction_rate)}% засвидетельствованных шагов.`;
-  for (const slot of ['from', 'to']) renderPicker(slot);
-  $('output').innerHTML = '';
-  findPaths();
-  renderChains();
-  renderDerivs();
+  if (!state.sel[state.branch]) state.sel[state.branch] = { ...X.B.defaults };
+  return X;
+}
+function route(params) {
+  const b = BRANCHES.includes(params.get('b')) ? params.get('b') : state.branch;
+  const era = ERAS.includes(params.get('era')) ? params.get('era') : state.era;
+  const changed = b !== state.branch || era !== state.era;
+  if (b !== state.branch) { state.chainPage = 0; state.derivPage = 0; }
+  state.branch = b; state.era = era;
+  branchSelect.value = b; $('era-select').value = era;
+  const ref = params.get('ref') || '';
+  const refKey = ref ? params.toString() : '';
+  if (ref && refKey !== state.ref) {
+    // an address into the reference: open the section with these parameters
+    const X = ensureSel();
+    for (const slot of ['from', 'to']) if (params.get(slot)) state.sel[b][slot] = params.get(slot);
+    for (const slot of ['from', 'to']) state.mode[slot] = X.phonemes.has(state.sel[b][slot]) ? 'phoneme' : 'cluster';
+    if (ref === 'derivations' && params.get('q') != null) { $('deriv-query').value = params.get('q'); state.derivPage = 0; }
+    const sec = $(SECTIONS[ref] || 'ref-paths');
+    const fresh = state.ref === '' || state.ref.split('&').find(x => x.startsWith('ref=')) !== 'ref=' + ref
+      || params.get('id') !== new URLSearchParams(state.ref).get('id') || params.get('q') !== new URLSearchParams(state.ref).get('q');
+    state.ref = refKey;
+    if (fresh || changed) {
+      state.drawn = {};
+      sec.open = true;
+      renderOpen();
+      if (ref === 'rule' && params.get('id')) showRule(params.get('id'));
+      sec.scrollIntoView({ block: 'start' });
+    }
+  } else if (changed) {
+    state.drawn = {};
+    renderOpen();
+  }
+  if (!ref) state.ref = '';
+}
+
+// ---------- reference header --------------------------------------------------------
+const branchSelect = $('branch-select');
+branchSelect.replaceChildren(...BRANCHES.map(k => new Option(k === 'quenya' ? 'квенья' : 'синдарин', k)));
+branchSelect.addEventListener('change', () => { state.branch = branchSelect.value; state.chainPage = 0; state.derivPage = 0; state.drawn = {}; writeHash(true); renderOpen(); });
+$('era-select').addEventListener('change', e => { state.era = e.target.value; state.drawn = {}; writeHash(false); renderOpen(); });
+const refSections = () => [$('ref-paths'), $('ref-chains'), $('ref-derivations')];
+function updateToggleAll() {
+  const allOpen = refSections().every(d => d.open);
+  $('ref-toggle-all').textContent = allOpen ? 'Свернуть всё' : 'Развернуть всё';
+  $('ref-toggle-all').setAttribute('aria-expanded', String(allOpen));
+}
+$('ref-toggle-all').addEventListener('click', () => {
+  const open = !refSections().every(d => d.open);
+  for (const d of refSections()) d.open = open;
+  updateToggleAll();
+  if (open) renderOpen();
+});
+for (const d of refSections()) d.addEventListener('toggle', () => { updateToggleAll(); if (d.open) renderOpen(); });
+
+// draw the open sections that are not drawn for the current branch and conception
+function renderOpen() {
+  const key = state.branch + '|' + state.era;
+  if ($('ref-paths').open && state.drawn.paths !== key) {
+    state.drawn.paths = key;
+    const X = ensureSel();
+    for (const slot of ['from', 'to']) state.mode[slot] = X.phonemes.has(state.sel[state.branch][slot]) ? 'phoneme' : 'cluster';
+    $('branch-path').textContent = `${X.B.title}: ${X.B.path[state.era]}. Правил: ${X.B.stats.rules}, переходов в графе: ${X.B.stats.edges}, формулы воспроизводят ${Math.round(100 * X.B.stats.reproduction_rate)}% засвидетельствованных шагов.`;
+    for (const slot of ['from', 'to']) renderPicker(slot);
+    $('output').innerHTML = '';
+    findPaths();
+  }
+  if ($('ref-chains').open && state.drawn.chains !== key) { state.drawn.chains = key; renderChains(); }
+  if ($('ref-derivations').open && state.drawn.derivations !== key) { state.drawn.derivations = key; renderDerivs(); }
 }
 
 // ---------- sound pickers ---------------------------------------------------------
-function current(slot) { return state.sel[state.branch][slot]; }
+function current(slot) { ensureSel(); return state.sel[state.branch][slot]; }
 function setSound(slot, value, keepMode) {
   const X = index(state.branch);
   state.sel[state.branch][slot] = value;
@@ -260,7 +284,7 @@ for (const slot of ['from', 'to']) {
 // ---------- step rendering --------------------------------------------------------
 function ruleLink(X, id) {
   const r = X.B.rules[id];
-  return `<a href="${esc(wordUrl(id))}" target="_blank" rel="noopener">${esc(r ? r.n : id)}</a>`;
+  return `<a href="#" data-rule="${esc(id)}" data-branch="${esc(X.name)}">${esc(r ? r.n : id)}</a> <a href="${esc(wordUrl(id))}" target="_blank" rel="noopener" class="ext" title="Статья Eldamo" aria-label="Статья Eldamo">↗</a>`;
 }
 function exampleWords(X, e, limit = 3) {
   const seen = [];
@@ -521,7 +545,7 @@ function derivCard(X, d, open) {
   return `<details class="card" id="deriv-${esc(d.id)}"${open ? ' open' : ''}><summary><span class="route${d.del ? ' deleted' : ''}">${esc(d.wf || d.f)}</span>
     ${d.g ? `<span class="muted">«${esc(d.g)}»</span>` : ''} <span class="pill" title="${esc(langTitle(d.wl))}">${esc(X.lang[d.wl] ? lang(d.wl) : langTitle(d.wl))}</span> <span class="pill">${count(d.steps.length, 'шаг', 'шага', 'шагов')}</span>${d.src ? ` <span class="small muted">${esc(d.src.split('.')[0])}</span>` : ''}
     ${issues ? `<span class="pill warn">${count(issues, 'расхождение', 'расхождения', 'расхождений')}</span>` : ''}${d.del ? '<span class="pill warn">отвергнуто Толкином</span>' : ''}</summary>
-    <div class="body"><p class="small">Форма <span class="form">${esc(d.f)}</span> из <span class="form">${esc(d.st)}</span> · источник ${sourceLink(d.src)}${d.dsrc && d.dsrc !== d.src ? `, деривация ${sourceLink(d.dsrc)}` : ''} · <a href="${esc(wordUrl(d.w))}" target="_blank" rel="noopener">статья Eldamo</a></p>
+    <div class="body"><p class="small">Форма <span class="form">${esc(d.f)}</span> из <span class="form">${esc(d.st)}</span> · источник ${sourceLink(d.src)}${d.dsrc && d.dsrc !== d.src ? `, деривация ${sourceLink(d.dsrc)}` : ''} · <a href="${esc(wordUrl(d.w))}" target="_blank" rel="noopener">статья Eldamo</a>${d.w ? ` · <a href="#" data-word="${esc(d.w)}" data-branch="${esc(state.branch)}">открыть слово</a>` : ''}</p>
     <div class="table-scroll"><table class="data steps-table"><thead><tr><th>Язык</th><th>Правило</th><th>Формула</th><th>Форма</th><th>Проверка</th></tr></thead><tbody>${rows}</tbody></table></div></div></details>`;
 }
 function derivText(X, d) {
@@ -540,6 +564,9 @@ function renderDerivs() {
   if (/^id:/.test(raw)) {
     const id = raw.slice(3).trim();
     list = X.B.derivs.filter(d => d.id === id);
+  } else if (/^w:/.test(raw)) {
+    const id = raw.slice(2).trim();
+    list = X.B.derivs.filter(d => d.w === id && (showDeleted || !d.del));
   } else {
     list = X.B.derivs.filter((d, i) => X.derivEra[i].has(state.era) && (showDeleted || !d.del) && (others || d.bw)
       && (!issuesOnly || d.steps.some(s => ISSUE.has(s[5])))
@@ -559,18 +586,71 @@ document.addEventListener('click', e => {
   const p = e.target.closest('[data-page]');
   if (p) {
     const [kind, n] = p.dataset.page.split(':');
-    if (kind === 'chain') { state.chainPage = Number(n); renderChains(); $('chains-title').scrollIntoView({ block: 'start' }); }
-    else { state.derivPage = Number(n); renderDerivs(); $('derivs-title').scrollIntoView({ block: 'start' }); }
+    if (kind === 'chain') { state.chainPage = Number(n); renderChains(); $('ref-chains').scrollIntoView({ block: 'start' }); }
+    else { state.derivPage = Number(n); renderDerivs(); $('ref-derivations').scrollIntoView({ block: 'start' }); }
     return;
   }
   const d = e.target.closest('[data-deriv]');
   if (d) {
     e.preventDefault();
     $('deriv-query').value = 'id:' + d.dataset.deriv;
-    state.derivPage = 0; renderDerivs();
-    $('derivations-panel').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    state.derivPage = 0;
+    $('ref-derivations').open = true;
+    state.drawn.derivations = state.branch + '|' + state.era;
+    renderDerivs();
+    $('ref-derivations').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    return;
+  }
+  const r = e.target.closest('[data-rule]');
+  if (r) {
+    e.preventDefault();
+    QR.set({ ref: 'rule', id: r.dataset.rule, b: r.dataset.branch || state.branch, q: null }, true);
+    return;
+  }
+  const w = e.target.closest('[data-ref-derivations]');
+  if (w) {
+    e.preventDefault();
+    QR.set({ ref: 'derivations', id: null, q: 'w:' + w.dataset.refDerivations, b: w.dataset.branch || state.branch }, true);
   }
 });
 
-route();
+// ---------- one rule --------------------------------------------------------------
+function showRule(id) {
+  let X = index(state.branch);
+  if (!X.B.rules[id]) {
+    const other = BRANCHES.find(b => data().branches[b].rules[id]);
+    if (!other) { $('output').innerHTML = `<div class="empty">Правила ${esc(id)} в справочнике нет.</div>`; return; }
+    state.branch = other; branchSelect.value = other; X = index(other);
+  }
+  const r = X.B.rules[id];
+  const lang = X.lang[r.l];
+  if ((lang && lang.era !== state.era) || state.drawn.paths !== state.branch + '|' + state.era) {
+    if (lang) { state.era = lang.era; $('era-select').value = lang.era; }
+    state.drawn = {};
+    $('ref-paths').open = true;
+    renderOpen();
+    QR.set({ b: state.branch, era: state.era }, false);
+  }
+  const pairs = Object.entries(X.B.pairs).filter(([, p]) => p.r === id);
+  const seen = new Set(), words = [];
+  for (const [pid] of pairs) for (const [di, si] of X.occ.get(pid) || []) {
+    const dv = X.B.derivs[di];
+    if (seen.has(dv.id)) continue;
+    seen.add(dv.id);
+    const s = dv.steps[si], before = si === 0 ? dv.st : dv.steps[si - 1][4];
+    words.push(`<li><a href="#" data-deriv="${esc(dv.id)}">${esc(dv.wf || dv.f)}</a> <span class="form">${esc(before)} → ${esc(s[4])}</span></li>`);
+  }
+  const before = r.b.map(t => X.B.rules[t] ? ruleLink(X, t) : esc(t));
+  $('output').innerHTML = `<div class="result-head rule-view"><strong>Правило</strong> · ${esc(lang ? lang.marker + ' ' + (X.B.language_names[r.l] || '') : r.l)}${r.o != null ? ` · порядок ${r.o}` : ''}</div>
+    <h3 class="rule-title">${esc(r.n)} <a href="${esc(wordUrl(id))}" target="_blank" rel="noopener" class="small">статья Eldamo ↗</a></h3>
+    ${r.f ? `<p>Формула: <code>${esc(r.f[0])} &gt; ${esc(r.f[1])}</code></p>` : ''}
+    ${pairs.length ? `<div class="table-scroll"><table class="data"><thead><tr><th>Подформула</th><th>Примеры / воспроизведено</th></tr></thead><tbody>${pairs.map(([, p]) =>
+      `<tr><td><code>${esc(p.f)} &gt; ${esc(p.t)}</code>${p.k === 'contextual' ? ' <span class="small muted">контекстная, вне графа</span>' : ''}</td><td>${p.e ? `${p.e} / ${p.ok}` : '—'}</td></tr>`).join('')}</tbody></table></div>` : ''}
+    ${before.length ? `<p class="small">Раньше правил: ${before.join('; ')}</p>` : ''}
+    ${words.length ? `<p>Засвидетельствовано в деривациях (${words.length}):</p><ol class="steps">${words.slice(0, 40).join('')}</ol>${words.length > 40 ? '<p class="small muted">…</p>' : ''}`
+      : '<p class="muted">Воспроизведённых примеров в деривациях нет.</p>'}`;
+}
+
+QR.on(route);
+window.QREF = { start: () => { route(QR.get()); updateToggleAll(); } };
 })();

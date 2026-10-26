@@ -593,7 +593,7 @@
 |---|---|---|
 | `-Sī > -Sĭ` | contextual | 35 / 34 |
 | `-Sē > -Sĕ` | contextual | 86 / 80 |
-| `-Sā > -Să` | contextual | 190 / 187 |
+| `-Sā > -Să` | contextual | 190 / 186 |
 | `-Sō > -Sŏ` | contextual | 37 / 36 |
 | `-Sū > -Sŭ` | contextual | 4 / 4 |
 

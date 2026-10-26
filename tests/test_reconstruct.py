@@ -63,6 +63,32 @@ class Reconstruction(unittest.TestCase):
         self.assertTrue(R.root_match('mbara', ['MBAR']))
         self.assertFalse(R.root_match('dindē', ['LIN²']))
 
+    def test_near_cognates(self):
+        # Q. erinqua < ✶eriŋkwā and S. ereb < ✶erikwā: no Eldamo link, a primitive one sound apart, 'single, alone'
+        q = self.forms(('quenya', 'late', 2), ('sindarin', 'late', 3), word='700840261')
+        self.assertEqual(q[0], 'ereb')
+        s = R.reconstruct(self.ctx, ('sindarin', 'late', 3), ('quenya', 'late', 2), word='3983103205')
+        self.assertEqual(comparable(s[0]['form']), comparable('eriŋkwa'))
+        self.assertIn('near-cognate', s[0]['marks'])
+
+    def test_cognate_link_first(self):
+        # ᴹQ. fara- 'to hunt' ~ N. fara-: Eldamo's <cognate>
+        vs = R.reconstruct(self.ctx, ('quenya', 'middle', 2), ('sindarin', 'middle', 2), word='2865546933')
+        self.assertIn('link', vs[0]['marks'])
+        self.assertEqual(comparable(vs[0]['form']), 'fara')
+
+    def test_other_forms_are_not_the_word(self):
+        # Q. fara- 'to hunt': Eldamo's derivation is of the gerund farálë < ✶pʰáralē
+        e = self.ctx.lexicon['quenya']['550230859']
+        self.assertNotIn('pʰaralē', e.get('starts', []))
+        self.assertIn('farále', [o['form'] for o in e.get('other_forms', [])])
+        got = self.forms(('quenya', 'late', 2), ('sindarin', 'late', 3), word='550230859')
+        self.assertEqual(got[0], 'fara')          # a verb stem keeps its vowel
+
+    def test_rare_correspondences_when_nothing_else(self):
+        # S. ereb as a bare form: -b < -kwā is rare in the derivations
+        self.assertTrue(self.forms(('sindarin', 'late', 3), ('quenya', 'late', 2), form='ereb', spelled=True))
+
 
 if __name__ == '__main__':
     unittest.main()

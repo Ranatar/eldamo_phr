@@ -586,6 +586,12 @@ class Rule:
                     if end == start and all(t.kind in ('null', 'boundary') for t in src.tokens):
                         continue
                     outs = transform(src, dst, caps)
+                    if fragment[1] and src.position == 'final' and end == len(word):
+                        # a stem (fara-) is not the end of a word: a word-final law may
+                        # change sounds before its last one (dulθa- > dolθa-), not the last
+                        outs = [o for o in outs if o and canonical(o[-1]) == canonical(word[-1])]
+                        if not outs:
+                            continue
                     out.append((start, end, outs))
         return out
 
@@ -733,6 +739,10 @@ def apply_rule(rule: 'Rule', form: str, limit: int = 64, protect: 'Rule | None' 
         if out not in all_sites:
             all_sites.add(out)
             ordered.append(out)
+    if fragment[0] or fragment[1]:
+        # a stem or an affix keeps its hyphens: later laws must still see that it does not end the word
+        mark = lambda f: ('-' if fragment[0] else '') + f + ('-' if fragment[1] else '')
+        all_sites, ordered, single = {mark(f) for f in all_sites}, [mark(f) for f in ordered], {mark(f) for f in single}
     return {'all_sites': all_sites, 'ordered': ordered, 'single_site': single, 'sites': len(sites)}
 
 

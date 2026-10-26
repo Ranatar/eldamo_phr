@@ -39,6 +39,9 @@ LIMIT = 8
 ROOT_BONUS = 2.0
 PHONOTACTIC_PENALTY = 0.2
 SEARCH = {'beam': 150, 'options': 6, 'min_share': 0.02}   # wider than for word formation: no Eldamo primitive to fall back on
+WIDE = {'beam': 300, 'options': 10, 'min_share': 0.005}   # when SEARCH finds nothing: rarer correspondences (S. -b < -kwā)
+NEAR_STOP = {'the', 'and', 'for', 'with', 'from', 'that', 'one', 'not', 'into', 'being', 'thing', 'person', 'make',
+             'made', 'something', 'someone', 'kind', 'sort', 'state', 'act', 'very'}
 EQUIV = [set('kgxɣhq'), set('tdθðþ'), set('pbɸβfv'), set('mṃ'), set('nŋñṇ'), set('l'), set('r'), set('sz'), set('w'),
          set('jy')]
 
@@ -132,6 +135,26 @@ def _runs(form: str):
         if b - a > 2:
             medial.append(''.join(ph[a + 1:b]))
     return initial, medial, final
+
+
+def gloss_words(gloss: str | None) -> set:
+    """Content words of a gloss, cut as the atlas cuts long glosses (80 characters)."""
+    g = gloss or ''
+    if len(g) > 80:
+        g = g[:77]
+    return {w for w in re.findall(r'[a-z]+', g.lower()) if len(w) >= 3 and w not in NEAR_STOP}
+
+
+def phoneme_distance(a: str, b: str) -> int:
+    """Edit distance between two forms counted in phonemes (kw, ŋg are one)."""
+    x, y = phonemes(comparable(a).strip('-')), phonemes(comparable(b).strip('-'))
+    prev = list(range(len(y) + 1))
+    for i in range(1, len(x) + 1):
+        cur = [i] + [0] * len(y)
+        for j in range(1, len(y) + 1):
+            cur[j] = min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (x[i - 1] != y[j - 1]))
+        prev = cur
+    return prev[-1]
 
 
 class Phonotactics:
@@ -245,6 +268,27 @@ class Context:
             self._phonotactics[(branch, code)] = Phonotactics(phonotactic_forms(self.lexicon[branch], branch, code))
         return self._phonotactics[(branch, code)]
 
+    def near_words(self, branch: str, code: str, prim: str, gloss: str, limit: int = 3) -> list:
+        """Attested words of a language whose Eldamo primitive form is the given
+        one or one sound away from it, and whose meaning shares a word with the
+        gloss: Q. erinqua < ✶eriŋkwā 'single, alone' ~ S. ereb < ✶erikwā."""
+        words = gloss_words(gloss)
+        if not words or len(phonemes(comparable(prim))) < 4:
+            return []
+        era = self.langs(branch)[code]['era']
+        out = []
+        for e in self.lexicon[branch].values():
+            if e['lang'] != code or e.get('neo') or e['speech'] == 'root':
+                continue
+            shared = words & gloss_words(e.get('gloss'))
+            if not shared:
+                continue
+            dist = min((phoneme_distance(prim, o) for o in origins(e, era)), default=9)
+            if dist <= 1:
+                out.append((dist, -len(shared), e['form'], e))
+        out.sort(key=lambda t: t[:3])
+        return [(e, d) for d, _, _, e in out[:limit]]
+
     # -- routes ------------------------------------------------------------
     def forward(self, branch: str, era: str, form: str, src: int, dst: int) -> list:
         """[(form, trace)] main reading first."""
@@ -266,19 +310,25 @@ class Context:
                 out[k] = rec
 
         first = dst + 1 if dst > 0 else 0
+        for search in (SEARCH, WIDE):
+            self._backward(seq, add, branch, era, form, src, dst, first, exclude, limit, search)
+            if out:
+                break
+        ranked = sorted(out.values(), key=lambda r: -(r['p'] * (ROOT_BONUS if r['root'] else 1.0)))
+        return ranked[:limit]
+
+    def _backward(self, seq, add, branch, era, form, src, dst, first, exclude, limit, search):
         found = BF.backform(seq, self.table(branch, era, src, dst, exclude), form, era, src, limit=limit,
-                            first_stage=first, **SEARCH)
+                            first_stage=first, **search)
         for f in found:
             add(f['primitive'], math.exp(f['logp']) * (1.0 if f['main'] else 0.5), f['trace'], 'direct')
         if dst > 0:
-            prims = BF.backform(seq, self.table(branch, era, src, 0, exclude), form, era, src, limit=4, **SEARCH)
+            prims = BF.backform(seq, self.table(branch, era, src, 0, exclude), form, era, src, limit=4, **search)
             for f in prims:
                 # the form at stage dst on the very run that gave `form`
                 trace = [t for t in f['trace'] if seq.by_id[t[0]].stage <= dst]
                 g = next((t[2] for t in reversed(trace) if t[2] is not None), f['primitive'])
                 add(g, math.exp(f['logp']) * (1.0 if f['main'] else 0.5), trace, 'primitive ' + f['primitive'])
-        ranked = sorted(out.values(), key=lambda r: -(r['p'] * (ROOT_BONUS if r['root'] else 1.0)))
-        return ranked[:limit]
 
 
 # --------------------------------------------------------------------------
@@ -290,12 +340,21 @@ def _stage_form(ctx: Context, branch: str, entry: dict, era: str, stage: int) ->
     code = ctx.code(branch, era, stage)
     out = []
     if code and entry['lang'] == code:
-        out.append(to_phonetic(entry['form'], branch).strip('-'))
+        out.append(to_phonetic(entry['form'], branch).strip())
     if stage == 0:
-        out += origins(entry, era)
+        out += _origins(entry, era)
     elif code:
         out += list(entry.get('stages', {}).get(code, ()))
     return list(dict.fromkeys(f for f in out if f))
+
+
+def _origins(entry: dict, era: str) -> list:
+    """Primitive forms of a word; a verb stem (fara-) or an affix (-ima) keeps its hyphen,
+    so that the laws of word ends do not act on it."""
+    f = (entry.get('form') or '').strip()
+    lead, trail = f.startswith('-'), f.endswith('-') and len(f) > 1
+    return [('-' if lead and not o.startswith('-') else '') + o + ('-' if trail and not o.endswith('-') else '')
+            for o in origins(entry, era)]
 
 
 def _roots(entry: dict | None) -> list:
@@ -324,7 +383,7 @@ def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, w
             return []
         form = forms[0]
     elif spelled:
-        form = to_phonetic(form, sb).strip('-')
+        form = to_phonetic(form, sb).strip()
     roots = _roots(entry)
     results = {}
 
@@ -342,7 +401,7 @@ def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, w
     if (db, de) == (sb, se):
         _within(ctx, add, sb, se, form, ss, ds, roots, exclude)
     elif de == se:
-        _sideways(ctx, add, src, dst, form, entry, roots, exclude)
+        _sideways(ctx, add, src, dst, form, entry, roots, exclude, use_links)
     else:
         _across(ctx, add, src, dst, form, entry, roots, exclude, use_links)
 
@@ -351,7 +410,7 @@ def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, w
     if dst_code_has_words(ctx, db, de, ds):
         pt = ctx.phonotactics(db, ctx.code(db, de, ds))
         for r in results.values():
-            if 'attested' in r['marks'] or 'link' in r['marks']:
+            if {'attested', 'link', 'near-cognate'} & set(r['marks']):
                 continue
             problems = pt.problems(r['form'])
             if problems:
@@ -387,12 +446,27 @@ def _within(ctx, add, branch, era, form, ss, ds, roots, exclude, base_score=1.0,
                 list(marks) + ['reconstructed'] + (['root'] if r['root'] else []), r['trace'])
 
 
-def _sideways(ctx, add, src, dst, form, entry, roots, exclude):
+def _sideways(ctx, add, src, dst, form, entry, roots, exclude, use_links=True):
     sb, era, ss = src
     db, _, ds = dst
+    if use_links and entry is not None:
+        # Eldamo's own cognates in the target branch
+        linked = [x['id'] for x in entry.get('links', {}).get('cognate', ())]
+        linked += [wid for wid, tag in ctx.reverse_links.get(entry['id'], []) if tag == 'cognate']
+        for wid in dict.fromkeys(linked):
+            b2, e2 = ctx.entry(wid)
+            l2 = ctx.langs(db).get(e2['lang']) if e2 is not None and b2 == db else None
+            if l2 is None or l2['era'] != era:
+                continue
+            f2 = to_phonetic(e2['form'], db).strip()
+            if l2['stage'] == ds:
+                add(f2, 5.0, f'когнат по связи Eldamo: {e2["form"]}', ['link'], [])
+            elif l2['stage'] < ds:
+                _within(ctx, add, db, era, f2, l2['stage'], ds, _roots(e2), exclude, base_score=4.0,
+                        route_prefix=f'когнат по связи Eldamo {e2["form"]}, затем ', marks=['link'])
     prims = []
     if entry is not None:
-        prims = [(f, 1.0, ['primitive-attested']) for f in origins(entry, era)]
+        prims = [(f, 1.0, ['primitive-attested']) for f in _origins(entry, era)]
     if not prims:
         if ss == 0:
             prims = [(form, 1.0, [])]
@@ -404,6 +478,15 @@ def _sideways(ctx, add, src, dst, form, entry, roots, exclude):
     for prim, w, marks in prims:
         _within(ctx, add, db, era, prim, 0, ds, (), exclude, base_score=w,
                 route_prefix=f'через праформу {prim}: ', marks=marks + ['cognate'])
+    # attested words of the target language with a near primitive form and a shared meaning
+    code = ctx.code(db, era, ds)
+    if entry is not None and code is not None and ds == ctx.last_stage(db, era):
+        for prim, _, _ in prims[:2]:
+            for e2, dist in ctx.near_words(db, code, prim, entry.get('gloss', '')):
+                start = origins(e2, era)[0]
+                add(to_phonetic(e2['form'], db).strip(), 3.0 if dist == 0 else 2.0,
+                    f'слово Eldamo {e2["form"]} «{e2.get("gloss", "")}» с {"той же" if dist == 0 else "близкой"} праформой {start}',
+                    ['near-cognate'], [])
 
 
 def _across(ctx, add, src, dst, form, entry, roots, exclude, use_links):
@@ -424,7 +507,7 @@ def _across(ctx, add, src, dst, form, entry, roots, exclude, use_links):
             l2 = ctx.langs(db).get(e2['lang'])
             if l2 is None or l2['era'] != de:
                 continue
-            f2 = to_phonetic(e2['form'], db).strip('-')
+            f2 = to_phonetic(e2['form'], db).strip()
             if l2['stage'] == ds:
                 add(f2, 5.0, f'связь Eldamo ({tag}): {e2["form"]}', ['link'], [])
             else:
@@ -436,7 +519,7 @@ def _across(ctx, add, src, dst, form, entry, roots, exclude, use_links):
     # (c) re-etymologization: primitive of the source conception -> laws of the target one
     prims = []
     if entry is not None:
-        prims = [(f, 1.0) for f in origins(entry, se)]
+        prims = [(f, 1.0) for f in _origins(entry, se)]
     if not prims:
         if ss == 0:
             prims = [(form, 1.0)]
@@ -510,7 +593,9 @@ def evaluate(ctx: Context, sample: int = 80) -> dict:
             src = (sb, 'late', ctx.last_stage(sb, 'late'))
             dst = (db, 'late', ctx.last_stage(db, 'late'))
             st['cases'] += 1
-            for key, kw in (('word', {'word': a}), ('form', {'form': to_phonetic(lex[a]['form'], sb).strip('-')})):
+            # by the word: its Eldamo primitive and near attested words, but not the link being tested
+            for key, kw in (('word', {'word': a, 'use_links': False}),
+                            ('form', {'form': to_phonetic(lex[a]['form'], sb).strip('-')})):
                 got = [comparable(v['form']) for v in reconstruct(ctx, src, dst, **kw)]
                 st[key + '_first'] += bool(got) and got[0] == want
                 st[key + '_any'] += want in got

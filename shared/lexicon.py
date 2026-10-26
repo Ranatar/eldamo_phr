@@ -23,6 +23,7 @@ only on request.
 from __future__ import annotations
 
 import re
+import unicodedata
 from collections import Counter, defaultdict
 
 from .languages import BRANCHES, languages
@@ -122,6 +123,27 @@ def _link(W: Words, lang, form, tag=None) -> dict:
     return rec
 
 
+def _variants(form: str | None) -> set:
+    """Comparable spellings of a written form: diacritics, homonym numbers,
+    hyphens and brackets dropped, c/k, qu/kw, y/i unified; 'an(a)' gives an and
+    ana, 'mazgō/ŭ' gives each alternative."""
+    out = set()
+    for alt in bare(form).split('/'):
+        alt = unicodedata.normalize('NFD', alt.lower())
+        alt = ''.join(ch for ch in alt if not unicodedata.combining(ch))
+        alt = re.sub(r'[-\[\]*†#?!\s]', '', alt)
+        alt = alt.replace('qu', 'kw').replace('q', 'kw').replace('c', 'k').replace('y', 'i')
+        out.add(re.sub(r'[()]', '', alt))
+        out.add(re.sub(r'\([^)]*\)', '', alt))
+    return {x for x in out if x}
+
+
+def same_form(word_form: str | None, form: str | None) -> bool:
+    """A derivation or reference is about the word itself, not about another
+    form of it (fara- 'hunt' and its gerund farálë; Adan and the plural Edain)."""
+    return bool(_variants(word_form) & _variants(form))
+
+
 def _ref_link(W: Words, lang, form, tag=None) -> dict:
     """_link for an element written inside a <ref>: exact form first, then the loose key."""
     rec = _link(W, lang, form, tag)
@@ -191,18 +213,22 @@ def build_lexicon(branch: str, derivations: list) -> list:
         parents = [_link(W, d.get('l'), d.get('v')) for d in w.findall('deriv') if _live(d)]
         if parents:
             entry['parents'] = parents
-        primitive = []
+        primitive, own = [], []
         for ref in w.findall('ref'):
             if not _live(ref):
                 continue
             for d in ref.findall('deriv'):
                 if _live(d) and d.get('v'):
                     primitive.append(d.get('v'))
+                    if same_form(w.get('v'), ref.get('v')) or not ref.get('v'):
+                        own.append(d.get('v'))
+        if own:
+            # origins written for another form of the word (a gerund, a plural) are not its own
+            entry['written_origins'] = list(dict.fromkeys(own))
         if primitive:
-            entry['written_origins'] = list(dict.fromkeys(primitive))
             # an origin written as a root (MBAR) names the word's root
             proto = ('mp', 'p') if langs.get(lang, {}).get('era') == 'middle' else ('p', 'mp')
-            for v in entry['written_origins']:
+            for v in dict.fromkeys(primitive):
                 for code in proto:
                     hits = [i for i in W.find(code, v) if W.by_id[i].get('speech') == 'root']
                     if hits:
@@ -211,6 +237,13 @@ def build_lexicon(branch: str, derivations: list) -> list:
         ders = by_word.get(pid, [])
         if ders:
             entry['derivations'] = [d['id'] for d in ders]
+            # derivations of another form of the word (fara- 'hunt': farálë < ✶pʰáralē)
+            # tell nothing about the word's own primitive form or stage forms
+            other = [d for d in ders if d.get('form') and not same_form(w.get('v'), d['form'])]
+            if other:
+                entry['other_forms'] = [{'form': d['form'], 'start': d['start'], 'derivation': d['id']} for d in other]
+            ders = [d for d in ders if d not in other]
+        if ders:
             entry['starts'] = list(dict.fromkeys(d['start'] for d in ders if d['start']))
             stages = defaultdict(list)
             for d in ders:

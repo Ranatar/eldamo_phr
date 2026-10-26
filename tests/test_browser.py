@@ -203,11 +203,12 @@ class Browser(unittest.TestCase):
         page.wait_for_selector('.pcell[data-cell="sindarin/late/3"] .sym')
         page.click('.pcell[data-cell="sindarin/late/3"]')
         main = page.inner_text('#rc-output .wf-variant.main')
-        self.assertIn('dail', main)
+        self.assertIn('dail', main)                     # S. dail, the same primitive ✶delja
+        self.assertIn('близкой праформой', main)
         self.assertIn('dst=sindarin', page.evaluate('location.hash'))
         # rules are grouped by stage and open in the reference
-        page.click('#rc-output .wf-variant.main details.stages summary')
-        page.click('#rc-output .wf-variant.main [data-rule]')
+        page.click('#rc-output details.stages summary >> nth=0')
+        page.click('#rc-output details.stages[open] [data-rule] >> nth=0')
         page.wait_for_function("location.hash.includes('ref=rule') && document.getElementById('ref-paths').open")
         self.assertIn('Правило', page.inner_text('#output'))
         # the word stays chosen

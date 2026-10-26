@@ -121,7 +121,10 @@ def backform(seq, table: dict, form: str, era: str, last_stage: int, limit: int 
     target = comparable(form)
     rules = seq.sequence(era, first_stage, last_stage)
     found = []
+    f = form.strip()
+    lead, trail = ('-' if f.startswith('-') else ''), ('-' if f.endswith('-') and len(f) > 1 else '')
     for cand, lp in candidates(table, form, beam, options, min_share):
+        cand = lead + cand + trail          # a stem stays a stem, an affix an affix
         vs = seq.run(cand, rules)
         hit = next((k for k, v in enumerate(vs) if comparable(v['form']) == target), None)
         if hit is None:

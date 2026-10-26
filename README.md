@@ -63,6 +63,24 @@ python scripts/build.py --no-tests   # только сборка
 или браузера нет. `ELDAMO_CHROMIUM=/путь/к/chrome` задаёт свой браузер, `ELDAMO_REQUIRE_BROWSER=1`
 превращает пропуск в ошибку.
 
+## Командная строка
+
+Те же реконструкция и словотворчество — без браузера, по данным, которые записала сборка (команда
+отвечает за секунды). Периоды пишутся «ветвь/концепция/стадия»: `quenya/late/2` — Q., `sindarin/late/3` — S.,
+`quenya/middle/2` — ᴹQ., `sindarin/early/1` — G.
+
+```
+python scripts/quettamin.py word lindë                                # статьи лексикона
+python scripts/quettamin.py reconstruct erinqua --to sindarin/late/3  # форма для другого периода
+python scripts/quettamin.py reconstruct ereb --from sindarin/late/3 --to quenya/late/2 --form
+python scripts/quettamin.py panorama galadh                           # все периоды сразу
+python scripts/quettamin.py compose Ambar lindë                       # сложение
+python scripts/quettamin.py compose cen- -ima                         # основа + суффикс
+python scripts/quettamin.py affix -ima                                # засвидетельствованные производные
+```
+
+Слово можно указать и идентификатором статьи Eldamo. Формы в ответах — в фонетической записи Eldamo.
+
 ## Как получаются данные
 
 Конфигурация ветвей — `shared/languages.py`:
@@ -157,6 +175,7 @@ shared/            source, languages, model, interpreter, formula, graph, pipeli
                    affixes, morphophonology, backform, compound, parity;
                    реконструкция между периодами: reconstruct
 scripts/build.py   полная сборка и тесты
+scripts/quettamin.py   командная строка: word, reconstruct, panorama, compose, affix
 scripts/import_eldamo_release.py   импорт новой версии Eldamo
 app/               template.html, styles.css; router.js (адрес), wordform.js (движок), word_ui.js (поиск,
                    карточка, панорама), wordform_ui.js, reconstruct_ui.js (инструменты), runtime.js (справочник),

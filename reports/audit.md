@@ -99,8 +99,8 @@
 | правило удалено Толкином (`deleted_rule`) | 11 |
 | исключение правила: звук сохраняется (`identity`) | 121 |
 | формула применима, но даёт другую форму (`mismatch`) | 151 |
-| формула не находит, к чему примениться (`no_match`) | 261 |
-| формула воспроизводит шаг (`reproduced`) | 8598 |
+| формула не находит, к чему примениться (`no_match`) | 262 |
+| формула воспроизводит шаг (`reproduced`) | 8597 |
 | воспроизводит при применении в одной позиции (`reproduced_partial`) | 24 |
 | правило в Eldamo не указано («?») (`unknown_rule`) | 110 |
 | формулы шага нет среди правил (`unmatched_formula`) | 32 |
@@ -118,8 +118,8 @@
 | [short final [i], [u] became [e], [o]](https://eldamo.org/content/words/word-4062489737.html) | 1 | 16 | 0 |
 | [[t+t], [d+d] from suffixion became [st], [zd]](https://eldamo.org/content/words/word-2479050823.html) | 0 | 0 | 15 |
 | [final [i] intruded into preceding syllable](https://eldamo.org/content/words/word-2399289739.html) | 1 | 13 | 0 |
+| [long final vowels were shortened](https://eldamo.org/content/words/word-2753394075.html) | 6 | 6 | 0 |
 | [[t+t], [d+d] from suffixion became [st], [zd]](https://eldamo.org/content/words/word-2630259491.html) | 0 | 0 | 11 |
-| [long final vowels were shortened](https://eldamo.org/content/words/word-2753394075.html) | 6 | 5 | 0 |
 | [medial [j] became [i]](https://eldamo.org/content/words/word-1679623085.html) | 6 | 5 | 0 |
 | [short vowels generally lengthened in monosyllables](https://eldamo.org/content/words/word-1053424933.html) | 0 | 11 | 0 |
 | [short [a], [o], [u] became [e], [œ], [y] preceding [i]](https://eldamo.org/content/words/word-3958031275.html) | 1 | 9 | 0 |
@@ -146,4 +146,4 @@
 - `s: -Sā > -Să`
 - `s: None > !`
 
-Полный список невоспроизведённых шагов (511) — `reports/audit.json`.
+Полный список невоспроизведённых шагов (512) — `reports/audit.json`.

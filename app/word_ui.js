@@ -19,6 +19,7 @@ const MARKS = {
   attested: ['●', 'засвидетельствовано в Eldamo'], link: ['↔', 'связь Eldamo между статьями'],
   unchanged: ['=', 'форма без изменений'], reconstructed: ['○', 'восстановлено, проверено прогоном вперёд'],
   root: ['√', 'согласуется с корнем слова'], cognate: ['⇄', 'через общую праформу'],
+  'near-cognate': ['≈', 'слово Eldamo с той же или близкой праформой и общим значением'],
   'primitive-attested': ['✶', 'праформа из Eldamo'], neologism: ['◇', 'переэтимологизация — неологизм, не слово Толкина'],
   phonotactics: ['⚠', 'нетипично для целевого языка'], main: ['', 'основное чтение законов'],
 };
@@ -293,7 +294,7 @@ function periods() {
   return rows;
 }
 function cellSymbol(v) {
-  for (const m of ['attested', 'link', 'neologism', 'unchanged']) if (v.marks.includes(m)) return MARKS[m][0];
+  for (const m of ['attested', 'link', 'near-cognate', 'neologism', 'unchanged']) if (v.marks.includes(m)) return MARKS[m][0];
   return '○';
 }
 function renderPanorama(s) {
@@ -316,7 +317,7 @@ function renderPanorama(s) {
   }).join('');
   box.innerHTML = `<h2>Панорама периодов</h2>
     <div class="table-scroll"><table class="panorama"><thead>${head}</thead><tbody>${body}</tbody></table></div>
-    <p class="small muted legend">● засвидетельствовано · ↔ связь Eldamo · = без изменений · ○ восстановлено законами · ◇ неологизм (переэтимологизация) · ⚠ нетипично для языка.
+    <p class="small muted legend">● засвидетельствовано · ↔ связь Eldamo · ≈ слово Eldamo с близкой праформой · = без изменений · ○ восстановлено законами · ◇ неологизм (переэтимологизация) · ⚠ нетипично для языка.
       Щелчок по клетке — все варианты, маршрут и правила.</p>`;
   const cells = [...box.querySelectorAll('[data-cell]')];
   const all = allEngines();
@@ -336,7 +337,7 @@ function renderPanorama(s) {
       btn.insertAdjacentHTML('beforeend', ` <span class="sym" aria-hidden="true">${cellSymbol(v)}</span>${v.marks.includes('phonotactics') ? '<span class="sym warn" aria-hidden="true">⚠</span>' : ''}`
 );
       btn.title = `${v.route} · вес ${v.score}` + (vs.length > 1 ? ` · ещё вариантов: ${vs.length - 1}` : '');
-      if (v.marks.includes('attested')) btn.classList.add('attested');
+      if (v.marks.includes('attested') || v.marks.includes('link') || v.marks.includes('near-cognate')) btn.classList.add('attested');
       else if (v.marks.includes('neologism')) btn.classList.add('neologism');
     }
     setTimeout(step, 0);

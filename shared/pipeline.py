@@ -1,11 +1,12 @@
 """Branch data: model + graph + chains, written to branches/<branch>/data/."""
 from __future__ import annotations
 
+import json
 from collections import Counter
 
 from .graph import GRADES, build_chains, build_edges
 from .io import write_json
-from .languages import BRANCHES
+from .languages import BRANCHES, languages
 from .lexicon import build_lexicon, summary as lexicon_summary
 from .reconstruct import normalize
 from .sequencer import Sequencer, calibrate
@@ -92,3 +93,19 @@ def write_branch(branch: str, data: dict) -> None:
 
 def build_all() -> dict:
     return {b: build_branch(b) for b in BRANCHES}
+
+
+def load_branch(branch: str) -> dict:
+    """A branch as build_branch returns it, read from branches/<branch>/data/
+    (written by scripts/build.py): seconds instead of a minute."""
+    target = branch_dir(branch)
+    out = {name: json.loads((target / f'{name}.json').read_text(encoding='utf-8')) for name in DATA_FILES}
+    for n in out['stages']:                     # JSON object keys are strings; stages are numbers
+        n['forms'] = {int(k): v for k, v in n['forms'].items()}
+    out['meta'] = {'title': BRANCHES[branch]['title'], 'path': BRANCHES[branch]['path'],
+                   'languages': list(languages(branch).values()), 'language_names': {}}
+    return out
+
+
+def load_all() -> dict:
+    return {b: load_branch(b) for b in BRANCHES}

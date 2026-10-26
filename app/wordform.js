@@ -392,7 +392,13 @@ function sites(alts, word, fragment, stress, bounds) {
     for (const [src, dst] of alts)
       for (const [end, caps] of matchAt(src, word, start, fragment, stress, bounds)) {
         if (end === start && src.tokens.every(t => t.kind === 'null' || t.kind === 'boundary')) continue;
-        out.push([start, end, transform(src, dst, caps)]);
+        let outs = transform(src, dst, caps);
+        if (fragment[1] && src.position === 'final' && end === word.length) {
+          // a stem (fara-) is not the end of a word: a word-final law may change sounds before its last one, not the last
+          outs = outs.filter(o => o.length && canonical(o[o.length - 1]) === canonical(word[word.length - 1]));
+          if (!outs.length) continue;
+        }
+        out.push([start, end, outs]);
       }
   return out;
 }
@@ -491,7 +497,9 @@ function applyRule(alts, form, opts = {}) {
       if (k < 0) break;
     }
   }
-  return { ordered, sites: ss.length };
+  // a stem or an affix keeps its hyphens: later laws must still see that it does not end the word
+  const mark = f => (fragment[0] ? '-' : '') + f + (fragment[1] ? '-' : '');
+  return { ordered: fragment[0] || fragment[1] ? ordered.map(mark) : ordered, sites: ss.length };
 }
 
 function comparable(form) {
@@ -812,8 +820,10 @@ function backformWith(engine, table, form, era, lastStage, limit = 5, firstStage
   const target = comparable(form);
   const rules = sequence(engine.rules, era, firstStage, lastStage);
   const found = [];
-  for (const [cand, lp] of bfCandidates(table, form, search.beam || BEAM, search.options || MAX_OPTIONS,
-                                         search.minShare == null ? MIN_SHARE : search.minShare)) {
+  const f = form.trim(), lead = f.startsWith('-') ? '-' : '', trail = f.endsWith('-') && f.length > 1 ? '-' : '';
+  for (let [cand, lp] of bfCandidates(table, form, search.beam || BEAM, search.options || MAX_OPTIONS,
+                                       search.minShare == null ? MIN_SHARE : search.minShare)) {
+    cand = lead + cand + trail;          // a stem stays a stem, an affix an affix
     const vs = run(cand, rules);
     const hit = vs.findIndex(v => comparable(v.form) === target);
     if (hit < 0) continue;
@@ -1046,6 +1056,7 @@ function predict(engine, ids, era, stage, lastStage = null) {
 // ---------------------------------------------------------------- reconstruction (shared/reconstruct.py)
 const RECON_LIMIT = 8, ROOT_BONUS = 2.0, PHONOTACTIC_PENALTY = 0.2;
 const SEARCH = { beam: 150, options: 6, minShare: 0.02 };
+const WIDE = { beam: 300, options: 10, minShare: 0.005 };   // when SEARCH finds nothing: rarer correspondences
 const EQUIV = ['kgxɣhq', 'tdθðþ', 'pbɸβfv', 'mṃ', 'nŋñṇ', 'l', 'r', 'sz', 'w', 'jy'].map(x => new Set(chars(x)));
 function skeleton(rootForm) {
   let f = rootForm.replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰√()\-]/g, '').toLowerCase();
@@ -1124,10 +1135,17 @@ function backwardRun(E, era, form, src, dst, roots = []) {
     if (!out.has(k) || out.get(k).p < p) out.set(k, rec);
   };
   const table = (s, d) => E.recon.tables[`${era}|${s}|${d}`] || {};
-  const found = backformWith(E, table(src, dst), form, era, src, RECON_LIMIT, dst > 0 ? dst + 1 : 0, SEARCH);
+  for (const search of [SEARCH, WIDE]) {
+    backwardWith(E, add, table, era, form, src, dst, search);
+    if (out.size) break;
+  }
+  return [...out.values()].sort((a, b) => b.p * (b.root ? ROOT_BONUS : 1) - a.p * (a.root ? ROOT_BONUS : 1)).slice(0, RECON_LIMIT);
+}
+function backwardWith(E, add, table, era, form, src, dst, search) {
+  const found = backformWith(E, table(src, dst), form, era, src, RECON_LIMIT, dst > 0 ? dst + 1 : 0, search);
   for (const f of found) add(f.primitive, Math.exp(f.logp) * (f.main ? 1 : 0.5), f.trace, 'direct');
   if (dst > 0) {
-    const prims = backformWith(E, table(src, 0), form, era, src, 4, 0, SEARCH);
+    const prims = backformWith(E, table(src, 0), form, era, src, 4, 0, search);
     if (!E.stageOf) E.stageOf = new Map(E.rules.map(r => [r.id, r.stage]));
     for (const f of prims) {
       // the form at stage dst on the very run that gave `form`
@@ -1136,13 +1154,17 @@ function backwardRun(E, era, form, src, dst, roots = []) {
       add(hit ? hit[2] : f.primitive, Math.exp(f.logp) * (f.main ? 1 : 0.5), trace, 'primitive ' + f.primitive);
     }
   }
-  return [...out.values()].sort((a, b) => b.p * (b.root ? ROOT_BONUS : 1) - a.p * (a.root ? ROOT_BONUS : 1)).slice(0, RECON_LIMIT);
+}
+// primitive forms of a word; a verb stem or an affix keeps its hyphen (reconstruct.py: _origins)
+function dashedOrigins(entry, era) {
+  const f = (entry.form || '').trim(), lead = f.startsWith('-'), trail = f.endsWith('-') && f.length > 1;
+  return origins(entry, era).map(o => (lead && !o.startsWith('-') ? '-' : '') + o + (trail && !o.endsWith('-') ? '-' : ''));
 }
 function stageForms(E, branch, entry, era, stage) {
   const code = codeOf(E, era, stage);
   const out = [];
-  if (code && entry.lang === code) out.push(toPhonetic(entry.form, branch).replace(/^-+|-+$/g, ''));
-  if (stage === 0) out.push(...origins(entry, era));
+  if (code && entry.lang === code) out.push(toPhonetic(entry.form, branch).trim());
+  if (stage === 0) out.push(...dashedOrigins(entry, era));
   else if (code) out.push(...((entry.stages || {})[code] || []));
   return [...new Set(out.filter(Boolean))];
 }
@@ -1158,7 +1180,7 @@ function reconstruct(engines, src, dst, opts = {}) {
     if (!forms.length && entry.lang === codeOf(S, se, ss)) forms = [toPhonetic(entry.form, sb)];
     if (!forms.length) return [];
     form = forms[0];
-  } else if (opts.spelled) form = toPhonetic(form, sb).replace(/^-+|-+$/g, '');
+  } else if (opts.spelled) form = toPhonetic(form, sb).trim();
   const roots = (entry && entry.roots) || [];
   const results = new Map();
   const add = (f, score, route, marks, steps) => {
@@ -1168,12 +1190,12 @@ function reconstruct(engines, src, dst, opts = {}) {
   };
   if (entry && sb === db && se === de) for (const f of stageForms(D, db, entry, de, ds)) add(f, 10, 'засвидетельствовано', ['attested'], []);
   if (sb === db && se === de) within(engines, add, sb, se, form, ss, ds, roots);
-  else if (se === de) sideways(engines, add, src, dst, form, entry, roots);
+  else if (se === de) sideways(engines, add, src, dst, form, entry, roots, opts.useLinks !== false);
   else across(engines, add, src, dst, form, entry, roots, opts.useLinks !== false);
   if (ds === lastStageOf(D, de) && codeOf(D, de, ds) != null) {
     const pt = D.recon.phonotactics[codeOf(D, de, ds)] || { initials: {}, clusters: {}, finals: {} };
     for (const r of results.values()) {
-      if (r.marks.includes('attested') || r.marks.includes('link')) continue;
+      if (r.marks.includes('attested') || r.marks.includes('link') || r.marks.includes('near-cognate')) continue;
       const problems = phonotacticProblems(pt, r.form);
       if (problems.length) {
         r.score *= PHONOTACTIC_PENALTY;
@@ -1202,10 +1224,57 @@ function within(engines, add, branch, era, form, ss, ds, roots, baseScore = 1, p
     }
   }
 }
-function sideways(engines, add, src, dst, form, entry, roots) {
+const NEAR_STOP = new Set(['the', 'and', 'for', 'with', 'from', 'that', 'one', 'not', 'into', 'being', 'thing', 'person', 'make',
+  'made', 'something', 'someone', 'kind', 'sort', 'state', 'act', 'very']);
+function glossWords(gloss) {
+  // the payload already cuts glosses over 80 characters to 77 + '…'
+  return new Set(((gloss || '').toLowerCase().match(/[a-z]+/g) || []).filter(w => w.length >= 3 && !NEAR_STOP.has(w)));
+}
+function phonemeDistance(a, b) {
+  const x = phonemes(comparable(a).replace(/^-+|-+$/g, '')), y = phonemes(comparable(b).replace(/^-+|-+$/g, ''));
+  let prev = Array.from({ length: y.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= x.length; i++) {
+    const cur = [i];
+    for (let j = 1; j <= y.length; j++) cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (x[i - 1] !== y[j - 1] ? 1 : 0));
+    prev = cur;
+  }
+  return prev[y.length];
+}
+// attested words of a language with the same or a near Eldamo primitive and a shared meaning (reconstruct.py: near_words)
+function nearWords(E, code, prim, gloss, limit = 3) {
+  const words = glossWords(gloss);
+  if (!words.size || phonemes(comparable(prim)).length < 4) return [];
+  const era = E.languages.find(l => l.code === code).era;
+  const out = [];
+  for (const e of E.lexiconList) {
+    if (e.lang !== code || e.neo || e.speech === 'root') continue;
+    let shared = 0;
+    for (const w of glossWords(e.gloss)) if (words.has(w)) shared++;
+    if (!shared) continue;
+    const dist = Math.min(9, ...origins(e, era).map(o => phonemeDistance(prim, o)));
+    if (dist <= 1) out.push([dist, -shared, e.form, e]);
+  }
+  out.sort((a, b) => a[0] - b[0] || a[1] - b[1] || (a[2] < b[2] ? -1 : a[2] > b[2] ? 1 : 0));
+  return out.slice(0, limit).map(t => [t[3], t[0]]);
+}
+function sideways(engines, add, src, dst, form, entry, roots, useLinks = true) {
   const [sb, era, ss] = src, [db, , ds] = dst;
+  const D = engines[db];
+  if (useLinks && entry) {
+    // Eldamo's own cognates in the target branch
+    const linked = ((entry.links || {}).cognate || []).slice();
+    for (const [wid, tag] of reverseLinks(engines).get(entry.id) || []) if (tag === 'cognate') linked.push(wid);
+    for (const wid of [...new Set(linked)]) {
+      const [b2, e2] = entryOf(engines, wid);
+      const l2 = e2 && b2 === db ? D.languages.find(l => l.code === e2.lang) : null;
+      if (!l2 || l2.era !== era) continue;
+      const f2 = toPhonetic(e2.form, db).trim();
+      if (l2.stage === ds) add(f2, 5, `когнат по связи Eldamo: ${e2.form}`, ['link'], []);
+      else if (l2.stage < ds) within(engines, add, db, era, f2, l2.stage, ds, e2.roots || [], 4, `когнат по связи Eldamo ${e2.form}, затем `, ['link']);
+    }
+  }
   let prims = [];
-  if (entry) prims = origins(entry, era).map(f => [f, 1, ['primitive-attested']]);
+  if (entry) prims = dashedOrigins(entry, era).map(f => [f, 1, ['primitive-attested']]);
   if (!prims.length) {
     if (ss === 0) prims = [[form, 1, []]];
     else {
@@ -1215,6 +1284,16 @@ function sideways(engines, add, src, dst, form, entry, roots) {
     }
   }
   for (const [prim, w, marks] of prims) within(engines, add, db, era, prim, 0, ds, [], w, `через праформу ${prim}: `, marks.concat(['cognate']));
+  const code = codeOf(D, era, ds);
+  if (entry && code != null && ds === lastStageOf(D, era)) {
+    for (const [prim] of prims.slice(0, 2)) {
+      for (const [e2, dist] of nearWords(D, code, prim, entry.gloss || '')) {
+        const start = origins(e2, era)[0];
+        add(toPhonetic(e2.form, db).trim(), dist === 0 ? 3 : 2,
+          `слово Eldamo ${e2.form} «${e2.gloss || ''}» с ${dist === 0 ? 'той же' : 'близкой'} праформой ${start}`, ['near-cognate'], []);
+      }
+    }
+  }
 }
 function across(engines, add, src, dst, form, entry, roots, useLinks) {
   const [sb, se, ss] = src, [db, de, ds] = dst;
@@ -1229,14 +1308,14 @@ function across(engines, add, src, dst, form, entry, roots, useLinks) {
       if (!e2 || b2 !== db || e2.speech === 'root') continue;
       const l2 = D.languages.find(l => l.code === e2.lang);
       if (!l2 || l2.era !== de) continue;
-      const f2 = toPhonetic(e2.form, db).replace(/^-+|-+$/g, '');
+      const f2 = toPhonetic(e2.form, db).trim();
       if (l2.stage === ds) add(f2, 5, `связь Eldamo (${tag}): ${e2.form}`, ['link'], []);
       else within(engines, add, db, de, f2, l2.stage, ds, e2.roots || [], 4, `связь Eldamo (${tag}) ${e2.form}, затем `, ['link']);
     }
   }
   if (ss === lastStageOf(S, se) && ds === lastStageOf(D, de) && sb === db && dstCode) add(form, 1, 'без изменений', ['unchanged'], []);
   let prims = [];
-  if (entry) prims = origins(entry, se).map(f => [f, 1]);
+  if (entry) prims = dashedOrigins(entry, se).map(f => [f, 1]);
   if (!prims.length) {
     if (ss === 0) prims = [[form, 1]];
     else {

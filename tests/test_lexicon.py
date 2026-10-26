@@ -59,7 +59,9 @@ class Lexicon(unittest.TestCase):
 
     def test_stage_forms_from_derivations(self):
         alt, = self.find('quenya', 'q', 'Altáriel')
-        self.assertIn('altarielle', alt['stages']['q'])
+        # the derivation of the variant Altariellë is of another form; Altariel(le) is the word's own
+        self.assertIn('altārielle', alt['stages']['q'])
+        self.assertIn('Altariellë', [o['form'] for o in alt['other_forms']])
 
     def test_no_deleted_words(self):
         for entries in self.lex.values():

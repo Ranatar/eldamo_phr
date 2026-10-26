@@ -170,7 +170,7 @@
   "era": "late",
   "forms": {
    "0": "kʰ-",
-   "1": "x",
+   "1": "x-",
    "2": "h-"
   },
   "main": true
@@ -574,7 +574,7 @@
   "era": "middle",
   "forms": {
    "0": "gaista-",
-   "1": "ɣaista",
+   "1": "ɣaista-",
    "2": "aista-"
   },
   "main": true
@@ -656,7 +656,7 @@
   "era": "middle",
   "forms": {
    "0": "gal-",
-   "1": "ɣal",
+   "1": "ɣal-",
    "2": "al-"
   },
   "main": true
@@ -1721,7 +1721,7 @@
   "era": "late",
   "forms": {
    "0": "abta-",
-   "1": "apta",
+   "1": "apta-",
    "2": "aɸta-"
   },
   "main": true
@@ -1840,17 +1840,6 @@
   "forms": {
    "0": "ɣar",
    "1": "ar"
-  },
-  "main": true
- },
- {
-  "derivation": "D289",
-  "word": "111268799",
-  "era": "late",
-  "forms": {
-   "0": "ad-",
-   "1": "að",
-   "2": "ar-"
   },
   "main": true
  },
@@ -2215,7 +2204,7 @@
   "era": "late",
   "forms": {
    "0": "atʰa-",
-   "1": "aθa",
+   "1": "aθa-",
    "2": "asa-"
   },
   "main": true
@@ -2226,7 +2215,7 @@
   "era": "late",
   "forms": {
    "0": "atʰa-",
-   "1": "aθa",
+   "1": "aθa-",
    "2": "asa-"
   },
   "main": true
@@ -2302,7 +2291,7 @@
   "era": "late",
   "forms": {
    "0": "atʰja-",
-   "1": "aθja",
+   "1": "aθja-",
    "2": "asja-"
   },
   "main": true
@@ -2521,7 +2510,7 @@
   "era": "middle",
   "forms": {
    "0": "gauta-",
-   "1": "ɣauta",
+   "1": "ɣauta-",
    "2": "auta-"
   },
   "main": true
@@ -2564,7 +2553,7 @@
   "era": "late",
   "forms": {
    "0": "aba-",
-   "1": "aβa",
+   "1": "aβa-",
    "2": "ava-"
   },
   "main": true
@@ -2586,7 +2575,7 @@
   "era": "late",
   "forms": {
    "0": "aba-",
-   "1": "aβa",
+   "1": "aβa-",
    "2": "ava-"
   },
   "main": true
@@ -2597,7 +2586,7 @@
   "era": "late",
   "forms": {
    "0": "aba-",
-   "1": "aβa",
+   "1": "aβa-",
    "2": "ava-"
   },
   "main": true
@@ -2967,7 +2956,7 @@
    "0": "karase",
    "1": "kalar"
   },
-  "main": false
+  "main": true
  },
  {
   "derivation": "D441",
@@ -3126,7 +3115,7 @@
   "era": "late",
   "forms": {
    "0": "kab-",
-   "1": "kaβ",
+   "1": "kaβ-",
    "2": "kav-"
   },
   "main": true
@@ -3251,6 +3240,17 @@
   "main": true
  },
  {
+  "derivation": "D484",
+  "word": "2154024483",
+  "era": "late",
+  "forms": {
+   "0": "cetʰ-",
+   "1": "ceθ-",
+   "2": "ces-"
+  },
+  "main": true
+ },
+ {
   "derivation": "D486",
   "word": "3213975931",
   "era": "late",
@@ -3355,7 +3355,7 @@
   "era": "late",
   "forms": {
    "0": "kejta-",
-   "1": "keita",
+   "1": "keita-",
    "2": "kīta-"
   },
   "main": true
@@ -3624,7 +3624,7 @@
   "era": "late",
   "forms": {
    "0": "kub-",
-   "1": "kuβ",
+   "1": "kuβ-",
    "2": "kuv-"
   },
   "main": true
@@ -3635,7 +3635,7 @@
   "era": "late",
   "forms": {
    "0": "kub-",
-   "1": "kuβ",
+   "1": "kuβ-",
    "2": "kuv-"
   },
   "main": true
@@ -3880,7 +3880,7 @@
   "era": "middle",
   "forms": {
    "0": "epʰ-",
-   "1": "eɸ",
+   "1": "eɸ-",
    "2": "ef-"
   },
   "main": true
@@ -4623,7 +4623,7 @@
   "era": "middle",
   "forms": {
    "0": "pʰajna-",
-   "1": "ɸaina",
+   "1": "ɸaina-",
    "2": "faina-"
   },
   "main": true
@@ -4850,7 +4850,7 @@
   "era": "late",
   "forms": {
    "0": "pʰanta-",
-   "1": "ɸanta",
+   "1": "ɸanta-",
    "2": "fanta-"
   },
   "main": true
@@ -4861,7 +4861,7 @@
   "era": "late",
   "forms": {
    "0": "pʰanta-",
-   "1": "ɸanta",
+   "1": "ɸanta-",
    "2": "fanta-"
   },
   "main": true
@@ -4971,7 +4971,7 @@
   "era": "middle",
   "forms": {
    "0": "spara-",
-   "1": "ɸara",
+   "1": "ɸara-",
    "2": "fara-"
   },
   "main": true
@@ -5092,7 +5092,7 @@
   "era": "middle",
   "forms": {
    "0": "pʰarja-",
-   "1": "ɸarja",
+   "1": "ɸarja-",
    "2": "farja-"
   },
   "main": true
@@ -5103,7 +5103,7 @@
   "era": "middle",
   "forms": {
    "0": "pʰarja-",
-   "1": "ɸarja",
+   "1": "ɸarja-",
    "2": "farja-"
   },
   "main": true
@@ -5125,7 +5125,7 @@
   "era": "middle",
   "forms": {
    "0": "pʰasta-",
-   "1": "ɸasta",
+   "1": "ɸasta-",
    "2": "fasta-"
   },
   "main": true
@@ -5373,7 +5373,7 @@
   "era": "late",
   "forms": {
    "0": "pʰerja-",
-   "1": "ɸerja",
+   "1": "ɸerja-",
    "2": "ferja-"
   },
   "main": true
@@ -5384,7 +5384,7 @@
   "era": "middle",
   "forms": {
    "0": "pʰeuya-",
-   "1": "ɸeuya",
+   "1": "ɸeuya-",
    "2": "feuya-"
   },
   "main": true
@@ -5611,7 +5611,7 @@
   "era": "late",
   "forms": {
    "0": "pʰinta-",
-   "1": "ɸinta",
+   "1": "ɸinta-",
    "2": "finta-"
   },
   "main": true
@@ -5622,7 +5622,7 @@
   "era": "late",
   "forms": {
    "0": "pʰinta-",
-   "1": "ɸinta",
+   "1": "ɸinta-",
    "2": "finta-"
   },
   "main": true
@@ -5677,7 +5677,7 @@
   "era": "late",
   "forms": {
    "0": "pʰinja-",
-   "1": "ɸinja",
+   "1": "ɸinja-",
    "2": "finja-"
   },
   "main": true
@@ -6092,7 +6092,7 @@
   "era": "middle",
   "forms": {
    "0": "skalja-",
-   "1": "xalja",
+   "1": "xalja-",
    "2": "halja-"
   },
   "main": true
@@ -6103,7 +6103,7 @@
   "era": "middle",
   "forms": {
    "0": "kʰam-",
-   "1": "xam",
+   "1": "xam-",
    "2": "ham-"
   },
   "main": true
@@ -6114,7 +6114,7 @@
   "era": "middle",
   "forms": {
    "0": "kʰam-",
-   "1": "xam",
+   "1": "xam-",
    "2": "ham-"
   },
   "main": true
@@ -6125,7 +6125,7 @@
   "era": "middle",
   "forms": {
    "0": "kʰam-",
-   "1": "xam",
+   "1": "xam-",
    "2": "ham-"
   },
   "main": true
@@ -6168,7 +6168,7 @@
   "era": "late",
   "forms": {
    "0": "kʰan-",
-   "1": "xan",
+   "1": "xan-",
    "2": "han-"
   },
   "main": true
@@ -6295,7 +6295,7 @@
   "era": "middle",
   "forms": {
    "0": "kʰanja-",
-   "1": "xanja",
+   "1": "xanja-",
    "2": "hanja-"
   },
   "main": true
@@ -6326,7 +6326,7 @@
   "era": "middle",
   "forms": {
    "0": "skarna-",
-   "1": "xarna",
+   "1": "xarna-",
    "2": "harna-"
   },
   "main": true
@@ -6432,7 +6432,7 @@
   "era": "late",
   "forms": {
    "0": "hatʰa-",
-   "1": "haθa",
+   "1": "haθa-",
    "2": "hasa-"
   },
   "main": true
@@ -6443,8 +6443,18 @@
   "era": "middle",
   "forms": {
    "0": "kʰat-",
-   "1": "xat",
+   "1": "xat-",
    "2": "hat-"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D900",
+  "word": "1499204759",
+  "era": "early",
+  "forms": {
+   "0": "xat-",
+   "1": "hat-"
   },
   "main": true
  },
@@ -6454,7 +6464,7 @@
   "era": "middle",
   "forms": {
    "0": "skat-",
-   "1": "xat",
+   "1": "xat-",
    "2": "hat-"
   },
   "main": true
@@ -6508,7 +6518,7 @@
   "era": "middle",
   "forms": {
    "0": "kʰauta-",
-   "1": "xauta",
+   "1": "xauta-",
    "2": "hauta-"
   },
   "main": true
@@ -6573,7 +6583,7 @@
    "0": "xḷk-",
    "1": "hilk-"
   },
-  "main": false
+  "main": true
  },
  {
   "derivation": "D913",
@@ -6759,7 +6769,7 @@
    "0": "xep-",
    "1": "hep-"
   },
-  "main": false
+  "main": true
  },
  {
   "derivation": "D935",
@@ -7073,7 +7083,7 @@
   "era": "middle",
   "forms": {
    "0": "kʰilja-",
-   "1": "xilja",
+   "1": "xilja-",
    "2": "hilja-"
   },
   "main": true
@@ -7084,7 +7094,7 @@
   "era": "middle",
   "forms": {
    "0": "kʰim-",
-   "1": "xim",
+   "1": "xim-",
    "2": "him-"
   },
   "main": true
@@ -7116,7 +7126,7 @@
   "era": "middle",
   "forms": {
    "0": "kʰimja-",
-   "1": "ximja",
+   "1": "ximja-",
    "2": "himja-"
   },
   "main": true
@@ -7149,7 +7159,7 @@
   "era": "late",
   "forms": {
    "0": "kʰir-",
-   "1": "xir",
+   "1": "xir-",
    "2": "hir-"
   },
   "main": true
@@ -7490,7 +7500,7 @@
   "era": "middle",
   "forms": {
    "0": "slussa-",
-   "1": "l̥ussa",
+   "1": "l̥ussa-",
    "2": "lussa-"
   },
   "main": true
@@ -7617,7 +7627,7 @@
   "era": "late",
   "forms": {
    "0": "kʰolja-",
-   "1": "xolja",
+   "1": "xolja-",
    "2": "holja-"
   },
   "main": true
@@ -7682,7 +7692,7 @@
   "era": "middle",
   "forms": {
    "0": "skora-",
-   "1": "xora",
+   "1": "xora-",
    "2": "hora-"
   },
   "main": true
@@ -7715,7 +7725,7 @@
   "era": "middle",
   "forms": {
    "0": "kʰorta-",
-   "1": "xorta",
+   "1": "xorta-",
    "2": "horta-"
   },
   "main": true
@@ -7726,7 +7736,7 @@
   "era": "middle",
   "forms": {
    "0": "kʰorja-",
-   "1": "xorja",
+   "1": "xorja-",
    "2": "horja-"
   },
   "main": true
@@ -7748,7 +7758,7 @@
   "era": "late",
   "forms": {
    "0": "kʰotta-",
-   "1": "xosta",
+   "1": "xosta-",
    "2": "hosta-"
   },
   "main": false
@@ -7759,7 +7769,7 @@
   "era": "middle",
   "forms": {
    "0": "kʰotʰta-",
-   "1": "xosta",
+   "1": "xosta-",
    "2": "hosta-"
   },
   "main": false
@@ -8130,7 +8140,7 @@
   "era": "late",
   "forms": {
    "0": "skūta-",
-   "1": "xūta",
+   "1": "xūta-",
    "2": "hūta-"
   },
   "main": true
@@ -8664,6 +8674,16 @@
    "0": "gilmen",
    "1": "ɣilmen",
    "2": "ilmen"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D1176",
+  "word": "3212091877",
+  "era": "early",
+  "forms": {
+   "0": "ḷt-",
+   "1": "ilt-"
   },
   "main": true
  },
@@ -9204,7 +9224,7 @@
   "era": "late",
   "forms": {
    "0": "-eiti",
-   "1": "eite",
+   "1": "-eite",
    "2": "-īte"
   },
   "main": true
@@ -9395,7 +9415,7 @@
   "forms": {
    "0": "kante"
   },
-  "main": false
+  "main": true
  },
  {
   "derivation": "D1269",
@@ -9484,6 +9504,16 @@
   "forms": {
    "0": "kaɣʷku",
    "1": "kauko"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D1284",
+  "word": "240697207",
+  "era": "early",
+  "forms": {
+   "0": "kaβ-",
+   "1": "kav-"
   },
   "main": true
  },
@@ -9972,7 +10002,7 @@
   "era": "late",
   "forms": {
    "0": "glada-",
-   "1": "ɣlaða",
+   "1": "ɣlaða-",
    "2": "lala-"
   },
   "main": true
@@ -10226,6 +10256,16 @@
   "forms": {
    "0": "dantar",
    "1": "lantar"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D1390",
+  "word": "3219012175",
+  "era": "early",
+  "forms": {
+   "0": "lṇt-",
+   "1": "lant-"
   },
   "main": true
  },
@@ -10550,12 +10590,22 @@
   "main": true
  },
  {
+  "derivation": "D1439",
+  "word": "4030106839",
+  "era": "early",
+  "forms": {
+   "0": "laβ-",
+   "1": "lav-"
+  },
+  "main": true
+ },
+ {
   "derivation": "D1440",
   "word": "3239562453",
   "era": "middle",
   "forms": {
    "0": "dab-",
-   "1": "laβ",
+   "1": "laβ-",
    "2": "lav-"
   },
   "main": true
@@ -10596,7 +10646,7 @@
   "era": "late",
   "forms": {
    "0": "-lde",
-   "1": "lðe",
+   "1": "-lðe",
    "2": "-lde"
   },
   "main": true
@@ -11040,6 +11090,26 @@
   "forms": {
    "0": "lḹtje",
    "1": "laltje"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D1515",
+  "word": "731831447",
+  "era": "early",
+  "forms": {
+   "0": "lḷt-",
+   "1": "lilt-"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D1516",
+  "word": "731831447",
+  "era": "early",
+  "forms": {
+   "0": "lḷt-",
+   "1": "lilt-"
   },
   "main": true
  },
@@ -11713,7 +11783,7 @@
   "era": "middle",
   "forms": {
    "0": "kub-",
-   "1": "kuβ",
+   "1": "kuβ-",
    "2": "kuv-"
   },
   "main": true
@@ -12082,7 +12152,7 @@
    "0": "maxa",
    "1": "mā"
   },
-  "main": false
+  "main": true
  },
  {
   "derivation": "D1660",
@@ -12118,7 +12188,7 @@
   "era": "late",
   "forms": {
    "0": "magta-",
-   "1": "makta",
+   "1": "makta-",
    "2": "maxta-"
   },
   "main": true
@@ -12129,7 +12199,7 @@
   "era": "late",
   "forms": {
    "0": "magta-",
-   "1": "makta",
+   "1": "makta-",
    "2": "maxta-"
   },
   "main": true
@@ -13042,6 +13112,16 @@
   "forms": {
    "0": "mbartja-",
    "1": "martja-"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D1805",
+  "word": "3229817131",
+  "era": "early",
+  "forms": {
+   "0": "mṛt-",
+   "1": "mart-"
   },
   "main": true
  },
@@ -14081,7 +14161,7 @@
    "0": "mburja",
    "1": "mure"
   },
-  "main": false
+  "main": true
  },
  {
   "derivation": "D1952",
@@ -14159,7 +14239,7 @@
   "era": "middle",
   "forms": {
    "0": "nakʰam-",
-   "1": "naxam",
+   "1": "naxam-",
    "2": "naham-"
   },
   "main": true
@@ -14181,7 +14261,7 @@
   "era": "late",
   "forms": {
    "0": "snagta-",
-   "1": "n̥akta",
+   "1": "n̥akta-",
    "2": "naxta-"
   },
   "main": true
@@ -14192,7 +14272,7 @@
   "era": "late",
   "forms": {
    "0": "ndakta-",
-   "1": "nakta",
+   "1": "nakta-",
    "2": "naxta-"
   },
   "main": true
@@ -14203,7 +14283,7 @@
   "era": "late",
   "forms": {
    "0": "ndakta-",
-   "1": "nakta",
+   "1": "nakta-",
    "2": "naxta-"
   },
   "main": true
@@ -14214,7 +14294,7 @@
   "era": "middle",
   "forms": {
    "0": "ndagta-",
-   "1": "nakta",
+   "1": "nakta-",
    "2": "naxta-"
   },
   "main": true
@@ -14235,7 +14315,7 @@
   "era": "late",
   "forms": {
    "0": "nakʰta-",
-   "1": "nakta",
+   "1": "nakta-",
    "2": "naxta-"
   },
   "main": true
@@ -15377,7 +15457,7 @@
   "era": "late",
   "forms": {
    "0": "ndeb-",
-   "1": "neβ",
+   "1": "neβ-",
    "2": "nev-"
   },
   "main": true
@@ -16746,7 +16826,7 @@
   "era": "middle",
   "forms": {
    "0": "ŋgwalja-",
-   "1": "ŋwalja",
+   "1": "ŋwalja-",
    "2": "nwalja-"
   },
   "main": true
@@ -16910,7 +16990,7 @@
   "era": "late",
   "forms": {
    "0": "gwo-",
-   "1": "ɣwa",
+   "1": "ɣwa-",
    "2": "wa-"
   },
   "main": false
@@ -16941,7 +17021,7 @@
   "era": "middle",
   "forms": {
    "0": "gwo-",
-   "1": "ɣwa",
+   "1": "ɣwa-",
    "2": "wa-"
   },
   "main": true
@@ -17206,7 +17286,7 @@
   "era": "middle",
   "forms": {
    "0": "gola-",
-   "1": "ɣola",
+   "1": "ɣola-",
    "2": "ola-"
   },
   "main": true
@@ -18262,6 +18342,17 @@
   "main": true
  },
  {
+  "derivation": "D2501",
+  "word": "1054498305",
+  "era": "late",
+  "forms": {
+   "0": "patʰ-",
+   "1": "paθ-",
+   "2": "pas-"
+  },
+  "main": true
+ },
+ {
   "derivation": "D2502",
   "word": "1054498305",
   "era": "late",
@@ -18347,7 +18438,7 @@
    "0": "pelesa",
    "1": "peler"
   },
-  "main": false
+  "main": true
  },
  {
   "derivation": "D2519",
@@ -18619,6 +18710,16 @@
   "main": true
  },
  {
+  "derivation": "D2561",
+  "word": "3908267307",
+  "era": "early",
+  "forms": {
+   "0": "pṣt-",
+   "1": "pist-"
+  },
+  "main": true
+ },
+ {
   "derivation": "D2562",
   "word": "3908267307",
   "era": "early",
@@ -18635,6 +18736,16 @@
   "forms": {
    "0": "pṣ̄tʲe-",
    "1": "pastʲe-"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D2564",
+  "word": "3908267307",
+  "era": "early",
+  "forms": {
+   "0": "pṣt-",
+   "1": "pist-"
   },
   "main": true
  },
@@ -18912,7 +19023,7 @@
   "forms": {
    "0": "kʷalin"
   },
-  "main": false
+  "main": true
  },
  {
   "derivation": "D2600",
@@ -19485,6 +19596,16 @@
   "forms": {
    "0": "kʷḷtā",
    "1": "kʷilta"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D2672",
+  "word": "1097131471",
+  "era": "early",
+  "forms": {
+   "0": "kʷḷt-",
+   "1": "kʷilt-"
   },
   "main": true
  },
@@ -20256,6 +20377,16 @@
   "main": true
  },
  {
+  "derivation": "D2772",
+  "word": "4160301937",
+  "era": "early",
+  "forms": {
+   "0": "kḷt-",
+   "1": "kilt-"
+  },
+  "main": true
+ },
+ {
   "derivation": "D2773",
   "word": "1389114239",
   "era": "late",
@@ -20816,12 +20947,23 @@
   "main": true
  },
  {
+  "derivation": "D2837",
+  "word": "2954915823",
+  "era": "late",
+  "forms": {
+   "0": "-sjā",
+   "1": "-zjā",
+   "2": "-rja"
+  },
+  "main": true
+ },
+ {
   "derivation": "D2838",
   "word": "2954915823",
   "era": "late",
   "forms": {
    "0": "-sja",
-   "1": "zja",
+   "1": "-zja",
    "2": "-rja"
   },
   "main": true
@@ -20832,7 +20974,18 @@
   "era": "late",
   "forms": {
    "0": "-sja",
-   "1": "zja",
+   "1": "-zja",
+   "2": "-rja"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D2840",
+  "word": "2954915823",
+  "era": "late",
+  "forms": {
+   "0": "-sjā",
+   "1": "-zjā",
    "2": "-rja"
   },
   "main": true
@@ -21345,7 +21498,7 @@
   "forms": {
    "0": "arak"
   },
-  "main": false
+  "main": true
  },
  {
   "derivation": "D2910",
@@ -21500,7 +21653,7 @@
   "era": "late",
   "forms": {
    "0": "sab-",
-   "1": "saβ",
+   "1": "saβ-",
    "2": "sav-"
   },
   "main": true
@@ -21511,7 +21664,7 @@
   "era": "late",
   "forms": {
    "0": "sab-",
-   "1": "saβ",
+   "1": "saβ-",
    "2": "sav-"
   },
   "main": true
@@ -21850,6 +22003,26 @@
   "main": true
  },
  {
+  "derivation": "D2969",
+  "word": "1487893235",
+  "era": "early",
+  "forms": {
+   "0": "sḷt-",
+   "1": "silt-"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D2970",
+  "word": "1487893235",
+  "era": "early",
+  "forms": {
+   "0": "sḷt-",
+   "1": "silt-"
+  },
+  "main": true
+ },
+ {
   "derivation": "D2971",
   "word": "1487893235",
   "era": "early",
@@ -22031,7 +22204,7 @@
   "era": "middle",
   "forms": {
    "0": "tʰinta-",
-   "1": "θinta",
+   "1": "θinta-",
    "2": "sinta-"
   },
   "main": true
@@ -22114,7 +22287,7 @@
   "era": "middle",
   "forms": {
    "0": "titʰilla-",
-   "1": "tiθilla",
+   "1": "tiθilla-",
    "2": "tisilla-"
   },
   "main": true
@@ -22125,7 +22298,7 @@
   "era": "middle",
   "forms": {
    "0": "titʰilla-",
-   "1": "tiθilla",
+   "1": "tiθilla-",
    "2": "tisilla-"
   },
   "main": true
@@ -22393,7 +22566,7 @@
   "era": "late",
   "forms": {
    "0": "tʰosja-",
-   "1": "θozja",
+   "1": "θozja-",
    "2": "sorja-"
   },
   "main": true
@@ -22415,7 +22588,7 @@
   "era": "late",
   "forms": {
    "0": "tʰosta-",
-   "1": "θosta",
+   "1": "θosta-",
    "2": "sosta-"
   },
   "main": true
@@ -22830,7 +23003,7 @@
   "era": "middle",
   "forms": {
    "0": "sub-",
-   "1": "suβ",
+   "1": "suβ-",
    "2": "suv-"
   },
   "main": true
@@ -22841,7 +23014,7 @@
   "era": "middle",
   "forms": {
    "0": "tʰūja-",
-   "1": "θūja",
+   "1": "θūja-",
    "2": "sūja-"
   },
   "main": true
@@ -23087,6 +23260,16 @@
   "main": true
  },
  {
+  "derivation": "D3126",
+  "word": "982334641",
+  "era": "early",
+  "forms": {
+   "0": "tḷt-",
+   "1": "tilt-"
+  },
+  "main": true
+ },
+ {
   "derivation": "D3127",
   "word": "982334641",
   "era": "early",
@@ -23277,6 +23460,16 @@
   "main": true
  },
  {
+  "derivation": "D3153",
+  "word": "3289524431",
+  "era": "early",
+  "forms": {
+   "0": "tṇt-",
+   "1": "tant-"
+  },
+  "main": true
+ },
+ {
   "derivation": "D3154",
   "word": "3289524431",
   "era": "early",
@@ -23312,7 +23505,7 @@
   "era": "middle",
   "forms": {
    "0": "ŋganda-",
-   "1": "ŋanda",
+   "1": "ŋanda-",
    "2": "nanda-"
   },
   "main": true
@@ -23355,7 +23548,7 @@
   "era": "middle",
   "forms": {
    "0": "tʰar-",
-   "1": "θar",
+   "1": "θar-",
    "2": "sar-"
   },
   "main": true
@@ -25594,7 +25787,7 @@
   "era": "late",
   "forms": {
    "0": "ugu-",
-   "1": "uɣu",
+   "1": "uɣu-",
    "2": "ū-"
   },
   "main": true
@@ -25605,7 +25798,7 @@
   "era": "middle",
   "forms": {
    "0": "gū-",
-   "1": "ɣū",
+   "1": "ɣū-",
    "2": "ū-"
   },
   "main": true
@@ -25616,8 +25809,18 @@
   "era": "middle",
   "forms": {
    "0": "gū-",
-   "1": "ɣū",
+   "1": "ɣū-",
    "2": "ū-"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D3491",
+  "word": "1084454815",
+  "era": "early",
+  "forms": {
+   "0": "ūβ-",
+   "1": "ūv-"
   },
   "main": true
  },
@@ -25627,7 +25830,7 @@
   "era": "late",
   "forms": {
    "0": "ugta-",
-   "1": "ukta",
+   "1": "ukta-",
    "2": "uxta-"
   },
   "main": true
@@ -26072,7 +26275,7 @@
   "era": "late",
   "forms": {
    "0": "gur-",
-   "1": "ɣur",
+   "1": "ɣur-",
    "2": "ur-"
   },
   "main": true
@@ -26105,6 +26308,17 @@
   "forms": {
    "0": "ɣuðja-",
    "1": "urja-"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D3564",
+  "word": "64743683",
+  "era": "late",
+  "forms": {
+   "0": "utʰ-",
+   "1": "uθ-",
+   "2": "us-"
   },
   "main": true
  },
@@ -26205,8 +26419,19 @@
   "era": "late",
   "forms": {
    "0": "-ubā",
-   "1": "uβa",
+   "1": "-uβa",
    "2": "-uva"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D3576",
+  "word": "1579660951",
+  "era": "late",
+  "forms": {
+   "0": "-bā",
+   "1": "-βā",
+   "2": "-va"
   },
   "main": true
  },
@@ -26216,7 +26441,7 @@
   "era": "middle",
   "forms": {
    "0": "-uba",
-   "1": "uβa",
+   "1": "-uβa",
    "2": "-uva"
   },
   "main": true
@@ -26646,7 +26871,7 @@
   "era": "late",
   "forms": {
    "0": "gwalta-",
-   "1": "ɣwalta",
+   "1": "ɣwalta-",
    "2": "walta-"
   },
   "main": true
@@ -26668,7 +26893,7 @@
   "era": "late",
   "forms": {
    "0": "gwalja-",
-   "1": "ɣwalja",
+   "1": "ɣwalja-",
    "2": "walja-"
   },
   "main": true
@@ -26860,7 +27085,7 @@
   "era": "middle",
   "forms": {
    "0": "banta-",
-   "1": "βanta",
+   "1": "βanta-",
    "2": "vanta-"
   },
   "main": true
@@ -27079,6 +27304,16 @@
   "main": true
  },
  {
+  "derivation": "D3681",
+  "word": "824635881",
+  "era": "early",
+  "forms": {
+   "0": "aβ-",
+   "1": "av-"
+  },
+  "main": true
+ },
+ {
   "derivation": "D3683",
   "word": "824635881",
   "era": "early",
@@ -27095,17 +27330,6 @@
   "forms": {
    "0": "βar",
    "1": "var"
-  },
-  "main": true
- },
- {
-  "derivation": "D3686",
-  "word": "3781946501",
-  "era": "middle",
-  "forms": {
-   "0": "gwad-",
-   "1": "ɣwað",
-   "2": "var-"
   },
   "main": true
  },
@@ -27224,7 +27448,7 @@
   "era": "middle",
   "forms": {
    "0": "barja-",
-   "1": "βarja",
+   "1": "βarja-",
    "2": "varja-"
   },
   "main": true
@@ -27267,7 +27491,7 @@
   "era": "late",
   "forms": {
    "0": "watʰarja-",
-   "1": "waθarja",
+   "1": "waθarja-",
    "2": "vasarja-"
   },
   "main": true
@@ -27715,7 +27939,7 @@
   "era": "late",
   "forms": {
    "0": "berta-",
-   "1": "βerta",
+   "1": "βerta-",
    "2": "verta-"
   },
   "main": true
@@ -27726,7 +27950,7 @@
   "era": "middle",
   "forms": {
    "0": "besta-",
-   "1": "βesta",
+   "1": "βesta-",
    "2": "vesta-"
   },
   "main": true
@@ -27737,7 +27961,7 @@
   "era": "middle",
   "forms": {
    "0": "besta-",
-   "1": "βesta",
+   "1": "βesta-",
    "2": "vesta-"
   },
   "main": true
@@ -27801,7 +28025,7 @@
   "era": "middle",
   "forms": {
    "0": "berja-",
-   "1": "βerja",
+   "1": "βerja-",
    "2": "verja-"
   },
   "main": true
@@ -27812,7 +28036,7 @@
   "era": "late",
   "forms": {
    "0": "berja-",
-   "1": "βerja",
+   "1": "βerja-",
    "2": "verja-"
   },
   "main": true
@@ -27896,7 +28120,7 @@
   "era": "middle",
   "forms": {
    "0": "gwil-",
-   "1": "ɣwil",
+   "1": "ɣwil-",
    "2": "vil-"
   },
   "main": true
@@ -28038,7 +28262,7 @@
   "era": "late",
   "forms": {
    "0": "wisja-",
-   "1": "wizja",
+   "1": "wizja-",
    "2": "virja-"
   },
   "main": true
@@ -28049,7 +28273,7 @@
   "era": "late",
   "forms": {
    "0": "wisja-",
-   "1": "wizja",
+   "1": "wizja-",
    "2": "virja-"
   },
   "main": true
@@ -28241,6 +28465,39 @@
   "main": true
  },
  {
+  "derivation": "D3847",
+  "word": "855727975",
+  "era": "late",
+  "forms": {
+   "0": "-weg",
+   "1": "-weɣ",
+   "2": "-we"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D3848",
+  "word": "855727975",
+  "era": "late",
+  "forms": {
+   "0": "-wego",
+   "1": "-weɣ",
+   "2": "-we"
+  },
+  "main": false
+ },
+ {
+  "derivation": "D3849",
+  "word": "855727975",
+  "era": "late",
+  "forms": {
+   "0": "-wēgo",
+   "1": "-wēɣ",
+   "2": "-we"
+  },
+  "main": false
+ },
+ {
   "derivation": "D3850",
   "word": "855727975",
   "era": "late",
@@ -28256,7 +28513,7 @@
   "era": "middle",
   "forms": {
    "0": "-wego",
-   "1": "weɣ",
+   "1": "-weɣ",
    "2": "-we"
   },
   "main": false
@@ -28287,7 +28544,7 @@
   "era": "late",
   "forms": {
    "0": "gwer-",
-   "1": "ɣwer",
+   "1": "ɣwer-",
    "2": "wer-"
   },
   "main": true
@@ -28597,6 +28854,16 @@
   "main": true
  },
  {
+  "derivation": "D3893",
+  "word": "1543647367",
+  "era": "early",
+  "forms": {
+   "0": "jaβ-",
+   "1": "jav-"
+  },
+  "main": true
+ },
+ {
   "derivation": "D3894",
   "word": "997389167",
   "era": "middle",
@@ -28756,7 +29023,7 @@
   "era": "middle",
   "forms": {
    "0": "gjerja-",
-   "1": "ɣjerja",
+   "1": "ɣjerja-",
    "2": "jerja-"
   },
   "main": true
@@ -28788,17 +29055,6 @@
   "forms": {
    "0": "dʲēta-",
    "1": "jēta-"
-  },
-  "main": true
- },
- {
-  "derivation": "D3918",
-  "word": "1118488723",
-  "era": "late",
-  "forms": {
-   "0": "jod-",
-   "1": "joð",
-   "2": "jor-"
   },
   "main": true
  },

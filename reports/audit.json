@@ -60,7 +60,7 @@
    "lexicon": {
     "entries": 18422,
     "derivations": 2892,
-    "stages": 2892,
+    "stages": 2653,
     "parents": 2216,
     "roots": 3848,
     "elements": 6643,
@@ -5014,14 +5014,14 @@
     "deleted_rule": 11,
     "identity": 121,
     "mismatch": 151,
-    "no_match": 261,
-    "reproduced": 8598,
+    "no_match": 262,
+    "reproduced": 8597,
     "reproduced_partial": 24,
     "unknown_rule": 110,
     "unmatched_formula": 32,
     "unsupported": 99
    },
-   "reproduction_rate": 0.944,
+   "reproduction_rate": 0.9439,
    "edges": 749,
    "conditional_edges": 148,
    "edges_with_examples": 559,
@@ -5040,7 +5040,7 @@
     "entries": 14706,
     "roots": 3627,
     "derivations": 2083,
-    "stages": 2083,
+    "stages": 1850,
     "elements": 4652,
     "parents": 2350,
     "compounds_with_derivations": 236,
@@ -9326,6 +9326,17 @@
     "before": "nǭvarod",
     "after": "nǭvrod",
     "status": "unsupported:morpheme boundary not marked in the form"
+   },
+   {
+    "derivation": "D2516",
+    "word": "nuitha-",
+    "source": "WJ/413",
+    "rule": "2753394075",
+    "rule_name": "long final vowels were shortened",
+    "formula": "-Sā > -Să",
+    "before": "nuktā-",
+    "after": "nukta-",
+    "status": "no_match"
    },
    {
     "derivation": "D2524",

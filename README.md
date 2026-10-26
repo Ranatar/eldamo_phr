@@ -158,7 +158,7 @@ reports/           audit.md, audit.json — охват, проверка шаг�
 tests/             поведение интерпретатора, инварианты против XML, граф, выходные файлы, браузер
 docs/              словотворчество (word-formation.md) и его план (word-formation-plan.md),
                    реконструкция между периодами (reconstruction.md) и её план
-                   (period-reconstruction-plan.md),
+                   (period-reconstruction-plan.md), план переделки интерфейса (ui-redesign-plan.md),
                    переход с HTML-конвейера (MIGRATION.md), наследие прежних этапов (legacy/),
                    прежние README и отчёты (history/)
 ```

@@ -31,7 +31,7 @@ def graphml(branches: dict) -> str:
             ('e', 'edge', 'reproduced', 'int')]
     out = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<graphml xmlns="http://graphml.graphdrawing.org/xmlns">',
-           f'  <!-- Eldamo {meta()["eldamo_version"]} © Paul Strack, CC BY 4.0; sound graph built by eldamo_phr -->']
+           f'  <!-- Eldamo {meta()["eldamo_version"]} © Paul Strack, CC BY 4.0; sound graph built by Quettamin -->']
     for prefix, domain, name, typ in keys:
         out.append(f'  <key id="{prefix}_{name}" for="{domain}" attr.name="{name}" attr.type="{typ}"/>')
     for b, d in branches.items():

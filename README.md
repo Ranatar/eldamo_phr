@@ -21,7 +21,8 @@ Quettamin (квенья «кузница слова»; имя сложено и�
 Eldamo (lindë → ✶lindē, glindē; ᴹQ. → Q. по связям Eldamo или переэтимологизацией). Описание —
 `docs/reconstruction.md`.
 
-- Quettamin: `app/index.html` (после сборки), опубликованная версия — GitHub Pages репозитория.
+- Quettamin: `app/index.html` (после сборки), опубликованная версия — <https://ranatar.github.io/quettamin/>
+  (репозиторий <https://github.com/Ranatar/quettamin>, прежнее имя — eldamo_phr).
 - Обозреватель корпуса: `app/corpus.html`.
 - Данные ветвей: `branches/<ветвь>/data/*.json`, читаемый каталог правил: `branches/<ветвь>/catalog.md`.
 - Аудит сборки: `reports/audit.md`; проверка секвенсора и словотворчества: `reports/sequencer.md`;

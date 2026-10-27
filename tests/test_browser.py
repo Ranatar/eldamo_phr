@@ -140,9 +140,13 @@ class Browser(unittest.TestCase):
         from shared.parity import vectors
         V = vectors(branches(), recon_every=3)  # a third of the reconstruction calls: each takes a while
         recon = V.pop('__recon__')
+        root_cases = V.pop('__roots__')
         page = self.page(self.atlas)
         bad = page.evaluate("cases => WF.parityRecon({quenya: WFUI.engine('quenya'), sindarin: WFUI.engine('sindarin')}, cases)", recon)
         self.assertEqual(bad, [], 'reconstruction')
+        got = page.evaluate("cases => cases.map(([b, era, f]) => WF.rootCandidates(WFUI.engine(b), f, era, 5).map(c => c[1]))", root_cases)
+        self.assertEqual(got, [c[3] for c in root_cases], 'root candidates')
+        self.assertGreater(sum(1 for c in root_cases if c[3]), 10)
         for b, v in V.items():
             bad = page.evaluate('([b, v]) => WF.parity(WFUI.engine(b), v)', [b, v])
             self.assertEqual(bad, [], b)

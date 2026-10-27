@@ -1357,6 +1357,35 @@ function across(engines, add, src, dst, form, entry, hints, useLinks) {
   for (const [prim, w] of prims) within(engines, add, db, de, prim, 0, ds, NO_HINTS, 0.6 * w, [['reetymology', { prim }]], ['neologism']);
 }
 
+// roots of Eldamo a primitive form could come from (shared/roots.py)
+const ROOT_LANGS = { late: { p: 0 }, middle: { mp: 0 }, early: { ep: 0 } };
+const baseChar = p => p.normalize('NFD')[0];
+function rootScore(formPh, rootPh) {
+  const fc = formPh.filter(p => !isVowel(p)), rc = rootPh.filter(p => !isVowel(p));
+  if (!rc.length || fc.length < rc.length || rc.some((p, i) => fc[i] !== p)) return null;
+  let s = 10 + rc.length;
+  const augment = formPh.length > 0 && isVowel(formPh[0]) && rootPh.length > 0 && !isVowel(rootPh[0]);
+  const body = augment ? formPh.slice(1) : formPh;
+  const head = body.slice(0, rootPh.length);
+  if (head.length === rootPh.length && head.every((p, i) => baseChar(p) === baseChar(rootPh[i]))) s += 4;
+  const rv = rootPh.filter(isVowel), fv = formPh.filter(isVowel);
+  if (rv.length && fv.length && baseChar(rv[0]) === baseChar(fv[0])) s += 2;
+  if (augment) s -= 1;
+  return s;
+}
+function rootCandidates(E, form, era, limit = 3) {
+  const ph = phonemes(comparable(form).replace(/^-+|-+$/g, ''));
+  const langs = ROOT_LANGS[era] || {};
+  const out = [];
+  for (const [id, lang, rform, rph] of E.roots) {
+    if (!(lang in langs)) continue;
+    const s = rootScore(ph, rph);
+    if (s != null) out.push([s + langs[lang], id, lang, rform]);
+  }
+  out.sort((a, b) => b[0] - a[0] || (a[3] < b[3] ? -1 : a[3] > b[3] ? 1 : 0) || (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0));
+  return out.slice(0, limit);
+}
+
 // ---------------------------------------------------------------- engine
 function makeEngine(branch, wf) {
   return {
@@ -1368,6 +1397,7 @@ function makeEngine(branch, wf) {
     lexiconList: wf.lexicon,
     junctions: wf.junctions,
     backform: wf.backform,
+    roots: (wf.roots || []).map(([id, lang, form, ph]) => [id, lang, form, phonemes(ph)]),
     analogues: wf.analogues,
     affixes: Object.assign({ smoothing: wf.junctions.smoothing }, wf.affixes),
     recon: wf.recon,
@@ -1413,6 +1443,6 @@ window.WF = {
   parity, parityRecon,
   Unsupported, phonemes, canonical, comparable, compileRule, applyRule, stressed, nuclei, run, sequence,
   toPhonetic, junctionPredict, reduceCompound, prosodicLengthening, compoundVariants, lenite, backform,
-  formsAt, predict, makeEngine, allomorphs, affixKind, predictAffix, reconstruct, phonotacticProblems,
+  formsAt, predict, makeEngine, allomorphs, affixKind, predictAffix, reconstruct, phonotacticProblems, rootCandidates,
 };
 })();

@@ -10,6 +10,7 @@ from .formula import NULL
 from .graph import GRADES
 from .io import embed_json, write_text
 from .ipa import layout
+from .roots import table as roots_table
 from .sequencer import Sequencer
 from .source import ROOT, meta
 
@@ -110,7 +111,8 @@ def wordform_payload(name: str, data: dict) -> dict:
             x['links'] = {tag: [l['id'] for l in ls] for tag, ls in e['links'].items()}
         if e.get('roots'):
             x['roots'] = [r['form'] for r in e['roots']]
-            x['root_refs'] = [[r['lang'], r['id']] for r in e['roots']]     # for the panorama: language, page
+            # for the card and the panorama: language, page, and how it was found (own / element / cognate)
+            x['root_refs'] = [[r['lang'], r['id'], r.get('via', '')] for r in e['roots']]
         lexicon.append(x)
     return {
         'languages': data['meta']['languages'],
@@ -123,6 +125,7 @@ def wordform_payload(name: str, data: dict) -> dict:
             'smoothing': junction_table.SMOOTHING,
         },
         'analogues': dict(analogues),
+        'roots': roots_table(data['lexicon']),
         'backform': {_key(k): c.most_common() for k, c in bf.items()},
         'affixes': affixes.model_json(data['affixes']['cases']),
         'recon': reconstruct.export(data),

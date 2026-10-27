@@ -47,6 +47,14 @@
   "ru": "корень",
   "en": "root"
  },
+ "card.root.cognate": {
+  "ru": "корень когната",
+  "en": "root of a cognate"
+ },
+ "card.root.element": {
+  "ru": "корни составляющих",
+  "en": "roots of the elements"
+ },
  "card.stem": {
   "ru": "основа",
   "en": "stem"
@@ -1115,6 +1123,10 @@
   "ru": "«Реконструировать» без выбора — взять саму форму; если в языке исходного периода есть ровно одна статья с этой формой, берётся она.",
   "en": "“Reconstruct” without a choice takes the form itself; if the language of the source period has exactly one entry with this form, that entry is taken."
  },
+ "recon.roots": {
+  "ru": "возможный корень:",
+  "en": "possible root:"
+ },
  "recon.spelled": {
   "ru": "в написании Толкина (иначе — фонетическая запись Eldamo)",
   "en": "in Tolkien's spelling (otherwise Eldamo's phonetic notation)"
@@ -1154,6 +1166,18 @@
  "ref.title": {
   "ru": "Фонетический справочник",
   "en": "Phonetic reference"
+ },
+ "root.guessTitle": {
+  "ru": "Возможный корень: согласные корня начинают праформу (гипотеза)",
+  "en": "A possible root: its consonants begin the primitive form (a hypothesis)"
+ },
+ "root.via.cognate": {
+  "ru": "Корень когната слова (статья Eldamo)",
+  "en": "A root of the word's cognate (Eldamo page)"
+ },
+ "root.via.element": {
+  "ru": "Корень составляющей слова (статья Eldamo)",
+  "en": "A root of one of the word's elements (Eldamo page)"
  },
  "route.attested": {
   "ru": "засвидетельствовано",

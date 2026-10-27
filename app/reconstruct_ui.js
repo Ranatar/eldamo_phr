@@ -99,13 +99,19 @@ function run() {
     return;
   }
   const [db, de, ds] = dst;
+  // a primitive form: the roots of Eldamo it could come from
+  const rootsLine = v => {
+    if (ds !== 0) return '';
+    const rs = QU.rootGuess(db, de, v.form);
+    return rs.length ? `<div class="small">${T('recon.roots')} ${rs.map(QU.rootLink).join(' ')}</div>` : '';
+  };
   out.innerHTML = head + '<ol class="wf-variants">' + vs.map((v, k) => {
     const sh = QU.shown(v.form, db, de, ds);
     return `<li class="wf-variant${k === 0 ? ' main' : ''}"><div><strong class="form">${esc(sh)}</strong>
       ${sh !== QU.plainForm(v.form) ? `<span class="ipa muted">[${esc(QU.plainForm(v.form))}]</span>` : ''} <span class="small muted">${T('variant.weight', { w: v.score })}</span>
       <button type="button" class="link small" data-use="${esc(v.form)}" title="${T('variant.useTitle')}">${T('variant.use')}</button></div>
       <div class="small">${esc(QU.routeText(v.route))}</div>
-      <div class="small">${QU.marksHtml(v.marks, v.problems)}</div>${QU.stagesHtml(v.steps, db)}</li>`;
+      <div class="small">${QU.marksHtml(v.marks, v.problems)}</div>${rootsLine(v)}${QU.stagesHtml(v.steps, db)}</li>`;
   }).join('') + '</ol>' +
     `<p class="small muted">${T('recon.note')}</p>`;
 }

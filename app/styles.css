@@ -194,6 +194,8 @@ table.panorama td { padding: 0; }
 .proots { white-space: nowrap; padding: 0 6px !important; font-size: 15px; }
 .proots a { text-decoration: none; margin-right: 6px; }
 .proots .marker { color: var(--muted); font-size: 12px; margin-right: 1px; }
+.proots a.via, a.root.via { font-style: italic; }
+a.root.guess { opacity: .75; border-bottom: 1px dashed currentColor; text-decoration: none; }
 .pcell.attested { background: var(--ok-soft); }
 .pcell.attested .sym { color: var(--ok); }
 .pcell.neologism { opacity: .85; border-style: dashed; border-color: var(--line); }

@@ -153,7 +153,9 @@ python scripts/quettamin.py affix -ima                                # засв
   недавние слова запоминаются в браузере;
 - карточка слова: язык, значение, основа, корень, праформа, связи Eldamo (объединено с, заменено на,
   когнат) со ссылками, переход к его деривациям;
-- панорама периодов: форма слова в каждом периоде обеих ветвей (праформа, промежуточные стадии, язык) с
+- корни: из дериваций Eldamo, иначе через составляющие и когнаты; для праформы без корня — кандидаты из
+  корней Eldamo той же концепции (гипотеза);
+- панорама периодов: корни и форма слова в каждом периоде обеих ветвей (праформа, промежуточные стадии, язык) с
   пометкой «засвидетельствовано / связь Eldamo / восстановлено / неологизм / нетипично для языка»;
   щелчок по клетке открывает реконструкцию;
 - реконструкция: варианты с весом, маршрутом, пометками и правилами по стадиям; любой вариант можно сделать
@@ -183,7 +185,7 @@ source/            eldamo-data-*.xml.xz и SOURCE.json — единственн�
 shared/            source, languages, model, interpreter, formula, graph, pipeline,
                    ipa, catalog, exports, app, report, io;
                    словотворчество: stress, sequencer, lexicon, orthography, junctions,
-                   affixes, morphophonology, backform, compound, parity;
+                   affixes, morphophonology, backform, compound, parity, roots;
                    реконструкция между периодами: reconstruct
 scripts/build.py   полная сборка и тесты
 scripts/quettamin.py   командная строка: word, reconstruct, panorama, compose, affix

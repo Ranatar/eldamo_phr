@@ -160,5 +160,55 @@
   "stem_first": 0,
   "stem_any": 0,
   "words": 2
+ },
+ "root_candidates": {
+  "q": {
+   "words": 801,
+   "first": 487,
+   "top3": 593,
+   "any": 602,
+   "rootless": 128,
+   "guessed": 119
+  },
+  "mq": {
+   "words": 741,
+   "first": 486,
+   "top3": 547,
+   "any": 554,
+   "rootless": 44,
+   "guessed": 39
+  },
+  "eq": {
+   "words": 1386,
+   "first": 404,
+   "top3": 642,
+   "any": 662,
+   "rootless": 63,
+   "guessed": 52
+  },
+  "s": {
+   "words": 533,
+   "first": 302,
+   "top3": 366,
+   "any": 379,
+   "rootless": 56,
+   "guessed": 52
+  },
+  "n": {
+   "words": 882,
+   "first": 524,
+   "top3": 616,
+   "any": 635,
+   "rootless": 14,
+   "guessed": 14
+  },
+  "g": {
+   "words": 477,
+   "first": 125,
+   "top3": 193,
+   "any": 198,
+   "rootless": 35,
+   "guessed": 25
+  }
  }
 }

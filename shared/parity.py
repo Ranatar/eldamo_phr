@@ -79,6 +79,24 @@ def vectors(branches: dict, size: int = 1, recon_every: int = 1) -> dict:
             V['affixed'].append([ids, [[v['form'], v['score']] for v in vs[:10]]])
         out[b] = V
     out['__recon__'] = recon_vectors(branches, size, recon_every)
+    out['__roots__'] = root_vectors(branches, size)
+    return out
+
+
+def root_vectors(branches: dict, size: int = 1) -> list:
+    """Root candidates for primitive forms (shared/roots.py): [branch, era, form, [ids]]."""
+    from . import roots
+    from .compound import origins
+    rnd = random.Random(19)
+    out = []
+    for b, data in branches.items():
+        table = roots.table(data['lexicon'])
+        langs = {l['code']: l for l in data['meta']['languages']}
+        words = [e for e in data['lexicon'] if e['lang'] in langs and e.get('speech') != 'root']
+        for e in rnd.sample(words, min(len(words), 60 * size)):
+            era = langs[e['lang']]['era']
+            for f in origins(e, era)[:1]:
+                out.append([b, era, f, [c[1] for c in roots.candidates(table, f, era, 5)]])
     return out
 
 

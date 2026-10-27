@@ -384,29 +384,80 @@ def _derived_from(W: Words, w) -> list:
     return list(dict.fromkeys(out))
 
 
+def _own_roots(W: Words, pid: str, memo: dict) -> list:
+    """Roots reached from a word page through Eldamo's derivations, step by step (at most 6)."""
+    if pid in memo:
+        return memo[pid]
+    roots, seen = [], {pid}
+    frontier = [pid] if pid in W.by_id else []
+    for _ in range(6):
+        nxt = []
+        for x in frontier:
+            for qid in _derived_from(W, W.by_id[x]):
+                if qid in seen:
+                    continue
+                seen.add(qid)
+                q = W.by_id[qid]
+                if q.get('speech') == 'root':
+                    roots.append({'lang': q.get('l'), 'form': q.get('v'), 'id': qid})
+                else:
+                    nxt.append(qid)
+        frontier = nxt
+    memo[pid] = roots
+    return roots
+
+
+def _element_ids(W: Words, w) -> list:
+    """Word pages of a word's elements: its own <element> (c:get-word), else those inside
+    its references (by @source, else by form)."""
+    out = []
+    for el in w.findall('element'):
+        if _live(el) and el.get('v') != '?':
+            out += W.get_word(el, w.get('l'))
+    if not out:
+        for el in _ref_elements(w):
+            if el.get('v') == '?':
+                continue
+            hit = W.ref(el.get('source'))
+            out += [hit[0]] if hit else W.get_word(el, w.get('l'))
+    return [i for i in dict.fromkeys(out) if W.by_id[i].get('speech') != 'root']
+
+
+def _part_roots(W: Words, pid: str, memo: dict, depth: int = 3) -> list:
+    """Roots of the parts of a compound or derivative with no root of its own: each
+    element's own roots, else its parts' (Q. hyarma: hyar- < ᴹ√KHYAR, má < √MAƷ)."""
+    if depth == 0 or pid not in W.by_id:
+        return []
+    out = []
+    for eid in _element_ids(W, W.by_id[pid]):
+        out += _own_roots(W, eid, memo) or _part_roots(W, eid, memo, depth - 1)
+    return out
+
+
 def _resolve_roots(entries: list, W: Words) -> None:
-    """roots: the roots reached through Eldamo's derivations, step by step (at most 6)."""
+    """roots: [{lang, form, id, via?}] -- the roots reached through Eldamo's derivations;
+    when there are none, those of the word's elements (via 'element'); when there are
+    none either, those of its cognates, own or of their elements (via 'cognate': Q. Perian,
+    cognate S. Perian = per- + ?, per- < √PER)."""
+    memo = {}
     for e in entries:
-        roots, seen = [], {e['id']}
-        frontier = [e['id']] if e['id'] in W.by_id else []
-        for _ in range(6):
-            nxt = []
-            for pid in frontier:
-                for qid in _derived_from(W, W.by_id[pid]):
-                    if qid in seen:
-                        continue
-                    seen.add(qid)
-                    q = W.by_id[qid]
-                    if q.get('speech') == 'root':
-                        roots.append({'lang': q.get('l'), 'form': q.get('v'), 'id': qid})
-                    else:
-                        nxt.append(qid)
-            frontier = nxt
+        roots = list(_own_roots(W, e['id'], memo))
         for r in e.pop('origin_roots', ()):
             if all(r['id'] != x['id'] for x in roots):
                 roots.append(r)
-        if roots:
-            e['roots'] = roots
+        if not roots:
+            roots = [dict(r, via='element') for r in _part_roots(W, e['id'], memo)]
+        if not roots:
+            for cid in W.cognates(e['id']):
+                if cid == e['id']:
+                    continue
+                roots += [dict(r, via='cognate') for r in (_own_roots(W, cid, memo) or _part_roots(W, cid, memo))]
+        out = []
+        for r in roots:
+            if all(r['id'] != x['id'] for x in out):
+                out.append(r)
+        if out:
+            e['roots'] = out
 
 
 PROTO = ('p', 'mp')

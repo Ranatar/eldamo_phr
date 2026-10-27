@@ -369,8 +369,60 @@ def render_reconstruction(branches: dict) -> tuple[str, dict]:
         lines.append(f"| {code} | {st['words']} | {n} | {pct(st.get('gold_stem', 0), n)} | "
                      f"{pct(st.get('plain_first', 0), n)} / {pct(st.get('plain_any', 0), n)} | "
                      f"{pct(st.get('stem_first', 0), n)} / {pct(st.get('stem_any', 0), n)} |")
+    res['root_candidates'] = _root_candidate_check(branches)
+    lines += ['', '## Корни по праформе', '',
+              'Корень не форма, к которой применимы звуковые законы: праформа строится из него морфологией '
+              '(✶kʰjar-ja, ✶a-mbar-a), поэтому назад к корню законы не ведут. Вместо этого корни той же концепции '
+              'сопоставляются с праформой (`shared/roots.py`): согласные корня должны начинать согласные праформы '
+              '(после гласного-приставки), выше — корень, который начинает праформу целиком, потом — с тем же первым '
+              'гласным, потом — более длинный. Проверка — на праформах Eldamo слов, чей корень Eldamo называет '
+              '(своей деривацией, не через составляющие); корни-омонимы (LAK¹, LAK²) различаются, так что первый '
+              'вариант часто ошибается только номером. «Без корня» — слова с праформой, но без корня у Eldamo: у '
+              'скольких находится хоть один корень-кандидат.', '',
+              '| язык | слов | первый = корень Eldamo | среди 3 | среди 8 | без корня: слов / с кандидатом |',
+              '|---|---|---|---|---|---|']
+    for code, st in res['root_candidates'].items():
+        n = st['words']
+        lines.append(f"| {code} | {n} | {pct(st['first'], n)} | {pct(st['top3'], n)} | {pct(st['any'], n)} | "
+                     f"{st['rootless']} / {pct(st['guessed'], st['rootless'])} |")
     lines.append('')
     return '\n'.join(lines) + '\n', res
+
+
+def _root_candidate_check(branches: dict) -> dict:
+    from . import roots as RT
+    from .compound import origins
+    out = {}
+    for b, data in branches.items():
+        table = RT.table(data['lexicon'])
+        langs = {l['code']: l for l in data['meta']['languages']}
+        last = {}
+        for l in data['meta']['languages']:
+            last[l['era']] = max(last.get(l['era'], 0), l['stage'])
+        codes = [l['code'] for l in data['meta']['languages'] if l['stage'] == last[l['era']] and l['stage'] > 0]
+        for code in codes:
+            era = langs[code]['era']
+            st = {'words': 0, 'first': 0, 'top3': 0, 'any': 0, 'rootless': 0, 'guessed': 0}
+            for e in data['lexicon']:
+                if e['lang'] != code or e.get('neo') or e.get('speech') == 'root':
+                    continue
+                prims = origins(e, era)
+                if not prims:
+                    continue
+                cands = [c[1] for c in RT.candidates(table, prims[0], era, 8)]
+                own = [r for r in e.get('roots', ()) if not r.get('via')]
+                if not e.get('roots'):
+                    st['rootless'] += 1
+                    st['guessed'] += bool(cands)
+                if not own:
+                    continue
+                gold = {r['id'] for r in own}
+                st['words'] += 1
+                st['first'] += bool(cands) and cands[0] in gold
+                st['top3'] += any(c in gold for c in cands[:3])
+                st['any'] += any(c in gold for c in cands)
+            out[code] = st
+    return out
 
 
 def write_reconstruction_report(branches: dict) -> None:

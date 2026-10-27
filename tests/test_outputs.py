@@ -64,6 +64,7 @@ class InterfaceCatalog(unittest.TestCase):
     DYNAMIC = {'tag.': ['suffix', 'prefix'], 'problem.': ['initial', 'cluster', 'final'], 'branch.': ['quenya', 'sindarin'],
                'route.': ['attested', 'same', 'forward', 'backDirect', 'backPrimitive', 'cognateLink', 'viaPrimitive',
                           'nearSame', 'nearClose', 'link', 'unchanged', 'reetymology', 'then'],
+               'card.root.': ['element', 'cognate'], 'root.via.': ['element', 'cognate'],
                'ipa.': ['labial', 'dental', 'palatal', 'velar', 'labiovelar', 'glottal', 'stop', 'fricative', 'nasal',
                         'lateral', 'trill', 'approximant', 'high', 'mid', 'low', 'front', 'central', 'back']}
     FILES = ('runtime.js', 'word_ui.js', 'wordform_ui.js', 'reconstruct_ui.js', 'corpus_template.html')

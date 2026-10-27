@@ -120,6 +120,18 @@ class SequencerRun(unittest.TestCase):
         self.assertEqual(self.form('sindarin', 'late', 0, 3, 'ambar'), 'amar')
         self.assertEqual(self.form('sindarin', 'late', 0, 3, 'kairē'), 'kaer')
         self.assertEqual(self.form('sindarin', 'late', 0, 3, 'pʰara-'), 'fara')      # a verb stem, not *fâr
+        # ✶-ja: [j] becomes [i] before the final vowel goes; 'short final [e], [a], [o] vanished'
+        # of Primitive Elvish, which Sindarin derivations do not name, is a variant only
+        self.assertEqual(self.form('sindarin', 'late', 0, 3, 'delja'), 'dail')
+        self.assertEqual(self.form('sindarin', 'late', 0, 3, 'kʰjarja'), 'hair')
+
+    def test_primitive_rules_calibrated_over_both_branches(self):
+        cal = {b: d['calibration'] for b, d in self.data.items()}
+        rid = '2794740763'                     # short final [e], [a], [o] vanished
+        self.assertEqual(cal['quenya']['both:' + rid], cal['sindarin']['both:' + rid])
+        for b in self.data:
+            c = self.seq[b].by_id[rid]
+            self.assertTrue(c.optional and c.rare, b)
 
     def test_backtest_floor(self):
         # regression guard: share of derivations whose main reading is the attested form

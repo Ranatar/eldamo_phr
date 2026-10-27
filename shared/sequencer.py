@@ -26,6 +26,7 @@ OPTIONAL = re.compile(r'\b(often|sometimes|usually|occasionally|generally|sporad
 RARE = re.compile(r'(?<!and )\b(sometimes|occasionally|sporadically|may|might)\b', re.I)   # main reading: not applied
 MAX_VARIANTS = 24
 CALIBRATION_MIN = 3     # derivations needed to override the reading of a rule's name
+POOLED = 'both:'        # calibration key prefix: a primitive rule counted over both branches
 
 
 @dataclass
@@ -155,16 +156,23 @@ class Sequencer:
         self._elsewhere()
         # optional rules: whether the main reading applies them, from how often
         # the replayed derivations of Eldamo needed them (calibrate)
-        for rid, (applied, skipped) in (data.get('calibration') or {}).items():
+        cal = data.get('calibration') or {}
+        for rid, (applied, skipped) in cal.items():
             c = self.by_id.get(rid)
-            if c is None or applied + skipped < CALIBRATION_MIN:
+            if c is None or rid.startswith(POOLED):
                 continue
             if c.optional:
-                c.rare = skipped > applied
-            elif c.stage == 0 and skipped > applied:
-                # a primitive rule most written primitive forms already went
-                # through (_primitive_calibration): kept as a variant only
-                c.optional = c.rare = True
+                if applied + skipped >= CALIBRATION_MIN:
+                    c.rare = skipped > applied
+            elif c.stage == 0:
+                # a primitive rule many written primitive forms already went through
+                # (_primitive_calibration): optional when the derivations of both branches
+                # skip it more often than they name it, and the main reading follows this
+                # branch's own derivations (S. ✶kʰjarja: main *harj, variant hair)
+                pa, ps = cal.get(POOLED + rid, (applied, skipped))
+                if pa + ps >= CALIBRATION_MIN and ps > pa:
+                    c.optional = True
+                    c.rare = skipped > applied if applied + skipped >= CALIBRATION_MIN else True
 
     def _elsewhere(self):
         """Elsewhere condition: a general sub-formula (sr > ss anywhere) does not
@@ -305,9 +313,12 @@ def _replays(data: dict, seq: Sequencer):
         yield d, seq.run(d['start'], rules)
 
 
-def calibrate(data: dict) -> dict:
+def calibrate(data: dict, primitive: dict | None = None) -> dict:
     """{rule id: [applied, skipped]} for optional rules: in the first variant
-    that reproduces an attested derivation, was the rule applied or not."""
+    that reproduces an attested derivation, was the rule applied or not. The
+    rules of Primitive Elvish are counted by _primitive_calibration over this
+    branch and, given `primitive` (primitive_counts), over both branches as well
+    (keys 'both:<rule id>')."""
     seq = Sequencer({**data, 'calibration': None})
     out = {}
     for d, variants in _replays(data, seq):
@@ -319,17 +330,41 @@ def calibrate(data: dict) -> dict:
             if seq.by_id[rid].optional:
                 out.setdefault(rid, [0, 0])[0 if after is not None else 1] += 1
     out.update(_primitive_calibration(data, seq))
+    for rid, counts in (primitive or {}).items():
+        out[POOLED + rid] = counts
     return dict(sorted(out.items()))
 
 
-def _primitive_calibration(data: dict, seq: 'Sequencer') -> dict:
+def primitive_evidence(data: dict) -> dict:
+    """{rule id: [ids of derivations that name it, ids of those that skip it]} for the
+    rules of Primitive Elvish (_primitive_calibration). The primitive language is the
+    same for both branches, so build_all pools the evidence of both (primitive_counts):
+    S. ✶kʰjarja > hair, not *harj by 'short final [e], [a], [o] vanished', which the
+    Sindarin derivations alone, mostly starting in Old Sindarin, leave obligatory."""
+    seq = Sequencer({**data, 'calibration': None})
+    return _primitive_calibration(data, seq, ids=True)
+
+
+def primitive_counts(evidences: list) -> dict:
+    """{rule id: [applied, skipped]} from the evidence of several branches; a derivation
+    both branches hold (of a Primitive Elvish word) counts once."""
+    pooled = {}
+    for ev in evidences:
+        for rid, (applied, skipped) in ev.items():
+            a, k = pooled.setdefault(rid, [set(), set()])
+            a.update(applied)
+            k.update(skipped)
+    return {rid: [len(a), len(k)] for rid, (a, k) in pooled.items()}
+
+
+def _primitive_calibration(data: dict, seq: 'Sequencer', ids: bool = False) -> dict:
     """{rule id: [applied, skipped]} for the rules of Primitive Elvish (stage 0)
     that are not named as optional. Eldamo writes most primitive forms after
     these rules (✶delya -> AQ. lelja, not ✶delya -> delj by 'short final [e],
     [a], [o] vanished'), and only some derivations start before them (✶ambara ->
     ambar). A rule is counted as applied when a derivation names it, as skipped
-    when a derivation that starts from a primitive form does not name it although
-    it would change that form."""
+    when a derivation of the same era does not name it although it would change
+    the form the derivation starts from."""
     pair_rule = {p['id']: p['rule'] for p in data['pairs']}
     rules = [c for c in seq.rules if c.stage == 0 and not c.optional and c.rule is not None]
     out = {}
@@ -337,21 +372,27 @@ def _primitive_calibration(data: dict, seq: 'Sequencer') -> dict:
         if d['deleted'] or not d['steps']:
             continue
         first = seq.langs.get(d['steps'][0]['lang'])
-        if first is None or first['stage'] > 1:
+        if first is None:
             continue
+        # a start form written at a later stage counts too: had the primitive rule acted, the
+        # later form would show it (S. dail < ✶delja: the -a is still there in Sindarin)
         named = {pair_rule.get(s['pair']) for s in d['steps']}
         start = comparable(d['start'])
         sounds = interpreter.word_sounds(d['start'])
         for c in rules:
             if c.era != first['era']:
                 continue
+            # the same derivation of the XML has another id in each branch's data
+            key = (d.get('word'), d.get('source'), d['start'], tuple(x['after'] for x in d['steps']))
             if c.id in named:
-                out.setdefault(c.id, [0, 0])[0] += 1
+                out.setdefault(c.id, [set(), set()])[0].add(key)
                 continue
             changed = Sequencer._apply(c, c.rule, d['start'], sounds)
             if changed and comparable(changed[0]) != start:
-                out.setdefault(c.id, [0, 0])[1] += 1
-    return out
+                out.setdefault(c.id, [set(), set()])[1].add(key)
+    if ids:
+        return out
+    return {rid: [len(a), len(k)] for rid, (a, k) in out.items()}
 
 
 def backtest(data: dict, seq: Sequencer | None = None) -> dict:

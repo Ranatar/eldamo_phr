@@ -9,7 +9,7 @@ from .io import write_json
 from .languages import BRANCHES, languages
 from .lexicon import build_lexicon, summary as lexicon_summary
 from .reconstruct import normalize
-from .sequencer import Sequencer, calibrate
+from .sequencer import Sequencer, calibrate, primitive_counts, primitive_evidence
 from . import affixes
 from . import junctions as junction_table
 from .model import build
@@ -25,6 +25,13 @@ def branch_dir(branch: str):
 
 
 def build_branch(branch: str) -> dict:
+    """One branch on its own (the rules of Primitive Elvish calibrated on its derivations
+    only; build_all pools both branches)."""
+    return finish_branch(prepare_branch(branch))
+
+
+def prepare_branch(branch: str) -> dict:
+    """Everything but the calibration and the stage forms."""
     model = build(branch)
     edges, contextual = build_edges(model)
     chains, chain_summary = build_chains(model, edges)
@@ -79,11 +86,24 @@ def build_branch(branch: str) -> dict:
         'meta': {'title': model['title'], 'path': model['path'], 'languages': model['languages'],
                  'language_names': model['language_names']},
     }
+    return out
+
+
+def finish_branch(out: dict, primitive: dict | None = None) -> dict:
     # which optional rules the sequencer's main reading applies (shared/sequencer.py)
-    out['calibration'] = calibrate(out)
+    out['calibration'] = calibrate(out, primitive)
     # forms at the end of every stage, from the derivations the sequencer reproduces
     out['stages'] = normalize(out, Sequencer(out))
     return out
+
+
+def _prepare(branch: str) -> tuple:
+    out = prepare_branch(branch)
+    return out, primitive_evidence(out)
+
+
+def _finish(args: tuple) -> dict:
+    return finish_branch(*args)
 
 
 def write_branch(branch: str, data: dict) -> None:
@@ -98,10 +118,16 @@ def build_all() -> dict:
     import multiprocessing as mp
     import os
     processes = int(os.environ.get('QUETTAMIN_JOBS') or os.cpu_count() or 1)
+    names = list(BRANCHES)
     if processes > 1 and 'fork' in mp.get_all_start_methods():
-        with mp.get_context('fork').Pool(min(processes, len(BRANCHES))) as pool:
-            return dict(zip(BRANCHES, pool.map(build_branch, list(BRANCHES))))
-    return {b: build_branch(b) for b in BRANCHES}
+        with mp.get_context('fork').Pool(min(processes, len(names))) as pool:
+            prepared = pool.map(_prepare, names)
+            # the rules of Primitive Elvish are one language for both branches
+            primitive = primitive_counts([ev for _, ev in prepared])
+            return dict(zip(names, pool.map(_finish, [(out, primitive) for out, _ in prepared])))
+    prepared = [_prepare(b) for b in names]
+    primitive = primitive_counts([ev for _, ev in prepared])
+    return {b: finish_branch(out, primitive) for b, (out, _) in zip(names, prepared)}
 
 
 def load_branch(branch: str) -> dict:

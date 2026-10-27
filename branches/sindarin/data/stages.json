@@ -98,7 +98,7 @@
   "forms": {
    "0": "leper"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D46",
@@ -107,7 +107,7 @@
   "forms": {
    "0": "leper"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D47",
@@ -233,7 +233,7 @@
   "forms": {
    "0": "ambar"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D89",
@@ -242,7 +242,7 @@
   "forms": {
    "0": "aŋgal"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D90",
@@ -251,7 +251,7 @@
   "forms": {
    "0": "aŋgal"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D91",
@@ -277,6 +277,15 @@
   "era": "early",
   "forms": {
    "0": "tende"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D99",
+  "word": "3702971491",
+  "era": "late",
+  "forms": {
+   "0": "apsene"
   },
   "main": true
  },
@@ -386,7 +395,7 @@
   "forms": {
    "0": "-kas"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D141",
@@ -395,7 +404,7 @@
   "forms": {
    "0": "kenasit"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D143",
@@ -551,6 +560,15 @@
   "main": false
  },
  {
+  "derivation": "D171",
+  "word": "415051751",
+  "era": "late",
+  "forms": {
+   "0": "eŋge"
+  },
+  "main": true
+ },
+ {
   "derivation": "D172",
   "word": "1846718259",
   "era": "middle",
@@ -668,6 +686,15 @@
   "main": true
  },
  {
+  "derivation": "D251",
+  "word": "2528281223",
+  "era": "late",
+  "forms": {
+   "0": "-waite"
+  },
+  "main": false
+ },
+ {
   "derivation": "D253",
   "word": "2684561441",
   "era": "early",
@@ -746,7 +773,7 @@
   "forms": {
    "0": "las"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D294",
@@ -953,7 +980,7 @@
   "forms": {
    "0": "makar"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D362",
@@ -989,7 +1016,7 @@
   "forms": {
    "0": "maitar"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D369",
@@ -1097,7 +1124,7 @@
   "forms": {
    "0": "-n"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D426",
@@ -1106,7 +1133,7 @@
   "forms": {
    "0": "nāpat"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D427",
@@ -1124,7 +1151,7 @@
   "forms": {
    "0": "nat"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D432",
@@ -1214,7 +1241,7 @@
   "forms": {
    "0": "-n"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D459",
@@ -1367,7 +1394,7 @@
   "forms": {
    "0": "kwār"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D511",
@@ -1376,7 +1403,7 @@
   "forms": {
    "0": "kwār"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D512",
@@ -1484,7 +1511,7 @@
   "forms": {
    "0": "-r"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D535",
@@ -1520,7 +1547,7 @@
   "forms": {
    "0": "satar"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D551",
@@ -1556,7 +1583,7 @@
   "forms": {
    "0": "-s"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D568",
@@ -1601,7 +1628,7 @@
   "forms": {
    "0": "-t"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D575",
@@ -2261,8 +2288,8 @@
   "era": "late",
   "forms": {
    "0": "ṃbarta",
-   "1": "ṃbart",
-   "2": "ambarθ",
+   "1": "ṃbarta",
+   "2": "ambarθa",
    "3": "amarθ"
   },
   "main": true
@@ -2688,8 +2715,8 @@
   "era": "late",
   "forms": {
    "0": "astāra",
-   "1": "astār",
-   "2": "astǭr",
+   "1": "astāra",
+   "2": "astǭra",
    "3": "astor"
   },
   "main": true
@@ -2785,8 +2812,8 @@
   "era": "late",
   "forms": {
    "0": "auri",
-   "1": "aur",
-   "2": "ǭr",
+   "1": "aure",
+   "2": "ǭre",
    "3": "aur"
   },
   "main": true
@@ -2803,12 +2830,36 @@
   "main": true
  },
  {
+  "derivation": "D830",
+  "word": "2515527153",
+  "era": "late",
+  "forms": {
+   "0": "awtʰa",
+   "1": "autʰa",
+   "2": "ǭθa",
+   "3": "auθ"
+  },
+  "main": true
+ },
+ {
   "derivation": "D831",
   "word": "3865426267",
   "era": "late",
   "forms": {
    "2": "aba-",
    "3": "ava-"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D832",
+  "word": "3919380347",
+  "era": "late",
+  "forms": {
+   "0": "abata",
+   "1": "abata",
+   "2": "abata",
+   "3": "avad"
   },
   "main": true
  },
@@ -2822,7 +2873,7 @@
    "2": "abar",
    "3": "avar"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D834",
@@ -2834,7 +2885,7 @@
    "2": "abar",
    "3": "avar"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D835",
@@ -3139,7 +3190,7 @@
    "2": "mbar",
    "3": "bar"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D876",
@@ -3151,7 +3202,7 @@
    "2": "mbar",
    "3": "bar"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D877",
@@ -3163,7 +3214,7 @@
    "2": "mbar",
    "3": "bar"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D878",
@@ -3175,7 +3226,7 @@
    "2": "mbar",
    "3": "bar"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D879",
@@ -4332,7 +4383,7 @@
   "forms": {
    "0": "karan"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D1029",
@@ -4496,13 +4547,25 @@
   "main": true
  },
  {
+  "derivation": "D1052",
+  "word": "3289016555",
+  "era": "late",
+  "forms": {
+   "0": "kjawini",
+   "1": "kjawine",
+   "2": "kawine",
+   "3": "kewin"
+  },
+  "main": true
+ },
+ {
   "derivation": "D1053",
   "word": "3289016555",
   "era": "late",
   "forms": {
    "0": "kjawi",
-   "1": "kjaw",
-   "2": "kaw",
+   "1": "kjawe",
+   "2": "kawe",
    "3": "kau"
   },
   "main": false
@@ -4939,8 +5002,8 @@
   "era": "late",
   "forms": {
    "0": "kiríssi",
-   "1": "kríss",
-   "2": "kríss",
+   "1": "krísse",
+   "2": "krísse",
    "3": "kriss"
   },
   "main": true
@@ -6036,6 +6099,18 @@
   "main": true
  },
  {
+  "derivation": "D1271",
+  "word": "1696525921",
+  "era": "late",
+  "forms": {
+   "0": "duini",
+   "1": "duine",
+   "2": "duine",
+   "3": "duin"
+  },
+  "main": true
+ },
+ {
   "derivation": "D1274",
   "word": "37776891",
   "era": "middle",
@@ -6973,6 +7048,30 @@
   "main": true
  },
  {
+  "derivation": "D1395",
+  "word": "70778061",
+  "era": "late",
+  "forms": {
+   "0": "ṣpini",
+   "1": "ṣpine",
+   "2": "espine",
+   "3": "esbin"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D1396",
+  "word": "70778061",
+  "era": "late",
+  "forms": {
+   "0": "ṣpini",
+   "1": "ṣpine",
+   "2": "espine",
+   "3": "esbin"
+  },
+  "main": true
+ },
+ {
   "derivation": "D1397",
   "word": "2977331131",
   "era": "early",
@@ -7045,6 +7144,18 @@
    "1": "pʰailā",
    "2": "ɸailă",
    "3": "fael"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D1408",
+  "word": "669878991",
+  "era": "late",
+  "forms": {
+   "0": "pʰaini",
+   "1": "pʰaine",
+   "2": "ɸaine",
+   "3": "faen"
   },
   "main": true
  },
@@ -7611,9 +7722,33 @@
   "era": "late",
   "forms": {
    "0": "pʰimbi",
-   "1": "pʰimb",
-   "2": "ɸimb",
+   "1": "pʰimbe",
+   "2": "ɸimbe",
    "3": "fim"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D1482",
+  "word": "3508880117",
+  "era": "late",
+  "forms": {
+   "0": "spini",
+   "1": "spine",
+   "2": "sɸine",
+   "3": "fīn"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D1483",
+  "word": "3508880117",
+  "era": "late",
+  "forms": {
+   "0": "pʰini",
+   "1": "pʰine",
+   "2": "ɸine",
+   "3": "fīn"
   },
   "main": true
  },
@@ -7754,8 +7889,8 @@
   "era": "late",
   "forms": {
    "0": "pʰilíŋki",
-   "1": "pʰlíŋk",
-   "2": "ɸlíŋx",
+   "1": "pʰlíŋke",
+   "2": "ɸlíŋxe",
    "3": "fliŋk"
   },
   "main": true
@@ -7954,8 +8089,8 @@
   "era": "late",
   "forms": {
    "0": "gaira",
-   "1": "gair",
-   "2": "gair",
+   "1": "gaira",
+   "2": "gaira",
    "3": "gaer"
   },
   "main": true
@@ -7966,8 +8101,8 @@
   "era": "late",
   "forms": {
    "0": "gaiara",
-   "1": "gaiar",
-   "2": "gaiar",
+   "1": "gaiara",
+   "2": "gaiara",
    "3": "gaear"
   },
   "main": true
@@ -11507,8 +11642,8 @@
   "era": "late",
   "forms": {
    "0": "imbi",
-   "1": "imb",
-   "2": "imb",
+   "1": "imbe",
+   "2": "imbe",
    "3": "im"
   },
   "main": true
@@ -11540,8 +11675,8 @@
   "era": "late",
   "forms": {
    "0": "indu",
-   "1": "ind",
-   "2": "ind",
+   "1": "indo",
+   "2": "indo",
    "3": "inn"
   },
   "main": true
@@ -12120,6 +12255,54 @@
   "main": true
  },
  {
+  "derivation": "D2133",
+  "word": "1290699021",
+  "era": "late",
+  "forms": {
+   "0": "lepene",
+   "1": "lepene",
+   "2": "lepene",
+   "3": "leben"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D2134",
+  "word": "1290699021",
+  "era": "late",
+  "forms": {
+   "0": "lepene",
+   "1": "lepene",
+   "2": "lepene",
+   "3": "leben"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D2135",
+  "word": "1290699021",
+  "era": "late",
+  "forms": {
+   "0": "lepene",
+   "1": "lepene",
+   "2": "lepene",
+   "3": "leben"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D2136",
+  "word": "1290699021",
+  "era": "late",
+  "forms": {
+   "0": "lepene",
+   "1": "lepene",
+   "2": "lepene",
+   "3": "leben"
+  },
+  "main": true
+ },
+ {
   "derivation": "D2137",
   "word": "3609205973",
   "era": "middle",
@@ -12145,8 +12328,8 @@
   "era": "late",
   "forms": {
    "0": "lepero",
-   "1": "leper",
-   "2": "leper",
+   "1": "lepero",
+   "2": "lepero",
    "3": "leber"
   },
   "main": true
@@ -12168,8 +12351,8 @@
   "era": "late",
   "forms": {
    "0": "lepero",
-   "1": "leper",
-   "2": "leper",
+   "1": "lepero",
+   "2": "lepero",
    "3": "leber"
   },
   "main": true
@@ -12191,8 +12374,8 @@
   "era": "late",
   "forms": {
    "0": "lepero",
-   "1": "leper",
-   "2": "leper",
+   "1": "lepero",
+   "2": "lepero",
    "3": "leber"
   },
   "main": true
@@ -12383,8 +12566,8 @@
   "era": "late",
   "forms": {
    "0": "slimbi",
-   "1": "slimb",
-   "2": "l̥imb",
+   "1": "slimbe",
+   "2": "l̥imbe",
    "3": "l̥im"
   },
   "main": true
@@ -12395,8 +12578,8 @@
   "era": "late",
   "forms": {
    "0": "limbi",
-   "1": "limb",
-   "2": "limb",
+   "1": "limbe",
+   "2": "limbe",
    "3": "lim"
   },
   "main": true
@@ -12519,6 +12702,18 @@
   "main": true
  },
  {
+  "derivation": "D2189",
+  "word": "2878447359",
+  "era": "late",
+  "forms": {
+   "0": "limi",
+   "1": "lime",
+   "2": "lime",
+   "3": "liv"
+  },
+  "main": false
+ },
+ {
   "derivation": "D2190",
   "word": "3549167261",
   "era": "middle",
@@ -12535,8 +12730,8 @@
   "era": "late",
   "forms": {
    "0": "limbi",
-   "1": "limb",
-   "2": "limb",
+   "1": "limbe",
+   "2": "limbe",
    "3": "lim"
   },
   "main": true
@@ -12558,8 +12753,8 @@
   "era": "late",
   "forms": {
    "0": "liŋkwi",
-   "1": "limp",
-   "2": "limɸ",
+   "1": "limpe",
+   "2": "limɸe",
    "3": "limp"
   },
   "main": true
@@ -12832,6 +13027,30 @@
   "main": true
  },
  {
+  "derivation": "D2227",
+  "word": "210523915",
+  "era": "late",
+  "forms": {
+   "0": "luini",
+   "1": "luine",
+   "2": "luine",
+   "3": "luin"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D2228",
+  "word": "210523915",
+  "era": "late",
+  "forms": {
+   "0": "luini",
+   "1": "luine",
+   "2": "luine",
+   "3": "luin"
+  },
+  "main": true
+ },
+ {
   "derivation": "D2229",
   "word": "3396722521",
   "era": "middle",
@@ -13089,6 +13308,18 @@
   "main": true
  },
  {
+  "derivation": "D2266",
+  "word": "2558263103",
+  "era": "late",
+  "forms": {
+   "0": "mailiki",
+   "1": "mailike",
+   "2": "mailike",
+   "3": "maelig"
+  },
+  "main": true
+ },
+ {
   "derivation": "D2268",
   "word": "976128093",
   "era": "late",
@@ -13137,8 +13368,8 @@
   "era": "late",
   "forms": {
    "0": "magte",
-   "1": "makt",
-   "2": "maxθ",
+   "1": "makte",
+   "2": "maxθe",
    "3": "maeθ"
   },
   "main": true
@@ -13691,8 +13922,8 @@
   "era": "late",
   "forms": {
    "0": "mīri",
-   "1": "mīr",
-   "2": "mīr",
+   "1": "mīre",
+   "2": "mīre",
    "3": "mīr"
   },
   "main": true
@@ -13765,8 +13996,8 @@
   "era": "late",
   "forms": {
    "0": "mori",
-   "1": "mor",
-   "2": "mor",
+   "1": "more",
+   "2": "more",
    "3": "mōr"
   },
   "main": true
@@ -13777,8 +14008,8 @@
   "era": "late",
   "forms": {
    "0": "mori",
-   "1": "mor",
-   "2": "mor",
+   "1": "more",
+   "2": "more",
    "3": "mōr"
   },
   "main": true
@@ -14482,8 +14713,8 @@
   "era": "late",
   "forms": {
    "0": "nettʰi",
-   "1": "nettʰ",
-   "2": "neθθ",
+   "1": "nettʰe",
+   "2": "neθθe",
    "3": "neθ"
   },
   "main": true
@@ -14494,8 +14725,8 @@
   "era": "late",
   "forms": {
    "0": "nettʰi",
-   "1": "nettʰ",
-   "2": "neθθ",
+   "1": "nettʰe",
+   "2": "neθθe",
    "3": "neθ"
   },
   "main": true
@@ -14506,8 +14737,8 @@
   "era": "late",
   "forms": {
    "0": "netti",
-   "1": "nett",
-   "2": "neθθ",
+   "1": "nette",
+   "2": "neθθe",
    "3": "neθ"
   },
   "main": true
@@ -14556,6 +14787,30 @@
   "main": true
  },
  {
+  "derivation": "D2466",
+  "word": "524470103",
+  "era": "late",
+  "forms": {
+   "0": "nidini",
+   "1": "nidine",
+   "2": "nidine",
+   "3": "niðin"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D2467",
+  "word": "524470103",
+  "era": "late",
+  "forms": {
+   "0": "inīdeni",
+   "1": "inīdene",
+   "2": "inīdene",
+   "3": "iniðen"
+  },
+  "main": true
+ },
+ {
   "derivation": "D2468",
   "word": "1478931821",
   "era": "late",
@@ -14592,8 +14847,8 @@
   "era": "late",
   "forms": {
    "0": "nimbi",
-   "1": "nimb",
-   "2": "nimb",
+   "1": "nimbe",
+   "2": "nimbe",
    "3": "nim"
   },
   "main": true
@@ -14615,8 +14870,8 @@
   "era": "late",
   "forms": {
    "0": "niŋkwi",
-   "1": "nimp",
-   "2": "nimɸ",
+   "1": "nimpe",
+   "2": "nimɸe",
    "3": "nimp"
   },
   "main": true
@@ -14627,8 +14882,8 @@
   "era": "late",
   "forms": {
    "0": "nimpi",
-   "1": "nimp",
-   "2": "nimɸ",
+   "1": "nimpe",
+   "2": "nimɸe",
    "3": "nimp"
   },
   "main": true
@@ -15783,7 +16038,7 @@
    "2": "pǭr",
    "3": "paur"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D2624",
@@ -17350,7 +17605,7 @@
   "forms": {
    "0": "ruist"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D2816",
@@ -17421,8 +17676,8 @@
   "era": "late",
   "forms": {
    "0": "sataro",
-   "1": "satar",
-   "2": "satar",
+   "1": "sataro",
+   "2": "sataro",
    "3": "sadar"
   },
   "main": true
@@ -17831,8 +18086,8 @@
   "era": "late",
   "forms": {
    "0": "sūli",
-   "1": "sūl",
-   "2": "sūl",
+   "1": "sūle",
+   "2": "sūle",
    "3": "sūl"
   },
   "main": true
@@ -18021,7 +18276,7 @@
   "forms": {
    "0": "talan"
   },
-  "main": true
+  "main": false
  },
  {
   "derivation": "D2909",
@@ -18215,8 +18470,8 @@
   "era": "late",
   "forms": {
    "0": "tatʰari",
-   "1": "tatʰar",
-   "2": "taθar",
+   "1": "tatʰare",
+   "2": "taθare",
    "3": "taθar"
   },
   "main": true
@@ -18781,8 +19036,8 @@
   "era": "late",
   "forms": {
    "0": "tʰindi",
-   "1": "tʰind",
-   "2": "θind",
+   "1": "tʰinde",
+   "2": "θinde",
    "3": "θind"
   },
   "main": true
@@ -19409,8 +19664,8 @@
   "era": "late",
   "forms": {
    "0": "turúŋku",
-   "1": "trúŋk",
-   "2": "trúŋx",
+   "1": "trúŋko",
+   "2": "trúŋxo",
    "3": "truŋk"
   },
   "main": true
@@ -19472,8 +19727,8 @@
   "era": "late",
   "forms": {
    "0": "tumbu",
-   "1": "tumb",
-   "2": "tumb",
+   "1": "tumbo",
+   "2": "tumbo",
    "3": "tum"
   },
   "main": true
@@ -19717,6 +19972,18 @@
   "forms": {
    "0": "tuðk",
    "1": "tusk"
+  },
+  "main": true
+ },
+ {
+  "derivation": "D3155",
+  "word": "2276320421",
+  "era": "late",
+  "forms": {
+   "0": "uruku",
+   "1": "uruko",
+   "2": "uruko",
+   "3": "urug"
   },
   "main": true
  },

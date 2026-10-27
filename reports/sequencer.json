@@ -1,12 +1,12 @@
 {
  "quenya": {
   "derivations": 3713,
-  "main": 2709,
+  "main": 2708,
   "any": 2861,
   "eras": {
    "late": {
     "derivations": 1212,
-    "main": 921,
+    "main": 920,
     "any": 1006
    },
    "middle": {
@@ -8157,7 +8157,7 @@
     "start": "aja",
     "target": "ai",
     "main": "ā",
-    "variants": 2,
+    "variants": 3,
     "ok_main": false,
     "ok_any": false,
     "diverge": null,
@@ -9402,7 +9402,7 @@
     "start": "awrina",
     "target": "aurin",
     "main": "avrin",
-    "variants": 1,
+    "variants": 2,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -9417,7 +9417,7 @@
     "start": "awrina",
     "target": "aurin",
     "main": "avrin",
-    "variants": 1,
+    "variants": 2,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -9627,7 +9627,7 @@
     "start": "kalumekta",
     "target": "kalumet",
     "main": "kalumekr",
-    "variants": 1,
+    "variants": 2,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -11319,7 +11319,7 @@
     "start": "skenda",
     "target": "hen",
     "main": "xen",
-    "variants": 1,
+    "variants": 2,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -11634,7 +11634,7 @@
     "start": "xondo",
     "target": "hon",
     "main": "xon",
-    "variants": 1,
+    "variants": 2,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -12831,7 +12831,7 @@
     "start": "labna",
     "target": "lama",
     "main": "laman",
-    "variants": 1,
+    "variants": 2,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -16796,8 +16796,8 @@
     "word": "nwámë",
     "start": "ŋgwaumē",
     "target": "nwāme",
-    "main": "nāme",
-    "variants": 1,
+    "main": "nwaume",
+    "variants": 8,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -22957,6 +22957,21 @@
     "steps": 1
    },
    {
+    "derivation": "D4117",
+    "word": "talan",
+    "start": "talam",
+    "target": "talan",
+    "main": "talam",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "760163573.1",
+     "expected": "talan"
+    },
+    "steps": 1
+   },
+   {
     "derivation": "D4149",
     "word": "Balandor",
     "start": "balandore",
@@ -24300,13 +24315,13 @@
  },
  "sindarin": {
   "derivations": 2760,
-  "main": 1893,
-  "any": 2030,
+  "main": 1884,
+  "any": 2053,
   "eras": {
    "late": {
     "derivations": 1027,
-    "main": 743,
-    "any": 791
+    "main": 734,
+    "any": 814
    },
    "middle": {
     "derivations": 1356,
@@ -24321,9 +24336,9 @@
   },
   "backform": {
    "cases": 64,
-   "verified": 36,
-   "any": 10,
-   "first": 2
+   "verified": 51,
+   "any": 12,
+   "first": 4
   },
   "affixes": {
    "cases": 220,
@@ -29711,6 +29726,36 @@
     "steps": 1
    },
    {
+    "derivation": "D45",
+    "word": "leper",
+    "start": "lepero",
+    "target": "leper",
+    "main": "lepero",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.4",
+     "expected": "leper"
+    },
+    "steps": 1
+   },
+   {
+    "derivation": "D46",
+    "word": "leper",
+    "start": "lepero",
+    "target": "leper",
+    "main": "lepero",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.4",
+     "expected": "leper"
+    },
+    "steps": 1
+   },
+   {
     "derivation": "D48",
     "word": "mahtā-",
     "start": "maɣtā",
@@ -29756,17 +29801,62 @@
     "steps": 3
    },
    {
-    "derivation": "D99",
-    "word": "apsen-",
-    "start": "absene",
-    "target": "apsene",
-    "main": "apsen",
-    "variants": 1,
+    "derivation": "D82",
+    "word": "Ambar",
+    "start": "ambara",
+    "target": "ambar",
+    "main": "ambara",
+    "variants": 2,
     "ok_main": false,
-    "ok_any": false,
+    "ok_any": true,
     "diverge": {
-     "pair": "1944249607.2",
-     "expected": "apsene"
+     "pair": "2794740763.3",
+     "expected": "ambar"
+    },
+    "steps": 1
+   },
+   {
+    "derivation": "D89",
+    "word": "angal",
+    "start": "aŋŋala",
+    "target": "aŋgal",
+    "main": "aŋgala",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "aŋŋal"
+    },
+    "steps": 2
+   },
+   {
+    "derivation": "D90",
+    "word": "angal",
+    "start": "aŋŋala",
+    "target": "aŋgal",
+    "main": "aŋgala",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "aŋŋal"
+    },
+    "steps": 2
+   },
+   {
+    "derivation": "D133",
+    "word": "carma¹",
+    "start": "-kasa",
+    "target": "-kas",
+    "main": "-kasa",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "-kas"
     },
     "steps": 1
    },
@@ -29775,13 +29865,28 @@
     "word": "cas(ta)",
     "start": "kasda",
     "target": "kasta",
-    "main": "kazd",
-    "variants": 1,
+    "main": "kazda",
+    "variants": 2,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
      "pair": "2620200719.2",
      "expected": "kasta"
+    },
+    "steps": 1
+   },
+   {
+    "derivation": "D141",
+    "word": "cenasta",
+    "start": "kenasita",
+    "target": "kenasit",
+    "main": "kenasita",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "kenasit"
     },
     "steps": 1
    },
@@ -29831,21 +29936,6 @@
     "steps": 1
    },
    {
-    "derivation": "D171",
-    "word": "engë",
-    "start": "eŋŋe",
-    "target": "eŋge",
-    "main": "eŋg",
-    "variants": 1,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": {
-     "pair": "3404492995.1",
-     "expected": "eŋge"
-    },
-    "steps": 1
-   },
-   {
     "derivation": "D178",
     "word": "etsir",
     "start": "etsire",
@@ -29865,10 +29955,10 @@
     "word": "-itë",
     "start": "-woiti",
     "target": "-waite",
-    "main": "-woit",
-    "variants": 2,
+    "main": "-woite",
+    "variants": 4,
     "ok_main": false,
-    "ok_any": false,
+    "ok_any": true,
     "diverge": {
      "pair": "1475928117.1",
      "expected": "-waite"
@@ -29962,6 +30052,21 @@
     "diverge": {
      "pair": "2698078435.1",
      "expected": "lambio"
+    },
+    "steps": 1
+   },
+   {
+    "derivation": "D278",
+    "word": "las",
+    "start": "lasa",
+    "target": "las",
+    "main": "lasa",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "las"
     },
     "steps": 1
    },
@@ -30116,6 +30221,21 @@
     "steps": 1
    },
    {
+    "derivation": "D350",
+    "word": "macar",
+    "start": "makaro",
+    "target": "makar",
+    "main": "makaro",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.4",
+     "expected": "makar"
+    },
+    "steps": 1
+   },
+   {
     "derivation": "D354",
     "word": "mahta-",
     "start": "maɣta-",
@@ -30206,6 +30326,21 @@
     "steps": 1
    },
    {
+    "derivation": "D367",
+    "word": "maitar",
+    "start": "maitaro",
+    "target": "maitar",
+    "main": "maitaro",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.4",
+     "expected": "maitar"
+    },
+    "steps": 1
+   },
+   {
     "derivation": "D389",
     "word": "maxë",
     "start": "mahsi",
@@ -30219,6 +30354,66 @@
      "expected": "maksi"
     },
     "steps": 2
+   },
+   {
+    "derivation": "D416",
+    "word": "-n²",
+    "start": "-na",
+    "target": "-n",
+    "main": "-na",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "-n"
+    },
+    "steps": 1
+   },
+   {
+    "derivation": "D426",
+    "word": "nápo",
+    "start": "nāpata",
+    "target": "nāpat",
+    "main": "nāpata",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "nāpat"
+    },
+    "steps": 1
+   },
+   {
+    "derivation": "D429",
+    "word": "nat",
+    "start": "nata",
+    "target": "nat",
+    "main": "nata",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "nat"
+    },
+    "steps": 1
+   },
+   {
+    "derivation": "D456",
+    "word": "-n(yë)",
+    "start": "-ne",
+    "target": "-n",
+    "main": "-ne",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.2",
+     "expected": "-n"
+    },
+    "steps": 1
    },
    {
     "derivation": "D465",
@@ -30326,6 +30521,36 @@
     "steps": 1
    },
    {
+    "derivation": "D510",
+    "word": "quár(ë)",
+    "start": "kwāra",
+    "target": "kwār",
+    "main": "kwāra",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "kwār"
+    },
+    "steps": 1
+   },
+   {
+    "derivation": "D511",
+    "word": "quár(ë)",
+    "start": "kwāra",
+    "target": "kwār",
+    "main": "kwāra",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "kwār"
+    },
+    "steps": 1
+   },
+   {
     "derivation": "D512",
     "word": "qár(e)",
     "start": "kwāra",
@@ -30371,6 +30596,21 @@
     "steps": 1
    },
    {
+    "derivation": "D533",
+    "word": "-r(o)",
+    "start": "-ro",
+    "target": "-r",
+    "main": "-ro",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.4",
+     "expected": "-r"
+    },
+    "steps": 1
+   },
+   {
     "derivation": "D540",
     "word": "arak",
     "start": "araka",
@@ -30384,6 +30624,51 @@
      "expected": "arakǝ"
     },
     "steps": 2
+   },
+   {
+    "derivation": "D542",
+    "word": "satar",
+    "start": "sataro",
+    "target": "satar",
+    "main": "sataro",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.4",
+     "expected": "satar"
+    },
+    "steps": 1
+   },
+   {
+    "derivation": "D562",
+    "word": "-s(së)",
+    "start": "-se",
+    "target": "-s",
+    "main": "-se",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.2",
+     "expected": "-s"
+    },
+    "steps": 1
+   },
+   {
+    "derivation": "D573",
+    "word": "-t¹",
+    "start": "-ta",
+    "target": "-t",
+    "main": "-ta",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "-t"
+    },
+    "steps": 1
    },
    {
     "derivation": "D583",
@@ -31388,34 +31673,34 @@
     "steps": 2
    },
    {
-    "derivation": "D830",
-    "word": "auth",
-    "start": "awtʰa",
-    "target": "auθ",
-    "main": "aut",
-    "variants": 1,
+    "derivation": "D833",
+    "word": "Avar",
+    "start": "abaro",
+    "target": "avar",
+    "main": "avaro",
+    "variants": 2,
     "ok_main": false,
-    "ok_any": false,
+    "ok_any": true,
     "diverge": {
-     "pair": "883570327.2",
-     "expected": "auθa"
+     "pair": "2794740763.4",
+     "expected": "abar"
     },
-    "steps": 3
+    "steps": 2
    },
    {
-    "derivation": "D832",
-    "word": "avad",
-    "start": "abata",
-    "target": "avad",
-    "main": "av",
-    "variants": 1,
+    "derivation": "D834",
+    "word": "Avar",
+    "start": "abaro",
+    "target": "avar",
+    "main": "avaro",
+    "variants": 2,
     "ok_main": false,
-    "ok_any": false,
+    "ok_any": true,
     "diverge": {
-     "pair": "1726791627.1",
-     "expected": "avat"
+     "pair": "2794740763.4",
+     "expected": "abar"
     },
-    "steps": 3
+    "steps": 2
    },
    {
     "derivation": "D837",
@@ -31581,6 +31866,66 @@
      "expected": "banwend"
     },
     "steps": 4
+   },
+   {
+    "derivation": "D875",
+    "word": "bâr",
+    "start": "mbara",
+    "target": "bar",
+    "main": "bara",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "mbar"
+    },
+    "steps": 2
+   },
+   {
+    "derivation": "D876",
+    "word": "bâr",
+    "start": "mbara",
+    "target": "bar",
+    "main": "bara",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "mbar"
+    },
+    "steps": 2
+   },
+   {
+    "derivation": "D877",
+    "word": "bâr",
+    "start": "mbara",
+    "target": "bar",
+    "main": "bara",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "mbar"
+    },
+    "steps": 2
+   },
+   {
+    "derivation": "D878",
+    "word": "bâr",
+    "start": "mbara",
+    "target": "bar",
+    "main": "bara",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "mbar"
+    },
+    "steps": 2
    },
    {
     "derivation": "D882",
@@ -32033,6 +32378,21 @@
     "steps": 5
    },
    {
+    "derivation": "D1028",
+    "word": "caran",
+    "start": "karani",
+    "target": "karan",
+    "main": "karane",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.2",
+     "expected": "karan"
+    },
+    "steps": 2
+   },
+   {
     "derivation": "D1034",
     "word": "car(dh)",
     "start": "karda",
@@ -32123,21 +32483,6 @@
     "steps": 3
    },
    {
-    "derivation": "D1052",
-    "word": "caw-",
-    "start": "kjawini",
-    "target": "kewin",
-    "main": "kewi",
-    "variants": 1,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": {
-     "pair": "345959193.1",
-     "expected": "kawine"
-    },
-    "steps": 4
-   },
-   {
     "derivation": "D1053",
     "word": "caw-",
     "start": "kjawi",
@@ -32147,8 +32492,8 @@
     "ok_main": false,
     "ok_any": true,
     "diverge": {
-     "pair": "345959193.1",
-     "expected": "kawe"
+     "pair": "798091205.2",
+     "expected": "kau"
     },
     "steps": 4
    },
@@ -32157,8 +32502,8 @@
     "word": "caw-",
     "start": "kjawathāni",
     "target": "kawathon",
-    "main": "kawado",
-    "variants": 8,
+    "main": "kawadon",
+    "variants": 16,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -33068,18 +33413,6 @@
     "steps": 5
    },
    {
-    "derivation": "D1271",
-    "word": "duin",
-    "start": "duini",
-    "target": "duin",
-    "main": "dui",
-    "variants": 2,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": null,
-    "steps": 2
-   },
-   {
     "derivation": "D1272",
     "word": "duif",
     "start": "duiwe",
@@ -33545,36 +33878,6 @@
     "steps": 7
    },
    {
-    "derivation": "D1395",
-    "word": "esbin",
-    "start": "ṣpini",
-    "target": "esbin",
-    "main": "isbi",
-    "variants": 4,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": {
-     "pair": "2107885715.1",
-     "expected": "espine"
-    },
-    "steps": 4
-   },
-   {
-    "derivation": "D1396",
-    "word": "esbin",
-    "start": "ṣpini",
-    "target": "esbin",
-    "main": "isbi",
-    "variants": 4,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": {
-     "pair": "2107885715.1",
-     "expected": "espine"
-    },
-    "steps": 4
-   },
-   {
     "derivation": "D1399",
     "word": "em",
     "start": "enwa",
@@ -33618,21 +33921,6 @@
      "expected": "sɸaika"
     },
     "steps": 7
-   },
-   {
-    "derivation": "D1408",
-    "word": "faen",
-    "start": "pʰaini",
-    "target": "faen",
-    "main": "fae",
-    "variants": 2,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": {
-     "pair": "883570327.1",
-     "expected": "ɸaine"
-    },
-    "steps": 5
    },
    {
     "derivation": "D1409",
@@ -33933,36 +34221,6 @@
      "expected": "fœrmenia"
     },
     "steps": 8
-   },
-   {
-    "derivation": "D1482",
-    "word": "fîn",
-    "start": "spini",
-    "target": "fīn",
-    "main": "fi",
-    "variants": 1,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": {
-     "pair": "798037075.1",
-     "expected": "sɸine"
-    },
-    "steps": 6
-   },
-   {
-    "derivation": "D1483",
-    "word": "fîn",
-    "start": "pʰini",
-    "target": "fīn",
-    "main": "fi",
-    "variants": 1,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": {
-     "pair": "883570327.1",
-     "expected": "ɸine"
-    },
-    "steps": 5
    },
    {
     "derivation": "D1486",
@@ -37106,72 +37364,12 @@
     "steps": 3
    },
    {
-    "derivation": "D2133",
-    "word": "leben",
-    "start": "lepene",
-    "target": "leben",
-    "main": "leb",
-    "variants": 1,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": {
-     "pair": "2240258959.1",
-     "expected": "leben"
-    },
-    "steps": 2
-   },
-   {
-    "derivation": "D2134",
-    "word": "leben",
-    "start": "lepene",
-    "target": "leben",
-    "main": "leb",
-    "variants": 1,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": {
-     "pair": "2240258959.1",
-     "expected": "leben"
-    },
-    "steps": 2
-   },
-   {
-    "derivation": "D2135",
-    "word": "leben",
-    "start": "lepene",
-    "target": "leben",
-    "main": "leb",
-    "variants": 1,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": {
-     "pair": "2240258959.1",
-     "expected": "leben"
-    },
-    "steps": 2
-   },
-   {
-    "derivation": "D2136",
-    "word": "leben",
-    "start": "lepene",
-    "target": "leben",
-    "main": "leb",
-    "variants": 1,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": {
-     "pair": "2240258959.1",
-     "expected": "leben"
-    },
-    "steps": 2
-   },
-   {
     "derivation": "D2146",
     "word": "lebethron",
     "start": "lepettaoroni",
     "target": "lebeθron",
-    "main": "lebeθor",
-    "variants": 12,
+    "main": "lebeθauron",
+    "variants": 24,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -37395,8 +37593,8 @@
     "word": "lhoer",
     "start": "slǭjrē",
     "target": "l̥oer",
-    "main": "l̥ǫjr",
-    "variants": 2,
+    "main": "l̥aujr",
+    "variants": 4,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -37410,8 +37608,8 @@
     "word": "lhoew",
     "start": "slǭjmā",
     "target": "l̥oew",
-    "main": "l̥ǫjm",
-    "variants": 2,
+    "main": "l̥aujm",
+    "variants": 4,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -37485,10 +37683,10 @@
     "word": "lîf",
     "start": "limi",
     "target": "liv",
-    "main": "li",
-    "variants": 1,
+    "main": "līv",
+    "variants": 7,
     "ok_main": false,
-    "ok_any": false,
+    "ok_any": true,
     "diverge": {
      "pair": "1951379117.1",
      "expected": "liv"
@@ -37601,30 +37799,6 @@
     "steps": 7
    },
    {
-    "derivation": "D2227",
-    "word": "luin",
-    "start": "luini",
-    "target": "luin",
-    "main": "lui",
-    "variants": 2,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": null,
-    "steps": 2
-   },
-   {
-    "derivation": "D2228",
-    "word": "luin",
-    "start": "luini",
-    "target": "luin",
-    "main": "lui",
-    "variants": 2,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": null,
-    "steps": 2
-   },
-   {
     "derivation": "D2238",
     "word": "lhûtha-",
     "start": "lukta-",
@@ -37698,21 +37872,6 @@
      "expected": "m̥ael"
     },
     "steps": 6
-   },
-   {
-    "derivation": "D2266",
-    "word": "maelig",
-    "start": "mailiki",
-    "target": "maelig",
-    "main": "mael",
-    "variants": 1,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": {
-     "pair": "2240258959.3",
-     "expected": "mailig"
-    },
-    "steps": 4
    },
    {
     "derivation": "D2267",
@@ -38004,13 +38163,13 @@
     "word": "molif",
     "start": "mālimi",
     "target": "moliv",
-    "main": "mauli",
-    "variants": 2,
+    "main": "mauliv",
+    "variants": 6,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
-     "pair": "2858643115.1",
-     "expected": "mǭlime"
+     "pair": "567222053.1",
+     "expected": "molim"
     },
     "steps": 6
    },
@@ -38034,8 +38193,8 @@
     "word": "Morgoth",
     "start": "moriŋgotʰo",
     "target": "morgoθ",
-    "main": "mœriŋgod",
-    "variants": 3,
+    "main": "mœriŋgoθ",
+    "variants": 6,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
@@ -38328,36 +38487,6 @@
      "expected": "hīl"
     },
     "steps": 2
-   },
-   {
-    "derivation": "D2466",
-    "word": "nidh-",
-    "start": "nidini",
-    "target": "niðin",
-    "main": "niði",
-    "variants": 1,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": {
-     "pair": "3064357955.1",
-     "expected": "niðine"
-    },
-    "steps": 3
-   },
-   {
-    "derivation": "D2467",
-    "word": "nidh-",
-    "start": "inīdeni",
-    "target": "iniðen",
-    "main": "inĭð",
-    "variants": 3,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": {
-     "pair": "1726791627.2",
-     "expected": "inīðene"
-    },
-    "steps": 4
    },
    {
     "derivation": "D2469",
@@ -39020,6 +39149,21 @@
     "steps": 3
    },
    {
+    "derivation": "D2623",
+    "word": "paur",
+    "start": "kwāra",
+    "target": "paur",
+    "main": "paura",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.3",
+     "expected": "kwār"
+    },
+    "steps": 4
+   },
+   {
     "derivation": "D2633",
     "word": "Pelennor",
     "start": "pelesendore",
@@ -39620,17 +39764,32 @@
     "steps": 6
    },
    {
+    "derivation": "D2812",
+    "word": "ruist",
+    "start": "ruiste",
+    "target": "ruist",
+    "main": "ruiste",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "2794740763.2",
+     "expected": "ruist"
+    },
+    "steps": 1
+   },
+   {
     "derivation": "D2814",
     "word": "rusc",
     "start": "urusko",
     "target": "rusk",
-    "main": "urusk",
-    "variants": 2,
+    "main": "urusko",
+    "variants": 4,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
-     "pair": null,
-     "expected": "rusk"
+     "pair": "2794740763.4",
+     "expected": "urusk"
     },
     "steps": 3
    },
@@ -39639,13 +39798,13 @@
     "word": "rust",
     "start": "uruste",
     "target": "rust",
-    "main": "urust",
-    "variants": 2,
+    "main": "urosta",
+    "variants": 4,
     "ok_main": false,
     "ok_any": false,
     "diverge": {
-     "pair": null,
-     "expected": "rust"
+     "pair": "2794740763.2",
+     "expected": "urust"
     },
     "steps": 3
    },
@@ -40113,6 +40272,21 @@
      "expected": "talagando"
     },
     "steps": 3
+   },
+   {
+    "derivation": "D2908",
+    "word": "talan",
+    "start": "talam",
+    "target": "talan",
+    "main": "talam",
+    "variants": 2,
+    "ok_main": false,
+    "ok_any": true,
+    "diverge": {
+     "pair": "760163573.1",
+     "expected": "talan"
+    },
+    "steps": 1
    },
    {
     "derivation": "D2918",
@@ -41310,21 +41484,6 @@
      "expected": "ulgundo"
     },
     "steps": 6
-   },
-   {
-    "derivation": "D3155",
-    "word": "urug",
-    "start": "uruku",
-    "target": "urug",
-    "main": "uru",
-    "variants": 1,
-    "ok_main": false,
-    "ok_any": false,
-    "diverge": {
-     "pair": "2240258959.3",
-     "expected": "urug"
-    },
-    "steps": 4
    },
    {
     "derivation": "D3157",
@@ -42635,8 +42794,8 @@
   "compounds": {
    "cases": 68,
    "join_ok": 10,
-   "main": 14,
-   "any": 22,
+   "main": 15,
+   "any": 23,
    "results": [
     {
      "word": "158783105",
@@ -43139,8 +43298,8 @@
      "join_ok": false,
      "ok_main": false,
      "ok_any": false,
-     "main": "novaerod",
-     "variants": 6
+     "main": "novaurod",
+     "variants": 12
     },
     {
      "word": "195204551",
@@ -43193,8 +43352,8 @@
      "join_ok": false,
      "ok_main": false,
      "ok_any": false,
-     "main": "aranŋorn",
-     "variants": 1
+     "main": "arangorn",
+     "variants": 3
     },
     {
      "word": "3462016661",
@@ -43212,7 +43371,7 @@
      "ok_main": false,
      "ok_any": false,
      "main": "arodauhĭr",
-     "variants": 6
+     "variants": 8
     },
     {
      "word": "3865426267",
@@ -43284,7 +43443,7 @@
      "ok_main": false,
      "ok_any": true,
      "main": "belegŭr",
-     "variants": 2
+     "variants": 3
     },
     {
      "word": "1462721979",
@@ -43643,8 +43802,8 @@
      "join_ok": true,
      "ok_main": false,
      "ok_any": false,
-     "main": "mauli",
-     "variants": 3
+     "main": "mauliv",
+     "variants": 9
     },
     {
      "word": "3808522387",
@@ -43824,7 +43983,7 @@
      "ok_main": true,
      "ok_any": true,
      "main": "sĭrĭon",
-     "variants": 4
+     "variants": 6
     },
     {
      "word": "2305605375",
@@ -43839,10 +43998,10 @@
      "target": "θarbad",
      "last_stage": 3,
      "join_ok": true,
-     "ok_main": false,
-     "ok_any": false,
-     "main": "θarb",
-     "variants": 2
+     "ok_main": true,
+     "ok_any": true,
+     "main": "θarbad",
+     "variants": 4
     },
     {
      "word": "3117949915",
@@ -45151,7 +45310,7 @@
    "after": "karubān",
    "kind": "laws",
    "rule": null,
-   "laws": "karubān"
+   "laws": "karubāne"
   },
   {
    "derivation": "D165",
@@ -45866,7 +46025,7 @@
    "after": "lepettaroni",
    "kind": "none",
    "rule": null,
-   "laws": "lepettāron"
+   "laws": "lepettārone"
   },
   {
    "derivation": "D2164",
@@ -45888,7 +46047,7 @@
    "after": "moreŋgotto",
    "kind": "none",
    "rule": null,
-   "laws": "moriŋgott"
+   "laws": "moriŋgotto"
   },
   {
    "derivation": "D2368",
@@ -45899,7 +46058,7 @@
    "after": "moreŋgotʰo",
    "kind": "none",
    "rule": null,
-   "laws": "moriŋgotʰ"
+   "laws": "moriŋgotʰo"
   },
   {
    "derivation": "D2404",

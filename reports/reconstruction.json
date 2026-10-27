@@ -34,113 +34,113 @@
  "sindarin": {
   "late: 3 -> 0": {
    "cases": 30,
-   "found": 22,
-   "first": 2,
-   "any": 7
+   "found": 27,
+   "first": 3,
+   "any": 8
   },
   "late: 3 -> 1": {
    "cases": 30,
-   "found": 26,
+   "found": 29,
    "first": 2,
-   "any": 12
+   "any": 10
   },
   "late: 3 -> 2": {
    "cases": 30,
-   "found": 29,
-   "first": 2,
-   "any": 14
+   "found": 27,
+   "first": 3,
+   "any": 17
   },
   "middle: 2 -> 0": {
    "cases": 30,
-   "found": 28,
+   "found": 27,
    "first": 3,
    "any": 8
   },
   "middle: 2 -> 1": {
    "cases": 30,
-   "found": 30,
+   "found": 29,
    "first": 4,
-   "any": 18
+   "any": 17
   },
   "early: 1 -> 0": {
    "cases": 30,
-   "found": 23,
-   "first": 1,
-   "any": 7
+   "found": 24,
+   "first": 2,
+   "any": 9
   }
  },
  "cognates quenya -> sindarin": {
-  "cases": 12,
-  "first": 5,
-  "any": 7,
-  "pairs": 12
+  "cases": 13,
+  "first": 6,
+  "any": 8,
+  "pairs": 13
  },
  "cognates sindarin -> quenya": {
-  "cases": 12,
-  "first": 1,
+  "cases": 13,
+  "first": 0,
   "any": 5,
-  "pairs": 12
+  "pairs": 13
  },
  "cognate links q -> s": {
   "cases": 30,
-  "word_first": 12,
+  "word_first": 13,
   "word_any": 16,
   "form_first": 6,
-  "form_any": 11,
+  "form_any": 12,
   "pairs": 751
  },
  "cognate links s -> q": {
   "cases": 30,
   "word_first": 5,
   "word_any": 8,
-  "form_first": 2,
-  "form_any": 3,
+  "form_first": 1,
+  "form_any": 4,
   "pairs": 738
  },
  "conceptions mq -> q": {
   "cases": 30,
-  "identity": 21,
-  "first": 21,
-  "any": 22,
+  "identity": 20,
+  "first": 20,
+  "any": 21,
   "pairs": 939
  },
  "conceptions n -> s": {
   "cases": 30,
-  "identity": 16,
-  "first": 16,
+  "identity": 15,
+  "first": 15,
   "any": 17,
   "pairs": 574
  },
  "conceptions eq -> q": {
   "cases": 30,
-  "identity": 3,
-  "first": 3,
-  "any": 3,
+  "identity": 5,
+  "first": 5,
+  "any": 5,
   "pairs": 1456
  },
  "conceptions g -> s": {
   "cases": 30,
-  "identity": 4,
-  "first": 4,
-  "any": 4,
+  "identity": 5,
+  "first": 5,
+  "any": 5,
   "pairs": 865
  },
  "stems q": {
   "cases": 30,
-  "gold_stem": 18,
-  "plain_first": 10,
-  "plain_any": 13,
-  "stem_first": 9,
-  "stem_any": 13,
+  "gold_stem": 16,
+  "plain_first": 9,
+  "plain_any": 14,
+  "stem_first": 8,
+  "stem_any": 14,
   "words": 83
  },
  "stems mq": {
   "cases": 30,
-  "gold_stem": 21,
+  "gold_stem": 20,
   "plain_first": 6,
-  "plain_any": 15,
+  "plain_any": 13,
   "stem_first": 6,
-  "stem_any": 15,
+  "stem_any": 13,
   "words": 77
  },
  "stems s": {

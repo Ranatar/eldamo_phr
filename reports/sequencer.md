@@ -10,10 +10,10 @@
 
 | эпоха | дериваций | основное | любое |
 |---|---|---|---|
-| поздняя | 1212 | 921 (76.0%) | 1006 (83.0%) |
+| поздняя | 1212 | 920 (75.9%) | 1006 (83.0%) |
 | средняя | 907 | 725 (79.9%) | 781 (86.1%) |
 | ранняя | 1594 | 1063 (66.7%) | 1074 (67.4%) |
-| всего | 3713 | 2709 (73.0%) | 2861 (77.1%) |
+| всего | 3713 | 2708 (72.9%) | 2861 (77.1%) |
 
 ### Где основное чтение впервые расходится с деривацией
 
@@ -96,16 +96,16 @@
 | первая из них = праформа Eldamo | 30 (30%) |
 | праформа Eldamo среди найденных (до 8) | 49 (49%) |
 
-Расходящиеся деривации (1004) — `reports/sequencer.json`.
+Расходящиеся деривации (1005) — `reports/sequencer.json`.
 
 ## Sindarin / Noldorin
 
 | эпоха | дериваций | основное | любое |
 |---|---|---|---|
-| поздняя | 1027 | 743 (72.3%) | 791 (77.0%) |
+| поздняя | 1027 | 734 (71.5%) | 814 (79.3%) |
 | средняя | 1356 | 923 (68.1%) | 1006 (74.2%) |
 | ранняя | 377 | 227 (60.2%) | 233 (61.8%) |
-| всего | 2760 | 1893 (68.6%) | 2030 (73.6%) |
+| всего | 2760 | 1884 (68.3%) | 2053 (74.4%) |
 
 ### Где основное чтение впервые расходится с деривацией
 
@@ -115,13 +115,13 @@
 |---|---|---|
 | [long final vowels were shortened](https://eldamo.org/content/words/word-1410098833.html) | on | 69 |
 | [[ai] became [oe] or [ae]](https://eldamo.org/content/words/word-3173115217.html) | n | 41 |
+| [short final [e], [a], [o] vanished](https://eldamo.org/content/words/word-2794740763.html) | p | 31 |
 | [short final vowels vanished](https://eldamo.org/content/words/word-1490765151.html) | n | 27 |
 | [short [a], [o], [u] became [e], [œ], [y] preceding [i]](https://eldamo.org/content/words/word-1963461937.html) | n | 23 |
 | [short final [e], [a], [o] vanished](https://eldamo.org/content/words/word-3998109579.html) | mp | 21 |
 | [short vowels vanished before morpheme boundaries](https://eldamo.org/content/words/word-2749565259.html) | s | 17 |
 | [long final vowels were shortened](https://eldamo.org/content/words/word-2753394075.html) | os | 16 |
 | [final [i], [u] generally vanished](https://eldamo.org/content/words/word-1815401039.html) | s | 14 |
-| [voiceless stops voiced after vowels](https://eldamo.org/content/words/word-2240258959.html) | s | 13 |
 | [short final vowels vanished](https://eldamo.org/content/words/word-634661439.html) | g | 13 |
 | [short final vowels vanished](https://eldamo.org/content/words/word-813787869.html) | s | 12 |
 | [final [i] intruded into preceding syllable](https://eldamo.org/content/words/word-2399289739.html) | s | 12 |
@@ -148,8 +148,8 @@
 |---|---|
 | случаев (сложение × деривация) | 68 |
 | соединение праформ совпало с начальной формой деривации | 10 (15%) |
-| основное чтение = засвидетельствованная форма | 14 (21%) |
-| форма среди вариантов | 22 (32%) |
+| основное чтение = засвидетельствованная форма | 15 (22%) |
+| форма среди вариантов | 23 (34%) |
 
 ### Сложения на последней стадии
 
@@ -178,11 +178,11 @@
 | показатель | случаев |
 |---|---|
 | конечных форм | 64 |
-| найдена хотя бы одна праформа, дающая форму прямым прогоном | 36 (56%) |
-| первая из них = праформа Eldamo | 2 (3%) |
-| праформа Eldamo среди найденных (до 8) | 10 (16%) |
+| найдена хотя бы одна праформа, дающая форму прямым прогоном | 51 (80%) |
+| первая из них = праформа Eldamo | 4 (6%) |
+| праформа Eldamo среди найденных (до 8) | 12 (19%) |
 
-Расходящиеся деривации (867) — `reports/sequencer.json`.
+Расходящиеся деривации (876) — `reports/sequencer.json`.
 
 ## Шаги без правила в деривациях Eldamo
 
@@ -374,10 +374,10 @@
 | [lhalorn](https://eldamo.org/content/words/word-2222043839.html) | N. Noldorin | l̥alvorn > l̥alorn | l̥alvorn |
 | [lalven](https://eldamo.org/content/words/word-2500064443.html) | N. Noldorin | l̥alven > l̥alwen | l̥alv |
 | [lalven](https://eldamo.org/content/words/word-2500064443.html) | N. Noldorin | lelvin > lelwin | l̥ilv |
-| [lebethron](https://eldamo.org/content/words/word-1323679033.html) | ✶ Primitive Elvish | lepettaoroni > lepettaroni | lepettāron |
+| [lebethron](https://eldamo.org/content/words/word-1323679033.html) | ✶ Primitive Elvish | lepettaoroni > lepettaroni | lepettārone |
 | [lhevnar](https://eldamo.org/content/words/word-4215730511.html) | ᴹ✶ Middle Primitive Elvish | lepenar > lepnar | lepenar |
-| [Morgoth](https://eldamo.org/content/words/word-941880637.html) | ✶ Primitive Elvish | moriŋgotto > moreŋgotto | moriŋgott |
-| [Morgoth](https://eldamo.org/content/words/word-941880637.html) | ✶ Primitive Elvish | moriŋgotʰo > moreŋgotʰo | moriŋgotʰ |
+| [Morgoth](https://eldamo.org/content/words/word-941880637.html) | ✶ Primitive Elvish | moriŋgotto > moreŋgotto | moriŋgotto |
+| [Morgoth](https://eldamo.org/content/words/word-941880637.html) | ✶ Primitive Elvish | moriŋgotʰo > moreŋgotʰo | moriŋgotʰo |
 | [nâr](https://eldamo.org/content/words/word-1105130879.html) | N. Noldorin | naðr > nâr | naðor |
 | [neth](https://eldamo.org/content/words/word-2010726967.html) | N. Noldorin | neθr > neθ | neθor |
 | [pethron](https://eldamo.org/content/words/word-602686523.html) | OS. Old Sindarin | penθro > penθrondo | penθro |

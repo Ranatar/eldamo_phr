@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Quettamin — полный корпус Eldamo</title>
+<title data-i18n="corpus.pageTitle">Quettamin — полный корпус Eldamo</title>
 <style>
 @@STYLES@@
 .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
@@ -14,22 +14,25 @@ pre.json { white-space: pre-wrap; word-break: break-word; font-size: 12px; backg
 </head>
 <body>
 <header class="topbar">
-  <div class="brand"><a href="index.html">Quettamin</a> — полный корпус Eldamo</div>
-  <label>Ветвь <select id="branch"></select></label>
-  <button type="button" id="theme-toggle">Тема</button>
+  <div class="brand"><a href="index.html">Quettamin</a> — <span data-i18n="corpus.brand">полный корпус Eldamo</span></div>
+  <label><span data-i18n="common.branch">Ветвь</span> <select id="branch"></select></label>
+  <button type="button" id="lang-toggle" data-i18n="lang.switch">English</button>
+  <button type="button" id="theme-toggle" data-i18n="theme.button" data-i18n-attr="aria-label:theme.label" aria-label="Переключить тему">Тема</button>
 </header>
 <main>
   <section class="panel">
-    <h1 style="font-size:22px;margin:0 0 6px">Полный корпус</h1>
-    <p class="lead">Все данные ветви в том виде, в каком их строит конвейер: правила, подформулы, рёбра графа, цепочки и деривации. Поиск идёт по всем полям записи.</p>
-    <div class="tabs" id="tabs" role="group" aria-label="Раздел"></div>
-    <div class="filters"><input type="search" id="q" placeholder="Поиск по всем полям" aria-label="Поиск"></div>
+    <h1 style="font-size:22px;margin:0 0 6px" data-i18n="corpus.title">Полный корпус</h1>
+    <p class="lead" data-i18n="corpus.lead">Все данные ветви в том виде, в каком их строит конвейер: правила, подформулы, рёбра графа, цепочки и деривации. Поиск идёт по всем полям записи.</p>
+    <div class="tabs" id="tabs" role="group" aria-label="Раздел" data-i18n-attr="aria-label:corpus.section"></div>
+    <div class="filters"><input type="search" id="q" placeholder="Поиск по всем полям" aria-label="Поиск" data-i18n-attr="placeholder:corpus.search;aria-label:corpus.searchLabel"></div>
     <p class="small muted" id="count" aria-live="polite"></p>
     <div class="table-scroll"><table class="data"><thead id="head"></thead><tbody id="body"></tbody></table></div>
-    <div class="pager"><button type="button" id="prev">← Назад</button><span id="page"></span><button type="button" id="next">Вперёд →</button></div>
+    <div class="pager"><button type="button" id="prev">← <span data-i18n="pager.prev">Назад</span></button><span id="page"></span><button type="button" id="next"><span data-i18n="pager.next">Вперёд</span> →</button></div>
   </section>
 </main>
-<footer>Данные: <a href="https://eldamo.org" target="_blank" rel="noopener">Eldamo</a> @@VERSION@@ © Paul Strack, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>; преобразованы конвейером проекта.</footer>
+<footer data-i18n-html="corpus.footer">Данные: <a href="https://eldamo.org" target="_blank" rel="noopener">Eldamo</a> @@ELDAMO_VERSION@@ © Paul Strack, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>; преобразованы конвейером проекта.</footer>
+<script type="application/json" id="messages-data">@@MESSAGES@@</script>
+<script>@@I18N@@</script>
 <script type="application/json" id="corpus-data">@@DATA@@</script>
 <script>
 "use strict";
@@ -40,14 +43,15 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': 
 const SITE = 'https://eldamo.org/content/';
 const rule = id => id ? `<a href="${SITE}words/word-${esc(id)}.html" target="_blank" rel="noopener">${esc(id)}</a>` : '';
 const src = s => s ? `<a href="${SITE}references/ref-${esc(s.split('/')[0])}.html#${esc(s)}" target="_blank" rel="noopener">${esc(s.split('.')[0])}</a>` : '';
+const T = I18N.t;
 const list = v => Array.isArray(v) ? v.map(esc).join(', ') : esc(v);
 const SECTIONS = {
-  rules: { title: 'Правила', cols: [['id', 'Страница', r => rule(r.id)], ['lang', 'Язык', r => esc(r.marker)], ['name', 'Название', r => esc(r.name)], ['order', 'Порядок', r => esc(r.order)], ['formula', 'Общая формула', r => r.formula ? `<code>${esc(r.formula.from)} &gt; ${esc(r.formula.to)}</code>` : ''], ['pairs', 'Подформул', r => r.pairs.length]] },
-  pairs: { title: 'Подформулы', cols: [['id', 'ID', p => esc(p.id)], ['rule', 'Правило', p => rule(p.rule)], ['marker', 'Язык', p => esc(p.marker)], ['formula', 'Формула', p => `<code>${esc(p.from)} &gt; ${esc(p.to)}</code>`], ['kind', 'Вид', p => esc(p.kind)], ['examples', 'Примеры / воспр.', p => `${p.examples} / ${p.reproduced + p.partial}`]] },
-  edges: { title: 'Рёбра графа', cols: [['id', 'ID', e => esc(e.id)], ['era', 'Период', e => esc(e.era)], ['marker', 'Язык', e => esc(e.marker)], ['ab', 'Переход', e => `<span class="ipa">${esc(e.a)} → ${esc(e.b)}</span>`], ['position', 'Позиция', e => esc(e.position)], ['rules', 'Правила', e => e.rules.map(rule).join(', ')], ['conditional', 'Условное', e => e.conditional ? 'да' : ''], ['examples', 'Примеры', e => e.examples]] },
-  chains: { title: 'Цепочки', cols: [['id', 'Цепочка', c => `<span class="ipa">${esc(c.states.join(' → '))}</span>`], ['era', 'Период', c => esc(c.era)], ['grade', 'Оценка', c => `<span class="grade grade-${esc(c.grade)}">${esc(c.grade)}</span>`], ['markers', 'Языки', c => list(c.markers)], ['attested', 'Дериваций', c => c.attested_count]] },
-  derivations: { title: 'Деривации', cols: [['id', 'ID', d => esc(d.id)], ['word', 'Слово', d => `<a href="${SITE}words/word-${esc(d.word)}.html" target="_blank" rel="noopener">${esc(d.word_form)}</a>${d.deleted ? ' <span class="pill warn">отвергнуто</span>' : ''}`], ['gloss', 'Значение', d => esc(d.gloss)], ['chain', 'Формы', d => `<span class="ipa">${esc([d.start, ...d.steps.map(s => s.after)].join(' → '))}</span>`], ['source', 'Источник', d => src(d.source)]] },
-  phonemes: { title: 'Фонемы', cols: [['symbol', 'Фонема', p => `<span class="ipa">${esc(p.symbol)}</span>`], ['languages', 'Языки', p => list(p.languages)], ['cards', 'Карточки', p => p.cards.map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join(' ')]] },
+  rules: { title: T('corpus.rules'), cols: [['id', T('corpus.colPage'), r => rule(r.id)], ['lang', T('corpus.colLanguage'), r => esc(r.marker)], ['name', T('corpus.colName'), r => esc(r.name)], ['order', T('corpus.colOrder'), r => esc(r.order)], ['formula', T('corpus.colGeneralFormula'), r => r.formula ? `<code>${esc(r.formula.from)} &gt; ${esc(r.formula.to)}</code>` : ''], ['pairs', T('corpus.colSubFormulas'), r => r.pairs.length]] },
+  pairs: { title: T('corpus.pairs'), cols: [['id', 'ID', p => esc(p.id)], ['rule', T('corpus.colRule'), p => rule(p.rule)], ['marker', T('corpus.colLanguage'), p => esc(p.marker)], ['formula', T('corpus.colFormula'), p => `<code>${esc(p.from)} &gt; ${esc(p.to)}</code>`], ['kind', T('corpus.colKind'), p => esc(p.kind)], ['examples', T('corpus.colExamplesRepr'), p => `${p.examples} / ${p.reproduced + p.partial}`]] },
+  edges: { title: T('corpus.edges'), cols: [['id', 'ID', e => esc(e.id)], ['era', T('corpus.colPeriod'), e => esc(e.era)], ['marker', T('corpus.colLanguage'), e => esc(e.marker)], ['ab', T('corpus.colTransition'), e => `<span class="ipa">${esc(e.a)} → ${esc(e.b)}</span>`], ['position', T('corpus.colPosition'), e => esc(e.position)], ['rules', T('corpus.colRules'), e => e.rules.map(rule).join(', ')], ['conditional', T('corpus.colConditional'), e => e.conditional ? T('corpus.yes') : ''], ['examples', T('corpus.colExamples'), e => e.examples]] },
+  chains: { title: T('corpus.chains'), cols: [['id', T('corpus.colChain'), c => `<span class="ipa">${esc(c.states.join(' → '))}</span>`], ['era', T('corpus.colPeriod'), c => esc(c.era)], ['grade', T('corpus.colGrade'), c => `<span class="grade grade-${esc(c.grade)}">${esc(c.grade)}</span>`], ['markers', T('corpus.colLanguages'), c => list(c.markers)], ['attested', T('corpus.colDerivations'), c => c.attested_count]] },
+  derivations: { title: T('corpus.derivations'), cols: [['id', 'ID', d => esc(d.id)], ['word', T('corpus.colWord'), d => `<a href="${SITE}words/word-${esc(d.word)}.html" target="_blank" rel="noopener">${esc(d.word_form)}</a>${d.deleted ? ` <span class="pill warn">${T('corpus.rejected')}</span>` : ''}`], ['gloss', T('corpus.colGloss'), d => esc(d.gloss)], ['chain', T('corpus.colForms'), d => `<span class="ipa">${esc([d.start, ...d.steps.map(s => s.after)].join(' → '))}</span>`], ['source', T('corpus.colSource'), d => src(d.source)]] },
+  phonemes: { title: T('corpus.phonemes'), cols: [['symbol', T('corpus.colPhoneme'), p => `<span class="ipa">${esc(p.symbol)}</span>`], ['languages', T('corpus.colLanguages'), p => list(p.languages)], ['cards', T('corpus.colCards'), p => p.cards.map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join(' ')]] },
 };
 const st = { branch: Object.keys(DATA.branches)[0], section: 'rules', page: 0 };
 const PAGE = 50;
@@ -61,10 +65,10 @@ function render() {
   const rows = DATA.branches[st.branch][st.section].filter(r => !q || text(r).includes(q));
   const pages = Math.max(1, Math.ceil(rows.length / PAGE));
   st.page = Math.min(st.page, pages - 1);
-  $('count').textContent = `${rows.length} записей`;
+  $('count').textContent = I18N.tn('n.records', rows.length);
   $('head').innerHTML = `<tr>${S.cols.map(c => `<th>${esc(c[1])}</th>`).join('')}<th></th></tr>`;
-  $('body').innerHTML = rows.slice(st.page * PAGE, (st.page + 1) * PAGE).map(r => `<tr>${S.cols.map(c => `<td>${c[2](r)}</td>`).join('')}<td><details class="row"><summary>все поля</summary><pre class="json">${esc(JSON.stringify(r, null, 1))}</pre></details></td></tr>`).join('');
-  $('page').textContent = `Страница ${st.page + 1} из ${pages}`;
+  $('body').innerHTML = rows.slice(st.page * PAGE, (st.page + 1) * PAGE).map(r => `<tr>${S.cols.map(c => `<td>${c[2](r)}</td>`).join('')}<td><details class="row"><summary>${T('corpus.allFields')}</summary><pre class="json">${esc(JSON.stringify(r, null, 1))}</pre></details></td></tr>`).join('');
+  $('page').textContent = T('pager.page', { n: st.page + 1, of: pages });
   $('prev').disabled = st.page === 0; $('next').disabled = st.page >= pages - 1;
   document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.section === st.section)));
 }
@@ -73,7 +77,7 @@ $('branch').addEventListener('change', e => { st.branch = e.target.value; st.pag
 $('q').addEventListener('input', () => { st.page = 0; render(); });
 $('prev').addEventListener('click', () => { st.page--; render(); });
 $('next').addEventListener('click', () => { st.page++; render(); });
-const key = 'eldamo-atlas-theme';
+const key = 'quettamin-theme';
 try { const t = localStorage.getItem(key); if (t) document.documentElement.setAttribute('data-theme', t); } catch (_e) { /* no storage */ }
 $('theme-toggle').addEventListener('click', () => {
   const cur = document.documentElement.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -81,6 +85,8 @@ $('theme-toggle').addEventListener('click', () => {
   document.documentElement.setAttribute('data-theme', next);
   try { localStorage.setItem(key, next); } catch (_e) { /* no storage */ }
 });
+$('lang-toggle').addEventListener('click', () => I18N.setLang(I18N.lang === 'ru' ? 'en' : 'ru'));
+I18N.translate(document);
 render();
 })();
 </script>

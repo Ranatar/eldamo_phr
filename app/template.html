@@ -3,179 +3,184 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Quettamin — кузница слова</title>
-<meta name="description" content="Quettamin: формы слов квенья и синдарина во всех периодах, реконструкция и словотворчество по звуковым законам; данные Eldamo (Paul Strack)">
+<title data-i18n="page.title">Quettamin — кузница слова</title>
+<meta name="description" data-i18n-attr="content:page.description" content="Quettamin: формы слов квенья и синдарина во всех периодах, реконструкция и словотворчество по звуковым законам; данные Eldamo (Paul Strack)">
 <style>
 @@STYLES@@
 </style>
 </head>
 <body>
 <header class="topbar">
-  <div class="brand"><a href="#" id="home-link" title="Quettamin — кузница слова">Quettamin</a></div>
+  <div class="brand"><a href="#" id="home-link" data-i18n-attr="title:page.title" title="Quettamin — кузница слова">Quettamin</a></div>
   <div class="search">
-    <input type="search" id="q" autocomplete="off" placeholder="Найти слово: форма или значение (lindë, galadh, tree)" aria-label="Найти слово" aria-controls="q-results">
+    <input type="search" id="q" autocomplete="off" data-i18n-attr="placeholder:search.placeholder;aria-label:search.label" placeholder="Найти слово: форма или значение (lindë, galadh, tree)" aria-label="Найти слово" aria-controls="q-results">
     <div class="search-results" id="q-results" hidden></div>
   </div>
-  <label class="small"><input type="checkbox" id="neo-toggle"> неологизмы</label>
-  <button type="button" id="theme-toggle" aria-label="Переключить тему">Тема</button>
+  <label class="small"><input type="checkbox" id="neo-toggle"> <span data-i18n="search.neo">неологизмы</span></label>
+  <button type="button" id="lang-toggle" data-i18n="lang.switch" data-i18n-attr="title:lang.title" title="English">English</button>
+  <button type="button" id="theme-toggle" data-i18n="theme.button" data-i18n-attr="aria-label:theme.label" aria-label="Переключить тему">Тема</button>
 </header>
 
 <p id="status" class="sr-only" role="status" aria-live="polite"></p>
 <main id="app">
-  <section class="panel word-section" id="word-section" aria-label="Слово">
+  <section class="panel word-section" id="word-section" data-i18n-attr="aria-label:section.word" aria-label="Слово">
     <div id="intro"></div>
     <div id="word-card" class="word-card" hidden></div>
     <div id="panorama" class="panorama-box" aria-live="polite"></div>
   </section>
 
-  <section class="panel" id="tools" aria-label="Инструменты">
-    <div class="tabs" role="tablist" aria-label="Инструменты">
-      <button type="button" role="tab" id="tab-recon" data-tab="recon" aria-controls="reconstruct-panel" aria-selected="true">Реконструкция</button>
-      <button type="button" role="tab" id="tab-compose" data-tab="compose" aria-controls="wordform-panel" aria-selected="false" tabindex="-1">Словотворчество</button>
+  <section class="panel" id="tools" data-i18n-attr="aria-label:section.tools" aria-label="Инструменты">
+    <div class="tabs" role="tablist" data-i18n-attr="aria-label:section.tools" aria-label="Инструменты">
+      <button type="button" role="tab" id="tab-recon" data-tab="recon" aria-controls="reconstruct-panel" aria-selected="true" data-i18n="tab.recon">Реконструкция</button>
+      <button type="button" role="tab" id="tab-compose" data-tab="compose" aria-controls="wordform-panel" aria-selected="false" tabindex="-1" data-i18n="tab.compose">Словотворчество</button>
     </div>
 
     <div role="tabpanel" id="reconstruct-panel" aria-labelledby="tab-recon">
-      <p class="lead">Форма слова для другого периода: более ранней или поздней стадии языка, другой ветви (когнат через общую
+      <p class="lead" data-i18n="recon.lead">Форма слова для другого периода: более ранней или поздней стадии языка, другой ветви (когнат через общую
         праформу) или другой концепции Толкина. Засвидетельствованное в Eldamo показывается первым, остальное строится по
         законам и проверяется прогоном вперёд.</p>
       <div id="rc-subject"></div>
       <div class="wf-pick">
         <div class="wf-slot">
-          <label>Исходный период <select id="rc-src"></select></label>
-          <label>или слово, форма <input type="search" id="rc-form" autocomplete="off" placeholder="например Ambar, mauya или linde"></label>
+          <label><span data-i18n="recon.src">Исходный период</span> <select id="rc-src"></select></label>
+          <label><span data-i18n="recon.form">или слово, форма</span> <input type="search" id="rc-form" autocomplete="off" data-i18n-attr="placeholder:recon.form.placeholder" placeholder="например Ambar, mauya или linde"></label>
           <div class="wf-results" id="rc-r"></div>
-          <label class="small"><input type="checkbox" id="rc-spelled" checked> в написании Толкина (иначе — фонетическая запись Eldamo)</label>
+          <label class="small"><input type="checkbox" id="rc-spelled" checked> <span data-i18n="recon.spelled">в написании Толкина (иначе — фонетическая запись Eldamo)</span></label>
         </div>
         <div class="wf-slot">
-          <label>Целевой период <select id="rc-dst"></select></label>
+          <label><span data-i18n="recon.dst">Целевой период</span> <select id="rc-dst"></select></label>
         </div>
       </div>
-      <div class="actions"><button type="button" class="primary" id="rc-go" disabled>Реконструировать</button></div>
+      <div class="actions"><button type="button" class="primary" id="rc-go" disabled data-i18n="recon.go">Реконструировать</button></div>
       <div id="rc-output" aria-live="polite"></div>
     </div>
 
     <div role="tabpanel" id="wordform-panel" aria-labelledby="tab-compose" hidden>
-      <p class="lead">Соедините два слова и выберите стадию, на которой образуется сложение. На ранней стадии элементы
+      <p class="lead" data-i18n-html="compose.lead">Соедините два слова и выберите стадию, на которой образуется сложение. На ранней стадии элементы
         берутся в её формах и дальше проходят все последующие звуковые законы ветви; на последней — стык подбирается
         по засвидетельствованным сложениям. Элементом может быть и суффикс или приставка (например, <span class="form">-itë</span>,
         <span class="form">ú-</span>, <span class="form">-(r)on</span>): тогда получается производное слово. Выбранное слово
         становится первым элементом.</p>
       <div class="options">
-        <label>Ветвь <select id="wf-branch"></select></label>
-        <label>Концепция <select id="wf-era"></select></label>
-        <label>Стадия образования <select id="wf-stage"></select></label>
+        <label><span data-i18n="common.branch">Ветвь</span> <select id="wf-branch"></select></label>
+        <label><span data-i18n="common.era">Концепция</span> <select id="wf-era"></select></label>
+        <label><span data-i18n="compose.stage">Стадия образования</span> <select id="wf-stage"></select></label>
       </div>
       <div class="wf-pick">
         <div class="wf-slot">
-          <label>Первый элемент <input type="search" id="wf-q1" autocomplete="off" placeholder="форма или значение, например Ambar"></label>
+          <label><span data-i18n="compose.first">Первый элемент</span> <input type="search" id="wf-q1" autocomplete="off" data-i18n-attr="placeholder:compose.first.placeholder" placeholder="форма или значение, например Ambar"></label>
           <div class="wf-results" id="wf-r1"></div>
           <div class="wf-chosen" id="wf-chosen1" aria-live="polite"></div>
         </div>
         <div class="wf-slot">
-          <label>Второй элемент <input type="search" id="wf-q2" autocomplete="off" placeholder="например lindë"></label>
+          <label><span data-i18n="compose.second">Второй элемент</span> <input type="search" id="wf-q2" autocomplete="off" data-i18n-attr="placeholder:compose.second.placeholder" placeholder="например lindë"></label>
           <div class="wf-results" id="wf-r2"></div>
           <div class="wf-chosen" id="wf-chosen2" aria-live="polite"></div>
         </div>
       </div>
-      <div class="actions"><button type="button" class="primary" id="wf-go" disabled>Соединить</button></div>
+      <div class="actions"><button type="button" class="primary" id="wf-go" disabled data-i18n="compose.go">Соединить</button></div>
       <div id="wf-output" aria-live="polite"></div>
     </div>
   </section>
 
   <section class="reference" id="reference" aria-labelledby="ref-title">
     <div class="ref-head">
-      <h2 id="ref-title">Фонетический справочник</h2>
-      <label>Ветвь <select id="branch-select" aria-label="Ветвь"></select></label>
-      <label>Концепция <select id="era-select" aria-label="Концепция">
-        <option value="late">поздняя</option><option value="middle">средняя</option><option value="early">ранняя</option>
+      <h2 id="ref-title" data-i18n="ref.title">Фонетический справочник</h2>
+      <label><span data-i18n="common.branch">Ветвь</span> <select id="branch-select" data-i18n-attr="aria-label:common.branch" aria-label="Ветвь"></select></label>
+      <label><span data-i18n="common.era">Концепция</span> <select id="era-select" data-i18n-attr="aria-label:common.era" aria-label="Концепция">
+        <option value="late" data-i18n="era.late">поздняя</option><option value="middle" data-i18n="era.middle">средняя</option><option value="early" data-i18n="era.early">ранняя</option>
       </select></label>
-      <button type="button" id="ref-toggle-all" aria-expanded="false">Развернуть всё</button>
+      <button type="button" id="ref-toggle-all" aria-expanded="false" data-i18n="ref.expand">Развернуть всё</button>
     </div>
 
     <details class="panel ref" id="ref-paths">
-      <summary><h2>Звуки, пути и правила</h2></summary>
+      <summary><h2 data-i18n="ref.paths">Звуки, пути и правила</h2></summary>
       <p class="lead" id="branch-path"></p>
       <div class="pickers">
         <div class="picker" data-slot="from">
-          <h3>Исходный звук</h3>
-          <div class="chosen">Выбрано: <strong id="from-chosen"></strong></div>
-          <div class="mode-switch" role="group" aria-label="Что выбирать">
-            <button type="button" data-mode="phoneme" aria-pressed="true">Фонема</button>
-            <button type="button" data-mode="cluster" aria-pressed="false">Сочетание</button>
+          <h3 data-i18n="paths.from">Исходный звук</h3>
+          <div class="chosen"><span data-i18n="paths.chosen">Выбрано:</span> <strong id="from-chosen"></strong></div>
+          <div class="mode-switch" role="group" data-i18n-attr="aria-label:paths.mode" aria-label="Что выбирать">
+            <button type="button" data-mode="phoneme" aria-pressed="true" data-i18n="paths.phoneme">Фонема</button>
+            <button type="button" data-mode="cluster" aria-pressed="false" data-i18n="paths.cluster">Сочетание</button>
           </div>
           <div class="grid-scroll" data-role="grid"></div>
           <div class="cluster" data-role="cluster" hidden>
-            <label>Сочетание <input type="search" list="from-states" id="from-cluster" autocomplete="off" placeholder="например, mb"></label>
+            <label><span data-i18n="paths.cluster">Сочетание</span> <input type="search" list="from-states" id="from-cluster" autocomplete="off" data-i18n-attr="placeholder:paths.example" placeholder="например, mb"></label>
             <datalist id="from-states"></datalist>
           </div>
         </div>
         <div class="picker" data-slot="to">
-          <h3>Конечный звук</h3>
-          <div class="chosen">Выбрано: <strong id="to-chosen"></strong></div>
-          <div class="mode-switch" role="group" aria-label="Что выбирать">
-            <button type="button" data-mode="phoneme" aria-pressed="true">Фонема</button>
-            <button type="button" data-mode="cluster" aria-pressed="false">Сочетание</button>
+          <h3 data-i18n="paths.to">Конечный звук</h3>
+          <div class="chosen"><span data-i18n="paths.chosen">Выбрано:</span> <strong id="to-chosen"></strong></div>
+          <div class="mode-switch" role="group" data-i18n-attr="aria-label:paths.mode" aria-label="Что выбирать">
+            <button type="button" data-mode="phoneme" aria-pressed="true" data-i18n="paths.phoneme">Фонема</button>
+            <button type="button" data-mode="cluster" aria-pressed="false" data-i18n="paths.cluster">Сочетание</button>
           </div>
           <div class="grid-scroll" data-role="grid"></div>
           <div class="cluster" data-role="cluster" hidden>
-            <label>Сочетание <input type="search" list="to-states" id="to-cluster" autocomplete="off" placeholder="например, mm"></label>
+            <label><span data-i18n="paths.cluster">Сочетание</span> <input type="search" list="to-states" id="to-cluster" autocomplete="off" data-i18n-attr="placeholder:paths.example2" placeholder="например, mm"></label>
             <datalist id="to-states"></datalist>
           </div>
         </div>
       </div>
       <div class="options">
-        <label>Шагов не больше <select id="depth"><option>2</option><option selected>3</option><option>4</option><option>5</option><option>6</option></select></label>
-        <label><input type="checkbox" id="chronology" checked> соблюдать хронологию Eldamo</label>
-        <label><input type="checkbox" id="attested"> только шаги с засвидетельствованными примерами</label>
-        <label><input type="checkbox" id="unconditional"> без условных правил</label>
+        <label><span data-i18n="paths.depth">Шагов не больше</span> <select id="depth"><option>2</option><option selected>3</option><option>4</option><option>5</option><option>6</option></select></label>
+        <label><input type="checkbox" id="chronology" checked> <span data-i18n="paths.chrono">соблюдать хронологию Eldamo</span></label>
+        <label><input type="checkbox" id="attested"> <span data-i18n="paths.attested">только шаги с засвидетельствованными примерами</span></label>
+        <label><input type="checkbox" id="unconditional"> <span data-i18n="paths.uncond">без условных правил</span></label>
       </div>
       <div class="actions">
-        <button type="button" class="primary" id="go">Найти пути</button>
-        <button type="button" id="swap">Поменять местами</button>
-        <button type="button" id="develop">Развитие исходного</button>
-        <button type="button" id="origins">Происхождение конечного</button>
-        <button type="button" id="rules-from">Правила исходного</button>
-        <button type="button" id="rules-to">Правила конечного</button>
+        <button type="button" class="primary" id="go" data-i18n="paths.go">Найти пути</button>
+        <button type="button" id="swap" data-i18n="paths.swap">Поменять местами</button>
+        <button type="button" id="develop" data-i18n="paths.develop">Развитие исходного</button>
+        <button type="button" id="origins" data-i18n="paths.origins">Происхождение конечного</button>
+        <button type="button" id="rules-from" data-i18n="paths.rulesFrom">Правила исходного</button>
+        <button type="button" id="rules-to" data-i18n="paths.rulesTo">Правила конечного</button>
       </div>
       <div id="output"></div>
-      <p class="small muted">Найденный по графу путь — структурный кандидат. Историческим его делает засвидетельствованная деривация или подтверждённый порядок правил.</p>
+      <p class="small muted" data-i18n="paths.note">Найденный по графу путь — структурный кандидат. Историческим его делает засвидетельствованная деривация или подтверждённый порядок правил.</p>
     </details>
 
     <details class="panel ref" id="ref-chains">
-      <summary><h2>Атлас цепочек</h2></summary>
-      <p class="lead">Цепочки из двух-трёх изменений в хронологическом порядке. Оценки:
+      <summary><h2 data-i18n="ref.chains">Атлас цепочек</h2></summary>
+      <p class="lead" data-i18n-html="chains.lead">Цепочки из двух-трёх изменений в хронологическом порядке. Оценки:
         <span class="grade grade-A">A</span> засвидетельствована в одной деривации,
         <span class="grade grade-B">B</span> шаги засвидетельствованы, порядок подтверждён,
         <span class="grade grade-C">C</span> порядок не установлен,
         <span class="grade grade-D">D</span> есть шаг без примеров.</p>
       <div class="filters">
-        <input type="search" id="chain-query" placeholder="Звук или название правила" aria-label="Поиск цепочек">
-        <label>Оценка <select id="chain-grade"><option value="">все</option><option>A</option><option>B</option><option>C</option><option>D</option></select></label>
+        <input type="search" id="chain-query" data-i18n-attr="placeholder:chains.query;aria-label:chains.search" placeholder="Звук или название правила" aria-label="Поиск цепочек">
+        <label><span data-i18n="chains.grade">Оценка</span> <select id="chain-grade"><option value="" data-i18n="common.all">все</option><option>A</option><option>B</option><option>C</option><option>D</option></select></label>
       </div>
       <div id="chains"></div>
     </details>
 
     <details class="panel ref" id="ref-derivations">
-      <summary><h2>Деривации Eldamo</h2></summary>
-      <p class="lead">Засвидетельствованные последовательности изменений конкретных слов с промежуточными формами — как их приводит Eldamo. Каждый шаг проверен интерпретатором формулы.</p>
+      <summary><h2 data-i18n="ref.derivs">Деривации Eldamo</h2></summary>
+      <p class="lead" data-i18n="derivs.lead">Засвидетельствованные последовательности изменений конкретных слов с промежуточными формами — как их приводит Eldamo. Каждый шаг проверен интерпретатором формулы.</p>
       <div class="filters">
-        <input type="search" id="deriv-query" placeholder="Слово, форма, значение или правило" aria-label="Поиск дериваций">
-        <label><input type="checkbox" id="deriv-deleted"> показывать отвергнутые Толкином</label>
-        <label><input type="checkbox" id="deriv-issues"> только с расхождениями</label>
-        <label><input type="checkbox" id="deriv-others"> слова других ветвей (общие праэльфийские шаги)</label>
+        <input type="search" id="deriv-query" data-i18n-attr="placeholder:derivs.query;aria-label:derivs.search" placeholder="Слово, форма, значение или правило" aria-label="Поиск дериваций">
+        <label><input type="checkbox" id="deriv-deleted"> <span data-i18n="derivs.deleted">показывать отвергнутые Толкином</span></label>
+        <label><input type="checkbox" id="deriv-issues"> <span data-i18n="derivs.issues">только с расхождениями</span></label>
+        <label><input type="checkbox" id="deriv-others"> <span data-i18n="derivs.others">слова других ветвей (общие праэльфийские шаги)</span></label>
       </div>
       <div id="derivations"></div>
     </details>
   </section>
 </main>
 
-<footer>
+<footer data-i18n-html="footer">
   Quettamin (квенья «кузница слова») — по данным <a href="https://eldamo.org" target="_blank" rel="noopener">Eldamo</a> @@ELDAMO_VERSION@@
   © Paul Strack, лицензия <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>;
   данные преобразованы (извлечение правил, граф, цепочки, проверка формул, модели реконструкции и словотворчества).
   Полный корпус: <a href="corpus.html">corpus.html</a>.
 </footer>
 
+<script type="application/json" id="messages-data">@@MESSAGES@@</script>
+<script>
+@@I18N@@
+</script>
 <script type="application/json" id="atlas-data">@@DATA@@</script>
 <script type="application/json" id="wordform-data">@@WORDFORM_DATA@@</script>
 <script>
@@ -197,6 +202,7 @@
 @@RUNTIME@@
 </script>
 <script>
+I18N.translate(document);
 QU.start();
 QREF.start();
 </script>

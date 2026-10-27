@@ -163,6 +163,10 @@ python scripts/quettamin.py affix -ima                                # засв
   кнопка «назад» работает; прежние адреса атласа (`#quenya?from=b&to=v`) открывают справочник;
 - движок словотворчества и реконструкции — порт Python-кода на JavaScript (`app/wordform.js`), совпадение
   ответов проверяется браузерным тестом;
+- интерфейс на русском и английском: кнопка в шапке, `#lang=en` в адресе; выбор запоминается, без выбора
+  язык берётся из браузера. Переводится только интерфейс: формы, значения, названия правил и языков —
+  данные Eldamo, они остаются как есть. Все тексты — в каталоге `app/messages.json` (ключ → `ru`, `en`;
+  числа — с формами множественного числа);
 - светлая и тёмная тема, работа без сети, мобильная вёрстка.
 
 ## Структура
@@ -177,7 +181,8 @@ shared/            source, languages, model, interpreter, formula, graph, pipeli
 scripts/build.py   полная сборка и тесты
 scripts/quettamin.py   командная строка: word, reconstruct, panorama, compose, affix
 scripts/import_eldamo_release.py   импорт новой версии Eldamo
-app/               template.html, styles.css; router.js (адрес), wordform.js (движок), word_ui.js (поиск,
+app/               template.html, styles.css, messages.json и i18n.js (тексты интерфейса на двух языках);
+                   router.js (адрес), wordform.js (движок), word_ui.js (поиск,
                    карточка, панорама), wordform_ui.js, reconstruct_ui.js (инструменты), runtime.js (справочник),
                    corpus_template.html → index.html, corpus.html
 branches/<ветвь>/  data/{phonemes,rules,pairs,derivations,edges,chains,lexicon,junctions,

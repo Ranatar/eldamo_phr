@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from xml.sax.saxutils import escape, quoteattr
 
+from .app import messages        # the interface catalog, shared with the atlas
 from .graph import GRADES
 from .io import dumps, embed_json, write_text
 from .languages import ERAS
@@ -63,7 +64,10 @@ def corpus_html(branches: dict) -> str:
                          for b, d in data['branches'].items()}}
     for d in slim['branches'].values():
         d['rules'] = [{k: v for k, v in r.items() if k != 'notes'} for r in d['rules']]
-    html = template.replace('@@STYLES@@', styles.rstrip('\n')).replace('@@VERSION@@', meta()['eldamo_version'])
+    html = template.replace('@@STYLES@@', styles.rstrip('\n'))
+    html = html.replace('@@I18N@@', (ROOT / 'app' / 'i18n.js').read_text(encoding='utf-8').rstrip('\n'))
+    version = meta()['eldamo_version']
+    html = html.replace('@@MESSAGES@@', messages()).replace('@@ELDAMO_VERSION@@', version)
     return html.replace('@@DATA@@', embed_json(slim))
 
 

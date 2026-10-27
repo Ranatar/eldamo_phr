@@ -136,18 +136,26 @@ SCRIPTS = {                     # template marker -> file in app/
     '@@WORDFORM_UI@@': 'wordform_ui.js',
     '@@RECON_UI@@': 'reconstruct_ui.js',
     '@@RUNTIME@@': 'runtime.js',
+    '@@I18N@@': 'i18n.js',
 }
+
+
+def messages() -> str:
+    """The interface catalog app/messages.json: key -> {ru, en}."""
+    data = json.loads((APP / 'messages.json').read_text(encoding='utf-8'))
+    return embed_json(data)
 
 
 def build_index(branches: dict) -> str:
     template = (APP / 'template.html').read_text(encoding='utf-8')
-    markers = ('@@STYLES@@', '@@DATA@@', '@@WORDFORM_DATA@@', '@@ELDAMO_VERSION@@', *SCRIPTS)
+    markers = ('@@STYLES@@', '@@DATA@@', '@@WORDFORM_DATA@@', '@@MESSAGES@@', *SCRIPTS)
     for marker in markers:
         if template.count(marker) != 1:
             raise SystemExit(f'app/template.html must contain {marker} exactly once')
     html = template.replace('@@STYLES@@', (APP / 'styles.css').read_text(encoding='utf-8').rstrip('\n'))
     for marker, name in SCRIPTS.items():
         html = html.replace(marker, (APP / name).read_text(encoding='utf-8').rstrip('\n'))
+    html = html.replace('@@MESSAGES@@', messages())     # the footer message holds the version
     html = html.replace('@@ELDAMO_VERSION@@', meta()['eldamo_version'])
     html = html.replace('@@WORDFORM_DATA@@', embed_json({b: wordform_payload(b, d) for b, d in branches.items()}))
     html = html.replace('@@DATA@@', embed_json(payload(branches)))

@@ -10,20 +10,26 @@ const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const fold = s => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
 const BRANCHES = Object.keys(WDATA);
-const BRANCH_NAMES = { quenya: 'квенья', sindarin: 'синдарин' };
+const T = window.I18N.t, TN = window.I18N.tn;
+const BRANCH_NAMES = { quenya: T('branch.quenya'), sindarin: T('branch.sindarin') };
 const ERAS = ['late', 'middle', 'early'];
-const ERA_NAMES = { late: 'поздняя', middle: 'средняя', early: 'ранняя' };
+const ERA_NAMES = { late: T('era.late'), middle: T('era.middle'), early: T('era.early') };
 const NEO_ERA = { nq: 'late', ns: 'late', np: 'late', van: 'late', norths: 'late' };
 const NEO_MARKERS = { nq: 'NQ.', ns: 'NS.', np: 'N✶', van: 'Van.', norths: 'NS.' };
 const MARKS = {
-  attested: ['●', 'засвидетельствовано в Eldamo'], link: ['↔', 'связь Eldamo между статьями'],
-  unchanged: ['=', 'форма без изменений'], reconstructed: ['○', 'восстановлено, проверено прогоном вперёд'],
-  root: ['√', 'согласуется с корнем слова'], cognate: ['⇄', 'через общую праформу'],
-  'near-cognate': ['≈', 'слово Eldamo с той же или близкой праформой и общим значением'],
-  'primitive-attested': ['✶', 'праформа из Eldamo'], neologism: ['◇', 'переэтимологизация — неологизм, не слово Толкина'],
-  phonotactics: ['⚠', 'нетипично для целевого языка'], main: ['', 'основное чтение законов'],
+  attested: ['●', T('mark.attested')],
+  link: ['↔', T('mark.link')],
+  unchanged: ['=', T('mark.unchanged')],
+  reconstructed: ['○', T('mark.reconstructed')],
+  root: ['√', T('mark.root')],
+  cognate: ['⇄', T('mark.cognate')],
+  'near-cognate': ['≈', T('mark.near-cognate')],
+  'primitive-attested': ['✶', T('mark.primitive-attested')],
+  neologism: ['◇', T('mark.neologism')],
+  phonotactics: ['⚠', T('mark.phonotactics')],
+  main: ['', T('mark.main')],
 };
-const LINK_NAMES = { combine: 'объединено с', deprecated: 'заменено на', cognate: 'когнат', see: 'см.' };
+const LINK_NAMES = { combine: T('link.combine'), deprecated: T('link.deprecated'), cognate: T('link.cognate'), see: T('link.see') };
 
 // ---------------------------------------------------------------- engines and lookup
 const engines = {};
@@ -90,8 +96,8 @@ function ruleInfo(id, prefer) {
 function ruleLink(id, prefer) {
   const info = ruleInfo(id, prefer);
   const name = info ? info.rule.name : id;
-  return `<a href="#" data-rule="${esc(id)}" data-branch="${esc(info ? info.branch : prefer || '')}" title="Правило в справочнике">${esc(name)}</a>`
-    + ` <a href="${SITE}words/word-${esc(id)}.html" target="_blank" rel="noopener" class="ext" title="Статья Eldamo" aria-label="Статья Eldamo">↗</a>`;
+  return `<a href="#" data-rule="${esc(id)}" data-branch="${esc(info ? info.branch : prefer || '')}" title="${T('rule.inReference')}">${esc(name)}</a>`
+    + ` <a href="${SITE}words/word-${esc(id)}.html" target="_blank" rel="noopener" class="ext" title="${T('common.eldamoPage')}" aria-label="${T('common.eldamoPage')}">↗</a>`;
 }
 function stagesHtml(steps, prefer) {
   // [[rule, before, after]] -> stages in order, each with its forms and rules
@@ -111,12 +117,17 @@ function stagesHtml(steps, prefer) {
     ` <span class="arrow">→</span> <span class="marker">${esc(g.marker)}</span> <span class="form">${esc(plainForm(g.to))}</span>`).join('')}</div>` : '';
   const list = groups.map(g => `<li><span class="marker">${esc(g.marker)}</span> <span class="form">${esc(plainForm(g.from))} → ${esc(plainForm(g.to))}</span>
     <ol class="rules">${g.rules.map(t => `<li><span class="form">${esc(plainForm(t[1]))} → ${esc(plainForm(t[2]))}</span> ${ruleLink(t[0], prefer)}</li>`).join('')}</ol></li>`).join('');
-  const sk = skipped.length ? `<p class="small muted">Не применены необязательные правила: ${skipped.map(t => ruleLink(t[0], prefer)).join('; ')}.</p>` : '';
-  return `${chain}<details class="stages"><summary>Правила по стадиям (${applied.length})</summary><ol class="stage-list">${list}</ol>${sk}</details>`;
+  const sk = skipped.length ? `<p class="small muted">${T('stages.skipped')} ${skipped.map(t => ruleLink(t[0], prefer)).join('; ')}.</p>` : '';
+  return `${chain}<details class="stages"><summary>${T('stages.title', { n: applied.length })}</summary><ol class="stage-list">${list}</ol>${sk}</details>`;
 }
 function marksHtml(marks, problems) {
   return marks.filter(m => MARKS[m] && MARKS[m][0]).map(m => `<span class="tag mark-${esc(m)}" title="${esc(MARKS[m][1])}">${esc(MARKS[m][0])} ${esc(MARKS[m][1])}</span>`).join(' ')
-    + (problems && problems.length ? ` <span class="muted small">(${esc(problems.join(', '))})</span>` : '');
+    + (problems && problems.length ? ` <span class="muted small">(${esc(problems.map(([k, x]) => T('problem.' + k, { x })).join(', '))})</span>` : '');
+}
+// a route of the reconstruction: segments [key, params] (wordform.js) -> text
+function routeText(route) {
+  if (!Array.isArray(route)) return String(route || '');
+  return route.map(([k, params]) => T('route.' + k, params)).join(T('route.then'));
 }
 
 // ---------------------------------------------------------------- the subject: a word or a form
@@ -173,7 +184,7 @@ function hitHtml({ branch, entry: e }, attrs) {
   const E = engine(branch);
   const kind = WF.affixKind(e);
   return `<button type="button" ${attrs}><span class="marker">${esc(marker(E, e.lang))}</span> <span class="form">${esc(e.form)}</span>`
-    + `${e.neo ? ' <span class="tag">неологизм</span>' : ''}${kind ? ` <span class="tag">${kind === 'suffix' ? 'суффикс' : 'приставка'}</span>` : ''}`
+    + `${e.neo ? ` <span class="tag">${T('tag.neologism')}</span>` : ''}${kind ? ` <span class="tag">${T('tag.' + kind)}</span>` : ''}`
     + ` <span class="muted">${esc(e.gloss)}</span></button>`;
 }
 function renderSearch() {
@@ -181,7 +192,7 @@ function renderSearch() {
   const box = $('q-results');
   const hits = searchWords(q, null, 14);
   box.innerHTML = q.trim() ? (hits.map(h => hitHtml(h, `data-word="${esc(h.entry.id)}" data-branch="${esc(h.branch)}"`)).join('')
-    || `<p class="muted">Ничего не найдено${neo() ? '' : ' (неологизмы скрыты)'}.</p>`) : '';
+    || `<p class="muted">${T(neo() ? 'search.none' : 'search.noneHidden')}</p>`) : '';
   box.hidden = !q.trim();
 }
 $('q').addEventListener('input', renderSearch);
@@ -242,33 +253,30 @@ const EXAMPLES = [
 ];
 function renderIntro() {
   const rec = recent();
-  $('intro').innerHTML = `<h1>Quettamin — кузница слова</h1>
-    <p class="lead">Найдите слово квенья или синдарина любого периода — поле поиска наверху. Quettamin покажет его формы во всех
-      периодах: засвидетельствованные в лексиконе Eldamo и восстановленные по звуковым законам, — восстановит форму для
-      нужной стадии, другой ветви или другой концепции Толкина и построит новые слова: сложения и производные с суффиксами и приставками.</p>
-    <p>Например: ${EXAMPLES.map(chip).join(' ')}</p>
-    ${rec.length ? `<p>Недавние: ${rec.map(chip).join(' ')}</p>` : ''}
-    <p class="small muted">Всё, кроме засвидетельствованного, — гипотеза модели: ответ показывает, на чём он основан. Фонетический справочник
-      (правила, пути между звуками, цепочки, деривации Eldamo) — внизу страницы.</p>`;
+  $('intro').innerHTML = `<h1>${T('intro.title')}</h1>
+    <p class="lead">${T('intro.lead')}</p>
+    <p>${T('intro.examples')} ${EXAMPLES.map(chip).join(' ')}</p>
+    ${rec.length ? `<p>${T('intro.recent')} ${rec.map(chip).join(' ')}</p>` : ''}
+    <p class="small muted">${T('intro.note')}</p>`;
 }
 function cardHtml(s) {
-  if (s.kind === 'missing') return `<p>Слова с идентификатором ${esc(s.id)} в лексиконе нет.</p>`;
+  if (s.kind === 'missing') return `<p>${esc(T('card.missing', { id: s.id }))}</p>`;
   const [b, era, stage] = s.period;
   if (s.kind === 'form') {
     return `<div class="word-head"><span class="marker">${esc(periodName(b, era, stage))}</span> <strong class="form big">${esc(shown(s.form, b, era, stage))}</strong>
       ${shown(s.form, b, era, stage) !== s.form ? `<span class="ipa muted">[${esc(s.form)}]</span>` : ''}</div>
-      <p class="small muted">Форма без статьи Eldamo: восстановленная или построенная. Всё, что выводится из неё, — гипотеза.</p>`;
+      <p class="small muted">${T('card.formOnly')}</p>`;
   }
   const E = engine(b), e = s.entry;
   const lang = language(E, e.lang);
   const bits = [];
-  if (e.stems) bits.push('основа ' + e.stems.map(x => `<span class="form">${esc(x)}</span>`).join(', '));
-  if (e.roots && e.roots.length) bits.push('корень ' + e.roots.map(x => `<span class="form">${esc(x)}</span>`).join(', '));
+  if (e.stems) bits.push(T('card.stem') + ' ' + e.stems.map(x => `<span class="form">${esc(x)}</span>`).join(', '));
+  if (e.roots && e.roots.length) bits.push(T('card.root') + ' ' + e.roots.map(x => `<span class="form">${esc(x)}</span>`).join(', '));
   const pr = e.starts || (e.stages && (e.stages.p || e.stages.mp || e.stages.ep)) || e.written_origins || e.proto_forms;
-  if (pr) bits.push('праформа ' + pr.map(x => `<span class="form">${esc(x)}</span>`).join(', '));
+  if (pr) bits.push(T('card.primitive') + ' ' + pr.map(x => `<span class="form">${esc(x)}</span>`).join(', '));
   const kind = WF.affixKind(e);
-  if (kind) bits.unshift(`${kind === 'suffix' ? 'суффикс' : 'приставка'}, формы: ${WF.allomorphs(e, b).map(f => `<span class="form">${esc(f)}</span>`).join(', ')}`);
-  if (e.mark && e.mark !== '#') bits.push(`пометка Eldamo «${esc(e.mark)}»`);
+  if (kind) bits.unshift(`${T('tag.' + kind)}, ${T('card.forms')} ${WF.allomorphs(e, b).map(f => `<span class="form">${esc(f)}</span>`).join(', ')}`);
+  if (e.mark && e.mark !== '#') bits.push(esc(T('card.mark', { mark: e.mark })));
   const links = Object.entries(e.links || {}).map(([tag, ids]) => {
     const words = ids.map(id => lookup(id, b)).filter(Boolean);
     if (!words.length) return '';
@@ -276,14 +284,14 @@ function cardHtml(s) {
   }).filter(Boolean);
   return `<div class="word-head"><span class="marker" title="${esc(lang ? lang.name : e.lang)}">${esc(marker(E, e.lang))}</span>
       <strong class="form big">${esc(e.form)}</strong> <span class="gloss">${esc(e.gloss)}</span>
-      ${e.neo ? '<span class="tag">неологизм</span>' : ''}
-      <a href="${SITE}words/word-${esc(e.id)}.html" target="_blank" rel="noopener" class="small">статья Eldamo ↗</a></div>
-    <div class="small">${esc(BRANCH_NAMES[b])}, ${esc(ERA_NAMES[era])} концепция${lang ? ', ' + esc(lang.name) : ''}${bits.length ? ' · ' + bits.join('; ') : ''}</div>
+      ${e.neo ? `<span class="tag">${T('tag.neologism')}</span>` : ''}
+      <a href="${SITE}words/word-${esc(e.id)}.html" target="_blank" rel="noopener" class="small">${T('common.eldamoPageLower')} ↗</a></div>
+    <div class="small">${esc(BRANCH_NAMES[b])}, ${esc(T('soundRules.era', { era: ERA_NAMES[era] }))}${lang ? ', ' + esc(lang.name) : ''}${bits.length ? ' · ' + bits.join('; ') : ''}</div>
     ${links.length ? `<div class="small">${links.join(' · ')}</div>` : ''}
-    ${(e.unruled || []).length ? `<div class="small unruled">В деривации Eldamo ${e.unruled.length > 1 ? 'есть шаги' : 'есть шаг'} без правила («?»): ${
+    ${(e.unruled || []).length ? `<div class="small unruled">${T(e.unruled.length > 1 ? 'card.unruledMany' : 'card.unruledOne')} ${
       e.unruled.map(([code, a, b2]) => `<span class="marker">${esc(marker(E, code))}</span> <span class="form">${esc(a)} → ${esc(b2)}</span>`).join('; ')}.
-      Законы такой шаг не делают, поэтому реконструкция может разойтись с формой Толкина.</div>` : ''}
-    ${e.starts ? `<div class="small"><a href="#" data-ref-derivations="${esc(e.id)}" data-branch="${esc(b)}">Деривации Eldamo этого слова в справочнике</a></div>` : ''}`;
+      ${T('card.unruledNote')}</div>` : ''}
+    ${e.starts ? `<div class="small"><a href="#" data-ref-derivations="${esc(e.id)}" data-branch="${esc(b)}">${T('card.derivations')}</a></div>` : ''}`;
 }
 
 // ---------------------------------------------------------------- panorama
@@ -307,7 +315,7 @@ function renderPanorama(s) {
   const src = s.period, opts = sourceOf(s);
   const rows = periods();
   const maxMid = Math.max(...rows.map(r => r.langs.length - 2));
-  const head = `<tr><th scope="col"></th><th scope="col">праформа</th>${maxMid > 0 ? `<th scope="col" colspan="${maxMid}">промежуточные стадии</th>` : ''}<th scope="col">язык</th></tr>`;
+  const head = `<tr><th scope="col"></th><th scope="col">${T('panorama.primitive')}</th>${maxMid > 0 ? `<th scope="col" colspan="${maxMid}">${T('panorama.middle')}</th>` : ''}<th scope="col">${T('panorama.language')}</th></tr>`;
   const cell = (b, era, l) => {
     const own = src[0] === b && src[1] === era && src[2] === l.stage;
     return `<td><button type="button" class="pcell${own ? ' own' : ''}" data-cell="${esc(`${b}/${era}/${l.stage}`)}" aria-label="${esc(l.marker + ' ' + l.name)}">
@@ -318,10 +326,9 @@ function renderPanorama(s) {
     const pad = maxMid - mid.length;
     return `<tr><th scope="row">${esc(ERA_NAMES[r.era])} · ${esc(BRANCH_NAMES[r.b])}</th>${cell(r.b, r.era, first)}${mid.map(l => cell(r.b, r.era, l)).join('')}${pad > 0 ? `<td colspan="${pad}"></td>` : ''}${last !== first ? cell(r.b, r.era, last) : '<td></td>'}</tr>`;
   }).join('');
-  box.innerHTML = `<h2>Панорама периодов</h2>
+  box.innerHTML = `<h2>${T('panorama.title')}</h2>
     <div class="table-scroll"><table class="panorama"><thead>${head}</thead><tbody>${body}</tbody></table></div>
-    <p class="small muted legend">● засвидетельствовано · ↔ связь Eldamo · ≈ слово Eldamo с близкой праформой · = без изменений · ○ восстановлено законами · ◇ неологизм (переэтимологизация) · ⚠ нетипично для языка.
-      Щелчок по клетке — все варианты, маршрут и правила.</p>`;
+    <p class="small muted legend">${T('panorama.legend')}</p>`;
   const cells = [...box.querySelectorAll('[data-cell]')];
   const all = allEngines();
   let k = 0;
@@ -333,13 +340,13 @@ function renderPanorama(s) {
     let vs = [];
     try { vs = WF.reconstruct(all, src, dst, Object.assign({ limit: 4 }, opts)); } catch (err) { console.warn(err); }
     const out = btn.querySelector('.pform');
-    if (!vs.length) { out.textContent = '—'; btn.classList.add('empty'); btn.title = 'Форм не найдено'; }
+    if (!vs.length) { out.textContent = '—'; btn.classList.add('empty'); btn.title = T('panorama.noForms'); }
     else {
       const v = vs[0];
       out.textContent = shown(v.form, b, era, Number(stage));
       btn.insertAdjacentHTML('beforeend', ` <span class="sym" aria-hidden="true">${cellSymbol(v)}</span>${v.marks.includes('phonotactics') ? '<span class="sym warn" aria-hidden="true">⚠</span>' : ''}`
 );
-      btn.title = `${v.route} · вес ${v.score}` + (vs.length > 1 ? ` · ещё вариантов: ${vs.length - 1}` : '');
+      btn.title = `${routeText(v.route)} · ${T('variant.weight', { w: v.score })}` + (vs.length > 1 ? ` · ${T('panorama.more', { n: vs.length - 1 })}` : '');
       if (v.marks.includes('attested') || v.marks.includes('link') || v.marks.includes('near-cognate')) btn.classList.add('attested');
       else if (v.marks.includes('neologism')) btn.classList.add('neologism');
     }
@@ -391,7 +398,7 @@ function route(p) {
   $('word-card').hidden = !s;
   if (!s) { renderIntro(); renderPanorama(null); }
   else { $('word-card').innerHTML = cardHtml(s); remember(s); renderPanorama(s); }
-  document.title = s && s.kind === 'word' ? `${s.entry.form} — Quettamin` : s && s.kind === 'form' ? `${s.form} — Quettamin` : 'Quettamin — кузница слова';
+  document.title = s && s.kind === 'word' ? `${s.entry.form} — Quettamin` : s && s.kind === 'form' ? `${s.form} — Quettamin` : T('page.title');
   for (const l of listeners) l(s, 'subject');
 }
 QR.on(route);
@@ -399,7 +406,7 @@ QR.on(route);
 window.QU = {
   WDATA, BRANCHES, BRANCH_NAMES, ERAS, ERA_NAMES, MARKS, SITE,
   esc, fold, engine, allEngines, lookup, language, marker, eraOf, lastStage, periodOf, periodName,
-  spelling, plainForm, shown, ruleLink, stagesHtml, marksHtml, searchWords, hitHtml, sourceOf,
+  T, TN, spelling, plainForm, shown, ruleLink, stagesHtml, marksHtml, routeText, searchWords, hitHtml, sourceOf,
   neo, openWord, openForm, showTab,
   subject: () => subject,
   onSubject: fn => listeners.push(fn),

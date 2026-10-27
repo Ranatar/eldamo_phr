@@ -11,17 +11,10 @@ const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const NULL = 'ø';
 const ERAS = ['late', 'middle', 'early'];
-const ERA_NAMES = { late: 'поздняя', middle: 'средняя', early: 'ранняя' };
+const T = window.I18N.t, TN = window.I18N.tn;
+const ERA_NAMES = { late: T('era.late'), middle: T('era.middle'), early: T('era.early') };
 
 // ---------- small helpers ---------------------------------------------------
-function plural(n, one, few, many) {
-  const a = Math.abs(n) % 100, b = a % 10;
-  if (a > 10 && a < 20) return many;
-  if (b === 1) return one;
-  if (b >= 2 && b <= 4) return few;
-  return many;
-}
-const count = (n, one, few, many) => `${n} ${plural(n, one, few, many)}`;
 const wordUrl = id => id ? `${SITE}words/word-${id}.html` : '';
 function sourceLink(src) {
   if (!src) return '';
@@ -33,30 +26,30 @@ const store = {
   get(k) { try { return localStorage.getItem(k); } catch (_e) { return null; } },
   set(k, v) { try { localStorage.setItem(k, v); } catch (_e) { /* storage unavailable */ } },
 };
-const POSITION = { initial: 'в начале слова', final: 'в конце слова', medial: 'в середине слова' };
-const TRANSITION = { stage: 'следующая языковая ступень', ordered: 'порядок подтверждён Eldamo', unknown: 'порядок не установлен' };
+const POSITION = { initial: T('pos.initial'), final: T('pos.final'), medial: T('pos.medial') };
+const TRANSITION = { stage: T('transition.stage'), ordered: T('transition.ordered'), unknown: T('transition.unknown') };
 const STATUS = {
-  reproduced: ['✓', 'формула воспроизводит шаг'],
-  reproduced_partial: ['≈', 'воспроизводится применением в одной позиции'],
-  mismatch: ['✗', 'формула даёт другой результат'],
-  no_match: ['✗', 'формула не применима к предыдущей форме'],
-  unsupported: ['?', 'нотация вне документированной'],
-  unknown_rule: ['·', 'правило в Eldamo не указано'],
-  unmatched_formula: ['?', 'формула не найдена среди правил'],
-  identity: ['=', 'исключение правила: звук сохраняется'],
-  deleted_rule: ['·', 'правило удалено Толкином'],
+  reproduced: ['✓', T('status.reproduced')],
+  reproduced_partial: ['≈', T('status.reproduced_partial')],
+  mismatch: ['✗', T('status.mismatch')],
+  no_match: ['✗', T('status.no_match')],
+  unsupported: ['?', T('status.unsupported')],
+  unknown_rule: ['·', T('status.unknown_rule')],
+  unmatched_formula: ['?', T('status.unmatched_formula')],
+  identity: ['=', T('status.identity')],
+  deleted_rule: ['·', T('status.deleted_rule')],
 };
 function announce(text) { $('status').textContent = text; }
 const ISSUE = new Set(['mismatch', 'no_match', 'unsupported', 'unmatched_formula']);
 const GRADE = {
-  A: 'засвидетельствована в одной деривации', B: 'шаги засвидетельствованы, порядок подтверждён',
-  C: 'шаги засвидетельствованы, порядок не установлен', D: 'есть шаг без засвидетельствованных примеров',
+  A: T('grade.A'), B: T('grade.B'), C: T('grade.C'), D: T('grade.D'),
 };
 
 // ---------- theme -----------------------------------------------------------
 const THEME_KEY = 'quettamin-theme';
 function applyTheme(t) { if (t) document.documentElement.setAttribute('data-theme', t); }
 applyTheme(store.get(THEME_KEY));
+$('lang-toggle').addEventListener('click', () => window.I18N.setLang(window.I18N.lang === 'ru' ? 'en' : 'ru'));
 $('theme-toggle').addEventListener('click', () => {
   const cur = document.documentElement.getAttribute('data-theme')
     || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -190,13 +183,13 @@ function route(params) {
 
 // ---------- reference header --------------------------------------------------------
 const branchSelect = $('branch-select');
-branchSelect.replaceChildren(...BRANCHES.map(k => new Option(k === 'quenya' ? 'квенья' : 'синдарин', k)));
+branchSelect.replaceChildren(...BRANCHES.map(k => new Option(T('branch.' + k), k)));
 branchSelect.addEventListener('change', () => { state.branch = branchSelect.value; state.chainPage = 0; state.derivPage = 0; state.drawn = {}; writeHash(true); renderOpen(); });
 $('era-select').addEventListener('change', e => { state.era = e.target.value; state.drawn = {}; writeHash(false); renderOpen(); });
 const refSections = () => [$('ref-paths'), $('ref-chains'), $('ref-derivations')];
 function updateToggleAll() {
   const allOpen = refSections().every(d => d.open);
-  $('ref-toggle-all').textContent = allOpen ? 'Свернуть всё' : 'Развернуть всё';
+  $('ref-toggle-all').textContent = allOpen ? T('ref.collapse') : T('ref.expand');
   $('ref-toggle-all').setAttribute('aria-expanded', String(allOpen));
 }
 $('ref-toggle-all').addEventListener('click', () => {
@@ -214,7 +207,7 @@ function renderOpen() {
     state.drawn.paths = key;
     const X = ensureSel();
     for (const slot of ['from', 'to']) state.mode[slot] = X.phonemes.has(state.sel[state.branch][slot]) ? 'phoneme' : 'cluster';
-    $('branch-path').textContent = `${X.B.title}: ${X.B.path[state.era]}. Правил: ${X.B.stats.rules}, переходов в графе: ${X.B.stats.edges}, формулы воспроизводят ${Math.round(100 * X.B.stats.reproduction_rate)}% засвидетельствованных шагов.`;
+    $('branch-path').textContent = T('paths.summary', { title: X.B.title, path: X.B.path[state.era], rules: X.B.stats.rules, edges: X.B.stats.edges, rate: Math.round(100 * X.B.stats.reproduction_rate) });
     for (const slot of ['from', 'to']) renderPicker(slot);
     $('output').innerHTML = '';
     findPaths();
@@ -236,7 +229,7 @@ function renderPicker(slot) {
   const X = index(state.branch);
   const box = document.querySelector(`.picker[data-slot="${slot}"]`);
   const value = current(slot);
-  $(slot + '-chosen').textContent = value === NULL ? 'ø (исчезновение)' : value;
+  $(slot + '-chosen').textContent = value === NULL ? T('paths.null') : value;
   const mode = state.mode[slot];
   box.querySelectorAll('.mode-switch button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mode === mode)));
   box.querySelector('[data-role="grid"]').hidden = mode !== 'phoneme';
@@ -252,7 +245,7 @@ function renderPicker(slot) {
 }
 function soundButton(s, value, live) {
   const label = s === NULL ? 'ø' : s;
-  const title = live.has(s) ? '' : ' title="В графе этого периода нет переходов с этим звуком"';
+  const title = live.has(s) ? '' : ` title="${T('paths.noEdges')}"`;
   return `<button type="button" class="ipa-sound${live.has(s) ? '' : ' no-edges'}" data-sound="${esc(s)}" aria-pressed="${s === value}"${title}>${esc(label)}</button>`;
 }
 function gridHtml(G, value, live) {
@@ -260,14 +253,14 @@ function gridHtml(G, value, live) {
     const usedRows = rows.filter(([r]) => cells[r]);
     const usedCols = cols.filter(([c]) => usedRows.some(([r]) => cells[r][c]));
     if (!usedRows.length) return '';
-    return `<table class="ipa-grid"><caption>${caption}</caption><thead><tr><th></th>${usedCols.map(([, t]) => `<th scope="col">${esc(t)}</th>`).join('')}</tr></thead><tbody>${
-      usedRows.map(([r, rt]) => `<tr><th scope="row">${esc(rt)}</th>${usedCols.map(([c]) => `<td>${(cells[r][c] || []).map(s => soundButton(s, value, live)).join('')}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+    return `<table class="ipa-grid"><caption>${caption}</caption><thead><tr><th></th>${usedCols.map(([c]) => `<th scope="col">${esc(T('ipa.' + c))}</th>`).join('')}</tr></thead><tbody>${
+      usedRows.map(([r]) => `<tr><th scope="row">${esc(T('ipa.' + r))}</th>${usedCols.map(([c]) => `<td>${(cells[r][c] || []).map(s => soundButton(s, value, live)).join('')}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
   };
-  let html = table('Согласные', G.consonants.rows, G.consonants.cols, G.consonants.cells);
-  html += table('Гласные', G.vowels.rows, G.vowels.cols, G.vowels.cells);
-  if (G.diphthongs.cols.length) html += `<table class="ipa-grid"><caption>Дифтонги</caption><thead><tr>${G.diphthongs.cols.map(([, t]) => `<th scope="col">${esc(t)}</th>`).join('')}</tr></thead><tbody><tr>${G.diphthongs.cols.map(([c]) => `<td>${G.diphthongs.cells[c].map(s => soundButton(s, value, live)).join('')}</td>`).join('')}</tr></tbody></table>`;
+  let html = table(T('grid.consonants'), G.consonants.rows, G.consonants.cols, G.consonants.cells);
+  html += table(T('grid.vowels'), G.vowels.rows, G.vowels.cols, G.vowels.cells);
+  if (G.diphthongs.cols.length) html += `<table class="ipa-grid"><caption>${T('grid.diphthongs')}</caption><thead><tr>${G.diphthongs.cols.map(([c]) => `<th scope="col">${esc(T('ipa.end', { x: c }))}</th>`).join('')}</tr></thead><tbody><tr>${G.diphthongs.cols.map(([c]) => `<td>${G.diphthongs.cells[c].map(s => soundButton(s, value, live)).join('')}</td>`).join('')}</tr></tbody></table>`;
   const extra = [...G.null, ...G.other];
-  if (extra.length) html += `<table class="ipa-grid"><caption>Прочее</caption><tbody><tr><td>${extra.map(s => soundButton(s, value, live)).join('')}</td></tr></tbody></table>`;
+  if (extra.length) html += `<table class="ipa-grid"><caption>${T('grid.other')}</caption><tbody><tr><td>${extra.map(s => soundButton(s, value, live)).join('')}</td></tr></tbody></table>`;
   return html;
 }
 for (const slot of ['from', 'to']) {
@@ -284,7 +277,7 @@ for (const slot of ['from', 'to']) {
 // ---------- step rendering --------------------------------------------------------
 function ruleLink(X, id) {
   const r = X.B.rules[id];
-  return `<a href="#" data-rule="${esc(id)}" data-branch="${esc(X.name)}">${esc(r ? r.n : id)}</a> <a href="${esc(wordUrl(id))}" target="_blank" rel="noopener" class="ext" title="Статья Eldamo" aria-label="Статья Eldamo">↗</a>`;
+  return `<a href="#" data-rule="${esc(id)}" data-branch="${esc(X.name)}">${esc(r ? r.n : id)}</a> <a href="${esc(wordUrl(id))}" target="_blank" rel="noopener" class="ext" title="${T('common.eldamoPage')}" aria-label="${T('common.eldamoPage')}">↗</a>`;
 }
 function exampleWords(X, e, limit = 3) {
   const seen = [];
@@ -299,13 +292,13 @@ function exampleWords(X, e, limit = 3) {
 function stepHtml(X, e, transitionLabel) {
   const pos = e.p !== 'any' ? ` <span class="pill">${esc(POSITION[e.p] || e.p)}</span>` : '';
   const cond = [];
-  if (e.cx.length) cond.push(`общая формула правила: <code>${e.cx.map(esc).join('</code>, <code>')}</code>`);
-  if (e.ex.length) cond.push(`без изменения остаются: <code>${e.ex.map(esc).join('</code>, <code>')}</code>`);
+  if (e.cx.length) cond.push(`${T('step.general')} <code>${e.cx.map(esc).join('</code>, <code>')}</code>`);
+  if (e.ex.length) cond.push(`${T('step.unchanged')} <code>${e.ex.map(esc).join('</code>, <code>')}</code>`);
   const ex = e.e
-    ? `<div class="examples">${count(e.e, 'засвидетельствованный пример', 'засвидетельствованных примера', 'засвидетельствованных примеров')}, формула воспроизводит ${e.ok}: ${exampleWords(X, e)}</div>`
-    : '<div class="examples">Засвидетельствованных примеров этого шага в деривациях нет.</div>';
+    ? `<div class="examples">${TN('n.attestedExamples', e.e)}, ${T('step.reproduces', { n: e.ok })}: ${exampleWords(X, e)}</div>`
+    : `<div class="examples">${T('step.noExamples')}</div>`;
   return `<li>${transitionLabel ? `<div class="small muted">${esc(transitionLabel)}</div>` : ''}<strong class="ipa">${esc(e.a)} → ${esc(e.b)}</strong> · ${esc(e.m)}${pos} · ${e.r.map(r => ruleLink(X, r)).join('; ')}${
-    cond.length ? `<div class="cond">Условие: ${cond.join('; ')}</div>` : ''}${ex}</li>`;
+    cond.length ? `<div class="cond">${T('step.condition')} ${cond.join('; ')}</div>` : ''}${ex}</li>`;
 }
 function routeHtml(nodes) {
   return `<span class="route">${nodes.map(n => `<span>${esc(n)}</span>`).join('<span class="arrow">→</span>')}</span>`;
@@ -317,11 +310,11 @@ function pathCard(X, p, open) {
   const transitions = p.edges.map((e, i) => i ? transition(X, p.edges[i - 1], e) : null);
   const words = att.slice(0, 6).map(di => X.B.derivs[di]).map(d => `<a href="#" data-deriv="${esc(d.id)}">${esc(d.wf || d.f)}</a>`).join(', ');
   return `<details class="card"${open ? ' open' : ''}><summary>${routeHtml(p.nodes)}
-    <span class="pill">${count(p.edges.length, 'шаг', 'шага', 'шагов')}</span>
-    ${att.length ? `<span class="pill ok">засвидетельствован целиком: ${count(att.length, 'деривация', 'деривации', 'дериваций')}</span>` : `<span class="pill">${attested} из ${p.edges.length} с примерами</span>`}
-    ${conditional ? `<span class="pill warn">${count(conditional, 'условный шаг', 'условных шага', 'условных шагов')}</span>` : ''}</summary>
+    <span class="pill">${TN('n.steps', p.edges.length)}</span>
+    ${att.length ? `<span class="pill ok">${T('path.attestedWhole')} ${TN('n.derivations', att.length)}</span>` : `<span class="pill">${T('path.withExamples', { k: attested, n: p.edges.length })}</span>`}
+    ${conditional ? `<span class="pill warn">${TN('n.conditionalSteps', conditional)}</span>` : ''}</summary>
     <div class="body"><ol class="steps">${p.edges.map((e, i) => stepHtml(X, e, transitions[i] ? TRANSITION[transitions[i]] : '')).join('')}</ol>
-    ${att.length ? `<p class="small">Слова, в деривации которых путь пройден целиком: ${words}${att.length > 6 ? ' …' : ''}</p>` : ''}</div></details>`;
+    ${att.length ? `<p class="small">${T('path.words')} ${words}${att.length > 6 ? ' …' : ''}</p>` : ''}</div></details>`;
 }
 
 // ---------- path search -----------------------------------------------------------
@@ -389,15 +382,15 @@ function findPaths() {
     walk(X, src, 'forward', { ...o, depth: o.depth }, p => { if (!reach.has(p.at)) reach.set(p.at, p.edges.length); return true; }, 20000);
     const incoming = [...new Set((X.radj[state.era].get(dst) || []).filter(e => usable(e, o)).map(e => e.a))];
     const near = [...reach].sort((a, b) => a[1] - b[1] || a[0].localeCompare(b[0])).slice(0, 24);
-    announce(`Путь ${src} → ${dst} не найден`);
-    out.innerHTML = `<div class="result-head"><strong>Путь ${esc(src)} → ${esc(dst)} в этой концепции не найден</strong> при заданных ограничениях.</div>
-      <p class="muted">Граф связывает только литеральные подформулы правил Eldamo; контекстные правила (с классами V, C, S) в него не входят — их видно в «Правилах исходного/конечного». Можно увеличить число шагов, снять фильтры или посмотреть дерево развития.</p>
-      <div>Из [${esc(src)}] достижимы:</div><div class="nearby">${near.map(([s, n]) => `<button type="button" data-target="${esc(s)}">${esc(s)} · ${count(n, 'шаг', 'шага', 'шагов')}</button>`).join('') || '<span class="muted">ничего</span>'}</div>
-      <div>Непосредственно в [${esc(dst)}] переходят: ${incoming.map(s => `<button type="button" data-source="${esc(s)}">${esc(s)}</button>`).join(' ') || '<span class="muted">ничего</span>'}</div>`;
+    announce(T('paths.notFound', { src, dst }));
+    out.innerHTML = `<div class="result-head"><strong>${esc(T('paths.notFoundHere', { src, dst }))}</strong> ${esc(T('paths.withLimits'))}</div>
+      <p class="muted">${esc(T('paths.graphNote'))}</p>
+      <div>${esc(T('paths.reachable', { src }))}</div><div class="nearby">${near.map(([s, n]) => `<button type="button" data-target="${esc(s)}">${esc(s)} · ${TN('n.steps', n)}</button>`).join('') || `<span class="muted">${T('common.nothing')}</span>`}</div>
+      <div>${esc(T('paths.incoming', { dst }))} ${incoming.map(s => `<button type="button" data-source="${esc(s)}">${esc(s)}</button>`).join(' ') || `<span class="muted">${T('common.nothing')}</span>`}</div>`;
     return;
   }
-  announce(`${count(paths.length, 'путь', 'пути', 'путей')} ${src} → ${dst}`);
-  out.innerHTML = `<div class="result-head">${count(paths.length, 'путь', 'пути', 'путей')} ${esc(src)} → ${esc(dst)}${truncated ? ' (поиск ограничен)' : ''}; показаны первые ${Math.min(paths.length, 60)}, сначала короткие и засвидетельствованные.</div>`
+  announce(`${TN('n.paths', paths.length)} ${src} → ${dst}`);
+  out.innerHTML = `<div class="result-head">${TN('n.paths', paths.length)} ${esc(src)} → ${esc(dst)}${truncated ? ' ' + T('paths.limited') : ''}; ${T('paths.shown', { n: Math.min(paths.length, 60) })}</div>`
     + paths.slice(0, 60).map((p, i) => pathCard(X, p, i === 0)).join('');
 }
 $('output').addEventListener('click', e => {
@@ -446,8 +439,8 @@ function treeSvg(paths, root, direction) {
     return `<path d="M${x1 + sx},${y1} C${(x1 + x2) / 2},${y1} ${(x1 + x2) / 2},${y2} ${x2 - sx},${y2}" class="${l.attested ? 'att' : 'unatt'}"/>`;
   }).join('');
   const labels = [...pos].map(([n, [x, y]]) => `<text x="${x}" y="${y}" class="${n === root ? 'root' : ''}">${esc(n)}</text>`).join('');
-  return `<figure class="tree-svg"><svg viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" role="img" aria-label="Схема ${direction === 'forward' ? 'развития' : 'происхождения'} [${esc(root)}]">${lines}${labels}</svg>
-    <figcaption class="small muted">Сплошная линия — переход с засвидетельствованными примерами, пунктир — без примеров.</figcaption></figure>`;
+  return `<figure class="tree-svg"><svg viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" role="img" aria-label="${esc(T(direction === 'forward' ? 'tree.devScheme' : 'tree.originScheme', { root }))}">${lines}${labels}</svg>
+    <figcaption class="small muted">${T('tree.legend')}</figcaption></figure>`;
 }
 function tree(direction) {
   const X = index(state.branch), o = options();
@@ -462,10 +455,10 @@ function tree(direction) {
   const groups = new Map();
   for (const p of paths) (groups.get(p.edges.length) || groups.set(p.edges.length, []).get(p.edges.length)).push(p);
   const shownPerGroup = 80;
-  $('output').innerHTML = `<div class="result-head"><strong>${direction === 'forward' ? 'Развитие' : 'Происхождение'} [${esc(root)}]</strong>: ${count(paths.length, 'путь', 'пути', 'путей')} до ${count(o.depth, 'шага', 'шагов', 'шагов')}${truncated ? ' (поиск ограничен)' : ''}.</div>`
+  $('output').innerHTML = `<div class="result-head"><strong>${esc(T(direction === 'forward' ? 'tree.dev' : 'tree.origin', { root }))}</strong>: ${TN('n.paths', paths.length)} ${TN('n.upToSteps', o.depth)}${truncated ? ' ' + T('paths.limited') : ''}.</div>`
     + treeSvg(paths, root, direction)
-    + ([...groups].map(([n, ps]) => `<h3>${count(n, 'шаг', 'шага', 'шагов')} · ${count(ps.length, 'вариант', 'варианта', 'вариантов')}${ps.length > shownPerGroup ? `, показаны первые ${shownPerGroup}` : ''}</h3>`
-      + ps.slice(0, shownPerGroup).map(p => pathCard(X, p, false)).join('')).join('') || '<div class="empty">Переходов не найдено.</div>');
+    + ([...groups].map(([n, ps]) => `<h3>${TN('n.steps', n)} · ${TN('n.variants', ps.length)}${ps.length > shownPerGroup ? ', ' + T('tree.firstShown', { n: shownPerGroup }) : ''}</h3>`
+      + ps.slice(0, shownPerGroup).map(p => pathCard(X, p, false)).join('')).join('') || `<div class="empty">${T('tree.none')}</div>`);
 }
 $('develop').addEventListener('click', () => tree('forward'));
 $('origins').addEventListener('click', () => tree('backward'));
@@ -486,13 +479,13 @@ function showRules(slot) {
     if (hit) rows.push([id, p, r]);
   }
   rows.sort((x, y) => X.lang[x[2].l].stage - X.lang[y[2].l].stage || (x[2].o ?? 1e9) - (y[2].o ?? 1e9) || x[1].f.localeCompare(y[1].f));
-  const body = rows.map(([id, p, r]) => `<tr><td>${esc(X.lang[r.l].marker)}</td><td>${ruleLink(X, p.r)}${r.o != null ? `<div class="small muted">порядок ${r.o}</div>` : ''}</td>
-    <td><code>${esc(p.f)} &gt; ${esc(p.t)}</code>${p.k === 'contextual' ? '<div class="small muted">контекстная, вне графа</div>' : p.k === 'identity' ? '<div class="small muted">исключение: без изменения</div>' : ''}</td>
+  const body = rows.map(([id, p, r]) => `<tr><td>${esc(X.lang[r.l].marker)}</td><td>${ruleLink(X, p.r)}${r.o != null ? `<div class="small muted">${T('rule.order', { n: r.o })}</div>` : ''}</td>
+    <td><code>${esc(p.f)} &gt; ${esc(p.t)}</code>${p.k === 'contextual' ? `<div class="small muted">${T('rule.contextual')}</div>` : p.k === 'identity' ? `<div class="small muted">${T('rule.identity')}</div>` : ''}</td>
     <td>${r.f ? `<code>${esc(r.f[0])} &gt; ${esc(r.f[1])}</code>` : ''}</td>
     <td>${p.e ? `${p.e} / ${p.ok}` : '—'}</td></tr>`).join('');
-  $('output').innerHTML = `<div class="result-head"><strong>Правила со звуком [${esc(sound)}]</strong> — ${ERA_NAMES[state.era]} концепция: ${count(rows.length, 'подформула', 'подформулы', 'подформул')}${isPhoneme ? ' (по карточкам фонем Eldamo и составу формул)' : ' (сочетание стоит целиком в одной из частей формулы)'}.</div>`
-    + (rows.length ? `<div class="table-scroll"><table class="data"><thead><tr><th>Язык</th><th>Правило</th><th>Подформула</th><th>Общая формула</th><th>Примеры / воспроизведено</th></tr></thead><tbody>${body}</tbody></table></div>`
-      : '<div class="empty">Подформул с этим звуком нет.</div>');
+  $('output').innerHTML = `<div class="result-head"><strong>${esc(T('soundRules.title', { sound }))}</strong> — ${esc(T('soundRules.era', { era: ERA_NAMES[state.era] }))}: ${TN('n.subformulas', rows.length)} ${T(isPhoneme ? 'soundRules.byCards' : 'soundRules.byCluster')}.</div>`
+    + (rows.length ? `<div class="table-scroll"><table class="data"><thead><tr><th>${T('col.lang')}</th><th>${T('col.rule')}</th><th>${T('col.subformula')}</th><th>${T('col.formula')}</th><th>${T('col.examples')}</th></tr></thead><tbody>${body}</tbody></table></div>`
+      : `<div class="empty">${T('soundRules.none')}</div>`);
 }
 $('rules-from').addEventListener('click', () => showRules('from'));
 $('rules-to').addEventListener('click', () => showRules('to'));
@@ -501,15 +494,15 @@ $('rules-to').addEventListener('click', () => showRules('to'));
 const PAGE = 20;
 function pager(page, pages, prefix) {
   if (pages <= 1) return '';
-  return `<div class="pager"><button type="button" data-page="${prefix}:${page - 1}" ${page === 0 ? 'disabled' : ''}>← Назад</button><span>Страница ${page + 1} из ${pages}</span><button type="button" data-page="${prefix}:${page + 1}" ${page >= pages - 1 ? 'disabled' : ''}>Вперёд →</button></div>`;
+  return `<div class="pager"><button type="button" data-page="${prefix}:${page - 1}" ${page === 0 ? 'disabled' : ''}>← ${T('pager.prev')}</button><span>${T('pager.page', { n: page + 1, of: pages })}</span><button type="button" data-page="${prefix}:${page + 1}" ${page >= pages - 1 ? 'disabled' : ''}>${T('pager.next')} →</button></div>`;
 }
 function chainCard(X, c) {
   const edges = c.steps.map(id => X.edge[id]);
   const words = c.d.map(id => X.deriv[id]).map(d => `<a href="#" data-deriv="${esc(d.id)}">${esc(d.wf || d.f)}</a>`).join(', ');
   return `<details class="card"><summary>${routeHtml(c.s)} <span class="grade grade-${c.g}" title="${esc(GRADE[c.g])}">${c.g}</span>
-    ${c.n ? `<span class="pill ok">${count(c.n, 'деривация', 'деривации', 'дериваций')}</span>` : ''}${c.v > 1 ? `<span class="pill">${count(c.v, 'вариант', 'варианта', 'вариантов')} рёбер</span>` : ''}</summary>
+    ${c.n ? `<span class="pill ok">${TN('n.derivations', c.n)}</span>` : ''}${c.v > 1 ? `<span class="pill">${TN('n.edgeVariants', c.v)}</span>` : ''}</summary>
     <div class="body"><p class="small muted">${esc(GRADE[c.g])}.</p><ol class="steps">${edges.map((e, i) => stepHtml(X, e, i ? TRANSITION[c.t[i - 1]] : '')).join('')}</ol>
-    ${c.n ? `<p class="small">Засвидетельствована в словах: ${words}${c.n > c.d.length ? ' …' : ''}</p>` : ''}</div></details>`;
+    ${c.n ? `<p class="small">${T('chain.words')} ${words}${c.n > c.d.length ? ' …' : ''}</p>` : ''}</div></details>`;
 }
 function renderChains() {
   const X = index(state.branch);
@@ -521,8 +514,8 @@ function renderChains() {
   const pages = Math.max(1, Math.ceil(list.length / PAGE));
   state.chainPage = Math.min(state.chainPage, pages - 1);
   const view = list.slice(state.chainPage * PAGE, (state.chainPage + 1) * PAGE);
-  announce(count(list.length, 'цепочка', 'цепочки', 'цепочек'));
-  $('chains').innerHTML = `<p class="small muted">${count(list.length, 'цепочка', 'цепочки', 'цепочек')}</p>` + (view.map(c => chainCard(X, c)).join('') || '<div class="empty">Цепочек с такими условиями нет.</div>') + pager(state.chainPage, pages, 'chain');
+  announce(TN('n.chains', list.length));
+  $('chains').innerHTML = `<p class="small muted">${TN('n.chains', list.length)}</p>` + (view.map(c => chainCard(X, c)).join('') || `<div class="empty">${T('chains.none')}</div>`) + pager(state.chainPage, pages, 'chain');
 }
 $('chain-query').addEventListener('input', () => { state.chainPage = 0; renderChains(); });
 $('chain-grade').addEventListener('change', () => { state.chainPage = 0; renderChains(); });
@@ -535,7 +528,7 @@ function derivCard(X, d, open) {
   const rows = d.steps.map((s, i) => {
     const before = i === 0 ? d.st : d.steps[i - 1][4];
     const pair = s[0] ? X.B.pairs[s[0]] : null;
-    const rule = pair ? ruleLink(X, pair.r) : (s[3] === '?' ? '<span class="muted">не указано</span>' : `<span class="muted">${esc(s[2] || '')} &gt; ${esc(s[3])}</span>`);
+    const rule = pair ? ruleLink(X, pair.r) : (s[3] === '?' ? `<span class="muted">${T('deriv.noRule')}</span>` : `<span class="muted">${esc(s[2] || '')} &gt; ${esc(s[3])}</span>`);
     const [mark, title] = STATUS[s[5]] || ['?', s[5]];
     const inBranch = !!X.lang[s[1]];
     return `<tr${inBranch ? '' : ' class="muted"'}><td title="${esc(langTitle(s[1]))}">${esc(lang(s[1]))}</td><td>${rule}</td><td><code>${s[2] != null ? esc(s[2]) + ' &gt; ' : ''}${esc(s[3])}</code></td>
@@ -543,10 +536,10 @@ function derivCard(X, d, open) {
   }).join('');
   const issues = d.steps.filter(s => ISSUE.has(s[5])).length;
   return `<details class="card" id="deriv-${esc(d.id)}"${open ? ' open' : ''}><summary><span class="route${d.del ? ' deleted' : ''}">${esc(d.wf || d.f)}</span>
-    ${d.g ? `<span class="muted">«${esc(d.g)}»</span>` : ''} <span class="pill" title="${esc(langTitle(d.wl))}">${esc(X.lang[d.wl] ? lang(d.wl) : langTitle(d.wl))}</span> <span class="pill">${count(d.steps.length, 'шаг', 'шага', 'шагов')}</span>${d.src ? ` <span class="small muted">${esc(d.src.split('.')[0])}</span>` : ''}
-    ${issues ? `<span class="pill warn">${count(issues, 'расхождение', 'расхождения', 'расхождений')}</span>` : ''}${d.del ? '<span class="pill warn">отвергнуто Толкином</span>' : ''}</summary>
-    <div class="body"><p class="small">Форма <span class="form">${esc(d.f)}</span> из <span class="form">${esc(d.st)}</span> · источник ${sourceLink(d.src)}${d.dsrc && d.dsrc !== d.src ? `, деривация ${sourceLink(d.dsrc)}` : ''} · <a href="${esc(wordUrl(d.w))}" target="_blank" rel="noopener">статья Eldamo</a>${d.w ? ` · <a href="#" data-word="${esc(d.w)}" data-branch="${esc(state.branch)}">открыть слово</a>` : ''}</p>
-    <div class="table-scroll"><table class="data steps-table"><thead><tr><th>Язык</th><th>Правило</th><th>Формула</th><th>Форма</th><th>Проверка</th></tr></thead><tbody>${rows}</tbody></table></div></div></details>`;
+    ${d.g ? `<span class="muted">«${esc(d.g)}»</span>` : ''} <span class="pill" title="${esc(langTitle(d.wl))}">${esc(X.lang[d.wl] ? lang(d.wl) : langTitle(d.wl))}</span> <span class="pill">${TN('n.steps', d.steps.length)}</span>${d.src ? ` <span class="small muted">${esc(d.src.split('.')[0])}</span>` : ''}
+    ${issues ? `<span class="pill warn">${TN('n.issues', issues)}</span>` : ''}${d.del ? `<span class="pill warn">${T('deriv.rejected')}</span>` : ''}</summary>
+    <div class="body"><p class="small">${T('deriv.form')} <span class="form">${esc(d.f)}</span> ${T('deriv.from')} <span class="form">${esc(d.st)}</span> · ${T('deriv.source')} ${sourceLink(d.src)}${d.dsrc && d.dsrc !== d.src ? `, ${T('deriv.derivation')} ${sourceLink(d.dsrc)}` : ''} · <a href="${esc(wordUrl(d.w))}" target="_blank" rel="noopener">${T('common.eldamoPageLower')}</a>${d.w ? ` · <a href="#" data-word="${esc(d.w)}" data-branch="${esc(state.branch)}">${T('deriv.openWord')}</a>` : ''}</p>
+    <div class="table-scroll"><table class="data steps-table"><thead><tr><th>${T('col.lang')}</th><th>${T('col.rule')}</th><th>${T('col.formulaShort')}</th><th>${T('col.form')}</th><th>${T('col.check')}</th></tr></thead><tbody>${rows}</tbody></table></div></div></details>`;
 }
 function derivText(X, d) {
   if (!d._text) {
@@ -575,9 +568,9 @@ function renderDerivs() {
   const pages = Math.max(1, Math.ceil(list.length / DPAGE));
   state.derivPage = Math.min(state.derivPage, pages - 1);
   const view = list.slice(state.derivPage * DPAGE, (state.derivPage + 1) * DPAGE);
-  announce(count(list.length, 'деривация', 'деривации', 'дериваций'));
-  $('derivations').innerHTML = `<p class="small muted">${count(list.length, 'деривация', 'деривации', 'дериваций')}</p>`
-    + (view.map(d => derivCard(X, d, list.length === 1)).join('') || '<div class="empty">Дериваций с такими условиями нет.</div>') + pager(state.derivPage, pages, 'deriv');
+  announce(TN('n.derivations', list.length));
+  $('derivations').innerHTML = `<p class="small muted">${TN('n.derivations', list.length)}</p>`
+    + (view.map(d => derivCard(X, d, list.length === 1)).join('') || `<div class="empty">${T('derivs.none')}</div>`) + pager(state.derivPage, pages, 'deriv');
 }
 $('deriv-query').addEventListener('input', () => { state.derivPage = 0; renderDerivs(); });
 for (const id of ['deriv-deleted', 'deriv-issues', 'deriv-others']) $(id).addEventListener('change', () => { state.derivPage = 0; renderDerivs(); });
@@ -619,7 +612,7 @@ function showRule(id) {
   let X = index(state.branch);
   if (!X.B.rules[id]) {
     const other = BRANCHES.find(b => data().branches[b].rules[id]);
-    if (!other) { $('output').innerHTML = `<div class="empty">Правила ${esc(id)} в справочнике нет.</div>`; return; }
+    if (!other) { $('output').innerHTML = `<div class="empty">${esc(T('rule.missing', { id }))}</div>`; return; }
     state.branch = other; branchSelect.value = other; X = index(other);
   }
   const r = X.B.rules[id];
@@ -641,14 +634,14 @@ function showRule(id) {
     words.push(`<li><a href="#" data-deriv="${esc(dv.id)}">${esc(dv.wf || dv.f)}</a> <span class="form">${esc(before)} → ${esc(s[4])}</span></li>`);
   }
   const before = r.b.map(t => X.B.rules[t] ? ruleLink(X, t) : esc(t));
-  $('output').innerHTML = `<div class="result-head rule-view"><strong>Правило</strong> · ${esc(lang ? lang.marker + ' ' + (X.B.language_names[r.l] || '') : r.l)}${r.o != null ? ` · порядок ${r.o}` : ''}</div>
-    <h3 class="rule-title">${esc(r.n)} <a href="${esc(wordUrl(id))}" target="_blank" rel="noopener" class="small">статья Eldamo ↗</a></h3>
-    ${r.f ? `<p>Формула: <code>${esc(r.f[0])} &gt; ${esc(r.f[1])}</code></p>` : ''}
-    ${pairs.length ? `<div class="table-scroll"><table class="data"><thead><tr><th>Подформула</th><th>Примеры / воспроизведено</th></tr></thead><tbody>${pairs.map(([, p]) =>
-      `<tr><td><code>${esc(p.f)} &gt; ${esc(p.t)}</code>${p.k === 'contextual' ? ' <span class="small muted">контекстная, вне графа</span>' : ''}</td><td>${p.e ? `${p.e} / ${p.ok}` : '—'}</td></tr>`).join('')}</tbody></table></div>` : ''}
-    ${before.length ? `<p class="small">Раньше правил: ${before.join('; ')}</p>` : ''}
-    ${words.length ? `<p>Засвидетельствовано в деривациях (${words.length}):</p><ol class="steps">${words.slice(0, 40).join('')}</ol>${words.length > 40 ? '<p class="small muted">…</p>' : ''}`
-      : '<p class="muted">Воспроизведённых примеров в деривациях нет.</p>'}`;
+  $('output').innerHTML = `<div class="result-head rule-view"><strong>${T('rule.title')}</strong> · ${esc(lang ? lang.marker + ' ' + (X.B.language_names[r.l] || '') : r.l)}${r.o != null ? ` · ${T('rule.order', { n: r.o })}` : ''}</div>
+    <h3 class="rule-title">${esc(r.n)} <a href="${esc(wordUrl(id))}" target="_blank" rel="noopener" class="small">${T('common.eldamoPageLower')} ↗</a></h3>
+    ${r.f ? `<p>${T('rule.formula')} <code>${esc(r.f[0])} &gt; ${esc(r.f[1])}</code></p>` : ''}
+    ${pairs.length ? `<div class="table-scroll"><table class="data"><thead><tr><th>${T('col.subformula')}</th><th>${T('col.examples')}</th></tr></thead><tbody>${pairs.map(([, p]) =>
+      `<tr><td><code>${esc(p.f)} &gt; ${esc(p.t)}</code>${p.k === 'contextual' ? ` <span class="small muted">${T('rule.contextual')}</span>` : ''}</td><td>${p.e ? `${p.e} / ${p.ok}` : '—'}</td></tr>`).join('')}</tbody></table></div>` : ''}
+    ${before.length ? `<p class="small">${T('rule.before')} ${before.join('; ')}</p>` : ''}
+    ${words.length ? `<p>${T('rule.attested', { n: words.length })}</p><ol class="steps">${words.slice(0, 40).join('')}</ol>${words.length > 40 ? '<p class="small muted">…</p>' : ''}`
+      : `<p class="muted">${T('rule.noExamples')}</p>`}`;
 }
 
 QR.on(route);

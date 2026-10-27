@@ -7,16 +7,22 @@ const SITE = QU.SITE;
 const $ = id => document.getElementById(id);
 const esc = QU.esc;
 const engine = QU.engine;
+const T = QU.T;
 const SOURCE = {
-  attested: 'форма засвидетельствована в деривации Eldamo', stem: 'основа', dictionary: 'словарная форма',
-  primitive: 'праформа Eldamo', computed: 'праформа Eldamo, прогнанная до выбранной стадии',
-  reconstructed: 'восстановленная праформа, гипотеза', 'soft-mutation': 'с мягкой мутацией',
-  suffix: 'суффикс', prefix: 'приставка',
+  attested: T('source.attested'),
+  stem: T('source.stem'),
+  dictionary: T('source.dictionary'),
+  primitive: T('source.primitive'),
+  computed: T('source.computed'),
+  reconstructed: T('source.reconstructed'),
+  'soft-mutation': T('source.soft-mutation'),
+  suffix: T('source.suffix'),
+  prefix: T('source.prefix'),
 };
 const ADJUST = {
-  reduction: 'сокращение конца длинного сложения (учебник §6.1.2.1; Толкин, PE17/106, PE21/32)',
-  lengthening: 'просодическое удлинение на стыке (учебник §6.1.3; правила сформулированы Страком)',
-  shortening: 'сокращение долгого гласного перед суффиксом (§6.1.2.2; Страк, по примерам)',
+  reduction: T('adjust.reduction'),
+  lengthening: T('adjust.lengthening'),
+  shortening: T('adjust.shortening'),
 };
 const state = { branch: QU.BRANCHES[0], picked: [null, null] };
 const era = () => $('wf-era').value || 'late';
@@ -30,21 +36,21 @@ function search(slot) {
   if (!q.trim()) { box.innerHTML = ''; return; }
   const hits = QU.searchWords(q, (b, e) => b === state.branch && eraOf(E, e.lang) === want, 12);
   box.innerHTML = hits.map(h => QU.hitHtml(h, `data-id="${esc(h.entry.id)}" data-slot="${slot}"`)).join('')
-    || `<p class="muted">Ничего не найдено в ${esc(QU.BRANCH_NAMES[state.branch])} (${esc(QU.ERA_NAMES[want])} концепция)${QU.neo() ? '' : '; неологизмы скрыты'}.</p>`;
+    || `<p class="muted">${esc(T(QU.neo() ? 'compose.none' : 'compose.noneHidden', { branch: QU.BRANCH_NAMES[state.branch], era: QU.ERA_NAMES[want] }))}</p>`;
 }
 
 function describe(E, e) {
   const bits = [];
-  if (e.stems) bits.push('основа ' + e.stems.map(s => `<span class="form">${esc(s)}</span>`).join(', '));
+  if (e.stems) bits.push(T('card.stem') + ' ' + e.stems.map(s => `<span class="form">${esc(s)}</span>`).join(', '));
   const pr = e.starts || (e.stages && (e.stages.p || e.stages.mp));
-  if (pr) bits.push('праформа ' + pr.map(s => `<span class="form">${esc(s)}</span>`).join(', '));
-  else bits.push('праформы в Eldamo нет — для ранних стадий она восстанавливается');
-  if (e.mark && e.mark !== '#') bits.push(`пометка Eldamo «${esc(e.mark)}»`);
+  if (pr) bits.push(T('card.primitive') + ' ' + pr.map(s => `<span class="form">${esc(s)}</span>`).join(', '));
+  else bits.push(T('compose.noPrimitive'));
+  if (e.mark && e.mark !== '#') bits.push(esc(T('card.mark', { mark: e.mark })));
   const kind = WF.affixKind(e);
   if (kind) {
-    bits.unshift(`${kind === 'suffix' ? 'суффикс' : 'приставка'}, формы: ${WF.allomorphs(e, E.branch).map(f => `<span class="form">${esc(f)}</span>`).join(', ')}`);
+    bits.unshift(`${T('tag.' + kind)}, ${T('card.forms')} ${WF.allomorphs(e, E.branch).map(f => `<span class="form">${esc(f)}</span>`).join(', ')}`);
     const ex = (E.affixes.affix[e.id] || {}).examples || [];
-    if (ex.length) bits.push('засвидетельствован в ' + ex.map(f => `<span class="form">${esc(f)}</span>`).join(', '));
+    if (ex.length) bits.push(T('compose.attestedIn') + ' ' + ex.map(f => `<span class="form">${esc(f)}</span>`).join(', '));
   }
   return `<a href="${SITE}words/word-${esc(e.id)}.html" target="_blank" rel="noopener"><span class="marker">${esc(marker(E, e.lang))}</span> <span class="form">${esc(e.form)}</span></a>
     <span class="muted">${esc(e.gloss)}</span><br><span class="small">${bits.join('; ')}</span>`;
@@ -80,12 +86,12 @@ function opText(v) {
   const out = [];
   const a = WF.phonemes(WF.comparable(v.elements[0])), b = WF.phonemes(WF.comparable(v.elements[1]));
   const j = junctionText(a, b, v.junction || [0, 0, '']);
-  if (j) out.push('на стыке ' + esc(j));
+  if (j) out.push(T('op.junction') + ' ' + esc(j));
   const [ke, repe] = v.ending || [0, ''];
-  if (ke || repe) out.push(`в конце -${esc(show(b.slice(b.length - ke)))} → -${esc(show(WF.phonemes(repe)))}`);
-  if (v.shortened) out.push('долгий гласный второго элемента сокращён');
-  if (v.lengthened) out.push('гласный основы удлинён перед суффиксом');
-  return out.length ? out.join('; ') + ' — как в засвидетельствованных словах' : 'без изменений на стыке';
+  if (ke || repe) out.push(`${T('op.end')} -${esc(show(b.slice(b.length - ke)))} → -${esc(show(WF.phonemes(repe)))}`);
+  if (v.shortened) out.push(T('op.shortened'));
+  if (v.lengthened) out.push(T('op.lengthened'));
+  return out.length ? out.join('; ') + T('op.asAttested') : T('op.none');
 }
 
 function compose() {
@@ -95,10 +101,10 @@ function compose() {
   const stage = Number($('wf-stage').value);
   const out = $('wf-output');
   let vs;
-  try { vs = WF.predict(E, [a, b], era(), stage); } catch (err) { out.textContent = 'Ошибка: ' + err.message; throw err; }
+  try { vs = WF.predict(E, [a, b], era(), stage); } catch (err) { out.textContent = T('common.error', { msg: err.message }); throw err; }
   const last = Math.max(...E.languages.filter(l => l.era === era()).map(l => l.stage));
   if (!vs.length) {
-    out.innerHTML = '<p>Для этих слов на выбранной стадии форм не найдено: у элемента нет ни праформы, ни восстановленной праформы, дающей его форму.</p>';
+    out.innerHTML = `<p>${T('compose.noForms')}</p>`;
     return;
   }
   const reconstructed = vs.some(v => (v.sources || []).includes('reconstructed'));
@@ -115,37 +121,37 @@ function compose() {
     const ops = stage >= last ? opText(v) : '';
     return `<li class="wf-variant${k === 0 ? ' main' : ''}">
       <div><strong class="form">${esc(spelling(v.form, state.branch))}</strong> <span class="ipa muted">[${esc(plainForm(v.form))}]</span>
-      ${v.score != null ? `<span class="small muted">вес ${v.score}</span>` : ''}${v.stem ? ` <span class="small">основа <span class="form">${esc(v.stem)}-</span></span>` : ''}
-      <button type="button" class="link small" data-use="${esc(plainForm(v.form))}" title="Сделать эту форму текущим словом">работать с этой формой</button></div>
-      <div class="small">из ${src}</div>
+      ${v.score != null ? `<span class="small muted">${T('variant.weight', { w: v.score })}</span>` : ''}${v.stem ? ` <span class="small">${T('card.stem')} <span class="form">${esc(v.stem)}-</span></span>` : ''}
+      <button type="button" class="link small" data-use="${esc(plainForm(v.form))}" title="${T('variant.useTitle')}">${T('variant.use')}</button></div>
+      <div class="small">${T('compose.from')} ${src}</div>
       ${ops ? `<div class="small">${ops}</div>` : ''}${adj ? `<div class="small">${adj}</div>` : ''}
       ${traceHtml(E, v.trace || [])}</li>`;
   }).join('');
   let analog = '';
   if (stage >= last && vs[0].affix) {
     const ex = (E.affixes.affix[vs[0].affix] || {}).examples || [];
-    analog = ex.length ? `<p class="small">Засвидетельствованные слова с этим аффиксом: ${ex.map(f => `<span class="form">${esc(f)}</span>`).join(', ')}.</p>`
-      : '<p class="small">Засвидетельствованных слов с этим аффиксом в разборе Eldamo нет — стык подобран по всем словам с аффиксами того же вида.</p>';
+    analog = ex.length ? `<p class="small">${T('compose.affixWords')} ${ex.map(f => `<span class="form">${esc(f)}</span>`).join(', ')}.</p>`
+      : `<p class="small">${T('compose.affixNone')}</p>`;
   } else if (stage >= last && vs[0].elements) {
     const pa = WF.phonemes(WF.comparable(vs[0].elements[0])), pb = WF.phonemes(WF.comparable(vs[0].elements[1]));
     const list = E.analogues[JSON.stringify([pa[pa.length - 1], pb[0]])] || [];
     const groups = new Map();
     for (const [f, op] of list) {
-      const key = (op[0] || op[1] || op[2]) ? (op[0] <= 1 && op[1] <= 1 ? junctionText(pa, pb, op) : `«${op[2] || '∅'}» вместо ${op[0]} + ${op[1]} зв.`) : 'без изменений';
+      const key = (op[0] || op[1] || op[2]) ? (op[0] <= 1 && op[1] <= 1 ? junctionText(pa, pb, op) : T('compose.replaced', { rep: op[2] || '∅', a: op[0], b: op[1] })) : T('route.unchanged');
       if (!groups.has(key)) groups.set(key, []);
       groups.get(key).push(f);
     }
-    if (list.length) analog = `<p class="small">Засвидетельствованные сложения, где первый элемент кончается на ${esc(pa[pa.length - 1])}, а второй начинается с ${esc(pb[0])}: `
+    if (list.length) analog = `<p class="small">${esc(T('compose.analogues', { a: pa[pa.length - 1], b: pb[0] }))} `
       + [...groups.entries()].map(([k, fs]) => `${fs.map(f => `<span class="form">${esc(f)}</span>`).join(', ')} (${esc(k)})`).join('; ') + '.</p>';
   }
   out.innerHTML = `<ol class="wf-variants">${rows}</ol>${analog}
     <p class="small muted">${stage >= last && vs[0].affix
-      ? 'Форма аффикса и изменения на стыке подобраны по засвидетельствованным словам с этим аффиксом (иначе — со всеми аффиксами того же вида)' + (state.branch === 'quenya' ? '; плюс просодическое удлинение и сокращение перед суффиксами (§6.1).' : '; приставка может вызывать мягкую мутацию основы.')
+      ? T('compose.noteAffix') + T(state.branch === 'quenya' ? 'compose.noteAffixQ' : 'compose.noteAffixS')
       : stage >= last
-      ? 'На последней стадии исторические законы уже отработали: стык и конец сложения подбираются по засвидетельствованным сложениям (частота — «вес»)' + (state.branch === 'quenya' ? ', плюс правила §6.1 учебника Страка.' : ', плюс мягкая мутация второго элемента и правила для многосложных слов.')
-      : 'Элементы взяты в формах выбранной стадии и соединены через границу морфем; дальше действуют все последующие правила ветви в порядке Eldamo. Первый вариант — основное чтение (необязательные правила применены).'}
-    ${reconstructed ? ' Хотя бы одна праформа восстановлена по соответствиям в деривациях — это гипотеза, а не форма Толкина.' : ''}
-    Результат — предсказание формы, а не засвидетельствованное слово.</p>`;
+      ? T('compose.noteLast') + T(state.branch === 'quenya' ? 'compose.noteLastQ' : 'compose.noteLastS')
+      : T('compose.noteStage')}
+    ${reconstructed ? ' ' + T('compose.noteReconstructed') : ''}
+    ${T('compose.notePrediction')}</p>`;
 }
 
 function branchOptions() {

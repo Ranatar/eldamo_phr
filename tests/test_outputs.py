@@ -59,5 +59,51 @@ class Outputs(unittest.TestCase):
             self.assertNotIn(b'\r\n', raw, path)
 
 
+class InterfaceCatalog(unittest.TestCase):
+    """app/messages.json: every key the interface uses exists, in both languages, with the same placeholders."""
+    DYNAMIC = {'tag.': ['suffix', 'prefix'], 'problem.': ['initial', 'cluster', 'final'], 'branch.': ['quenya', 'sindarin'],
+               'route.': ['attested', 'same', 'forward', 'backDirect', 'backPrimitive', 'cognateLink', 'viaPrimitive',
+                          'nearSame', 'nearClose', 'link', 'unchanged', 'reetymology', 'then'],
+               'ipa.': ['labial', 'dental', 'palatal', 'velar', 'labiovelar', 'glottal', 'stop', 'fricative', 'nasal',
+                        'lateral', 'trill', 'approximant', 'high', 'mid', 'low', 'front', 'central', 'back']}
+    FILES = ('runtime.js', 'word_ui.js', 'wordform_ui.js', 'reconstruct_ui.js', 'corpus_template.html')
+
+    @classmethod
+    def setUpClass(cls):
+        cls.messages = json.loads((ROOT / 'app' / 'messages.json').read_text(encoding='utf-8'))
+
+    def used(self):
+        keys = {p + k for p, ks in self.DYNAMIC.items() for k in ks}
+        call = re.compile(r"\b(?:T|TN|I18N\.tn?)\(([^()]*(?:\([^()]*\)[^()]*)*)\)")
+        for name in self.FILES:
+            text = (ROOT / 'app' / name).read_text(encoding='utf-8')
+            for args in call.findall(text):
+                keys.update(k for k in re.findall(r"'([a-zA-Z]+\.[A-Za-z_.-]*)'", args) if not k.endswith('.'))
+        for name in ('template.html', 'corpus_template.html'):
+            text = (ROOT / 'app' / name).read_text(encoding='utf-8')
+            keys.update(re.findall(r'data-i18n(?:-html)?="([^"]+)"', text))
+            for attrs in re.findall(r'data-i18n-attr="([^"]+)"', text):
+                keys.update(pair.split(':')[1].strip() for pair in attrs.split(';'))
+        return keys
+
+    def test_keys(self):
+        used = self.used()
+        self.assertEqual(sorted(used - set(self.messages)), [], 'keys missing from app/messages.json')
+        self.assertEqual(sorted(set(self.messages) - used), [], 'unused keys in app/messages.json')
+
+    def test_languages_and_placeholders(self):
+        def texts(v):
+            return list(v.values()) if isinstance(v, dict) else [v]
+        for key, entry in self.messages.items():
+            self.assertEqual(set(entry), {'ru', 'en'}, key)
+            ru, en = entry['ru'], entry['en']
+            if isinstance(ru, dict):
+                self.assertEqual(set(ru), {'one', 'few', 'many'}, key)
+                self.assertEqual(set(en), {'one', 'other'}, key)
+            self.assertFalse(any(re.search('[А-Яа-яЁё]', t) for t in texts(en)) and key not in ('lang.switch', 'lang.title'), key)
+            names = {frozenset(re.findall(r'\{(\w+)\}', t)) for t in texts(ru) + texts(en)}
+            self.assertEqual(len(names), 1, key)
+
+
 if __name__ == '__main__':
     unittest.main()

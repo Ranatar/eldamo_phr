@@ -1095,13 +1095,14 @@ function runs(form) {
   for (let k = 0; k + 1 < vowels.length; k++) if (vowels[k + 1] - vowels[k] > 2) medial.push(ph.slice(vowels[k] + 1, vowels[k + 1]).join(''));
   return [initial, medial, final];
 }
+// problems are [kind, text]: kind is initial / cluster / final (the interface words them)
 function phonotacticProblems(pt, form, minCount = 2) {
   const [i, ms, fin] = runs(form);
   const out = [];
   const n = (t, k) => t[k] || 0;
-  if (phonemes(i).length > 1 && n(pt.initials, i) < minCount) out.push(`начало ${i}-`);
-  for (const m of ms) if (n(pt.clusters, m) < minCount) out.push(`сочетание ${m}`);
-  if (fin && n(pt.finals, fin) < minCount) out.push(`конец -${fin}`);
+  if (phonemes(i).length > 1 && n(pt.initials, i) < minCount) out.push(['initial', `${i}-`]);
+  for (const m of ms) if (n(pt.clusters, m) < minCount) out.push(['cluster', m]);
+  if (fin && n(pt.finals, fin) < minCount) out.push(['final', `-${fin}`]);
   return out;
 }
 const reconLangs = E => E.languages;
@@ -1188,7 +1189,7 @@ function reconstruct(engines, src, dst, opts = {}) {
     const rec = { form: f.split('+').join(''), score, route, marks, steps };
     if (!results.has(k) || results.get(k).score < score) results.set(k, rec);
   };
-  if (entry && sb === db && se === de) for (const f of stageForms(D, db, entry, de, ds)) add(f, 10, 'засвидетельствовано', ['attested'], []);
+  if (entry && sb === db && se === de) for (const f of stageForms(D, db, entry, de, ds)) add(f, 10, [['attested']], ['attested'], []);
   if (sb === db && se === de) within(engines, add, sb, se, form, ss, ds, roots);
   else if (se === de) sideways(engines, add, src, dst, form, entry, roots, opts.useLinks !== false);
   else across(engines, add, src, dst, form, entry, roots, opts.useLinks !== false);
@@ -1208,18 +1209,19 @@ function reconstruct(engines, src, dst, opts = {}) {
   for (const r of ranked) r.score = r3(r.score / total);
   return ranked.slice(0, opts.limit || RECON_LIMIT);
 }
-function within(engines, add, branch, era, form, ss, ds, roots, baseScore = 1, prefix = '', marks = []) {
+// a route is a list of segments [key, params]; the interface words them (route.<key>)
+function within(engines, add, branch, era, form, ss, ds, roots, baseScore = 1, prefix = [], marks = []) {
   const E = engines[branch];
-  if (ds === ss) add(form, baseScore, prefix + 'та же стадия', marks.slice(), []);
+  if (ds === ss) add(form, baseScore, prefix.concat([['same']]), marks.slice(), []);
   else if (ds > ss) {
     forwardRun(E, era, form, ss, ds).slice(0, 4).forEach(([f, trace], k) =>
-      add(f, baseScore * (k === 0 ? 1 : 0.5 / k), prefix + 'вперёд по законам', marks.concat(k === 0 ? ['main'] : []), trace));
+      add(f, baseScore * (k === 0 ? 1 : 0.5 / k), prefix.concat([['forward']]), marks.concat(k === 0 ? ['main'] : []), trace));
   } else {
     const found = backwardRun(E, era, form, ss, ds, roots);
     const top = Math.max(...found.map(r => r.p), 0) || 1;
     for (const r of found) {
       const p = baseScore * 0.9 * (r.p / top) * (r.root ? ROOT_BONUS : 1);
-      add(r.form, p, prefix + 'назад: ' + (r.via === 'direct' ? 'напрямую' : 'через праформу'),
+      add(r.form, p, prefix.concat([[r.via === 'direct' ? 'backDirect' : 'backPrimitive']]),
         marks.concat(['reconstructed'], r.root ? ['root'] : []), r.trace);
     }
   }
@@ -1269,8 +1271,8 @@ function sideways(engines, add, src, dst, form, entry, roots, useLinks = true) {
       const l2 = e2 && b2 === db ? D.languages.find(l => l.code === e2.lang) : null;
       if (!l2 || l2.era !== era) continue;
       const f2 = toPhonetic(e2.form, db).trim();
-      if (l2.stage === ds) add(f2, 5, `когнат по связи Eldamo: ${e2.form}`, ['link'], []);
-      else if (l2.stage < ds) within(engines, add, db, era, f2, l2.stage, ds, e2.roots || [], 4, `когнат по связи Eldamo ${e2.form}, затем `, ['link']);
+      if (l2.stage === ds) add(f2, 5, [['cognateLink', { form: e2.form }]], ['link'], []);
+      else if (l2.stage < ds) within(engines, add, db, era, f2, l2.stage, ds, e2.roots || [], 4, [['cognateLink', { form: e2.form }]], ['link']);
     }
   }
   let prims = [];
@@ -1283,14 +1285,14 @@ function sideways(engines, add, src, dst, form, entry, roots, useLinks = true) {
       prims = found.slice(0, 5).map(r => [r.form, (r.p / top) * (r.root ? ROOT_BONUS : 1), ['reconstructed']]);
     }
   }
-  for (const [prim, w, marks] of prims) within(engines, add, db, era, prim, 0, ds, [], w, `через праформу ${prim}: `, marks.concat(['cognate']));
+  for (const [prim, w, marks] of prims) within(engines, add, db, era, prim, 0, ds, [], w, [['viaPrimitive', { prim }]], marks.concat(['cognate']));
   const code = codeOf(D, era, ds);
   if (entry && code != null && ds === lastStageOf(D, era)) {
     for (const [prim] of prims.slice(0, 2)) {
       for (const [e2, dist] of nearWords(D, code, prim, entry.gloss || '')) {
         const start = origins(e2, era)[0];
         add(toPhonetic(e2.form, db).trim(), dist === 0 ? 3 : 2,
-          `слово Eldamo ${e2.form} «${e2.gloss || ''}» с ${dist === 0 ? 'той же' : 'близкой'} праформой ${start}`, ['near-cognate'], []);
+          [[dist === 0 ? 'nearSame' : 'nearClose', { form: e2.form, gloss: e2.gloss || '', prim: start }]], ['near-cognate'], []);
       }
     }
   }
@@ -1309,11 +1311,11 @@ function across(engines, add, src, dst, form, entry, roots, useLinks) {
       const l2 = D.languages.find(l => l.code === e2.lang);
       if (!l2 || l2.era !== de) continue;
       const f2 = toPhonetic(e2.form, db).trim();
-      if (l2.stage === ds) add(f2, 5, `связь Eldamo (${tag}): ${e2.form}`, ['link'], []);
-      else within(engines, add, db, de, f2, l2.stage, ds, e2.roots || [], 4, `связь Eldamo (${tag}) ${e2.form}, затем `, ['link']);
+      if (l2.stage === ds) add(f2, 5, [['link', { tag, form: e2.form }]], ['link'], []);
+      else within(engines, add, db, de, f2, l2.stage, ds, e2.roots || [], 4, [['link', { tag, form: e2.form }]], ['link']);
     }
   }
-  if (ss === lastStageOf(S, se) && ds === lastStageOf(D, de) && sb === db && dstCode) add(form, 1, 'без изменений', ['unchanged'], []);
+  if (ss === lastStageOf(S, se) && ds === lastStageOf(D, de) && sb === db && dstCode) add(form, 1, [['unchanged']], ['unchanged'], []);
   let prims = [];
   if (entry) prims = dashedOrigins(entry, se).map(f => [f, 1]);
   if (!prims.length) {
@@ -1324,7 +1326,7 @@ function across(engines, add, src, dst, form, entry, roots, useLinks) {
       prims = found.slice(0, 4).map(r => [r.form, (r.p / top) * (r.root ? ROOT_BONUS : 1)]);
     }
   }
-  for (const [prim, w] of prims) within(engines, add, db, de, prim, 0, ds, [], 0.6 * w, `переэтимологизация через праформу ${prim}: `, ['neologism']);
+  for (const [prim, w] of prims) within(engines, add, db, de, prim, 0, ds, [], 0.6 * w, [['reetymology', { prim }]], ['neologism']);
 }
 
 // ---------------------------------------------------------------- engine

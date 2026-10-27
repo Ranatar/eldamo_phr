@@ -6,6 +6,7 @@ browser into a failure, and ELDAMO_CHROMIUM=/path/to/chrome to use a
 specific browser executable.
 """
 import os
+import re
 import unittest
 
 from tests.support import ROOT, branches
@@ -44,8 +45,8 @@ class Browser(unittest.TestCase):
         cls.browser.close()
         cls.pw.stop()
 
-    def page(self, url, width=1280):
-        page = self.browser.new_page(viewport={'width': width, 'height': 900})
+    def page(self, url, width=1280, locale='ru-RU'):
+        page = self.browser.new_page(viewport={'width': width, 'height': 900}, locale=locale)
         errors = []
         page.on('pageerror', lambda e: errors.append(str(e)))
         page.on('console', lambda m: errors.append(m.text) if m.type == 'error' else None)
@@ -254,6 +255,41 @@ class Browser(unittest.TestCase):
         page.fill('#q', 'aglareb')
         self.assertFalse(page.inner_text('#count').startswith('0 '))
         self.assertIn('aglareb', page.inner_text('#body'))
+
+    def visible_cyrillic(self, page):
+        lines = page.inner_text('body').split('\n')
+        return [x for x in lines if re.search('[А-Яа-яЁё]', x) and x.strip() != 'Русский']
+
+    def test_english_interface(self):
+        page = self.page(self.atlas + '#lang=en&w=3880471189&dst=sindarin/late/3', locale='en-US')
+        self.assertEqual(page.evaluate('document.documentElement.lang'), 'en')
+        page.wait_for_function("[...document.querySelectorAll('.pcell .pform')].every(x => x.textContent !== '…')", timeout=60000)
+        page.click('#rc-go')
+        self.assertIn('cognate by an Eldamo link', page.inner_text('#rc-output'))
+        page.evaluate("document.querySelectorAll('details').forEach(d => d.open = true)")
+        page.wait_for_function("document.getElementById('derivations').textContent.trim() !== ''", timeout=60000)
+        self.assertEqual(self.visible_cyrillic(page), [])
+        page.click('#tab-compose')
+        page.fill('#wf-q1', 'lindë')
+        page.click('#wf-r1 [data-id] >> nth=0')
+        page.fill('#wf-q2', 'lindë')
+        page.click('#wf-r2 [data-id] >> nth=0')
+        page.click('#wf-go')
+        self.assertIn('weight', page.inner_text('#wf-output'))
+        self.assertEqual(self.visible_cyrillic(page), [])
+
+    def test_language_switch(self):
+        page = self.page(self.atlas, locale='en-US')
+        self.assertIn('word forge', page.inner_text('#intro'))       # an English browser gets English
+        page.click('#lang-toggle')
+        page.wait_for_function("document.documentElement.lang === 'ru' && document.getElementById('intro').textContent.includes('кузница')")
+        self.assertIn('кузница слова', page.inner_text('#intro'))   # the choice is kept
+        page.goto(self.corpus)
+        self.assertIn('записей', page.inner_text('#count'))
+        page.click('#lang-toggle')
+        page.wait_for_function("document.documentElement.lang === 'en' && document.getElementById('count').textContent.includes('records')")
+        self.assertIn('records', page.inner_text('#count'))
+        self.assertEqual(self.visible_cyrillic(page), [])
 
 
 if __name__ == '__main__':

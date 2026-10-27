@@ -5,6 +5,7 @@
 const WF = window.WF, QU = window.QU, QR = window.QR;
 const $ = id => document.getElementById(id);
 const esc = QU.esc;
+const T = QU.T;
 
 function periodSelect(sel) {
   const prev = sel.value;
@@ -42,17 +43,16 @@ function suggest() {
   if (!text.trim()) { box.innerHTML = ''; return; }
   const hits = lexiconHits(text).slice(0, 10);
   box.innerHTML = hits.map(h => QU.hitHtml(h, `data-word="${esc(h.entry.id)}" data-branch="${esc(h.branch)}"`)).join('')
-    + `<p class="small muted">${hits.length ? 'Щелчок — выбрать статью Eldamo (с её праформой и связями). ' : 'В лексиконе такой формы нет. '}`
-    + '«Реконструировать» без выбора — взять саму форму; если в языке исходного периода есть ровно одна статья с этой формой, берётся она.</p>';
+    + `<p class="small muted">${T(hits.length ? 'recon.pick' : 'recon.noSuch')} ${T('recon.pickNote')}</p>`;
 }
 
 function subjectHtml(s) {
-  if (!s) return '<p class="muted">Выберите слово в поиске наверху или введите форму ниже.</p>';
-  if (s.kind === 'missing') return '<p class="muted">Слово не найдено.</p>';
+  if (!s) return `<p class="muted">${T('recon.chooseWord')}</p>`;
+  if (s.kind === 'missing') return `<p class="muted">${T('recon.notFound')}</p>`;
   const [b, era, stage] = s.period;
   const name = s.kind === 'word' ? `<span class="marker">${esc(QU.marker(QU.engine(b), s.entry.lang))}</span> <span class="form">${esc(s.entry.form)}</span> <span class="muted">${esc(s.entry.gloss)}</span>`
     : `<span class="marker">${esc(QU.periodName(b, era, stage))}</span> <span class="form">${esc(s.form)}</span>`;
-  return `<p>Слово: ${name}</p>`;
+  return `<p>${T('recon.word')} ${name}</p>`;
 }
 
 function onSubject(s) {
@@ -83,33 +83,31 @@ function run() {
   const exact = typed && $('rc-spelled').checked ? exactWord(typed) : null;
   if (exact) {
     opts = { word: exact.entry.id };
-    note = `<p class="small">Взята статья Eldamo: <a href="#" data-word="${esc(exact.entry.id)}" data-branch="${esc(exact.branch)}">`
+    note = `<p class="small">${T('recon.taken')} <a href="#" data-word="${esc(exact.entry.id)}" data-branch="${esc(exact.branch)}">`
       + `<span class="marker">${esc(QU.marker(QU.engine(exact.branch), exact.entry.lang))}</span> <span class="form">${esc(exact.entry.form)}</span></a> `
       + `<span class="muted">${esc(exact.entry.gloss)}</span>.</p>`;
   } else if (typed) opts = { form: typed, spelled: $('rc-spelled').checked };
   else if (s && s.kind !== 'missing') opts = QU.sourceOf(s);
-  else { $('rc-output').textContent = 'Выберите слово или введите форму.'; return; }
+  else { $('rc-output').textContent = T('recon.chooseOrType'); return; }
   const out = $('rc-output');
   QR.set({ dst: dst.join('/') }, false);
   let vs;
-  try { vs = WF.reconstruct(QU.allEngines(), src, dst, opts); } catch (err) { out.textContent = 'Ошибка: ' + err.message; throw err; }
+  try { vs = WF.reconstruct(QU.allEngines(), src, dst, opts); } catch (err) { out.textContent = T('common.error', { msg: err.message }); throw err; }
   const head = `<p class="result-head"><span class="marker">${esc(QU.periodName(...src))}</span> → <span class="marker">${esc(QU.periodName(...dst))}</span></p>` + note;
   if (!vs.length) {
-    out.innerHTML = head + '<p>Форм не найдено: ни одна восстановленная форма не даёт исходную при прогоне вперёд. Попробуйте другую стадию или введите форму в фонетической записи.</p>';
+    out.innerHTML = head + `<p>${T('recon.noForms')}</p>`;
     return;
   }
   const [db, de, ds] = dst;
   out.innerHTML = head + '<ol class="wf-variants">' + vs.map((v, k) => {
     const sh = QU.shown(v.form, db, de, ds);
     return `<li class="wf-variant${k === 0 ? ' main' : ''}"><div><strong class="form">${esc(sh)}</strong>
-      ${sh !== QU.plainForm(v.form) ? `<span class="ipa muted">[${esc(QU.plainForm(v.form))}]</span>` : ''} <span class="small muted">вес ${v.score}</span>
-      <button type="button" class="link small" data-use="${esc(v.form)}" title="Сделать эту форму текущим словом">работать с этой формой</button></div>
-      <div class="small">${esc(v.route)}</div>
+      ${sh !== QU.plainForm(v.form) ? `<span class="ipa muted">[${esc(QU.plainForm(v.form))}]</span>` : ''} <span class="small muted">${T('variant.weight', { w: v.score })}</span>
+      <button type="button" class="link small" data-use="${esc(v.form)}" title="${T('variant.useTitle')}">${T('variant.use')}</button></div>
+      <div class="small">${esc(QU.routeText(v.route))}</div>
       <div class="small">${QU.marksHtml(v.marks, v.problems)}</div>${QU.stagesHtml(v.steps, db)}</li>`;
   }).join('') + '</ol>' +
-    '<p class="small muted">Назад по стадиям форма восстанавливается по соответствиям из дериваций Eldamo, и каждая кандидатура проверяется прогоном вперёд. ' +
-    'Другая ветвь — через общую праформу. Другая концепция — сначала связи Eldamo, затем форма без изменений, затем переэтимологизация (неологизм). ' +
-    'Кроме засвидетельствованного, всё — гипотеза модели.</p>';
+    `<p class="small muted">${T('recon.note')}</p>`;
 }
 
 periodSelect($('rc-src'));

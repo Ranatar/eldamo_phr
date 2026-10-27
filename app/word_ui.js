@@ -273,10 +273,9 @@ function cardHtml(s) {
   const bits = [];
   if (e.stems) bits.push(T('card.stem') + ' ' + e.stems.map(x => `<span class="form">${esc(x)}</span>`).join(', '));
   if (e.roots && e.roots.length) {
-    const refs = e.root_refs || [];
-    const via = refs.length ? refs[0][2] || '' : '';
-    const list = e.roots.map((x, i) => rootLink({ id: (refs[i] || [])[1], form: x, marker: rootMarker(E, (refs[i] || [])[0]), via: (refs[i] || [])[2] || '' }));
-    bits.push(T(via ? 'card.root.' + via : 'card.root') + ' ' + list.join(', '));
+    const list = entryRoots(b, e);
+    const via = list.some(r => r.via === 'element') ? 'element' : list[0].via;
+    bits.push(T(via ? 'card.root.' + via : 'card.root') + ' ' + rootsHtml(list));
   }
   const pr = e.starts || (e.stages && (e.stages.p || e.stages.mp || e.stages.ep)) || e.written_origins || e.proto_forms;
   if (pr) bits.push(T('card.primitive') + ' ' + pr.map(x => `<span class="form">${esc(x)}</span>`).join(', '));
@@ -330,22 +329,44 @@ function linkedIds(id) {
   }
   return [...(linkIndex.get(id) || [])];
 }
+// the roots of an entry as records for rootsHtml
+function entryRoots(b, e) {
+  const E = engine(b);
+  return (e.root_refs || []).map(([lang, id, via, part], i) => ({ id, form: e.roots[i], marker: rootMarker(E, lang), via: via || '', part }));
+}
+// roots by era: the word's own for its era; for another era those of the first word Eldamo links to it
+// in that era, an earlier or later conception first (Q. Ambar: ᴱQ. irmin < ᴱ√IÐI). A cognate of the
+// same era does not add its roots to the word's (S. Gwahaedir, linked to Q. palantír).
+const LINK_ORDER = { combine: 0, deprecated: 1, see: 2, cognate: 3 };
 function rootsByEra(s) {
   const out = {};
   if (!s || s.kind !== 'word') return out;
-  const seen = new Set();
-  for (const id of [s.entry.id, ...linkedIds(s.entry.id)]) {
+  const own = eraOf(engine(s.branch), s.entry.lang);
+  if (own && (s.entry.roots || []).length) out[own] = entryRoots(s.branch, s.entry);
+  const linked = [];
+  for (const id of linkedIds(s.entry.id)) {
     const w = lookup(id, s.branch);
-    if (!w) continue;
-    const E = engine(w.branch), era = eraOf(E, w.entry.lang);
-    if (!era) continue;
-    for (const [i, [lang, rid, via]] of (w.entry.root_refs || []).entries()) {
-      if (seen.has(era + rid)) continue;
-      seen.add(era + rid);
-      (out[era] = out[era] || []).push({ id: rid, form: w.entry.roots[i], marker: rootMarker(E, lang), via: via || '' });
-    }
+    if (!w || !(w.entry.roots || []).length) continue;
+    const era = eraOf(engine(w.branch), w.entry.lang);
+    if (!era || era === own) continue;
+    const tags = [...Object.entries(s.entry.links || {}), ...Object.entries(w.entry.links || {})]
+      .filter(([, ids]) => ids.includes(id) || ids.includes(s.entry.id)).map(([t]) => LINK_ORDER[t] ?? 9);
+    linked.push([Math.min(9, ...tags), w.entry.form, era, w]);
   }
+  linked.sort((a, b) => a[0] - b[0] || (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0));
+  for (const [, , era, w] of linked) if (!out[era]) out[era] = entryRoots(w.branch, w.entry);
   return out;
+}
+// roots written as Eldamo's parts: elements joined by +, alternatives of one element by /
+function rootsHtml(list) {
+  const groups = [];
+  for (const r of list || []) {
+    const key = r.part == null ? 'own' : 'p' + r.part;
+    let g = groups.find(x => x.key === key);
+    if (!g) groups.push(g = { key, items: [] });
+    g.items.push(rootLink(r));
+  }
+  return groups.map(g => g.items.join('/')).join(' + ');
 }
 const rootMarker = (E, lang) => { const l = language(E, lang); return l ? l.marker.replace('✶', '√') : '√'; };
 // a root as a link to its Eldamo page: own, of the word's elements, of a cognate, or guessed
@@ -361,7 +382,7 @@ function rootGuess(b, era, form) {
   return cs.filter(c => c[0] === cs[0][0]).slice(0, 3).map(([, id, lang, f]) => ({ id, form: f, marker: rootMarker(E, lang), guess: true }));
 }
 function rootsCell(list, key) {
-  return `<td class="proots" data-roots="${esc(key)}">${(list || []).map(rootLink).join(' ')}</td>`;
+  return `<td class="proots" data-roots="${esc(key)}">${rootsHtml(list)}</td>`;
 }
 function renderPanorama(s) {
   const gen = ++generation;
@@ -408,7 +429,7 @@ function renderPanorama(s) {
       else if (v.marks.includes('neologism')) btn.classList.add('neologism');
       if (Number(stage) === 0 && !(roots[era] || []).length) {
         const td = box.querySelector(`[data-roots="${b}/${era}"]`);
-        if (td) td.innerHTML = rootGuess(b, era, v.form).map(rootLink).join(' ');
+        if (td) td.innerHTML = rootGuess(b, era, v.form).map(rootLink).join('/');
       }
     }
     setTimeout(step, 0);
@@ -467,7 +488,7 @@ QR.on(route);
 window.QU = {
   WDATA, BRANCHES, BRANCH_NAMES, ERAS, ERA_NAMES, MARKS, SITE,
   esc, fold, engine, allEngines, lookup, language, marker, eraOf, lastStage, periodOf, periodName,
-  T, TN, spelling, plainForm, shown, ruleLink, rootGuess, rootLink, stagesHtml, marksHtml, routeText, searchWords, hitHtml, sourceOf,
+  T, TN, spelling, plainForm, shown, ruleLink, rootGuess, rootLink, rootsHtml, stagesHtml, marksHtml, routeText, searchWords, hitHtml, sourceOf,
   neo, openWord, openForm, showTab,
   subject: () => subject,
   onSubject: fn => listeners.push(fn),

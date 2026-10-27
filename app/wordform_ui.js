@@ -23,6 +23,7 @@ const ADJUST = {
   reduction: T('adjust.reduction'),
   lengthening: T('adjust.lengthening'),
   shortening: T('adjust.shortening'),
+  'ima-class': T('adjust.ima-class'),
 };
 const state = { branch: QU.BRANCHES[0], picked: [null, null] };
 const era = () => $('wf-era').value || 'late';

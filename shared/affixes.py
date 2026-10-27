@@ -168,8 +168,13 @@ def _table(model: dict, aid: str, k: str, jkey, ekey, skey) -> dict:
     return out
 
 
-def predict(model: dict, branch: str, affix: dict, base_forms: list, limit: int = 10) -> list:
-    """Variants for affix + base forms [(form, source)]: [{'form', 'score', ...}]."""
+IMA = ('q', '-ima')
+
+
+def predict(model: dict, branch: str, affix: dict, base_forms: list, limit: int = 10,
+            base: dict | None = None) -> list:
+    """Variants for affix + base forms [(form, source)]: [{'form', 'score', ...}]. For Q.
+    -ima after a verb (`base`, its entry) the forms its class gives come first (ima-class)."""
     k = kind(affix)
     allos = allomorphs(affix, branch)
     info = model['affix'].get(affix['id'], {})
@@ -225,8 +230,22 @@ def predict(model: dict, branch: str, affix: dict, base_forms: list, limit: int 
                 add(join(v), w * MORPH_WEIGHT, {'joined': join(a) + '+' + join(b), 'allomorph': allo, 'base': bf,
                                                 'base_source': how, 'junction': [0, 0, ''], 'ending': [0, ''],
                                                 'shortened': False, 'lengthened': length, 'adjustments': rules})
-    ranked = sorted(scored.values(), key=lambda x: -x[0])
-    return [{'form': f, 'score': round(sc, 3), **rec} for sc, f, rec in ranked[:limit]]
+    ruled = False
+    if base is not None and k == 'suffix' and (affix.get('lang'), affix.get('form')) == IMA and base_forms:
+        classes = M.verb_classes(base)
+        bf0 = next((x for x in base_forms if x[1] == 'dictionary'), base_forms[0])
+        stem = phonemes(comparable(bf0[0]))
+        for ph, w, length in M.ima_forms(stem, classes):
+            ruled = True
+            # Tolkien's rule outranks the analogy of attested words (scores up to 1)
+            add(join(ph), 1.0 + w, {'joined': join(stem) + '+ima', 'allomorph': 'ima', 'base': bf0[0],
+                                    'base_source': bf0[1], 'junction': [0, 0, ''], 'ending': [0, ''],
+                                    'shortened': False, 'lengthened': length, 'adjustments': ['ima-class']})
+    ranked = sorted(scored.values(), key=lambda x: -x[0])[:limit]
+    if ruled:
+        total = sum(sc for sc, _, _ in ranked) or 1.0
+        ranked = [(sc / total, f, rec) for sc, f, rec in ranked]
+    return [{'form': f, 'score': round(sc, 3), **rec} for sc, f, rec in ranked]
 
 
 def leave_one_out(branch: str, lexicon: list, limit: int = 8) -> dict:
@@ -239,7 +258,7 @@ def leave_one_out(branch: str, lexicon: list, limit: int = 8) -> dict:
     for i, r in enumerate(rows):
         model = learn(rows[:i] + rows[i + 1:])
         base = by_id[r['base']]
-        vs = predict(model, branch, by_id[r['affix']], forms_at_latest(base, branch, final=r['kind'] == 'prefix'))
+        vs = predict(model, branch, by_id[r['affix']], forms_at_latest(base, branch, final=r['kind'] == 'prefix'), base=base)
         forms = [comparable(v['form']) for v in vs[:limit]]
         results.append({'word': r['word'], 'form': r['form'], 'kind': r['kind'], 'target': r['c'],
                         'main': vs[0]['form'] if vs else None,

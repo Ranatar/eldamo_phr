@@ -21,6 +21,14 @@ records its paragraph and who stated it:
                         cuivië + nén -> Cuiviénen. Tolkien's usage, rules
                         formulated by Strack.
 
+* ima-class   -ima "-able" after a verb, by its class (Tolkien, Late Verb
+                        Structure 1969, PE22/155-156; intro-quenya §9.1.4.1):
+                        basic verbs lengthen the base vowel (car- > cárima),
+                        a-verbs and half-strong verbs replace the final -a (an
+                        a-verb may lengthen: ᴹQ. alfárima; ferya- > férima),
+                        u-verbs and weak verbs just add it (liruima, tultaima).
+                        The class is Eldamo's <class>, else guessed from the stem.
+
 All functions work on phoneme lists in Eldamo's phonetic notation.
 """
 from __future__ import annotations
@@ -32,6 +40,7 @@ SOURCES = {
     'reduction': {'section': '§6.1.2.1', 'by': 'Толкин (PE17/106, PE21/32)'},
     'shortening': {'section': '§6.1.2.2', 'by': 'Страк, выведено из примеров'},
     'lengthening': {'section': '§6.1.3', 'by': 'практика Толкина, правила сформулированы Страком'},
+    'ima-class': {'section': '§9.1.4.1', 'by': 'Толкин (PE22/155–156)'},
 }
 DIRECTIONAL = ('nna', 'llo', 'sse', 'nnar', 'llon', 'ssen')
 FINAL_OK = set('tsnrl')          # consonants a Quenya word may end in
@@ -205,3 +214,66 @@ def lenite(word: list, primitive: str | None = None) -> list | None:
         if s.startswith(a):
             return phonemes(b + s[len(a):])
     return None
+
+
+# -ima after a verb by its class (ima-class)
+IMA_LENGTHEN = ('basic-verb',)
+IMA_REPLACE_A = ('a-verb', 'ta-formative', 'na-formative', 'talat-stem')
+IMA_ADD = ('u-verb', 'weak-verb', 'ta-causative', 'ya-causative', 'inceptive-verb')
+
+
+def verb_classes(entry: dict) -> list:
+    """[(class, weight)] of a Quenya verb: Eldamo's <class>, else guessed from its stem
+    (a consonant: basic; -u: u-verb; -ta, -ya: formative or causative; -a: a-verb or weak)."""
+    if entry.get('verb_class'):
+        return [(entry['verb_class'], 1.0)]
+    if 'vb' not in (entry.get('speech') or '').split():
+        return []
+    f = (entry.get('form') or '').rstrip('-¹²³⁴⁵⁶⁷⁸⁹⁰')
+    if not f:
+        return []
+    if f[-1] not in 'aeiouáéíóú':
+        return [('basic-verb', 1.0)]
+    if f.endswith('u'):
+        return [('u-verb', 1.0)]
+    if f.endswith('ta'):
+        return [('ta-formative', 0.5), ('ta-causative', 0.5)]
+    if f.endswith('ya'):
+        return [('ya-formative', 0.5), ('ya-causative', 0.5)]
+    if f.endswith('a'):
+        return [('a-verb', 0.5), ('weak-verb', 0.5)]
+    return []
+
+
+def ima_forms(stem: list, classes: list) -> list:
+    """[(phonemes, weight, lengthened)] of stem + -ima for the verb's classes (ima-class)."""
+    from .affixes import lengthened
+    out = []
+
+    def add(ph, w, length):
+        for i, (q, w0, l0) in enumerate(out):
+            if q == ph:
+                out[i] = (q, w0 + w, l0)
+                return
+        out.append((ph, w, length))
+
+    ima = phonemes('ima')
+    for cls, w in classes:
+        if cls in IMA_LENGTHEN:
+            longer = lengthened(stem)
+            add((longer or stem) + ima, w, longer is not None)
+        elif cls in IMA_REPLACE_A and stem and stem[-1] == 'a':
+            base = stem[:-1]
+            longer = lengthened(base) if cls == 'a-verb' else None
+            if longer is not None:
+                add(longer + ima, w * 0.5, True)
+                add(base + ima, w * 0.5, False)
+            else:
+                add(base + ima, w, False)
+        elif cls == 'ya-formative' and stem[-2:] == ['j', 'a']:
+            base = stem[:-2]
+            longer = lengthened(base)
+            add((longer or base) + ima, w, longer is not None)
+        elif cls in IMA_ADD:
+            add(stem + ima, w, False)
+    return out

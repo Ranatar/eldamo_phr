@@ -95,6 +95,19 @@ class Affixes(unittest.TestCase):
     def entry(self, b, lang, form):
         return next(e for e in self.data[b]['lexicon'] if e['lang'] == lang and e['form'] == form)
 
+    def test_ima_by_verb_class(self):
+        # Late Verb Structure 1969 (PE22/155-156): car- > cárima, liru- > liruima, tulta- > tultaima,
+        # fanta- > fantima, ferya- > férima
+        lex = {e['id']: e for e in self.data['quenya']['lexicon']}
+        model = affixes.learn(self.data['quenya']['affixes']['cases'])
+        ima = self.entry('quenya', 'q', '-ima')
+        for verb, want in (('car-', 'kārima'), ('liru-', 'liruima'), ('tulta-', 'tultaima'),
+                           ('fanta-', 'fantima'), ('ferya-', 'fērima')):
+            v = next(e for e in lex.values() if e['lang'] == 'q' and e['form'] == verb)
+            vs = compound.predict(lex, self.seq['quenya'], [v['id'], ima['id']], 'late', 2, affix_model=model)
+            self.assertIn(want, [x['form'] for x in vs[:2]], verb)
+            self.assertIn('ima-class', [a for x in vs[:2] for a in x['adjustments']], verb)
+
     def test_allomorphs(self):
         for b, lang, form, expected in [('quenya', 'q', '-(n)dil', ['ndil', 'dil']), ('quenya', 'q', 'al(a)-¹', ['ala', 'al']),
                                         ('sindarin', 's', '-(r)on', ['ron', 'on']), ('quenya', 'q', '-itë', ['ite'])]:

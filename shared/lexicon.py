@@ -270,6 +270,9 @@ def build_lexicon(branch: str, derivations: list) -> list:
             entry['neo'] = True
         if parent is not None and parent.tag == 'word' and parent.get('page-id'):
             entry['under'] = parent.get('page-id')   # nested page: an earlier or later version
+        cls = [c.get('form') for c in w.findall('class') if c.get('form', '').endswith(('verb', 'formative', 'causative', 'stem'))]
+        if cls:
+            entry['verb_class'] = cls[0]
         stems = _stems(w)
         if stems:
             entry['stems'] = stems
@@ -408,56 +411,103 @@ def _own_roots(W: Words, pid: str, memo: dict) -> list:
 
 
 def _element_ids(W: Words, w) -> list:
-    """Word pages of a word's elements: its own <element> (c:get-word), else those inside
-    its references (by @source, else by form)."""
+    """Word pages of a word's elements in order, roots among them included: its own
+    <element> (c:get-word), else those inside its references (by @source, else by form)."""
     out = []
     for el in w.findall('element'):
         if _live(el) and el.get('v') != '?':
-            out += W.get_word(el, w.get('l'))
+            out += W.get_word(el, w.get('l'))[:1]
     if not out:
         for el in _ref_elements(w):
             if el.get('v') == '?':
                 continue
             hit = W.ref(el.get('source'))
-            out += [hit[0]] if hit else W.get_word(el, w.get('l'))
-    return [i for i in dict.fromkeys(out) if W.by_id[i].get('speech') != 'root']
+            out += [hit[0]] if hit else W.get_word(el, w.get('l'))[:1]
+    return list(dict.fromkeys(out))
 
 
-def _part_roots(W: Words, pid: str, memo: dict, depth: int = 3) -> list:
-    """Roots of the parts of a compound or derivative with no root of its own: each
-    element's own roots, else its parts' (Q. hyarma: hyar- < ᴹ√KHYAR, má < √MAƷ)."""
+def _root_rec(W: Words, rid: str) -> dict:
+    q = W.by_id[rid]
+    return {'lang': q.get('l'), 'form': q.get('v'), 'id': rid}
+
+
+def _part_groups(W: Words, pid: str, memo: dict, depth: int = 3) -> list:
+    """[[root]] per element of a word, in order: a root named as an element, else the
+    element's own roots (alternatives: má < √MAH/√MAG), else its own elements' groups
+    (a compound element adds its parts). An element with no root gives an empty group."""
     if depth == 0 or pid not in W.by_id:
         return []
-    out = []
+    groups = []
     for eid in _element_ids(W, W.by_id[pid]):
-        out += _own_roots(W, eid, memo) or _part_roots(W, eid, memo, depth - 1)
-    return out
+        if W.by_id[eid].get('speech') == 'root':
+            groups.append([dict(_root_rec(W, eid), named=True)])
+            continue
+        own = _own_roots(W, eid, memo)
+        if own:
+            groups.append(list(own))
+            continue
+        sub = _part_groups(W, eid, memo, depth - 1)
+        groups.extend(sub if any(sub) else [[]])
+    return groups
 
 
 def _resolve_roots(entries: list, W: Words) -> None:
-    """roots: [{lang, form, id, via?}] -- the roots reached through Eldamo's derivations;
-    when there are none, those of the word's elements (via 'element'); when there are
-    none either, those of its cognates, own or of their elements (via 'cognate': Q. Perian,
-    cognate S. Perian = per- + ?, per- < √PER)."""
+    """roots: [{lang, form, id, via?, part?}] by priority:
+    1. a compound or derivative whose elements have roots (two or more elements with a
+       root): the roots of its elements, `part` numbering the element (Q. palantír: palan <
+       √PAL + tir- < √TIR; Q. hyarma: ᴹ√KHYAR + √MAH/√MAG); a root the word's derivations
+       name besides is kept as its own part;
+    2. the roots the word's derivations reach (Q. lár < ᴹ√DAR), or a root it names as an
+       element (Q. firya: √PHIR + -ya);
+    3. the roots of its one element with roots;
+    4. the roots of its cognates, own or of their elements, when the root's consonants
+       are found in the word (Q. Perian ← S. Perian = per- + ?, √PER; not S. Gwahaedir, which
+       Eldamo links to Q. palantír as the same thing in Sindarin).
+    via: '' (own), 'element', 'cognate'."""
     memo = {}
     for e in entries:
-        roots = list(_own_roots(W, e['id'], memo))
+        own = list(_own_roots(W, e['id'], memo))
         for r in e.pop('origin_roots', ()):
-            if all(r['id'] != x['id'] for x in roots):
-                roots.append(r)
-        if not roots:
-            roots = [dict(r, via='element') for r in _part_roots(W, e['id'], memo)]
-        if not roots:
+            if all(r['id'] != x['id'] for x in own):
+                own.append(r)
+        groups = _part_groups(W, e['id'], memo) if e['id'] in W.by_id else []
+        filled = [g for g in groups if g]
+        roots = []
+        if len(filled) >= 2:
+            covered = {r['id'] for g in filled for r in g}
+            for k, g in enumerate(filled):
+                roots += [dict({x: v for x, v in r.items() if x != 'named'}, part=k,
+                               via='' if r.get('named') else 'element') for r in g]
+            extra = [r for r in own if r['id'] not in covered]
+            roots += [dict(r, part=len(filled)) for r in extra]
+        elif own:
+            roots = own
+        elif filled:
+            roots = [dict({x: v for x, v in r.items() if x != 'named'}, via='' if r.get('named') else 'element')
+                     for r in filled[0]]
+        else:
+            from .reconstruct import root_match
             for cid in W.cognates(e['id']):
                 if cid == e['id']:
                     continue
-                roots += [dict(r, via='cognate') for r in (_own_roots(W, cid, memo) or _part_roots(W, cid, memo))]
+                c_own = _own_roots(W, cid, memo)
+                cand = c_own or [r for g in _part_groups(W, cid, memo) for r in g]
+                roots += [dict({x: v for x, v in r.items() if x != 'named'}, via='cognate') for r in cand
+                          if root_match(primitive_or_form(e), [r['form']])]
         out = []
         for r in roots:
             if all(r['id'] != x['id'] for x in out):
                 out.append(r)
         if out:
             e['roots'] = out
+
+
+def primitive_or_form(e: dict) -> str:
+    """What a root is compared with in the cognate check of _resolve_roots: the word's
+    form in phonetic notation."""
+    from .orthography import to_phonetic
+    branch = next((b for b, d in BRANCHES.items() if any(l[0] == e['lang'] for l in d['languages'])), 'sindarin')
+    return to_phonetic(bare(e.get('form') or ''), branch).strip().strip('-')
 
 
 PROTO = ('p', 'mp')

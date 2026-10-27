@@ -76,7 +76,7 @@ def payload(branches: dict) -> dict:
 
 
 LEXICON_FIELDS = ('id', 'lang', 'form', 'gloss', 'speech', 'mark', 'neo', 'stems', 'starts', 'stages', 'written_origins',
-                  'proto_forms', 'unruled')
+                  'proto_forms', 'unruled', 'verb_class')
 
 
 def _key(parts) -> str:
@@ -111,8 +111,10 @@ def wordform_payload(name: str, data: dict) -> dict:
             x['links'] = {tag: [l['id'] for l in ls] for tag, ls in e['links'].items()}
         if e.get('roots'):
             x['roots'] = [r['form'] for r in e['roots']]
-            # for the card and the panorama: language, page, and how it was found (own / element / cognate)
-            x['root_refs'] = [[r['lang'], r['id'], r.get('via', '')] for r in e['roots']]
+            # for the card and the panorama: language, page, how it was found (own / element / cognate)
+            # and, in a compound, the number of its element
+            x['root_refs'] = [[r['lang'], r['id'], r.get('via', '')] + ([r['part']] if 'part' in r else [])
+                              for r in e['roots']]
         lexicon.append(x)
     return {
         'languages': data['meta']['languages'],

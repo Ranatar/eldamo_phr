@@ -28,8 +28,8 @@
   },
   "affixes": {
    "cases": 482,
-   "main": 303,
-   "any": 365,
+   "main": 305,
+   "any": 366,
    "results": [
     {
      "word": "3341961537",
@@ -1530,9 +1530,9 @@
      "form": "férima",
      "kind": "suffix",
      "target": "fērima",
-     "main": "ferjima",
+     "main": "ferjaima",
      "ok_main": false,
-     "ok_any": false
+     "ok_any": true
     },
     {
      "word": "569518381",
@@ -1944,8 +1944,8 @@
      "form": "istima",
      "kind": "suffix",
      "target": "istima",
-     "main": "istaima",
-     "ok_main": false,
+     "main": "istima",
+     "ok_main": true,
      "ok_any": true
     },
     {
@@ -3681,8 +3681,8 @@
      "form": "tultaima",
      "kind": "suffix",
      "target": "tultaima",
-     "main": "tultima",
-     "ok_main": false,
+     "main": "tultaima",
+     "ok_main": true,
      "ok_any": true
     },
     {
@@ -4372,8 +4372,8 @@
    ],
    "suffix": {
     "cases": 345,
-    "main": 226,
-    "any": 272
+    "main": 228,
+    "any": 273
    },
    "prefix": {
     "cases": 137,

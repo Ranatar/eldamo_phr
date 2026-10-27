@@ -871,7 +871,47 @@ function affixTable(model, aid, kind, jkey, ekey, skey) {
   return t;
 }
 const AFFIX_LENITION = 0.5, AFFIX_MORPH = 0.3;
-function predictAffix(engine, affix, baseForms, limit = 10) {
+// -ima after a verb by its class (morphophonology.py: verb_classes, ima_forms)
+function verbClasses(entry) {
+  if (entry.verb_class) return [[entry.verb_class, 1]];
+  if (!(entry.speech || '').split(/\s+/).includes('vb')) return [];
+  const f = (entry.form || '').replace(/[-¹²³⁴⁵⁶⁷⁸⁹⁰]+$/, '');
+  if (!f) return [];
+  if (!'aeiouáéíóú'.includes(f[f.length - 1])) return [['basic-verb', 1]];
+  if (f.endsWith('u')) return [['u-verb', 1]];
+  if (f.endsWith('ta')) return [['ta-formative', 0.5], ['ta-causative', 0.5]];
+  if (f.endsWith('ya')) return [['ya-formative', 0.5], ['ya-causative', 0.5]];
+  if (f.endsWith('a')) return [['a-verb', 0.5], ['weak-verb', 0.5]];
+  return [];
+}
+const IMA_REPLACE_A = ['a-verb', 'ta-formative', 'na-formative', 'talat-stem'];
+const IMA_ADD = ['u-verb', 'weak-verb', 'ta-causative', 'ya-causative', 'inceptive-verb'];
+function imaForms(stem, classes) {
+  const out = [];
+  const add = (ph, w, length) => {
+    const i = out.findIndex(([q]) => q.length === ph.length && q.every((x, k) => x === ph[k]));
+    if (i >= 0) out[i] = [out[i][0], out[i][1] + w, out[i][2]];
+    else out.push([ph, w, length]);
+  };
+  const ima = phonemes('ima');
+  for (const [cls, w] of classes) {
+    if (cls === 'basic-verb') {
+      const longer = lengthenedBase(stem);
+      add((longer || stem).concat(ima), w, longer != null);
+    } else if (IMA_REPLACE_A.includes(cls) && stem.length && stem[stem.length - 1] === 'a') {
+      const base = stem.slice(0, -1);
+      const longer = cls === 'a-verb' ? lengthenedBase(base) : null;
+      if (longer != null) { add(longer.concat(ima), w * 0.5, true); add(base.concat(ima), w * 0.5, false); }
+      else add(base.concat(ima), w, false);
+    } else if (cls === 'ya-formative' && stem.slice(-2).join('|') === 'j|a') {
+      const base = stem.slice(0, -2);
+      const longer = lengthenedBase(base);
+      add((longer || base).concat(ima), w, longer != null);
+    } else if (IMA_ADD.includes(cls)) add(stem.concat(ima), w, false);
+  }
+  return out;
+}
+function predictAffix(engine, affix, baseForms, limit = 10, base = null) {
   const kind = affixKind(affix), model = engine.affixes;
   const allos = allomorphs(affix, engine.branch);
   const info = model.affix[affix.id] || {};
@@ -920,8 +960,22 @@ function predictAffix(engine, affix, baseForms, limit = 10) {
       }
     }
   }
-  return [...scored.values()].sort((x, y) => y[0] - x[0]).slice(0, limit)
-    .map(([sc, f, rec]) => Object.assign({ form: f, score: r3(sc) }, rec));
+  let ruled = false;
+  if (base && kind === 'suffix' && affix.lang === 'q' && affix.form === '-ima' && baseForms.length) {
+    const bf0 = baseForms.find(([, h]) => h === 'dictionary') || baseForms[0];
+    const stem = phonemes(comparable(bf0[0]));
+    for (const [ph, w, length] of imaForms(stem, verbClasses(base))) {
+      ruled = true;
+      add(join(ph), 1 + w, { joined: join(stem) + '+ima', allomorph: 'ima', base: bf0[0], baseSource: bf0[1],
+        junction: [0, 0, ''], ending: [0, ''], shortened: false, lengthened: length, adjustments: ['ima-class'] });
+    }
+  }
+  let ranked = [...scored.values()].sort((x, y) => y[0] - x[0]).slice(0, limit);
+  if (ruled) {
+    const total = ranked.reduce((x, [sc]) => x + sc, 0) || 1;
+    ranked = ranked.map(([sc, f, rec]) => [sc / total, f, rec]);
+  }
+  return ranked.map(([sc, f, rec]) => Object.assign({ form: f, score: r3(sc) }, rec));
 }
 function formsAtLatest(entry, fam, final = false) {
   const out = final ? [] : (entry.stems || []).map(x => [toPhonetic(x, fam).replace(/-+$/, ''), 'stem']);
@@ -938,7 +992,7 @@ function predictAffixed(engine, ids) {
   if (k1 == null && k2 === 'suffix') { base = e1; affix = e2; kind = 'suffix'; }
   else if (k1 === 'prefix' && k2 == null) { affix = e1; base = e2; kind = 'prefix'; }
   else return null;
-  return predictAffix(engine, affix, formsAtLatest(base, engine.branch, kind === 'prefix')).map(v => Object.assign({}, v, {
+  return predictAffix(engine, affix, formsAtLatest(base, engine.branch, kind === 'prefix'), 10, base).map(v => Object.assign({}, v, {
     elements: kind === 'suffix' ? [v.base, v.allomorph] : [v.allomorph, v.base],
     sources: kind === 'suffix' ? [v.baseSource, 'suffix'] : ['prefix', v.baseSource],
     affix: affix.id, kind, trace: [],
@@ -1055,7 +1109,7 @@ function predict(engine, ids, era, stage, lastStage = null) {
 
 // ---------------------------------------------------------------- reconstruction (shared/reconstruct.py)
 const RECON_LIMIT = 8, ROOT_BONUS = 2.0, STEM_BONUS = 1.0, PHONOTACTIC_PENALTY = 0.2;   // stem: a mark only
-const NO_HINTS = { roots: [], stems: [] };
+const NO_HINTS = { roots: [], stems: [], starts: [] };
 const hintWeight = r => (r.root ? ROOT_BONUS : 1) * (r.stem ? STEM_BONUS : 1);
 const SEARCH = { beam: 150, options: 6, minShare: 0.02 };
 const WIDE = { beam: 300, options: 10, minShare: 0.005 };   // when SEARCH finds nothing: rarer correspondences
@@ -1153,8 +1207,32 @@ function backwardRun(E, era, form, src, dst, hints = NO_HINTS) {
     backwardWith(E, add, table, era, form, src, dst, search);
     if (out.size) break;
   }
+  if (dst === 0 && (hints.starts || []).length && out.size) rootSeeds(E, add, era, form, src, hints.starts, [...out.values()].sort((a, b) => b.p - a.p));
   for (const r of out.values()) r.stem = stems.length > 0 && stemMatch(E, era, r.form, dst, src, stems);
   return [...out.values()].sort((a, b) => b.p * hintWeight(b) - a.p * hintWeight(a)).slice(0, RECON_LIMIT);
+}
+// primitive forms that begin with the word's root (reconstruct.py: Context._root_seeds)
+const classOf = p => { const b = Array.from(p)[0]; const i = EQUIV.findIndex(c => c.has(b)); return i >= 0 ? i : b; };
+function rootSeeds(E, add, era, form, src, starts, found) {
+  const target = comparable(form);
+  for (const rp of starts.slice(0, 3)) {
+    let rph = phonemes(rp);
+    while (rph.length && isVowel(rph[rph.length - 1])) rph = rph.slice(0, -1);
+    const last = [...rph].reverse().find(p => !isVowel(p));
+    if (last == null) continue;
+    const cls = classOf(last);
+    for (const r of found.slice(0, 4)) {
+      const cph = phonemes(comparable(r.form));
+      const j = cph.findIndex(p => !isVowel(p) && classOf(p) === cls);
+      if (j < 0) continue;
+      const f0 = r.form;
+      const seed = (f0.startsWith('-') ? '-' : '') + rph.concat(cph.slice(j + 1)).join('') + (f0.endsWith('-') && f0.length > 1 ? '-' : '');
+      if (comparable(seed) === comparable(f0)) continue;
+      for (const [f, trace] of forwardRun(E, era, seed, 0, src).slice(0, 4)) {
+        if (comparable(f) === target) { add(seed, r.p, trace, 'root ' + rp); break; }
+      }
+    }
+  }
 }
 // roots of the word, and its stems when the form is that of its own language (reconstruct.py: _hints)
 function hintsOf(E, branch, entry, era, stage) {
@@ -1167,7 +1245,13 @@ function hintsOf(E, branch, entry, era, stage) {
       if (x) stems.push(phonemes(comparable(toPhonetic(x, branch).trim()).replace(/^-+|-+$/g, '')).join(''));
     }
   }
-  return { roots: entry.roots || [], stems: [...new Set(stems)] };
+  if (!E.rootById) E.rootById = new Map(E.roots.map(r => [r[0], r]));
+  const starts = [];
+  (entry.root_refs || []).forEach(([, id, , part]) => {
+    const r = E.rootById.get(id);
+    if ((part == null || part === 0) && r && r[3].length) starts.push(r[3][0].join(''));
+  });
+  return { roots: entry.roots || [], stems: [...new Set(stems)], starts: [...new Set(starts)].filter(Boolean) };
 }
 function backwardWith(E, add, table, era, form, src, dst, search) {
   const found = backformWith(E, table(src, dst), form, era, src, RECON_LIMIT, dst > 0 ? dst + 1 : 0, search);
@@ -1249,7 +1333,7 @@ function within(engines, add, branch, era, form, ss, ds, hints, baseScore = 1, p
     const top = Math.max(...found.map(r => r.p * hintWeight(r)), 0) || 1;
     for (const r of found) {
       const p = baseScore * 0.9 * r.p * hintWeight(r) / top;
-      add(r.form, p, prefix.concat([[r.via === 'direct' ? 'backDirect' : 'backPrimitive']]),
+      add(r.form, p, prefix.concat([[r.via === 'direct' ? 'backDirect' : r.via.startsWith('root') ? 'backRoot' : 'backPrimitive']]),
         marks.concat(['reconstructed'], r.root ? ['root'] : [], r.stem ? ['stem'] : []), r.trace);
     }
   }
@@ -1359,28 +1443,58 @@ function across(engines, add, src, dst, form, entry, hints, useLinks) {
 
 // roots of Eldamo a primitive form could come from (shared/roots.py)
 const ROOT_LANGS = { late: { p: 0 }, middle: { mp: 0 }, early: { ep: 0 } };
+const SYLLABIC = { 'ṛ': 'r', 'ḷ': 'l', 'ṇ': 'n', 'ṃ': 'm' };
+const NASALS = new Set(['m', 'n', 'ŋ']);
 const baseChar = p => p.normalize('NFD')[0];
+function rootCons(ph) {
+  const out = [];
+  for (const p of ph) {
+    let q;
+    if (p in SYLLABIC) q = SYLLABIC[p];
+    else if (!isVowel(p)) q = p.endsWith('ː') ? baseChar(p) : p;
+    else continue;
+    if (p in SYLLABIC || !out.length || out[out.length - 1] !== q) out.push(q);
+  }
+  return out;
+}
+function rootMatchPenalty(fc, rc) {
+  let best = null;
+  const go = (i, j, pen, start) => {
+    if (best != null && pen >= best) return;
+    if (j === rc.length) { best = pen; return; }
+    if (i >= fc.length) return;
+    if (fc[i] === rc[j]) go(i + 1, j + 1, pen, false);
+    if (start && fc[i] === 's' && rc[j] !== 's') go(i + 1, j, pen + 1, false);
+    if (j > 0 && NASALS.has(fc[i]) && !NASALS.has(rc[j])) go(i + 1, j, pen + 1, false);
+  };
+  go(0, 0, 0, true);
+  return best;
+}
 function rootScore(formPh, rootPh) {
-  const fc = formPh.filter(p => !isVowel(p)), rc = rootPh.filter(p => !isVowel(p));
-  if (!rc.length || fc.length < rc.length || rc.some((p, i) => fc[i] !== p)) return null;
-  let s = 10 + rc.length;
+  const rc = rootCons(rootPh);
+  if (!rc.length) return null;
+  const pen = rootMatchPenalty(rootCons(formPh), rc);
+  if (pen == null) return null;
+  let s = 10 + rc.length - pen;
+  const rv = rootPh.filter(isVowel), fv = formPh.filter(isVowel);
   const augment = formPh.length > 0 && isVowel(formPh[0]) && rootPh.length > 0 && !isVowel(rootPh[0]);
+  if (augment) s -= rv.length && baseChar(formPh[0]) === baseChar(rv[0]) ? 0 : 2;
   const body = augment ? formPh.slice(1) : formPh;
   const head = body.slice(0, rootPh.length);
   if (head.length === rootPh.length && head.every((p, i) => baseChar(p) === baseChar(rootPh[i]))) s += 4;
-  const rv = rootPh.filter(isVowel), fv = formPh.filter(isVowel);
-  if (rv.length && fv.length && baseChar(rv[0]) === baseChar(fv[0])) s += 2;
-  if (augment) s -= 1;
+  const bv = body.filter(isVowel);
+  if (rv.length && bv.length && baseChar(rv[0]) === baseChar(bv[0])) s += 2;
+  else if (rv.length && fv.length && baseChar(rv[0]) === baseChar(fv[0])) s += 1;
   return s;
 }
 function rootCandidates(E, form, era, limit = 3) {
   const ph = phonemes(comparable(form).replace(/^-+|-+$/g, ''));
   const langs = ROOT_LANGS[era] || {};
   const out = [];
-  for (const [id, lang, rform, rph] of E.roots) {
+  for (const [id, lang, rform, variants] of E.roots) {
     if (!(lang in langs)) continue;
-    const s = rootScore(ph, rph);
-    if (s != null) out.push([s + langs[lang], id, lang, rform]);
+    const scores = variants.map(v => rootScore(ph, v)).filter(x => x != null);
+    if (scores.length) out.push([Math.max(...scores) + langs[lang], id, lang, rform]);
   }
   out.sort((a, b) => b[0] - a[0] || (a[3] < b[3] ? -1 : a[3] > b[3] ? 1 : 0) || (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0));
   return out.slice(0, limit);
@@ -1397,7 +1511,7 @@ function makeEngine(branch, wf) {
     lexiconList: wf.lexicon,
     junctions: wf.junctions,
     backform: wf.backform,
-    roots: (wf.roots || []).map(([id, lang, form, ph]) => [id, lang, form, phonemes(ph)]),
+    roots: (wf.roots || []).map(([id, lang, form, vs]) => [id, lang, form, vs.map(v => phonemes(v))]),
     analogues: wf.analogues,
     affixes: Object.assign({ smoothing: wf.junctions.smoothing }, wf.affixes),
     recon: wf.recon,

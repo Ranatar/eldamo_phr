@@ -122,7 +122,7 @@ def predict_affixed(lexicon: dict, seq, affix_model: dict, element_ids: list) ->
         affix, base, k = e1, e2, 'prefix'
     else:
         return None
-    vs = affixes.predict(affix_model, seq.branch, affix, forms_at_latest(base, seq.branch, final=k == 'prefix'))
+    vs = affixes.predict(affix_model, seq.branch, affix, forms_at_latest(base, seq.branch, final=k == 'prefix'), base=base)
     out = []
     for v in vs:
         pair = [v['base'], v['allomorph']] if k == 'suffix' else [v['allomorph'], v['base']]

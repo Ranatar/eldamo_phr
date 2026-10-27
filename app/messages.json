@@ -1,4 +1,8 @@
 {
+ "adjust.ima-class": {
+  "ru": "-ima по классу глагола (Толкин, PE22/155–156; учебник §9.1.4.1): основные глаголы удлиняют гласный, a-глаголы и полусильные заменяют -a, u-глаголы и слабые присоединяют как есть",
+  "en": "-ima by the verb class (Tolkien, PE22/155–156; course §9.1.4.1): basic verbs lengthen the vowel, a-verbs and half-strong verbs replace the -a, u-verbs and weak verbs add it as it is"
+ },
  "adjust.lengthening": {
   "ru": "просодическое удлинение на стыке (учебник §6.1.3; правила сформулированы Страком)",
   "en": "prosodic lengthening at the junction (textbook §6.1.3; rules formulated by Strack)"
@@ -1190,6 +1194,10 @@
  "route.backPrimitive": {
   "ru": "назад: через праформу",
   "en": "backward: via the primitive"
+ },
+ "route.backRoot": {
+  "ru": "назад: по корню",
+  "en": "backward: by the root"
  },
  "route.cognateLink": {
   "ru": "когнат по связи Eldamo: {form}",

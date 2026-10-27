@@ -128,28 +128,28 @@
  "stems q": {
   "cases": 30,
   "gold_stem": 16,
-  "plain_first": 9,
-  "plain_any": 14,
-  "stem_first": 8,
-  "stem_any": 14,
+  "plain_first": 10,
+  "plain_any": 15,
+  "stem_first": 9,
+  "stem_any": 15,
   "words": 83
  },
  "stems mq": {
   "cases": 30,
   "gold_stem": 20,
   "plain_first": 6,
-  "plain_any": 13,
+  "plain_any": 14,
   "stem_first": 6,
-  "stem_any": 13,
+  "stem_any": 14,
   "words": 77
  },
  "stems s": {
   "cases": 2,
   "gold_stem": 2,
   "plain_first": 0,
-  "plain_any": 0,
+  "plain_any": 1,
   "stem_first": 0,
-  "stem_any": 0,
+  "stem_any": 1,
   "words": 2
  },
  "stems n": {
@@ -161,54 +161,86 @@
   "stem_any": 0,
   "words": 2
  },
+ "root seeds q": {
+  "cases": 30,
+  "plain_first": 8,
+  "plain_any": 13,
+  "seed_first": 8,
+  "seed_any": 15,
+  "words": 838
+ },
+ "root seeds mq": {
+  "cases": 30,
+  "plain_first": 6,
+  "plain_any": 15,
+  "seed_first": 9,
+  "seed_any": 17,
+  "words": 751
+ },
+ "root seeds s": {
+  "cases": 30,
+  "plain_first": 1,
+  "plain_any": 4,
+  "seed_first": 2,
+  "seed_any": 5,
+  "words": 585
+ },
+ "root seeds n": {
+  "cases": 30,
+  "plain_first": 4,
+  "plain_any": 10,
+  "seed_first": 4,
+  "seed_any": 10,
+  "words": 895
+ },
  "root_candidates": {
   "q": {
-   "words": 801,
-   "first": 487,
-   "top3": 593,
-   "any": 602,
-   "rootless": 128,
-   "guessed": 119
+   "words": 779,
+   "first": 492,
+   "top3": 643,
+   "any": 668,
+   "rootless": 131,
+   "guessed": 122
   },
   "mq": {
-   "words": 741,
-   "first": 486,
-   "top3": 547,
-   "any": 554,
-   "rootless": 44,
-   "guessed": 39
+   "words": 728,
+   "first": 513,
+   "top3": 592,
+   "any": 622,
+   "rootless": 45,
+   "guessed": 40
   },
   "eq": {
-   "words": 1386,
-   "first": 404,
-   "top3": 642,
-   "any": 662,
+   "words": 1380,
+   "first": 516,
+   "top3": 685,
+   "any": 722,
    "rootless": 63,
-   "guessed": 52
+   "guessed": 54
   },
   "s": {
-   "words": 533,
-   "first": 302,
-   "top3": 366,
-   "any": 379,
-   "rootless": 56,
-   "guessed": 52
+   "words": 513,
+   "first": 304,
+   "top3": 384,
+   "any": 409,
+   "rootless": 63,
+   "guessed": 58
   },
   "n": {
-   "words": 882,
-   "first": 524,
-   "top3": 616,
-   "any": 635,
-   "rootless": 14,
-   "guessed": 14
+   "words": 855,
+   "first": 543,
+   "top3": 661,
+   "any": 706,
+   "rootless": 15,
+   "guessed": 15
   },
   "g": {
-   "words": 477,
-   "first": 125,
-   "top3": 193,
-   "any": 198,
-   "rootless": 35,
-   "guessed": 25
+   "words": 470,
+   "first": 159,
+   "top3": 195,
+   "any": 204,
+   "rootless": 37,
+   "guessed": 29
   }
  }
 }

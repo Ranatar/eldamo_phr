@@ -21,6 +21,14 @@ class Roots(unittest.TestCase):
         self.assertIn('KHYAR', [r['form'] for r in rs])
         self.assertTrue(all(r['via'] == 'element' for r in rs))
 
+    def test_compound_roots_by_element(self):
+        # Q. palantír: palan < √PAL + tir- < √TIR (the page names only TIR); not the roots of
+        # S. Gwahaedir, which Eldamo links to it as a cognate
+        rs = self.entry('quenya', 'q', 'palantír')['roots']
+        self.assertEqual([(r['form'], r['part']) for r in rs], [('PAL', 0), ('TIR', 1)])
+        rs = self.entry('quenya', 'q', 'hyarma')['roots']
+        self.assertEqual([(r['form'], r['part']) for r in rs], [('KHYAR', 0), ('MAH', 1), ('MAG', 1)])
+
     def test_roots_of_cognates(self):
         # Q. Perian: no root, no elements; cognate S. Perian = per- + ?, per- < √PER
         rs = self.entry('quenya', 'q', 'Perian')['roots']
@@ -35,6 +43,17 @@ class Roots(unittest.TestCase):
         self.assertEqual(best('kʰjarja', 'middle'), 'KHYAR')
         self.assertEqual(best('ambara', 'late'), 'MBAR')          # after the augment a-
         self.assertEqual(best('periandō', 'late'), 'PER')
+        # nasal infixion: KAB > kambā is found, though √KAM, whose whole form begins the word, ranks first
+        self.assertIn('KAB', [c[3] for c in roots.candidates(self.table, 'kambā', 'late', 4)])
+
+    def test_root_seeds_the_primitive(self):
+        # Q. hyarma: the backward search gives ✶j̊arma; ᴹ√KHYAR says hy- was kʰj-
+        from shared import reconstruct as R
+        ctx = R.Context(self.data)
+        e = self.entry('quenya', 'q', 'hyarma')
+        vs = R.reconstruct(ctx, ('quenya', 'late', 2), ('quenya', 'late', 0), word=e['id'])
+        self.assertEqual(vs[0]['form'], 'kʰjarma')
+        self.assertIn('root', vs[0]['marks'])
         # each conception has its own roots: ᴱ√MBARA for the early one
         self.assertEqual([c[2] for c in roots.candidates(self.table, 'ambara', 'early', 3)], ['ep'] * 3)
         self.assertEqual(roots.candidates(self.table, 'aeiou', 'late', 3), [])          # no consonants, no root

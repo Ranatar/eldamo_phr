@@ -33,6 +33,7 @@ from . import backform as BF
 from .compound import origins
 from .interpreter import comparable, is_vowel, join, phonemes
 from .orthography import to_phonetic
+from .roots import root_phonetic
 from .sequencer import Sequencer, _replays
 
 LIMIT = 8
@@ -42,7 +43,7 @@ ROOT_BONUS = 2.0
 # primitives of words with stems (reports/reconstruction.md, «Основы слов»), so the weight is 1
 STEM_BONUS = 1.0
 STEM_TRIAL = 10.0
-NO_HINTS = {'roots': (), 'stems': ()}
+NO_HINTS = {'roots': (), 'stems': (), 'starts': ()}
 PHONOTACTIC_PENALTY = 0.2
 SEARCH = {'beam': 150, 'options': 6, 'min_share': 0.02}   # wider than for word formation: no Eldamo primitive to fall back on
 WIDE = {'beam': 300, 'options': 10, 'min_share': 0.005}   # when SEARCH finds nothing: rarer correspondences (S. -b < -kwā)
@@ -113,6 +114,11 @@ def _classes(form: str) -> list:
         if cls is not None:
             out.append(cls)
     return out
+
+
+def _class_of(p: str):
+    b = p[0]
+    return next((i for i, c in enumerate(EQUIV) if b in c), b)
 
 
 def hint_weight(r: dict) -> float:
@@ -306,6 +312,38 @@ class Context:
         rules = seq.sequence(era, src + 1 if src > 0 else 0, dst)
         return [(v['form'], v['trace']) for v in seq.run(form, rules)]
 
+    seed_roots = True
+
+    def _root_seeds(self, seq, add, branch, era, form, src, starts, found):
+        """Primitive forms that begin with the word's root: the root (without a final vowel)
+        put in place of the beginning of a found candidate, up to the consonant of the root's
+        last consonant's class (Q. hyarma: ✶j̊arma -> √KHYAR + -ma = ✶kʰjarma). Kept only when
+        the laws lead from it to the form; the beginning of a form is where the backward search
+        guesses most (hy- < kʰj- or sj-), and the root says which it was."""
+        target = comparable(form)
+        for rp in starts[:3]:
+            rph = phonemes(rp)
+            while rph and is_vowel(rph[-1]):
+                rph = rph[:-1]
+            last = next((p for p in reversed(rph) if not is_vowel(p)), None)
+            if last is None:
+                continue
+            cls = _class_of(last)
+            for r in found[:4]:
+                cph = phonemes(comparable(r['form']))
+                j = next((i for i, p in enumerate(cph) if not is_vowel(p) and _class_of(p) == cls), None)
+                if j is None:
+                    continue
+                f0 = r['form']
+                # a stem or an affix keeps its hyphens (fara- < ✶spara-)
+                seed = ('-' if f0.startswith('-') else '') + ''.join(rph + cph[j + 1:]) + ('-' if f0.endswith('-') and len(f0) > 1 else '')
+                if comparable(seed) == comparable(f0):
+                    continue
+                for f, trace in self.forward(branch, era, seed, 0, src)[:4]:
+                    if comparable(f) == target:
+                        add(seed, r['p'], trace, 'root ' + rp)
+                        break
+
     def stem_match(self, branch: str, era: str, form: str, src: int, dst: int, stems) -> bool:
         """The form at stage src, run to stage dst as a stem (not the end of a word), gives one
         of the word's stems, with or without its last vowel (Ambar, ambar- < ✶ambara)."""
@@ -337,6 +375,8 @@ class Context:
             self._backward(seq, add, branch, era, form, src, dst, first, exclude, limit, search)
             if out:
                 break
+        if dst == 0 and hints.get('starts') and self.seed_roots and out:
+            self._root_seeds(seq, add, branch, era, form, src, hints['starts'], sorted(out.values(), key=lambda r: -r['p']))
         for r in out.values():
             r['stem'] = bool(stems) and self.stem_match(branch, era, r['form'], dst, src, stems)
         ranked = sorted(out.values(), key=lambda r: -(r['p'] * hint_weight(r)))
@@ -389,6 +429,8 @@ def _hints(ctx: Context, branch: str, entry: dict | None, era: str, stage: int) 
     if entry is None:
         return NO_HINTS
     roots = [r['form'] for r in entry.get('roots', ())]
+    # the roots the word begins with: its own, or those of its first element
+    starts = [root_phonetic(r['form']) for r in entry.get('roots', ()) if r.get('part', 0) == 0]
     stems = []
     f = (entry.get('form') or '').strip()
     if entry.get('stems') and entry['lang'] == ctx.code(branch, era, stage) and not f.endswith('-') and not f.startswith('-'):
@@ -396,7 +438,7 @@ def _hints(ctx: Context, branch: str, entry: dict | None, era: str, stage: int) 
             x = re.sub(r'[*()]', '', x).strip().rstrip('-')
             if x:
                 stems.append(''.join(phonemes(comparable(to_phonetic(x, branch).strip()).strip('-'))))
-    return {'roots': roots, 'stems': list(dict.fromkeys(stems))}
+    return {'roots': roots, 'stems': list(dict.fromkeys(stems)), 'starts': [x for x in dict.fromkeys(starts) if x]}
 
 
 def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, word: str | None = None,
@@ -481,7 +523,8 @@ def _within(ctx, add, branch, era, form, ss, ds, hints, exclude, base_score=1.0,
         top = max((r['p'] * hint_weight(r) for r in found), default=1.0) or 1.0
         for r in found:
             p = base_score * 0.9 * r['p'] * hint_weight(r) / top
-            add(r['form'], p, route_prefix + 'назад: ' + ('напрямую' if r['via'] == 'direct' else 'через праформу'),
+            how = 'напрямую' if r['via'] == 'direct' else 'по корню' if r['via'].startswith('root') else 'через праформу'
+            add(r['form'], p, route_prefix + 'назад: ' + how,
                 list(marks) + ['reconstructed'] + (['root'] if r['root'] else []) + (['stem'] if r['stem'] else []),
                 r['trace'])
 
@@ -648,6 +691,16 @@ def _evaluation_jobs(ctx: Context, sample: int) -> tuple[list, dict]:
         fixed[path] = {'words': len(words)}
         for e in rnd.sample(words, min(sample, len(words))):
             jobs.append((path, 'stem', (b, code, e['id'])))
+    # E: roots -- words with a root and an Eldamo primitive, backward to the primitive with and
+    # without primitive forms begun by the root (Context._root_seeds)
+    for b, code in (('quenya', 'q'), ('quenya', 'mq'), ('sindarin', 's'), ('sindarin', 'n')):
+        era = ctx.langs(b)[code]['era']
+        words = sorted((e for e in ctx.lexicon[b].values() if e['lang'] == code and not e.get('neo')
+                        and e['speech'] != 'root' and e.get('roots') and origins(e, era)), key=lambda e: e['id'])
+        path = (f'root seeds {code}',)
+        fixed[path] = {'words': len(words)}
+        for e in rnd.sample(words, min(sample, len(words))):
+            jobs.append((path, 'seed', (b, code, e['id'])))
     return jobs, fixed
 
 
@@ -702,6 +755,24 @@ def _evaluation_case(ctx: Context, kind: str, params: tuple) -> dict:
         st['gold_stem'] += any(ctx.stem_match(b, era, o, 0, stage, hints['stems']) for o in origins(e, era))
         for key, ranked in (('plain', plain), ('stem', trial)):
             got = [comparable(r['form']).strip('-') for r in ranked]
+            st[key + '_first'] += bool(got) and got[0] in want
+            st[key + '_any'] += any(g in want for g in got)
+    elif kind == 'seed':
+        b, code, wid = params
+        e = ctx.lexicon[b][wid]
+        l = ctx.langs(b)[code]
+        era, stage = l['era'], l['stage']
+        hints = _hints(ctx, b, e, era, stage)
+        want = {comparable(o).strip('-') for o in origins(e, era)}
+        form = to_phonetic(e['form'], b).strip()
+        st['cases'] += 1
+        for key, seed in (('plain', False), ('seed', True)):
+            ctx.seed_roots = seed
+            try:
+                got = [comparable(r['form']).strip('-') for r in
+                       ctx.backward(b, era, form, stage, 0, hints, frozenset(e.get('derivations', ())))]
+            finally:
+                ctx.seed_roots = True
             st[key + '_first'] += bool(got) and got[0] in want
             st[key + '_any'] += any(g in want for g in got)
     return dict(st)

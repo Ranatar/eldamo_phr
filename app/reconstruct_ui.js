@@ -103,7 +103,7 @@ function run() {
   const rootsLine = v => {
     if (ds !== 0) return '';
     const rs = QU.rootGuess(db, de, v.form);
-    return rs.length ? `<div class="small">${T('recon.roots')} ${rs.map(QU.rootLink).join(' ')}</div>` : '';
+    return rs.length ? `<div class="small">${T('recon.roots')} ${rs.map(QU.rootLink).join('/')}</div>` : '';
   };
   out.innerHTML = head + '<ol class="wf-variants">' + vs.map((v, k) => {
     const sh = QU.shown(v.form, db, de, ds);

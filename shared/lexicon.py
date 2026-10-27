@@ -65,6 +65,22 @@ class Words:
         ids = self.by_key.get((lang, form)) or self.by_key.get((lang, bare(form))) or []
         return list(dict.fromkeys(ids))
 
+    def by_source(self, source: str | None) -> list:
+        """Word pages with a reference to this exact place of a source (VT42/10.1912)."""
+        if getattr(self, '_sources', None) is None:
+            self._sources = defaultdict(list)
+            for pid, w in self.by_id.items():
+                for ref in w.findall('ref'):
+                    if ref.get('source') and _live(ref):
+                        self._sources[ref.get('source')].append((pid, ref.get('v')))
+        return self._sources.get(source, []) if source else []
+
+    def find_loose_any(self, form: str | None) -> list:
+        """Word pages of any language with this form (loose key)."""
+        self.find_loose(None, form)
+        key = _loose(form)
+        return list(dict.fromkeys(i for (lang, k), ids in self._loose.items() if k == key for i in ids))
+
     def find_loose(self, lang: str | None, form: str | None) -> list:
         """By a loose key (_loose): for forms written in a source's spelling."""
         if getattr(self, '_loose', None) is None:
@@ -157,6 +173,32 @@ def _ref_link(W: Words, lang, form, tag=None) -> dict:
     return rec
 
 
+def _ref_cognates(W: Words, pid: str, w) -> list:
+    """Cognates Eldamo records inside a <ref> of the word (most of them: 5021 against
+    1479 on the page itself). They carry no language but the source place of the
+    cognate, and the cognate word has a reference to the same place: Q. erinqua
+    <cognate v="ereb" source="VT42/10.1912"/>, S. ereb <ref v="ereb" source="VT42/10.1912">."""
+    out, seen = [], set()
+    for ref in w.findall('ref'):
+        if not _live(ref):
+            continue
+        for c in ref.findall('cognate'):
+            if not _live(c):
+                continue
+            hits = [i for i, v in W.by_source(c.get('source')) if i != pid and same_form(c.get('v'), v)]
+            if not hits:
+                # no reference at that place: a word of that form, if there is only one
+                hits = [i for i in W.find_loose_any(c.get('v')) if i != pid]
+                if len(hits) != 1:
+                    continue
+            for i in dict.fromkeys(hits):
+                if i not in seen and _live(W.by_id[i]):
+                    seen.add(i)
+                    x = W.by_id[i]
+                    out.append({'lang': x.get('l'), 'form': x.get('v'), 'id': i, 'from_ref': True})
+    return out
+
+
 def _ref_elements(w) -> list:
     """Elements Eldamo records only inside a <ref> (the word page has none of
     its own): from the ref with the word's own form, else the first ref with elements."""
@@ -208,6 +250,10 @@ def build_lexicon(branch: str, derivations: list) -> list:
             found = [x for x in (_link(W, el.get('l'), el.get('v')) for el in w.findall(tag)) if x.get('id')]
             if found:
                 links[tag] = [{'lang': x['lang'], 'form': x['form'], 'id': x['id']} for x in found]
+        ref_cognates = _ref_cognates(W, pid, w)
+        if ref_cognates:
+            have = {x['id'] for x in links.get('cognate', ())}
+            links.setdefault('cognate', []).extend(x for x in ref_cognates if x['id'] not in have)
         if links:
             entry['links'] = links
         parents = [_link(W, d.get('l'), d.get('v')) for d in w.findall('deriv') if _live(d)]

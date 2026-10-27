@@ -63,13 +63,20 @@ class Reconstruction(unittest.TestCase):
         self.assertTrue(R.root_match('mbara', ['MBAR']))
         self.assertFalse(R.root_match('dindē', ['LIN²']))
 
-    def test_near_cognates(self):
-        # Q. erinqua < ✶eriŋkwā and S. ereb < ✶erikwā: no Eldamo link, a primitive one sound apart, 'single, alone'
-        q = self.forms(('quenya', 'late', 2), ('sindarin', 'late', 3), word='700840261')
-        self.assertEqual(q[0], 'ereb')
+    def test_cognates_inside_references(self):
+        # Q. erinqua: <cognate v="ereb" source="VT42/10.1912"/> inside a <ref>; S. ereb has a ref at that place
+        e = self.ctx.lexicon['quenya']['700840261']
+        self.assertIn('3983103205', [x['id'] for x in e['links']['cognate']])
+        q = R.reconstruct(self.ctx, ('quenya', 'late', 2), ('sindarin', 'late', 3), word='700840261')
+        self.assertEqual((comparable(q[0]['form']), q[0]['marks']), ('ereb', ['link']))
         s = R.reconstruct(self.ctx, ('sindarin', 'late', 3), ('quenya', 'late', 2), word='3983103205')
-        self.assertEqual(comparable(s[0]['form']), comparable('eriŋkwa'))
-        self.assertIn('near-cognate', s[0]['marks'])
+        self.assertEqual(comparable(s[0]['form']), comparable('eriŋkwa'))     # the link read backwards
+
+    def test_near_cognates(self):
+        # without the link: S. ereb < ✶erikwā is one sound from ✶eriŋkwā and means 'single, alone' too
+        q = R.reconstruct(self.ctx, ('quenya', 'late', 2), ('sindarin', 'late', 3), word='700840261', use_links=False)
+        self.assertEqual(comparable(q[0]['form']), 'ereb')
+        self.assertIn('near-cognate', q[0]['marks'])
 
     def test_cognate_link_first(self):
         # ᴹQ. fara- 'to hunt' ~ N. fara-: Eldamo's <cognate>

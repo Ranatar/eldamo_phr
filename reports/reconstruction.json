@@ -83,39 +83,39 @@
  },
  "cognate links q -> s": {
   "cases": 30,
-  "word_first": 8,
+  "word_first": 12,
   "word_any": 12,
   "form_first": 5,
-  "form_any": 12,
-  "pairs": 53
+  "form_any": 7,
+  "pairs": 603
  },
  "cognate links s -> q": {
   "cases": 30,
-  "word_first": 8,
-  "word_any": 10,
-  "form_first": 2,
-  "form_any": 9,
-  "pairs": 79
+  "word_first": 12,
+  "word_any": 13,
+  "form_first": 5,
+  "form_any": 12,
+  "pairs": 316
  },
  "conceptions mq -> q": {
   "cases": 30,
   "identity": 19,
   "first": 19,
-  "any": 19,
+  "any": 20,
   "pairs": 939
  },
  "conceptions n -> s": {
   "cases": 30,
-  "identity": 14,
-  "first": 14,
-  "any": 15,
+  "identity": 18,
+  "first": 18,
+  "any": 18,
   "pairs": 574
  },
  "conceptions eq -> q": {
   "cases": 30,
-  "identity": 5,
-  "first": 5,
-  "any": 5,
+  "identity": 10,
+  "first": 9,
+  "any": 10,
   "pairs": 1456
  },
  "conceptions g -> s": {

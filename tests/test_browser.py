@@ -203,8 +203,8 @@ class Browser(unittest.TestCase):
         page.wait_for_selector('.pcell[data-cell="sindarin/late/3"] .sym')
         page.click('.pcell[data-cell="sindarin/late/3"]')
         main = page.inner_text('#rc-output .wf-variant.main')
-        self.assertIn('dail', main)                     # S. dail, the same primitive ✶delja
-        self.assertIn('близкой праформой', main)
+        self.assertIn('dail', main)                     # S. dail: Eldamo's cognate, inside a reference
+        self.assertIn('связь Eldamo', main)
         self.assertIn('dst=sindarin', page.evaluate('location.hash'))
         # rules are grouped by stage and open in the reference
         page.click('#rc-output details.stages summary >> nth=0')

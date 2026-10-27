@@ -188,6 +188,7 @@ reports/           audit.md, audit.json — охват, проверка шаг�
                    reconstruction.md, reconstruction.json — реконструкция между периодами
 tests/             поведение интерпретатора, инварианты против XML, граф, выходные файлы, браузер
 docs/              словотворчество (word-formation.md) и его план (word-formation-plan.md),
+                   как Eldamo читает свою базу (eldamo-xquery.md),
                    реконструкция между периодами (reconstruction.md) и её план
                    (period-reconstruction-plan.md), план переделки интерфейса (ui-redesign-plan.md),
                    переход с HTML-конвейера (MIGRATION.md), наследие прежних этапов (legacy/),

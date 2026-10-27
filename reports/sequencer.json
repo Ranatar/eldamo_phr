@@ -27,9 +27,9 @@
    "first": 30
   },
   "affixes": {
-   "cases": 445,
-   "main": 276,
-   "any": 335,
+   "cases": 482,
+   "main": 303,
+   "any": 365,
    "results": [
     {
      "word": "3341961537",
@@ -64,6 +64,24 @@
      "kind": "suffix",
      "target": "ailinel",
      "main": "ailiniel",
+     "ok_main": false,
+     "ok_any": true
+    },
+    {
+     "word": "1084314337",
+     "form": "airon",
+     "kind": "suffix",
+     "target": "airon",
+     "main": "aireon",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
+     "word": "206012687",
+     "form": "airëa",
+     "kind": "suffix",
+     "target": "airea",
+     "main": "airia",
      "ok_main": false,
      "ok_any": true
     },
@@ -201,6 +219,15 @@
      "main": "alja",
      "ok_main": false,
      "ok_any": false
+    },
+    {
+     "word": "415262653",
+     "form": "aleldarin",
+     "kind": "prefix",
+     "target": "aleldarin",
+     "main": "aleldarin",
+     "ok_main": true,
+     "ok_any": true
     },
     {
      "word": "975983671",
@@ -419,6 +446,15 @@
      "ok_any": false
     },
     {
+     "word": "3162266041",
+     "form": "Aracáno",
+     "kind": "prefix",
+     "target": "arakāno",
+     "main": "arkāno",
+     "ok_main": false,
+     "ok_any": true
+    },
+    {
      "word": "581344607",
      "form": "Arafinwë",
      "kind": "prefix",
@@ -599,6 +635,15 @@
      "ok_any": true
     },
     {
+     "word": "3046291107",
+     "form": "ataformaitë",
+     "kind": "prefix",
+     "target": "ataformaite",
+     "main": "ataformaite",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "140180655",
      "form": "atamaitë",
      "kind": "prefix",
@@ -660,6 +705,15 @@
      "main": "atarenja",
      "ok_main": false,
      "ok_any": false
+    },
+    {
+     "word": "3491124211",
+     "form": "aucir-",
+     "kind": "prefix",
+     "target": "aukir",
+     "main": "aukir",
+     "ok_main": true,
+     "ok_any": true
     },
     {
      "word": "453608467",
@@ -833,6 +887,15 @@
      "ok_any": true
     },
     {
+     "word": "3325365161",
+     "form": "Carnistir",
+     "kind": "suffix",
+     "target": "karnistir",
+     "main": "karnistir",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "1727486629",
      "form": "carpassë",
      "kind": "suffix",
@@ -950,13 +1013,13 @@
      "ok_any": true
     },
     {
-     "word": "1614948635",
-     "form": "Cormarë",
+     "word": "1127362241",
+     "form": "coloitë",
      "kind": "suffix",
-     "target": "kormare",
-     "main": "kormare",
-     "ok_main": true,
-     "ok_any": true
+     "target": "koloite",
+     "main": "koluite",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "697388925",
@@ -966,6 +1029,15 @@
      "main": "kurumo",
      "ok_main": true,
      "ok_any": true
+    },
+    {
+     "word": "342660737",
+     "form": "cuvoitë",
+     "kind": "suffix",
+     "target": "kuvoite",
+     "main": "kuvite",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "399232959",
@@ -1265,6 +1337,15 @@
      "ok_any": true
     },
     {
+     "word": "2948886743",
+     "form": "eteminya",
+     "kind": "prefix",
+     "target": "eteminja",
+     "main": "etminja",
+     "ok_main": false,
+     "ok_any": true
+    },
+    {
      "word": "1144268691",
      "form": "eterúna-",
      "kind": "prefix",
@@ -1272,6 +1353,15 @@
      "main": "etrūna",
      "ok_main": false,
      "ok_any": true
+    },
+    {
+     "word": "3903335687",
+     "form": "ethenta-",
+     "kind": "prefix",
+     "target": "eθenta",
+     "main": "etehenta",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "1591644641",
@@ -1344,6 +1434,15 @@
      "main": "falassetur",
      "ok_main": false,
      "ok_any": false
+    },
+    {
+     "word": "1625057949",
+     "form": "fanyarë",
+     "kind": "suffix",
+     "target": "fanjare",
+     "main": "fanjare",
+     "ok_main": true,
+     "ok_any": true
     },
     {
      "word": "2098180505",
@@ -1472,6 +1571,15 @@
      "ok_any": true
     },
     {
+     "word": "2953723553",
+     "form": "hanquenta",
+     "kind": "prefix",
+     "target": "haŋkwenta",
+     "main": "haŋkwenta",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "693805567",
      "form": "hastaina",
      "kind": "suffix",
@@ -1580,11 +1688,29 @@
      "ok_any": true
     },
     {
+     "word": "296372249",
+     "form": "hérincë",
+     "kind": "suffix",
+     "target": "hēriŋke",
+     "main": "heriŋke",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "173632675",
      "form": "hísië",
      "kind": "suffix",
      "target": "hīsie",
      "main": "hīsie",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "1945083709",
+     "form": "hócir-",
+     "kind": "prefix",
+     "target": "hōkir",
+     "main": "hōkir",
      "ok_main": true,
      "ok_any": true
     },
@@ -1641,6 +1767,24 @@
      "main": "imlje",
      "ok_main": false,
      "ok_any": false
+    },
+    {
+     "word": "4060576159",
+     "form": "imma",
+     "kind": "prefix",
+     "target": "imma",
+     "main": "imma",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "2697624467",
+     "form": "immo",
+     "kind": "prefix",
+     "target": "immo",
+     "main": "immo",
+     "ok_main": true,
+     "ok_any": true
     },
     {
      "word": "3162943039",
@@ -1823,6 +1967,24 @@
      "ok_any": true
     },
     {
+     "word": "2258350171",
+     "form": "lacarina",
+     "kind": "prefix",
+     "target": "lakarina",
+     "main": "lakarina",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "2342946443",
+     "form": "lacenítë",
+     "kind": "prefix",
+     "target": "lakenīte",
+     "main": "lakenīte",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "3577473609",
      "form": "lacárima",
      "kind": "prefix",
@@ -1928,6 +2090,15 @@
      "target": "lempea",
      "main": "lempea",
      "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "2156257825",
+     "form": "lilómëa",
+     "kind": "prefix",
+     "target": "lilōmea",
+     "main": "linlōmea",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -2106,9 +2277,9 @@
      "form": "maitë",
      "kind": "suffix",
      "target": "maite",
-     "main": "māite",
-     "ok_main": false,
-     "ok_any": false
+     "main": "maite",
+     "ok_main": true,
+     "ok_any": true
     },
     {
      "word": "1153011187",
@@ -2116,6 +2287,15 @@
      "kind": "suffix",
      "target": "malantur",
      "main": "malinatur",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
+     "word": "4047578469",
+     "form": "manaitë",
+     "kind": "suffix",
+     "target": "manaite",
+     "main": "mānaite",
      "ok_main": false,
      "ok_any": false
     },
@@ -2327,6 +2507,15 @@
      "ok_any": true
     },
     {
+     "word": "243967261",
+     "form": "naitë",
+     "kind": "suffix",
+     "target": "naite",
+     "main": "naite",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "3073514489",
      "form": "nancar-",
      "kind": "prefix",
@@ -2363,11 +2552,29 @@
      "ok_any": false
     },
     {
+     "word": "1179935417",
+     "form": "napan-",
+     "kind": "prefix",
+     "target": "napan",
+     "main": "napan",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "836551551",
      "form": "Narya",
      "kind": "suffix",
      "target": "narja",
      "main": "nārja",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
+     "word": "3950512525",
+     "form": "nassë",
+     "kind": "suffix",
+     "target": "nasse",
+     "main": "nāsse",
      "ok_main": false,
      "ok_any": false
     },
@@ -2669,12 +2876,30 @@
      "ok_any": true
     },
     {
+     "word": "288356129",
+     "form": "nútaite",
+     "kind": "suffix",
+     "target": "nūtaite",
+     "main": "nūtaite",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "3932030087",
      "form": "nútima",
      "kind": "suffix",
      "target": "nūtima",
      "main": "nūtaima",
      "ok_main": false,
+     "ok_any": true
+    },
+    {
+     "word": "3537504935",
+     "form": "ohlon",
+     "kind": "prefix",
+     "target": "ol̥on",
+     "main": "ol̥on",
+     "ok_main": true,
      "ok_any": true
     },
     {
@@ -2831,6 +3056,15 @@
      "ok_any": true
     },
     {
+     "word": "749594619",
+     "form": "orróna",
+     "kind": "prefix",
+     "target": "orrōna",
+     "main": "rorōna",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "29466041",
      "form": "otsëa",
      "kind": "suffix",
@@ -2894,6 +3128,15 @@
      "ok_any": false
     },
     {
+     "word": "3970856095",
+     "form": "quelië",
+     "kind": "suffix",
+     "target": "kwelie",
+     "main": "kwelie",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "2960856767",
      "form": "quellë",
      "kind": "suffix",
@@ -2926,6 +3169,15 @@
      "kind": "suffix",
      "target": "kwentale",
      "main": "kwentale",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "3731320607",
+     "form": "quentasta",
+     "kind": "suffix",
+     "target": "kwentasta",
+     "main": "kwentasta",
      "ok_main": true,
      "ok_any": true
     },
@@ -3043,6 +3295,15 @@
      "kind": "suffix",
      "target": "rūkima",
      "main": "rūkima",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "1767156195",
+     "form": "sanar",
+     "kind": "suffix",
+     "target": "sanar",
+     "main": "sanar",
      "ok_main": true,
      "ok_any": true
     },
@@ -3191,6 +3452,15 @@
      "ok_any": true
     },
     {
+     "word": "2778608771",
+     "form": "taitë",
+     "kind": "suffix",
+     "target": "taite",
+     "main": "taite",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "3257448755",
      "form": "tallë",
      "kind": "suffix",
@@ -3330,8 +3600,8 @@
      "form": "tengwesta",
      "kind": "suffix",
      "target": "teŋgwesta",
-     "main": "teŋgwestar",
-     "ok_main": false,
+     "main": "teŋgwesta",
+     "ok_main": true,
      "ok_any": true
     },
     {
@@ -3340,6 +3610,15 @@
      "kind": "suffix",
      "target": "teŋgwestie",
      "main": "teŋgwestie",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "2330083291",
+     "form": "tengwië",
+     "kind": "suffix",
+     "target": "teŋgwie",
+     "main": "teŋgwie",
      "ok_main": true,
      "ok_any": true
     },
@@ -3376,6 +3655,15 @@
      "kind": "suffix",
      "target": "tintalle",
      "main": "tintal",
+     "ok_main": false,
+     "ok_any": true
+    },
+    {
+     "word": "2763999157",
+     "form": "tirila",
+     "kind": "suffix",
+     "target": "tirila",
+     "main": "tirla",
      "ok_main": false,
      "ok_any": true
     },
@@ -3511,6 +3799,15 @@
      "kind": "prefix",
      "target": "urukārima",
      "main": "urukārima",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "772048115",
+     "form": "Valandil",
+     "kind": "suffix",
+     "target": "valandil",
+     "main": "valandil",
      "ok_main": true,
      "ok_any": true
     },
@@ -3708,7 +4005,7 @@
      "form": "yuluitë",
      "kind": "suffix",
      "target": "juluite",
-     "main": "julite",
+     "main": "juloite",
      "ok_main": false,
      "ok_any": false
     },
@@ -3785,6 +4082,15 @@
      "ok_any": true
     },
     {
+     "word": "1232107373",
+     "form": "írima",
+     "kind": "suffix",
+     "target": "īrima",
+     "main": "īrima",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "1672777773",
      "form": "Írimon",
      "kind": "suffix",
@@ -3816,8 +4122,8 @@
      "form": "ólamaitë",
      "kind": "suffix",
      "target": "ōlamaite",
-     "main": "ōlamite",
-     "ok_main": false,
+     "main": "ōlamaite",
+     "ok_main": true,
      "ok_any": true
     },
     {
@@ -3839,6 +4145,15 @@
      "ok_any": true
     },
     {
+     "word": "3267174599",
+     "form": "úcalima",
+     "kind": "prefix",
+     "target": "ūkalima",
+     "main": "ūkalima",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "1772134283",
      "form": "úcar-",
      "kind": "prefix",
@@ -3854,6 +4169,15 @@
      "target": "ūkarindo",
      "main": "ūkarendo",
      "ok_main": false,
+     "ok_any": true
+    },
+    {
+     "word": "2690492563",
+     "form": "úcarnë",
+     "kind": "prefix",
+     "target": "ūkarne",
+     "main": "ūkarne",
+     "ok_main": true,
      "ok_any": true
     },
     {
@@ -3934,6 +4258,15 @@
      "kind": "prefix",
      "target": "ūnexta",
      "main": "ūnexta",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "3813607581",
+     "form": "Úner",
+     "kind": "prefix",
+     "target": "ūner",
+     "main": "ūner",
      "ok_main": true,
      "ok_any": true
     },
@@ -4038,20 +4371,20 @@
     }
    ],
    "suffix": {
-    "cases": 327,
-    "main": 213,
-    "any": 259
+    "cases": 345,
+    "main": 226,
+    "any": 272
    },
    "prefix": {
-    "cases": 118,
-    "main": 63,
-    "any": 76
+    "cases": 137,
+    "main": 77,
+    "any": 93
    }
   },
   "latest_compounds": {
-   "cases": 423,
-   "main": 196,
-   "any": 281,
+   "cases": 459,
+   "main": 204,
+   "any": 305,
    "results": [
     {
      "word": "2845564209",
@@ -4201,8 +4534,8 @@
      "word": "1810489943",
      "form": "ambela",
      "target": "ambela",
-     "main": "ambela",
-     "ok_main": true,
+     "main": "ambeli",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -4313,9 +4646,9 @@
      "word": "3423763397",
      "form": "Annatar",
      "target": "annatar",
-     "main": "annatar",
-     "ok_main": true,
-     "ok_any": true
+     "main": "anwatar",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "1764026529",
@@ -4374,12 +4707,28 @@
      "ok_any": true
     },
     {
+     "word": "1548385353",
+     "form": "Ardaranyë",
+     "target": "ardaranje",
+     "main": "ardaranie",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
+     "word": "3275918159",
+     "form": "arta¹",
+     "target": "arta",
+     "main": "arta",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "2366938049",
      "form": "Artafindë",
      "target": "artafinde",
      "main": "aratafinde",
      "ok_main": false,
-     "ok_any": false
+     "ok_any": true
     },
     {
      "word": "1688268427",
@@ -4387,7 +4736,7 @@
      "target": "artaher",
      "main": "arataher",
      "ok_main": false,
-     "ok_any": false
+     "ok_any": true
     },
     {
      "word": "856718477",
@@ -4395,7 +4744,7 @@
      "target": "artamir",
      "main": "aratamīre",
      "ok_main": false,
-     "ok_any": false
+     "ok_any": true
     },
     {
      "word": "553887395",
@@ -4403,7 +4752,7 @@
      "target": "artaŋga",
      "main": "arataŋga",
      "ok_main": false,
-     "ok_any": false
+     "ok_any": true
     },
     {
      "word": "3062254959",
@@ -4411,7 +4760,7 @@
      "target": "artanis",
      "main": "aratanis",
      "ok_main": false,
-     "ok_any": false
+     "ok_any": true
     },
     {
      "word": "1045550461",
@@ -4468,6 +4817,22 @@
      "main": "tatjamar",
      "ok_main": false,
      "ok_any": false
+    },
+    {
+     "word": "1141074439",
+     "form": "Atyarussa",
+     "target": "atjarussa",
+     "main": "tatjarussa",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
+     "word": "2556902613",
+     "form": "Aulëonnar",
+     "target": "auleonnar",
+     "main": "auleonna",
+     "ok_main": false,
+     "ok_any": true
     },
     {
      "word": "3289261925",
@@ -4587,7 +4952,15 @@
      "target": "kantil",
      "main": "kantatille",
      "ok_main": false,
-     "ok_any": false
+     "ok_any": true
+    },
+    {
+     "word": "4211208941",
+     "form": "Carma-cundo",
+     "target": "karmakundo",
+     "main": "karmakundo",
+     "ok_main": true,
+     "ok_any": true
     },
     {
      "word": "153215295",
@@ -4612,6 +4985,14 @@
      "main": "kasarrondo",
      "ok_main": true,
      "ok_any": true
+    },
+    {
+     "word": "1630933885",
+     "form": "cenai",
+     "target": "kenai",
+     "main": "kēnai",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "770735627",
@@ -4670,6 +5051,14 @@
      "ok_any": true
     },
     {
+     "word": "3363054159",
+     "form": "ciryatan",
+     "target": "kirjatan",
+     "main": "kirjatamo",
+     "ok_main": false,
+     "ok_any": true
+    },
+    {
      "word": "2667244425",
      "form": "colbanavië",
      "target": "kolbanavie",
@@ -4686,12 +5075,28 @@
      "ok_any": true
     },
     {
+     "word": "1614948635",
+     "form": "Cormarë",
+     "target": "kormare",
+     "main": "kormare",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "1324300201",
      "form": "Corollairë",
      "target": "korollaire",
      "main": "llaire",
      "ok_main": false,
      "ok_any": false
+    },
+    {
+     "word": "2173201305",
+     "form": "Cuivienyarna",
+     "target": "kuivienjarna",
+     "main": "kuivienjarna",
+     "ok_main": true,
+     "ok_any": true
     },
     {
      "word": "3051814975",
@@ -4889,7 +5294,7 @@
      "word": "3157387873",
      "form": "Elessar",
      "target": "elessar",
-     "main": "elensar",
+     "main": "elesar",
      "ok_main": false,
      "ok_any": false
     },
@@ -4913,7 +5318,7 @@
      "word": "640475817",
      "form": "emerwen",
      "target": "emerwen",
-     "main": "emervende",
+     "main": "emerwende",
      "ok_main": false,
      "ok_any": true
     },
@@ -4993,9 +5398,9 @@
      "word": "2471061125",
      "form": "Eruanna",
      "target": "eruanna",
-     "main": "eruanna",
-     "ok_main": true,
-     "ok_any": true
+     "main": "eruanwa",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "3045345561",
@@ -5062,28 +5467,20 @@
      "ok_any": true
     },
     {
+     "word": "2160141019",
+     "form": "Essecarmë",
+     "target": "essekarme",
+     "main": "essekarme",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "1008864783",
      "form": "Essecilmë",
      "target": "essekilme",
      "main": "essekilme",
      "ok_main": true,
      "ok_any": true
-    },
-    {
-     "word": "920120461",
-     "form": "estat-",
-     "target": "estat",
-     "main": "etsat",
-     "ok_main": false,
-     "ok_any": false
-    },
-    {
-     "word": "3903335687",
-     "form": "ethenta-",
-     "target": "eθenta",
-     "main": "ethenta",
-     "ok_main": false,
-     "ok_any": false
     },
     {
      "word": "1515458015",
@@ -5145,7 +5542,7 @@
      "word": "2625531453",
      "form": "Eärwen",
      "target": "earwen",
-     "main": "earvende",
+     "main": "earwende",
      "ok_main": false,
      "ok_any": true
     },
@@ -5233,23 +5630,15 @@
      "word": "3335915949",
      "form": "Hallacar",
      "target": "hallakar",
-     "main": "hallakarma",
+     "main": "haldakarma",
      "ok_main": false,
-     "ok_any": true
+     "ok_any": false
     },
     {
      "word": "2823336653",
      "form": "Hallatan",
      "target": "hallatan",
-     "main": "hallatan",
-     "ok_main": true,
-     "ok_any": true
-    },
-    {
-     "word": "2953723553",
-     "form": "hanquenta",
-     "target": "haŋkwenta",
-     "main": "hankwenta",
+     "main": "haldatan",
      "ok_main": false,
      "ok_any": false
     },
@@ -5297,7 +5686,7 @@
      "word": "3301232385",
      "form": "Herumor",
      "target": "herumor",
-     "main": "herumore",
+     "main": "hērmore",
      "ok_main": false,
      "ok_any": true
     },
@@ -5305,8 +5694,8 @@
      "word": "517668579",
      "form": "Herunúmen",
      "target": "herunūmen",
-     "main": "herunūmen",
-     "ok_main": true,
+     "main": "hērnūmen",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -5316,6 +5705,14 @@
      "main": "hillonde",
      "ok_main": false,
      "ok_any": false
+    },
+    {
+     "word": "478013141",
+     "form": "hondoringa",
+     "target": "hondoriŋga",
+     "main": "hondoriŋga",
+     "ok_main": true,
+     "ok_any": true
     },
     {
      "word": "1203448499",
@@ -5366,11 +5763,19 @@
      "ok_any": false
     },
     {
+     "word": "2995328557",
+     "form": "hísilanya",
+     "target": "hīsilanja",
+     "main": "hīsilanja",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "722082651",
      "form": "Hísilómë",
      "target": "hīsilōme",
-     "main": "hīsiolōme",
-     "ok_main": false,
+     "main": "hīsilōme",
+     "ok_main": true,
      "ok_any": true
     },
     {
@@ -5380,6 +5785,14 @@
      "main": "ilmamen",
      "ok_main": false,
      "ok_any": true
+    },
+    {
+     "word": "1270155953",
+     "form": "iluisa",
+     "target": "iluisa",
+     "main": "iluista",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "1026618625",
@@ -5521,7 +5934,7 @@
      "word": "810633739",
      "form": "Lalwendë",
      "target": "lalwende",
-     "main": "lalavende",
+     "main": "lalawende",
      "ok_main": false,
      "ok_any": false
     },
@@ -5540,6 +5953,30 @@
      "main": "lambenjāre",
      "ok_main": true,
      "ok_any": true
+    },
+    {
+     "word": "3155105797",
+     "form": "lambetengwë",
+     "target": "lambeteŋgwe",
+     "main": "lambeteŋgwe",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "709623673",
+     "form": "lantalca",
+     "target": "lantalka",
+     "main": "landatalka",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
+     "word": "1861375587",
+     "form": "lasir",
+     "target": "lasir",
+     "main": "lāsira",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "794709445",
@@ -5561,7 +5998,7 @@
      "word": "454903107",
      "form": "lassewinta",
      "target": "lassewinta",
-     "main": "lassevinta",
+     "main": "laswinta",
      "ok_main": false,
      "ok_any": false
     },
@@ -5585,9 +6022,9 @@
      "word": "3123790563",
      "form": "Laurenandë",
      "target": "laurenande",
-     "main": "laurenande",
-     "ok_main": true,
-     "ok_any": true
+     "main": "laurenan",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "2584680719",
@@ -5610,6 +6047,14 @@
      "form": "Lindalambë",
      "target": "lindalambe",
      "main": "lindalambe",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "4150102015",
+     "form": "lindimaitar",
+     "target": "lindimaitar",
+     "main": "lindimaitar",
      "ok_main": true,
      "ok_any": true
     },
@@ -5662,6 +6107,14 @@
      "ok_any": true
     },
     {
+     "word": "1754148657",
+     "form": "Lámaquenta",
+     "target": "lāmakwenta",
+     "main": "lāmakwenta",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "2706118485",
      "form": "Lámasampanë",
      "target": "lāmasampane",
@@ -5694,19 +6147,27 @@
      "ok_any": true
     },
     {
+     "word": "381444979",
+     "form": "Lúnaturco",
+     "target": "lūnaturko",
+     "main": "lūnaturkor",
+     "ok_main": false,
+     "ok_any": true
+    },
+    {
      "word": "3600949199",
      "form": "Malinalda",
      "target": "malinalda",
-     "main": "malinalda",
-     "ok_main": true,
+     "main": "maldalda",
+     "ok_main": false,
      "ok_any": true
     },
     {
      "word": "4208668943",
      "form": "malinornë",
      "target": "malinorne",
-     "main": "malinorne",
-     "ok_main": true,
+     "main": "maldorne",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -5742,6 +6203,14 @@
      "ok_any": true
     },
     {
+     "word": "453667973",
+     "form": "Mardorunando",
+     "target": "mardorunando",
+     "main": "marrunando",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "317776703",
      "form": "Martamo",
      "target": "martamo",
@@ -5753,7 +6222,7 @@
      "word": "3839826717",
      "form": "massánië",
      "target": "massānie",
-     "main": "massanta",
+     "main": "massenta",
      "ok_main": false,
      "ok_any": false
     },
@@ -5761,7 +6230,7 @@
      "word": "3557802939",
      "form": "Melkorohíni",
      "target": "melkorohīni",
-     "main": "melkorkīna",
+     "main": "melkorhīna",
      "ok_main": false,
      "ok_any": false
     },
@@ -5865,9 +6334,9 @@
      "word": "3951012883",
      "form": "minasurië",
      "target": "minasurie",
-     "main": "minaθurie",
-     "ok_main": false,
-     "ok_any": false
+     "main": "minasurie",
+     "ok_main": true,
+     "ok_any": true
     },
     {
      "word": "3945644511",
@@ -5942,6 +6411,14 @@
      "ok_any": true
     },
     {
+     "word": "1860174839",
+     "form": "Morinehtar",
+     "target": "morinextar",
+     "main": "morinextar",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "1192764053",
      "form": "Moriquendi",
      "target": "morikwendi",
@@ -5993,8 +6470,8 @@
      "word": "470878163",
      "form": "Naltariel",
      "target": "naltariel",
-     "main": "naltariel",
-     "ok_main": true,
+     "main": "altariel",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -6078,6 +6555,14 @@
      "ok_any": false
     },
     {
+     "word": "2479228031",
+     "form": "Nerwen",
+     "target": "nerwen",
+     "main": "nerwende",
+     "ok_main": false,
+     "ok_any": true
+    },
+    {
      "word": "2550140975",
      "form": "nessamelda",
      "target": "nessamelda",
@@ -6090,6 +6575,14 @@
      "form": "Nindamos",
      "target": "nindamos",
      "main": "nendosto",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
+     "word": "1025067331",
+     "form": "Nindatalma",
+     "target": "nindatalma",
+     "main": "nendatalma",
      "ok_main": false,
      "ok_any": false
     },
@@ -6116,6 +6609,14 @@
      "main": "nitjafinwe",
      "ok_main": true,
      "ok_any": true
+    },
+    {
+     "word": "1139269903",
+     "form": "Noirinan",
+     "target": "noirinan",
+     "main": "noirenan",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "1121838047",
@@ -6174,6 +6675,14 @@
      "ok_any": true
     },
     {
+     "word": "3231360515",
+     "form": "nácë",
+     "target": "nāke",
+     "main": "nāke",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "592021215",
      "form": "náquet-",
      "target": "nākwet",
@@ -6198,6 +6707,22 @@
      "ok_any": true
     },
     {
+     "word": "1219474109",
+     "form": "náto",
+     "target": "nāto",
+     "main": "nātalo",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
+     "word": "1349111999",
+     "form": "náva-tengwë",
+     "target": "nāvateŋgwe",
+     "main": "nāvateŋgwe",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "521037545",
      "form": "Návarot",
      "target": "nāvarot",
@@ -6214,6 +6739,14 @@
      "ok_any": true
     },
     {
+     "word": "3856433259",
+     "form": "Nísimaldar",
+     "target": "nīsimaldar",
+     "main": "nīsimalda",
+     "ok_main": false,
+     "ok_any": true
+    },
+    {
      "word": "4162310409",
      "form": "Nísinen",
      "target": "nīsinen",
@@ -6222,10 +6755,18 @@
      "ok_any": false
     },
     {
+     "word": "2167821295",
+     "form": "nómessë",
+     "target": "nōmesse",
+     "main": "nōmesse",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "1105118389",
      "form": "núla²",
      "target": "nūla",
-     "main": "nula",
+     "main": "nuli",
      "ok_main": false,
      "ok_any": false
     },
@@ -6273,7 +6814,7 @@
      "word": "2695713125",
      "form": "o(to)sta",
      "target": "osta",
-     "main": "otsōsta",
+     "main": "oskōsta",
      "ok_main": false,
      "ok_any": true
     },
@@ -6297,8 +6838,8 @@
      "word": "3872859039",
      "form": "olla",
      "target": "olla",
-     "main": "olla",
-     "ok_main": true,
+     "main": "orla",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -6438,6 +6979,14 @@
      "ok_any": true
     },
     {
+     "word": "845789927",
+     "form": "palantir-",
+     "target": "palantir",
+     "main": "palantir",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "255004773",
      "form": "palantír",
      "target": "palantīr",
@@ -6502,10 +7051,18 @@
      "ok_any": true
     },
     {
+     "word": "2725102035",
+     "form": "peccuvo",
+     "target": "pekkuvo",
+     "main": "pekkokuvo",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "966567391",
      "form": "pella",
      "target": "pella",
-     "main": "pelola",
+     "main": "peloli",
      "ok_main": false,
      "ok_any": false
     },
@@ -6514,6 +7071,14 @@
      "form": "Pelóri",
      "target": "pelōri",
      "main": "peloro",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
+     "word": "1808443107",
+     "form": "pirucendëa",
+     "target": "pirukendea",
+     "main": "pirekende",
      "ok_main": false,
      "ok_any": false
     },
@@ -6530,6 +7095,14 @@
      "form": "Pityafinwë",
      "target": "pitjafinwe",
      "main": "pitjafinwe",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "2941356327",
+     "form": "pávatengwë",
+     "target": "pāvateŋgwe",
+     "main": "pāvateŋgwe",
      "ok_main": true,
      "ok_any": true
     },
@@ -6598,6 +7171,14 @@
      "ok_any": true
     },
     {
+     "word": "3435400895",
+     "form": "Rómestámo",
+     "target": "rōmestāmo",
+     "main": "rōmessāmo",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "4235987617",
      "form": "Rúatan",
      "target": "rūatan",
@@ -6649,15 +7230,15 @@
      "word": "2322404975",
      "form": "siar(ë)",
      "target": "siar",
-     "main": "siāre",
-     "ok_main": false,
+     "main": "siar",
+     "ok_main": true,
      "ok_any": true
     },
     {
      "word": "19674227",
      "form": "silumë",
      "target": "silume",
-     "main": "siolūme",
+     "main": "silūme",
      "ok_main": false,
      "ok_any": true
     },
@@ -6729,23 +7310,23 @@
      "word": "2632140737",
      "form": "Sorontar",
      "target": "sorontar",
-     "main": "sorntar",
+     "main": "sornotar",
      "ok_main": false,
-     "ok_any": true
+     "ok_any": false
     },
     {
      "word": "3059271399",
      "form": "Sorontil",
      "target": "sorontil",
-     "main": "sorntilde",
+     "main": "sornotilde",
      "ok_main": false,
-     "ok_any": true
+     "ok_any": false
     },
     {
      "word": "2258924175",
      "form": "Soronúmë",
      "target": "soronūme",
-     "main": "sornūmen",
+     "main": "sornonūmen",
      "ok_main": false,
      "ok_any": false
     },
@@ -6838,6 +7419,14 @@
      "ok_any": true
     },
     {
+     "word": "1037115073",
+     "form": "Tannacolli",
+     "target": "tannakolli",
+     "main": "tanwakolla",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "1434821693",
      "form": "tanomë",
      "target": "tanome",
@@ -6849,7 +7438,7 @@
      "word": "788910631",
      "form": "Tarcil",
      "target": "tarkil",
-     "main": "tarohildor",
+     "main": "tarhildi",
      "ok_main": false,
      "ok_any": false
     },
@@ -6867,7 +7456,15 @@
      "target": "tareldar",
      "main": "tarelda",
      "ok_main": false,
-     "ok_any": false
+     "ok_any": true
+    },
+    {
+     "word": "3054433215",
+     "form": "tarhanwa",
+     "target": "tarhanwa",
+     "main": "tarohanwa",
+     "ok_main": false,
+     "ok_any": true
     },
     {
      "word": "3345997935",
@@ -6884,6 +7481,14 @@
      "main": "tarmakorto",
      "ok_main": true,
      "ok_any": true
+    },
+    {
+     "word": "1772361067",
+     "form": "Tarmasundar",
+     "target": "tarmasundar",
+     "main": "tarmasundo",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "2790789175",
@@ -6996,6 +7601,14 @@
      "main": "teŋgwakilme",
      "ok_main": true,
      "ok_any": true
+    },
+    {
+     "word": "2540154521",
+     "form": "tennoio",
+     "target": "tennoio",
+     "main": "tennoi",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "2807675659",
@@ -7150,6 +7763,14 @@
      "ok_any": false
     },
     {
+     "word": "3627882891",
+     "form": "uito",
+     "target": "uito",
+     "main": "uitalo",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "4014852591",
      "form": "undulav-",
      "target": "undulav",
@@ -7185,8 +7806,8 @@
      "word": "4025193527",
      "form": "Valacar",
      "target": "valakar",
-     "main": "valakar",
-     "ok_main": true,
+     "main": "valakarma",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -7305,7 +7926,7 @@
      "word": "1553641865",
      "form": "Yavanna",
      "target": "javanna",
-     "main": "jāvenna",
+     "main": "jāvenwa",
      "ok_main": false,
      "ok_any": false
     },
@@ -7324,14 +7945,6 @@
      "main": "jestare",
      "ok_main": true,
      "ok_any": true
-    },
-    {
-     "word": "974117705",
-     "form": "yulunefítë",
-     "target": "julunefīte",
-     "main": "julnefīte",
-     "ok_main": false,
-     "ok_any": false
     },
     {
      "word": "3649518499",
@@ -7377,8 +7990,8 @@
      "word": "2392274047",
      "form": "ála",
      "target": "āla",
-     "main": "āla",
-     "ok_main": true,
+     "main": "āli",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -7426,6 +8039,14 @@
      "form": "ómatehta",
      "target": "ōmatexta",
      "main": "ōmatexta",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "566219347",
+     "form": "óricuvoitë",
+     "target": "ōrikuvoite",
+     "main": "ōrikuvoite",
      "ok_main": true,
      "ok_any": true
     },
@@ -22427,10 +23048,10 @@
    }
   ],
   "compounds": {
-   "cases": 64,
+   "cases": 69,
    "join_ok": 13,
-   "main": 8,
-   "any": 27,
+   "main": 11,
+   "any": 30,
    "results": [
     {
      "word": "355382011",
@@ -22448,6 +23069,24 @@
      "ok_main": false,
      "ok_any": false,
      "main": "avstakalendĕ",
+     "variants": 3
+    },
+    {
+     "word": "506756769",
+     "form": "dienda",
+     "derivation": "D545",
+     "era": "early",
+     "elements": [
+      "4224839255",
+      "3732235487"
+     ],
+     "start": "dʲejendā",
+     "target": "dienda",
+     "last_stage": 1,
+     "join_ok": false,
+     "ok_main": false,
+     "ok_any": false,
+     "main": "jeeiendă",
      "variants": 3
     },
     {
@@ -22646,7 +23285,7 @@
      "ok_main": false,
      "ok_any": false,
      "main": "tāraxilðe",
-     "variants": 3
+     "variants": 6
     },
     {
      "word": "1178278203",
@@ -22919,6 +23558,42 @@
      "variants": 3
     },
     {
+     "word": "2634126105",
+     "form": "fanta-",
+     "derivation": "D703",
+     "era": "late",
+     "elements": [
+      "65736881",
+      "3913399677"
+     ],
+     "start": "pʰanta-",
+     "target": "fanta-",
+     "last_stage": 2,
+     "join_ok": false,
+     "ok_main": true,
+     "ok_any": true,
+     "main": "fan-ta",
+     "variants": 2
+    },
+    {
+     "word": "2634126105",
+     "form": "fanta-",
+     "derivation": "D704",
+     "era": "late",
+     "elements": [
+      "65736881",
+      "3913399677"
+     ],
+     "start": "pʰanta-",
+     "target": "fanta-",
+     "last_stage": 2,
+     "join_ok": false,
+     "ok_main": true,
+     "ok_any": true,
+     "main": "fan-ta",
+     "variants": 2
+    },
+    {
      "word": "2098180505",
      "form": "findelë",
      "derivation": "D781",
@@ -23006,7 +23681,25 @@
      "ok_main": false,
      "ok_any": false,
      "main": "foallōke",
-     "variants": 36
+     "variants": 51
+    },
+    {
+     "word": "3123790563",
+     "form": "Laurenandë",
+     "derivation": "D1433",
+     "era": "late",
+     "elements": [
+      "1138081385",
+      "1559656549"
+     ],
+     "start": "lawarende",
+     "target": "laurende",
+     "last_stage": 1,
+     "join_ok": false,
+     "ok_main": false,
+     "ok_any": false,
+     "main": "ɣlaurenando",
+     "variants": 38
     },
     {
      "word": "3335328871",
@@ -23042,7 +23735,7 @@
      "ok_main": false,
      "ok_any": false,
      "main": "maāite",
-     "variants": 14
+     "variants": 21
     },
     {
      "word": "3234760691",
@@ -23167,8 +23860,8 @@
      "join_ok": false,
      "ok_main": false,
      "ok_any": true,
-     "main": "naltārielle",
-     "variants": 18
+     "main": "altārielle",
+     "variants": 36
     },
     {
      "word": "2307849497",
@@ -23237,9 +23930,9 @@
      "target": "olos",
      "last_stage": 2,
      "join_ok": false,
-     "ok_main": false,
+     "ok_main": true,
      "ok_any": true,
-     "main": "volos",
+     "main": "olos",
      "variants": 5
     },
     {
@@ -23257,8 +23950,8 @@
      "join_ok": false,
      "ok_main": false,
      "ok_any": false,
-     "main": "ostajă",
-     "variants": 1
+     "main": "oksoajă",
+     "variants": 3
     },
     {
      "word": "1800032207",
@@ -23549,6 +24242,24 @@
      "variants": 1
     },
     {
+     "word": "1232107373",
+     "form": "írima",
+     "derivation": "D1224",
+     "era": "late",
+     "elements": [
+      "1966526999",
+      "2305656567"
+     ],
+     "start": "īdima",
+     "target": "īrima",
+     "last_stage": 2,
+     "join_ok": false,
+     "ok_main": false,
+     "ok_any": true,
+     "main": "īrīmă",
+     "variants": 4
+    },
+    {
      "word": "2495271581",
      "form": "öar",
      "derivation": "D2342",
@@ -23615,10 +24326,19 @@
    "first": 2
   },
   "affixes": {
-   "cases": 196,
-   "main": 92,
-   "any": 115,
+   "cases": 220,
+   "main": 103,
+   "any": 132,
    "results": [
+    {
+     "word": "3716531873",
+     "form": "achad",
+     "kind": "suffix",
+     "target": "axad",
+     "main": "axad",
+     "ok_main": true,
+     "ok_any": true
+    },
     {
      "word": "4023112133",
      "form": "Adanel",
@@ -23638,11 +24358,29 @@
      "ok_any": true
     },
     {
+     "word": "665043545",
+     "form": "adbed-",
+     "kind": "prefix",
+     "target": "adbed",
+     "main": "affed",
+     "ok_main": false,
+     "ok_any": true
+    },
+    {
      "word": "2811947765",
      "form": "adertha-",
      "kind": "prefix",
      "target": "aderθa",
      "main": "aderθa",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "327295253",
+     "form": "aderthad",
+     "kind": "suffix",
+     "target": "aderθad",
+     "main": "aderθad",
      "ok_main": true,
      "ok_any": true
     },
@@ -23656,12 +24394,30 @@
      "ok_any": true
     },
     {
+     "word": "1113264857",
+     "form": "aewen",
+     "kind": "suffix",
+     "target": "aewen",
+     "main": "aewen",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "3266035465",
      "form": "aglareb",
      "kind": "suffix",
      "target": "aglareb",
      "main": "aglareb",
      "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "1782056915",
+     "form": "albeth",
+     "kind": "prefix",
+     "target": "albeθ",
+     "main": "alpeθ",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -23705,7 +24461,7 @@
      "form": "aphed-",
      "kind": "prefix",
      "target": "affed",
-     "main": "adped",
+     "main": "adbed",
      "ok_main": false,
      "ok_any": false
     },
@@ -23935,6 +24691,15 @@
      "ok_any": false
     },
     {
+     "word": "2373780737",
+     "form": "astorad",
+     "kind": "suffix",
+     "target": "astorad",
+     "main": "astorad",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "1866577311",
      "form": "Astoreth",
      "kind": "suffix",
@@ -23953,11 +24718,20 @@
      "ok_any": true
     },
     {
-     "word": "2456200671",
-     "form": "bardor",
-     "kind": "suffix",
-     "target": "bardor",
-     "main": "bardor",
+     "word": "2615695963",
+     "form": "athgar",
+     "kind": "prefix",
+     "target": "aθgar",
+     "main": "aθgarol",
+     "ok_main": false,
+     "ok_any": true
+    },
+    {
+     "word": "623424603",
+     "form": "athgen",
+     "kind": "prefix",
+     "target": "aθgen",
+     "main": "aθgen",
      "ok_main": true,
      "ok_any": true
     },
@@ -24052,6 +24826,15 @@
      "ok_any": true
     },
     {
+     "word": "3834153233",
+     "form": "daebeth",
+     "kind": "prefix",
+     "target": "daebeθ",
+     "main": "daepeθ",
+     "ok_main": false,
+     "ok_any": true
+    },
+    {
      "word": "2296261965",
      "form": "Daeron",
      "kind": "suffix",
@@ -24137,7 +24920,7 @@
      "form": "Elrenniel",
      "kind": "suffix",
      "target": "elrenniel",
-     "main": "elrondjel",
+     "main": "elrondel",
      "ok_main": false,
      "ok_any": false
     },
@@ -24259,6 +25042,15 @@
      "ok_any": false
     },
     {
+     "word": "2518840001",
+     "form": "Felagon",
+     "kind": "suffix",
+     "target": "felagon",
+     "main": "faelgon",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "3912347965",
      "form": "fennas",
      "kind": "suffix",
@@ -24304,6 +25096,15 @@
      "ok_any": true
     },
     {
+     "word": "2593614971",
+     "form": "Firion",
+     "kind": "suffix",
+     "target": "firion",
+     "main": "feiron",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "2681462959",
      "form": "firith",
      "kind": "suffix",
@@ -24329,6 +25130,15 @@
      "main": "gaearon",
      "ok_main": true,
      "ok_any": true
+    },
+    {
+     "word": "768720075",
+     "form": "Gaerdil",
+     "kind": "suffix",
+     "target": "gaerdil",
+     "main": "gaeardil",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "694034603",
@@ -24473,6 +25283,15 @@
      "main": "gondoliθrim",
      "ok_main": false,
      "ok_any": false
+    },
+    {
+     "word": "1523724043",
+     "form": "gorbedui",
+     "kind": "prefix",
+     "target": "gorbedui",
+     "main": "gorpedui",
+     "ok_main": false,
+     "ok_any": true
     },
     {
      "word": "2823382885",
@@ -24799,6 +25618,24 @@
      "ok_any": true
     },
     {
+     "word": "338107467",
+     "form": "lossen",
+     "kind": "suffix",
+     "target": "lossen",
+     "main": "lossen",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "4146576285",
+     "form": "lotheg",
+     "kind": "suffix",
+     "target": "loθeg",
+     "main": "loθeg",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "1992155303",
      "form": "Lothron",
      "kind": "suffix",
@@ -24920,7 +25757,7 @@
      "form": "nelui",
      "kind": "suffix",
      "target": "nelui",
-     "main": "nēlui",
+     "main": "nellui",
      "ok_main": false,
      "ok_any": false
     },
@@ -24947,8 +25784,8 @@
      "form": "Nogotheg",
      "kind": "suffix",
      "target": "nogoθeg",
-     "main": "nogoθig",
-     "ok_main": false,
+     "main": "nogoθeg",
+     "ok_main": true,
      "ok_any": true
     },
     {
@@ -25069,6 +25906,15 @@
      "ok_any": true
     },
     {
+     "word": "1414698197",
+     "form": "othgarn",
+     "kind": "prefix",
+     "target": "oθgarn",
+     "main": "oθgarn",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "2564509863",
      "form": "paenui",
      "kind": "suffix",
@@ -25163,9 +26009,18 @@
      "form": "rhugar",
      "kind": "prefix",
      "target": "r̥ugar",
-     "main": "r̥ukar",
+     "main": "r̥ugarol",
      "ok_main": false,
      "ok_any": true
+    },
+    {
+     "word": "3903076413",
+     "form": "rhugarol",
+     "kind": "prefix",
+     "target": "r̥ugarol",
+     "main": "r̥ugar",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "2617733007",
@@ -25195,6 +26050,15 @@
      "ok_any": true
     },
     {
+     "word": "899584223",
+     "form": "rodel",
+     "kind": "suffix",
+     "target": "rodel",
+     "main": "rauniel",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "4192247721",
      "form": "Rodon",
      "kind": "suffix",
@@ -25213,6 +26077,15 @@
      "ok_any": false
     },
     {
+     "word": "62527533",
+     "form": "rovaed",
+     "kind": "prefix",
+     "target": "rovaed",
+     "main": "romaed",
+     "ok_main": false,
+     "ok_any": true
+    },
+    {
      "word": "3911858975",
      "form": "rustui",
      "kind": "suffix",
@@ -25227,6 +26100,15 @@
      "kind": "suffix",
      "target": "saelon",
      "main": "saelon",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "2043077975",
+     "form": "sennas",
+     "kind": "suffix",
+     "target": "sennas",
+     "main": "sennas",
      "ok_main": true,
      "ok_any": true
     },
@@ -25325,7 +26207,16 @@
      "form": "tollui",
      "kind": "suffix",
      "target": "tollui",
-     "main": "toloðui",
+     "main": "tolui",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
+     "word": "1097106879",
+     "form": "tolothen",
+     "kind": "suffix",
+     "target": "toloθen",
+     "main": "toloðen",
      "ok_main": false,
      "ok_any": false
     },
@@ -25348,6 +26239,15 @@
      "ok_any": false
     },
     {
+     "word": "4100625631",
+     "form": "Yssion",
+     "kind": "suffix",
+     "target": "yssion",
+     "main": "yssion",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "3878459981",
      "form": "ínias",
      "kind": "suffix",
@@ -25355,6 +26255,24 @@
      "main": "īnas",
      "ok_main": false,
      "ok_any": false
+    },
+    {
+     "word": "472146913",
+     "form": "úgarol",
+     "kind": "prefix",
+     "target": "ūgarol",
+     "main": "ūgar",
+     "ok_main": false,
+     "ok_any": true
+    },
+    {
+     "word": "859775011",
+     "form": "úgarth",
+     "kind": "prefix",
+     "target": "ūgarθ",
+     "main": "ūgarθ",
+     "ok_main": true,
+     "ok_any": true
     },
     {
      "word": "1055810531",
@@ -25382,23 +26300,32 @@
      "main": "ūrui",
      "ok_main": true,
      "ok_any": true
+    },
+    {
+     "word": "1535755907",
+     "form": "úvelui",
+     "kind": "suffix",
+     "target": "ūvelui",
+     "main": "melui",
+     "ok_main": false,
+     "ok_any": false
     }
    ],
    "suffix": {
-    "cases": 154,
-    "main": 75,
-    "any": 86
+    "cases": 167,
+    "main": 83,
+    "any": 93
    },
    "prefix": {
-    "cases": 42,
-    "main": 17,
-    "any": 29
+    "cases": 53,
+    "main": 20,
+    "any": 39
    }
   },
   "latest_compounds": {
-   "cases": 388,
-   "main": 150,
-   "any": 242,
+   "cases": 415,
+   "main": 146,
+   "any": 236,
    "results": [
     {
      "word": "1249484529",
@@ -25476,7 +26403,7 @@
      "word": "4149084455",
      "form": "Aerandir",
      "target": "aerandir",
-     "main": "gearandir",
+     "main": "gerrandir",
      "ok_main": false,
      "ok_any": false
     },
@@ -25500,8 +26427,8 @@
      "word": "4174898697",
      "form": "Aglarond",
      "target": "aglarond",
-     "main": "aglarond",
-     "ok_main": true,
+     "main": "aglarrond",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -25556,15 +26483,15 @@
      "word": "1385154671",
      "form": "Anach",
      "target": "anax",
-     "main": "anx",
+     "main": "annax",
      "ok_main": false,
-     "ok_any": false
+     "ok_any": true
     },
     {
      "word": "1381185893",
      "form": "anann",
      "target": "anann",
-     "main": "anend",
+     "main": "anan",
      "ok_main": false,
      "ok_any": true
     },
@@ -25572,7 +26499,7 @@
      "word": "2961968329",
      "form": "andaith",
      "target": "andaiθ",
-     "main": "anθaiθ",
+     "main": "anndaiθ",
      "ok_main": false,
      "ok_any": true
     },
@@ -25580,56 +26507,56 @@
      "word": "1300212747",
      "form": "Andram",
      "target": "andram",
-     "main": "andram",
-     "ok_main": true,
-     "ok_any": true
+     "main": "annram",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "121165383",
      "form": "Andras",
      "target": "andras",
-     "main": "andras",
-     "ok_main": true,
-     "ok_any": true
+     "main": "annras",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "506221343",
      "form": "Andrast",
      "target": "andrast",
-     "main": "andras",
+     "main": "annras",
      "ok_main": false,
-     "ok_any": true
+     "ok_any": false
     },
     {
      "word": "718222639",
      "form": "Andrath",
      "target": "andraθ",
-     "main": "andraθ",
-     "ok_main": true,
-     "ok_any": true
+     "main": "annraθ",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "2527344021",
      "form": "andreth",
      "target": "andreθ",
-     "main": "andreθ",
-     "ok_main": true,
-     "ok_any": true
+     "main": "annreθ",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "3688146401",
      "form": "Androth",
      "target": "androθ",
-     "main": "androθ",
-     "ok_main": true,
-     "ok_any": true
+     "main": "anŋgrod",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "90773297",
      "form": "Anduin",
      "target": "anduin",
-     "main": "anduin",
-     "ok_main": true,
+     "main": "annduin",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -25647,6 +26574,14 @@
      "main": "anvaŋ",
      "ok_main": true,
      "ok_any": true
+    },
+    {
+     "word": "3162389361",
+     "form": "Angast",
+     "target": "aŋgast",
+     "main": "anŋgast",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "2502091081",
@@ -25668,9 +26603,9 @@
      "word": "698537603",
      "form": "angerthas",
      "target": "aŋgerθas",
-     "main": "aŋgerθas",
-     "ok_main": true,
-     "ok_any": true
+     "main": "anŋgerθas",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "674699993",
@@ -25833,11 +26768,19 @@
      "ok_any": true
     },
     {
-     "word": "1124679227",
-     "form": "Balrog",
-     "target": "balrog",
-     "main": "balrog",
+     "word": "2216778461",
+     "form": "athragared",
+     "target": "aθragared",
+     "main": "aθragared",
      "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "4044784799",
+     "form": "Bar-goll",
+     "target": "bargoll",
+     "main": "bargo",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -25865,6 +26808,14 @@
      "ok_any": false
     },
     {
+     "word": "2456200671",
+     "form": "bardor",
+     "target": "bardor",
+     "main": "bardor",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "2287004843",
      "form": "Barthan",
      "target": "barθan",
@@ -25876,9 +26827,9 @@
      "word": "1536052949",
      "form": "Belegaer",
      "target": "belegaer",
-     "main": "belegaear",
+     "main": "beleger",
      "ok_main": false,
-     "ok_any": false
+     "ok_any": true
     },
     {
      "word": "1457805237",
@@ -25917,6 +26868,14 @@
      "form": "Berennyr",
      "target": "berennyr",
      "main": "barandor",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
+     "word": "839293103",
+     "form": "Borgil",
+     "target": "borgil",
+     "main": "borŋgail",
      "ok_main": false,
      "ok_any": false
     },
@@ -26177,6 +27136,14 @@
      "ok_any": true
     },
     {
+     "word": "1462721979",
+     "form": "cýron",
+     "target": "kȳron",
+     "main": "kȳron",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "587384161",
      "form": "dadwen-",
      "target": "dadwen",
@@ -26252,8 +27219,8 @@
      "word": "979655405",
      "form": "dannen",
      "target": "dannen",
-     "main": "danen",
-     "ok_main": false,
+     "main": "dannen",
+     "ok_main": true,
      "ok_any": true
     },
     {
@@ -26273,6 +27240,14 @@
      "ok_any": true
     },
     {
+     "word": "504698453",
+     "form": "dirbedui",
+     "target": "dirbedui",
+     "main": "dīrbedui",
+     "ok_main": false,
+     "ok_any": true
+    },
+    {
      "word": "3949746475",
      "form": "Dolmed",
      "target": "dolmed",
@@ -26281,10 +27256,26 @@
      "ok_any": true
     },
     {
+     "word": "1761423637",
+     "form": "Dor-Rodyn",
+     "target": "dorrodyn",
+     "main": "dorodon",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "907533057",
      "form": "Doriath",
      "target": "doriaθ",
      "main": "doriaθ",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "890889673",
+     "form": "Dorloven",
+     "target": "dorloven",
+     "main": "dorloven",
      "ok_main": true,
      "ok_any": true
     },
@@ -26380,8 +27371,8 @@
      "word": "3832313435",
      "form": "Dúnadan",
      "target": "dūnadan",
-     "main": "dūnedan",
-     "ok_main": false,
+     "main": "dūnadan",
+     "ok_main": true,
      "ok_any": true
     },
     {
@@ -26452,9 +27443,9 @@
      "word": "3225676927",
      "form": "Edhellond",
      "target": "eðellond",
-     "main": "eðellond",
-     "ok_main": true,
-     "ok_any": true
+     "main": "eðellon",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "2246643897",
@@ -26503,6 +27494,14 @@
      "main": "eglambar",
      "ok_main": false,
      "ok_any": true
+    },
+    {
+     "word": "108714801",
+     "form": "Eglarest",
+     "target": "eglarest",
+     "main": "eglanrest",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "1389060191",
@@ -26601,6 +27600,14 @@
      "ok_any": true
     },
     {
+     "word": "527004213",
+     "form": "Elvellyn",
+     "target": "elvellyn",
+     "main": "ellmellon",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "330095655",
      "form": "Elwing",
      "target": "elwiŋ",
@@ -26676,7 +27683,7 @@
      "word": "2515739841",
      "form": "ethir¹",
      "target": "eθir",
-     "main": "edsir",
+     "main": "ehir",
      "ok_main": false,
      "ok_any": true
     },
@@ -26721,11 +27728,19 @@
      "ok_any": true
     },
     {
+     "word": "2335494939",
+     "form": "felagund",
+     "target": "felagund",
+     "main": "felagund",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "3295824739",
      "form": "Felagund",
      "target": "felagund",
-     "main": "felakund",
-     "ok_main": false,
+     "main": "felagund",
+     "ok_main": true,
      "ok_any": true
     },
     {
@@ -26740,9 +27755,9 @@
      "word": "1143532621",
      "form": "Finglas",
      "target": "fiŋglas",
-     "main": "fiŋglas",
-     "ok_main": true,
-     "ok_any": true
+     "main": "fineglas",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "2455993469",
@@ -26758,7 +27773,7 @@
      "target": "finvain",
      "main": "fimbain",
      "ok_main": false,
-     "ok_any": true
+     "ok_any": false
     },
     {
      "word": "2061796837",
@@ -26796,9 +27811,9 @@
      "word": "2080472015",
      "form": "Forlond",
      "target": "forlond",
-     "main": "forlond",
-     "ok_main": true,
-     "ok_any": true
+     "main": "forlon",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "1663864747",
@@ -26806,6 +27821,14 @@
      "target": "forlonnas",
      "main": "forlonnas",
      "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "3455583907",
+     "form": "Fornarthan",
+     "target": "fornarθan",
+     "main": "fornnarθan",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -26828,9 +27851,9 @@
      "word": "3414372253",
      "form": "Gaerys",
      "target": "gaerys",
-     "main": "geryssi",
-     "ok_main": false,
-     "ok_any": false
+     "main": "gaerys",
+     "ok_main": true,
+     "ok_any": true
     },
     {
      "word": "1137944933",
@@ -26868,39 +27891,39 @@
      "word": "2422887517",
      "form": "Gil-Amdir",
      "target": "gilamdir",
-     "main": "gīlamdir",
+     "main": "gailamdir",
      "ok_main": false,
-     "ok_any": true
+     "ok_any": false
     },
     {
      "word": "567061143",
      "form": "Gil-Estel",
      "target": "gilestel",
-     "main": "gīlestel",
+     "main": "gailestel",
      "ok_main": false,
-     "ok_any": true
+     "ok_any": false
     },
     {
      "word": "179189573",
      "form": "Gil-galad",
      "target": "gilgalad",
-     "main": "gīlalad",
+     "main": "gailalad",
      "ok_main": false,
-     "ok_any": true
+     "ok_any": false
     },
     {
      "word": "2564320429",
      "form": "Gilbarad",
      "target": "gilbarad",
-     "main": "gīlbarad",
+     "main": "gailbarad",
      "ok_main": false,
-     "ok_any": true
+     "ok_any": false
     },
     {
      "word": "2096846745",
      "form": "Gildír",
      "target": "gildīr",
-     "main": "gīldir",
+     "main": "gaildir",
      "ok_main": false,
      "ok_any": false
     },
@@ -26908,15 +27931,15 @@
      "word": "1790422249",
      "form": "Gilmith",
      "target": "gilmiθ",
-     "main": "gīlmiθ",
+     "main": "gailmiθ",
      "ok_main": false,
-     "ok_any": true
+     "ok_any": false
     },
     {
      "word": "4039699279",
      "form": "Gilraen",
      "target": "gilraen",
-     "main": "gĭlren",
+     "main": "gailren",
      "ok_main": false,
      "ok_any": false
     },
@@ -26924,17 +27947,17 @@
      "word": "375579463",
      "form": "Gilrain",
      "target": "gilrain",
-     "main": "gīlrain",
+     "main": "gailrain",
      "ok_main": false,
-     "ok_any": true
+     "ok_any": false
     },
     {
      "word": "3134849885",
      "form": "Gilwen",
      "target": "gilwen",
-     "main": "gīlgwen",
+     "main": "gailgwen",
      "ok_main": false,
-     "ok_any": true
+     "ok_any": false
     },
     {
      "word": "3150031551",
@@ -26967,6 +27990,14 @@
      "main": "glamhoθ",
      "ok_main": false,
      "ok_any": false
+    },
+    {
+     "word": "2801099951",
+     "form": "glandagol",
+     "target": "glandagol",
+     "main": "glanndagol",
+     "ok_main": false,
+     "ok_any": true
     },
     {
      "word": "560192627",
@@ -27052,8 +28083,16 @@
      "word": "797377163",
      "form": "Golasgil",
      "target": "golasgil",
-     "main": "golasgil",
-     "ok_main": true,
+     "main": "golasgail",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
+     "word": "3446436059",
+     "form": "Golodhbaeth",
+     "target": "goloðbaeθ",
+     "main": "goloðpeθ",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -27121,6 +28160,14 @@
      "ok_any": true
     },
     {
+     "word": "3999651525",
+     "form": "gwaelod",
+     "target": "gwaelod",
+     "main": "gwaelod",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
      "word": "2508691339",
      "form": "Gwahaedir",
      "target": "gwahaedir",
@@ -27148,7 +28195,7 @@
      "word": "1235138547",
      "form": "Gwathló",
      "target": "gwaθlō",
-     "main": "gwaθl̥o",
+     "main": "gwaθl̥aw",
      "ok_main": false,
      "ok_any": true
     },
@@ -27228,9 +28275,9 @@
      "word": "3936834881",
      "form": "Harlond",
      "target": "harlond",
-     "main": "harlond",
-     "ok_main": true,
-     "ok_any": true
+     "main": "harlon",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "4040590107",
@@ -27333,6 +28380,14 @@
      "form": "Hírilorn",
      "target": "hīrilorn",
      "main": "hirilorn",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
+     "word": "4055739037",
+     "form": "Iarwain",
+     "target": "jarwain",
+     "main": "jaurwain",
      "ok_main": false,
      "ok_any": false
     },
@@ -27452,8 +28507,8 @@
      "word": "2829562391",
      "form": "Laegolas",
      "target": "laegolas",
-     "main": "laegolas",
-     "ok_main": true,
+     "main": "laebgolas",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -27484,7 +28539,7 @@
      "word": "1947539745",
      "form": "lebenedh",
      "target": "lebeneð",
-     "main": "lebereneð",
+     "main": "leberened",
      "ok_main": false,
      "ok_any": false
     },
@@ -27492,7 +28547,7 @@
      "word": "4175770691",
      "form": "Lebennin",
      "target": "lebennin",
-     "main": "lebenen",
+     "main": "lebennen",
      "ok_main": false,
      "ok_any": false
     },
@@ -27521,6 +28576,14 @@
      "ok_any": false
     },
     {
+     "word": "4077109593",
+     "form": "Linaewen",
+     "target": "linaewen",
+     "main": "līnaewen",
+     "ok_main": false,
+     "ok_any": true
+    },
+    {
      "word": "566901549",
      "form": "Lindedhel",
      "target": "lindeðel",
@@ -27545,12 +28608,28 @@
      "ok_any": true
     },
     {
+     "word": "2205548511",
+     "form": "Linhir",
+     "target": "linhir",
+     "main": "linθir",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "98311109",
      "form": "linnod",
      "target": "linnod",
-     "main": "linnodog",
+     "main": "linnodo",
      "ok_main": false,
      "ok_any": false
+    },
+    {
+     "word": "2965631583",
+     "form": "Lisgardh",
+     "target": "lisgarð",
+     "main": "lisgarð",
+     "ok_main": true,
+     "ok_any": true
     },
     {
      "word": "445134345",
@@ -27601,6 +28680,14 @@
      "ok_any": false
     },
     {
+     "word": "3858778081",
+     "form": "Maedhros",
+     "target": "maeðros",
+     "main": "maedros",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "1816065253",
      "form": "Maeglin",
      "target": "maeglin",
@@ -27644,7 +28731,7 @@
      "word": "821455459",
      "form": "Melian",
      "target": "melian",
-     "main": "mellan",
+     "main": "mellanw",
      "ok_main": false,
      "ok_any": false
     },
@@ -27652,8 +28739,8 @@
      "word": "2724176217",
      "form": "Menegroth",
      "target": "menegroθ",
-     "main": "menegroθ",
-     "ok_main": true,
+     "main": "menegrod",
+     "ok_main": false,
      "ok_any": true
     },
     {
@@ -27668,7 +28755,7 @@
      "word": "1859337157",
      "form": "Menelvagor",
      "target": "menelvagor",
-     "main": "menelmagor",
+     "main": "menelbagor",
      "ok_main": false,
      "ok_any": true
     },
@@ -27724,9 +28811,9 @@
      "word": "3170573305",
      "form": "Mithlond",
      "target": "miθlond",
-     "main": "miθlond",
-     "ok_main": true,
-     "ok_any": true
+     "main": "miθlon",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "2655041701",
@@ -27790,7 +28877,7 @@
      "target": "morgul",
      "main": "morŋgul",
      "ok_main": false,
-     "ok_any": false
+     "ok_any": true
     },
     {
      "word": "2503799421",
@@ -27852,8 +28939,8 @@
      "word": "21369439",
      "form": "naergon",
      "target": "naergon",
-     "main": "naerkon",
-     "ok_main": false,
+     "main": "naergon",
+     "ok_main": true,
      "ok_any": true
     },
     {
@@ -27924,8 +29011,8 @@
      "word": "3843664895",
      "form": "Niben-nog",
      "target": "nibennog",
-     "main": "nibenog",
-     "ok_main": false,
+     "main": "nibennog",
+     "ok_main": true,
      "ok_any": true
     },
     {
@@ -28028,7 +29115,7 @@
      "word": "970299561",
      "form": "Onodló",
      "target": "onodlō",
-     "main": "onodl̥o",
+     "main": "onodl̥aw",
      "ok_main": false,
      "ok_any": true
     },
@@ -28084,7 +29171,7 @@
      "word": "835821657",
      "form": "Osgiliath",
      "target": "osgiliaθ",
-     "main": "ostgil",
+     "main": "ostgail",
      "ok_main": false,
      "ok_any": false
     },
@@ -28116,7 +29203,7 @@
      "word": "3282645679",
      "form": "palan-díriel",
      "target": "palandīriel",
-     "main": "palandiria",
+     "main": "palandiriad",
      "ok_main": false,
      "ok_any": false
     },
@@ -28137,12 +29224,36 @@
      "ok_any": false
     },
     {
+     "word": "1171551475",
+     "form": "penbed",
+     "target": "penbed",
+     "main": "peffed",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "8990395",
      "form": "pengolodh",
      "target": "peŋgoloð",
      "main": "peŋgoloð",
      "ok_main": true,
      "ok_any": true
+    },
+    {
+     "word": "3743116979",
+     "form": "pennod",
+     "target": "pennod",
+     "main": "pennod",
+     "ok_main": true,
+     "ok_any": true
+    },
+    {
+     "word": "2471107",
+     "form": "pennoediad",
+     "target": "pennoediad",
+     "main": "pennediel",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "1384432859",
@@ -28169,6 +29280,14 @@
      "ok_any": true
     },
     {
+     "word": "2006952073",
+     "form": "Rhosgobel",
+     "target": "r̥osgobel",
+     "main": "r̥oskgobel",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "2561882329",
      "form": "Rhudaur",
      "target": "r̥udaur",
@@ -28188,7 +29307,7 @@
      "word": "2857032075",
      "form": "Ringló",
      "target": "riŋglō",
-     "main": "riŋl̥o",
+     "main": "riŋl̥aw",
      "ok_main": false,
      "ok_any": true
     },
@@ -28244,7 +29363,7 @@
      "word": "2450547387",
      "form": "Roheryn",
      "target": "roheryn",
-     "main": "roxeryn",
+     "main": "roxeruin",
      "ok_main": false,
      "ok_any": false
     },
@@ -28252,7 +29371,7 @@
      "word": "3427967421",
      "form": "Rían",
      "target": "rīan",
-     "main": "rĭan",
+     "main": "rīanw",
      "ok_main": false,
      "ok_any": true
     },
@@ -28260,9 +29379,17 @@
      "word": "358555225",
      "form": "Rúnavar",
      "target": "rūnavar",
-     "main": "rūŋgavar",
+     "main": "r̥ūnavar",
      "ok_main": false,
-     "ok_any": true
+     "ok_any": false
+    },
+    {
+     "word": "2916889217",
+     "form": "Rúnedhel",
+     "target": "rūneðel",
+     "main": "r̥ūneðel",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "2170301639",
@@ -28276,9 +29403,9 @@
      "word": "2969913965",
      "form": "Saelind",
      "target": "saelind",
-     "main": "saelind",
-     "ok_main": true,
-     "ok_any": true
+     "main": "saelin",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "3527752535",
@@ -28321,6 +29448,14 @@
      "ok_any": true
     },
     {
+     "word": "2072325305",
+     "form": "talraph",
+     "target": "talraf",
+     "main": "tālraf",
+     "ok_main": false,
+     "ok_any": false
+    },
+    {
      "word": "951112705",
      "form": "Taras-ness",
      "target": "tarasness",
@@ -28356,9 +29491,9 @@
      "word": "984655481",
      "form": "thangail",
      "target": "θaŋgail",
-     "main": "θaŋgail",
-     "ok_main": true,
-     "ok_any": true
+     "main": "θanŋgail",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "2305605375",
@@ -28382,7 +29517,7 @@
      "target": "θenvalas",
      "main": "θentfalas",
      "ok_main": false,
-     "ok_any": false
+     "ok_any": true
     },
     {
      "word": "3589954001",
@@ -28436,9 +29571,9 @@
      "word": "788896023",
      "form": "Thorongil",
      "target": "θoroŋgil",
-     "main": "θoroŋgil",
-     "ok_main": true,
-     "ok_any": true
+     "main": "θoroŋgail",
+     "ok_main": false,
+     "ok_any": false
     },
     {
      "word": "12015237",
@@ -28447,6 +29582,14 @@
      "main": "θaranduil",
      "ok_main": false,
      "ok_any": false
+    },
+    {
+     "word": "3768851587",
+     "form": "Thuringud",
+     "target": "θuriŋgud",
+     "main": "θuriŋgud",
+     "ok_main": true,
+     "ok_any": true
     },
     {
      "word": "978027137",
@@ -28468,8 +29611,8 @@
      "word": "1926547997",
      "form": "Túrin",
      "target": "tūrin",
-     "main": "tūrind",
-     "ok_main": false,
+     "main": "tūrin",
+     "ok_main": true,
      "ok_any": true
     },
     {
@@ -41490,10 +42633,10 @@
    }
   ],
   "compounds": {
-   "cases": 63,
+   "cases": 68,
    "join_ok": 10,
-   "main": 11,
-   "any": 19,
+   "main": 14,
+   "any": 22,
    "results": [
     {
      "word": "158783105",
@@ -41592,15 +42735,15 @@
      "era": "middle",
      "elements": [
       "4127830143",
-      "928244407"
+      "3817388463"
      ],
      "start": "bastgorn",
      "target": "basgorn",
      "last_stage": 2,
      "join_ok": false,
-     "ok_main": false,
+     "ok_main": true,
      "ok_any": true,
-     "main": "bastaorn",
+     "main": "basgorn",
      "variants": 3
     },
     {
@@ -41730,6 +42873,24 @@
      "variants": 8
     },
     {
+     "word": "74130759",
+     "form": "Gothrog",
+     "derivation": "D1716",
+     "era": "middle",
+     "elements": [
+      "987718449",
+      "863523965"
+     ],
+     "start": "gotʰorauko",
+     "target": "goθrog",
+     "last_stage": 2,
+     "join_ok": false,
+     "ok_main": true,
+     "ok_any": true,
+     "main": "goθrog",
+     "variants": 6
+    },
+    {
      "word": "1035955347",
      "form": "haglath",
      "derivation": "D1887",
@@ -41820,6 +42981,24 @@
      "variants": 2
     },
     {
+     "word": "2125586613",
+     "form": "Inglor",
+     "derivation": "D2053",
+     "era": "middle",
+     "elements": [
+      "1709480053",
+      "1905277173"
+     ],
+     "start": "indoglaurē",
+     "target": "iŋglor",
+     "last_stage": 2,
+     "join_ok": false,
+     "ok_main": false,
+     "ok_any": false,
+     "main": "illor",
+     "variants": 3
+    },
+    {
      "word": "2486605033",
      "form": "orchal",
      "derivation": "D2565",
@@ -41836,6 +43015,24 @@
      "ok_any": true,
      "main": "orxal",
      "variants": 1
+    },
+    {
+     "word": "2925083865",
+     "form": "othlon",
+     "derivation": "D2590",
+     "era": "middle",
+     "elements": [
+      "894265795",
+      "754974921"
+     ],
+     "start": "ostlond",
+     "target": "oθlon",
+     "last_stage": 2,
+     "join_ok": false,
+     "ok_main": false,
+     "ok_any": false,
+     "main": "oθlyn",
+     "variants": 6
     },
     {
      "word": "351052557",
@@ -41856,30 +43053,12 @@
      "variants": 2
     },
     {
-     "word": "3791313621",
-     "form": "pelthaes",
-     "derivation": "D2636",
-     "era": "middle",
-     "elements": [
-      "1812655615",
-      "3934281793"
-     ],
-     "start": "pelθaksa",
-     "target": "pelθaes",
-     "last_stage": 2,
-     "join_ok": false,
-     "ok_main": false,
-     "ok_any": false,
-     "main": "peldoes",
-     "variants": 2
-    },
-    {
      "word": "1581608081",
      "form": "trenarn",
      "derivation": "D3096",
      "era": "middle",
      "elements": [
-      "167249731",
+      "3900354751",
       "3980134695"
      ],
      "start": "trenārna",
@@ -41888,8 +43067,8 @@
      "join_ok": false,
      "ok_main": false,
      "ok_any": false,
-     "main": "tnarn",
-     "variants": 2
+     "main": "trĭnarn",
+     "variants": 4
     },
     {
      "word": "188173945",
@@ -41908,6 +43087,24 @@
      "ok_any": false,
      "main": "toivaulin",
      "variants": 16
+    },
+    {
+     "word": "184247711",
+     "form": "Túrin",
+     "derivation": "D3118",
+     "era": "middle",
+     "elements": [
+      "3765895335",
+      "1709480053"
+     ],
+     "start": "tūrindo",
+     "target": "tūrin",
+     "last_stage": 2,
+     "join_ok": false,
+     "ok_main": false,
+     "ok_any": true,
+     "main": "tŭrĭin",
+     "variants": 4
     },
     {
      "word": "3242611079",
@@ -41942,8 +43139,8 @@
      "join_ok": false,
      "ok_main": false,
      "ok_any": false,
-     "main": "novaeroθ",
-     "variants": 3
+     "main": "novaerod",
+     "variants": 6
     },
     {
      "word": "195204551",
@@ -42018,6 +43215,42 @@
      "variants": 6
     },
     {
+     "word": "3865426267",
+     "form": "ava-",
+     "derivation": "D831",
+     "era": "late",
+     "elements": [
+      "722437117",
+      "1608974497"
+     ],
+     "start": "aba-",
+     "target": "ava-",
+     "last_stage": 3,
+     "join_ok": false,
+     "ok_main": true,
+     "ok_any": true,
+     "main": "ava",
+     "variants": 3
+    },
+    {
+     "word": "2456200671",
+     "form": "bardor",
+     "derivation": "D895",
+     "era": "late",
+     "elements": [
+      "1964807933",
+      "3950740861"
+     ],
+     "start": "barndor",
+     "target": "bardor",
+     "last_stage": 3,
+     "join_ok": false,
+     "ok_main": false,
+     "ok_any": false,
+     "main": "barnor",
+     "variants": 2
+    },
+    {
      "word": "2287004843",
      "form": "Barthan",
      "derivation": "D898",
@@ -42054,22 +43287,22 @@
      "variants": 2
     },
     {
-     "word": "4291700927",
-     "form": "dangweth",
-     "derivation": "D1194",
+     "word": "1462721979",
+     "form": "cýron",
+     "derivation": "D1156",
      "era": "late",
      "elements": [
-      "1905541541",
-      "3380236613"
+      "2138085565",
+      "3380703333"
      ],
-     "start": "ndanwetha",
-     "target": "dangweth",
+     "start": "keurānā",
+     "target": "kȳron",
      "last_stage": 3,
      "join_ok": false,
      "ok_main": false,
      "ok_any": false,
-     "main": "dambed",
-     "variants": 1
+     "main": "kȳrauron",
+     "variants": 3
     },
     {
      "word": "862238445",
@@ -42393,7 +43626,7 @@
      "ok_main": false,
      "ok_any": false,
      "main": "mellauan",
-     "variants": 3
+     "variants": 12
     },
     {
      "word": "2405578811",
@@ -42446,8 +43679,8 @@
      "join_ok": false,
      "ok_main": false,
      "ok_any": false,
-     "main": "odogaŭi",
-     "variants": 10
+     "main": "odoaŭi",
+     "variants": 20
     },
     {
      "word": "4047648381",

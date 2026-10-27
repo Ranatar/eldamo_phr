@@ -30,7 +30,9 @@ RULE_SPEECH = 'phonetic-rule'
 
 
 def deleted_mark(mark: str | None) -> bool:
-    return bool(mark) and mark.startswith('-')
+    """Rejected by Tolkien: '-' anywhere in the mark, as Eldamo's common.xq (derive-css)
+    reads it ('-', '†-', '#-'). '|' (a deleted section) is not a rejection of the word."""
+    return bool(mark) and '-' in mark
 
 
 def notes_text(el) -> str:

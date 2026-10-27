@@ -71,7 +71,7 @@
   "entries": 14706,
   "roots": 3627,
   "derivations": 2083,
-  "stages": 1850,
+  "stages": 1939,
   "elements": 4652,
   "parents": 2350,
   "compounds_with_derivations": 236,
@@ -79,8 +79,8 @@
   "neo": 1749,
   "homonym_forms": 368
  },
- "junction_cases": 388,
- "affix_cases": 196,
+ "junction_cases": 415,
+ "affix_cases": 220,
  "grade_legend": {
   "A": "засвидетельствована в одной деривации",
   "B": "шаги засвидетельствованы, порядок подтверждён",

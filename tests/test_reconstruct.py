@@ -85,7 +85,8 @@ class Reconstruction(unittest.TestCase):
         self.assertEqual(comparable(vs[0]['form']), 'fara')
 
     def test_other_forms_are_not_the_word(self):
-        # Q. fara- 'to hunt': Eldamo's derivation is of the gerund farálë < ✶pʰáralē
+        # Q. fara- 'to hunt': Eldamo's derivation is of the inflected farále 'you hunt' < ✶pʰáralē
+        # (a <ref> with <inflect form="aorist 2nd-sg"/>)
         e = self.ctx.lexicon['quenya']['550230859']
         self.assertNotIn('pʰaralē', e.get('starts', []))
         self.assertIn('farále', [o['form'] for o in e.get('other_forms', [])])

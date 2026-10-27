@@ -284,9 +284,9 @@
    "word": "2357253503",
    "form": "aerlinn",
    "first": "aer",
-   "second": "linn",
+   "second": "lind¹",
    "a": "aer",
-   "b": "linn",
+   "b": "lind",
    "c": "aerlinn",
    "junction": [
     0,
@@ -294,8 +294,8 @@
     ""
    ],
    "ending": [
-    0,
-    ""
+    1,
+    "n"
    ],
    "short": false,
    "jkey": [
@@ -304,7 +304,7 @@
    ],
    "ekey": [
     "n",
-    "n"
+    "d"
    ],
    "skey": null
   },
@@ -865,6 +865,34 @@
    "ekey": [
     "a",
     "ŋ"
+   ],
+   "skey": null
+  },
+  {
+   "word": "3162389361",
+   "form": "Angast",
+   "first": "and",
+   "second": "cast",
+   "a": "and",
+   "b": "kast",
+   "c": "aŋgast",
+   "junction": [
+    2,
+    1,
+    "ŋg"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "d",
+    "k"
+   ],
+   "ekey": [
+    "s",
+    "t"
    ],
    "skey": null
   },
@@ -1513,17 +1541,17 @@
    "skey": null
   },
   {
-   "word": "1124679227",
-   "form": "Balrog",
-   "first": "bal-",
-   "second": "raug",
-   "a": "bal",
-   "b": "raug",
-   "c": "balrog",
+   "word": "2216778461",
+   "form": "athragared",
+   "first": "athra-¹",
+   "second": "cared",
+   "a": "aθra",
+   "b": "kared",
+   "c": "aθragared",
    "junction": [
     0,
-    0,
-    ""
+    1,
+    "g"
    ],
    "ending": [
     0,
@@ -1531,12 +1559,40 @@
    ],
    "short": false,
    "jkey": [
-    "l",
-    "r"
+    "a",
+    "k"
    ],
    "ekey": [
-    "u",
+    "e",
+    "d"
+   ],
+   "skey": null
+  },
+  {
+   "word": "4044784799",
+   "form": "Bar-goll",
+   "first": "bâr",
+   "second": "coll²",
+   "a": "bār",
+   "b": "koll",
+   "c": "bargoll",
+   "junction": [
+    0,
+    1,
     "g"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "r",
+    "k"
+   ],
+   "ekey": [
+    "l",
+    "l"
    ],
    "skey": null
   },
@@ -1623,6 +1679,34 @@
     "n"
    ],
    "skey": null
+  },
+  {
+   "word": "2456200671",
+   "form": "bardor",
+   "first": "bâr",
+   "second": "dôr",
+   "a": "bār",
+   "b": "dōr",
+   "c": "bardor",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": true,
+   "jkey": [
+    "r",
+    "d"
+   ],
+   "ekey": [
+    "ō",
+    "r"
+   ],
+   "skey": "last"
   },
   {
    "word": "2287004843",
@@ -1819,6 +1903,34 @@
     "r"
    ],
    "skey": "last"
+  },
+  {
+   "word": "839293103",
+   "form": "Borgil",
+   "first": "born¹",
+   "second": "gil",
+   "a": "born",
+   "b": "gil",
+   "c": "borgil",
+   "junction": [
+    1,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "n",
+    "g"
+   ],
+   "ekey": [
+    "i",
+    "l"
+   ],
+   "skey": null
   },
   {
    "word": "1942396749",
@@ -2717,6 +2829,34 @@
    "skey": null
   },
   {
+   "word": "1462721979",
+   "form": "cýron",
+   "first": "cŷr",
+   "second": "Raun",
+   "a": "kȳr",
+   "b": "raun",
+   "c": "kȳron",
+   "junction": [
+    0,
+    3,
+    "o"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "r",
+    "r"
+   ],
+   "ekey": [
+    "u",
+    "n"
+   ],
+   "skey": null
+  },
+  {
    "word": "587384161",
    "form": "dadwen-",
    "first": "dan",
@@ -3053,6 +3193,34 @@
    "skey": null
   },
   {
+   "word": "504698453",
+   "form": "dirbedui",
+   "first": "dîr²",
+   "second": "pedui",
+   "a": "dīr",
+   "b": "pedui",
+   "c": "dirbedui",
+   "junction": [
+    0,
+    1,
+    "b"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "r",
+    "p"
+   ],
+   "ekey": [
+    "u",
+    "i"
+   ],
+   "skey": null
+  },
+  {
    "word": "3949746475",
    "form": "Dolmed",
    "first": "dol(l)",
@@ -3081,6 +3249,34 @@
    "skey": "last"
   },
   {
+   "word": "1761423637",
+   "form": "Dor-Rodyn",
+   "first": "dôr",
+   "second": "Rodon",
+   "a": "dōr",
+   "b": "rodon",
+   "c": "dorrodyn",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "r",
+    "r"
+   ],
+   "ekey": [
+    "o",
+    "n"
+   ],
+   "skey": null
+  },
+  {
    "word": "907533057",
    "form": "Doriath",
    "first": "dôr",
@@ -3105,6 +3301,34 @@
    "ekey": [
     "a",
     "θ"
+   ],
+   "skey": null
+  },
+  {
+   "word": "890889673",
+   "form": "Dorloven",
+   "first": "dôr",
+   "second": "loven",
+   "a": "dōr",
+   "b": "loven",
+   "c": "dorloven",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "r",
+    "l"
+   ],
+   "ekey": [
+    "e",
+    "n"
    ],
    "skey": null
   },
@@ -3865,6 +4089,34 @@
    "skey": "last"
   },
   {
+   "word": "108714801",
+   "form": "Eglarest",
+   "first": "Eglan",
+   "second": "rest",
+   "a": "eglan",
+   "b": "rest",
+   "c": "eglarest",
+   "junction": [
+    1,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "n",
+    "r"
+   ],
+   "ekey": [
+    "s",
+    "t"
+   ],
+   "skey": null
+  },
+  {
    "word": "1389060191",
    "form": "Eladar",
    "first": "êl",
@@ -4197,6 +4449,34 @@
    "ekey": [
     "i",
     "θ"
+   ],
+   "skey": null
+  },
+  {
+   "word": "527004213",
+   "form": "Elvellyn",
+   "first": "Ell",
+   "second": "mellon",
+   "a": "ell",
+   "b": "mellon",
+   "c": "elvellyn",
+   "junction": [
+    1,
+    1,
+    "v"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "l",
+    "m"
+   ],
+   "ekey": [
+    "o",
+    "n"
    ],
    "skey": null
   },
@@ -4621,6 +4901,34 @@
    "skey": null
   },
   {
+   "word": "2335494939",
+   "form": "felagund",
+   "first": "fela",
+   "second": "cund",
+   "a": "fela",
+   "b": "kund",
+   "c": "felagund",
+   "junction": [
+    0,
+    1,
+    "g"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "a",
+    "k"
+   ],
+   "ekey": [
+    "n",
+    "d"
+   ],
+   "skey": null
+  },
+  {
    "word": "3295824739",
    "form": "Felagund",
    "first": "fela",
@@ -4925,6 +5233,34 @@
    "ekey": [
     "a",
     "s"
+   ],
+   "skey": null
+  },
+  {
+   "word": "3455583907",
+   "form": "Fornarthan",
+   "first": "forn",
+   "second": "narthan",
+   "a": "forn",
+   "b": "narθan",
+   "c": "fornarθan",
+   "junction": [
+    0,
+    1,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "n",
+    "n"
+   ],
+   "ekey": [
+    "a",
+    "n"
    ],
    "skey": null
   },
@@ -5489,6 +5825,34 @@
    "skey": null
   },
   {
+   "word": "2801099951",
+   "form": "glandagol",
+   "first": "glan(n)",
+   "second": "tagol",
+   "a": "glan",
+   "b": "tagol",
+   "c": "glandagol",
+   "junction": [
+    0,
+    1,
+    "d"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "n",
+    "t"
+   ],
+   "ekey": [
+    "o",
+    "l"
+   ],
+   "skey": null
+  },
+  {
    "word": "560192627",
    "form": "Glanduin",
    "first": "glan(n)",
@@ -5797,6 +6161,34 @@
    "skey": null
   },
   {
+   "word": "3446436059",
+   "form": "Golodhbaeth",
+   "first": "Golodh",
+   "second": "paeth",
+   "a": "goloð",
+   "b": "paeθ",
+   "c": "goloðbaeθ",
+   "junction": [
+    0,
+    1,
+    "b"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "ð",
+    "p"
+   ],
+   "ekey": [
+    "e",
+    "θ"
+   ],
+   "skey": null
+  },
+  {
    "word": "3909485407",
    "form": "Gondolin",
    "first": "gond",
@@ -6017,6 +6409,34 @@
    "ekey": [
     "s",
     "s"
+   ],
+   "skey": null
+  },
+  {
+   "word": "3999651525",
+   "form": "gwaelod",
+   "first": "gwae",
+   "second": "laud",
+   "a": "gwae",
+   "b": "laud",
+   "c": "gwaelod",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "e",
+    "l"
+   ],
+   "ekey": [
+    "u",
+    "d"
    ],
    "skey": null
   },
@@ -6777,6 +7197,34 @@
    "skey": null
   },
   {
+   "word": "4055739037",
+   "form": "Iarwain",
+   "first": "iaur",
+   "second": "gwain¹",
+   "a": "jaur",
+   "b": "gwain",
+   "c": "jarwain",
+   "junction": [
+    0,
+    1,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "r",
+    "g"
+   ],
+   "ekey": [
+    "i",
+    "n"
+   ],
+   "skey": null
+  },
+  {
    "word": "962816459",
    "form": "ifant",
    "first": "în¹",
@@ -7421,6 +7869,34 @@
    "skey": "last"
   },
   {
+   "word": "4077109593",
+   "form": "Linaewen",
+   "first": "lîn",
+   "second": "aewen",
+   "a": "līn",
+   "b": "aewen",
+   "c": "linaewen",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "n",
+    "a"
+   ],
+   "ekey": [
+    "e",
+    "n"
+   ],
+   "skey": null
+  },
+  {
    "word": "566901549",
    "form": "Lindedhel",
    "first": "lind¹",
@@ -7505,6 +7981,34 @@
    "skey": "last"
   },
   {
+   "word": "2205548511",
+   "form": "Linhir",
+   "first": "lind²",
+   "second": "sîr",
+   "a": "lind",
+   "b": "sīr",
+   "c": "linhir",
+   "junction": [
+    1,
+    1,
+    "h"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": true,
+   "jkey": [
+    "d",
+    "s"
+   ],
+   "ekey": [
+    "ī",
+    "r"
+   ],
+   "skey": "last"
+  },
+  {
    "word": "98311109",
    "form": "linnod",
    "first": "lind¹",
@@ -7529,6 +8033,34 @@
    "ekey": [
     "o",
     "g"
+   ],
+   "skey": null
+  },
+  {
+   "word": "2965631583",
+   "form": "Lisgardh",
+   "first": "lisg",
+   "second": "gardh",
+   "a": "lisg",
+   "b": "garð",
+   "c": "lisgarð",
+   "junction": [
+    0,
+    1,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "g",
+    "g"
+   ],
+   "ekey": [
+    "r",
+    "ð"
    ],
    "skey": null
   },
@@ -7697,6 +8229,34 @@
    "ekey": [
     "u",
     "ŋ"
+   ],
+   "skey": null
+  },
+  {
+   "word": "3858778081",
+   "form": "Maedhros",
+   "first": "maed¹",
+   "second": "ross²",
+   "a": "maed",
+   "b": "ross",
+   "c": "maeðros",
+   "junction": [
+    1,
+    0,
+    "ð"
+   ],
+   "ending": [
+    1,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "d",
+    "r"
+   ],
+   "ekey": [
+    "s",
+    "s"
    ],
    "skey": null
   },
@@ -9577,6 +10137,34 @@
    "skey": "last"
   },
   {
+   "word": "1171551475",
+   "form": "penbed",
+   "first": "pen¹",
+   "second": "ped-",
+   "a": "pen",
+   "b": "ped",
+   "c": "penbed",
+   "junction": [
+    0,
+    1,
+    "b"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "n",
+    "p"
+   ],
+   "ekey": [
+    "e",
+    "d"
+   ],
+   "skey": null
+  },
+  {
    "word": "8990395",
    "form": "pengolodh",
    "first": "pen²",
@@ -9601,6 +10189,62 @@
    "ekey": [
     "o",
     "ð"
+   ],
+   "skey": null
+  },
+  {
+   "word": "3743116979",
+   "form": "pennod",
+   "first": "pen¹",
+   "second": "nod-",
+   "a": "pen",
+   "b": "nod",
+   "c": "pennod",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "n",
+    "n"
+   ],
+   "ekey": [
+    "o",
+    "d"
+   ],
+   "skey": null
+  },
+  {
+   "word": "2471107",
+   "form": "pennoediad",
+   "first": "pen¹",
+   "second": "nedia-",
+   "a": "pen",
+   "b": "nedia",
+   "c": "pennoediad",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    "d"
+   ],
+   "short": false,
+   "jkey": [
+    "n",
+    "n"
+   ],
+   "ekey": [
+    "i",
+    "a"
    ],
    "skey": null
   },
@@ -9687,6 +10331,34 @@
     "l"
    ],
    "skey": "earlier"
+  },
+  {
+   "word": "2006952073",
+   "form": "Rhosgobel",
+   "first": "rhosc",
+   "second": "gobel",
+   "a": "r̥osk",
+   "b": "gobel",
+   "c": "r̥osgobel",
+   "junction": [
+    1,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "k",
+    "g"
+   ],
+   "ekey": [
+    "e",
+    "l"
+   ],
+   "skey": null
   },
   {
    "word": "2561882329",
@@ -9999,14 +10671,14 @@
   {
    "word": "358555225",
    "form": "Rúnavar",
-   "first": "rûn",
-   "second": "Gavar",
-   "a": "rūn",
-   "b": "gavar",
+   "first": "rhûn",
+   "second": "Avar",
+   "a": "r̥ūn",
+   "b": "avar",
    "c": "rūnavar",
    "junction": [
     0,
-    1,
+    0,
     ""
    ],
    "ending": [
@@ -10016,11 +10688,39 @@
    "short": false,
    "jkey": [
     "n",
-    "g"
+    "a"
    ],
    "ekey": [
     "a",
     "r"
+   ],
+   "skey": null
+  },
+  {
+   "word": "2916889217",
+   "form": "Rúnedhel",
+   "first": "rhûn",
+   "second": "Edhel",
+   "a": "r̥ūn",
+   "b": "eðel",
+   "c": "rūneðel",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "n",
+    "e"
+   ],
+   "ekey": [
+    "e",
+    "l"
    ],
    "skey": null
   },
@@ -10217,6 +10917,34 @@
    "ekey": [
     "n",
     "d"
+   ],
+   "skey": null
+  },
+  {
+   "word": "2072325305",
+   "form": "talraph",
+   "first": "tâl",
+   "second": "raph",
+   "a": "tāl",
+   "b": "raf",
+   "c": "talraf",
+   "junction": [
+    0,
+    0,
+    ""
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": false,
+   "jkey": [
+    "l",
+    "r"
+   ],
+   "ekey": [
+    "a",
+    "f"
    ],
    "skey": null
   },
@@ -10669,6 +11397,34 @@
    "skey": null
   },
   {
+   "word": "3768851587",
+   "form": "Thuringud",
+   "first": "thurin",
+   "second": "cûd",
+   "a": "θurin",
+   "b": "kūd",
+   "c": "θuriŋgud",
+   "junction": [
+    1,
+    1,
+    "ŋg"
+   ],
+   "ending": [
+    0,
+    ""
+   ],
+   "short": true,
+   "jkey": [
+    "n",
+    "k"
+   ],
+   "ekey": [
+    "ū",
+    "d"
+   ],
+   "skey": "last"
+  },
+  {
    "word": "978027137",
    "form": "Tumladen",
    "first": "tum",
@@ -10871,7 +11627,7 @@
     "d",
     "r"
    ],
-   "total": 14,
+   "total": 15,
    "outcomes": [
     {
      "op": [
@@ -10887,6 +11643,17 @@
       "Andrath",
       "andreth"
      ]
+    },
+    {
+     "op": [
+      1,
+      0,
+      "ð"
+     ],
+     "count": 1,
+     "examples": [
+      "Maedhros"
+     ]
     }
    ]
   },
@@ -10895,7 +11662,7 @@
     "n",
     "e"
    ],
-   "total": 11,
+   "total": 12,
    "outcomes": [
     {
      "op": [
@@ -10903,7 +11670,7 @@
       0,
       ""
      ],
-     "count": 10,
+     "count": 11,
      "examples": [
       "Adanedhel",
       "Aranel",
@@ -10948,15 +11715,26 @@
     },
     {
      "op": [
+      1,
+      0,
+      ""
+     ],
+     "count": 2,
+     "examples": [
+      "Borgil",
+      "morgul"
+     ]
+    },
+    {
+     "op": [
       0,
       1,
       ""
      ],
-     "count": 3,
+     "count": 2,
      "examples": [
       "Danwaith",
-      "Finwain",
-      "Rúnavar"
+      "Finwain"
      ]
     },
     {
@@ -10973,17 +11751,6 @@
     },
     {
      "op": [
-      1,
-      0,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "morgul"
-     ]
-    },
-    {
-     "op": [
       2,
       0,
       "iŋ"
@@ -10991,6 +11758,42 @@
      "count": 1,
      "examples": [
       "ninglor"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "r",
+    "g"
+   ],
+   "total": 10,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      1,
+      ""
+     ],
+     "count": 8,
+     "examples": [
+      "Agarwaen",
+      "Dorwinion",
+      "Gaurwaith",
+      "Hirwen",
+      "Iarwain"
+     ]
+    },
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 2,
+     "examples": [
+      "Gorgoroth",
+      "Thargelion"
      ]
     }
    ]
@@ -11055,36 +11858,38 @@
   },
   {
    "key": [
-    "r",
-    "g"
+    "n",
+    "n"
    ],
    "total": 9,
    "outcomes": [
     {
      "op": [
       0,
-      1,
+      0,
       ""
      ],
-     "count": 7,
+     "count": 5,
      "examples": [
-      "Agarwaen",
-      "Dorwinion",
-      "Gaurwaith",
-      "Hirwen",
-      "Narwain"
+      "dannen",
+      "Lebennin",
+      "Niben-nog",
+      "pennod",
+      "pennoediad"
      ]
     },
     {
      "op": [
       0,
-      0,
+      1,
       ""
      ],
-     "count": 2,
+     "count": 4,
      "examples": [
-      "Gorgoroth",
-      "Thargelion"
+      "Carnen",
+      "Fornarthan",
+      "Harnen",
+      "Mornan"
      ]
     }
    ]
@@ -11094,7 +11899,7 @@
     "n",
     "t"
    ],
-   "total": 8,
+   "total": 9,
    "outcomes": [
     {
      "op": [
@@ -11102,10 +11907,11 @@
       1,
       "d"
      ],
-     "count": 4,
+     "count": 5,
      "examples": [
       "Celebrindal",
       "dandol-",
+      "glandagol",
       "Nindalf",
       "Thranduil"
      ]
@@ -11152,6 +11958,76 @@
      "count": 1,
      "examples": [
       "Rhudaur"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "r",
+    "l"
+   ],
+   "total": 8,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 6,
+     "examples": [
+      "aerlinn",
+      "Dagorlad",
+      "Dagorlind",
+      "Dorloven",
+      "Hirluin"
+     ]
+    },
+    {
+     "op": [
+      1,
+      0,
+      "l"
+     ],
+     "count": 1,
+     "examples": [
+      "elloth"
+     ]
+    },
+    {
+     "op": [
+      2,
+      0,
+      "el"
+     ],
+     "count": 1,
+     "examples": [
+      "Glewellin"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "g",
+    "g"
+   ],
+   "total": 8,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      1,
+      ""
+     ],
+     "count": 8,
+     "examples": [
+      "Belegaer",
+      "Belegurth",
+      "Laegolas",
+      "Lisgardh",
+      "Maeglin"
      ]
     }
    ]
@@ -11215,52 +12091,6 @@
   },
   {
    "key": [
-    "r",
-    "l"
-   ],
-   "total": 7,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 5,
-     "examples": [
-      "aerlinn",
-      "Dagorlad",
-      "Dagorlind",
-      "Hirluin",
-      "Iorlas"
-     ]
-    },
-    {
-     "op": [
-      1,
-      0,
-      "l"
-     ],
-     "count": 1,
-     "examples": [
-      "elloth"
-     ]
-    },
-    {
-     "op": [
-      2,
-      0,
-      "el"
-     ],
-     "count": 1,
-     "examples": [
-      "Glewellin"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "m",
     "r"
    ],
@@ -11279,6 +12109,52 @@
       "Dimrost",
       "Himring",
       "imrad"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "n",
+    "a"
+   ],
+   "total": 7,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 4,
+     "examples": [
+      "anann",
+      "Dúnadan",
+      "Linaewen",
+      "Rúnavar"
+     ]
+    },
+    {
+     "op": [
+      0,
+      1,
+      "e"
+     ],
+     "count": 2,
+     "examples": [
+      "Edenedair",
+      "Rhúnedain"
+     ]
+    },
+    {
+     "op": [
+      1,
+      0,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "Harathrad"
      ]
     }
    ]
@@ -11320,58 +12196,10 @@
   },
   {
    "key": [
-    "g",
-    "g"
-   ],
-   "total": 7,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      1,
-      ""
-     ],
-     "count": 7,
-     "examples": [
-      "Belegaer",
-      "Belegurth",
-      "Laegolas",
-      "Maeglin",
-      "Menegroth"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "m",
-    "l"
-   ],
-   "total": 6,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 6,
-     "examples": [
-      "amloth",
-      "Camlost",
-      "Himlad",
-      "imlad",
-      "Nimloth"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "n",
     "p"
    ],
-   "total": 6,
+   "total": 7,
    "outcomes": [
     {
      "op": [
@@ -11438,6 +12266,86 @@
      "examples": [
       "Morben"
      ]
+    },
+    {
+     "op": [
+      0,
+      1,
+      "b"
+     ],
+     "count": 1,
+     "examples": [
+      "penbed"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "m",
+    "l"
+   ],
+   "total": 6,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 6,
+     "examples": [
+      "amloth",
+      "Camlost",
+      "Himlad",
+      "imlad",
+      "Nimloth"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "d",
+    "k"
+   ],
+   "total": 6,
+   "outcomes": [
+    {
+     "op": [
+      2,
+      1,
+      "ŋg"
+     ],
+     "count": 4,
+     "examples": [
+      "Angast",
+      "angerthas",
+      "thangail",
+      "Thingol"
+     ]
+    },
+    {
+     "op": [
+      1,
+      1,
+      "x"
+     ],
+     "count": 1,
+     "examples": [
+      "echor"
+     ]
+    },
+    {
+     "op": [
+      2,
+      1,
+      "x"
+     ],
+     "count": 1,
+     "examples": [
+      "Orchorod"
+     ]
     }
    ]
   },
@@ -11456,46 +12364,11 @@
      ],
      "count": 6,
      "examples": [
-      "Balrog",
       "Elrond",
       "Elros",
       "Gilraen",
-      "Gilrain"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "n",
-    "n"
-   ],
-   "total": 6,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      1,
-      ""
-     ],
-     "count": 3,
-     "examples": [
-      "Carnen",
-      "Harnen",
-      "Mornan"
-     ]
-    },
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 3,
-     "examples": [
-      "dannen",
-      "Lebennin",
-      "Niben-nog"
+      "Gilrain",
+      "Menelrond"
      ]
     }
    ]
@@ -11561,50 +12434,6 @@
   },
   {
    "key": [
-    "n",
-    "a"
-   ],
-   "total": 5,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 2,
-     "examples": [
-      "anann",
-      "Dúnadan"
-     ]
-    },
-    {
-     "op": [
-      0,
-      1,
-      "e"
-     ],
-     "count": 2,
-     "examples": [
-      "Edenedair",
-      "Rhúnedain"
-     ]
-    },
-    {
-     "op": [
-      1,
-      0,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "Harathrad"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "d",
     "g"
    ],
@@ -11639,44 +12468,44 @@
   },
   {
    "key": [
-    "d",
-    "k"
+    "n",
+    "r"
    ],
    "total": 5,
    "outcomes": [
     {
      "op": [
-      2,
-      1,
-      "ŋg"
+      0,
+      0,
+      ""
      ],
      "count": 3,
      "examples": [
-      "angerthas",
-      "thangail",
-      "Thingol"
+      "Aranrúth",
+      "Caran-rass",
+      "Finrod"
      ]
     },
     {
      "op": [
       1,
-      1,
-      "x"
+      0,
+      "ð"
      ],
      "count": 1,
      "examples": [
-      "echor"
+      "Caradhras"
      ]
     },
     {
      "op": [
-      2,
       1,
-      "x"
+      0,
+      ""
      ],
      "count": 1,
      "examples": [
-      "Orchorod"
+      "Eglarest"
      ]
     }
    ]
@@ -11828,6 +12657,49 @@
   },
   {
    "key": [
+    "r",
+    "r"
+   ],
+   "total": 4,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      1,
+      ""
+     ],
+     "count": 2,
+     "examples": [
+      "Aerandir",
+      "Aglarond"
+     ]
+    },
+    {
+     "op": [
+      0,
+      3,
+      "o"
+     ],
+     "count": 1,
+     "examples": [
+      "cýron"
+     ]
+    },
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "Dor-Rodyn"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
     "d",
     "t"
    ],
@@ -11865,39 +12737,6 @@
      "count": 1,
      "examples": [
       "tad-dal"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "n",
-    "r"
-   ],
-   "total": 4,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 3,
-     "examples": [
-      "Aranrúth",
-      "Caran-rass",
-      "Finrod"
-     ]
-    },
-    {
-     "op": [
-      1,
-      0,
-      "ð"
-     ],
-     "count": 1,
-     "examples": [
-      "Caradhras"
      ]
     }
    ]
@@ -12007,6 +12846,92 @@
      "count": 1,
      "examples": [
       "Eglahir"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "n",
+    "k"
+   ],
+   "total": 4,
+   "outcomes": [
+    {
+     "op": [
+      1,
+      1,
+      "ŋg"
+     ],
+     "count": 2,
+     "examples": [
+      "dangar-",
+      "Thuringud"
+     ]
+    },
+    {
+     "op": [
+      1,
+      1,
+      "x"
+     ],
+     "count": 1,
+     "examples": [
+      "morchant"
+     ]
+    },
+    {
+     "op": [
+      1,
+      1,
+      "g"
+     ],
+     "count": 1,
+     "examples": [
+      "Morgai"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "l",
+    "m"
+   ],
+   "total": 4,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 2,
+     "examples": [
+      "Dolmed",
+      "Gilmith"
+     ]
+    },
+    {
+     "op": [
+      1,
+      1,
+      "v"
+     ],
+     "count": 1,
+     "examples": [
+      "Elvellyn"
+     ]
+    },
+    {
+     "op": [
+      0,
+      1,
+      "v"
+     ],
+     "count": 1,
+     "examples": [
+      "Menelvagor"
      ]
     }
    ]
@@ -12250,6 +13175,50 @@
   },
   {
    "key": [
+    "a",
+    "k"
+   ],
+   "total": 3,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      1,
+      "g"
+     ],
+     "count": 3,
+     "examples": [
+      "athragared",
+      "felagund",
+      "Felagund"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "r",
+    "d"
+   ],
+   "total": 3,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 3,
+     "examples": [
+      "bardor",
+      "herdir",
+      "Nardol"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
     "g",
     "o"
    ],
@@ -12378,74 +13347,22 @@
   },
   {
    "key": [
-    "n",
-    "k"
-   ],
-   "total": 3,
-   "outcomes": [
-    {
-     "op": [
-      1,
-      1,
-      "ŋg"
-     ],
-     "count": 1,
-     "examples": [
-      "dangar-"
-     ]
-    },
-    {
-     "op": [
-      1,
-      1,
-      "x"
-     ],
-     "count": 1,
-     "examples": [
-      "morchant"
-     ]
-    },
-    {
-     "op": [
-      1,
-      1,
-      "g"
-     ],
-     "count": 1,
-     "examples": [
-      "Morgai"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "l",
-    "m"
+    "r",
+    "p"
    ],
    "total": 3,
    "outcomes": [
     {
      "op": [
       0,
-      0,
-      ""
-     ],
-     "count": 2,
-     "examples": [
-      "Dolmed",
-      "Gilmith"
-     ]
-    },
-    {
-     "op": [
-      0,
       1,
-      "v"
+      "b"
      ],
-     "count": 1,
+     "count": 3,
      "examples": [
-      "Menelvagor"
+      "dirbedui",
+      "Narbeleth",
+      "Tharbad"
      ]
     }
    ]
@@ -12559,27 +13476,6 @@
   },
   {
    "key": [
-    "r",
-    "r"
-   ],
-   "total": 2,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      1,
-      ""
-     ],
-     "count": 2,
-     "examples": [
-      "Aerandir",
-      "Aglarond"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "m",
     "t"
    ],
@@ -12658,6 +13554,58 @@
      "examples": [
       "Angrod",
       "Angruin"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "e",
+    "l"
+   ],
+   "total": 2,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      0,
+      ""
+     ],
+     "count": 2,
+     "examples": [
+      "athelas",
+      "gwaelod"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "r",
+    "k"
+   ],
+   "total": 2,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      1,
+      "g"
+     ],
+     "count": 1,
+     "examples": [
+      "Bar-goll"
+     ]
+    },
+    {
+     "op": [
+      0,
+      3,
+      "go"
+     ],
+     "count": 1,
+     "examples": [
+      "naergon"
      ]
     }
    ]
@@ -13007,6 +13955,37 @@
   },
   {
    "key": [
+    "d",
+    "s"
+   ],
+   "total": 2,
+   "outcomes": [
+    {
+     "op": [
+      1,
+      1,
+      "θ"
+     ],
+     "count": 1,
+     "examples": [
+      "ethir¹"
+     ]
+    },
+    {
+     "op": [
+      1,
+      1,
+      "h"
+     ],
+     "count": 1,
+     "examples": [
+      "Linhir"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
     "l",
     "i"
    ],
@@ -13164,27 +14143,6 @@
   },
   {
    "key": [
-    "r",
-    "d"
-   ],
-   "total": 2,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 2,
-     "examples": [
-      "herdir",
-      "Nardol"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "l",
     "p"
    ],
@@ -13273,27 +14231,6 @@
      "examples": [
       "minuial",
       "Nenuial"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "r",
-    "p"
-   ],
-   "total": 2,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      1,
-      "b"
-     ],
-     "count": 2,
-     "examples": [
-      "Narbeleth",
-      "Tharbad"
      ]
     }
    ]
@@ -13534,26 +14471,6 @@
      "count": 1,
      "examples": [
       "Arothir"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "e",
-    "l"
-   ],
-   "total": 1,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      0,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "athelas"
      ]
     }
    ]
@@ -13980,26 +14897,6 @@
   },
   {
    "key": [
-    "d",
-    "s"
-   ],
-   "total": 1,
-   "outcomes": [
-    {
-     "op": [
-      1,
-      1,
-      "θ"
-     ],
-     "count": 1,
-     "examples": [
-      "ethir¹"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "ŋ",
     "o"
    ],
@@ -14034,26 +14931,6 @@
      "count": 1,
      "examples": [
       "Fanuidhol"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "a",
-    "k"
-   ],
-   "total": 1,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      1,
-      "g"
-     ],
-     "count": 1,
-     "examples": [
-      "Felagund"
      ]
     }
    ]
@@ -14194,6 +15071,26 @@
      "count": 1,
      "examples": [
       "Golasgil"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "ð",
+    "p"
+   ],
+   "total": 1,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      1,
+      "b"
+     ],
+     "count": 1,
+     "examples": [
+      "Golodhbaeth"
      ]
     }
    ]
@@ -14580,26 +15477,6 @@
   },
   {
    "key": [
-    "r",
-    "k"
-   ],
-   "total": 1,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      3,
-      "go"
-     ],
-     "count": 1,
-     "examples": [
-      "naergon"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "v",
     "r"
    ],
@@ -14774,6 +15651,26 @@
      "count": 1,
      "examples": [
       "Rathlóriel"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "k",
+    "g"
+   ],
+   "total": 1,
+   "outcomes": [
+    {
+     "op": [
+      1,
+      0,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "Rhosgobel"
      ]
     }
    ]
@@ -15005,14 +15902,14 @@
     "n",
     "d"
    ],
-   "total": 33,
+   "total": 35,
    "outcomes": [
     {
      "op": [
       0,
       ""
      ],
-     "count": 18,
+     "count": 19,
      "examples": [
       "Aglarond",
       "Angband",
@@ -15040,8 +15937,9 @@
       1,
       "n"
      ],
-     "count": 2,
+     "count": 3,
      "examples": [
+      "aerlinn",
       "anann",
       "Lothlann"
      ]
@@ -15053,14 +15951,14 @@
     "e",
     "n"
    ],
-   "total": 24,
+   "total": 26,
    "outcomes": [
     {
      "op": [
       0,
       ""
      ],
-     "count": 23,
+     "count": 25,
      "examples": [
       "Abonnen",
       "Agarwaen",
@@ -15086,20 +15984,43 @@
     "ī",
     "r"
    ],
-   "total": 23,
+   "total": 24,
    "outcomes": [
     {
      "op": [
       0,
       ""
      ],
-     "count": 23,
+     "count": 24,
      "examples": [
       "aeglir",
       "Arothir",
       "Brandir",
       "Caranthir",
       "condir"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "e",
+    "l"
+   ],
+   "total": 22,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 22,
+     "examples": [
+      "Adanedhel",
+      "Caledhel",
+      "Danedhel",
+      "Dírhael",
+      "Dúnedel"
      ]
     }
    ]
@@ -15151,46 +16072,56 @@
   },
   {
    "key": [
-    "e",
-    "l"
-   ],
-   "total": 20,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 20,
-     "examples": [
-      "Adanedhel",
-      "Caledhel",
-      "Danedhel",
-      "Dírhael",
-      "Dúnedel"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "i",
     "n"
    ],
-   "total": 18,
+   "total": 19,
    "outcomes": [
     {
      "op": [
       0,
       ""
      ],
-     "count": 18,
+     "count": 19,
      "examples": [
       "Aeluin",
       "Anduin",
       "Angruin",
       "Baranduin",
       "Curufin"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "s",
+    "s"
+   ],
+   "total": 13,
+   "outcomes": [
+    {
+     "op": [
+      1,
+      ""
+     ],
+     "count": 12,
+     "examples": [
+      "aeglos",
+      "Aeglos",
+      "Alphros",
+      "Amras",
+      "Celebros"
+     ]
+    },
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "Taras-ness"
      ]
     }
    ]
@@ -15241,33 +16172,23 @@
   },
   {
    "key": [
-    "s",
-    "s"
+    "o",
+    "n"
    ],
    "total": 12,
    "outcomes": [
     {
      "op": [
-      1,
-      ""
-     ],
-     "count": 11,
-     "examples": [
-      "aeglos",
-      "Aeglos",
-      "Alphros",
-      "Amras",
-      "Celebros"
-     ]
-    },
-    {
-     "op": [
       0,
       ""
      ],
-     "count": 1,
+     "count": 12,
      "examples": [
-      "Taras-ness"
+      "Arathornion",
+      "Cúthalion",
+      "Dor-Rodyn",
+      "Dorwinion",
+      "Dúneglon"
      ]
     }
    ]
@@ -15320,6 +16241,62 @@
   },
   {
    "key": [
+    "s",
+    "t"
+   ],
+   "total": 11,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 11,
+     "examples": [
+      "Angast",
+      "Angrenost",
+      "Angrist",
+      "Belegost",
+      "Camlost"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "i",
+    "l"
+   ],
+   "total": 11,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 10,
+     "examples": [
+      "Borgil",
+      "cenedril",
+      "Fimbrethil",
+      "Golasgil",
+      "Malvegil"
+     ]
+    },
+    {
+     "op": [
+      0,
+      "iaθ"
+     ],
+     "count": 1,
+     "examples": [
+      "Osgiliath"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
     "a",
     "d"
    ],
@@ -15343,23 +16320,33 @@
   },
   {
    "key": [
-    "o",
-    "n"
+    "l",
+    "l"
    ],
    "total": 10,
    "outcomes": [
     {
      "op": [
+      1,
+      ""
+     ],
+     "count": 9,
+     "examples": [
+      "Aranel",
+      "Celebdil",
+      "Egladil",
+      "Glinnel",
+      "Laegel"
+     ]
+    },
+    {
+     "op": [
       0,
       ""
      ],
-     "count": 10,
+     "count": 1,
      "examples": [
-      "Arathornion",
-      "Cúthalion",
-      "Dorwinion",
-      "Dúneglon",
-      "Forlindon"
+      "Bar-goll"
      ]
     }
    ]
@@ -15389,41 +16376,8 @@
   },
   {
    "key": [
-    "i",
-    "l"
-   ],
-   "total": 10,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 9,
-     "examples": [
-      "cenedril",
-      "Fimbrethil",
-      "Golasgil",
-      "Malvegil",
-      "Mormegil"
-     ]
-    },
-    {
-     "op": [
-      0,
-      "iaθ"
-     ],
-     "count": 1,
-     "examples": [
-      "Osgiliath"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "s",
-    "t"
+    "e",
+    "θ"
    ],
    "total": 9,
    "outcomes": [
@@ -15434,34 +16388,57 @@
      ],
      "count": 9,
      "examples": [
-      "Angrenost",
-      "Angrist",
-      "Belegost",
-      "Camlost",
-      "Carchost"
+      "andreth",
+      "Arodreth",
+      "athrabeth",
+      "dangweth",
+      "Elbereth"
      ]
     }
    ]
   },
   {
    "key": [
-    "l",
-    "l"
+    "a",
+    "n"
    ],
    "total": 9,
    "outcomes": [
     {
      "op": [
-      1,
+      0,
       ""
      ],
      "count": 9,
      "examples": [
-      "Aranel",
-      "Celebdil",
-      "Egladil",
-      "Glinnel",
-      "Laegel"
+      "Arthedain",
+      "Celebrían",
+      "Drúadan",
+      "Dúnadan",
+      "Eradan"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "ō",
+    "r"
+   ],
+   "total": 9,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 9,
+     "examples": [
+      "bardor",
+      "Berennyr",
+      "Dagmor",
+      "Eglador",
+      "Elennor"
      ]
     }
    ]
@@ -15485,75 +16462,6 @@
       "ethir²",
       "Gil-Amdir",
       "Gildír"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "e",
-    "θ"
-   ],
-   "total": 8,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 8,
-     "examples": [
-      "andreth",
-      "Arodreth",
-      "athrabeth",
-      "dangweth",
-      "Elbereth"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "a",
-    "n"
-   ],
-   "total": 8,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 8,
-     "examples": [
-      "Arthedain",
-      "Celebrían",
-      "Drúadan",
-      "Dúnadan",
-      "Eradan"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "ō",
-    "r"
-   ],
-   "total": 8,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 8,
-     "examples": [
-      "Berennyr",
-      "Dagmor",
-      "Eglador",
-      "Elennor",
-      "Gondor"
      ]
     }
    ]
@@ -15675,6 +16583,51 @@
   },
   {
    "key": [
+    "o",
+    "l"
+   ],
+   "total": 5,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 5,
+     "examples": [
+      "dandol-",
+      "Fanuidhol",
+      "glandagol",
+      "Glórindol",
+      "Nardol"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "u",
+    "d"
+   ],
+   "total": 4,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 4,
+     "examples": [
+      "Amrod",
+      "Angrod",
+      "Finrod",
+      "gwaelod"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
     "a",
     "ŋ"
    ],
@@ -15742,28 +16695,6 @@
   {
    "key": [
     "o",
-    "l"
-   ],
-   "total": 4,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 4,
-     "examples": [
-      "dandol-",
-      "Fanuidhol",
-      "Glórindol",
-      "Nardol"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "o",
     "r"
    ],
    "total": 4,
@@ -15816,37 +16747,38 @@
   },
   {
    "key": [
-    "n",
-    "n"
+    "o",
+    "d"
    ],
-   "total": 3,
+   "total": 4,
    "outcomes": [
-    {
-     "op": [
-      1,
-      ""
-     ],
-     "count": 2,
-     "examples": [
-      "Melian",
-      "Rían"
-     ]
-    },
     {
      "op": [
       0,
       ""
      ],
+     "count": 3,
+     "examples": [
+      "Orchorod",
+      "pennod",
+      "Thinrod"
+     ]
+    },
+    {
+     "op": [
+      2,
+      ""
+     ],
      "count": 1,
      "examples": [
-      "aerlinn"
+      "Erebor"
      ]
     }
    ]
   },
   {
    "key": [
-    "u",
+    "e",
     "d"
    ],
    "total": 3,
@@ -15858,9 +16790,9 @@
      ],
      "count": 3,
      "examples": [
-      "Amrod",
-      "Angrod",
-      "Finrod"
+      "athragared",
+      "ephed-",
+      "penbed"
      ]
     }
    ]
@@ -15930,36 +16862,6 @@
   },
   {
    "key": [
-    "o",
-    "d"
-   ],
-   "total": 3,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 2,
-     "examples": [
-      "Orchorod",
-      "Thinrod"
-     ]
-    },
-    {
-     "op": [
-      2,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "Erebor"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "l",
     "ō"
    ],
@@ -16001,26 +16903,6 @@
   },
   {
    "key": [
-    "u",
-    "g"
-   ],
-   "total": 2,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 2,
-     "examples": [
-      "Balrog",
-      "Niben-nog"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "r",
     "θ"
    ],
@@ -16055,6 +16937,26 @@
      "examples": [
       "Cadlaer",
       "Eblaer"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "u",
+    "n"
+   ],
+   "total": 2,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 2,
+     "examples": [
+      "cýron",
+      "naergon"
      ]
     }
    ]
@@ -16115,6 +17017,55 @@
      "examples": [
       "imrad",
       "Tharbad"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "n",
+    "n"
+   ],
+   "total": 2,
+   "outcomes": [
+    {
+     "op": [
+      1,
+      ""
+     ],
+     "count": 2,
+     "examples": [
+      "Melian",
+      "Rían"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "i",
+    "a"
+   ],
+   "total": 2,
+   "outcomes": [
+    {
+     "op": [
+      1,
+      "el"
+     ],
+     "count": 1,
+     "examples": [
+      "palan-díriel"
+     ]
+    },
+    {
+     "op": [
+      0,
+      "d"
+     ],
+     "count": 1,
+     "examples": [
+      "pennoediad"
      ]
     }
    ]
@@ -16216,6 +17167,25 @@
   },
   {
    "key": [
+    "u",
+    "i"
+   ],
+   "total": 1,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "dirbedui"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
     "ē",
     "d"
    ],
@@ -16248,25 +17218,6 @@
      "count": 1,
      "examples": [
       "Drúnos"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
-    "e",
-    "d"
-   ],
-   "total": 1,
-   "outcomes": [
-    {
-     "op": [
-      0,
-      ""
-     ],
-     "count": 1,
-     "examples": [
-      "ephed-"
      ]
     }
    ]
@@ -16343,6 +17294,25 @@
      "count": 1,
      "examples": [
       "linnod"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "r",
+    "ð"
+   ],
+   "total": 1,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "Lisgardh"
      ]
     }
    ]
@@ -16426,7 +17396,7 @@
   {
    "key": [
     "u",
-    "n"
+    "g"
    ],
    "total": 1,
    "outcomes": [
@@ -16437,7 +17407,7 @@
      ],
      "count": 1,
      "examples": [
-      "naergon"
+      "Niben-nog"
      ]
     }
    ]
@@ -16482,25 +17452,6 @@
   },
   {
    "key": [
-    "i",
-    "a"
-   ],
-   "total": 1,
-   "outcomes": [
-    {
-     "op": [
-      1,
-      "el"
-     ],
-     "count": 1,
-     "examples": [
-      "palan-díriel"
-     ]
-    }
-   ]
-  },
-  {
-   "key": [
     "o",
     "ð"
    ],
@@ -16536,11 +17487,49 @@
      ]
     }
    ]
+  },
+  {
+   "key": [
+    "a",
+    "f"
+   ],
+   "total": 1,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "talraph"
+     ]
+    }
+   ]
+  },
+  {
+   "key": [
+    "ū",
+    "d"
+   ],
+   "total": 1,
+   "outcomes": [
+    {
+     "op": [
+      0,
+      ""
+     ],
+     "count": 1,
+     "examples": [
+      "Thuringud"
+     ]
+    }
+   ]
   }
  ],
  "shortening": {
   "last": {
-   "True": 52,
+   "True": 55,
    "False": 13
   },
   "earlier": {

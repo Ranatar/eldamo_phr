@@ -356,24 +356,51 @@ def build_lexicon(branch: str, derivations: list) -> list:
     return entries
 
 
+def _derived_from(W: Words, w) -> list:
+    """Ids of the words a word derives from, as Eldamo's Derivations section finds them
+    (word-page.xq, print-derivations): its own <deriv> (c:get-word) and every <deriv> inside
+    its references that points to a reference of another word by @source (c:get-ref),
+    as Q. lár < ᴹ√DAR; and roots named as elements."""
+    out = []
+    for d in w.findall('deriv'):
+        if _live(d):
+            out += W.get_word(d, w.get('l'))
+    for ref in w.findall('ref'):
+        if not _live(ref) or W.ref(ref.get('source')) is None:
+            continue
+        for d in ref.findall('deriv'):
+            hit = W.ref(d.get('source')) if _live(d) else None
+            if hit:
+                out.append(hit[0])
+        for el in ref.findall('element'):
+            hit = W.ref(el.get('source')) if _live(el) else None
+            if hit and W.by_id[hit[0]].get('speech') == 'root':
+                out.append(hit[0])
+    # a root among the elements is the word's root (Q. firya: √PHIR + -ya); the roots of
+    # word elements belong to the parts of a compound and are not followed
+    for el in w.findall('element'):
+        if _live(el):
+            out += [i for i in W.get_word(el, w.get('l')) if W.by_id[i].get('speech') == 'root']
+    return list(dict.fromkeys(out))
+
+
 def _resolve_roots(entries: list, W: Words) -> None:
-    """roots: primitive roots reached by following parent links (at most 4 steps)."""
+    """roots: the roots reached through Eldamo's derivations, step by step (at most 6)."""
     for e in entries:
-        roots, frontier, seen = [], list(e.get('parents', ())), set()
-        for _ in range(4):
+        roots, seen = [], {e['id']}
+        frontier = [e['id']] if e['id'] in W.by_id else []
+        for _ in range(6):
             nxt = []
-            for p in frontier:
-                pid = p.get('id')
-                if not pid or pid in seen:
-                    continue
-                seen.add(pid)
-                w = W.by_id.get(pid)
-                if w is None:
-                    continue
-                if w.get('speech') == 'root':
-                    roots.append({'lang': w.get('l'), 'form': w.get('v'), 'id': pid})
-                else:
-                    nxt += [_link(W, d.get('l'), d.get('v')) for d in w.findall('deriv') if _live(d)]
+            for pid in frontier:
+                for qid in _derived_from(W, W.by_id[pid]):
+                    if qid in seen:
+                        continue
+                    seen.add(qid)
+                    q = W.by_id[qid]
+                    if q.get('speech') == 'root':
+                        roots.append({'lang': q.get('l'), 'form': q.get('v'), 'id': qid})
+                    else:
+                        nxt.append(qid)
             frontier = nxt
         for r in e.pop('origin_roots', ()):
             if all(r['id'] != x['id'] for x in roots):

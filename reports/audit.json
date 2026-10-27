@@ -59,10 +59,10 @@
    },
    "lexicon": {
     "entries": 18421,
+    "roots": 7862,
     "derivations": 2892,
     "stages": 2772,
     "parents": 2216,
-    "roots": 3848,
     "elements": 6643,
     "stems": 1072,
     "compounds_with_derivations": 223,
@@ -5038,7 +5038,7 @@
    },
    "lexicon": {
     "entries": 14706,
-    "roots": 3627,
+    "roots": 6241,
     "derivations": 2083,
     "stages": 1939,
     "elements": 4652,

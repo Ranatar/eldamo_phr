@@ -50,6 +50,16 @@ class Lexicon(unittest.TestCase):
         self.assertIn('lindi-', linde['stems'])
         self.assertIn('LIN²', [r['form'] for r in linde['roots']])
 
+    def test_roots_as_eldamo_derivations_find_them(self):
+        # Q. lár: <deriv l="mp" v="DAR"> of the word; Q. firya: the root as an element;
+        # S. galadh: <deriv source> inside its references, as Eldamo's Derivations section
+        for b, lang, form, root in (('quenya', 'q', 'lár', 'DAR'), ('quenya', 'q', 'firya', 'PHIR'),
+                                    ('sindarin', 's', 'galadh', 'GALAD')):
+            e, = self.find(b, lang, form)
+            self.assertIn(root, [r['form'] for r in e.get('roots', ())], form)
+        core = [e for e in self.lex['quenya'] if e['lang'] == 'q' and e.get('speech') in ('n', 'adj', 'vb', 'adv')]
+        self.assertGreater(sum(1 for e in core if e.get('roots')) / len(core), 0.5)
+
     def test_elements_resolved(self):
         casallie, = self.find('quenya', 'q', 'Casallië')
         first, second = casallie['elements']

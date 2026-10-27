@@ -57,10 +57,10 @@
  },
  "lexicon": {
   "entries": 18421,
+  "roots": 7862,
   "derivations": 2892,
   "stages": 2772,
   "parents": 2216,
-  "roots": 3848,
   "elements": 6643,
   "stems": 1072,
   "compounds_with_derivations": 223,

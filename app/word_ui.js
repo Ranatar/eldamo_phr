@@ -280,6 +280,9 @@ function cardHtml(s) {
       <a href="${SITE}words/word-${esc(e.id)}.html" target="_blank" rel="noopener" class="small">статья Eldamo ↗</a></div>
     <div class="small">${esc(BRANCH_NAMES[b])}, ${esc(ERA_NAMES[era])} концепция${lang ? ', ' + esc(lang.name) : ''}${bits.length ? ' · ' + bits.join('; ') : ''}</div>
     ${links.length ? `<div class="small">${links.join(' · ')}</div>` : ''}
+    ${(e.unruled || []).length ? `<div class="small unruled">В деривации Eldamo ${e.unruled.length > 1 ? 'есть шаги' : 'есть шаг'} без правила («?»): ${
+      e.unruled.map(([code, a, b2]) => `<span class="marker">${esc(marker(E, code))}</span> <span class="form">${esc(a)} → ${esc(b2)}</span>`).join('; ')}.
+      Законы такой шаг не делают, поэтому реконструкция может разойтись с формой Толкина.</div>` : ''}
     ${e.starts ? `<div class="small"><a href="#" data-ref-derivations="${esc(e.id)}" data-branch="${esc(b)}">Деривации Eldamo этого слова в справочнике</a></div>` : ''}`;
 }
 

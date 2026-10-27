@@ -75,7 +75,7 @@ def payload(branches: dict) -> dict:
 
 
 LEXICON_FIELDS = ('id', 'lang', 'form', 'gloss', 'speech', 'mark', 'neo', 'stems', 'starts', 'stages', 'written_origins',
-                  'proto_forms')
+                  'proto_forms', 'unruled')
 
 
 def _key(parts) -> str:

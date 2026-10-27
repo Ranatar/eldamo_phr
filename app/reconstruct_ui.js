@@ -23,6 +23,28 @@ function periodSelect(sel) {
   if (prev && [...sel.options].some(o => o.value === prev)) sel.value = prev;
 }
 const parse = v => { const [b, era, stage] = v.split('|'); return [b, era, Number(stage)]; };
+const codeOf = ([b, era, stage]) => (QU.engine(b).languages.find(l => l.era === era && l.stage === stage) || {}).code;
+const bareKey = f => QU.fold(String(f).replace(/[¹²³⁴⁵⁶⁷⁸⁹]/g, '')).replace(/^-+|-+$/g, '').trim();
+
+// words of the lexicon for a typed form: those of the source period's language first
+function lexiconHits(text) {
+  const code = codeOf(parse($('rc-src').value));
+  return QU.searchWords(text, null, 40)
+    .map((h, k) => [h.entry.lang === code ? 0 : 1, k, h]).sort((a, b) => a[0] - b[0] || a[1] - b[1]).map(t => t[2]);
+}
+function exactWord(text) {
+  const code = codeOf(parse($('rc-src').value)), key = bareKey(text);
+  const hits = lexiconHits(text).filter(h => h.entry.lang === code && bareKey(h.entry.form) === key);
+  return hits.length === 1 ? hits[0] : null;
+}
+function suggest() {
+  const text = $('rc-form').value, box = $('rc-r');
+  if (!text.trim()) { box.innerHTML = ''; return; }
+  const hits = lexiconHits(text).slice(0, 10);
+  box.innerHTML = hits.map(h => QU.hitHtml(h, `data-word="${esc(h.entry.id)}" data-branch="${esc(h.branch)}"`)).join('')
+    + `<p class="small muted">${hits.length ? 'Щелчок — выбрать статью Eldamo (с её праформой и связями). ' : 'В лексиконе такой формы нет. '}`
+    + '«Реконструировать» без выбора — взять саму форму; если в языке исходного периода есть ровно одна статья с этой формой, берётся она.</p>';
+}
 
 function subjectHtml(s) {
   if (!s) return '<p class="muted">Выберите слово в поиске наверху или введите форму ниже.</p>';
@@ -36,6 +58,7 @@ function subjectHtml(s) {
 function onSubject(s) {
   $('rc-subject').innerHTML = subjectHtml(s);
   $('rc-form').value = '';
+  $('rc-r').innerHTML = '';
   if (s && s.period) $('rc-src').value = s.period.join('|');
   $('rc-output').innerHTML = '';
   updateButton();
@@ -56,15 +79,21 @@ function run() {
   const src = parse($('rc-src').value), dst = parse($('rc-dst').value);
   const typed = $('rc-form').value.trim();
   const s = QU.subject();
-  let opts;
-  if (typed) opts = { form: typed, spelled: $('rc-spelled').checked };
+  let opts, note = '';
+  const exact = typed && $('rc-spelled').checked ? exactWord(typed) : null;
+  if (exact) {
+    opts = { word: exact.entry.id };
+    note = `<p class="small">Взята статья Eldamo: <a href="#" data-word="${esc(exact.entry.id)}" data-branch="${esc(exact.branch)}">`
+      + `<span class="marker">${esc(QU.marker(QU.engine(exact.branch), exact.entry.lang))}</span> <span class="form">${esc(exact.entry.form)}</span></a> `
+      + `<span class="muted">${esc(exact.entry.gloss)}</span>.</p>`;
+  } else if (typed) opts = { form: typed, spelled: $('rc-spelled').checked };
   else if (s && s.kind !== 'missing') opts = QU.sourceOf(s);
   else { $('rc-output').textContent = 'Выберите слово или введите форму.'; return; }
   const out = $('rc-output');
   QR.set({ dst: dst.join('/') }, false);
   let vs;
   try { vs = WF.reconstruct(QU.allEngines(), src, dst, opts); } catch (err) { out.textContent = 'Ошибка: ' + err.message; throw err; }
-  const head = `<p class="result-head"><span class="marker">${esc(QU.periodName(...src))}</span> → <span class="marker">${esc(QU.periodName(...dst))}</span></p>`;
+  const head = `<p class="result-head"><span class="marker">${esc(QU.periodName(...src))}</span> → <span class="marker">${esc(QU.periodName(...dst))}</span></p>` + note;
   if (!vs.length) {
     out.innerHTML = head + '<p>Форм не найдено: ни одна восстановленная форма не даёт исходную при прогоне вперёд. Попробуйте другую стадию или введите форму в фонетической записи.</p>';
     return;
@@ -86,7 +115,8 @@ function run() {
 periodSelect($('rc-src'));
 periodSelect($('rc-dst'));
 $('rc-dst').value = 'sindarin|late|3';
-$('rc-form').addEventListener('input', updateButton);
+$('rc-form').addEventListener('input', () => { updateButton(); suggest(); });
+$('rc-src').addEventListener('change', suggest);
 $('rc-go').addEventListener('click', run);
 $('rc-output').addEventListener('click', e => {
   const u = e.target.closest('[data-use]');

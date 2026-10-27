@@ -328,6 +328,16 @@ def build_lexicon(branch: str, derivations: list) -> list:
             ders = [d for d in ders if d not in other]
         if ders:
             entry['starts'] = list(dict.fromkeys(d['start'] for d in ders if d['start']))
+            # steps Eldamo gives without a rule ('?'): buzbō > buspō > puspō (b > p?) > pupso
+            unruled = []
+            for d in ders:
+                prev = d['start']
+                for st in d['steps']:
+                    if st['status'].startswith('unknown_rule') and [st['lang'], prev, st['after']] not in unruled:
+                        unruled.append([st['lang'], prev, st['after']])
+                    prev = st['after']
+            if unruled:
+                entry['unruled'] = unruled
             stages = defaultdict(list)
             for d in ders:
                 last = {}

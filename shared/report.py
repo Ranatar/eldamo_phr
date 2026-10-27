@@ -236,6 +236,28 @@ def render_sequencer(branches: dict) -> tuple[str, dict]:
                  'results': [r for r in res['results'] if not r['ok_main']],
                  'compounds': {k2: v for k2, v in cres.items()}}
         lines += [f"Расходящиеся деривации ({n - res['main']}) — `reports/sequencer.json`.", '']
+    from .unruled import summary, unruled_steps
+    steps = unruled_steps(branches)
+    table = summary(steps)
+    names = {l['code']: f"{l['marker']} {l['name']}" for data in branches.values() for l in data['meta']['languages']}
+    lines += ['## Шаги без правила в деривациях Eldamo', '',
+              'Шаг, у которого Страк ставит «?» вместо правила: ни один известный закон его не объясняет '
+              '(Q. pupso «муха» < ✶buzbō > buspō > **puspō** > pupso; законы дают βuspō, отсюда *vupso). Для каждого '
+              'такого шага к форме перед ним применяются законы того же языка (`shared/unruled.py`): «правило» — '
+              'шаг даёт одно правило языка, которое Eldamo не назвало; «законы» — их последовательность; «нет» — '
+              'форма расходится с законами.', '',
+              '| язык | шагов | правило | законы | нет |', '|---|---|---|---|---|']
+    for lang, c in table.items():
+        lines.append(f"| {names.get(lang, lang)} | {sum(c.values())} | {c['rule']} | {c['laws']} | {c['none']} |")
+    total = Counter(s['kind'] for s in steps)
+    lines += [f"| всего | {len(steps)} | {total['rule']} | {total['laws']} | {total['none']} |", '',
+              '| слово | язык | шаг Eldamo | по законам |', '|---|---|---|---|']
+    for st in steps:
+        if st['kind'] == 'none':
+            lines.append(f"| [{st['word_form']}](https://eldamo.org/content/words/word-{st['word']}.html) | "
+                         f"{names.get(st['lang'], st['lang'])} | {st['before']} > {st['after']} | {st['laws'] or ''} |")
+    lines.append('')
+    js['unruled'] = steps
     return '\n'.join(lines).rstrip() + '\n', js
 
 

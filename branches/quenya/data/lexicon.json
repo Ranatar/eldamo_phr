@@ -30214,6 +30214,13 @@
    "aŋajer",
    "aŋaðʲnō"
   ],
+  "unruled": [
+   [
+    "eq",
+    "aŋgajer",
+    "aŋgear"
+   ]
+  ],
   "stages": {
    "eq": [
     "aŋgear",
@@ -33799,6 +33806,13 @@
   ],
   "starts": [
    "austakalende"
+  ],
+  "unruled": [
+   [
+    "eq",
+    "austakalende",
+    "austalende"
+   ]
   ],
   "stages": {
    "eq": [
@@ -39208,6 +39222,13 @@
    "ɸalri",
    "ɸajri"
   ],
+  "unruled": [
+   [
+    "eq",
+    "ɸalri",
+    "faire"
+   ]
+  ],
   "stages": {
    "eq": [
     "faire"
@@ -39551,6 +39572,13 @@
   ],
   "starts": [
    "fal̃di"
+  ],
+  "unruled": [
+   [
+    "eq",
+    "fal̃di",
+    "faldi"
+   ]
   ],
   "stages": {
    "eq": [
@@ -64968,6 +64996,13 @@
   "starts": [
    "laptǝ"
   ],
+  "unruled": [
+   [
+    "eq",
+    "lapt",
+    "latt"
+   ]
+  ],
   "stages": {
    "ep": [
     "lapt"
@@ -85438,6 +85473,13 @@
   "starts": [
    "ŋarkðʲǝ"
   ],
+  "unruled": [
+   [
+    "eq",
+    "narti",
+    "narte"
+   ]
+  ],
   "stages": {
    "ep": [
     "ŋarkðʲ"
@@ -86165,6 +86207,13 @@
   ],
   "starts": [
    "nēgittē"
+  ],
+  "unruled": [
+   [
+    "eq",
+    "neitte",
+    "neite"
+   ]
   ],
   "stages": {
    "eq": [
@@ -88266,6 +88315,18 @@
    "negōn",
    "negexer",
    "nexies"
+  ],
+  "unruled": [
+   [
+    "eq",
+    "neōn",
+    "nion"
+   ],
+   [
+    "eq",
+    "negexer",
+    "nier"
+   ]
   ],
   "stages": {
    "eq": [
@@ -105343,6 +105404,13 @@
   "starts": [
    "kʷapja-"
   ],
+  "unruled": [
+   [
+    "ep",
+    "kʷapja-",
+    "kʷapta-"
+   ]
+  ],
   "stages": {
    "ep": [
     "kʷapta-"
@@ -107224,6 +107292,13 @@
   "starts": [
    "giwim"
   ],
+  "unruled": [
+   [
+    "eq",
+    "giwim",
+    "gwin"
+   ]
+  ],
   "stages": {
    "eq": [
     "kʷin"
@@ -107293,6 +107368,13 @@
   ],
   "starts": [
    "giwimdē"
+  ],
+  "unruled": [
+   [
+    "eq",
+    "giwindē",
+    "gwindē"
+   ]
   ],
   "stages": {
    "ep": [
@@ -110165,6 +110247,13 @@
    "resru",
    "rēðu"
   ],
+  "unruled": [
+   [
+    "eq",
+    "rerro",
+    "rēro"
+   ]
+  ],
   "stages": {
    "ep": [
     "resro",
@@ -112765,6 +112854,13 @@
   ],
   "starts": [
    "saxsōðā"
+  ],
+  "unruled": [
+   [
+    "eq",
+    "saxsōðā",
+    "saxxōðā"
+   ]
   ],
   "stages": {
    "eq": [
@@ -118445,6 +118541,13 @@
   "starts": [
    "sṇtʲl"
   ],
+  "unruled": [
+   [
+    "eq",
+    "sintʲl",
+    "sintḷ"
+   ]
+  ],
   "stages": {
    "eq": [
     "sintḷ"
@@ -123007,6 +123110,13 @@
   "starts": [
    "talkwā"
   ],
+  "unruled": [
+   [
+    "eq",
+    "talkwa",
+    "talka"
+   ]
+  ],
   "stages": {
    "eq": [
     "talka"
@@ -127335,6 +127445,13 @@
   ],
   "starts": [
    "tetelassē"
+  ],
+  "unruled": [
+   [
+    "eq",
+    "tetlasse",
+    "teltasse"
+   ]
   ],
   "stages": {
    "eq": [
@@ -135485,6 +135602,13 @@
   "starts": [
    "tʲastʲaβa-"
   ],
+  "unruled": [
+   [
+    "eq",
+    "tʲastʲava-",
+    "tʲastava-"
+   ]
+  ],
   "stages": {
    "eq": [
     "tʲastava-"
@@ -136356,6 +136480,13 @@
   ],
   "starts": [
    "teutā"
+  ],
+  "unruled": [
+   [
+    "eq",
+    "teutā",
+    "tʲūta"
+   ]
   ],
   "stages": {
    "eq": [
@@ -149738,6 +149869,13 @@
    "ɣolwē",
    "jolmē"
   ],
+  "unruled": [
+   [
+    "eq",
+    "ɣolwe",
+    "holwe"
+   ]
+  ],
   "stages": {
    "eq": [
     "olwe",
@@ -150924,6 +151062,13 @@
   ],
   "starts": [
    "ajē"
+  ],
+  "unruled": [
+   [
+    "eq",
+    "aije",
+    "āje"
+   ]
   ],
   "stages": {
    "eq": [
@@ -185577,6 +185722,13 @@
   "starts": [
    "amβus"
   ],
+  "unruled": [
+   [
+    "eq",
+    "ambur",
+    "ambor"
+   ]
+  ],
   "stages": {
    "eq": [
     "ambor"
@@ -187095,6 +187247,13 @@
   ],
   "starts": [
    "janta"
+  ],
+  "unruled": [
+   [
+    "mq",
+    "janta",
+    "anta"
+   ]
   ],
   "stages": {
    "mq": [
@@ -203505,6 +203664,13 @@
    "ŋ̣gjalme",
    "ŋgjalme"
   ],
+  "unruled": [
+   [
+    "mq",
+    "ŋjalme",
+    "jalme"
+   ]
+  ],
   "stages": {
    "maq": [
     "indjalme",
@@ -214738,6 +214904,13 @@
   "starts": [
    "dōmilindē"
   ],
+  "unruled": [
+   [
+    "mq",
+    "lōmilindē",
+    "lōmelindē"
+   ]
+  ],
   "stages": {
    "maq": [
     "lōmilindē"
@@ -215691,6 +215864,13 @@
   ],
   "starts": [
    "mbakhar"
+  ],
+  "unruled": [
+   [
+    "maq",
+    "mbakhar",
+    "mbakar"
+   ]
   ],
   "stages": {
    "maq": [
@@ -220480,6 +220660,13 @@
    "mālō",
    "mę̄lō"
   ],
+  "unruled": [
+   [
+    "maq",
+    "mę̄lō",
+    "mālō"
+   ]
+  ],
   "stages": {
    "mq": [
     "mālo"
@@ -223520,6 +223707,13 @@
   "starts": [
    "nettʰa"
   ],
+  "unruled": [
+   [
+    "mq",
+    "nettʰa",
+    "nessa"
+   ]
+  ],
   "stages": {
    "mq": [
     "nessa"
@@ -225443,6 +225637,13 @@
   "starts": [
    "nu"
   ],
+  "unruled": [
+   [
+    "q",
+    "nu",
+    "no"
+   ]
+  ],
   "stages": {
    "q": [
     "no"
@@ -226513,6 +226714,13 @@
   "starts": [
    "nētʰē",
    "nettʰe"
+  ],
+  "unruled": [
+   [
+    "mq",
+    "nettʰe",
+    "nesse"
+   ]
   ],
   "stages": {
    "maq": [
@@ -231189,6 +231397,13 @@
   "starts": [
    "patʰnā"
   ],
+  "unruled": [
+   [
+    "mq",
+    "patta",
+    "pasta"
+   ]
+  ],
   "stages": {
    "maq": [
     "pattā"
@@ -232010,6 +232225,13 @@
   ],
   "starts": [
    "buzbō"
+  ],
+  "unruled": [
+   [
+    "maq",
+    "buspō",
+    "puspō"
+   ]
   ],
   "stages": {
    "maq": [
@@ -233028,6 +233250,13 @@
   ],
   "starts": [
    "kwentro"
+  ],
+  "unruled": [
+   [
+    "mq",
+    "kwentso",
+    "kwenso"
+   ]
   ],
   "stages": {
    "maq": [
@@ -237380,6 +237609,13 @@
   "starts": [
    "stabnē"
   ],
+  "unruled": [
+   [
+    "mq",
+    "samne",
+    "samna"
+   ]
+  ],
   "stages": {
    "maq": [
     "θamnē"
@@ -237843,6 +238079,13 @@
   ],
   "starts": [
    "θaŋgasjandō"
+  ],
+  "unruled": [
+   [
+    "mq",
+    "θaŋgasjandō",
+    "θaŋgaj̊ando"
+   ]
   ],
   "stages": {
    "maq": [
@@ -242309,6 +242552,13 @@
   "starts": [
    "talrunja"
   ],
+  "unruled": [
+   [
+    "mq",
+    "tallunja",
+    "tallune"
+   ]
+  ],
   "stages": {
    "mp": [
     "tallunja"
@@ -244641,6 +244891,13 @@
   "starts": [
    "kjelepna"
   ],
+  "unruled": [
+   [
+    "mq",
+    "tjelemna",
+    "telemna"
+   ]
+  ],
   "stages": {
    "maq": [
     "tjelemna"
@@ -244925,6 +245182,13 @@
   ],
   "starts": [
    "kjelpina"
+  ],
+  "unruled": [
+   [
+    "mq",
+    "tjelpina",
+    "telpina"
+   ]
   ],
   "stages": {
    "maq": [
@@ -247785,6 +248049,13 @@
   "starts": [
    "tuilelindō"
   ],
+  "unruled": [
+   [
+    "maq",
+    "tuilelindō",
+    "tuilindō"
+   ]
+  ],
   "stages": {
    "maq": [
     "tuilindō"
@@ -249977,6 +250248,13 @@
   ],
   "starts": [
    "teŋma"
+  ],
+  "unruled": [
+   [
+    "mp",
+    "teŋma",
+    "teɣma"
+   ]
   ],
   "stages": {
    "mp": [
@@ -252368,6 +252646,13 @@
   "starts": [
    "balīndōre",
    "balīnōre"
+  ],
+  "unruled": [
+   [
+    "mq",
+    "valindor",
+    "valinor"
+   ]
   ],
   "stages": {
    "mp": [
@@ -371195,6 +371480,13 @@
    "-woiti",
    "-vuiti"
   ],
+  "unruled": [
+   [
+    "q",
+    "-vuite",
+    "-voite"
+   ]
+  ],
   "stages": {
    "p": [
     "-eite",
@@ -372319,6 +372611,13 @@
   ],
   "starts": [
    "-iŋki"
+  ],
+  "unruled": [
+   [
+    "q",
+    "-iŋke",
+    "-iŋkwe"
+   ]
   ],
   "stages": {
    "p": [
@@ -376147,6 +376446,13 @@
   "starts": [
    "galbe"
   ],
+  "unruled": [
+   [
+    "q",
+    "alβe",
+    "albe"
+   ]
+  ],
   "stages": {
    "aq": [
     "ɣalβe"
@@ -378989,6 +379295,13 @@
   "starts": [
    "atkwet"
   ],
+  "unruled": [
+   [
+    "q",
+    "atkwet",
+    "akwet"
+   ]
+  ],
   "stages": {
    "q": [
     "akwet"
@@ -379037,6 +379350,13 @@
    "ada",
    "asa",
    "ad"
+  ],
+  "unruled": [
+   [
+    "q",
+    "ara",
+    "ar"
+   ]
   ],
   "stages": {
    "p": [
@@ -381317,6 +381637,13 @@
   ],
   "starts": [
    "atʰmō"
+  ],
+  "unruled": [
+   [
+    "aq",
+    "atʰmō",
+    "atʰumō"
+   ]
   ],
   "stages": {
    "aq": [
@@ -386718,6 +387045,13 @@
   "starts": [
    "keurānā"
   ],
+  "unruled": [
+   [
+    "q",
+    "keurānā",
+    "keurān"
+   ]
+  ],
   "stages": {
    "q": [
     "keuran"
@@ -389085,6 +389419,13 @@
    "kewe",
    "kēwā"
   ],
+  "unruled": [
+   [
+    "aq",
+    "kewe",
+    "keu"
+   ]
+  ],
   "stages": {
    "q": [
     "kēva"
@@ -389686,6 +390027,13 @@
    "edelā",
    "eldā"
   ],
+  "unruled": [
+   [
+    "aq",
+    "edelā",
+    "eledā"
+   ]
+  ],
   "stages": {
    "aq": [
     "eldā"
@@ -390066,6 +390414,13 @@
   ],
   "starts": [
    "edelō"
+  ],
+  "unruled": [
+   [
+    "p",
+    "edelō",
+    "eledō"
+   ]
   ],
   "stages": {
    "p": [
@@ -391740,6 +392095,13 @@
    "eneke",
    "enekwe"
   ],
+  "unruled": [
+   [
+    "q",
+    "eŋke",
+    "eŋkwe"
+   ]
+  ],
   "stages": {
    "aq": [
     "eŋke",
@@ -391922,6 +392284,13 @@
   ],
   "starts": [
    "ɣenetja"
+  ],
+  "unruled": [
+   [
+    "aq",
+    "ɣenetja",
+    "enetja"
+   ]
   ],
   "stages": {
    "aq": [
@@ -399381,6 +399750,13 @@
   "starts": [
    "srāban"
   ],
+  "unruled": [
+   [
+    "q",
+    "r̥āvan",
+    "r̥avan"
+   ]
+  ],
   "stages": {
    "aq": [
     "r̥āβan"
@@ -406295,6 +406671,13 @@
   ],
   "starts": [
    "lammo"
+  ],
+  "unruled": [
+   [
+    "q",
+    "lammo",
+    "larmo"
+   ]
   ],
   "stages": {
    "q": [
@@ -413644,6 +414027,18 @@
    "mapā",
    "mapa"
   ],
+  "unruled": [
+   [
+    "aq",
+    "mapā",
+    "makwā"
+   ],
+   [
+    "aq",
+    "mapa",
+    "makwa"
+   ]
+  ],
   "stages": {
    "q": [
     "makwa"
@@ -416953,6 +417348,13 @@
   "starts": [
    "morŋoθo"
   ],
+  "unruled": [
+   [
+    "q",
+    "morŋoθo",
+    "morŋoθ"
+   ]
+  ],
   "stages": {
    "q": [
     "morgos"
@@ -417422,6 +417824,13 @@
   "starts": [
    "māxananaskad"
   ],
+  "unruled": [
+   [
+    "p",
+    "māxananaskad",
+    "māxanaskad"
+   ]
+  ],
   "stages": {
    "p": [
     "māxanaskad"
@@ -417505,6 +417914,13 @@
   "starts": [
    "mę̄lō"
   ],
+  "unruled": [
+   [
+    "aq",
+    "mę̄lō",
+    "mālō"
+   ]
+  ],
   "stages": {
    "aq": [
     "mālō"
@@ -417571,6 +417987,13 @@
   ],
   "starts": [
    "māmā"
+  ],
+  "unruled": [
+   [
+    "aq",
+    "māmā",
+    "mbāmā"
+   ]
   ],
   "stages": {
    "aq": [
@@ -417653,6 +418076,13 @@
   "starts": [
    "mbara",
    "mbār"
+  ],
+  "unruled": [
+   [
+    "aq",
+    "mbara",
+    "mbār"
+   ]
   ],
   "stages": {
    "aq": [
@@ -417921,6 +418351,13 @@
   ],
   "starts": [
    "mēlambar"
+  ],
+  "unruled": [
+   [
+    "q",
+    "mēlambar",
+    "mēlamar"
+   ]
   ],
   "stages": {
    "q": [
@@ -420245,6 +420682,13 @@
   "starts": [
    "ŋgauro",
    "ŋgwaurō"
+  ],
+  "unruled": [
+   [
+    "aq",
+    "ŋwaurō",
+    "ŋaurō"
+   ]
   ],
   "stages": {
    "aq": [
@@ -428511,6 +428955,18 @@
    "arǭmēz",
    "orǭmē"
   ],
+  "unruled": [
+   [
+    "p",
+    "arǭmēz",
+    "arǭmē"
+   ],
+   [
+    "q",
+    "arome",
+    "orome"
+   ]
+  ],
   "stages": {
    "q": [
     "orome"
@@ -429213,6 +429669,13 @@
   "starts": [
    "otsōjā"
   ],
+  "unruled": [
+   [
+    "q",
+    "otsoia",
+    "otsea"
+   ]
+  ],
   "stages": {
    "aq": [
     "otsoia"
@@ -429573,6 +430036,13 @@
   ],
   "starts": [
    "palantīra"
+  ],
+  "unruled": [
+   [
+    "q",
+    "palantīra",
+    "palantīr"
+   ]
   ],
   "stages": {
    "q": [
@@ -430188,6 +430658,18 @@
    "?",
    "patta"
   ],
+  "unruled": [
+   [
+    "q",
+    "?",
+    "passa"
+   ],
+   [
+    "q",
+    "patta",
+    "pasta"
+   ]
+  ],
   "stages": {
    "q": [
     "passa",
@@ -430418,6 +430900,18 @@
   "starts": [
    "petʰla",
    "pelola"
+  ],
+  "unruled": [
+   [
+    "q",
+    "petʰla",
+    "pella"
+   ],
+   [
+    "q",
+    "pelola",
+    "pella"
+   ]
   ],
   "stages": {
    "q": [
@@ -431392,6 +431886,13 @@
   ],
   "starts": [
    "buzbō"
+  ],
+  "unruled": [
+   [
+    "aq",
+    "buspō",
+    "puspō"
+   ]
   ],
   "stages": {
    "aq": [
@@ -433520,6 +434021,13 @@
   ],
   "starts": [
    "rantʰlā"
+  ],
+  "unruled": [
+   [
+    "aq",
+    "rantʰlā",
+    "rantlā"
+   ]
   ],
   "stages": {
    "aq": [
@@ -438616,6 +439124,13 @@
   "starts": [
    "siŋkitamo"
   ],
+  "unruled": [
+   [
+    "q",
+    "siŋkitamo",
+    "sintamo"
+   ]
+  ],
   "stages": {
    "q": [
     "sintamo"
@@ -442741,6 +443256,13 @@
   "starts": [
    "delgūmā"
   ],
+  "unruled": [
+   [
+    "p",
+    "delgūmā",
+    "telgūmā"
+   ]
+  ],
   "stages": {
    "p": [
     "telgūmā"
@@ -442869,6 +443391,13 @@
   ],
   "starts": [
    "tjelperion"
+  ],
+  "unruled": [
+   [
+    "q",
+    "tjelperion",
+    "telperion"
+   ]
   ],
   "stages": {
    "q": [
@@ -443012,6 +443541,13 @@
   "starts": [
    "kjelepe",
    "tjelpe"
+  ],
+  "unruled": [
+   [
+    "q",
+    "tjelpe",
+    "telpe"
+   ]
   ],
   "stages": {
    "aq": [
@@ -445126,6 +445662,13 @@
   "starts": [
    "tulukʰastāz"
   ],
+  "unruled": [
+   [
+    "p",
+    "tulukʰastāz",
+    "tulukʰasta"
+   ]
+  ],
   "stages": {
    "p": [
     "tulukʰast"
@@ -446424,6 +446967,13 @@
   "starts": [
    "dāra"
   ],
+  "unruled": [
+   [
+    "q",
+    "dāra",
+    "tāra"
+   ]
+  ],
   "stages": {
    "q": [
     "tāra"
@@ -447334,6 +447884,13 @@
   "starts": [
    "ulubōz"
   ],
+  "unruled": [
+   [
+    "q",
+    "ulubōz",
+    "ulmo"
+   ]
+  ],
   "stages": {
    "q": [
     "ulmo"
@@ -447475,6 +448032,13 @@
   ],
   "starts": [
    "ṃbart"
+  ],
+  "unruled": [
+   [
+    "q",
+    "umbart",
+    "umbar"
+   ]
   ],
   "stages": {
    "aq": [
@@ -453644,6 +454208,18 @@
    "jūneke",
    "jūnekē"
   ],
+  "unruled": [
+   [
+    "q",
+    "jūneke",
+    "juŋkwe"
+   ],
+   [
+    "q",
+    "jūnekē",
+    "juŋkwe"
+   ]
+  ],
   "stages": {
    "q": [
     "juŋkwe"
@@ -454160,6 +454736,13 @@
   "starts": [
    "jujŋal"
   ],
+  "unruled": [
+   [
+    "q",
+    "jujal",
+    "jūjal"
+   ]
+  ],
   "stages": {
    "p": [
     "jujal"
@@ -454268,6 +454851,13 @@
   "starts": [
    "āse",
    "ase"
+  ],
+  "unruled": [
+   [
+    "q",
+    "are",
+    "ar"
+   ]
   ],
   "stages": {
    "aq": [
@@ -455480,6 +456070,13 @@
   "starts": [
    "awa-"
   ],
+  "unruled": [
+   [
+    "q",
+    "awa-",
+    "ū"
+   ]
+  ],
   "stages": {
    "q": [
     "ū"
@@ -456177,6 +456774,13 @@
   ],
   "starts": [
    "ūopa"
+  ],
+  "unruled": [
+   [
+    "q",
+    "ūopa",
+    "ūpa"
+   ]
   ],
   "stages": {
    "q": [

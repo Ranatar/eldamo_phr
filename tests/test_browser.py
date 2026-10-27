@@ -198,6 +198,27 @@ class Browser(unittest.TestCase):
         page.click('#rc-go')
         self.assertIn('связь Eldamo', page.inner_text('#rc-output .wf-variant.main'))
 
+    def test_reconstruction_form_finds_the_word(self):
+        # a typed form offers the lexicon's words; without a choice the one word of the source language is taken
+        page = self.page(self.atlas)
+        page.select_option('#rc-src', 'quenya|middle|2')
+        page.fill('#rc-form', 'mauya')
+        self.assertIn('mauya-', page.inner_text('#rc-r'))
+        page.select_option('#rc-dst', 'quenya|middle|0')
+        page.click('#rc-go')
+        out = page.inner_text('#rc-output')
+        self.assertIn('Взята статья Eldamo', out)
+        self.assertIn('mbauja', out)
+        # choosing a word from the list makes it the current word
+        page.select_option('#rc-src', 'quenya|late|2')
+        page.fill('#rc-form', 'Ambar')
+        page.click('#rc-r button[data-word="4273482913"]')
+        page.wait_for_function("location.hash.includes('w=4273482913')")
+
+    def test_unruled_step_in_card(self):
+        page = self.page(self.atlas + '#w=3934957721')                 # Q. pupso: buspō > puspō with '?'
+        self.assertIn('без правила', page.inner_text('#word-card'))
+
     def test_panorama_cell_and_rule_in_reference(self):
         page = self.page(self.atlas + '#w=3880471189')                # Q. lelya "delicate"
         page.wait_for_selector('.pcell[data-cell="sindarin/late/3"] .sym')

@@ -241,3 +241,4 @@ details.ref[open] > summary { margin-bottom: 10px; }
   table.panorama td:empty { display: none; }
   .pcell { min-width: 0; }
 }
+.unruled { color: var(--warn); }

@@ -200,6 +200,13 @@
   "starts": [
    "pʰilik"
   ],
+  "unruled": [
+   [
+    "at",
+    "pʰili",
+    "pʰile"
+   ]
+  ],
   "stages": {
    "at": [
     "pʰile"
@@ -291,6 +298,13 @@
   ],
   "starts": [
    "usuk"
+  ],
+  "unruled": [
+   [
+    "at",
+    "usu",
+    "uso"
+   ]
   ],
   "stages": {
    "at": [
@@ -34423,6 +34437,13 @@
   "starts": [
    "βelektā"
   ],
+  "unruled": [
+   [
+    "g",
+    "belektā",
+    "blektā"
+   ]
+  ],
   "stages": {
    "g": [
     "blekθa"
@@ -40040,6 +40061,13 @@
   ],
   "starts": [
    "telimbo"
+  ],
+  "unruled": [
+   [
+    "g",
+    "klim",
+    "klimli"
+   ]
   ],
   "stages": {
    "g": [
@@ -46031,6 +46059,13 @@
    "tʲur",
    "kjus"
   ],
+  "unruled": [
+   [
+    "g",
+    "kur",
+    "kūr"
+   ]
+  ],
   "stages": {
    "g": [
     "kūr",
@@ -50906,6 +50941,13 @@
   ],
   "starts": [
    "eika"
+  ],
+  "unruled": [
+   [
+    "g",
+    "ēg",
+    "eg"
+   ]
   ],
   "stages": {
    "g": [
@@ -67818,6 +67860,13 @@
    "ŋgʷāloθ",
    "gwālassē"
   ],
+  "unruled": [
+   [
+    "g",
+    "gōloθ",
+    "goloθ"
+   ]
+  ],
   "stages": {
    "g": [
     "goloθ",
@@ -73493,6 +73542,13 @@
   "starts": [
    "ŋʷarenðā"
   ],
+  "unruled": [
+   [
+    "g",
+    "gʷaren",
+    "gʷarin"
+   ]
+  ],
   "stages": {
    "g": [
     "gʷarin"
@@ -75167,6 +75223,13 @@
   "starts": [
    "gʷeðeθlī"
   ],
+  "unruled": [
+   [
+    "g",
+    "gʷeðeθlī",
+    "gʷeθlī"
+   ]
+  ],
   "stages": {
    "g": [
     "gʷeθli"
@@ -76002,6 +76065,13 @@
    "giwini",
    "weni",
    "weinā"
+  ],
+  "unruled": [
+   [
+    "g",
+    "giwini",
+    "gʷini"
+   ]
   ],
   "stages": {
    "g": [
@@ -79712,6 +79782,18 @@
   "starts": [
    "aθ-",
    "aθs-"
+  ],
+  "unruled": [
+   [
+    "g",
+    "aθ-",
+    "haθ-"
+   ],
+   [
+    "g",
+    "aθs-",
+    "haθs-"
+   ]
   ],
   "stages": {
    "g": [
@@ -113521,6 +113603,13 @@
   "starts": [
    "sindanai"
   ],
+  "unruled": [
+   [
+    "g",
+    "sindanai",
+    "sindai"
+   ]
+  ],
   "stages": {
    "g": [
     "sinnai"
@@ -142159,6 +142248,13 @@
   "starts": [
    "snatsa"
   ],
+  "unruled": [
+   [
+    "n",
+    "naθ",
+    "naiθ"
+   ]
+  ],
   "stages": {
    "on": [
     "n̥aθθa"
@@ -157527,6 +157623,13 @@
   "starts": [
    "la-"
   ],
+  "unruled": [
+   [
+    "n",
+    "la-",
+    "al-"
+   ]
+  ],
   "stages": {
    "n": [
     "al-"
@@ -159362,6 +159465,13 @@
   ],
   "starts": [
    "andambundā"
+  ],
+  "unruled": [
+   [
+    "n",
+    "andambond",
+    "andabond"
+   ]
   ],
   "stages": {
    "on": [
@@ -161685,6 +161795,13 @@
   ],
   "starts": [
    "Bala"
+  ],
+  "unruled": [
+   [
+    "n",
+    "Bala",
+    "Balan"
+   ]
   ],
   "stages": {
    "n": [
@@ -166794,6 +166911,13 @@
   "starts": [
    "kumna"
   ],
+  "unruled": [
+   [
+    "n",
+    "koun",
+    "kaun"
+   ]
+  ],
   "stages": {
    "n": [
     "kaun"
@@ -168343,6 +168467,13 @@
   "starts": [
    "kerθan"
   ],
+  "unruled": [
+   [
+    "n",
+    "kerθan",
+    "kirdan"
+   ]
+  ],
   "stages": {
    "n": [
     "kirdan"
@@ -169286,6 +169417,13 @@
   "starts": [
    "kwen"
   ],
+  "unruled": [
+   [
+    "n",
+    "kwen",
+    "kuen"
+   ]
+  ],
   "stages": {
    "n": [
     "kuen"
@@ -169713,6 +169851,13 @@
   ],
   "starts": [
    "kʰīsislōmē"
+  ],
+  "unruled": [
+   [
+    "n",
+    "xīlū",
+    "xīlu"
+   ]
   ],
   "stages": {
    "on": [
@@ -173382,6 +173527,13 @@
   "starts": [
    "nī"
   ],
+  "unruled": [
+   [
+    "n",
+    "nī",
+    "dī"
+   ]
+  ],
   "stages": {
    "n": [
     "dī"
@@ -175974,6 +176126,13 @@
   "starts": [
    "andajēn"
   ],
+  "unruled": [
+   [
+    "on",
+    "andajīn",
+    "andjīn"
+   ]
+  ],
   "stages": {
    "on": [
     "andīn"
@@ -178157,6 +178316,13 @@
   "starts": [
    "ɸajanǭr"
   ],
+  "unruled": [
+   [
+    "n",
+    "ɸaeanour",
+    "ɸeanour"
+   ]
+  ],
   "stages": {
    "on": [
     "ɸaianǭr"
@@ -178362,6 +178528,13 @@
   ],
   "starts": [
    "pʰarja-"
+  ],
+  "unruled": [
+   [
+    "n",
+    "feria-",
+    "feira-"
+   ]
   ],
   "stages": {
    "on": [
@@ -180605,6 +180778,13 @@
   ],
   "starts": [
    "galma"
+  ],
+  "unruled": [
+   [
+    "n",
+    "galv",
+    "galu"
+   ]
   ],
   "stages": {
    "n": [
@@ -184295,6 +184475,13 @@
   "starts": [
    "runda"
   ],
+  "unruled": [
+   [
+    "n",
+    "runda",
+    "grunda"
+   ]
+  ],
   "stages": {
    "n": [
     "grond"
@@ -184581,6 +184768,13 @@
   ],
   "starts": [
    "ŋgurtu"
+  ],
+  "unruled": [
+   [
+    "n",
+    "gurθu",
+    "guruθ"
+   ]
   ],
   "stages": {
    "on": [
@@ -186452,6 +186646,13 @@
   "starts": [
    "sa"
   ],
+  "unruled": [
+   [
+    "on",
+    "sa",
+    "ha"
+   ]
+  ],
   "stages": {
    "on": [
     "ha"
@@ -187155,6 +187356,13 @@
   ],
   "starts": [
    "sxalia-"
+  ],
+  "unruled": [
+   [
+    "n",
+    "sxalia-",
+    "sxalθa-"
+   ]
   ],
   "stages": {
    "n": [
@@ -188348,6 +188556,13 @@
   "starts": [
    "se"
   ],
+  "unruled": [
+   [
+    "on",
+    "se",
+    "he"
+   ]
+  ],
   "stages": {
    "on": [
     "he"
@@ -189346,6 +189561,13 @@
   "starts": [
    "xīril"
   ],
+  "unruled": [
+   [
+    "n",
+    "hīril",
+    "hiril"
+   ]
+  ],
   "stages": {
    "n": [
     "hiril"
@@ -189864,6 +190086,13 @@
   ],
   "starts": [
    "so"
+  ],
+  "unruled": [
+   [
+    "on",
+    "so",
+    "ho"
+   ]
   ],
   "stages": {
    "on": [
@@ -191535,6 +191764,13 @@
   "starts": [
    "sell"
   ],
+  "unruled": [
+   [
+    "n",
+    "sell",
+    "jell"
+   ]
+  ],
   "stages": {
    "n": [
     "jell"
@@ -192256,6 +192492,13 @@
   ],
   "starts": [
    "jǭbasūka"
+  ],
+  "unruled": [
+   [
+    "n",
+    "jofug",
+    "jofog"
+   ]
   ],
   "stages": {
    "on": [
@@ -193261,6 +193504,13 @@
   "starts": [
    "lalmene"
   ],
+  "unruled": [
+   [
+    "n",
+    "l̥alven",
+    "l̥alwen"
+   ]
+  ],
   "stages": {
    "n": [
     "lalven",
@@ -194001,6 +194251,13 @@
   ],
   "starts": [
    "lalmorne"
+  ],
+  "unruled": [
+   [
+    "n",
+    "l̥alvorn",
+    "l̥alorn"
+   ]
   ],
   "stages": {
    "n": [
@@ -195122,6 +195379,13 @@
   ],
   "starts": [
    "lepenar"
+  ],
+  "unruled": [
+   [
+    "mp",
+    "lepenar",
+    "lepnar"
+   ]
   ],
   "stages": {
    "mp": [
@@ -203710,6 +203974,13 @@
   "starts": [
    "netʰra"
   ],
+  "unruled": [
+   [
+    "n",
+    "neθr",
+    "neθ"
+   ]
+  ],
   "stages": {
    "on": [
     "neθra"
@@ -204838,6 +205109,13 @@
   ],
   "starts": [
    "naðr"
+  ],
+  "unruled": [
+   [
+    "n",
+    "naðr",
+    "nâr"
+   ]
   ],
   "stages": {
    "n": [
@@ -209269,6 +209547,13 @@
   "starts": [
    "kwentrō"
   ],
+  "unruled": [
+   [
+    "on",
+    "penθro",
+    "penθrondo"
+   ]
+  ],
   "stages": {
    "on": [
     "penθrondo"
@@ -212916,6 +213201,13 @@
   "starts": [
    "ronjō"
   ],
+  "unruled": [
+   [
+    "n",
+    "rœin",
+    "ryn"
+   ]
+  ],
   "stages": {
    "on": [
     "ronjo"
@@ -213046,6 +213338,13 @@
   ],
   "starts": [
    "roxan"
+  ],
+  "unruled": [
+   [
+    "n",
+    "roxan",
+    "rohan"
+   ]
   ],
   "stages": {
    "n": [
@@ -214173,6 +214472,13 @@
   "starts": [
    "siliv"
   ],
+  "unruled": [
+   [
+    "n",
+    "siliv",
+    "siliθ"
+   ]
+  ],
   "stages": {
    "n": [
     "siliθ"
@@ -214836,6 +215142,13 @@
   ],
   "starts": [
    "teñrā"
+  ],
+  "unruled": [
+   [
+    "mp",
+    "teñrā",
+    "tǣr"
+   ]
   ],
   "stages": {
    "mp": [
@@ -215648,6 +215961,13 @@
   "starts": [
    "tatʰarē"
   ],
+  "unruled": [
+   [
+    "mp",
+    "tatʰarē",
+    "tatʰrē"
+   ]
+  ],
   "stages": {
    "mp": [
     "tatʰrē"
@@ -216198,6 +216518,13 @@
   ],
   "starts": [
    "towa"
+  ],
+  "unruled": [
+   [
+    "n",
+    "towa",
+    "toua"
+   ]
   ],
   "stages": {
    "n": [
@@ -216821,6 +217148,13 @@
    "tekmē",
    "tegma"
   ],
+  "unruled": [
+   [
+    "n",
+    "teime",
+    "tīme"
+   ]
+  ],
   "stages": {
    "on": [
     "teŋme",
@@ -217389,6 +217723,13 @@
   ],
   "starts": [
    "θōn"
+  ],
+  "unruled": [
+   [
+    "n",
+    "θōn",
+    "θǭn"
+   ]
   ],
   "stages": {
    "n": [
@@ -219252,6 +219593,13 @@
   "starts": [
    "tindūviell"
   ],
+  "unruled": [
+   [
+    "n",
+    "tinnūviel",
+    "tinūviel"
+   ]
+  ],
   "stages": {
    "n": [
     "tinūviel"
@@ -220560,6 +220908,13 @@
   ],
   "starts": [
    "trenārna"
+  ],
+  "unruled": [
+   [
+    "n",
+    "trenārn",
+    "trenarn"
+   ]
   ],
   "stages": {
    "n": [
@@ -263611,6 +263966,13 @@
   "starts": [
    "wego"
   ],
+  "unruled": [
+   [
+    "on",
+    "wego",
+    "wega"
+   ]
+  ],
   "stages": {
    "on": [
     "wega"
@@ -263990,6 +264352,13 @@
   "starts": [
    "arɣandōre"
   ],
+  "unruled": [
+   [
+    "on",
+    "arandūr",
+    "arandur"
+   ]
+  ],
   "stages": {
    "mp": [
     "arɣandōr"
@@ -264030,6 +264399,13 @@
   ],
   "starts": [
    "orǭmē"
+  ],
+  "unruled": [
+   [
+    "n",
+    "oraume",
+    "araume"
+   ]
   ],
   "stages": {
    "on": [
@@ -264386,6 +264762,13 @@
   ],
   "starts": [
    "barathī"
+  ],
+  "unruled": [
+   [
+    "n",
+    "barathi",
+    "barathil"
+   ]
   ],
   "stages": {
    "on": [
@@ -265681,6 +266064,13 @@
   ],
   "starts": [
    "jenpanta"
+  ],
+  "unruled": [
+   [
+    "on",
+    "jenpanta",
+    "jinpanta"
+   ]
   ],
   "stages": {
    "on": [
@@ -267291,6 +267681,13 @@
   ],
   "starts": [
    "nī"
+  ],
+  "unruled": [
+   [
+    "on",
+    "nī",
+    "dī"
+   ]
   ],
   "stages": {
    "on": [
@@ -272341,6 +272738,13 @@
   ],
   "starts": [
    "lepenja"
+  ],
+  "unruled": [
+   [
+    "s",
+    "lepein",
+    "lepnia"
+   ]
   ],
   "stages": {
    "s": [
@@ -303942,6 +304346,13 @@
   "starts": [
    "-ō"
   ],
+  "unruled": [
+   [
+    "s",
+    "-ō",
+    "-a"
+   ]
+  ],
   "stages": {
    "s": [
     "-a"
@@ -305262,6 +305673,13 @@
   "starts": [
    "ada",
    "asa"
+  ],
+  "unruled": [
+   [
+    "s",
+    "að",
+    "a"
+   ]
   ],
   "stages": {
    "s": [
@@ -309064,6 +309482,13 @@
   "starts": [
    "anta-"
   ],
+  "unruled": [
+   [
+    "s",
+    "anθa-",
+    "anta-"
+   ]
+  ],
   "stages": {
    "os": [
     "anθa-"
@@ -309585,6 +310010,13 @@
   "starts": [
    "atkwet-"
   ],
+  "unruled": [
+   [
+    "at",
+    "atpet-",
+    "appet-"
+   ]
+  ],
   "stages": {
    "at": [
     "appet-"
@@ -309646,6 +310078,13 @@
   ],
   "starts": [
    "aran-"
+  ],
+  "unruled": [
+   [
+    "s",
+    "aran-",
+    "ara-"
+   ]
   ],
   "stages": {
    "s": [
@@ -310344,6 +310783,23 @@
    "oromē",
    "orǭmē",
    "arǭmēz"
+  ],
+  "unruled": [
+   [
+    "s",
+    "orau",
+    "arau"
+   ],
+   [
+    "s",
+    "orauv",
+    "arauv"
+   ],
+   [
+    "p",
+    "arǭmēz",
+    "arāmē"
+   ]
   ],
   "stages": {
    "os": [
@@ -314235,6 +314691,13 @@
   "starts": [
    "barántē"
   ],
+  "unruled": [
+   [
+    "at",
+    "barántē",
+    "barándē"
+   ]
+  ],
   "stages": {
    "at": [
     "brandē"
@@ -317537,6 +318000,13 @@
   "starts": [
    "kī"
   ],
+  "unruled": [
+   [
+    "s",
+    "kī",
+    "ki"
+   ]
+  ],
   "stages": {
    "s": [
     "ki"
@@ -320440,6 +320910,13 @@
   "starts": [
    "dē"
   ],
+  "unruled": [
+   [
+    "s",
+    "dī",
+    "di"
+   ]
+  ],
   "stages": {
    "s": [
     "di"
@@ -320471,6 +320948,13 @@
   ],
   "starts": [
    "ndī"
+  ],
+  "unruled": [
+   [
+    "s",
+    "dī",
+    "di"
+   ]
   ],
   "stages": {
    "s": [
@@ -327795,6 +328279,13 @@
   "starts": [
    "pʰanājā"
   ],
+  "unruled": [
+   [
+    "s",
+    "fanoe",
+    "fanui"
+   ]
+  ],
   "stages": {
    "os": [
     "ɸanoia"
@@ -328225,6 +328716,13 @@
   "starts": [
    "felakgundu"
   ],
+  "unruled": [
+   [
+    "s",
+    "felaggund",
+    "felagund"
+   ]
+  ],
   "stages": {
    "s": [
     "felagund"
@@ -328508,6 +329006,13 @@
   ],
   "starts": [
    "pʰereja"
+  ],
+  "unruled": [
+   [
+    "s",
+    "fair",
+    "ferui"
+   ]
   ],
   "stages": {
    "os": [
@@ -332581,6 +333086,13 @@
   "starts": [
    "glossōjā"
   ],
+  "unruled": [
+   [
+    "s",
+    "glossui",
+    "glosui"
+   ]
+  ],
   "stages": {
    "os": [
     "glossuia"
@@ -333533,6 +334045,13 @@
   "starts": [
    "ɣor-"
   ],
+  "unruled": [
+   [
+    "s",
+    "or-",
+    "gor-"
+   ]
+  ],
   "stages": {
    "os": [
     "or-"
@@ -334003,6 +334522,13 @@
   ],
   "starts": [
    "ŋgorotʰūsō"
+  ],
+  "unruled": [
+   [
+    "s",
+    "gorθū",
+    "gorθu"
+   ]
   ],
   "stages": {
    "os": [
@@ -334640,6 +335166,13 @@
    "waiwe",
    "wājā",
    "waja"
+  ],
+  "unruled": [
+   [
+    "s",
+    "gwoe",
+    "gwae"
+   ]
   ],
   "stages": {
    "os": [
@@ -336139,6 +336672,13 @@
   "starts": [
    "kʰazād"
   ],
+  "unruled": [
+   [
+    "os",
+    "kʰazād",
+    "kʰaðād"
+   ]
+  ],
   "stages": {
    "os": [
     "xaðǭd"
@@ -337580,6 +338120,13 @@
   ],
   "starts": [
    "kʰerūnī"
+  ],
+  "unruled": [
+   [
+    "os",
+    "kʰerūnī",
+    "kʰerunī"
+   ]
   ],
   "stages": {
    "os": [
@@ -341656,6 +342203,13 @@
   ],
   "starts": [
    "lepettaoroni"
+  ],
+  "unruled": [
+   [
+    "p",
+    "lepettaoroni",
+    "lepettaroni"
+   ]
   ],
   "stages": {
    "p": [
@@ -347295,6 +347849,18 @@
   "starts": [
    "moriŋgotto",
    "moriŋgotʰo"
+  ],
+  "unruled": [
+   [
+    "p",
+    "moriŋgotto",
+    "moreŋgotto"
+   ],
+   [
+    "p",
+    "moriŋgotʰo",
+    "moreŋgotʰo"
+   ]
   ],
   "stages": {
    "p": [
@@ -354671,6 +355237,13 @@
   "starts": [
    "kwentrō"
   ],
+  "unruled": [
+   [
+    "os",
+    "penθro",
+    "penθrondo"
+   ]
+  ],
   "stages": {
    "at": [
     "pentrō"
@@ -358015,6 +358588,13 @@
   "starts": [
    "urusko"
   ],
+  "unruled": [
+   [
+    "s",
+    "urusk",
+    "rusk"
+   ]
+  ],
   "stages": {
    "p": [
     "urusk"
@@ -358054,6 +358634,13 @@
   ],
   "starts": [
    "uruste"
+  ],
+  "unruled": [
+   [
+    "s",
+    "urust",
+    "rust"
+   ]
   ],
   "stages": {
    "p": [
@@ -358112,6 +358699,13 @@
   ],
   "starts": [
    "urutʰra-"
+  ],
+  "unruled": [
+   [
+    "s",
+    "uruθra-",
+    "ruθra-"
+   ]
   ],
   "stages": {
    "os": [
@@ -361174,6 +361768,13 @@
   "starts": [
    "tamana"
   ],
+  "unruled": [
+   [
+    "s",
+    "tamana",
+    "tamna"
+   ]
+  ],
   "stages": {
    "s": [
     "tavn"
@@ -363134,6 +363735,18 @@
    "tʰowō",
    "tʰū"
   ],
+  "unruled": [
+   [
+    "s",
+    "θūon",
+    "θuon"
+   ],
+   [
+    "os",
+    "tʰowō",
+    "tʰouō"
+   ]
+  ],
   "stages": {
    "os": [
     "θūhon",
@@ -364340,6 +364953,13 @@
   "starts": [
    "atata"
   ],
+  "unruled": [
+   [
+    "os",
+    "atata",
+    "tata"
+   ]
+  ],
   "stages": {
    "os": [
     "tata"
@@ -364459,6 +365079,13 @@
    "tekmā",
    "teŋwa",
    "teŋmā"
+  ],
+  "unruled": [
+   [
+    "s",
+    "tēwa",
+    "tīwa"
+   ]
   ],
   "stages": {
    "os": [
@@ -365886,6 +366513,13 @@
   ],
   "starts": [
    "erja"
+  ],
+  "unruled": [
+   [
+    "s",
+    "eri",
+    "iri"
+   ]
   ],
   "stages": {
    "os": [

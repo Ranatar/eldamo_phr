@@ -14,8 +14,9 @@ from .sequencer import Sequencer
 from .stress import stressed
 
 
-def vectors(branches: dict, size: int = 1) -> dict:
-    """size scales the number of cases (1: a quick set for the browser test)."""
+def vectors(branches: dict, size: int = 1, recon_every: int = 1) -> dict:
+    """size scales the number of cases (1: a quick set for the browser test); of the
+    reconstruction calls only every recon_every-th is made (each takes a while)."""
     rnd = random.Random(13)
     out = {}
     for b, data in branches.items():
@@ -77,16 +78,18 @@ def vectors(branches: dict, size: int = 1) -> dict:
             vs = compound.predict(lexicon, seq, ids, 'late', 9, table=table, affix_model=affix_model)
             V['affixed'].append([ids, [[v['form'], v['score']] for v in vs[:10]]])
         out[b] = V
-    out['__recon__'] = recon_vectors(branches, size)
+    out['__recon__'] = recon_vectors(branches, size, recon_every)
     return out
 
 
-def recon_vectors(branches: dict, size: int = 1) -> list:
-    """Reconstruction calls of every route, with the Python answers."""
+def recon_vectors(branches: dict, size: int = 1, every: int = 1) -> list:
+    """Reconstruction calls of every route, with the Python answers; every: only the
+    calls 0, every, 2 * every... are made and returned (the cases are drawn the same)."""
     from .reconstruct import Context, reconstruct
     rnd = random.Random(17)
     ctx = Context(branches)
     cases = []
+    n_case = 0
     for b in branches:
         lex = ctx.lexicon[b]
         langs = ctx.langs(b)
@@ -97,12 +100,18 @@ def recon_vectors(branches: dict, size: int = 1) -> list:
             for dst in ((b, l['era'], 0), (b, 'late', 2 if b == 'quenya' else 3),
                         ('sindarin' if b == 'quenya' else 'quenya', l['era'], max(x['stage'] for x in ctx.langs(
                             'sindarin' if b == 'quenya' else 'quenya').values() if x['era'] == l['era']))):
+                n_case += 1
+                if (n_case - 1) % every:
+                    continue
                 vs = reconstruct(ctx, src, dst, word=e['id'])
                 cases.append([list(src), list(dst), {'word': e['id']}, [[v['form'], v['score'], v['marks']] for v in vs]])
         norm = [n for n in ctx.normal[b] if n['era'] == 'late']
         last = ctx.last_stage(b, 'late')
         for n in rnd.sample([n for n in norm if last in n['forms']], 3 * size):
             for t in range(last):
+                n_case += 1
+                if (n_case - 1) % every:
+                    continue
                 vs = reconstruct(ctx, (b, 'late', last), (b, 'late', t), form=n['forms'][last])
                 cases.append([[b, 'late', last], [b, 'late', t], {'form': n['forms'][last]},
                               [[v['form'], v['score'], v['marks']] for v in vs]])

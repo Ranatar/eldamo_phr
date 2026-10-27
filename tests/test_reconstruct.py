@@ -58,6 +58,19 @@ class Reconstruction(unittest.TestCase):
         self.assertEqual(pt.problems('aglar'), [])
         self.assertTrue(pt.problems('lnn'))
 
+    def test_stem_marks_the_final_vowel(self):
+        # lindë (lindi-): the stem keeps the ancient i that became ë in the simplex (intro-quenya §2.4.2);
+        # a candidate that gives the stem is marked, the weight does not change (STEM_BONUS)
+        hints = R._hints(self.ctx, 'quenya', self.linde, 'late', 2)
+        self.assertEqual(hints['stems'], ['lindi'])
+        vs = {v['form']: v['marks'] for v in R.reconstruct(self.ctx, ('quenya', 'late', 2), ('quenya', 'late', 0),
+                                                           word=self.linde['id'])}
+        self.assertIn('stem', vs['lindi'])
+        self.assertNotIn('stem', vs['lindē'])
+        # the same form without the word: nothing to compare with
+        vs = R.reconstruct(self.ctx, ('quenya', 'late', 2), ('quenya', 'late', 0), form='linde')
+        self.assertFalse(any('stem' in v['marks'] for v in vs))
+
     def test_root_match(self):
         self.assertTrue(R.root_match('glindē', ['GLIN']))
         self.assertTrue(R.root_match('mbara', ['MBAR']))

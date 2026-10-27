@@ -113,11 +113,124 @@ def write_report(branches: dict) -> None:
     write_text(REPORTS / 'audit.json', dumps(js))
 
 
+def _sequencer_branch(b: str, data: dict) -> tuple:
+    """The section of reports/sequencer.md for one branch, and its JSON."""
+    from . import affixes, backform, compound
+    from .sequencer import Sequencer, backtest
+    lines = []
+    seq = Sequencer(data)
+    res = backtest(data, seq)
+    langs = seq.langs
+    era_of = {d['id']: langs[d['steps'][0]['lang']]['era'] for d in data['derivations']
+              if d['steps'] and d['steps'][0]['lang'] in langs}
+    pairs = {p['id']: p for p in data['pairs']}
+    rules = {r['id']: r for r in data['rules']}
+    lines += [f"## {data['meta']['title']}", '', '| эпоха | дериваций | основное | любое |', '|---|---|---|---|']
+    per_era = {}
+    for era in ERAS:
+        rs = [r for r in res['results'] if era_of.get(r['derivation']) == era]
+        if not rs:
+            continue
+        n, m, a = len(rs), sum(r['ok_main'] for r in rs), sum(r['ok_any'] for r in rs)
+        per_era[era] = {'derivations': n, 'main': m, 'any': a}
+        lines.append(f"| {ERA_NAMES[era]} | {n} | {m} ({100 * m / n:.1f}%) | {a} ({100 * a / n:.1f}%) |")
+    n = res['derivations']
+    lines += [f"| всего | {n} | {res['main']} ({100 * res['main'] / n:.1f}%) | {res['any']} ({100 * res['any'] / n:.1f}%) |", '']
+    blame = Counter()
+    for r in res['results']:
+        if not r['ok_main'] and r['diverge'] and r['diverge']['pair'] in pairs:
+            blame[pairs[r['diverge']['pair']]['rule']] += 1
+    lines += ['### Где основное чтение впервые расходится с деривацией', '',
+              'Правило засвидетельствованного шага, чью форму основное чтение не проходит.', '',
+              '| правило | язык | дериваций |', '|---|---|---|']
+    for rid, c in blame.most_common(15):
+        lines.append(f"| [{rules[rid]['name']}](https://eldamo.org/content/words/word-{rid}.html) | {rules[rid]['lang']} | {c} |")
+    lines.append('')
+    blocked = [c for c in seq.rules if c.blocked_by]
+    if blocked:
+        lines += ['### Условие «elsewhere»', '',
+                  'Общая подформула не применяется там, где более позднее правило того же языка задаёт тот же '
+                  'вход для определённой позиции:', '']
+        lines += [f"- {c.lang}: {c.name} ← {', '.join(seq.by_id[x].name for x in c.blocked_by)}" for c in blocked]
+        lines.append('')
+    bad = [c for c in seq.rules if c.unsupported]
+    if bad:
+        lines += [f"Подформул вне документированной нотации, пропускаемых секвенсором: "
+                  f"{sum(len(c.unsupported) for c in bad)} (в {len(bad)} правилах).", '']
+    cres = compound.backtest(data, data['lexicon'], seq)
+    if cres['cases']:
+        k = cres['cases']
+        lines += ['### Сложения с праформами', '',
+                  'Сложения Eldamo из двух элементов, у которых есть деривация от праформы и праформы обоих '
+                  'элементов. Праформы элементов соединяются через `+` (полный первый элемент или без '
+                  'конечного гласного), затем соединение проходит все правила ветви (`shared/compound.py`).', '',
+                  '| показатель | случаев |', '|---|---|',
+                  f'| случаев (сложение × деривация) | {k} |',
+                  f"| соединение праформ совпало с начальной формой деривации | {cres['join_ok']} ({100 * cres['join_ok'] / k:.0f}%) |",
+                  f"| основное чтение = засвидетельствованная форма | {cres['main']} ({100 * cres['main'] / k:.0f}%) |",
+                  f"| форма среди вариантов | {cres['any']} ({100 * cres['any'] / k:.0f}%) |", '']
+    lres = compound.latest_backtest(data, data['lexicon'], seq)
+    if lres['cases']:
+        k = lres['cases']
+        lines += ['### Сложения на последней стадии', '',
+                  f"Сложения {'квенья' if b == 'quenya' else 'синдарина'} из двух элементов того же языка. "
+                  'Таблица стыков (`shared/junctions.py`, `branches/' + b + '/data/junctions.json`) строится '
+                  'без проверяемого сложения, затем сложение предсказывается по элементам: основа или словарная '
+                  'форма первого элемента, словарная форма второго; изменения на стыке и в конце — по частоте '
+                  'в остальных сложениях; ' + ('плюс правила §6.1 учебника (`shared/morphophonology.py`).'
+                                                if b == 'quenya' else
+                                                'плюс мягкая мутация второго элемента и правила синдарина для многосложных слов.'), '',
+                  '| показатель | случаев |', '|---|---|',
+                  f'| сложений | {k} |',
+                  f"| первый вариант = засвидетельствованная форма | {lres['main']} ({100 * lres['main'] / k:.0f}%) |",
+                  f"| форма среди первых 8 вариантов | {lres['any']} ({100 * lres['any'] / k:.0f}%) |", '']
+    ares = affixes.leave_one_out(b, data['lexicon'])
+    if ares['cases']:
+        pct = lambda x, n: f'{x} ({100 * x / n:.0f}%)' if n else '0'
+        lines += ['### Суффиксы и приставки', '',
+                  'Производные слова Eldamo из основы и одного аффикса (часть речи `suf` или `pref`). Модель '
+                  '(`shared/affixes.py`, `branches/' + b + '/data/affixes.json`) строится без проверяемого слова: '
+                  'какая форма аффикса берётся после гласного и после согласного, что происходит на стыке и в '
+                  'конце — сначала по словам с этим же аффиксом, иначе по всем словам с аффиксом того же вида.', '',
+                  '| | слов | первый вариант = форма Eldamo | среди первых 8 |', '|---|---|---|---|']
+        for k, label in (('suffix', 'суффиксы'), ('prefix', 'приставки')):
+            x = ares[k]
+            lines.append(f"| {label} | {x['cases']} | {pct(x['main'], x['cases'])} | {pct(x['any'], x['cases'])} |")
+        lines += [f"| всего | {ares['cases']} | {pct(ares['main'], ares['cases'])} | {pct(ares['any'], ares['cases'])} |", '']
+    final_code = max((l for l in langs.values() if l['era'] == 'late'), key=lambda l: l['stage'])['code']
+    bres = backform.evaluate(data, seq, final_code, sample=BACKFORM_SAMPLE)
+    if bres.get('cases'):
+        k = bres['cases']
+        lines += ['### Обратное восстановление праформ', '',
+                  'Соответствия «праформа → конечная форма» выучены на половине дериваций; для другой половины '
+                  '(первые ' + str(k) + ') праформа восстанавливается по конечной форме: кандидаты перебираются по '
+                  'вероятности и проверяются прямым прогоном (`shared/backform.py`). Восстановленная праформа — '
+                  'гипотеза; так помечаются и сложения, построенные на ней.', '',
+                  '| показатель | случаев |', '|---|---|',
+                  f'| конечных форм | {k} |',
+                  f"| найдена хотя бы одна праформа, дающая форму прямым прогоном | {bres.get('verified', 0)} ({100 * bres.get('verified', 0) / k:.0f}%) |",
+                  f"| первая из них = праформа Eldamo | {bres.get('first', 0)} ({100 * bres.get('first', 0) / k:.0f}%) |",
+                  f"| праформа Eldamo среди найденных (до 8) | {bres.get('any', 0)} ({100 * bres.get('any', 0) / k:.0f}%) |", '']
+    js = {'derivations': n, 'main': res['main'], 'any': res['any'], 'eras': per_era,
+             'backform': bres,
+             'affixes': {k2: v for k2, v in ares.items()},
+             'latest_compounds': {k2: v for k2, v in lres.items()},
+             'results': [r for r in res['results'] if not r['ok_main']],
+             'compounds': {k2: v for k2, v in cres.items()}}
+    lines += [f"Расходящиеся деривации ({n - res['main']}) — `reports/sequencer.json`.", '']
+    return lines, js
+
+
+_SEQ_BRANCHES = None
+
+
+def _sequencer_worker(b: str):
+    return _sequencer_branch(b, _SEQ_BRANCHES[b])
+
+
 def render_sequencer(branches: dict) -> tuple[str, dict]:
     """reports/sequencer.md: every attested derivation replayed from its start
     form through the whole chronology of the branch (shared/sequencer.py)."""
-    from . import affixes, backform, compound
-    from .sequencer import Sequencer, backtest
     lines = [
         '# Проверка секвенсора',
         '',
@@ -134,108 +247,23 @@ def render_sequencer(branches: dict) -> tuple[str, dict]:
         'исходы, правила на границе морфем `+` в формах без отмеченной границы).',
         '',
     ]
+    global _SEQ_BRANCHES
+    import multiprocessing as mp
+    import os
     js = {}
-    for b, data in branches.items():
-        seq = Sequencer(data)
-        res = backtest(data, seq)
-        langs = seq.langs
-        era_of = {d['id']: langs[d['steps'][0]['lang']]['era'] for d in data['derivations']
-                  if d['steps'] and d['steps'][0]['lang'] in langs}
-        pairs = {p['id']: p for p in data['pairs']}
-        rules = {r['id']: r for r in data['rules']}
-        lines += [f"## {data['meta']['title']}", '', '| эпоха | дериваций | основное | любое |', '|---|---|---|---|']
-        per_era = {}
-        for era in ERAS:
-            rs = [r for r in res['results'] if era_of.get(r['derivation']) == era]
-            if not rs:
-                continue
-            n, m, a = len(rs), sum(r['ok_main'] for r in rs), sum(r['ok_any'] for r in rs)
-            per_era[era] = {'derivations': n, 'main': m, 'any': a}
-            lines.append(f"| {ERA_NAMES[era]} | {n} | {m} ({100 * m / n:.1f}%) | {a} ({100 * a / n:.1f}%) |")
-        n = res['derivations']
-        lines += [f"| всего | {n} | {res['main']} ({100 * res['main'] / n:.1f}%) | {res['any']} ({100 * res['any'] / n:.1f}%) |", '']
-        blame = Counter()
-        for r in res['results']:
-            if not r['ok_main'] and r['diverge'] and r['diverge']['pair'] in pairs:
-                blame[pairs[r['diverge']['pair']]['rule']] += 1
-        lines += ['### Где основное чтение впервые расходится с деривацией', '',
-                  'Правило засвидетельствованного шага, чью форму основное чтение не проходит.', '',
-                  '| правило | язык | дериваций |', '|---|---|---|']
-        for rid, c in blame.most_common(15):
-            lines.append(f"| [{rules[rid]['name']}](https://eldamo.org/content/words/word-{rid}.html) | {rules[rid]['lang']} | {c} |")
-        lines.append('')
-        blocked = [c for c in seq.rules if c.blocked_by]
-        if blocked:
-            lines += ['### Условие «elsewhere»', '',
-                      'Общая подформула не применяется там, где более позднее правило того же языка задаёт тот же '
-                      'вход для определённой позиции:', '']
-            lines += [f"- {c.lang}: {c.name} ← {', '.join(seq.by_id[x].name for x in c.blocked_by)}" for c in blocked]
-            lines.append('')
-        bad = [c for c in seq.rules if c.unsupported]
-        if bad:
-            lines += [f"Подформул вне документированной нотации, пропускаемых секвенсором: "
-                      f"{sum(len(c.unsupported) for c in bad)} (в {len(bad)} правилах).", '']
-        cres = compound.backtest(data, data['lexicon'], seq)
-        if cres['cases']:
-            k = cres['cases']
-            lines += ['### Сложения с праформами', '',
-                      'Сложения Eldamo из двух элементов, у которых есть деривация от праформы и праформы обоих '
-                      'элементов. Праформы элементов соединяются через `+` (полный первый элемент или без '
-                      'конечного гласного), затем соединение проходит все правила ветви (`shared/compound.py`).', '',
-                      '| показатель | случаев |', '|---|---|',
-                      f'| случаев (сложение × деривация) | {k} |',
-                      f"| соединение праформ совпало с начальной формой деривации | {cres['join_ok']} ({100 * cres['join_ok'] / k:.0f}%) |",
-                      f"| основное чтение = засвидетельствованная форма | {cres['main']} ({100 * cres['main'] / k:.0f}%) |",
-                      f"| форма среди вариантов | {cres['any']} ({100 * cres['any'] / k:.0f}%) |", '']
-        lres = compound.latest_backtest(data, data['lexicon'], seq)
-        if lres['cases']:
-            k = lres['cases']
-            lines += ['### Сложения на последней стадии', '',
-                      f"Сложения {'квенья' if b == 'quenya' else 'синдарина'} из двух элементов того же языка. "
-                      'Таблица стыков (`shared/junctions.py`, `branches/' + b + '/data/junctions.json`) строится '
-                      'без проверяемого сложения, затем сложение предсказывается по элементам: основа или словарная '
-                      'форма первого элемента, словарная форма второго; изменения на стыке и в конце — по частоте '
-                      'в остальных сложениях; ' + ('плюс правила §6.1 учебника (`shared/morphophonology.py`).'
-                                                    if b == 'quenya' else
-                                                    'плюс мягкая мутация второго элемента и правила синдарина для многосложных слов.'), '',
-                      '| показатель | случаев |', '|---|---|',
-                      f'| сложений | {k} |',
-                      f"| первый вариант = засвидетельствованная форма | {lres['main']} ({100 * lres['main'] / k:.0f}%) |",
-                      f"| форма среди первых 8 вариантов | {lres['any']} ({100 * lres['any'] / k:.0f}%) |", '']
-        ares = affixes.leave_one_out(b, data['lexicon'])
-        if ares['cases']:
-            pct = lambda x, n: f'{x} ({100 * x / n:.0f}%)' if n else '0'
-            lines += ['### Суффиксы и приставки', '',
-                      'Производные слова Eldamo из основы и одного аффикса (часть речи `suf` или `pref`). Модель '
-                      '(`shared/affixes.py`, `branches/' + b + '/data/affixes.json`) строится без проверяемого слова: '
-                      'какая форма аффикса берётся после гласного и после согласного, что происходит на стыке и в '
-                      'конце — сначала по словам с этим же аффиксом, иначе по всем словам с аффиксом того же вида.', '',
-                      '| | слов | первый вариант = форма Eldamo | среди первых 8 |', '|---|---|---|---|']
-            for k, label in (('suffix', 'суффиксы'), ('prefix', 'приставки')):
-                x = ares[k]
-                lines.append(f"| {label} | {x['cases']} | {pct(x['main'], x['cases'])} | {pct(x['any'], x['cases'])} |")
-            lines += [f"| всего | {ares['cases']} | {pct(ares['main'], ares['cases'])} | {pct(ares['any'], ares['cases'])} |", '']
-        final_code = max((l for l in langs.values() if l['era'] == 'late'), key=lambda l: l['stage'])['code']
-        bres = backform.evaluate(data, seq, final_code, sample=BACKFORM_SAMPLE)
-        if bres.get('cases'):
-            k = bres['cases']
-            lines += ['### Обратное восстановление праформ', '',
-                      'Соответствия «праформа → конечная форма» выучены на половине дериваций; для другой половины '
-                      '(первые ' + str(k) + ') праформа восстанавливается по конечной форме: кандидаты перебираются по '
-                      'вероятности и проверяются прямым прогоном (`shared/backform.py`). Восстановленная праформа — '
-                      'гипотеза; так помечаются и сложения, построенные на ней.', '',
-                      '| показатель | случаев |', '|---|---|',
-                      f'| конечных форм | {k} |',
-                      f"| найдена хотя бы одна праформа, дающая форму прямым прогоном | {bres.get('verified', 0)} ({100 * bres.get('verified', 0) / k:.0f}%) |",
-                      f"| первая из них = праформа Eldamo | {bres.get('first', 0)} ({100 * bres.get('first', 0) / k:.0f}%) |",
-                      f"| праформа Eldamo среди найденных (до 8) | {bres.get('any', 0)} ({100 * bres.get('any', 0) / k:.0f}%) |", '']
-        js[b] = {'derivations': n, 'main': res['main'], 'any': res['any'], 'eras': per_era,
-                 'backform': bres,
-                 'affixes': {k2: v for k2, v in ares.items()},
-                 'latest_compounds': {k2: v for k2, v in lres.items()},
-                 'results': [r for r in res['results'] if not r['ok_main']],
-                 'compounds': {k2: v for k2, v in cres.items()}}
-        lines += [f"Расходящиеся деривации ({n - res['main']}) — `reports/sequencer.json`.", '']
+    processes = int(os.environ.get('QUETTAMIN_JOBS') or os.cpu_count() or 1)
+    _SEQ_BRANCHES = branches
+    try:
+        if processes > 1 and len(branches) > 1 and 'fork' in mp.get_all_start_methods():
+            with mp.get_context('fork').Pool(min(processes, len(branches))) as pool:
+                parts = pool.map(_sequencer_worker, list(branches))
+        else:
+            parts = [_sequencer_worker(b) for b in branches]
+    finally:
+        _SEQ_BRANCHES = None
+    for b, (part, part_js) in zip(branches, parts):
+        lines += part
+        js[b] = part_js
     from .unruled import summary, unruled_steps
     steps = unruled_steps(branches)
     table = summary(steps)
@@ -324,6 +352,23 @@ def render_reconstruction(branches: dict) -> tuple[str, dict]:
         n = st['cases']
         lines.append(f"| {key.split(' ', 1)[1].replace('->', '→')} | {st['pairs']} | {n} | {pct(st['identity'], n)} | "
                      f"{pct(st['first'], n)} | {pct(st['any'], n)} |")
+    lines += ['', '## Основы слов', '',
+              'Слова с основой (Q. lindë, lindi-; nér, ner-) и праформой Eldamo: восстановление праформы по форме слова '
+              'без основы и с ней. Основа — форма слова перед окончанием: в ней сохраняется то, что утрачено или '
+              'изменилось на конце (учебник Eldamo, intro-quenya §2.4.2, §11.3). Кандидат согласуется с основой, если его '
+              'прогон вперёд как основы (без законов конца слова) даёт основу — с последним гласным или без него '
+              '(Ambar, ambar- < ✶ambara). Проба: такой кандидат получает вес ×10. Выигрыша над корнями проба не даёт, поэтому '
+              'в реконструкции согласие с основой только помечается (⊢), вес не меняется. «Праформа Eldamo согласуется» — у скольких '
+              'слов сама праформа Eldamo проходит эту проверку: остальные основы законами не объясняются (долгота '
+              'односложных nér, ner- — морфологическая; farnë, farni- при ✶pʰarne).', '',
+              '| язык | слов с основой | случаев | праформа Eldamo согласуется | без основы: первый / среди 8 | '
+              'с основой: первый / среди 8 |', '|---|---|---|---|---|---|']
+    for code in ('q', 'mq', 's', 'n'):
+        st = res[f'stems {code}']
+        n = st.get('cases', 0)
+        lines.append(f"| {code} | {st['words']} | {n} | {pct(st.get('gold_stem', 0), n)} | "
+                     f"{pct(st.get('plain_first', 0), n)} / {pct(st.get('plain_any', 0), n)} | "
+                     f"{pct(st.get('stem_first', 0), n)} / {pct(st.get('stem_any', 0), n)} |")
     lines.append('')
     return '\n'.join(lines) + '\n', res
 

@@ -687,6 +687,10 @@
   "ru": "согласуется с корнем слова",
   "en": "agrees with the word's root"
  },
+ "mark.stem": {
+  "ru": "согласуется с основой слова (как lindë, lindi-)",
+  "en": "agrees with the word's stem (as lindë, lindi-)"
+ },
  "mark.unchanged": {
   "ru": "форма без изменений",
   "en": "the form unchanged"
@@ -890,6 +894,14 @@
  "panorama.primitive": {
   "ru": "праформа",
   "en": "primitive"
+ },
+ "panorama.rootTitle": {
+  "ru": "Корень — статья Eldamo",
+  "en": "The root: its Eldamo page"
+ },
+ "panorama.roots": {
+  "ru": "корни",
+  "en": "roots"
  },
  "panorama.title": {
   "ru": "Панорама периодов",

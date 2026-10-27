@@ -63,6 +63,7 @@ def build_branch(branch: str) -> dict:
         'grade_legend': GRADES,
         'unmatched_formulas': sorted({f"{s['lang']}: {s['from']} > {s['to']}" for d in model['derivations']
                                       for s in d['steps'] if s['status'] == 'unmatched_formula'}),
+        'language_names': model['language_names'],       # load_branch restores meta from it
     }
     out = {
         'phonemes': model['phonemes'],
@@ -92,6 +93,14 @@ def write_branch(branch: str, data: dict) -> None:
 
 
 def build_all() -> dict:
+    """Both branches, side by side in forked processes where there are CPUs for it
+    (QUETTAMIN_JOBS limits them); the result is the same either way."""
+    import multiprocessing as mp
+    import os
+    processes = int(os.environ.get('QUETTAMIN_JOBS') or os.cpu_count() or 1)
+    if processes > 1 and 'fork' in mp.get_all_start_methods():
+        with mp.get_context('fork').Pool(min(processes, len(BRANCHES))) as pool:
+            return dict(zip(BRANCHES, pool.map(build_branch, list(BRANCHES))))
     return {b: build_branch(b) for b in BRANCHES}
 
 
@@ -103,7 +112,8 @@ def load_branch(branch: str) -> dict:
     for n in out['stages']:                     # JSON object keys are strings; stages are numbers
         n['forms'] = {int(k): v for k, v in n['forms'].items()}
     out['meta'] = {'title': BRANCHES[branch]['title'], 'path': BRANCHES[branch]['path'],
-                   'languages': list(languages(branch).values()), 'language_names': {}}
+                   'languages': list(languages(branch).values()),
+                   'language_names': out['summary'].get('language_names', {})}
     return out
 
 

@@ -121,8 +121,44 @@
  "conceptions g -> s": {
   "cases": 30,
   "identity": 4,
-  "first": 3,
+  "first": 4,
   "any": 4,
   "pairs": 865
+ },
+ "stems q": {
+  "cases": 30,
+  "gold_stem": 18,
+  "plain_first": 10,
+  "plain_any": 13,
+  "stem_first": 9,
+  "stem_any": 13,
+  "words": 83
+ },
+ "stems mq": {
+  "cases": 30,
+  "gold_stem": 21,
+  "plain_first": 6,
+  "plain_any": 15,
+  "stem_first": 6,
+  "stem_any": 15,
+  "words": 77
+ },
+ "stems s": {
+  "cases": 2,
+  "gold_stem": 2,
+  "plain_first": 0,
+  "plain_any": 0,
+  "stem_first": 0,
+  "stem_any": 0,
+  "words": 2
+ },
+ "stems n": {
+  "cases": 2,
+  "gold_stem": 2,
+  "plain_first": 0,
+  "plain_any": 0,
+  "stem_first": 0,
+  "stem_any": 0,
+  "words": 2
  }
 }

@@ -98,5 +98,25 @@
   "os: ŋ- > ŋg-",
   "s: -Sā > -Să",
   "s: None > !"
- ]
+ ],
+ "language_names": {
+  "aq": "Ancient Quenya",
+  "at": "Ancient Telerin",
+  "dan": "Danian/Ossiriandic",
+  "ep": "Early Primitive Elvish",
+  "eq": "Early Quenya",
+  "g": "Gnomish",
+  "ilk": "Ilkorin/Doriathrin",
+  "maq": "Middle Ancient Quenya",
+  "mp": "Middle Primitive Elvish",
+  "mq": "Middle Quenya",
+  "n": "Noldorin",
+  "norths": "North Sindarin",
+  "on": "Old Noldorin",
+  "os": "Old Sindarin",
+  "p": "Primitive Elvish",
+  "q": "Quenya",
+  "s": "Sindarin",
+  "t": "Telerin"
+ }
 }

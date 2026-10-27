@@ -37,6 +37,12 @@ from .sequencer import Sequencer, _replays
 
 LIMIT = 8
 ROOT_BONUS = 2.0
+# a candidate whose run, kept open as a stem, gives the word's attested stem (Q. polë, poli-:
+# ✶poli, not ✶pole) is marked; weighting it up (×10) gains nothing over the roots on Eldamo's
+# primitives of words with stems (reports/reconstruction.md, «Основы слов»), so the weight is 1
+STEM_BONUS = 1.0
+STEM_TRIAL = 10.0
+NO_HINTS = {'roots': (), 'stems': ()}
 PHONOTACTIC_PENALTY = 0.2
 SEARCH = {'beam': 150, 'options': 6, 'min_share': 0.02}   # wider than for word formation: no Eldamo primitive to fall back on
 WIDE = {'beam': 300, 'options': 10, 'min_share': 0.005}   # when SEARCH finds nothing: rarer correspondences (S. -b < -kwā)
@@ -107,6 +113,10 @@ def _classes(form: str) -> list:
         if cls is not None:
             out.append(cls)
     return out
+
+
+def hint_weight(r: dict) -> float:
+    return (ROOT_BONUS if r.get('root') else 1.0) * (STEM_BONUS if r.get('stem') else 1.0)
 
 
 def root_match(form: str, roots: list) -> bool:
@@ -296,12 +306,25 @@ class Context:
         rules = seq.sequence(era, src + 1 if src > 0 else 0, dst)
         return [(v['form'], v['trace']) for v in seq.run(form, rules)]
 
-    def backward(self, branch: str, era: str, form: str, src: int, dst: int, roots=(), exclude=frozenset(),
+    def stem_match(self, branch: str, era: str, form: str, src: int, dst: int, stems) -> bool:
+        """The form at stage src, run to stage dst as a stem (not the end of a word), gives one
+        of the word's stems, with or without its last vowel (Ambar, ambar- < ✶ambara)."""
+        outs = set()
+        for f, _ in self.forward(branch, era, form.rstrip('-') + '-', src, dst)[:6]:
+            ph = phonemes(comparable(f).strip('-'))
+            outs.add(''.join(ph))
+            if ph and is_vowel(ph[-1]):
+                outs.add(''.join(ph[:-1]))
+        return any(s in outs for s in stems)
+
+    def backward(self, branch: str, era: str, form: str, src: int, dst: int, hints=NO_HINTS, exclude=frozenset(),
                  limit: int = LIMIT) -> list:
-        """[{'form', 'p', 'trace', 'root', 'via'}]: forms at stage dst that give `form`
-        at stage src; directly and, for dst > 0, through the primitive form."""
+        """[{'form', 'p', 'trace', 'root', 'stem', 'via'}]: forms at stage dst that give `form`
+        at stage src; directly and, for dst > 0, through the primitive form. hints: the word's
+        roots and its stems at stage src (_hints)."""
         seq = self.seq[branch]
         out = {}
+        roots, stems = hints['roots'], hints['stems']
 
         def add(f, p, trace, via):
             k = comparable(f)
@@ -314,7 +337,9 @@ class Context:
             self._backward(seq, add, branch, era, form, src, dst, first, exclude, limit, search)
             if out:
                 break
-        ranked = sorted(out.values(), key=lambda r: -(r['p'] * (ROOT_BONUS if r['root'] else 1.0)))
+        for r in out.values():
+            r['stem'] = bool(stems) and self.stem_match(branch, era, r['form'], dst, src, stems)
+        ranked = sorted(out.values(), key=lambda r: -(r['p'] * hint_weight(r)))
         return ranked[:limit]
 
     def _backward(self, seq, add, branch, era, form, src, dst, first, exclude, limit, search):
@@ -357,8 +382,21 @@ def _origins(entry: dict, era: str) -> list:
             for o in origins(entry, era)]
 
 
-def _roots(entry: dict | None) -> list:
-    return [r['form'] for r in (entry or {}).get('roots', ())]
+def _hints(ctx: Context, branch: str, entry: dict | None, era: str, stage: int) -> dict:
+    """What the word tells besides its form: its roots, and its stems (Q. nér, ner-; lindë,
+    lindi-) when the form is that of the word's own language. Verbs and affixes are given as
+    stems already."""
+    if entry is None:
+        return NO_HINTS
+    roots = [r['form'] for r in entry.get('roots', ())]
+    stems = []
+    f = (entry.get('form') or '').strip()
+    if entry.get('stems') and entry['lang'] == ctx.code(branch, era, stage) and not f.endswith('-') and not f.startswith('-'):
+        for x in entry['stems']:
+            x = re.sub(r'[*()]', '', x).strip().rstrip('-')
+            if x:
+                stems.append(''.join(phonemes(comparable(to_phonetic(x, branch).strip()).strip('-'))))
+    return {'roots': roots, 'stems': list(dict.fromkeys(stems))}
 
 
 def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, word: str | None = None,
@@ -384,7 +422,7 @@ def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, w
         form = forms[0]
     elif spelled:
         form = to_phonetic(form, sb).strip()
-    roots = _roots(entry)
+    hints = _hints(ctx, sb, entry, se, ss)
     results = {}
 
     def add(f, score, route, marks, steps):
@@ -399,11 +437,11 @@ def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, w
             add(f, 10.0, 'засвидетельствовано', ['attested'], [])
 
     if (db, de) == (sb, se):
-        _within(ctx, add, sb, se, form, ss, ds, roots, exclude)
+        _within(ctx, add, sb, se, form, ss, ds, hints, exclude)
     elif de == se:
-        _sideways(ctx, add, src, dst, form, entry, roots, exclude, use_links)
+        _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links)
     else:
-        _across(ctx, add, src, dst, form, entry, roots, exclude, use_links)
+        _across(ctx, add, src, dst, form, entry, hints, exclude, use_links)
 
     # a form the target language does not allow (initial group, cluster, ending
     # unseen in its words) is kept but ranked down
@@ -430,7 +468,7 @@ def dst_code_has_words(ctx: Context, branch: str, era: str, stage: int) -> bool:
     return stage == ctx.last_stage(branch, era) and ctx.code(branch, era, stage) is not None
 
 
-def _within(ctx, add, branch, era, form, ss, ds, roots, exclude, base_score=1.0, route_prefix='', marks=()):
+def _within(ctx, add, branch, era, form, ss, ds, hints, exclude, base_score=1.0, route_prefix='', marks=()):
     if ds == ss:
         add(form, base_score, route_prefix + 'та же стадия', list(marks), [])
     elif ds > ss:
@@ -438,15 +476,17 @@ def _within(ctx, add, branch, era, form, ss, ds, roots, exclude, base_score=1.0,
             add(f, base_score * (1.0 if k == 0 else 0.5 / k), route_prefix + 'вперёд по законам',
                 list(marks) + (['main'] if k == 0 else []), trace)
     else:
-        found = ctx.backward(branch, era, form, ss, ds, roots, exclude)
-        top = max((r['p'] for r in found), default=1.0) or 1.0
+        found = ctx.backward(branch, era, form, ss, ds, hints, exclude)
+        # hints reorder the candidates but never lift them above 0.9 of the base score
+        top = max((r['p'] * hint_weight(r) for r in found), default=1.0) or 1.0
         for r in found:
-            p = base_score * 0.9 * (r['p'] / top) * (ROOT_BONUS if r['root'] else 1.0)
+            p = base_score * 0.9 * r['p'] * hint_weight(r) / top
             add(r['form'], p, route_prefix + 'назад: ' + ('напрямую' if r['via'] == 'direct' else 'через праформу'),
-                list(marks) + ['reconstructed'] + (['root'] if r['root'] else []), r['trace'])
+                list(marks) + ['reconstructed'] + (['root'] if r['root'] else []) + (['stem'] if r['stem'] else []),
+                r['trace'])
 
 
-def _sideways(ctx, add, src, dst, form, entry, roots, exclude, use_links=True):
+def _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links=True):
     sb, era, ss = src
     db, _, ds = dst
     if use_links and entry is not None:
@@ -462,7 +502,7 @@ def _sideways(ctx, add, src, dst, form, entry, roots, exclude, use_links=True):
             if l2['stage'] == ds:
                 add(f2, 5.0, f'когнат по связи Eldamo: {e2["form"]}', ['link'], [])
             elif l2['stage'] < ds:
-                _within(ctx, add, db, era, f2, l2['stage'], ds, _roots(e2), exclude, base_score=4.0,
+                _within(ctx, add, db, era, f2, l2['stage'], ds, _hints(ctx, db, e2, era, l2['stage']), exclude, base_score=4.0,
                         route_prefix=f'когнат по связи Eldamo {e2["form"]}, затем ', marks=['link'])
     prims = []
     if entry is not None:
@@ -471,12 +511,12 @@ def _sideways(ctx, add, src, dst, form, entry, roots, exclude, use_links=True):
         if ss == 0:
             prims = [(form, 1.0, [])]
         else:
-            found = ctx.backward(sb, era, form, ss, 0, roots, exclude)
-            top = max((r['p'] for r in found), default=1.0) or 1.0
-            prims = [(r['form'], (r['p'] / top) * (ROOT_BONUS if r['root'] else 1.0), ['reconstructed'])
+            found = ctx.backward(sb, era, form, ss, 0, hints, exclude)
+            top = max((r['p'] * hint_weight(r) for r in found), default=1.0) or 1.0
+            prims = [(r['form'], r['p'] * hint_weight(r) / top, ['reconstructed'])
                      for r in found[:5]]
     for prim, w, marks in prims:
-        _within(ctx, add, db, era, prim, 0, ds, (), exclude, base_score=w,
+        _within(ctx, add, db, era, prim, 0, ds, NO_HINTS, exclude, base_score=w,
                 route_prefix=f'через праформу {prim}: ', marks=marks + ['cognate'])
     # attested words of the target language with a near primitive form and a shared meaning
     code = ctx.code(db, era, ds)
@@ -489,7 +529,7 @@ def _sideways(ctx, add, src, dst, form, entry, roots, exclude, use_links=True):
                     ['near-cognate'], [])
 
 
-def _across(ctx, add, src, dst, form, entry, roots, exclude, use_links):
+def _across(ctx, add, src, dst, form, entry, hints, exclude, use_links):
     sb, se, ss = src
     db, de, ds = dst
     dst_code = ctx.code(db, de, ds)
@@ -511,7 +551,7 @@ def _across(ctx, add, src, dst, form, entry, roots, exclude, use_links):
             if l2['stage'] == ds:
                 add(f2, 5.0, f'связь Eldamo ({tag}): {e2["form"]}', ['link'], [])
             else:
-                _within(ctx, add, db, de, f2, l2['stage'], ds, _roots(e2), exclude, base_score=4.0,
+                _within(ctx, add, db, de, f2, l2['stage'], ds, _hints(ctx, db, e2, de, l2['stage']), exclude, base_score=4.0,
                         route_prefix=f'связь Eldamo ({tag}) {e2["form"]}, затем ', marks=['link'])
     # (b) unchanged, when the target language allows the form
     if ss == ctx.last_stage(sb, se) and ds == ctx.last_stage(db, de) and sb == db and dst_code:
@@ -524,43 +564,37 @@ def _across(ctx, add, src, dst, form, entry, roots, exclude, use_links):
         if ss == 0:
             prims = [(form, 1.0)]
         else:
-            found = ctx.backward(sb, se, form, ss, 0, roots, exclude)
-            top = max((r['p'] for r in found), default=1.0) or 1.0
-            prims = [(r['form'], (r['p'] / top) * (ROOT_BONUS if r['root'] else 1.0)) for r in found[:4]]
+            found = ctx.backward(sb, se, form, ss, 0, hints, exclude)
+            top = max((r['p'] * hint_weight(r) for r in found), default=1.0) or 1.0
+            prims = [(r['form'], r['p'] * hint_weight(r) / top) for r in found[:4]]
     for prim, w in prims:
-        _within(ctx, add, db, de, prim, 0, ds, (), exclude, base_score=0.6 * w,
+        _within(ctx, add, db, de, prim, 0, ds, NO_HINTS, exclude, base_score=0.6 * w,
                 route_prefix=f'переэтимологизация через праформу {prim}: ', marks=['neologism'])
 
 
 # --------------------------------------------------------------------------
 # evaluation on Eldamo (reports/reconstruction.md)
 
-def evaluate(ctx: Context, sample: int = 80) -> dict:
+def _evaluation_jobs(ctx: Context, sample: int) -> tuple[list, dict]:
+    """The cases of evaluate(), drawn in a fixed order from one random generator: [(path, kind,
+    params)] and the constant fields of each group. A case does not depend on any other, so the
+    cases can run in any order and in several processes with the same result."""
     import random
     rnd = random.Random(11)
-    out = {}
+    jobs, fixed = [], {}
+    # A: backward from the last stage of an era to each earlier stage
     for b in ctx.data:
-        res = {}
-        # A: backward from the last stage of an era to each earlier stage
         for era in ('late', 'middle', 'early'):
             last = ctx.last_stage(b, era)
             norm = [n for n in ctx.normal[b] if n['era'] == era and last in n['forms']]
             held = norm[1::2]
             exclude = frozenset(n['derivation'] for n in held)
             for t in range(last):
+                path = (b, f'{era}: {last} -> {t}')
+                fixed[path] = {}
                 cases = [n for n in held if t in n['forms']]
-                cases = rnd.sample(cases, min(sample, len(cases)))
-                st = Counter()
-                for n in cases:
-                    vs = reconstruct(ctx, (b, era, last), (b, era, t), form=n['forms'][last], exclude=exclude)
-                    want = comparable(n['forms'][t])
-                    got = [comparable(v['form']) for v in vs]
-                    st['cases'] += 1
-                    st['found'] += bool(got)
-                    st['first'] += bool(got) and got[0] == want
-                    st['any'] += want in got
-                res[f'{era}: {last} -> {t}'] = dict(st)
-        out[b] = res
+                for n in rnd.sample(cases, min(sample, len(cases))):
+                    jobs.append((path, 'stage', ((b, era, last), (b, era, t), n['forms'][last], n['forms'][t], exclude)))
     # B: cognates with the same primitive form, Q <-> S (late)
     starts = defaultdict(dict)
     for b in ctx.data:
@@ -570,42 +604,25 @@ def evaluate(ctx: Context, sample: int = 80) -> dict:
                 starts[comparable(n['forms'][0])][b] = n['forms'][last]
     pairs = [(v['quenya'], v['sindarin']) for v in starts.values() if 'quenya' in v and 'sindarin' in v]
     for (sb, db), idx in ((('quenya', 'sindarin'), (0, 1)), (('sindarin', 'quenya'), (1, 0))):
-        st = Counter()
-        for p in rnd.sample(pairs, min(sample, len(pairs))):
-            src_form, want = p[idx[0]], comparable(p[idx[1]])
-            vs = reconstruct(ctx, (sb, 'late', ctx.last_stage(sb, 'late')), (db, 'late', ctx.last_stage(db, 'late')),
-                             form=src_form)
-            got = [comparable(v['form']) for v in vs]
-            st['cases'] += 1
-            st['first'] += bool(got) and got[0] == want
-            st['any'] += want in got
-        st['pairs'] = len(pairs)
-        out[f'cognates {sb} -> {db}'] = dict(st)
+        path = (f'cognates {sb} -> {db}',)
+        fixed[path] = {'pairs': len(pairs)}
+        for pr in rnd.sample(pairs, min(sample, len(pairs))):
+            jobs.append((path, 'cognate', ((sb, 'late', ctx.last_stage(sb, 'late')),
+                                           (db, 'late', ctx.last_stage(db, 'late')), pr[idx[0]], pr[idx[1]])))
     # B': Eldamo's cognate links Q. <-> S. (late), from the word and from its form alone
     for sb, db, sc, dc in (('quenya', 'sindarin', 'q', 's'), ('sindarin', 'quenya', 's', 'q')):
         lex, other = ctx.lexicon[sb], ctx.lexicon[db]
         pairs = [(e['id'], x['id']) for e in lex.values() if e['lang'] == sc and not e.get('neo')
                  for x in e.get('links', {}).get('cognate', ()) if x['id'] in other and other[x['id']]['lang'] == dc]
         pairs = list(dict.fromkeys(pairs))
-        st = Counter()
+        path = (f'cognate links {sc} -> {dc}',)
+        fixed[path] = {'pairs': len(pairs)}
         for a, t in rnd.sample(pairs, min(sample, len(pairs))):
-            want = comparable(to_phonetic(other[t]['form'], db).strip('-'))
-            src = (sb, 'late', ctx.last_stage(sb, 'late'))
-            dst = (db, 'late', ctx.last_stage(db, 'late'))
-            st['cases'] += 1
-            # by the word: its Eldamo primitive and near attested words, but not the link being tested
-            for key, kw in (('word', {'word': a, 'use_links': False}),
-                            ('form', {'form': to_phonetic(lex[a]['form'], sb).strip('-')})):
-                got = [comparable(v['form']) for v in reconstruct(ctx, src, dst, **kw)]
-                st[key + '_first'] += bool(got) and got[0] == want
-                st[key + '_any'] += want in got
-        st['pairs'] = len(pairs)
-        out[f'cognate links {sc} -> {dc}'] = dict(st)
+            jobs.append((path, 'link', (sb, db, a, t)))
     # C: conceptions, without using the link being tested
     for b, src_code, dst_code in (('quenya', 'mq', 'q'), ('sindarin', 'n', 's'), ('quenya', 'eq', 'q'),
                                   ('sindarin', 'g', 's')):
         lex = ctx.lexicon[b]
-        langs = ctx.langs(b)
         pairs = []
         for e in lex.values():
             if e['lang'] != src_code or e.get('neo'):
@@ -616,16 +633,116 @@ def evaluate(ctx: Context, sample: int = 80) -> dict:
                     if t is not None and t['lang'] == dst_code:
                         pairs.append((e['id'], t['id']))
         pairs = list(dict.fromkeys(pairs))
-        st = Counter()
-        sl, dl = langs[src_code], langs[dst_code]
+        path = (f'conceptions {src_code} -> {dst_code}',)
+        fixed[path] = {'pairs': len(pairs)}
         for a, t in rnd.sample(pairs, min(sample, len(pairs))):
-            want = comparable(to_phonetic(lex[t]['form'], b).strip('-'))
-            vs = reconstruct(ctx, (b, sl['era'], sl['stage']), (b, dl['era'], dl['stage']), word=a, use_links=False)
-            got = [comparable(v['form']) for v in vs]
-            st['cases'] += 1
-            st['identity'] += comparable(to_phonetic(lex[a]['form'], b).strip('-')) == want
-            st['first'] += bool(got) and got[0] == want
-            st['any'] += want in got
-        st['pairs'] = len(pairs)
-        out[f'conceptions {src_code} -> {dst_code}'] = dict(st)
+            jobs.append((path, 'conception', (b, src_code, dst_code, a, t)))
+    # D: stems -- words with a stem and an Eldamo primitive, backward to the primitive with and
+    # without the stem (Q. lindë, lindi- < ✶lindi)
+    for b, code in (('quenya', 'q'), ('quenya', 'mq'), ('sindarin', 's'), ('sindarin', 'n')):
+        era = ctx.langs(b)[code]['era']
+        words = sorted((e for e in ctx.lexicon[b].values() if e['lang'] == code and not e.get('neo')
+                        and _hints(ctx, b, e, era, ctx.langs(b)[code]['stage'])['stems'] and origins(e, era)),
+                       key=lambda e: e['id'])
+        path = (f'stems {code}',)
+        fixed[path] = {'words': len(words)}
+        for e in rnd.sample(words, min(sample, len(words))):
+            jobs.append((path, 'stem', (b, code, e['id'])))
+    return jobs, fixed
+
+
+def _evaluation_case(ctx: Context, kind: str, params: tuple) -> dict:
+    """Counts of one case of evaluate()."""
+    st = Counter()
+    if kind == 'stage':
+        src, dst, form, want, exclude = params
+        got = [comparable(v['form']) for v in reconstruct(ctx, src, dst, form=form, exclude=exclude)]
+        want = comparable(want)
+        st.update(cases=1, found=bool(got), first=bool(got) and got[0] == want, any=want in got)
+    elif kind == 'cognate':
+        src, dst, form, want = params
+        got = [comparable(v['form']) for v in reconstruct(ctx, src, dst, form=form)]
+        want = comparable(want)
+        st.update(cases=1, first=bool(got) and got[0] == want, any=want in got)
+    elif kind == 'link':
+        sb, db, a, t = params
+        lex, other = ctx.lexicon[sb], ctx.lexicon[db]
+        want = comparable(to_phonetic(other[t]['form'], db).strip('-'))
+        src = (sb, 'late', ctx.last_stage(sb, 'late'))
+        dst = (db, 'late', ctx.last_stage(db, 'late'))
+        st['cases'] += 1
+        # by the word: its Eldamo primitive and near attested words, but not the link being tested
+        for key, kw in (('word', {'word': a, 'use_links': False}),
+                        ('form', {'form': to_phonetic(lex[a]['form'], sb).strip('-')})):
+            got = [comparable(v['form']) for v in reconstruct(ctx, src, dst, **kw)]
+            st[key + '_first'] += bool(got) and got[0] == want
+            st[key + '_any'] += want in got
+    elif kind == 'conception':
+        b, src_code, dst_code, a, t = params
+        lex, langs = ctx.lexicon[b], ctx.langs(b)
+        sl, dl = langs[src_code], langs[dst_code]
+        want = comparable(to_phonetic(lex[t]['form'], b).strip('-'))
+        vs = reconstruct(ctx, (b, sl['era'], sl['stage']), (b, dl['era'], dl['stage']), word=a, use_links=False)
+        got = [comparable(v['form']) for v in vs]
+        st.update(cases=1, identity=comparable(to_phonetic(lex[a]['form'], b).strip('-')) == want,
+                  first=bool(got) and got[0] == want, any=want in got)
+    elif kind == 'stem':
+        b, code, wid = params
+        e = ctx.lexicon[b][wid]
+        l = ctx.langs(b)[code]
+        era, stage = l['era'], l['stage']
+        hints = _hints(ctx, b, e, era, stage)
+        want = {comparable(o).strip('-') for o in origins(e, era)}
+        form = to_phonetic(e['form'], b).strip()
+        found = ctx.backward(b, era, form, stage, 0, hints, frozenset(e.get('derivations', ())))
+        plain = sorted(found, key=lambda r: -(r['p'] * (ROOT_BONUS if r['root'] else 1.0)))
+        trial = sorted(found, key=lambda r: -(r['p'] * (ROOT_BONUS if r['root'] else 1.0)
+                                              * (STEM_TRIAL if r['stem'] else 1.0)))
+        st['cases'] += 1
+        st['gold_stem'] += any(ctx.stem_match(b, era, o, 0, stage, hints['stems']) for o in origins(e, era))
+        for key, ranked in (('plain', plain), ('stem', trial)):
+            got = [comparable(r['form']).strip('-') for r in ranked]
+            st[key + '_first'] += bool(got) and got[0] in want
+            st[key + '_any'] += any(g in want for g in got)
+    return dict(st)
+
+
+_EVAL_CTX = None
+
+
+def _evaluation_worker(job):
+    path, kind, params = job
+    return path, _evaluation_case(_EVAL_CTX, kind, params)
+
+
+def evaluate(ctx: Context, sample: int = 80, processes: int | None = None) -> dict:
+    """Reconstruction checked on Eldamo (reports/reconstruction.md). The cases run in
+    `processes` processes (default: the number of CPUs; 1 runs them here); where processes
+    cannot be forked (Windows), they run here."""
+    import multiprocessing as mp
+    import os
+    global _EVAL_CTX
+    jobs, fixed = _evaluation_jobs(ctx, sample)
+    if processes is None:
+        processes = int(os.environ.get('QUETTAMIN_JOBS') or os.cpu_count() or 1)
+    _EVAL_CTX = ctx
+    try:
+        if processes > 1 and 'fork' in mp.get_all_start_methods():
+            with mp.get_context('fork').Pool(processes) as pool:
+                done = pool.map(_evaluation_worker, jobs, chunksize=1)
+        else:
+            done = [_evaluation_worker(j) for j in jobs]
+    finally:
+        _EVAL_CTX = None
+    totals = {path: Counter() for path in fixed}
+    for path, counts in done:
+        totals[path].update(counts)
+    out = {}
+    for path, st in totals.items():
+        rec = {k: v for k, v in st.items()}
+        rec.update(fixed[path])
+        if len(path) == 2:
+            out.setdefault(path[0], {})[path[1]] = rec
+        else:
+            out[path[0]] = rec
     return out

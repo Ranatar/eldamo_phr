@@ -191,6 +191,9 @@ table.panorama td { padding: 0; }
   background: var(--panel-2); border-color: transparent;
 }
 .pcell .pform { font-size: 16px; }
+.proots { white-space: nowrap; padding: 0 6px !important; font-size: 15px; }
+.proots a { text-decoration: none; margin-right: 6px; }
+.proots .marker { color: var(--muted); font-size: 12px; margin-right: 1px; }
 .pcell.attested { background: var(--ok-soft); }
 .pcell.attested .sym { color: var(--ok); }
 .pcell.neologism { opacity: .85; border-style: dashed; border-color: var(--line); }

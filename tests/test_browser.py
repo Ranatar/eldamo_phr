@@ -138,8 +138,8 @@ class Browser(unittest.TestCase):
     def test_wordform_engine_matches_python(self):
         # app/wordform.js repeats shared/ (interpreter, sequencer, junctions, compounds, backform)
         from shared.parity import vectors
-        V = vectors(branches())
-        recon = V.pop('__recon__')[::3]        # a third of the reconstruction calls: each takes a while
+        V = vectors(branches(), recon_every=3)  # a third of the reconstruction calls: each takes a while
+        recon = V.pop('__recon__')
         page = self.page(self.atlas)
         bad = page.evaluate("cases => WF.parityRecon({quenya: WFUI.engine('quenya'), sindarin: WFUI.engine('sindarin')}, cases)", recon)
         self.assertEqual(bad, [], 'reconstruction')

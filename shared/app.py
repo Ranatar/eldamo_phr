@@ -110,6 +110,7 @@ def wordform_payload(name: str, data: dict) -> dict:
             x['links'] = {tag: [l['id'] for l in ls] for tag, ls in e['links'].items()}
         if e.get('roots'):
             x['roots'] = [r['form'] for r in e['roots']]
+            x['root_refs'] = [[r['lang'], r['id']] for r in e['roots']]     # for the panorama: language, page
         lexicon.append(x)
     return {
         'languages': data['meta']['languages'],

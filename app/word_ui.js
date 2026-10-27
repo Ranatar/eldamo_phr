@@ -22,6 +22,7 @@ const MARKS = {
   unchanged: ['=', T('mark.unchanged')],
   reconstructed: ['○', T('mark.reconstructed')],
   root: ['√', T('mark.root')],
+  stem: ['⊢', T('mark.stem')],
   cognate: ['⇄', T('mark.cognate')],
   'near-cognate': ['≈', T('mark.near-cognate')],
   'primitive-attested': ['✶', T('mark.primitive-attested')],
@@ -308,6 +309,44 @@ function cellSymbol(v) {
   for (const m of ['attested', 'link', 'near-cognate', 'neologism', 'unchanged']) if (v.marks.includes(m)) return MARKS[m][0];
   return '○';
 }
+// roots by era: of the word itself and of the words Eldamo links to it (cognates, earlier and later
+// conceptions); a root belongs to the era of the word that names it (Q. lár < ᴹ√DAR: late)
+let linkIndex = null;
+function linkedIds(id) {
+  if (!linkIndex) {
+    linkIndex = new Map();
+    for (const b of BRANCHES) for (const e of engine(b).lexiconList) for (const ids of Object.values(e.links || {})) {
+      for (const t of ids) {
+        if (!linkIndex.has(e.id)) linkIndex.set(e.id, new Set());
+        if (!linkIndex.has(t)) linkIndex.set(t, new Set());
+        linkIndex.get(e.id).add(t); linkIndex.get(t).add(e.id);
+      }
+    }
+  }
+  return [...(linkIndex.get(id) || [])];
+}
+function rootsByEra(s) {
+  const out = {};
+  if (!s || s.kind !== 'word') return out;
+  const seen = new Set();
+  for (const id of [s.entry.id, ...linkedIds(s.entry.id)]) {
+    const w = lookup(id, s.branch);
+    if (!w) continue;
+    const E = engine(w.branch), era = eraOf(E, w.entry.lang);
+    if (!era) continue;
+    for (const [i, [lang, rid]] of (w.entry.root_refs || []).entries()) {
+      if (seen.has(era + rid)) continue;
+      seen.add(era + rid);
+      const l = language(E, lang);
+      (out[era] = out[era] || []).push({ id: rid, form: w.entry.roots[i], marker: l ? l.marker.replace('✶', '√') : '√' });
+    }
+  }
+  return out;
+}
+function rootsCell(list) {
+  if (!list || !list.length) return '<td class="proots"></td>';
+  return `<td class="proots">${list.map(r => `<a href="${SITE}words/word-${esc(r.id)}.html" target="_blank" rel="noopener" title="${esc(T('panorama.rootTitle'))}"><span class="marker">${esc(r.marker)}</span><span class="form">${esc(r.form)}</span></a>`).join(' ')}</td>`;
+}
 function renderPanorama(s) {
   const gen = ++generation;
   const box = $('panorama');
@@ -315,7 +354,9 @@ function renderPanorama(s) {
   const src = s.period, opts = sourceOf(s);
   const rows = periods();
   const maxMid = Math.max(...rows.map(r => r.langs.length - 2));
-  const head = `<tr><th scope="col"></th><th scope="col">${T('panorama.primitive')}</th>${maxMid > 0 ? `<th scope="col" colspan="${maxMid}">${T('panorama.middle')}</th>` : ''}<th scope="col">${T('panorama.language')}</th></tr>`;
+  const roots = rootsByEra(s);
+  const withRoots = Object.keys(roots).length > 0;
+  const head = `<tr><th scope="col"></th>${withRoots ? `<th scope="col">${T('panorama.roots')}</th>` : ''}<th scope="col">${T('panorama.primitive')}</th>${maxMid > 0 ? `<th scope="col" colspan="${maxMid}">${T('panorama.middle')}</th>` : ''}<th scope="col">${T('panorama.language')}</th></tr>`;
   const cell = (b, era, l) => {
     const own = src[0] === b && src[1] === era && src[2] === l.stage;
     return `<td><button type="button" class="pcell${own ? ' own' : ''}" data-cell="${esc(`${b}/${era}/${l.stage}`)}" aria-label="${esc(l.marker + ' ' + l.name)}">
@@ -324,7 +365,7 @@ function renderPanorama(s) {
   const body = rows.map(r => {
     const first = r.langs[0], last = r.langs[r.langs.length - 1], mid = r.langs.slice(1, -1);
     const pad = maxMid - mid.length;
-    return `<tr><th scope="row">${esc(ERA_NAMES[r.era])} · ${esc(BRANCH_NAMES[r.b])}</th>${cell(r.b, r.era, first)}${mid.map(l => cell(r.b, r.era, l)).join('')}${pad > 0 ? `<td colspan="${pad}"></td>` : ''}${last !== first ? cell(r.b, r.era, last) : '<td></td>'}</tr>`;
+    return `<tr><th scope="row">${esc(ERA_NAMES[r.era])} · ${esc(BRANCH_NAMES[r.b])}</th>${withRoots ? rootsCell(roots[r.era]) : ''}${cell(r.b, r.era, first)}${mid.map(l => cell(r.b, r.era, l)).join('')}${pad > 0 ? `<td colspan="${pad}"></td>` : ''}${last !== first ? cell(r.b, r.era, last) : '<td></td>'}</tr>`;
   }).join('');
   box.innerHTML = `<h2>${T('panorama.title')}</h2>
     <div class="table-scroll"><table class="panorama"><thead>${head}</thead><tbody>${body}</tbody></table></div>

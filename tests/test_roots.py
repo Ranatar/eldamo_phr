@@ -29,6 +29,14 @@ class Roots(unittest.TestCase):
         rs = self.entry('quenya', 'q', 'hyarma')['roots']
         self.assertEqual([(r['form'], r['part']) for r in rs], [('KHYAR', 0), ('MAH', 1), ('MAG', 1)])
 
+    def test_roots_through_a_source_word(self):
+        # S. Adanel = Adan + -iel¹; Adan < Q. Atan (a derivation, not a root), whose element atta < √ATATA;
+        # -iel has no root: its primitive ✶-iel stands in its place
+        e = self.entry('sindarin', 's', 'Adanel')
+        self.assertEqual([(r['form'], r['part']) for r in e['roots']], [('ATATA', 0)])
+        self.assertEqual([(g['form'], g['part']) for g in e['root_gaps']], [('-iel', 1)])
+        self.assertEqual([(r['form'], r['via']) for r in self.entry('sindarin', 's', 'Adan')['roots']], [('ATATA', 'source')])
+
     def test_roots_of_cognates(self):
         # Q. Perian: no root, no elements; cognate S. Perian = per- + ?, per- < √PER
         rs = self.entry('quenya', 'q', 'Perian')['roots']

@@ -59,6 +59,10 @@
   "ru": "корни составляющих",
   "en": "roots of the elements"
  },
+ "card.root.source": {
+  "ru": "корень исходного слова",
+  "en": "root of the source word"
+ },
  "card.stem": {
   "ru": "основа",
   "en": "stem"
@@ -1171,6 +1175,10 @@
   "ru": "Фонетический справочник",
   "en": "Phonetic reference"
  },
+ "root.gapTitle": {
+  "ru": "Составляющая без корня в Eldamo (её праформа или она сама)",
+  "en": "An element without a root in Eldamo (its primitive form or itself)"
+ },
  "root.guessTitle": {
   "ru": "Возможный корень: согласные корня начинают праформу (гипотеза)",
   "en": "A possible root: its consonants begin the primitive form (a hypothesis)"
@@ -1182,6 +1190,10 @@
  "root.via.element": {
   "ru": "Корень составляющей слова (статья Eldamo)",
   "en": "A root of one of the word's elements (Eldamo page)"
+ },
+ "root.via.source": {
+  "ru": "Корень слова, от которого произведено это (статья Eldamo)",
+  "en": "A root of the word this one derives from (Eldamo page)"
  },
  "route.attested": {
   "ru": "засвидетельствовано",

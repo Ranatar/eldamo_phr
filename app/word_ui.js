@@ -274,7 +274,7 @@ function cardHtml(s) {
   if (e.stems) bits.push(T('card.stem') + ' ' + e.stems.map(x => `<span class="form">${esc(x)}</span>`).join(', '));
   if (e.roots && e.roots.length) {
     const list = entryRoots(b, e);
-    const via = list.some(r => r.via === 'element') ? 'element' : list[0].via;
+    const via = list.some(r => r.via === 'element') ? 'element' : (list.find(r => !r.gap) || list[0]).via;
     bits.push(T(via ? 'card.root.' + via : 'card.root') + ' ' + rootsHtml(list));
   }
   const pr = e.starts || (e.stages && (e.stages.p || e.stages.mp || e.stages.ep)) || e.written_origins || e.proto_forms;
@@ -332,7 +332,10 @@ function linkedIds(id) {
 // the roots of an entry as records for rootsHtml
 function entryRoots(b, e) {
   const E = engine(b);
-  return (e.root_refs || []).map(([lang, id, via, part], i) => ({ id, form: e.roots[i], marker: rootMarker(E, lang), via: via || '', part }));
+  const out = (e.root_refs || []).map(([lang, id, via, part], i) => ({ id, form: e.roots[i], marker: rootMarker(E, lang), via: via || '', part }));
+  // an element without a root, in its place (S. Adanel = √ATATA + ✶-iel)
+  for (const [part, lang, id, form] of e.root_gaps || []) out.push({ id, form, marker: (language(E, lang) || {}).marker || '', part, gap: true });
+  return out.sort((x, y) => (x.part ?? -1) - (y.part ?? -1));
 }
 // roots by era: the word's own for its era; for another era those of the first word Eldamo links to it
 // in that era, an earlier or later conception first (Q. Ambar: ᴱQ. irmin < ᴱ√IÐI). A cognate of the
@@ -371,6 +374,7 @@ function rootsHtml(list) {
 const rootMarker = (E, lang) => { const l = language(E, lang); return l ? l.marker.replace('✶', '√') : '√'; };
 // a root as a link to its Eldamo page: own, of the word's elements, of a cognate, or guessed
 function rootLink(r) {
+  if (r.gap) return `<a href="${SITE}words/word-${esc(r.id)}.html" target="_blank" rel="noopener" class="root gap" title="${esc(T('root.gapTitle'))}"><span class="marker">${esc(r.marker)}</span><span class="form">${esc(r.form)}</span></a>`;
   const title = T(r.guess ? 'root.guessTitle' : r.via ? 'root.via.' + r.via : 'panorama.rootTitle');
   return `<a href="${SITE}words/word-${esc(r.id)}.html" target="_blank" rel="noopener" class="root${r.via ? ' via' : ''}${r.guess ? ' guess' : ''}" title="${esc(title)}">${r.guess ? '?' : ''}<span class="marker">${esc(r.marker)}</span><span class="form">${esc(r.form)}</span></a>`;
 }

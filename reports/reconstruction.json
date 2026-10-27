@@ -163,35 +163,35 @@
  },
  "root seeds q": {
   "cases": 30,
-  "plain_first": 8,
-  "plain_any": 13,
-  "seed_first": 8,
-  "seed_any": 15,
-  "words": 838
+  "plain_first": 11,
+  "plain_any": 15,
+  "seed_first": 11,
+  "seed_any": 17,
+  "words": 842
  },
  "root seeds mq": {
   "cases": 30,
-  "plain_first": 6,
-  "plain_any": 15,
-  "seed_first": 9,
-  "seed_any": 17,
-  "words": 751
+  "plain_first": 4,
+  "plain_any": 9,
+  "seed_first": 5,
+  "seed_any": 10,
+  "words": 758
  },
  "root seeds s": {
   "cases": 30,
-  "plain_first": 1,
-  "plain_any": 4,
-  "seed_first": 2,
+  "plain_first": 0,
+  "plain_any": 5,
+  "seed_first": 0,
   "seed_any": 5,
-  "words": 585
+  "words": 593
  },
  "root seeds n": {
   "cases": 30,
-  "plain_first": 4,
-  "plain_any": 10,
-  "seed_first": 4,
-  "seed_any": 10,
-  "words": 895
+  "plain_first": 2,
+  "plain_any": 7,
+  "seed_first": 3,
+  "seed_any": 8,
+  "words": 902
  },
  "root_candidates": {
   "q": {
@@ -199,40 +199,40 @@
    "first": 492,
    "top3": 643,
    "any": 668,
-   "rootless": 131,
-   "guessed": 122
+   "rootless": 127,
+   "guessed": 118
   },
   "mq": {
    "words": 728,
    "first": 513,
    "top3": 592,
    "any": 622,
-   "rootless": 45,
-   "guessed": 40
+   "rootless": 38,
+   "guessed": 33
   },
   "eq": {
    "words": 1380,
    "first": 516,
    "top3": 685,
    "any": 722,
-   "rootless": 63,
-   "guessed": 54
+   "rootless": 62,
+   "guessed": 53
   },
   "s": {
-   "words": 513,
+   "words": 512,
    "first": 304,
-   "top3": 384,
-   "any": 409,
-   "rootless": 63,
-   "guessed": 58
+   "top3": 383,
+   "any": 408,
+   "rootless": 55,
+   "guessed": 51
   },
   "n": {
    "words": 855,
    "first": 543,
    "top3": 661,
    "any": 706,
-   "rootless": 15,
-   "guessed": 15
+   "rootless": 8,
+   "guessed": 8
   },
   "g": {
    "words": 470,

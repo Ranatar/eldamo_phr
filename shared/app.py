@@ -115,6 +115,9 @@ def wordform_payload(name: str, data: dict) -> dict:
             # and, in a compound, the number of its element
             x['root_refs'] = [[r['lang'], r['id'], r.get('via', '')] + ([r['part']] if 'part' in r else [])
                               for r in e['roots']]
+        if e.get('root_gaps'):
+            # elements without a root, in their place among the parts: [part, language, page, form]
+            x['root_gaps'] = [[g['part'], g['lang'], g['id'], g['form']] for g in e['root_gaps']]
         lexicon.append(x)
     return {
         'languages': data['meta']['languages'],

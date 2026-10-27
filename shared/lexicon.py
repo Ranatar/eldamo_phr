@@ -431,10 +431,25 @@ def _root_rec(W: Words, rid: str) -> dict:
     return {'lang': q.get('l'), 'form': q.get('v'), 'id': rid}
 
 
+def _real(group: list) -> list:
+    return [r for r in group if not r.get('gap')]
+
+
+def _gap(W: Words, eid: str) -> dict:
+    """An element without a root, shown in its place among the roots: its primitive form
+    when it derives from one (S. -iel < ✶-iel), else itself."""
+    w = W.by_id[eid]
+    for d in _derived_from(W, w):
+        q = W.by_id[d]
+        if q.get('speech') != 'root' and q.get('l') in ('p', 'mp', 'ep'):
+            return {'gap': True, 'lang': q.get('l'), 'form': q.get('v'), 'id': d}
+    return {'gap': True, 'lang': w.get('l'), 'form': w.get('v'), 'id': eid}
+
+
 def _part_groups(W: Words, pid: str, memo: dict, depth: int = 3) -> list:
     """[[root]] per element of a word, in order: a root named as an element, else the
-    element's own roots (alternatives: má < √MAH/√MAG), else its own elements' groups
-    (a compound element adds its parts). An element with no root gives an empty group."""
+    element's roots (_word_groups: alternatives, má < √MAH/√MAG; a compound element adds
+    its parts). An element with no root gives a group with only a gap (_gap)."""
     if depth == 0 or pid not in W.by_id:
         return []
     groups = []
@@ -442,13 +457,45 @@ def _part_groups(W: Words, pid: str, memo: dict, depth: int = 3) -> list:
         if W.by_id[eid].get('speech') == 'root':
             groups.append([dict(_root_rec(W, eid), named=True)])
             continue
-        own = _own_roots(W, eid, memo)
-        if own:
-            groups.append(list(own))
-            continue
-        sub = _part_groups(W, eid, memo, depth - 1)
-        groups.extend(sub if any(sub) else [[]])
+        sub = _word_groups(W, eid, memo, depth - 1)
+        groups.extend(sub if any(_real(g) for g in sub) else [[_gap(W, eid)]])
     return groups
+
+
+def _word_groups(W: Words, pid: str, memo: dict, depth: int = 3) -> list:
+    """[[root]] of a word taken as a part or a source of another: its own roots (one group),
+    else its elements' groups, else those of a word it derives from that is not a root
+    (S. Adan < Q. Atan, whose element atta < √ATATA)."""
+    own = _own_roots(W, pid, memo)
+    if own:
+        return [list(own)]
+    if depth <= 0 or pid not in W.by_id:
+        return [[]]
+    sub = _part_groups(W, pid, memo, depth)
+    if any(_real(g) for g in sub):
+        return sub
+    for d in _derived_from(W, W.by_id[pid]):
+        if W.by_id[d].get('speech') != 'root':
+            g = _word_groups(W, d, memo, depth - 1)
+            if any(_real(x) for x in g):
+                return g
+    return [[]]
+
+
+def _clean(r: dict, **extra) -> dict:
+    return dict({x: v for x, v in r.items() if x not in ('named', 'gap')}, **extra)
+
+
+def _parts_to_roots(groups: list, via: str) -> tuple:
+    """Roots numbered by part, and the gaps, from groups of several parts."""
+    roots, gaps = [], []
+    for k, g in enumerate(groups):
+        for r in g:
+            if r.get('gap'):
+                gaps.append(_clean(r, part=k))
+            else:
+                roots.append(_clean(r, part=k, via='' if r.get('named') else via))
+    return roots, gaps
 
 
 def _resolve_roots(entries: list, W: Words) -> None:
@@ -459,11 +506,16 @@ def _resolve_roots(entries: list, W: Words) -> None:
        name besides is kept as its own part;
     2. the roots the word's derivations reach (Q. lár < ᴹ√DAR), or a root it names as an
        element (Q. firya: √PHIR + -ya);
-    3. the roots of its one element with roots;
-    4. the roots of its cognates, own or of their elements, when the root's consonants
+    3. the roots of its elements when only one of them has roots (S. Adanel = Adan + -iel:
+       Adan < Q. Atan, element atta < √ATATA);
+    4. the roots of a word it derives from that is not a root, own or through its elements
+       or its own source (via 'source': S. Adan < Q. Atan);
+    5. the roots of its cognates, own or of their elements, when the root's consonants
        are found in the word (Q. Perian ← S. Perian = per- + ?, √PER; not S. Gwahaedir, which
        Eldamo links to Q. palantír as the same thing in Sindarin).
-    via: '' (own), 'element', 'cognate'."""
+    via: '' (own), 'element', 'source', 'cognate'. root_gaps: the elements of a word whose
+    roots are by part that have no root, in their place ({part, lang, form, id}: S. Adanel =
+    √ATATA + ✶-iel)."""
     memo = {}
     for e in entries:
         own = list(_own_roots(W, e['id'], memo))
@@ -471,35 +523,47 @@ def _resolve_roots(entries: list, W: Words) -> None:
             if all(r['id'] != x['id'] for x in own):
                 own.append(r)
         groups = _part_groups(W, e['id'], memo) if e['id'] in W.by_id else []
-        filled = [g for g in groups if g]
-        roots = []
-        if len(filled) >= 2:
-            covered = {r['id'] for g in filled for r in g}
-            for k, g in enumerate(filled):
-                roots += [dict({x: v for x, v in r.items() if x != 'named'}, part=k,
-                               via='' if r.get('named') else 'element') for r in g]
-            extra = [r for r in own if r['id'] not in covered]
-            roots += [dict(r, part=len(filled)) for r in extra]
+        filled = [g for g in groups if _real(g)]
+        roots, gaps = [], []
+        if len(filled) >= 2 or (filled and not own):
+            if len(groups) >= 2:
+                roots, gaps = _parts_to_roots(groups, 'element')
+                covered = {r['id'] for r in roots}
+                roots += [dict(r, part=len(groups)) for r in own if r['id'] not in covered]
+            else:
+                roots = [_clean(r, via='' if r.get('named') else 'element') for r in filled[0]]
         elif own:
             roots = own
-        elif filled:
-            roots = [dict({x: v for x, v in r.items() if x != 'named'}, via='' if r.get('named') else 'element')
-                     for r in filled[0]]
-        else:
+        if not roots and e['id'] in W.by_id:
+            # the word derives from another word that is not a root (S. Adan < Q. Atan): its roots
+            for d in _derived_from(W, W.by_id[e['id']]):
+                if W.by_id[d].get('speech') == 'root':
+                    continue
+                g = _word_groups(W, d, memo)
+                if any(_real(x) for x in g):
+                    if len(g) >= 2:
+                        roots, gaps = _parts_to_roots(g, 'source')
+                        roots = [dict(r, via='source') for r in roots]
+                    else:
+                        roots = [_clean(r, via='source') for r in _real(g[0])]
+                    break
+        if not roots:
             from .reconstruct import root_match
             for cid in W.cognates(e['id']):
                 if cid == e['id']:
                     continue
                 c_own = _own_roots(W, cid, memo)
-                cand = c_own or [r for g in _part_groups(W, cid, memo) for r in g]
-                roots += [dict({x: v for x, v in r.items() if x != 'named'}, via='cognate') for r in cand
+                cand = c_own or [r for g in _part_groups(W, cid, memo) for r in _real(g)]
+                roots += [_clean(r, via='cognate') for r in cand
                           if root_match(primitive_or_form(e), [r['form']])]
         out = []
         for r in roots:
-            if all(r['id'] != x['id'] for x in out):
+            if all(r['id'] != x['id'] or r.get('part') != x.get('part') for x in out):
                 out.append(r)
         if out:
             e['roots'] = out
+            if gaps:
+                e['root_gaps'] = gaps
 
 
 def primitive_or_form(e: dict) -> str:

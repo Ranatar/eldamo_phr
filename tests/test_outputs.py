@@ -86,6 +86,52 @@ class InterfaceCatalog(unittest.TestCase):
                 keys.update(pair.split(':')[1].strip() for pair in attrs.split(';'))
         return keys
 
+    def test_no_untranslated_text_in_sources(self):
+        """Russian interface text lives only in the catalog: none in the code outside comments,
+        and in the templates only as the default text of an element marked for translation."""
+        from html.parser import HTMLParser
+        cyr = re.compile('[А-Яа-яЁё]')
+        for name in ('router.js', 'wordform.js', 'word_ui.js', 'wordform_ui.js', 'reconstruct_ui.js',
+                     'runtime.js', 'i18n.js'):
+            text = (ROOT / 'app' / name).read_text(encoding='utf-8')
+            code = re.sub(r'/\*.*?\*/', '', text, flags=re.S)
+            for k, line in enumerate(code.split('\n'), 1):
+                line = re.sub(r'(^|\s)//.*$', '', line)
+                self.assertNotRegex(line, cyr, f'{name}: {line.strip()[:80]}')
+
+        class Check(HTMLParser):
+            VOID = {'meta', 'link', 'input', 'br', 'img', 'hr', 'source', 'col', 'wbr'}
+
+            def __init__(self):
+                super().__init__()
+                self.stack, self.bad, self.script = [], [], False
+
+            def handle_starttag(self, tag, attrs):
+                a = dict(attrs)
+                covered = {pair.split(':')[0].strip() for pair in (a.get('data-i18n-attr') or '').split(';') if pair}
+                for k, v in attrs:
+                    if v and cyr.search(v) and k not in covered and not k.startswith('data-'):
+                        self.bad.append(f'<{tag} {k}="{v[:40]}">')
+                self.script = tag in ('script', 'style')
+                if tag not in self.VOID:
+                    self.stack.append('data-i18n' in a or 'data-i18n-html' in a)
+
+            def handle_endtag(self, tag):
+                self.script = False
+                if tag not in self.VOID and self.stack:
+                    self.stack.pop()
+
+            def handle_data(self, data):
+                if not self.script and cyr.search(data) and not any(self.stack):
+                    self.bad.append(data.strip()[:60])
+
+        for name in ('template.html', 'corpus_template.html'):
+            html = (ROOT / 'app' / name).read_text(encoding='utf-8')
+            html = re.sub(r'<script\b[^>]*>.*?</script>', '', html, flags=re.S)   # the code is checked above
+            c = Check()
+            c.feed(html)
+            self.assertEqual(c.bad, [], name)
+
     def test_keys(self):
         used = self.used()
         self.assertEqual(sorted(used - set(self.messages)), [], 'keys missing from app/messages.json')

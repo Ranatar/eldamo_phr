@@ -258,7 +258,13 @@ class Browser(unittest.TestCase):
 
     def visible_cyrillic(self, page):
         lines = page.inner_text('body').split('\n')
-        return [x for x in lines if re.search('[А-Яа-яЁё]', x) and x.strip() != 'Русский']
+        lines = [x for x in lines if re.search('[А-Яа-яЁё]', x) and x.strip() != 'Русский']
+        # tooltips and labels too (the panorama cells carry the route in their title)
+        lines += page.evaluate("""() => [...document.querySelectorAll('[title], [aria-label], [placeholder]')]
+            .filter(el => el.id !== 'lang-toggle')
+            .flatMap(el => ['title', 'aria-label', 'placeholder'].map(a => el.getAttribute(a) || ''))
+            .filter(v => /[А-Яа-яЁё]/.test(v))""")
+        return lines
 
     def test_english_interface(self):
         page = self.page(self.atlas + '#lang=en&w=3880471189&dst=sindarin/late/3', locale='en-US')

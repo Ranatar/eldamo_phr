@@ -313,6 +313,7 @@ class Context:
         return [(v['form'], v['trace']) for v in seq.run(form, rules)]
 
     seed_roots = True
+    use_elements = True
 
     def _root_seeds(self, seq, add, branch, era, form, src, starts, found):
         """Primitive forms that begin with the word's root: the root (without a final vowel)
@@ -529,6 +530,53 @@ def _within(ctx, add, branch, era, form, ss, ds, hints, exclude, base_score=1.0,
                 r['trace'])
 
 
+ELEMENTS_SCORE = 1.9     # below an attested word of the target language (link 5, near cognate 2-3), above the laws (1.0)
+
+
+def _counterparts(ctx, wid: str, branch: str, code: str) -> list:
+    """Words of the target language Eldamo links to a word as cognates, either way."""
+    _, e = ctx.entry(wid)
+    if e is None:
+        return []
+    ids = [x['id'] for x in e.get('links', {}).get('cognate', ())]
+    ids += [w for w, tag in ctx.reverse_links.get(wid, []) if tag == 'cognate']
+    out = []
+    for i in dict.fromkeys(ids):
+        b2, e2 = ctx.entry(i)
+        if b2 == branch and e2 is not None and e2['lang'] == code:
+            out.append(i)
+    return out
+
+
+def _by_elements(ctx, add, entry, era, db, ds):
+    """A compound or derivative of the other branch built again from the cognates of its
+    elements by the word formation of the target language (shared/compound.py): S. Adanel =
+    Adan + -iel¹, cognates Q. Atan + -iel -> Q. Ataniel. Only at the latest stage, and only
+    when every element has a cognate there."""
+    els = entry.get('elements') or []
+    code = ctx.code(db, era, ds)
+    if len(els) < 2 or code is None or ds != ctx.last_stage(db, era) or not all(x.get('id') for x in els):
+        return
+    ids = []
+    for x in els:
+        c = _counterparts(ctx, x['id'], db, code)
+        if not c:
+            return
+        ids.append(c[0])
+    from . import affixes, compound, junctions
+    if (db, 'wf') not in ctx._tables:
+        data = ctx.data[db]
+        ctx._tables[(db, 'wf')] = ({e['id']: e for e in data['lexicon']},
+                                   junctions.learn(data['junctions']['cases']),
+                                   affixes.learn(data['affixes']['cases']))
+    lex, table, model = ctx._tables[(db, 'wf')]
+    vs = compound.predict(lex, ctx.seq[db], ids, era, ds, table=table, affix_model=model)
+    top = max((v['score'] for v in vs), default=0) or 1.0
+    names = ' + '.join(lex[i]['form'] for i in ids)
+    for v in vs[:4]:
+        add(v['form'], ELEMENTS_SCORE * v['score'] / top, f'по когнатам составляющих: {names}', ['elements'], [])
+
+
 def _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links=True):
     sb, era, ss = src
     db, _, ds = dst
@@ -547,6 +595,8 @@ def _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links=True):
             elif l2['stage'] < ds:
                 _within(ctx, add, db, era, f2, l2['stage'], ds, _hints(ctx, db, e2, era, l2['stage']), exclude, base_score=4.0,
                         route_prefix=f'когнат по связи Eldamo {e2["form"]}, затем ', marks=['link'])
+    if entry is not None and ctx.use_elements:
+        _by_elements(ctx, add, entry, era, db, ds)
     prims = []
     if entry is not None:
         prims = [(f, 1.0, ['primitive-attested']) for f in _origins(entry, era)]
@@ -691,6 +741,22 @@ def _evaluation_jobs(ctx: Context, sample: int) -> tuple[list, dict]:
         fixed[path] = {'words': len(words)}
         for e in rnd.sample(words, min(sample, len(words))):
             jobs.append((path, 'stem', (b, code, e['id'])))
+    # E': compounds of one branch with a cognate in the other: rebuilt from the cognates of the
+    # elements (_by_elements), without the word's own link
+    for sb, db, sc, dc in (('quenya', 'sindarin', 'q', 's'), ('sindarin', 'quenya', 's', 'q')):
+        lex, other = ctx.lexicon[sb], ctx.lexicon[db]
+        pairs = []
+        for e in lex.values():
+            if e['lang'] != sc or e.get('neo') or len(e.get('elements') or []) < 2:
+                continue
+            for x in e.get('links', {}).get('cognate', ()):
+                if x['id'] in other and other[x['id']]['lang'] == dc:
+                    pairs.append((e['id'], x['id']))
+        pairs = sorted(dict.fromkeys(pairs))
+        path = (f'compounds {sc} -> {dc}',)
+        fixed[path] = {'pairs': len(pairs)}
+        for a, t in rnd.sample(pairs, min(sample, len(pairs))):
+            jobs.append((path, 'compound', (sb, db, a, t)))
     # E: roots -- words with a root and an Eldamo primitive, backward to the primitive with and
     # without primitive forms begun by the root (Context._root_seeds)
     for b, code in (('quenya', 'q'), ('quenya', 'mq'), ('sindarin', 's'), ('sindarin', 'n')):
@@ -757,6 +823,23 @@ def _evaluation_case(ctx: Context, kind: str, params: tuple) -> dict:
             got = [comparable(r['form']).strip('-') for r in ranked]
             st[key + '_first'] += bool(got) and got[0] in want
             st[key + '_any'] += any(g in want for g in got)
+    elif kind == 'compound':
+        sb, db, a, t = params
+        want = comparable(to_phonetic(ctx.lexicon[db][t]['form'], db).strip('-'))
+        src = (sb, 'late', ctx.last_stage(sb, 'late'))
+        dst = (db, 'late', ctx.last_stage(db, 'late'))
+        st['cases'] += 1
+        for key, on in (('plain', False), ('elements', True)):
+            ctx.use_elements = on
+            try:
+                vs = reconstruct(ctx, src, dst, word=a, use_links=False)
+            finally:
+                ctx.use_elements = True
+            got = [comparable(v['form']).strip('-') for v in vs]
+            st[key + '_first'] += bool(got) and got[0] == want
+            st[key + '_any'] += want in got
+            if on:
+                st['built'] += any('elements' in v['marks'] for v in vs)
     elif kind == 'seed':
         b, code, wid = params
         e = ctx.lexicon[b][wid]

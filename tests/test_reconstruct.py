@@ -71,6 +71,14 @@ class Reconstruction(unittest.TestCase):
         vs = R.reconstruct(self.ctx, ('quenya', 'late', 2), ('quenya', 'late', 0), form='linde')
         self.assertFalse(any('stem' in v['marks'] for v in vs))
 
+    def test_compound_by_cognate_elements(self):
+        # S. Adanel = Adan + -iel¹ has no Quenya cognate in Eldamo; its elements do: Q. Atan, -iel.
+        # Quenya -iel after n: aranel, Ailinel, but Uinéniel -- both are built
+        vs = R.reconstruct(self.ctx, ('sindarin', 'late', 3), ('quenya', 'late', 2), word='4023112133')
+        built = [v['form'] for v in vs if 'elements' in v['marks']]
+        self.assertEqual(built[:2], ['atanel', 'ataniel'])
+        self.assertIn('elements', vs[0]['marks'])
+
     def test_root_match(self):
         self.assertTrue(R.root_match('glindē', ['GLIN']))
         self.assertTrue(R.root_match('mbara', ['MBAR']))

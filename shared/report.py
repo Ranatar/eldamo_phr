@@ -369,6 +369,19 @@ def render_reconstruction(branches: dict) -> tuple[str, dict]:
         lines.append(f"| {code} | {st['words']} | {n} | {pct(st.get('gold_stem', 0), n)} | "
                      f"{pct(st.get('plain_first', 0), n)} / {pct(st.get('plain_any', 0), n)} | "
                      f"{pct(st.get('stem_first', 0), n)} / {pct(st.get('stem_any', 0), n)} |")
+    lines += ['', '## Сложения по когнатам составляющих', '',
+              'Сложное или производное слово одной ветви с когнатом Eldamo в другой (поздняя концепция): если у каждой '
+              'составляющей есть когнат в языке назначения, слово собирается заново из них словообразованием этого языка '
+              '(S. Adanel = Adan + -iel → Q. Atan + -iel → Atanel, Ataniel). Связь самого слова не используется. '
+              '«Собрано» — у скольких слов у всех составляющих нашлись когнаты.', '',
+              '| пары | всего | случаев | собрано | без сборки: первый / среди 8 | со сборкой: первый / среди 8 |',
+              '|---|---|---|---|---|---|']
+    for key in ('compounds q -> s', 'compounds s -> q'):
+        st = res[key]
+        n = st.get('cases', 0)
+        lines.append(f"| {key.split(' ', 1)[1].replace('->', '→')} | {st['pairs']} | {n} | {pct(st.get('built', 0), n)} | "
+                     f"{pct(st.get('plain_first', 0), n)} / {pct(st.get('plain_any', 0), n)} | "
+                     f"{pct(st.get('elements_first', 0), n)} / {pct(st.get('elements_any', 0), n)} |")
     lines += ['', '## Праформа, начатая корнем', '',
               'Обратный поиск хуже всего угадывает начало слова (Q. hy- < ✶kʰj- или ✶sj-). Если корень слова известен '
               '(свой или первой составляющей), к найденным кандидатам добавляются праформы, начатые корнем: корень без '

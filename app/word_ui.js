@@ -23,6 +23,7 @@ const MARKS = {
   reconstructed: ['○', T('mark.reconstructed')],
   root: ['√', T('mark.root')],
   stem: ['⊢', T('mark.stem')],
+  elements: ['⊕', T('mark.elements')],
   cognate: ['⇄', T('mark.cognate')],
   'near-cognate': ['≈', T('mark.near-cognate')],
   'primitive-attested': ['✶', T('mark.primitive-attested')],
@@ -310,7 +311,7 @@ function periods() {
   return rows;
 }
 function cellSymbol(v) {
-  for (const m of ['attested', 'link', 'near-cognate', 'neologism', 'unchanged']) if (v.marks.includes(m)) return MARKS[m][0];
+  for (const m of ['attested', 'link', 'near-cognate', 'elements', 'neologism', 'unchanged']) if (v.marks.includes(m)) return MARKS[m][0];
   return '○';
 }
 // roots by era: of the word itself and of the words Eldamo links to it (cognates, earlier and later

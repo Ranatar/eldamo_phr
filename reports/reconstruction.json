@@ -84,15 +84,15 @@
  "cognate links q -> s": {
   "cases": 30,
   "word_first": 13,
-  "word_any": 16,
+  "word_any": 17,
   "form_first": 6,
   "form_any": 12,
   "pairs": 751
  },
  "cognate links s -> q": {
   "cases": 30,
-  "word_first": 5,
-  "word_any": 8,
+  "word_first": 7,
+  "word_any": 12,
   "form_first": 1,
   "form_any": 4,
   "pairs": 738
@@ -161,20 +161,38 @@
   "stem_any": 0,
   "words": 2
  },
+ "compounds q -> s": {
+  "cases": 30,
+  "plain_first": 8,
+  "plain_any": 9,
+  "elements_first": 8,
+  "elements_any": 9,
+  "built": 6,
+  "pairs": 238
+ },
+ "compounds s -> q": {
+  "cases": 30,
+  "plain_first": 3,
+  "plain_any": 5,
+  "elements_first": 3,
+  "elements_any": 7,
+  "built": 12,
+  "pairs": 208
+ },
  "root seeds q": {
   "cases": 30,
-  "plain_first": 11,
-  "plain_any": 15,
-  "seed_first": 11,
-  "seed_any": 17,
+  "plain_first": 5,
+  "plain_any": 14,
+  "seed_first": 5,
+  "seed_any": 16,
   "words": 842
  },
  "root seeds mq": {
   "cases": 30,
-  "plain_first": 4,
-  "plain_any": 9,
+  "plain_first": 5,
+  "plain_any": 14,
   "seed_first": 5,
-  "seed_any": 10,
+  "seed_any": 19,
   "words": 758
  },
  "root seeds s": {
@@ -182,15 +200,15 @@
   "plain_first": 0,
   "plain_any": 5,
   "seed_first": 0,
-  "seed_any": 5,
+  "seed_any": 6,
   "words": 593
  },
  "root seeds n": {
   "cases": 30,
-  "plain_first": 2,
-  "plain_any": 7,
-  "seed_first": 3,
-  "seed_any": 8,
+  "plain_first": 3,
+  "plain_any": 8,
+  "seed_first": 5,
+  "seed_any": 11,
   "words": 902
  },
  "root_candidates": {

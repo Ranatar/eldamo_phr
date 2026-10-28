@@ -63,7 +63,7 @@ class InterfaceCatalog(unittest.TestCase):
     """app/messages.json: every key the interface uses exists, in both languages, with the same placeholders."""
     DYNAMIC = {'tag.': ['suffix', 'prefix'], 'problem.': ['initial', 'cluster', 'final'], 'branch.': ['quenya', 'sindarin'],
                'route.': ['attested', 'same', 'forward', 'backDirect', 'backPrimitive', 'backRoot', 'cognateLink', 'viaPrimitive',
-                          'nearSame', 'nearClose', 'link', 'unchanged', 'reetymology', 'then'],
+                          'nearSame', 'nearClose', 'link', 'unchanged', 'reetymology', 'then', 'byElements'],
                'card.root.': ['element', 'cognate', 'source'], 'root.via.': ['element', 'cognate', 'source'],
                'ipa.': ['labial', 'dental', 'palatal', 'velar', 'labiovelar', 'glottal', 'stop', 'fricative', 'nasal',
                         'lateral', 'trill', 'approximant', 'high', 'mid', 'low', 'front', 'central', 'back']}

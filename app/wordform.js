@@ -1371,6 +1371,32 @@ function nearWords(E, code, prim, gloss, limit = 3) {
   out.sort((a, b) => a[0] - b[0] || a[1] - b[1] || (a[2] < b[2] ? -1 : a[2] > b[2] ? 1 : 0));
   return out.slice(0, limit).map(t => [t[3], t[0]]);
 }
+const ELEMENTS_SCORE = 1.9;
+// words of the target language Eldamo links to a word as cognates, either way (reconstruct.py: _counterparts)
+function counterparts(engines, wid, branch, code) {
+  const [, e] = entryOf(engines, wid);
+  if (!e) return [];
+  const ids = ((e.links || {}).cognate || []).slice();
+  for (const [w, tag] of reverseLinks(engines).get(wid) || []) if (tag === 'cognate') ids.push(w);
+  return [...new Set(ids)].filter(i => { const [b2, e2] = entryOf(engines, i); return b2 === branch && e2 && e2.lang === code; });
+}
+// a compound of the other branch built again from the cognates of its elements (reconstruct.py: _by_elements)
+function byElements(engines, add, entry, era, db, ds) {
+  const els = entry.elements || [];
+  const D = engines[db];
+  const code = codeOf(D, era, ds);
+  if (els.length < 2 || code == null || ds !== lastStageOf(D, era) || !els.every(Boolean)) return;
+  const ids = [];
+  for (const x of els) {
+    const c = counterparts(engines, x, db, code);
+    if (!c.length) return;
+    ids.push(c[0]);
+  }
+  const vs = predict(D, ids, era, ds);
+  const top = Math.max(...vs.map(v => v.score), 0) || 1;
+  const names = ids.map(i => D.lexicon.get(i).form).join(' + ');
+  for (const v of vs.slice(0, 4)) add(v.form, ELEMENTS_SCORE * v.score / top, [['byElements', { names }]], ['elements'], []);
+}
 function sideways(engines, add, src, dst, form, entry, hints, useLinks = true) {
   const [sb, era, ss] = src, [db, , ds] = dst;
   const D = engines[db];
@@ -1387,6 +1413,7 @@ function sideways(engines, add, src, dst, form, entry, hints, useLinks = true) {
       else if (l2.stage < ds) within(engines, add, db, era, f2, l2.stage, ds, hintsOf(D, db, e2, era, l2.stage), 4, [['cognateLink', { form: e2.form }]], ['link']);
     }
   }
+  if (entry) byElements(engines, add, entry, era, db, ds);
   let prims = [];
   if (entry) prims = dashedOrigins(entry, era).map(f => [f, 1, ['primitive-attested']]);
   if (!prims.length) {

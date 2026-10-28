@@ -671,6 +671,10 @@
   "ru": "через общую праформу",
   "en": "via a common primitive"
  },
+ "mark.elements": {
+  "ru": "сложено заново из когнатов составляющих по словообразованию языка",
+  "en": "built again from the cognates of the elements by the word formation of the language"
+ },
  "mark.link": {
   "ru": "связь Eldamo между статьями",
   "en": "an Eldamo link between entries"
@@ -892,8 +896,8 @@
   "en": "language"
  },
  "panorama.legend": {
-  "ru": "● засвидетельствовано · ↔ связь Eldamo · ≈ слово Eldamo с близкой праформой · = без изменений · ○ восстановлено законами · ◇ неологизм (переэтимологизация) · ⚠ нетипично для языка. Щелчок по клетке — все варианты, маршрут и правила.",
-  "en": "● attested · ↔ Eldamo link · ≈ an Eldamo word with a near primitive · = unchanged · ○ reconstructed by the laws · ◇ neologism (re-etymologization) · ⚠ untypical of the language. Click a cell for all the variants, the route and the rules."
+  "ru": "● засвидетельствовано · ↔ связь Eldamo · ≈ слово Eldamo с близкой праформой · = без изменений · ○ восстановлено законами · ⊕ из когнатов составляющих · ◇ неологизм (переэтимологизация) · ⚠ нетипично для языка. Щелчок по клетке — все варианты, маршрут и правила.",
+  "en": "● attested · ↔ Eldamo link · ≈ an Eldamo word with a near primitive · = unchanged · ○ reconstructed by the laws · ⊕ from the cognates of the elements · ◇ neologism (re-etymologization) · ⚠ untypical of the language. Click a cell for all the variants, the route and the rules."
  },
  "panorama.middle": {
   "ru": "промежуточные стадии",
@@ -1210,6 +1214,10 @@
  "route.backRoot": {
   "ru": "назад: по корню",
   "en": "backward: by the root"
+ },
+ "route.byElements": {
+  "ru": "по когнатам составляющих: {names}",
+  "en": "by the cognates of the elements: {names}"
  },
  "route.cognateLink": {
   "ru": "когнат по связи Eldamo: {form}",

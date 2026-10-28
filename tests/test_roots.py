@@ -31,10 +31,9 @@ class Roots(unittest.TestCase):
 
     def test_roots_through_a_source_word(self):
         # S. Adanel = Adan + -iel¹; Adan < Q. Atan (a derivation, not a root), whose element atta < √ATATA;
-        # -iel has no root: its primitive ✶-iel stands in its place
+        # -iel¹ has a root only through N. -iel, merged into it: ᴹ√SEL(D)
         e = self.entry('sindarin', 's', 'Adanel')
-        self.assertEqual([(r['form'], r['part']) for r in e['roots']], [('ATATA', 0)])
-        self.assertEqual([(g['form'], g['part']) for g in e['root_gaps']], [('-iel', 1)])
+        self.assertEqual([(r['form'], r['part']) for r in e['roots']], [('ATATA', 0), ('SEL(D)', 1)])
         self.assertEqual([(r['form'], r['via']) for r in self.entry('sindarin', 's', 'Adan')['roots']], [('ATATA', 'source')])
 
     def test_roots_through_elements_of_elements(self):
@@ -58,6 +57,18 @@ class Roots(unittest.TestCase):
         marks = {v['form']: v['marks'] for v in vs}
         self.assertIn('partial', marks.get('turmen', []))
         self.assertNotIn('partial', vs[0]['marks'])
+
+    def test_roots_through_other_links(self):
+        # rules of neo-roots: the same word of another conception merged into this one (combine),
+        # a root filling an element without one, alternatives through an intermediate form, and
+        # no homonymous root by written form when the derivation names its reference
+        forms = lambda b, l, f: sorted(r['form'] for r in self.entry(b, l, f)['roots'])
+        self.assertEqual(forms('quenya', 'nq', 'helissar'), ['SAR'])              # sar < ᴹQ. sar < ᴹ√SAR
+        self.assertEqual(forms('sindarin', 's', 'carth'), ['KAR'])                # N. carth < ᴹ√KAR
+        rs = self.entry('sindarin', 's', 'huorn')['roots']
+        self.assertEqual(sorted((r['part'], r['form']) for r in rs), [(0, 'KHUG'), (1, 'RŌ/ORO')])
+        self.assertEqual(forms('sindarin', 's', 'fân'), ['PHAN', 'PHAY'])         # and < ✶phanā < √PHAY
+        self.assertEqual(forms('quenya', 'q', 'öar'), ['WĀ/AWA'])                 # not ᴹ√AWA beside it
 
     def test_roots_of_cognates(self):
         # Q. Perian: no root, no elements; cognate S. Perian = per- + ?, per- < √PER

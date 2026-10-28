@@ -55,9 +55,21 @@
   "ru": "корень когната",
   "en": "root of a cognate"
  },
+ "card.root.combine": {
+  "ru": "корень того же слова другой концепции",
+  "en": "root of the same word in another conception"
+ },
+ "card.root.deprecated": {
+  "ru": "корень слова, которое это заменило",
+  "en": "root of the word this one replaced"
+ },
  "card.root.element": {
   "ru": "корни составляющих",
   "en": "roots of the elements"
+ },
+ "card.root.see": {
+  "ru": "корень слова, на которое ссылается статья",
+  "en": "root of the word the page refers to"
  },
  "card.root.source": {
   "ru": "корень исходного слова",
@@ -1203,9 +1215,21 @@
   "ru": "Корень когната слова (статья Eldamo)",
   "en": "A root of the word's cognate (Eldamo page)"
  },
+ "root.via.combine": {
+  "ru": "Корень того же слова другой концепции, слитого с этим в Eldamo (статья Eldamo)",
+  "en": "A root of the same word in another conception, merged into this one in Eldamo (Eldamo page)"
+ },
+ "root.via.deprecated": {
+  "ru": "Корень слова, которое это заменило; согласные корня есть в слове (статья Eldamo)",
+  "en": "A root of the word this one replaced; the root's consonants are in the word (Eldamo page)"
+ },
  "root.via.element": {
   "ru": "Корень составляющей слова (статья Eldamo)",
   "en": "A root of one of the word's elements (Eldamo page)"
+ },
+ "root.via.see": {
+  "ru": "Корень слова, на которое ссылается статья («см.») (статья Eldamo)",
+  "en": "A root of the word the page refers to (“see”) (Eldamo page)"
  },
  "root.via.source": {
   "ru": "Корень слова, от которого произведено это (статья Eldamo)",

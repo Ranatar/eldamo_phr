@@ -59,7 +59,7 @@
    },
    "lexicon": {
     "entries": 18421,
-    "roots": 12785,
+    "roots": 14626,
     "derivations": 2892,
     "stages": 2772,
     "parents": 2216,
@@ -5057,7 +5057,7 @@
    },
    "lexicon": {
     "entries": 14706,
-    "roots": 9758,
+    "roots": 11359,
     "derivations": 2083,
     "stages": 1939,
     "elements": 4652,
@@ -10744,7 +10744,7 @@
   ]
  },
  "partial_cognates": {
-  "rooted_pairs": 3278,
+  "rooted_pairs": 3273,
   "pairs": [
    {
     "quenya": [
@@ -10813,21 +10813,7 @@
      "s",
      "achar-",
      "3800356233",
-     "AT"
-    ]
-   },
-   {
-    "quenya": [
-     "q",
-     "Aicanáro",
-     "2845564209",
-     "GAY(AR) + NAR"
-    ],
-    "sindarin": [
-     "s",
-     "Aegnor",
-     "4200935619",
-     "NAR"
+     "AT/AK"
     ]
    },
    {
@@ -10919,7 +10905,7 @@
      "q",
      "Aldaron",
      "3330088929",
-     "GAL²"
+     "GAL²/GALAD"
     ],
     "sindarin": [
      "s",
@@ -10947,7 +10933,7 @@
      "q",
      "Aldëa",
      "4158418399",
-     "GAL²"
+     "GAL²/GALAD"
     ],
     "sindarin": [
      "s",
@@ -10961,7 +10947,7 @@
      "q",
      "Aldúya",
      "2566863855",
-     "GAL²"
+     "GAL²/GALAD"
     ],
     "sindarin": [
      "s",
@@ -11010,20 +10996,6 @@
      "Alfobas",
      "2923452283",
      "(A)LAK + KHOP"
-    ]
-   },
-   {
-    "quenya": [
-     "q",
-     "Altáriel",
-     "1362129291",
-     "Ñ(G)AL/KAL + RIG"
-    ],
-    "sindarin": [
-     "s",
-     "Galadriel",
-     "757674465",
-     "GAL¹ + RIG"
     ]
    },
    {
@@ -11115,7 +11087,7 @@
      "q",
      "ando",
      "3071385603",
-     "NA/ANA/ANA"
+     "NA/ANA"
     ],
     "sindarin": [
      "ns",
@@ -11150,20 +11122,6 @@
      "angwedh",
      "204930385",
      "ANGA + WED"
-    ]
-   },
-   {
-    "quenya": [
-     "mq",
-     "anta-",
-     "1837475905",
-     "YAN²"
-    ],
-    "sindarin": [
-     "n",
-     "anna-",
-     "3824802207",
-     "NĀ¹/ANA¹/ANA¹"
     ]
    },
    {
@@ -11205,7 +11163,7 @@
      "s",
      "Aragorn",
      "1838387211",
-     "RĀ/ARA + ÑGOR"
+     "RĀ/ARA/ARAN + ÑGOR"
     ]
    },
    {
@@ -11219,7 +11177,7 @@
      "s",
      "Finarfin",
      "765105705",
-     "RĀ/ARA"
+     "RĀ/ARA/ARAN"
     ]
    },
    {
@@ -11227,7 +11185,7 @@
      "nq",
      "arcólima",
      "835585535",
-     "ÑAR + KOL"
+     "ÑAR/AD(A) + KOL"
     ],
     "sindarin": [
      "ns",
@@ -11248,20 +11206,6 @@
      "Gar Thurion",
      "3089350247",
      "ƷARA + FURU"
-    ]
-   },
-   {
-    "quenya": [
-     "mq",
-     "Are Manwen",
-     "2662757907",
-     "AR¹ + MAN"
-    ],
-    "sindarin": [
-     "n",
-     "Ar Vanwe",
-     "2671036749",
-     "AR¹ + WEG"
     ]
    },
    {
@@ -11289,7 +11233,7 @@
      "s",
      "Ras-Arphain",
      "239358129",
-     "RAS + RĀ/ARA + PHAN"
+     "RAS + RĀ/ARA/ARAN + PHAN"
     ]
    },
    {
@@ -11311,7 +11255,7 @@
      "q",
      "armaro",
      "3491333723",
-     "ÑAR + MBAR"
+     "ÑAR/AD(A) + MBAR"
     ],
     "sindarin": [
      "s",
@@ -11325,13 +11269,13 @@
      "q",
      "Artafindë",
      "2366938049",
-     "ARAT + SPIN(ID)"
+     "ARAT/RĀ/ARA/RAT² + SPIN(ID)"
     ],
     "sindarin": [
      "s",
      "Finrod",
      "2455993469",
-     "SPIN(ID) + ARAT"
+     "SPIN(ID) + ARAT/RĀ/ARA/RAT²"
     ]
    },
    {
@@ -11339,7 +11283,7 @@
      "q",
      "Artaresto",
      "2018176983",
-     "ARAT"
+     "ARAT/RĀ/ARA/RAT²"
     ],
     "sindarin": [
      "s",
@@ -11353,13 +11297,13 @@
      "mq",
      "Aryante",
      "3346981929",
-     "AR¹ + YAN²"
+     "AR¹ + YAN²/NĀ¹/ANA¹"
     ],
     "sindarin": [
      "n",
      "Eriant",
      "2630695093",
-     "NĀ¹/ANA¹/ANA¹"
+     "NĀ¹/ANA¹/AR¹"
     ]
    },
    {
@@ -11535,7 +11479,7 @@
      "q",
      "culumalda",
      "2090608941",
-     "KUL + GAL²"
+     "KUL + GAL²/GALAD"
     ],
     "sindarin": [
      "ns",
@@ -11667,7 +11611,7 @@
      "s",
      "Elbereth",
      "862238445",
-     "EL + BER"
+     "EL + BER/BARATH"
     ]
    },
    {
@@ -11686,20 +11630,6 @@
    },
    {
     "quenya": [
-     "q",
-     "Elessar",
-     "3157387873",
-     "EL"
-    ],
-    "sindarin": [
-     "s",
-     "Edhelharn",
-     "1804362321",
-     "DEL²/DEL¹"
-    ]
-   },
-   {
-    "quenya": [
      "eq",
      "Elmavoite",
      "4001535895",
@@ -11710,20 +11640,6 @@
      "Ermabwed",
      "2491978325",
      "MAPA"
-    ]
-   },
-   {
-    "quenya": [
-     "mq",
-     "Elwe",
-     "1544741407",
-     "EL"
-    ],
-    "sindarin": [
-     "n",
-     "Elwe",
-     "3500157649",
-     "WEG"
     ]
    },
    {
@@ -11751,7 +11667,7 @@
      "n",
      "Enner",
      "4004491335",
-     "(N)DER/DER"
+     "(N)DER"
     ]
    },
    {
@@ -11759,27 +11675,13 @@
      "q",
      "Endórë",
      "82428757",
-     "ENED + NDOR"
-    ],
-    "sindarin": [
-     "s",
-     "Ennor",
-     "3789965471",
-     "NDOR/DOR"
-    ]
-   },
-   {
-    "quenya": [
-     "q",
-     "Endórë",
-     "82428757",
-     "ENED + NDOR"
+     "ENED + NDOR/NŌ/ONO/DOR"
     ],
     "sindarin": [
      "s",
      "Ennorath",
      "322794511",
-     "NDOR/DOR + SAT/ATATA"
+     "ENED + NDOR/DOR + SAT/ATATA"
     ]
    },
    {
@@ -11933,7 +11835,7 @@
      "s",
      "finnel",
      "3954224561",
-     "SPIN(ID)"
+     "SPIN(ID)/DEL³/DEL²"
     ]
    },
    {
@@ -11947,7 +11849,7 @@
      "s",
      "finnel",
      "3954224561",
-     "SPIN(ID)"
+     "SPIN(ID)/DEL³/DEL²"
     ]
    },
    {
@@ -11955,41 +11857,13 @@
      "mq",
      "Finwe",
      "162072507",
-     "PHIN"
-    ],
-    "sindarin": [
-     "n",
-     "Finwe",
-     "1578983383",
-     "WEG"
-    ]
-   },
-   {
-    "quenya": [
-     "mq",
-     "Finwe",
-     "162072507",
-     "PHIN"
+     "PHIN/WEG"
     ],
     "sindarin": [
      "on",
      "Phinwe",
      "2340576295",
      "PHIN + WEG"
-    ]
-   },
-   {
-    "quenya": [
-     "mq",
-     "Fionwe",
-     "3988441053",
-     "PHI"
-    ],
-    "sindarin": [
-     "n",
-     "Fionwe",
-     "678059667",
-     "WEG"
     ]
    },
    {
@@ -12163,20 +12037,6 @@
    {
     "quenya": [
      "q",
-     "hamna",
-     "603669853",
-     "KHAB"
-    ],
-    "sindarin": [
-     "s",
-     "haudh",
-     "292514129",
-     "KHAWAD/KHAW¹"
-    ]
-   },
-   {
-    "quenya": [
-     "q",
      "hanno",
      "3573771469",
      "KHAN¹"
@@ -12288,20 +12148,6 @@
    },
    {
     "quenya": [
-     "q",
-     "hlöa",
-     "2439101407",
-     "LOG"
-    ],
-    "sindarin": [
-     "s",
-     "l(h)ô",
-     "341874691",
-     "SLOUN/LOW"
-    ]
-   },
-   {
-    "quenya": [
      "eq",
      "huiva",
      "443071601",
@@ -12358,20 +12204,6 @@
    },
    {
     "quenya": [
-     "q",
-     "hyarmen",
-     "1477365621",
-     "KHYAR + MEN"
-    ],
-    "sindarin": [
-     "s",
-     "harad",
-     "614934925",
-     "KHYAR"
-    ]
-   },
-   {
-    "quenya": [
      "mq",
      "hyarmen",
      "4037811261",
@@ -12381,6 +12213,20 @@
      "n",
      "harad",
      "3167605685",
+     "KHYAR"
+    ]
+   },
+   {
+    "quenya": [
+     "q",
+     "hyarmen",
+     "1477365621",
+     "KHYAR + MEN"
+    ],
+    "sindarin": [
+     "s",
+     "harad",
+     "614934925",
      "KHYAR"
     ]
    },
@@ -12445,7 +12291,7 @@
      "mq",
      "Ialasse",
      "1475714559",
-     "GOLOS"
+     "GEY + GOLOS"
     ],
     "sindarin": [
      "n",
@@ -12596,24 +12442,10 @@
    },
    {
     "quenya": [
-     "mq",
-     "indyalme",
-     "850964337",
-     "ÑGYAL(AM)"
-    ],
-    "sindarin": [
-     "n",
-     "glamm",
-     "3924721813",
-     "GLAM"
-    ]
-   },
-   {
-    "quenya": [
      "eq",
      "Inwe",
      "2665752009",
-     "INI/INI"
+     "INI"
     ],
     "sindarin": [
      "g",
@@ -12627,7 +12459,7 @@
      "mq",
      "Iolosse",
      "2658845979",
-     "GOLOS"
+     "GEY + GOLOS"
     ],
     "sindarin": [
      "n",
@@ -12851,7 +12683,7 @@
      "eq",
      "Kor(o)mas",
      "1477624403",
-     "KOÐO + ŊWAÐA"
+     "KOÐO/KORO + ŊWAÐA"
     ],
     "sindarin": [
      "g",
@@ -12907,21 +12739,7 @@
      "eq",
      "Kortirion",
      "2015993001",
-     "KOÐO"
-    ],
-    "sindarin": [
-     "g",
-     "Corthirion",
-     "2416854301",
-     "KORO"
-    ]
-   },
-   {
-    "quenya": [
-     "eq",
-     "Kortirion",
-     "2015993001",
-     "KOÐO"
+     "KOÐO/KORO"
     ],
     "sindarin": [
      "g",
@@ -12956,20 +12774,6 @@
      "Glingol",
      "535254837",
      "LIÐI"
-    ]
-   },
-   {
-    "quenya": [
-     "eq",
-     "Kôr",
-     "3873264187",
-     "KOÐO"
-    ],
-    "sindarin": [
-     "g",
-     "Gwâr",
-     "2343028181",
-     "KORO"
     ]
    },
    {
@@ -13123,7 +12927,7 @@
      "s",
      "Glorfindel",
      "955430001",
-     "(G)LAWAR + SPIN(ID)"
+     "(G)LAWAR + SPIN(ID)/DEL³/DEL²"
     ]
    },
    {
@@ -13137,7 +12941,7 @@
      "n",
      "Glingal",
      "3426206997",
-     "(G)LINGI"
+     "KAL/(G)LINGI"
     ]
    },
    {
@@ -13355,7 +13159,7 @@
      "q",
      "Lóminórë",
      "4246080601",
-     "LAM + NDOR"
+     "LAM + NDOR/NŌ/ONO/DOR"
     ],
     "sindarin": [
      "norths",
@@ -13453,7 +13257,7 @@
      "eq",
      "Malkamekte",
      "4132618141",
-     "MEKE"
+     "MBALA + MEKE"
     ],
     "sindarin": [
      "g",
@@ -13534,20 +13338,6 @@
    },
    {
     "quenya": [
-     "mq",
-     "Manwe",
-     "769733971",
-     "MAN"
-    ],
-    "sindarin": [
-     "n",
-     "Manwe",
-     "2984058687",
-     "WEG"
-    ]
-   },
-   {
-    "quenya": [
      "q",
      "Manwë",
      "4066965383",
@@ -13607,7 +13397,7 @@
      "eq",
      "marikta",
      "1646845611",
-     "MAHA"
+     "RIKI"
     ],
     "sindarin": [
      "g",
@@ -13635,7 +13425,7 @@
      "q",
      "massánië",
      "3839826717",
-     "MBAS + NA/ANA"
+     "MBAS + NA/ANA/AMA"
     ],
     "sindarin": [
      "s",
@@ -13670,20 +13460,6 @@
      "Belegûr",
      "2545919425",
      "MBELEK + RŌ/ORO"
-    ]
-   },
-   {
-    "quenya": [
-     "q",
-     "Melyanna",
-     "2363888549",
-     "MEL + NA/ANA"
-    ],
-    "sindarin": [
-     "s",
-     "Melian",
-     "821455459",
-     "MEL + HAN"
     ]
    },
    {
@@ -13865,7 +13641,7 @@
      "g",
      "Morwinthi",
      "3886766727",
-     "MORO"
+     "MORO/GWINI"
     ]
    },
    {
@@ -13894,34 +13670,6 @@
      "gaig",
      "2690070435",
      "YAYA"
-    ]
-   },
-   {
-    "quenya": [
-     "q",
-     "nalta",
-     "3756209657",
-     "Ñ(G)AL"
-    ],
-    "sindarin": [
-     "s",
-     "galad",
-     "3100110347",
-     "GAL¹"
-    ]
-   },
-   {
-    "quenya": [
-     "q",
-     "Naltariel",
-     "470878163",
-     "Ñ(G)AL + RIG"
-    ],
-    "sindarin": [
-     "s",
-     "Galadriel",
-     "757674465",
-     "GAL¹ + RIG"
     ]
    },
    {
@@ -13977,7 +13725,7 @@
      "s",
      "Danwaith",
      "1560394967",
-     "(N)DAN + WĒ/EWE"
+     "(N)DAN + WĒ/EWE/WEG"
     ]
    },
    {
@@ -13991,7 +13739,7 @@
      "s",
      "Nan Gondresgion",
      "3707057995",
-     "NAD + GONOD + YON²"
+     "NAD + GONOD + YON²/YAN¹"
     ]
    },
    {
@@ -14083,7 +13831,7 @@
      "mq",
      "Neldion",
      "787974879",
-     "NELED"
+     "NEL"
     ],
     "sindarin": [
      "n",
@@ -14103,7 +13851,7 @@
      "n",
      "Dineth",
      "4114815571",
-     "NDIS + NETH"
+     "NDIS/NĪ¹/INI/NIS + NETH"
     ]
    },
    {
@@ -14209,7 +13957,7 @@
      "q",
      "Noldo",
      "840869727",
-     "ÑGOL¹"
+     "ÑGOL¹/ÑGOLOD/ÑGOL²"
     ],
     "sindarin": [
      "s",
@@ -14313,49 +14061,7 @@
      "s",
      "annûn",
      "1864027637",
-     "NDU/NDŪ"
-    ]
-   },
-   {
-    "quenya": [
-     "mq",
-     "númen",
-     "4179017607",
-     "MEN"
-    ],
-    "sindarin": [
-     "n",
-     "annûn",
-     "121731071",
-     "NDŪ"
-    ]
-   },
-   {
-    "quenya": [
-     "mq",
-     "númen",
-     "4179017607",
-     "MEN"
-    ],
-    "sindarin": [
-     "n",
-     "dúven",
-     "2427322527",
-     "NDŪ"
-    ]
-   },
-   {
-    "quenya": [
-     "mq",
-     "númen",
-     "4179017607",
-     "MEN"
-    ],
-    "sindarin": [
-     "n",
-     "dûn",
-     "3365046303",
-     "NDŪ"
+     "NDU"
     ]
    },
    {
@@ -14487,20 +14193,6 @@
    {
     "quenya": [
      "q",
-     "Ondolindë",
-     "618362003",
-     "GONOD + LIN²"
-    ],
-    "sindarin": [
-     "s",
-     "Gondolin",
-     "3909485407",
-     "GONOD"
-    ]
-   },
-   {
-    "quenya": [
-     "q",
      "Ondoluncanan(do)",
      "4165414001",
      "GONOD + LUK + NAD"
@@ -14509,7 +14201,7 @@
      "s",
      "Nan Gondresgion",
      "3707057995",
-     "NAD + GONOD + YON²"
+     "NAD + GONOD + YON²/YAN¹"
     ]
    },
    {
@@ -14559,7 +14251,7 @@
      "mq",
      "onta-",
      "3360702751",
-     "NŌ/ONO/ONO"
+     "NŌ/ONO"
     ],
     "sindarin": [
      "n",
@@ -14635,7 +14327,7 @@
      "s",
      "Gaerys",
      "3414372253",
-     "GAY(AR)"
+     "GAY(AR) + OS"
     ]
    },
    {
@@ -14893,6 +14585,62 @@
    {
     "quenya": [
      "q",
+     "quaican",
+     "1790292639",
+     "KANAT"
+    ],
+    "sindarin": [
+     "ns",
+     "paegan",
+     "4165621321",
+     "KWAY + KANAT"
+    ]
+   },
+   {
+    "quenya": [
+     "q",
+     "quailepen",
+     "3838964689",
+     "LEPEN"
+    ],
+    "sindarin": [
+     "ns",
+     "paeleben",
+     "2719340173",
+     "KWAY + LEPEN"
+    ]
+   },
+   {
+    "quenya": [
+     "q",
+     "quainel",
+     "2102686053",
+     "NELE"
+    ],
+    "sindarin": [
+     "ns",
+     "paenel",
+     "1186731603",
+     "KWAY + NEL"
+    ]
+   },
+   {
+    "quenya": [
+     "q",
+     "quainque",
+     "4149987191",
+     "ENEK"
+    ],
+    "sindarin": [
+     "ns",
+     "paeneg",
+     "1576936201",
+     "KWAY + ENEK"
+    ]
+   },
+   {
+    "quenya": [
+     "q",
      "quainëa",
      "1258418913",
      "KAYAN"
@@ -14930,34 +14678,6 @@
      "anrand",
      "3493977863",
      "ANAD + RAD"
-    ]
-   },
-   {
-    "quenya": [
-     "q",
-     "ratta",
-     "1092041537",
-     "RAT¹"
-    ],
-    "sindarin": [
-     "s",
-     "rath",
-     "1667426933",
-     "RATH"
-    ]
-   },
-   {
-    "quenya": [
-     "nq",
-     "ratta",
-     "1481938015",
-     "RAT"
-    ],
-    "sindarin": [
-     "s",
-     "rath",
-     "1667426933",
-     "RATH"
     ]
    },
    {
@@ -15021,7 +14741,7 @@
      "q",
      "ronda",
      "3942900161",
-     "RON²/RON"
+     "RON²"
     ],
     "sindarin": [
      "s",
@@ -15049,7 +14769,7 @@
      "nq",
      "ruinalda",
      "2200453439",
-     "RUY + GAL²"
+     "RUY + GAL²/GALAD"
     ],
     "sindarin": [
      "ns",
@@ -15098,20 +14818,6 @@
      "amrûn",
      "3136154397",
      "AM² + (S)RŌ"
-    ]
-   },
-   {
-    "quenya": [
-     "mq",
-     "rómen",
-     "4210607063",
-     "MEN"
-    ],
-    "sindarin": [
-     "n",
-     "rhufen",
-     "2580556555",
-     "RŌ/ORO"
     ]
    },
    {
@@ -15172,20 +14878,6 @@
    },
    {
     "quenya": [
-     "q",
-     "sahtië",
-     "783270509",
-     "SAK"
-    ],
-    "sindarin": [
-     "ns",
-     "thaes",
-     "722125299",
-     "THAG"
-    ]
-   },
-   {
-    "quenya": [
      "mq",
      "Sangahyando",
      "1617303585",
@@ -15231,7 +14923,7 @@
      "q",
      "Sauron",
      "1170395945",
-     "THOW"
+     "THOW/THAW"
     ],
     "sindarin": [
      "s",
@@ -15349,7 +15041,7 @@
      "g",
      "Thlossibrim",
      "2123009873",
-     "ÞOLO"
+     "SIPI"
     ]
    },
    {
@@ -15419,7 +15111,7 @@
      "s",
      "Gwaeron",
      "368969139",
-     "WAY"
+     "WAY/WĀ"
     ]
    },
    {
@@ -15559,7 +15251,7 @@
      "s",
      "arahadhw",
      "127818517",
-     "RĀ/ARA + KHAD"
+     "RĀ/ARA/ARAN + KHAD"
     ]
    },
    {
@@ -15761,48 +15453,6 @@
    {
     "quenya": [
      "q",
-     "Tindómerel",
-     "2947265107",
-     "TIN + DOM + SEL(D)"
-    ],
-    "sindarin": [
-     "s",
-     "Tinúviel",
-     "3671129013",
-     "TIN + DOM"
-    ]
-   },
-   {
-    "quenya": [
-     "q",
-     "tindómë",
-     "445436069",
-     "TIN + DOM"
-    ],
-    "sindarin": [
-     "s",
-     "minuial",
-     "2850476043",
-     "YU + GAL¹"
-    ]
-   },
-   {
-    "quenya": [
-     "q",
-     "Tintallë",
-     "3193245567",
-     "TIN"
-    ],
-    "sindarin": [
-     "s",
-     "Gilthoniel",
-     "3593337669",
-     "(Ñ)GIL + THAN"
-    ]
-   },
-   {
-    "quenya": [
-     "q",
      "tintila-",
      "2840834399",
      "TIN + THIL"
@@ -15896,20 +15546,6 @@
      "Minas Tirith",
      "481582893",
      "MIN + TIR"
-    ]
-   },
-   {
-    "quenya": [
-     "mq",
-     "tiuya-",
-     "2878931239",
-     "TIW"
-    ],
-    "sindarin": [
-     "n",
-     "tuia-",
-     "3843752127",
-     "TUY"
     ]
    },
    {
@@ -16180,6 +15816,20 @@
    },
    {
     "quenya": [
+     "eq",
+     "Ungweliante",
+     "2863856727",
+     "GUŊU"
+    ],
+    "sindarin": [
+     "g",
+     "Ungoliont",
+     "4247225419",
+     "LĪ"
+    ]
+   },
+   {
+    "quenya": [
      "q",
      "ur(u)-",
      "1589987053",
@@ -16379,27 +16029,13 @@
      "q",
      "Valinórë",
      "1314183409",
-     "BAL + NDOR"
+     "BAL + NDOR/NŌ/ONO/DOR"
     ],
     "sindarin": [
      "s",
      "Dor-Rodyn",
      "1761423637",
-     "NDOR/DOR + ARAT"
-    ]
-   },
-   {
-    "quenya": [
-     "mq",
-     "vanya",
-     "3581410859",
-     "BAN"
-    ],
-    "sindarin": [
-     "n",
-     "bein",
-     "2370532079",
-     "GWEN"
+     "NDOR/DOR + ARAT/RĀ/ARA/RAT²"
     ]
    },
    {
@@ -16572,20 +16208,6 @@
    },
    {
     "quenya": [
-     "mq",
-     "vesse",
-     "3828587199",
-     "BES"
-    ],
-    "sindarin": [
-     "n",
-     "bess",
-     "1599978681",
-     "BED"
-    ]
-   },
-   {
-    "quenya": [
      "eq",
      "vestaner",
      "1373723551",
@@ -16701,7 +16323,7 @@
      "q",
      "Yavannildi",
      "3467128665",
-     "YAB + NA/ANA/HAN + N(D)IL"
+     "YAB + NA/ANA/HAN/AMA + N(D)IL"
     ],
     "sindarin": [
      "s",
@@ -16715,7 +16337,7 @@
      "q",
      "Yavannië",
      "655244079",
-     "YAB + NA/ANA/HAN"
+     "YAB + NA/ANA/HAN/AMA"
     ],
     "sindarin": [
      "s",
@@ -16785,7 +16407,7 @@
      "q",
      "úsahtië",
      "897821827",
-     "UG/Ū + SAK"
+     "UG/Ū + SAK/THAG"
     ],
     "sindarin": [
      "s",

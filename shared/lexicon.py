@@ -28,6 +28,7 @@ from collections import Counter, defaultdict
 from .languages import BRANCHES, languages
 from .model import deleted_mark, index
 from .orthography import primitive_phonetic
+from .root_checks import consonants_match, same_first_consonant, same_onset
 from .source import root, word_url
 
 SKIP_SPEECH = {'phonetic-rule', 'phoneme', 'grammar', 'phonetic-group', 'phonetics', 'text', 'phrase'}
@@ -131,6 +132,28 @@ class Words:
                 out[a] = sorted(b for b in words if b != a and self.by_id[b].get('l') != lang)
         return out
 
+    def merged_into(self, pid: str) -> list:
+        """Pages whose <combine> names this one: the same word of another conception, merged
+        into it (ᴹQ. sar into Q. sar), in document order."""
+        return self._back('combine').get(pid, [])
+
+    def replaced_by(self, pid: str) -> list:
+        """Pages whose <deprecated> names this one: words it replaced."""
+        return self._back('deprecated').get(pid, [])
+
+    def _back(self, tag: str) -> dict:
+        cache = self.__dict__.setdefault('_backlinks', {})
+        if tag not in cache:
+            out = defaultdict(list)
+            for pid, w in self.by_id.items():
+                els = w.findall(tag)[:1] if tag == 'combine' else w.findall(tag)
+                for el in els:
+                    for t in self.get_word(el, w.get('l'))[:1]:
+                        if t != pid and pid not in out[t]:
+                            out[t].append(pid)
+            cache[tag] = out
+        return cache[tag]
+
     def find_loose(self, lang: str | None, form: str | None) -> list:
         """By a loose key (_loose): for forms written in a source's spelling."""
         if getattr(self, '_loose', None) is None:
@@ -162,6 +185,21 @@ def words() -> Words:
 
 def _live(el) -> bool:
     return not deleted_mark(el.get('mark'))
+
+
+def _is_root(w) -> bool:
+    """A root page: speech="root", or a primitive form written in capitals (Eldamo 0.8.13
+    files N√GAWAK, ᴱ✶ƷAWAKA and ᴱ√OWO as nouns)."""
+    if w.get('speech') == 'root':
+        return True
+    letters = re.sub(r'[^\w]|[\d_¹²³⁴⁵⁶⁷⁸⁹⁰]', '', w.get('v') or '')
+    return w.get('l') in ('p', 'mp', 'ep', 'np') and bool(letters) and letters.isupper()
+
+
+def _live_in(el, w) -> bool:
+    """A part of a word page counts unless Tolkien rejected it, or the word itself is rejected
+    as well (N. carth, merged into S. carth: its rejected references still give ᴹ√KAR)."""
+    return _live(el) or not _live(w)
 
 
 def _stems(w) -> list:
@@ -236,11 +274,11 @@ def _inflected(W: Words, source: str | None) -> bool:
 def _ref_elements(w) -> list:
     """Elements Eldamo records only inside a <ref> (the word page has none of
     its own): from the ref with the word's own form, else the first ref with elements."""
-    refs = [r for r in w.findall('ref') if _live(r) and r.findall('element')]
+    refs = [r for r in w.findall('ref') if _live_in(r, w) and r.findall('element')]
     if not refs:
         return []
     own = [r for r in refs if _loose(r.get('v')) == _loose(w.get('v'))]
-    return [e for e in (own or refs)[0].findall('element') if _live(e)]
+    return [e for e in (own or refs)[0].findall('element') if _live_in(e, w)]
 
 
 def build_lexicon(branch: str, derivations: list) -> list:
@@ -298,27 +336,16 @@ def build_lexicon(branch: str, derivations: list) -> list:
         parents = [_link(W, d.get('l'), d.get('v')) for d in w.findall('deriv') if _live(d)]
         if parents:
             entry['parents'] = parents
-        primitive, own = [], []
+        own = []
         for ref in w.findall('ref'):
             if not _live(ref):
                 continue
             for d in ref.findall('deriv'):
-                if _live(d) and d.get('v'):
-                    primitive.append(d.get('v'))
-                    if not ref.findall('inflect'):
-                        own.append(d.get('v'))
+                if _live(d) and d.get('v') and not ref.findall('inflect'):
+                    own.append(d.get('v'))
         if own:
             # origins written for an inflected form of the word (fara-: farále 'you hunt') are not its own
             entry['written_origins'] = list(dict.fromkeys(own))
-        if primitive:
-            # an origin written as a root (MBAR) names the word's root
-            proto = ('mp', 'p') if langs.get(lang, {}).get('era') == 'middle' else ('p', 'mp')
-            for v in dict.fromkeys(primitive):
-                for code in proto:
-                    hits = [i for i in W.find(code, v) if W.by_id[i].get('speech') == 'root']
-                    if hits:
-                        entry.setdefault('origin_roots', []).append({'lang': code, 'form': v, 'id': hits[0]})
-                        break
         ders = by_word.get(pid, [])
         if ders:
             entry['derivations'] = [d['id'] for d in ders]
@@ -366,24 +393,36 @@ def _derived_from(W: Words, w, elements: bool = True) -> list:
     as Q. lár < ᴹ√DAR; and, with `elements`, roots named as elements."""
     out = []
     for d in w.findall('deriv'):
-        if _live(d):
+        if _live_in(d, w):
             out += W.get_word(d, w.get('l'))
     for ref in w.findall('ref'):
-        if not _live(ref) or W.ref(ref.get('source')) is None:
+        if not _live_in(ref, w) or W.ref(ref.get('source')) is None:
             continue
         for d in ref.findall('deriv'):
-            hit = W.ref(d.get('source')) if _live(d) else None
+            if not _live_in(d, w):
+                continue
+            hit = W.ref(d.get('source'))
             if hit:
                 out.append(hit[0])
-        for el in ref.findall('element') if elements else ():
-            hit = W.ref(el.get('source')) if _live(el) else None
-            if hit and W.by_id[hit[0]].get('speech') == 'root':
+            elif d.get('v'):
+                # a written primitive form that names no reference: the root of that form, if
+                # there is one (N. carth < ᴹ√KAR); with a reference it is followed above, and
+                # the form alone would add a homonymous root of another conception
+                for code in ('p', 'mp', 'ep', 'np'):
+                    roots = [i for i in W.find(code, d.get('v')) if _is_root(W.by_id[i])]
+                    if roots:
+                        out.append(roots[0])
+                        break
+        # roots named as elements inside the references (Q. parma: PAR¹ beside its √PAR²)
+        for el in ref.findall('element'):
+            hit = W.ref(el.get('source')) if _live_in(el, w) else None
+            if hit and _is_root(W.by_id[hit[0]]):
                 out.append(hit[0])
     # a root among the elements is the word's root (Q. firya: √PHIR + -ya); the roots of
     # word elements belong to the parts of a compound and are not followed
     for el in w.findall('element') if elements else ():
-        if _live(el):
-            out += [i for i in W.get_word(el, w.get('l')) if W.by_id[i].get('speech') == 'root']
+        if _live_in(el, w):
+            out += [i for i in W.get_word(el, w.get('l')) if _is_root(W.by_id[i])]
     return list(dict.fromkeys(out))
 
 
@@ -392,7 +431,7 @@ def _element_ids(W: Words, w) -> list:
     <element> (c:get-word), else those inside its references (by @source, else by form)."""
     out = []
     for el in w.findall('element'):
-        if _live(el) and el.get('v') != '?':
+        if _live_in(el, w) and el.get('v') != '?':
             out += W.get_word(el, w.get('l'))[:1]
     if not out:
         for el in _ref_elements(w):
@@ -418,9 +457,9 @@ def _gap(W: Words, eid: str) -> dict:
     w = W.by_id[eid]
     for d in _derived_from(W, w):
         q = W.by_id[d]
-        if q.get('speech') != 'root' and q.get('l') in ('p', 'mp', 'ep'):
-            return {'gap': True, 'lang': q.get('l'), 'form': q.get('v'), 'id': d}
-    return {'gap': True, 'lang': w.get('l'), 'form': w.get('v'), 'id': eid}
+        if not _is_root(q) and q.get('l') in ('p', 'mp', 'ep'):
+            return {'gap': True, 'lang': q.get('l'), 'form': q.get('v'), 'id': d, 'element': eid}
+    return {'gap': True, 'lang': w.get('l'), 'form': w.get('v'), 'id': eid, 'element': eid}
 
 
 PRIMITIVE_LANGS = ('p', 'mp', 'ep')
@@ -442,7 +481,7 @@ def _part_groups(W: Words, pid: str, memo: dict, depth: int = ROOT_DEPTH) -> lis
         return []
     groups = []
     for eid in _element_ids(W, W.by_id[pid]):
-        if W.by_id[eid].get('speech') == 'root':
+        if _is_root(W.by_id[eid]):
             groups.append([dict(_root_rec(W, eid), named=True)])
             continue
         sub = _root_groups(W, eid, memo, depth - 1)
@@ -451,20 +490,44 @@ def _part_groups(W: Words, pid: str, memo: dict, depth: int = ROOT_DEPTH) -> lis
     return groups
 
 
+def _merge_groups(found: list) -> list:
+    """Several sources of the same rank: the one with most parts; one of the same shape adds
+    its roots as alternatives part by part."""
+    found = sorted(found, key=lambda g: -len(g))
+    out = [list(x) for x in found[0]]
+    for g in found[1:]:
+        if len(g) == len(out):
+            for k, x in enumerate(g):
+                out[k] += [r for r in x if r.get('gap') or all(r.get('id') != y.get('id') for y in out[k])]
+    return out
+
+
+def _via(groups: list, via: str) -> list:
+    return [[dict(r, via=via, named=False) if not r.get('gap') else r for r in g] for g in groups]
+
+
 def _root_groups(W: Words, pid: str, memo: dict, depth: int = ROOT_DEPTH) -> list:
     """The roots of a word as parts: [[root]], each part a list of alternatives, gaps
     included (_gap). Records carry via: '' (named by the word's own derivation or as its
     element), 'element' (a root of an element), 'source' (a root of a word of another
-    language it derives from: S. Adan < Q. Atan).
+    language it derives from: S. Adan < Q. Atan), 'combine' (of the same word of another
+    conception merged into it), 'see', 'deprecated' (of a word it replaced).
 
     1. Two or more elements with roots: the roots by element (Q. palantír = √PAL + √TIR;
-       S. randir = √RAN + √N(D)ER, though its derivation names RAN alone).
+       S. randir = √RAN + √N(D)ER, though its derivation names RAN alone). A root the
+       derivations name fills an element without one when it begins with the same consonant
+       (S. huorn = hû¹ + orn, a reference names KHUG for hû).
     2. Roots its derivations name (Q. lár < ᴹ√DAR); several are alternatives (S. galadh <
-       ✶galadā < √GALAD/√GAL²).
+       ✶galadā < √GALAD/√GAL²), and so are the roots of the one intermediate form another
+       derivation goes through (S. fân < √PHAN, and < ✶phanā < √PHAY).
     3. One element with roots: that element and the rest as gaps (Q. firya = √PHIR + -ya).
     4. The roots of the words it derives from that are not roots, followed the same way: a
        primitive word keeps its roots as the word's own (S. arthor < ✶artaurē = √RĀ/ARA +
-       √TUR), a word of another language gives them via 'source'."""
+       √TUR), a word of another language gives them via 'source'.
+    5. The roots of the same word of other conceptions merged into it (combine: NQ. helissar
+       = helin + sar, sar < ᴹQ. sar < ᴹ√SAR); 6. of the page its <see> names; 7. of a word it
+       replaced (deprecated), when the two begin alike and the roots' consonants are in this
+       word (shared/root_checks.py). The order is that of neo-roots (neo_roots.py)."""
     key = (pid, depth)
     if key in memo:
         return memo[key]
@@ -475,34 +538,99 @@ def _root_groups(W: Words, pid: str, memo: dict, depth: int = ROOT_DEPTH) -> lis
         parts = _part_groups(W, pid, memo, depth)
         real = [g for g in parts if _real(g)]
         derived = _derived_from(W, w, elements=False)
-        direct = [_root_rec(W, d) for d in derived if W.by_id[d].get('speech') == 'root']
+        direct = [_root_rec(W, d) for d in derived if _is_root(W.by_id[d])]
+        found = []
+        for d in derived:
+            q = W.by_id[d]
+            if _is_root(q):
+                continue
+            g = _root_groups(W, d, memo, depth - 1)
+            if not any(_real(x) for x in g):
+                continue
+            if q.get('l') not in PRIMITIVE_LANGS and _branch_of(q.get('l')) != _branch_of(w.get('l')):
+                g = [[dict(r, via='source') if not r.get('gap') else r for r in x] for x in g]
+            found.append(g)
+        inter = _merge_groups(found) if found else []
+        if len(real) == 1 and direct and len(parts) > 1:
+            used = {r['id'] for g in real for r in _real(g)}
+            filled = []
+            for g in parts:
+                if _real(g) or g[0].get('element') not in W.by_id:
+                    filled.append(g)
+                    continue
+                e = W.by_id[g[0]['element']]
+                form = e.get('v') or ''
+                if form.startswith('-') or form.endswith('-') and e.get('speech') in ('pref', 'suf'):
+                    filled.append(g)             # an affix is not a root's stand-in
+                    continue
+                fit = [dict(r, via='element', named=False) for r in direct
+                       if r['id'] not in used and same_first_consonant(form, r['form'])]
+                filled.append(fit or g)
+            if sum(1 for g in filled if _real(g)) >= 2:
+                parts, real = filled, [g for g in filled if _real(g)]
         if len(real) >= 2:
             out = parts
         elif direct:
-            out = [direct]
+            alts = list(direct)
+            if len(inter) == 1:
+                alts += [r for r in _real(inter[0]) if all(r['id'] != x['id'] for x in alts)]
+            out = [alts]
         elif real:
             out = parts
+        elif inter:
+            out = inter
         else:
-            found = []
-            for d in derived:
-                q = W.by_id[d]
-                if q.get('speech') == 'root':
-                    continue
-                g = _root_groups(W, d, memo, depth - 1)
-                if not any(_real(x) for x in g):
-                    continue
-                if q.get('l') not in PRIMITIVE_LANGS and _branch_of(q.get('l')) != _branch_of(w.get('l')):
-                    g = [[dict(r, via='source') if not r.get('gap') else r for r in x] for x in g]
-                found.append(g)
-            if found:
-                # several derivations: the one with most parts; the same shape merges alternatives
-                found.sort(key=lambda g: -len(g))
-                out = [list(x) for x in found[0]]
-                for g in found[1:]:
-                    if len(g) == len(out):
-                        for k, x in enumerate(g):
-                            out[k] += [r for r in x if all(r.get('id') != y.get('id') for y in out[k])]
+            for tag, ids in (('combine', W.merged_into(pid)),
+                             ('see', [i for el in w.findall('see') for i in W.get_word(el, w.get('l'))[:1]]),
+                             ('deprecated', W.replaced_by(pid))):
+                found = []
+                for x in ids:
+                    if x == pid or x not in W.by_id:
+                        continue
+                    xw = W.by_id[x]
+                    if tag == 'deprecated':
+                        if not same_onset(xw.get('v'), w.get('v')):
+                            continue
+                        if _is_root(xw):
+                            if not same_first_consonant(xw.get('v'), w.get('v')):
+                                continue
+                            g = [[_root_rec(W, x)]]
+                        else:
+                            g = _root_groups(W, x, memo, depth - 1)
+                        # every part's roots must be found in this word
+                        if not any(_real(p) for p in g) or any(
+                                _real(p) and not [r for r in _real(p) if consonants_match(w.get('v'), r['form'], w.get('l'))]
+                                for p in g):
+                            continue
+                        g = [[r for r in p if r.get('gap') or consonants_match(w.get('v'), r['form'], w.get('l'))] for p in g]
+                    elif _is_root(xw):
+                        g = [[_root_rec(W, x)]]
+                    else:
+                        g = _root_groups(W, x, memo, depth - 1)
+                    if any(_real(p) for p in g):
+                        found.append(_via(g, tag))
+                if found:
+                    out = _merge_groups(found)
+                    break
     memo[key] = out
+    return out
+
+
+def _elvish() -> set:
+    """Elvish languages: those under a Primitive Elvish language in Eldamo's language tree
+    (Adûnaic, Westron, Khuzdul have "cognates" by borrowing, not by roots)."""
+    out = set()
+
+    def walk(el, elvish):
+        for x in el.findall('language'):
+            mine = elvish or x.get('id') in PRIMITIVE_LANGS + ('np',)
+            if mine:
+                out.add(x.get('id'))
+            walk(x, mine)
+    for top in root().iter('language-cat'):
+        walk(top, False)
+    if not out:
+        walk(root(), False)
     return out
 
 
@@ -518,22 +646,16 @@ def _resolve_roots(entries: list, W: Words) -> None:
     When a word has none, the roots of its cognates, if their consonants are found in the
     word (via 'cognate': Q. Perian ← S. Perian = per- + ?, √PER; not S. Gwahaedir, which
     Eldamo links to Q. palantír as the same thing in Sindarin). Roots a <ref><deriv> names
-    by form only (origin_roots) count as named by the word's derivation."""
+    by form only count as named by the word's derivation (_derived_from)."""
     memo = {}
     for e in entries:
         groups = _root_groups(W, e['id'], memo) if e['id'] in W.by_id else []
-        extra = e.pop('origin_roots', ())
-        if extra:
-            if not any(_real(g) for g in groups):
-                groups = [list(extra)]
-            elif len(groups) == 1:
-                groups = [groups[0] + [r for r in extra if all(r['id'] != x.get('id') for x in groups[0])]]
         roots, gaps = [], []
         if any(_real(g) for g in groups):
             several = len(groups) > 1
             for k, g in enumerate(groups):
                 for r in g:
-                    rec = {x: v for x, v in r.items() if x not in ('named', 'gap', 'via', 'part')}
+                    rec = {x: v for x, v in r.items() if x not in ('named', 'gap', 'via', 'part', 'element')}
                     if several:
                         rec['part'] = k
                     if r.get('gap'):
@@ -543,12 +665,15 @@ def _resolve_roots(entries: list, W: Words) -> None:
                             rec['via'] = r['via']
                         roots.append(rec)
         else:
-            from .reconstruct import root_match
+            elvish = _elvish()
             for cid in W.cognates(e['id']):
-                if cid == e['id']:
+                lang = W.by_id[cid].get('l')
+                if cid == e['id'] or lang in PRIMITIVE_LANGS + ('np',) or lang not in elvish:
                     continue
-                roots += [dict({x: v for x, v in r.items() if x not in ('named', 'gap', 'part')}, via='cognate')
-                          for r in _own_roots(W, cid, memo) if root_match(primitive_or_form(e), [r['form']])]
+                # roots the cognate itself has only through a loose link say nothing here
+                roots += [dict({x: v for x, v in r.items() if x not in ('named', 'gap', 'part', 'element')}, via='cognate')
+                          for r in _own_roots(W, cid, memo)
+                          if r.get('via') not in ('cognate', 'deprecated') and consonants_match(e['form'], r['form'], e['lang'])]
         out = []
         for r in roots:
             if all(r['id'] != x['id'] or r.get('part') != x.get('part') for x in out):

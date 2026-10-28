@@ -1497,7 +1497,8 @@ function rootParts(E, e) {
   if (!E.rootById) E.rootById = new Map(E.roots.map(r => [r[0], r]));
   const parts = new Map();
   for (const [, id, via, part] of e.root_refs || []) {
-    if (via === 'cognate') continue;
+    // roots of another word, or of this one in another conception (reconstruct.py: _root_parts)
+    if (via === 'cognate' || via === 'deprecated' || via === 'combine') continue;
     const r = E.rootById.get(id);
     const k = part == null ? 0 : part;
     if (!parts.has(k)) parts.set(k, []);

@@ -628,7 +628,9 @@ def _root_parts(e: dict) -> list:
     from .roots import root_variants, _cons
     parts = {}
     for r in e.get('roots', ()):
-        if r.get('via') == 'cognate':
+        if r.get('via') in ('cognate', 'deprecated', 'combine'):
+            # roots of another word, or of this one in another conception, where Tolkien's
+            # etymology may differ (S. -iel¹ ᴹ√SEL(D) ~ Q. -iel ᴹ√YEL¹ are linked as cognates)
             continue
         # as in the root table of the page (roots.table): variants with a vowel
         sk = [tuple(_cons(phonemes(v))) for v in root_variants(r['form']) if any(is_vowel(p) for p in phonemes(v))]

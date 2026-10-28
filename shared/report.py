@@ -132,7 +132,7 @@ def partial_cognates(branches: dict) -> tuple[int, list]:
         e1, e2 = lex[a][i], lex[b][j]
         if not e1.get('roots') or not e2.get('roots'):
             continue
-        if any(r.get('via') == 'cognate' for r in e1['roots'] + e2['roots']):
+        if any(r.get('via') in ('cognate', 'deprecated', 'combine') for r in e1['roots'] + e2['roots']):
             continue                    # roots taken from the other word: not evidence of their own
         rooted += 1
         if partial_cognate(e1, e2):

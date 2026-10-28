@@ -181,84 +181,84 @@
  },
  "root seeds q": {
   "cases": 30,
-  "plain_first": 5,
-  "plain_any": 14,
-  "seed_first": 6,
-  "seed_any": 16,
-  "words": 842
+  "plain_first": 7,
+  "plain_any": 15,
+  "seed_first": 7,
+  "seed_any": 15,
+  "words": 868
  },
  "root seeds mq": {
   "cases": 30,
-  "plain_first": 5,
-  "plain_any": 14,
-  "seed_first": 8,
-  "seed_any": 19,
-  "words": 758
+  "plain_first": 7,
+  "plain_any": 17,
+  "seed_first": 9,
+  "seed_any": 21,
+  "words": 759
  },
  "root seeds s": {
   "cases": 30,
-  "plain_first": 3,
-  "plain_any": 3,
-  "seed_first": 3,
-  "seed_any": 4,
-  "words": 594
+  "plain_first": 2,
+  "plain_any": 5,
+  "seed_first": 1,
+  "seed_any": 6,
+  "words": 607
  },
  "root seeds n": {
   "cases": 30,
   "plain_first": 3,
-  "plain_any": 8,
-  "seed_first": 6,
+  "plain_any": 9,
+  "seed_first": 5,
   "seed_any": 11,
   "words": 902
  },
  "root_candidates": {
   "q": {
    "words": 746,
-   "first": 471,
-   "top3": 616,
-   "any": 641,
-   "rootless": 127,
-   "guessed": 118
+   "first": 453,
+   "top3": 602,
+   "any": 631,
+   "rootless": 101,
+   "guessed": 93
   },
   "mq": {
-   "words": 712,
-   "first": 499,
-   "top3": 576,
+   "words": 713,
+   "first": 498,
+   "top3": 577,
    "any": 607,
-   "rootless": 38,
-   "guessed": 33
+   "rootless": 37,
+   "guessed": 32
   },
   "eq": {
-   "words": 1374,
+   "words": 1375,
    "first": 514,
    "top3": 682,
    "any": 719,
    "rootless": 62,
-   "guessed": 53
+   "guessed": 54
   },
   "s": {
    "words": 485,
-   "first": 282,
-   "top3": 358,
-   "any": 384,
-   "rootless": 54,
-   "guessed": 51
+   "first": 274,
+   "top3": 360,
+   "any": 385,
+   "rootless": 41,
+   "guessed": 40
   },
   "n": {
-   "words": 834,
-   "first": 534,
-   "top3": 646,
-   "any": 689,
+   "words": 836,
+   "first": 527,
+   "top3": 642,
+   "any": 686,
    "rootless": 8,
    "guessed": 8
   },
   "g": {
-   "words": 461,
+   "words": 462,
    "first": 157,
    "top3": 189,
    "any": 198,
    "rootless": 37,
-   "guessed": 29
+   "guessed": 30
   }
  }
 }

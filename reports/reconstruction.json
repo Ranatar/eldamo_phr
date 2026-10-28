@@ -2,27 +2,27 @@
  "quenya": {
   "late: 2 -> 0": {
    "cases": 30,
-   "found": 29,
-   "first": 8,
-   "any": 13
+   "found": 30,
+   "first": 9,
+   "any": 14
   },
   "late: 2 -> 1": {
    "cases": 30,
-   "found": 28,
-   "first": 7,
-   "any": 25
+   "found": 30,
+   "first": 8,
+   "any": 26
   },
   "middle: 2 -> 0": {
    "cases": 30,
-   "found": 28,
-   "first": 4,
-   "any": 17
+   "found": 30,
+   "first": 5,
+   "any": 18
   },
   "middle: 2 -> 1": {
    "cases": 30,
-   "found": 29,
+   "found": 30,
    "first": 13,
-   "any": 28
+   "any": 29
   },
   "early: 1 -> 0": {
    "cases": 30,
@@ -34,39 +34,39 @@
  "sindarin": {
   "late: 3 -> 0": {
    "cases": 30,
-   "found": 27,
-   "first": 3,
-   "any": 8
+   "found": 30,
+   "first": 4,
+   "any": 10
   },
   "late: 3 -> 1": {
    "cases": 30,
-   "found": 29,
+   "found": 30,
    "first": 2,
-   "any": 10
+   "any": 11
   },
   "late: 3 -> 2": {
    "cases": 30,
-   "found": 27,
+   "found": 30,
    "first": 3,
    "any": 17
   },
   "middle: 2 -> 0": {
    "cases": 30,
-   "found": 27,
+   "found": 30,
    "first": 3,
    "any": 8
   },
   "middle: 2 -> 1": {
    "cases": 30,
-   "found": 29,
+   "found": 30,
    "first": 4,
    "any": 17
   },
   "early: 1 -> 0": {
    "cases": 30,
-   "found": 24,
+   "found": 28,
    "first": 2,
-   "any": 9
+   "any": 10
   }
  },
  "cognates quenya -> sindarin": {
@@ -77,8 +77,8 @@
  },
  "cognates sindarin -> quenya": {
   "cases": 13,
-  "first": 0,
-  "any": 5,
+  "first": 1,
+  "any": 6,
   "pairs": 13
  },
  "cognate links q -> s": {
@@ -93,8 +93,8 @@
   "cases": 30,
   "word_first": 7,
   "word_any": 12,
-  "form_first": 1,
-  "form_any": 4,
+  "form_first": 2,
+  "form_any": 5,
   "pairs": 738
  },
  "conceptions mq -> q": {
@@ -137,19 +137,19 @@
  "stems mq": {
   "cases": 30,
   "gold_stem": 20,
-  "plain_first": 6,
-  "plain_any": 14,
-  "stem_first": 6,
-  "stem_any": 14,
+  "plain_first": 9,
+  "plain_any": 15,
+  "stem_first": 9,
+  "stem_any": 15,
   "words": 77
  },
  "stems s": {
   "cases": 2,
   "gold_stem": 2,
   "plain_first": 0,
-  "plain_any": 1,
+  "plain_any": 0,
   "stem_first": 0,
-  "stem_any": 1,
+  "stem_any": 0,
   "words": 2
  },
  "stems n": {
@@ -175,7 +175,7 @@
   "plain_first": 3,
   "plain_any": 5,
   "elements_first": 3,
-  "elements_any": 7,
+  "elements_any": 6,
   "built": 12,
   "pairs": 208
  },
@@ -191,72 +191,72 @@
   "cases": 30,
   "plain_first": 5,
   "plain_any": 14,
-  "seed_first": 5,
+  "seed_first": 7,
   "seed_any": 19,
   "words": 758
  },
  "root seeds s": {
   "cases": 30,
-  "plain_first": 0,
-  "plain_any": 5,
-  "seed_first": 0,
-  "seed_any": 6,
-  "words": 593
+  "plain_first": 3,
+  "plain_any": 3,
+  "seed_first": 4,
+  "seed_any": 4,
+  "words": 594
  },
  "root seeds n": {
   "cases": 30,
   "plain_first": 3,
   "plain_any": 8,
-  "seed_first": 5,
+  "seed_first": 6,
   "seed_any": 11,
   "words": 902
  },
  "root_candidates": {
   "q": {
-   "words": 779,
-   "first": 492,
-   "top3": 643,
-   "any": 668,
+   "words": 746,
+   "first": 471,
+   "top3": 616,
+   "any": 641,
    "rootless": 127,
    "guessed": 118
   },
   "mq": {
-   "words": 728,
-   "first": 513,
-   "top3": 592,
-   "any": 622,
+   "words": 712,
+   "first": 499,
+   "top3": 576,
+   "any": 607,
    "rootless": 38,
    "guessed": 33
   },
   "eq": {
-   "words": 1380,
-   "first": 516,
-   "top3": 685,
-   "any": 722,
+   "words": 1374,
+   "first": 514,
+   "top3": 682,
+   "any": 719,
    "rootless": 62,
    "guessed": 53
   },
   "s": {
-   "words": 512,
-   "first": 304,
-   "top3": 383,
-   "any": 408,
-   "rootless": 55,
+   "words": 485,
+   "first": 282,
+   "top3": 358,
+   "any": 384,
+   "rootless": 54,
    "guessed": 51
   },
   "n": {
-   "words": 855,
-   "first": 543,
-   "top3": 661,
-   "any": 706,
+   "words": 834,
+   "first": 534,
+   "top3": 646,
+   "any": 689,
    "rootless": 8,
    "guessed": 8
   },
   "g": {
-   "words": 470,
-   "first": 159,
-   "top3": 195,
-   "any": 204,
+   "words": 461,
+   "first": 157,
+   "top3": 189,
+   "any": 198,
    "rootless": 37,
    "guessed": 29
   }

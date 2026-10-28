@@ -579,7 +579,22 @@ function applyCompiled(c, alts, form, sounds) {
 }
 
 const MAX_VARIANTS = 24;
+const RUN_CACHE = 50000;
+// the same form through the same rules is run once (sequencer.py: Sequencer.run)
+const runCache = new WeakMap();
 function run(form, rules, branchOptional = true) {
+  let byRules = runCache.get(rules);
+  if (!byRules) { byRules = new Map(); runCache.set(rules, byRules); }
+  const key = (branchOptional ? '1' : '0') + form;
+  let hit = byRules.get(key);
+  if (!hit) {
+    if (byRules.size >= RUN_CACHE) byRules.clear();
+    hit = runRules(form, rules, branchOptional);
+    byRules.set(key, hit);
+  }
+  return hit.map(v => ({ form: v.form, trace: v.trace.slice() }));
+}
+function runRules(form, rules, branchOptional) {
   let variants = [{ form, trace: [] }];
   const soundCache = new Map();
   for (const c of rules) {
@@ -607,8 +622,14 @@ function run(form, rules, branchOptional = true) {
   return variants;
 }
 
+// one array per range, so that run() finds its runs again
+const sequences = new WeakMap();
 function sequence(rules, era, first, last) {
-  return rules.filter(c => c.era === era && first <= c.stage && c.stage <= last);
+  let m = sequences.get(rules);
+  if (!m) { m = new Map(); sequences.set(rules, m); }
+  const k = `${era}|${first}|${last}`;
+  if (!m.has(k)) m.set(k, rules.filter(c => c.era === era && first <= c.stage && c.stage <= last));
+  return m.get(k);
 }
 
 // ---------------------------------------------------------------- orthography
@@ -816,7 +837,28 @@ function bfCandidates(table, form, beam = BEAM, options = MAX_OPTIONS, minShare 
   for (const [f, lp] of out) if (f && !seen.has(f)) { seen.add(f); uniq.push([f, lp]); }
   return uniq.slice(0, beam);
 }
-function backformWith(engine, table, form, era, lastStage, limit = 5, firstStage = 0, search = {}) {
+// a candidate that gives the form if one law of its main run did not act (backform.py: _skip_one)
+function skipOne(rules, cand, lp, vs, target, limit) {
+  const out = [];
+  if (!vs.length) return out;
+  const main = vs[0].trace;
+  if (!rules.indexById) Object.defineProperty(rules, 'indexById', { value: new Map(rules.map((c, i) => [c.id, i])), enumerable: false });
+  const index = rules.indexById;
+  for (let j = 0; j < main.length; j++) {
+    const [rid, at, after] = main[j];
+    if (after == null || !index.has(rid) || main.slice(0, j).some(t => t[0] === rid)) continue;
+    const rest = rules.restAfter || Object.defineProperty(rules, 'restAfter', { value: new Map(), enumerable: false }).restAfter;
+    const k = index.get(rid);
+    if (!rest.has(k)) rest.set(k, rules.slice(k + 1));
+    const ws = run(at, rest.get(k));
+    const hit = ws.findIndex(v => comparable(v.form) === target);
+    if (hit < 0) continue;
+    out.push({ primitive: cand, logp: r3(lp), main: hit === 0, trace: main.slice(0, j).concat([[rid, at, null]], ws[hit].trace), irregular: rid });
+    if (out.length >= limit) break;
+  }
+  return out;
+}
+function backformWith(engine, table, form, era, lastStage, limit = 5, firstStage = 0, search = {}, irregular = 0) {
   const target = comparable(form);
   const rules = sequence(engine.rules, era, firstStage, lastStage);
   const found = [];
@@ -825,6 +867,11 @@ function backformWith(engine, table, form, era, lastStage, limit = 5, firstStage
                                        search.minShare == null ? MIN_SHARE : search.minShare)) {
     cand = lead + cand + trail;          // a stem stays a stem, an affix an affix
     const vs = run(cand, rules);
+    if (irregular) {
+      if (found.length < limit) found.push(...skipOne(rules, cand, lp, vs, target, limit - found.length));
+      if (--irregular <= 0) break;
+      continue;
+    }
     const hit = vs.findIndex(v => comparable(v.form) === target);
     if (hit < 0) continue;
     found.push({ primitive: cand, logp: r3(lp), main: hit === 0, trace: vs[hit].trace });
@@ -1113,6 +1160,8 @@ const NO_HINTS = { roots: [], stems: [], starts: [] };
 const hintWeight = r => (r.root ? ROOT_BONUS : 1) * (r.stem ? STEM_BONUS : 1);
 const SEARCH = { beam: 150, options: 6, minShare: 0.02 };
 const WIDE = { beam: 300, options: 10, minShare: 0.005 };   // when SEARCH finds nothing: rarer correspondences
+const IRREGULAR_TRIES = 40;     // when WIDE finds nothing too: the first candidates tried with one law left out
+const IRREGULAR_SCORE = 0.3;
 const EQUIV = ['kgxɣhq', 'tdθðþ', 'pbɸβfv', 'mṃ', 'nŋñṇ', 'l', 'r', 'sz', 'w', 'jy'].map(x => new Set(chars(x)));
 function skeleton(rootForm) {
   let f = rootForm.replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰√()\-]/g, '').toLowerCase();
@@ -1197,19 +1246,25 @@ function stemMatch(E, era, form, src, dst, stems) {
 function backwardRun(E, era, form, src, dst, hints = NO_HINTS) {
   const out = new Map();
   const roots = hints.roots, stems = hints.stems;
-  const add = (f, p, trace, via) => {
+  const add = (f, p, trace, via, irregular) => {
     const k = comparable(f);
     const rec = { form: f, p, trace, via, root: roots.length > 0 && rootMatch(f, roots) };
+    if (irregular) rec.irregular = irregular;
     if (!out.has(k) || out.get(k).p < p) out.set(k, rec);
   };
   const table = (s, d) => E.recon.tables[`${era}|${s}|${d}`] || {};
-  for (const search of [SEARCH, WIDE]) {
+  for (const search of hints.composed ? [SEARCH] : [SEARCH, WIDE]) {
     backwardWith(E, add, table, era, form, src, dst, search);
     if (out.size) break;
   }
+  // no form gives this one by the laws: one law did not act (skipOne)
+  if (!out.size) backwardWith(E, add, table, era, form, src, dst, SEARCH, IRREGULAR_TRIES);
   if (dst === 0 && (hints.starts || []).length && out.size) rootSeeds(E, add, era, form, src, hints.starts, [...out.values()].sort((a, b) => b.p - a.p));
   for (const r of out.values()) r.stem = stems.length > 0 && stemMatch(E, era, r.form, dst, src, stems);
-  return [...out.values()].sort((a, b) => b.p * hintWeight(b) - a.p * hintWeight(a)).slice(0, RECON_LIMIT);
+  // of equal ones, a form that begins with the root as it is (✶mitʰi, not ✶miθi < √MITH)
+  const starts = (hints.starts || []).filter(Boolean);
+  const atRoot = r => { const f = comparable(r.form).replace(/^-+/, ''); return starts.some(x => f.startsWith(x)) ? 0 : 1; };
+  return [...out.values()].sort((a, b) => (b.p * hintWeight(b) - a.p * hintWeight(a)) || (atRoot(a) - atRoot(b))).slice(0, RECON_LIMIT);
 }
 // primitive forms that begin with the word's root (reconstruct.py: Context._root_seeds)
 const classOf = p => { const b = Array.from(p)[0]; const i = EQUIV.findIndex(c => c.has(b)); return i >= 0 ? i : b; };
@@ -1253,17 +1308,17 @@ function hintsOf(E, branch, entry, era, stage) {
   });
   return { roots: entry.roots || [], stems: [...new Set(stems)], starts: [...new Set(starts)].filter(Boolean) };
 }
-function backwardWith(E, add, table, era, form, src, dst, search) {
-  const found = backformWith(E, table(src, dst), form, era, src, RECON_LIMIT, dst > 0 ? dst + 1 : 0, search);
-  for (const f of found) add(f.primitive, Math.exp(f.logp) * (f.main ? 1 : 0.5), f.trace, 'direct');
+function backwardWith(E, add, table, era, form, src, dst, search, irregular = 0) {
+  const found = backformWith(E, table(src, dst), form, era, src, RECON_LIMIT, dst > 0 ? dst + 1 : 0, search, irregular);
+  for (const f of found) add(f.primitive, Math.exp(f.logp) * (f.main ? 1 : 0.5), f.trace, 'direct', f.irregular);
   if (dst > 0) {
-    const prims = backformWith(E, table(src, 0), form, era, src, 4, 0, search);
+    const prims = backformWith(E, table(src, 0), form, era, src, 4, 0, search, irregular);
     if (!E.stageOf) E.stageOf = new Map(E.rules.map(r => [r.id, r.stage]));
     for (const f of prims) {
       // the form at stage dst on the very run that gave `form`
       const trace = f.trace.filter(t => E.stageOf.get(t[0]) <= dst);
       const hit = [...trace].reverse().find(t => t[2] != null);
-      add(hit ? hit[2] : f.primitive, Math.exp(f.logp) * (f.main ? 1 : 0.5), trace, 'primitive ' + f.primitive);
+      add(hit ? hit[2] : f.primitive, Math.exp(f.logp) * (f.main ? 1 : 0.5), trace, 'primitive ' + f.primitive, f.irregular);
     }
   }
 }
@@ -1301,9 +1356,14 @@ function reconstruct(engines, src, dst, opts = {}) {
     if (!results.has(k) || results.get(k).score < score) results.set(k, rec);
   };
   if (entry && sb === db && se === de) for (const f of stageForms(D, db, entry, de, ds)) add(f, 10, [['attested']], ['attested'], []);
-  if (sb === db && se === de) within(engines, add, sb, se, form, ss, ds, hints);
-  else if (se === de) sideways(engines, add, src, dst, form, entry, hints, opts.useLinks !== false);
-  else across(engines, add, src, dst, form, entry, hints, opts.useLinks !== false);
+  const depth = opts.depth || 0;
+  if (sb === db && se === de) {
+    const c = ds < ss && entry ? compose(engines, sb, entry, se, ds, depth) : null;
+    // a word its elements explain: no search through rare correspondences (WIDE)
+    within(engines, add, sb, se, form, ss, ds, c ? { ...hints, composed: true } : hints);
+    if (c) composed(engines, add, sb, se, form, entry, c, ss, ds);
+  } else if (se === de) sideways(engines, add, src, dst, form, entry, hints, opts.useLinks !== false, depth);
+  else across(engines, add, src, dst, form, entry, hints, opts.useLinks !== false, depth);
   if (ds === lastStageOf(D, de) && codeOf(D, de, ds) != null) {
     const pt = D.recon.phonotactics[codeOf(D, de, ds)] || { initials: {}, clusters: {}, finals: {} };
     for (const r of results.values()) {
@@ -1320,6 +1380,47 @@ function reconstruct(engines, src, dst, opts = {}) {
   for (const r of ranked) r.score = r3(r.score / total);
   return ranked.slice(0, opts.limit || RECON_LIMIT);
 }
+// a compound or derivative at an earlier stage as its elements' forms there (reconstruct.py: compose)
+const COMPOSED_SCORE = 0.8, UNCONFIRMED_SCORE = 0.25, COMPOSE_DEPTH = 3;
+function elementForm(engines, branch, id, era, stage, depth) {
+  const E = engines[branch];
+  if (!E.rootById) E.rootById = new Map(E.roots.map(r => [r[0], r]));
+  const root = E.rootById.get(id);
+  if (root) {
+    const r = root[3].length ? root[3][0].join('') : '';
+    if (!r || stage === 0) return r || null;
+    const fw = forwardRun(E, era, r + '-', 0, stage);
+    return fw.length ? fw[0][0] : r;
+  }
+  const e = E.lexicon.get(id);
+  if (!e) return null;
+  const l = E.languages.find(x => x.code === e.lang);
+  if (!l || l.era !== era) return null;
+  const vs = reconstruct(engines, [branch, era, l.stage], [branch, era, stage], { word: id, limit: 1, depth: depth + 1 });
+  return vs.length ? vs[0].form : null;
+}
+function compose(engines, branch, entry, era, stage, depth = 0) {
+  const els = entry.elements || [];
+  if (els.length < 2 || depth >= COMPOSE_DEPTH) return null;
+  const parts = [];
+  for (const x of els) {
+    const f = x ? elementForm(engines, branch, x, era, stage, depth) : null;
+    if (!f) return null;
+    parts.push(f.replace(/^-+|-+$/g, ''));
+  }
+  return parts.join('+');
+}
+function elementNames(engines, branch, entry) {
+  const E = engines[branch];
+  return (entry.elements || []).map(x => { const r = E.rootById && E.rootById.get(x); if (r) return r[2]; const e = E.lexicon.get(x); return e ? e.form : '?'; }).join(' + ');
+}
+function composed(engines, add, branch, era, form, entry, c, ss, ds) {
+  const target = comparable(form);
+  const hit = forwardRun(engines[branch], era, c, ds, ss).slice(0, 4).some(([f]) => comparable(f) === target);
+  const parts = elementNames(engines, branch, entry);
+  if (hit) add(c, COMPOSED_SCORE, [['composed', { parts }]], ['elements', 'reconstructed'], []);
+  else add(c, UNCONFIRMED_SCORE, [['composedUnconfirmed', { parts }]], ['elements', 'unconfirmed'], []);
+}
 // a route is a list of segments [key, params]; the interface words them (route.<key>)
 function within(engines, add, branch, era, form, ss, ds, hints, baseScore = 1, prefix = [], marks = []) {
   const E = engines[branch];
@@ -1332,9 +1433,14 @@ function within(engines, add, branch, era, form, ss, ds, hints, baseScore = 1, p
     // hints reorder the candidates but never lift them above 0.9 of the base score
     const top = Math.max(...found.map(r => r.p * hintWeight(r)), 0) || 1;
     for (const r of found) {
-      const p = baseScore * 0.9 * r.p * hintWeight(r) / top;
-      add(r.form, p, prefix.concat([[r.via === 'direct' ? 'backDirect' : r.via.startsWith('root') ? 'backRoot' : 'backPrimitive']]),
-        marks.concat(['reconstructed'], r.root ? ['root'] : [], r.stem ? ['stem'] : []), r.trace);
+      let p = baseScore * 0.9 * r.p * hintWeight(r) / top;
+      const route = prefix.concat([[r.via === 'direct' ? 'backDirect' : r.via.startsWith('root') ? 'backRoot' : 'backPrimitive']]);
+      if (r.irregular) {
+        p *= IRREGULAR_SCORE;
+        const c = E.rules.find(x => x.id === r.irregular);
+        route.push(['irregularLaw', { rule: c ? c.name : r.irregular }]);
+      }
+      add(r.form, p, route, marks.concat(['reconstructed'], r.root ? ['root'] : [], r.stem ? ['stem'] : [], r.irregular ? ['irregular'] : []), r.trace);
     }
   }
 }
@@ -1371,14 +1477,36 @@ function nearWords(E, code, prim, gloss, limit = 3) {
   out.sort((a, b) => a[0] - b[0] || a[1] - b[1] || (a[2] < b[2] ? -1 : a[2] > b[2] ? 1 : 0));
   return out.slice(0, limit).map(t => [t[3], t[0]]);
 }
+const PARTIAL_SCORE = 0.8;
+// cognates whose roots do not make the same word (reconstruct.py: partial_cognate)
+function rootParts(E, e) {
+  if (!E.rootById) E.rootById = new Map(E.roots.map(r => [r[0], r]));
+  const parts = new Map();
+  for (const [, id, via, part] of e.root_refs || []) {
+    if (via === 'cognate') continue;
+    const r = E.rootById.get(id);
+    const k = part == null ? 0 : part;
+    if (!parts.has(k)) parts.set(k, []);
+    if (r) for (const v of r[3]) { const c = rootCons(v); if (c.length) parts.get(k).push(c); }
+  }
+  return [...parts.keys()].sort((x, y) => x - y).map(k => parts.get(k));
+}
+const prefixOf = (x, y) => y.length <= x.length && y.every((p, i) => p === x[i]);
+// a part whose root has no form to compare (no vowel) may be anything (reconstruct.py: _compatible)
+const compatibleParts = (a, b) => !a.length || !b.length || a.some(x => b.some(y => prefixOf(x, y) || prefixOf(y, x)));
+function partialCognate(E, a, b) {
+  const pa = rootParts(E, a), pb = rootParts(E, b);
+  if (!pa.length || !pb.length) return false;
+  return pa.length !== pb.length || !pa.every((x, k) => compatibleParts(x, pb[k]));
+}
 const ELEMENTS_SCORE = 1.9;
-// words of the target language Eldamo links to a word as cognates, either way (reconstruct.py: _counterparts)
+// words of the target language Eldamo links to a word as cognates, either way, partial cognates aside (reconstruct.py: _counterparts)
 function counterparts(engines, wid, branch, code) {
   const [, e] = entryOf(engines, wid);
   if (!e) return [];
   const ids = ((e.links || {}).cognate || []).slice();
   for (const [w, tag] of reverseLinks(engines).get(wid) || []) if (tag === 'cognate') ids.push(w);
-  return [...new Set(ids)].filter(i => { const [b2, e2] = entryOf(engines, i); return b2 === branch && e2 && e2.lang === code; });
+  return [...new Set(ids)].filter(i => { const [b2, e2] = entryOf(engines, i); return b2 === branch && e2 && e2.lang === code && !partialCognate(engines[branch], e, e2); });
 }
 // a compound of the other branch built again from the cognates of its elements (reconstruct.py: _by_elements)
 function byElements(engines, add, entry, era, db, ds) {
@@ -1403,7 +1531,7 @@ function byElements(engines, add, entry, era, db, ds) {
   // an earlier stage: back from the word so built, so that the stages agree with it
   for (const v of vs.slice(0, 2)) within(engines, add, db, era, v.form, last, ds, NO_HINTS, ELEMENTS_SCORE * v.score / top, [['byElements', { names }]], ['elements']);
 }
-function sideways(engines, add, src, dst, form, entry, hints, useLinks = true) {
+function sideways(engines, add, src, dst, form, entry, hints, useLinks = true, depth = 0) {
   const [sb, era, ss] = src, [db, , ds] = dst;
   const D = engines[db];
   if (useLinks && entry) {
@@ -1415,6 +1543,10 @@ function sideways(engines, add, src, dst, form, entry, hints, useLinks = true) {
       const l2 = e2 && b2 === db ? D.languages.find(l => l.code === e2.lang) : null;
       if (!l2 || l2.era !== era) continue;
       const f2 = toPhonetic(e2.form, db).trim();
+      if (partialCognate(D, entry, e2)) {
+        if (l2.stage === ds) add(f2, PARTIAL_SCORE, [['partialLink', { form: e2.form }]], ['link', 'partial'], []);
+        continue;
+      }
       if (l2.stage === ds) add(f2, 5, [['cognateLink', { form: e2.form }]], ['link'], []);
       else if (l2.stage < ds) within(engines, add, db, era, f2, l2.stage, ds, hintsOf(D, db, e2, era, l2.stage), 4, [['cognateLink', { form: e2.form }]], ['link']);
     }
@@ -1425,9 +1557,11 @@ function sideways(engines, add, src, dst, form, entry, hints, useLinks = true) {
   if (!prims.length) {
     if (ss === 0) prims = [[form, 1, []]];
     else {
-      const found = backwardRun(engines[sb], era, form, ss, 0, hints);
+      const c = entry ? compose(engines, sb, entry, era, 0, depth) : null;
+      const found = backwardRun(engines[sb], era, form, ss, 0, c ? { ...hints, composed: true } : hints);
       const top = Math.max(...found.map(r => r.p * hintWeight(r)), 0) || 1;
       prims = found.slice(0, 5).map(r => [r.form, r.p * hintWeight(r) / top, ['reconstructed']]);
+      if (c && !found.length) prims = [[c, UNCONFIRMED_SCORE, ['elements']]];
     }
   }
   for (const [prim, w, marks] of prims) within(engines, add, db, era, prim, 0, ds, NO_HINTS, w, [['viaPrimitive', { prim }]], marks.concat(['cognate']));
@@ -1442,7 +1576,7 @@ function sideways(engines, add, src, dst, form, entry, hints, useLinks = true) {
     }
   }
 }
-function across(engines, add, src, dst, form, entry, hints, useLinks) {
+function across(engines, add, src, dst, form, entry, hints, useLinks, depth = 0) {
   const [sb, se, ss] = src, [db, de, ds] = dst;
   const S = engines[sb], D = engines[db];
   const dstCode = codeOf(D, de, ds);
@@ -1466,9 +1600,11 @@ function across(engines, add, src, dst, form, entry, hints, useLinks) {
   if (!prims.length) {
     if (ss === 0) prims = [[form, 1]];
     else {
-      const found = backwardRun(S, se, form, ss, 0, hints);
+      const c = entry ? compose(engines, sb, entry, se, 0, depth) : null;
+      const found = backwardRun(S, se, form, ss, 0, c ? { ...hints, composed: true } : hints);
       const top = Math.max(...found.map(r => r.p * hintWeight(r)), 0) || 1;
       prims = found.slice(0, 4).map(r => [r.form, r.p * hintWeight(r) / top]);
+      if (c && !found.length) prims = [[c, UNCONFIRMED_SCORE]];
     }
   }
   for (const [prim, w] of prims) within(engines, add, db, de, prim, 0, ds, NO_HINTS, 0.6 * w, [['reetymology', { prim }]], ['neologism']);

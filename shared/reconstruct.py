@@ -33,7 +33,7 @@ from . import backform as BF
 from .compound import origins
 from .interpreter import comparable, is_vowel, join, phonemes
 from .orthography import to_phonetic
-from .roots import root_phonetic
+from .roots import PRIMITIVE_ERA, root_phonetic, root_variants
 from .sequencer import Sequencer, _replays
 
 LIMIT = 8
@@ -47,6 +47,8 @@ NO_HINTS = {'roots': (), 'stems': (), 'starts': ()}
 PHONOTACTIC_PENALTY = 0.2
 SEARCH = {'beam': 150, 'options': 6, 'min_share': 0.02}   # wider than for word formation: no Eldamo primitive to fall back on
 WIDE = {'beam': 300, 'options': 10, 'min_share': 0.005}   # when SEARCH finds nothing: rarer correspondences (S. -b < -kwā)
+IRREGULAR_TRIES = 40     # when WIDE finds nothing too: the first candidates tried with one law left out
+IRREGULAR_SCORE = 0.3    # such a form against the main reading of the laws
 NEAR_STOP = {'the', 'and', 'for', 'with', 'from', 'that', 'one', 'not', 'into', 'being', 'thing', 'person', 'make',
              'made', 'something', 'someone', 'kind', 'sort', 'state', 'act', 'very'}
 EQUIV = [set('kgxɣhq'), set('tdθðþ'), set('pbɸβfv'), set('mṃ'), set('nŋñṇ'), set('l'), set('r'), set('sz'), set('w'),
@@ -365,36 +367,47 @@ class Context:
         out = {}
         roots, stems = hints['roots'], hints['stems']
 
-        def add(f, p, trace, via):
+        def add(f, p, trace, via, irregular=None):
             k = comparable(f)
             rec = {'form': f, 'p': p, 'trace': trace, 'via': via, 'root': bool(roots) and root_match(f, roots)}
+            if irregular:
+                rec['irregular'] = irregular
             if k not in out or out[k]['p'] < p:
                 out[k] = rec
 
         first = dst + 1 if dst > 0 else 0
-        for search in (SEARCH, WIDE):
+        for search in (SEARCH,) if hints.get('composed') else (SEARCH, WIDE):
             self._backward(seq, add, branch, era, form, src, dst, first, exclude, limit, search)
             if out:
                 break
+        if not out:
+            # no form gives this one by the laws: one law did not act (backform._skip_one)
+            self._backward(seq, add, branch, era, form, src, dst, first, exclude, limit, SEARCH, IRREGULAR_TRIES)
         if dst == 0 and hints.get('starts') and self.seed_roots and out:
             self._root_seeds(seq, add, branch, era, form, src, hints['starts'], sorted(out.values(), key=lambda r: -r['p']))
         for r in out.values():
             r['stem'] = bool(stems) and self.stem_match(branch, era, r['form'], dst, src, stems)
-        ranked = sorted(out.values(), key=lambda r: -(r['p'] * hint_weight(r)))
+        # of equal ones, a form that begins with the root as it is (✶mitʰi, not ✶miθi < √MITH)
+        starts = [s for s in hints.get('starts', ()) if s]
+        ranked = sorted(out.values(), key=lambda r: (-(r['p'] * hint_weight(r)),
+                                                     not any(comparable(r['form']).lstrip('-').startswith(s) for s in starts)))
         return ranked[:limit]
 
-    def _backward(self, seq, add, branch, era, form, src, dst, first, exclude, limit, search):
+    def _backward(self, seq, add, branch, era, form, src, dst, first, exclude, limit, search, irregular=0):
         found = BF.backform(seq, self.table(branch, era, src, dst, exclude), form, era, src, limit=limit,
-                            first_stage=first, **search)
+                            first_stage=first, irregular=irregular, **search)
         for f in found:
-            add(f['primitive'], math.exp(f['logp']) * (1.0 if f['main'] else 0.5), f['trace'], 'direct')
+            add(f['primitive'], math.exp(f['logp']) * (1.0 if f['main'] else 0.5), f['trace'], 'direct',
+                f.get('irregular'))
         if dst > 0:
-            prims = BF.backform(seq, self.table(branch, era, src, 0, exclude), form, era, src, limit=4, **search)
+            prims = BF.backform(seq, self.table(branch, era, src, 0, exclude), form, era, src, limit=4,
+                                irregular=irregular, **search)
             for f in prims:
                 # the form at stage dst on the very run that gave `form`
                 trace = [t for t in f['trace'] if seq.by_id[t[0]].stage <= dst]
                 g = next((t[2] for t in reversed(trace) if t[2] is not None), f['primitive'])
-                add(g, math.exp(f['logp']) * (1.0 if f['main'] else 0.5), trace, 'primitive ' + f['primitive'])
+                add(g, math.exp(f['logp']) * (1.0 if f['main'] else 0.5), trace, 'primitive ' + f['primitive'],
+                    f.get('irregular'))
 
 
 # --------------------------------------------------------------------------
@@ -443,7 +456,8 @@ def _hints(ctx: Context, branch: str, entry: dict | None, era: str, stage: int) 
 
 
 def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, word: str | None = None,
-                limit: int = LIMIT, use_links: bool = True, exclude=frozenset(), spelled: bool = False) -> list:
+                limit: int = LIMIT, use_links: bool = True, exclude=frozenset(), spelled: bool = False,
+                depth: int = 0) -> list:
     """Variants of the form at dst = (branch, era, stage), from the form at src.
 
     Either `word` (an Eldamo page id) or `form` (in Eldamo's phonetic notation;
@@ -480,11 +494,15 @@ def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, w
             add(f, 10.0, 'засвидетельствовано', ['attested'], [])
 
     if (db, de) == (sb, se):
-        _within(ctx, add, sb, se, form, ss, ds, hints, exclude)
+        c = compose(ctx, sb, entry, se, ds, depth) if ds < ss and entry is not None else None
+        # a word its elements explain: no search through rare correspondences (WIDE)
+        _within(ctx, add, sb, se, form, ss, ds, {**hints, 'composed': True} if c else hints, exclude)
+        if c:
+            _composed(ctx, add, sb, se, form, entry, c, ss, ds)
     elif de == se:
-        _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links)
+        _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links, depth)
     else:
-        _across(ctx, add, src, dst, form, entry, hints, exclude, use_links)
+        _across(ctx, add, src, dst, form, entry, hints, exclude, use_links, depth)
 
     # a form the target language does not allow (initial group, cluster, ending
     # unseen in its words) is kept but ranked down
@@ -506,6 +524,62 @@ def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, w
     return ranked[:limit]
 
 
+COMPOSED_SCORE = 0.8      # the elements' forms joined, and the laws lead from them to the word: after the laws (0.9)
+UNCONFIRMED_SCORE = 0.25  # joined, but the laws do not lead to the word: it was made later than that stage
+COMPOSE_DEPTH = 3
+
+
+def _element_form(ctx, branch: str, x: dict, era: str, stage: int, depth: int) -> str | None:
+    """An element's form at a stage of the branch: its Eldamo form there, or the one
+    reconstructed (an element that is a compound itself is composed in turn); a root as
+    it is (√RAN -> ran)."""
+    e = ctx.lexicon[branch].get(x.get('id') or '')
+    if e is None:
+        return None
+    if e.get('speech') == 'root':
+        # as in the roots table (roots.table): a root of a primitive language, with a vowel
+        vs = [v for v in root_variants(e['form']) if any(is_vowel(p) for p in phonemes(v))]
+        if e['lang'] not in PRIMITIVE_ERA or e.get('neo') or not vs:
+            return None
+        r = vs[0]
+        return r if stage == 0 else (ctx.forward(branch, era, r + '-', 0, stage)[:1] or [(r, None)])[0][0]
+    l = ctx.langs(branch).get(e['lang'])
+    if l is None or l['era'] != era:
+        return None
+    vs = reconstruct(ctx, (branch, era, l['stage']), (branch, era, stage), word=e['id'], limit=1, depth=depth + 1)
+    return vs[0]['form'] if vs else None
+
+
+def compose(ctx, branch: str, entry: dict, era: str, stage: int, depth: int = 0) -> str | None:
+    """A compound or derivative at a stage of its branch as the forms of its elements there,
+    joined at morpheme boundaries: S. Mithrandir at the primitive stage = ✶mitʰi+ran+ndēr.
+    None when an element has no form there."""
+    els = entry.get('elements') or []
+    if len(els) < 2 or depth >= COMPOSE_DEPTH:
+        return None
+    parts = []
+    for x in els:
+        f = _element_form(ctx, branch, x, era, stage, depth)
+        if not f:
+            return None
+        parts.append(f.strip('-'))
+    return '+'.join(parts)
+
+
+def _composed(ctx, add, branch, era, form, entry, c, ss, ds):
+    """The word at an earlier stage built from its elements' forms of that stage (compose).
+    Many compounds of Eldamo were made late (S. randir = ran + dîr keeps nd, which the
+    laws turn into nn): the laws from such a form do not give the word, and the form is shown
+    as the make-up of the word at that stage, below what the laws find."""
+    target = comparable(form)
+    hit = next(((f, t) for f, t in ctx.forward(branch, era, c, ds, ss)[:4] if comparable(f) == target), None)
+    parts = ' + '.join(x.get('form', '') for x in entry['elements'])
+    if hit:
+        add(c, COMPOSED_SCORE, f'по составляющим {parts}', ['elements', 'reconstructed'], [])
+    else:
+        add(c, UNCONFIRMED_SCORE, f'по составляющим {parts}; законы не ведут к слову', ['elements', 'unconfirmed'], [])
+
+
 def dst_code_has_words(ctx: Context, branch: str, era: str, stage: int) -> bool:
     """Phonotactics are known for the latest stage of an era (its words are in the lexicon)."""
     return stage == ctx.last_stage(branch, era) and ctx.code(branch, era, stage) is not None
@@ -525,16 +599,59 @@ def _within(ctx, add, branch, era, form, ss, ds, hints, exclude, base_score=1.0,
         for r in found:
             p = base_score * 0.9 * r['p'] * hint_weight(r) / top
             how = 'напрямую' if r['via'] == 'direct' else 'по корню' if r['via'].startswith('root') else 'через праформу'
+            irr = r.get('irregular')
+            if irr:
+                p *= IRREGULAR_SCORE
+                how += f', не сработал закон «{ctx.seq[branch].by_id[irr].name}»'
             add(r['form'], p, route_prefix + 'назад: ' + how,
-                list(marks) + ['reconstructed'] + (['root'] if r['root'] else []) + (['stem'] if r['stem'] else []),
+                list(marks) + ['reconstructed'] + (['root'] if r['root'] else []) + (['stem'] if r['stem'] else [])
+                + (['irregular'] if irr else []),
                 r['trace'])
+
+
+PARTIAL_SCORE = 0.8     # a partial cognate (partial_cognate): below the main reading of the laws (1.0)
+
+
+def _root_parts(e: dict) -> list:
+    """The parts of a word's roots, each a list of consonant skeletons of its alternatives."""
+    from .roots import root_variants, _cons
+    parts = {}
+    for r in e.get('roots', ()):
+        if r.get('via') == 'cognate':
+            continue
+        # as in the root table of the page (roots.table): variants with a vowel
+        sk = [tuple(_cons(phonemes(v))) for v in root_variants(r['form']) if any(is_vowel(p) for p in phonemes(v))]
+        parts.setdefault(r.get('part', 0), []).extend(x for x in sk if x)
+    return [parts[k] for k in sorted(parts)]
+
+
+def _compatible(a: list, b: list) -> bool:
+    """Two parts that may be the same root: the consonants of one begin the other's
+    (√KAL ~ √KALAR, the root and its extension) for some alternatives. A part whose root
+    has no form to compare (√VḶTḶ: no vowel) may be anything."""
+    if not a or not b:
+        return True
+    return any(x[:len(y)] == y or y[:len(x)] == x for x in a for y in b)
+
+
+def partial_cognate(a: dict, b: dict) -> bool:
+    """Two words Eldamo links as cognates whose roots, both known, do not make the same word:
+    another number of parts (Q. Aldëa √GAL² ~ S. Orgaladh √UR + √GALAD), or a part with another
+    root (S. arthor √RĀ/ARA + √TUR ~ Q. turmen √TUR + √MEN; Q. palantír ~ S. Gwahaedir, the same
+    thing named otherwise). Alternatives and extensions of a root are the same root
+    (Q. calar √KALAR ~ S. calar √KAL)."""
+    pa, pb = _root_parts(a), _root_parts(b)
+    if not pa or not pb:
+        return False
+    return len(pa) != len(pb) or not all(_compatible(x, y) for x, y in zip(pa, pb))
 
 
 ELEMENTS_SCORE = 1.9     # below an attested word of the target language (link 5, near cognate 2-3), above the laws (1.0)
 
 
 def _counterparts(ctx, wid: str, branch: str, code: str) -> list:
-    """Words of the target language Eldamo links to a word as cognates, either way."""
+    """Words of the target language Eldamo links to a word as cognates, either way; a partial
+    cognate is not the same word (S. arthor ~ Q. turmen: Arthedain is not ✶turmenatan)."""
     _, e = ctx.entry(wid)
     if e is None:
         return []
@@ -543,7 +660,7 @@ def _counterparts(ctx, wid: str, branch: str, code: str) -> list:
     out = []
     for i in dict.fromkeys(ids):
         b2, e2 = ctx.entry(i)
-        if b2 == branch and e2 is not None and e2['lang'] == code:
+        if b2 == branch and e2 is not None and e2['lang'] == code and not partial_cognate(e, e2):
             out.append(i)
     return out
 
@@ -585,7 +702,7 @@ def _by_elements(ctx, add, entry, era, db, ds):
                 route_prefix=f'по когнатам составляющих: {names}, затем ', marks=['elements'])
 
 
-def _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links=True):
+def _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links=True, depth=0):
     sb, era, ss = src
     db, _, ds = dst
     if use_links and entry is not None:
@@ -598,6 +715,12 @@ def _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links=True):
             if l2 is None or l2['era'] != era:
                 continue
             f2 = to_phonetic(e2['form'], db).strip()
+            if partial_cognate(entry, e2):
+                # the same root in part only (S. arthor = √RĀ/ARA + √TUR ~ Q. turmen = √TUR + √MEN):
+                # shown, but after the form the laws give
+                if l2['stage'] == ds:
+                    add(f2, PARTIAL_SCORE, f'частичный когнат по связи Eldamo: {e2["form"]}', ['link', 'partial'], [])
+                continue
             if l2['stage'] == ds:
                 add(f2, 5.0, f'когнат по связи Eldamo: {e2["form"]}', ['link'], [])
             elif l2['stage'] < ds:
@@ -612,10 +735,13 @@ def _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links=True):
         if ss == 0:
             prims = [(form, 1.0, [])]
         else:
-            found = ctx.backward(sb, era, form, ss, 0, hints, exclude)
+            c = compose(ctx, sb, entry, era, 0, depth) if entry is not None else None
+            found = ctx.backward(sb, era, form, ss, 0, {**hints, 'composed': True} if c else hints, exclude)
             top = max((r['p'] * hint_weight(r) for r in found), default=1.0) or 1.0
             prims = [(r['form'], r['p'] * hint_weight(r) / top, ['reconstructed'])
                      for r in found[:5]]
+            if c and not found:
+                prims = [(c, UNCONFIRMED_SCORE, ['elements'])]
     for prim, w, marks in prims:
         _within(ctx, add, db, era, prim, 0, ds, NO_HINTS, exclude, base_score=w,
                 route_prefix=f'через праформу {prim}: ', marks=marks + ['cognate'])
@@ -630,7 +756,7 @@ def _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links=True):
                     ['near-cognate'], [])
 
 
-def _across(ctx, add, src, dst, form, entry, hints, exclude, use_links):
+def _across(ctx, add, src, dst, form, entry, hints, exclude, use_links, depth=0):
     sb, se, ss = src
     db, de, ds = dst
     dst_code = ctx.code(db, de, ds)
@@ -665,9 +791,12 @@ def _across(ctx, add, src, dst, form, entry, hints, exclude, use_links):
         if ss == 0:
             prims = [(form, 1.0)]
         else:
-            found = ctx.backward(sb, se, form, ss, 0, hints, exclude)
+            c = compose(ctx, sb, entry, se, 0, depth) if entry is not None else None
+            found = ctx.backward(sb, se, form, ss, 0, {**hints, 'composed': True} if c else hints, exclude)
             top = max((r['p'] * hint_weight(r) for r in found), default=1.0) or 1.0
             prims = [(r['form'], r['p'] * hint_weight(r) / top) for r in found[:4]]
+            if c and not found:
+                prims = [(c, UNCONFIRMED_SCORE)]
     for prim, w in prims:
         _within(ctx, add, db, de, prim, 0, ds, NO_HINTS, exclude, base_score=0.6 * w,
                 route_prefix=f'переэтимологизация через праформу {prim}: ', marks=['neologism'])

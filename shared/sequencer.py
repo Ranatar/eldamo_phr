@@ -25,6 +25,7 @@ OPTIONAL = re.compile(r'\b(often|sometimes|usually|occasionally|generally|sporad
                       r'|in long compounds', re.I)
 RARE = re.compile(r'(?<!and )\b(sometimes|occasionally|sporadically|may|might)\b', re.I)   # main reading: not applied
 MAX_VARIANTS = 24
+RUN_CACHE = 50000       # runs kept (Sequencer.run)
 CALIBRATION_MIN = 3     # derivations needed to override the reading of a rule's name
 POOLED = 'both:'        # calibration key prefix: a primitive rule counted over both branches
 
@@ -247,7 +248,19 @@ class Sequencer:
     def run(self, form: str, rules: list, branch_optional: bool = True) -> list:
         """Apply rules in order. Returns variants: [{'form', 'trace'}], the first
         being the main reading: optional rules applied, except those named as
-        occasional ("sometimes", "occasionally", "may"), which are not."""
+        occasional ("sometimes", "occasionally", "may"), which are not. The same form
+        through the same rules is run once (the backward search and the stages of a
+        panorama try the same candidates again and again)."""
+        key = (form, tuple(c.id for c in rules), branch_optional)
+        cache = self.__dict__.setdefault('_runs', {})
+        hit = cache.get(key)
+        if hit is None:
+            if len(cache) >= RUN_CACHE:
+                cache.clear()
+            hit = cache[key] = self._run(form, rules, branch_optional)
+        return [{'form': v['form'], 'trace': list(v['trace'])} for v in hit]
+
+    def _run(self, form: str, rules: list, branch_optional: bool) -> list:
         variants = [{'form': form, 'trace': []}]
         sound_cache = {}
         for c in rules:

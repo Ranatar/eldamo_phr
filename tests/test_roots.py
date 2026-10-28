@@ -37,6 +37,28 @@ class Roots(unittest.TestCase):
         self.assertEqual([(g['form'], g['part']) for g in e['root_gaps']], [('-iel', 1)])
         self.assertEqual([(r['form'], r['via']) for r in self.entry('sindarin', 's', 'Adan')['roots']], [('ATATA', 'source')])
 
+    def test_roots_through_elements_of_elements(self):
+        # S. Mithrandir = mith + randir, randir = √RAN + dîr < √N(D)ER: three roots, though the page
+        # of randir names RAN alone; S. Arthedain = arthor + Adan, arthor < ✶artaurē = √RĀ/ARA + √TUR
+        parts = lambda e: [sorted(r['form'] for r in e['roots'] if r['part'] == k)
+                           for k in sorted({r['part'] for r in e['roots']})]
+        self.assertEqual(parts(self.entry('sindarin', 's', 'Mithrandir')), [['MITH'], ['RAN'], ['N(D)ER']])
+        self.assertEqual(parts(self.entry('sindarin', 's', 'Arthedain')), [['RĀ/ARA'], ['TUR'], ['ATATA']])
+
+    def test_partial_cognate(self):
+        # S. arthor √RĀ/ARA + √TUR ~ Q. turmen √TUR + √MEN: shown after the laws, marked partial
+        from shared import reconstruct as R
+        lex = {e['id']: e for b in self.data for e in self.data[b]['lexicon']}
+        arthor = self.entry('sindarin', 's', 'arthor')
+        turmen = self.entry('quenya', 'q', 'turmen')
+        self.assertTrue(R.partial_cognate(arthor, turmen))
+        self.assertFalse(R.partial_cognate(self.entry('quenya', 'q', 'calar'), self.entry('sindarin', 's', 'calar')))
+        ctx = R.Context(self.data)
+        vs = R.reconstruct(ctx, ('sindarin', 'late', 3), ('quenya', 'late', 2), word=arthor['id'])
+        marks = {v['form']: v['marks'] for v in vs}
+        self.assertIn('partial', marks.get('turmen', []))
+        self.assertNotIn('partial', vs[0]['marks'])
+
     def test_roots_of_cognates(self):
         # Q. Perian: no root, no elements; cognate S. Perian = per- + ?, per- < √PER
         rs = self.entry('quenya', 'q', 'Perian')['roots']

@@ -107,8 +107,54 @@ def render(branches: dict) -> tuple[str, dict]:
     return '\n'.join(lines).rstrip() + '\n', js
 
 
+def partial_cognates(branches: dict) -> tuple[int, list]:
+    """Cognate links of Eldamo between the branches whose words, both with known roots, are
+    the same word in part only (shared/reconstruct.py: partial_cognate): (pairs with roots on
+    both sides, [the partial ones])."""
+    from .reconstruct import partial_cognate
+    names = list(branches)
+    if len(names) != 2:
+        return 0, []
+    lex = {b: {e['id']: e for e in branches[b]['lexicon']} for b in names}
+    a, b = names
+    pairs = set()
+    for x, y in ((a, b), (b, a)):
+        for e in lex[x].values():
+            if e.get('speech') == 'root':
+                continue
+            for l in e.get('links', {}).get('cognate', ()):
+                if l['id'] in lex[y] and lex[y][l['id']].get('speech') != 'root':
+                    pairs.add((e['id'], l['id']) if x == a else (l['id'], e['id']))
+    rooted, out = 0, []
+    roots = lambda e: ' + '.join('/'.join(r['form'] for r in e['roots'] if r.get('part', 0) == k)
+                                 for k in sorted({r.get('part', 0) for r in e['roots']}))
+    for i, j in sorted(pairs, key=lambda t: (lex[a][t[0]]['form'].lower(), lex[b][t[1]]['form'].lower())):
+        e1, e2 = lex[a][i], lex[b][j]
+        if not e1.get('roots') or not e2.get('roots'):
+            continue
+        if any(r.get('via') == 'cognate' for r in e1['roots'] + e2['roots']):
+            continue                    # roots taken from the other word: not evidence of their own
+        rooted += 1
+        if partial_cognate(e1, e2):
+            out.append({a: [e1['lang'], e1['form'], e1['id'], roots(e1)], b: [e2['lang'], e2['form'], e2['id'], roots(e2)]})
+    return rooted, out
+
+
 def write_report(branches: dict) -> None:
     text, js = render(branches)
+    rooted, partial = partial_cognates(branches)
+    if rooted:
+        a, b = list(branches)
+        word = lambda x: f"{x[0]}. [{x[1]}](https://eldamo.org/content/words/word-{x[2]}.html)"
+        text += '\n'.join([
+            '', '## Частичные когнаты', '',
+            f'Связей `<cognate>` Eldamo между ветвями, где у обоих слов известны собственные корни, — {rooted}; из них '
+            f'{len(partial)} связывают слова, совпадающие лишь частью состава (другое число частей или часть с другим '
+            'корнем; варианты и расширения корня — один корень). При реконструкции такая связь идёт после законов '
+            '(«⇋ частичный когнат») и не служит когнатом составляющей. Список — и в `reports/audit.json`.', '',
+            f'| {branches[a]["meta"]["title"]} | корни | {branches[b]["meta"]["title"]} | корни |', '|---|---|---|---|',
+        ] + [f'| {word(p[a])} | {p[a][3]} | {word(p[b])} | {p[b][3]} |' for p in partial]) + '\n'
+        js['partial_cognates'] = {'rooted_pairs': rooted, 'pairs': partial}
     write_text(REPORTS / 'audit.md', text)
     write_text(REPORTS / 'audit.json', dumps(js))
 

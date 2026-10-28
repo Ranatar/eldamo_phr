@@ -113,11 +113,12 @@ def candidates(table: dict, form: str, beam: int = BEAM, options: int = None, mi
 
 
 def backform(seq, table: dict, form: str, era: str, last_stage: int, limit: int = 5, first_stage: int = 0,
-             beam: int = BEAM, options: int = None, min_share: float = None) -> list:
+             beam: int = BEAM, options: int = None, min_share: float = None, irregular: int = 0) -> list:
     """Verified earlier forms: [{'primitive', 'logp', 'main', 'trace'}]. The
     candidates are forms before the rules of `first_stage` (0: primitive forms,
     before the Primitive Elvish rules); each must give `form` through the rules
-    of first_stage .. last_stage."""
+    of first_stage .. last_stage. With irregular = n, the first n candidates are
+    tried with one law left out instead (_skip_one); found forms carry its id."""
     target = comparable(form)
     rules = seq.sequence(era, first_stage, last_stage)
     found = []
@@ -126,6 +127,13 @@ def backform(seq, table: dict, form: str, era: str, last_stage: int, limit: int 
     for cand, lp in candidates(table, form, beam, options, min_share):
         cand = lead + cand + trail          # a stem stays a stem, an affix an affix
         vs = seq.run(cand, rules)
+        if irregular:
+            if len(found) < limit:
+                found += _skip_one(seq, rules, cand, lp, vs, target, limit - len(found))
+            irregular -= 1
+            if irregular <= 0:
+                break
+            continue
         hit = next((k for k, v in enumerate(vs) if comparable(v['form']) == target), None)
         if hit is None:
             continue
@@ -134,6 +142,31 @@ def backform(seq, table: dict, form: str, era: str, last_stage: int, limit: int 
             break
     found.sort(key=lambda f: (not f['main'], -f['logp']))
     return found
+
+
+def _skip_one(seq, rules, cand, lp, vs, target, limit) -> list:
+    """A candidate that gives the form if one law of its main run did not act: Tolkien's
+    words keep an older sound now and then (S. randir keeps nd, which the law "[mb], [nd]
+    became [mm], [nn]" makes nn; Tolkien: "nd became nn usually"). The main run is
+    followed up to that law, and the rules after it run from there; the left-out law stays
+    in the trace as not applied."""
+    out = []
+    if not vs:
+        return out
+    main = vs[0]['trace']
+    index = {c.id: i for i, c in enumerate(rules)}
+    for j, (rid, at, after) in enumerate(main):
+        if after is None or rid not in index or any(t[0] == rid for t in main[:j]):
+            continue
+        ws = seq.run(at, rules[index[rid] + 1:])
+        hit = next((i for i, v in enumerate(ws) if comparable(v['form']) == target), None)
+        if hit is None:
+            continue
+        trace = main[:j] + [(rid, at, None)] + ws[hit]['trace']
+        out.append({'primitive': cand, 'logp': round(lp, 3), 'main': hit == 0, 'trace': trace, 'irregular': rid})
+        if len(out) >= limit:
+            break
+    return out
 
 
 def evaluate(data: dict, seq, final_code: str, sample: int = 300) -> dict:

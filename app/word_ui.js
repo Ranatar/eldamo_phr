@@ -24,6 +24,9 @@ const MARKS = {
   root: ['√', T('mark.root')],
   stem: ['⊢', T('mark.stem')],
   elements: ['⊕', T('mark.elements')],
+  partial: ['⇋', T('mark.partial')],
+  irregular: ['!', T('mark.irregular')],
+  unconfirmed: ['?', T('mark.unconfirmed')],
   cognate: ['⇄', T('mark.cognate')],
   'near-cognate': ['≈', T('mark.near-cognate')],
   'primitive-attested': ['✶', T('mark.primitive-attested')],
@@ -275,7 +278,8 @@ function cardHtml(s) {
   if (e.stems) bits.push(T('card.stem') + ' ' + e.stems.map(x => `<span class="form">${esc(x)}</span>`).join(', '));
   if (e.roots && e.roots.length) {
     const list = entryRoots(b, e);
-    const via = list.some(r => r.via === 'element') ? 'element' : (list.find(r => !r.gap) || list[0]).via;
+    const parts = list.some(r => r.part != null);
+    const via = parts && list.some(r => r.via) ? 'element' : (list.find(r => !r.gap) || list[0]).via;
     bits.push(T(via ? 'card.root.' + via : 'card.root') + ' ' + rootsHtml(list));
   }
   const pr = e.starts || (e.stages && (e.stages.p || e.stages.mp || e.stages.ep)) || e.written_origins || e.proto_forms;

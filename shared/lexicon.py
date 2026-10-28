@@ -359,11 +359,11 @@ def build_lexicon(branch: str, derivations: list) -> list:
     return entries
 
 
-def _derived_from(W: Words, w) -> list:
+def _derived_from(W: Words, w, elements: bool = True) -> list:
     """Ids of the words a word derives from, as Eldamo's Derivations section finds them
     (word-page.xq, print-derivations): its own <deriv> (c:get-word) and every <deriv> inside
     its references that points to a reference of another word by @source (c:get-ref),
-    as Q. lár < ᴹ√DAR; and roots named as elements."""
+    as Q. lár < ᴹ√DAR; and, with `elements`, roots named as elements."""
     out = []
     for d in w.findall('deriv'):
         if _live(d):
@@ -375,39 +375,16 @@ def _derived_from(W: Words, w) -> list:
             hit = W.ref(d.get('source')) if _live(d) else None
             if hit:
                 out.append(hit[0])
-        for el in ref.findall('element'):
+        for el in ref.findall('element') if elements else ():
             hit = W.ref(el.get('source')) if _live(el) else None
             if hit and W.by_id[hit[0]].get('speech') == 'root':
                 out.append(hit[0])
     # a root among the elements is the word's root (Q. firya: √PHIR + -ya); the roots of
     # word elements belong to the parts of a compound and are not followed
-    for el in w.findall('element'):
+    for el in w.findall('element') if elements else ():
         if _live(el):
             out += [i for i in W.get_word(el, w.get('l')) if W.by_id[i].get('speech') == 'root']
     return list(dict.fromkeys(out))
-
-
-def _own_roots(W: Words, pid: str, memo: dict) -> list:
-    """Roots reached from a word page through Eldamo's derivations, step by step (at most 6)."""
-    if pid in memo:
-        return memo[pid]
-    roots, seen = [], {pid}
-    frontier = [pid] if pid in W.by_id else []
-    for _ in range(6):
-        nxt = []
-        for x in frontier:
-            for qid in _derived_from(W, W.by_id[x]):
-                if qid in seen:
-                    continue
-                seen.add(qid)
-                q = W.by_id[qid]
-                if q.get('speech') == 'root':
-                    roots.append({'lang': q.get('l'), 'form': q.get('v'), 'id': qid})
-                else:
-                    nxt.append(qid)
-        frontier = nxt
-    memo[pid] = roots
-    return roots
 
 
 def _element_ids(W: Words, w) -> list:
@@ -446,116 +423,132 @@ def _gap(W: Words, eid: str) -> dict:
     return {'gap': True, 'lang': w.get('l'), 'form': w.get('v'), 'id': eid}
 
 
-def _part_groups(W: Words, pid: str, memo: dict, depth: int = 3) -> list:
-    """[[root]] per element of a word, in order: a root named as an element, else the
-    element's roots (_word_groups: alternatives, má < √MAH/√MAG; a compound element adds
-    its parts). An element with no root gives a group with only a gap (_gap)."""
-    if depth == 0 or pid not in W.by_id:
+PRIMITIVE_LANGS = ('p', 'mp', 'ep')
+ROOT_DEPTH = 7          # steps through elements and derivations (S. Arthedain > Adan > Q. Atan > atta > √ATATA)
+
+
+def _branch_of(lang: str | None) -> str | None:
+    for b, d in BRANCHES.items():
+        if any(l[0] == lang for l in d['languages'] if l[0] not in PRIMITIVE_LANGS):
+            return b
+    return {'nq': 'quenya', 'ns': 'sindarin', 'norths': 'sindarin', 'van': 'quenya'}.get(lang, lang)
+
+
+def _part_groups(W: Words, pid: str, memo: dict, depth: int = ROOT_DEPTH) -> list:
+    """[[root]] per element of a word, in order: a root named as an element (named), else the
+    element's own groups (_root_groups; a compound element adds its parts). An element with
+    no root gives a group with only a gap (_gap)."""
+    if depth <= 0 or pid not in W.by_id:
         return []
     groups = []
     for eid in _element_ids(W, W.by_id[pid]):
         if W.by_id[eid].get('speech') == 'root':
             groups.append([dict(_root_rec(W, eid), named=True)])
             continue
-        sub = _word_groups(W, eid, memo, depth - 1)
+        sub = _root_groups(W, eid, memo, depth - 1)
+        sub = [[r if r.get('gap') else dict(r, via=r.get('via') or 'element', named=False) for r in g] for g in sub]
         groups.extend(sub if any(_real(g) for g in sub) else [[_gap(W, eid)]])
     return groups
 
 
-def _word_groups(W: Words, pid: str, memo: dict, depth: int = 3) -> list:
-    """[[root]] of a word taken as a part or a source of another: its own roots (one group),
-    else its elements' groups, else those of a word it derives from that is not a root
-    (S. Adan < Q. Atan, whose element atta < √ATATA)."""
-    own = _own_roots(W, pid, memo)
-    if own:
-        return [list(own)]
-    if depth <= 0 or pid not in W.by_id:
-        return [[]]
-    sub = _part_groups(W, pid, memo, depth)
-    if any(_real(g) for g in sub):
-        return sub
-    for d in _derived_from(W, W.by_id[pid]):
-        if W.by_id[d].get('speech') != 'root':
-            g = _word_groups(W, d, memo, depth - 1)
-            if any(_real(x) for x in g):
-                return g
-    return [[]]
+def _root_groups(W: Words, pid: str, memo: dict, depth: int = ROOT_DEPTH) -> list:
+    """The roots of a word as parts: [[root]], each part a list of alternatives, gaps
+    included (_gap). Records carry via: '' (named by the word's own derivation or as its
+    element), 'element' (a root of an element), 'source' (a root of a word of another
+    language it derives from: S. Adan < Q. Atan).
+
+    1. Two or more elements with roots: the roots by element (Q. palantír = √PAL + √TIR;
+       S. randir = √RAN + √N(D)ER, though its derivation names RAN alone).
+    2. Roots its derivations name (Q. lár < ᴹ√DAR); several are alternatives (S. galadh <
+       ✶galadā < √GALAD/√GAL²).
+    3. One element with roots: that element and the rest as gaps (Q. firya = √PHIR + -ya).
+    4. The roots of the words it derives from that are not roots, followed the same way: a
+       primitive word keeps its roots as the word's own (S. arthor < ✶artaurē = √RĀ/ARA +
+       √TUR), a word of another language gives them via 'source'."""
+    key = (pid, depth)
+    if key in memo:
+        return memo[key]
+    memo[key] = []                       # a cycle gives nothing
+    out = []
+    if pid in W.by_id and depth > 0:
+        w = W.by_id[pid]
+        parts = _part_groups(W, pid, memo, depth)
+        real = [g for g in parts if _real(g)]
+        derived = _derived_from(W, w, elements=False)
+        direct = [_root_rec(W, d) for d in derived if W.by_id[d].get('speech') == 'root']
+        if len(real) >= 2:
+            out = parts
+        elif direct:
+            out = [direct]
+        elif real:
+            out = parts
+        else:
+            found = []
+            for d in derived:
+                q = W.by_id[d]
+                if q.get('speech') == 'root':
+                    continue
+                g = _root_groups(W, d, memo, depth - 1)
+                if not any(_real(x) for x in g):
+                    continue
+                if q.get('l') not in PRIMITIVE_LANGS and _branch_of(q.get('l')) != _branch_of(w.get('l')):
+                    g = [[dict(r, via='source') if not r.get('gap') else r for r in x] for x in g]
+                found.append(g)
+            if found:
+                # several derivations: the one with most parts; the same shape merges alternatives
+                found.sort(key=lambda g: -len(g))
+                out = [list(x) for x in found[0]]
+                for g in found[1:]:
+                    if len(g) == len(out):
+                        for k, x in enumerate(g):
+                            out[k] += [r for r in x if all(r.get('id') != y.get('id') for y in out[k])]
+    memo[key] = out
+    return out
 
 
-def _clean(r: dict, **extra) -> dict:
-    return dict({x: v for x, v in r.items() if x not in ('named', 'gap')}, **extra)
-
-
-def _parts_to_roots(groups: list, via: str) -> tuple:
-    """Roots numbered by part, and the gaps, from groups of several parts."""
-    roots, gaps = [], []
-    for k, g in enumerate(groups):
-        for r in g:
-            if r.get('gap'):
-                gaps.append(_clean(r, part=k))
-            else:
-                roots.append(_clean(r, part=k, via='' if r.get('named') else via))
-    return roots, gaps
+def _own_roots(W: Words, pid: str, memo: dict) -> list:
+    """All the roots of a word, flat (the cognate check, tests)."""
+    return [r for g in _root_groups(W, pid, memo) for r in _real(g)]
 
 
 def _resolve_roots(entries: list, W: Words) -> None:
-    """roots: [{lang, form, id, via?, part?}] by priority:
-    1. a compound or derivative whose elements have roots (two or more elements with a
-       root): the roots of its elements, `part` numbering the element (Q. palantír: palan <
-       √PAL + tir- < √TIR; Q. hyarma: ᴹ√KHYAR + √MAH/√MAG); a root the word's derivations
-       name besides is kept as its own part;
-    2. the roots the word's derivations reach (Q. lár < ᴹ√DAR), or a root it names as an
-       element (Q. firya: √PHIR + -ya);
-    3. the roots of its elements when only one of them has roots (S. Adanel = Adan + -iel:
-       Adan < Q. Atan, element atta < √ATATA);
-    4. the roots of a word it derives from that is not a root, own or through its elements
-       or its own source (via 'source': S. Adan < Q. Atan);
-    5. the roots of its cognates, own or of their elements, when the root's consonants
-       are found in the word (Q. Perian ← S. Perian = per- + ?, √PER; not S. Gwahaedir, which
-       Eldamo links to Q. palantír as the same thing in Sindarin).
-    via: '' (own), 'element', 'source', 'cognate'. root_gaps: the elements of a word whose
-    roots are by part that have no root, in their place ({part, lang, form, id}: S. Adanel =
-    √ATATA + ✶-iel)."""
+    """roots: [{lang, form, id, via?, part?}] from _root_groups; part numbers the parts when
+    there are several (elements joined by +, alternatives of one part by /); root_gaps: the
+    parts without a root, in their place ({part, lang, form, id}: S. Adanel = √ATATA + ✶-iel).
+    When a word has none, the roots of its cognates, if their consonants are found in the
+    word (via 'cognate': Q. Perian ← S. Perian = per- + ?, √PER; not S. Gwahaedir, which
+    Eldamo links to Q. palantír as the same thing in Sindarin). Roots a <ref><deriv> names
+    by form only (origin_roots) count as named by the word's derivation."""
     memo = {}
     for e in entries:
-        own = list(_own_roots(W, e['id'], memo))
-        for r in e.pop('origin_roots', ()):
-            if all(r['id'] != x['id'] for x in own):
-                own.append(r)
-        groups = _part_groups(W, e['id'], memo) if e['id'] in W.by_id else []
-        filled = [g for g in groups if _real(g)]
+        groups = _root_groups(W, e['id'], memo) if e['id'] in W.by_id else []
+        extra = e.pop('origin_roots', ())
+        if extra:
+            if not any(_real(g) for g in groups):
+                groups = [list(extra)]
+            elif len(groups) == 1:
+                groups = [groups[0] + [r for r in extra if all(r['id'] != x.get('id') for x in groups[0])]]
         roots, gaps = [], []
-        if len(filled) >= 2 or (filled and not own):
-            if len(groups) >= 2:
-                roots, gaps = _parts_to_roots(groups, 'element')
-                covered = {r['id'] for r in roots}
-                roots += [dict(r, part=len(groups)) for r in own if r['id'] not in covered]
-            else:
-                roots = [_clean(r, via='' if r.get('named') else 'element') for r in filled[0]]
-        elif own:
-            roots = own
-        if not roots and e['id'] in W.by_id:
-            # the word derives from another word that is not a root (S. Adan < Q. Atan): its roots
-            for d in _derived_from(W, W.by_id[e['id']]):
-                if W.by_id[d].get('speech') == 'root':
-                    continue
-                g = _word_groups(W, d, memo)
-                if any(_real(x) for x in g):
-                    if len(g) >= 2:
-                        roots, gaps = _parts_to_roots(g, 'source')
-                        roots = [dict(r, via='source') for r in roots]
+        if any(_real(g) for g in groups):
+            several = len(groups) > 1
+            for k, g in enumerate(groups):
+                for r in g:
+                    rec = {x: v for x, v in r.items() if x not in ('named', 'gap', 'via', 'part')}
+                    if several:
+                        rec['part'] = k
+                    if r.get('gap'):
+                        gaps.append(rec)
                     else:
-                        roots = [_clean(r, via='source') for r in _real(g[0])]
-                    break
-        if not roots:
+                        if r.get('via') and not r.get('named'):
+                            rec['via'] = r['via']
+                        roots.append(rec)
+        else:
             from .reconstruct import root_match
             for cid in W.cognates(e['id']):
                 if cid == e['id']:
                     continue
-                c_own = _own_roots(W, cid, memo)
-                cand = c_own or [r for g in _part_groups(W, cid, memo) for r in _real(g)]
-                roots += [_clean(r, via='cognate') for r in cand
-                          if root_match(primitive_or_form(e), [r['form']])]
+                roots += [dict({x: v for x, v in r.items() if x not in ('named', 'gap', 'part')}, via='cognate')
+                          for r in _own_roots(W, cid, memo) if root_match(primitive_or_form(e), [r['form']])]
         out = []
         for r in roots:
             if all(r['id'] != x['id'] or r.get('part') != x.get('part') for x in out):

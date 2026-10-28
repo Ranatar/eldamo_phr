@@ -672,8 +672,12 @@
   "en": "via a common primitive"
  },
  "mark.elements": {
-  "ru": "сложено заново из когнатов составляющих по словообразованию языка",
-  "en": "built again from the cognates of the elements by the word formation of the language"
+  "ru": "по составляющим: собрано из форм составляющих или их когнатов",
+  "en": "by the elements: built from the forms of the elements or their cognates"
+ },
+ "mark.irregular": {
+  "ru": "нерегулярно: один закон не сработал",
+  "en": "irregular: one law did not act"
  },
  "mark.link": {
   "ru": "связь Eldamo между статьями",
@@ -690,6 +694,10 @@
  "mark.neologism": {
   "ru": "переэтимологизация — неологизм, не слово Толкина",
   "en": "re-etymologization: a neologism, not Tolkien's word"
+ },
+ "mark.partial": {
+  "ru": "частичный когнат: общий корень, но не весь состав слова",
+  "en": "a partial cognate: a shared root, not the whole make-up of the word"
  },
  "mark.phonotactics": {
   "ru": "нетипично для целевого языка",
@@ -714,6 +722,10 @@
  "mark.unchanged": {
   "ru": "форма без изменений",
   "en": "the form unchanged"
+ },
+ "mark.unconfirmed": {
+  "ru": "законы не ведут от этой формы к слову: оно образовано позже",
+  "en": "the laws do not lead from this form to the word: it was made later"
  },
  "n.attestedExamples": {
   "ru": {
@@ -1223,9 +1235,21 @@
   "ru": "когнат по связи Eldamo: {form}",
   "en": "cognate by an Eldamo link: {form}"
  },
+ "route.composed": {
+  "ru": "по составляющим {parts}",
+  "en": "by the elements {parts}"
+ },
+ "route.composedUnconfirmed": {
+  "ru": "по составляющим {parts}; законы не ведут к слову",
+  "en": "by the elements {parts}; the laws do not lead to the word"
+ },
  "route.forward": {
   "ru": "вперёд по законам",
   "en": "forward by the laws"
+ },
+ "route.irregularLaw": {
+  "ru": "не сработал закон «{rule}»",
+  "en": "the law “{rule}” did not act"
  },
  "route.link": {
   "ru": "связь Eldamo ({tag}): {form}",
@@ -1238,6 +1262,10 @@
  "route.nearSame": {
   "ru": "слово Eldamo {form} «{gloss}» с той же праформой {prim}",
   "en": "the Eldamo word {form} “{gloss}” with the same primitive {prim}"
+ },
+ "route.partialLink": {
+  "ru": "частичный когнат по связи Eldamo: {form}",
+  "en": "partial cognate by an Eldamo link: {form}"
  },
  "route.reetymology": {
   "ru": "переэтимологизация через праформу {prim}",

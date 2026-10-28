@@ -124,6 +124,34 @@ class Reconstruction(unittest.TestCase):
         # S. ereb as a bare form: -b < -kwā is rare in the derivations
         self.assertTrue(self.forms(('sindarin', 'late', 3), ('quenya', 'late', 2), form='ereb', spelled=True))
 
+    def entry(self, branch, form):
+        code = {'quenya': 'q', 'sindarin': 's'}[branch]
+        return next(e for e in self.ctx.lexicon[branch].values() if e['form'] == form and e['lang'] == code)
+
+    def test_one_law_left_out_when_nothing_else(self):
+        # S. randir keeps nd, which "[mb], [nd] became [mm], [nn]" makes nn ("usually", says Tolkien)
+        e = self.entry('sindarin', 'randir')
+        vs = R.reconstruct(self.ctx, ('sindarin', 'late', 3), ('sindarin', 'late', 0), word=e['id'])
+        irr = [v for v in vs if 'irregular' in v['marks']]
+        self.assertTrue(irr)
+        self.assertIn('868023175', [t[0] for t in irr[0]['steps'] if t[2] is None])
+
+    def test_compound_by_its_elements(self):
+        # S. Mithrandir = mith + randir: no form gives it by the laws; its make-up at the
+        # primitive stage is shown, marked as not leading to the word
+        e = self.entry('sindarin', 'Mithrandir')
+        vs = R.reconstruct(self.ctx, ('sindarin', 'late', 3), ('sindarin', 'late', 0), word=e['id'])
+        self.assertTrue(vs)
+        self.assertEqual(set(vs[0]['marks']), {'elements', 'unconfirmed'})
+        self.assertTrue(vs[0]['form'].startswith('mitʰi'))
+        # and through it, the other branch
+        self.assertTrue(self.forms(('sindarin', 'late', 3), ('quenya', 'late', 2), word=e['id']))
+
+    def test_no_compound_by_a_partial_cognate(self):
+        # S. Arthedain = arthor + Adan; Q. turmen is a partial cognate of arthor: no ✶turmenatan
+        e = self.entry('sindarin', 'Arthedain')
+        self.assertNotIn('turmenatan', self.forms(('sindarin', 'late', 3), ('quenya', 'late', 2), word=e['id']))
+
 
 if __name__ == '__main__':
     unittest.main()

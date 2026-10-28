@@ -1960,18 +1960,24 @@ function counterparts(engines, wid, branch, code) {
 function byElements(engines, add, entry, era, db, ds) {
   const els = entry.elements || [];
   const D = engines[db];
-  const code = codeOf(D, era, ds);
-  if (els.length < 2 || code == null || ds !== lastStageOf(D, era) || !els.every(Boolean)) return;
+  const last = lastStageOf(D, era);
+  const code = codeOf(D, era, last);
+  if (els.length < 2 || code == null || !els.every(Boolean)) return;
   const ids = [];
   for (const x of els) {
     const c = counterparts(engines, x, db, code);
     if (!c.length) return;
     ids.push(c[0]);
   }
-  const vs = predict(D, ids, era, ds);
+  const vs = predict(D, ids, era, last);
   const top = Math.max(...vs.map(v => v.score), 0) || 1;
   const names = ids.map(i => D.lexicon.get(i).form).join(' + ');
-  for (const v of vs.slice(0, 4)) add(v.form, ELEMENTS_SCORE * v.score / top, [['byElements', { names }]], ['elements'], []);
+  if (ds === last) {
+    for (const v of vs.slice(0, 4)) add(v.form, ELEMENTS_SCORE * v.score / top, [['byElements', { names }]], ['elements'], []);
+    return;
+  }
+  // an earlier stage: back from the word so built, so that the stages agree with it
+  for (const v of vs.slice(0, 2)) within(engines, add, db, era, v.form, last, ds, NO_HINTS, ELEMENTS_SCORE * v.score / top, [['byElements', { names }]], ['elements']);
 }
 function sideways(engines, add, src, dst, form, entry, hints, useLinks = true) {
   const [sb, era, ss] = src, [db, , ds] = dst;

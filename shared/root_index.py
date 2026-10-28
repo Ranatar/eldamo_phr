@@ -126,6 +126,8 @@ def build(lexicons: dict) -> dict:
     out = {}
     for rid, e in sorted(roots.items(), key=lambda kv: (kv[1]['form'], kv[1]['lang'], kv[0])):
         rec = {'f': e['form'], 'l': e['lang'], 'g': e.get('gloss') or ''}
+        if e.get('alt_lang'):
+            rec['al'] = e['alt_lang']          # Eldamo's index prints it in brackets: N√ [√] LUP
         if e.get('mark'):
             rec['m'] = e['mark']
         w = warnings(e, roots)

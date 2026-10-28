@@ -218,6 +218,24 @@ class Browser(unittest.TestCase):
         for x in ('randir', 'dîr', 'RAN', 'N(D)ER', 'MITH'):
             self.assertIn(x, tree)
 
+    def test_shortcut_and_alt_lang(self):
+        # Q. alda < √GAL² directly, and < ✶galadā < √GAL²: both ways, the direct one marked
+        page = self.page(self.atlas + '#w=539805327')
+        page.click('#word-card details.origin summary')
+        tree = page.inner_text('#word-card details.origin')
+        self.assertIn('galadā', tree)
+        self.assertIn('(напрямую)', tree)
+
+    def test_graph_page(self):
+        # the graph of origins works offline (d3 embedded): S. Mithrandir with its tree down to the roots
+        graph = (ROOT / 'app' / 'graph.html').as_uri()
+        page = self.page(graph + '#n-2655041701')
+        page.wait_for_function("document.querySelectorAll('#graph g.node').length >= 8")
+        self.assertIn('Mithrandir', page.inner_text('#card'))
+        self.assertIn('index.html#w=2655041701', page.inner_html('#card'))
+        page.click('#mode-roots')
+        page.wait_for_function("document.querySelectorAll('g.ov-leaf').length > 1000")
+
     def test_word_is_first_element(self):
         page = self.page(self.atlas + '#w=4273482913&tab=compose')
         self.assertIn('Ambar', page.inner_text('#wf-chosen1'))

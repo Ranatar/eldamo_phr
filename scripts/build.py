@@ -16,7 +16,7 @@ browser tests run beside the others.
 Only the Python standard library is required to build. Writes:
   branches/<branch>/data/*.json, branches/<branch>/catalog.md,
   exports/canonical.json, exports/atlas.graphml,
-  app/index.html, app/corpus.html, reports/audit.md, reports/audit.json,
+  app/index.html, app/corpus.html, app/graph.html, reports/audit.md, reports/audit.json,
   reports/sequencer.md, reports/sequencer.json, reports/reconstruction.md, reports/reconstruction.json
 """
 import argparse
@@ -33,6 +33,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from shared.app import write_app  # noqa: E402
+from shared.graph_page import write_graph  # noqa: E402
 from shared.catalog import write_catalog  # noqa: E402
 from shared.exports import write_exports  # noqa: E402
 from shared.io import write_text  # noqa: E402
@@ -50,7 +51,7 @@ def step(name, fn, *args):
 
 INPUTS = ROOT / 'reports' / 'inputs.json'
 # the pages and exports (always rebuilt) and the test vectors do not change the data or reports
-PAGE_CODE = {'app.py', 'exports.py', 'parity.py'}
+PAGE_CODE = {'app.py', 'exports.py', 'parity.py', 'graph_page.py'}
 
 
 def fingerprint() -> str:
@@ -129,6 +130,7 @@ def main(argv=None):
         branches = step('read branch data', load_all)
         step('exports and corpus browser', write_exports, branches)
         step('atlas app/index.html', write_app, branches)
+        step('graph app/graph.html', write_graph, branches)
         return 0 if args.no_tests else run_tests(args.no_browser)
 
     branches = step('model, graph and chains', build_all)
@@ -140,6 +142,7 @@ def main(argv=None):
         step(f'write {name} data and catalog', lambda n=name, d=data: (write_branch(n, d), write_catalog(n, d)))
     step('exports and corpus browser', write_exports, branches)
     step('atlas app/index.html', write_app, branches)
+    step('graph app/graph.html', write_graph, branches)
     step('report', write_report, branches)
     step('sequencer backtest', write_sequencer_report, branches)
     step('reconstruction check', write_reconstruction_report, branches)

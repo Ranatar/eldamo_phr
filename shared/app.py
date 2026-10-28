@@ -76,7 +76,7 @@ def payload(branches: dict) -> dict:
 
 
 LEXICON_FIELDS = ('id', 'lang', 'form', 'gloss', 'speech', 'mark', 'neo', 'stems', 'starts', 'stages', 'written_origins',
-                  'proto_forms', 'unruled', 'verb_class', 'written')
+                  'proto_forms', 'unruled', 'verb_class', 'written', 'alt_lang')
 
 
 def _key(parts) -> str:
@@ -113,8 +113,9 @@ def wordform_payload(name: str, data: dict) -> dict:
             x['roots'] = [r['form'] for r in e['roots']]
             # for the card and the panorama: language, page, how it was found (own / element / cognate)
             # and, in a compound, the number of its element
-            # and the path from the word to the root, for the tree of its origin: [[step, page], ...]
-            x['root_refs'] = [[r['lang'], r['id'], r.get('via', ''), r.get('part'), r.get('path', [])] for r in e['roots']]
+            # and the paths from the word to the root, for the tree of its origin: [[[step, page], ...], ...]
+            x['root_refs'] = [[r['lang'], r['id'], r.get('via', ''), r.get('part'), [r.get('path', [])] + r.get('more', [])]
+                              for r in e['roots']]
         if e.get('root_gaps'):
             # elements without a root, in their place among the parts: [part, language, page, form]
             x['root_gaps'] = [[g['part'], g['lang'], g['id'], g['form'], g.get('path', [])] for g in e['root_gaps']]

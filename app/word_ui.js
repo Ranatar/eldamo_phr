@@ -193,7 +193,7 @@ function searchWords(q, filter, limit = 12) {
 function hitHtml({ branch, entry: e }, attrs) {
   const E = engine(branch);
   const kind = WF.affixKind(e);
-  return `<button type="button" ${attrs}><span class="marker">${esc(marker(E, e.lang))}</span> <span class="form">${esc(e.form)}</span>`
+  return `<button type="button" ${attrs}><span class="marker">${esc(marker(E, e.lang))}</span>${e.alt_lang ? `<span class="marker muted">[${esc(marker(E, e.alt_lang))}]</span>` : ''} <span class="form">${esc(e.form)}</span>`
     + `${e.neo ? ` <span class="tag">${T('tag.neologism')}</span>` : ''}${kind ? ` <span class="tag">${T('tag.' + kind)}</span>` : ''}`
     + ` <span class="muted">${esc(e.gloss)}</span></button>`;
 }
@@ -297,10 +297,13 @@ function cardHtml(s) {
     if (!words.length) return '';
     return `${esc(LINK_NAMES[tag] || tag)}: ${words.map(w => `<a href="#" data-word="${esc(w.entry.id)}" data-branch="${esc(w.branch)}"><span class="marker">${esc(marker(engine(w.branch), w.entry.lang))}</span> <span class="form">${esc(w.entry.form)}</span></a>`).join(', ')}`;
   }).filter(Boolean);
-  return `<div class="word-head"><span class="marker" title="${esc(lang ? lang.name : e.lang)}">${esc(marker(E, e.lang))}</span>
+  // the language Eldamo prints in brackets after the word's own (ᴺQ. [ᴱQ.] ulumpë): where the word comes from
+  const alt = e.alt_lang ? ` <span class="marker muted" title="${esc(T('card.altLang'))}">[${esc(marker(E, e.alt_lang))}]</span>` : '';
+  return `<div class="word-head"><span class="marker" title="${esc(lang ? lang.name : e.lang)}">${esc(marker(E, e.lang))}</span>${alt}
       <strong class="form big">${esc(e.form)}</strong> <span class="gloss">${esc(e.gloss)}</span>
       ${e.neo ? `<span class="tag">${T('tag.neologism')}</span>` : ''}
-      <a href="${SITE}words/word-${esc(e.id)}.html" target="_blank" rel="noopener" class="small">${T('common.eldamoPageLower')} ↗</a></div>
+      <a href="${SITE}words/word-${esc(e.id)}.html" target="_blank" rel="noopener" class="small">${T('common.eldamoPageLower')} ↗</a>
+      <a href="graph.html#n-${esc(e.id)}" class="small" title="${esc(T('card.graphTitle'))}">${T('card.graph')}</a></div>
     <div class="small">${esc(BRANCH_NAMES[b])}, ${esc(T('soundRules.era', { era: ERA_NAMES[era] }))}${lang ? ', ' + esc(lang.name) : ''}${bits.length ? ' · ' + bits.join('; ') : ''}</div>
     ${links.length ? `<div class="small">${links.join(' · ')}</div>` : ''}
     ${(e.unruled || []).length ? `<div class="small unruled">${T(e.unruled.length > 1 ? 'card.unruledMany' : 'card.unruledOne')} ${
@@ -329,17 +332,26 @@ function writtenHtml(parentId, childId) {
 function originTree(s, list) {
   const top = { kids: new Map() };
   for (const r of list) {
-    let node = top;
-    r.path.forEach(([rel, id], k) => {
-      const key = rel + ':' + id;
-      if (!node.kids.has(key)) node.kids.set(key, { rel, id, kids: new Map(), gap: false, form: null });
-      node = node.kids.get(key);
-      if (k === r.path.length - 1 && r.gap) { node.gap = true; node.form = r.form; }
-    });
+    for (const path of r.paths) {
+      // a root named directly beside a longer way to it from the same place (through a primitive
+      // form) is a shortcut of that way: Q. alda < √GAL², and < ✶galadā < √GAL²
+      const shortcut = r.paths.some(q => q.length > path.length && path.slice(0, -1).every((st, k) => st[0] === q[k][0] && st[1] === q[k][1]));
+      let node = top;
+      path.forEach(([rel, id], k) => {
+        const key = rel + ':' + id;
+        if (!node.kids.has(key)) node.kids.set(key, { rel, id, kids: new Map(), gap: false, form: null, shortcut: false });
+        node = node.kids.get(key);
+        if (k === path.length - 1) {
+          if (r.gap) { node.gap = true; node.form = r.form; }
+          if (shortcut) node.shortcut = true;
+        }
+      });
+    }
   }
   if (![...top.kids.values()].some(n => n.kids.size)) return '';       // the roots are named by the word itself
   const render = (node, parent) => `<ul class="origin-tree">${[...node.kids.values()].map(n =>
     `<li><span class="muted small">${esc(T('tree.rel.' + n.rel))}</span> ${nodeHtml(n.id, n.form)}${n.gap ? ` <span class="small muted">${T('tree.noRoot')}</span>` : ''}`
+    + `${n.shortcut ? ` <span class="small muted" title="${esc(T('tree.shortcutTitle'))}">${T('tree.shortcut')}</span>` : ''}`
     + `${n.rel === 'd' ? writtenHtml(parent, n.id) : ''}${n.kids.size ? render(n, n.id) : ''}</li>`).join('')}</ul>`;
   return `<details class="origin"><summary>${T('tree.title')}</summary>${render(top, s.id)}</details>`;
 }
@@ -417,9 +429,11 @@ function rootCardHtml(s) {
   const warn = (r.w || []).map(w => `<span class="tag warn" title="${esc(T('root.warn.' + w + '.title'))}">⚠ ${esc(T('root.warn.' + w))}</span>`).join(' ');
   const status = r.listed && !(r.w || []).length ? `<span class="tag ok" title="${esc(T('rootCard.recommendedTitle'))}">${T('rootCard.recommended')}</span>` : '';
   const free = r.listed && !(r.w || []).length && !r.words ? `<p class="small">${T('rootCard.free')}</p>` : '';
-  return `<div class="word-head"><span class="marker">${esc(ROOT_MARKERS[r.l] || '√')}</span> <strong class="form big">${esc(r.f)}</strong>
+  const alt = r.al ? ` <span class="marker muted" title="${esc(T('card.altLang'))}">[${esc(ROOT_MARKERS[r.al] || r.al)}]</span>` : '';
+  return `<div class="word-head"><span class="marker">${esc(ROOT_MARKERS[r.l] || '√')}</span>${alt} <strong class="form big">${esc(r.f)}</strong>
       <span class="gloss">${esc(r.g)}</span> ${status} ${warn}
-      <a href="${SITE}words/word-${esc(id)}.html" target="_blank" rel="noopener" class="small">${T('common.eldamoPageLower')} ↗</a></div>
+      <a href="${SITE}words/word-${esc(id)}.html" target="_blank" rel="noopener" class="small">${T('common.eldamoPageLower')} ↗</a>
+      <a href="graph.html#n-${esc(id)}" class="small" title="${esc(T('card.graphTitle'))}">${T('card.graph')}</a></div>
     <div class="small">${esc(T('rootCard.kind', { lang: T('rootCard.lang.' + r.l) }))}${r.m && r.m !== '#' ? ' · ' + esc(T('card.mark', { mark: r.m })) : ''}</div>
     ${bits.length ? `<ul class="small root-rels">${bits.join('')}</ul>` : ''}${free}
     <h2>${T('rootCard.words')}</h2>${rootWordsHtml(r)}`;
@@ -459,9 +473,9 @@ function linkedIds(id) {
 // the roots of an entry as records for rootsHtml
 function entryRoots(b, e) {
   const E = engine(b);
-  const out = (e.root_refs || []).map(([lang, id, via, part, path], i) => ({ id, form: e.roots[i], marker: rootMarker(E, lang), via: via || '', part, path: path || [] }));
+  const out = (e.root_refs || []).map(([lang, id, via, part, paths], i) => ({ id, form: e.roots[i], marker: rootMarker(E, lang), via: via || '', part, paths: paths || [] }));
   // an element without a root, in its place (S. Adanel = √ATATA + ✶-iel)
-  for (const [part, lang, id, form, path] of e.root_gaps || []) out.push({ id, form, marker: (language(E, lang) || {}).marker || '', part, gap: true, path: path || [] });
+  for (const [part, lang, id, form, path] of e.root_gaps || []) out.push({ id, form, marker: (language(E, lang) || {}).marker || '', part, gap: true, paths: [path || []] });
   return out.sort((x, y) => (x.part ?? -1) - (y.part ?? -1));
 }
 // roots by era: the word's own for its era; for another era those of the first word Eldamo links to it

@@ -53,7 +53,7 @@ class Outputs(unittest.TestCase):
     def test_text_outputs_are_utf8_lf(self):
         for path in [*ROOT.glob('branches/*/data/*.json'), *ROOT.glob('branches/*/catalog.md'),
                      ROOT / 'reports' / 'audit.md', ROOT / 'reports' / 'audit.json', ROOT / 'app' / 'index.html',
-                     ROOT / 'app' / 'corpus.html', ROOT / 'exports' / 'canonical.json', ROOT / 'exports' / 'atlas.graphml']:
+                     ROOT / 'app' / 'corpus.html', ROOT / 'app' / 'graph.html', ROOT / 'exports' / 'canonical.json', ROOT / 'exports' / 'atlas.graphml']:
             raw = path.read_bytes()
             raw.decode('utf-8')
             self.assertNotIn(b'\r\n', raw, path)

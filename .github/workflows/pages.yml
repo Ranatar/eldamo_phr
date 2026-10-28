@@ -52,7 +52,7 @@ jobs:
             git checkout -q --orphan gh-pages
             git rm -q -r --ignore-unmatch .
           fi
-          cp "$GITHUB_WORKSPACE"/app/index.html "$GITHUB_WORKSPACE"/app/corpus.html .
+          cp "$GITHUB_WORKSPACE"/app/index.html "$GITHUB_WORKSPACE"/app/corpus.html "$GITHUB_WORKSPACE"/app/graph.html .
           mkdir -p exports
           cp "$GITHUB_WORKSPACE"/exports/canonical.json "$GITHUB_WORKSPACE"/exports/atlas.graphml "$GITHUB_WORKSPACE"/exports/README.md exports/
           cp "$GITHUB_WORKSPACE"/DATA_LICENSE.md .

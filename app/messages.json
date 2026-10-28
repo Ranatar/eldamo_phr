@@ -23,6 +23,10 @@
   "ru": "синдарин",
   "en": "Sindarin"
  },
+ "card.altLang": {
+  "ru": "Язык, который Eldamo печатает в скобках: отсюда слово взято (статья, слитая с ним, или вложенная)",
+  "en": "The language Eldamo prints in brackets: where the word comes from (a page merged into it, or nested in it)"
+ },
  "card.derivations": {
   "ru": "Деривации Eldamo этого слова в справочнике",
   "en": "Eldamo's derivations of this word in the reference"
@@ -34,6 +38,14 @@
  "card.forms": {
   "ru": "формы:",
   "en": "forms:"
+ },
+ "card.graph": {
+  "ru": "граф",
+  "en": "graph"
+ },
+ "card.graphTitle": {
+  "ru": "Граф происхождения: слово, его корни и производные (graph.html)",
+  "en": "The graph of origins: the word, its roots and derivatives (graph.html)"
  },
  "card.mark": {
   "ru": "пометка Eldamo «{mark}»",
@@ -528,8 +540,8 @@
   "en": "middle"
  },
  "footer": {
-  "ru": "Quettamin (квенья «кузница слова») — по данным <a href=\"https://eldamo.org\" target=\"_blank\" rel=\"noopener\">Eldamo</a> @@ELDAMO_VERSION@@ © Paul Strack, лицензия <a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY 4.0</a>; данные преобразованы (извлечение правил, граф, цепочки, проверка формул, модели реконструкции и словотворчества). Полный корпус: <a href=\"corpus.html\">corpus.html</a>.",
-  "en": "Quettamin (Quenya “word forge”) — from the data of <a href=\"https://eldamo.org\" target=\"_blank\" rel=\"noopener\">Eldamo</a> @@ELDAMO_VERSION@@ © Paul Strack, license <a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY 4.0</a>; the data are transformed (rule extraction, graph, chains, formula checks, models of reconstruction and word-building). The full corpus: <a href=\"corpus.html\">corpus.html</a>."
+  "ru": "Quettamin (квенья «кузница слова») — по данным <a href=\"https://eldamo.org\" target=\"_blank\" rel=\"noopener\">Eldamo</a> @@ELDAMO_VERSION@@ © Paul Strack, лицензия <a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY 4.0</a>; данные преобразованы (извлечение правил, граф, цепочки, проверка формул, модели реконструкции и словотворчества). Полный корпус: <a href=\"corpus.html\">corpus.html</a>; граф происхождения: <a href=\"graph.html\">graph.html</a> (на основе графа neo-roots, d3 — ISC).",
+  "en": "Quettamin (Quenya “word forge”) — from the data of <a href=\"https://eldamo.org\" target=\"_blank\" rel=\"noopener\">Eldamo</a> @@ELDAMO_VERSION@@ © Paul Strack, license <a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY 4.0</a>; the data are transformed (rule extraction, graph, chains, formula checks, models of reconstruction and word-building). The full corpus: <a href=\"corpus.html\">corpus.html</a>; the graph of origins: <a href=\"graph.html\">graph.html</a> (after the graph of neo-roots, d3 — ISC)."
  },
  "grade.A": {
   "ru": "засвидетельствована в одной деривации",
@@ -1797,6 +1809,14 @@
  "tree.rel.x": {
   "ru": "заменённое им слово",
   "en": "the word it replaced"
+ },
+ "tree.shortcut": {
+  "ru": "(напрямую)",
+  "en": "(direct)"
+ },
+ "tree.shortcutTitle": {
+  "ru": "Корень назван напрямую; тот же корень — и через промежуточную форму",
+  "en": "The root is named directly; the same root is also reached through an intermediate form"
  },
  "tree.title": {
   "ru": "Происхождение: от слова к корням",

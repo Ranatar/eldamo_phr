@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="page.title">Quettamin — граф происхождения</title>
+<style>html{color-scheme:light}body{margin:0;font:14px system-ui,sans-serif}[hidden]{display:none!important}</style>
+<style>
+/* Layout: one-screen tool — a sidebar (search, card, legend) beside the graph; roots at the left, words to the right. */
+:root {
+  --bg: #eef1f4;
+  --panel: #fbfcfd;
+  --ink: #18212c;
+  --muted: #5a6676;
+  --line: #d3d9e1;
+  --accent: #2c5a86;
+  --focus: #18212c;
+
+  --n-root: #a8780a;
+  --n-root-soft: #a8780a66;
+  --n-nq: #13738a;
+  --n-ns: #3a8343;
+  --n-np: #6a55b0;
+  --n-form: #8893a2;
+
+  --e-deriv: #3b679c;
+  --e-element: #b9503f;
+  --e-combine: #74852f;
+  --e-see: #8893a2;
+  --e-deprecated: #b98320;
+  --e-cognate: #a8458a;
+  --e-merged: #a8780a;
+  --e-filed: #a8780a;
+  --e-rootderiv: #a8780a;
+
+  --warn: #a5541d;
+  --ok: #2f7a45;
+
+  --f-form: "Noto Serif", "DejaVu Serif", Georgia, serif;
+  --f-ui: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", Consolas, "DejaVu Sans Mono", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161d; --panel: #171e27; --ink: #e3e8ef; --muted: #96a2b2; --line: #2a3441; --accent: #8db8e4; --focus: #f1f4f8;
+    --n-root: #e2b34a; --n-root-soft: #e2b34a66; --n-nq: #49b6cc; --n-ns: #6dc07a; --n-np: #a593ea; --n-form: #7f8b9b;
+    --e-deriv: #7ba7dc; --e-element: #e88371; --e-combine: #aabd5c; --e-see: #7f8b9b; --e-deprecated: #e2ad4c;
+    --e-cognate: #dc7fc0; --e-merged: #e2b34a; --e-filed: #e2b34a; --e-rootderiv: #e2b34a;
+    --warn: #ea9157; --ok: #6dc07a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161d; --panel: #171e27; --ink: #e3e8ef; --muted: #96a2b2; --line: #2a3441; --accent: #8db8e4; --focus: #f1f4f8;
+  --n-root: #e2b34a; --n-root-soft: #e2b34a66; --n-nq: #49b6cc; --n-ns: #6dc07a; --n-np: #a593ea; --n-form: #7f8b9b;
+  --e-deriv: #7ba7dc; --e-element: #e88371; --e-combine: #aabd5c; --e-see: #7f8b9b; --e-deprecated: #e2ad4c;
+  --e-cognate: #dc7fc0; --e-merged: #e2b34a; --e-filed: #e2b34a; --e-rootderiv: #e2b34a;
+  --warn: #ea9157; --ok: #6dc07a;
+  color-scheme: dark;
+}
+
+html, body { height: 100%; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--f-ui); font-size: 14px; line-height: 1.45;
+  overflow: hidden;
+}
+.app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(300px, 360px) 1fr;
+}
+.side {
+  min-width: 0;
+  display: flex; flex-direction: column; gap: 14px;
+  padding-block: 16px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: 16px;
+  background: var(--panel);
+  border-right: 1px solid var(--line);
+  overflow-y: auto;
+}
+.brand { display: flex; flex-direction: column; gap: 2px; }
+.brand-row { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.btn.lang { flex: none; font-size: 12px; padding: 3px 8px; }
+.brand h1 { margin: 0; font-family: var(--f-form); font-weight: 600; font-size: 20px; letter-spacing: .01em; text-wrap: balance; }
+.brand .stat { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+
+.search { display: flex; flex-direction: column; gap: 6px; position: relative; }
+.search-row { display: flex; gap: 6px; }
+input[type="search"], select {
+  font: inherit; color: var(--ink); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 6px; padding: 7px 9px; min-width: 0;
+}
+input[type="search"] { flex: 1; }
+input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 1px;
+}
+.results {
+  display: flex; flex-direction: column;
+  border: 1px solid var(--line); border-radius: 6px; background: var(--panel);
+  max-height: 46vh; overflow-y: auto;
+}
+.results button {
+  all: unset; cursor: pointer; display: block; padding: 6px 9px;
+  border-bottom: 1px solid var(--line);
+}
+.results button:last-child { border-bottom: 0; }
+.results button:hover, .results button:focus-visible { background: var(--bg); }
+.results .none { padding: 8px 9px; color: var(--muted); }
+
+.mk { color: var(--muted); font-family: var(--f-form); font-size: .92em; }
+.fm { font-family: var(--f-form); font-style: italic; font-weight: 500; }
+.root-fm { font-style: normal; font-weight: 600; }
+.gl { color: var(--muted); }
+
+.card { display: flex; flex-direction: column; gap: 10px; }
+.card-head { display: flex; flex-direction: column; gap: 2px; }
+.card-head .big { font-family: var(--f-form); font-size: 24px; line-height: 1.2; overflow-wrap: anywhere; }
+.card .meta { color: var(--muted); font-size: 12.5px; }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.tag { font-size: 11.5px; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.tag.ok { color: var(--ok); border-color: currentColor; }
+.tag.warn { color: var(--warn); border-color: currentColor; }
+.actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.btn {
+  font: inherit; font-size: 12.5px; cursor: pointer;
+  color: var(--ink); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 6px; padding: 5px 9px;
+}
+.btn:hover { border-color: var(--accent); }
+.btn.primary { background: var(--accent); color: var(--panel); border-color: var(--accent); }
+a.ext { color: var(--accent); font-size: 12.5px; }
+.sec h3 {
+  margin: 0 0 4px; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+}
+.links { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 3px; }
+.links li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 6px; }
+.links .rel { font-size: 11.5px; padding: 0 6px; border-radius: 4px; border: 1px solid currentColor; }
+.links button { all: unset; cursor: pointer; }
+.links button:hover .fm, .links button:focus-visible .fm { text-decoration: underline; }
+.written { flex-basis: 100%; padding-left: 12px; font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); overflow-wrap: anywhere; }
+.more { color: var(--muted); font-size: 12px; }
+
+.legend { display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--line); padding-top: 12px; }
+.legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 10px; }
+.legend label { display: flex; align-items: center; gap: 6px; font-size: 12.5px; cursor: pointer; }
+.legend svg { flex: none; overflow: visible; }
+.hint { color: var(--muted); font-size: 12px; }
+
+.stage { position: relative; min-width: 0; min-height: 0; }
+#graph { width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
+#graph:active { cursor: grabbing; }
+.stage-bar {
+  position: absolute; top: 12px; left: 12px; right: max(12px, env(safe-area-inset-right, 0px));
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 8px;
+  pointer-events: none;
+}
+.stage-bar > * { pointer-events: auto; }
+.stage-tools { display: flex; gap: 6px; }
+.seg { display: flex; }
+.seg .btn { border-radius: 0; }
+.seg .btn:first-child { border-radius: 6px 0 0 6px; }
+.seg .btn:last-child { border-radius: 0 6px 6px 0; border-left: 0; }
+.seg .btn[aria-pressed="true"] { background: var(--accent); color: var(--panel); border-color: var(--accent); }
+.stage-left { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; min-width: 0; }
+.ov-tools {
+  width: 250px; max-width: 100%;
+  display: flex; flex-direction: column; gap: 5px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px;
+  font-size: 12.5px;
+}
+.ov-tools label { display: flex; gap: 6px; align-items: center; cursor: pointer; }
+.ov-head { font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 2px; }
+.ov-cat > circle { fill: none; stroke: var(--line); stroke-dasharray: 3 3; }
+.ov-cat > text { fill: var(--muted); font-family: var(--f-ui); font-weight: 600; text-anchor: middle; }
+.ov-hint { margin: 2px 0 0; color: var(--muted); font-size: 11.5px; }
+.ov-group circle { fill: var(--line); fill-opacity: .25; stroke: var(--line); }
+.ov-group text { fill: var(--muted); font-family: var(--f-form); font-weight: 600; opacity: .55; }
+.ov-leaf { cursor: pointer; }
+.ov-leaf text { font-family: var(--f-form); font-weight: 600; fill: var(--ink); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.ov-leaf.sel circle { stroke: var(--focus); stroke-width: 2.2; }
+.stage-note {
+  position: absolute; left: 12px; bottom: max(10px, env(safe-area-inset-bottom, 0px));
+  color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px;
+}
+
+.node text { font-family: var(--f-form); font-size: 12.5px; fill: var(--ink); paint-order: stroke; stroke: var(--bg); stroke-width: 3px; stroke-linejoin: round; }
+.node text .lm { fill: var(--muted); font-size: 11px; }
+.node text .more { fill: var(--accent); font-family: var(--f-ui); font-size: 10.5px; }
+.node { cursor: pointer; }
+.node.sel .ring { stroke: var(--focus); }
+.edge { fill: none; stroke-width: 1.5; }
+.edge.nm { opacity: .45; }
+.edge.sc { stroke-dasharray: 2 4; stroke-width: 1.1; opacity: .7; }
+.legend .sc-toggle { align-items: flex-start; margin-top: 8px; color: var(--muted); }
+.legend .sc-toggle input { margin-top: 3px; }
+
+@media (max-width: 760px) {
+  html, body { height: auto; }
+  body { overflow: auto; }
+  .app {
+    display: flex; flex-direction: column; gap: 14px; height: auto;
+    padding-block: 16px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    background: var(--panel);
+  }
+  .side { display: contents; }
+  .brand { order: 1; }
+  .search { order: 2; }
+  .stage { order: 3; height: 70svh; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); overflow: hidden; }
+  .card { order: 4; }
+  .ov-hint { display: none; }
+  .legend { order: 5; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand">
+      <div class="brand-row">
+        <h1 data-i18n="page.h1">Корни нео-эльдарина</h1>
+        <button class="btn lang" id="lang-toggle" type="button" data-i18n="lang.switch" data-i18n-attr="title:lang.title">English</button>
+      </div>
+      <div class="stat" id="stat"></div>
+    </div>
+
+    <div class="search">
+      <div class="search-row">
+        <input type="search" id="q" placeholder="Слово, корень или значение" autocomplete="off" spellcheck="false" aria-label="Поиск" data-i18n-attr="placeholder:search.placeholder;aria-label:search.label">
+        <select id="scope" aria-label="Где искать" data-i18n-attr="aria-label:scope.label">
+          <option value="" data-i18n="scope.all">всё</option>
+          <option value="nq" data-i18n="group.nq">квенья</option>
+          <option value="ns" data-i18n="group.ns">синдарин</option>
+          <option value="np" data-i18n="group.np">праэльфийский</option>
+          <option value="root" data-i18n="scope.roots">корни</option>
+        </select>
+      </div>
+      <div class="results" id="results" hidden></div>
+    </div>
+
+    <section class="card" id="card" aria-live="polite"></section>
+
+    <section class="legend">
+      <div class="sec">
+        <h3 data-i18n="legend.nodes">Узлы</h3>
+        <div class="legend-grid" id="legend-nodes"></div>
+      </div>
+      <div class="sec">
+        <h3 data-i18n="legend.edges">Связи (от источника к производному)</h3>
+        <div class="legend-grid" id="legend-edges"></div>
+        <label class="sc-toggle"><input type="checkbox" id="shortcuts"> <span data-i18n="legend.shortcuts">показывать прямые связи корня со словом, если тот же корень ведёт к слову и через промежуточную форму</span></label>
+      </div>
+      <p class="hint" data-i18n="legend.hint">Щелчок — карточка узла, двойной щелчок — развернуть соседей. Число «+N» у подписи — сколько связей узла ещё не показано. Колёсико и перетаскивание фона — масштаб и сдвиг.</p>
+    </section>
+  </aside>
+
+  <main class="stage">
+    <svg id="graph" role="img" aria-label="Граф происхождения слов и корней" data-i18n-attr="aria-label:page.graphLabel"></svg>
+    <div class="stage-bar">
+      <div class="stage-left">
+      <div class="seg" role="group" data-i18n-attr="aria-label:mode.label" aria-label="Вид">
+        <button class="btn" id="mode-graph" type="button" data-i18n="mode.graph" aria-pressed="true">Граф</button>
+        <button class="btn" id="mode-roots" type="button" data-i18n="mode.roots" aria-pressed="false">Все корни</button>
+      </div>
+      <div class="ov-tools" id="ov-tools" hidden>
+        <div class="ov-head" data-i18n="ov.show">Показать</div>
+        <label><input type="checkbox" id="ov-roots" checked> <span data-i18n="ov.show.roots">корни</span></label>
+        <label><input type="checkbox" id="ov-proto"> <span data-i18n="ov.show.proto">праформы без корня</span></label>
+        <label><input type="checkbox" id="ov-words"> <span data-i18n="ov.show.words">прочие слова без корня</span></label>
+        <div class="ov-head" data-i18n="ov.rootFilters">Корни</div>
+        <select id="ov-period" data-i18n-attr="aria-label:ov.period" aria-label="Концепция">
+          <option value="" data-i18n="ov.period.all">все концепции</option>
+          <option value="p" data-i18n="ov.period.p">поздние √</option>
+          <option value="mp" data-i18n="ov.period.mp">«Этимологии» ᴹ√</option>
+          <option value="ep" data-i18n="ov.period.ep">ранние ᴱ√</option>
+          <option value="np" data-i18n="ov.period.np">нео-корни ᴺ√</option>
+        </select>
+        <label><input type="checkbox" id="ov-rec"> <span data-i18n="ov.recommended">только рекомендованные</span></label>
+        <label><input type="checkbox" id="ov-free"> <span data-i18n="ov.free">только без производных</span></label>
+        <p class="ov-hint" data-i18n="ov.hint"></p>
+      </div>
+      </div>
+      <div class="stage-tools">
+        <button class="btn" id="fit" type="button" data-i18n="tools.fit">Вписать</button>
+        <button class="btn" id="relayout" type="button" data-i18n="tools.relayout">Перестроить</button>
+      </div>
+    </div>
+    <div class="stage-note" id="note"></div>
+  </main>
+</div>
+
+<script type="application/json" id="graph-data">/*GRAPH*/</script>
+<script type="application/json" id="messages-data">/*MESSAGES*/</script>
+<script>
+/*D3*/
+</script>
+<script>
+(function () {
+'use strict';
+const G = JSON.parse(document.getElementById('graph-data').textContent);
+const N = G.nodes.length;
+const SITE = 'https://eldamo.org/content/words/word-';
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// ---------------------------------------------------------------- interface language
+// The catalog (graph_messages.json, embedded by make_graph.py) maps a key to {ru, en};
+// placeholders are {name}. Eldamo's data (forms, glosses) are not translated. The choice
+// is kept in the browser; without one, the browser's language decides. A switch redraws
+// the page in place, so the open graph stays.
+const MESSAGES = JSON.parse(document.getElementById('messages-data').textContent);
+const LANG_KEY = 'quettamin-lang';
+let uiLang = (() => {
+  try { const v = localStorage.getItem(LANG_KEY); if (v === 'ru' || v === 'en') return v; } catch (e) { /* storage unavailable */ }
+  const nav = (navigator.languages && navigator.languages[0]) || navigator.language || 'ru';
+  return /^(ru|uk|be|kk)\b/i.test(nav) ? 'ru' : 'en';
+})();
+function t(key, params) {
+  const e = MESSAGES[key];
+  if (!e) { console.warn('i18n: no message', key); return key; }
+  const text = e[uiLang] != null ? e[uiLang] : e.ru;
+  return params ? text.replace(/\{(\w+)\}/g, (m, k) => (params[k] != null ? String(params[k]) : m)) : text;
+}
+const has = key => Object.prototype.hasOwnProperty.call(MESSAGES, key);
+function translateStatic() {
+  document.documentElement.lang = uiLang;
+  for (const el of document.querySelectorAll('[data-i18n]')) el.textContent = t(el.dataset.i18n);
+  for (const el of document.querySelectorAll('[data-i18n-attr]')) {
+    for (const pair of el.dataset.i18nAttr.split(';')) {
+      const [attr, key] = pair.split(':');
+      if (attr && key) el.setAttribute(attr.trim(), t(key.trim()));
+    }
+  }
+}
+const num = n => n.toLocaleString(uiLang === 'ru' ? 'ru-RU' : 'en-GB');
+
+// ---------------------------------------------------------------- vocabulary
+const LANG = {
+  q: ['Q.', 'Quenya'], mq: ['ᴹQ.', 'Middle Quenya'], eq: ['ᴱQ.', 'Early Quenya'], nq: ['ᴺQ.', 'Neo-Quenya'],
+  s: ['S.', 'Sindarin'], n: ['N.', 'Noldorin'], en: ['ᴱN.', 'Early Noldorin'], g: ['G.', 'Gnomish'], ns: ['ᴺS.', 'Neo-Sindarin'],
+  on: ['ON.', 'Old Noldorin'], os: ['OS.', 'Old Sindarin'], t: ['T.', 'Telerin'], mt: ['ᴹT.', 'Middle Telerin'], et: ['ᴱT.', 'Early Telerin'],
+  ilk: ['Ilk.', 'Ilkorin'], eilk: ['ᴱIlk.', 'Early Ilkorin'], dan: ['Dan.', 'Danian'], nan: ['Nan.', 'Nandorin'],
+  aq: ['AQ.', 'Ancient Quenya'], maq: ['ᴹAQ.', 'Middle Ancient Quenya'], at: ['AT.', 'Ancient Telerin'], van: ['Van.', 'Vanyarin'],
+  norths: ['North S.', 'North Sindarin'], ad: ['Ad.', 'Adûnaic'], av: ['Av.', 'Avarin'], lem: ['Lem.', 'Lemberin'], lin: ['Lin.', 'Lindarin'],
+  p: ['✶', 'Primitive Elvish'], mp: ['ᴹ✶', 'Middle Primitive Elvish'], ep: ['ᴱ✶', 'Early Primitive Elvish'], np: ['ᴺ✶', 'Neo-Primitive Elvish'],
+};
+const ROOT_MARK = { p: '√', mp: 'ᴹ√', ep: 'ᴱ√', np: 'ᴺ√' };
+// relation names: [short, long]
+const REL = new Proxy({}, { get: (_, r) => [t('rel.' + r), t('rel.' + r + '.long')] });
+const langName = code => has('langname.' + code) ? t('langname.' + code) : (LANG[code] ? LANG[code][1] : code);
+// a word with several parts of speech ("n adj") shows each
+const speech = s => String(s).split(/\s+/).map(x => has('speech.' + x) ? t('speech.' + x) : x).join(' ');
+
+const css = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+const relName = k => G.rels[k];
+
+// ---------------------------------------------------------------- the graph
+const inE = Array.from({ length: N }, () => []);
+const outE = Array.from({ length: N }, () => []);
+G.edges.forEach((e, k) => { outE[e[0]].push(k); inE[e[1]].push(k); });
+const indexOf = new Map(G.ids.map((x, i) => [x, i]));
+const kindOf = i => G.nodes[i].k;
+const isRoot = i => kindOf(i) === 'root';
+
+function codeMarker(code, root) {
+  return root ? (ROOT_MARK[code] || '√') : (LANG[code] || [code ? code.toUpperCase() + '.' : ''])[0];
+}
+// the language marker, with the language Eldamo prints in brackets (c:alt-lang): ᴺQ.[ᴱQ.]
+function marker(i) {
+  const n = G.nodes[i];
+  // the same language twice (ᴹ√[ᴹ√]) says nothing on the graph: the bracket shows only another one
+  return codeMarker(n.l, n.k === 'root') + (n.al && n.al !== n.l ? '[' + codeMarker(n.al, n.k === 'root') + ']' : '');
+}
+function shown(i) {           // the NQ list shows its own spelling
+  const n = G.nodes[i];
+  return n.sp || n.f || '?';
+}
+function nodeColor(i) {
+  const n = G.nodes[i];
+  if (n.k === 'root') return css('--n-root');
+  if (n.grp) return css('--n-' + n.grp);
+  if (n.k === 'protoform') return css('--n-np');
+  return css('--n-form');
+}
+
+// relations switched on in the legend
+const relOn = Object.fromEntries(G.rels.map(r => [r, true]));
+// a root named directly beside a path through an intermediate form (Q. -(n)dur < √(N)DUR and
+// < ✶-ndūr < √(N)DUR): hidden unless switched on, so the path through the form shows
+let showShortcuts = false;
+const isShortcut = e => !!(e[3] && e[3].sc);
+const edgeOn = k => relOn[relName(G.edges[k][2])] && (showShortcuts || !isShortcut(G.edges[k]));
+
+// ---------------------------------------------------------------- state
+const visible = new Set();
+let focusNode = -1, selected = -1;
+// what keeps each shown node: 'core' (the focus and its tree) or the nodes whose expansion added it;
+// collapsing a node removes what only it keeps
+const owners = new Map();
+const expanded = new Set();
+function own(x, by) { if (!owners.has(x)) owners.set(x, new Set()); owners.get(x).add(by); }
+const pos = new Map();          // node -> {x, y, vx, vy, fx, fy}
+
+function hiddenCount(i) {
+  let h = 0;
+  for (const k of inE[i]) if (edgeOn(k) && !visible.has(G.edges[k][0])) h++;
+  for (const k of outE[i]) if (edgeOn(k) && !visible.has(G.edges[k][1])) h++;
+  return h;
+}
+
+function upstream(i, cap) {
+  const out = [i], seen = new Set([i]);
+  for (let q = 0; q < out.length && out.length < cap; q++) {
+    if (q > 0 && isRoot(out[q])) continue;      // a root's own merges and filing open on expand
+    for (const k of inE[out[q]]) {
+      if (!edgeOn(k)) continue;
+      const a = G.edges[k][0];
+      if (!seen.has(a)) { seen.add(a); out.push(a); }
+    }
+  }
+  return out;
+}
+function downstream(i, depth, cap) {
+  let layer = [i];
+  const out = [], seen = new Set([i]);
+  for (let d = 0; d < depth && layer.length; d++) {
+    const next = [];
+    for (const x of layer) {
+      for (const k of outE[x]) {
+        if (!edgeOn(k)) continue;
+        const b = G.edges[k][1];
+        if (seen.has(b)) continue;
+        if (out.length >= cap) return out;
+        seen.add(b); out.push(b); next.push(b);
+      }
+    }
+    layer = next;
+  }
+  return out;
+}
+
+function focus(i, keep) {
+  if (i < 0) return;
+  if (!keep) { visible.clear(); pos.clear(); owners.clear(); expanded.clear(); }
+  setMode('graph');
+  focusNode = i;
+  for (const x of upstream(i, 300)) { visible.add(x); own(x, 'core'); }
+  const down = isRoot(i) ? downstream(i, 2, 160) : downstream(i, 1, 40);
+  for (const x of down) { visible.add(x); own(x, 'core'); }
+  select(i);
+  try { history.replaceState(null, '', '#n-' + G.ids[i]); } catch (e) { /* the frame may refuse */ }
+  render(true);
+}
+function expand(i) {
+  const around = [];
+  for (const k of inE[i]) if (edgeOn(k)) around.push(G.edges[k][0]);
+  let added = 0;
+  for (const k of outE[i]) {
+    if (!edgeOn(k)) continue;
+    if (added >= 80) break;
+    const b = G.edges[k][1];
+    if (!visible.has(b)) added++;
+    around.push(b);
+  }
+  const p = pos.get(i);
+  expanded.add(i);
+  for (const x of around) {
+    if (x === i) continue;
+    if (!visible.has(x) && p && !pos.has(x)) pos.set(x, { x: p.x + (Math.random() - .5) * 40, y: p.y + (Math.random() - .5) * 40 });
+    visible.add(x);
+    own(x, i);
+  }
+  render(false);
+}
+function drop(i) {
+  for (const s of owners.values()) s.delete(i);
+  visible.delete(i); pos.delete(i); owners.delete(i);
+}
+// undo an expansion: the nodes only it keeps go, and what they expanded with them
+function collapseFrom(i) {
+  expanded.delete(i);
+  for (const [x, by] of [...owners]) {
+    if (!by.has(i)) continue;
+    by.delete(i);
+    if (by.size || x === focusNode) continue;
+    if (expanded.has(x)) collapseFrom(x);
+    drop(x);
+  }
+}
+function collapse(i) {
+  collapseFrom(i);
+  if (!visible.has(selected)) select(visible.has(i) ? i : focusNode);
+  render(false);
+}
+function toggle(i) {
+  if (expanded.has(i)) collapse(i); else expand(i);
+}
+function removeNode(i) {
+  if (i === focusNode) return;
+  if (expanded.has(i)) collapseFrom(i);
+  drop(i);
+  if (selected === i || !visible.has(selected)) select(focusNode);
+  render(false);
+}
+
+// ---------------------------------------------------------------- layout and drawing
+const svg = d3.select('#graph');
+const root = svg.append('g');
+const gEdges = root.append('g');
+const gNodes = root.append('g');
+const defs = svg.append('defs');
+const ovRoot = svg.append('g').attr('display', 'none');
+let mode = 'graph';
+const zoom = d3.zoom().scaleExtent([0.08, 40]).on('zoom', ev => {
+  if (mode === 'graph') root.attr('transform', ev.transform);
+  else { ovRoot.attr('transform', ev.transform); ovLabels(ev.transform.k); }
+});
+svg.call(zoom).on('dblclick.zoom', null);
+
+const DASH = { deriv: null, element: null, combine: '2 3', see: '1 3', deprecated: '6 4', cognate: '6 3 1 3', merged: '1 3', filed: '4 3', rootderiv: null };
+function makeMarkers() {
+  defs.selectAll('*').remove();
+  for (const r of G.rels) {
+    defs.append('marker').attr('id', 'arrow-' + r).attr('viewBox', '0 -4 8 8').attr('refX', 8).attr('refY', 0)
+      .attr('markerWidth', 7).attr('markerHeight', 7).attr('orient', 'auto')
+      .append('path').attr('d', 'M0,-3.5L8,0L0,3.5Z').attr('fill', css('--e-' + r));
+  }
+}
+
+let COL = 230;
+let sim = null;
+
+function ranks(nodes, edges) {
+  const rank = new Map(nodes.map(i => [i, 0]));
+  for (let it = 0; it < nodes.length && it < 40; it++) {
+    let changed = false;
+    for (const e of edges) {
+      const r = rank.get(e.a) + 1;
+      if (r > rank.get(e.b) && r < 40) { rank.set(e.b, r); changed = true; }
+    }
+    if (!changed) break;
+  }
+  return rank;
+}
+
+let fitPending = false;
+let lastCounts = null;
+function showNote() {
+  if (mode === 'roots') $('note').textContent = t('ov.note', { r: ovCounts.roots, p: ovCounts.proto, w: ovCounts.words });
+  else if (lastCounts) $('note').textContent = t('note.onScreen', { nodes: lastCounts[0], edges: lastCounts[1] });
+}
+function render(refit) {
+  const nodes = [...visible];
+  const edges = [];
+  G.edges.forEach((e, k) => {
+    if (visible.has(e[0]) && visible.has(e[1]) && edgeOn(k)) edges.push({ k, a: e[0], b: e[1], rel: relName(e[2]), x: e[3] || null });
+  });
+  const rank = ranks(nodes, edges);
+  COL = svg.node().getBoundingClientRect().width < 700 ? 160 : 230;
+  const data = nodes.map(i => {
+    let p = pos.get(i);
+    if (!p) { p = { x: rank.get(i) * COL + (Math.random() - .5) * 30, y: (Math.random() - .5) * 200 }; pos.set(i, p); }
+    p.i = i; p.rank = rank.get(i);
+    return p;
+  });
+  const byI = new Map(data.map(d => [d.i, d]));
+  const links = edges.map(e => ({ ...e, source: byI.get(e.a), target: byI.get(e.b) }));
+
+  // edges
+  const es = gEdges.selectAll('path').data(links, d => d.k).join(
+    enter => enter.append('path').attr('class', 'edge').call(p => p.append('title')));
+  es.attr('stroke', d => css('--e-' + d.rel))
+    .attr('stroke-dasharray', d => DASH[d.rel])
+    .attr('stroke-width', d => d.rel === 'element' ? 2 : 1.5)
+    .classed('nm', d => !!(d.x && d.x.nm))
+    .classed('sc', d => !!(d.x && d.x.sc))
+    .attr('marker-end', d => `url(#arrow-${d.rel})`);
+  es.select('title').text(d => {
+    let tip = `${REL[d.rel][1]}: ${marker(d.a)} ${shown(d.a)} → ${marker(d.b)} ${shown(d.b)}`;
+    if (d.x && d.x.nm) tip += '\n' + t('edge.nm');
+    if (d.x && d.x.sc) tip += '\n' + t('edge.sc');
+    for (const [src, chain] of (d.x && d.x.w) || []) tip += '\n' + t('card.written', { src, chain: chain.join(' > ') });
+    return tip;
+  });
+
+  // nodes
+  const ns = gNodes.selectAll('g.node').data(data, d => d.i).join(enter => {
+    const g = enter.append('g').attr('class', 'node');
+    g.append('path').attr('class', 'ring');
+    g.append('path').attr('class', 'shape');
+    g.append('text').attr('text-anchor', 'middle').attr('y', -11);
+    g.append('title');
+    g.on('click', (ev, d) => { ev.stopPropagation(); select(d.i); })
+      .on('dblclick', (ev, d) => { ev.stopPropagation(); selected = d.i; toggle(d.i); select(d.i); })
+      .call(d3.drag()
+        .on('start', (ev, d) => { if (!ev.active && sim) sim.alphaTarget(0.2).restart(); d.fx = d.x; d.fy = d.y; })
+        .on('drag', (ev, d) => { d.fx = ev.x; d.fy = ev.y; })
+        .on('end', (ev, d) => { if (!ev.active && sim) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+    return g;
+  });
+  ns.classed('sel', d => d.i === selected);
+  ns.select('.shape').attr('d', d => shapePath(d.i))
+    .attr('fill', d => shapeFill(d.i)).attr('stroke', d => nodeColor(d.i))
+    .attr('stroke-width', 1.6).attr('stroke-dasharray', d => G.nodes[d.i].k === 'root' && !G.nodes[d.i].rec ? '2 2' : null);
+  ns.select('.ring').attr('d', d => d3.symbol(d3.symbolCircle, 520)())
+    .attr('fill', 'none').attr('stroke-width', 2.2)
+    .attr('stroke', d => d.i === selected ? css('--focus') : d.i === focusNode ? css('--accent') : 'none');
+  ns.select('text').each(function (d) {
+    const label = d3.select(this);
+    label.selectAll('*').remove();
+    label.append('tspan').attr('class', 'lm').text(marker(d.i) + (G.nodes[d.i].k === 'root' ? '' : ' '));
+    label.append('tspan').attr('font-style', G.nodes[d.i].k === 'root' ? 'normal' : 'italic')
+      .attr('font-weight', G.nodes[d.i].k === 'root' ? 600 : 500).text(shown(d.i));
+    const h = hiddenCount(d.i);
+    if (h) label.append('tspan').attr('class', 'more').text('  +' + h);
+  });
+  ns.select('title').text(d => `${marker(d.i)} ${shown(d.i)}${G.nodes[d.i].g ? ' “' + G.nodes[d.i].g + '”' : ''}`);
+
+  // simulation: columns by rank, rows by force
+  if (sim) sim.stop();
+  sim = d3.forceSimulation(data)
+    .force('x', d3.forceX(d => d.rank * COL).strength(1))
+    .force('y', d3.forceY(0).strength(0.04))
+    .force('link', d3.forceLink(links).distance(COL * 0.9).strength(0.12))
+    .force('charge', d3.forceManyBody().strength(-90).distanceMax(400))
+    .force('collide', d3.forceCollide(20).iterations(3))
+    .on('tick', draw);
+  fitPending = refit;
+  if (reduced) { sim.stop(); for (let t = 0; t < 300; t++) sim.tick(); draw(); fitView(false); fitPending = false; }
+  else sim.alpha(refit ? 1 : 0.5).restart().on('end', () => { if (fitPending) { fitView(true); fitPending = false; } });
+  if (refit && !reduced) setTimeout(() => { if (fitPending) { fitView(true); fitPending = false; } }, 900);
+
+  function draw() {
+    es.attr('d', d => {
+      const sx = d.source.x + 8, sy = d.source.y, tx = d.target.x - 9, ty = d.target.y;
+      const mx = (sx + tx) / 2;
+      return `M${sx},${sy}C${mx},${sy} ${mx},${ty} ${tx},${ty}`;
+    });
+    ns.attr('transform', d => `translate(${d.x},${d.y})`);
+  }
+  lastCounts = [data.length, links.length];
+  showNote();
+}
+
+function shapePath(i) {
+  const n = G.nodes[i];
+  if (n.k === 'root') return d3.symbol(d3.symbolDiamond, 150)();
+  if (n.k === 'form') return d3.symbol(d3.symbolCircle, 70)();
+  return d3.symbol(d3.symbolCircle, 120)();
+}
+function shapeFill(i) {
+  const n = G.nodes[i];
+  if (n.k === 'root') return n.rec ? css('--n-root') : css('--bg');
+  if (n.k === 'protoform') return css('--bg');
+  return nodeColor(i);
+}
+
+function fitView(animate) {
+  if (mode !== 'graph') return;
+  const items = [...visible].map(i => pos.get(i)).filter(Boolean);
+  if (!items.length) return;
+  const box = svg.node().getBoundingClientRect();
+  const xs = items.map(p => p.x), ys = items.map(p => p.y);
+  const x0 = Math.min(...xs) - 80, x1 = Math.max(...xs) + 80, y0 = Math.min(...ys) - 40, y1 = Math.max(...ys) + 24;
+  const k = Math.min(1.6, 0.92 * Math.min(box.width / (x1 - x0), box.height / (y1 - y0)));
+  const t = d3.zoomIdentity.translate(box.width / 2 - k * (x0 + x1) / 2, box.height / 2 - k * (y0 + y1) / 2).scale(k);
+  (animate ? svg.transition().duration(450) : svg).call(zoom.transform, t);
+}
+svg.on('click', () => {});
+$('fit').addEventListener('click', () => (mode === 'graph' ? fitView(!reduced) : ovFit(!reduced)));
+$('relayout').addEventListener('click', () => { for (const i of visible) pos.delete(i); render(true); });
+
+// ---------------------------------------------------------------- the card
+function nodeButton(i) {
+  const n = G.nodes[i];
+  const cls = n.k === 'root' ? 'fm root-fm' : 'fm';
+  return `<button type="button" data-node="${i}"><span class="mk">${esc(marker(i))}</span>${n.k === 'root' ? '' : ' '}<span class="${cls}">${esc(shown(i))}</span></button>`
+    + (n.g ? ` <span class="gl">“${esc(n.g)}”</span>` : '');
+}
+function relTag(rel) {
+  return `<span class="rel" style="color:${css('--e-' + rel)}">${esc(REL[rel][0])}</span>`;
+}
+function select(i) {
+  selected = i;
+  ovRoot.selectAll('g.ov-leaf').classed('sel', d => d.data.i === selected);
+  gNodes.selectAll('g.node').classed('sel', d => d.i === selected)
+    .select('.ring').attr('stroke', d => d.i === selected ? css('--focus') : d.i === focusNode ? css('--accent') : 'none');
+  const n = G.nodes[i];
+  const id = G.ids[i];
+  const lang = langName(n.l);
+  const kind = t(n.k === 'root' ? 'kind.root' : n.k === 'protoform' ? 'kind.protoform' : n.k === 'form' ? 'kind.form'
+    : (n.l === 'p' || n.l === 'mp' || n.l === 'np') ? 'kind.primitiveWord' : 'kind.word');
+  const tags = [];
+  if (n.grp) tags.push(`<span class="tag">${esc(t('group.' + n.grp))}</span>`);
+  if (n.s) tags.push(`<span class="tag">${esc(speech(n.s))}</span>`);
+  if (n.k === 'word') tags.push(n.r ? `<span class="tag">${esc(t('tag.roots', { rule: has('rule.' + n.r) ? t('rule.' + n.r) : n.r }))}</span>` : `<span class="tag warn">${esc(t('tag.noRoot'))}</span>`);
+  if (n.u) tags.push(`<span class="tag warn" title="${esc(t('tag.indirect.title'))}">${esc(t('tag.indirect'))}</span>`);
+  if (n.k === 'root' && n.rec === 1) tags.push(`<span class="tag ok">${esc(t('tag.recommended'))}</span>`);
+  for (const w of n.wn || []) tags.push(`<span class="tag warn">⚠ ${esc(t('warn.' + G.warn[w]))}</span>`);
+  if (n.nl) tags.push(`<span class="tag" title="${esc(t('tag.notListed.title'))}">${esc(t('tag.notListed'))}</span>`);
+  if (n.dc) tags.push(`<span class="tag">${esc(t('tag.derivatives', { n: n.dc }))}</span>`);
+  if (n.ds) tags.push(`<span class="tag">${esc(t('tag.noRootDerivatives', { n: n.ds }))}</span>`);
+
+  let html = `<div class="card-head">
+      <div class="big"><span class="mk">${esc(marker(i))}</span>${n.k === 'root' ? '' : ' '}<span class="${n.k === 'root' ? 'fm root-fm' : 'fm'}">${esc(shown(i))}</span></div>
+      ${n.g ? `<div class="gl">“${esc(n.g)}”</div>` : ''}
+      <div class="meta">${esc(kind)} · ${esc(lang)}${n.sp && n.sp !== n.f ? ` · ${esc(t('card.dbForm', { f: n.f }))}` : ''}</div>
+    </div>
+    <div class="tags">${tags.join('')}</div>`;
+  if (n.ins && n.ins.length) {
+    html += `<div class="sec"><h3>${esc(t('card.instead'))}</h3><ul class="links">${n.ins.map(x => indexOf.has(x) ? `<li>${nodeButton(indexOf.get(x))}</li>` : '').join('')}</ul></div>`;
+  }
+  html += `<div class="actions">
+      ${i !== focusNode ? `<button class="btn primary" type="button" data-act="focus">${esc(t('act.focus'))}</button>` : ''}
+      <button class="btn" type="button" data-act="expand">${esc(t(expanded.has(i) && visible.has(i) ? 'act.collapse' : 'act.expand'))}</button>
+      ${i !== focusNode && visible.has(i) ? `<button class="btn" type="button" data-act="remove">${esc(t('act.remove'))}</button>` : ''}
+      ${/^\d+$/.test(id) && (n.k === 'root' || n.grp) ? `<a class="ext" href="index.html#${n.k === 'root' ? 'r' : 'w'}=${esc(id)}">${esc(t('card.quettamin'))}</a>` : ''}
+      ${/^\d+$/.test(id) ? `<a class="ext" href="${SITE}${esc(id)}.html" target="_blank" rel="noopener">${esc(t('card.eldamo'))}</a>` : ''}
+    </div>`;
+
+  const from = inE[i].map(k => G.edges[k]);
+  if (from.length) {
+    html += `<div class="sec"><h3>${esc(t('card.from'))}</h3><ul class="links">${from.map(e => {
+      const rel = relName(e[2]);
+      const x = e[3] || {};
+      const written = (x.w || []).map(([src, chain]) => `<span class="written">${esc(t('card.written', { src, chain: chain.join(' > ') }))}</span>`).join('');
+      return `<li>${relTag(rel)} ${nodeButton(e[0])}${x.nm ? ` <span class="tag warn">${esc(t('tag.nm'))}</span>` : ''}${x.sc ? ` <span class="tag" title="${esc(t('tag.direct.title'))}">${esc(t('tag.direct'))}</span>` : ''}${written}</li>`;
+    }).join('')}</ul></div>`;
+  }
+  const to = outE[i].map(k => G.edges[k]);
+  if (to.length) {
+    const LIM = 60;
+    html += `<div class="sec"><h3>${esc(t('card.gives', { n: to.length }))}</h3><ul class="links">${to.slice(0, LIM).map(e =>
+      `<li>${relTag(relName(e[2]))} ${nodeButton(e[1])}</li>`).join('')}</ul>${to.length > LIM ? `<div class="more">${esc(t('card.more', { n: to.length - LIM }))}</div>` : ''}</div>`;
+  }
+  $('card').innerHTML = html;
+}
+$('card').addEventListener('click', ev => {
+  const b = ev.target.closest('[data-node]');
+  if (b) {
+    const i = +b.dataset.node;
+    if (visible.has(i)) select(i); else focus(i);
+    return;
+  }
+  const a = ev.target.closest('[data-act]');
+  if (!a) return;
+  if (a.dataset.act === 'focus') focus(selected);
+  else if (a.dataset.act === 'expand') {
+    if (!visible.has(selected) || mode !== 'graph') focus(selected);
+    else toggle(selected);
+    select(selected);
+  }
+  else if (a.dataset.act === 'remove') removeNode(selected);
+});
+
+// ---------------------------------------------------------------- search
+const fold = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '')
+  .replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰√✶*!^#†()\-]/g, '').toLowerCase()
+  .replace(/qu/g, 'q').replace(/c/g, 'k').replace(/ks/g, 'x');
+let keys = null;
+function searchKeys() {
+  if (!keys) keys = G.nodes.map(n => [fold(n.f), fold(n.sp), (n.g || '').toLowerCase()]);
+  return keys;
+}
+function search() {
+  const raw = $('q').value.trim();
+  const box = $('results');
+  if (!raw) { box.hidden = true; return; }
+  const q = fold(raw), ql = raw.toLowerCase(), scope = $('scope').value;
+  const K = searchKeys();
+  const hits = [];
+  for (let i = 0; i < N; i++) {
+    const n = G.nodes[i];
+    if (scope === 'root' ? n.k !== 'root' : scope ? n.grp !== scope : !(n.grp || n.k === 'root')) continue;
+    const [f, sp, g] = K[i];
+    let s = -1;
+    if (q && (f === q || sp === q)) s = 0;
+    else if (q && (f.startsWith(q) || sp.startsWith(q))) s = 1;
+    else if (g && g.replace(/[*?()\[\]"“”]/g, '').trim() === ql) s = 1.5;
+    else if (g && g.split(/[^\p{L}]+/u).includes(ql)) s = 2;
+    else if (q && f.includes(q)) s = 3;
+    else if (g && g.includes(ql)) s = 4;
+    if (s >= 0) hits.push([s, n.k === 'root' ? 1 : 0, f.length, i]);
+  }
+  hits.sort((a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2]);
+  box.innerHTML = hits.slice(0, 40).map(([, , , i]) => {
+    const n = G.nodes[i];
+    return `<button type="button" data-hit="${i}"><span class="mk">${esc(marker(i))}</span>${n.k === 'root' ? '' : ' '}<span class="${n.k === 'root' ? 'fm root-fm' : 'fm'}">${esc(shown(i))}</span>`
+      + `${n.g ? ` <span class="gl">“${esc(n.g)}”</span>` : ''}</button>`;
+  }).join('') || `<div class="none">${esc(t('search.none'))}</div>`;
+  box.hidden = false;
+}
+$('q').addEventListener('input', search);
+$('scope').addEventListener('change', search);
+$('results').addEventListener('click', ev => {
+  const b = ev.target.closest('[data-hit]');
+  if (!b) return;
+  $('results').hidden = true;
+  focus(+b.dataset.hit);
+});
+$('q').addEventListener('keydown', ev => {
+  if (ev.key === 'Enter') { const b = $('results').querySelector('[data-hit]'); if (b) { $('results').hidden = true; focus(+b.dataset.hit); } }
+  if (ev.key === 'Escape') $('results').hidden = true;
+});
+
+// ---------------------------------------------------------------- all roots
+// The roots of Eldamo's roots-np list as a map: grouped by their first letter, a circle's area by
+// the number of words derived from it; filters by conception, status and derivatives.
+const views = { graph: null, roots: null };          // the zoom of each view
+let ovBuilt = false;
+const initial = i => {
+  const f = String(G.nodes[i].f || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^\p{L}]/gu, '');
+  return (f[0] || '?').toUpperCase();
+};
+function ovValue(i) {
+  const n = G.nodes[i];
+  return n.k === 'root' ? (n.dc || 0) : (n.ds || 0);
+}
+const PRIM = new Set(['p', 'mp', 'ep', 'np']);
+function ovCategory(i) {
+  const n = G.nodes[i];
+  if (n.k === 'root') return ('rec' in n) && !n.nl ? 'roots' : null;
+  if (!n.nr) return null;
+  return PRIM.has(n.l) ? 'proto' : 'words';
+}
+function ovFill(i) {
+  const n = G.nodes[i];
+  if (n.k === 'root') return n.rec ? css('--n-root') : css('--bg');
+  if (n.grp) return css('--n-' + n.grp);
+  return css('--bg');
+}
+function ovStroke(i) {
+  const n = G.nodes[i];
+  if (n.k === 'root') return css('--n-root');
+  if (n.grp) return css('--n-' + n.grp);
+  return PRIM.has(n.l) ? css('--n-np') : css('--n-form');
+}
+function buildOverview() {
+  const show = { roots: $('ov-roots').checked, proto: $('ov-proto').checked, words: $('ov-words').checked };
+  for (const id of ['ov-period', 'ov-rec']) $(id).disabled = !show.roots;     // the filters of roots
+  const per = $('ov-period').value, onlyRec = $('ov-rec').checked, onlyFree = $('ov-free').checked;
+  const items = [];
+  const counts = { roots: 0, proto: 0, words: 0 };
+  for (let i = 0; i < N; i++) {
+    const cat = ovCategory(i);
+    if (!cat || !show[cat]) continue;
+    const n = G.nodes[i];
+    if (cat === 'roots' && per && n.l !== per) continue;
+    if (cat === 'roots' && onlyRec && !n.rec) continue;
+    if (onlyFree && ovValue(i)) continue;
+    items.push([cat, i]);
+    counts[cat]++;
+  }
+  const cats = ['roots', 'proto', 'words'].filter(c => counts[c]);
+  const tree = {
+    children: cats.map(c => ({
+      cat: c,
+      children: [...d3.group(items.filter(x => x[0] === c).map(x => x[1]), initial)]
+        .sort((a, b) => a[0].localeCompare(b[0]))
+        .map(([key, v]) => ({ key, children: v.map(i => ({ i })) })),
+    })),
+  };
+  const h = d3.hierarchy(tree).sum(d => (d.i != null ? 1 + ovValue(d.i) : 0)).sort((a, b) => b.value - a.value);
+  d3.pack().size([1000, 1000]).padding(d => (d.depth === 0 ? 18 : d.depth === 1 ? 10 : 1.2))(h);
+  ovRoot.selectAll('*').remove();
+  const catNodes = h.children || [];
+  if (catNodes.length > 1) {
+    const cs = ovRoot.selectAll('g.ov-cat').data(catNodes).join('g').attr('class', 'ov-cat');
+    cs.append('circle').attr('cx', d => d.x).attr('cy', d => d.y).attr('r', d => d.r + 4);
+    cs.append('text').attr('x', d => d.x).attr('y', d => d.y - d.r - 8)
+      .attr('font-size', d => Math.max(9, Math.min(d.r * 0.12, 22))).text(d => t('ov.show.' + d.data.cat));
+  }
+  const letters = catNodes.flatMap(c => c.children || []);
+  const gs = ovRoot.selectAll('g.ov-group').data(letters).join('g').attr('class', 'ov-group');
+  gs.append('circle').attr('cx', d => d.x).attr('cy', d => d.y).attr('r', d => d.r);
+  gs.append('text').attr('x', d => d.x).attr('y', d => d.y - d.r + Math.min(d.r * 0.35, 30))
+    .attr('text-anchor', 'middle').attr('font-size', d => Math.min(d.r * 0.3, 26)).text(d => d.data.key);
+  const leaves = ovRoot.selectAll('g.ov-leaf').data(h.leaves().filter(d => d.data.i != null)).join('g').attr('class', 'ov-leaf')
+    .classed('sel', d => d.data.i === selected);
+  leaves.append('circle').attr('cx', d => d.x).attr('cy', d => d.y).attr('r', d => d.r)
+    .attr('fill', d => ovFill(d.data.i))
+    .attr('fill-opacity', d => (ovFill(d.data.i) === css('--bg') ? 1 : 0.85))
+    .attr('stroke', d => ovStroke(d.data.i)).attr('stroke-width', 0.6)
+    .attr('stroke-dasharray', d => (G.nodes[d.data.i].k === 'root' && !G.nodes[d.data.i].rec ? '1.5 1' : null));
+  leaves.append('text').attr('x', d => d.x).attr('y', d => d.y)
+    .attr('font-size', d => Math.max(1.2, Math.min(d.r * 0.42, 14)))
+    .text(d => marker(d.data.i) + (G.nodes[d.data.i].k === 'root' ? '' : ' ') + shown(d.data.i));
+  leaves.append('title').text(d => {
+    const n = G.nodes[d.data.i], v = ovValue(d.data.i);
+    return `${marker(d.data.i)} ${shown(d.data.i)}${n.g ? ' “' + n.g + '”' : ''}${v ? '\n' + t('tag.noRootDerivatives', { n: v }) : ''}`;
+  });
+  leaves.on('click', (ev, d) => { ev.stopPropagation(); select(d.data.i); })
+    .on('dblclick', (ev, d) => { ev.stopPropagation(); focus(d.data.i); });
+  ovBuilt = true;
+  ovCounts = counts;
+  showNote();
+  ovLabels(d3.zoomTransform(svg.node()).k);
+}
+let ovCounts = { roots: 0, proto: 0, words: 0 };
+function ovLabels(k) {
+  // a label shows once its circle is large enough on screen to hold it
+  ovRoot.selectAll('g.ov-leaf text').attr('display', d => (d.r * k >= 9 ? null : 'none'));
+}
+function ovFit(animate) {
+  const box = svg.node().getBoundingClientRect();
+  // leave the filter panel clear where there is room beside it
+  const left = box.width > 760 ? $('ov-tools').getBoundingClientRect().right - box.left + 8 : 0;
+  const w = box.width - left;
+  const k = 0.94 * Math.min(w, box.height) / 1000;
+  const tr = d3.zoomIdentity.translate(left + (w - 1000 * k) / 2, (box.height - 1000 * k) / 2).scale(k);
+  (animate ? svg.transition().duration(450) : svg).call(zoom.transform, tr);
+}
+function setMode(m) {
+  if (m === mode) return;
+  views[mode] = d3.zoomTransform(svg.node());
+  mode = m;
+  root.attr('display', m === 'graph' ? null : 'none');
+  ovRoot.attr('display', m === 'roots' ? null : 'none');
+  $('mode-graph').setAttribute('aria-pressed', String(m === 'graph'));
+  $('mode-roots').setAttribute('aria-pressed', String(m === 'roots'));
+  $('ov-tools').hidden = m !== 'roots';
+  $('relayout').hidden = m !== 'graph';
+  if (m === 'roots') {
+    if (!ovBuilt) buildOverview();
+    if (views.roots) svg.call(zoom.transform, views.roots); else ovFit(false);
+    try { history.replaceState(null, '', '#all-roots'); } catch (e) { /* the frame may refuse */ }
+  } else {
+    if (views.graph) svg.call(zoom.transform, views.graph);
+    if (focusNode >= 0) { try { history.replaceState(null, '', '#n-' + G.ids[focusNode]); } catch (e) { /* the frame may refuse */ } }
+  }
+  showNote();
+}
+$('mode-graph').addEventListener('click', () => setMode('graph'));
+$('mode-roots').addEventListener('click', () => setMode('roots'));
+for (const id of ['ov-roots', 'ov-proto', 'ov-words', 'ov-period', 'ov-rec', 'ov-free']) $(id).addEventListener('change', () => { buildOverview(); ovFit(!reduced); });
+
+// ---------------------------------------------------------------- legend
+function legend() {
+  const nodeItems = [
+    [t('legend.n.nq'), d3.symbol(d3.symbolCircle, 120)(), css('--n-nq'), css('--n-nq'), null],
+    [t('legend.n.ns'), d3.symbol(d3.symbolCircle, 120)(), css('--n-ns'), css('--n-ns'), null],
+    [t('legend.n.np'), d3.symbol(d3.symbolCircle, 120)(), css('--n-np'), css('--n-np'), null],
+    [t('legend.n.proto'), d3.symbol(d3.symbolCircle, 120)(), css('--bg'), css('--n-np'), null],
+    [t('legend.n.form'), d3.symbol(d3.symbolCircle, 70)(), css('--n-form'), css('--n-form'), null],
+    [t('legend.n.root'), d3.symbol(d3.symbolDiamond, 150)(), css('--n-root'), css('--n-root'), null],
+    [t('legend.n.rootWarn'), d3.symbol(d3.symbolDiamond, 150)(), css('--bg'), css('--n-root'), '2 2'],
+  ];
+  $('legend-nodes').innerHTML = nodeItems.map(([label, d, fill, stroke, dash]) =>
+    `<label><svg width="16" height="16" viewBox="-8 -8 16 16" aria-hidden="true"><path d="${d}" fill="${fill}" stroke="${stroke}" stroke-width="1.6"${dash ? ` stroke-dasharray="${dash}"` : ''}/></svg>${esc(label)}</label>`).join('');
+  $('legend-edges').innerHTML = G.rels.map(r =>
+    `<label title="${esc(REL[r][1])}"><input type="checkbox" id="rel-${r}" data-rel="${r}"${relOn[r] ? ' checked' : ''}>`
+    + `<svg width="26" height="10" viewBox="0 0 26 10" aria-hidden="true"><line x1="1" y1="5" x2="25" y2="5" stroke="${css('--e-' + r)}" stroke-width="${r === 'element' ? 2 : 1.6}"${DASH[r] ? ` stroke-dasharray="${DASH[r]}"` : ''}/></svg>${esc(REL[r][0])}</label>`).join('');
+}
+$('legend-edges').addEventListener('change', ev => {
+  const c = ev.target.closest('[data-rel]');
+  if (!c) return;
+  relOn[c.dataset.rel] = c.checked;
+  render(false);
+  if (selected >= 0) select(selected);
+});
+
+$('shortcuts').addEventListener('change', ev => {
+  showShortcuts = ev.target.checked;
+  if (showShortcuts && focusNode >= 0) for (const x of upstream(focusNode, 300)) { visible.add(x); own(x, 'core'); }
+  render(false);
+  if (selected >= 0) select(selected);
+});
+
+// theme changes recolor the drawing
+function recolor() { makeMarkers(); legend(); if (visible.size) render(false); if (selected >= 0) select(selected); if (ovBuilt) buildOverview(); }
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change', recolor);
+new MutationObserver(recolor).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+// ---------------------------------------------------------------- start
+const words = G.nodes.filter(n => n.grp).length;
+const rootsCount = G.nodes.filter(n => n.k === 'root').length;
+function showStat() {
+  $('stat').textContent = t('page.stat', { v: G.version, words: num(words), roots: num(rootsCount), edges: num(G.edges.length) });
+}
+function applyLanguage() {
+  translateStatic();
+  showStat();
+  showNote();
+  legend();
+  if (selected >= 0) select(selected);
+  if (!$('results').hidden) search();
+  if (visible.size) render(false);
+  if (ovBuilt) buildOverview();
+}
+$('lang-toggle').addEventListener('click', () => {
+  uiLang = uiLang === 'ru' ? 'en' : 'ru';
+  try { localStorage.setItem(LANG_KEY, uiLang); } catch (e) { /* storage unavailable */ }
+  applyLanguage();
+});
+translateStatic();
+showStat();
+makeMarkers();
+legend();
+function fromHash() {
+  const m = /^#n-(\w+)$/.exec(location.hash);
+  return m && indexOf.has(m[1]) ? indexOf.get(m[1]) : -1;
+}
+window.addEventListener('hashchange', () => {
+  if (location.hash === '#all-roots') { setMode('roots'); return; }
+  const i = fromHash(); if (i >= 0 && i !== focusNode) focus(i);
+});
+const wantRoots = location.hash === '#all-roots';
+const start = fromHash();
+focus(start >= 0 ? start : indexOf.get('539805327'));     // Q. alda
+if (wantRoots) setMode('roots');
+})();
+</script>
+</body>
+</html>

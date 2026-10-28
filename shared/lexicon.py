@@ -196,6 +196,34 @@ def _is_root(w) -> bool:
     return w.get('l') in ('p', 'mp', 'ep', 'np') and bool(letters) and letters.isupper()
 
 
+def alt_lang(w) -> str | None:
+    """Eldamo's c:alt-lang (common.xq), the language its indexes print in brackets after a word's
+    own (ᴺQ. [ᴱQ.] ulumpë): for a neo word marked ^, that of the nested word merged into it by
+    <combine>; for a word without references of its own (not marked !, not phonetics, grammar or
+    text), that of its first nested word with references in another language. A root (root-
+    index.xq): without references, the language of its first nested word (N√LUP [√]). From
+    neo-roots (neo_roots.py: alt_lang, root_alt_lang)."""
+    lang, mark = w.get('l'), w.get('mark')
+    if w.get('speech') == 'root':
+        if w.find('ref') is not None:
+            return None
+        first = next((c for c in w if c.tag == 'word'), None)
+        al = first.get('l') if first is not None else None
+        return al if al and al != lang else None
+    if mark == '^':
+        for x in w.iter('word'):
+            c = x.find('combine') if x is not w else None
+            if c is not None and c.get('l') == lang and c.get('v') == w.get('v'):
+                return x.get('l')
+    sp = w.get('speech') or ''
+    if mark != '!' and w.find('ref') is None and not (sp.startswith('phon') or sp in ('grammar', 'text')):
+        for p in w.iter():
+            first = next((c for c in p if c.tag == 'word' and c.find('ref') is not None), None)
+            if first is not None and first.get('l') and first.get('l') != lang:
+                return first.get('l')
+    return None
+
+
 def _live_in(el, w) -> bool:
     """A part of a word page counts unless Tolkien rejected it, or the word itself is rejected
     as well (N. carth, merged into S. carth: its rejected references still give ᴹ√KAR)."""
@@ -306,6 +334,9 @@ def build_lexicon(branch: str, derivations: list) -> list:
         }
         if lang in NEO or '!' in entry['mark']:
             entry['neo'] = True
+        al = alt_lang(w)
+        if al:
+            entry['alt_lang'] = al
         if parent is not None and parent.tag == 'word' and parent.get('page-id'):
             entry['under'] = parent.get('page-id')   # nested page: an earlier or later version
         cls = [c.get('form') for c in w.findall('class') if c.get('form', '').endswith(('verb', 'formative', 'causative', 'stem'))]
@@ -500,15 +531,30 @@ def _part_groups(W: Words, pid: str, memo: dict, depth: int = ROOT_DEPTH) -> lis
     return groups
 
 
+def _add_alt(group: list, r: dict, same=lambda a, b: a.get('id') == b.get('id')) -> None:
+    """Add an alternative to a part; the same root reached by another way keeps that way as one
+    more path (`more`): Eldamo often names the root directly and through a primitive form as
+    well (Q. alda < √GAL² and < ✶galadā < √GAL²), and the tree of origin shows both."""
+    for k, y in enumerate(group):
+        if not r.get('gap') and not y.get('gap') and same(r, y):
+            paths = [y.get('path', [])] + y.get('more', [])
+            new = [p for p in [r.get('path', [])] + r.get('more', []) if p not in paths]
+            if new:
+                group[k] = dict(y, more=y.get('more', []) + new)
+            return
+    group.append(r)
+
+
 def _merge_groups(found: list) -> list:
     """Several sources of the same rank: the one with most parts; one of the same shape adds
-    its roots as alternatives part by part."""
+    its roots as alternatives part by part (_add_alt)."""
     found = sorted(found, key=lambda g: -len(g))
     out = [list(x) for x in found[0]]
     for g in found[1:]:
         if len(g) == len(out):
             for k, x in enumerate(g):
-                out[k] += [r for r in x if r.get('gap') or all(r.get('id') != y.get('id') for y in out[k])]
+                for r in x:
+                    _add_alt(out[k], r)
     return out
 
 
@@ -593,7 +639,8 @@ def _root_groups(W: Words, pid: str, memo: dict, depth: int = ROOT_DEPTH) -> lis
         elif direct:
             alts = list(direct)
             if len(inter) == 1:
-                alts += [r for r in _real(inter[0]) if all(r['id'] != x['id'] for x in alts)]
+                for r in _real(inter[0]):
+                    _add_alt(alts, r)
             out = [alts]
         elif real:
             out = parts
@@ -699,8 +746,7 @@ def _resolve_roots(entries: list, W: Words) -> None:
                           if r.get('via') not in ('cognate', 'deprecated') and consonants_match(e['form'], r['form'], e['lang'])]
         out = []
         for r in roots:
-            if all(r['id'] != x['id'] or r.get('part') != x.get('part') for x in out):
-                out.append(r)
+            _add_alt(out, r, lambda a, b: a['id'] == b['id'] and a.get('part') == b.get('part'))
         if out:
             e['roots'] = out
             if gaps:

@@ -551,11 +551,13 @@ def _counterparts(ctx, wid: str, branch: str, code: str) -> list:
 def _by_elements(ctx, add, entry, era, db, ds):
     """A compound or derivative of the other branch built again from the cognates of its
     elements by the word formation of the target language (shared/compound.py): S. Adanel =
-    Adan + -iel¹, cognates Q. Atan + -iel -> Q. Ataniel. Only at the latest stage, and only
-    when every element has a cognate there."""
+    Adan + -iel¹, cognates Q. Atan + -iel -> Q. Atanel, Ataniel. The word is built at the latest
+    stage, when every element has a cognate there; for an earlier stage it is taken back from
+    it by the laws (✶atanel, not the ✶ataneli of the Sindarin form read backwards)."""
     els = entry.get('elements') or []
-    code = ctx.code(db, era, ds)
-    if len(els) < 2 or code is None or ds != ctx.last_stage(db, era) or not all(x.get('id') for x in els):
+    last = ctx.last_stage(db, era)
+    code = ctx.code(db, era, last)
+    if len(els) < 2 or code is None or not all(x.get('id') for x in els):
         return
     ids = []
     for x in els:
@@ -570,11 +572,17 @@ def _by_elements(ctx, add, entry, era, db, ds):
                                    junctions.learn(data['junctions']['cases']),
                                    affixes.learn(data['affixes']['cases']))
     lex, table, model = ctx._tables[(db, 'wf')]
-    vs = compound.predict(lex, ctx.seq[db], ids, era, ds, table=table, affix_model=model)
+    vs = compound.predict(lex, ctx.seq[db], ids, era, last, table=table, affix_model=model)
     top = max((v['score'] for v in vs), default=0) or 1.0
     names = ' + '.join(lex[i]['form'] for i in ids)
-    for v in vs[:4]:
-        add(v['form'], ELEMENTS_SCORE * v['score'] / top, f'по когнатам составляющих: {names}', ['elements'], [])
+    if ds == last:
+        for v in vs[:4]:
+            add(v['form'], ELEMENTS_SCORE * v['score'] / top, f'по когнатам составляющих: {names}', ['elements'], [])
+        return
+    # an earlier stage: back from the word so built, so that the stages agree with it
+    for v in vs[:2]:
+        _within(ctx, add, db, era, v['form'], last, ds, NO_HINTS, frozenset(), base_score=ELEMENTS_SCORE * v['score'] / top,
+                route_prefix=f'по когнатам составляющих: {names}, затем ', marks=['elements'])
 
 
 def _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links=True):

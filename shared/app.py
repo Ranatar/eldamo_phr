@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 from collections import defaultdict
 
-from . import affixes, reconstruct
+from . import affixes, reconstruct, root_index
 from . import junctions as junction_table
 from .formula import NULL
 from .graph import GRADES
@@ -76,7 +76,7 @@ def payload(branches: dict) -> dict:
 
 
 LEXICON_FIELDS = ('id', 'lang', 'form', 'gloss', 'speech', 'mark', 'neo', 'stems', 'starts', 'stages', 'written_origins',
-                  'proto_forms', 'unruled', 'verb_class')
+                  'proto_forms', 'unruled', 'verb_class', 'written')
 
 
 def _key(parts) -> str:
@@ -113,11 +113,11 @@ def wordform_payload(name: str, data: dict) -> dict:
             x['roots'] = [r['form'] for r in e['roots']]
             # for the card and the panorama: language, page, how it was found (own / element / cognate)
             # and, in a compound, the number of its element
-            x['root_refs'] = [[r['lang'], r['id'], r.get('via', '')] + ([r['part']] if 'part' in r else [])
-                              for r in e['roots']]
+            # and the path from the word to the root, for the tree of its origin: [[step, page], ...]
+            x['root_refs'] = [[r['lang'], r['id'], r.get('via', ''), r.get('part'), r.get('path', [])] for r in e['roots']]
         if e.get('root_gaps'):
             # elements without a root, in their place among the parts: [part, language, page, form]
-            x['root_gaps'] = [[g['part'], g['lang'], g['id'], g['form']] for g in e['root_gaps']]
+            x['root_gaps'] = [[g['part'], g['lang'], g['id'], g['form'], g.get('path', [])] for g in e['root_gaps']]
         lexicon.append(x)
     return {
         'languages': data['meta']['languages'],
@@ -144,6 +144,7 @@ SCRIPTS = {                     # template marker -> file in app/
     '@@WORD_UI@@': 'word_ui.js',
     '@@WORDFORM_UI@@': 'wordform_ui.js',
     '@@RECON_UI@@': 'reconstruct_ui.js',
+    '@@ROOTS_UI@@': 'roots_ui.js',
     '@@RUNTIME@@': 'runtime.js',
     '@@I18N@@': 'i18n.js',
 }
@@ -157,7 +158,7 @@ def messages() -> str:
 
 def build_index(branches: dict) -> str:
     template = (APP / 'template.html').read_text(encoding='utf-8')
-    markers = ('@@STYLES@@', '@@DATA@@', '@@WORDFORM_DATA@@', '@@MESSAGES@@', *SCRIPTS)
+    markers = ('@@STYLES@@', '@@DATA@@', '@@WORDFORM_DATA@@', '@@ROOTS_DATA@@', '@@MESSAGES@@', *SCRIPTS)
     for marker in markers:
         if template.count(marker) != 1:
             raise SystemExit(f'app/template.html must contain {marker} exactly once')
@@ -167,6 +168,7 @@ def build_index(branches: dict) -> str:
     html = html.replace('@@MESSAGES@@', messages())     # the footer message holds the version
     html = html.replace('@@ELDAMO_VERSION@@', meta()['eldamo_version'])
     html = html.replace('@@WORDFORM_DATA@@', embed_json({b: wordform_payload(b, d) for b, d in branches.items()}))
+    html = html.replace('@@ROOTS_DATA@@', embed_json(root_index.build({b: d['lexicon'] for b, d in branches.items()})))
     html = html.replace('@@DATA@@', embed_json(payload(branches)))
     return html
 

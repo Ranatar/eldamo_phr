@@ -33,6 +33,7 @@
     <div class="tabs" role="tablist" data-i18n-attr="aria-label:section.tools" aria-label="Инструменты">
       <button type="button" role="tab" id="tab-recon" data-tab="recon" aria-controls="reconstruct-panel" aria-selected="true" data-i18n="tab.recon">Реконструкция</button>
       <button type="button" role="tab" id="tab-compose" data-tab="compose" aria-controls="wordform-panel" aria-selected="false" tabindex="-1" data-i18n="tab.compose">Словотворчество</button>
+      <button type="button" role="tab" id="tab-roots" data-tab="roots" aria-controls="roots-panel" aria-selected="false" tabindex="-1" data-i18n="tab.roots">Корни</button>
     </div>
 
     <div role="tabpanel" id="reconstruct-panel" aria-labelledby="tab-recon">
@@ -77,9 +78,38 @@
           <div class="wf-results" id="wf-r2"></div>
           <div class="wf-chosen" id="wf-chosen2" aria-live="polite"></div>
         </div>
+        <div class="wf-slot" id="wf-slot3" hidden>
+          <label><span data-i18n="compose.third">Третий элемент (необязательно)</span> <input type="search" id="wf-q3" autocomplete="off" data-i18n-attr="placeholder:compose.third.placeholder" placeholder="например -ion"></label>
+          <div class="wf-results" id="wf-r3"></div>
+          <div class="wf-chosen" id="wf-chosen3" aria-live="polite"></div>
+        </div>
       </div>
       <div class="actions"><button type="button" class="primary" id="wf-go" disabled data-i18n="compose.go">Соединить</button></div>
       <div id="wf-output" aria-live="polite"></div>
+    </div>
+
+    <div role="tabpanel" id="roots-panel" aria-labelledby="tab-roots" hidden>
+      <p class="lead" data-i18n="roots.lead">Указатель корней Eldamo: что о корне известно (с какими корнями других концепций он слит, под каким
+        записан, из какого выводится, не отвергнут ли) и какие слова квенья и синдарина от него происходят. Рекомендованные
+        корни без производных — материал для новых слов.</p>
+      <div class="filters">
+        <input type="search" id="roots-q" autocomplete="off" data-i18n-attr="placeholder:roots.query;aria-label:roots.search" placeholder="Корень или значение (LAS, leaf)" aria-label="Поиск корня">
+        <label><span data-i18n="roots.which">Показывать</span> <select id="roots-which">
+          <option value="listed" data-i18n="roots.which.listed">корни перечня Eldamo</option>
+          <option value="recommended" data-i18n="roots.which.recommended">рекомендованные</option>
+          <option value="free" data-i18n="roots.which.free">рекомендованные без производных</option>
+          <option value="all" data-i18n="roots.which.all">все страницы корней</option>
+        </select></label>
+        <label><span data-i18n="roots.era">Концепция</span> <select id="roots-era">
+          <option value="" data-i18n="common.all">все</option>
+          <option value="p" data-i18n="rootCard.lang.p">поздняя (√)</option>
+          <option value="mp" data-i18n="rootCard.lang.mp">«Этимологии» (ᴹ√)</option>
+          <option value="ep" data-i18n="rootCard.lang.ep">ранняя (ᴱ√)</option>
+          <option value="np" data-i18n="rootCard.lang.np">нео (N√)</option>
+        </select></label>
+      </div>
+      <p class="small muted" id="roots-count" aria-live="polite"></p>
+      <div id="roots-list" class="roots-list"></div>
     </div>
   </section>
 
@@ -183,6 +213,7 @@
 </script>
 <script type="application/json" id="atlas-data">@@DATA@@</script>
 <script type="application/json" id="wordform-data">@@WORDFORM_DATA@@</script>
+<script type="application/json" id="roots-data">@@ROOTS_DATA@@</script>
 <script>
 @@ROUTER@@
 </script>
@@ -197,6 +228,9 @@
 </script>
 <script>
 @@RECON_UI@@
+</script>
+<script>
+@@ROOTS_UI@@
 </script>
 <script>
 @@RUNTIME@@

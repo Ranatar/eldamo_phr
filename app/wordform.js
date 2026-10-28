@@ -1090,8 +1090,30 @@ function junctionsOf(a, b) {
   if (pa.length > 1 && isVowel(pa[pa.length - 1])) out.push([join(pa.slice(0, -1)) + '+' + b, 'elided']);
   return out;
 }
+// three or more elements: the first ones joined first, their best variants joined with the last (compound.py: _fold_latest)
+const FOLD_KEEP = 3;
+function foldLatest(engine, ids, era, extra, last) {
+  const lang = engine.languages.find(l => l.era === era && l.stage === last);
+  const head = predictLatest(engine, ids.slice(0, -1), era, extra);
+  const scored = new Map();
+  head.slice(0, FOLD_KEEP).forEach((h, k) => {
+    const fid = `~fold${ids.length}.${k}`;
+    const ex = new Map(extra || []);
+    ex.set(fid, { id: fid, lang: lang ? lang.code : null, form: h.form, speech: null, phonetic: h.form.split('+').join('') });
+    for (const v of predictLatest(engine, [fid, ids[ids.length - 1]], era, ex)) {
+      const sc = r3(h.score * v.score);
+      const key = comparable(v.form);
+      if (!scored.has(key) || scored.get(key).score < sc) {
+        scored.set(key, Object.assign({}, v, { score: sc, head: h.form.split('+').join(''),
+          elements: (h.elements || []).concat((v.elements || []).slice(1)), sources: (h.sources || []).concat((v.sources || []).slice(1)) }));
+      }
+    }
+  });
+  return [...scored.values()].sort((a, b) => b.score - a.score);
+}
 function predictLatest(engine, ids, era, extra = null) {
   const last = Math.max(...engine.languages.filter(l => l.era === era).map(l => l.stage));
+  if (ids.length > 2) return foldLatest(engine, ids, era, extra, last);
   const affixed = predictAffixed(engine, ids, extra);
   if (affixed) return affixed;
   if (ids.length !== 2) return [];
@@ -1502,13 +1524,22 @@ function rootParts(E, e) {
     const r = E.rootById.get(id);
     const k = part == null ? 0 : part;
     if (!parts.has(k)) parts.set(k, []);
-    if (r) for (const v of r[3]) { const c = rootCons(v); if (c.length) parts.get(k).push(c); }
+    if (r) {
+      for (const v of r[3]) { const c = rootCons(v); if (c.length) parts.get(k).push(c); }
+      if (r[3].length) parts.get(k).push(r[4] || r[0]);     // the root it stands for (reconstruct.py: _root_parts)
+    }
   }
   return [...parts.keys()].sort((x, y) => x - y).map(k => parts.get(k));
 }
 const prefixOf = (x, y) => y.length <= x.length && y.every((p, i) => p === x[i]);
 // a part whose root has no form to compare (no vowel) may be anything (reconstruct.py: _compatible)
-const compatibleParts = (a, b) => !a.length || !b.length || a.some(x => b.some(y => prefixOf(x, y) || prefixOf(y, x)));
+function compatibleParts(a, b) {
+  const sa = a.filter(Array.isArray), sb = b.filter(Array.isArray);
+  if (!sa.length || !sb.length) return true;
+  const ca = new Set(a.filter(x => typeof x === 'string'));
+  if (b.some(x => typeof x === 'string' && ca.has(x))) return true;      // the same root filed under one page
+  return sa.some(x => sb.some(y => prefixOf(x, y) || prefixOf(y, x)));
+}
 function partialCognate(E, a, b) {
   const pa = rootParts(E, a), pb = rootParts(E, b);
   if (!pa.length || !pb.length) return false;
@@ -1567,7 +1598,11 @@ function translated(engines, id, sb, era, db, last, code, depth) {
   let f = null, form = null;
   const root = Object.values(engines).map(E => { if (!E.rootById) E.rootById = new Map(E.roots.map(r => [r[0], r])); return E.rootById.get(id); }).find(Boolean);
   const e = engines[sb].lexicon.get(id) || entryOf(engines, id)[1];
-  if (root) { f = root[3].length ? root[3][0].join('') : null; form = root[2]; }
+  if (root) {
+    // a root as a base of the target language: through its laws (√THIL -> Q. sil-)
+    f = root[3].length ? root[3][0].join('') : null; form = root[2];
+    if (f) { const fw = forwardRun(engines[db], era, f + '-', 0, last); if (fw.length) f = fw[0][0]; }
+  }
   else {
     if (!e) return null;
     const l = engines[sb].languages.find(x => x.code === e.lang);

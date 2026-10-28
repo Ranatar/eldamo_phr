@@ -58,14 +58,18 @@ def root_phonetic(form: str) -> str:
 
 
 def table(lexicon: list) -> list:
-    """[[id, lang, form, [phonetic variants]]] of the roots in a lexicon, in a fixed order."""
+    """[[id, lang, form, [phonetic variants], canonical id]] of the roots in a lexicon, in a
+    fixed order; the canonical id is the root the page stands for (root_index.canonical: ᴹ√LUB²
+    ≡ √LUB³ ≡ N√LUP), so that roots of other conceptions compare as one."""
+    from .root_index import canonical, roots_of
+    canon = canonical(roots_of({'': lexicon}))
     out = []
     for e in lexicon:
         if e.get('speech') == 'root' and e['lang'] in PRIMITIVE_ERA and not e.get('neo'):
             # a root needs a vowel: S- (the s-prefix of s-fortification) is not a root of words
             vs = [v for v in root_variants(e['form']) if any(is_vowel(p) for p in phonemes(v))]
             if vs:
-                out.append([e['id'], e['lang'], e['form'], vs])
+                out.append([e['id'], e['lang'], e['form'], vs, canon.get(e['id'], e['id'])])
     return sorted(out, key=lambda r: (r[1], r[2], r[0]))
 
 
@@ -151,7 +155,7 @@ def candidates(roots: list, form: str, era: str, limit: int = 3) -> list:
     ph = phonemes(comparable(form).strip('-'))
     out = []
     langs = ROOT_LANGS.get(era, {})
-    for rid, lang, rform, variants in roots:
+    for rid, lang, rform, variants, *_ in roots:
         if lang not in langs:
             continue
         scores = [x for x in (score(ph, list(_phonemes(v))) for v in variants) if x is not None]

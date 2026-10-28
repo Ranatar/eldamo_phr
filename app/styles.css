@@ -235,7 +235,8 @@ details.ref > summary h2 { margin: 0; font-size: 19px; }
 details.ref[open] > summary { margin-bottom: 10px; }
 .rule-title { margin: 4px 0 8px; font-size: 18px; }
 @media (max-width: 760px) {
-  .tabs [role=tab] { padding: 8px 10px; font-size: 15px; }
+  .tabs { flex-wrap: wrap; }
+  .tabs [role=tab] { padding: 6px 8px; font-size: 14px; }
   .word-head .big { font-size: 24px; }
   .pcell { min-width: 96px; }
 }
@@ -248,3 +249,14 @@ details.ref[open] > summary { margin-bottom: 10px; }
   .pcell { min-width: 0; }
 }
 .unruled { color: var(--warn); }
+/* the index of roots and the card of a root */
+.tag.ok { background: var(--ok-soft); color: var(--ok); }
+.roots-list { display: flex; flex-direction: column; gap: 4px; margin-top: 6px; max-height: 480px; overflow-y: auto; }
+.roots-list button { text-align: left; display: block; }
+.root-rels { margin: 6px 0; padding-left: 18px; }
+.root-words { margin: 4px 0 10px; padding-left: 18px; line-height: 1.7; }
+.word-card h3 { font-size: 15px; margin: 10px 0 2px; }
+.origin { margin-top: 6px; font-size: 14px; }
+.origin > summary { cursor: pointer; color: var(--muted); }
+.origin-tree { margin: 2px 0; padding-left: 18px; list-style: none; border-left: 1px dotted var(--line); }
+.origin > .origin-tree { border-left: 0; padding-left: 4px; }

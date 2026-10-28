@@ -111,7 +111,8 @@ def partial_cognates(branches: dict) -> tuple[int, list]:
     """Cognate links of Eldamo between the branches whose words, both with known roots, are
     the same word in part only (shared/reconstruct.py: partial_cognate): (pairs with roots on
     both sides, [the partial ones])."""
-    from .reconstruct import partial_cognate
+    from .reconstruct import partial_cognate, use_canonical
+    use_canonical({b: d['lexicon'] for b, d in branches.items()})
     names = list(branches)
     if len(names) != 2:
         return 0, []

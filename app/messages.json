@@ -208,8 +208,8 @@
   "en": "Join"
  },
  "compose.lead": {
-  "ru": "Соедините два слова и выберите стадию, на которой образуется сложение. На ранней стадии элементы берутся в её формах и дальше проходят все последующие звуковые законы ветви; на последней — стык подбирается по засвидетельствованным сложениям. Элементом может быть и суффикс или приставка (например, <span class=\"form\">-itë</span>, <span class=\"form\">ú-</span>, <span class=\"form\">-(r)on</span>): тогда получается производное слово. Выбранное слово становится первым элементом.",
-  "en": "Join two words and choose the stage at which the compound is formed. At an early stage the elements are taken in that stage's forms and then go through all the later sound laws of the branch; at the last stage the junction follows the attested compounds. An element may also be a suffix or a prefix (for example <span class=\"form\">-itë</span>, <span class=\"form\">ú-</span>, <span class=\"form\">-(r)on</span>): then the result is a derived word. The chosen word becomes the first element."
+  "ru": "Соедините два слова и выберите стадию, на которой образуется сложение. На ранней стадии элементы берутся в её формах и дальше проходят все последующие звуковые законы ветви; на последней — стык подбирается по засвидетельствованным сложениям. Элементом может быть и суффикс или приставка (например, <span class=\"form\">-itë</span>, <span class=\"form\">ú-</span>, <span class=\"form\">-(r)on</span>): тогда получается производное слово. Когда выбраны два элемента, можно добавить третий: сначала соединяются первые два, затем к лучшим их вариантам присоединяется третий (S. galadh + thil + -ion). Выбранное слово становится первым элементом.",
+  "en": "Join two words and choose the stage at which the compound is formed. At an early stage the elements are taken in that stage's forms and then go through all the later sound laws of the branch; at the last stage the junction follows the attested compounds. An element may also be a suffix or a prefix (for example <span class=\"form\">-itë</span>, <span class=\"form\">ú-</span>, <span class=\"form\">-(r)on</span>): then the result is a derived word. Once two elements are chosen, a third may be added: the first two are joined first, then the third is joined to their best variants (S. galadh + thil + -ion). The chosen word becomes the first element."
  },
  "compose.noForms": {
   "ru": "Для этих слов на выбранной стадии форм не найдено: у элемента нет ни праформы, ни восстановленной праформы, дающей его форму.",
@@ -278,6 +278,14 @@
  "compose.stage": {
   "ru": "Стадия образования",
   "en": "Stage of formation"
+ },
+ "compose.third": {
+  "ru": "Третий элемент (необязательно)",
+  "en": "Third element (optional)"
+ },
+ "compose.third.placeholder": {
+  "ru": "например -ion",
+  "en": "e.g. -ion"
  },
  "corpus.allFields": {
   "ru": "все поля",
@@ -871,6 +879,17 @@
    "other": "{n} variants"
   }
  },
+ "n.words": {
+  "ru": {
+   "one": "{n} слово",
+   "few": "{n} слова",
+   "many": "{n} слов"
+  },
+  "en": {
+   "one": "{n} word",
+   "other": "{n} words"
+  }
+ },
  "op.asAttested": {
   "ru": " — как в засвидетельствованных словах",
   "en": ", as in attested words"
@@ -1235,6 +1254,186 @@
   "ru": "Корень слова, от которого произведено это (статья Eldamo)",
   "en": "A root of the word this one derives from (Eldamo page)"
  },
+ "root.warn.deleted": {
+  "ru": "вычеркнут",
+  "en": "deleted"
+ },
+ "root.warn.deleted.title": {
+  "ru": "Толкин вычеркнул раздел с этим корнем (| в Eldamo)",
+  "en": "Tolkien deleted the section with this root (| in Eldamo)"
+ },
+ "root.warn.deprecated": {
+  "ru": "заменён",
+  "en": "deprecated"
+ },
+ "root.warn.deprecated.title": {
+  "ru": "Eldamo советует другой корень (он сам или страница, на которую он ссылается, заменены)",
+  "en": "Eldamo advises another root (it, or the page it refers to, is deprecated)"
+ },
+ "root.warn.doubtful": {
+  "ru": "сомнителен",
+  "en": "doubtful"
+ },
+ "root.warn.doubtful.title": {
+  "ru": "Чтение или существование корня сомнительно (‽ в Eldamo)",
+  "en": "The reading or existence of the root is doubtful (‽ in Eldamo)"
+ },
+ "root.warn.early": {
+  "ru": "ранний",
+  "en": "early"
+ },
+ "root.warn.early.title": {
+  "ru": "Корень ранней концепции (ᴱ√): Eldamo не советует его для новых слов",
+  "en": "A root of the early conception (ᴱ√): Eldamo does not advise it for new words"
+ },
+ "root.warn.rejected": {
+  "ru": "отвергнут",
+  "en": "rejected"
+ },
+ "root.warn.rejected.title": {
+  "ru": "Толкин отверг этот корень (- в Eldamo)",
+  "en": "Tolkien rejected this root (- in Eldamo)"
+ },
+ "root.warn.unglossed": {
+  "ru": "без значения",
+  "en": "unglossed"
+ },
+ "root.warn.unglossed.title": {
+  "ru": "Значение корня не известно",
+  "en": "The meaning of the root is unknown"
+ },
+ "rootCard.canon": {
+  "ru": "Тот же корень, что",
+  "en": "The same root as"
+ },
+ "rootCard.free": {
+  "ru": "От этого рекомендованного корня в Eldamo ещё нет слов квенья и синдарина — материал для словотворчества.",
+  "en": "No Quenya or Sindarin word of Eldamo comes from this recommended root yet: material for new words."
+ },
+ "rootCard.from": {
+  "ru": "Выводится из:",
+  "en": "Derives from:"
+ },
+ "rootCard.here": {
+  "ru": "Под ним записаны:",
+  "en": "Filed under it:"
+ },
+ "rootCard.instead": {
+  "ru": "Заменён (Eldamo советует вместо него):",
+  "en": "Replaced (Eldamo advises instead):"
+ },
+ "rootCard.into": {
+  "ru": "Слит с корнем:",
+  "en": "Merged into:"
+ },
+ "rootCard.kind": {
+  "ru": "Корень, {lang}",
+  "en": "Root, {lang}"
+ },
+ "rootCard.lang.ep": {
+  "ru": "ранняя концепция (ᴱ√)",
+  "en": "early conception (ᴱ√)"
+ },
+ "rootCard.lang.mp": {
+  "ru": "«Этимологии», средняя концепция (ᴹ√)",
+  "en": "the Etymologies, middle conception (ᴹ√)"
+ },
+ "rootCard.lang.np": {
+  "ru": "нео-праэльфийский (N√)",
+  "en": "Neo-Primitive Elvish (N√)"
+ },
+ "rootCard.lang.p": {
+  "ru": "поздняя концепция (√)",
+  "en": "late conception (√)"
+ },
+ "rootCard.merged": {
+  "ru": "С ним слиты корни других концепций:",
+  "en": "Roots of other conceptions merged into it:"
+ },
+ "rootCard.neoHidden": {
+  "ru": "Ещё неологизмов: {n} (включите «неологизмы» вверху).",
+  "en": "Neologisms not shown: {n} (switch on “neologisms” above)."
+ },
+ "rootCard.noWords": {
+  "ru": "Слов от этого корня в Eldamo нет.",
+  "en": "Eldamo has no words from this root."
+ },
+ "rootCard.primitive": {
+  "ru": "праэльфийский",
+  "en": "Primitive Elvish"
+ },
+ "rootCard.recommended": {
+  "ru": "рекомендован",
+  "en": "recommended"
+ },
+ "rootCard.recommendedTitle": {
+  "ru": "Корень перечня Eldamo без предупреждений: его можно брать для новых слов",
+  "en": "A root of Eldamo's list without warnings: fit for new words"
+ },
+ "rootCard.see": {
+  "ru": "См.:",
+  "en": "See:"
+ },
+ "rootCard.to": {
+  "ru": "Из него выводятся корни:",
+  "en": "Roots derived from it:"
+ },
+ "rootCard.under": {
+  "ru": "Записан под корнем:",
+  "en": "Filed under:"
+ },
+ "rootCard.words": {
+  "ru": "Слова от этого корня",
+  "en": "Words from this root"
+ },
+ "roots.count": {
+  "ru": "Найдено: {n}; показано: {shown}.",
+  "en": "Found: {n}; shown: {shown}."
+ },
+ "roots.era": {
+  "ru": "Концепция",
+  "en": "Conception"
+ },
+ "roots.lead": {
+  "ru": "Указатель корней Eldamo: что о корне известно (с какими корнями других концепций он слит, под каким записан, из какого выводится, не отвергнут ли) и какие слова квенья и синдарина от него происходят. Рекомендованные корни без производных — материал для новых слов.",
+  "en": "The index of Eldamo's roots: what is known of a root (which roots of other conceptions are merged with it, which root it is filed under, what it derives from, whether it is rejected) and which Quenya and Sindarin words come from it. Recommended roots without derivatives are material for new words."
+ },
+ "roots.noWords": {
+  "ru": "без производных",
+  "en": "no derivatives"
+ },
+ "roots.none": {
+  "ru": "Таких корней нет.",
+  "en": "No such roots."
+ },
+ "roots.query": {
+  "ru": "Корень или значение (LAS, leaf)",
+  "en": "A root or a meaning (LAS, leaf)"
+ },
+ "roots.search": {
+  "ru": "Поиск корня",
+  "en": "Search for a root"
+ },
+ "roots.which": {
+  "ru": "Показывать",
+  "en": "Show"
+ },
+ "roots.which.all": {
+  "ru": "все страницы корней",
+  "en": "every root page"
+ },
+ "roots.which.free": {
+  "ru": "рекомендованные без производных",
+  "en": "recommended, without derivatives"
+ },
+ "roots.which.listed": {
+  "ru": "корни перечня Eldamo",
+  "en": "roots of Eldamo's list"
+ },
+ "roots.which.recommended": {
+  "ru": "рекомендованные",
+  "en": "recommended"
+ },
  "route.attested": {
   "ru": "засвидетельствовано",
   "en": "attested"
@@ -1507,6 +1706,10 @@
   "ru": "Реконструкция",
   "en": "Reconstruction"
  },
+ "tab.roots": {
+  "ru": "Корни",
+  "en": "Roots"
+ },
  "tag.neologism": {
   "ru": "неологизм",
   "en": "neologism"
@@ -1555,6 +1758,10 @@
   "ru": "Сплошная линия — переход с засвидетельствованными примерами, пунктир — без примеров.",
   "en": "A solid line is a transition with attested examples, a dashed one is without."
  },
+ "tree.noRoot": {
+  "ru": "(корень не известен)",
+  "en": "(no known root)"
+ },
  "tree.none": {
   "ru": "Переходов не найдено.",
   "en": "No transitions found."
@@ -1566,6 +1773,38 @@
  "tree.originScheme": {
   "ru": "Схема происхождения [{root}]",
   "en": "Scheme of the origins of [{root}]"
+ },
+ "tree.rel.c": {
+  "ru": "то же слово другой концепции",
+  "en": "the same word in another conception"
+ },
+ "tree.rel.d": {
+  "ru": "из",
+  "en": "from"
+ },
+ "tree.rel.e": {
+  "ru": "составляющая",
+  "en": "element"
+ },
+ "tree.rel.k": {
+  "ru": "когнат",
+  "en": "cognate"
+ },
+ "tree.rel.s": {
+  "ru": "см.",
+  "en": "see"
+ },
+ "tree.rel.x": {
+  "ru": "заменённое им слово",
+  "en": "the word it replaced"
+ },
+ "tree.title": {
+  "ru": "Происхождение: от слова к корням",
+  "en": "Origin: from the word to its roots"
+ },
+ "tree.written": {
+  "ru": "записано {src}:",
+  "en": "written {src}:"
  },
  "variant.use": {
   "ru": "работать с этой формой",

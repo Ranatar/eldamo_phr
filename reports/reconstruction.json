@@ -165,9 +165,9 @@
   "cases": 30,
   "plain_first": 8,
   "plain_any": 9,
-  "elements_first": 8,
-  "elements_any": 10,
-  "built": 14,
+  "elements_first": 7,
+  "elements_any": 9,
+  "built": 15,
   "pairs": 238
  },
  "compounds s -> q": {

@@ -77,6 +77,12 @@ def vectors(branches: dict, size: int = 1, recon_every: int = 1) -> dict:
                 ids = ids[::-1]                 # either order of picking
             vs = compound.predict(lexicon, seq, ids, 'late', 9, table=table, affix_model=affix_model)
             V['affixed'].append([ids, [[v['form'], v['score']] for v in vs[:10]]])
+        # three elements: the first two joined, then the third (compound._fold_latest)
+        pool = [e['id'] for e in data['lexicon'] if e['lang'] == final['code'] and e.get('speech') != 'root' and not e.get('neo')]
+        for _ in range(6 * size):
+            ids = rnd.sample(pool, 3)
+            vs = compound.predict(lexicon, seq, ids, 'late', 9, table=table, affix_model=affix_model)
+            V['affixed'].append([ids, [[v['form'], v['score']] for v in vs[:10]]])
         out[b] = V
     out['__recon__'] = recon_vectors(branches, size, recon_every)
     out['__roots__'] = root_vectors(branches, size)

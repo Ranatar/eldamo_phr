@@ -5,6 +5,9 @@
 'use strict';
 const WF = window.WF, QR = window.QR;
 const WDATA = JSON.parse(document.getElementById('wordform-data').textContent);
+// the index of roots (shared/root_index.py): id -> {f, l, g, m, w, instead, see, into, merged, under, here, canon, from, to, words, listed}
+const ROOTS = JSON.parse(document.getElementById('roots-data').textContent);
+const ROOT_MARKERS = { p: '√', mp: 'ᴹ√', ep: 'ᴱ√', np: 'N√' };
 const SITE = 'https://eldamo.org/content/';
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -140,6 +143,8 @@ let started = false;
 let subject = null;          // {kind: 'word'|'form', branch, period, entry?, form?, key}
 const listeners = [];
 function subjectFrom(p) {
+  const rid = p.get('r');
+  if (rid) return ROOTS[rid] ? { kind: 'root', key: 'r:' + rid, id: rid, root: ROOTS[rid] } : { kind: 'missing', key: 'r:' + rid, id: rid };
   const id = p.get('w');
   if (id) {
     const hit = lookup(id, p.get('b'));
@@ -227,11 +232,11 @@ document.addEventListener('click', e => {
 function openWord(id, branch) {
   $('q-results').hidden = true;
   $('q').value = '';
-  QR.set({ w: id, b: branch || null, f: null, in: null, dst: null }, true);
+  QR.set({ w: id, b: branch || null, r: null, f: null, in: null, dst: null }, true);
   $('word-section').scrollIntoView({ block: 'start' });
 }
 function openForm(form, b, era, stage) {
-  QR.set({ w: null, f: form, in: `${b}/${era}/${stage}`, dst: null }, true);
+  QR.set({ w: null, r: null, f: form, in: `${b}/${era}/${stage}`, dst: null }, true);
   $('word-section').scrollIntoView({ block: 'start' });
 }
 
@@ -301,8 +306,125 @@ function cardHtml(s) {
     ${(e.unruled || []).length ? `<div class="small unruled">${T(e.unruled.length > 1 ? 'card.unruledMany' : 'card.unruledOne')} ${
       e.unruled.map(([code, a, b2]) => `<span class="marker">${esc(marker(E, code))}</span> <span class="form">${esc(a)} → ${esc(b2)}</span>`).join('; ')}.
       ${T('card.unruledNote')}</div>` : ''}
-    ${e.starts ? `<div class="small"><a href="#" data-ref-derivations="${esc(e.id)}" data-branch="${esc(b)}">${T('card.derivations')}</a></div>` : ''}`;
+    ${e.starts ? `<div class="small"><a href="#" data-ref-derivations="${esc(e.id)}" data-branch="${esc(b)}">${T('card.derivations')}</a></div>` : ''}
+    ${(e.roots || e.root_gaps) ? originTree(s, entryRoots(b, e)) : ''}`;
 }
+
+// ---------------------------------------------------------------- the tree of a word's origin
+// the paths from the word to its roots (shared/lexicon.py: path) joined where they share a beginning:
+// its elements, the words it derives from, and so on down to the roots; a derivation as the
+// reference writes it, with the intermediate forms (PE17/135: galadā > ʒalaðā > ʒalðā > alda)
+function nodeHtml(id, gapForm) {
+  if (ROOTS[id]) return rootRef(id);
+  const w = lookup(id);
+  if (w) return `<a href="#" data-word="${esc(id)}" data-branch="${esc(w.branch)}" title="${esc(w.entry.gloss)}"><span class="marker">${esc(marker(engine(w.branch), w.entry.lang))}</span> <span class="form">${esc(w.entry.form)}</span></a>`;
+  return `<a href="${SITE}words/word-${esc(id)}.html" target="_blank" rel="noopener"><span class="form">${esc(gapForm || id)}</span> ↗</a>`;
+}
+function writtenHtml(parentId, childId) {
+  const w = lookup(parentId);
+  const recs = w && w.entry.written ? w.entry.written[childId] || [] : [];
+  return recs.map(([src, v, inter]) => ` <span class="small muted">${esc(T('tree.written', { src }))}
+    <span class="form">${esc([v, ...inter, w.entry.form].join(' > '))}</span></span>`).join('');
+}
+function originTree(s, list) {
+  const top = { kids: new Map() };
+  for (const r of list) {
+    let node = top;
+    r.path.forEach(([rel, id], k) => {
+      const key = rel + ':' + id;
+      if (!node.kids.has(key)) node.kids.set(key, { rel, id, kids: new Map(), gap: false, form: null });
+      node = node.kids.get(key);
+      if (k === r.path.length - 1 && r.gap) { node.gap = true; node.form = r.form; }
+    });
+  }
+  if (![...top.kids.values()].some(n => n.kids.size)) return '';       // the roots are named by the word itself
+  const render = (node, parent) => `<ul class="origin-tree">${[...node.kids.values()].map(n =>
+    `<li><span class="muted small">${esc(T('tree.rel.' + n.rel))}</span> ${nodeHtml(n.id, n.form)}${n.gap ? ` <span class="small muted">${T('tree.noRoot')}</span>` : ''}`
+    + `${n.rel === 'd' ? writtenHtml(parent, n.id) : ''}${n.kids.size ? render(n, n.id) : ''}</li>`).join('')}</ul>`;
+  return `<details class="origin"><summary>${T('tree.title')}</summary>${render(top, s.id)}</details>`;
+}
+
+// ---------------------------------------------------------------- the card of a root
+// a root of the index as a link to its card
+function rootRef(id) {
+  const r = ROOTS[id];
+  if (!r) return '';
+  return `<a href="#r=${esc(id)}" data-root="${esc(id)}" class="root" title="${esc(r.g)}"><span class="marker">${esc(ROOT_MARKERS[r.l] || '√')}</span><span class="form">${esc(r.f)}</span></a>`;
+}
+function openRoot(id) {
+  $('q-results').hidden = true;
+  QR.set({ r: id, w: null, f: null, in: null, dst: null }, true);
+  $('word-section').scrollIntoView({ block: 'start' });
+}
+document.addEventListener('click', e => {
+  const a = e.target.closest('[data-root]');
+  if (!a) return;
+  e.preventDefault();
+  openRoot(a.dataset.root);
+});
+// the words of a root by language: neologisms only with the switch on
+const PRIMITIVE_CODES = ['p', 'np', 'mp', 'ep'];
+function rootWordsHtml(r) {
+  const out = [];
+  let hidden = 0;
+  const seen = new Set();
+  // the words of each branch by language, latest conception first; primitive words once, apart
+  const groups = BRANCHES.map(b => ({ b, title: BRANCH_NAMES[b], byLang: new Map() })).concat([{ b: null, title: T('rootCard.primitive'), byLang: new Map() }]);
+  for (const b of BRANCHES) {
+    const E = engine(b);
+    for (const id of (r.words || {})[b] || []) {
+      const e = E.lexicon.get(id);
+      if (!e || seen.has(id)) continue;
+      seen.add(id);
+      if (e.neo && !neo()) { hidden++; continue; }
+      const g = PRIMITIVE_CODES.includes(e.lang) ? groups[groups.length - 1] : groups.find(x => x.b === b);
+      if (!g.byLang.has(e.lang)) g.byLang.set(e.lang, []);
+      g.byLang.get(e.lang).push([b, e]);
+    }
+  }
+  for (const g of groups) {
+    if (!g.byLang.size) continue;
+    const E = engine(g.b || BRANCHES[0]);
+    const rank = code => {
+      const l = language(E, code);
+      return g.b ? ERAS.indexOf(l ? l.era : NEO_ERA[code] || 'late') * 10 - (l ? l.stage : 9) : PRIMITIVE_CODES.indexOf(code);
+    };
+    const rows = [...g.byLang.keys()].sort((x, y) => rank(x) - rank(y)).map(code => {
+      const ws = g.byLang.get(code).sort((x, y) => fold(x[1].form) < fold(y[1].form) ? -1 : 1);
+      return `<li><span class="marker">${esc(marker(E, code))}</span> ${ws.map(([b, e]) =>
+        `<a href="#" data-word="${esc(e.id)}" data-branch="${esc(b)}" title="${esc(e.gloss)}"><span class="form">${esc(e.form)}</span></a>`).join(', ')}</li>`;
+    }).join('');
+    const n = [...g.byLang.values()].reduce((k, x) => k + x.length, 0);
+    out.push(`<h3>${esc(g.title)} <span class="muted small">(${TN('n.words', n)})</span></h3><ul class="root-words">${rows}</ul>`);
+  }
+  if (hidden) out.push(`<p class="small muted">${esc(T('rootCard.neoHidden', { n: hidden }))}</p>`);
+  return out.join('') || `<p class="muted">${T('rootCard.noWords')}</p>`;
+}
+function rootCardHtml(s) {
+  const r = s.root, id = s.id;
+  const list = ids => (ids || []).filter(x => ROOTS[x]).map(rootRef).join(', ');
+  const bits = [];
+  const rel = (label, ids) => { const h = list(ids); if (h) bits.push(`<li>${label} ${h}</li>`); };
+  rel(T('rootCard.instead'), r.instead);
+  rel(T('rootCard.see'), r.see);
+  rel(T('rootCard.into'), r.into);
+  rel(T('rootCard.merged'), r.merged);
+  if (r.under) rel(T('rootCard.under'), [r.under]);
+  rel(T('rootCard.here'), r.here);
+  if (r.canon && r.canon !== r.under && !(r.into || []).includes(r.canon)) rel(T('rootCard.canon'), [r.canon]);
+  rel(T('rootCard.from'), r.from);
+  rel(T('rootCard.to'), r.to);
+  const warn = (r.w || []).map(w => `<span class="tag warn" title="${esc(T('root.warn.' + w + '.title'))}">⚠ ${esc(T('root.warn.' + w))}</span>`).join(' ');
+  const status = r.listed && !(r.w || []).length ? `<span class="tag ok" title="${esc(T('rootCard.recommendedTitle'))}">${T('rootCard.recommended')}</span>` : '';
+  const free = r.listed && !(r.w || []).length && !r.words ? `<p class="small">${T('rootCard.free')}</p>` : '';
+  return `<div class="word-head"><span class="marker">${esc(ROOT_MARKERS[r.l] || '√')}</span> <strong class="form big">${esc(r.f)}</strong>
+      <span class="gloss">${esc(r.g)}</span> ${status} ${warn}
+      <a href="${SITE}words/word-${esc(id)}.html" target="_blank" rel="noopener" class="small">${T('common.eldamoPageLower')} ↗</a></div>
+    <div class="small">${esc(T('rootCard.kind', { lang: T('rootCard.lang.' + r.l) }))}${r.m && r.m !== '#' ? ' · ' + esc(T('card.mark', { mark: r.m })) : ''}</div>
+    ${bits.length ? `<ul class="small root-rels">${bits.join('')}</ul>` : ''}${free}
+    <h2>${T('rootCard.words')}</h2>${rootWordsHtml(r)}`;
+}
+$('neo-toggle').addEventListener('change', () => { if (subject && subject.kind === 'root') $('word-card').innerHTML = rootCardHtml(subject); });
 
 // ---------------------------------------------------------------- panorama
 let generation = 0;
@@ -337,9 +459,9 @@ function linkedIds(id) {
 // the roots of an entry as records for rootsHtml
 function entryRoots(b, e) {
   const E = engine(b);
-  const out = (e.root_refs || []).map(([lang, id, via, part], i) => ({ id, form: e.roots[i], marker: rootMarker(E, lang), via: via || '', part }));
+  const out = (e.root_refs || []).map(([lang, id, via, part, path], i) => ({ id, form: e.roots[i], marker: rootMarker(E, lang), via: via || '', part, path: path || [] }));
   // an element without a root, in its place (S. Adanel = √ATATA + ✶-iel)
-  for (const [part, lang, id, form] of e.root_gaps || []) out.push({ id, form, marker: (language(E, lang) || {}).marker || '', part, gap: true });
+  for (const [part, lang, id, form, path] of e.root_gaps || []) out.push({ id, form, marker: (language(E, lang) || {}).marker || '', part, gap: true, path: path || [] });
   return out.sort((x, y) => (x.part ?? -1) - (y.part ?? -1));
 }
 // roots by era: the word's own for its era; for another era those of the first word Eldamo links to it
@@ -381,7 +503,9 @@ const rootMarker = (E, lang) => { const l = language(E, lang); return l ? l.mark
 function rootLink(r) {
   if (r.gap) return `<a href="${SITE}words/word-${esc(r.id)}.html" target="_blank" rel="noopener" class="root gap" title="${esc(T('root.gapTitle'))}"><span class="marker">${esc(r.marker)}</span><span class="form">${esc(r.form)}</span></a>`;
   const title = T(r.guess ? 'root.guessTitle' : r.via ? 'root.via.' + r.via : 'panorama.rootTitle');
-  return `<a href="${SITE}words/word-${esc(r.id)}.html" target="_blank" rel="noopener" class="root${r.via ? ' via' : ''}${r.guess ? ' guess' : ''}" title="${esc(title)}">${r.guess ? '?' : ''}<span class="marker">${esc(r.marker)}</span><span class="form">${esc(r.form)}</span></a>`;
+  // a root of the index opens its card here; the card links to Eldamo
+  const href = ROOTS[r.id] ? `href="#r=${esc(r.id)}" data-root="${esc(r.id)}"` : `href="${SITE}words/word-${esc(r.id)}.html" target="_blank" rel="noopener"`;
+  return `<a ${href} class="root${r.via ? ' via' : ''}${r.guess ? ' guess' : ''}" title="${esc(title)}">${r.guess ? '?' : ''}<span class="marker">${esc(r.marker)}</span><span class="form">${esc(r.form)}</span></a>`;
 }
 // roots of Eldamo the primitive form could come from (wordform.js: rootCandidates): the best ones
 function rootGuess(b, era, form) {
@@ -479,7 +603,7 @@ document.querySelector('[role=tablist]').addEventListener('keydown', e => {
 
 // ---------------------------------------------------------------- routing
 function route(p) {
-  showTab(p.get('tab') === 'compose' ? 'compose' : 'recon');
+  showTab(['compose', 'roots'].includes(p.get('tab')) ? p.get('tab') : 'recon');
   const s = subjectFrom(p);
   const key = s ? s.key : '';
   if (started && (subject ? subject.key : '') === key) return;
@@ -488,8 +612,12 @@ function route(p) {
   $('intro').hidden = !!s;
   $('word-card').hidden = !s;
   if (!s) { renderIntro(); renderPanorama(null); }
+  else if (s.kind === 'root') { $('word-card').innerHTML = rootCardHtml(s); renderPanorama(null); }
   else { $('word-card').innerHTML = cardHtml(s); remember(s); renderPanorama(s); }
-  document.title = s && s.kind === 'word' ? `${s.entry.form} — Quettamin` : s && s.kind === 'form' ? `${s.form} — Quettamin` : T('page.title');
+  document.title = s && s.kind === 'word' ? `${s.entry.form} — Quettamin` : s && s.kind === 'form' ? `${s.form} — Quettamin`
+    : s && s.kind === 'root' ? `${ROOT_MARKERS[s.root.l] || '√'}${s.root.f} — Quettamin` : T('page.title');
+  // the tools work on words and forms; a root's card leaves them as they were
+  if (s && s.kind === 'root') return;
   for (const l of listeners) l(s, 'subject');
 }
 QR.on(route);
@@ -499,7 +627,8 @@ window.QU = {
   esc, fold, engine, allEngines, lookup, language, marker, eraOf, lastStage, periodOf, periodName,
   T, TN, spelling, plainForm, shown, ruleLink, rootGuess, rootLink, rootsHtml, stagesHtml, marksHtml, routeText, searchWords, hitHtml, sourceOf,
   neo, openWord, openForm, showTab,
-  subject: () => subject,
+  subject: () => (subject && subject.kind === 'root' ? null : subject),
+  ROOTS, ROOT_MARKERS, rootRef, openRoot,
   onSubject: fn => listeners.push(fn),
   start: () => route(QR.get()),
 };

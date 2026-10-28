@@ -66,9 +66,12 @@ class InterfaceCatalog(unittest.TestCase):
                           'nearSame', 'nearClose', 'link', 'unchanged', 'reetymology', 'then', 'byElements', 'partialLink', 'irregularLaw', 'composed', 'composedUnconfirmed'],
                'card.root.': ['element', 'cognate', 'source', 'combine', 'see', 'deprecated'],
                'root.via.': ['element', 'cognate', 'source', 'combine', 'see', 'deprecated'],
+               'root.warn.': [w + t for w in ('deprecated', 'deleted', 'rejected', 'doubtful', 'unglossed', 'early') for t in ('', '.title')],
+               'rootCard.lang.': ['p', 'mp', 'ep', 'np'],
+               'tree.rel.': ['e', 'd', 'c', 's', 'x', 'k'],
                'ipa.': ['labial', 'dental', 'palatal', 'velar', 'labiovelar', 'glottal', 'stop', 'fricative', 'nasal',
                         'lateral', 'trill', 'approximant', 'high', 'mid', 'low', 'front', 'central', 'back']}
-    FILES = ('runtime.js', 'word_ui.js', 'wordform_ui.js', 'reconstruct_ui.js', 'corpus_template.html')
+    FILES = ('runtime.js', 'word_ui.js', 'wordform_ui.js', 'reconstruct_ui.js', 'roots_ui.js', 'corpus_template.html')
 
     @classmethod
     def setUpClass(cls):
@@ -93,7 +96,7 @@ class InterfaceCatalog(unittest.TestCase):
         and in the templates only as the default text of an element marked for translation."""
         from html.parser import HTMLParser
         cyr = re.compile('[А-Яа-яЁё]')
-        for name in ('router.js', 'wordform.js', 'word_ui.js', 'wordform_ui.js', 'reconstruct_ui.js',
+        for name in ('router.js', 'wordform.js', 'word_ui.js', 'wordform_ui.js', 'reconstruct_ui.js', 'roots_ui.js',
                      'runtime.js', 'i18n.js'):
             text = (ROOT / 'app' / name).read_text(encoding='utf-8')
             code = re.sub(r'/\*.*?\*/', '', text, flags=re.S)

@@ -172,6 +172,52 @@ class Browser(unittest.TestCase):
         page.wait_for_function("location.hash.includes('f=') && document.getElementById('word-card').textContent.includes('Форма без статьи')")
         self.assertIn('Форма без статьи Eldamo', page.inner_text('#word-card'))
 
+    def test_three_elements(self):
+        # a third element joins the first two: Q. alda + sil- + -ion
+        page = self.page(self.atlas + '#tab=compose')
+        self.assertTrue(page.locator('#wf-slot3').is_hidden())
+        page.fill('#wf-q1', 'alda')
+        page.click('#wf-r1 button:has(.form:text-is("alda"))')
+        page.fill('#wf-q2', 'Isil')
+        page.click('#wf-r2 button:has(.form:text-is("Isil"))')
+        self.assertTrue(page.locator('#wf-slot3').is_visible())
+        page.fill('#wf-q3', '-ion')
+        page.click('#wf-r3 button:has(.form:text-is("-ion"))')
+        page.click('#wf-go')
+        first = page.inner_text('#wf-output .wf-variant.main')
+        self.assertRegex(first, r'ald\w*isil\w*on')
+
+    def test_root_card_and_index(self):
+        # a root of a word opens its card here: what Eldamo says of it, the words from it
+        page = self.page(self.atlas + '#w=3005081253')                 # S. galadh
+        page.click('#word-card [data-root]')
+        page.wait_for_function("location.hash.includes('r=')")
+        card = page.inner_text('#word-card')
+        self.assertIn('Слова от этого корня', card)
+        self.assertIn('galadh', card)
+        # √LAS¹: ᴹ√LAS¹ is merged into it
+        page.goto(self.atlas + '#r=3661997445')
+        page.wait_for_function("document.getElementById('word-card').textContent.includes('LAS')")
+        self.assertIn('слиты', page.inner_text('#word-card'))
+        self.assertIn('lassë', page.inner_text('#word-card'))
+        # the index: a search, the recommended roots without derivatives
+        page.goto(self.atlas + '#tab=roots')
+        page.fill('#roots-q', 'LUP')
+        page.click('#roots-list [data-root]:has(.form:text-is("LUP"))')
+        page.wait_for_function("document.getElementById('word-card').textContent.includes('LUP')")
+        self.assertIn('LUB', page.inner_text('#word-card'))
+        page.fill('#roots-q', '')
+        page.select_option('#roots-which', 'free')
+        self.assertIn('без производных', page.inner_text('#roots-list'))
+
+    def test_origin_tree(self):
+        # S. Mithrandir: mith + randir, randir = √RAN + dîr < √N(D)ER
+        page = self.page(self.atlas + '#w=2655041701')
+        page.click('#word-card details.origin summary')
+        tree = page.inner_text('#word-card details.origin')
+        for x in ('randir', 'dîr', 'RAN', 'N(D)ER', 'MITH'):
+            self.assertIn(x, tree)
+
     def test_word_is_first_element(self):
         page = self.page(self.atlas + '#w=4273482913&tab=compose')
         self.assertIn('Ambar', page.inner_text('#wf-chosen1'))

@@ -246,6 +246,7 @@ class Context:
         self.data = branches
         self.seq = {b: Sequencer(d) for b, d in branches.items()}
         self.lexicon = {b: {e['id']: e for e in d['lexicon']} for b, d in branches.items()}
+        use_canonical({b: d['lexicon'] for b, d in branches.items()})
         self.normal = {b: d.get('stages') or normalize(d, self.seq[b]) for b, d in branches.items()}
         self._tables = {}
         self._phonotactics = {}
@@ -623,8 +624,19 @@ def _within(ctx, add, branch, era, form, ss, ds, hints, exclude, base_score=1.0,
 PARTIAL_SCORE = 0.8     # a partial cognate (partial_cognate): below the main reading of the laws (1.0)
 
 
+_CANON = {}     # root id -> the root it stands for (root_index.canonical), set by use_canonical
+
+
+def use_canonical(lexicons: dict) -> None:
+    """Roots of other conceptions compare as one when Eldamo files them as one (ᴹ√KHOTH under
+    √KHOT¹): the canonical ids of the lexicons' roots, for partial_cognate."""
+    from .root_index import canonical, roots_of
+    _CANON.update(canonical(roots_of(lexicons)))
+
+
 def _root_parts(e: dict) -> list:
-    """The parts of a word's roots, each a list of consonant skeletons of its alternatives."""
+    """The parts of a word's roots, each a list of its alternatives: consonant skeletons, and
+    the canonical id of each root (a string)."""
     from .roots import root_variants, _cons
     parts = {}
     for r in e.get('roots', ()):
@@ -633,8 +645,12 @@ def _root_parts(e: dict) -> list:
             # etymology may differ (S. -iel¹ ᴹ√SEL(D) ~ Q. -iel ᴹ√YEL¹ are linked as cognates)
             continue
         # as in the root table of the page (roots.table): variants with a vowel
-        sk = [tuple(_cons(phonemes(v))) for v in root_variants(r['form']) if any(is_vowel(p) for p in phonemes(v))]
-        parts.setdefault(r.get('part', 0), []).extend(x for x in sk if x)
+        sk = [tuple(_cons(phonemes(v))) for v in root_variants(r['form']) if any(is_vowel(p) for p in phonemes(v))] \
+            if r.get('lang') in PRIMITIVE_ERA else []
+        group = parts.setdefault(r.get('part', 0), [])
+        group.extend(x for x in sk if x)
+        if sk:
+            group.append(_CANON.get(r['id'], r['id']))
     return [parts[k] for k in sorted(parts)]
 
 
@@ -642,9 +658,13 @@ def _compatible(a: list, b: list) -> bool:
     """Two parts that may be the same root: the consonants of one begin the other's
     (√KAL ~ √KALAR, the root and its extension) for some alternatives. A part whose root
     has no form to compare (√VḶTḶ: no vowel) may be anything."""
-    if not a or not b:
+    sa, sb = [x for x in a if isinstance(x, tuple)], [x for x in b if isinstance(x, tuple)]
+    if not sa or not sb:
         return True
-    return any(x[:len(y)] == y or y[:len(x)] == x for x in a for y in b)
+    # the same root filed under one page (ᴹ√KHOTH ≡ √KHOT¹)
+    if {x for x in a if isinstance(x, str)} & {x for x in b if isinstance(x, str)}:
+        return True
+    return any(x[:len(y)] == y or y[:len(x)] == x for x in sa for y in sb)
 
 
 def partial_cognate(a: dict, b: dict) -> bool:
@@ -734,8 +754,11 @@ def _translated(ctx, x: dict, sb: str, era: str, db: str, last: int, code: str, 
     if e is None:
         return None
     if e.get('speech') == 'root':
+        # a root as a base of the target language: through its laws (√THIL -> Q. sil-)
         vs = [v for v in root_variants(e['form']) if any(is_vowel(p) for p in phonemes(v))]
         f = vs[0] if vs and e['lang'] in PRIMITIVE_ERA and not e.get('neo') else None
+        if f:
+            f = (ctx.forward(db, era, f + '-', 0, last)[:1] or [(f, None)])[0][0]
     else:
         from .affixes import kind
         l = ctx.langs(sb).get(e['lang'])

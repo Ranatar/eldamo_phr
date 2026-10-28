@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import itertools
 import re
+from collections import ChainMap
 
 from . import affixes
 from . import junctions as junction_table
@@ -144,6 +145,8 @@ def predict_latest(lexicon: dict, seq, table: dict, element_ids: list, era: str 
     the rules of its last stage that apply to polysyllables, since a compound
     is a new polysyllable (S. [au] > [o]: aeg + naur > Aegnor)."""
     last = max(l['stage'] for l in seq.langs.values() if l['era'] == era)
+    if len(element_ids) > 2:
+        return _fold_latest(lexicon, seq, table, element_ids, era, affix_model, last)
     if affix_model is not None:
         affixed = predict_affixed(lexicon, seq, affix_model, element_ids)
         if affixed is not None:
@@ -191,6 +194,30 @@ def predict_latest(lexicon: dict, seq, table: dict, element_ids: list, era: str 
                      'stem': join(stem) if stem else None, 'trace': []})
     ranked = sorted(scored.values(), key=lambda x: -x[0])
     return [{'form': f, 'score': round(sc, 3), **info} for sc, f, info in ranked]
+
+
+FOLD_KEEP = 3     # variants of the first elements carried into the join with the next one
+
+
+def _fold_latest(lexicon, seq, table, element_ids, era, affix_model, last) -> list:
+    """Three or more elements at the latest stage: the first ones joined first, and each of
+    their best variants joined with the last element like a word of the language (S.
+    Galathilion = galadh + thil + -ion: galathil, then + -ion). The score is the product."""
+    code = next((l['code'] for l in seq.langs.values() if l['era'] == era and l['stage'] == last), None)
+    head = predict_latest(lexicon, seq, table, element_ids[:-1], era, affix_model)
+    scored = {}
+    for k, h in enumerate(head[:FOLD_KEEP]):
+        fid = f'~fold{len(element_ids)}.{k}'
+        pseudo = {'id': fid, 'lang': code, 'form': h['form'], 'speech': None, 'phonetic': h['form'].replace('+', '')}
+        lex = ChainMap({fid: pseudo}, lexicon)
+        for v in predict_latest(lex, seq, table, [fid, element_ids[-1]], era, affix_model):
+            sc = round(h['score'] * v['score'], 3)
+            key = comparable(v['form'])
+            if key not in scored or scored[key]['score'] < sc:
+                scored[key] = {**v, 'score': sc, 'head': pseudo['phonetic'],
+                               'elements': list(h.get('elements', [])) + list(v.get('elements', [])[1:]),
+                               'element_sources': list(h.get('element_sources', [])) + list(v.get('element_sources', [])[1:])}
+    return sorted(scored.values(), key=lambda v: -v['score'])
 
 
 def predict(lexicon: dict, seq, element_ids: list, era: str = 'late', stage: int = 0,

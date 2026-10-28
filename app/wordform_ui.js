@@ -1,4 +1,4 @@
-// "Словотворчество" panel of the atlas: pick two words, a stage of formation,
+// "Словотворчество" panel of the atlas: pick two words (and a third, if needed), a stage of formation,
 // get ranked variants with the rules that produced them (engine: wordform.js).
 (function () {
 'use strict';
@@ -25,7 +25,8 @@ const ADJUST = {
   shortening: T('adjust.shortening'),
   'ima-class': T('adjust.ima-class'),
 };
-const state = { branch: QU.BRANCHES[0], picked: [null, null] };
+const state = { branch: QU.BRANCHES[0], picked: [null, null, null] };
+const SLOTS = [1, 2, 3];
 const era = () => $('wf-era').value || 'late';
 const eraOf = QU.eraOf, marker = QU.marker;
 const spelling = QU.spelling, plainForm = QU.plainForm;
@@ -64,6 +65,7 @@ function pick(slot, id) {
   $('wf-chosen' + slot).innerHTML = e ? describe(E, e) : '';
   $('wf-r' + slot).innerHTML = '';
   $('wf-go').disabled = !(state.picked[0] && state.picked[1]);
+  $('wf-slot3').hidden = !(state.picked[0] && state.picked[1]) && !state.picked[2];
 }
 
 function stageOptions() {
@@ -85,7 +87,8 @@ function opText(v) {
   // the junction op [k, m, rep]: the last k sounds of the first element and the
   // first m of the second become rep; one following sound is shown as context
   const out = [];
-  const a = WF.phonemes(WF.comparable(v.elements[0])), b = WF.phonemes(WF.comparable(v.elements[1]));
+  // with three elements the junction is that of the last join: the first two, joined, + the third
+  const a = WF.phonemes(WF.comparable(v.head || v.elements[0])), b = WF.phonemes(WF.comparable(v.elements[v.elements.length - 1]));
   const j = junctionText(a, b, v.junction || [0, 0, '']);
   if (j) out.push(T('op.junction') + ' ' + esc(j));
   const [ke, repe] = v.ending || [0, ''];
@@ -97,12 +100,12 @@ function opText(v) {
 
 function compose() {
   const E = engine(state.branch);
-  const [a, b] = state.picked;
-  if (!a || !b) return;
+  const ids = state.picked.filter(Boolean);
+  if (!state.picked[0] || !state.picked[1]) return;
   const stage = Number($('wf-stage').value);
   const out = $('wf-output');
   let vs;
-  try { vs = WF.predict(E, [a, b], era(), stage); } catch (err) { out.textContent = T('common.error', { msg: err.message }); throw err; }
+  try { vs = WF.predict(E, ids, era(), stage); } catch (err) { out.textContent = T('common.error', { msg: err.message }); throw err; }
   const last = Math.max(...E.languages.filter(l => l.era === era()).map(l => l.stage));
   if (!vs.length) {
     out.innerHTML = `<p>${T('compose.noForms')}</p>`;
@@ -134,7 +137,7 @@ function compose() {
     analog = ex.length ? `<p class="small">${T('compose.affixWords')} ${ex.map(f => `<span class="form">${esc(f)}</span>`).join(', ')}.</p>`
       : `<p class="small">${T('compose.affixNone')}</p>`;
   } else if (stage >= last && vs[0].elements) {
-    const pa = WF.phonemes(WF.comparable(vs[0].elements[0])), pb = WF.phonemes(WF.comparable(vs[0].elements[1]));
+    const pa = WF.phonemes(WF.comparable(vs[0].head || vs[0].elements[0])), pb = WF.phonemes(WF.comparable(vs[0].elements[vs[0].elements.length - 1]));
     const list = E.analogues[JSON.stringify([pa[pa.length - 1], pb[0]])] || [];
     const groups = new Map();
     for (const [f, op] of list) {
@@ -160,8 +163,9 @@ function branchOptions() {
   $('wf-era').replaceChildren(...QU.ERAS.map(e => new Option(QU.ERA_NAMES[e], e)));
 }
 function reset() {
-  state.picked = [null, null];
-  for (const s of [1, 2]) { $('wf-q' + s).value = ''; $('wf-r' + s).innerHTML = ''; $('wf-chosen' + s).innerHTML = ''; }
+  state.picked = [null, null, null];
+  $('wf-slot3').hidden = true;
+  for (const s of SLOTS) { $('wf-q' + s).value = ''; $('wf-r' + s).innerHTML = ''; $('wf-chosen' + s).innerHTML = ''; }
   $('wf-output').innerHTML = ''; $('wf-go').disabled = true;
 }
 function setBranch(b, e) {
@@ -183,7 +187,7 @@ function onSubject(s) {
 }
 
 branchOptions();
-for (const s of [1, 2]) {
+for (const s of SLOTS) {
   $('wf-q' + s).addEventListener('input', () => search(s));
   $('wf-r' + s).addEventListener('click', e => { const t = e.target.closest('[data-id]'); if (t) pick(s, t.dataset.id); });
 }
@@ -196,7 +200,7 @@ $('wf-output').addEventListener('click', e => {
   const E = engine(state.branch);
   QU.openForm(u.dataset.use, state.branch, era(), Math.max(...E.languages.filter(l => l.era === era()).map(l => l.stage)));
 });
-QU.onSubject((s, why) => { if (why === 'subject') onSubject(s); else if (why === 'neo') { search(1); search(2); } });
+QU.onSubject((s, why) => { if (why === 'subject') onSubject(s); else if (why === 'neo') SLOTS.forEach(search); });
 setBranch(state.branch, 'late');
 window.WFCOMPOSE = { pick, compose };
 })();

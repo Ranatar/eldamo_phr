@@ -166,8 +166,8 @@
   "plain_first": 8,
   "plain_any": 9,
   "elements_first": 8,
-  "elements_any": 9,
-  "built": 6,
+  "elements_any": 10,
+  "built": 14,
   "pairs": 238
  },
  "compounds s -> q": {
@@ -176,14 +176,14 @@
   "plain_any": 5,
   "elements_first": 3,
   "elements_any": 6,
-  "built": 12,
+  "built": 19,
   "pairs": 208
  },
  "root seeds q": {
   "cases": 30,
   "plain_first": 5,
   "plain_any": 14,
-  "seed_first": 5,
+  "seed_first": 6,
   "seed_any": 16,
   "words": 842
  },
@@ -191,7 +191,7 @@
   "cases": 30,
   "plain_first": 5,
   "plain_any": 14,
-  "seed_first": 7,
+  "seed_first": 8,
   "seed_any": 19,
   "words": 758
  },
@@ -199,7 +199,7 @@
   "cases": 30,
   "plain_first": 3,
   "plain_any": 3,
-  "seed_first": 4,
+  "seed_first": 3,
   "seed_any": 4,
   "words": 594
  },

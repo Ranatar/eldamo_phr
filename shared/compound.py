@@ -58,7 +58,10 @@ def origins(entry: dict, era: str) -> list:
 def forms_at_latest(entry: dict, family: str, final: bool = False) -> list:
     """(form, how) of a word in its own (latest) language: its stems, the
     combining forms, then its dictionary form; the last element of a word
-    keeps its own ending, so it takes the dictionary form only."""
+    keeps its own ending, so it takes the dictionary form only. A word reconstructed for the
+    language has its phonetic form only (reconstruct._translated)."""
+    if entry.get('phonetic'):
+        return [(entry['phonetic'], 'reconstructed')]
     out = [] if final else [(to_phonetic(x, family).rstrip('-'), 'stem') for x in entry.get('stems', ())]
     out.append((to_phonetic(entry['form'], family).rstrip('-'), 'dictionary'))
     seen = set()

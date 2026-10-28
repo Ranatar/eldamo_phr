@@ -77,13 +77,21 @@ class Roots(unittest.TestCase):
         self.assertIn('KAB', [c[3] for c in roots.candidates(self.table, 'kambā', 'late', 4)])
 
     def test_root_seeds_the_primitive(self):
-        # Q. hyarma: the backward search gives ✶j̊arma; ᴹ√KHYAR says hy- was kʰj-
+        # Q. hyarma: the backward search gives ✶j̊arma; ᴹ√KHYAR says hy- was kʰj- (its make-up,
+        # hyar- + má < ✶maɣ-, comes first: ✶kʰjar+maɣa)
         from shared import reconstruct as R
         ctx = R.Context(self.data)
         e = self.entry('quenya', 'q', 'hyarma')
         vs = R.reconstruct(ctx, ('quenya', 'late', 2), ('quenya', 'late', 0), word=e['id'])
-        self.assertEqual(vs[0]['form'], 'kʰjarma')
-        self.assertIn('root', vs[0]['marks'])
+        self.assertEqual(vs[0]['form'], 'kʰjarmaɣa')
+        self.assertIn('elements', vs[0]['marks'])
+        laws = [v for v in vs if 'elements' not in v['marks']]
+        self.assertEqual(laws[0]['form'], 'kʰjarma')
+        self.assertIn('root', laws[0]['marks'])
+        # a root that ends in its vowel gives it too: S. rhûn < ✶srōn- ((S)RŌ; Q. rómen), not ✶srūn-
+        e = self.entry('sindarin', 's', 'rhûn')
+        vs = R.reconstruct(ctx, ('sindarin', 'late', 3), ('sindarin', 'late', 0), word=e['id'])
+        self.assertTrue(vs[0]['form'].startswith('srō'), vs[0]['form'])
         # each conception has its own roots: ᴱ√MBARA for the early one
         self.assertEqual([c[2] for c in roots.candidates(self.table, 'ambara', 'early', 3)], ['ep'] * 3)
         self.assertEqual(roots.candidates(self.table, 'aeiou', 'late', 3), [])          # no consonants, no root

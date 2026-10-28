@@ -218,8 +218,8 @@
 | eq. [Eldalie](https://eldamo.org/content/words/word-1263240023.html) | LĪ | g. [Eglothrim](https://eldamo.org/content/words/word-640414111.html) | EÐE¹ |
 | q. [Eldalótë](https://eldamo.org/content/words/word-3465788703.html) | EL + LOT(H) | s. [Edhellos](https://eldamo.org/content/words/word-2246643897.html) | DEL²/DEL¹ + LOT(H) |
 | eq. [Eldamar](https://eldamo.org/content/words/word-2091931097.html) | MBARA | g. [Eglamar](https://eldamo.org/content/words/word-1027427819.html) | EÐE¹ |
-| q. [Elentári](https://eldamo.org/content/words/word-1674375635.html) | EL + TĀ/TAƷ | s. [Elbereth](https://eldamo.org/content/words/word-862238445.html) | EL + BER |
 | mq. [Elentári](https://eldamo.org/content/words/word-1620801097.html) | EL | n. [Elbereth](https://eldamo.org/content/words/word-2462581423.html) | EL + BARATH |
+| q. [Elentári](https://eldamo.org/content/words/word-1674375635.html) | EL + TĀ/TAƷ | s. [Elbereth](https://eldamo.org/content/words/word-862238445.html) | EL + BER |
 | q. [Elenya](https://eldamo.org/content/words/word-2372957001.html) | EL | s. [Orgilion](https://eldamo.org/content/words/word-2411056289.html) | UR + (Ñ)GIL |
 | q. [Elessar](https://eldamo.org/content/words/word-3157387873.html) | EL | s. [Edhelharn](https://eldamo.org/content/words/word-1804362321.html) | DEL²/DEL¹ |
 | eq. [Elmavoite](https://eldamo.org/content/words/word-4001535895.html) | MAHA | g. [Ermabwed](https://eldamo.org/content/words/word-2491978325.html) | MAPA |
@@ -249,8 +249,8 @@
 | mq. [formaite](https://eldamo.org/content/words/word-1591423211.html) | PHOR + MAƷ | n. [forgam](https://eldamo.org/content/words/word-2973536205.html) | PHOR + KAB¹ |
 | q. [formen](https://eldamo.org/content/words/word-1223050479.html) | PHOR + MEN | s. [for-](https://eldamo.org/content/words/word-470347903.html) | PHOR |
 | q. [formen](https://eldamo.org/content/words/word-1223050479.html) | PHOR + MEN | s. [forn](https://eldamo.org/content/words/word-196480175.html) | PHOR |
-| mq. [formen](https://eldamo.org/content/words/word-1941703795.html) | PHOR + MEN | n. [forod](https://eldamo.org/content/words/word-2901190421.html) | PHOR |
 | q. [formen](https://eldamo.org/content/words/word-1223050479.html) | PHOR + MEN | s. [forod](https://eldamo.org/content/words/word-348549421.html) | PHOR |
+| mq. [formen](https://eldamo.org/content/words/word-1941703795.html) | PHOR + MEN | n. [forod](https://eldamo.org/content/words/word-2901190421.html) | PHOR |
 | mq. [formenya](https://eldamo.org/content/words/word-693868109.html) | PHOR + MEN | n. [forodren](https://eldamo.org/content/words/word-1896446041.html) | PHOR |
 | eq. [fuiyáru](https://eldamo.org/content/words/word-305812215.html) | ǶUẎU + YAÐA | g. [fuior](https://eldamo.org/content/words/word-2470625983.html) | ǶUẎU |
 | eq. [fumella](https://eldamo.org/content/words/word-2288213181.html) | FUMU | g. [hum(i)los](https://eldamo.org/content/words/word-2738177801.html) | FUMU + LASA |
@@ -269,8 +269,8 @@
 | eq. [huiva](https://eldamo.org/content/words/word-443071601.html) | ǶUẎU | g. [huith](https://eldamo.org/content/words/word-1825445067.html) | HUYU |
 | eq. [hunda](https://eldamo.org/content/words/word-3337406073.html) | HUNU | g. [haug](https://eldamo.org/content/words/word-678502043.html) | HAWA |
 | mq. [hyarmaite](https://eldamo.org/content/words/word-33971947.html) | KHYAR + MAƷ | n. [hargam](https://eldamo.org/content/words/word-38262983.html) | KHYAR + KAB¹ |
-| mq. [hyarmen](https://eldamo.org/content/words/word-4037811261.html) | KHYAR + MEN | n. [harad](https://eldamo.org/content/words/word-3167605685.html) | KHYAR |
 | q. [hyarmen](https://eldamo.org/content/words/word-1477365621.html) | KHYAR + MEN | s. [harad](https://eldamo.org/content/words/word-614934925.html) | KHYAR |
+| mq. [hyarmen](https://eldamo.org/content/words/word-4037811261.html) | KHYAR + MEN | n. [harad](https://eldamo.org/content/words/word-3167605685.html) | KHYAR |
 | q. [hyarmen](https://eldamo.org/content/words/word-1477365621.html) | KHYAR + MEN | s. [harn](https://eldamo.org/content/words/word-3643936511.html) | KHYAR |
 | mq. [hyarmenya](https://eldamo.org/content/words/word-3120569907.html) | KHYAR + MEN | n. [haradren](https://eldamo.org/content/words/word-547004985.html) | KHYAR |
 | mq. [hyarmenya](https://eldamo.org/content/words/word-3120569907.html) | KHYAR + MEN | n. [harn¹](https://eldamo.org/content/words/word-1604891939.html) | KHYAR |
@@ -411,8 +411,8 @@
 | q. [númen](https://eldamo.org/content/words/word-1285367433.html) | NDU + MEN | s. [annûn](https://eldamo.org/content/words/word-1864027637.html) | NDU/NDŪ |
 | mq. [númen](https://eldamo.org/content/words/word-4179017607.html) | MEN | n. [annûn](https://eldamo.org/content/words/word-121731071.html) | NDŪ |
 | mq. [númen](https://eldamo.org/content/words/word-4179017607.html) | MEN | n. [dúven](https://eldamo.org/content/words/word-2427322527.html) | NDŪ |
-| q. [númen](https://eldamo.org/content/words/word-1285367433.html) | NDU + MEN | s. [dûn](https://eldamo.org/content/words/word-4010460053.html) | NDU |
 | mq. [númen](https://eldamo.org/content/words/word-4179017607.html) | MEN | n. [dûn](https://eldamo.org/content/words/word-3365046303.html) | NDŪ |
+| q. [númen](https://eldamo.org/content/words/word-1285367433.html) | NDU + MEN | s. [dûn](https://eldamo.org/content/words/word-4010460053.html) | NDU |
 | mq. [Oiolosse](https://eldamo.org/content/words/word-3203011053.html) | OY¹ + GOLOS | n. [Amon Uilos](https://eldamo.org/content/words/word-1347868551.html) | AM² + OY¹ + GOLOS |
 | mq. [Oiolosse](https://eldamo.org/content/words/word-3203011053.html) | OY¹ + GOLOS | on. [Uigolosse](https://eldamo.org/content/words/word-3663823667.html) | OY¹ |
 | q. [Oiolossë](https://eldamo.org/content/words/word-2557589703.html) | OY + (G)LOS | s. [Amon Uilos](https://eldamo.org/content/words/word-1502997501.html) | AM²/MBON + OY + (G)LOS |
@@ -453,8 +453,8 @@
 | q. [quainëa](https://eldamo.org/content/words/word-1258418913.html) | KAYAN | s. [paenui](https://eldamo.org/content/words/word-2564509863.html) | KWAY |
 | q. [quellë](https://eldamo.org/content/words/word-2960856767.html) | KWEL¹ + LEÑ | s. [firith](https://eldamo.org/content/words/word-2681462959.html) | PHIR |
 | mq. [randa](https://eldamo.org/content/words/word-381606413.html) | RAD | n. [anrand](https://eldamo.org/content/words/word-3493977863.html) | ANAD + RAD |
-| nq. [ratta](https://eldamo.org/content/words/word-1481938015.html) | RAT | s. [rath](https://eldamo.org/content/words/word-1667426933.html) | RATH |
 | q. [ratta](https://eldamo.org/content/words/word-1092041537.html) | RAT¹ | s. [rath](https://eldamo.org/content/words/word-1667426933.html) | RATH |
+| nq. [ratta](https://eldamo.org/content/words/word-1481938015.html) | RAT | s. [rath](https://eldamo.org/content/words/word-1667426933.html) | RATH |
 | mq. [ravanda](https://eldamo.org/content/words/word-100709315.html) | RAB¹ | n. [Rhofannor](https://eldamo.org/content/words/word-1399703539.html) | RAB¹ + NDOR |
 | eq. [rimp(in)a](https://eldamo.org/content/words/word-78256875.html) | RIPI | g. [rimin¹](https://eldamo.org/content/words/word-4214526601.html) | RIMI |
 | eq. [rimpe](https://eldamo.org/content/words/word-86460877.html) | RIPI | g. [rim¹](https://eldamo.org/content/words/word-1073616967.html) | RIMI |

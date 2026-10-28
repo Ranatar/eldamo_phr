@@ -1025,14 +1025,18 @@ function predictAffix(engine, affix, baseForms, limit = 10, base = null) {
   return ranked.map(([sc, f, rec]) => Object.assign({ form: f, score: r3(sc) }, rec));
 }
 function formsAtLatest(entry, fam, final = false) {
+  // a word reconstructed for the language has its phonetic form only (reconstruct.py: _translated)
+  if (entry.phonetic) return [[entry.phonetic, 'reconstructed']];
   const out = final ? [] : (entry.stems || []).map(x => [toPhonetic(x, fam).replace(/-+$/, ''), 'stem']);
   out.push([toPhonetic(entry.form, fam).replace(/-+$/, ''), 'dictionary']);
   const seen = new Set();
   return out.filter(([f]) => f && !seen.has(comparable(f)) && seen.add(comparable(f)));
 }
-function predictAffixed(engine, ids) {
-  if (ids.length !== 2 || !ids.every(i => engine.lexicon.has(i))) return null;
-  let [e1, e2] = ids.map(i => engine.lexicon.get(i));
+const lexOf = (engine, extra) => id => (extra && extra.get(id)) || engine.lexicon.get(id);
+function predictAffixed(engine, ids, extra = null) {
+  const lex = lexOf(engine, extra);
+  if (ids.length !== 2 || !ids.every(i => lex(i))) return null;
+  let [e1, e2] = ids.map(lex);
   let k1 = affixKind(e1), k2 = affixKind(e2);
   if ((k1 === 'suffix' && k2 == null) || (k1 == null && k2 === 'prefix')) { [e1, e2, k1, k2] = [e2, e1, k2, k1]; }
   let base, affix, kind;
@@ -1086,12 +1090,13 @@ function junctionsOf(a, b) {
   if (pa.length > 1 && isVowel(pa[pa.length - 1])) out.push([join(pa.slice(0, -1)) + '+' + b, 'elided']);
   return out;
 }
-function predictLatest(engine, ids, era) {
+function predictLatest(engine, ids, era, extra = null) {
   const last = Math.max(...engine.languages.filter(l => l.era === era).map(l => l.stage));
-  const affixed = predictAffixed(engine, ids);
+  const affixed = predictAffixed(engine, ids, extra);
   if (affixed) return affixed;
   if (ids.length !== 2) return [];
-  const e1 = engine.lexicon.get(ids[0]), e2 = engine.lexicon.get(ids[1]);
+  const lex = lexOf(engine, extra);
+  const e1 = lex(ids[0]), e2 = lex(ids[1]);
   const firsts = e1 ? formsAt(engine, e1, era, last) : [];
   const seconds = e2 ? formsAt(engine, e2, era, last, true) : [];
   if (engine.branch === 'sindarin') {
@@ -1120,9 +1125,9 @@ function predictLatest(engine, ids, era) {
   }
   return [...scored.values()].sort((x, y) => y[0] - x[0]).map(([sc, f, info]) => Object.assign({ form: f, score: r3(sc) }, info));
 }
-function predict(engine, ids, era, stage, lastStage = null) {
+function predict(engine, ids, era, stage, lastStage = null, extra = null) {
   const last = lastStage != null ? lastStage : Math.max(...engine.languages.filter(l => l.era === era).map(l => l.stage));
-  if (lastStage == null && stage >= last) return predictLatest(engine, ids, era);
+  if (lastStage == null && stage >= last) return predictLatest(engine, ids, era, extra);
   const parts = [];
   for (let k = 0; k < ids.length; k++) {
     const e = engine.lexicon.get(ids[k]);
@@ -1271,7 +1276,8 @@ const classOf = p => { const b = Array.from(p)[0]; const i = EQUIV.findIndex(c =
 function rootSeeds(E, add, era, form, src, starts, found) {
   const target = comparable(form);
   for (const rp of starts.slice(0, 3)) {
-    let rph = phonemes(rp);
+    const full = phonemes(rp);
+    let rph = full.slice();
     while (rph.length && isVowel(rph[rph.length - 1])) rph = rph.slice(0, -1);
     const last = [...rph].reverse().find(p => !isVowel(p));
     if (last == null) continue;
@@ -1281,10 +1287,17 @@ function rootSeeds(E, add, era, form, src, starts, found) {
       const j = cph.findIndex(p => !isVowel(p) && classOf(p) === cls);
       if (j < 0) continue;
       const f0 = r.form;
-      const seed = (f0.startsWith('-') ? '-' : '') + rph.concat(cph.slice(j + 1)).join('') + (f0.endsWith('-') && f0.length > 1 ? '-' : '');
-      if (comparable(seed) === comparable(f0)) continue;
-      for (const [f, trace] of forwardRun(E, era, seed, 0, src).slice(0, 4)) {
-        if (comparable(f) === target) { add(seed, r.p, trace, 'root ' + rp); break; }
+      const bodies = [rph.concat(cph.slice(j + 1))];
+      // a root that ends in its vowel ((S)RŌ) gives that vowel too: S. rhûn < ✶srōn-, not ✶srūn-
+      let k = -1;
+      for (let i = j + 1; i < cph.length; i++) if (isVowel(cph[i])) { k = i; break; }
+      if (full.length > rph.length && k === j + 1) bodies.push(full.concat(cph.slice(k + 1)));
+      for (const body of bodies) {
+        const seed = (f0.startsWith('-') ? '-' : '') + body.join('') + (f0.endsWith('-') && f0.length > 1 ? '-' : '');
+        if (comparable(seed) === comparable(f0)) continue;
+        for (const [f, trace] of forwardRun(E, era, seed, 0, src).slice(0, 4)) {
+          if (comparable(f) === target) { add(seed, r.p, trace, 'root ' + rp); break; }
+        }
       }
     }
   }
@@ -1381,7 +1394,8 @@ function reconstruct(engines, src, dst, opts = {}) {
   return ranked.slice(0, opts.limit || RECON_LIMIT);
 }
 // a compound or derivative at an earlier stage as its elements' forms there (reconstruct.py: compose)
-const COMPOSED_SCORE = 0.8, UNCONFIRMED_SCORE = 0.25, COMPOSE_DEPTH = 3;
+// the make-up comes before what the laws alone find (reconstruct.py: COMPOSED_SCORE)
+const COMPOSED_SCORE = 1.2, UNCONFIRMED_SCORE = 1.0, COMPOSE_DEPTH = 3;
 function elementForm(engines, branch, id, era, stage, depth) {
   const E = engines[branch];
   if (!E.rootById) E.rootById = new Map(E.roots.map(r => [r[0], r]));
@@ -1499,37 +1513,104 @@ function partialCognate(E, a, b) {
   if (!pa.length || !pb.length) return false;
   return pa.length !== pb.length || !pa.every((x, k) => compatibleParts(x, pb[k]));
 }
-const ELEMENTS_SCORE = 1.9;
-// words of the target language Eldamo links to a word as cognates, either way, partial cognates aside (reconstruct.py: _counterparts)
-function counterparts(engines, wid, branch, code) {
-  const [, e] = entryOf(engines, wid);
+// [[cognate id, the word that names it]]: also through the same word of another conception of its
+// branch, its combine link (reconstruct.py: _linked_cognates)
+function linkedCognates(engines, wid) {
+  const [b0, e] = entryOf(engines, wid);
   if (!e) return [];
-  const ids = ((e.links || {}).cognate || []).slice();
-  for (const [w, tag] of reverseLinks(engines).get(wid) || []) if (tag === 'cognate') ids.push(w);
-  return [...new Set(ids)].filter(i => { const [b2, e2] = entryOf(engines, i); return b2 === branch && e2 && e2.lang === code && !partialCognate(engines[branch], e, e2); });
+  const rev = reverseLinks(engines);
+  const same = [wid, ...((e.links || {}).combine || []), ...(rev.get(wid) || []).filter(([, t]) => t === 'combine').map(([w]) => w)];
+  const out = new Map();
+  for (const w of [...new Set(same)]) {
+    const [bw, ew] = entryOf(engines, w);
+    if (!ew || bw !== b0) continue;
+    const ids = ((ew.links || {}).cognate || []).concat((rev.get(w) || []).filter(([, t]) => t === 'cognate').map(([v]) => v));
+    for (const i of ids) if (!out.has(i)) out.set(i, ew);
+  }
+  return [...out.entries()];
+}
+// words of the target language linked as cognates, partial cognates aside (reconstruct.py: _counterparts)
+function counterparts(engines, wid, branch, code) {
+  return linkedCognates(engines, wid).filter(([i, src]) => {
+    const [b2, e2] = entryOf(engines, i);
+    return b2 === branch && e2 && e2.lang === code && !partialCognate(engines[branch], src, e2);
+  }).map(([i]) => i);
+}
+// a cognate in another language of the target branch, the nearest conception first (reconstruct.py: _other_conception)
+function otherConception(engines, wid, branch, code) {
+  const D = engines[branch];
+  const langOf = c => D.languages.find(l => l.code === c);
+  const order = ['late', 'middle', 'early'];
+  const era = langOf(code).era;
+  const found = [];
+  for (const [i, src] of linkedCognates(engines, wid)) {
+    const [b2, e2] = entryOf(engines, i);
+    if (b2 !== branch || !e2 || e2.lang === code || !langOf(e2.lang) || partialCognate(D, src, e2)) continue;
+    found.push([Math.abs(order.indexOf(langOf(e2.lang).era) - order.indexOf(era)), i, e2]);
+  }
+  const rev = reverseLinks(engines);
+  for (const [, i, e2] of found.sort((a, b) => a[0] - b[0])) {
+    const later = ((e2.links || {}).combine || []).concat((rev.get(i) || []).filter(([, t]) => t === 'combine').map(([w]) => w));
+    for (const w of later) {
+      const [b3, e3] = entryOf(engines, w);
+      if (b3 === branch && e3 && e3.lang === code) return [w, e3.form];
+    }
+    const f = toPhonetic(e2.form, branch).trim().replace(/^-+|-+$/g, '');
+    if (f) return [{ id: '~' + e2.id, lang: code, form: e2.form, speech: e2.speech, phonetic: f }, `${langOf(e2.lang).marker || e2.lang} ${e2.form}`];
+  }
+  return null;
+}
+const ELEMENTS_SCORE = 1.9, TRANSLATED_SCORE = 1.5;
+// an element without a cognate taken over by the laws; a root as it is (reconstruct.py: _translated)
+function translated(engines, id, sb, era, db, last, code, depth) {
+  let f = null, form = null;
+  const root = Object.values(engines).map(E => { if (!E.rootById) E.rootById = new Map(E.roots.map(r => [r[0], r])); return E.rootById.get(id); }).find(Boolean);
+  const e = engines[sb].lexicon.get(id) || entryOf(engines, id)[1];
+  if (root) { f = root[3].length ? root[3][0].join('') : null; form = root[2]; }
+  else {
+    if (!e) return null;
+    const l = engines[sb].languages.find(x => x.code === e.lang);
+    if (affixKind(e) != null || !l || l.era !== era) return null;
+    const rs = reconstruct(engines, [sb, era, l.stage], [db, era, last], { word: id, limit: 1, depth: depth + 1 });
+    f = rs.length ? rs[0].form : null;
+    form = e.form;
+  }
+  if (!f) return null;
+  return { id: '~' + id, lang: code, form, speech: null, phonetic: f.replace(/^-+|-+$/g, '') };
 }
 // a compound of the other branch built again from the cognates of its elements (reconstruct.py: _by_elements)
-function byElements(engines, add, entry, era, db, ds) {
+function byElements(engines, add, entry, era, db, ds, depth = 0) {
   const els = entry.elements || [];
   const D = engines[db];
   const last = lastStageOf(D, era);
   const code = codeOf(D, era, last);
-  if (els.length < 2 || code == null || !els.every(Boolean)) return;
-  const ids = [];
+  if (els.length < 2 || code == null || !els.every(Boolean) || depth >= COMPOSE_DEPTH) return;
+  const sb = entryOf(engines, entry.id)[0];
+  const ids = [], names = [], pseudo = new Map();
   for (const x of els) {
     const c = counterparts(engines, x, db, code);
-    if (!c.length) return;
-    ids.push(c[0]);
+    if (c.length) { ids.push(c[0]); names.push(D.lexicon.get(c[0]).form); continue; }
+    const o = otherConception(engines, x, db, code);
+    if (o) {
+      let [w, name] = o;
+      if (typeof w === 'object') { pseudo.set(w.id, w); w = w.id; }
+      ids.push(w); names.push(name); continue;
+    }
+    const t = sb ? translated(engines, x, sb, era, db, last, code, depth) : null;
+    if (!t) return;
+    ids.push(t.id); pseudo.set(t.id, t); names.push('*' + t.phonetic);
   }
-  const vs = predict(D, ids, era, last);
+  if (pseudo.size === ids.length) return;
+  const vs = predict(D, ids, era, last, null, pseudo.size ? pseudo : null);
   const top = Math.max(...vs.map(v => v.score), 0) || 1;
-  const names = ids.map(i => D.lexicon.get(i).form).join(' + ');
+  const score = pseudo.size ? TRANSLATED_SCORE : ELEMENTS_SCORE;
+  const nm = names.join(' + ');
   if (ds === last) {
-    for (const v of vs.slice(0, 4)) add(v.form, ELEMENTS_SCORE * v.score / top, [['byElements', { names }]], ['elements'], []);
+    for (const v of vs.slice(0, 4)) add(v.form, score * v.score / top, [['byElements', { names: nm }]], ['elements'], []);
     return;
   }
   // an earlier stage: back from the word so built, so that the stages agree with it
-  for (const v of vs.slice(0, 2)) within(engines, add, db, era, v.form, last, ds, NO_HINTS, ELEMENTS_SCORE * v.score / top, [['byElements', { names }]], ['elements']);
+  for (const v of vs.slice(0, 2)) within(engines, add, db, era, v.form, last, ds, NO_HINTS, score * v.score / top, [['byElements', { names: nm }]], ['elements']);
 }
 function sideways(engines, add, src, dst, form, entry, hints, useLinks = true, depth = 0) {
   const [sb, era, ss] = src, [db, , ds] = dst;
@@ -1551,7 +1632,7 @@ function sideways(engines, add, src, dst, form, entry, hints, useLinks = true, d
       else if (l2.stage < ds) within(engines, add, db, era, f2, l2.stage, ds, hintsOf(D, db, e2, era, l2.stage), 4, [['cognateLink', { form: e2.form }]], ['link']);
     }
   }
-  if (entry) byElements(engines, add, entry, era, db, ds);
+  if (entry) byElements(engines, add, entry, era, db, ds, depth);
   let prims = [];
   if (entry) prims = dashedOrigins(entry, era).map(f => [f, 1, ['primitive-attested']]);
   if (!prims.length) {

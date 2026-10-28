@@ -325,7 +325,8 @@ class Context:
         guesses most (hy- < kʰj- or sj-), and the root says which it was."""
         target = comparable(form)
         for rp in starts[:3]:
-            rph = phonemes(rp)
+            full = phonemes(rp)
+            rph = list(full)
             while rph and is_vowel(rph[-1]):
                 rph = rph[:-1]
             last = next((p for p in reversed(rph) if not is_vowel(p)), None)
@@ -338,14 +339,21 @@ class Context:
                 if j is None:
                     continue
                 f0 = r['form']
-                # a stem or an affix keeps its hyphens (fara- < ✶spara-)
-                seed = ('-' if f0.startswith('-') else '') + ''.join(rph + cph[j + 1:]) + ('-' if f0.endswith('-') and len(f0) > 1 else '')
-                if comparable(seed) == comparable(f0):
-                    continue
-                for f, trace in self.forward(branch, era, seed, 0, src)[:4]:
-                    if comparable(f) == target:
-                        add(seed, r['p'], trace, 'root ' + rp)
-                        break
+                bodies = [rph + cph[j + 1:]]
+                # a root that ends in its vowel ((S)RŌ) gives that vowel too: S. rhûn < ✶srōn-, not ✶srūn-
+                # (S. û continues both ō and ū; the derivatives of the root have o: Q. rómen)
+                k = next((i for i in range(j + 1, len(cph)) if is_vowel(cph[i])), None)
+                if len(full) > len(rph) and k == j + 1:
+                    bodies.append(full + cph[k + 1:])
+                for body in bodies:
+                    # a stem or an affix keeps its hyphens (fara- < ✶spara-)
+                    seed = ('-' if f0.startswith('-') else '') + ''.join(body) + ('-' if f0.endswith('-') and len(f0) > 1 else '')
+                    if comparable(seed) == comparable(f0):
+                        continue
+                    for f, trace in self.forward(branch, era, seed, 0, src)[:4]:
+                        if comparable(f) == target:
+                            add(seed, r['p'], trace, 'root ' + rp)
+                            break
 
     def stem_match(self, branch: str, era: str, form: str, src: int, dst: int, stems) -> bool:
         """The form at stage src, run to stage dst as a stem (not the end of a word), gives one
@@ -524,8 +532,11 @@ def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, w
     return ranked[:limit]
 
 
-COMPOSED_SCORE = 0.8      # the elements' forms joined, and the laws lead from them to the word: after the laws (0.9)
-UNCONFIRMED_SCORE = 0.25  # joined, but the laws do not lead to the word: it was made later than that stage
+# the make-up of a word at an earlier stage comes before what the laws alone find (at most 0.9):
+# a form read backwards from a compound made later is an ancestor it never had (S. Lossoth:
+# ✶lossē+kʰotta, not ✶lossāθi)
+COMPOSED_SCORE = 1.2      # the elements' forms joined, and the laws lead from them to the word
+UNCONFIRMED_SCORE = 1.0   # joined, but the laws do not lead to the word: it was made later than that stage
 COMPOSE_DEPTH = 3
 
 
@@ -649,39 +660,130 @@ def partial_cognate(a: dict, b: dict) -> bool:
 ELEMENTS_SCORE = 1.9     # below an attested word of the target language (link 5, near cognate 2-3), above the laws (1.0)
 
 
-def _counterparts(ctx, wid: str, branch: str, code: str) -> list:
-    """Words of the target language Eldamo links to a word as cognates, either way; a partial
-    cognate is not the same word (S. arthor ~ Q. turmen: Arthedain is not ✶turmenatan)."""
-    _, e = ctx.entry(wid)
+def _linked_cognates(ctx, wid: str) -> list:
+    """[(cognate id, the word that names it)]: the word's cognates either way, also through the
+    same word of another conception of its branch (the cognate of S. hoth is given on N. hoth,
+    its `combine` link). A partial cognate is judged against the word that names it: the roots
+    of one conception against the same conception (N. hoth ᴹ√KHOTH ~ ᴹQ. hosto ᴹ√KHOTH)."""
+    b0, e = ctx.entry(wid)
     if e is None:
         return []
-    ids = [x['id'] for x in e.get('links', {}).get('cognate', ())]
-    ids += [w for w, tag in ctx.reverse_links.get(wid, []) if tag == 'cognate']
+    same = [wid] + [x['id'] for x in e.get('links', {}).get('combine', ())]
+    same += [w for w, tag in ctx.reverse_links.get(wid, []) if tag == 'combine']
+    out = {}
+    for w in dict.fromkeys(same):
+        bw, ew = ctx.entry(w)
+        if ew is None or bw != b0:
+            continue
+        for i in [x['id'] for x in ew.get('links', {}).get('cognate', ())] + \
+                 [v for v, tag in ctx.reverse_links.get(w, []) if tag == 'cognate']:
+            out.setdefault(i, ew)
+    return list(out.items())
+
+
+def _counterparts(ctx, wid: str, branch: str, code: str) -> list:
+    """Words of the target language Eldamo links to a word as cognates (_linked_cognates); a
+    partial cognate is not the same word (S. arthor ~ Q. turmen: Arthedain is not ✶turmenatan)."""
     out = []
-    for i in dict.fromkeys(ids):
+    for i, src in _linked_cognates(ctx, wid):
         b2, e2 = ctx.entry(i)
-        if b2 == branch and e2 is not None and e2['lang'] == code and not partial_cognate(e, e2):
+        if b2 == branch and e2 is not None and e2['lang'] == code and not partial_cognate(src, e2):
             out.append(i)
     return out
 
 
-def _by_elements(ctx, add, entry, era, db, ds):
+def _other_conception(ctx, wid: str, branch: str, code: str):
+    """A cognate in another language of the target branch (N. hoth ~ MQ. hosto): the word of the
+    target language Eldamo combines it with, else that word itself in the target's spelling
+    (a pseudo-entry for shared/compound.py); None if there is none."""
+    langs = ctx.langs(branch)
+    era = langs[code]['era']
+    order = ['late', 'middle', 'early']
+    found = []
+    for i, src in _linked_cognates(ctx, wid):
+        b2, e2 = ctx.entry(i)
+        if b2 != branch or e2 is None or e2['lang'] == code or e2['lang'] not in langs or partial_cognate(src, e2):
+            continue
+        found.append((abs(order.index(langs[e2['lang']]['era']) - order.index(era)), i, e2))
+    # the nearest conception first (for late Quenya: ᴹQ. hosto, not ᴱQ. hos(se))
+    for _, i, e2 in sorted(found, key=lambda t: t[0]):
+        later = [x['id'] for x in e2.get('links', {}).get('combine', ())]
+        later += [w for w, tag in ctx.reverse_links.get(i, []) if tag == 'combine']
+        for w in later:
+            b3, e3 = ctx.entry(w)
+            if b3 == branch and e3 is not None and e3['lang'] == code:
+                return w, e3['form']
+        f = to_phonetic(e2['form'], branch).strip().strip('-')
+        if f:
+            marker = ctx.langs(branch)[e2['lang']].get('marker') or e2['lang']
+            return {'id': '~' + e2['id'], 'lang': code, 'form': e2['form'], 'speech': e2.get('speech'),
+                    'phonetic': f}, f'{marker} {e2["form"]}'
+    return None
+
+
+TRANSLATED_SCORE = 1.5   # some elements without a cognate, taken over by the laws: below the cognates (1.9), above the laws (1.0)
+
+
+def _translated(ctx, x: dict, sb: str, era: str, db: str, last: int, code: str, depth: int):
+    """An element without a cognate in the target language as a word of it: its own reconstruction
+    there (by its elements in turn, or through its primitive form); a root as it is. A pseudo-entry
+    for shared/compound.py, or None (an affix: its allomorphs are not known in the target)."""
+    _, e = ctx.entry(x.get('id') or '')
+    if e is None:
+        return None
+    if e.get('speech') == 'root':
+        vs = [v for v in root_variants(e['form']) if any(is_vowel(p) for p in phonemes(v))]
+        f = vs[0] if vs and e['lang'] in PRIMITIVE_ERA and not e.get('neo') else None
+    else:
+        from .affixes import kind
+        l = ctx.langs(sb).get(e['lang'])
+        if kind(e) is not None or l is None or l['era'] != era:
+            return None
+        rs = reconstruct(ctx, (sb, era, l['stage']), (db, era, last), word=e['id'], limit=1, depth=depth + 1)
+        f = rs[0]['form'] if rs else None
+    if not f:
+        return None
+    return {'id': '~' + e['id'], 'lang': code, 'form': e['form'], 'speech': None, 'phonetic': f.strip('-')}
+
+
+def _by_elements(ctx, add, entry, era, db, ds, depth=0):
     """A compound or derivative of the other branch built again from the cognates of its
     elements by the word formation of the target language (shared/compound.py): S. Adanel =
-    Adan + -iel¹, cognates Q. Atan + -iel -> Q. Atanel, Ataniel. The word is built at the latest
-    stage, when every element has a cognate there; for an earlier stage it is taken back from
-    it by the laws (✶atanel, not the ✶ataneli of the Sindarin form read backwards)."""
+    Adan + -iel¹, cognates Q. Atan + -iel -> Q. Atanel, Ataniel. An element without a cognate
+    is taken over by the laws (_translated: S. randir = √RAN + dîr ~ Q. nér), when at least one
+    has a cognate. The word is built at the latest stage; for an earlier stage it is taken back
+    from it by the laws (✶atanel, not the ✶ataneli of the Sindarin form read backwards)."""
     els = entry.get('elements') or []
     last = ctx.last_stage(db, era)
     code = ctx.code(db, era, last)
-    if len(els) < 2 or code is None or not all(x.get('id') for x in els):
+    if len(els) < 2 or code is None or not all(x.get('id') for x in els) or depth >= COMPOSE_DEPTH:
         return
-    ids = []
+    sb, _ = ctx.entry(entry['id'])
+    ids, pseudo, names = [], {}, []
     for x in els:
         c = _counterparts(ctx, x['id'], db, code)
-        if not c:
+        if c:
+            ids.append(c[0])
+            names.append(ctx.lexicon[db][c[0]]['form'])
+            continue
+        o = _other_conception(ctx, x['id'], db, code)
+        if o is not None:
+            w, name = o
+            if isinstance(w, dict):
+                pseudo[w['id']] = w
+                w = w['id']
+            ids.append(w)
+            names.append(name)
+            continue
+        t = _translated(ctx, x, sb, era, db, last, code, depth) if sb is not None else None
+        if t is None:
             return
-        ids.append(c[0])
+        ids.append(t['id'])
+        pseudo[t['id']] = t
+        names.append('*' + t['phonetic'])
+    if len(pseudo) == len(ids):
+        return                  # no cognate at all: the primitive route does the same
+    from collections import ChainMap
     from . import affixes, compound, junctions
     if (db, 'wf') not in ctx._tables:
         data = ctx.data[db]
@@ -689,16 +791,18 @@ def _by_elements(ctx, add, entry, era, db, ds):
                                    junctions.learn(data['junctions']['cases']),
                                    affixes.learn(data['affixes']['cases']))
     lex, table, model = ctx._tables[(db, 'wf')]
-    vs = compound.predict(lex, ctx.seq[db], ids, era, last, table=table, affix_model=model)
+    vs = compound.predict(ChainMap(pseudo, lex) if pseudo else lex, ctx.seq[db], ids, era, last, table=table,
+                          affix_model=model)
     top = max((v['score'] for v in vs), default=0) or 1.0
-    names = ' + '.join(lex[i]['form'] for i in ids)
+    score = TRANSLATED_SCORE if pseudo else ELEMENTS_SCORE
+    names = ' + '.join(names)
     if ds == last:
         for v in vs[:4]:
-            add(v['form'], ELEMENTS_SCORE * v['score'] / top, f'по когнатам составляющих: {names}', ['elements'], [])
+            add(v['form'], score * v['score'] / top, f'по когнатам составляющих: {names}', ['elements'], [])
         return
     # an earlier stage: back from the word so built, so that the stages agree with it
     for v in vs[:2]:
-        _within(ctx, add, db, era, v['form'], last, ds, NO_HINTS, frozenset(), base_score=ELEMENTS_SCORE * v['score'] / top,
+        _within(ctx, add, db, era, v['form'], last, ds, NO_HINTS, frozenset(), base_score=score * v['score'] / top,
                 route_prefix=f'по когнатам составляющих: {names}, затем ', marks=['elements'])
 
 
@@ -727,7 +831,7 @@ def _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links=True, d
                 _within(ctx, add, db, era, f2, l2['stage'], ds, _hints(ctx, db, e2, era, l2['stage']), exclude, base_score=4.0,
                         route_prefix=f'когнат по связи Eldamo {e2["form"]}, затем ', marks=['link'])
     if entry is not None and ctx.use_elements:
-        _by_elements(ctx, add, entry, era, db, ds)
+        _by_elements(ctx, add, entry, era, db, ds, depth)
     prims = []
     if entry is not None:
         prims = [(f, 1.0, ['primitive-attested']) for f in _origins(entry, era)]

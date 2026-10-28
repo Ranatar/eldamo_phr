@@ -147,6 +147,19 @@ class Reconstruction(unittest.TestCase):
         # and through it, the other branch
         self.assertTrue(self.forms(('sindarin', 'late', 3), ('quenya', 'late', 2), word=e['id']))
 
+    def test_elements_without_a_cognate(self):
+        # S. Mithrandir -> Q.: mith ~ Q. mista; randir = √RAN + dîr, and dîr's cognate ᴹQ. nér is
+        # given on N. dîr: ✶ran + nér, not the laws' *mistandīre
+        got = self.forms(('sindarin', 'late', 3), ('quenya', 'late', 2), word=self.entry('sindarin', 'Mithrandir')['id'])
+        self.assertEqual(got[0], 'mistaraner')
+        # S. Lossoth = loss + hoth: the cognate of hoth (ᴹQ. hosto) is on N. hoth
+        vs = R.reconstruct(self.ctx, ('sindarin', 'late', 3), ('quenya', 'late', 2), word=self.entry('sindarin', 'Lossoth')['id'])
+        self.assertEqual(vs[0]['form'], 'lossehosto')
+        self.assertIn('hosto', vs[0]['route'])
+        # and its primitive stage is its make-up, not a form read backwards (✶lossāθi)
+        vs = R.reconstruct(self.ctx, ('sindarin', 'late', 3), ('sindarin', 'late', 0), word=self.entry('sindarin', 'Lossoth')['id'])
+        self.assertEqual(vs[0]['form'], 'lossēkʰotta')
+
     def test_no_compound_by_a_partial_cognate(self):
         # S. Arthedain = arthor + Adan; Q. turmen is a partial cognate of arthor: no ✶turmenatan
         e = self.entry('sindarin', 'Arthedain')

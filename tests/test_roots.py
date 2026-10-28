@@ -70,6 +70,14 @@ class Roots(unittest.TestCase):
         self.assertEqual(forms('sindarin', 's', 'fân'), ['PHAN', 'PHAY'])         # and < ✶phanā < √PHAY
         self.assertEqual(forms('quenya', 'q', 'öar'), ['WĀ/AWA'])                 # not ᴹ√AWA beside it
 
+    def test_paths_to_the_roots(self):
+        # every way to a root, from the word itself: Q. Aldëa = alda + ..., alda < √GAL² and < ✶galadā < √GAL²
+        e = self.entry('quenya', 'q', 'Aldëa')
+        gal = next(r for r in e['roots'] if r['form'] == 'GAL²')
+        for p in [gal['path']] + gal.get('more', []):
+            self.assertEqual(p[0][0], 'e')                 # through the element alda
+            self.assertEqual(p[-1][1], gal['id'])
+
     def test_roots_of_cognates(self):
         # Q. Perian: no root, no elements; cognate S. Perian = per- + ?, per- < √PER
         rs = self.entry('quenya', 'q', 'Perian')['roots']

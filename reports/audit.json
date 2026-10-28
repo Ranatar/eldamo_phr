@@ -11560,20 +11560,6 @@
    },
    {
     "quenya": [
-     "mq",
-     "Elentári",
-     "1620801097",
-     "EL"
-    ],
-    "sindarin": [
-     "n",
-     "Elbereth",
-     "2462581423",
-     "EL + BARATH"
-    ]
-   },
-   {
-    "quenya": [
      "q",
      "Elentári",
      "1674375635",
@@ -11584,6 +11570,20 @@
      "Elbereth",
      "862238445",
      "EL + BER/BARATH"
+    ]
+   },
+   {
+    "quenya": [
+     "mq",
+     "Elentári",
+     "1620801097",
+     "EL"
+    ],
+    "sindarin": [
+     "n",
+     "Elbereth",
+     "2462581423",
+     "EL + BARATH"
     ]
    },
    {
@@ -12176,20 +12176,6 @@
    },
    {
     "quenya": [
-     "mq",
-     "hyarmen",
-     "4037811261",
-     "KHYAR + MEN"
-    ],
-    "sindarin": [
-     "n",
-     "harad",
-     "3167605685",
-     "KHYAR"
-    ]
-   },
-   {
-    "quenya": [
      "q",
      "hyarmen",
      "1477365621",
@@ -12199,6 +12185,20 @@
      "s",
      "harad",
      "614934925",
+     "KHYAR"
+    ]
+   },
+   {
+    "quenya": [
+     "mq",
+     "hyarmen",
+     "4037811261",
+     "KHYAR + MEN"
+    ],
+    "sindarin": [
+     "n",
+     "harad",
+     "3167605685",
      "KHYAR"
     ]
    },

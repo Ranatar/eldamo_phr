@@ -565,7 +565,12 @@ STEP = {'element': 'e', 'deriv': 'd', 'combine': 'c', 'see': 's', 'deprecated': 
 
 def _step(groups: list, rel: str, xid: str) -> list:
     """The groups of a word reached from another one: their paths begin with that step."""
-    return [[dict(r, path=[[rel, xid]] + r.get('path', [])) for r in g] for g in groups]
+    def step(r):
+        out = dict(r, path=[[rel, xid]] + r.get('path', []))
+        if r.get('more'):
+            out['more'] = [[[rel, xid]] + p for p in r['more']]
+        return out
+    return [[step(r) for r in g] for g in groups]
 
 
 def _via(groups: list, via: str) -> list:
@@ -629,7 +634,8 @@ def _root_groups(W: Words, pid: str, memo: dict, depth: int = ROOT_DEPTH) -> lis
                 if form.startswith('-') or form.endswith('-') and e.get('speech') in ('pref', 'suf'):
                     filled.append(g)             # an affix is not a root's stand-in
                     continue
-                fit = [dict(r, via='element', named=False, path=[['e', g[0]['element']]] + r['path']) for r in direct
+                fit = [dict({k: v for k, v in r.items() if k != 'more'}, via='element', named=False,
+                            path=[['e', g[0]['element']]] + r['path']) for r in direct
                        if r['id'] not in used and same_first_consonant(form, r['form'])]
                 filled.append(fit or g)
             if sum(1 for g in filled if _real(g)) >= 2:
@@ -741,7 +747,8 @@ def _resolve_roots(entries: list, W: Words) -> None:
                     continue
                 # roots the cognate itself has only through a loose link say nothing here
                 roots += [dict({x: v for x, v in r.items() if x not in ('named', 'gap', 'part', 'element')}, via='cognate',
-                               path=[['k', cid]] + r.get('path', []))
+                               path=[['k', cid]] + r.get('path', []),
+                               **({'more': [[['k', cid]] + p for p in r['more']]} if r.get('more') else {}))
                           for r in _own_roots(W, cid, memo)
                           if r.get('via') not in ('cognate', 'deprecated') and consonants_match(e['form'], r['form'], e['lang'])]
         out = []

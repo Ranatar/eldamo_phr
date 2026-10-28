@@ -1,10 +1,8 @@
-<!doctype html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title data-i18n="page.title">Quettamin — граф происхождения</title>
-<style>html{color-scheme:light}body{margin:0;font:14px system-ui,sans-serif}[hidden]{display:none!important}</style>
+<title>Neo-Roots Graph</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif:ital,wght@0,500;0,600;1,400;1,500&display=swap">
 <style>
 /* Layout: one-screen tool — a sidebar (search, card, legend) beside the graph; roots at the left, words to the right. */
 :root {
@@ -32,6 +30,8 @@
   --e-merged: #a8780a;
   --e-filed: #a8780a;
   --e-rootderiv: #a8780a;
+  --e-instead: #9a7f5a;
+  --l-elvish: #b0612a;
 
   --warn: #a5541d;
   --ok: #2f7a45;
@@ -45,7 +45,7 @@
     --bg: #11161d; --panel: #171e27; --ink: #e3e8ef; --muted: #96a2b2; --line: #2a3441; --accent: #8db8e4; --focus: #f1f4f8;
     --n-root: #e2b34a; --n-root-soft: #e2b34a66; --n-nq: #49b6cc; --n-ns: #6dc07a; --n-np: #a593ea; --n-form: #7f8b9b;
     --e-deriv: #7ba7dc; --e-element: #e88371; --e-combine: #aabd5c; --e-see: #7f8b9b; --e-deprecated: #e2ad4c;
-    --e-cognate: #dc7fc0; --e-merged: #e2b34a; --e-filed: #e2b34a; --e-rootderiv: #e2b34a;
+    --e-cognate: #dc7fc0; --e-merged: #e2b34a; --e-filed: #e2b34a; --e-rootderiv: #e2b34a; --e-instead: #b9a17c; --l-elvish: #e39a5f;
     --warn: #ea9157; --ok: #6dc07a;
     color-scheme: dark;
   }
@@ -54,7 +54,7 @@
   --bg: #11161d; --panel: #171e27; --ink: #e3e8ef; --muted: #96a2b2; --line: #2a3441; --accent: #8db8e4; --focus: #f1f4f8;
   --n-root: #e2b34a; --n-root-soft: #e2b34a66; --n-nq: #49b6cc; --n-ns: #6dc07a; --n-np: #a593ea; --n-form: #7f8b9b;
   --e-deriv: #7ba7dc; --e-element: #e88371; --e-combine: #aabd5c; --e-see: #7f8b9b; --e-deprecated: #e2ad4c;
-  --e-cognate: #dc7fc0; --e-merged: #e2b34a; --e-filed: #e2b34a; --e-rootderiv: #e2b34a;
+  --e-cognate: #dc7fc0; --e-merged: #e2b34a; --e-filed: #e2b34a; --e-rootderiv: #e2b34a; --e-instead: #b9a17c; --l-elvish: #e39a5f;
   --warn: #ea9157; --ok: #6dc07a;
   color-scheme: dark;
 }
@@ -191,6 +191,18 @@ a.ext { color: var(--accent); font-size: 12.5px; }
 .node text .more { fill: var(--accent); font-family: var(--f-ui); font-size: 10.5px; }
 .node { cursor: pointer; }
 .node.sel .ring { stroke: var(--focus); }
+.node.dep { opacity: .55; }
+.node.pinned .shape { stroke-width: 2.6px; }
+.edge.via { opacity: .7; }
+.links button.dep { opacity: .7; }
+.switches label { display: flex; align-items: flex-start; gap: 6px; font-size: 12.5px; cursor: pointer; margin-bottom: 4px; }
+.switches input { margin-top: 3px; }
+.langs { display: flex; flex-direction: column; gap: 8px; }
+.lang-group { display: flex; flex-direction: column; gap: 2px; }
+.lang-group > label { font-weight: 600; }
+.lang-items { display: flex; flex-direction: column; gap: 1px; padding-left: 18px; }
+.langs label { display: flex; align-items: baseline; gap: 5px; font-size: 12.5px; cursor: pointer; }
+.langs .cnt { margin-left: auto; color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
 .edge { fill: none; stroke-width: 1.5; }
 .edge.nm { opacity: .45; }
 .edge.sc { stroke-dasharray: 2 4; stroke-width: 1.1; opacity: .7; }
@@ -218,8 +230,6 @@ a.ext { color: var(--accent); font-size: 12.5px; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 
-</head>
-<body>
 <div class="app">
   <aside class="side">
     <div class="brand">
@@ -235,9 +245,9 @@ a.ext { color: var(--accent); font-size: 12.5px; }
         <input type="search" id="q" placeholder="Слово, корень или значение" autocomplete="off" spellcheck="false" aria-label="Поиск" data-i18n-attr="placeholder:search.placeholder;aria-label:search.label">
         <select id="scope" aria-label="Где искать" data-i18n-attr="aria-label:scope.label">
           <option value="" data-i18n="scope.all">всё</option>
-          <option value="nq" data-i18n="group.nq">квенья</option>
-          <option value="ns" data-i18n="group.ns">синдарин</option>
-          <option value="np" data-i18n="group.np">праэльфийский</option>
+          <option value="nq">ᴺQ.</option>
+          <option value="ns">ᴺS.</option>
+          <option value="np">ᴺ✶</option>
           <option value="root" data-i18n="scope.roots">корни</option>
         </select>
       </div>
@@ -255,6 +265,15 @@ a.ext { color: var(--accent); font-size: 12.5px; }
         <h3 data-i18n="legend.edges">Связи (от источника к производному)</h3>
         <div class="legend-grid" id="legend-edges"></div>
         <label class="sc-toggle"><input type="checkbox" id="shortcuts"> <span data-i18n="legend.shortcuts">показывать прямые связи корня со словом, если тот же корень ведёт к слову и через промежуточную форму</span></label>
+      </div>
+      <div class="sec switches">
+        <h3 data-i18n="legend.show">Показывать</h3>
+        <label><input type="checkbox" id="show-dep"> <span data-i18n="filter.deprecated">заменённые слова (Eldamo не советует их для нео-эльдарина)</span></label>
+        <label><input type="checkbox" id="stack-par" checked> <span data-i18n="filter.parallel">формы других концепций под своим словом, как на странице Eldamo</span></label>
+      </div>
+      <div class="sec">
+        <h3 data-i18n="legend.langs">Языки</h3>
+        <div class="langs" id="legend-langs"></div>
       </div>
       <p class="hint" data-i18n="legend.hint">Щелчок — карточка узла, двойной щелчок — развернуть соседей. Число «+N» у подписи — сколько связей узла ещё не показано. Колёсико и перетаскивание фона — масштаб и сдвиг.</p>
     </section>
@@ -274,13 +293,6 @@ a.ext { color: var(--accent); font-size: 12.5px; }
         <label><input type="checkbox" id="ov-proto"> <span data-i18n="ov.show.proto">праформы без корня</span></label>
         <label><input type="checkbox" id="ov-words"> <span data-i18n="ov.show.words">прочие слова без корня</span></label>
         <div class="ov-head" data-i18n="ov.rootFilters">Корни</div>
-        <select id="ov-period" data-i18n-attr="aria-label:ov.period" aria-label="Концепция">
-          <option value="" data-i18n="ov.period.all">все концепции</option>
-          <option value="p" data-i18n="ov.period.p">поздние √</option>
-          <option value="mp" data-i18n="ov.period.mp">«Этимологии» ᴹ√</option>
-          <option value="ep" data-i18n="ov.period.ep">ранние ᴱ√</option>
-          <option value="np" data-i18n="ov.period.np">нео-корни ᴺ√</option>
-        </select>
         <label><input type="checkbox" id="ov-rec"> <span data-i18n="ov.recommended">только рекомендованные</span></label>
         <label><input type="checkbox" id="ov-free"> <span data-i18n="ov.free">только без производных</span></label>
         <p class="ov-hint" data-i18n="ov.hint"></p>
@@ -297,9 +309,7 @@ a.ext { color: var(--accent); font-size: 12.5px; }
 
 <script type="application/json" id="graph-data">/*GRAPH*/</script>
 <script type="application/json" id="messages-data">/*MESSAGES*/</script>
-<script>
-/*D3*/
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script>
 (function () {
 'use strict';
@@ -316,7 +326,7 @@ const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 // is kept in the browser; without one, the browser's language decides. A switch redraws
 // the page in place, so the open graph stays.
 const MESSAGES = JSON.parse(document.getElementById('messages-data').textContent);
-const LANG_KEY = 'quettamin-lang';
+const LANG_KEY = 'neo-roots-lang';
 let uiLang = (() => {
   try { const v = localStorage.getItem(LANG_KEY); if (v === 'ru' || v === 'en') return v; } catch (e) { /* storage unavailable */ }
   const nav = (navigator.languages && navigator.languages[0]) || navigator.language || 'ru';
@@ -368,15 +378,17 @@ G.edges.forEach((e, k) => { outE[e[0]].push(k); inE[e[1]].push(k); });
 const indexOf = new Map(G.ids.map((x, i) => [x, i]));
 const kindOf = i => G.nodes[i].k;
 const isRoot = i => kindOf(i) === 'root';
+const isListed = n => !!n.grp && !n.x;          // a word of the three lists (not deprecated, not a merged form)
 
 function codeMarker(code, root) {
   return root ? (ROOT_MARK[code] || '√') : (LANG[code] || [code ? code.toUpperCase() + '.' : ''])[0];
 }
-// the language marker, with the language Eldamo prints in brackets (c:alt-lang): ᴺQ.[ᴱQ.]
+// the language Eldamo prints in brackets (c:alt-lang): ᴺQ.[ᴱQ.]; the same language twice (ᴹ√[ᴹ√])
+// says nothing on the graph, so the bracket shows only another one
+const altLang = n => (n.al && n.al !== n.l ? n.al : null);
 function marker(i) {
-  const n = G.nodes[i];
-  // the same language twice (ᴹ√[ᴹ√]) says nothing on the graph: the bracket shows only another one
-  return codeMarker(n.l, n.k === 'root') + (n.al && n.al !== n.l ? '[' + codeMarker(n.al, n.k === 'root') + ']' : '');
+  const n = G.nodes[i], al = altLang(n);
+  return codeMarker(n.l, n.k === 'root') + (al ? '[' + codeMarker(al, n.k === 'root') + ']' : '');
 }
 function shown(i) {           // the NQ list shows its own spelling
   const n = G.nodes[i];
@@ -390,28 +402,68 @@ function nodeColor(i) {
   return css('--n-form');
 }
 
-// relations switched on in the legend
+// ---- languages: branch (the hue of a marker) and period (its strength: early faint, neo full)
+const BRANCH = {
+  quenya: ['nq', 'q', 'mq', 'eq', 'van', 'aq', 'maq'],
+  sindarin: ['ns', 's', 'n', 'en', 'g', 'norths', 'os', 'on'],
+  primitive: ['np', 'p', 'mp', 'ep'],
+  elvish: ['t', 'mt', 'et', 'at', 'nan', 'ilk', 'eilk', 'dan', 'lem', 'lin', 'av'],
+};
+const BRANCH_TOKEN = { quenya: '--n-nq', sindarin: '--n-ns', primitive: '--n-np', elvish: '--l-elvish', other: '--n-form' };
+const branchOf = code => Object.keys(BRANCH).find(b => BRANCH[b].includes(code)) || 'other';
+const EARLY = new Set(['eq', 'en', 'g', 'ep', 'et', 'eilk']);
+const MIDDLE = new Set(['mq', 'n', 'mp', 'mt', 'ilk', 'dan', 'on', 'maq', 'lem']);
+const NEO = new Set(['nq', 'ns', 'np']);
+const eraOf = code => (NEO.has(code) ? 3 : EARLY.has(code) ? 0 : MIDDLE.has(code) ? 1 : 2);
+const colorCache = new Map();
+function langColor(code, root) {
+  const key = code + (root ? '√' : '');
+  if (!colorCache.has(key)) {
+    const base = root ? css('--n-root') : css(BRANCH_TOKEN[branchOf(code)]);
+    colorCache.set(key, d3.interpolateRgb(css('--muted'), base)([0.38, 0.62, 0.84, 1][eraOf(code)]));
+  }
+  return colorCache.get(key);
+}
+// a marker as html, coloured by language
+function markerHtml(i) {
+  const n = G.nodes[i], root = n.k === 'root', al = altLang(n);
+  return `<span class="mk" style="color:${langColor(n.l, root)}">${esc(codeMarker(n.l, root))}</span>`
+    + (al ? `<span class="mk" style="color:${langColor(al, root)}">[${esc(codeMarker(al, root))}]</span>` : '');
+}
+
+// ---- what is shown
 const relOn = Object.fromEntries(G.rels.map(r => [r, true]));
 // a root named directly beside a path through an intermediate form (Q. -(n)dur < √(N)DUR and
 // < ✶-ndūr < √(N)DUR): hidden unless switched on, so the path through the form shows
 let showShortcuts = false;
+let showDeprecated = false;     // Eldamo's deprecated words
+let stackParallel = true;       // forms of other conceptions under their word, as on Eldamo's page
+const langOn = {};              // a language switched off in the legend: false
 const isShortcut = e => !!(e[3] && e[3].sc);
 const edgeOn = k => relOn[relName(G.edges[k][2])] && (showShortcuts || !isShortcut(G.edges[k]));
+// links of origin, and the links of one word across conceptions (a word and the forms merged into
+// it, a root and the roots merged into or filed under it)
+const ORIGIN = new Set(['deriv', 'element', 'combine', 'see', 'deprecated', 'cognate']);
+const PARALLEL = new Set(['combine', 'merged', 'filed']);
+const passes = i => {
+  const n = G.nodes[i];
+  return langOn[n.l] !== false && (showDeprecated || n.x !== 'd');
+};
 
 // ---------------------------------------------------------------- state
 const visible = new Set();
 let focusNode = -1, selected = -1;
-// what keeps each shown node: 'core' (the focus and its tree) or the nodes whose expansion added it;
-// collapsing a node removes what only it keeps
+// what keeps each node on the graph: 'core' (the focus and its tree) or the nodes whose expansion
+// added it; collapsing a node removes what only it keeps
 const owners = new Map();
 const expanded = new Set();
 function own(x, by) { if (!owners.has(x)) owners.set(x, new Set()); owners.get(x).add(by); }
-const pos = new Map();          // node -> {x, y, vx, vy, fx, fy}
+const pos = new Map();          // node -> {x, y, vx, vy, fx, fy}; a dragged node keeps fx, fy
 
 function hiddenCount(i) {
   let h = 0;
-  for (const k of inE[i]) if (edgeOn(k) && !visible.has(G.edges[k][0])) h++;
-  for (const k of outE[i]) if (edgeOn(k) && !visible.has(G.edges[k][1])) h++;
+  for (const k of inE[i]) if (edgeOn(k) && !visible.has(G.edges[k][0]) && passes(G.edges[k][0])) h++;
+  for (const k of outE[i]) if (edgeOn(k) && !visible.has(G.edges[k][1]) && passes(G.edges[k][1])) h++;
   return h;
 }
 
@@ -420,7 +472,7 @@ function upstream(i, cap) {
   for (let q = 0; q < out.length && out.length < cap; q++) {
     if (q > 0 && isRoot(out[q])) continue;      // a root's own merges and filing open on expand
     for (const k of inE[out[q]]) {
-      if (!edgeOn(k)) continue;
+      if (!edgeOn(k) || relName(G.edges[k][2]) === 'instead') continue;   // a replacement is not an origin
       const a = G.edges[k][0];
       if (!seen.has(a)) { seen.add(a); out.push(a); }
     }
@@ -436,7 +488,7 @@ function downstream(i, depth, cap) {
       for (const k of outE[x]) {
         if (!edgeOn(k)) continue;
         const b = G.edges[k][1];
-        if (seen.has(b)) continue;
+        if (seen.has(b) || !passes(b)) continue;
         if (out.length >= cap) return out;
         seen.add(b); out.push(b); next.push(b);
       }
@@ -466,7 +518,7 @@ function expand(i) {
     if (!edgeOn(k)) continue;
     if (added >= 80) break;
     const b = G.edges[k][1];
-    if (!visible.has(b)) added++;
+    if (!visible.has(b) && passes(b)) added++;
     around.push(b);
   }
   const p = pos.get(i);
@@ -524,7 +576,7 @@ const zoom = d3.zoom().scaleExtent([0.08, 40]).on('zoom', ev => {
 });
 svg.call(zoom).on('dblclick.zoom', null);
 
-const DASH = { deriv: null, element: null, combine: '2 3', see: '1 3', deprecated: '6 4', cognate: '6 3 1 3', merged: '1 3', filed: '4 3', rootderiv: null };
+const DASH = { deriv: null, element: null, combine: '2 3', see: '1 3', deprecated: '6 4', cognate: '6 3 1 3', merged: '1 3', filed: '4 3', rootderiv: null, instead: '3 3' };
 function makeMarkers() {
   defs.selectAll('*').remove();
   for (const r of G.rels) {
@@ -535,19 +587,125 @@ function makeMarkers() {
 }
 
 let COL = 230;
+const STACK = 36;              // the step between a word and the forms under it
+const BOX_H = 30;              // the height of a node with its label above
 let sim = null;
+let shownNodes = new Set();
 
-function ranks(nodes, edges) {
-  const rank = new Map(nodes.map(i => [i, 0]));
+// the links among the shown nodes; a path through hidden nodes (a language switched off, a
+// deprecated word) becomes one link "through hidden nodes" with the relation of its last step
+function shownLinks(shownSet) {
+  const edges = [], real = new Set(), virtual = new Map();
+  for (const a of shownSet) {
+    for (const k of outE[a]) {
+      if (!edgeOn(k)) continue;
+      const e = G.edges[k], b = e[1], rel = relName(e[2]);
+      if (!visible.has(b)) continue;
+      if (shownSet.has(b)) { edges.push({ k, a, b, rel, x: e[3] || null }); real.add(a + '>' + b); continue; }
+      if (!ORIGIN.has(rel) && !PARALLEL.has(rel)) continue;
+      const stack = [b], seen = new Set([b]);
+      while (stack.length) {
+        const h = stack.pop();
+        for (const k2 of outE[h]) {
+          if (!edgeOn(k2)) continue;
+          const e2 = G.edges[k2], c = e2[1], r2 = relName(e2[2]);
+          if (!visible.has(c) || seen.has(c) || (!ORIGIN.has(r2) && !PARALLEL.has(r2))) continue;
+          seen.add(c);
+          if (!shownSet.has(c)) { stack.push(c); continue; }
+          if (c !== a && !virtual.has(a + '>' + c)) virtual.set(a + '>' + c, { k: 'v' + a + '>' + c, a, b: c, rel: r2, x: null, via: true });
+        }
+      }
+    }
+  }
+  for (const [key, v] of virtual) if (!real.has(key)) edges.push(v);
+  return edges;
+}
+
+// groups of one word across conceptions: the word on top, the earlier forms under it
+function parallelGroups(nodes, edges) {
+  const up = new Map(nodes.map(i => [i, i]));
+  const find = x => { while (up.get(x) !== x) { up.set(x, up.get(up.get(x))); x = up.get(x); } return x; };
+  const sources = new Set();
+  if (stackParallel) {
+    for (const e of edges) {
+      if (e.via || !PARALLEL.has(e.rel)) continue;
+      up.set(find(e.a), find(e.b));
+      sources.add(e.a);
+    }
+  }
+  const groups = new Map();
+  for (const i of nodes) {
+    const g = find(i);
+    if (!groups.has(g)) groups.set(g, []);
+    groups.get(g).push(i);
+  }
+  const groupOf = new Map(), stackIdx = new Map(), anchorOf = new Map();
+  for (const [g, members] of groups) {
+    // the word itself (not merged into another) first, then the conceptions from late to early
+    members.sort((x, y) => (sources.has(x) - sources.has(y)) || (eraOf(G.nodes[y].l) - eraOf(G.nodes[x].l))
+      || String(G.nodes[x].f).localeCompare(String(G.nodes[y].f)));
+    members.forEach((m, k) => { groupOf.set(m, g); stackIdx.set(m, k); anchorOf.set(m, members[0]); });
+  }
+  return { groupOf, stackIdx, anchorOf };
+}
+
+function ranks(nodes, edges, groupOf) {
+  const rank = new Map(nodes.map(i => [groupOf.get(i), 0]));
   for (let it = 0; it < nodes.length && it < 40; it++) {
     let changed = false;
     for (const e of edges) {
-      const r = rank.get(e.a) + 1;
-      if (r > rank.get(e.b) && r < 40) { rank.set(e.b, r); changed = true; }
+      const ga = groupOf.get(e.a), gb = groupOf.get(e.b);
+      if (ga === gb) continue;
+      const r = rank.get(ga) + 1;
+      if (r > rank.get(gb) && r < 40) { rank.set(gb, r); changed = true; }
     }
     if (!changed) break;
   }
   return rank;
+}
+
+// keeps the forms of other conceptions under their word
+function stackForce() {
+  let nodes = [];
+  function force() {
+    for (const d of nodes) {
+      if (!d.anchor || d.fx != null) continue;
+      d.vx += (d.anchor.x - d.x) * 0.5;
+      d.vy += (d.anchor.y + d.stack * STACK - d.y) * 0.5;
+    }
+  }
+  force.initialize = ns => { nodes = ns; };
+  return force;
+}
+// nodes with their labels do not overlap: each is a box (the label's width, the node and the label
+// above it); an overlap is undone along its smaller side, mostly vertically since the columns hold x
+function boxCollide() {
+  let nodes = [];
+  function force() {
+    const n = nodes.length;
+    for (let i = 0; i < n; i++) {
+      const a = nodes[i];
+      for (let j = i + 1; j < n; j++) {
+        const b = nodes[j];
+        const ox = (a.w + b.w) / 2 + 10 - Math.abs(a.x - b.x);
+        if (ox <= 0) continue;
+        const oy = BOX_H - Math.abs(a.y - b.y);
+        if (oy <= 0) continue;
+        const wa = a.fx != null ? 0 : 1, wb = b.fx != null ? 0 : 1;
+        if (!wa && !wb) continue;
+        const sa = wa / (wa + wb), sb = wb / (wa + wb);
+        if (oy < ox * 1.5) {
+          const dir = a.y < b.y || (a.y === b.y && i < j) ? -1 : 1;
+          a.y += dir * oy * sa * 0.5; b.y -= dir * oy * sb * 0.5;
+        } else {
+          const dir = a.x < b.x ? -1 : 1;
+          a.x += dir * ox * sa * 0.5; b.x -= dir * ox * sb * 0.5;
+        }
+      }
+    }
+  }
+  force.initialize = ns => { nodes = ns; };
+  return force;
 }
 
 let fitPending = false;
@@ -557,33 +715,43 @@ function showNote() {
   else if (lastCounts) $('note').textContent = t('note.onScreen', { nodes: lastCounts[0], edges: lastCounts[1] });
 }
 function render(refit) {
-  const nodes = [...visible];
-  const edges = [];
-  G.edges.forEach((e, k) => {
-    if (visible.has(e[0]) && visible.has(e[1]) && edgeOn(k)) edges.push({ k, a: e[0], b: e[1], rel: relName(e[2]), x: e[3] || null });
-  });
-  const rank = ranks(nodes, edges);
+  const shownSet = new Set([...visible].filter(i => i === focusNode || passes(i)));
+  shownNodes = shownSet;
+  const nodes = [...shownSet];
+  const edges = shownLinks(shownSet);
+  const { groupOf, stackIdx, anchorOf } = parallelGroups(nodes, edges);
+  const rank = ranks(nodes, edges, groupOf);
   COL = svg.node().getBoundingClientRect().width < 700 ? 160 : 230;
   const data = nodes.map(i => {
     let p = pos.get(i);
-    if (!p) { p = { x: rank.get(i) * COL + (Math.random() - .5) * 30, y: (Math.random() - .5) * 200 }; pos.set(i, p); }
-    p.i = i; p.rank = rank.get(i);
+    if (!p) { p = { x: rank.get(groupOf.get(i)) * COL + (Math.random() - .5) * 30, y: (Math.random() - .5) * 200 }; pos.set(i, p); }
+    p.i = i; p.rank = rank.get(groupOf.get(i)); p.stack = stackIdx.get(i);
     return p;
   });
   const byI = new Map(data.map(d => [d.i, d]));
-  const links = edges.map(e => ({ ...e, source: byI.get(e.a), target: byI.get(e.b) }));
+  for (const d of data) {
+    const a = anchorOf.get(d.i);
+    d.anchor = a !== d.i ? byI.get(a) : null;
+    if (d.anchor && !d.anchor.x && d.anchor.x !== 0) d.anchor = null;
+  }
+  const links = edges.map(e => ({
+    ...e, source: byI.get(e.a), target: byI.get(e.b),
+    stacked: stackParallel && !e.via && PARALLEL.has(e.rel) && groupOf.get(e.a) === groupOf.get(e.b),
+  }));
 
   // edges
   const es = gEdges.selectAll('path').data(links, d => d.k).join(
     enter => enter.append('path').attr('class', 'edge').call(p => p.append('title')));
   es.attr('stroke', d => css('--e-' + d.rel))
-    .attr('stroke-dasharray', d => DASH[d.rel])
-    .attr('stroke-width', d => d.rel === 'element' ? 2 : 1.5)
+    .attr('stroke-dasharray', d => (d.via ? '1 4' : DASH[d.rel]))
+    .attr('stroke-width', d => d.rel === 'element' && !d.via ? 2 : 1.5)
     .classed('nm', d => !!(d.x && d.x.nm))
     .classed('sc', d => !!(d.x && d.x.sc))
+    .classed('via', d => !!d.via)
     .attr('marker-end', d => `url(#arrow-${d.rel})`);
   es.select('title').text(d => {
     let tip = `${REL[d.rel][1]}: ${marker(d.a)} ${shown(d.a)} → ${marker(d.b)} ${shown(d.b)}`;
+    if (d.via) tip += '\n' + t('edge.via');
     if (d.x && d.x.nm) tip += '\n' + t('edge.nm');
     if (d.x && d.x.sc) tip += '\n' + t('edge.sc');
     for (const [src, chain] of (d.x && d.x.w) || []) tip += '\n' + t('card.written', { src, chain: chain.join(' > ') });
@@ -600,45 +768,60 @@ function render(refit) {
     g.on('click', (ev, d) => { ev.stopPropagation(); select(d.i); })
       .on('dblclick', (ev, d) => { ev.stopPropagation(); selected = d.i; toggle(d.i); select(d.i); })
       .call(d3.drag()
-        .on('start', (ev, d) => { if (!ev.active && sim) sim.alphaTarget(0.2).restart(); d.fx = d.x; d.fy = d.y; })
+        .on('start', (ev, d) => { if (!ev.active && sim) sim.alphaTarget(0.1).restart(); d.fx = d.x; d.fy = d.y; })
         .on('drag', (ev, d) => { d.fx = ev.x; d.fy = ev.y; })
-        .on('end', (ev, d) => { if (!ev.active && sim) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+        // a dragged node stays where it is put; "Re-layout" frees it
+        .on('end', (ev, d) => { if (!ev.active && sim) sim.alphaTarget(0); d3.select(ev.sourceEvent && ev.sourceEvent.target && ev.sourceEvent.target.closest('g.node')).classed('pinned', true); }));
     return g;
   });
-  ns.classed('sel', d => d.i === selected);
+  ns.classed('sel', d => d.i === selected)
+    .classed('dep', d => G.nodes[d.i].x === 'd')
+    .classed('pinned', d => d.fx != null);
   ns.select('.shape').attr('d', d => shapePath(d.i))
     .attr('fill', d => shapeFill(d.i)).attr('stroke', d => nodeColor(d.i))
-    .attr('stroke-width', 1.6).attr('stroke-dasharray', d => G.nodes[d.i].k === 'root' && !G.nodes[d.i].rec ? '2 2' : null);
+    .attr('stroke-width', 1.6).attr('stroke-dasharray', d => (G.nodes[d.i].k === 'root' && !G.nodes[d.i].rec ? '2 2' : null));
   ns.select('.ring').attr('d', d => d3.symbol(d3.symbolCircle, 520)())
     .attr('fill', 'none').attr('stroke-width', 2.2)
     .attr('stroke', d => d.i === selected ? css('--focus') : d.i === focusNode ? css('--accent') : 'none');
   ns.select('text').each(function (d) {
     const label = d3.select(this);
+    const n = G.nodes[d.i], isR = n.k === 'root', al = altLang(n);
     label.selectAll('*').remove();
-    label.append('tspan').attr('class', 'lm').text(marker(d.i) + (G.nodes[d.i].k === 'root' ? '' : ' '));
-    label.append('tspan').attr('font-style', G.nodes[d.i].k === 'root' ? 'normal' : 'italic')
-      .attr('font-weight', G.nodes[d.i].k === 'root' ? 600 : 500).text(shown(d.i));
+    label.append('tspan').attr('class', 'lm').attr('fill', langColor(n.l, isR)).text(codeMarker(n.l, isR));
+    if (al) label.append('tspan').attr('class', 'lm').attr('fill', langColor(al, isR)).text('[' + codeMarker(al, isR) + ']');
+    label.append('tspan').attr('font-style', isR ? 'normal' : 'italic')
+      .attr('font-weight', isR ? 600 : 500).text((isR ? '' : ' ') + shown(d.i));
     const h = hiddenCount(d.i);
     if (h) label.append('tspan').attr('class', 'more').text('  +' + h);
+    let w = 60;
+    try { w = this.getComputedTextLength(); } catch (e) { /* not laid out */ }
+    d.w = Math.max(20, w);
   });
   ns.select('title').text(d => `${marker(d.i)} ${shown(d.i)}${G.nodes[d.i].g ? ' “' + G.nodes[d.i].g + '”' : ''}`);
 
-  // simulation: columns by rank, rows by force
+  // simulation: columns by rank, the forms of a word under it, boxes kept apart; weak links,
+  // so that a node moved by hand does not spring back
   if (sim) sim.stop();
   sim = d3.forceSimulation(data)
-    .force('x', d3.forceX(d => d.rank * COL).strength(1))
-    .force('y', d3.forceY(0).strength(0.04))
-    .force('link', d3.forceLink(links).distance(COL * 0.9).strength(0.12))
-    .force('charge', d3.forceManyBody().strength(-90).distanceMax(400))
-    .force('collide', d3.forceCollide(20).iterations(3))
+    .force('x', d3.forceX(d => d.rank * COL).strength(d => (d.anchor ? 0 : 0.6)))
+    .force('y', d3.forceY(0).strength(0.015))
+    .force('link', d3.forceLink(links.filter(l => !l.stacked)).distance(COL * 0.9).strength(0.025))
+    .force('charge', d3.forceManyBody().strength(-45).distanceMax(260))
+    .force('stack', stackForce())
+    .force('boxes', boxCollide())
+    .velocityDecay(0.5)
     .on('tick', draw);
   fitPending = refit;
-  if (reduced) { sim.stop(); for (let t = 0; t < 300; t++) sim.tick(); draw(); fitView(false); fitPending = false; }
-  else sim.alpha(refit ? 1 : 0.5).restart().on('end', () => { if (fitPending) { fitView(true); fitPending = false; } });
-  if (refit && !reduced) setTimeout(() => { if (fitPending) { fitView(true); fitPending = false; } }, 900);
+  if (reduced) { sim.stop(); for (let k = 0; k < 300; k++) sim.tick(); draw(); fitView(false); fitPending = false; }
+  else sim.alpha(refit ? 1 : 0.4).restart().on('end', () => { if (fitPending) { fitView(true); fitPending = false; } });
+  if (refit && !reduced) setTimeout(() => { if (fitPending) { fitView(true); fitPending = false; } }, 1100);
 
   function draw() {
     es.attr('d', d => {
+      if (d.stacked) {     // a form of another conception and its word: a bracket on the left
+        const sx = d.source.x - 8, sy = d.source.y, tx = d.target.x - 8, ty = d.target.y + 6;
+        return `M${sx},${sy}C${sx - 22},${sy} ${tx - 22},${ty} ${tx},${ty}`;
+      }
       const sx = d.source.x + 8, sy = d.source.y, tx = d.target.x - 9, ty = d.target.y;
       const mx = (sx + tx) / 2;
       return `M${sx},${sy}C${mx},${sy} ${mx},${ty} ${tx},${ty}`;
@@ -658,30 +841,31 @@ function shapePath(i) {
 function shapeFill(i) {
   const n = G.nodes[i];
   if (n.k === 'root') return n.rec ? css('--n-root') : css('--bg');
-  if (n.k === 'protoform') return css('--bg');
+  if (n.k === 'protoform' || n.x === 'm') return css('--bg');     // a merged form: hollow
   return nodeColor(i);
 }
 
 function fitView(animate) {
   if (mode !== 'graph') return;
-  const items = [...visible].map(i => pos.get(i)).filter(Boolean);
+  const items = [...shownNodes].map(i => pos.get(i)).filter(Boolean);
   if (!items.length) return;
   const box = svg.node().getBoundingClientRect();
   const xs = items.map(p => p.x), ys = items.map(p => p.y);
-  const x0 = Math.min(...xs) - 80, x1 = Math.max(...xs) + 80, y0 = Math.min(...ys) - 40, y1 = Math.max(...ys) + 24;
+  const x0 = Math.min(...xs) - 90, x1 = Math.max(...xs) + 90, y0 = Math.min(...ys) - 40, y1 = Math.max(...ys) + 24;
   const k = Math.min(1.6, 0.92 * Math.min(box.width / (x1 - x0), box.height / (y1 - y0)));
-  const t = d3.zoomIdentity.translate(box.width / 2 - k * (x0 + x1) / 2, box.height / 2 - k * (y0 + y1) / 2).scale(k);
-  (animate ? svg.transition().duration(450) : svg).call(zoom.transform, t);
+  const tr = d3.zoomIdentity.translate(box.width / 2 - k * (x0 + x1) / 2, box.height / 2 - k * (y0 + y1) / 2).scale(k);
+  (animate ? svg.transition().duration(450) : svg).call(zoom.transform, tr);
 }
 svg.on('click', () => {});
 $('fit').addEventListener('click', () => (mode === 'graph' ? fitView(!reduced) : ovFit(!reduced)));
+// a new layout, and every node moved by hand freed
 $('relayout').addEventListener('click', () => { for (const i of visible) pos.delete(i); render(true); });
 
 // ---------------------------------------------------------------- the card
 function nodeButton(i) {
   const n = G.nodes[i];
   const cls = n.k === 'root' ? 'fm root-fm' : 'fm';
-  return `<button type="button" data-node="${i}"><span class="mk">${esc(marker(i))}</span>${n.k === 'root' ? '' : ' '}<span class="${cls}">${esc(shown(i))}</span></button>`
+  return `<button type="button" data-node="${i}"${n.x === 'd' ? ' class="dep"' : ''}>${markerHtml(i)}${n.k === 'root' ? '' : ' '}<span class="${cls}">${esc(shown(i))}</span></button>`
     + (n.g ? ` <span class="gl">“${esc(n.g)}”</span>` : '');
 }
 function relTag(rel) {
@@ -698,7 +882,9 @@ function select(i) {
   const kind = t(n.k === 'root' ? 'kind.root' : n.k === 'protoform' ? 'kind.protoform' : n.k === 'form' ? 'kind.form'
     : (n.l === 'p' || n.l === 'mp' || n.l === 'np') ? 'kind.primitiveWord' : 'kind.word');
   const tags = [];
-  if (n.grp) tags.push(`<span class="tag">${esc(t('group.' + n.grp))}</span>`);
+  if (n.x === 'd') tags.push(`<span class="tag warn" title="${esc(t('tag.deprecatedWord.title'))}">⚠ ${esc(t('tag.deprecatedWord'))}</span>`);
+  if (n.x === 'm') tags.push(`<span class="tag" title="${esc(t('tag.mergedForm.title'))}">${esc(t('tag.mergedForm'))}</span>`);
+  if (n.grp && !n.x) tags.push(`<span class="tag">${esc(t('group.' + n.grp))}</span>`);
   if (n.s) tags.push(`<span class="tag">${esc(speech(n.s))}</span>`);
   if (n.k === 'word') tags.push(n.r ? `<span class="tag">${esc(t('tag.roots', { rule: has('rule.' + n.r) ? t('rule.' + n.r) : n.r }))}</span>` : `<span class="tag warn">${esc(t('tag.noRoot'))}</span>`);
   if (n.u) tags.push(`<span class="tag warn" title="${esc(t('tag.indirect.title'))}">${esc(t('tag.indirect'))}</span>`);
@@ -709,7 +895,7 @@ function select(i) {
   if (n.ds) tags.push(`<span class="tag">${esc(t('tag.noRootDerivatives', { n: n.ds }))}</span>`);
 
   let html = `<div class="card-head">
-      <div class="big"><span class="mk">${esc(marker(i))}</span>${n.k === 'root' ? '' : ' '}<span class="${n.k === 'root' ? 'fm root-fm' : 'fm'}">${esc(shown(i))}</span></div>
+      <div class="big">${markerHtml(i)}${n.k === 'root' ? '' : ' '}<span class="${n.k === 'root' ? 'fm root-fm' : 'fm'}">${esc(shown(i))}</span></div>
       ${n.g ? `<div class="gl">“${esc(n.g)}”</div>` : ''}
       <div class="meta">${esc(kind)} · ${esc(lang)}${n.sp && n.sp !== n.f ? ` · ${esc(t('card.dbForm', { f: n.f }))}` : ''}</div>
     </div>
@@ -717,15 +903,18 @@ function select(i) {
   if (n.ins && n.ins.length) {
     html += `<div class="sec"><h3>${esc(t('card.instead'))}</h3><ul class="links">${n.ins.map(x => indexOf.has(x) ? `<li>${nodeButton(indexOf.get(x))}</li>` : '').join('')}</ul></div>`;
   }
+  if (visible.has(i) && i !== focusNode && !passes(i)) {
+    html += `<p class="more">${esc(t('card.filteredOut'))}</p>`;
+  }
   html += `<div class="actions">
       ${i !== focusNode ? `<button class="btn primary" type="button" data-act="focus">${esc(t('act.focus'))}</button>` : ''}
       <button class="btn" type="button" data-act="expand">${esc(t(expanded.has(i) && visible.has(i) ? 'act.collapse' : 'act.expand'))}</button>
       ${i !== focusNode && visible.has(i) ? `<button class="btn" type="button" data-act="remove">${esc(t('act.remove'))}</button>` : ''}
-      ${/^\d+$/.test(id) && (n.k === 'root' || n.grp) ? `<a class="ext" href="index.html#${n.k === 'root' ? 'r' : 'w'}=${esc(id)}">${esc(t('card.quettamin'))}</a>` : ''}
       ${/^\d+$/.test(id) ? `<a class="ext" href="${SITE}${esc(id)}.html" target="_blank" rel="noopener">${esc(t('card.eldamo'))}</a>` : ''}
     </div>`;
 
-  const from = inE[i].map(k => G.edges[k]);
+  const from = inE[i].map(k => G.edges[k]).filter(e => relName(e[2]) !== 'instead');
+  const replaces = inE[i].map(k => G.edges[k]).filter(e => relName(e[2]) === 'instead');
   if (from.length) {
     html += `<div class="sec"><h3>${esc(t('card.from'))}</h3><ul class="links">${from.map(e => {
       const rel = relName(e[2]);
@@ -734,7 +923,11 @@ function select(i) {
       return `<li>${relTag(rel)} ${nodeButton(e[0])}${x.nm ? ` <span class="tag warn">${esc(t('tag.nm'))}</span>` : ''}${x.sc ? ` <span class="tag" title="${esc(t('tag.direct.title'))}">${esc(t('tag.direct'))}</span>` : ''}${written}</li>`;
     }).join('')}</ul></div>`;
   }
-  const to = outE[i].map(k => G.edges[k]);
+  if (replaces.length) {
+    html += `<div class="sec"><h3>${esc(t('card.replaces', { n: replaces.length }))}</h3><ul class="links">${replaces.slice(0, 60).map(e =>
+      `<li>${nodeButton(e[0])}</li>`).join('')}</ul></div>`;
+  }
+  const to = outE[i].map(k => G.edges[k]).filter(e => relName(e[2]) !== 'instead');
   if (to.length) {
     const LIM = 60;
     html += `<div class="sec"><h3>${esc(t('card.gives', { n: to.length }))}</h3><ul class="links">${to.slice(0, LIM).map(e =>
@@ -779,6 +972,7 @@ function search() {
   for (let i = 0; i < N; i++) {
     const n = G.nodes[i];
     if (scope === 'root' ? n.k !== 'root' : scope ? n.grp !== scope : !(n.grp || n.k === 'root')) continue;
+    if (n.x === 'd' && !showDeprecated) continue;          // deprecated words with their switch on
     const [f, sp, g] = K[i];
     let s = -1;
     if (q && (f === q || sp === q)) s = 0;
@@ -787,13 +981,14 @@ function search() {
     else if (g && g.split(/[^\p{L}]+/u).includes(ql)) s = 2;
     else if (q && f.includes(q)) s = 3;
     else if (g && g.includes(ql)) s = 4;
-    if (s >= 0) hits.push([s, n.k === 'root' ? 1 : 0, f.length, i]);
+    if (s >= 0) hits.push([s, n.k === 'root' ? 1 : n.x ? 2 : 0, f.length, i]);
   }
   hits.sort((a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2]);
   box.innerHTML = hits.slice(0, 40).map(([, , , i]) => {
     const n = G.nodes[i];
-    return `<button type="button" data-hit="${i}"><span class="mk">${esc(marker(i))}</span>${n.k === 'root' ? '' : ' '}<span class="${n.k === 'root' ? 'fm root-fm' : 'fm'}">${esc(shown(i))}</span>`
-      + `${n.g ? ` <span class="gl">“${esc(n.g)}”</span>` : ''}</button>`;
+    const tag = n.x === 'd' ? ` <span class="tag warn">⚠ ${esc(t('tag.deprecatedWord'))}</span>` : n.x === 'm' ? ` <span class="tag">${esc(t('tag.mergedForm'))}</span>` : '';
+    return `<button type="button" data-hit="${i}">${markerHtml(i)}${n.k === 'root' ? '' : ' '}<span class="${n.k === 'root' ? 'fm root-fm' : 'fm'}">${esc(shown(i))}</span>`
+      + `${n.g ? ` <span class="gl">“${esc(n.g)}”</span>` : ''}${tag}</button>`;
   }).join('') || `<div class="none">${esc(t('search.none'))}</div>`;
   box.hidden = false;
 }
@@ -827,7 +1022,8 @@ const PRIM = new Set(['p', 'mp', 'ep', 'np']);
 function ovCategory(i) {
   const n = G.nodes[i];
   if (n.k === 'root') return ('rec' in n) && !n.nl ? 'roots' : null;
-  if (!n.nr) return null;
+  if (!n.nr || n.x === 'm') return null;                 // a merged form stands with its word
+  if (n.x === 'd' && !showDeprecated) return null;
   return PRIM.has(n.l) ? 'proto' : 'words';
 }
 function ovFill(i) {
@@ -844,15 +1040,15 @@ function ovStroke(i) {
 }
 function buildOverview() {
   const show = { roots: $('ov-roots').checked, proto: $('ov-proto').checked, words: $('ov-words').checked };
-  for (const id of ['ov-period', 'ov-rec']) $(id).disabled = !show.roots;     // the filters of roots
-  const per = $('ov-period').value, onlyRec = $('ov-rec').checked, onlyFree = $('ov-free').checked;
+  $('ov-rec').disabled = !show.roots;      // a filter of roots
+  const onlyRec = $('ov-rec').checked, onlyFree = $('ov-free').checked;
   const items = [];
   const counts = { roots: 0, proto: 0, words: 0 };
   for (let i = 0; i < N; i++) {
     const cat = ovCategory(i);
     if (!cat || !show[cat]) continue;
     const n = G.nodes[i];
-    if (cat === 'roots' && per && n.l !== per) continue;
+    if (langOn[n.l] === false) continue;      // the languages of the legend (√, ᴹ√, ᴱ√, ᴺ√ for roots)
     if (cat === 'roots' && onlyRec && !n.rec) continue;
     if (onlyFree && ovValue(i)) continue;
     items.push([cat, i]);
@@ -939,7 +1135,7 @@ function setMode(m) {
 }
 $('mode-graph').addEventListener('click', () => setMode('graph'));
 $('mode-roots').addEventListener('click', () => setMode('roots'));
-for (const id of ['ov-roots', 'ov-proto', 'ov-words', 'ov-period', 'ov-rec', 'ov-free']) $(id).addEventListener('change', () => { buildOverview(); ovFit(!reduced); });
+for (const id of ['ov-roots', 'ov-proto', 'ov-words', 'ov-rec', 'ov-free']) $(id).addEventListener('change', () => { buildOverview(); ovFit(!reduced); });
 
 // ---------------------------------------------------------------- legend
 function legend() {
@@ -951,13 +1147,47 @@ function legend() {
     [t('legend.n.form'), d3.symbol(d3.symbolCircle, 70)(), css('--n-form'), css('--n-form'), null],
     [t('legend.n.root'), d3.symbol(d3.symbolDiamond, 150)(), css('--n-root'), css('--n-root'), null],
     [t('legend.n.rootWarn'), d3.symbol(d3.symbolDiamond, 150)(), css('--bg'), css('--n-root'), '2 2'],
+    [t('legend.n.merged'), d3.symbol(d3.symbolCircle, 120)(), css('--bg'), css('--n-nq'), null],
+    [t('legend.n.dep'), d3.symbol(d3.symbolCircle, 120)(), css('--n-nq'), css('--n-nq'), null, 0.45],
   ];
-  $('legend-nodes').innerHTML = nodeItems.map(([label, d, fill, stroke, dash]) =>
-    `<label><svg width="16" height="16" viewBox="-8 -8 16 16" aria-hidden="true"><path d="${d}" fill="${fill}" stroke="${stroke}" stroke-width="1.6"${dash ? ` stroke-dasharray="${dash}"` : ''}/></svg>${esc(label)}</label>`).join('');
+  $('legend-nodes').innerHTML = nodeItems.map(([label, d, fill, stroke, dash, op]) =>
+    `<label><svg width="16" height="16" viewBox="-8 -8 16 16" aria-hidden="true"><path d="${d}" fill="${fill}" stroke="${stroke}" stroke-width="1.6"${dash ? ` stroke-dasharray="${dash}"` : ''}${op ? ` opacity="${op}"` : ''}/></svg>${esc(label)}</label>`).join('');
   $('legend-edges').innerHTML = G.rels.map(r =>
     `<label title="${esc(REL[r][1])}"><input type="checkbox" id="rel-${r}" data-rel="${r}"${relOn[r] ? ' checked' : ''}>`
     + `<svg width="26" height="10" viewBox="0 0 26 10" aria-hidden="true"><line x1="1" y1="5" x2="25" y2="5" stroke="${css('--e-' + r)}" stroke-width="${r === 'element' ? 2 : 1.6}"${DASH[r] ? ` stroke-dasharray="${DASH[r]}"` : ''}/></svg>${esc(REL[r][0])}</label>`).join('');
 }
+// languages present on the graph, by branch, from neo to early; the marker in its colour
+const LANG_COUNT = new Map();
+for (const n of G.nodes) LANG_COUNT.set(n.l, (LANG_COUNT.get(n.l) || 0) + 1);
+const BRANCH_ORDER = ['quenya', 'sindarin', 'primitive', 'elvish', 'other'];
+function legendLangs() {
+  const groups = new Map(BRANCH_ORDER.map(b => [b, []]));
+  for (const code of LANG_COUNT.keys()) groups.get(branchOf(code)).push(code);
+  $('legend-langs').innerHTML = BRANCH_ORDER.filter(b => groups.get(b).length).map(b => {
+    const codes = groups.get(b).sort((x, y) => eraOf(y) - eraOf(x) || x.localeCompare(y));
+    const all = codes.every(c => langOn[c] !== false);
+    return `<div class="lang-group"><label><input type="checkbox" data-branch="${b}"${all ? ' checked' : ''}> ${esc(t('branch.' + b))}</label>`
+      + `<div class="lang-items">${codes.map(c => `<label title="${esc(langName(c))}"><input type="checkbox" data-lang="${c}"${langOn[c] !== false ? ' checked' : ''}>`
+      + `<span class="mk" style="color:${langColor(c, false)}">${esc(codeMarker(c, false))}</span>`
+      + `<span>${esc(langName(c))}</span> <span class="cnt">${num(LANG_COUNT.get(c))}</span></label>`).join('')}</div></div>`;
+  }).join('');
+}
+function refilter() {
+  render(false);
+  if (selected >= 0) select(selected);
+  if (ovBuilt) buildOverview();
+  if (!$('results').hidden) search();
+}
+$('legend-langs').addEventListener('change', ev => {
+  const c = ev.target;
+  if (c.dataset.lang) langOn[c.dataset.lang] = c.checked;
+  if (c.dataset.branch) for (const code of LANG_COUNT.keys()) if (branchOf(code) === c.dataset.branch) langOn[code] = c.checked;
+  legendLangs();
+  refilter();
+});
+$('show-dep').addEventListener('change', ev => { showDeprecated = ev.target.checked; refilter(); });
+$('stack-par').addEventListener('change', ev => { stackParallel = ev.target.checked; refilter(); });
+
 $('legend-edges').addEventListener('change', ev => {
   const c = ev.target.closest('[data-rel]');
   if (!c) return;
@@ -974,21 +1204,27 @@ $('shortcuts').addEventListener('change', ev => {
 });
 
 // theme changes recolor the drawing
-function recolor() { makeMarkers(); legend(); if (visible.size) render(false); if (selected >= 0) select(selected); if (ovBuilt) buildOverview(); }
+function recolor() {
+  colorCache.clear();
+  makeMarkers(); legend(); legendLangs();
+  if (visible.size) render(false); if (selected >= 0) select(selected); if (ovBuilt) buildOverview();
+}
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', recolor);
 new MutationObserver(recolor).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 
 // ---------------------------------------------------------------- start
-const words = G.nodes.filter(n => n.grp).length;
+const words = G.nodes.filter(isListed).length;
+const depWords = G.nodes.filter(n => n.x === 'd').length;
 const rootsCount = G.nodes.filter(n => n.k === 'root').length;
 function showStat() {
-  $('stat').textContent = t('page.stat', { v: G.version, words: num(words), roots: num(rootsCount), edges: num(G.edges.length) });
+  $('stat').textContent = t('page.stat', { v: G.version, words: num(words), dep: num(depWords), roots: num(rootsCount), edges: num(G.edges.length) });
 }
 function applyLanguage() {
   translateStatic();
   showStat();
   showNote();
   legend();
+  legendLangs();
   if (selected >= 0) select(selected);
   if (!$('results').hidden) search();
   if (visible.size) render(false);
@@ -1003,6 +1239,7 @@ translateStatic();
 showStat();
 makeMarkers();
 legend();
+legendLangs();
 function fromHash() {
   const m = /^#n-(\w+)$/.exec(location.hash);
   return m && indexOf.has(m[1]) ? indexOf.get(m[1]) : -1;
@@ -1017,5 +1254,3 @@ focus(start >= 0 ? start : indexOf.get('539805327'));     // Q. alda
 if (wantRoots) setMode('roots');
 })();
 </script>
-</body>
-</html>

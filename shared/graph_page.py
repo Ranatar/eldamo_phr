@@ -18,7 +18,8 @@ from .io import embed_json, write_text
 from .source import ROOT, meta
 
 APP = ROOT / 'app'
-RELS = ['deriv', 'element', 'combine', 'see', 'deprecated', 'cognate', 'merged', 'filed', 'rootderiv']
+# 'instead': a deprecated word -> what Eldamo suggests instead (not a link of origin)
+RELS = ['deriv', 'element', 'combine', 'see', 'deprecated', 'cognate', 'merged', 'filed', 'rootderiv', 'instead']
 KINDS = ['word', 'form', 'protoform', 'root']
 WARN = ['deprecated', 'deleted', 'rejected', 'doubtful', 'unglossed', 'early']
 STEPS = {'e': 'element', 'd': 'deriv', 'c': 'combine', 's': 'see', 'x': 'deprecated', 'k': 'cognate'}
@@ -65,6 +66,13 @@ def build(branches: dict) -> dict:
                 n['u'] = 1
             if e.get('alt_lang'):
                 n['al'] = e['alt_lang']
+            # x: 'd' a deprecated word (Eldamo suggests another instead), 'm' a form of another
+            # conception merged into a word (shown under it on Eldamo's page)
+            links = e.get('links') or {}
+            if links.get('deprecated'):
+                n['x'] = 'd'
+            elif links.get('combine'):
+                n['x'] = 'm'
             nodes[e['id']] = n
     for rid, r in roots.items():
         n = {'f': r['f'], 'l': r['l'], 'k': 'root'}
@@ -115,6 +123,16 @@ def build(branches: dict) -> dict:
                     edge(nid, parent, rel, written(parent, nid) if rel == 'deriv' else None,
                          sc=sc and k == len(path) - 1)
                     parent = nid
+    for wid, e in entries.items():
+        links = e.get('links') or {}
+        for t in links.get('combine', ())[:1]:
+            if t.get('id') in entries:
+                edge(wid, t['id'], 'combine')
+        ins = [t['id'] for t in links.get('deprecated', ()) if t.get('id') in nodes]
+        for t in ins:
+            edge(wid, t, 'instead')
+        if ins and wid in nodes:
+            nodes[wid]['ins'] = ins
     for rid, r in roots.items():
         for x in r.get('merged', ()):
             edge(x, rid, 'merged')
@@ -140,7 +158,9 @@ def build(branches: dict) -> dict:
                 reached.add(y)
                 todo.append(y)
     for i, n in nodes.items():
-        if i in reached:
+        # a word with an entry goes back to a root exactly when its entry has roots (a cognate counts
+        # for the word itself only); make_graph.py
+        if n['k'] == 'root' or (bool(entries[i].get('roots')) if i in entries else i in reached):
             continue
         n['nr'] = 1
         seen, todo = {i}, [i]
@@ -149,7 +169,7 @@ def build(branches: dict) -> dict:
                 if y not in seen:
                     seen.add(y)
                     todo.append(y)
-        ds = sum(1 for y in seen if y != i and nodes[y].get('grp'))
+        ds = sum(1 for y in seen if y != i and nodes[y].get('grp') and not nodes[y].get('x'))
         if ds:
             n['ds'] = ds
     ids = list(nodes)
@@ -163,14 +183,78 @@ def build(branches: dict) -> dict:
     }
 
 
-def write_graph(branches: dict) -> None:
+# Quettamin's changes to the page of neo-roots, applied at build time, so that a new version of
+# graph_template.html and graph_messages.json is taken over by copying the two files
+HEAD = """<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="page.title">Quettamin — граф происхождения</title>
+<style>html{color-scheme:light}body{margin:0;font:14px system-ui,sans-serif}[hidden]{display:none!important}</style>
+"""
+ADAPT = [
+    # the page offline: no web fonts (the system ones in the stacks of the page), d3 embedded
+    ('<title>Neo-Roots Graph</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n'
+     '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
+     '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n', HEAD),
+    ('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:'
+     'wght@400;500;600&family=Noto+Serif:ital,wght@0,500;0,600;1,400;1,500&display=swap">\n', ''),
+    ('<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>', '<script>\n/*D3*/\n</script>'),
+    # the groups are the branches of Quettamin, not the lists of neo-roots
+    ('<option value="nq">ᴺQ.</option>', '<option value="nq" data-i18n="group.nq">квенья</option>'),
+    ('<option value="ns">ᴺS.</option>', '<option value="ns" data-i18n="group.ns">синдарин</option>'),
+    ('<option value="np">ᴺ✶</option>', '<option value="np" data-i18n="group.np">праэльфийский</option>'),
+    # from the card of a node back to Quettamin
+    ("      ${/^\\d+$/.test(id) ? `<a class=\"ext\" href=\"${SITE}${esc(id)}.html\"",
+     "      ${/^\\d+$/.test(id) && (n.k === 'root' || n.grp) ? `<a class=\"ext\" href=\"index.html#${n.k === 'root' ? 'r' : 'w'}=${esc(id)}\">${esc(t('card.quettamin'))}</a>` : ''}\n"
+     "      ${/^\\d+$/.test(id) ? `<a class=\"ext\" href=\"${SITE}${esc(id)}.html\""),
+    ("const LANG_KEY = 'neo-roots-lang';", "const LANG_KEY = 'quettamin-lang';"),
+]
+MESSAGES = {
+    'page.title': ('Quettamin — граф происхождения', 'Quettamin — the graph of origins'),
+    'page.h1': ('Quettamin: граф происхождения', 'Quettamin: the graph of origins'),
+    'page.stat': ('Eldamo {v} · слов: {words} (и заменённых: {dep}) · корней: {roots} · связей: {edges}',
+                  'Eldamo {v} · words: {words} (and deprecated: {dep}) · roots: {roots} · links: {edges}'),
+    'group.nq': ('квенья', 'Quenya'),
+    'group.ns': ('синдарин', 'Sindarin'),
+    'group.np': ('праэльфийский', 'Primitive Elvish'),
+    'legend.n.nq': ('слово ветви квенья', 'word of the Quenya branch'),
+    'legend.n.ns': ('слово ветви синдарина', 'word of the Sindarin branch'),
+    'legend.n.proto': ('праформа', 'primitive form'),
+    'tag.notListed': ('вне перечня Eldamo', "not in Eldamo's list"),
+    'tag.noRootDerivatives': ('производных слов: {n}', 'words derived from it: {n}'),
+    'card.quettamin': ('открыть в Quettamin', 'open in Quettamin'),
+    'filter.deprecated': ('заменённые слова (Eldamo советует вместо них другие)', 'deprecated words (Eldamo suggests others instead)'),
+    'speech.place-name': ('топоним', 'place name'),
+    'speech.masc-name': ('мужское имя', 'masculine name'),
+    'speech.proper-name': ('имя собственное', 'proper name'),
+    'speech.fem-name': ('женское имя', 'feminine name'),
+    'speech.collective-name': ('название народа', 'collective name'),
+}
+
+
+def page_html(graph: dict) -> str:
     page = (APP / 'graph_template.html').read_text(encoding='utf-8')
+    for a, b in ADAPT:
+        if page.count(a) != 1:
+            raise SystemExit(f'app/graph_template.html: the place of a Quettamin change is not found once: {a[:60]!r}')
+        page = page.replace(a, b)
+    if '</head>' not in page:
+        # the template is a page body: the head ends before its first element
+        k = page.index('<div class="app">')
+        page = page[:k] + '</head>\n<body>\n' + page[k:] + '\n</body>\n</html>\n'
     for marker in ('/*GRAPH*/', '/*MESSAGES*/', '/*D3*/'):
         if page.count(marker) != 1:
             raise SystemExit(f'app/graph_template.html must contain {marker} exactly once')
     catalog = json.loads((APP / 'graph_messages.json').read_text(encoding='utf-8'))
+    for k, (ru, en) in MESSAGES.items():
+        catalog[k] = {'ru': ru, 'en': en}
     d3 = (APP / 'vendor' / 'd3.min.js').read_text(encoding='utf-8').strip().replace('</script', '<\\/script')
     page = page.replace('/*MESSAGES*/', embed_json(catalog), 1)
     page = page.replace('/*D3*/', d3, 1)
-    page = page.replace('/*GRAPH*/', embed_json(build(branches)), 1)
-    write_text(APP / 'graph.html', page)
+    return page.replace('/*GRAPH*/', embed_json(graph), 1)
+
+
+def write_graph(branches: dict) -> None:
+    write_text(APP / 'graph.html', page_html(build(branches)))

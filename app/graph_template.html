@@ -83,6 +83,7 @@ body {
 .brand { display: flex; flex-direction: column; gap: 2px; }
 .brand-row { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
 .btn.lang { flex: none; font-size: 12px; padding: 3px 8px; }
+.head-tools { display: flex; gap: 4px; flex: none; }
 .brand h1 { margin: 0; font-family: var(--f-form); font-weight: 600; font-size: 20px; letter-spacing: .01em; text-wrap: balance; }
 .brand .stat { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
 
@@ -197,6 +198,9 @@ a.ext { color: var(--accent); font-size: 12.5px; }
 .links button.dep { opacity: .7; }
 .switches label { display: flex; align-items: flex-start; gap: 6px; font-size: 12.5px; cursor: pointer; margin-bottom: 4px; }
 .switches input { margin-top: 3px; }
+.switches .par-mode { flex-direction: column; align-items: stretch; gap: 4px; cursor: default; }
+.band rect { fill: var(--line); fill-opacity: .22; }
+.band text { fill: var(--muted); font-family: var(--f-ui); font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
 .langs { display: flex; flex-direction: column; gap: 8px; }
 .lang-group { display: flex; flex-direction: column; gap: 2px; }
 .lang-group > label { font-weight: 600; }
@@ -235,7 +239,10 @@ a.ext { color: var(--accent); font-size: 12.5px; }
     <div class="brand">
       <div class="brand-row">
         <h1 data-i18n="page.h1">Корни нео-эльдарина</h1>
-        <button class="btn lang" id="lang-toggle" type="button" data-i18n="lang.switch" data-i18n-attr="title:lang.title">English</button>
+        <div class="head-tools">
+          <button class="btn lang" id="theme-toggle" type="button"></button>
+          <button class="btn lang" id="lang-toggle" type="button" data-i18n="lang.switch" data-i18n-attr="title:lang.title">English</button>
+        </div>
       </div>
       <div class="stat" id="stat"></div>
     </div>
@@ -269,7 +276,13 @@ a.ext { color: var(--accent); font-size: 12.5px; }
       <div class="sec switches">
         <h3 data-i18n="legend.show">Показывать</h3>
         <label><input type="checkbox" id="show-dep"> <span data-i18n="filter.deprecated">заменённые слова (Eldamo не советует их для нео-эльдарина)</span></label>
-        <label><input type="checkbox" id="stack-par" checked> <span data-i18n="filter.parallel">формы других концепций под своим словом, как на странице Eldamo</span></label>
+        <label class="par-mode"><span data-i18n="par.label">Формы других концепций</span>
+          <select id="par-mode">
+            <option value="bands" data-i18n="par.bands">полосами: поздняя, средняя, ранняя</option>
+            <option value="stack" data-i18n="par.stack">под своим словом, как на странице Eldamo</option>
+            <option value="free" data-i18n="par.free">отдельно, обычными стрелками</option>
+          </select>
+        </label>
       </div>
       <div class="sec">
         <h3 data-i18n="legend.langs">Языки</h3>
@@ -415,12 +428,18 @@ const EARLY = new Set(['eq', 'en', 'g', 'ep', 'et', 'eilk']);
 const MIDDLE = new Set(['mq', 'n', 'mp', 'mt', 'ilk', 'dan', 'on', 'maq', 'lem']);
 const NEO = new Set(['nq', 'ns', 'np']);
 const eraOf = code => (NEO.has(code) ? 3 : EARLY.has(code) ? 0 : MIDDLE.has(code) ? 1 : 2);
+// the hue is the branch's; saturation and strength grow from early to neo (on a light page a
+// newer language is deeper, on a dark one brighter), so even an early marker keeps its hue
+const HUE = { quenya: 190, sindarin: 132, primitive: 266, elvish: 24, other: 215 };
 const colorCache = new Map();
 function langColor(code, root) {
   const key = code + (root ? '√' : '');
   if (!colorCache.has(key)) {
-    const base = root ? css('--n-root') : css(BRANCH_TOKEN[branchOf(code)]);
-    colorCache.set(key, d3.interpolateRgb(css('--muted'), base)([0.38, 0.62, 0.84, 1][eraOf(code)]));
+    const dark = d3.hsl(css('--bg')).l < 0.5, e = eraOf(code), b = branchOf(code);
+    const h = root ? 42 : HUE[b];
+    const sat = b === 'other' && !root ? 0.15 : [0.42, 0.6, 0.78, 0.92][e];
+    const light = dark ? [0.5, 0.6, 0.69, 0.78][e] : [0.58, 0.46, 0.36, 0.28][e];
+    colorCache.set(key, d3.hsl(h, sat, light).formatHex());
   }
   return colorCache.get(key);
 }
@@ -437,7 +456,9 @@ const relOn = Object.fromEntries(G.rels.map(r => [r, true]));
 // < ✶-ndūr < √(N)DUR): hidden unless switched on, so the path through the form shows
 let showShortcuts = false;
 let showDeprecated = false;     // Eldamo's deprecated words
-let stackParallel = true;       // forms of other conceptions under their word, as on Eldamo's page
+// forms of other conceptions: 'bands' -- one column with their word, the conceptions in horizontal
+// bands (late with neo, middle, early); 'stack' -- under their word, as on Eldamo's page; 'free'
+let parMode = 'bands';
 const langOn = {};              // a language switched off in the legend: false
 const isShortcut = e => !!(e[3] && e[3].sc);
 const edgeOn = k => relOn[relName(G.edges[k][2])] && (showShortcuts || !isShortcut(G.edges[k]));
@@ -565,6 +586,7 @@ function removeNode(i) {
 // ---------------------------------------------------------------- layout and drawing
 const svg = d3.select('#graph');
 const root = svg.append('g');
+const gBands = root.append('g');
 const gEdges = root.append('g');
 const gNodes = root.append('g');
 const defs = svg.append('defs');
@@ -626,7 +648,7 @@ function parallelGroups(nodes, edges) {
   const up = new Map(nodes.map(i => [i, i]));
   const find = x => { while (up.get(x) !== x) { up.set(x, up.get(up.get(x))); x = up.get(x); } return x; };
   const sources = new Set();
-  if (stackParallel) {
+  if (parMode !== 'free') {
     for (const e of edges) {
       if (e.via || !PARALLEL.has(e.rel)) continue;
       up.set(find(e.a), find(e.b));
@@ -708,6 +730,74 @@ function boxCollide() {
   return force;
 }
 
+// the band of a node: late (with neo), middle, early conception
+const bandOf = i => { const e = eraOf(G.nodes[i].l); return e >= 2 ? 0 : e === 1 ? 1 : 2; };
+let currentLinks = [];
+// a node with what hangs on it alone: shown nodes all of whose shown parents are in the set
+function dependents(d) {
+  const parents = new Map();
+  for (const l of currentLinks) {
+    if (!parents.has(l.target)) parents.set(l.target, []);
+    parents.get(l.target).push(l.source);
+  }
+  const set = new Set([d]);
+  for (let changed = true; changed;) {
+    changed = false;
+    for (const [node, ps] of parents) {
+      if (set.has(node) || node.i === focusNode) continue;
+      if (ps.every(p => set.has(p))) { set.add(node); changed = true; }
+    }
+  }
+  return [...set];
+}
+// the end of a link on the node's edge, from the side it comes; a ring (selected, focus) is wider
+const radius = d => (d.i === selected || d.i === focusNode ? 15 : 9);
+function linkPath(d) {
+  const s = d.source, tg = d.target;
+  const dx = tg.x - s.x;
+  if (d.stacked || Math.abs(dx) < 40) {      // under each other: a bracket on the left
+    const sx = s.x - 8, tx = tg.x - radius(tg), ox = Math.min(s.x, tg.x) - 34;
+    return `M${sx},${s.y}C${ox},${s.y} ${ox},${tg.y} ${tx},${tg.y}`;
+  }
+  const dir = dx > 0 ? 1 : -1;
+  const sx = s.x + dir * 8, tx = tg.x - dir * radius(tg), mx = (sx + tx) / 2;
+  return `M${sx},${s.y}C${mx},${s.y} ${mx},${tg.y} ${tx},${tg.y}`;
+}
+// one click selects; two expand or collapse what the node expanded; three fold its derivatives.
+// The second click waits a moment to see whether a third comes
+let clickTimer = null;
+function clicks(i, n) {
+  if (n < 2) return;
+  clearTimeout(clickTimer);
+  clickTimer = setTimeout(() => {
+    selected = i;
+    if (n >= 3) collapseDerivatives(i); else toggle(i);
+    select(i);
+  }, 280);
+}
+// fold everything that comes from a node, except the focus and its tree of origin
+function collapseDerivatives(i) {
+  const keep = new Set(upstream(focusNode, 300));
+  const gone = new Set(), stack = [i];
+  while (stack.length) {
+    const x = stack.pop();
+    for (const k of outE[x]) {
+      const b = G.edges[k][1];
+      if (!visible.has(b) || gone.has(b) || keep.has(b) || b === i) continue;
+      gone.add(b);
+      stack.push(b);
+    }
+  }
+  for (const x of gone) { expanded.delete(x); drop(x); }
+  expanded.delete(i);
+  if (!visible.has(selected)) selected = i;
+  render(false);
+}
+function hasFoldable(i) {
+  const keep = new Set(upstream(focusNode, 300));
+  return outE[i].some(k => { const b = G.edges[k][1]; return visible.has(b) && !keep.has(b); });
+}
+
 let fitPending = false;
 let lastCounts = null;
 function showNote() {
@@ -724,20 +814,44 @@ function render(refit) {
   COL = svg.node().getBoundingClientRect().width < 700 ? 160 : 230;
   const data = nodes.map(i => {
     let p = pos.get(i);
-    if (!p) { p = { x: rank.get(groupOf.get(i)) * COL + (Math.random() - .5) * 30, y: (Math.random() - .5) * 200 }; pos.set(i, p); }
+    if (!p) { p = { x: rank.get(groupOf.get(i)) * COL + (Math.random() - .5) * 30, y: (parMode === 'bands' ? bandOf(i) * 220 : 0) + (Math.random() - .5) * 160 }; pos.set(i, p); }
     p.i = i; p.rank = rank.get(groupOf.get(i)); p.stack = stackIdx.get(i);
     return p;
   });
   const byI = new Map(data.map(d => [d.i, d]));
   for (const d of data) {
     const a = anchorOf.get(d.i);
-    d.anchor = a !== d.i ? byI.get(a) : null;
+    d.anchor = parMode === 'stack' && a !== d.i ? byI.get(a) : null;
     if (d.anchor && !d.anchor.x && d.anchor.x !== 0) d.anchor = null;
   }
   const links = edges.map(e => ({
     ...e, source: byI.get(e.a), target: byI.get(e.b),
-    stacked: stackParallel && !e.via && PARALLEL.has(e.rel) && groupOf.get(e.a) === groupOf.get(e.b),
+    stacked: parMode === 'stack' && !e.via && PARALLEL.has(e.rel) && groupOf.get(e.a) === groupOf.get(e.b),
   }));
+  currentLinks = links;
+  // bands of conceptions: each as high as its fullest column
+  const bands = [];
+  if (parMode === 'bands') {
+    const occ = new Map();
+    for (const d of data) {
+      d.band = bandOf(d.i);
+      const key = d.band + ':' + d.rank;
+      occ.set(key, (occ.get(key) || 0) + 1);
+    }
+    let y = 0;
+    for (let b = 0; b < 3; b++) {
+      let most = 0;
+      for (const [key, c] of occ) if (+key.split(':')[0] === b) most = Math.max(most, c);
+      if (!most) continue;
+      const h = most * (BOX_H + 8) + 30;
+      bands.push({ b, y0: y, y1: y + h, center: y + h / 2 + 8 });
+      y += h + 44;
+    }
+    const centerOf = new Map(bands.map(x => [x.b, x.center]));
+    for (const d of data) d.by = centerOf.get(d.band);
+  } else {
+    for (const d of data) d.by = 0;
+  }
 
   // edges
   const es = gEdges.selectAll('path').data(links, d => d.k).join(
@@ -765,13 +879,17 @@ function render(refit) {
     g.append('path').attr('class', 'shape');
     g.append('text').attr('text-anchor', 'middle').attr('y', -11);
     g.append('title');
-    g.on('click', (ev, d) => { ev.stopPropagation(); select(d.i); })
-      .on('dblclick', (ev, d) => { ev.stopPropagation(); selected = d.i; toggle(d.i); select(d.i); })
+    g.on('click', (ev, d) => { ev.stopPropagation(); select(d.i); clicks(d.i, ev.detail); })
       .call(d3.drag()
-        .on('start', (ev, d) => { if (!ev.active && sim) sim.alphaTarget(0.1).restart(); d.fx = d.x; d.fy = d.y; })
-        .on('drag', (ev, d) => { d.fx = ev.x; d.fy = ev.y; })
-        // a dragged node stays where it is put; "Re-layout" frees it
-        .on('end', (ev, d) => { if (!ev.active && sim) sim.alphaTarget(0); d3.select(ev.sourceEvent && ev.sourceEvent.target && ev.sourceEvent.target.closest('g.node')).classed('pinned', true); }));
+        // a node is dragged with what hangs on it alone (its derivatives without another parent on
+        // the graph); with Shift alone. What is moved stays where it is put; "Re-layout" frees it
+        .on('start', (ev, d) => {
+          if (!ev.active && sim) sim.alphaTarget(0.1).restart();
+          d._group = ev.sourceEvent && ev.sourceEvent.shiftKey ? [d] : dependents(d);
+          for (const m of d._group) { m._dx = m.x - d.x; m._dy = m.y - d.y; m.fx = m.x; m.fy = m.y; }
+        })
+        .on('drag', (ev, d) => { for (const m of d._group) { m.fx = ev.x + m._dx; m.fy = ev.y + m._dy; } })
+        .on('end', (ev, d) => { if (!ev.active && sim) sim.alphaTarget(0); gNodes.selectAll('g.node').classed('pinned', x => x.fx != null); }));
     return g;
   });
   ns.classed('sel', d => d.i === selected)
@@ -804,7 +922,7 @@ function render(refit) {
   if (sim) sim.stop();
   sim = d3.forceSimulation(data)
     .force('x', d3.forceX(d => d.rank * COL).strength(d => (d.anchor ? 0 : 0.6)))
-    .force('y', d3.forceY(0).strength(0.015))
+    .force('y', d3.forceY(d => d.by).strength(parMode === 'bands' ? 0.2 : 0.015))
     .force('link', d3.forceLink(links.filter(l => !l.stacked)).distance(COL * 0.9).strength(0.025))
     .force('charge', d3.forceManyBody().strength(-45).distanceMax(260))
     .force('stack', stackForce())
@@ -816,17 +934,30 @@ function render(refit) {
   else sim.alpha(refit ? 1 : 0.4).restart().on('end', () => { if (fitPending) { fitView(true); fitPending = false; } });
   if (refit && !reduced) setTimeout(() => { if (fitPending) { fitView(true); fitPending = false; } }, 1100);
 
+  // the bands behind the graph
+  const bandSel = gBands.selectAll('g.band').data(bands, x => x.b).join(enter => {
+    const g = enter.append('g').attr('class', 'band');
+    g.append('rect').attr('rx', 8);
+    g.append('text');
+    return g;
+  });
+  bandSel.select('text').text(x => t('band.' + x.b));
+
   function draw() {
-    es.attr('d', d => {
-      if (d.stacked) {     // a form of another conception and its word: a bracket on the left
-        const sx = d.source.x - 8, sy = d.source.y, tx = d.target.x - 8, ty = d.target.y + 6;
-        return `M${sx},${sy}C${sx - 22},${sy} ${tx - 22},${ty} ${tx},${ty}`;
-      }
-      const sx = d.source.x + 8, sy = d.source.y, tx = d.target.x - 9, ty = d.target.y;
-      const mx = (sx + tx) / 2;
-      return `M${sx},${sy}C${mx},${sy} ${mx},${ty} ${tx},${ty}`;
-    });
+    es.attr('d', linkPath);
     ns.attr('transform', d => `translate(${d.x},${d.y})`);
+    if (bands.length) {
+      let x0 = Infinity, x1 = -Infinity;
+      for (const d of data) { if (d.x - d.w / 2 < x0) x0 = d.x - d.w / 2; if (d.x + d.w / 2 > x1) x1 = d.x + d.w / 2; }
+      for (const band of bands) {
+        let lo = Infinity, hi = -Infinity;
+        for (const d of data) if (d.band === band.b) { lo = Math.min(lo, d.y - 30); hi = Math.max(hi, d.y + 14); }
+        band.top = lo; band.bottom = hi;
+      }
+      bandSel.select('rect').attr('x', x0 - 40).attr('width', x1 - x0 + 80)
+        .attr('y', x => x.top - 6).attr('height', x => Math.max(20, x.bottom - x.top + 12));
+      bandSel.select('text').attr('x', x0 - 36).attr('y', x => x.top - 13);      // above its band, clear of the labels
+    }
   }
   lastCounts = [data.length, links.length];
   showNote();
@@ -851,9 +982,11 @@ function fitView(animate) {
   if (!items.length) return;
   const box = svg.node().getBoundingClientRect();
   const xs = items.map(p => p.x), ys = items.map(p => p.y);
-  const x0 = Math.min(...xs) - 90, x1 = Math.max(...xs) + 90, y0 = Math.min(...ys) - 40, y1 = Math.max(...ys) + 24;
-  const k = Math.min(1.6, 0.92 * Math.min(box.width / (x1 - x0), box.height / (y1 - y0)));
-  const tr = d3.zoomIdentity.translate(box.width / 2 - k * (x0 + x1) / 2, box.height / 2 - k * (y0 + y1) / 2).scale(k);
+  // room for the band labels on top, and for the buttons over the graph
+  const x0 = Math.min(...xs) - 90, x1 = Math.max(...xs) + 90, y0 = Math.min(...ys) - (parMode === 'bands' ? 70 : 40), y1 = Math.max(...ys) + 24;
+  const top = 52, h = box.height - top;
+  const k = Math.min(1.6, 0.92 * Math.min(box.width / (x1 - x0), h / (y1 - y0)));
+  const tr = d3.zoomIdentity.translate(box.width / 2 - k * (x0 + x1) / 2, top + h / 2 - k * (y0 + y1) / 2).scale(k);
   (animate ? svg.transition().duration(450) : svg).call(zoom.transform, tr);
 }
 svg.on('click', () => {});
@@ -873,6 +1006,7 @@ function relTag(rel) {
 }
 function select(i) {
   selected = i;
+  if (mode === 'graph' && sim) gEdges.selectAll('path').attr('d', linkPath);
   ovRoot.selectAll('g.ov-leaf').classed('sel', d => d.data.i === selected);
   gNodes.selectAll('g.node').classed('sel', d => d.i === selected)
     .select('.ring').attr('stroke', d => d.i === selected ? css('--focus') : d.i === focusNode ? css('--accent') : 'none');
@@ -909,6 +1043,7 @@ function select(i) {
   html += `<div class="actions">
       ${i !== focusNode ? `<button class="btn primary" type="button" data-act="focus">${esc(t('act.focus'))}</button>` : ''}
       <button class="btn" type="button" data-act="expand">${esc(t(expanded.has(i) && visible.has(i) ? 'act.collapse' : 'act.expand'))}</button>
+      ${visible.has(i) && mode === 'graph' && hasFoldable(i) ? `<button class="btn" type="button" data-act="fold">${esc(t('act.collapseDer'))}</button>` : ''}
       ${i !== focusNode && visible.has(i) ? `<button class="btn" type="button" data-act="remove">${esc(t('act.remove'))}</button>` : ''}
       ${/^\d+$/.test(id) ? `<a class="ext" href="${SITE}${esc(id)}.html" target="_blank" rel="noopener">${esc(t('card.eldamo'))}</a>` : ''}
     </div>`;
@@ -951,6 +1086,7 @@ $('card').addEventListener('click', ev => {
     select(selected);
   }
   else if (a.dataset.act === 'remove') removeNode(selected);
+  else if (a.dataset.act === 'fold') { collapseDerivatives(selected); select(selected); }
 });
 
 // ---------------------------------------------------------------- search
@@ -1186,7 +1322,12 @@ $('legend-langs').addEventListener('change', ev => {
   refilter();
 });
 $('show-dep').addEventListener('change', ev => { showDeprecated = ev.target.checked; refilter(); });
-$('stack-par').addEventListener('change', ev => { stackParallel = ev.target.checked; refilter(); });
+$('par-mode').addEventListener('change', ev => {
+  parMode = ev.target.value;
+  for (const i of visible) pos.delete(i);          // a new arrangement, laid out afresh
+  render(true);
+  if (selected >= 0) select(selected);
+});
 
 $('legend-edges').addEventListener('change', ev => {
   const c = ev.target.closest('[data-rel]');
@@ -1221,6 +1362,7 @@ function showStat() {
 }
 function applyLanguage() {
   translateStatic();
+  applyTheme();
   showStat();
   showNote();
   legend();
@@ -1230,12 +1372,32 @@ function applyLanguage() {
   if (visible.size) render(false);
   if (ovBuilt) buildOverview();
 }
+// the theme: the system's (or the host's) by default, or chosen here: auto -> light -> dark;
+// the choice is kept in this browser and set as data-theme, which the colour tokens follow
+const THEME_KEY = 'neo-roots-theme';
+let themeChoice = (() => { try { const v = localStorage.getItem(THEME_KEY); return v === 'light' || v === 'dark' ? v : 'auto'; } catch (e) { return 'auto'; } })();
+const hostTheme = document.documentElement.getAttribute('data-theme');
+function applyTheme() {
+  if (themeChoice === 'auto') {
+    if (hostTheme) document.documentElement.setAttribute('data-theme', hostTheme);
+    else document.documentElement.removeAttribute('data-theme');
+  } else document.documentElement.setAttribute('data-theme', themeChoice);
+  $('theme-toggle').textContent = { auto: '◐', light: '☀', dark: '☾' }[themeChoice];
+  $('theme-toggle').title = t('theme.' + themeChoice) + ' — ' + t('theme.title');
+  $('theme-toggle').setAttribute('aria-label', $('theme-toggle').title);
+}
+$('theme-toggle').addEventListener('click', () => {
+  themeChoice = { auto: 'light', light: 'dark', dark: 'auto' }[themeChoice];
+  try { localStorage.setItem(THEME_KEY, themeChoice); } catch (e) { /* storage unavailable */ }
+  applyTheme();
+});
 $('lang-toggle').addEventListener('click', () => {
   uiLang = uiLang === 'ru' ? 'en' : 'ru';
   try { localStorage.setItem(LANG_KEY, uiLang); } catch (e) { /* storage unavailable */ }
   applyLanguage();
 });
 translateStatic();
+applyTheme();
 showStat();
 makeMarkers();
 legend();

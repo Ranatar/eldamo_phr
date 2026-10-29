@@ -56,8 +56,8 @@
   "en": "show direct links from a root to a word when the same root also leads to the word through an intermediate form"
  },
  "legend.hint": {
-  "ru": "Щелчок — карточка узла, двойной щелчок — развернуть соседей, повторный двойной щелчок — свернуть то, что развернул этот узел. Число «+N» у подписи — сколько связей узла ещё не показано. Перетащенный узел остаётся на месте (обведён толще); «Перестроить» снимает закрепления. Колёсико и перетаскивание фона — масштаб и сдвиг.",
-  "en": "Click a node to open its card, double-click to expand its neighbours, double-click again to collapse what that node expanded. The “+N” by a label is the number of the node’s links not shown yet. A dragged node stays where you put it (thicker outline); “Re-layout” frees them all. Use the wheel and drag the background to zoom and pan."
+  "ru": "Щелчок — карточка узла; двойной — развернуть соседей, повторный двойной — свернуть то, что развернул этот узел; тройной — свернуть всё, что выводится из узла (кроме центра и его дерева). Число «+N» у подписи — сколько связей узла ещё не показано. Узел перетаскивается вместе с тем, что держится только на нём; с Shift — один. Перемещённое остаётся на месте (обведено толще); «Перестроить» снимает закрепления. Колёсико и перетаскивание фона — масштаб и сдвиг.",
+  "en": "Click a node for its card; double-click to expand its neighbours, double-click again to collapse what that node expanded; triple-click to fold everything derived from the node (except the focus and its tree). The “+N” by a label is the number of the node’s links not shown yet. A node is dragged together with what hangs on it alone; with Shift, alone. What you move stays put (thicker outline); “Re-layout” frees it. Use the wheel and drag the background to zoom and pan."
  },
  "legend.n.nq": {
   "ru": "слово ᴺQ.-перечня",
@@ -639,10 +639,6 @@
   "ru": "заменённые слова (Eldamo не советует их для нео-эльдарина)",
   "en": "deprecated words (Eldamo advises against them for Neo-Eldarin)"
  },
- "filter.parallel": {
-  "ru": "формы других концепций под своим словом, как на странице Eldamo",
-  "en": "forms of other conceptions under their word, as on Eldamo's page"
- },
  "branch.quenya": {
   "ru": "квенийская ветвь",
   "en": "Quenya branch"
@@ -690,5 +686,53 @@
  "card.replaces": {
   "ru": "Заменяет слова, которые Eldamo не советует ({n})",
   "en": "Replaces words Eldamo advises against ({n})"
+ },
+ "par.label": {
+  "ru": "Формы других концепций",
+  "en": "Forms of other conceptions"
+ },
+ "par.bands": {
+  "ru": "полосами: поздняя, средняя, ранняя",
+  "en": "in bands: late, middle, early"
+ },
+ "par.stack": {
+  "ru": "под своим словом, как на странице Eldamo",
+  "en": "under their word, as on Eldamo's page"
+ },
+ "par.free": {
+  "ru": "отдельно, обычными стрелками",
+  "en": "apart, as ordinary arrows"
+ },
+ "band.0": {
+  "ru": "поздняя концепция и нео",
+  "en": "late conception and neo"
+ },
+ "band.1": {
+  "ru": "средняя концепция («Этимологии»)",
+  "en": "middle conception (Etymologies)"
+ },
+ "band.2": {
+  "ru": "ранняя концепция",
+  "en": "early conception"
+ },
+ "act.collapseDer": {
+  "ru": "Свернуть производные",
+  "en": "Fold derivatives"
+ },
+ "theme.auto": {
+  "ru": "авто",
+  "en": "auto"
+ },
+ "theme.light": {
+  "ru": "светлая",
+  "en": "light"
+ },
+ "theme.dark": {
+  "ru": "тёмная",
+  "en": "dark"
+ },
+ "theme.title": {
+  "ru": "Тема: авто (как в системе) → светлая → тёмная",
+  "en": "Theme: auto (as the system) → light → dark"
  }
 }

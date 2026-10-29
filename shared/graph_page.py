@@ -209,7 +209,9 @@ ADAPT = [
     ("      ${/^\\d+$/.test(id) ? `<a class=\"ext\" href=\"${SITE}${esc(id)}.html\"",
      "      ${/^\\d+$/.test(id) && (n.k === 'root' || n.grp) ? `<a class=\"ext\" href=\"index.html#${n.k === 'root' ? 'r' : 'w'}=${esc(id)}\">${esc(t('card.quettamin'))}</a>` : ''}\n"
      "      ${/^\\d+$/.test(id) ? `<a class=\"ext\" href=\"${SITE}${esc(id)}.html\""),
+    # the language and the theme chosen here and in the atlas are one choice
     ("const LANG_KEY = 'neo-roots-lang';", "const LANG_KEY = 'quettamin-lang';"),
+    ("const THEME_KEY = 'neo-roots-theme';", "const THEME_KEY = 'quettamin-theme';"),
 ]
 MESSAGES = {
     'page.title': ('Quettamin — граф происхождения', 'Quettamin — the graph of origins'),

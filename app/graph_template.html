@@ -188,7 +188,7 @@ a.ext { color: var(--accent); font-size: 12.5px; }
 }
 
 .node text { font-family: var(--f-form); font-size: 12.5px; fill: var(--ink); paint-order: stroke; stroke: var(--bg); stroke-width: 3px; stroke-linejoin: round; }
-.node text .lm { fill: var(--muted); font-size: 11px; }
+.node text .lm { font-size: 11px; }
 .node text .more { fill: var(--accent); font-family: var(--f-ui); font-size: 10.5px; }
 .node { cursor: pointer; }
 .node.sel .ring { stroke: var(--focus); }
@@ -671,8 +671,20 @@ function parallelGroups(nodes, edges) {
   return { groupOf, stackIdx, anchorOf };
 }
 
+// the stage of a node, its leftmost column: root, primitive form, ancient language (AQ., AT., OS.,
+// ON.), language (with neo); a word straight from a root still stands right of the primitive forms
+const ANCIENT = new Set(['aq', 'maq', 'at', 'os', 'on']);
+const PRIMITIVE_L = new Set(['p', 'mp', 'ep', 'np']);
+function stageOf(i) {
+  const n = G.nodes[i];
+  return n.k === 'root' ? 0 : PRIMITIVE_L.has(n.l) ? 1 : ANCIENT.has(n.l) ? 2 : 3;
+}
 function ranks(nodes, edges, groupOf) {
-  const rank = new Map(nodes.map(i => [groupOf.get(i), 0]));
+  const rank = new Map();
+  for (const i of nodes) {
+    const g = groupOf.get(i);
+    rank.set(g, Math.max(rank.get(g) || 0, stageOf(i)));
+  }
   for (let it = 0; it < nodes.length && it < 40; it++) {
     let changed = false;
     for (const e of edges) {
@@ -686,19 +698,6 @@ function ranks(nodes, edges, groupOf) {
   return rank;
 }
 
-// keeps the forms of other conceptions under their word
-function stackForce() {
-  let nodes = [];
-  function force() {
-    for (const d of nodes) {
-      if (!d.anchor || d.fx != null) continue;
-      d.vx += (d.anchor.x - d.x) * 0.5;
-      d.vy += (d.anchor.y + d.stack * STACK - d.y) * 0.5;
-    }
-  }
-  force.initialize = ns => { nodes = ns; };
-  return force;
-}
 // nodes with their labels do not overlap: each is a box (the label's width, the node and the label
 // above it); an overlap is undone along its smaller side, mostly vertically since the columns hold x
 function boxCollide() {
@@ -798,6 +797,93 @@ function hasFoldable(i) {
   return outE[i].some(k => { const b = G.edges[k][1]; return visible.has(b) && !keep.has(b); });
 }
 
+// ---- the layout: columns by rank, the conceptions in bands, the nodes of a column in order
+const ROW = BOX_H + 6;
+const BRANCH_RANK = { quenya: 0, sindarin: 1, elvish: 2, primitive: 3, other: 4 };
+let bandRange = new Map();          // band -> [lowest, highest] centre of a node in it
+const clampY = (d, y) => {
+  const r = bandRange.get(d.band);
+  return r ? Math.max(r[0], Math.min(r[1], y)) : y;
+};
+function bandClamp() {
+  let nodes = [];
+  function force() { for (const d of nodes) if (d.fx == null) d.y = clampY(d, d.y); }
+  force.initialize = ns => { nodes = ns; };
+  return force;
+}
+// places every node (tx, ty) and returns the bands. A column is sorted by branch (Quenya on top,
+// then Sindarin, other Elvish), then by period, then by where its parents stand; it is centred on its
+// parents, and a column without them on its children. A band is as high as its fullest column, so
+// bands never overlap
+function layout(data, links) {
+  const parents = new Map(), children = new Map();
+  for (const l of links) {
+    if (l.inGroup) continue;              // the forms of one word across conceptions do not pull
+    if (!parents.has(l.target)) parents.set(l.target, []);
+    parents.get(l.target).push(l.source);
+    if (!children.has(l.source)) children.set(l.source, []);
+    children.get(l.source).push(l.target);
+  }
+  const unit = parMode === 'stack' ? STACK : ROW;
+  for (const d of data) { d.size = 1; d.band = parMode === 'bands' ? bandOf(d.i) : 0; d.ty = null; }
+  if (parMode === 'stack') for (const d of data) if (d.anchor) d.anchor.size = Math.max(d.anchor.size, d.stack + 1);
+  const slot = d => (parMode === 'stack' ? d.size * STACK : ROW);
+  const cols = new Map();
+  for (const d of data) {
+    if (d.anchor) continue;               // a stacked form rides on its word
+    const key = d.band + ':' + d.rank;
+    if (!cols.has(key)) cols.set(key, []);
+    cols.get(key).push(d);
+  }
+  const span = col => col.reduce((sum, d) => sum + slot(d), 0) - unit;
+  const most = new Map();
+  for (const [key, col] of cols) {
+    const b = +key.split(':')[0];
+    most.set(b, Math.max(most.get(b) || 0, span(col)));
+  }
+  const bands = [];
+  bandRange = new Map();
+  let y = 0;
+  for (const b of [0, 1, 2]) {
+    if (!most.has(b)) continue;
+    const y0 = y, y1 = y + 30 + most.get(b) + 14;
+    bands.push({ b, y0, y1 });
+    bandRange.set(b, [y0 + 30, y1 - 14]);
+    y = y1 + 46;
+  }
+  const keys = [...cols.keys()].sort((a, c) => {
+    const [ba, ra] = a.split(':').map(Number), [bc, rc] = c.split(':').map(Number);
+    return ra - rc || ba - bc;
+  });
+  const mean = xs => (xs.length ? xs.reduce((sum, v) => sum + v, 0) / xs.length : null);
+  const bary = (d, nb) => mean((nb.get(d) || []).filter(x => x.ty != null).map(x => x.ty));
+  function place(key, sortIt, nb) {
+    const col = cols.get(key), b = +key.split(':')[0];
+    for (const d of col) d._b = bary(d, nb);
+    if (sortIt) {
+      col.sort((p, q) => (BRANCH_RANK[branchOf(G.nodes[p.i].l)] - BRANCH_RANK[branchOf(G.nodes[q.i].l)])
+        || (eraOf(G.nodes[q.i].l) - eraOf(G.nodes[p.i].l))
+        || ((p._b == null ? 1e9 : p._b) - (q._b == null ? 1e9 : q._b))
+        || String(shown(p.i)).localeCompare(String(shown(q.i))));
+    }
+    const known = col.map(d => d._b).filter(v => v != null);
+    if (!known.length && col[0].ty != null) return;     // nothing to align to: stays
+    const [lo, hi] = bandRange.get(b);
+    const sp = span(col);
+    const center = known.length ? mean(known) : (lo + hi) / 2;
+    let start = Math.max(lo, Math.min(center - sp / 2, hi - sp));
+    for (const d of col) { d.ty = start; d.tx = d.rank * COL; start += slot(d); }
+  }
+  for (const k of keys) place(k, true, parents);                 // left to right, by parents
+  for (const k of [...keys].reverse()) place(k, false, children); // right to left, by children
+  for (const k of keys) place(k, false, parents);                // and once more by parents
+  for (const d of data) {
+    if (!d.anchor) continue;
+    d.tx = d.anchor.tx; d.ty = d.anchor.ty + d.stack * STACK; d.band = d.anchor.band;
+  }
+  return bands;
+}
+
 let fitPending = false;
 let lastCounts = null;
 function showNote() {
@@ -814,45 +900,24 @@ function render(refit) {
   COL = svg.node().getBoundingClientRect().width < 700 ? 160 : 230;
   const data = nodes.map(i => {
     let p = pos.get(i);
-    if (!p) { p = { x: rank.get(groupOf.get(i)) * COL + (Math.random() - .5) * 30, y: (parMode === 'bands' ? bandOf(i) * 220 : 0) + (Math.random() - .5) * 160 }; pos.set(i, p); }
-    p.i = i; p.rank = rank.get(groupOf.get(i)); p.stack = stackIdx.get(i);
+    const fresh = !p;
+    if (!p) { p = {}; pos.set(i, p); }
+    p.i = i; p.rank = rank.get(groupOf.get(i)); p.stack = stackIdx.get(i); p.fresh = fresh;
     return p;
   });
   const byI = new Map(data.map(d => [d.i, d]));
   for (const d of data) {
     const a = anchorOf.get(d.i);
     d.anchor = parMode === 'stack' && a !== d.i ? byI.get(a) : null;
-    if (d.anchor && !d.anchor.x && d.anchor.x !== 0) d.anchor = null;
   }
   const links = edges.map(e => ({
     ...e, source: byI.get(e.a), target: byI.get(e.b),
+    inGroup: !e.via && groupOf.get(e.a) === groupOf.get(e.b),
     stacked: parMode === 'stack' && !e.via && PARALLEL.has(e.rel) && groupOf.get(e.a) === groupOf.get(e.b),
   }));
   currentLinks = links;
-  // bands of conceptions: each as high as its fullest column
-  const bands = [];
-  if (parMode === 'bands') {
-    const occ = new Map();
-    for (const d of data) {
-      d.band = bandOf(d.i);
-      const key = d.band + ':' + d.rank;
-      occ.set(key, (occ.get(key) || 0) + 1);
-    }
-    let y = 0;
-    for (let b = 0; b < 3; b++) {
-      let most = 0;
-      for (const [key, c] of occ) if (+key.split(':')[0] === b) most = Math.max(most, c);
-      if (!most) continue;
-      const h = most * (BOX_H + 8) + 30;
-      bands.push({ b, y0: y, y1: y + h, center: y + h / 2 + 8 });
-      y += h + 44;
-    }
-    const centerOf = new Map(bands.map(x => [x.b, x.center]));
-    for (const d of data) d.by = centerOf.get(d.band);
-  } else {
-    for (const d of data) d.by = 0;
-  }
-
+  const bands = layout(data, links);
+  for (const d of data) if (d.fresh) { d.x = d.tx; d.y = d.ty; d.fresh = false; }
   // edges
   const es = gEdges.selectAll('path').data(links, d => d.k).join(
     enter => enter.append('path').attr('class', 'edge').call(p => p.append('title')));
@@ -888,7 +953,7 @@ function render(refit) {
           d._group = ev.sourceEvent && ev.sourceEvent.shiftKey ? [d] : dependents(d);
           for (const m of d._group) { m._dx = m.x - d.x; m._dy = m.y - d.y; m.fx = m.x; m.fy = m.y; }
         })
-        .on('drag', (ev, d) => { for (const m of d._group) { m.fx = ev.x + m._dx; m.fy = ev.y + m._dy; } })
+        .on('drag', (ev, d) => { for (const m of d._group) { m.fx = ev.x + m._dx; m.fy = clampY(m, ev.y + m._dy); } })
         .on('end', (ev, d) => { if (!ev.active && sim) sim.alphaTarget(0); gNodes.selectAll('g.node').classed('pinned', x => x.fx != null); }));
     return g;
   });
@@ -905,8 +970,8 @@ function render(refit) {
     const label = d3.select(this);
     const n = G.nodes[d.i], isR = n.k === 'root', al = altLang(n);
     label.selectAll('*').remove();
-    label.append('tspan').attr('class', 'lm').attr('fill', langColor(n.l, isR)).text(codeMarker(n.l, isR));
-    if (al) label.append('tspan').attr('class', 'lm').attr('fill', langColor(al, isR)).text('[' + codeMarker(al, isR) + ']');
+    label.append('tspan').attr('class', 'lm').style('fill', langColor(n.l, isR)).text(codeMarker(n.l, isR));
+    if (al) label.append('tspan').attr('class', 'lm').style('fill', langColor(al, isR)).text('[' + codeMarker(al, isR) + ']');
     label.append('tspan').attr('font-style', isR ? 'normal' : 'italic')
       .attr('font-weight', isR ? 600 : 500).text((isR ? '' : ' ') + shown(d.i));
     const h = hiddenCount(d.i);
@@ -917,17 +982,15 @@ function render(refit) {
   });
   ns.select('title').text(d => `${marker(d.i)} ${shown(d.i)}${G.nodes[d.i].g ? ' “' + G.nodes[d.i].g + '”' : ''}`);
 
-  // simulation: columns by rank, the forms of a word under it, boxes kept apart; weak links,
-  // so that a node moved by hand does not spring back
+  // the places are computed (layout); the simulation only brings the nodes to them, keeps boxes
+  // apart and every node inside its band. No springs: a node moved by hand stays, the rest do not move
   if (sim) sim.stop();
   sim = d3.forceSimulation(data)
-    .force('x', d3.forceX(d => d.rank * COL).strength(d => (d.anchor ? 0 : 0.6)))
-    .force('y', d3.forceY(d => d.by).strength(parMode === 'bands' ? 0.2 : 0.015))
-    .force('link', d3.forceLink(links.filter(l => !l.stacked)).distance(COL * 0.9).strength(0.025))
-    .force('charge', d3.forceManyBody().strength(-45).distanceMax(260))
-    .force('stack', stackForce())
+    .force('x', d3.forceX(d => d.tx).strength(0.5))
+    .force('y', d3.forceY(d => d.ty).strength(0.5))
     .force('boxes', boxCollide())
-    .velocityDecay(0.5)
+    .force('bands', bandClamp())
+    .velocityDecay(0.45)
     .on('tick', draw);
   fitPending = refit;
   if (reduced) { sim.stop(); for (let k = 0; k < 300; k++) sim.tick(); draw(); fitView(false); fitPending = false; }
@@ -935,7 +998,7 @@ function render(refit) {
   if (refit && !reduced) setTimeout(() => { if (fitPending) { fitView(true); fitPending = false; } }, 1100);
 
   // the bands behind the graph
-  const bandSel = gBands.selectAll('g.band').data(bands, x => x.b).join(enter => {
+  const bandSel = gBands.selectAll('g.band').data(parMode === 'bands' ? bands : [], x => x.b).join(enter => {
     const g = enter.append('g').attr('class', 'band');
     g.append('rect').attr('rx', 8);
     g.append('text');
@@ -949,14 +1012,9 @@ function render(refit) {
     if (bands.length) {
       let x0 = Infinity, x1 = -Infinity;
       for (const d of data) { if (d.x - d.w / 2 < x0) x0 = d.x - d.w / 2; if (d.x + d.w / 2 > x1) x1 = d.x + d.w / 2; }
-      for (const band of bands) {
-        let lo = Infinity, hi = -Infinity;
-        for (const d of data) if (d.band === band.b) { lo = Math.min(lo, d.y - 30); hi = Math.max(hi, d.y + 14); }
-        band.top = lo; band.bottom = hi;
-      }
       bandSel.select('rect').attr('x', x0 - 40).attr('width', x1 - x0 + 80)
-        .attr('y', x => x.top - 6).attr('height', x => Math.max(20, x.bottom - x.top + 12));
-      bandSel.select('text').attr('x', x0 - 36).attr('y', x => x.top - 13);      // above its band, clear of the labels
+        .attr('y', x => x.y0).attr('height', x => x.y1 - x.y0);
+      bandSel.select('text').attr('x', x0 - 36).attr('y', x => x.y0 - 8);      // above its band
     }
   }
   lastCounts = [data.length, links.length];

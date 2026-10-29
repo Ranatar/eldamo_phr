@@ -12,7 +12,7 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': 
 const NULL = 'ø';
 const ERAS = ['late', 'middle', 'early'];
 const T = window.I18N.t, TN = window.I18N.tn;
-const ERA_NAMES = { late: T('era.late'), middle: T('era.middle'), early: T('era.early') };
+const ERA_NAMES = window.I18N.labels({ late: 'era.late', middle: 'era.middle', early: 'era.early' });
 
 // ---------- small helpers ---------------------------------------------------
 const wordUrl = id => id ? `${SITE}words/word-${id}.html` : '';
@@ -26,24 +26,24 @@ const store = {
   get(k) { try { return localStorage.getItem(k); } catch (_e) { return null; } },
   set(k, v) { try { localStorage.setItem(k, v); } catch (_e) { /* storage unavailable */ } },
 };
-const POSITION = { initial: T('pos.initial'), final: T('pos.final'), medial: T('pos.medial') };
-const TRANSITION = { stage: T('transition.stage'), ordered: T('transition.ordered'), unknown: T('transition.unknown') };
-const STATUS = {
-  reproduced: ['✓', T('status.reproduced')],
-  reproduced_partial: ['≈', T('status.reproduced_partial')],
-  mismatch: ['✗', T('status.mismatch')],
-  no_match: ['✗', T('status.no_match')],
-  unsupported: ['?', T('status.unsupported')],
-  unknown_rule: ['·', T('status.unknown_rule')],
-  unmatched_formula: ['?', T('status.unmatched_formula')],
-  identity: ['=', T('status.identity')],
-  deleted_rule: ['·', T('status.deleted_rule')],
-};
+const POSITION = window.I18N.labels({ initial: 'pos.initial', final: 'pos.final', medial: 'pos.medial' });
+const TRANSITION = window.I18N.labels({ stage: 'transition.stage', ordered: 'transition.ordered', unknown: 'transition.unknown' });
+const STATUS = window.I18N.labels({
+  reproduced: ['✓', 'status.reproduced'],
+  reproduced_partial: ['≈', 'status.reproduced_partial'],
+  mismatch: ['✗', 'status.mismatch'],
+  no_match: ['✗', 'status.no_match'],
+  unsupported: ['?', 'status.unsupported'],
+  unknown_rule: ['·', 'status.unknown_rule'],
+  unmatched_formula: ['?', 'status.unmatched_formula'],
+  identity: ['=', 'status.identity'],
+  deleted_rule: ['·', 'status.deleted_rule'],
+});
 function announce(text) { $('status').textContent = text; }
 const ISSUE = new Set(['mismatch', 'no_match', 'unsupported', 'unmatched_formula']);
-const GRADE = {
-  A: T('grade.A'), B: T('grade.B'), C: T('grade.C'), D: T('grade.D'),
-};
+const GRADE = window.I18N.labels({
+  A: 'grade.A', B: 'grade.B', C: 'grade.C', D: 'grade.D',
+});
 
 // ---------- theme -----------------------------------------------------------
 const THEME_KEY = 'quettamin-theme';
@@ -51,8 +51,9 @@ function applyTheme(t) { if (t) document.documentElement.setAttribute('data-them
 applyTheme(store.get(THEME_KEY));
 $('lang-toggle').addEventListener('click', () => window.I18N.setLang(window.I18N.lang === 'ru' ? 'en' : 'ru'));
 $('theme-toggle').addEventListener('click', () => {
-  const cur = document.documentElement.getAttribute('data-theme')
-    || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const set = document.documentElement.getAttribute('data-theme');
+  // 'auto' (a choice of the graph page) follows the system, as no choice does
+  const cur = set === 'light' || set === 'dark' ? set : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   const next = cur === 'dark' ? 'light' : 'dark';
   applyTheme(next); store.set(THEME_KEY, next);
 });
@@ -362,7 +363,10 @@ function sortPaths(X, paths) {
     return a[1].nodes.join(' ').localeCompare(b[1].nodes.join(' '));
   }).map(x => x[1]);
 }
+// what the output of the reference shows, to draw it again in another language
+let lastOutput = null;
 function findPaths() {
+  lastOutput = findPaths;
   const X = index(state.branch), o = options();
   const src = current('from'), dst = current('to');
   const found = [];
@@ -443,6 +447,7 @@ function treeSvg(paths, root, direction) {
     <figcaption class="small muted">${T('tree.legend')}</figcaption></figure>`;
 }
 function tree(direction) {
+  lastOutput = () => tree(direction);
   const X = index(state.branch), o = options();
   const root = current(direction === 'forward' ? 'from' : 'to');
   const found = new Map();
@@ -465,6 +470,7 @@ $('origins').addEventListener('click', () => tree('backward'));
 
 // ---------- rules of a sound -------------------------------------------------------
 function showRules(slot) {
+  lastOutput = () => showRules(slot);
   const X = index(state.branch);
   const sound = current(slot);
   const isPhoneme = X.phonemes.has(sound);
@@ -609,6 +615,7 @@ document.addEventListener('click', e => {
 
 // ---------- one rule --------------------------------------------------------------
 function showRule(id) {
+  lastOutput = () => showRule(id);
   let X = index(state.branch);
   if (!X.B.rules[id]) {
     const other = BRANCHES.find(b => data().branches[b].rules[id]);
@@ -645,5 +652,16 @@ function showRule(id) {
 }
 
 QR.on(route);
+// another language: the header, the open sections and the output drawn again
+window.addEventListener('quettamin:lang', () => {
+  const b = branchSelect.value;
+  branchSelect.replaceChildren(...BRANCHES.map(k => new Option(T('branch.' + k), k)));
+  branchSelect.value = b;
+  updateToggleAll();
+  const out = lastOutput && $('output').innerHTML ? lastOutput : null;
+  state.drawn = {};
+  renderOpen();
+  if (out) out();
+});
 window.QREF = { start: () => { route(QR.get()); updateToggleAll(); } };
 })();

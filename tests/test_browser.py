@@ -352,6 +352,28 @@ class Browser(unittest.TestCase):
         self.assertIn('weight', page.inner_text('#wf-output'))
         self.assertEqual(self.visible_cyrillic(page), [])
 
+    def test_language_switch_in_place(self):
+        # the language changes without a reload: the word, the panorama, a result and the reference stay
+        page = self.page(self.atlas + '#w=403686503', locale='ru-RU')
+        page.wait_for_function("[...document.querySelectorAll('.pcell .pform')].every(x => x.textContent !== '…')", timeout=60000)
+        page.click('#rc-go')
+        page.evaluate("document.querySelectorAll('details.ref').forEach(d => d.open = true)")
+        page.wait_for_function("document.getElementById('derivations').textContent.trim() !== ''", timeout=60000)
+        page.evaluate('window.__kept = 1')
+        page.click('#lang-toggle')
+        page.wait_for_function("document.documentElement.lang === 'en'")
+        self.assertEqual(page.evaluate('window.__kept'), 1)
+        page.wait_for_function("[...document.querySelectorAll('.pcell .pform')].every(x => x.textContent !== '…')", timeout=60000)
+        self.assertIn('lindë', page.inner_text('#word-card'))
+        self.assertIn('weight', page.inner_text('#rc-output'))
+        self.assertEqual(self.visible_cyrillic(page), [])
+        # the next visit starts in English and in the chosen theme, before the data are read
+        page.click('#theme-toggle')
+        theme = page.evaluate("document.documentElement.getAttribute('data-theme')")
+        page.goto(self.atlas)
+        self.assertEqual(page.evaluate("[document.documentElement.lang, document.documentElement.getAttribute('data-theme')]"), ['en', theme])
+        self.assertIn('word forge', page.inner_text('#intro'))
+
     def test_language_switch(self):
         page = self.page(self.atlas, locale='en-US')
         self.assertIn('word forge', page.inner_text('#intro'))       # an English browser gets English

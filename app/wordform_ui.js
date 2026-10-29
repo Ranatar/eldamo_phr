@@ -8,23 +8,23 @@ const $ = id => document.getElementById(id);
 const esc = QU.esc;
 const engine = QU.engine;
 const T = QU.T;
-const SOURCE = {
-  attested: T('source.attested'),
-  stem: T('source.stem'),
-  dictionary: T('source.dictionary'),
-  primitive: T('source.primitive'),
-  computed: T('source.computed'),
-  reconstructed: T('source.reconstructed'),
-  'soft-mutation': T('source.soft-mutation'),
-  suffix: T('source.suffix'),
-  prefix: T('source.prefix'),
-};
-const ADJUST = {
-  reduction: T('adjust.reduction'),
-  lengthening: T('adjust.lengthening'),
-  shortening: T('adjust.shortening'),
-  'ima-class': T('adjust.ima-class'),
-};
+const SOURCE = window.I18N.labels({
+  attested: 'source.attested',
+  stem: 'source.stem',
+  dictionary: 'source.dictionary',
+  primitive: 'source.primitive',
+  computed: 'source.computed',
+  reconstructed: 'source.reconstructed',
+  'soft-mutation': 'source.soft-mutation',
+  suffix: 'source.suffix',
+  prefix: 'source.prefix',
+});
+const ADJUST = window.I18N.labels({
+  reduction: 'adjust.reduction',
+  lengthening: 'adjust.lengthening',
+  shortening: 'adjust.shortening',
+  'ima-class': 'adjust.ima-class',
+});
 const state = { branch: QU.BRANCHES[0], picked: [null, null, null] };
 const SLOTS = [1, 2, 3];
 const era = () => $('wf-era').value || 'late';
@@ -202,5 +202,16 @@ $('wf-output').addEventListener('click', e => {
 });
 QU.onSubject((s, why) => { if (why === 'subject') onSubject(s); else if (why === 'neo') SLOTS.forEach(search); });
 setBranch(state.branch, 'late');
+// another language: the selects, the chosen elements and the result drawn again
+window.addEventListener('quettamin:lang', () => {
+  const b = $('wf-branch').value, e = $('wf-era').value, st = $('wf-stage').value;
+  branchOptions();
+  $('wf-branch').value = b; $('wf-era').value = e;
+  stageOptions();
+  $('wf-stage').value = st;
+  const E = engine(state.branch);
+  SLOTS.forEach((slot, k) => { const x = state.picked[k] && E.lexicon.get(state.picked[k]); if (x) $('wf-chosen' + slot).innerHTML = describe(E, x); search(slot); });
+  if ($('wf-output').innerHTML) compose();
+});
 window.WFCOMPOSE = { pick, compose };
 })();

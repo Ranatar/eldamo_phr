@@ -43,5 +43,6 @@ function render() {
 }
 for (const id of ['roots-q', 'roots-which', 'roots-era']) $(id).addEventListener(id === 'roots-q' ? 'input' : 'change', render);
 render();
+window.addEventListener('quettamin:lang', render);       // another language: the list drawn again
 window.ROOTSUI = { render };
 })();

@@ -14,30 +14,30 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': 
 const fold = s => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
 const BRANCHES = Object.keys(WDATA);
 const T = window.I18N.t, TN = window.I18N.tn;
-const BRANCH_NAMES = { quenya: T('branch.quenya'), sindarin: T('branch.sindarin') };
+const BRANCH_NAMES = window.I18N.labels({ quenya: 'branch.quenya', sindarin: 'branch.sindarin' });
 const ERAS = ['late', 'middle', 'early'];
-const ERA_NAMES = { late: T('era.late'), middle: T('era.middle'), early: T('era.early') };
+const ERA_NAMES = window.I18N.labels({ late: 'era.late', middle: 'era.middle', early: 'era.early' });
 const NEO_ERA = { nq: 'late', ns: 'late', np: 'late', van: 'late', norths: 'late' };
 const NEO_MARKERS = { nq: 'NQ.', ns: 'NS.', np: 'N✶', van: 'Van.', norths: 'NS.' };
-const MARKS = {
-  attested: ['●', T('mark.attested')],
-  link: ['↔', T('mark.link')],
-  unchanged: ['=', T('mark.unchanged')],
-  reconstructed: ['○', T('mark.reconstructed')],
-  root: ['√', T('mark.root')],
-  stem: ['⊢', T('mark.stem')],
-  elements: ['⊕', T('mark.elements')],
-  partial: ['⇋', T('mark.partial')],
-  irregular: ['!', T('mark.irregular')],
-  unconfirmed: ['?', T('mark.unconfirmed')],
-  cognate: ['⇄', T('mark.cognate')],
-  'near-cognate': ['≈', T('mark.near-cognate')],
-  'primitive-attested': ['✶', T('mark.primitive-attested')],
-  neologism: ['◇', T('mark.neologism')],
-  phonotactics: ['⚠', T('mark.phonotactics')],
-  main: ['', T('mark.main')],
-};
-const LINK_NAMES = { combine: T('link.combine'), deprecated: T('link.deprecated'), cognate: T('link.cognate'), see: T('link.see') };
+const MARKS = window.I18N.labels({
+  attested: ['●', 'mark.attested'],
+  link: ['↔', 'mark.link'],
+  unchanged: ['=', 'mark.unchanged'],
+  reconstructed: ['○', 'mark.reconstructed'],
+  root: ['√', 'mark.root'],
+  stem: ['⊢', 'mark.stem'],
+  elements: ['⊕', 'mark.elements'],
+  partial: ['⇋', 'mark.partial'],
+  irregular: ['!', 'mark.irregular'],
+  unconfirmed: ['?', 'mark.unconfirmed'],
+  cognate: ['⇄', 'mark.cognate'],
+  'near-cognate': ['≈', 'mark.near-cognate'],
+  'primitive-attested': ['✶', 'mark.primitive-attested'],
+  neologism: ['◇', 'mark.neologism'],
+  phonotactics: ['⚠', 'mark.phonotactics'],
+  main: ['', 'mark.main'],
+});
+const LINK_NAMES = window.I18N.labels({ combine: 'link.combine', deprecated: 'link.deprecated', cognate: 'link.cognate', see: 'link.see' });
 
 // ---------------------------------------------------------------- engines and lookup
 const engines = {};
@@ -240,35 +240,15 @@ function openForm(form, b, era, stage) {
   $('word-section').scrollIntoView({ block: 'start' });
 }
 
-// ---------------------------------------------------------------- recent words
-const RECENT_KEY = 'quettamin-recent';
-function recent() {
-  try { return JSON.parse(localStorage.getItem(RECENT_KEY) || '[]').filter(r => r && r.id); } catch (_e) { return []; }
-}
+// ---------------------------------------------------------------- recent words, intro (intro.js)
 function remember(s) {
   if (s.kind !== 'word') return;
   const E = engine(s.branch);
-  const item = { id: s.id, b: s.branch, form: s.entry.form, marker: marker(E, s.entry.lang), gloss: s.entry.gloss || '' };
-  const list = [item, ...recent().filter(r => r.id !== s.id)].slice(0, 8);
-  try { localStorage.setItem(RECENT_KEY, JSON.stringify(list)); } catch (_e) { /* storage unavailable */ }
+  window.QINTRO.remember({ id: s.id, b: s.branch, form: s.entry.form, marker: marker(E, s.entry.lang), gloss: s.entry.gloss || '' });
 }
-const chip = r => `<button type="button" class="chip" data-word="${esc(r.id)}" data-branch="${esc(r.b || '')}"><span class="marker">${esc(r.marker)}</span> <span class="form">${esc(r.form)}</span> <span class="muted">${esc(r.gloss)}</span></button>`;
+const renderIntro = () => window.QINTRO.render();
 
-// ---------------------------------------------------------------- intro, card
-const EXAMPLES = [
-  { id: '403686503', b: 'quenya', marker: 'Q.', form: 'lindë', gloss: 'song, air, tune' },
-  { id: '4273482913', b: 'quenya', marker: 'Q.', form: 'Ambar', gloss: 'world' },
-  { id: '3005081253', b: 'sindarin', marker: 'S.', form: 'galadh', gloss: 'tree' },
-  { id: '3880471189', b: 'quenya', marker: 'Q.', form: 'lelya', gloss: 'delicate, beautiful and fine' },
-];
-function renderIntro() {
-  const rec = recent();
-  $('intro').innerHTML = `<h1>${T('intro.title')}</h1>
-    <p class="lead">${T('intro.lead')}</p>
-    <p>${T('intro.examples')} ${EXAMPLES.map(chip).join(' ')}</p>
-    ${rec.length ? `<p>${T('intro.recent')} ${rec.map(chip).join(' ')}</p>` : ''}
-    <p class="small muted">${T('intro.note')}</p>`;
-}
+// ---------------------------------------------------------------- card
 function cardHtml(s) {
   if (s.kind === 'missing') return `<p>${esc(T('card.missing', { id: s.id }))}</p>`;
   const [b, era, stage] = s.period;
@@ -635,6 +615,15 @@ function route(p) {
   for (const l of listeners) l(s, 'subject');
 }
 QR.on(route);
+// another language: the same subject drawn again (the panorama too: its titles are words of the interface)
+window.addEventListener('quettamin:lang', () => {
+  if (!subject) renderIntro();
+  else if (subject.kind === 'root') $('word-card').innerHTML = rootCardHtml(subject);
+  else { $('word-card').innerHTML = cardHtml(subject); renderPanorama(subject); }
+  if (!$('q-results').hidden) renderSearch();
+  document.title = subject && subject.kind === 'word' ? `${subject.entry.form} — Quettamin` : subject && subject.kind === 'form' ? `${subject.form} — Quettamin`
+    : subject && subject.kind === 'root' ? `${ROOT_MARKERS[subject.root.l] || '√'}${subject.root.f} — Quettamin` : T('page.title');
+});
 
 window.QU = {
   WDATA, BRANCHES, BRANCH_NAMES, ERAS, ERA_NAMES, MARKS, SITE,

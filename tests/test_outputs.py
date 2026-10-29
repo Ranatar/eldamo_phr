@@ -71,7 +71,7 @@ class InterfaceCatalog(unittest.TestCase):
                'tree.rel.': ['e', 'd', 'c', 's', 'x', 'k'],
                'ipa.': ['labial', 'dental', 'palatal', 'velar', 'labiovelar', 'glottal', 'stop', 'fricative', 'nasal',
                         'lateral', 'trill', 'approximant', 'high', 'mid', 'low', 'front', 'central', 'back']}
-    FILES = ('runtime.js', 'word_ui.js', 'wordform_ui.js', 'reconstruct_ui.js', 'roots_ui.js', 'corpus_template.html')
+    FILES = ('runtime.js', 'word_ui.js', 'wordform_ui.js', 'reconstruct_ui.js', 'roots_ui.js', 'intro.js', 'corpus_template.html')
 
     @classmethod
     def setUpClass(cls):
@@ -84,6 +84,9 @@ class InterfaceCatalog(unittest.TestCase):
             text = (ROOT / 'app' / name).read_text(encoding='utf-8')
             for args in call.findall(text):
                 keys.update(k for k in re.findall(r"'([a-zA-Z]+\.[A-Za-z_.-]*)'", args) if not k.endswith('.'))
+            # tables of labels read in the current language (I18N.labels)
+            for args in re.findall(r"labels\(\{(.*?)\}\)", text, re.S):
+                keys.update(re.findall(r"'([a-zA-Z]+\.[A-Za-z_.-]*)'", args))
         for name in ('template.html', 'corpus_template.html'):
             text = (ROOT / 'app' / name).read_text(encoding='utf-8')
             keys.update(re.findall(r'data-i18n(?:-html)?="([^"]+)"', text))
@@ -96,7 +99,7 @@ class InterfaceCatalog(unittest.TestCase):
         and in the templates only as the default text of an element marked for translation."""
         from html.parser import HTMLParser
         cyr = re.compile('[А-Яа-яЁё]')
-        for name in ('router.js', 'wordform.js', 'word_ui.js', 'wordform_ui.js', 'reconstruct_ui.js', 'roots_ui.js',
+        for name in ('router.js', 'wordform.js', 'word_ui.js', 'wordform_ui.js', 'reconstruct_ui.js', 'roots_ui.js', 'intro.js',
                      'runtime.js', 'i18n.js'):
             text = (ROOT / 'app' / name).read_text(encoding='utf-8')
             code = re.sub(r'/\*.*?\*/', '', text, flags=re.S)

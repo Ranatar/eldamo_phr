@@ -45,18 +45,23 @@ const rule = id => id ? `<a href="${SITE}words/word-${esc(id)}.html" target="_bl
 const src = s => s ? `<a href="${SITE}references/ref-${esc(s.split('/')[0])}.html#${esc(s)}" target="_blank" rel="noopener">${esc(s.split('.')[0])}</a>` : '';
 const T = I18N.t;
 const list = v => Array.isArray(v) ? v.map(esc).join(', ') : esc(v);
-const SECTIONS = {
+let SECTIONS;
+function sections() {
+  return {
   rules: { title: T('corpus.rules'), cols: [['id', T('corpus.colPage'), r => rule(r.id)], ['lang', T('corpus.colLanguage'), r => esc(r.marker)], ['name', T('corpus.colName'), r => esc(r.name)], ['order', T('corpus.colOrder'), r => esc(r.order)], ['formula', T('corpus.colGeneralFormula'), r => r.formula ? `<code>${esc(r.formula.from)} &gt; ${esc(r.formula.to)}</code>` : ''], ['pairs', T('corpus.colSubFormulas'), r => r.pairs.length]] },
   pairs: { title: T('corpus.pairs'), cols: [['id', 'ID', p => esc(p.id)], ['rule', T('corpus.colRule'), p => rule(p.rule)], ['marker', T('corpus.colLanguage'), p => esc(p.marker)], ['formula', T('corpus.colFormula'), p => `<code>${esc(p.from)} &gt; ${esc(p.to)}</code>`], ['kind', T('corpus.colKind'), p => esc(p.kind)], ['examples', T('corpus.colExamplesRepr'), p => `${p.examples} / ${p.reproduced + p.partial}`]] },
   edges: { title: T('corpus.edges'), cols: [['id', 'ID', e => esc(e.id)], ['era', T('corpus.colPeriod'), e => esc(e.era)], ['marker', T('corpus.colLanguage'), e => esc(e.marker)], ['ab', T('corpus.colTransition'), e => `<span class="ipa">${esc(e.a)} → ${esc(e.b)}</span>`], ['position', T('corpus.colPosition'), e => esc(e.position)], ['rules', T('corpus.colRules'), e => e.rules.map(rule).join(', ')], ['conditional', T('corpus.colConditional'), e => e.conditional ? T('corpus.yes') : ''], ['examples', T('corpus.colExamples'), e => e.examples]] },
   chains: { title: T('corpus.chains'), cols: [['id', T('corpus.colChain'), c => `<span class="ipa">${esc(c.states.join(' → '))}</span>`], ['era', T('corpus.colPeriod'), c => esc(c.era)], ['grade', T('corpus.colGrade'), c => `<span class="grade grade-${esc(c.grade)}">${esc(c.grade)}</span>`], ['markers', T('corpus.colLanguages'), c => list(c.markers)], ['attested', T('corpus.colDerivations'), c => c.attested_count]] },
   derivations: { title: T('corpus.derivations'), cols: [['id', 'ID', d => esc(d.id)], ['word', T('corpus.colWord'), d => `<a href="${SITE}words/word-${esc(d.word)}.html" target="_blank" rel="noopener">${esc(d.word_form)}</a>${d.deleted ? ` <span class="pill warn">${T('corpus.rejected')}</span>` : ''}`], ['gloss', T('corpus.colGloss'), d => esc(d.gloss)], ['chain', T('corpus.colForms'), d => `<span class="ipa">${esc([d.start, ...d.steps.map(s => s.after)].join(' → '))}</span>`], ['source', T('corpus.colSource'), d => src(d.source)]] },
   phonemes: { title: T('corpus.phonemes'), cols: [['symbol', T('corpus.colPhoneme'), p => `<span class="ipa">${esc(p.symbol)}</span>`], ['languages', T('corpus.colLanguages'), p => list(p.languages)], ['cards', T('corpus.colCards'), p => p.cards.map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join(' ')]] },
-};
+  };
+}
+SECTIONS = sections();
 const st = { branch: Object.keys(DATA.branches)[0], section: 'rules', page: 0 };
 const PAGE = 50;
 $('branch').replaceChildren(...Object.keys(DATA.branches).map(b => new Option(DATA.branches[b].title, b)));
-$('tabs').innerHTML = Object.entries(SECTIONS).map(([k, s]) => `<button type="button" data-section="${k}" aria-pressed="${k === st.section}">${esc(s.title)}</button>`).join('');
+const drawTabs = () => { $('tabs').innerHTML = Object.entries(SECTIONS).map(([k, s]) => `<button type="button" data-section="${k}" aria-pressed="${k === st.section}">${esc(s.title)}</button>`).join(''); };
+drawTabs();
 const texts = new WeakMap();
 const text = r => { if (!texts.has(r)) texts.set(r, JSON.stringify(r).toLowerCase()); return texts.get(r); };
 function render() {
@@ -88,6 +93,8 @@ $('theme-toggle').addEventListener('click', () => {
 $('lang-toggle').addEventListener('click', () => I18N.setLang(I18N.lang === 'ru' ? 'en' : 'ru'));
 I18N.translate(document);
 render();
+// another language: the sections and the table drawn again, in place
+window.addEventListener('quettamin:lang', () => { SECTIONS = sections(); drawTabs(); render(); });
 })();
 </script>
 </body>

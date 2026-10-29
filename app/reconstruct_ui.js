@@ -129,5 +129,13 @@ $('rc-output').addEventListener('click', e => {
   QU.openForm(u.dataset.use, b, era, stage);
 });
 QU.onSubject((s, why) => { if (why === 'subject') onSubject(s); });
+// another language: the periods, the subject and the result drawn again
+window.addEventListener('quettamin:lang', () => {
+  periodSelect($('rc-src'));
+  periodSelect($('rc-dst'));
+  $('rc-subject').innerHTML = subjectHtml(QU.subject());
+  if ($('rc-form').value.trim()) suggest();
+  if ($('rc-output').innerHTML) run();
+});
 window.RCUI = { run, target };
 })();

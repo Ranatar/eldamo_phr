@@ -930,6 +930,10 @@
   "ru": "Quettamin: формы слов квенья и синдарина во всех периодах, реконструкция и словотворчество по звуковым законам; данные Eldamo (Paul Strack)",
   "en": "Quettamin: forms of Quenya and Sindarin words in every period, reconstruction and word-building by the sound laws; data of Eldamo (Paul Strack)"
  },
+ "page.loading": {
+  "ru": "Загрузка слова…",
+  "en": "Loading the word…"
+ },
  "page.title": {
   "ru": "Quettamin — кузница слова",
   "en": "Quettamin — the word forge"

@@ -3,7 +3,8 @@
 // {ru, en}; a plural entry has {ru: {one, few, many}, en: {one, other}}. Placeholders are
 // {name}. The data of Eldamo (forms, glosses, rule names) are not translated.
 // The language comes from the address (#lang=en), else from the last choice, else from
-// the browser; a change reloads the page with the same address.
+// the browser. A change redraws the page in place: the static markup is translated again and
+// the parts of the page listen to the event 'quettamin:lang' (window) to draw themselves again.
 (function () {
 'use strict';
 const MESSAGES = JSON.parse(document.getElementById('messages-data').textContent);
@@ -26,7 +27,7 @@ function initial() {
   const nav = (navigator.languages && navigator.languages[0]) || navigator.language || 'ru';
   return /^(ru|uk|be|kk)\b/i.test(nav) ? 'ru' : 'en';
 }
-const lang = initial();
+let lang = initial();
 document.documentElement.lang = lang;
 
 function fill(text, params) {
@@ -77,13 +78,35 @@ function translate(root) {
 }
 function setLang(v) {
   if (!LANGS.includes(v) || v === lang) return;
+  lang = v;
   store(v);
+  document.documentElement.lang = v;
   let raw = location.hash.slice(1);
   try { raw = decodeURIComponent(raw); } catch (_e) { /* as is */ }
   const params = new URLSearchParams(raw.includes('=') ? raw : '');
-  if (params.has('lang')) { params.set('lang', v); location.hash = params.toString(); }
-  location.reload();
+  if (params.has('lang')) {
+    params.set('lang', v);
+    try { history.replaceState(null, '', '#' + params.toString()); } catch (_e) { /* file:// in some browsers */ }
+  }
+  translate(document);
+  window.dispatchEvent(new CustomEvent('quettamin:lang', { detail: v }));
+}
+// a table of labels read in the current language: {key: 'message.key'} or {key: [symbol, 'message.key']}
+function labels(map) {
+  return new Proxy(map, {
+    get(target, k) {
+      const v = target[k];
+      if (typeof v === 'string') return t(v);
+      if (Array.isArray(v)) return [v[0], t(v[1])];
+      return v;
+    },
+  });
+}
+// the page is shown once its static text is in the chosen language (template.html hides it until then)
+function ready() {
+  translate(document);
+  document.documentElement.classList.remove('i18n-wait');
 }
 
-window.I18N = { lang, t, tn, translate, setLang, LANGS };
+window.I18N = { get lang() { return lang; }, t, tn, translate, setLang, labels, ready, LANGS };
 })();

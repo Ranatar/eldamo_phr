@@ -148,6 +148,7 @@ SCRIPTS = {                     # template marker -> file in app/
     '@@ROOTS_UI@@': 'roots_ui.js',
     '@@RUNTIME@@': 'runtime.js',
     '@@I18N@@': 'i18n.js',
+    '@@INTRO@@': 'intro.js',
 }
 
 

@@ -48,6 +48,9 @@ class Browser(unittest.TestCase):
     def page(self, url, width=1280, locale='ru-RU'):
         page = self.browser.new_page(viewport={'width': width, 'height': 900}, locale=locale)
         errors = []
+        # the panorama of a long word keeps the page busy for seconds a cell, longer on the CI machine
+        # (docs/how-it-works.md, §7)
+        page.set_default_timeout(90000)
         page.on('pageerror', lambda e: errors.append(str(e)))
         page.on('console', lambda m: errors.append(m.text) if m.type == 'error' else None)
         page.goto(url)

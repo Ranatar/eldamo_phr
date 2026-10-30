@@ -1388,6 +1388,22 @@ function reconstruct(engines, src, dst, opts = {}) {
     form = forms[0];
   } else if (opts.spelled) form = toPhonetic(form, sb).trim();
   const hints = hintsOf(S, sb, entry, se, ss);
+  if (ds === 0 && de !== se && !opts.single) {
+    // the primitive form of another conception is one for both branches (reconstruct.py)
+    const merged = new Map();
+    for (const b of [sb, ...Object.keys(engines).filter(x => x !== sb).sort()]) {
+      // weights as found, not shares of each branch's list: a branch with Eldamo's links weighs more
+      for (const v of reconstruct(engines, src, [b, de, 0], { ...opts, form, spelled: false, limit: 2 * RECON_LIMIT, single: true, raw: true })) {
+        const k = comparable(v.form);
+        if (merged.has(k)) merged.get(k).score += v.score;
+        else merged.set(k, { ...v });
+      }
+    }
+    const ranked = [...merged.values()].sort((a, b) => b.score - a.score);
+    const total = ranked.reduce((x, r) => x + r.score, 0) || 1;
+    for (const r of ranked) r.score = r3(r.score / total);
+    return ranked.slice(0, opts.limit || RECON_LIMIT);
+  }
   const results = new Map();
   const add = (f, score, route, marks, steps) => {
     const k = comparable(f);
@@ -1400,8 +1416,6 @@ function reconstruct(engines, src, dst, opts = {}) {
     // the primitive form: one for both branches (primitives)
     for (const [f, w, route, marks, trace] of primitives(engines, src, form, entry, hints, opts.useLinks !== false, depth))
       add(f, w, db === sb ? route : [['sharedPrimitive']].concat(route), db === sb ? marks : marks.concat(['cognate']), db === sb ? trace : []);
-    // except a compound each branch made of its own elements (S. Adanel, Q. *Atanel; reconstruct.py)
-    if (db !== sb && entry) byElements(engines, add, entry, se, db, ds, depth);
   } else if (sb === db && se === de) {
     const c = ds < ss && entry ? compose(engines, sb, entry, se, ds, depth) : null;
     // a word its elements explain: no search through rare correspondences (WIDE)
@@ -1421,6 +1435,7 @@ function reconstruct(engines, src, dst, opts = {}) {
     }
   }
   const ranked = [...results.values()].sort((a, b) => b.score - a.score);
+  if (opts.raw) return ranked.slice(0, opts.limit || RECON_LIMIT);
   const total = ranked.reduce((x, r) => x + r.score, 0) || 1;
   for (const r of ranked) r.score = r3(r.score / total);
   return ranked.slice(0, opts.limit || RECON_LIMIT);
@@ -1808,6 +1823,8 @@ function sideways(engines, add, src, dst, form, entry, hints, useLinks = true, d
   }
 }
 const NEO_LANG = { quenya: 'nq', sindarin: 'ns' };
+// links between conceptions: combine first, then see, then deprecated (reconstruct.py: LINK_WEIGHT)
+const LINK_WEIGHT = { combine: 1, see: 0.9, deprecated: 0.8 };
 function across(engines, add, src, dst, form, entry, hints, useLinks, depth = 0) {
   const [sb, se, ss] = src, [db, de, ds] = dst;
   const S = engines[sb], D = engines[db];
@@ -1815,7 +1832,7 @@ function across(engines, add, src, dst, form, entry, hints, useLinks, depth = 0)
   if (useLinks && entry) {
     const linked = [];
     for (const [tag, ids] of Object.entries(entry.links || {})) if (['combine', 'deprecated', 'see'].includes(tag)) for (const id of ids) linked.push([id, tag]);
-    linked.push(...(reverseLinks(engines).get(entry.id) || []));
+    linked.push(...(reverseLinks(engines).get(entry.id) || []).filter(([, t]) => t in LINK_WEIGHT));
     for (const [wid, tag] of linked) {
       const [b2, e2] = entryOf(engines, wid);
       if (!e2 || b2 !== db || e2.speech === 'root') continue;
@@ -1825,8 +1842,15 @@ function across(engines, add, src, dst, form, entry, hints, useLinks, depth = 0)
       if (neo) l2 = { era: 'late', stage: lastStageOf(D, 'late') };
       if (!l2 || l2.era !== de) continue;
       const f2 = toPhonetic(e2.form, db).trim();
-      if (l2.stage === ds) add(f2, 5, [['link', { tag, form: e2.form }]], neo ? ['link', 'neologism'] : ['link'], []);
-      else within(engines, add, db, de, f2, l2.stage, ds, hintsOf(D, db, e2, de, l2.stage), 4, [['link', { tag, form: e2.form }]], ['link']);
+      const lw = LINK_WEIGHT[tag];
+      if (l2.stage === ds) add(f2, 5 * lw, [['link', { tag, form: e2.form }]], neo ? ['link', 'neologism'] : ['link'], []);
+      else if (ds === 0 && !neo) {
+        // the primitive of the linked word: Eldamo's, else read back (primitives)
+        const ps = primitives(engines, [db, de, l2.stage], f2, e2, hintsOf(D, db, e2, de, l2.stage), useLinks, depth + 1);
+        const att = ps.filter(t => t[3].includes('primitive-attested'));
+        for (const [f, w, route, marks, trace] of att.length ? att : ps.slice(0, 4))
+          add(f, 4 * lw * w, [['link', { tag, form: e2.form }]].concat(route), ['link'].concat(marks), trace);
+      } else within(engines, add, db, de, f2, l2.stage, ds, hintsOf(D, db, e2, de, l2.stage), 4 * lw, [['link', { tag, form: e2.form }]], ['link']);
     }
   }
   // a compound or derivative made again from its elements in the target conception

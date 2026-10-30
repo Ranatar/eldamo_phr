@@ -466,7 +466,7 @@ def _hints(ctx: Context, branch: str, entry: dict | None, era: str, stage: int) 
 
 def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, word: str | None = None,
                 limit: int = LIMIT, use_links: bool = True, exclude=frozenset(), spelled: bool = False,
-                depth: int = 0) -> list:
+                depth: int = 0, single: bool = False, raw: bool = False) -> list:
     """Variants of the form at dst = (branch, era, stage), from the form at src.
 
     Either `word` (an Eldamo page id) or `form` (in Eldamo's phonetic notation;
@@ -489,6 +489,24 @@ def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, w
     elif spelled:
         form = to_phonetic(form, sb).strip()
     hints = _hints(ctx, sb, entry, se, ss)
+    if ds == 0 and de != se and not single:
+        # the primitive form of another conception is one for both branches, as that of the word's own
+        # (primitives): what the links of both branches and the laws give, put together
+        merged = {}
+        for b in [sb] + sorted(x for x in ctx.seq if x != sb):
+            # weights as found, not shares of each branch's list: a branch with Eldamo's links weighs more
+            for v in reconstruct(ctx, src, (b, de, 0), form=form, word=word, limit=2 * LIMIT, use_links=use_links,
+                                 exclude=exclude, depth=depth, single=True, raw=True):
+                k = comparable(v['form'])
+                if k in merged:
+                    merged[k]['score'] += v['score']
+                else:
+                    merged[k] = dict(v)
+        ranked = sorted(merged.values(), key=lambda r: -r['score'])
+        total = sum(r['score'] for r in ranked) or 1.0
+        for r in ranked:
+            r['score'] = round(r['score'] / total, 3)
+        return ranked[:limit]
     results = {}
 
     def add(f, score, route, marks, steps):
@@ -507,10 +525,6 @@ def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, w
         for f, w, route, marks, trace in primitives(ctx, src, form, entry, hints, exclude, use_links, depth):
             add(f, w, route if db == sb else f'праформа, общая для обеих ветвей: {route}',
                 marks + ([] if db == sb else ['cognate']), trace if db == sb else [])
-        # except a compound each branch made of its own elements (S. Adanel, Q. *Atanel): taken back
-        # from the word so built in the other branch
-        if db != sb and entry is not None and ctx.use_elements:
-            _by_elements(ctx, add, entry, se, db, ds, depth)
     elif (db, de) == (sb, se):
         c = compose(ctx, sb, entry, se, ds, depth) if ds < ss and entry is not None else None
         # a word its elements explain: no search through rare correspondences (WIDE)
@@ -536,6 +550,8 @@ def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, w
                     r['marks'] = r['marks'] + ['phonotactics']
                     r['problems'] = problems
     ranked = sorted(results.values(), key=lambda r: -r['score'])
+    if raw:
+        return ranked[:limit]
     total = sum(r['score'] for r in ranked) or 1.0
     for r in ranked:
         r['score'] = round(r['score'] / total, 3)
@@ -1032,6 +1048,9 @@ def _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links=True, d
 
 
 NEO_LANG = {'quenya': 'nq', 'sindarin': 'ns'}
+# links between conceptions: the same word merged (combine) first, then a reference (see), then
+# the word Tolkien replaced by this one or by which he replaced it (deprecated: Q. soron < ᴱQ. earen)
+LINK_WEIGHT = {'combine': 1.0, 'see': 0.9, 'deprecated': 0.8}
 
 
 def _across(ctx, add, src, dst, form, entry, hints, exclude, use_links, depth=0):
@@ -1044,7 +1063,7 @@ def _across(ctx, add, src, dst, form, entry, hints, exclude, use_links, depth=0)
         for tag, ls in entry.get('links', {}).items():
             if tag in ('combine', 'deprecated', 'see'):
                 linked += [(x['id'], tag) for x in ls]
-        linked += ctx.reverse_links.get(entry['id'], [])
+        linked += [(w, t) for w, t in ctx.reverse_links.get(entry['id'], []) if t in LINK_WEIGHT]
         for wid, tag in linked:
             b2, e2 = ctx.entry(wid)
             if e2 is None or b2 != db or e2['speech'] == 'root':
@@ -1058,10 +1077,17 @@ def _across(ctx, add, src, dst, form, entry, hints, exclude, use_links, depth=0)
             if l2 is None or l2['era'] != de:
                 continue
             f2 = to_phonetic(e2['form'], db).strip()
+            lw = LINK_WEIGHT[tag]
             if l2['stage'] == ds:
-                add(f2, 5.0, f'связь Eldamo ({tag}): {e2["form"]}', ['link'] + (['neologism'] if neo else []), [])
+                add(f2, 5.0 * lw, f'связь Eldamo ({tag}): {e2["form"]}', ['link'] + (['neologism'] if neo else []), [])
+            elif ds == 0 and not neo:
+                # the primitive of the linked word: Eldamo's, else read back (primitives)
+                ps = primitives(ctx, (db, de, l2['stage']), f2, e2, _hints(ctx, db, e2, de, l2['stage']), exclude, use_links, depth + 1)
+                att = [t for t in ps if 'primitive-attested' in t[3]]
+                for f, w, route, marks, trace in att or ps[:4]:
+                    add(f, 4.0 * lw * w, f'связь Eldamo ({tag}) {e2["form"]}, затем {route}', ['link'] + marks, trace)
             else:
-                _within(ctx, add, db, de, f2, l2['stage'], ds, _hints(ctx, db, e2, de, l2['stage']), exclude, base_score=4.0,
+                _within(ctx, add, db, de, f2, l2['stage'], ds, _hints(ctx, db, e2, de, l2['stage']), exclude, base_score=4.0 * lw,
                         route_prefix=f'связь Eldamo ({tag}) {e2["form"]}, затем ', marks=['link'])
     # (a') a compound or derivative made again from its elements in the target conception
     if entry is not None and ctx.use_elements:

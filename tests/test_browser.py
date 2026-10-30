@@ -70,7 +70,7 @@ class Browser(unittest.TestCase):
         # the panorama fills every period; the word's own cell is attested
         page.wait_for_function("[...document.querySelectorAll('.pcell .pform')].every(x => x.textContent !== '…')", timeout=60000)
         self.assertIn('attested', page.get_attribute('.pcell[data-cell="sindarin/late/3"]', 'class'))
-        self.assertGreaterEqual(page.locator('.pcell').count(), 15)
+        self.assertEqual(page.locator('.pcell').count(), 14)        # one primitive form per conception
 
     def test_neologisms_by_switch(self):
         page = self.page(self.atlas)
@@ -173,8 +173,8 @@ class Browser(unittest.TestCase):
         card = page.inner_text('#word-card')
         self.assertIn('Ambar + lindë', card)
         # its roots follow the elements' (√MBAR + √LIN²), not guessed from the form
-        page.wait_for_function("document.querySelector('#panorama [data-roots=\"quenya/late\"]')")
-        late = page.inner_text('#panorama [data-roots="quenya/late"]')
+        page.wait_for_function("document.querySelector('#panorama [data-roots=\"late\"]')")
+        late = page.inner_text('#panorama [data-roots="late"]')
         self.assertNotIn('?', late)
         self.assertIn('+', late)
 
@@ -209,9 +209,9 @@ class Browser(unittest.TestCase):
         # G. cwîl < ᴱ√QḶÐḶ, which Eldamo deprecates for N√KWILID: the late roots are those, not the
         # roots of a word linked to it (ᴹ√MOY of NS. muig²)
         page = self.page(self.atlas + '#w=1512306021')
-        page.wait_for_function("document.querySelector('#panorama [data-roots=\"sindarin/late\"]')")
-        self.assertIn('KWILID', page.inner_text('#panorama [data-roots="sindarin/late"]'))
-        self.assertIn('QḶÐḶ', page.inner_text('#panorama [data-roots="sindarin/early"]'))
+        page.wait_for_function("document.querySelector('#panorama [data-roots=\"late\"]')")
+        self.assertIn('KWILID', page.inner_text('#panorama [data-roots="late"]'))
+        self.assertIn('QḶÐḶ', page.inner_text('#panorama [data-roots="early"]'))
 
     def test_three_elements(self):
         # a third element joins the first two: Q. alda + sil- + -ion

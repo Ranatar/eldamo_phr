@@ -83,8 +83,9 @@ class Reconstruction(unittest.TestCase):
         built = [v['form'] for v in vs if 'elements' in v['marks']]
         self.assertEqual(built[:2], ['atanel', 'ataniel'])
         self.assertIn('elements', vs[0]['marks'])
-        # the earlier stages are taken back from the word so built, not from the Sindarin form
-        for stage in (0, 1):
+        # the earlier stages are taken back from the word so built, not from the Sindarin form; the
+        # primitive form is the one both branches share
+        for stage in (1,):
             vs = R.reconstruct(self.ctx, ('sindarin', 'late', 3), ('quenya', 'late', stage), word='4023112133')
             self.assertIn('elements', vs[0]['marks'], stage)
             run = [comparable(f) for f, _ in self.ctx.forward('quenya', 'late', vs[0]['form'], stage, 2)]

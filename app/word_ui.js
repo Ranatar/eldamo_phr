@@ -580,14 +580,20 @@ function renderPanorama(s) {
   const withRoots = true;            // Eldamo's roots, else guessed from the primitive form of the row
   const head = `<tr><th scope="col"></th>${withRoots ? `<th scope="col">${T('panorama.roots')}</th>` : ''}<th scope="col">${T('panorama.primitive')}</th>${maxMid > 0 ? `<th scope="col" colspan="${maxMid}">${T('panorama.middle')}</th>` : ''}<th scope="col">${T('panorama.language')}</th></tr>`;
   const cell = (b, era, l) => {
-    const own = src[0] === b && src[1] === era && src[2] === l.stage;
+    const own = (src[0] === b || l.stage === 0) && src[1] === era && src[2] === l.stage;
     return `<td><button type="button" class="pcell${own ? ' own' : ''}" data-cell="${esc(`${b}/${era}/${l.stage}`)}" aria-label="${esc(l.marker + ' ' + l.name)}">
       <span class="marker">${esc(l.marker)}</span> <span class="pform form">…</span></button></td>`;
   };
-  const body = rows.map(r => {
+  // the roots and the primitive form of a conception are one for both branches (Primitive Elvish is
+  // their common ancestor; wordform.js: primitives): one cell over the rows of the conception
+  const body = rows.map((r, i) => {
     const first = r.langs[0], last = r.langs[r.langs.length - 1], mid = r.langs.slice(1, -1);
     const pad = maxMid - mid.length;
-    return `<tr><th scope="row">${esc(ERA_NAMES[r.era])} · ${esc(BRANCH_NAMES[r.b])}</th>${withRoots ? rootsCell(roots[r.era], `${r.b}/${r.era}`) : ''}${cell(r.b, r.era, first)}${mid.map(l => cell(r.b, r.era, l)).join('')}${pad > 0 ? `<td colspan="${pad}"></td>` : ''}${last !== first ? cell(r.b, r.era, last) : '<td></td>'}</tr>`;
+    const span = rows.filter(x => x.era === r.era).length;
+    const lead = i === 0 || rows[i - 1].era !== r.era;
+    const pb = rows.some(x => x.era === r.era && x.b === src[0]) ? src[0] : r.b;     // the branch it is computed for
+    const shared = lead ? `${withRoots ? rootsCell(roots[r.era], r.era).replace('<td', `<td rowspan="${span}"`) : ''}${cell(pb, r.era, first).replace('<td', `<td rowspan="${span}"`)}` : '';
+    return `<tr${lead ? ' class="era-first"' : ''}><th scope="row">${esc(ERA_NAMES[r.era])} · ${esc(BRANCH_NAMES[r.b])}</th>${shared}${mid.map(l => cell(r.b, r.era, l)).join('')}${pad > 0 ? `<td colspan="${pad}"></td>` : ''}${last !== first ? cell(r.b, r.era, last) : '<td></td>'}</tr>`;
   }).join('');
   box.innerHTML = `<h2>${T('panorama.title')}</h2>
     <div class="table-scroll"><table class="panorama"><thead>${head}</thead><tbody>${body}</tbody></table></div>
@@ -613,7 +619,7 @@ function renderPanorama(s) {
       if (v.marks.includes('attested') || v.marks.includes('link') || v.marks.includes('near-cognate')) btn.classList.add('attested');
       else if (v.marks.includes('neologism')) btn.classList.add('neologism');
       if (Number(stage) === 0 && !(roots[era] || []).length) {
-        const td = box.querySelector(`[data-roots="${b}/${era}"]`);
+        const td = box.querySelector(`[data-roots="${era}"]`);
         if (td) td.innerHTML = rootGuess(b, era, v.form).map(rootLink).join('/');
       }
     }

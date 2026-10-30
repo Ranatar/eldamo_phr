@@ -65,7 +65,7 @@ class InterfaceCatalog(unittest.TestCase):
                'route.': ['attested', 'same', 'forward', 'backDirect', 'backPrimitive', 'backRoot', 'cognateLink', 'viaPrimitive',
                           'nearSame', 'nearClose', 'link', 'unchanged', 'reetymology', 'then', 'byElements', 'partialLink', 'irregularLaw', 'composed', 'composedUnconfirmed'],
                'card.root.': ['element', 'cognate', 'source', 'combine', 'see', 'deprecated'],
-               'root.via.': ['element', 'cognate', 'source', 'combine', 'see', 'deprecated'],
+               'root.via.': ['element', 'cognate', 'source', 'combine', 'see', 'deprecated', 'instead'],
                'root.warn.': [w + t for w in ('deprecated', 'deleted', 'rejected', 'doubtful', 'unglossed', 'early') for t in ('', '.title')],
                'rootCard.lang.': ['p', 'mp', 'ep', 'np'],
                'tree.rel.': ['e', 'd', 'c', 's', 'x', 'k'],

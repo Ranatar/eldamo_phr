@@ -155,14 +155,19 @@ function subjectFrom(p) {
   const f = p.get('f'), where = (p.get('in') || '').split('/');
   if (f && BRANCHES.includes(where[0]) && ERAS.includes(where[1])) {
     const stage = Number(where[2]);
-    return { kind: 'form', key: `f:${f}@${where.join('/')}`, form: f, branch: where[0], period: [where[0], where[1], Number.isFinite(stage) ? stage : lastStage(engine(where[0]), where[1])] };
+    // the elements it was made of in word formation (wordform_ui.js), so that its etymology goes on with it
+    const lex = engine(where[0]).lexicon;
+    const of = (p.get('of') || '').split(',').filter(Boolean);
+    const elements = of.length >= 2 && of.every(x => lex.has(x)) ? of.map(x => lex.get(x)) : [];
+    return { kind: 'form', key: `f:${f}@${where.join('/')}${elements.length ? '<' + of.join(',') : ''}`, form: f, branch: where[0], elements,
+      period: [where[0], where[1], Number.isFinite(stage) ? stage : lastStage(engine(where[0]), where[1])] };
   }
   return null;
 }
 // what WF.reconstruct takes for the subject
 function sourceOf(s) {
   if (!s) return null;
-  if (s.kind === 'form') return { form: s.form };
+  if (s.kind === 'form') return (s.elements || []).length ? { form: s.form, elements: s.elements.map(e => e.id) } : { form: s.form };
   if (language(engine(s.branch), s.entry.lang)) return { word: s.id };
   return { form: s.entry.form, spelled: true };       // a neologism: its spelling at the latest stage
 }
@@ -232,11 +237,11 @@ document.addEventListener('click', e => {
 function openWord(id, branch) {
   $('q-results').hidden = true;
   $('q').value = '';
-  QR.set({ w: id, b: branch || null, r: null, f: null, in: null, dst: null }, true);
+  QR.set({ w: id, b: branch || null, r: null, f: null, in: null, of: null, dst: null }, true);
   $('word-section').scrollIntoView({ block: 'start' });
 }
-function openForm(form, b, era, stage) {
-  QR.set({ w: null, r: null, f: form, in: `${b}/${era}/${stage}`, dst: null }, true);
+function openForm(form, b, era, stage, elements) {
+  QR.set({ w: null, r: null, f: form, in: `${b}/${era}/${stage}`, of: (elements || []).length ? elements.join(',') : null, dst: null }, true);
   $('word-section').scrollIntoView({ block: 'start' });
 }
 
@@ -255,7 +260,8 @@ function cardHtml(s) {
   if (s.kind === 'form') {
     return `<div class="word-head"><span class="marker">${esc(periodName(b, era, stage))}</span> <strong class="form big">${esc(shown(s.form, b, era, stage))}</strong>
       ${shown(s.form, b, era, stage) !== s.form ? `<span class="ipa muted">[${esc(s.form)}]</span>` : ''}</div>
-      <p class="small muted">${T('card.formOnly')}</p>`;
+      ${(s.elements || []).length ? `<p>${T('card.madeOf')} ${s.elements.map(x => `<a href="#" class="form" data-word="${esc(x.id)}" data-branch="${esc(b)}" title="${esc(x.gloss || '')}">${esc(x.form)}</a>`).join(' + ')}</p>` : ''}
+      <p class="small muted">${T((s.elements || []).length ? 'card.formMade' : 'card.formOnly')}</p>`;
   }
   const E = engine(b), e = s.entry;
   const lang = language(E, e.lang);
@@ -345,7 +351,7 @@ function rootRef(id) {
 }
 function openRoot(id) {
   $('q-results').hidden = true;
-  QR.set({ r: id, w: null, f: null, in: null, dst: null }, true);
+  QR.set({ r: id, w: null, f: null, in: null, of: null, dst: null }, true);
   $('word-section').scrollIntoView({ block: 'start' });
 }
 document.addEventListener('click', e => {
@@ -458,26 +464,74 @@ function entryRoots(b, e) {
   for (const [part, lang, id, form, path] of e.root_gaps || []) out.push({ id, form, marker: (language(E, lang) || {}).marker || '', part, gap: true, paths: [path || []] });
   return out.sort((x, y) => (x.part ?? -1) - (y.part ?? -1));
 }
-// roots by era: the word's own for its era; for another era those of the first word Eldamo links to it
-// in that era, an earlier or later conception first (Q. Ambar: ᴱQ. irmin < ᴱ√IÐI). A cognate of the
+// roots by era: the word's own for its era. For another era, first the roots Eldamo puts in place of
+// the word's own there -- the root advised instead of it (ᴱ√QḶÐḶ: use N√KWILID), the one it is merged
+// into or filed under (root_index.py); then those of the first word Eldamo links to it in that era, an
+// earlier or later conception first, in Eldamo's order (Q. Ambar: ᴱQ. irmin < ᴱ√IÐI). A cognate of the
 // same era does not add its roots to the word's (S. Gwahaedir, linked to Q. palantír).
 const LINK_ORDER = { combine: 0, deprecated: 1, see: 2, cognate: 3 };
+const ROOT_ERA = { p: 'late', np: 'late', mp: 'middle', ep: 'early' };
+// roots standing for a root in other eras: [[era, id]], nearest first
+function rootCounterparts(id) {
+  const out = [], seen = new Set([id]);
+  const todo = [id];
+  while (todo.length) {
+    const r = ROOTS[todo.shift()];
+    if (!r) continue;
+    for (const x of [...(r.instead || []), ...(r.into || []), ...(r.under ? [r.under] : []), ...(r.canon ? [r.canon] : []), ...(r.merged || []), ...(r.here || [])]) {
+      if (seen.has(x) || !ROOTS[x]) continue;
+      seen.add(x);
+      out.push([ROOT_ERA[ROOTS[x].l], x]);
+      todo.push(x);
+    }
+  }
+  return out;
+}
+function mappedRoots(own, era) {
+  // every part of the word's roots needs a root of that era
+  const out = [];
+  const parts = new Map();
+  for (const r of own) if (!r.gap) { const k = r.part ?? -1; if (!parts.has(k)) parts.set(k, []); parts.get(k).push(r); }
+  if (!parts.size) return null;
+  for (const [k, rs] of parts) {
+    const hit = rs.flatMap(r => rootCounterparts(r.id)).find(([e]) => e === era);
+    if (!hit) return null;
+    const x = ROOTS[hit[1]];
+    out.push({ id: hit[1], form: x.f, marker: ROOT_MARKERS[x.l] || '√', via: 'instead', part: k < 0 ? null : k });
+  }
+  return out;
+}
 function rootsByEra(s) {
   const out = {};
+  if (s && s.kind === 'form' && (s.elements || []).length) {
+    // a word made in word formation: its elements' roots, era by era, each element a part of its own
+    const per = s.elements.map(e => rootsByEra({ kind: 'word', branch: s.branch, entry: e }));
+    for (const era of ERAS) {
+      if (!per.every(r => (r[era] || []).length)) continue;
+      out[era] = per.flatMap((r, k) => r[era].map(x => ({ ...x, part: k * 100 + (x.part ?? 0) })));
+    }
+    return out;
+  }
   if (!s || s.kind !== 'word') return out;
   const own = eraOf(engine(s.branch), s.entry.lang);
-  if (own && (s.entry.roots || []).length) out[own] = entryRoots(s.branch, s.entry);
+  const ownRoots = (s.entry.roots || []).length ? entryRoots(s.branch, s.entry) : [];
+  if (own && ownRoots.length) out[own] = ownRoots;
+  for (const era of ERAS) {
+    if (era === own || out[era]) continue;
+    const m = mappedRoots(ownRoots, era);
+    if (m) out[era] = m;
+  }
   const linked = [];
-  for (const id of linkedIds(s.entry.id)) {
+  linkedIds(s.entry.id).forEach((id, k) => {
     const w = lookup(id, s.branch);
-    if (!w || !(w.entry.roots || []).length) continue;
+    if (!w || !(w.entry.roots || []).length) return;
     const era = eraOf(engine(w.branch), w.entry.lang);
-    if (!era || era === own) continue;
+    if (!era || era === own) return;
     const tags = [...Object.entries(s.entry.links || {}), ...Object.entries(w.entry.links || {})]
       .filter(([, ids]) => ids.includes(id) || ids.includes(s.entry.id)).map(([t]) => LINK_ORDER[t] ?? 9);
-    linked.push([Math.min(9, ...tags), w.entry.form, era, w]);
-  }
-  linked.sort((a, b) => a[0] - b[0] || (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0));
+    linked.push([Math.min(9, ...tags), k, era, w]);
+  });
+  linked.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
   for (const [, , era, w] of linked) if (!out[era]) out[era] = entryRoots(w.branch, w.entry);
   return out;
 }
@@ -492,7 +546,7 @@ function rootsHtml(list) {
   }
   return groups.map(g => g.items.join('/')).join(' + ');
 }
-const rootMarker = (E, lang) => { const l = language(E, lang); return l ? l.marker.replace('✶', '√') : '√'; };
+const rootMarker = (E, lang) => { const l = language(E, lang); return ROOT_MARKERS[lang] || (l ? l.marker.replace('✶', '√') : '√'); };
 // a root as a link to its Eldamo page: own, of the word's elements, of a cognate, or guessed
 function rootLink(r) {
   if (r.gap) return `<a href="${SITE}words/word-${esc(r.id)}.html" target="_blank" rel="noopener" class="root gap" title="${esc(T('root.gapTitle'))}"><span class="marker">${esc(r.marker)}</span><span class="form">${esc(r.form)}</span></a>`;

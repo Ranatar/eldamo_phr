@@ -167,10 +167,37 @@ class Browser(unittest.TestCase):
         page.click('#wf-go')
         self.assertIn('восстановлена', page.inner_text('#wf-output'))
         self.assertGreater(page.locator('#wf-output .wf-variant').count(), 1)
-        # a variant becomes the current word: a form without an Eldamo page
+        # a variant becomes the current word: a word without an Eldamo page that keeps its elements
         page.click('#wf-output .wf-variant.main [data-use]')
-        page.wait_for_function("location.hash.includes('f=') && document.getElementById('word-card').textContent.includes('Форма без статьи')")
-        self.assertIn('Форма без статьи Eldamo', page.inner_text('#word-card'))
+        page.wait_for_function("location.hash.includes('of=4273482913') && document.getElementById('word-card').textContent.includes('Слово без статьи')")
+        card = page.inner_text('#word-card')
+        self.assertIn('Ambar + lindë', card)
+        # its roots follow the elements' (√MBAR + √LIN²), not guessed from the form
+        page.wait_for_function("document.querySelector('#panorama [data-roots=\"quenya/late\"]')")
+        late = page.inner_text('#panorama [data-roots="quenya/late"]')
+        self.assertNotIn('?', late)
+        self.assertIn('+', late)
+
+    def test_formed_word_keeps_etymology(self):
+        # Q. quet- + alcar taken from word formation: the primitive form is the elements' (✶aklar),
+        # Sindarin goes by their cognates S. ped- (through T. pet-) and S. aglar
+        page = self.page(self.atlas + '#f=kʷetalkar&in=quenya/late/2&of=2355375457,2464648865')
+        vs = page.evaluate('''() => WF.reconstruct(QU.allEngines(), ['quenya', 'late', 2], ['sindarin', 'late', 3],
+            { form: 'kʷetalkar', elements: ['2355375457', '2464648865'], limit: 3 })''')
+        self.assertIn('byElements', [s[0] for s in vs[0]['route']])
+        self.assertIn('ped-', vs[0]['route'][0][1]['names'])
+        self.assertIn('aglar', vs[0]['route'][0][1]['names'])
+        p = page.evaluate('''() => WF.reconstruct(QU.allEngines(), ['quenya', 'late', 2], ['quenya', 'late', 0],
+            { form: 'kʷetalkar', elements: ['2355375457', '2464648865'], limit: 1 })''')
+        self.assertIn('kl', p[0]['form'])
+
+    def test_root_instead_in_other_era(self):
+        # G. cwîl < ᴱ√QḶÐḶ, which Eldamo deprecates for N√KWILID: the late roots are those, not the
+        # roots of a word linked to it (ᴹ√MOY of NS. muig²)
+        page = self.page(self.atlas + '#w=1512306021')
+        page.wait_for_function("document.querySelector('#panorama [data-roots=\"sindarin/late\"]')")
+        self.assertIn('KWILID', page.inner_text('#panorama [data-roots="sindarin/late"]'))
+        self.assertIn('QḶÐḶ', page.inner_text('#panorama [data-roots="sindarin/early"]'))
 
     def test_three_elements(self):
         # a third element joins the first two: Q. alda + sil- + -ion

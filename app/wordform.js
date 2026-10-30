@@ -1375,6 +1375,14 @@ function reconstruct(engines, src, dst, opts = {}) {
   const S = engines[sb], D = engines[db];
   let entry = null;
   if (opts.word) entry = entryOf(engines, opts.word)[1];
+  // a word made in word formation: what is known is its elements (word_ui.js: subjectFrom)
+  else if ((opts.elements || []).length >= 2 && opts.form != null)
+  {
+    entry = { id: null, branch: sb, form: opts.form, lang: codeOf(S, se, ss), gloss: '', links: {}, elements: opts.elements };
+    // its primitive form: its elements' (ᴹ✶kwet- + ✶aklar)
+    const c = compose(engines, sb, entry, se, 0, opts.depth || 0);
+    if (c) entry.starts = [c.split('+').join('')];
+  }
   let form = opts.form;
   if (form == null) {
     if (!entry) return [];
@@ -1563,10 +1571,26 @@ function linkedCognates(engines, wid) {
 }
 // words of the target language linked as cognates, partial cognates aside (reconstruct.py: _counterparts)
 function counterparts(engines, wid, branch, code) {
-  return linkedCognates(engines, wid).filter(([i, src]) => {
+  const D = engines[branch];
+  const out = linkedCognates(engines, wid).filter(([i, src]) => {
     const [b2, e2] = entryOf(engines, i);
-    return b2 === branch && e2 && e2.lang === code && !partialCognate(engines[branch], src, e2);
+    return b2 === branch && e2 && e2.lang === code && !partialCognate(D, src, e2);
   }).map(([i]) => i);
+  if (out.length) return out;
+  // through a cognate in a language of neither branch, which has no entry here (Q. quet- ~ T. pet- ~ S. ped-;
+  // reconstruct.py: _counterparts)
+  const b0 = entryOf(engines, wid)[0];
+  const inBranch = (b, c) => !!b && engines[b].languages.some(l => l.code === c);
+  const rev = reverseLinks(engines);
+  for (const [m, src] of linkedCognates(engines, wid)) {
+    const em = entryOf(engines, m)[1];
+    if (em && (inBranch(b0, em.lang) || inBranch(branch, em.lang))) continue;
+    for (const [i, tag] of rev.get(m) || []) {
+      const [b2, e2] = entryOf(engines, i);
+      if (tag === 'cognate' && b2 === branch && e2 && e2.lang === code && !out.includes(i) && i !== wid && !partialCognate(D, src, e2)) out.push(i);
+    }
+  }
+  return out;
 }
 // a cognate in another language of the target branch, the nearest conception first (reconstruct.py: _other_conception)
 function otherConception(engines, wid, branch, code) {
@@ -1582,7 +1606,8 @@ function otherConception(engines, wid, branch, code) {
   }
   const rev = reverseLinks(engines);
   for (const [, i, e2] of found.sort((a, b) => a[0] - b[0])) {
-    const later = ((e2.links || {}).combine || []).concat((rev.get(i) || []).filter(([, t]) => t === 'combine').map(([w]) => w));
+    // the word of the target language it is merged with, or that Eldamo puts instead of it (G. cwed- > S. ped-)
+    const later = ((e2.links || {}).combine || []).concat((rev.get(i) || []).filter(([, t]) => t === 'combine').map(([w]) => w), (e2.links || {}).deprecated || []);
     for (const w of later) {
       const [b3, e3] = entryOf(engines, w);
       if (b3 === branch && e3 && e3.lang === code) return [w, e3.form];
@@ -1621,7 +1646,7 @@ function byElements(engines, add, entry, era, db, ds, depth = 0) {
   const last = lastStageOf(D, era);
   const code = codeOf(D, era, last);
   if (els.length < 2 || code == null || !els.every(Boolean) || depth >= COMPOSE_DEPTH) return;
-  const sb = entryOf(engines, entry.id)[0];
+  const sb = entry.branch || entryOf(engines, entry.id)[0];
   const ids = [], names = [], pseudo = new Map();
   for (const x of els) {
     const c = counterparts(engines, x, db, code);
@@ -1693,6 +1718,7 @@ function sideways(engines, add, src, dst, form, entry, hints, useLinks = true, d
     }
   }
 }
+const NEO_LANG = { quenya: 'nq', sindarin: 'ns' };
 function across(engines, add, src, dst, form, entry, hints, useLinks, depth = 0) {
   const [sb, se, ss] = src, [db, de, ds] = dst;
   const S = engines[sb], D = engines[db];
@@ -1704,10 +1730,13 @@ function across(engines, add, src, dst, form, entry, hints, useLinks, depth = 0)
     for (const [wid, tag] of linked) {
       const [b2, e2] = entryOf(engines, wid);
       if (!e2 || b2 !== db || e2.speech === 'root') continue;
-      const l2 = D.languages.find(l => l.code === e2.lang);
+      let l2 = D.languages.find(l => l.code === e2.lang);
+      // a word of Neo-Quenya or Neo-Sindarin Eldamo suggests instead: the latest stage (reconstruct.py: _across)
+      const neo = !l2 && e2.lang === NEO_LANG[db] && de === 'late';
+      if (neo) l2 = { era: 'late', stage: lastStageOf(D, 'late') };
       if (!l2 || l2.era !== de) continue;
       const f2 = toPhonetic(e2.form, db).trim();
-      if (l2.stage === ds) add(f2, 5, [['link', { tag, form: e2.form }]], ['link'], []);
+      if (l2.stage === ds) add(f2, 5, [['link', { tag, form: e2.form }]], neo ? ['link', 'neologism'] : ['link'], []);
       else within(engines, add, db, de, f2, l2.stage, ds, hintsOf(D, db, e2, de, l2.stage), 4, [['link', { tag, form: e2.form }]], ['link']);
     }
   }

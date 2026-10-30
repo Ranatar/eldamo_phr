@@ -212,8 +212,8 @@
 | eq. [Eldalie](https://eldamo.org/content/words/word-1263240023.html) | LĪ | g. [Eglothrim](https://eldamo.org/content/words/word-640414111.html) | EÐE¹ |
 | q. [Eldalótë](https://eldamo.org/content/words/word-3465788703.html) | EL + LOT(H) | s. [Edhellos](https://eldamo.org/content/words/word-2246643897.html) | DEL²/DEL¹ + LOT(H) |
 | eq. [Eldamar](https://eldamo.org/content/words/word-2091931097.html) | MBARA | g. [Eglamar](https://eldamo.org/content/words/word-1027427819.html) | EÐE¹ |
-| q. [Elentári](https://eldamo.org/content/words/word-1674375635.html) | EL + TĀ/TAƷ | s. [Elbereth](https://eldamo.org/content/words/word-862238445.html) | EL + BER/BARATH |
 | mq. [Elentári](https://eldamo.org/content/words/word-1620801097.html) | EL | n. [Elbereth](https://eldamo.org/content/words/word-2462581423.html) | EL + BARATH |
+| q. [Elentári](https://eldamo.org/content/words/word-1674375635.html) | EL + TĀ/TAƷ | s. [Elbereth](https://eldamo.org/content/words/word-862238445.html) | EL + BER/BARATH |
 | q. [Elenya](https://eldamo.org/content/words/word-2372957001.html) | EL | s. [Orgilion](https://eldamo.org/content/words/word-2411056289.html) | UR + (Ñ)GIL |
 | eq. [Elmavoite](https://eldamo.org/content/words/word-4001535895.html) | MAHA | g. [Ermabwed](https://eldamo.org/content/words/word-2491978325.html) | MAPA |
 | q. [emmë²](https://eldamo.org/content/words/word-3989317599.html) | AM¹ | s. [emig](https://eldamo.org/content/words/word-2157771091.html) | AM¹ + NIK |
@@ -471,8 +471,8 @@
 | q. [Tarmacorto](https://eldamo.org/content/words/word-3304032071.html) | TĀ/TAƷ + KOR | s. [Orchorod](https://eldamo.org/content/words/word-1935435815.html) | OROT/RŌ/ORO + KOR |
 | eq. [Tasarinan](https://eldamo.org/content/words/word-1523647235.html) | TASA + NAÐA | g. [Dor-tathrin](https://eldamo.org/content/words/word-1470033543.html) | TASA |
 | eq. [Tasarinan](https://eldamo.org/content/words/word-1523647235.html) | TASA + NAÐA | g. [Nan Tathrin](https://eldamo.org/content/words/word-1418380525.html) | NAÐA + TASA |
-| q. [Tasarinan](https://eldamo.org/content/words/word-3669453133.html) | TATHAR + NAD | s. [Nan-tathren](https://eldamo.org/content/words/word-1055336505.html) | NAD + TATHAR |
 | mq. [Tasarinan](https://eldamo.org/content/words/word-1141369723.html) | TATHAR + NAD | n. [Nan-tathren](https://eldamo.org/content/words/word-2328899105.html) | NAD + TATHAR |
+| q. [Tasarinan](https://eldamo.org/content/words/word-3669453133.html) | TATHAR + NAD | s. [Nan-tathren](https://eldamo.org/content/words/word-1055336505.html) | NAD + TATHAR |
 | eq. [Tauler](https://eldamo.org/content/words/word-2122943601.html) | TAW̯A | g. [Thlim Taul](https://eldamo.org/content/words/word-2118504543.html) | TULU |
 | eq. [taule²](https://eldamo.org/content/words/word-73343783.html) | TAW̯A | g. [taul](https://eldamo.org/content/words/word-714044475.html) | TULU |
 | mq. [Taure Huinéva](https://eldamo.org/content/words/word-1930144875.html) | TAWAR + PHUY | n. [Taur-na-Fuin](https://eldamo.org/content/words/word-1783930661.html) | TAWAR + NĀ¹/ANA¹ + PHUY |

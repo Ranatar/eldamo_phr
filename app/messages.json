@@ -31,6 +31,10 @@
   "ru": "Деривации Eldamo этого слова в справочнике",
   "en": "Eldamo's derivations of this word in the reference"
  },
+ "card.formMade": {
+  "ru": "Слово без статьи Eldamo. Его корни и реконструкция идут от этимологии элементов; всё, что выводится из него, — гипотеза.",
+  "en": "A word without an Eldamo entry. Its roots and reconstruction follow its elements' etymology; everything derived from it is a hypothesis."
+ },
  "card.formOnly": {
   "ru": "Форма без статьи Eldamo: восстановленная или построенная. Всё, что выводится из неё, — гипотеза.",
   "en": "A form without an Eldamo entry: reconstructed or built. Everything derived from it is a hypothesis."
@@ -46,6 +50,10 @@
  "card.graphTitle": {
   "ru": "Граф происхождения: слово, его корни и производные (graph.html)",
   "en": "The graph of origins: the word, its roots and derivatives (graph.html)"
+ },
+ "card.madeOf": {
+  "ru": "Составлено в словообразовании из",
+  "en": "Made in word formation from"
  },
  "card.mark": {
   "ru": "пометка Eldamo «{mark}»",
@@ -1261,6 +1269,10 @@
  "root.via.element": {
   "ru": "Корень составляющей слова (статья Eldamo)",
   "en": "A root of one of the word's elements (Eldamo page)"
+ },
+ "root.via.instead": {
+  "ru": "Корень этой концепции, который Eldamo ставит на место корня слова (советует вместо него, сливает или записывает под ним)",
+  "en": "The root of this conception Eldamo puts in place of the word's root (advised instead of it, merged with it or filed under it)"
  },
  "root.via.see": {
   "ru": "Корень слова, на которое ссылается статья («см.») (статья Eldamo)",

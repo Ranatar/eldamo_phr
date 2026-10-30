@@ -711,6 +711,20 @@ def _counterparts(ctx, wid: str, branch: str, code: str) -> list:
         b2, e2 = ctx.entry(i)
         if b2 == branch and e2 is not None and e2['lang'] == code and not partial_cognate(src, e2):
             out.append(i)
+    if out:
+        return out
+    # through a cognate in a language of neither branch, which has no entry here (Q. quet- ~
+    # T. pet- ~ S. ped-)
+    b0 = ctx.entry(wid)[0]
+    for m, src in _linked_cognates(ctx, wid):
+        bm, em = ctx.entry(m)
+        if em is not None and ((b0 and em['lang'] in ctx.langs(b0)) or em['lang'] in ctx.langs(branch)):
+            continue
+        for i, tag in ctx.reverse_links.get(m, []):
+            b2, e2 = ctx.entry(i)
+            if tag == 'cognate' and b2 == branch and e2 is not None and e2['lang'] == code \
+                    and i not in out and i != wid and not partial_cognate(src, e2):
+                out.append(i)
     return out
 
 
@@ -729,8 +743,11 @@ def _other_conception(ctx, wid: str, branch: str, code: str):
         found.append((abs(order.index(langs[e2['lang']]['era']) - order.index(era)), i, e2))
     # the nearest conception first (for late Quenya: ᴹQ. hosto, not ᴱQ. hos(se))
     for _, i, e2 in sorted(found, key=lambda t: t[0]):
+        # the word of the target language it is merged with, or that Eldamo puts instead of it
+        # (G. cwed- > S. ped-)
         later = [x['id'] for x in e2.get('links', {}).get('combine', ())]
         later += [w for w, tag in ctx.reverse_links.get(i, []) if tag == 'combine']
+        later += [x['id'] for x in e2.get('links', {}).get('deprecated', ())]
         for w in later:
             b3, e3 = ctx.entry(w)
             if b3 == branch and e3 is not None and e3['lang'] == code:
@@ -885,6 +902,9 @@ def _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links=True, d
                     ['near-cognate'], [])
 
 
+NEO_LANG = {'quenya': 'nq', 'sindarin': 'ns'}
+
+
 def _across(ctx, add, src, dst, form, entry, hints, exclude, use_links, depth=0):
     sb, se, ss = src
     db, de, ds = dst
@@ -901,11 +921,16 @@ def _across(ctx, add, src, dst, form, entry, hints, exclude, use_links, depth=0)
             if e2 is None or b2 != db or e2['speech'] == 'root':
                 continue
             l2 = ctx.langs(db).get(e2['lang'])
+            neo = l2 is None and e2['lang'] == NEO_LANG.get(db) and de == 'late'
+            if neo:
+                # a word of Neo-Quenya or Neo-Sindarin Eldamo suggests instead (G. cwîl -> NS. pell):
+                # a form of the latest stage of the late conception
+                l2 = {'era': 'late', 'stage': ctx.last_stage(db, 'late')}
             if l2 is None or l2['era'] != de:
                 continue
             f2 = to_phonetic(e2['form'], db).strip()
             if l2['stage'] == ds:
-                add(f2, 5.0, f'связь Eldamo ({tag}): {e2["form"]}', ['link'], [])
+                add(f2, 5.0, f'связь Eldamo ({tag}): {e2["form"]}', ['link'] + (['neologism'] if neo else []), [])
             else:
                 _within(ctx, add, db, de, f2, l2['stage'], ds, _hints(ctx, db, e2, de, l2['stage']), exclude, base_score=4.0,
                         route_prefix=f'связь Eldamo ({tag}) {e2["form"]}, затем ', marks=['link'])

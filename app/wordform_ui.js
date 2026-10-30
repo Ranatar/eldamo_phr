@@ -198,7 +198,7 @@ $('wf-output').addEventListener('click', e => {
   const u = e.target.closest('[data-use]');
   if (!u) return;
   const E = engine(state.branch);
-  QU.openForm(u.dataset.use, state.branch, era(), Math.max(...E.languages.filter(l => l.era === era()).map(l => l.stage)));
+  QU.openForm(u.dataset.use, state.branch, era(), Math.max(...E.languages.filter(l => l.era === era()).map(l => l.stage)), state.picked.filter(Boolean));
 });
 QU.onSubject((s, why) => { if (why === 'subject') onSubject(s); else if (why === 'neo') SLOTS.forEach(search); });
 setBranch(state.branch, 'late');

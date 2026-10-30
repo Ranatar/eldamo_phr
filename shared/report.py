@@ -129,7 +129,7 @@ def partial_cognates(branches: dict) -> tuple[int, list]:
     rooted, out = 0, []
     roots = lambda e: ' + '.join('/'.join(r['form'] for r in e['roots'] if r.get('part', 0) == k)
                                  for k in sorted({r.get('part', 0) for r in e['roots']}))
-    for i, j in sorted(pairs, key=lambda t: (lex[a][t[0]]['form'].lower(), lex[b][t[1]]['form'].lower())):
+    for i, j in sorted(pairs, key=lambda t: (lex[a][t[0]]['form'].lower(), lex[b][t[1]]['form'].lower(), t)):
         e1, e2 = lex[a][i], lex[b][j]
         if not e1.get('roots') or not e2.get('roots'):
             continue

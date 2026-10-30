@@ -268,6 +268,8 @@ class Browser(unittest.TestCase):
     def test_origin_tree(self):
         # S. Mithrandir: mith + randir, randir = √RAN + dîr < √N(D)ER
         page = self.page(self.atlas + '#w=2655041701')
+        # its panorama keeps the page busy for a while (docs/how-it-works.md, §7): let it finish first
+        page.wait_for_function("[...document.querySelectorAll('.pcell .pform')].every(x => x.textContent !== '…')", timeout=180000)
         page.click('#word-card details.origin summary')
         tree = page.inner_text('#word-card details.origin')
         for x in ('randir', 'dîr', 'RAN', 'N(D)ER', 'MITH'):

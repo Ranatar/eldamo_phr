@@ -112,9 +112,23 @@ def run_tests(no_browser: bool) -> int:
     for proc, log in procs:
         code = proc.wait() or code
         log.seek(0)
-        sys.stdout.write(log.read().decode('utf-8', 'replace'))
+        text = log.read().decode('utf-8', 'replace')
+        sys.stdout.write(text)
         sys.stdout.flush()
+        if os.environ.get('GITHUB_ACTIONS'):
+            annotate(text)
     return code
+
+
+def annotate(text: str) -> None:
+    """On GitHub Actions: each failed test as an annotation (its name and the last line of its
+    traceback), readable through the API where the full log is not."""
+    for block in text.split('=' * 70)[1:]:
+        lines = [l for l in block.strip().splitlines() if l.strip()]
+        head = next((l for l in lines if l.startswith(('FAIL:', 'ERROR:'))), None)
+        if head:
+            tail = next((l for l in reversed(lines) if not l.startswith(('-' * 10, 'Ran ', 'FAILED', 'OK'))), '')
+            print(f'::error::{head} -- {tail[:400]}', flush=True)
 
 
 def main(argv=None):

@@ -213,6 +213,7 @@ footer { max-width: 1180px; margin: 0 auto; padding: 8px 16px 40px; font-size: 1
 table.panorama { border-collapse: separate; border-spacing: 4px; }
 table.panorama th { font-weight: 600; text-align: left; font-size: 13px; color: var(--muted); white-space: nowrap; padding: 0 6px; }
 table.panorama td { padding: 0; }
+table.panorama td[rowspan] { vertical-align: middle; }
 .pcell {
   width: 100%; min-width: 120px; text-align: left; display: flex; flex-wrap: wrap; gap: 2px 6px; align-items: baseline;
   background: var(--panel-2); border-color: transparent;
@@ -2095,6 +2096,22 @@ function reconstruct(engines, src, dst, opts = {}) {
     form = forms[0];
   } else if (opts.spelled) form = toPhonetic(form, sb).trim();
   const hints = hintsOf(S, sb, entry, se, ss);
+  if (ds === 0 && de !== se && !opts.single) {
+    // the primitive form of another conception is one for both branches (reconstruct.py)
+    const merged = new Map();
+    for (const b of [sb, ...Object.keys(engines).filter(x => x !== sb).sort()]) {
+      // weights as found, not shares of each branch's list: a branch with Eldamo's links weighs more
+      for (const v of reconstruct(engines, src, [b, de, 0], { ...opts, form, spelled: false, limit: 2 * RECON_LIMIT, single: true, raw: true })) {
+        const k = comparable(v.form);
+        if (merged.has(k)) merged.get(k).score += v.score;
+        else merged.set(k, { ...v });
+      }
+    }
+    const ranked = [...merged.values()].sort((a, b) => b.score - a.score);
+    const total = ranked.reduce((x, r) => x + r.score, 0) || 1;
+    for (const r of ranked) r.score = r3(r.score / total);
+    return ranked.slice(0, opts.limit || RECON_LIMIT);
+  }
   const results = new Map();
   const add = (f, score, route, marks, steps) => {
     const k = comparable(f);
@@ -2107,8 +2124,6 @@ function reconstruct(engines, src, dst, opts = {}) {
     // the primitive form: one for both branches (primitives)
     for (const [f, w, route, marks, trace] of primitives(engines, src, form, entry, hints, opts.useLinks !== false, depth))
       add(f, w, db === sb ? route : [['sharedPrimitive']].concat(route), db === sb ? marks : marks.concat(['cognate']), db === sb ? trace : []);
-    // except a compound each branch made of its own elements (S. Adanel, Q. *Atanel; reconstruct.py)
-    if (db !== sb && entry) byElements(engines, add, entry, se, db, ds, depth);
   } else if (sb === db && se === de) {
     const c = ds < ss && entry ? compose(engines, sb, entry, se, ds, depth) : null;
     // a word its elements explain: no search through rare correspondences (WIDE)
@@ -2128,6 +2143,7 @@ function reconstruct(engines, src, dst, opts = {}) {
     }
   }
   const ranked = [...results.values()].sort((a, b) => b.score - a.score);
+  if (opts.raw) return ranked.slice(0, opts.limit || RECON_LIMIT);
   const total = ranked.reduce((x, r) => x + r.score, 0) || 1;
   for (const r of ranked) r.score = r3(r.score / total);
   return ranked.slice(0, opts.limit || RECON_LIMIT);
@@ -2515,6 +2531,8 @@ function sideways(engines, add, src, dst, form, entry, hints, useLinks = true, d
   }
 }
 const NEO_LANG = { quenya: 'nq', sindarin: 'ns' };
+// links between conceptions: combine first, then see, then deprecated (reconstruct.py: LINK_WEIGHT)
+const LINK_WEIGHT = { combine: 1, see: 0.9, deprecated: 0.8 };
 function across(engines, add, src, dst, form, entry, hints, useLinks, depth = 0) {
   const [sb, se, ss] = src, [db, de, ds] = dst;
   const S = engines[sb], D = engines[db];
@@ -2522,7 +2540,7 @@ function across(engines, add, src, dst, form, entry, hints, useLinks, depth = 0)
   if (useLinks && entry) {
     const linked = [];
     for (const [tag, ids] of Object.entries(entry.links || {})) if (['combine', 'deprecated', 'see'].includes(tag)) for (const id of ids) linked.push([id, tag]);
-    linked.push(...(reverseLinks(engines).get(entry.id) || []));
+    linked.push(...(reverseLinks(engines).get(entry.id) || []).filter(([, t]) => t in LINK_WEIGHT));
     for (const [wid, tag] of linked) {
       const [b2, e2] = entryOf(engines, wid);
       if (!e2 || b2 !== db || e2.speech === 'root') continue;
@@ -2532,8 +2550,15 @@ function across(engines, add, src, dst, form, entry, hints, useLinks, depth = 0)
       if (neo) l2 = { era: 'late', stage: lastStageOf(D, 'late') };
       if (!l2 || l2.era !== de) continue;
       const f2 = toPhonetic(e2.form, db).trim();
-      if (l2.stage === ds) add(f2, 5, [['link', { tag, form: e2.form }]], neo ? ['link', 'neologism'] : ['link'], []);
-      else within(engines, add, db, de, f2, l2.stage, ds, hintsOf(D, db, e2, de, l2.stage), 4, [['link', { tag, form: e2.form }]], ['link']);
+      const lw = LINK_WEIGHT[tag];
+      if (l2.stage === ds) add(f2, 5 * lw, [['link', { tag, form: e2.form }]], neo ? ['link', 'neologism'] : ['link'], []);
+      else if (ds === 0 && !neo) {
+        // the primitive of the linked word: Eldamo's, else read back (primitives)
+        const ps = primitives(engines, [db, de, l2.stage], f2, e2, hintsOf(D, db, e2, de, l2.stage), useLinks, depth + 1);
+        const att = ps.filter(t => t[3].includes('primitive-attested'));
+        for (const [f, w, route, marks, trace] of att.length ? att : ps.slice(0, 4))
+          add(f, 4 * lw * w, [['link', { tag, form: e2.form }]].concat(route), ['link'].concat(marks), trace);
+      } else within(engines, add, db, de, f2, l2.stage, ds, hintsOf(D, db, e2, de, l2.stage), 4 * lw, [['link', { tag, form: e2.form }]], ['link']);
     }
   }
   // a compound or derivative made again from its elements in the target conception
@@ -3246,14 +3271,20 @@ function renderPanorama(s) {
   const withRoots = true;            // Eldamo's roots, else guessed from the primitive form of the row
   const head = `<tr><th scope="col"></th>${withRoots ? `<th scope="col">${T('panorama.roots')}</th>` : ''}<th scope="col">${T('panorama.primitive')}</th>${maxMid > 0 ? `<th scope="col" colspan="${maxMid}">${T('panorama.middle')}</th>` : ''}<th scope="col">${T('panorama.language')}</th></tr>`;
   const cell = (b, era, l) => {
-    const own = src[0] === b && src[1] === era && src[2] === l.stage;
+    const own = (src[0] === b || l.stage === 0) && src[1] === era && src[2] === l.stage;
     return `<td><button type="button" class="pcell${own ? ' own' : ''}" data-cell="${esc(`${b}/${era}/${l.stage}`)}" aria-label="${esc(l.marker + ' ' + l.name)}">
       <span class="marker">${esc(l.marker)}</span> <span class="pform form">…</span></button></td>`;
   };
-  const body = rows.map(r => {
+  // the roots and the primitive form of a conception are one for both branches (Primitive Elvish is
+  // their common ancestor; wordform.js: primitives): one cell over the rows of the conception
+  const body = rows.map((r, i) => {
     const first = r.langs[0], last = r.langs[r.langs.length - 1], mid = r.langs.slice(1, -1);
     const pad = maxMid - mid.length;
-    return `<tr><th scope="row">${esc(ERA_NAMES[r.era])} · ${esc(BRANCH_NAMES[r.b])}</th>${withRoots ? rootsCell(roots[r.era], `${r.b}/${r.era}`) : ''}${cell(r.b, r.era, first)}${mid.map(l => cell(r.b, r.era, l)).join('')}${pad > 0 ? `<td colspan="${pad}"></td>` : ''}${last !== first ? cell(r.b, r.era, last) : '<td></td>'}</tr>`;
+    const span = rows.filter(x => x.era === r.era).length;
+    const lead = i === 0 || rows[i - 1].era !== r.era;
+    const pb = rows.some(x => x.era === r.era && x.b === src[0]) ? src[0] : r.b;     // the branch it is computed for
+    const shared = lead ? `${withRoots ? rootsCell(roots[r.era], r.era).replace('<td', `<td rowspan="${span}"`) : ''}${cell(pb, r.era, first).replace('<td', `<td rowspan="${span}"`)}` : '';
+    return `<tr${lead ? ' class="era-first"' : ''}><th scope="row">${esc(ERA_NAMES[r.era])} · ${esc(BRANCH_NAMES[r.b])}</th>${shared}${mid.map(l => cell(r.b, r.era, l)).join('')}${pad > 0 ? `<td colspan="${pad}"></td>` : ''}${last !== first ? cell(r.b, r.era, last) : '<td></td>'}</tr>`;
   }).join('');
   box.innerHTML = `<h2>${T('panorama.title')}</h2>
     <div class="table-scroll"><table class="panorama"><thead>${head}</thead><tbody>${body}</tbody></table></div>
@@ -3279,7 +3310,7 @@ function renderPanorama(s) {
       if (v.marks.includes('attested') || v.marks.includes('link') || v.marks.includes('near-cognate')) btn.classList.add('attested');
       else if (v.marks.includes('neologism')) btn.classList.add('neologism');
       if (Number(stage) === 0 && !(roots[era] || []).length) {
-        const td = box.querySelector(`[data-roots="${b}/${era}"]`);
+        const td = box.querySelector(`[data-roots="${era}"]`);
         if (td) td.innerHTML = rootGuess(b, era, v.form).map(rootLink).join('/');
       }
     }

@@ -371,7 +371,18 @@ class Context:
                  limit: int = LIMIT) -> list:
         """[{'form', 'p', 'trace', 'root', 'stem', 'via'}]: forms at stage dst that give `form`
         at stage src; directly and, for dst > 0, through the primitive form. hints: the word's
-        roots and its stems at stage src (_hints)."""
+        roots and its stems at stage src (_hints). The same search is made once: a panorama
+        asks for it from many cells (the word's primitive form for every route)."""
+        key = (branch, era, form, src, dst, tuple(hints['roots']), tuple(hints['stems']), tuple(hints.get('starts', ())),
+               bool(hints.get('composed')), exclude, limit, self.seed_roots)
+        cache = self.__dict__.setdefault('_backward_cache', {})
+        if key not in cache:
+            if len(cache) >= 20000:
+                cache.clear()
+            cache[key] = self._backward_search(branch, era, form, src, dst, hints, exclude, limit)
+        return [dict(r) for r in cache[key]]
+
+    def _backward_search(self, branch, era, form, src, dst, hints, exclude, limit):
         seq = self.seq[branch]
         out = {}
         roots, stems = hints['roots'], hints['stems']

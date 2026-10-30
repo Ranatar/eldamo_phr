@@ -21,6 +21,9 @@ Quettamin (квенья «кузница слова»; имя сложено и�
 Eldamo (lindë → ✶lindē, glindē; ᴹQ. → Q. по связям Eldamo или переэтимологизацией). Описание —
 `docs/reconstruction.md`.
 
+Как приложение устроено целиком — откуда берёт данные, что считает при сборке и что в браузере, какие
+файлы исходные, промежуточные и итоговые, почему реконструкция бывает медленной — `docs/how-it-works.md`.
+
 - Quettamin: `app/index.html` (после сборки), опубликованная версия — <https://ranatar.github.io/quettamin/>
   (репозиторий <https://github.com/Ranatar/quettamin>, прежнее имя — eldamo_phr).
 - Обозреватель корпуса: `app/corpus.html`.
@@ -209,7 +212,8 @@ reports/           audit.md, audit.json — охват, проверка шаг�
                    sequencer.md, sequencer.json — прогон дериваций, сложения, восстановление праформ;
                    reconstruction.md, reconstruction.json — реконструкция между периодами
 tests/             поведение интерпретатора, инварианты против XML, граф, выходные файлы, браузер
-docs/              словотворчество (word-formation.md) и его план (word-formation-plan.md),
+docs/              устройство приложения целиком (how-it-works.md),
+                   словотворчество (word-formation.md) и его план (word-formation-plan.md),
                    как Eldamo читает свою базу (eldamo-xquery.md),
                    реконструкция между периодами (reconstruction.md) и её план
                    (period-reconstruction-plan.md), план переделки интерфейса (ui-redesign-plan.md),

@@ -734,5 +734,21 @@
  "theme.title": {
   "ru": "Тема: авто (как в системе) → светлая → тёмная",
   "en": "Theme: auto (as the system) → light → dark"
+ },
+ "order.label": {
+  "ru": "Порядок в столбце",
+  "en": "Order within a column"
+ },
+ "order.source": {
+  "ru": "по источникам, внутри — по ветвям",
+  "en": "by source, then by branch"
+ },
+ "order.branch": {
+  "ru": "по ветвям, внутри — по источникам",
+  "en": "by branch, then by source"
+ },
+ "order.alpha": {
+  "ru": "по алфавиту",
+  "en": "alphabetical"
  }
 }

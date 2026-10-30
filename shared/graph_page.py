@@ -220,6 +220,8 @@ ADAPT = [
     # the language and the theme chosen here and in the atlas are one choice
     ("const LANG_KEY = 'neo-roots-lang';", "const LANG_KEY = 'quettamin-lang';"),
     ("const THEME_KEY = 'neo-roots-theme';", "const THEME_KEY = 'quettamin-theme';"),
+    ("localStorage.getItem('neo-roots-order')", "localStorage.getItem('quettamin-graph-order')"),
+    ("localStorage.setItem('neo-roots-order', colOrder)", "localStorage.setItem('quettamin-graph-order', colOrder)"),
 ]
 MESSAGES = {
     'page.title': ('Quettamin — граф происхождения', 'Quettamin — the graph of origins'),

@@ -152,6 +152,14 @@ a.ext { color: var(--accent); font-size: 12.5px; }
 .stage { position: relative; min-width: 0; min-height: 0; }
 #graph { width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
 #graph:active { cursor: grabbing; }
+/* the origins map is drawn on a canvas over the svg (which takes the pointer) */
+#ov-canvas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+#graph.ov-hover { cursor: pointer; }
+.ov-tip {
+  position: absolute; z-index: 5; max-width: 320px; padding: 6px 9px; border-radius: 6px; pointer-events: none;
+  background: var(--panel); color: var(--ink); border: 1px solid var(--line); box-shadow: 0 2px 8px rgb(0 0 0 / .12);
+  font-size: 12.5px; white-space: pre-line;
+}
 .stage-bar {
   position: absolute; top: 12px; left: 12px; right: max(12px, env(safe-area-inset-right, 0px));
   display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 8px;
@@ -283,6 +291,13 @@ a.ext { color: var(--accent); font-size: 12.5px; }
             <option value="free" data-i18n="par.free">отдельно, обычными стрелками</option>
           </select>
         </label>
+        <label class="par-mode"><span data-i18n="order.label">Порядок в столбце</span>
+          <select id="col-order">
+            <option value="source" data-i18n="order.source">по источникам, внутри — по ветвям</option>
+            <option value="branch" data-i18n="order.branch">по ветвям, внутри — по источникам</option>
+            <option value="alpha" data-i18n="order.alpha">по алфавиту</option>
+          </select>
+        </label>
       </div>
       <div class="sec">
         <h3 data-i18n="legend.langs">Языки</h3>
@@ -294,6 +309,8 @@ a.ext { color: var(--accent); font-size: 12.5px; }
 
   <main class="stage">
     <svg id="graph" role="img" aria-label="Граф происхождения слов и корней" data-i18n-attr="aria-label:page.graphLabel"></svg>
+    <canvas id="ov-canvas" hidden></canvas>
+    <div class="ov-tip" id="ov-tip" hidden></div>
     <div class="stage-bar">
       <div class="stage-left">
       <div class="seg" role="group" data-i18n-attr="aria-label:mode.label" aria-label="Вид">
@@ -459,6 +476,9 @@ let showDeprecated = false;     // Eldamo's deprecated words
 // forms of other conceptions: 'bands' -- one column with their word, the conceptions in horizontal
 // bands (late with neo, middle, early); 'stack' -- under their word, as on Eldamo's page; 'free'
 let parMode = 'bands';
+// the order of a column: 'source' -- by where the sources stand, the derivatives of one source by
+// branch; 'branch' -- by branch (Quenya on top, then Sindarin...), within it by sources; 'alpha'
+let colOrder = (() => { try { const v = localStorage.getItem('neo-roots-order'); return ['source', 'branch', 'alpha'].includes(v) ? v : 'source'; } catch (e) { return 'source'; } })();
 const langOn = {};              // a language switched off in the legend: false
 const isShortcut = e => !!(e[3] && e[3].sc);
 const edgeOn = k => relOn[relName(G.edges[k][2])] && (showShortcuts || !isShortcut(G.edges[k]));
@@ -590,11 +610,10 @@ const gBands = root.append('g');
 const gEdges = root.append('g');
 const gNodes = root.append('g');
 const defs = svg.append('defs');
-const ovRoot = svg.append('g').attr('display', 'none');
 let mode = 'graph';
 const zoom = d3.zoom().scaleExtent([0.08, 40]).on('zoom', ev => {
   if (mode === 'graph') root.attr('transform', ev.transform);
-  else { ovRoot.attr('transform', ev.transform); ovLabels(ev.transform.k); }
+  else ovRequestDraw();
 });
 svg.call(zoom).on('dblclick.zoom', null);
 
@@ -857,26 +876,46 @@ function layout(data, links) {
   });
   const mean = xs => (xs.length ? xs.reduce((sum, v) => sum + v, 0) / xs.length : null);
   const bary = (d, nb) => mean((nb.get(d) || []).filter(x => x.ty != null).map(x => x.ty));
+  const branchKey = d => BRANCH_RANK[branchOf(G.nodes[d.i].l)];
+  const eraKey = d => -eraOf(G.nodes[d.i].l);
+  const nameKey = d => String(shown(d.i));
+  const baryKey = d => (d._b == null ? 1e9 : d._b);
+  const ORDERS = {
+    // derivatives of one source together; among them Quenya above Sindarin. Sources a few pixels
+    // apart count as one place (a word from two neighbouring forms)
+    source: (p, q) => (Math.round(baryKey(p) / 4) - Math.round(baryKey(q) / 4)) || (branchKey(p) - branchKey(q))
+      || (eraKey(p) - eraKey(q)) || (baryKey(p) - baryKey(q)) || nameKey(p).localeCompare(nameKey(q)),
+    branch: (p, q) => (branchKey(p) - branchKey(q)) || (eraKey(p) - eraKey(q)) || (baryKey(p) - baryKey(q))
+      || nameKey(p).localeCompare(nameKey(q)),
+    alpha: (p, q) => nameKey(p).localeCompare(nameKey(q)) || (branchKey(p) - branchKey(q)),
+  };
+  // a column in its order, each node as near its sources (or derivatives) as the others let it:
+  // down from the top without overlaps, then back up so that the column fits its band
   function place(key, sortIt, nb) {
     const col = cols.get(key), b = +key.split(':')[0];
     for (const d of col) d._b = bary(d, nb);
-    if (sortIt) {
-      col.sort((p, q) => (BRANCH_RANK[branchOf(G.nodes[p.i].l)] - BRANCH_RANK[branchOf(G.nodes[q.i].l)])
-        || (eraOf(G.nodes[q.i].l) - eraOf(G.nodes[p.i].l))
-        || ((p._b == null ? 1e9 : p._b) - (q._b == null ? 1e9 : q._b))
-        || String(shown(p.i)).localeCompare(String(shown(q.i))));
-    }
-    const known = col.map(d => d._b).filter(v => v != null);
-    if (!known.length && col[0].ty != null) return;     // nothing to align to: stays
+    if (sortIt) col.sort(ORDERS[colOrder]);
+    if (!col.some(d => d._b != null) && col[0].ty != null) return;     // nothing to align to: stays
     const [lo, hi] = bandRange.get(b);
-    const sp = span(col);
-    const center = known.length ? mean(known) : (lo + hi) / 2;
-    let start = Math.max(lo, Math.min(center - sp / 2, hi - sp));
-    for (const d of col) { d.ty = start; d.tx = d.rank * COL; start += slot(d); }
+    const n = col.length, ys = new Array(n);
+    // where a node without neighbours wants to be: right under the previous one
+    let prev = -Infinity;
+    for (let k = 0; k < n; k++) {
+      const d = col[k];
+      const want = d._b != null ? d._b : (k ? prev : (lo + hi) / 2 - span(col) / 2);
+      ys[k] = Math.max(want, k ? ys[k - 1] + slot(col[k - 1]) : lo, lo);
+      prev = ys[k] + slot(d);
+    }
+    let bottom = hi;
+    for (let k = n - 1; k >= 0; k--) {
+      ys[k] = Math.min(ys[k], bottom - (slot(col[k]) - unit));
+      bottom = ys[k] - unit;
+    }
+    for (let k = 0; k < n; k++) { col[k].ty = ys[k]; col[k].tx = col[k].rank * COL; }
   }
   for (const k of keys) place(k, true, parents);                 // left to right, by parents
   for (const k of [...keys].reverse()) place(k, false, children); // right to left, by children
-  for (const k of keys) place(k, false, parents);                // and once more by parents
+  for (const k of keys) place(k, colOrder !== 'branch' && colOrder !== 'alpha', parents);  // by parents again
   for (const d of data) {
     if (!d.anchor) continue;
     d.tx = d.anchor.tx; d.ty = d.anchor.ty + d.stack * STACK; d.band = d.anchor.band;
@@ -1065,7 +1104,7 @@ function relTag(rel) {
 function select(i) {
   selected = i;
   if (mode === 'graph' && sim) gEdges.selectAll('path').attr('d', linkPath);
-  ovRoot.selectAll('g.ov-leaf').classed('sel', d => d.data.i === selected);
+  if (ovBuilt) ovRequestDraw();
   gNodes.selectAll('g.node').classed('sel', d => d.i === selected)
     .select('.ring').attr('stroke', d => d.i === selected ? css('--focus') : d.i === focusNode ? css('--accent') : 'none');
   const n = G.nodes[i];
@@ -1259,45 +1298,130 @@ function buildOverview() {
   };
   const h = d3.hierarchy(tree).sum(d => (d.i != null ? 1 + ovValue(d.i) : 0)).sort((a, b) => b.value - a.value);
   d3.pack().size([1000, 1000]).padding(d => (d.depth === 0 ? 18 : d.depth === 1 ? 10 : 1.2))(h);
-  ovRoot.selectAll('*').remove();
-  const catNodes = h.children || [];
-  if (catNodes.length > 1) {
-    const cs = ovRoot.selectAll('g.ov-cat').data(catNodes).join('g').attr('class', 'ov-cat');
-    cs.append('circle').attr('cx', d => d.x).attr('cy', d => d.y).attr('r', d => d.r + 4);
-    cs.append('text').attr('x', d => d.x).attr('y', d => d.y - d.r - 8)
-      .attr('font-size', d => Math.max(9, Math.min(d.r * 0.12, 22))).text(d => t('ov.show.' + d.data.cat));
-  }
-  const letters = catNodes.flatMap(c => c.children || []);
-  const gs = ovRoot.selectAll('g.ov-group').data(letters).join('g').attr('class', 'ov-group');
-  gs.append('circle').attr('cx', d => d.x).attr('cy', d => d.y).attr('r', d => d.r);
-  gs.append('text').attr('x', d => d.x).attr('y', d => d.y - d.r + Math.min(d.r * 0.35, 30))
-    .attr('text-anchor', 'middle').attr('font-size', d => Math.min(d.r * 0.3, 26)).text(d => d.data.key);
-  const leaves = ovRoot.selectAll('g.ov-leaf').data(h.leaves().filter(d => d.data.i != null)).join('g').attr('class', 'ov-leaf')
-    .classed('sel', d => d.data.i === selected);
-  leaves.append('circle').attr('cx', d => d.x).attr('cy', d => d.y).attr('r', d => d.r)
-    .attr('fill', d => ovFill(d.data.i))
-    .attr('fill-opacity', d => (ovFill(d.data.i) === css('--bg') ? 1 : 0.85))
-    .attr('stroke', d => ovStroke(d.data.i)).attr('stroke-width', 0.6)
-    .attr('stroke-dasharray', d => (G.nodes[d.data.i].k === 'root' && !G.nodes[d.data.i].rec ? '1.5 1' : null));
-  leaves.append('text').attr('x', d => d.x).attr('y', d => d.y)
-    .attr('font-size', d => Math.max(1.2, Math.min(d.r * 0.42, 14)))
-    .text(d => marker(d.data.i) + (G.nodes[d.data.i].k === 'root' ? '' : ' ') + shown(d.data.i));
-  leaves.append('title').text(d => {
-    const n = G.nodes[d.data.i], v = ovValue(d.data.i);
-    return `${marker(d.data.i)} ${shown(d.data.i)}${n.g ? ' “' + n.g + '”' : ''}${v ? '\n' + t('tag.noRootDerivatives', { n: v }) : ''}`;
-  });
-  leaves.on('click', (ev, d) => { ev.stopPropagation(); select(d.data.i); })
-    .on('dblclick', (ev, d) => { ev.stopPropagation(); focus(d.data.i); });
+  ovCats = (h.children || []).length > 1 ? h.children : [];
+  ovLetters = (h.children || []).flatMap(c => c.children || []);
+  ovLeaves = h.leaves().filter(d => d.data.i != null);
   ovBuilt = true;
   ovCounts = counts;
   showNote();
-  ovLabels(d3.zoomTransform(svg.node()).k);
+  ovRequestDraw();
 }
 let ovCounts = { roots: 0, proto: 0, words: 0 };
-function ovLabels(k) {
-  // a label shows once its circle is large enough on screen to hold it
-  ovRoot.selectAll('g.ov-leaf text').attr('display', d => (d.r * k >= 9 ? null : 'none'));
+// The map is drawn on a canvas: thousands of svg circles and labels made every step of the zoom
+// lay out the text anew (most of the time of a frame); a canvas redraws only what is on screen
+const ovCanvas = $('ov-canvas'), ovTip = $('ov-tip');
+let ovCats = [], ovLetters = [], ovLeaves = [], ovFrame = 0;
+function ovRequestDraw() {
+  if (!ovFrame) ovFrame = requestAnimationFrame(() => { ovFrame = 0; ovDraw(); });
 }
+function ovDraw() {
+  if (mode !== 'roots') return;
+  const w = ovCanvas.clientWidth, h = ovCanvas.clientHeight, dpr = window.devicePixelRatio || 1;
+  if (ovCanvas.width !== Math.round(w * dpr) || ovCanvas.height !== Math.round(h * dpr)) {
+    ovCanvas.width = Math.round(w * dpr); ovCanvas.height = Math.round(h * dpr);
+  }
+  const ctx = ovCanvas.getContext('2d');
+  const tr = d3.zoomTransform(svg.node()), k = tr.k;
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.clearRect(0, 0, ovCanvas.width, ovCanvas.height);
+  // what is on screen, in map units
+  const vx0 = -tr.x / k, vy0 = -tr.y / k, vx1 = (w - tr.x) / k, vy1 = (h - tr.y) / k;
+  const seen = d => d.x + d.r > vx0 && d.x - d.r < vx1 && d.y + d.r > vy0 && d.y - d.r < vy1;
+  const C = { line: css('--line'), muted: css('--muted'), ink: css('--ink'), bg: css('--bg'), focus: css('--focus') };
+  const fForm = css('--f-form'), fUi = css('--f-ui');
+  ctx.setTransform(dpr * k, 0, 0, dpr * k, dpr * tr.x, dpr * tr.y);
+  const circle = d => { ctx.beginPath(); ctx.arc(d.x, d.y, d.r, 0, 2 * Math.PI); };
+  // categories: a dashed ring
+  ctx.lineWidth = 1 / k; ctx.strokeStyle = C.line; ctx.setLineDash([3 / k, 3 / k]);
+  for (const d of ovCats) { if (!seen(d)) continue; ctx.beginPath(); ctx.arc(d.x, d.y, d.r + 4, 0, 2 * Math.PI); ctx.stroke(); }
+  ctx.setLineDash([]);
+  // letters: a faint disc
+  for (const d of ovLetters) {
+    if (!seen(d)) continue;
+    circle(d);
+    ctx.globalAlpha = .25; ctx.fillStyle = C.line; ctx.fill();
+    ctx.globalAlpha = 1; ctx.strokeStyle = C.line; ctx.stroke();
+  }
+  // leaves
+  const fills = new Map();
+  const fillOf = i => { let f = fills.get(i); if (f === undefined) { f = ovFill(i); fills.set(i, f); } return f; };
+  const strokes = new Map();
+  ctx.lineWidth = 0.6;
+  for (const d of ovLeaves) {
+    if (!seen(d)) continue;
+    const i = d.data.i, n = G.nodes[i], f = fillOf(i);
+    circle(d);
+    ctx.globalAlpha = f === C.bg ? 1 : 0.85; ctx.fillStyle = f; ctx.fill(); ctx.globalAlpha = 1;
+    let st = strokes.get(n.grp || n.k + n.l);
+    if (st === undefined) { st = ovStroke(i); strokes.set(n.grp || n.k + n.l, st); }
+    ctx.strokeStyle = st;
+    if (n.k === 'root' && !n.rec) ctx.setLineDash([1.5, 1]);
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+  const sel = ovLeaves.find(d => d.data.i === selected);
+  if (sel) { circle(sel); ctx.lineWidth = 2.2; ctx.strokeStyle = C.focus; ctx.stroke(); }
+  // the labels in screen pixels, so that small text stays sharp at any zoom
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.textAlign = 'center';
+  const at = (x, y) => [tr.x + x * k, tr.y + y * k];
+  ctx.fillStyle = C.muted; ctx.textBaseline = 'alphabetic';
+  for (const d of ovCats) {
+    if (!seen(d)) continue;
+    const [x, y] = at(d.x, d.y - d.r - 8);
+    ctx.font = `600 ${Math.max(9, Math.min(d.r * 0.12, 22)) * k}px ${fUi}`;
+    ctx.fillText(t('ov.show.' + d.data.cat), x, y);
+  }
+  ctx.globalAlpha = .55;
+  for (const d of ovLetters) {
+    if (!seen(d)) continue;
+    const size = Math.min(d.r * 0.3, 26) * k;
+    if (size < 4) continue;
+    const [x, y] = at(d.x, d.y - d.r + Math.min(d.r * 0.35, 30));
+    ctx.font = `600 ${size}px ${fForm}`;
+    ctx.fillText(d.data.key, x, y);
+  }
+  ctx.globalAlpha = 1;
+  ctx.fillStyle = C.ink; ctx.textBaseline = 'middle';
+  for (const d of ovLeaves) {
+    if (d.r * k < 9 || !seen(d)) continue;      // a label once its circle can hold it
+    const [x, y] = at(d.x, d.y);
+    ctx.font = `600 ${Math.max(1.2, Math.min(d.r * 0.42, 14)) * k}px ${fForm}`;
+    ctx.fillText(ovLabel(d.data.i), x, y);
+  }
+}
+const ovLabel = i => marker(i) + (G.nodes[i].k === 'root' ? '' : ' ') + shown(i);
+// the leaf under the pointer: the innermost circle that holds it
+function ovHit(ev) {
+  const [px, py] = d3.pointer(ev, svg.node());
+  const tr = d3.zoomTransform(svg.node());
+  const [x, y] = tr.invert([px, py]);
+  for (const d of ovLeaves) if ((x - d.x) ** 2 + (y - d.y) ** 2 <= d.r * d.r) return d;
+  return null;
+}
+svg.on('click.ov', ev => {
+  if (mode !== 'roots' || ev.defaultPrevented) return;
+  const d = ovHit(ev);
+  if (d) select(d.data.i);
+}).on('dblclick.ov', ev => {
+  if (mode !== 'roots') return;
+  const d = ovHit(ev);
+  if (d) focus(d.data.i);
+}).on('mousemove.ov', ev => {
+  if (mode !== 'roots') return;
+  const d = ev.buttons ? null : ovHit(ev);
+  svg.classed('ov-hover', !!d);
+  if (!d) { ovTip.hidden = true; return; }
+  const i = d.data.i, n = G.nodes[i], v = ovValue(i);
+  ovTip.textContent = `${marker(i)} ${shown(i)}${n.g ? ' “' + n.g + '”' : ''}${v ? '\n' + t('tag.noRootDerivatives', { n: v }) : ''}`;
+  const box = ovCanvas.getBoundingClientRect();
+  ovTip.hidden = false;
+  const tw = ovTip.offsetWidth, th = ovTip.offsetHeight;
+  const x = ev.clientX - box.left + 14, y = ev.clientY - box.top + 14;
+  ovTip.style.left = Math.min(x, box.width - tw - 6) + 'px';
+  ovTip.style.top = (y + th > box.height ? y - th - 22 : y) + 'px';
+}).on('mouseleave.ov', () => { ovTip.hidden = true; svg.classed('ov-hover', false); });
+window.addEventListener('resize', () => { if (mode === 'roots') ovRequestDraw(); });
 function ovFit(animate) {
   const box = svg.node().getBoundingClientRect();
   // leave the filter panel clear where there is room beside it
@@ -1312,7 +1436,8 @@ function setMode(m) {
   views[mode] = d3.zoomTransform(svg.node());
   mode = m;
   root.attr('display', m === 'graph' ? null : 'none');
-  ovRoot.attr('display', m === 'roots' ? null : 'none');
+  ovCanvas.hidden = m !== 'roots';
+  ovTip.hidden = true;
   $('mode-graph').setAttribute('aria-pressed', String(m === 'graph'));
   $('mode-roots').setAttribute('aria-pressed', String(m === 'roots'));
   $('ov-tools').hidden = m !== 'roots';
@@ -1380,6 +1505,14 @@ $('legend-langs').addEventListener('change', ev => {
   refilter();
 });
 $('show-dep').addEventListener('change', ev => { showDeprecated = ev.target.checked; refilter(); });
+$('col-order').value = colOrder;
+$('col-order').addEventListener('change', ev => {
+  colOrder = ev.target.value;
+  try { localStorage.setItem('neo-roots-order', colOrder); } catch (e) { /* storage unavailable */ }
+  for (const i of visible) pos.delete(i);
+  render(true);
+  if (selected >= 0) select(selected);
+});
 $('par-mode').addEventListener('change', ev => {
   parMode = ev.target.value;
   for (const i of visible) pos.delete(i);          // a new arrangement, laid out afresh

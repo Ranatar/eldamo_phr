@@ -229,13 +229,27 @@ class Browser(unittest.TestCase):
         self.assertRegex(first, r'ald\w*isil\w*on')
 
     def test_root_card_and_index(self):
-        # a root of a word opens its card here: what Eldamo says of it, the words from it
+        # a root of an open word is shown above its panorama, which stays: what Eldamo says of it, the
+        # words from it
         page = self.page(self.atlas + '#w=3005081253')                 # S. galadh
+        page.wait_for_selector('#panorama .pcell')
         page.click('#word-card [data-root]')
-        page.wait_for_function("location.hash.includes('r=')")
+        page.wait_for_function("location.hash.includes('rp=') && !document.getElementById('root-peek').hidden")
+        peek = page.inner_text('#root-peek')
+        self.assertIn('Слова от этого корня', peek)
+        self.assertIn('galadh', peek)
+        self.assertIn('galadh', page.inner_text('#word-card'))
+        self.assertGreater(page.locator('#panorama .pcell').count(), 0)
+        # closed, and opened on its own
+        page.click('#root-peek [data-close-peek]')
+        page.wait_for_function("!location.hash.includes('rp=') && document.getElementById('root-peek').hidden")
+        page.click('#word-card [data-root]')
+        page.click('#root-peek [data-open-root]')
+        page.wait_for_function("location.hash.includes('r=') && !location.hash.includes('rp=') && "
+                               "document.getElementById('word-card').textContent.includes('Слова от этого корня')")
         card = page.inner_text('#word-card')
         self.assertIn('Слова от этого корня', card)
-        self.assertIn('galadh', card)
+        self.assertTrue(page.locator('#root-peek').is_hidden())
         # √LAS¹: ᴹ√LAS¹ is merged into it
         page.goto(self.atlas + '#r=3661997445')
         page.wait_for_function("document.getElementById('word-card').textContent.includes('LAS')")
@@ -275,7 +289,8 @@ class Browser(unittest.TestCase):
         self.assertIn('Mithrandir', page.inner_text('#card'))
         self.assertIn('index.html#w=2655041701', page.inner_html('#card'))
         page.click('#mode-roots')
-        page.wait_for_function("document.querySelectorAll('g.ov-leaf').length > 1000")
+        # the map of origins, drawn on a canvas
+        page.wait_for_function("!document.getElementById('ov-canvas').hidden && document.getElementById('ov-canvas').width > 0")
 
     def test_word_is_first_element(self):
         page = self.page(self.atlas + '#w=4273482913&tab=compose')

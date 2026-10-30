@@ -241,11 +241,11 @@ document.addEventListener('click', e => {
 function openWord(id, branch) {
   $('q-results').hidden = true;
   $('q').value = '';
-  QR.set({ w: id, b: branch || null, r: null, f: null, in: null, of: null, dst: null }, true);
+  QR.set({ w: id, b: branch || null, r: null, rp: null, f: null, in: null, of: null, dst: null }, true);
   $('word-section').scrollIntoView({ block: 'start' });
 }
 function openForm(form, b, era, stage, elements) {
-  QR.set({ w: null, r: null, f: form, in: `${b}/${era}/${stage}`, of: (elements || []).length ? elements.join(',') : null, dst: null }, true);
+  QR.set({ w: null, r: null, rp: null, f: form, in: `${b}/${era}/${stage}`, of: (elements || []).length ? elements.join(',') : null, dst: null }, true);
   $('word-section').scrollIntoView({ block: 'start' });
 }
 
@@ -355,14 +355,35 @@ function rootRef(id) {
 }
 function openRoot(id) {
   $('q-results').hidden = true;
-  QR.set({ r: id, w: null, f: null, in: null, of: null, dst: null }, true);
+  QR.set({ r: id, rp: null, w: null, f: null, in: null, of: null, dst: null }, true);
   $('word-section').scrollIntoView({ block: 'start' });
 }
+// a root clicked while a word is open is shown above its panorama, which stays (rp= in the address);
+// from a root's own card, or with nothing open, the root becomes the subject
+function peekRoot(id) {
+  $('q-results').hidden = true;
+  QR.set({ rp: id }, true);
+}
+function renderPeek(id) {
+  const box = $('root-peek');
+  const r = id && subject && subject.kind !== 'root' ? ROOTS[id] : null;
+  box.hidden = !r;
+  if (!r) { box.innerHTML = ''; return; }
+  box.innerHTML = `<div class="peek-bar"><button type="button" class="link small" data-open-root="${esc(id)}">${T('peek.open')}</button>
+      <button type="button" class="peek-close" data-close-peek aria-label="${esc(T('peek.close'))}" title="${esc(T('peek.close'))}">×</button></div>
+    ${rootCardHtml({ kind: 'root', id, root: r })}`;
+}
 document.addEventListener('click', e => {
+  const o = e.target.closest('[data-open-root]');
+  if (o) { openRoot(o.dataset.openRoot); return; }
+  if (e.target.closest('[data-close-peek]')) { QR.set({ rp: null }, true); return; }
   const a = e.target.closest('[data-root]');
   if (!a) return;
   e.preventDefault();
-  openRoot(a.dataset.root);
+  if (subject && subject.kind !== 'root') {
+    peekRoot(a.dataset.root);
+    $('root-peek').scrollIntoView({ block: 'nearest' });
+  } else openRoot(a.dataset.root);
 });
 // the words of a root by language: neologisms only with the switch on
 const PRIMITIVE_CODES = ['p', 'np', 'mp', 'ep'];
@@ -428,7 +449,10 @@ function rootCardHtml(s) {
     ${bits.length ? `<ul class="small root-rels">${bits.join('')}</ul>` : ''}${free}
     <h2>${T('rootCard.words')}</h2>${rootWordsHtml(r)}`;
 }
-$('neo-toggle').addEventListener('change', () => { if (subject && subject.kind === 'root') $('word-card').innerHTML = rootCardHtml(subject); });
+$('neo-toggle').addEventListener('change', () => {
+  if (subject && subject.kind === 'root') $('word-card').innerHTML = rootCardHtml(subject);
+  renderPeek(QR.get().get('rp'));
+});
 
 // ---------------------------------------------------------------- panorama
 let generation = 0;
@@ -664,7 +688,7 @@ function route(p) {
   showTab(['compose', 'roots'].includes(p.get('tab')) ? p.get('tab') : 'recon');
   const s = subjectFrom(p);
   const key = s ? s.key : '';
-  if (started && (subject ? subject.key : '') === key) return;
+  if (started && (subject ? subject.key : '') === key) { renderPeek(p.get('rp')); return; }
   started = true;
   subject = s;
   $('intro').hidden = !!s;
@@ -672,6 +696,7 @@ function route(p) {
   if (!s) { renderIntro(); renderPanorama(null); }
   else if (s.kind === 'root') { $('word-card').innerHTML = rootCardHtml(s); renderPanorama(null); }
   else { $('word-card').innerHTML = cardHtml(s); remember(s); renderPanorama(s); }
+  renderPeek(p.get('rp'));
   document.title = s && s.kind === 'word' ? `${s.entry.form} — Quettamin` : s && s.kind === 'form' ? `${s.form} — Quettamin`
     : s && s.kind === 'root' ? `${ROOT_MARKERS[s.root.l] || '√'}${s.root.f} — Quettamin` : T('page.title');
   // the tools work on words and forms; a root's card leaves them as they were
@@ -684,6 +709,7 @@ window.addEventListener('quettamin:lang', () => {
   if (!subject) renderIntro();
   else if (subject.kind === 'root') $('word-card').innerHTML = rootCardHtml(subject);
   else { $('word-card').innerHTML = cardHtml(subject); renderPanorama(subject); }
+  renderPeek(QR.get().get('rp'));
   if (!$('q-results').hidden) renderSearch();
   document.title = subject && subject.kind === 'word' ? `${subject.entry.form} — Quettamin` : subject && subject.kind === 'form' ? `${subject.form} — Quettamin`
     : subject && subject.kind === 'root' ? `${ROOT_MARKERS[subject.root.l] || '√'}${subject.root.f} — Quettamin` : T('page.title');

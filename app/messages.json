@@ -1130,6 +1130,14 @@
   "ru": "при заданных ограничениях.",
   "en": "within the limits set."
  },
+ "peek.close": {
+  "ru": "скрыть корень",
+  "en": "hide the root"
+ },
+ "peek.open": {
+  "ru": "открыть корень отдельно",
+  "en": "open the root on its own"
+ },
  "pos.final": {
   "ru": "в конце слова",
   "en": "word-finally"

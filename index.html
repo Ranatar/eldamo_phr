@@ -1978,7 +1978,18 @@ function stemMatch(E, era, form, src, dst, stems) {
   }
   return stems.some(x => outs.has(x));
 }
+// the same search is made once: a panorama asks for it from many cells (reconstruct.py: Context.backward)
+const BACK_CACHE = 20000;
 function backwardRun(E, era, form, src, dst, hints = NO_HINTS) {
+  if (!E.backCache) Object.defineProperty(E, 'backCache', { value: new Map(), enumerable: false });
+  const key = JSON.stringify([era, form, src, dst, hints.roots, hints.stems, hints.starts || [], !!hints.composed]);
+  if (!E.backCache.has(key)) {
+    if (E.backCache.size >= BACK_CACHE) E.backCache.clear();
+    E.backCache.set(key, backwardSearch(E, era, form, src, dst, hints));
+  }
+  return E.backCache.get(key).map(r => ({ ...r }));
+}
+function backwardSearch(E, era, form, src, dst, hints) {
   const out = new Map();
   const roots = hints.roots, stems = hints.stems;
   const add = (f, p, trace, via, irregular) => {

@@ -33,6 +33,7 @@ const MARKS = window.I18N.labels({
   cognate: ['⇄', 'mark.cognate'],
   'near-cognate': ['≈', 'mark.near-cognate'],
   'primitive-attested': ['✶', 'mark.primitive-attested'],
+  joint: ['⋈', 'mark.joint'],
   neologism: ['◇', 'mark.neologism'],
   phonotactics: ['⚠', 'mark.phonotactics'],
   main: ['', 'mark.main'],
@@ -135,7 +136,10 @@ function marksHtml(marks, problems) {
 // a route of the reconstruction: segments [key, params] (wordform.js) -> text
 function routeText(route) {
   if (!Array.isArray(route)) return String(route || '');
-  return route.map(([k, params]) => T('route.' + k, params)).join(T('route.then'));
+  // a remark on the step before follows it after a semicolon; what the primitive is, after a colon
+  const remark = new Set(['irregularLaw', 'agreedCognate', 'byCognate']);
+  return route.map(([k, params], i) => (i === 0 ? '' : route[i - 1][0] === 'sharedPrimitive' ? ': ' : remark.has(k) ? '; ' : T('route.then'))
+    + T('route.' + k, params)).join('');
 }
 
 // ---------------------------------------------------------------- the subject: a word or a form

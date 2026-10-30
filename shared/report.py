@@ -443,6 +443,19 @@ def render_reconstruction(branches: dict) -> tuple[str, dict]:
         n = st.get('cases', 0)
         lines.append(f"| {code} | {st['words']} | {n} | {pct(st.get('plain_first', 0), n)} / {pct(st.get('plain_any', 0), n)} | "
                      f"{pct(st.get('seed_first', 0), n)} / {pct(st.get('seed_any', 0), n)} |")
+    lines += ['', '## Одна праформа для обеих ветвей', '',
+              'Праэльфийский — общий предок квенийской и синдаринской ветвей, поэтому праформа слова в его концепции '
+              'одна, и в панораме у обеих строк концепции она одна и та же. Если праформы нет у Eldamo ни у слова, ни у '
+              'его когната в другой ветви, она восстанавливается назад от слова и от когнатов сразу: выше идёт кандидат, '
+              'к которому ведут и слово, и когнат (`reconstruct.py: primitives`). Слова с праформой Eldamo и когнатом '
+              'другой ветви; праформы обоих скрыты, их деривации не используются.', '',
+              '| язык | слов | случаев | по слову: первый / среди 8 | с когнатами: первый / среди 8 |',
+              '|---|---|---|---|---|']
+    for code in ('q', 'mq', 's', 'n'):
+        st = res[f'joint primitive {code}']
+        n = st.get('cases', 0)
+        lines.append(f"| {code} | {st['words']} | {n} | {pct(st.get('alone_first', 0), n)} / {pct(st.get('alone_any', 0), n)} | "
+                     f"{pct(st.get('joint_first', 0), n)} / {pct(st.get('joint_any', 0), n)} |")
     res['root_candidates'] = _root_candidate_check(branches)
     lines += ['', '## Корни по праформе', '',
               'Корень не форма, к которой применимы звуковые законы: праформа строится из него морфологией '

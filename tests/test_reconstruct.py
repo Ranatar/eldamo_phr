@@ -43,7 +43,12 @@ class Reconstruction(unittest.TestCase):
 
     def test_cognate(self):
         got = self.forms(('quenya', 'late', 2), ('sindarin', 'late', 3), word=self.linde['id'])
-        self.assertIn('glinn', got)       # N. glinn, Ety/GLIN
+        self.assertEqual(got[0], 'lind')       # S. lind, Eldamo's cognate
+        # the primitive both branches share: Eldamo's of the cognate S. lind (✶lindē), not one read
+        # back from lindë alone
+        q = R.reconstruct(self.ctx, ('quenya', 'late', 2), ('quenya', 'late', 0), word=self.linde['id'])
+        s = R.reconstruct(self.ctx, ('quenya', 'late', 2), ('sindarin', 'late', 0), word=self.linde['id'])
+        self.assertEqual(q[0]['form'], s[0]['form'])
 
     def test_conception_link_first(self):
         vs = R.reconstruct(self.ctx, ('quenya', 'late', 2), ('quenya', 'middle', 2), word=self.linde['id'])

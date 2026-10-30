@@ -107,7 +107,7 @@
  "conceptions n -> s": {
   "cases": 30,
   "identity": 15,
-  "first": 15,
+  "first": 14,
   "any": 17,
   "pairs": 574
  },
@@ -167,7 +167,7 @@
   "plain_any": 9,
   "elements_first": 7,
   "elements_any": 9,
-  "built": 15,
+  "built": 22,
   "pairs": 238
  },
  "compounds s -> q": {
@@ -176,7 +176,7 @@
   "plain_any": 5,
   "elements_first": 3,
   "elements_any": 6,
-  "built": 19,
+  "built": 24,
   "pairs": 208
  },
  "root seeds q": {
@@ -210,6 +210,38 @@
   "seed_first": 5,
   "seed_any": 11,
   "words": 902
+ },
+ "joint primitive q": {
+  "cases": 30,
+  "alone_first": 5,
+  "alone_any": 14,
+  "joint_first": 7,
+  "joint_any": 12,
+  "words": 389
+ },
+ "joint primitive mq": {
+  "cases": 30,
+  "alone_first": 7,
+  "alone_any": 21,
+  "joint_first": 7,
+  "joint_any": 20,
+  "words": 470
+ },
+ "joint primitive s": {
+  "cases": 30,
+  "alone_first": 1,
+  "alone_any": 9,
+  "joint_first": 5,
+  "joint_any": 16,
+  "words": 408
+ },
+ "joint primitive n": {
+  "cases": 30,
+  "alone_first": 3,
+  "alone_any": 9,
+  "joint_first": 7,
+  "joint_any": 19,
+  "words": 583
  },
  "root_candidates": {
   "q": {

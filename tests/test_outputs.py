@@ -63,7 +63,8 @@ class InterfaceCatalog(unittest.TestCase):
     """app/messages.json: every key the interface uses exists, in both languages, with the same placeholders."""
     DYNAMIC = {'tag.': ['suffix', 'prefix'], 'problem.': ['initial', 'cluster', 'final'], 'branch.': ['quenya', 'sindarin'],
                'route.': ['attested', 'same', 'forward', 'backDirect', 'backPrimitive', 'backRoot', 'cognateLink', 'viaPrimitive',
-                          'nearSame', 'nearClose', 'link', 'unchanged', 'reetymology', 'then', 'byElements', 'partialLink', 'irregularLaw', 'composed', 'composedUnconfirmed'],
+                          'nearSame', 'nearClose', 'link', 'unchanged', 'reetymology', 'then', 'byElements', 'partialLink', 'irregularLaw', 'composed', 'composedUnconfirmed',
+                          'primitiveEldamo', 'primitiveCognate', 'agreedCognate', 'byCognate', 'sharedPrimitive'],
                'card.root.': ['element', 'cognate', 'source', 'combine', 'see', 'deprecated'],
                'root.via.': ['element', 'cognate', 'source', 'combine', 'see', 'deprecated', 'instead'],
                'root.warn.': [w + t for w in ('deprecated', 'deleted', 'rejected', 'doubtful', 'unglossed', 'early') for t in ('', '.title')],
@@ -161,3 +162,16 @@ class InterfaceCatalog(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class GraphPage(unittest.TestCase):
+    def test_elements_beside_derivation(self):
+        # Q. calima < √KAL: its elements cal- and -ima are drawn too (neo-roots: element_parts)
+        from shared.graph_page import build
+        g = build(branches())
+        at = {x: k for k, x in enumerate(g['ids'])}
+        el = g['rels'].index('element')
+        into = {(e[0], e[1]) for e in g['edges'] if e[2] == el}
+        calima = next(i for i, n in zip(g['ids'], g['nodes']) if n['f'] == 'calima' and n['l'] == 'q')
+        for part in ('2707296195', '2305656567'):        # cal-, -ima
+            self.assertIn((at[part], at[calima]), into)

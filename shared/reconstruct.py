@@ -502,7 +502,16 @@ def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, w
         for f in _stage_form(ctx, db, entry, de, ds):
             add(f, 10.0, 'засвидетельствовано', ['attested'], [])
 
-    if (db, de) == (sb, se):
+    if de == se and ds == 0 and ss > 0:
+        # the primitive form: one for both branches (primitives)
+        for f, w, route, marks, trace in primitives(ctx, src, form, entry, hints, exclude, use_links, depth):
+            add(f, w, route if db == sb else f'праформа, общая для обеих ветвей: {route}',
+                marks + ([] if db == sb else ['cognate']), trace if db == sb else [])
+        # except a compound each branch made of its own elements (S. Adanel, Q. *Atanel): taken back
+        # from the word so built in the other branch
+        if db != sb and entry is not None and ctx.use_elements:
+            _by_elements(ctx, add, entry, se, db, ds, depth)
+    elif (db, de) == (sb, se):
         c = compose(ctx, sb, entry, se, ds, depth) if ds < ss and entry is not None else None
         # a word its elements explain: no search through rare correspondences (WIDE)
         _within(ctx, add, sb, se, form, ss, ds, {**hints, 'composed': True} if c else hints, exclude)
@@ -590,6 +599,112 @@ def _composed(ctx, add, branch, era, form, entry, c, ss, ds):
         add(c, COMPOSED_SCORE, f'по составляющим {parts}', ['elements', 'reconstructed'], [])
     else:
         add(c, UNCONFIRMED_SCORE, f'по составляющим {parts}; законы не ведут к слову', ['elements', 'unconfirmed'], [])
+
+
+JOINT_MISS = 0.01   # a candidate the word or one of its cognates does not lead to (searches are cut short)
+
+
+def _back_weights(found: list) -> dict:
+    """comparable form -> (weight, record) of what backward() found: the best one 1, hints
+    counted, a form with a law that did not act ranked down (as _within)."""
+    top = max((r['p'] * hint_weight(r) for r in found), default=1.0) or 1.0
+    out = {}
+    for r in found:
+        w = r['p'] * hint_weight(r) / top * (IRREGULAR_SCORE if r.get('irregular') else 1.0)
+        k = comparable(r['form'])
+        if k not in out or out[k][0] < w:
+            out[k] = (w, r)
+    return out
+
+
+def _same_era_cognates(ctx, entry: dict, branch: str, era: str) -> list:
+    """[(branch, entry, stage)]: Eldamo's cognates of the word in the other branch, of its
+    conception and after its primitive stage; partial cognates aside (partial_cognate)."""
+    out = []
+    if entry is None or not entry.get('id'):
+        return out
+    for i, src in _linked_cognates(ctx, entry['id']):
+        b2, e2 = ctx.entry(i)
+        if e2 is None or b2 == branch or e2.get('speech') == 'root':
+            continue
+        l2 = ctx.langs(b2).get(e2['lang'])
+        if l2 is None or l2['era'] != era or l2['stage'] == 0 or partial_cognate(src, e2):
+            continue
+        out.append((b2, e2, l2['stage']))
+    return out
+
+
+def primitives(ctx, src: tuple, form: str, entry: dict | None, hints: dict, exclude=frozenset(),
+               use_links: bool = True, depth: int = 0) -> list:
+    """[(form, score, route, marks, trace)], best first: the primitive form of the word in its
+    conception. Primitive Elvish is the ancestor of both branches, so this is one form for
+    both (the panorama shows it in the first column of each row of the conception): Eldamo's
+    primitive of the word, else of a cognate of it in the other branch; else the forms read
+    back from the word, ranked together with those read back from its cognates, so that a form
+    both lead to comes first; and the word's elements joined (compose). With an Eldamo
+    primitive the forms read back from the word follow it, below."""
+    sb, era, ss = src
+    if ss == 0:
+        return [(form, 1.0, 'та же стадия', [], [])]
+    cogs = _same_era_cognates(ctx, entry, sb, era) if use_links else []
+    out = []
+    for e, how in [(entry, 'праформа Eldamo')] + [(e2, f'праформа Eldamo когната {e2["form"]}') for _, e2, _ in cogs]:
+        att = _origins(e, era) if e is not None else []
+        if att:
+            out = [(f, 1.0, how, ['primitive-attested'], []) for f in att]
+            cogs = []
+            break
+    c = compose(ctx, sb, entry, era, 0, depth) if entry is not None else None
+    mine = _back_weights(ctx.backward(sb, era, form, ss, 0, {**hints, 'composed': True} if c else hints, exclude))
+    theirs = []
+    for b2, e2, s2 in cogs:
+        f2 = to_phonetic(e2['form'], b2).strip()
+        w2 = _back_weights(ctx.backward(b2, era, f2, s2, 0, _hints(ctx, b2, e2, era, s2), exclude))
+        if w2:
+            theirs.append((b2, e2, w2))
+    joint = {}
+    for k in list(mine) + [k for _, _, w2 in theirs for k in w2]:
+        if k not in joint:
+            w = mine[k][0] if k in mine else JOINT_MISS
+            for _, _, w2 in theirs:
+                w *= w2[k][0] if k in w2 else JOINT_MISS
+            joint[k] = w
+    top = max(joint.values(), default=1.0) or 1.0
+    for k, w in joint.items():
+        b, rec = (sb, mine[k][1]) if k in mine else next((b2, w2[k][1]) for b2, _, w2 in theirs if k in w2)
+        how = 'напрямую' if rec['via'] == 'direct' else 'по корню' if rec['via'].startswith('root') else 'через праформу'
+        if rec.get('irregular'):
+            how += f', не сработал закон «{ctx.seq[b].by_id[rec["irregular"]].name}»'
+        agreed = [e2['form'] for _, e2, w2 in theirs if k in w2]
+        if k not in mine:
+            how += f'; по когнату {", ".join(agreed)}'
+        elif agreed:
+            how += f'; согласно с когнатом {", ".join(agreed)}'
+        marks = ['reconstructed'] + (['root'] if rec['root'] else []) + (['stem'] if rec.get('stem') else []) \
+            + (['irregular'] if rec.get('irregular') else []) + (['joint'] if agreed else [])
+        out.append((rec['form'], 0.9 * w / top, 'назад: ' + how, marks, rec['trace'] if k in mine else []))
+    if c:
+        target = comparable(form)
+        hit = any(comparable(f) == target for f, _ in ctx.forward(sb, era, c, 0, ss)[:4])
+        parts = ' + '.join(x.get('form', '') for x in entry['elements'])
+        out.append((c, COMPOSED_SCORE if hit else UNCONFIRMED_SCORE,
+                    f'по составляющим {parts}' + ('' if hit else '; законы не ведут к слову'),
+                    ['elements', 'reconstructed' if hit else 'unconfirmed'], []))
+    if out and 'primitive-attested' in out[0][3]:
+        # Eldamo's primitive first; the rest below it
+        out = out[:1] + sorted(out[1:], key=lambda t: -t[1])
+    else:
+        out.sort(key=lambda t: -t[1])
+    return out
+
+
+def _prims(ps: list, n: int) -> list:
+    """The primitive forms a cognate or another conception goes through: Eldamo's if there are,
+    else the best n, the first weighing 1."""
+    att = [t for t in ps if 'primitive-attested' in t[3]]
+    ps = att or ps[:n]
+    top = max((t[1] for t in ps), default=1.0) or 1.0
+    return [(f, w / top, marks) for f, w, _, marks, _ in ps]
 
 
 def dst_code_has_words(ctx: Context, branch: str, era: str, stage: int) -> bool:
@@ -788,7 +903,25 @@ def _translated(ctx, x: dict, sb: str, era: str, db: str, last: int, code: str, 
     return {'id': '~' + e['id'], 'lang': code, 'form': e['form'], 'speech': None, 'phonetic': f.strip('-')}
 
 
-def _by_elements(ctx, add, entry, era, db, ds, depth=0):
+def _conception_counterparts(ctx, wid: str, branch: str, code: str) -> list:
+    """Words of the target language that are the word in another conception: linked to it by
+    <combine>, <deprecated> or <see> either way (Q. quet- ~ ᴹQ. quet-), or their cognates there."""
+    _, e = ctx.entry(wid)
+    if e is None:
+        return []
+    same = [wid] + [x['id'] for t in ('combine', 'deprecated', 'see') for x in e.get('links', {}).get(t, ())]
+    same += [w for w, tag in ctx.reverse_links.get(wid, []) if tag in ('combine', 'deprecated', 'see')]
+    out = []
+    for w in dict.fromkeys(same):
+        b2, e2 = ctx.entry(w)
+        if e2 is not None and b2 == branch and e2['lang'] == code and e2.get('speech') != 'root':
+            out.append(w)
+    for w in dict.fromkeys(same):
+        out += [i for i in _counterparts(ctx, w, branch, code) if i not in out]
+    return out
+
+
+def _by_elements(ctx, add, entry, era, db, ds, depth=0, era_from=None):
     """A compound or derivative of the other branch built again from the cognates of its
     elements by the word formation of the target language (shared/compound.py): S. Adanel =
     Adan + -iel¹, cognates Q. Atan + -iel -> Q. Atanel, Ataniel. An element without a cognate
@@ -803,6 +936,14 @@ def _by_elements(ctx, add, entry, era, db, ds, depth=0):
     sb, _ = ctx.entry(entry['id'])
     ids, pseudo, names = [], {}, []
     for x in els:
+        if era_from is not None and era_from != era:
+            # a word of another conception: its elements as they are in the target one
+            c = _conception_counterparts(ctx, x['id'], db, code)
+            if not c:
+                return
+            ids.append(c[0])
+            names.append(ctx.lexicon[db][c[0]]['form'])
+            continue
         c = _counterparts(ctx, x['id'], db, code)
         if c:
             ids.append(c[0])
@@ -874,20 +1015,8 @@ def _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links=True, d
                         route_prefix=f'когнат по связи Eldamo {e2["form"]}, затем ', marks=['link'])
     if entry is not None and ctx.use_elements:
         _by_elements(ctx, add, entry, era, db, ds, depth)
-    prims = []
-    if entry is not None:
-        prims = [(f, 1.0, ['primitive-attested']) for f in _origins(entry, era)]
-    if not prims:
-        if ss == 0:
-            prims = [(form, 1.0, [])]
-        else:
-            c = compose(ctx, sb, entry, era, 0, depth) if entry is not None else None
-            found = ctx.backward(sb, era, form, ss, 0, {**hints, 'composed': True} if c else hints, exclude)
-            top = max((r['p'] * hint_weight(r) for r in found), default=1.0) or 1.0
-            prims = [(r['form'], r['p'] * hint_weight(r) / top, ['reconstructed'])
-                     for r in found[:5]]
-            if c and not found:
-                prims = [(c, UNCONFIRMED_SCORE, ['elements'])]
+    # through the primitive form both branches share (primitives)
+    prims = _prims(primitives(ctx, src, form, entry, hints, exclude, use_links, depth), 5)
     for prim, w, marks in prims:
         _within(ctx, add, db, era, prim, 0, ds, NO_HINTS, exclude, base_score=w,
                 route_prefix=f'через праформу {prim}: ', marks=marks + ['cognate'])
@@ -934,23 +1063,14 @@ def _across(ctx, add, src, dst, form, entry, hints, exclude, use_links, depth=0)
             else:
                 _within(ctx, add, db, de, f2, l2['stage'], ds, _hints(ctx, db, e2, de, l2['stage']), exclude, base_score=4.0,
                         route_prefix=f'связь Eldamo ({tag}) {e2["form"]}, затем ', marks=['link'])
+    # (a') a compound or derivative made again from its elements in the target conception
+    if entry is not None and ctx.use_elements:
+        _by_elements(ctx, add, entry, de, db, ds, depth, era_from=se)
     # (b) unchanged, when the target language allows the form
     if ss == ctx.last_stage(sb, se) and ds == ctx.last_stage(db, de) and sb == db and dst_code:
         add(form, 1.0, 'без изменений', ['unchanged'], [])
     # (c) re-etymologization: primitive of the source conception -> laws of the target one
-    prims = []
-    if entry is not None:
-        prims = [(f, 1.0) for f in _origins(entry, se)]
-    if not prims:
-        if ss == 0:
-            prims = [(form, 1.0)]
-        else:
-            c = compose(ctx, sb, entry, se, 0, depth) if entry is not None else None
-            found = ctx.backward(sb, se, form, ss, 0, {**hints, 'composed': True} if c else hints, exclude)
-            top = max((r['p'] * hint_weight(r) for r in found), default=1.0) or 1.0
-            prims = [(r['form'], r['p'] * hint_weight(r) / top) for r in found[:4]]
-            if c and not found:
-                prims = [(c, UNCONFIRMED_SCORE)]
+    prims = [(f, w) for f, w, _ in _prims(primitives(ctx, src, form, entry, hints, exclude, use_links, depth), 4)]
     for prim, w in prims:
         _within(ctx, add, db, de, prim, 0, ds, NO_HINTS, exclude, base_score=0.6 * w,
                 route_prefix=f'переэтимологизация через праформу {prim}: ', marks=['neologism'])
@@ -1058,6 +1178,18 @@ def _evaluation_jobs(ctx: Context, sample: int) -> tuple[list, dict]:
         fixed[path] = {'words': len(words)}
         for e in rnd.sample(words, min(sample, len(words))):
             jobs.append((path, 'seed', (b, code, e['id'])))
+    # F: one primitive for both branches -- words with an Eldamo primitive and a cognate of the
+    # other branch, the primitives of both hidden: read back from the word alone and together
+    # with its cognates (primitives)
+    for b, code in (('quenya', 'q'), ('quenya', 'mq'), ('sindarin', 's'), ('sindarin', 'n')):
+        era = ctx.langs(b)[code]['era']
+        words = sorted((e for e in ctx.lexicon[b].values() if e['lang'] == code and not e.get('neo')
+                        and e['speech'] != 'root' and origins(e, era) and _same_era_cognates(ctx, e, b, era)),
+                       key=lambda e: e['id'])
+        path = (f'joint primitive {code}',)
+        fixed[path] = {'words': len(words)}
+        for e in rnd.sample(words, min(sample, len(words))):
+            jobs.append((path, 'joint', (b, code, e['id'])))
     return jobs, fixed
 
 
@@ -1149,9 +1281,30 @@ def _evaluation_case(ctx: Context, kind: str, params: tuple) -> dict:
                 ctx.seed_roots = True
             st[key + '_first'] += bool(got) and got[0] in want
             st[key + '_any'] += any(g in want for g in got)
+    elif kind == 'joint':
+        b, code, wid = params
+        e = ctx.lexicon[b][wid]
+        l = ctx.langs(b)[code]
+        era, stage = l['era'], l['stage']
+        want = {comparable(o).strip('-') for o in origins(e, era)}
+        cogs = [e2 for _, e2, _ in _same_era_cognates(ctx, e, b, era)]
+        hidden = [(x, {k: x.pop(k) for k in ORIGIN_KEYS if k in x}) for x in [e] + cogs]
+        try:
+            exclude = frozenset(d for x in [e] + cogs for d in x.get('derivations', ()))
+            form = to_phonetic(e['form'], b).strip()
+            hints = _hints(ctx, b, e, era, stage)
+            st['cases'] += 1
+            for key, links in (('alone', False), ('joint', True)):
+                got = [comparable(t[0]).strip('-') for t in primitives(ctx, (b, era, stage), form, e, hints, exclude, links)]
+                st[key + '_first'] += bool(got) and got[0] in want
+                st[key + '_any'] += any(g in want for g in got[:LIMIT])
+        finally:
+            for x, keep in hidden:
+                x.update(keep)
     return dict(st)
 
 
+ORIGIN_KEYS = ('starts', 'stages', 'written_origins', 'proto_forms')   # what compound.origins reads
 _EVAL_CTX = None
 
 

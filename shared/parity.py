@@ -121,7 +121,8 @@ def recon_vectors(branches: dict, size: int = 1, every: int = 1) -> list:
         for e in rnd.sample(words, min(len(words), 6 * size)):
             l = langs[e['lang']]
             src = (b, l['era'], l['stage'])
-            for dst in ((b, l['era'], 0), (b, 'late', 2 if b == 'quenya' else 3),
+            other = 'sindarin' if b == 'quenya' else 'quenya'
+            for dst in ((b, l['era'], 0), (other, l['era'], 0), (b, 'late', 2 if b == 'quenya' else 3),
                         ('sindarin' if b == 'quenya' else 'quenya', l['era'], max(x['stage'] for x in ctx.langs(
                             'sindarin' if b == 'quenya' else 'quenya').values() if x['era'] == l['era']))):
                 n_case += 1

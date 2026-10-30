@@ -719,6 +719,10 @@
   "ru": "нерегулярно: один закон не сработал",
   "en": "irregular: one law did not act"
  },
+ "mark.joint": {
+  "ru": "к этой праформе ведут и слово, и его когнат в другой ветви",
+  "en": "both the word and its cognate in the other branch lead to this primitive"
+ },
  "mark.link": {
   "ru": "связь Eldamo между статьями",
   "en": "an Eldamo link between entries"
@@ -1462,6 +1466,10 @@
   "ru": "рекомендованные",
   "en": "recommended"
  },
+ "route.agreedCognate": {
+  "ru": "согласно с когнатом {forms}",
+  "en": "agreeing with the cognate {forms}"
+ },
  "route.attested": {
   "ru": "засвидетельствовано",
   "en": "attested"
@@ -1477,6 +1485,10 @@
  "route.backRoot": {
   "ru": "назад: по корню",
   "en": "backward: by the root"
+ },
+ "route.byCognate": {
+  "ru": "по когнату {forms}",
+  "en": "by the cognate {forms}"
  },
  "route.byElements": {
   "ru": "по когнатам составляющих: {names}",
@@ -1518,6 +1530,14 @@
   "ru": "частичный когнат по связи Eldamo: {form}",
   "en": "partial cognate by an Eldamo link: {form}"
  },
+ "route.primitiveCognate": {
+  "ru": "праформа Eldamo когната {form}",
+  "en": "Eldamo's primitive of the cognate {form}"
+ },
+ "route.primitiveEldamo": {
+  "ru": "праформа Eldamo",
+  "en": "Eldamo's primitive"
+ },
  "route.reetymology": {
   "ru": "переэтимологизация через праформу {prim}",
   "en": "re-etymologization via the primitive {prim}"
@@ -1525,6 +1545,10 @@
  "route.same": {
   "ru": "та же стадия",
   "en": "the same stage"
+ },
+ "route.sharedPrimitive": {
+  "ru": "праформа, общая для обеих ветвей",
+  "en": "the primitive both branches share"
  },
  "route.then": {
   "ru": ", затем ",

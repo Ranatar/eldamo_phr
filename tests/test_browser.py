@@ -191,6 +191,20 @@ class Browser(unittest.TestCase):
             { form: 'kʷetalkar', elements: ['2355375457', '2464648865'], limit: 1 })''')
         self.assertIn('kl', p[0]['form'])
 
+    def test_one_primitive_for_both_branches(self):
+        # Primitive Elvish is the ancestor of both branches: Q. quel- and its cognate S. pel- (no
+        # Eldamo primitive for either) read back to one ✶kwel-, the same in both rows of the panorama
+        page = self.page(self.atlas)
+        q, s = page.evaluate('''() => [['quenya', 'late', 0], ['sindarin', 'late', 0]].map(dst =>
+            WF.reconstruct(QU.allEngines(), ['quenya', 'late', 2], dst, { word: '3927334449', limit: 3 }))''')
+        self.assertEqual(q[0]['form'], s[0]['form'])
+        self.assertIn('joint', q[0]['marks'])
+        self.assertIn('cognate', s[0]['marks'])
+        # a word made in word formation in another conception: from its elements there (ᴹQ. quet-)
+        m = page.evaluate('''() => WF.reconstruct(QU.allEngines(), ['quenya', 'late', 2], ['quenya', 'middle', 2],
+            { form: 'kʷetalkar', elements: ['2355375457', '2464648865'], limit: 3 })''')
+        self.assertTrue(any(seg[0] == 'byElements' for v in m for seg in v['route']))
+
     def test_root_instead_in_other_era(self):
         # G. cwîl < ᴱ√QḶÐḶ, which Eldamo deprecates for N√KWILID: the late roots are those, not the
         # roots of a word linked to it (ᴹ√MOY of NS. muig²)

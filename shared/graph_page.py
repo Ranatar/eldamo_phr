@@ -123,6 +123,14 @@ def build(branches: dict) -> dict:
                     edge(nid, parent, rel, written(parent, nid) if rel == 'deriv' else None,
                          sc=sc and k == len(path) - 1)
                     parent = nid
+    # the word's elements also when its roots come another way or it has none (neo-roots'
+    # element_parts): ᴹQ. mir < ᴹ√MĪ/IMI with -r², Q. calima < √KAL with cal- and -ima, NQ. aialca =
+    # ai(a)- + -lka; a root named both as an element and a derivation is drawn once
+    for wid, e in entries.items():
+        for x in e.get('elements') or ():
+            i = x.get('id')
+            if i and (i, wid, 'deriv') not in edges:
+                edge(i, wid, 'element')
     for wid, e in entries.items():
         links = e.get('links') or {}
         for t in links.get('combine', ())[:1]:

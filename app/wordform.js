@@ -1377,12 +1377,8 @@ function reconstruct(engines, src, dst, opts = {}) {
   if (opts.word) entry = entryOf(engines, opts.word)[1];
   // a word made in word formation: what is known is its elements (word_ui.js: subjectFrom)
   else if ((opts.elements || []).length >= 2 && opts.form != null)
-  {
+    // its primitive form is its elements' (✶kʷet- + ✶aklar: primitives, compose)
     entry = { id: null, branch: sb, form: opts.form, lang: codeOf(S, se, ss), gloss: '', links: {}, elements: opts.elements };
-    // its primitive form: its elements' (ᴹ✶kwet- + ✶aklar)
-    const c = compose(engines, sb, entry, se, 0, opts.depth || 0);
-    if (c) entry.starts = [c.split('+').join('')];
-  }
   let form = opts.form;
   if (form == null) {
     if (!entry) return [];
@@ -1400,7 +1396,13 @@ function reconstruct(engines, src, dst, opts = {}) {
   };
   if (entry && sb === db && se === de) for (const f of stageForms(D, db, entry, de, ds)) add(f, 10, [['attested']], ['attested'], []);
   const depth = opts.depth || 0;
-  if (sb === db && se === de) {
+  if (de === se && ds === 0 && ss > 0) {
+    // the primitive form: one for both branches (primitives)
+    for (const [f, w, route, marks, trace] of primitives(engines, src, form, entry, hints, opts.useLinks !== false, depth))
+      add(f, w, db === sb ? route : [['sharedPrimitive']].concat(route), db === sb ? marks : marks.concat(['cognate']), db === sb ? trace : []);
+    // except a compound each branch made of its own elements (S. Adanel, Q. *Atanel; reconstruct.py)
+    if (db !== sb && entry) byElements(engines, add, entry, se, db, ds, depth);
+  } else if (sb === db && se === de) {
     const c = ds < ss && entry ? compose(engines, sb, entry, se, ds, depth) : null;
     // a word its elements explain: no search through rare correspondences (WIDE)
     within(engines, add, sb, se, form, ss, ds, c ? { ...hints, composed: true } : hints);
@@ -1639,8 +1641,99 @@ function translated(engines, id, sb, era, db, last, code, depth) {
   if (!f) return null;
   return { id: '~' + id, lang: code, form, speech: null, phonetic: f.replace(/^-+|-+$/g, '') };
 }
+// the primitive form of the word in its conception: one for both branches (reconstruct.py: primitives)
+const JOINT_MISS = 0.01;
+function backWeights(found) {
+  const top = Math.max(...found.map(r => r.p * hintWeight(r)), 0) || 1;
+  const out = new Map();
+  for (const r of found) {
+    const w = r.p * hintWeight(r) / top * (r.irregular ? IRREGULAR_SCORE : 1);
+    const k = comparable(r.form);
+    if (!out.has(k) || out.get(k)[0] < w) out.set(k, [w, r]);
+  }
+  return out;
+}
+function sameEraCognates(engines, entry, branch, era) {
+  const out = [];
+  if (!entry || !entry.id) return out;
+  for (const [i, src] of linkedCognates(engines, entry.id)) {
+    const [b2, e2] = entryOf(engines, i);
+    if (!e2 || b2 === branch || e2.speech === 'root') continue;
+    const l2 = engines[b2].languages.find(l => l.code === e2.lang);
+    if (!l2 || l2.era !== era || l2.stage === 0 || partialCognate(engines[b2], src, e2)) continue;
+    out.push([b2, e2, l2.stage]);
+  }
+  return out;
+}
+function primitives(engines, src, form, entry, hints, useLinks = true, depth = 0) {
+  const [sb, era, ss] = src;
+  if (ss === 0) return [[form, 1, [['same']], [], []]];
+  let cogs = useLinks ? sameEraCognates(engines, entry, sb, era) : [];
+  let out = [];
+  for (const [e, how] of [[entry, [['primitiveEldamo']]], ...cogs.map(([, e2]) => [e2, [['primitiveCognate', { form: e2.form }]]])]) {
+    const att = e ? dashedOrigins(e, era) : [];
+    if (att.length) { out = att.map(f => [f, 1, how, ['primitive-attested'], []]); cogs = []; break; }
+  }
+  const c = entry ? compose(engines, sb, entry, era, 0, depth) : null;
+  const mine = backWeights(backwardRun(engines[sb], era, form, ss, 0, c ? { ...hints, composed: true } : hints));
+  const theirs = [];
+  for (const [b2, e2, s2] of cogs) {
+    const w2 = backWeights(backwardRun(engines[b2], era, toPhonetic(e2.form, b2).trim(), s2, 0, hintsOf(engines[b2], b2, e2, era, s2)));
+    if (w2.size) theirs.push([b2, e2, w2]);
+  }
+  const joint = new Map();
+  for (const k of [...mine.keys(), ...theirs.flatMap(([, , w2]) => [...w2.keys()])]) {
+    if (joint.has(k)) continue;
+    let w = mine.has(k) ? mine.get(k)[0] : JOINT_MISS;
+    for (const [, , w2] of theirs) w *= w2.has(k) ? w2.get(k)[0] : JOINT_MISS;
+    joint.set(k, w);
+  }
+  const top = Math.max(...joint.values(), 0) || 1;
+  for (const [k, w] of joint) {
+    const [b, rec] = mine.has(k) ? [sb, mine.get(k)[1]] : theirs.filter(([, , w2]) => w2.has(k)).map(([b2, , w2]) => [b2, w2.get(k)[1]])[0];
+    const route = [[rec.via === 'direct' ? 'backDirect' : rec.via.startsWith('root') ? 'backRoot' : 'backPrimitive']];
+    if (rec.irregular) { const r = engines[b].rules.find(x => x.id === rec.irregular); route.push(['irregularLaw', { rule: r ? r.name : rec.irregular }]); }
+    const agreed = theirs.filter(([, , w2]) => w2.has(k)).map(([, e2]) => e2.form).join(', ');
+    if (!mine.has(k)) route.push(['byCognate', { forms: agreed }]);
+    else if (agreed) route.push(['agreedCognate', { forms: agreed }]);
+    const marks = ['reconstructed'].concat(rec.root ? ['root'] : [], rec.stem ? ['stem'] : [], rec.irregular ? ['irregular'] : [], agreed ? ['joint'] : []);
+    out.push([rec.form, 0.9 * w / top, route, marks, mine.has(k) ? rec.trace : []]);
+  }
+  if (c) {
+    const target = comparable(form);
+    const hit = forwardRun(engines[sb], era, c, 0, ss).slice(0, 4).some(([f]) => comparable(f) === target);
+    const parts = elementNames(engines, sb, entry);
+    out.push([c, hit ? COMPOSED_SCORE : UNCONFIRMED_SCORE, [[hit ? 'composed' : 'composedUnconfirmed', { parts }]], ['elements', hit ? 'reconstructed' : 'unconfirmed'], []]);
+  }
+  if (out.length && out[0][3].includes('primitive-attested')) out = out.slice(0, 1).concat(out.slice(1).sort((a, b) => b[1] - a[1]));
+  else out.sort((a, b) => b[1] - a[1]);
+  return out;
+}
+// the primitive forms a cognate or another conception goes through: Eldamo's if there are, else the best n
+function primsOf(ps, n) {
+  const att = ps.filter(t => t[3].includes('primitive-attested'));
+  const xs = att.length ? att : ps.slice(0, n);
+  const top = Math.max(...xs.map(t => t[1]), 0) || 1;
+  return xs.map(([f, w, , marks]) => [f, w / top, marks]);
+}
+// words of the target language that are the word in another conception (reconstruct.py: _conception_counterparts)
+const CONCEPTION_TAGS = ['combine', 'deprecated', 'see'];
+function conceptionCounterparts(engines, wid, branch, code) {
+  const e = entryOf(engines, wid)[1];
+  if (!e) return [];
+  const same = [wid, ...CONCEPTION_TAGS.flatMap(t => (e.links || {})[t] || []),
+    ...(reverseLinks(engines).get(wid) || []).filter(([, t]) => CONCEPTION_TAGS.includes(t)).map(([w]) => w)];
+  const uniq = [...new Set(same)];
+  const out = [];
+  for (const w of uniq) {
+    const [b2, e2] = entryOf(engines, w);
+    if (e2 && b2 === branch && e2.lang === code && e2.speech !== 'root') out.push(w);
+  }
+  for (const w of uniq) for (const i of counterparts(engines, w, branch, code)) if (!out.includes(i)) out.push(i);
+  return out;
+}
 // a compound of the other branch built again from the cognates of its elements (reconstruct.py: _by_elements)
-function byElements(engines, add, entry, era, db, ds, depth = 0) {
+function byElements(engines, add, entry, era, db, ds, depth = 0, eraFrom = null) {
   const els = entry.elements || [];
   const D = engines[db];
   const last = lastStageOf(D, era);
@@ -1649,6 +1742,12 @@ function byElements(engines, add, entry, era, db, ds, depth = 0) {
   const sb = entry.branch || entryOf(engines, entry.id)[0];
   const ids = [], names = [], pseudo = new Map();
   for (const x of els) {
+    if (eraFrom != null && eraFrom !== era) {
+      // a word of another conception: its elements as they are in the target one
+      const c = conceptionCounterparts(engines, x, db, code);
+      if (!c.length) return;
+      ids.push(c[0]); names.push(D.lexicon.get(c[0]).form); continue;
+    }
     const c = counterparts(engines, x, db, code);
     if (c.length) { ids.push(c[0]); names.push(D.lexicon.get(c[0]).form); continue; }
     const o = otherConception(engines, x, db, code);
@@ -1694,18 +1793,8 @@ function sideways(engines, add, src, dst, form, entry, hints, useLinks = true, d
     }
   }
   if (entry) byElements(engines, add, entry, era, db, ds, depth);
-  let prims = [];
-  if (entry) prims = dashedOrigins(entry, era).map(f => [f, 1, ['primitive-attested']]);
-  if (!prims.length) {
-    if (ss === 0) prims = [[form, 1, []]];
-    else {
-      const c = entry ? compose(engines, sb, entry, era, 0, depth) : null;
-      const found = backwardRun(engines[sb], era, form, ss, 0, c ? { ...hints, composed: true } : hints);
-      const top = Math.max(...found.map(r => r.p * hintWeight(r)), 0) || 1;
-      prims = found.slice(0, 5).map(r => [r.form, r.p * hintWeight(r) / top, ['reconstructed']]);
-      if (c && !found.length) prims = [[c, UNCONFIRMED_SCORE, ['elements']]];
-    }
-  }
+  // through the primitive form both branches share (primitives)
+  const prims = primsOf(primitives(engines, src, form, entry, hints, useLinks, depth), 5);
   for (const [prim, w, marks] of prims) within(engines, add, db, era, prim, 0, ds, NO_HINTS, w, [['viaPrimitive', { prim }]], marks.concat(['cognate']));
   const code = codeOf(D, era, ds);
   if (entry && code != null && ds === lastStageOf(D, era)) {
@@ -1740,19 +1829,10 @@ function across(engines, add, src, dst, form, entry, hints, useLinks, depth = 0)
       else within(engines, add, db, de, f2, l2.stage, ds, hintsOf(D, db, e2, de, l2.stage), 4, [['link', { tag, form: e2.form }]], ['link']);
     }
   }
+  // a compound or derivative made again from its elements in the target conception
+  if (entry) byElements(engines, add, entry, de, db, ds, depth, se);
   if (ss === lastStageOf(S, se) && ds === lastStageOf(D, de) && sb === db && dstCode) add(form, 1, [['unchanged']], ['unchanged'], []);
-  let prims = [];
-  if (entry) prims = dashedOrigins(entry, se).map(f => [f, 1]);
-  if (!prims.length) {
-    if (ss === 0) prims = [[form, 1]];
-    else {
-      const c = entry ? compose(engines, sb, entry, se, 0, depth) : null;
-      const found = backwardRun(S, se, form, ss, 0, c ? { ...hints, composed: true } : hints);
-      const top = Math.max(...found.map(r => r.p * hintWeight(r)), 0) || 1;
-      prims = found.slice(0, 4).map(r => [r.form, r.p * hintWeight(r) / top]);
-      if (c && !found.length) prims = [[c, UNCONFIRMED_SCORE]];
-    }
-  }
+  const prims = primsOf(primitives(engines, src, form, entry, hints, useLinks, depth), 4);
   for (const [prim, w] of prims) within(engines, add, db, de, prim, 0, ds, NO_HINTS, 0.6 * w, [['reetymology', { prim }]], ['neologism']);
 }
 

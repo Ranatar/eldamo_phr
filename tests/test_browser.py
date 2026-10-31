@@ -229,6 +229,15 @@ class Browser(unittest.TestCase):
         self.assertIn('ᴹ√(A)YAN', middle.inner_text())
         self.assertIn('LEÑ', middle.locator('a.borrowed').inner_text())
         self.assertNotIn('?', middle.inner_text())
+        # its middle form: ᴹQ. Ainulindale itself (the same form and meaning), not *ainukantele built of
+        # ᴹQ. kantele, which Tolkien replaced by lindalë
+        vs = page.evaluate('''() => WF.reconstruct(QU.allEngines(), ['quenya', 'late', 2], ['quenya', 'middle', 2], { word: '2854057487', limit: 3 })''')
+        self.assertEqual(vs[0]['form'], 'ainulindale')
+        self.assertFalse(any('kant' in v['form'] for v in vs))
+        # a root of the same meaning but another sound is not its counterpart: ᴹ√RIS is not ᴱ√FAKA
+        page.goto(self.atlas + '#w=3379797225')
+        page.wait_for_function("document.querySelector('#panorama [data-roots=\"early\"]')")
+        self.assertNotIn('FAKA', page.inner_text('#panorama [data-roots="early"]'))
 
     def test_root_instead_in_other_era(self):
         # G. cwîl < ᴱ√QḶÐḶ, which Eldamo deprecates for N√KWILID: the late roots are those, not the

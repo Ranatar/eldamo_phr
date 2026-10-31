@@ -64,7 +64,7 @@ class InterfaceCatalog(unittest.TestCase):
     DYNAMIC = {'tag.': ['suffix', 'prefix'], 'problem.': ['initial', 'cluster', 'final'], 'branch.': ['quenya', 'sindarin'],
                'route.': ['attested', 'same', 'forward', 'backDirect', 'backPrimitive', 'backRoot', 'cognateLink', 'viaPrimitive',
                           'nearSame', 'nearClose', 'link', 'unchanged', 'reetymology', 'then', 'byElements', 'partialLink', 'irregularLaw', 'composed', 'composedUnconfirmed',
-                          'primitiveEldamo', 'primitiveCognate', 'agreedCognate', 'byCognate', 'sharedPrimitive'],
+                          'primitiveEldamo', 'primitiveCognate', 'agreedCognate', 'byCognate', 'sharedPrimitive', 'sameForm'],
                'card.root.': ['element', 'cognate', 'source', 'combine', 'see', 'deprecated'],
                'root.via.': ['element', 'cognate', 'source', 'combine', 'see', 'deprecated', 'instead', 'borrowed'],
                'root.warn.': [w + t for w in ('deprecated', 'deleted', 'rejected', 'doubtful', 'unglossed', 'early') for t in ('', '.title')],

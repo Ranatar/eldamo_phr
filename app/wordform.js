@@ -1742,20 +1742,125 @@ function primsOf(ps, n) {
   const top = Math.max(...xs.map(t => t[1]), 0) || 1;
   return xs.map(([f, w, , marks]) => [f, w / top, marks]);
 }
-// words of the target language that are the word in another conception (reconstruct.py: _conception_counterparts)
-const CONCEPTION_TAGS = ['combine', 'deprecated', 'see'];
+// ---------------------------------------------------------------- root_checks.py
+// whether two forms begin alike and share their consonants (shared/root_checks.py, ported as it is)
+const RC_CLS = ['kgcqxhɣ', 'tdθþðs', 'pbfvwɸβ', 'm', 'nñŋ', 'l', 'r', 'yj'].map(x => new Set(Array.from(x)));
+const RC_ONSET = ['bvwβ', 'kcgxh', 'pfɸ', 'tdθþð', 's', 'nñŋ'].map(x => new Set(Array.from(x)));
+const RC_SINDARIN = new Set(['ns', 's', 'n', 'en', 'g', 'on', 'os', 'norths', 'ilk', 'eilk', 'dan', 'nan']);
+function rcNorm(s) {
+  return Array.from((s || '').toLowerCase().normalize('NFD')).filter(ch => !/\p{M}/u.test(ch)).join('')
+    .replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰√✶*!^#†()\-\s]/g, '');
+}
+function rcClasses(s, sindarin = false) {
+  s = rcNorm(s);
+  if (sindarin) s = s.replace(/ch/g, 'x').replace(/dh/g, 'ð').replace(/lh/g, 'l').replace(/rh/g, 'r').replace(/mh/g, 'v');
+  s = s.replace(/ngw/g, 'ŋg').replace(/kh/g, 'x').replace(/th/g, 'θ').replace(/ph/g, 'f').replace(/qu/g, 'q')
+    .replace(/kw/g, 'q').replace(/gw/g, 'w').replace(/ng/g, 'ŋ').replace(/hy/g, 'h').replace(/hl/g, 'l').replace(/hr/g, 'r');
+  const out = [];
+  for (const ch of Array.from(s)) {
+    let k = RC_CLS.findIndex(c => c.has(ch));
+    if (k < 0) continue;
+    if (k === 3 && sindarin) k = 2;
+    if (!out.length || out[out.length - 1] !== k) out.push(k);
+  }
+  return out;
+}
+function rcFirst(x) {
+  x = rcNorm(x);
+  for (const [a, b] of [['gw', 'w'], ['th', 'θ'], ['ph', 'f'], ['kh', 'x'], ['ch', 'x'], ['dh', 'ð'], ['hl', 'l'], ['lh', 'l'],
+    ['hr', 'r'], ['rh', 'r'], ['hw', 'w'], ['hy', 'h'], ['ng', 'ñ'], ['qu', 'q'], ['kw', 'q']]) {
+    if (x.startsWith(a)) { x = b + x.slice(a.length); break; }
+  }
+  const c = Array.from(x)[0];
+  return c && !'aeiouyáéíóúâêîôûäëïöü'.includes(c) ? c : '';
+}
+function sameFirstConsonant(a, b) {
+  const fa = rcFirst(a), fb = rcFirst(b);
+  if (!fa || !fb) return !fa && !fb;
+  return fa === fb || RC_ONSET.some(g => g.has(fa) && g.has(fb));
+}
+function sameOnset(a, b) {
+  const va = !rcFirst(a), vb = !rcFirst(b);
+  if (va && vb) return true;
+  if (!va && !vb) return sameFirstConsonant(a, b);
+  return ['g', 'w'].includes(rcFirst(a) || rcFirst(b));
+}
+function rcFound(r, wc, skippable) {
+  let best = null;
+  const go = (i, j, n) => {
+    if (i === r.length) { best = best == null ? n : Math.max(best, n); return; }
+    for (let k = j; k < wc.length; k++) if (wc[k] === r[i]) { go(i + 1, k + 1, n + 1); break; }
+    if (skippable.has(r[i])) go(i + 1, j, n);
+  };
+  go(0, 0, 0);
+  return best;
+}
+function consonantsMatch(word, rootForm, lang) {
+  const sindarin = RC_SINDARIN.has(lang);
+  const wc = rcClasses(word, sindarin);
+  const initialVowel = /^[aeiouáéíóúâêîôûäëïöüy]/.test(rcNorm(word));
+  const skippable = sindarin ? new Set([0, 7]) : new Set();
+  for (const variant of (rootForm || '').split('/')) {
+    const rc = rcClasses(variant, sindarin);
+    if (!rc.length) continue;
+    const tries = [rc];
+    if (initialVowel && (rc[0] === 0 || rc[0] === 2) && rc.length > 1) tries.push(rc.slice(1));
+    for (const r of tries) {
+      const n = rcFound(r, wc, skippable);
+      if (n != null && (n >= 2 || (rc.length === 1 && wc.length === 1 && n === 1))) return true;
+    }
+  }
+  return false;
+}
+// an earlier form of the same word, not another word put in its place (reconstruct.py: _resembles)
+const resembles = (a, b) => sameOnset(a, b) && (consonantsMatch(a, b, null) || consonantsMatch(b, a, null));
+
+// words of the target language that are the word in another conception: combine, see, then a resembling
+// deprecated word (reconstruct.py: _conception_counterparts)
+const CONCEPTION_RANK = { combine: 1, see: 2, deprecated: 3 };
+const CONCEPTION_TAGS = Object.keys(CONCEPTION_RANK);
 function conceptionCounterparts(engines, wid, branch, code) {
   const e = entryOf(engines, wid)[1];
   if (!e) return [];
-  const same = [wid, ...CONCEPTION_TAGS.flatMap(t => (e.links || {})[t] || []),
-    ...(reverseLinks(engines).get(wid) || []).filter(([, t]) => CONCEPTION_TAGS.includes(t)).map(([w]) => w)];
-  const uniq = [...new Set(same)];
+  const ranked = [[wid, 0], ...CONCEPTION_TAGS.flatMap(t => ((e.links || {})[t] || []).map(x => [x, CONCEPTION_RANK[t]])),
+    ...(reverseLinks(engines).get(wid) || []).filter(([, t]) => t in CONCEPTION_RANK).map(([w, t]) => [w, CONCEPTION_RANK[t]])];
+  ranked.sort((a, b) => a[1] - b[1]);
+  const same = [];
+  for (const [w, rank] of ranked) {
+    if (same.includes(w)) continue;
+    if (rank === 3) { const e2 = entryOf(engines, w)[1]; if (!e2 || !resembles(e.form, e2.form)) continue; }
+    same.push(w);
+  }
   const out = [];
-  for (const w of uniq) {
+  for (const w of same) {
     const [b2, e2] = entryOf(engines, w);
     if (e2 && b2 === branch && e2.lang === code && e2.speech !== 'root') out.push(w);
   }
-  for (const w of uniq) for (const i of counterparts(engines, w, branch, code)) if (!out.includes(i)) out.push(i);
+  for (const w of same) for (const i of counterparts(engines, w, branch, code)) if (!out.includes(i)) out.push(i);
+  return out;
+}
+// the same word in another conception, unlinked: the same form and a word of the gloss (reconstruct.py: _same_form_words)
+const foldForm = f => Array.from((f || '').toLowerCase().normalize('NFD')).filter(ch => !/\p{M}/u.test(ch)).join('').replace(/[^a-zþðɣŋ]/g, '');
+function sameFormWords(engines, entry, branch, era) {
+  const D = engines[branch];
+  if (!D.foldIndex) {
+    const idx = new Map();
+    for (const e2 of D.lexiconList) if (e2.speech !== 'root') {
+      const k = e2.lang + '|' + foldForm(e2.form);
+      if (!idx.has(k)) idx.set(k, []);
+      idx.get(k).push(e2.id);
+    }
+    Object.defineProperty(D, 'foldIndex', { value: idx, enumerable: false });
+  }
+  const gw = glossWords(entry.gloss);
+  const out = [];
+  if (!gw.size) return out;
+  for (const l of D.languages) {
+    if (l.era !== era || l.stage === 0) continue;
+    for (const i of D.foldIndex.get(l.code + '|' + foldForm(entry.form)) || []) {
+      if (i !== entry.id && [...glossWords(D.lexicon.get(i).gloss)].some(w => gw.has(w))) out.push(i);
+    }
+  }
   return out;
 }
 // a compound of the other branch built again from the cognates of its elements (reconstruct.py: _by_elements)
@@ -1836,6 +1941,7 @@ function sideways(engines, add, src, dst, form, entry, hints, useLinks = true, d
 const NEO_LANG = { quenya: 'nq', sindarin: 'ns' };
 // links between conceptions: combine first, then see, then deprecated (reconstruct.py: LINK_WEIGHT)
 const LINK_WEIGHT = { combine: 1, see: 0.9, deprecated: 0.8 };
+const SAME_FORM_WEIGHT = 0.85;    // the same form and meaning, not linked by Eldamo (sameFormWords)
 function across(engines, add, src, dst, form, entry, hints, useLinks, depth = 0) {
   const [sb, se, ss] = src, [db, de, ds] = dst;
   const S = engines[sb], D = engines[db];
@@ -1844,6 +1950,9 @@ function across(engines, add, src, dst, form, entry, hints, useLinks, depth = 0)
     const linked = [];
     for (const [tag, ids] of Object.entries(entry.links || {})) if (['combine', 'deprecated', 'see'].includes(tag)) for (const id of ids) linked.push([id, tag]);
     linked.push(...(reverseLinks(engines).get(entry.id) || []).filter(([, t]) => t in LINK_WEIGHT));
+    // the same word in that conception, unlinked: the same form and meaning (sameFormWords)
+    const had = new Set(linked.map(([w]) => w));
+    for (const w of sameFormWords(engines, entry, db, de)) if (!had.has(w)) linked.push([w, 'form']);
     for (const [wid, tag] of linked) {
       const [b2, e2] = entryOf(engines, wid);
       if (!e2 || b2 !== db || e2.speech === 'root') continue;
@@ -1853,15 +1962,16 @@ function across(engines, add, src, dst, form, entry, hints, useLinks, depth = 0)
       if (neo) l2 = { era: 'late', stage: lastStageOf(D, 'late') };
       if (!l2 || l2.era !== de) continue;
       const f2 = toPhonetic(e2.form, db).trim();
-      const lw = LINK_WEIGHT[tag];
-      if (l2.stage === ds) add(f2, 5 * lw, [['link', { tag, form: e2.form }]], neo ? ['link', 'neologism'] : ['link'], []);
+      const lw = tag === 'form' ? SAME_FORM_WEIGHT : LINK_WEIGHT[tag];
+      const how = tag === 'form' ? ['sameForm', { form: e2.form }] : ['link', { tag, form: e2.form }];
+      if (l2.stage === ds) add(f2, 5 * lw, [how], neo ? ['link', 'neologism'] : ['link'], []);
       else if (ds === 0 && !neo) {
         // the primitive of the linked word: Eldamo's, else read back (primitives)
         const ps = primitives(engines, [db, de, l2.stage], f2, e2, hintsOf(D, db, e2, de, l2.stage), useLinks, depth + 1);
         const att = ps.filter(t => t[3].includes('primitive-attested'));
         for (const [f, w, route, marks, trace] of att.length ? att : ps.slice(0, 4))
-          add(f, 4 * lw * w, [['link', { tag, form: e2.form }]].concat(route), ['link'].concat(marks), trace);
-      } else within(engines, add, db, de, f2, l2.stage, ds, hintsOf(D, db, e2, de, l2.stage), 4 * lw, [['link', { tag, form: e2.form }]], ['link']);
+          add(f, 4 * lw * w, [how].concat(route), ['link'].concat(marks), trace);
+      } else within(engines, add, db, de, f2, l2.stage, ds, hintsOf(D, db, e2, de, l2.stage), 4 * lw, [how], ['link']);
     }
   }
   // a compound or derivative made again from its elements in the target conception
@@ -1989,5 +2099,6 @@ function parityRecon(engines, cases) {
   Unsupported, phonemes, canonical, comparable, compileRule, applyRule, stressed, nuclei, run, sequence,
   toPhonetic, junctionPredict, reduceCompound, prosodicLengthening, compoundVariants, lenite, backform,
   formsAt, predict, makeEngine, allomorphs, affixKind, predictAffix, reconstruct, phonotacticProblems, rootCandidates,
+  sameOnset, consonantsMatch, resembles,
 };
 })();

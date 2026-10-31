@@ -518,6 +518,16 @@ function rootCounterparts(id) {
   }
   return out;
 }
+// two roots alike in sound: one the beginning of the other (√AYA(N) ~ ᴱ√AYA¹), maybe after a lost
+// initial g-, w-, or the same onset and
+// consonants (ᴱ√QḶÐḶ ~ N√KWILID; wordform.js: resembles, after neo-roots' root checks)
+const rootLetters = f => Array.from(String(f).toLowerCase().normalize('NFD')).filter(ch => !/\p{M}/u.test(ch)).join('').replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰()\-\s]/g, '');
+function rootsAlike(a, b) {
+  const x = rootLetters(a), y = rootLetters(b);
+  const lost = f => f.replace(/^[gw](?=[aeiouy])/, '');     // a lost initial g-, w- (ᴹ√GAL² ~ ᴱ√ALA²)
+  const prefix = (p, q) => p.startsWith(q) || q.startsWith(p);
+  return prefix(x, y) || prefix(lost(x), lost(y)) || WF.resembles(a, b);
+}
 // roots of a conception by their form (√LIN² of ᴹ√LIN²), for a root the index links to nothing there
 let rootsByForm = null;
 const formKey = f => String(f).replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰]/g, '');      // the number of a homonym aside
@@ -549,7 +559,9 @@ function mappedRoots(own, era, depth = 0) {
   for (const [k, rs] of parts) {
     const part = k < 0 ? null : k;
     const mk = id => ({ id, form: ROOTS[id].f, marker: ROOT_MARKERS[ROOTS[id].l] || '√', via: 'instead', part });
-    const hit = rs.flatMap(r => rootCounterparts(r.id)).find(([e]) => e === era);
+    // only a root that sounds alike: Eldamo also files a root under another of the same meaning
+    // (ᴱ√FAKA 'cut' under ᴹ√RIS), which would be a translation, not this root's history
+    const hit = rs.flatMap(r => rootCounterparts(r.id).map(c => [...c, r])).find(([e, x, r]) => e === era && rootsAlike(ROOTS[x].f, r.form));
     if (hit) { out.push(mk(hit[1])); found++; continue; }
     const same = rs.map(r => sameFormRoot(r.id, era)).find(Boolean);
     if (same) { out.push(mk(same)); found++; continue; }

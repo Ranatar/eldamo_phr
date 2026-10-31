@@ -27,12 +27,14 @@ from __future__ import annotations
 
 import math
 import re
+import unicodedata
 from collections import Counter, defaultdict
 
 from . import backform as BF
 from .compound import origins
 from .interpreter import comparable, is_vowel, join, phonemes
 from .orthography import to_phonetic
+from .root_checks import consonants_match, same_onset
 from .roots import PRIMITIVE_ERA, root_phonetic, root_variants
 from .sequencer import Sequencer, _replays
 
@@ -930,21 +932,71 @@ def _translated(ctx, x: dict, sb: str, era: str, db: str, last: int, code: str, 
     return {'id': '~' + e['id'], 'lang': code, 'form': e['form'], 'speech': None, 'phonetic': f.strip('-')}
 
 
+CONCEPTION_RANK = {'combine': 1, 'see': 2, 'deprecated': 3}
+
+
+def _resembles(a: str | None, b: str | None) -> bool:
+    """Two forms begin alike and share their consonants (shared/root_checks.py): an earlier form of
+    the same word (ᴹQ. lindale ~ Q. lindalë), not another word put in its place (ᴹQ. kantele)."""
+    return same_onset(a, b) and (consonants_match(a, b, None) or consonants_match(b, a, None))
+
+
 def _conception_counterparts(ctx, wid: str, branch: str, code: str) -> list:
     """Words of the target language that are the word in another conception: linked to it by
-    <combine>, <deprecated> or <see> either way (Q. quet- ~ ᴹQ. quet-), or their cognates there."""
+    <combine>, <see> or <deprecated> either way, in this order (Q. quet- ~ ᴹQ. quet-), or their
+    cognates there. A <deprecated> word counts only if it resembles this one: Tolkien's other word
+    for the same thing is a translation, not this word (Q. lindalë: ᴹQ. lindale, not kantele)."""
     _, e = ctx.entry(wid)
     if e is None:
         return []
-    same = [wid] + [x['id'] for t in ('combine', 'deprecated', 'see') for x in e.get('links', {}).get(t, ())]
-    same += [w for w, tag in ctx.reverse_links.get(wid, []) if tag in ('combine', 'deprecated', 'see')]
+    ranked = [(wid, 0)] + [(x['id'], CONCEPTION_RANK[t]) for t in CONCEPTION_RANK for x in e.get('links', {}).get(t, ())]
+    ranked += [(w, CONCEPTION_RANK[t]) for w, t in ctx.reverse_links.get(wid, []) if t in CONCEPTION_RANK]
+    same = []
+    for w, rank in sorted(ranked, key=lambda t: t[1]):
+        if w in same:
+            continue
+        if rank == 3:
+            _, e2 = ctx.entry(w)
+            if e2 is None or not _resembles(e['form'], e2['form']):
+                continue
+        same.append(w)
     out = []
-    for w in dict.fromkeys(same):
+    for w in same:
         b2, e2 = ctx.entry(w)
         if e2 is not None and b2 == branch and e2['lang'] == code and e2.get('speech') != 'root':
             out.append(w)
-    for w in dict.fromkeys(same):
+    for w in same:
         out += [i for i in _counterparts(ctx, w, branch, code) if i not in out]
+    return out
+
+
+def _fold(form: str | None) -> str:
+    """A form without diacritics, hyphens, numbers and case: Ainulindalë = Ainulindale."""
+    s = unicodedata.normalize('NFD', (form or '').lower())
+    return re.sub(r'[^a-zþðɣŋ]', '', ''.join(ch for ch in s if not unicodedata.combining(ch)))
+
+
+def _same_form_words(ctx, entry: dict, branch: str, era: str) -> list:
+    """Words of the branch in another conception with the word's own form and a word of its gloss in
+    common, which Eldamo does not link (Q. Ainulindalë ~ ᴹQ. Ainulindale 'Music of the Ainur')."""
+    key = (branch, 'fold')
+    if key not in ctx._tables:
+        idx = {}
+        for e2 in ctx.lexicon[branch].values():
+            if e2.get('speech') != 'root':
+                idx.setdefault((e2['lang'], _fold(e2['form'])), []).append(e2['id'])
+        ctx._tables[key] = idx
+    idx = ctx._tables[key]
+    gw = gloss_words(entry.get('gloss'))
+    out = []
+    if not gw:
+        return out
+    for code, l in ctx.langs(branch).items():
+        if l['era'] != era or l['stage'] == 0:
+            continue
+        for i in idx.get((code, _fold(entry['form'])), ()):
+            if i != entry['id'] and gw & gloss_words(ctx.lexicon[branch][i].get('gloss')):
+                out.append(i)
     return out
 
 
@@ -1062,6 +1114,7 @@ NEO_LANG = {'quenya': 'nq', 'sindarin': 'ns'}
 # links between conceptions: the same word merged (combine) first, then a reference (see), then
 # the word Tolkien replaced by this one or by which he replaced it (deprecated: Q. soron < ᴱQ. earen)
 LINK_WEIGHT = {'combine': 1.0, 'see': 0.9, 'deprecated': 0.8}
+SAME_FORM_WEIGHT = 0.85    # the same form and meaning, not linked by Eldamo (_same_form_words)
 
 
 def _across(ctx, add, src, dst, form, entry, hints, exclude, use_links, depth=0):
@@ -1075,6 +1128,8 @@ def _across(ctx, add, src, dst, form, entry, hints, exclude, use_links, depth=0)
             if tag in ('combine', 'deprecated', 'see'):
                 linked += [(x['id'], tag) for x in ls]
         linked += [(w, t) for w, t in ctx.reverse_links.get(entry['id'], []) if t in LINK_WEIGHT]
+        # the same word in that conception, unlinked: the same form and meaning (_same_form_words)
+        linked += [(w, 'form') for w in _same_form_words(ctx, entry, db, de) if w not in {x for x, _ in linked}]
         for wid, tag in linked:
             b2, e2 = ctx.entry(wid)
             if e2 is None or b2 != db or e2['speech'] == 'root':
@@ -1088,18 +1143,19 @@ def _across(ctx, add, src, dst, form, entry, hints, exclude, use_links, depth=0)
             if l2 is None or l2['era'] != de:
                 continue
             f2 = to_phonetic(e2['form'], db).strip()
-            lw = LINK_WEIGHT[tag]
+            lw = SAME_FORM_WEIGHT if tag == 'form' else LINK_WEIGHT[tag]
+            how = f'та же форма и значение: {e2["form"]}' if tag == 'form' else f'связь Eldamo ({tag}): {e2["form"]}'
             if l2['stage'] == ds:
-                add(f2, 5.0 * lw, f'связь Eldamo ({tag}): {e2["form"]}', ['link'] + (['neologism'] if neo else []), [])
+                add(f2, 5.0 * lw, how, ['link'] + (['neologism'] if neo else []), [])
             elif ds == 0 and not neo:
                 # the primitive of the linked word: Eldamo's, else read back (primitives)
                 ps = primitives(ctx, (db, de, l2['stage']), f2, e2, _hints(ctx, db, e2, de, l2['stage']), exclude, use_links, depth + 1)
                 att = [t for t in ps if 'primitive-attested' in t[3]]
                 for f, w, route, marks, trace in att or ps[:4]:
-                    add(f, 4.0 * lw * w, f'связь Eldamo ({tag}) {e2["form"]}, затем {route}', ['link'] + marks, trace)
+                    add(f, 4.0 * lw * w, f'{how}, затем {route}', ['link'] + marks, trace)
             else:
                 _within(ctx, add, db, de, f2, l2['stage'], ds, _hints(ctx, db, e2, de, l2['stage']), exclude, base_score=4.0 * lw,
-                        route_prefix=f'связь Eldamo ({tag}) {e2["form"]}, затем ', marks=['link'])
+                        route_prefix=f'{how}, затем ', marks=['link'])
     # (a') a compound or derivative made again from its elements in the target conception
     if entry is not None and ctx.use_elements:
         _by_elements(ctx, add, entry, de, db, ds, depth, era_from=se)

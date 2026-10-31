@@ -1562,6 +1562,10 @@
   "ru": "та же стадия",
   "en": "the same stage"
  },
+ "route.sameForm": {
+  "ru": "то же слово в этой концепции (та же форма и значение, Eldamo их не связывает): {form}",
+  "en": "the same word in this conception (the same form and meaning, not linked by Eldamo): {form}"
+ },
  "route.sharedPrimitive": {
   "ru": "праформа, общая для обеих ветвей",
   "en": "the primitive both branches share"

@@ -198,6 +198,20 @@ a.ext { color: var(--accent); font-size: 12.5px; }
 .node text { font-family: var(--f-form); font-size: 12.5px; fill: var(--ink); paint-order: stroke; stroke: var(--bg); stroke-width: 3px; stroke-linejoin: round; }
 .node text .lm { font-size: 11px; }
 .node text .more { fill: var(--accent); font-family: var(--f-ui); font-size: 10.5px; }
+/* a link picked by a click: it and its two nodes stand out, the rest fade */
+.edge-hit { fill: none; stroke: transparent; stroke-width: 11px; cursor: pointer; pointer-events: stroke; }
+.edge.esel { stroke-width: 3.2px !important; opacity: 1 !important; }
+g.edge-sel .edge:not(.esel) { opacity: .12; }
+g.edge-sel .node:not(.esel) { opacity: .28; }
+.export { position: relative; }
+.export-menu {
+  position: absolute; right: 0; top: calc(100% + 4px); z-index: 6; display: flex; flex-direction: column; gap: 2px;
+  min-width: 190px; padding: 4px; background: var(--panel); border: 1px solid var(--line); border-radius: 6px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / .12);
+}
+.export-menu button { all: unset; padding: 5px 8px; border-radius: 4px; font-size: 12.5px; cursor: pointer; color: var(--ink); }
+.export-menu button:hover, .export-menu button:focus-visible { background: var(--bg); }
+.edge-card .arrow { color: var(--muted); margin: 0 4px; }
 .node { cursor: pointer; }
 .node.sel .ring { stroke: var(--focus); }
 .node.dep { opacity: .55; }
@@ -331,6 +345,15 @@ a.ext { color: var(--accent); font-size: 12.5px; }
       <div class="stage-tools">
         <button class="btn" id="fit" type="button" data-i18n="tools.fit">Вписать</button>
         <button class="btn" id="relayout" type="button" data-i18n="tools.relayout">Перестроить</button>
+        <div class="export">
+          <button class="btn" id="export" type="button" aria-haspopup="true" aria-expanded="false" data-i18n="export.label">Экспорт</button>
+          <div class="export-menu" id="export-menu" hidden>
+            <button type="button" data-exp="svg" data-mode="graph" data-i18n="export.svg">SVG</button>
+            <button type="button" data-exp="png" data-mode="graph" data-i18n="export.png">PNG</button>
+            <button type="button" data-exp="json" data-mode="graph" data-i18n="export.json">JSON</button>
+            <button type="button" data-exp="map" data-mode="roots" data-i18n="export.map">PNG</button>
+          </div>
+        </div>
       </div>
     </div>
     <div class="stage-note" id="note"></div>
@@ -501,9 +524,15 @@ const expanded = new Set();
 function own(x, by) { if (!owners.has(x)) owners.set(x, new Set()); owners.get(x).add(by); }
 const pos = new Map();          // node -> {x, y, vx, vy, fx, fy}; a dragged node keeps fx, fy
 
-function hiddenCount(i) {
+// links not shown yet, by side: to the sources (what the node comes from: its earlier forms, its
+// elements, the forms merged into it, its cognates, the root it is filed under) and to the derivatives
+function hiddenIn(i) {
   let h = 0;
   for (const k of inE[i]) if (edgeOn(k) && !visible.has(G.edges[k][0]) && passes(G.edges[k][0])) h++;
+  return h;
+}
+function hiddenOut(i) {
+  let h = 0;
   for (const k of outE[i]) if (edgeOn(k) && !visible.has(G.edges[k][1]) && passes(G.edges[k][1])) h++;
   return h;
 }
@@ -551,11 +580,12 @@ function focus(i, keep) {
   try { history.replaceState(null, '', '#n-' + G.ids[i]); } catch (e) { /* the frame may refuse */ }
   render(true);
 }
-function expand(i) {
+// dir: 'all', 'in' (the sources only) or 'out' (the derivatives only)
+function expand(i, dir = 'all') {
   const around = [];
-  for (const k of inE[i]) if (edgeOn(k)) around.push(G.edges[k][0]);
+  if (dir !== 'out') for (const k of inE[i]) if (edgeOn(k)) around.push(G.edges[k][0]);
   let added = 0;
-  for (const k of outE[i]) {
+  for (const k of dir === 'in' ? [] : outE[i]) {
     if (!edgeOn(k)) continue;
     if (added >= 80) break;
     const b = G.edges[k][1];
@@ -595,6 +625,11 @@ function collapse(i) {
 function toggle(i) {
   if (expanded.has(i)) collapse(i); else expand(i);
 }
+// one side: opens what is hidden there; with nothing hidden there, collapses what the node expanded
+function toggleSide(i, dir) {
+  if ((dir === 'in' ? hiddenIn(i) : hiddenOut(i)) > 0) expand(i, dir);
+  else if (expanded.has(i)) collapse(i);
+}
 function removeNode(i) {
   if (i === focusNode) return;
   if (expanded.has(i)) collapseFrom(i);
@@ -608,6 +643,7 @@ const svg = d3.select('#graph');
 const root = svg.append('g');
 const gBands = root.append('g');
 const gEdges = root.append('g');
+const gHits = root.append('g');       // wide invisible strokes over the links, to pick one by a click
 const gNodes = root.append('g');
 const defs = svg.append('defs');
 let mode = 'graph';
@@ -622,7 +658,8 @@ function makeMarkers() {
   defs.selectAll('*').remove();
   for (const r of G.rels) {
     defs.append('marker').attr('id', 'arrow-' + r).attr('viewBox', '0 -4 8 8').attr('refX', 8).attr('refY', 0)
-      .attr('markerWidth', 7).attr('markerHeight', 7).attr('orient', 'auto')
+      .attr('markerUnits', 'userSpaceOnUse')        // the same arrowhead on a thick (picked) link
+      .attr('markerWidth', 10.5).attr('markerHeight', 10.5).attr('orient', 'auto')
       .append('path').attr('d', 'M0,-3.5L8,0L0,3.5Z').attr('fill', css('--e-' + r));
   }
 }
@@ -783,13 +820,15 @@ function linkPath(d) {
 }
 // one click selects; two expand or collapse what the node expanded; three fold its derivatives.
 // The second click waits a moment to see whether a third comes
+// With Shift a double click opens the derivatives only, with Ctrl (Alt, ⌥) the sources only
 let clickTimer = null;
-function clicks(i, n) {
+function clicks(i, n, ev) {
   if (n < 2) return;
+  const dir = ev && ev.shiftKey ? 'out' : ev && (ev.ctrlKey || ev.altKey || ev.metaKey) ? 'in' : 'all';
   clearTimeout(clickTimer);
   clickTimer = setTimeout(() => {
     selected = i;
-    if (n >= 3) collapseDerivatives(i); else toggle(i);
+    if (n >= 3) collapseDerivatives(i); else if (dir === 'all') toggle(i); else toggleSide(i, dir);
     select(i);
   }, 280);
 }
@@ -967,14 +1006,21 @@ function render(refit) {
     .classed('sc', d => !!(d.x && d.x.sc))
     .classed('via', d => !!d.via)
     .attr('marker-end', d => `url(#arrow-${d.rel})`);
-  es.select('title').text(d => {
+  const hits = gHits.selectAll('path').data(links, d => d.k).join(
+    enter => enter.append('path').attr('class', 'edge-hit').call(p => p.append('title')));
+  hits.on('click', (ev, d) => { ev.stopPropagation(); selectEdge(d); });
+  hits.select('title').text(d => edgeTip(d));
+  es.select('title').text(d => edgeTip(d));
+  if (selEdge) selEdge = links.find(l => l.k === selEdge.k) || null;
+  markEdge();
+  function edgeTip(d) {
     let tip = `${REL[d.rel][1]}: ${marker(d.a)} ${shown(d.a)} → ${marker(d.b)} ${shown(d.b)}`;
     if (d.via) tip += '\n' + t('edge.via');
     if (d.x && d.x.nm) tip += '\n' + t('edge.nm');
     if (d.x && d.x.sc) tip += '\n' + t('edge.sc');
     for (const [src, chain] of (d.x && d.x.w) || []) tip += '\n' + t('card.written', { src, chain: chain.join(' > ') });
     return tip;
-  });
+  }
 
   // nodes
   const ns = gNodes.selectAll('g.node').data(data, d => d.i).join(enter => {
@@ -983,7 +1029,7 @@ function render(refit) {
     g.append('path').attr('class', 'shape');
     g.append('text').attr('text-anchor', 'middle').attr('y', -11);
     g.append('title');
-    g.on('click', (ev, d) => { ev.stopPropagation(); select(d.i); clicks(d.i, ev.detail); })
+    g.on('click', (ev, d) => { ev.stopPropagation(); select(d.i); clicks(d.i, ev.detail, ev); })
       .call(d3.drag()
         // a node is dragged with what hangs on it alone (its derivatives without another parent on
         // the graph); with Shift alone. What is moved stays where it is put; "Re-layout" frees it
@@ -1009,17 +1055,24 @@ function render(refit) {
     const label = d3.select(this);
     const n = G.nodes[d.i], isR = n.k === 'root', al = altLang(n);
     label.selectAll('*').remove();
+    const hin = hiddenIn(d.i), hout = hiddenOut(d.i);
+    if (hin) label.append('tspan').attr('class', 'more').text('+' + hin + '  ');
     label.append('tspan').attr('class', 'lm').style('fill', langColor(n.l, isR)).text(codeMarker(n.l, isR));
     if (al) label.append('tspan').attr('class', 'lm').style('fill', langColor(al, isR)).text('[' + codeMarker(al, isR) + ']');
     label.append('tspan').attr('font-style', isR ? 'normal' : 'italic')
       .attr('font-weight', isR ? 600 : 500).text((isR ? '' : ' ') + shown(d.i));
-    const h = hiddenCount(d.i);
-    if (h) label.append('tspan').attr('class', 'more').text('  +' + h);
+    if (hout) label.append('tspan').attr('class', 'more').text('  +' + hout);
     let w = 60;
     try { w = this.getComputedTextLength(); } catch (e) { /* not laid out */ }
     d.w = Math.max(20, w);
   });
-  ns.select('title').text(d => `${marker(d.i)} ${shown(d.i)}${G.nodes[d.i].g ? ' “' + G.nodes[d.i].g + '”' : ''}`);
+  ns.select('title').text(d => {
+    const hin = hiddenIn(d.i), hout = hiddenOut(d.i);
+    let tip = `${marker(d.i)} ${shown(d.i)}${G.nodes[d.i].g ? ' “' + G.nodes[d.i].g + '”' : ''}`;
+    if (hin) tip += '\n' + t('hidden.in', { n: hin });
+    if (hout) tip += '\n' + t('hidden.out', { n: hout });
+    return tip;
+  });
 
   // the places are computed (layout); the simulation only brings the nodes to them, keeps boxes
   // apart and every node inside its band. No springs: a node moved by hand stays, the rest do not move
@@ -1047,6 +1100,7 @@ function render(refit) {
 
   function draw() {
     es.attr('d', linkPath);
+    hits.attr('d', linkPath);
     ns.attr('transform', d => `translate(${d.x},${d.y})`);
     if (bands.length) {
       let x0 = Infinity, x1 = -Infinity;
@@ -1058,6 +1112,7 @@ function render(refit) {
   }
   lastCounts = [data.length, links.length];
   showNote();
+  markEdge();
 }
 
 function shapePath(i) {
@@ -1086,7 +1141,8 @@ function fitView(animate) {
   const tr = d3.zoomIdentity.translate(box.width / 2 - k * (x0 + x1) / 2, top + h / 2 - k * (y0 + y1) / 2).scale(k);
   (animate ? svg.transition().duration(450) : svg).call(zoom.transform, tr);
 }
-svg.on('click', () => {});
+svg.on('click', () => { if (mode === 'graph') clearEdge(); });
+document.addEventListener('keydown', ev => { if (ev.key === 'Escape') clearEdge(); });
 $('fit').addEventListener('click', () => (mode === 'graph' ? fitView(!reduced) : ovFit(!reduced)));
 // a new layout, and every node moved by hand freed
 $('relayout').addEventListener('click', () => { for (const i of visible) pos.delete(i); render(true); });
@@ -1101,7 +1157,41 @@ function nodeButton(i) {
 function relTag(rel) {
   return `<span class="rel" style="color:${css('--e-' + rel)}">${esc(REL[rel][0])}</span>`;
 }
+// ---- a picked link: it and its two nodes stand out, the card describes it
+let selEdge = null;
+function markEdge() {
+  const k = selEdge && selEdge.k;
+  root.classed('edge-sel', !!selEdge);
+  gEdges.selectAll('path').classed('esel', d => d.k === k);
+  gNodes.selectAll('g.node').classed('esel', d => !!selEdge && (d.i === selEdge.a || d.i === selEdge.b));
+}
+function selectEdge(d) {
+  selEdge = d;
+  markEdge();
+  const x = d.x || {};
+  const written = (x.w || []).map(([src, chain]) => `<li class="written">${esc(t('card.written', { src, chain: chain.join(' > ') }))}</li>`).join('');
+  const flags = [];
+  if (d.via) flags.push(`<span class="tag">${esc(t('edge.via'))}</span>`);
+  if (x.nm) flags.push(`<span class="tag warn">${esc(t('tag.nm'))}</span>`);
+  if (x.sc) flags.push(`<span class="tag" title="${esc(t('tag.direct.title'))}">${esc(t('tag.direct'))}</span>`);
+  $('card').innerHTML = `<div class="card-head edge-card">
+      <div class="meta">${esc(t('card.edge'))}</div>
+      <div class="big">${relTag(d.rel)}</div>
+    </div>
+    ${flags.length ? `<div class="tags">${flags.join('')}</div>` : ''}
+    <div class="sec"><h3>${esc(t('card.edgeFrom'))}</h3><ul class="links"><li>${nodeButton(d.a)}</li></ul></div>
+    <div class="sec"><h3>${esc(t('card.edgeTo'))}</h3><ul class="links"><li>${nodeButton(d.b)}</li></ul></div>
+    ${written ? `<div class="sec"><h3>${esc(t('card.edgeWritten'))}</h3><ul class="links">${written}</ul></div>` : ''}
+    <p class="hint">${esc(t('card.edgeHint'))}</p>`;
+}
+function clearEdge() {
+  if (!selEdge) return;
+  selEdge = null;
+  markEdge();
+  if (selected >= 0) select(selected);
+}
 function select(i) {
+  if (selEdge) { selEdge = null; markEdge(); }
   selected = i;
   if (mode === 'graph' && sim) gEdges.selectAll('path').attr('d', linkPath);
   if (ovBuilt) ovRequestDraw();
@@ -1140,6 +1230,8 @@ function select(i) {
   html += `<div class="actions">
       ${i !== focusNode ? `<button class="btn primary" type="button" data-act="focus">${esc(t('act.focus'))}</button>` : ''}
       <button class="btn" type="button" data-act="expand">${esc(t(expanded.has(i) && visible.has(i) ? 'act.collapse' : 'act.expand'))}</button>
+      ${visible.has(i) && mode === 'graph' && hiddenIn(i) ? `<button class="btn" type="button" data-act="expand-in" title="${esc(t('act.expandIn.title'))}">${esc(t('act.expandIn', { n: hiddenIn(i) }))}</button>` : ''}
+      ${visible.has(i) && mode === 'graph' && hiddenOut(i) ? `<button class="btn" type="button" data-act="expand-out" title="${esc(t('act.expandOut.title'))}">${esc(t('act.expandOut', { n: hiddenOut(i) }))}</button>` : ''}
       ${visible.has(i) && mode === 'graph' && hasFoldable(i) ? `<button class="btn" type="button" data-act="fold">${esc(t('act.collapseDer'))}</button>` : ''}
       ${i !== focusNode && visible.has(i) ? `<button class="btn" type="button" data-act="remove">${esc(t('act.remove'))}</button>` : ''}
       ${/^\d+$/.test(id) ? `<a class="ext" href="${SITE}${esc(id)}.html" target="_blank" rel="noopener">${esc(t('card.eldamo'))}</a>` : ''}
@@ -1180,6 +1272,10 @@ $('card').addEventListener('click', ev => {
   else if (a.dataset.act === 'expand') {
     if (!visible.has(selected) || mode !== 'graph') focus(selected);
     else toggle(selected);
+    select(selected);
+  }
+  else if (a.dataset.act === 'expand-in' || a.dataset.act === 'expand-out') {
+    expand(selected, a.dataset.act === 'expand-in' ? 'in' : 'out');
     select(selected);
   }
   else if (a.dataset.act === 'remove') removeNode(selected);
@@ -1321,9 +1417,13 @@ function ovDraw() {
     ovCanvas.width = Math.round(w * dpr); ovCanvas.height = Math.round(h * dpr);
   }
   const ctx = ovCanvas.getContext('2d');
-  const tr = d3.zoomTransform(svg.node()), k = tr.k;
   ctx.setTransform(1, 0, 0, 1, 0, 0);
   ctx.clearRect(0, 0, ovCanvas.width, ovCanvas.height);
+  ovPaint(ctx, w, h, dpr, d3.zoomTransform(svg.node()));
+}
+// the map on a canvas of w x h css pixels, at the transform tr
+function ovPaint(ctx, w, h, dpr, tr) {
+  const k = tr.k;
   // what is on screen, in map units
   const vx0 = -tr.x / k, vy0 = -tr.y / k, vx1 = (w - tr.x) / k, vy1 = (h - tr.y) / k;
   const seen = d => d.x + d.r > vx0 && d.x - d.r < vx1 && d.y + d.r > vy0 && d.y - d.r < vy1;
@@ -1455,6 +1555,123 @@ function setMode(m) {
 $('mode-graph').addEventListener('click', () => setMode('graph'));
 $('mode-roots').addEventListener('click', () => setMode('roots'));
 for (const id of ['ov-roots', 'ov-proto', 'ov-words', 'ov-rec', 'ov-free']) $(id).addEventListener('change', () => { buildOverview(); ovFit(!reduced); });
+
+// ---------------------------------------------------------------- export
+// The graph on screen as SVG (the computed styles written into every element, so the file stands
+// alone), as PNG (that SVG drawn at twice the size) or as JSON; the whole origins map as PNG. Files
+// are offered through the host's downloads when the page runs as an artifact, else as a link
+const downloadsP = (() => {
+  try { return window.claude && window.claude.use ? window.claude.use('downloads').catch(() => null) : Promise.resolve(null); }
+  catch (e) { return Promise.resolve(null); }
+})();
+async function saveFile(name, data) {
+  const dl = await downloadsP;
+  if (dl) {
+    try { await dl.save({ filename: name, data }); return; }
+    catch (e) {
+      if (e && (e.code === 'declined' || e.code === 'rate_limited')) return;
+      if (!e || !['unavailable', 'not_granted', 'capability_disabled', 'capability_removed'].includes(e.code)) {
+        $('note').textContent = t('export.failed', { e: (e && (e.message || e.code)) || e });
+        return;
+      }
+    }
+  }
+  const url = URL.createObjectURL(data instanceof Blob ? data : new Blob([data]));
+  const a = document.createElement('a');
+  a.href = url; a.download = name;
+  document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 4000);
+}
+const STYLE_PROPS = ['fill', 'fill-opacity', 'stroke', 'stroke-width', 'stroke-dasharray', 'stroke-opacity', 'opacity',
+  'font-family', 'font-size', 'font-style', 'font-weight', 'paint-order', 'stroke-linejoin', 'text-anchor', 'display',
+  'text-transform', 'letter-spacing'];
+function graphSvg() {
+  const pad = 24;
+  const bb = root.node().getBBox();
+  const clone = root.node().cloneNode(true);
+  const src = root.node().querySelectorAll('*'), dst = clone.querySelectorAll('*');
+  src.forEach((el, k) => {
+    const cs = getComputedStyle(el);
+    dst[k].setAttribute('style', STYLE_PROPS.map(p => `${p}:${cs.getPropertyValue(p)}`).join(';'));
+    dst[k].removeAttribute('class');
+  });
+  clone.querySelectorAll('title').forEach(x => x.remove());
+  // the invisible strokes for picking links go; a picked link keeps its emphasis
+  [...clone.children][[...root.node().children].indexOf(gHits.node())].remove();
+  clone.removeAttribute('transform');
+  clone.setAttribute('transform', `translate(${pad - bb.x},${pad - bb.y})`);
+  const w = Math.ceil(bb.width + 2 * pad), h = Math.ceil(bb.height + 2 * pad);
+  const ns = 'http://www.w3.org/2000/svg';
+  const out = document.createElementNS(ns, 'svg');
+  out.setAttribute('xmlns', ns);
+  out.setAttribute('width', w); out.setAttribute('height', h); out.setAttribute('viewBox', `0 0 ${w} ${h}`);
+  out.append(defs.node().cloneNode(true));
+  const bg = document.createElementNS(ns, 'rect');
+  bg.setAttribute('width', w); bg.setAttribute('height', h); bg.setAttribute('fill', css('--bg'));
+  out.append(bg, clone);
+  return { text: '<?xml version="1.0" encoding="UTF-8"?>\n' + new XMLSerializer().serializeToString(out), w, h };
+}
+function fileStem() {
+  const i = focusNode >= 0 ? focusNode : selected;
+  const f = i >= 0 ? String(shown(i)).normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^\p{L}\p{N}-]+/gu, '_') : 'graph';
+  return 'neo-roots-' + (f || 'graph');
+}
+async function exportAs(kind) {
+  if (kind === 'svg') {
+    await saveFile(fileStem() + '.svg', new Blob([graphSvg().text], { type: 'image/svg+xml' }));
+  } else if (kind === 'png') {
+    const { text, w, h } = graphSvg();
+    const img = new Image();
+    img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(text);
+    await img.decode();
+    const scale = Math.min(2, 16000 / Math.max(w, h));
+    const c = document.createElement('canvas');
+    c.width = Math.round(w * scale); c.height = Math.round(h * scale);
+    c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+    await saveFile(fileStem() + '.png', await new Promise(r => c.toBlob(r, 'image/png')));
+  } else if (kind === 'json') {
+    const shownNow = [...shownNodes];
+    const out = {
+      source: { eldamo_version: G.version, site: 'https://eldamo.org' },
+      focus: focusNode >= 0 ? G.ids[focusNode] : null,
+      nodes: shownNow.map(i => {
+        const n = G.nodes[i], id = G.ids[i];
+        return Object.assign({ id, form: n.f, lang: n.l, kind: n.k }, n.g ? { gloss: n.g } : {},
+          /^\d+$/.test(id) ? { url: SITE + id + '.html' } : {});
+      }),
+      edges: currentLinks.map(l => Object.assign({ from: G.ids[l.a], to: G.ids[l.b], rel: l.rel },
+        l.via ? { through_hidden: true } : {}, l.x && l.x.nm ? { not_matched: true } : {},
+        l.x && l.x.sc ? { shortcut: true } : {},
+        l.x && l.x.w ? { written: l.x.w.map(([src, chain]) => ({ source: src, chain })) } : {})),
+    };
+    await saveFile(fileStem() + '.json', JSON.stringify(out, null, 1));
+  } else if (kind === 'map') {
+    const size = 4000, c = document.createElement('canvas');
+    c.width = size; c.height = size;
+    const ctx = c.getContext('2d');
+    ctx.fillStyle = css('--bg'); ctx.fillRect(0, 0, size, size);
+    const k = 0.96 * size / 1000;
+    ovPaint(ctx, size, size, 1, d3.zoomIdentity.translate((size - 1000 * k) / 2, (size - 1000 * k) / 2).scale(k));
+    await saveFile('neo-roots-origins-map.png', await new Promise(r => c.toBlob(r, 'image/png')));
+  }
+}
+$('export').addEventListener('click', ev => {
+  ev.stopPropagation();
+  const menu = $('export-menu');
+  menu.hidden = !menu.hidden;
+  $('export').setAttribute('aria-expanded', String(!menu.hidden));
+  for (const b of menu.querySelectorAll('button')) b.hidden = b.dataset.mode !== mode;
+});
+$('export-menu').addEventListener('click', ev => {
+  const b = ev.target.closest('[data-exp]');
+  if (!b) return;
+  $('export-menu').hidden = true;
+  $('export').setAttribute('aria-expanded', 'false');
+  exportAs(b.dataset.exp).catch(e => { $('note').textContent = t('export.failed', { e: e.message || e }); });
+});
+document.addEventListener('click', ev => {
+  if (!ev.target.closest('.export')) { $('export-menu').hidden = true; $('export').setAttribute('aria-expanded', 'false'); }
+});
 
 // ---------------------------------------------------------------- legend
 function legend() {

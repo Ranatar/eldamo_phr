@@ -108,5 +108,8 @@ function ready() {
   document.documentElement.classList.remove('i18n-wait');
 }
 
+// the language chosen in another tab of Quettamin follows here
+window.addEventListener('storage', e => { if (e.key === KEY && LANGS.includes(e.newValue) && e.newValue !== lang) setLang(e.newValue); });
+
 window.I18N = { get lang() { return lang; }, t, tn, translate, setLang, labels, ready, LANGS };
 })();

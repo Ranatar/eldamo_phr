@@ -222,6 +222,9 @@ ADAPT = [
     ("const THEME_KEY = 'neo-roots-theme';", "const THEME_KEY = 'quettamin-theme';"),
     ("localStorage.getItem('neo-roots-order')", "localStorage.getItem('quettamin-graph-order')"),
     ("localStorage.setItem('neo-roots-order', colOrder)", "localStorage.setItem('quettamin-graph-order', colOrder)"),
+    # exported files named after Quettamin
+    ("return 'neo-roots-' + (f || 'graph');", "return 'quettamin-' + (f || 'graph');"),
+    ("saveFile('neo-roots-origins-map.png'", "saveFile('quettamin-origins-map.png'"),
 ]
 MESSAGES = {
     'page.title': ('Quettamin — граф происхождения', 'Quettamin — the graph of origins'),

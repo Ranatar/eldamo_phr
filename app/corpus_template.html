@@ -4,7 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-i18n="corpus.pageTitle">Quettamin — полный корпус Eldamo</title>
+<script>
+@@HEAD@@
+</script>
 <style>
+html.i18n-wait body { visibility: hidden; }
 @@STYLES@@
 .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
 .tabs button[aria-pressed="true"] { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
@@ -82,16 +86,18 @@ $('branch').addEventListener('change', e => { st.branch = e.target.value; st.pag
 $('q').addEventListener('input', () => { st.page = 0; render(); });
 $('prev').addEventListener('click', () => { st.page--; render(); });
 $('next').addEventListener('click', () => { st.page++; render(); });
+// the theme was set in <head> (head.js), as in the atlas
 const key = 'quettamin-theme';
-try { const t = localStorage.getItem(key); if (t) document.documentElement.setAttribute('data-theme', t); } catch (_e) { /* no storage */ }
 $('theme-toggle').addEventListener('click', () => {
-  const cur = document.documentElement.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const set = document.documentElement.getAttribute('data-theme');
+  // 'auto' (a choice of the graph page) follows the system, as no choice does
+  const cur = set === 'light' || set === 'dark' ? set : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   const next = cur === 'dark' ? 'light' : 'dark';
   document.documentElement.setAttribute('data-theme', next);
   try { localStorage.setItem(key, next); } catch (_e) { /* no storage */ }
 });
 $('lang-toggle').addEventListener('click', () => I18N.setLang(I18N.lang === 'ru' ? 'en' : 'ru'));
-I18N.translate(document);
+I18N.ready();
 render();
 // another language: the sections and the table drawn again, in place
 window.addEventListener('quettamin:lang', () => { SECTIONS = sections(); drawTabs(); render(); });

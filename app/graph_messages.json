@@ -56,8 +56,8 @@
   "en": "show direct links from a root to a word when the same root also leads to the word through an intermediate form"
  },
  "legend.hint": {
-  "ru": "Щелчок — карточка узла; двойной — развернуть соседей, повторный двойной — свернуть то, что развернул этот узел; тройной — свернуть всё, что выводится из узла (кроме центра и его дерева). Число «+N» у подписи — сколько связей узла ещё не показано. Узел перетаскивается вместе с тем, что держится только на нём; с Shift — один. Перемещённое остаётся на месте (обведено толще); «Перестроить» снимает закрепления. Колёсико и перетаскивание фона — масштаб и сдвиг.",
-  "en": "Click a node for its card; double-click to expand its neighbours, double-click again to collapse what that node expanded; triple-click to fold everything derived from the node (except the focus and its tree). The “+N” by a label is the number of the node’s links not shown yet. A node is dragged together with what hangs on it alone; with Shift, alone. What you move stays put (thicker outline); “Re-layout” frees it. Use the wheel and drag the background to zoom and pan."
+  "ru": "Щелчок — карточка узла; двойной — развернуть соседей (с Shift — только производные, с Ctrl или Alt — только источники), повторный двойной — свернуть то, что развернул этот узел; тройной — свернуть всё, что выводится из узла (кроме центра и его дерева). Число «+N» справа от подписи — сколько производных узла ещё не показано, слева — сколько источников. Щелчок по связи выделяет её и её концы. Узел перетаскивается вместе с тем, что держится только на нём; с Shift — один. Перемещённое остаётся на месте (обведено толще); «Перестроить» снимает закрепления. Колёсико и перетаскивание фона — масштаб и сдвиг.",
+  "en": "Click a node for its card; double-click to expand its neighbours (with Shift the derivatives only, with Ctrl or Alt the sources only), double-click again to collapse what that node expanded; triple-click to fold everything derived from the node (except the focus and its tree). The “+N” right of a label is the number of the node’s derivatives not shown yet, left of it its sources. Click a link to pick it and its ends. A node is dragged together with what hangs on it alone; with Shift, alone. What you move stays put (thicker outline); “Re-layout” frees it. Use the wheel and drag the background to zoom and pan."
  },
  "legend.n.nq": {
   "ru": "слово ᴺQ.-перечня",
@@ -750,5 +750,73 @@
  "order.alpha": {
   "ru": "по алфавиту",
   "en": "alphabetical"
+ },
+ "hidden.in": {
+  "ru": "не показано источников: {n}",
+  "en": "sources not shown: {n}"
+ },
+ "hidden.out": {
+  "ru": "не показано производных: {n}",
+  "en": "derivatives not shown: {n}"
+ },
+ "act.expandIn": {
+  "ru": "← Источники ({n})",
+  "en": "← Sources ({n})"
+ },
+ "act.expandIn.title": {
+  "ru": "развернуть только источники: прежние формы, элементы, слитые формы, когнаты (Ctrl или Alt + двойной щелчок)",
+  "en": "expand the sources only: earlier forms, elements, merged forms, cognates (Ctrl or Alt + double-click)"
+ },
+ "act.expandOut": {
+  "ru": "Производные ({n}) →",
+  "en": "Derivatives ({n}) →"
+ },
+ "act.expandOut.title": {
+  "ru": "развернуть только производные: последующие формы и слова, в которых это слово — элемент (Shift + двойной щелчок)",
+  "en": "expand the derivatives only: later forms and words this one is an element of (Shift + double-click)"
+ },
+ "card.edge": {
+  "ru": "связь",
+  "en": "link"
+ },
+ "card.edgeFrom": {
+  "ru": "Источник",
+  "en": "Source"
+ },
+ "card.edgeTo": {
+  "ru": "Производное",
+  "en": "Derivative"
+ },
+ "card.edgeWritten": {
+  "ru": "Как записано",
+  "en": "As written"
+ },
+ "card.edgeHint": {
+  "ru": "Щелчок по пустому месту графа или Esc снимает выделение связи.",
+  "en": "Click an empty spot of the graph or press Esc to clear the link selection."
+ },
+ "export.label": {
+  "ru": "Экспорт",
+  "en": "Export"
+ },
+ "export.svg": {
+  "ru": "SVG — граф на экране, векторный",
+  "en": "SVG — the graph on screen, vector"
+ },
+ "export.png": {
+  "ru": "PNG — граф на экране",
+  "en": "PNG — the graph on screen"
+ },
+ "export.json": {
+  "ru": "JSON — узлы и связи на экране",
+  "en": "JSON — the nodes and links on screen"
+ },
+ "export.map": {
+  "ru": "PNG — вся карта истоков",
+  "en": "PNG — the whole origins map"
+ },
+ "export.failed": {
+  "ru": "Не удалось сохранить файл: {e}",
+  "en": "Could not save the file: {e}"
  }
 }

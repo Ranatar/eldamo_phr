@@ -6,22 +6,7 @@
 <title data-i18n="page.title">Quettamin — кузница слова</title>
 <meta name="description" data-i18n-attr="content:page.description" content="Quettamin: формы слов квенья и синдарина во всех периодах, реконструкция и словотворчество по звуковым законам; данные Eldamo (Paul Strack)">
 <script>
-// before anything is drawn: the theme and the language chosen last time (i18n.js, runtime.js), so
-// that the page does not show first in the light theme and in Russian; until its static text is
-// translated, the page stays hidden (I18N.ready)
-(function () {
-  var root = document.documentElement;
-  try { var t = localStorage.getItem('quettamin-theme'); if (t) root.setAttribute('data-theme', t); } catch (e) { /* no storage */ }
-  var lang = null;
-  try { var raw = location.hash.slice(1); try { raw = decodeURIComponent(raw); } catch (e) { /* as is */ }
-    var m = /(?:^|&)lang=(ru|en)(?:&|$)/.exec(raw); lang = m ? m[1] : localStorage.getItem('quettamin-lang'); } catch (e) { /* no storage */ }
-  if (lang !== 'ru' && lang !== 'en') {
-    var nav = (navigator.languages && navigator.languages[0]) || navigator.language || 'ru';
-    lang = /^(ru|uk|be|kk)\b/i.test(nav) ? 'ru' : 'en';
-  }
-  root.lang = lang;
-  if (lang !== 'ru') root.classList.add('i18n-wait');
-})();
+@@HEAD@@
 </script>
 <style>
 html.i18n-wait body { visibility: hidden; }
@@ -241,8 +226,11 @@ I18N.ready();
 <script>
 @@ROUTER@@
 </script>
-<script>
+<script id="wordform-js">
 @@WORDFORM@@
+</script>
+<script>
+@@COMPUTE@@
 </script>
 <script>
 @@WORD_UI@@

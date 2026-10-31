@@ -1170,6 +1170,10 @@
   "ru": "Выберите слово в поиске наверху или введите форму ниже.",
   "en": "Choose a word in the search at the top or type a form below."
  },
+ "recon.computing": {
+  "ru": "Считаю… Длинное слово может занять несколько секунд; страница при этом работает.",
+  "en": "Computing… A long word may take a few seconds; the page keeps working meanwhile."
+ },
  "recon.dst": {
   "ru": "Целевой период",
   "en": "Target period"

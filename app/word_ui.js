@@ -44,6 +44,9 @@ const LINK_NAMES = window.I18N.labels({ combine: 'link.combine', deprecated: 'li
 const engines = {};
 const engine = b => engines[b] || (engines[b] = WF.makeEngine(b, WDATA[b]));
 const allEngines = () => Object.fromEntries(BRANCHES.map(b => [b, engine(b)]));
+// where no background thread can be made, the reconstructions run here (compute.js)
+const WQ = window.WQ;
+WQ.setLocal((src, dst, opts) => WF.reconstruct(allEngines(), src, dst, opts));
 function lookup(id, prefer) {
   for (const b of prefer ? [prefer, ...BRANCHES.filter(x => x !== prefer)] : BRANCHES) {
     const e = engine(b).lexicon.get(id);
@@ -595,6 +598,7 @@ function rootsCell(list, key) {
 }
 function renderPanorama(s) {
   const gen = ++generation;
+  WQ.cancel('panorama');
   const box = $('panorama');
   if (!s || s.kind === 'missing') { box.innerHTML = ''; return; }
   const src = s.period, opts = sourceOf(s);
@@ -622,16 +626,9 @@ function renderPanorama(s) {
   box.innerHTML = `<h2>${T('panorama.title')}</h2>
     <div class="table-scroll"><table class="panorama"><thead>${head}</thead><tbody>${body}</tbody></table></div>
     <p class="small muted legend">${T('panorama.legend')}</p>`;
-  const cells = [...box.querySelectorAll('[data-cell]')];
-  const all = allEngines();
-  let k = 0;
-  const step = () => {
-    if (gen !== generation || k >= cells.length) return;
-    const btn = cells[k++];
+  // the cells are computed in the background (compute.js), in order; the page answers meanwhile
+  const fill = (btn, vs) => {
     const [b, era, stage] = btn.dataset.cell.split('/');
-    const dst = [b, era, Number(stage)];
-    let vs = [];
-    try { vs = WF.reconstruct(all, src, dst, Object.assign({ limit: 4 }, opts)); } catch (err) { console.warn(err); }
     const out = btn.querySelector('.pform');
     if (!vs.length) { out.textContent = '—'; btn.classList.add('empty'); btn.title = T('panorama.noForms'); }
     else {
@@ -647,9 +644,13 @@ function renderPanorama(s) {
         if (td) td.innerHTML = rootGuess(b, era, v.form).map(rootLink).join('/');
       }
     }
-    setTimeout(step, 0);
   };
-  setTimeout(step, 0);
+  for (const btn of box.querySelectorAll('[data-cell]')) {
+    const [b, era, stage] = btn.dataset.cell.split('/');
+    WQ.reconstruct(src, [b, era, Number(stage)], Object.assign({ limit: 4 }, opts), 'panorama')
+      .then(vs => { if (gen === generation) fill(btn, vs); },
+        err => { if (err === WQ.CANCELLED || gen !== generation) return; console.warn(err); fill(btn, []); });
+  }
 }
 $('panorama').addEventListener('click', e => {
   const c = e.target.closest('[data-cell]');

@@ -2,7 +2,7 @@
 // another period of either branch (wordform.js: reconstruct).
 (function () {
 'use strict';
-const WF = window.WF, QU = window.QU, QR = window.QR;
+const WF = window.WF, QU = window.QU, QR = window.QR, WQ = window.WQ;
 const $ = id => document.getElementById(id);
 const esc = QU.esc;
 const T = QU.T;
@@ -91,8 +91,23 @@ function run() {
   else { $('rc-output').textContent = T('recon.chooseOrType'); return; }
   const out = $('rc-output');
   QR.set({ dst: dst.join('/') }, false);
-  let vs;
-  try { vs = WF.reconstruct(QU.allEngines(), src, dst, opts); } catch (err) { out.textContent = T('common.error', { msg: err.message }); throw err; }
+  // in the background (compute.js): the page answers while a long word is reconstructed
+  const job = ++runs;
+  WQ.cancel('recon');
+  out.classList.add('busy');
+  out.innerHTML = `<p class="small muted">${T('recon.computing')}</p>`;
+  WQ.reconstruct(src, dst, opts, 'recon').then(vs => {
+    if (job !== runs) return;
+    out.classList.remove('busy');
+    show(out, src, dst, note, vs);
+  }, err => {
+    if (err === WQ.CANCELLED || job !== runs) return;
+    out.classList.remove('busy');
+    out.textContent = T('common.error', { msg: err.message });
+  });
+}
+let runs = 0;
+function show(out, src, dst, note, vs) {
   const head = `<p class="result-head"><span class="marker">${esc(QU.periodName(...src))}</span> → <span class="marker">${esc(QU.periodName(...dst))}</span></p>` + note;
   if (!vs.length) {
     out.innerHTML = head + `<p>${T('recon.noForms')}</p>`;

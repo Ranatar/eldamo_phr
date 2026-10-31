@@ -58,6 +58,11 @@ class Browser(unittest.TestCase):
         self.addCleanup(lambda: self.assertEqual(errors, []))
         return page
 
+    @staticmethod
+    def recon_done(page):
+        # the reconstruction tab computes in the background (compute.js)
+        page.wait_for_function("(o => !o.classList.contains('busy') && o.textContent.trim() !== '')(document.getElementById('rc-output'))")
+
     def test_intro_search_and_word(self):
         page = self.page(self.atlas)
         self.assertIn('Quettamin', page.inner_text('#intro'))
@@ -318,14 +323,17 @@ class Browser(unittest.TestCase):
         self.assertEqual(page.input_value('#rc-src'), 'quenya|late|2')
         page.select_option('#rc-dst', 'quenya|late|0')
         page.click('#rc-go')
+        self.recon_done(page)
         self.assertIn('lindē', page.inner_text('#rc-output'))
         # a cognate through the common primitive form
         page.select_option('#rc-dst', 'sindarin|late|3')
         page.click('#rc-go')
+        self.recon_done(page)
         self.assertIn('через праформу', page.inner_text('#rc-output'))
         # the middle conception: Eldamo's own link comes first
         page.select_option('#rc-dst', 'quenya|middle|2')
         page.click('#rc-go')
+        self.recon_done(page)
         self.assertIn('связь Eldamo', page.inner_text('#rc-output .wf-variant.main'))
 
     def test_reconstruction_form_finds_the_word(self):
@@ -336,6 +344,7 @@ class Browser(unittest.TestCase):
         self.assertIn('mauya-', page.inner_text('#rc-r'))
         page.select_option('#rc-dst', 'quenya|middle|0')
         page.click('#rc-go')
+        self.recon_done(page)
         out = page.inner_text('#rc-output')
         self.assertIn('Взята статья Eldamo', out)
         self.assertIn('mbauja', out)
@@ -353,6 +362,7 @@ class Browser(unittest.TestCase):
         page = self.page(self.atlas + '#w=3880471189')                # Q. lelya "delicate"
         page.wait_for_selector('.pcell[data-cell="sindarin/late/3"] .sym')
         page.click('.pcell[data-cell="sindarin/late/3"]')
+        self.recon_done(page)
         main = page.inner_text('#rc-output .wf-variant.main')
         self.assertIn('dail', main)                     # S. dail: Eldamo's cognate, inside a reference
         self.assertIn('связь Eldamo', main)
@@ -400,6 +410,7 @@ class Browser(unittest.TestCase):
         self.assertEqual(page.evaluate('document.documentElement.lang'), 'en')
         page.wait_for_function("[...document.querySelectorAll('.pcell .pform')].every(x => x.textContent !== '…')", timeout=60000)
         page.click('#rc-go')
+        self.recon_done(page)
         self.assertIn('cognate by an Eldamo link', page.inner_text('#rc-output'))
         page.evaluate("document.querySelectorAll('details').forEach(d => d.open = true)")
         page.wait_for_function("document.getElementById('derivations').textContent.trim() !== ''", timeout=60000)
@@ -418,6 +429,7 @@ class Browser(unittest.TestCase):
         page = self.page(self.atlas + '#w=403686503', locale='ru-RU')
         page.wait_for_function("[...document.querySelectorAll('.pcell .pform')].every(x => x.textContent !== '…')", timeout=60000)
         page.click('#rc-go')
+        self.recon_done(page)
         page.evaluate("document.querySelectorAll('details.ref').forEach(d => d.open = true)")
         page.wait_for_function("document.getElementById('derivations').textContent.trim() !== ''", timeout=60000)
         page.evaluate('window.__kept = 1')
@@ -426,7 +438,7 @@ class Browser(unittest.TestCase):
         self.assertEqual(page.evaluate('window.__kept'), 1)
         page.wait_for_function("[...document.querySelectorAll('.pcell .pform')].every(x => x.textContent !== '…')", timeout=60000)
         self.assertIn('lindë', page.inner_text('#word-card'))
-        self.assertIn('weight', page.inner_text('#rc-output'))
+        page.wait_for_function("document.getElementById('rc-output').textContent.includes('weight')")
         self.assertEqual(self.visible_cyrillic(page), [])
         # the next visit starts in English and in the chosen theme, before the data are read
         page.click('#theme-toggle')
@@ -447,6 +459,25 @@ class Browser(unittest.TestCase):
         page.wait_for_function("document.documentElement.lang === 'en' && document.getElementById('count').textContent.includes('records')")
         self.assertIn('records', page.inner_text('#count'))
         self.assertEqual(self.visible_cyrillic(page), [])
+
+    def test_corpus_follows_the_atlas(self):
+        # the corpus starts in the language and theme chosen in the atlas, before its data are read, and
+        # follows a change made in another tab
+        context = self.browser.new_context(locale='ru-RU')
+        self.addCleanup(context.close)
+        page = context.new_page()
+        page.set_default_timeout(90000)
+        page.goto(self.atlas)
+        page.evaluate("localStorage.setItem('quettamin-lang', 'en'); localStorage.setItem('quettamin-theme', 'dark')")
+        corpus = context.new_page()
+        corpus.goto(self.corpus)
+        self.assertEqual(corpus.evaluate("[document.documentElement.lang, document.documentElement.getAttribute('data-theme')]"), ['en', 'dark'])
+        corpus.wait_for_function("document.getElementById('count').textContent.includes('records')")
+        page.reload()
+        page.click('#theme-toggle')
+        page.click('#lang-toggle')
+        corpus.wait_for_function("document.documentElement.getAttribute('data-theme') === 'light' && document.documentElement.lang === 'ru' "
+                                 "&& document.getElementById('count').textContent.includes('записей')")
 
 
 if __name__ == '__main__':

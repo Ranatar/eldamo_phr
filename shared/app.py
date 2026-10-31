@@ -140,8 +140,10 @@ def wordform_payload(name: str, data: dict) -> dict:
 
 
 SCRIPTS = {                     # template marker -> file in app/
+    '@@HEAD@@': 'head.js',
     '@@ROUTER@@': 'router.js',
     '@@WORDFORM@@': 'wordform.js',
+    '@@COMPUTE@@': 'compute.js',
     '@@WORD_UI@@': 'word_ui.js',
     '@@WORDFORM_UI@@': 'wordform_ui.js',
     '@@RECON_UI@@': 'reconstruct_ui.js',

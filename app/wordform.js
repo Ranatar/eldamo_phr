@@ -1983,7 +1983,8 @@ function parityRecon(engines, cases) {
   return bad;
 }
 
-window.WF = {
+// the page's window, or the worker's global scope (compute.js)
+(typeof window !== 'undefined' ? window : self).WF = {
   parity, parityRecon,
   Unsupported, phonemes, canonical, comparable, compileRule, applyRule, stressed, nuclei, run, sequence,
   toPhonetic, junctionPredict, reduceCompound, prosodicLengthening, compoundVariants, lenite, backform,

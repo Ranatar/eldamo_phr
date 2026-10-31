@@ -66,6 +66,7 @@ def corpus_html(branches: dict) -> str:
         d['rules'] = [{k: v for k, v in r.items() if k != 'notes'} for r in d['rules']]
     html = template.replace('@@STYLES@@', styles.rstrip('\n'))
     html = html.replace('@@I18N@@', (ROOT / 'app' / 'i18n.js').read_text(encoding='utf-8').rstrip('\n'))
+    html = html.replace('@@HEAD@@', (ROOT / 'app' / 'head.js').read_text(encoding='utf-8').rstrip('\n'))
     version = meta()['eldamo_version']
     html = html.replace('@@MESSAGES@@', messages()).replace('@@ELDAMO_VERSION@@', version)
     return html.replace('@@DATA@@', embed_json(slim))

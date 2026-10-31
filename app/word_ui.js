@@ -518,21 +518,56 @@ function rootCounterparts(id) {
   }
   return out;
 }
-function mappedRoots(own, era) {
-  // every part of the word's roots needs a root of that era
-  const out = [];
+// roots of a conception by their form (√LIN² of ᴹ√LIN²), for a root the index links to nothing there
+let rootsByForm = null;
+const formKey = f => String(f).replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰]/g, '');      // the number of a homonym aside
+function sameFormRoot(id, era) {
+  if (!rootsByForm) {
+    rootsByForm = new Map();
+    for (const [x, r] of Object.entries(ROOTS)) {
+      const k = ROOT_ERA[r.l] + '|' + formKey(r.f);
+      if (!rootsByForm.has(k)) rootsByForm.set(k, []);
+      rootsByForm.get(k).push(x);
+    }
+  }
+  const r = ROOTS[id];
+  if (!r) return null;
+  const hits = rootsByForm.get(era + '|' + formKey(r.f)) || [];
+  return hits.length === 1 ? hits[0] : null;     // homonyms (LAK¹, LAK²) of another numbering: not guessed
+}
+// the roots of a word in another conception, part by part: for each part of its own roots, the root
+// Eldamo puts in its place there (rootCounterparts: advised instead, merged, filed under), else a root
+// of the same form there, else the roots there of the element the part comes from (ᴹQ. latimbe in
+// Latimberista); a part with none keeps its own root, marked as one of another conception (rather
+// than a root guessed from the primitive form). {roots, complete}, or null for a word without roots.
+function mappedRoots(own, era, depth = 0) {
   const parts = new Map();
   for (const r of own) if (!r.gap) { const k = r.part ?? -1; if (!parts.has(k)) parts.set(k, []); parts.get(k).push(r); }
   if (!parts.size) return null;
+  const out = [];
+  let found = 0;
   for (const [k, rs] of parts) {
+    const part = k < 0 ? null : k;
+    const mk = id => ({ id, form: ROOTS[id].f, marker: ROOT_MARKERS[ROOTS[id].l] || '√', via: 'instead', part });
     const hit = rs.flatMap(r => rootCounterparts(r.id)).find(([e]) => e === era);
-    if (!hit) return null;
-    const x = ROOTS[hit[1]];
-    out.push({ id: hit[1], form: x.f, marker: ROOT_MARKERS[x.l] || '√', via: 'instead', part: k < 0 ? null : k });
+    if (hit) { out.push(mk(hit[1])); found++; continue; }
+    const same = rs.map(r => sameFormRoot(r.id, era)).find(Boolean);
+    if (same) { out.push(mk(same)); found++; continue; }
+    // the word the part comes from, nearest the root (Latimberista < latimbe < imbe < ᴹ√IMBE: imbe), in that conception
+    const wordOf = path => [...(path || [])].reverse().map(st => st[1]).find(x => { const w = lookup(x); return w && w.entry.speech !== 'root'; });
+    const els = [...new Set(rs.map(r => wordOf((r.paths || [])[0])).filter(Boolean))];
+    let byEl = null;
+    if (depth < 2) for (const x of els) {
+      const w = lookup(x);
+      const rr = w && rootsByEra({ kind: 'word', branch: w.branch, entry: w.entry }, depth + 1)[era];
+      if (rr && rr.length && !rr.some(r => r.via === 'borrowed')) { byEl = rr; break; }
+    }
+    if (byEl) { out.push(...byEl.map(r => ({ ...r, part }))); found++; continue; }
+    out.push(...rs.map(r => ({ ...r, part, via: 'borrowed' })));
   }
-  return out;
+  return { roots: out, complete: found === parts.size };
 }
-function rootsByEra(s) {
+function rootsByEra(s, depth = 0) {
   const out = {};
   if (s && s.kind === 'form' && (s.elements || []).length) {
     // a word made in word formation: its elements' roots, era by era, each element a part of its own
@@ -547,10 +582,14 @@ function rootsByEra(s) {
   const own = eraOf(engine(s.branch), s.entry.lang);
   const ownRoots = (s.entry.roots || []).length ? entryRoots(s.branch, s.entry) : [];
   if (own && ownRoots.length) out[own] = ownRoots;
+  // all parts placed in another conception first; then the roots of a word Eldamo links to the
+  // word there; then what is placed in part (the rest kept from the word's own conception)
+  const partial = {};
   for (const era of ERAS) {
     if (era === own || out[era]) continue;
-    const m = mappedRoots(ownRoots, era);
-    if (m) out[era] = m;
+    const m = mappedRoots(ownRoots, era, depth);
+    if (m && m.complete) out[era] = m.roots;
+    else if (m) partial[era] = m.roots;
   }
   const linked = [];
   linkedIds(s.entry.id).forEach((id, k) => {
@@ -564,6 +603,7 @@ function rootsByEra(s) {
   });
   linked.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
   for (const [, , era, w] of linked) if (!out[era]) out[era] = entryRoots(w.branch, w.entry);
+  for (const [era, rs] of Object.entries(partial)) if (!out[era]) out[era] = rs;
   return out;
 }
 // roots written as Eldamo's parts: elements joined by +, alternatives of one element by /
@@ -584,7 +624,7 @@ function rootLink(r) {
   const title = T(r.guess ? 'root.guessTitle' : r.via ? 'root.via.' + r.via : 'panorama.rootTitle');
   // a root of the index opens its card here; the card links to Eldamo
   const href = ROOTS[r.id] ? `href="#r=${esc(r.id)}" data-root="${esc(r.id)}"` : `href="${SITE}words/word-${esc(r.id)}.html" target="_blank" rel="noopener"`;
-  return `<a ${href} class="root${r.via ? ' via' : ''}${r.guess ? ' guess' : ''}" title="${esc(title)}">${r.guess ? '?' : ''}<span class="marker">${esc(r.marker)}</span><span class="form">${esc(r.form)}</span></a>`;
+  return `<a ${href} class="root${r.via ? ' via' : ''}${r.via === 'borrowed' ? ' borrowed' : ''}${r.guess ? ' guess' : ''}" title="${esc(title)}">${r.guess ? '?' : ''}<span class="marker">${esc(r.marker)}</span><span class="form">${esc(r.form)}</span></a>`;
 }
 // roots of Eldamo the primitive form could come from (wordform.js: rootCandidates): the best ones
 function rootGuess(b, era, form) {

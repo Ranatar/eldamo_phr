@@ -66,7 +66,7 @@ class InterfaceCatalog(unittest.TestCase):
                           'nearSame', 'nearClose', 'link', 'unchanged', 'reetymology', 'then', 'byElements', 'partialLink', 'irregularLaw', 'composed', 'composedUnconfirmed',
                           'primitiveEldamo', 'primitiveCognate', 'agreedCognate', 'byCognate', 'sharedPrimitive'],
                'card.root.': ['element', 'cognate', 'source', 'combine', 'see', 'deprecated'],
-               'root.via.': ['element', 'cognate', 'source', 'combine', 'see', 'deprecated', 'instead'],
+               'root.via.': ['element', 'cognate', 'source', 'combine', 'see', 'deprecated', 'instead', 'borrowed'],
                'root.warn.': [w + t for w in ('deprecated', 'deleted', 'rejected', 'doubtful', 'unglossed', 'early') for t in ('', '.title')],
                'rootCard.lang.': ['p', 'mp', 'ep', 'np'],
                'tree.rel.': ['e', 'd', 'c', 's', 'x', 'k'],

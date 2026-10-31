@@ -213,6 +213,23 @@ class Browser(unittest.TestCase):
             { form: 'kʷetalkar', elements: ['2355375457', '2464648865'], limit: 3 })''')
         self.assertTrue(any(seg[0] == 'byElements' for v in m for seg in v['route']))
 
+    def test_roots_of_other_conceptions_part_by_part(self):
+        # ᴹQ. Latimberista = ᴹ√LAT + ᴹ√IMBE + ᴹ√RIS: in the late conception each part on its own -- √LAT¹,
+        # √RIS by the index of roots, ᴹ√IMBE by the late roots of its word imbe; Q. Ainulindalë: √LEÑ has
+        # no middle root and is kept, marked, instead of a root guessed from the primitive
+        page = self.page(self.atlas + '#w=3379797225')
+        page.wait_for_function("document.querySelector('#panorama [data-roots=\"late\"]')")
+        late = page.inner_text('#panorama [data-roots="late"]')
+        for x in ('LAT', 'RIS', '+'):
+            self.assertIn(x, late)
+        self.assertNotIn('?', late)
+        page.goto(self.atlas + '#w=2854057487')
+        page.wait_for_function("document.querySelector('#panorama [data-roots=\"middle\"]')")
+        middle = page.locator('#panorama [data-roots="middle"]')
+        self.assertIn('ᴹ√(A)YAN', middle.inner_text())
+        self.assertIn('LEÑ', middle.locator('a.borrowed').inner_text())
+        self.assertNotIn('?', middle.inner_text())
+
     def test_root_instead_in_other_era(self):
         # G. cwîl < ᴱ√QḶÐḶ, which Eldamo deprecates for N√KWILID: the late roots are those, not the
         # roots of a word linked to it (ᴹ√MOY of NS. muig²)

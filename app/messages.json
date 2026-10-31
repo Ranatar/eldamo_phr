@@ -1270,6 +1270,10 @@
   "ru": "Возможный корень: согласные корня начинают праформу (гипотеза)",
   "en": "A possible root: its consonants begin the primitive form (a hypothesis)"
  },
+ "root.via.borrowed": {
+  "ru": "Корень другой концепции: в этой ему соответствия не нашлось ни в указателе корней, ни по форме, ни через элемент слова",
+  "en": "A root of another conception: none stands for it in this one, in the index of roots, by its form or through the word's element"
+ },
  "root.via.cognate": {
   "ru": "Корень когната слова (статья Eldamo)",
   "en": "A root of the word's cognate (Eldamo page)"

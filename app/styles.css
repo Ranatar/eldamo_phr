@@ -201,6 +201,7 @@ table.panorama td[rowspan] { vertical-align: middle; }
 .proots a { text-decoration: none; }
 .proots .marker { color: var(--muted); font-size: 12px; margin-right: 1px; }
 .proots a.via, a.root.via { font-style: italic; }
+a.root.borrowed { opacity: .55; }
 a.root.guess { opacity: .75; border-bottom: 1px dashed currentColor; text-decoration: none; }
 a.root.gap { color: var(--muted); text-decoration: none; }
 .pcell.attested { background: var(--ok-soft); }

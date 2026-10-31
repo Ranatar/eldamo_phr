@@ -1065,6 +1065,15 @@ function origins(entry, era) {
   for (const f of out) { const c = cleanOrigin(f); if (c && !seen.has(comparable(c))) { seen.add(comparable(c)); clean.push(c); } }
   return clean.slice(0, MAX_ORIGINS);
 }
+// the language a word counts as in its branch: NQ. tamin as one of the latest stage of the late conception
+// (compound.py: own_lang)
+function ownLang(E, branch, lang) {
+  if (lang != null && lang === NEO_LANG[branch]) {
+    const late = E.languages.filter(l => l.era === 'late');
+    if (late.length) return late.reduce((a, b) => (b.stage > a.stage ? b : a)).code;
+  }
+  return lang;
+}
 function formsAt(engine, entry, era, stage, final = false) {
   const langs = engine.languages.filter(l => l.era === era);
   const lang = langs.find(l => l.stage === stage);
@@ -1072,10 +1081,11 @@ function formsAt(engine, entry, era, stage, final = false) {
   const attested = code && stage > 0 ? ((entry.stages || {})[code] || []) : [];
   let out = attested.map(f => [f, 'attested']);
   if (out.length) return out;
-  if (code && entry.lang === code) return formsAtLatest(entry, engine.branch, final);
+  const own = ownLang(engine, engine.branch, entry.lang);
+  if (code && own === code) return formsAtLatest(entry, engine.branch, final);
   let baseForms = origins(entry, era).map(f => [f, 'primitive']);
   const finalLang = langs.reduce((a, b) => (b.stage > a.stage ? b : a));
-  if (!baseForms.length && entry.lang === finalLang.code) {
+  if (!baseForms.length && own === finalLang.code) {
     const word = toPhonetic(entry.form, engine.branch).replace(/-+$/, '');
     baseForms = backform(engine, word, era, finalLang.stage, 3).map(f => [f.primitive, 'reconstructed']);
   }
@@ -1340,7 +1350,7 @@ function hintsOf(E, branch, entry, era, stage) {
   if (!entry) return NO_HINTS;
   const f = (entry.form || '').trim();
   const stems = [];
-  if ((entry.stems || []).length && entry.lang === codeOf(E, era, stage) && !f.endsWith('-') && !f.startsWith('-')) {
+  if ((entry.stems || []).length && ownLang(E, branch, entry.lang) === codeOf(E, era, stage) && !f.endsWith('-') && !f.startsWith('-')) {
     for (let x of entry.stems) {
       x = x.replace(/[*()]/g, '').trim().replace(/-+$/, '');
       if (x) stems.push(phonemes(comparable(toPhonetic(x, branch).trim()).replace(/^-+|-+$/g, '')).join(''));
@@ -1376,7 +1386,7 @@ function dashedOrigins(entry, era) {
 function stageForms(E, branch, entry, era, stage) {
   const code = codeOf(E, era, stage);
   const out = [];
-  if (code && entry.lang === code) out.push(toPhonetic(entry.form, branch).trim());
+  if (code && ownLang(E, branch, entry.lang) === code) out.push(toPhonetic(entry.form, branch).trim());
   if (stage === 0) out.push(...dashedOrigins(entry, era));
   else if (code) out.push(...((entry.stages || {})[code] || []));
   return [...new Set(out.filter(Boolean))];
@@ -1394,7 +1404,7 @@ function reconstruct(engines, src, dst, opts = {}) {
   if (form == null) {
     if (!entry) return [];
     let forms = stageForms(S, sb, entry, se, ss);
-    if (!forms.length && entry.lang === codeOf(S, se, ss)) forms = [toPhonetic(entry.form, sb)];
+    if (!forms.length && ownLang(S, sb, entry.lang) === codeOf(S, se, ss)) forms = [toPhonetic(entry.form, sb)];
     if (!forms.length) return [];
     form = forms[0];
   } else if (opts.spelled) form = toPhonetic(form, sb).trim();
@@ -1434,6 +1444,16 @@ function reconstruct(engines, src, dst, opts = {}) {
     if (c) composed(engines, add, sb, se, form, entry, c, ss, ds);
   } else if (se === de) sideways(engines, add, src, dst, form, entry, hints, opts.useLinks !== false, depth);
   else across(engines, add, src, dst, form, entry, hints, opts.useLinks !== false, depth);
+  // the primitive form of another conception agrees with the word's roots there (conceptionRoots; reconstruct.py)
+  if (entry && ds === 0 && de !== se) {
+    const rs = conceptionRoots(entry, de);
+    if (rs.length) for (const r of results.values()) {
+      if (rootMatch(r.form, rs)) {
+        r.score *= ROOT_BONUS;
+        if (!r.marks.includes('root')) r.marks = r.marks.concat(['root']);
+      }
+    }
+  }
   if (ds === lastStageOf(D, de) && codeOf(D, de, ds) != null) {
     const pt = D.recon.phonotactics[codeOf(D, de, ds)] || { initials: {}, clusters: {}, finals: {} };
     for (const r of results.values()) {
@@ -1466,7 +1486,7 @@ function elementForm(engines, branch, id, era, stage, depth) {
   }
   const e = E.lexicon.get(id);
   if (!e) return null;
-  const l = E.languages.find(x => x.code === e.lang);
+  const l = E.languages.find(x => x.code === ownLang(E, branch, e.lang));
   if (!l || l.era !== era) return null;
   const vs = reconstruct(engines, [branch, era, l.stage], [branch, era, stage], { word: id, limit: 1, depth: depth + 1 });
   return vs.length ? vs[0].form : null;
@@ -1658,7 +1678,7 @@ function translated(engines, id, sb, era, db, last, code, depth) {
   }
   else {
     if (!e) return null;
-    const l = engines[sb].languages.find(x => x.code === e.lang);
+    const l = engines[sb].languages.find(x => x.code === ownLang(engines[sb], sb, e.lang));
     if (affixKind(e) != null || !l || l.era !== era) return null;
     const rs = reconstruct(engines, [sb, era, l.stage], [db, era, last], { word: id, limit: 1, depth: depth + 1 });
     f = rs.length ? rs[0].form : null;
@@ -1814,6 +1834,75 @@ function consonantsMatch(word, rootForm, lang) {
 }
 // an earlier form of the same word, not another word put in its place (reconstruct.py: _resembles)
 const resembles = (a, b) => sameOnset(a, b) && (consonantsMatch(a, b, null) || consonantsMatch(b, a, null));
+
+// ---------------------------------------------------------------- roots of a conception
+// the index of roots (shared/root_index.py), given by the page or the worker (setRoots)
+let ROOT_INDEX = {};
+let rootByForm = null;
+function setRoots(index) { ROOT_INDEX = index || {}; rootByForm = null; }
+const ROOT_ERA = { p: 'late', np: 'late', mp: 'middle', ep: 'early' };
+const rootLetters = f => Array.from(String(f).toLowerCase().normalize('NFD')).filter(ch => !/\p{M}/u.test(ch)).join('').replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰()\-\s]/g, '');
+// two roots alike in sound (reconstruct.py: roots_alike)
+function rootsAlike(a, b) {
+  const x = rootLetters(a), y = rootLetters(b);
+  const lost = f => f.replace(/^[gw](?=[aeiouy])/, '');
+  const prefix = (p, q) => p.startsWith(q) || q.startsWith(p);
+  return prefix(x, y) || prefix(lost(x), lost(y)) || resembles(a, b);
+}
+// [[era, id]]: the roots standing for a root in other conceptions, nearest first (reconstruct.py: _root_counterparts)
+function rootCounterparts(id) {
+  const out = [], seen = new Set([id]), todo = [id];
+  while (todo.length) {
+    const r = ROOT_INDEX[todo.shift()];
+    if (!r) continue;
+    for (const x of [...(r.instead || []), ...(r.into || []), ...(r.under ? [r.under] : []), ...(r.canon ? [r.canon] : []), ...(r.merged || []), ...(r.here || [])]) {
+      if (seen.has(x) || !ROOT_INDEX[x]) continue;
+      seen.add(x);
+      out.push([ROOT_ERA[ROOT_INDEX[x].l], x]);
+      todo.push(x);
+    }
+  }
+  return out;
+}
+const noNumber = f => String(f).replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰]/g, '');
+// the forms of the word's roots in a conception, part by part (reconstruct.py: conception_roots)
+function conceptionRoots(entry, era) {
+  const refs = entry.root_refs || [];
+  if (!refs.length) return [];
+  if (!rootByForm) {
+    rootByForm = new Map();
+    for (const [x, r] of Object.entries(ROOT_INDEX)) {
+      const k = ROOT_ERA[r.l] + '|' + noNumber(r.f);
+      if (!rootByForm.has(k)) rootByForm.set(k, []);
+      rootByForm.get(k).push(x);
+    }
+  }
+  const parts = new Map();
+  refs.forEach(([, id, , part], i) => {
+    if (!ROOT_INDEX[id]) return;
+    const k = part ?? null;
+    if (!parts.has(k)) parts.set(k, []);
+    parts.get(k).push({ id, form: entry.roots[i] });
+  });
+  const out = [];
+  for (const rs of parts.values()) {
+    let hit = (rs.find(r => ROOT_ERA[ROOT_INDEX[r.id].l] === era) || {}).id;
+    if (hit == null) {
+      for (const r of rs) {
+        const c = rootCounterparts(r.id).find(([e, x]) => e === era && rootsAlike(ROOT_INDEX[x].f, r.form));
+        if (c) { hit = c[1]; break; }
+      }
+    }
+    if (hit == null) {
+      for (const r of rs) {
+        const same = rootByForm.get(era + '|' + noNumber(ROOT_INDEX[r.id].f)) || [];
+        if (same.length === 1) { hit = same[0]; break; }
+      }
+    }
+    if (hit != null && !out.includes(ROOT_INDEX[hit].f)) out.push(ROOT_INDEX[hit].f);
+  }
+  return out;
+}
 
 // words of the target language that are the word in another conception: combine, see, then a resembling
 // deprecated word (reconstruct.py: _conception_counterparts)
@@ -2099,6 +2188,6 @@ function parityRecon(engines, cases) {
   Unsupported, phonemes, canonical, comparable, compileRule, applyRule, stressed, nuclei, run, sequence,
   toPhonetic, junctionPredict, reduceCompound, prosodicLengthening, compoundVariants, lenite, backform,
   formsAt, predict, makeEngine, allomorphs, affixKind, predictAffix, reconstruct, phonotacticProblems, rootCandidates,
-  sameOnset, consonantsMatch, resembles,
+  sameOnset, consonantsMatch, resembles, rootsAlike, rootCounterparts, conceptionRoots, setRoots,
 };
 })();

@@ -16,6 +16,7 @@ self.onmessage = e => {
   const m = e.data;
   if (m.type === 'init') {
     const data = JSON.parse(m.data);
+    self.WF.setRoots(JSON.parse(m.roots));
     engines = {};
     for (const b of Object.keys(data)) engines[b] = self.WF.makeEngine(b, data[b]);
     return;
@@ -37,7 +38,8 @@ function start() {
     worker = new Worker(URL.createObjectURL(new Blob([code], { type: 'text/javascript' })));
     worker.onmessage = done;
     worker.onerror = ev => { if (ev.preventDefault) ev.preventDefault(); fallBack(); };
-    worker.postMessage({ type: 'init', data: document.getElementById('wordform-data').textContent });
+    worker.postMessage({ type: 'init', data: document.getElementById('wordform-data').textContent,
+      roots: document.getElementById('roots-data').textContent });
   } catch (_e) {
     worker = null;
     broken = true;

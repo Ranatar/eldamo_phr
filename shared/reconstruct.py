@@ -31,7 +31,7 @@ import unicodedata
 from collections import Counter, defaultdict
 
 from . import backform as BF
-from .compound import origins
+from .compound import NEO_LANG, origins, own_lang
 from .interpreter import comparable, is_vowel, join, phonemes
 from .orthography import to_phonetic
 from .root_checks import consonants_match, same_onset
@@ -440,7 +440,7 @@ def _stage_form(ctx: Context, branch: str, entry: dict, era: str, stage: int) ->
     form at its language's stage, its derivation forms, its primitive forms."""
     code = ctx.code(branch, era, stage)
     out = []
-    if code and entry['lang'] == code:
+    if code and own_lang(ctx.langs(branch), branch, entry['lang']) == code:
         out.append(to_phonetic(entry['form'], branch).strip())
     if stage == 0:
         out += _origins(entry, era)
@@ -469,7 +469,7 @@ def _hints(ctx: Context, branch: str, entry: dict | None, era: str, stage: int) 
     starts = [root_phonetic(r['form']) for r in entry.get('roots', ()) if r.get('part', 0) == 0]
     stems = []
     f = (entry.get('form') or '').strip()
-    if entry.get('stems') and entry['lang'] == ctx.code(branch, era, stage) and not f.endswith('-') and not f.startswith('-'):
+    if entry.get('stems') and own_lang(ctx.langs(branch), branch, entry['lang']) == ctx.code(branch, era, stage) and not f.endswith('-') and not f.startswith('-'):
         for x in entry['stems']:
             x = re.sub(r'[*()]', '', x).strip().rstrip('-')
             if x:
@@ -494,7 +494,7 @@ def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, w
         if entry is None:
             return []
         forms = _stage_form(ctx, sb, entry, se, ss)
-        if not forms and entry['lang'] == ctx.code(sb, se, ss):
+        if not forms and own_lang(ctx.langs(sb), sb, entry['lang']) == ctx.code(sb, se, ss):
             forms = [to_phonetic(entry['form'], sb)]
         if not forms:
             return []
@@ -549,6 +549,17 @@ def reconstruct(ctx: Context, src: tuple, dst: tuple, form: str | None = None, w
     else:
         _across(ctx, add, src, dst, form, entry, hints, exclude, use_links, depth)
 
+    # the primitive form of another conception agrees with the word's roots there (conception_roots):
+    # a variant whose consonants follow them weighs more, as the word's own roots do in its own
+    if entry is not None and ds == 0 and de != se:
+        rs = conception_roots(ctx, entry, de)
+        if rs:
+            for r in results.values():
+                if root_match(r['form'], rs):
+                    r['score'] *= ROOT_BONUS
+                    if 'root' not in r['marks']:
+                        r['marks'] = r['marks'] + ['root']
+
     # a form the target language does not allow (initial group, cluster, ending
     # unseen in its words) is kept but ranked down
     if dst_code_has_words(ctx, db, de, ds):
@@ -593,7 +604,7 @@ def _element_form(ctx, branch: str, x: dict, era: str, stage: int, depth: int) -
             return None
         r = vs[0]
         return r if stage == 0 else (ctx.forward(branch, era, r + '-', 0, stage)[:1] or [(r, None)])[0][0]
-    l = ctx.langs(branch).get(e['lang'])
+    l = ctx.langs(branch).get(own_lang(ctx.langs(branch), branch, e['lang']))
     if l is None or l['era'] != era:
         return None
     vs = reconstruct(ctx, (branch, era, l['stage']), (branch, era, stage), word=e['id'], limit=1, depth=depth + 1)
@@ -771,6 +782,78 @@ PARTIAL_SCORE = 0.8     # a partial cognate (partial_cognate): below the main re
 _CANON = {}     # root id -> the root it stands for (root_index.canonical), set by use_canonical
 
 
+ROOT_ERA = {'p': 'late', 'np': 'late', 'mp': 'middle', 'ep': 'early'}
+
+
+def _root_letters(f: str) -> str:
+    s = unicodedata.normalize('NFD', str(f).lower())
+    return re.sub(r'[¹²³⁴⁵⁶⁷⁸⁹⁰()\-\s]', '', ''.join(ch for ch in s if not unicodedata.combining(ch)))
+
+
+def roots_alike(a: str, b: str) -> bool:
+    """Two roots alike in sound: one the beginning of the other (√AYA(N) ~ ᴱ√AYA¹), maybe after a lost
+    initial g-, w- (ᴹ√GAL² ~ ᴱ√ALA²), or the same onset and consonants (ᴱ√QḶÐḶ ~ N√KWILID). A root
+    Eldamo files under another of the same meaning (ᴱ√FAKA 'cut' under ᴹ√RIS) is not alike."""
+    x, y = _root_letters(a), _root_letters(b)
+    lost = lambda f: re.sub(r'^[gw](?=[aeiouy])', '', f)
+    prefix = lambda p, q: p.startswith(q) or q.startswith(p)
+    return prefix(x, y) or prefix(lost(x), lost(y)) or _resembles(a, b)
+
+
+def _root_counterparts(index: dict, rid: str) -> list:
+    """[(era, id)]: the roots standing for a root in other conceptions, nearest first (the index of
+    roots: advised instead, merged into, filed under, canonical, merged here, filed here)."""
+    out, seen, todo = [], {rid}, [rid]
+    while todo:
+        r = index.get(todo.pop(0))
+        if r is None:
+            continue
+        for x in list(r.get('instead', ())) + list(r.get('into', ())) + ([r['under']] if r.get('under') else []) \
+                + ([r['canon']] if r.get('canon') else []) + list(r.get('merged', ())) + list(r.get('here', ())):
+            if x in seen or x not in index:
+                continue
+            seen.add(x)
+            out.append((ROOT_ERA.get(index[x]['l']), x))
+            todo.append(x)
+    return out
+
+
+def conception_roots(ctx, entry: dict | None, era: str) -> list:
+    """The forms of the word's roots in a conception, part by part: its own root of that conception,
+    the root alike in sound Eldamo puts in its place there (_root_counterparts), or the one root of
+    the same form there; a part without one is left out. As the panorama's row of roots
+    (app/word_ui.js: mappedRoots), without what only the page shows (linked words, kept roots)."""
+    if entry is None or not entry.get('roots'):
+        return []
+    if not hasattr(ctx, '_root_index'):
+        from . import root_index
+        ctx._root_index = root_index.build({b: d['lexicon'] for b, d in ctx.data.items()})
+        by_form = {}
+        for x, r in ctx._root_index.items():
+            by_form.setdefault((ROOT_ERA.get(r['l']), re.sub(r'[¹²³⁴⁵⁶⁷⁸⁹⁰]', '', r['f'])), []).append(x)
+        ctx._root_by_form = by_form
+    index = ctx._root_index
+    parts = {}
+    for r in entry['roots']:
+        if r.get('id') in index:
+            parts.setdefault(r.get('part'), []).append(r)
+    out = []
+    for rs in parts.values():
+        hit = next((r['id'] for r in rs if ROOT_ERA.get(index[r['id']]['l']) == era), None)
+        if hit is None:
+            hit = next((x for r in rs for e, x in _root_counterparts(index, r['id'])
+                        if e == era and roots_alike(index[x]['f'], r['form'])), None)
+        if hit is None:
+            for r in rs:
+                same = ctx._root_by_form.get((era, re.sub(r'[¹²³⁴⁵⁶⁷⁸⁹⁰]', '', index[r['id']]['f'])), [])
+                if len(same) == 1:
+                    hit = same[0]
+                    break
+        if hit is not None and index[hit]['f'] not in out:
+            out.append(index[hit]['f'])
+    return out
+
+
 def use_canonical(lexicons: dict) -> None:
     """Roots of other conceptions compare as one when Eldamo files them as one (ᴹ√KHOTH under
     √KHOT¹): the canonical ids of the lexicons' roots, for partial_cognate."""
@@ -922,7 +1005,7 @@ def _translated(ctx, x: dict, sb: str, era: str, db: str, last: int, code: str, 
             f = (ctx.forward(db, era, f + '-', 0, last)[:1] or [(f, None)])[0][0]
     else:
         from .affixes import kind
-        l = ctx.langs(sb).get(e['lang'])
+        l = ctx.langs(sb).get(own_lang(ctx.langs(sb), sb, e['lang']))
         if kind(e) is not None or l is None or l['era'] != era:
             return None
         rs = reconstruct(ctx, (sb, era, l['stage']), (db, era, last), word=e['id'], limit=1, depth=depth + 1)
@@ -1110,7 +1193,6 @@ def _sideways(ctx, add, src, dst, form, entry, hints, exclude, use_links=True, d
                     ['near-cognate'], [])
 
 
-NEO_LANG = {'quenya': 'nq', 'sindarin': 'ns'}
 # links between conceptions: the same word merged (combine) first, then a reference (see), then
 # the word Tolkien replaced by this one or by which he replaced it (deprecated: Q. soron < ᴱQ. earen)
 LINK_WEIGHT = {'combine': 1.0, 'see': 0.9, 'deprecated': 0.8}

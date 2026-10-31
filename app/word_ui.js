@@ -7,6 +7,7 @@ const WF = window.WF, QR = window.QR;
 const WDATA = JSON.parse(document.getElementById('wordform-data').textContent);
 // the index of roots (shared/root_index.py): id -> {f, l, g, m, w, instead, see, into, merged, under, here, canon, from, to, words, listed}
 const ROOTS = JSON.parse(document.getElementById('roots-data').textContent);
+WF.setRoots(ROOTS);           // the engine's roots of a conception (wordform.js: conceptionRoots)
 const ROOT_MARKERS = { p: '√', mp: 'ᴹ√', ep: 'ᴱ√', np: 'N√' };
 const SITE = 'https://eldamo.org/content/';
 const $ = id => document.getElementById(id);
@@ -175,8 +176,10 @@ function subjectFrom(p) {
 function sourceOf(s) {
   if (!s) return null;
   if (s.kind === 'form') return (s.elements || []).length ? { form: s.form, elements: s.elements.map(e => e.id) } : { form: s.form };
-  if (language(engine(s.branch), s.entry.lang)) return { word: s.id };
-  return { form: s.entry.form, spelled: true };       // a neologism: its spelling at the latest stage
+  // a word of the branch's languages, Neo-Quenya and Neo-Sindarin too (wordform.js: ownLang); another
+  // neologism by its spelling at the latest stage
+  if (language(engine(s.branch), s.entry.lang) || s.entry.lang === { quenya: 'nq', sindarin: 'ns' }[s.branch]) return { word: s.id };
+  return { form: s.entry.form, spelled: true };
 }
 
 // ---------------------------------------------------------------- search
@@ -502,32 +505,10 @@ function entryRoots(b, e) {
 // same era does not add its roots to the word's (S. Gwahaedir, linked to Q. palantír).
 const LINK_ORDER = { combine: 0, deprecated: 1, see: 2, cognate: 3 };
 const ROOT_ERA = { p: 'late', np: 'late', mp: 'middle', ep: 'early' };
-// roots standing for a root in other eras: [[era, id]], nearest first
-function rootCounterparts(id) {
-  const out = [], seen = new Set([id]);
-  const todo = [id];
-  while (todo.length) {
-    const r = ROOTS[todo.shift()];
-    if (!r) continue;
-    for (const x of [...(r.instead || []), ...(r.into || []), ...(r.under ? [r.under] : []), ...(r.canon ? [r.canon] : []), ...(r.merged || []), ...(r.here || [])]) {
-      if (seen.has(x) || !ROOTS[x]) continue;
-      seen.add(x);
-      out.push([ROOT_ERA[ROOTS[x].l], x]);
-      todo.push(x);
-    }
-  }
-  return out;
-}
-// two roots alike in sound: one the beginning of the other (√AYA(N) ~ ᴱ√AYA¹), maybe after a lost
-// initial g-, w-, or the same onset and
-// consonants (ᴱ√QḶÐḶ ~ N√KWILID; wordform.js: resembles, after neo-roots' root checks)
-const rootLetters = f => Array.from(String(f).toLowerCase().normalize('NFD')).filter(ch => !/\p{M}/u.test(ch)).join('').replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰()\-\s]/g, '');
-function rootsAlike(a, b) {
-  const x = rootLetters(a), y = rootLetters(b);
-  const lost = f => f.replace(/^[gw](?=[aeiouy])/, '');     // a lost initial g-, w- (ᴹ√GAL² ~ ᴱ√ALA²)
-  const prefix = (p, q) => p.startsWith(q) || q.startsWith(p);
-  return prefix(x, y) || prefix(lost(x), lost(y)) || WF.resembles(a, b);
-}
+// roots standing for a root in other eras: [[era, id]], nearest first (wordform.js)
+const rootCounterparts = id => WF.rootCounterparts(id);
+// two roots alike in sound (wordform.js: rootsAlike; ᴱ√FAKA 'cut' is not ᴹ√RIS)
+const rootsAlike = (a, b) => WF.rootsAlike(a, b);
 // roots of a conception by their form (√LIN² of ᴹ√LIN²), for a root the index links to nothing there
 let rootsByForm = null;
 const formKey = f => String(f).replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰]/g, '');      // the number of a homonym aside

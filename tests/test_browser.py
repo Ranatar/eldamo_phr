@@ -186,6 +186,22 @@ class Browser(unittest.TestCase):
         self.assertNotIn('?', late)
         self.assertIn('+', late)
 
+    def test_neologism_as_element(self):
+        # NQ. tamin 'forge' is written in Quenya of the latest stage: it joins as a word of it
+        # (quetta + tamin -> quettatamin), and the word so made keeps both elements
+        page = self.page(self.atlas + '#tab=compose')
+        page.check('#neo-toggle')
+        page.fill('#wf-q1', 'quetta')
+        page.click('#wf-r1 button:has(.form:text-is("quetta"))')
+        page.fill('#wf-q2', 'tamin')
+        page.click('#wf-r2 button:has(.form:text-is("tamin"))')
+        page.click('#wf-go')
+        self.assertIn('quettatamin', page.inner_text('#wf-output'))
+        page.click('#wf-output .wf-variant.main [data-use]')
+        page.wait_for_function("location.hash.includes('of=106071007') && document.getElementById('word-card').textContent.includes('tamin')")
+        page.wait_for_function("document.querySelector('#panorama [data-roots=\"late\"]')")
+        self.assertIn('TAM', page.inner_text('#panorama [data-roots="late"]'))
+
     def test_formed_word_keeps_etymology(self):
         # Q. quet- + alcar taken from word formation: the primitive form is the elements' (✶aklar),
         # Sindarin goes by their cognates S. ped- (through T. pet-) and S. aglar

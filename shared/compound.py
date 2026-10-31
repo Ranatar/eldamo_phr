@@ -69,6 +69,19 @@ def forms_at_latest(entry: dict, family: str, final: bool = False) -> list:
     return [(f, h) for f, h in out if f and not (comparable(f) in seen or seen.add(comparable(f)))]
 
 
+NEO_LANG = {'quenya': 'nq', 'sindarin': 'ns'}
+
+
+def own_lang(langs, branch: str, lang: str | None) -> str | None:
+    """The language a word counts as in its branch: a word of Neo-Quenya or Neo-Sindarin (NQ. tamin) as one
+    of the latest stage of the late conception (Q., S.), which it is written in; any other as it is."""
+    if lang is not None and lang == NEO_LANG.get(branch):
+        late = [l for l in (langs.values() if isinstance(langs, dict) else langs) if l['era'] == 'late']
+        if late:
+            return max(late, key=lambda l: l['stage'])['code']
+    return lang
+
+
 def forms_at(entry: dict, seq, era: str, stage: int, final: bool = False) -> list:
     """(form, how) for a word at the end of `stage` (0 = primitive)."""
     langs = [l for l in seq.langs.values() if l['era'] == era]
@@ -77,11 +90,12 @@ def forms_at(entry: dict, seq, era: str, stage: int, final: bool = False) -> lis
     out = [(f, 'attested') for f in attested]
     if out:
         return out
-    if code and entry.get('lang') == code:
+    lang = own_lang(seq.langs, seq.branch, entry.get('lang'))
+    if code and lang == code:
         return forms_at_latest(entry, seq.branch, final)
     base = [(f, 'primitive') for f in origins(entry, era)]
     final = max(langs, key=lambda l: l['stage'])['code']
-    if not base and entry.get('lang') == final:
+    if not base and lang == final:
         # no primitive form in Eldamo: reconstruct one (shared/backform.py)
         from .backform import backform
         word = to_phonetic(entry['form'], seq.branch).rstrip('-')

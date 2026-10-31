@@ -822,8 +822,127 @@ function linkPath(d) {
     return `M${sx},${s.y}C${ox},${s.y} ${ox},${tg.y} ${tx},${tg.y}`;
   }
   const dir = dx > 0 ? 1 : -1;
-  const sx = s.x + dir * 8, tx = tg.x - dir * radius(tg), mx = (sx + tx) / 2;
-  return `M${sx},${s.y}C${mx},${s.y} ${mx},${tg.y} ${tx},${tg.y}`;
+  const sx = s.x + dir * 8, tx = tg.x - dir * radius(tg);
+  // the plain S-curve, as long as it misses every node on its way; where it would cross a node (with
+  // its label), the curve is bent to pass that stretch of nodes level through the nearest gap, and the
+  // rest of it stays a smooth curve (monotone, so it never swings beyond its passing points)
+  const runs = runsBetween(s, tg, sx, tx, dir);
+  const pass = [];                       // [enter x, leave x, y] by the stretches it must go through
+  let curve = plainCurve(sx, s.y, tx, tg.y);
+  for (let round = 0; round < 6 && runs.length; round++) {
+    const k = runs.findIndex(run => !run.used && crosses(curve.pts, run));
+    if (k < 0) break;
+    const run = runs[k];
+    run.used = true;
+    const enter = dir > 0 ? Math.max(sx, run.l) : Math.min(sx, run.r);
+    const leave = dir > 0 ? Math.min(tx, run.r) : Math.max(tx, run.l);
+    // at an end the link stays at that end's height; elsewhere where the curve stood
+    const want = leave === tx ? tg.y : enter === sx ? s.y : yAt(curve.pts, (enter + leave) / 2);
+    pass.push([enter, leave, freeY(run.boxes, want)]);
+    pass.sort((a, b) => dir * (a[0] - b[0]));
+    const knots = [[sx, s.y]];
+    for (const [a, b, y] of pass) {
+      if (Math.abs(a - knots[knots.length - 1][0]) > 0.5) knots.push([a, y]);
+      else knots[knots.length - 1][1] = y;
+      if (Math.abs(b - a) > 0.5) knots.push([b, y]);
+    }
+    if (Math.abs(tx - knots[knots.length - 1][0]) > 0.5) knots.push([tx, tg.y]); else knots[knots.length - 1][1] = tg.y;
+    curve = monotoneCurve(knots);
+  }
+  return curve.d;
+}
+// the S-curve of a link between two points: level at both ends
+function plainCurve(x0, y0, x1, y1) {
+  const mx = (x0 + x1) / 2, pts = [];
+  for (let k = 0; k <= 24; k++) {
+    const t = k / 24, u = 1 - t;
+    pts.push([u * u * u * x0 + 3 * u * u * t * mx + 3 * u * t * t * mx + t * t * t * x1,
+      u * u * u * y0 + 3 * u * u * t * y0 + 3 * u * t * t * y1 + t * t * t * y1]);
+  }
+  return { d: `M${x0},${y0}C${mx},${y0} ${mx},${y1} ${x1},${y1}`, pts };
+}
+// a smooth curve through the knots, level at the first and the last, never overshooting (the
+// monotone cubic of d3.curveMonotoneX); x runs either way
+function monotoneCurve(knots) {
+  const n = knots.length;
+  const h = [], sl = [];
+  for (let k = 0; k + 1 < n; k++) {
+    h.push(knots[k + 1][0] - knots[k][0]);
+    sl.push((knots[k + 1][1] - knots[k][1]) / h[k]);
+  }
+  const m = new Array(n).fill(0);
+  for (let k = 1; k + 1 < n; k++) {
+    const s0 = sl[k - 1], s1 = sl[k], p = (s0 * h[k] + s1 * h[k - 1]) / (h[k - 1] + h[k]);
+    m[k] = (Math.sign(s0) + Math.sign(s1)) * Math.min(Math.abs(s0), Math.abs(s1), 0.5 * Math.abs(p)) || 0;
+  }
+  let d = `M${knots[0][0]},${knots[0][1]}`;
+  const pts = [knots[0].slice()];
+  for (let k = 0; k + 1 < n; k++) {
+    const [x0, y0] = knots[k], [x1, y1] = knots[k + 1], hh = h[k];
+    const c1 = [x0 + hh / 3, y0 + m[k] * hh / 3], c2 = [x1 - hh / 3, y1 - m[k + 1] * hh / 3];
+    d += y0 === y1 && m[k] === 0 && m[k + 1] === 0 ? `L${x1},${y1}` : `C${c1[0]},${c1[1]} ${c2[0]},${c2[1]} ${x1},${y1}`;
+    for (let q = 1; q <= 10; q++) {
+      const t = q / 10, u = 1 - t;
+      pts.push([u * u * u * x0 + 3 * u * u * t * c1[0] + 3 * u * t * t * c2[0] + t * t * t * x1,
+        u * u * u * y0 + 3 * u * u * t * c1[1] + 3 * u * t * t * c2[1] + t * t * t * y1]);
+    }
+  }
+  return { d, pts };
+}
+// the height of a sampled curve at x
+function yAt(pts, x) {
+  for (let k = 0; k + 1 < pts.length; k++) {
+    const [x0, y0] = pts[k], [x1, y1] = pts[k + 1];
+    if ((x - x0) * (x - x1) <= 0) return x1 === x0 ? y0 : y0 + (y1 - y0) * (x - x0) / (x1 - x0);
+  }
+  return pts[pts.length - 1][1];
+}
+// does the sampled curve pass through a box of the stretch
+function crosses(pts, run) {
+  for (const b of run.boxes) {
+    let lo = Infinity, hi = -Infinity;
+    const take = y => { if (y < lo) lo = y; if (y > hi) hi = y; };
+    take(yAt(pts, b.l)); take(yAt(pts, b.r));
+    for (const [x, y] of pts) if (x > b.l && x < b.r) take(y);
+    if (lo < b.b && hi > b.t) return true;
+  }
+  return false;
+}
+// The boxes of the nodes (with their labels above), sorted by their left edge; rebuilt on every frame
+let boxes = [];
+function buildBoxes(data) {
+  boxes = data.map(d => ({ d, l: d.x - Math.max(d.w / 2, 10) - 4, r: d.x + Math.max(d.w / 2, 10) + 4, t: d.y - 23, b: d.y + radius(d) + 1 }))
+    .sort((p, q) => p.l - q.l);
+}
+// the stretches of boxes (overlapping in x) between the two ends of a link, in its direction
+function runsBetween(s, tg, sx, tx, dir) {
+  const lo = Math.min(sx, tx), hi = Math.max(sx, tx);
+  const runs = [];
+  for (const bx of boxes) {
+    if (bx.l >= hi) break;
+    if (bx.r <= lo || bx.d === s || bx.d === tg) continue;
+    const last = runs[runs.length - 1];
+    if (last && bx.l <= last.r + 6) { last.r = Math.max(last.r, bx.r); last.boxes.push(bx); }
+    else runs.push({ l: bx.l, r: bx.r, boxes: [bx] });
+  }
+  if (dir < 0) runs.reverse();
+  return runs;
+}
+// the height nearest y that no box of the stretch covers: y itself when free, else the middle of
+// the nearest gap between boxes (or a little above the top one, below the bottom one)
+function freeY(bs, y) {
+  const iv = bs.map(b => [b.t, b.b]).sort((p, q) => p[0] - q[0]);
+  const merged = [];
+  for (const [t, b] of iv) {
+    const last = merged[merged.length - 1];
+    if (last && t <= last[1]) last[1] = Math.max(last[1], b); else merged.push([t, b]);
+  }
+  if (!merged.some(([t, b]) => y > t - 1 && y < b + 1)) return y;
+  let best = merged[0][0] - 5;
+  const near = v => { if (Math.abs(v - y) < Math.abs(best - y)) best = v; };
+  for (let k = 0; k + 1 < merged.length; k++) near((merged[k][1] + merged[k + 1][0]) / 2);
+  near(merged[merged.length - 1][1] + 5);
+  return best;
 }
 // one click selects; two expand or collapse what the node expanded; three fold its derivatives.
 // The second click waits a moment to see whether a third comes
@@ -1106,8 +1225,9 @@ function render(refit) {
   bandSel.select('text').text(x => t('band.' + x.b));
 
   function draw() {
-    es.attr('d', linkPath);
-    hits.attr('d', linkPath);
+    buildBoxes(data);
+    es.attr('d', d => (d._p = linkPath(d)));
+    hits.attr('d', d => d._p);
     ns.attr('transform', d => `translate(${d.x},${d.y})`);
     if (bands.length) {
       let x0 = Infinity, x1 = -Infinity;
@@ -1200,7 +1320,7 @@ function clearEdge() {
 function select(i) {
   if (selEdge) { selEdge = null; markEdge(); }
   selected = i;
-  if (mode === 'graph' && sim) gEdges.selectAll('path').attr('d', linkPath);
+  if (mode === 'graph' && sim) { gEdges.selectAll('path').attr('d', d => (d._p = linkPath(d))); gHits.selectAll('path').attr('d', d => d._p); }
   if (ovBuilt) ovRequestDraw();
   gNodes.selectAll('g.node').classed('sel', d => d.i === selected)
     .select('.ring').attr('stroke', d => d.i === selected ? css('--focus') : d.i === focusNode ? css('--accent') : 'none');
@@ -1828,7 +1948,7 @@ window.addEventListener('hashchange', () => {
 });
 const wantRoots = location.hash === '#all-roots';
 const start = fromHash();
-focus(start >= 0 ? start : indexOf.get('539805327'));     // Q. alda
+focus(start >= 0 ? start : indexOf.get('3583944535'));     // Q. Elda
 if (wantRoots) setMode('roots');
 })();
 </script>
